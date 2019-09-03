@@ -1,0 +1,348 @@
+# dmidecode 2.12
+SMBIOS version fixup (2.31 -> 2.3).
+SMBIOS 2.3 present.
+28 structures occupying 942 bytes.
+Table at 0x000DB810.
+
+Handle 0x0000, DMI type 0, 20 bytes
+BIOS Information
+	Vendor: PHOENIX BIOS
+	Version: V1.02
+	Release Date: 09/25/2002
+	Address: 0xE5FD0
+	Runtime Size: 106544 bytes
+	ROM Size: 512 kB
+	Characteristics:
+		PCI is supported
+		PC Card (PCMCIA) is supported
+		PNP is supported
+		BIOS is upgradeable
+		BIOS shadowing is allowed
+		Boot from CD is supported
+		Selectable boot is supported
+		Japanese floppy for Toshiba 1.2 MB is supported (int 13h)
+		ACPI is supported
+		USB legacy is supported
+		AGP is supported
+		Smart battery is supported
+
+Handle 0x0001, DMI type 1, 25 bytes
+System Information
+	Manufacturer: Acer           
+	Product Name: TravelMate 420 
+	Version: Null           
+	Serial Number: --
+	UUID: --
+	Wake-up Type: Power Switch
+
+Handle 0x0002, DMI type 2, 8 bytes
+Base Board Information
+	Manufacturer: ACER
+	Product Name: TravelMate 420
+	Version: Null
+	Serial Number: --
+
+Handle 0x0003, DMI type 3, 17 bytes
+Chassis Information
+	Manufacturer: ACER  
+	Type: Other
+	Lock: Not Present
+	Version: N/A
+	Serial Number: --
+	Asset Tag: --
+	Boot-up State: Safe
+	Power Supply State: Safe
+	Thermal State: Safe
+	Security Status: None
+	OEM Information: 0x00001234
+
+Handle 0x0004, DMI type 4, 35 bytes
+Processor Information
+	Socket Designation: U41
+	Type: Central Processor
+	Family: Pentium 4
+	Manufacturer: GenuineIntel
+	ID: 24 0F 00 00 FF F9 EB 3F
+	Signature: Type 0, Family 15, Model 2, Stepping 4
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		DS (Debug store)
+		ACPI (ACPI supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		SS (Self-snoop)
+		HTT (Multi-threading)
+		TM (Thermal monitor supported)
+	Version: Intel(R) Pentium(
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2000 MHz
+	Current Speed: 2000 MHz
+	Status: Populated, Enabled
+	Upgrade: Slot 1
+	L1 Cache Handle: 0x0008
+	L2 Cache Handle: 0x0009
+	L3 Cache Handle: Not Provided
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Not Specified
+
+Handle 0x0005, DMI type 5, 20 bytes
+Memory Controller Information
+	Error Detecting Method: None
+	Error Correcting Capabilities:
+		None
+	Supported Interleave: One-way Interleave
+	Current Interleave: One-way Interleave
+	Maximum Memory Module Size: 2048 MB
+	Maximum Total Memory Size: 4096 MB
+	Supported Speeds:
+		Other
+	Supported Memory Types:
+		DIMM
+		SDRAM
+	Memory Module Voltage: 3.3 V
+	Associated Memory Slots: 2
+		0x0006
+		0x0007
+	Enabled Error Correcting Capabilities:
+		None
+
+Handle 0x0006, DMI type 6, 12 bytes
+Memory Module Information
+	Socket Designation: JP25
+	Bank Connections: 0 1
+	Current Speed: 4 ns
+	Type: DIMM SDRAM
+	Installed Size: 256 MB (Single-bank Connection)
+	Enabled Size: 256 MB (Single-bank Connection)
+	Error Status: OK
+
+Handle 0x0007, DMI type 6, 12 bytes
+Memory Module Information
+	Socket Designation: JP28
+	Bank Connections: 2 3
+	Current Speed: 4 ns
+	Type: DIMM SDRAM
+	Installed Size: 256 MB (Single-bank Connection)
+	Enabled Size: 256 MB (Single-bank Connection)
+	Error Status: OK
+
+Handle 0x0008, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L1 Cache
+	Configuration: Enabled, Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 32 kB
+	Maximum Size: 32 kB
+	Supported SRAM Types:
+		Burst
+		Pipeline Burst
+		Synchronous
+		Asynchronous
+	Installed SRAM Type: Asynchronous
+	Speed: Unknown
+	Error Correction Type: Unknown
+	System Type: Unknown
+	Associativity: Unknown
+
+Handle 0x0009, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L2 Cache
+	Configuration: Enabled, Socketed, Level 2
+	Operational Mode: Write Back
+	Location: External
+	Installed Size: 512 kB
+	Maximum Size: 512 kB
+	Supported SRAM Types:
+		Burst
+		Pipeline Burst
+		Asynchronous
+	Installed SRAM Type: Burst
+	Speed: Unknown
+	Error Correction Type: Unknown
+	System Type: Unknown
+	Associativity: Unknown
+
+Handle 0x000A, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: U1
+	Internal Connector Type: None
+	External Reference Designator: Infrared
+	External Connector Type: Infrared
+	Port Type: Serial Port 16550A Compatible
+
+Handle 0x000B, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: JP4
+	Internal Connector Type: 25 Pin Dual Inline (pin 26 cut)
+	External Reference Designator: Parallel
+	External Connector Type: DB-25 female
+	Port Type: Parallel Port ECP/EPP
+
+Handle 0x000C, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: JP3
+	Internal Connector Type: None
+	External Reference Designator: SVGA-Out
+	External Connector Type: DB-15 female
+	Port Type: Video Port
+
+Handle 0x000D, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: JP1/JP9
+	Internal Connector Type: None
+	External Reference Designator: USB
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x000E, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: JP12
+	Internal Connector Type: None
+	External Reference Designator: 1394
+	External Connector Type: IEEE 1394
+	Port Type: Firewire (IEEE P1394)
+
+Handle 0x000F, DMI type 9, 13 bytes
+System Slot Information
+	Designation: OZ6912-1
+	Type: 32-bit PC Card (PCMCIA)
+	Current Usage: Unknown
+	Length: Other
+	ID: Adapter 0, Socket 0
+	Characteristics:
+		5.0 V is provided
+		3.3 V is provided
+		Cardbus is supported
+		Hot-plug devices are supported
+
+Handle 0x0010, DMI type 10, 8 bytes
+On Board Device 1 Information
+	Type: Video
+	Status: Disabled
+	Description: ATI M7-P
+On Board Device 2 Information
+	Type: Sound
+	Status: Disabled
+	Description: Realtek ALC201
+
+Handle 0x0011, DMI type 11, 5 bytes
+OEM Strings
+	String 1:                                                               
+
+Handle 0x0012, DMI type 12, 5 bytes
+System Configuration Options
+
+Handle 0x0013, DMI type 16, 15 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 512 MB
+	Error Information Handle: Not Provided
+	Number Of Devices: 2
+
+Handle 0x0014, DMI type 17, 27 bytes
+Memory Device
+	Array Handle: 0x0013
+	Error Information Handle: No Error
+	Total Width: 32 bits
+	Data Width: 32 bits
+	Size: 256 MB
+	Form Factor: SODIMM
+	Set: 1
+	Locator: JP26
+	Bank Locator: Bank 0/1
+	Type: SDRAM
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Not Specified
+
+Handle 0x0015, DMI type 17, 27 bytes
+Memory Device
+	Array Handle: 0x0013
+	Error Information Handle: No Error
+	Total Width: 32 bits
+	Data Width: 32 bits
+	Size: 256 MB
+	Form Factor: SODIMM
+	Set: 1
+	Locator: JP27
+	Bank Locator: Bank 2/3
+	Type: SDRAM
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Not Specified
+
+Handle 0x0016, DMI type 19, 15 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0001FFFFFFF
+	Range Size: 512 MB
+	Physical Array Handle: 0x0013
+	Partition Width: 2
+
+Handle 0x0017, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0000FFFFFFF
+	Range Size: 256 MB
+	Physical Device Handle: 0x0014
+	Memory Array Mapped Address Handle: 0x0016
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0018, DMI type 21, 7 bytes
+Built-in Pointing Device
+	Type: Track Point
+	Interface: PS/2
+	Buttons: 2
+
+Handle 0x0019, DMI type 22, 26 bytes
+Portable Battery
+	Location: 1st Battery
+	Manufacturer: PANASONIC 
+	Manufacture Date: 05/25/2001
+	Serial Number: --
+	Name: PA3098U
+	Chemistry: Lithium Ion
+	Design Capacity: 3900 mWh
+	Design Voltage: 14800 mV
+	SBDS Version: Not Specified
+	Maximum Error: Unknown
+	OEM-specific Information: 0x00000000
+
+Handle 0x001A, DMI type 32, 20 bytes
+System Boot Information
+	Status: <OUT OF SPEC>
+
+Handle 0x001B, DMI type 127, 4 bytes
+End Of Table
+
