@@ -1,4 +1,4 @@
-# dmidecode 3.0
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 47 structures occupying 1931 bytes.
@@ -65,7 +65,7 @@ Chassis Information
 	Version: V1.30
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	...
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -307,7 +307,7 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1067 MHz
+	Speed: 1067 MT/s
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
@@ -351,18 +351,18 @@ Memory Device
 	Error Information Handle: 0x0021
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1067 MHz
+	Speed: 1067 MT/s
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5773CHS-CH9  
+	Part Number: AD73I1C1674EV     
 	Rank: Unknown
 
 Handle 0x0020, DMI type 6, 12 bytes
@@ -371,8 +371,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0021, DMI type 18, 23 bytes
@@ -388,8 +388,8 @@ Handle 0x0021, DMI type 18, 23 bytes
 Handle 0x0022, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x001F
 	Memory Array Mapped Address Handle: 0x0024
 	Partition Row Position: Unknown
@@ -409,8 +409,8 @@ Handle 0x0023, DMI type 18, 23 bytes
 Handle 0x0024, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 6 GB
 	Physical Array Handle: 0x001A
 	Partition Width: 2
 
@@ -501,7 +501,7 @@ Processor Information
 	Voltage: 0.0 V
 	External Clock: 1066 MHz
 	Max Speed: 2666 MHz
-	Current Speed: 2669 MHz
+	Current Speed: 2657 MHz
 	Status: Populated, Enabled
 	Upgrade: ZIF Socket
 	L1 Cache Handle: 0x002D

@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 46 structures occupying 2621 bytes.
 Table at 0x000F0100.
@@ -57,7 +58,7 @@ Base Board Information
 	Version: sex
 	Serial Number: --
 
-Handle 0x0003, DMI type 3, 17 bytes
+807075653E24ECB98B63F18E00309403
 Chassis Information
 	Manufacturer: Gigabyte Technology Co., Ltd.
 	Type: Desktop
@@ -65,7 +66,7 @@ Chassis Information
 	Version:  
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Unknown
+	...
 	Power Supply State: Unknown
 	Thermal State: Unknown
 	Security Status: Unknown
@@ -115,7 +116,7 @@ Processor Information
 	L3 Cache Handle: Not Provided
 	Serial Number: --
 	Asset Tag: --
-	Part Number:  
+	...
 
 Handle 0x0005, DMI type 5, 20 bytes
 Memory Controller Information
@@ -146,18 +147,18 @@ Memory Module Information
 	Bank Connections: 1
 	Current Speed: 53 ns
 	Type: Other Unknown EDO
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 4096 MB (Double-bank Connection)
+	Enabled Size: 4096 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A1
 	Bank Connections: 2
-	Current Speed: Unknown
+	Current Speed: 53 ns
 	Type: Other Unknown EDO
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 4096 MB (Double-bank Connection)
+	Enabled Size: 4096 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0008, DMI type 7, 19 bytes
@@ -416,7 +417,7 @@ Memory Device
 	Bank Locator: Bank0/1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
+	Speed: 1333 MT/s
 	Manufacturer: None
 	Serial Number: --
 	Asset Tag: --
@@ -428,14 +429,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1
 	Bank Locator: Bank2/3
 	Type: Unknown
 	Type Detail: None
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: None
 	Serial Number: --
 	Asset Tag: --
@@ -444,8 +445,8 @@ Memory Device
 Handle 0x0023, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0020
 	Partition Width: 1
 
@@ -460,9 +461,9 @@ Memory Device Mapped Address
 
 Handle 0x0025, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0022
 	Memory Array Mapped Address Handle: 0x0023
 	Partition Row Position: 1

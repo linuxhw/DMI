@@ -1,5 +1,5 @@
-# dmidecode 2.12
-# SMBIOS entry point at 0x9aebef98
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 75 structures occupying 3164 bytes.
 Table at 0x9AEBC000.
@@ -7,8 +7,8 @@ Table at 0x9AEBC000.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: A08
-	Release Date: 04/30/2014
+	Version: A09
+	Release Date: 08/25/2016
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 4096 kB
@@ -42,7 +42,7 @@ Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Dell Inc.
 	Product Name: Inspiron 5537
-	Version: A08
+	Version: A09
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -69,7 +69,7 @@ Chassis Information
 	Manufacturer: Dell Inc.
 	Type: Portable
 	Lock: Not Present
-	Version: A08
+	Version: A09
 	Serial Number: --
 	Asset Tag: --
 	Boot-up State: Safe
@@ -125,7 +125,7 @@ Processor Information
 	Max Speed: 2300 MHz
 	Current Speed: 1600 MHz
 	Status: Populated, Enabled
-	Upgrade: <OUT OF SPEC>
+	Upgrade: Socket BGA1168
 	L1 Cache Handle: 0x0009
 	L2 Cache Handle: 0x000A
 	L3 Cache Handle: 0x000B
@@ -448,7 +448,7 @@ OEM Strings
 	String 7: 7[]
 	String 8: 8[]
 	String 9: 9[]
-	String 10: 10[A08]
+	String 10: 10[A09]
 	String 11: 11[]
 	String 12: 12[]
 	String 13: 13[P28F]
@@ -495,13 +495,13 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
 	Part Number: HMT451S6AFR8A-PB  
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0025, DMI type 17, 34 bytes
 Memory Device
@@ -516,13 +516,13 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
 	Part Number: HMT451S6AFR8A-PB  
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0026, DMI type 18, 23 bytes
 32-bit Memory Error Information

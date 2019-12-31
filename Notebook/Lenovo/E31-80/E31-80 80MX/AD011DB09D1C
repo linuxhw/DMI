@@ -1,9 +1,8 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-# SMBIOS implementations newer than version 2.7 are not
-# fully supported by this version of dmidecode.
 70 structures occupying 3528 bytes.
-Table at 0x000E6DC0.
+Table at 0x857D9000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -123,7 +122,7 @@ Processor Information
 	Max Speed: 2000 MHz
 	Current Speed: 2000 MHz
 	Status: Populated, Enabled
-	Upgrade: <OUT OF SPEC>
+	Upgrade: Socket BGA1168
 	L1 Cache Handle: 0x0006
 	L2 Cache Handle: 0x0007
 	L3 Cache Handle: 0x0008
@@ -431,22 +430,22 @@ Handle 0x0022, DMI type 14, 17 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 4
-		0x003F (<OUT OF SPEC>)
-		0x003A (<OUT OF SPEC>)
-		0x0039 (<OUT OF SPEC>)
-		0x0038 (<OUT OF SPEC>)
+		0x003F (OEM-specific)
+		0x003A (OEM-specific)
+		0x0039 (OEM-specific)
+		0x0038 (OEM-specific)
 
 Handle 0x0023, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x0043 (<OUT OF SPEC>)
+		0x0043 (OEM-specific)
 
 Handle 0x0024, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
-		0x003E (<OUT OF SPEC>)
+		0x003E (OEM-specific)
 
 Handle 0x0025, DMI type 15, 29 bytes
 System Event Log
@@ -489,16 +488,16 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: 0467
 	Serial Number: --
 	Asset Tag: --
 	Part Number: RMT3170MP68F9F1600
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
-	Minimum voltage:  1.250 V
-	Maximum voltage:  1.500 V
-	Configured voltage:  1.350 V
+	Configured Clock Speed: 1600 MT/s
+	Minimum Voltage: 1.25 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: 1.35 V
 
 Handle 0x0028, DMI type 17, 40 bytes
 Memory Device
@@ -520,9 +519,9 @@ Memory Device
 	Part Number: Not Specified
 	Rank: Unknown
 	Configured Clock Speed: Unknown
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
 Handle 0x0029, DMI type 17, 40 bytes
 Memory Device
@@ -544,9 +543,9 @@ Memory Device
 	Part Number: Not Specified
 	Rank: Unknown
 	Configured Clock Speed: Unknown
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
 Handle 0x002A, DMI type 17, 40 bytes
 Memory Device
@@ -568,9 +567,9 @@ Memory Device
 	Part Number: Not Specified
 	Rank: Unknown
 	Configured Clock Speed: Unknown
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
 Handle 0x002B, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -718,7 +717,7 @@ OEM-specific Type
 Handle 0x003A, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 3A 00 10 00 00 00 00 00 00 00 00 00 00 00
+		83 40 3A 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 48 9D 00 00 00 00 01 00 00 00 00 00 0B 00
 		E9 03 01 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 FF 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
@@ -804,7 +803,7 @@ OEM-specific Type
 		DD 36 42 00 07 01 00 01 02 01 00 00 02 00 01 02
 		01 00 00 03 00 01 02 01 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 09 00 07 00 FF FF FF 09 00 08
-		00 FF FF FF 00 00
+		00 FF FF FF FF FF
 	Strings:
 		Reference Code - SA - System Agent
 		Reference Code - MRC

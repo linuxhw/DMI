@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 58 structures occupying 2467 bytes.
@@ -520,68 +520,36 @@ Handle 0x002E, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002C
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
+	Total Width: Unknown
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: Node0_Dimm0
 	Bank Locator: Node0_Bank0
-	Type: DDR3
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 667 MT/s
-	Manufacturer: Undefined         
+	Type: Unknown
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: Dimm0_Manufacturer
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT102464BA133
-	Rank: 2
-	Configured Clock Speed: 667 MT/s
+	Part Number: Dimm0_PartNum
+	Rank: Unknown
+	Configured Memory Speed: Unknown
 
-Handle 0x002F, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x002E
-	Memory Array Mapped Address Handle: 0x002D
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+Handle 0x002F, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x0030, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002C
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: Node0_Dimm1
-	Bank Locator: Node0_Bank0
-	Type: Unknown
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Dimm1_Manufacturer
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Dimm1_PartNum
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-
-Handle 0x0031, DMI type 126, 35 bytes
-Inactive
-
-Handle 0x0032, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x002C
-	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
-	Locator: Node0_Dimm2
+	Locator: Node0_Dimm1
 	Bank Locator: Node0_Bank0
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
@@ -591,20 +559,20 @@ Memory Device
 	Asset Tag: --
 	Part Number: CT102464BA133
 	Rank: 2
-	Configured Clock Speed: 667 MT/s
+	Configured Memory Speed: 667 MT/s
 
-Handle 0x0033, DMI type 20, 35 bytes
+Handle 0x0031, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
-	Physical Device Handle: 0x0032
+	Physical Device Handle: 0x0030
 	Memory Array Mapped Address Handle: 0x002D
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0034, DMI type 17, 34 bytes
+Handle 0x0032, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002C
 	Error Information Handle: Not Provided
@@ -613,20 +581,52 @@ Memory Device
 	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
-	Locator: Node0_Dimm3
+	Locator: Node0_Dimm2
 	Bank Locator: Node0_Bank0
 	Type: Unknown
 	Type Detail: Synchronous
 	Speed: Unknown
-	Manufacturer: Dimm3_Manufacturer
+	Manufacturer: Dimm2_Manufacturer
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Dimm3_PartNum
+	Part Number: Dimm2_PartNum
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
-Handle 0x0035, DMI type 126, 35 bytes
+Handle 0x0033, DMI type 126, 35 bytes
 Inactive
+
+Handle 0x0034, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x002C
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8192 MB
+	Form Factor: DIMM
+	Set: None
+	Locator: Node0_Dimm3
+	Bank Locator: Node0_Bank0
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 667 MT/s
+	Manufacturer: Undefined         
+	Serial Number: --
+	Asset Tag: --
+	Part Number: CT102464BA133
+	Rank: 2
+	Configured Memory Speed: 667 MT/s
+
+Handle 0x0035, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x0034
+	Memory Array Mapped Address Handle: 0x002D
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x0036, DMI type 32, 20 bytes
 System Boot Information

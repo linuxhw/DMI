@@ -1,13 +1,13 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x7BAD7000.
+Table at 0x7BA8D000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: X541NC.307
-	Release Date: 06/19/2017
+	Version: X541NC.317
+	Release Date: 04/17/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8192 kB
@@ -43,7 +43,7 @@ System Information
 	UUID: --
 	Wake-up Type: Power Switch
 	SKU Number:  
-	Family: X
+	Family: VivoBook
 
 Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
@@ -64,7 +64,7 @@ Handle 0x0003, DMI type 3, 22 bytes
 Chassis Information
 	Manufacturer: ASUSTeK COMPUTER INC.
 	Type: Notebook
-	Lock: Present
+	Lock: Not Present
 	Version: 1.0       
 	Serial Number: --
 	Asset Tag: --
@@ -83,28 +83,28 @@ Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x000D
-	Memory Array Mapped Address Handle: 0x000F
+	Physical Device Handle: 0x000F
+	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: Unknown
 	Interleave Position: 1
-	Interleaved Data Depth: 2
+	Interleaved Data Depth: 4
 
-Handle 0x000B, DMI type 32, 20 bytes
+Handle 0x000D, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x000C, DMI type 16, 23 bytes
+Handle 0x000E, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 16 GB
+	Maximum Capacity: 32 GB
 	Error Information Handle: Not Provided
-	Number Of Devices: 2
+	Number Of Devices: 1
 
-Handle 0x000D, DMI type 17, 40 bytes
+Handle 0x000F, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x000C
+	Array Handle: 0x000E
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -122,43 +122,19 @@ Memory Device
 	Part Number:  ..  .  .      ...
 	Rank: Unknown
 	Configured Clock Speed: 1600 MT/s
-	Minimum Voltage: 1.25 V
-	Maximum Voltage: 1.5 V
+	Minimum Voltage: 44.975 V
+	Maximum Voltage: 44.975 V
 	Configured Voltage: 1.5 V
 
-Handle 0x000E, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x000C
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: ChannelA-DIMM1
-	Bank Locator: BANK 1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Clock Speed: 1600 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-
-Handle 0x000F, DMI type 19, 31 bytes
+Handle 0x0010, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Array Handle: 0x000C
-	Partition Width: 2
+	Physical Array Handle: 0x000E
+	Partition Width: 1
 
-Handle 0x0010, DMI type 7, 19 bytes
+Handle 0x0011, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L1
 	Configuration: Enabled, Not Socketed, Level 1
@@ -174,7 +150,7 @@ Cache Information
 	System Type: Other
 	Associativity: Other
 
-Handle 0x0011, DMI type 7, 19 bytes
+Handle 0x0012, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L2
 	Configuration: Enabled, Not Socketed, Level 2
@@ -190,7 +166,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0012, DMI type 4, 48 bytes
+Handle 0x0013, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: SOCKET 0
 	Type: Central Processor
@@ -234,8 +210,8 @@ Processor Information
 	Current Speed: 1100 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
-	L1 Cache Handle: 0x0010
-	L2 Cache Handle: 0x0011
+	L1 Cache Handle: 0x0011
+	L2 Cache Handle: 0x0012
 	L3 Cache Handle: Not Provided
 	Serial Number: --
 	Asset Tag: --
@@ -246,7 +222,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0025, DMI type 10, 26 bytes
+Handle 0x0026, DMI type 10, 26 bytes
 On Board Device 1 Information
 	Type: Video
 	Status: Enabled
@@ -292,7 +268,7 @@ On Board Device 11 Information
 	Status: Enabled
 	Description: Bluetooth
 
-Handle 0x0026, DMI type 11, 5 bytes
+Handle 0x0027, DMI type 11, 5 bytes
 OEM Strings
 	String 1: kPJ-+7X7+EfTa
 	String 2: jTyRUBSNi7Ydf
@@ -300,20 +276,20 @@ OEM Strings
 	String 4:  
 	String 5: 90NB0E91-M00690
 
-Handle 0x0027, DMI type 12, 5 bytes
+Handle 0x0028, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: SMI:00B26C
 	Option 2: DSN:                                
 	Option 3: DSN:                                
 	Option 4: DSN:                                
 
-Handle 0x0028, DMI type 13, 22 bytes
+Handle 0x0029, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0029, DMI type 127, 4 bytes
+Handle 0x002A, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,4 +1,4 @@
-# dmidecode 3.0
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 22 structures occupying 1215 bytes.
@@ -55,7 +55,7 @@ Base Board Information
 	Version:                       
 	Serial Number: --
 	Asset Tag: --
-	Features:
+	...
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:                       
@@ -84,10 +84,10 @@ Handle 0x0004, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPUSocket
 	Type: Central Processor
-	Family: Athlon II
+	Family: FX
 	Manufacturer: AMD              
-	ID: 63 0F 10 00 FF FB 8B 17
-	Signature: Family 16, Model 6, Stepping 3
+	ID: 12 0F 60 00 FF FB 8B 17
+	Signature: Family 21, Model 1, Stepping 2
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -112,21 +112,22 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Athlon(tm) II X2 250 Processor                  
-	Voltage: 1.5 V
+	Version: AMD FX(tm)-6100 Six-Core Processor                  
+	Voltage: 1.3 V
 	External Clock: 200 MHz
-	Max Speed: 3000 MHz
-	Current Speed: 3159 MHz
-	Status: Populated, Enabled
-	Upgrade: Socket 940
+	Max Speed: 3300 MHz
+	Current Speed: 3300 MHz
+	Status: Populated, Disabled By BIOS
+	Upgrade: Socket AM3
 	L1 Cache Handle: 0x0005
 	L2 Cache Handle: 0x0006
 	L3 Cache Handle: 0x0007
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
-	Core Count: 2
-	Core Enabled: 2
+	Core Count: 6
+	Core Enabled: 6
+	Thread Count: 6
 	Characteristics:
 		64-bit capable
 
@@ -134,49 +135,49 @@ Handle 0x0005, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1-Cache
 	Configuration: Enabled, Not Socketed, Level 1
-	Operational Mode: Varies With Memory Address
+	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 256 kB
-	Maximum Size: 256 kB
+	Installed Size: 288 kB
+	Maximum Size: 288 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
-	Speed: Unknown
-	Error Correction Type: Single-bit ECC
-	System Type: Data
-	Associativity: 4-way Set-associative
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 2-way Set-associative
 
 Handle 0x0006, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2-Cache
 	Configuration: Enabled, Not Socketed, Level 2
-	Operational Mode: Varies With Memory Address
+	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 6144 kB
+	Maximum Size: 6144 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
-	Speed: Unknown
-	Error Correction Type: Single-bit ECC
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
 	System Type: Unified
-	Associativity: 4-way Set-associative
+	Associativity: 16-way Set-associative
 
 Handle 0x0007, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L3-Cache
-	Configuration: Disabled, Not Socketed, Level 3
-	Operational Mode: Unknown
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 0 kB
-	Maximum Size: 0 kB
+	Installed Size: 8192 kB
+	Maximum Size: 8192 kB
 	Supported SRAM Types:
-		Unknown
-	Installed SRAM Type: Unknown
-	Speed: Unknown
-	Error Correction Type: Unknown
-	System Type: Unknown
-	Associativity: Unknown
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 64-way Set-associative
 
 Handle 0x0008, DMI type 9, 17 bytes
 System Slot Information
@@ -239,8 +240,8 @@ Physical Memory Array
 Handle 0x000D, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x0019FFFFFFF
+	Range Size: 6656 MB
 	Physical Array Handle: 0x000C
 	Partition Width: 1
 
@@ -250,25 +251,25 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 533 MHz
-	Manufacturer: Hyundai       
+	Speed: 333 MT/s
+	Manufacturer: Samsung       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT325U6BFR8C-H9  
+	Part Number: M378B5173EB0-CK0  
 	Rank: Unknown
 
 Handle 0x000F, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x000E
 	Memory Array Mapped Address Handle: 0x000D
 	Partition Row Position: 1
@@ -277,24 +278,30 @@ Handle 0x0010, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x000C
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: Other
+	Size: 2048 MB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Manufacturer01
+	Type: Other
+	Type Detail: Synchronous
+	Speed: 333 MT/s
+	Manufacturer: Hyundai       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ModulePartNumber01
+	Part Number: HMT325U6BFR8C-H9  
 	Rank: Unknown
 
-Handle 0x0011, DMI type 126, 19 bytes
-Inactive
+Handle 0x0011, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0010
+	Memory Array Mapped Address Handle: 0x000D
+	Partition Row Position: 1
 
 Handle 0x0012, DMI type 32, 20 bytes
 System Boot Information

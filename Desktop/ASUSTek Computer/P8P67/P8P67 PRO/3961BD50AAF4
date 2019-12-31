@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-108 structures occupying 3764 bytes.
+110 structures occupying 3842 bytes.
 Table at 0x000E94B0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -117,7 +117,7 @@ Processor Information
 	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 3426 MHz
+	Current Speed: 3400 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -960,22 +960,22 @@ Physical Memory Array
 Handle 0x005E, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x005F
-	Error Information Handle: 0x0063
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Error Information Handle: 0x0062
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
+	Part Number: KHX1866C10D3/4G   
+	Rank: 1
 
 Handle 0x0061, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -987,7 +987,18 @@ Handle 0x0061, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0060, DMI type 17, 28 bytes
+Handle 0x0060, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x005E
+	Memory Array Mapped Address Handle: 0x006A
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 2
+
+Handle 0x0063, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x005F
 	Error Information Handle: No Error
@@ -1000,14 +1011,14 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: 04CD
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F3-12800CL9-4GBXL
-	Rank: 2
+	Part Number: KHX1866C9D3/4GX   
+	Rank: 1
 
-Handle 0x0063, DMI type 18, 23 bytes
+Handle 0x0062, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -1017,38 +1028,38 @@ Handle 0x0063, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0062, DMI type 20, 19 bytes
+Handle 0x0065, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0060
-	Memory Array Mapped Address Handle: 0x0068
+	Physical Device Handle: 0x0063
+	Memory Array Mapped Address Handle: 0x006A
 	Partition Row Position: Unknown
 	Interleave Position: 1
 	Interleaved Data Depth: 2
 
-Handle 0x0065, DMI type 17, 28 bytes
+Handle 0x0064, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x005F
-	Error Information Handle: 0x0064
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Error Information Handle: 0x0067
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
+	Part Number: KHX1866C10D3/4G   
+	Rank: 1
 
-Handle 0x0064, DMI type 18, 23 bytes
+Handle 0x0067, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -1058,7 +1069,18 @@ Handle 0x0064, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0067, DMI type 17, 28 bytes
+Handle 0x0066, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0064
+	Memory Array Mapped Address Handle: 0x006A
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x0069, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x005F
 	Error Information Handle: No Error
@@ -1071,14 +1093,14 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: 04CD
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F3-12800CL9-4GBXL
-	Rank: 2
+	Part Number: KHX1866C9D3/4GX   
+	Rank: 1
 
-Handle 0x0066, DMI type 18, 23 bytes
+Handle 0x0068, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -1088,26 +1110,26 @@ Handle 0x0066, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0069, DMI type 20, 19 bytes
+Handle 0x006B, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x00300000000
+	Ending Address: 0x003FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0067
-	Memory Array Mapped Address Handle: 0x0068
+	Physical Device Handle: 0x0069
+	Memory Array Mapped Address Handle: 0x006A
 	Partition Row Position: Unknown
 	Interleave Position: 2
 	Interleaved Data Depth: 2
 
-Handle 0x0068, DMI type 19, 15 bytes
+Handle 0x006A, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x005F
 	Partition Width: 4
 
-Handle 0x006A, DMI type 13, 22 bytes
+Handle 0x006C, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 6
@@ -1119,6 +1141,6 @@ BIOS Language Information
 		chs
 	Currently Installed Language: en-
 
-Handle 0x006B, DMI type 127, 4 bytes
+Handle 0x006D, DMI type 127, 4 bytes
 End Of Table
 

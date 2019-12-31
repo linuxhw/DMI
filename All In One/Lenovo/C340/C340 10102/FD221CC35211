@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-76 structures occupying 2812 bytes.
+76 structures occupying 2824 bytes.
 Table at 0x000EC840.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -53,7 +53,7 @@ Base Board Information
 	Version: No DPK
 	Serial Number: --
 	Asset Tag: --
-	Features:
+	...
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: To be filled by O.E.M.
@@ -69,7 +69,7 @@ Chassis Information
 	Version: To Be Filled By O.E.M.
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	...
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -718,22 +718,22 @@ Handle 0x0044, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0041
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
+	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: M471B5273CH0-CH9  
+	Rank: 2
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0045, DMI type 17, 34 bytes
 Memory Device
@@ -801,8 +801,8 @@ Memory Device
 Handle 0x0048, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 6 GB
 	Physical Array Handle: 0x0041
 	Partition Width: 4
 

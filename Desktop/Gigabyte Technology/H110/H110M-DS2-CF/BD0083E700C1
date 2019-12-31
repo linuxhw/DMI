@@ -1,7 +1,6 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-# SMBIOS implementations newer than version 2.7 are not
-# fully supported by this version of dmidecode.
 87 structures occupying 4542 bytes.
 Table at 0x87490000.
 
@@ -731,18 +730,18 @@ Memory Device
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: <OUT OF SPEC>
+	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2133 MHz
+	Speed: 2133 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX2400C15D4/8G     
 	Rank: 2
-	Configured Clock Speed: 2133 MHz
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  1.200 V
+	Configured Clock Speed: 2133 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 1.2 V
 
 Handle 0x0044, DMI type 17, 40 bytes
 Memory Device
@@ -764,9 +763,9 @@ Memory Device
 	Part Number: Not Specified
 	Rank: Unknown
 	Configured Clock Speed: Unknown
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
 Handle 0x0045, DMI type 17, 40 bytes
 Memory Device
@@ -788,9 +787,9 @@ Memory Device
 	Part Number: Not Specified
 	Rank: Unknown
 	Configured Clock Speed: Unknown
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
 Handle 0x0046, DMI type 17, 40 bytes
 Memory Device
@@ -812,9 +811,9 @@ Memory Device
 	Part Number: Not Specified
 	Rank: Unknown
 	Configured Clock Speed: Unknown
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
 Handle 0x0047, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -949,12 +948,12 @@ Handle 0x0052, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 6
-		0x0048 (<OUT OF SPEC>)
-		0x004C (<OUT OF SPEC>)
-		0x004D (<OUT OF SPEC>)
-		0x004E (<OUT OF SPEC>)
-		0x004F (<OUT OF SPEC>)
-		0x0050 (<OUT OF SPEC>)
+		0x0048 (OEM-specific)
+		0x004C (OEM-specific)
+		0x004D (OEM-specific)
+		0x004E (OEM-specific)
+		0x004F (OEM-specific)
+		0x0050 (OEM-specific)
 
 Handle 0x0053, DMI type 13, 22 bytes
 BIOS Language Information
@@ -985,7 +984,7 @@ Handle 0x0054, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
-		0x0000 (<OUT OF SPEC>)
+		0x0000 (OEM-specific)
 
 Handle 0x0055, DMI type 219, 81 bytes
 OEM-specific Type

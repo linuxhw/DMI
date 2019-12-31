@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 63 structures occupying 2597 bytes.
 Table at 0x000E0850.
@@ -38,7 +39,7 @@ System Information
 	Version: 0.1
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: Other
 	SKU Number: System SKUNumber
 	Family: HuronRiver System
 
@@ -580,7 +581,7 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
@@ -631,7 +632,7 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
@@ -695,14 +696,14 @@ OEM-specific Type
 
 Handle 0x003D, DMI type 15, 29 bytes
 System Event Log
-	Area Length: 18 bytes
+	Area Length: 34 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000000
+	Change Token: 0x00000001
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error

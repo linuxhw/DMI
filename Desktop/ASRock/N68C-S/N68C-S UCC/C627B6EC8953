@@ -1,4 +1,4 @@
-# dmidecode 3.0
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 22 structures occupying 1127 bytes.
@@ -55,7 +55,7 @@ Base Board Information
 	Version:                       
 	Serial Number: --
 	Asset Tag: --
-	Features:
+	...
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:                       
@@ -86,8 +86,8 @@ Processor Information
 	Type: Central Processor
 	Family: Athlon II
 	Manufacturer: AMD              
-	ID: 62 0F 10 00 FF FB 8B 17
-	Signature: Family 16, Model 6, Stepping 2
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -112,11 +112,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Athlon(tm) II X2 215 Processor                  
+	Version: AMD Athlon(tm) II X3 460 Processor                  
 	Voltage: 1.5 V
 	External Clock: 200 MHz
-	Max Speed: 2700 MHz
-	Current Speed: 2700 MHz
+	Max Speed: 3400 MHz
+	Current Speed: 3400 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket 940
 	L1 Cache Handle: 0x0005
@@ -132,8 +132,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 256 kB
-	Maximum Size: 256 kB
+	Installed Size: 384 kB
+	Maximum Size: 384 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -148,8 +148,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1536 kB
+	Maximum Size: 1536 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -193,11 +193,11 @@ Memory Module Information
 Handle 0x0009, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM1
-	Bank Connections: 0
-	Current Speed: Unknown
-	Type: Other
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Bank Connections: 0 7
+	Current Speed: 166 ns
+	Type: ECC DIMM
+	Installed Size: 4096 MB (Double-bank Connection)
+	Enabled Size: 4096 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 9, 13 bytes
@@ -260,8 +260,8 @@ Physical Memory Array
 Handle 0x000F, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0011FFFFFFF
-	Range Size: 4608 MB
+	Ending Address: 0x0021FFFFFFF
+	Range Size: 8704 MB
 	Physical Array Handle: 0x000E
 	Partition Width: 1
 
@@ -278,7 +278,7 @@ Memory Device
 	Bank Locator: BANK0
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 400 MHz
+	Speed: 400 MT/s
 	Manufacturer: Manufacturer0
 	Serial Number: --
 	Asset Tag: --
@@ -297,23 +297,29 @@ Handle 0x0012, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x000E
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: Other
+	Size: 4096 MB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
+	Type: Other
+	Type Detail: Synchronous
+	Speed: 400 MT/s
 	Manufacturer: Manufacturer1
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum1
 
-Handle 0x0013, DMI type 126, 19 bytes
-Inactive
+Handle 0x0013, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0012
+	Memory Array Mapped Address Handle: 0x000F
+	Partition Row Position: 1
 
 Handle 0x0014, DMI type 32, 20 bytes
 System Boot Information

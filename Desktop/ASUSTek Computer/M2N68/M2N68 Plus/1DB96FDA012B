@@ -206,11 +206,11 @@ Memory Controller Information
 Handle 0x0009, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM0
-	Bank Connections: None
-	Current Speed: Unknown
-	Type: Unknown
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Bank Connections: 0 1
+	Current Speed: 25 ns
+	Type: DIMM
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
@@ -522,8 +522,8 @@ Physical Memory Array
 Handle 0x002D, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x0012FFFFFFF
+	Range Size: 4864 MB
 	Physical Array Handle: 0x002C
 	Partition Width: 1
 
@@ -531,23 +531,29 @@ Handle 0x002E, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x002C
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 800 MT/s
 	Manufacturer: Manufacturer0
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum0
 
-Handle 0x002F, DMI type 126, 19 bytes
-Inactive
+Handle 0x002F, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x002E
+	Memory Array Mapped Address Handle: 0x002D
+	Partition Row Position: 1
 
 Handle 0x0030, DMI type 17, 27 bytes
 Memory Device
@@ -570,8 +576,8 @@ Memory Device
 
 Handle 0x0031, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0030
 	Memory Array Mapped Address Handle: 0x002D

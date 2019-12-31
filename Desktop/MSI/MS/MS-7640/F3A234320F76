@@ -2,7 +2,7 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 54 structures occupying 2232 bytes.
-Table at 0x000ED490.
+Table at 0xBE84D018.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -111,10 +111,10 @@ Processor Information
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
 	Version: AMD FX(tm)-8150 Eight-Core Processor           
-	Voltage: 1.4 V
+	Voltage: 1.3 V
 	External Clock: 200 MHz
-	Max Speed: 3600 MHz
-	Current Speed: 3600 MHz
+	Max Speed: 3400 MHz
+	Current Speed: 3400 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM3
 	L1 Cache Handle: 0x0005
@@ -441,8 +441,8 @@ Physical Memory Array
 Handle 0x0027, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0026
 	Partition Width: 255
 
@@ -498,33 +498,25 @@ Handle 0x002C, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0026
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
+	Total Width: Unknown
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM2
 	Bank Locator: A1_BANK2
-	Type: DDR3
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 800 MT/s
-	Manufacturer: Undefined       
+	Type: Unknown
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: A1_Manufacturer2
 	Serial Number: --
 	Asset Tag: --
-	Part Number:                   
-	Rank: 2
-	Configured Clock Speed: 800 MT/s
+	Part Number: Array1_PartNumber2
+	Rank: Unknown
+	Configured Clock Speed: Unknown
 
-Handle 0x002D, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0000000FFFF
-	Range Size: 64 kB
-	Physical Device Handle: 0x002C
-	Memory Array Mapped Address Handle: 0x0027
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+Handle 0x002D, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x002E, DMI type 17, 34 bytes
 Memory Device
@@ -550,8 +542,8 @@ Memory Device
 Handle 0x002F, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0000000FFFF
-	Range Size: 64 kB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x002E
 	Memory Array Mapped Address Handle: 0x0027
 	Partition Row Position: Unknown

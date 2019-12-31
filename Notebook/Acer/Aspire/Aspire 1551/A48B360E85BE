@@ -1,7 +1,7 @@
 # dmidecode 2.12
 SMBIOS 2.6 present.
 25 structures occupying 1212 bytes.
-Table at 0x6FEC5000.
+Table at 0xAFEC5000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -244,27 +244,27 @@ Handle 0x000F, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x000D
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: 2
 	Locator: S2
 	Bank Locator: DIMM2
-	Type: Reserved
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer:                 
+	Speed: 533 MHz
+	Manufacturer: 80CE            
 	Serial Number: --
 	Asset Tag: --
-	Part Number:                   
+	Part Number: M471B5673FH0-CF8  
 	Rank: Unknown
 
 Handle 0x0010, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x000D
 	Partition Width: 2
 
@@ -281,9 +281,9 @@ Memory Device Mapped Address
 
 Handle 0x0012, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x0007FFFFC00
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 1 kB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x000F
 	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: 2

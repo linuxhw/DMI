@@ -160,7 +160,7 @@ Handle 0x0004, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPU 1
 	Type: Central Processor
-	Family: Core i5
+	Family: Xeon
 	Manufacturer: Intel            
 	ID: A7 06 02 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 42, Stepping 7
@@ -193,11 +193,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i5-2400 CPU @ 3.10GH         
+	Version: Intel(R) Xeon(R) CPU E31270 @ 3.40GH           
 	Voltage: 0.0 V
 	External Clock: 100 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 3100 MHz
+	Current Speed: 3400 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -250,15 +250,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 8192 kB
+	Maximum Size: 8192 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
 	Speed: Unknown
 	Error Correction Type: None
 	System Type: Unified
-	Associativity: Other
+	Associativity: 16-way Set-associative
 
 Handle 0x0008, DMI type 8, 9 bytes
 Port Connector Information
@@ -562,23 +562,23 @@ Handle 0x002E, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x002D
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: 859B
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
+	Part Number: CT51264BD160BJ.C8F
+	Rank: 1
 
-Handle 0x002F, DMI type 17, 28 bytes
+Handle 0x0030, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x002D
 	Error Information Handle: Not Provided
@@ -598,7 +598,7 @@ Memory Device
 	Part Number: CT51264BD160BJ.C8F
 	Rank: 1
 
-Handle 0x0031, DMI type 17, 28 bytes
+Handle 0x0032, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x002D
 	Error Information Handle: Not Provided
@@ -618,25 +618,25 @@ Memory Device
 	Part Number: [Empty]
 	Rank: Unknown
 
-Handle 0x0032, DMI type 17, 28 bytes
+Handle 0x003E, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x002D
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4096 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 3
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: 859B
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: [Empty]
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT51264BD160BJ.C8F
-	Rank: 1
+	Part Number: [Empty]
+	Rank: Unknown
 
 Handle 0x003D, DMI type 19, 15 bytes
 Memory Array Mapped Address
@@ -646,27 +646,23 @@ Memory Array Mapped Address
 	Physical Array Handle: 0x002D
 	Partition Width: 4
 
-Handle 0x0030, DMI type 20, 19 bytes
+Handle 0x002F, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x002F
+	Physical Device Handle: 0x002E
 	Memory Array Mapped Address Handle: 0x003D
 	Partition Row Position: 1
-	Interleave Position: 1
-	Interleaved Data Depth: 2
 
-Handle 0x003E, DMI type 20, 19 bytes
+Handle 0x0031, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00100000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0032
+	Physical Device Handle: 0x0030
 	Memory Array Mapped Address Handle: 0x003D
 	Partition Row Position: 1
-	Interleave Position: 2
-	Interleaved Data Depth: 2
 
 Handle 0x0033, DMI type 24, 5 bytes
 Hardware Security

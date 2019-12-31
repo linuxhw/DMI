@@ -1,14 +1,14 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-59 structures occupying 2432 bytes.
-Table at 0x000E6910.
+58 structures occupying 2405 bytes.
+Table at 0x000E6CF0.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 1.F0
-	Release Date: 11/06/2018
+	Version: 1.J1
+	Release Date: 05/13/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -32,7 +32,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 5.13
+	BIOS Revision: 5.14
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -196,7 +196,7 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 256 GB
+	Maximum Capacity: 128 GB
 	Error Information Handle: 0x000E
 	Number Of Devices: 4
 
@@ -292,7 +292,7 @@ Processor Information
 	Voltage: 1.5 V
 	External Clock: 100 MHz
 	Max Speed: 3900 MHz
-	Current Speed: 3850 MHz
+	Current Speed: 3600 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
 	L1 Cache Handle: 0x0011
@@ -335,7 +335,7 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: 2933 MT/s
+	Speed: 2667 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
@@ -369,13 +369,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2933 MT/s
+	Speed: 2667 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX3000C15/16GX     
 	Rank: 2
-	Configured Clock Speed: 1467 MT/s
+	Configured Clock Speed: 1333 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -414,7 +414,7 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: 2933 MT/s
+	Speed: 2667 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
@@ -448,7 +448,7 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: 2933 MT/s
+	Speed: 2667 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
@@ -685,7 +685,7 @@ System Slot Information
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:16:01.0
+	Bus Address: 0000:20:01.0
 
 Handle 0x0037, DMI type 41, 11 bytes
 Onboard Device
@@ -693,20 +693,12 @@ Onboard Device
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:16:00.0
+	Bus Address: 0000:20:00.0
 
-Handle 0x0038, DMI type 41, 11 bytes
-Onboard Device
-	Reference Designation: Realtek ALC898
-	Type: Sound
-	Status: Enabled
-	Type Instance: 1
-	Bus Address: 0000:38:00.6
-
-Handle 0x0039, DMI type 143, 16 bytes
+Handle 0x0038, DMI type 143, 16 bytes
 OEM-specific Type
 	Header and Data:
-		8F 10 39 00 00 01 02 03 04 05 06 07 08 09 0A 0B
+		8F 10 38 00 00 01 02 03 04 05 06 07 08 09 0A 0B
 	Strings:
 		VBIOS-0000
 		RAID-14.8.0.1042
@@ -721,6 +713,6 @@ OEM-specific Type
 		N/A
 		N/A
 
-Handle 0x003A, DMI type 127, 4 bytes
+Handle 0x0039, DMI type 127, 4 bytes
 End Of Table
 

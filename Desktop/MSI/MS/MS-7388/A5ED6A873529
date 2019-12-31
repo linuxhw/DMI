@@ -511,23 +511,29 @@ Handle 0x002E, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x002A
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: Other
+	Total Width: 64 bits
+	Data Width: 72 bits
+	Size: 2048 MB
+	Form Factor: <OUT OF SPEC>
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 800 MT/s
 	Manufacturer: Manufacturer01
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ModulePartNumber01
+	Part Number: PSD22G800260000000
 
-Handle 0x002F, DMI type 126, 19 bytes
-Inactive
+Handle 0x002F, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x002E
+	Memory Array Mapped Address Handle: 0x002B
+	Partition Row Position: 1
 
 Handle 0x0030, DMI type 17, 27 bytes
 Memory Device
@@ -550,8 +556,8 @@ Memory Device
 
 Handle 0x0031, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0030
 	Memory Array Mapped Address Handle: 0x002B
@@ -561,29 +567,23 @@ Handle 0x0032, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x002A
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 72 bits
-	Size: 2048 MB
-	Form Factor: <OUT OF SPEC>
+	Total Width: Unknown
+	Data Width: 64 bits
+	Size: No Module Installed
+	Form Factor: Other
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
-	Type: DDR2
-	Type Detail: Synchronous
-	Speed: 800 MT/s
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
 	Manufacturer: Manufacturer03
 	Serial Number: --
 	Asset Tag: --
-	Part Number: PSD22G800260000000
+	Part Number: ModulePartNumber03
 
-Handle 0x0033, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x0032
-	Memory Array Mapped Address Handle: 0x002B
-	Partition Row Position: 1
+Handle 0x0033, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x0034, DMI type 32, 20 bytes
 System Boot Information

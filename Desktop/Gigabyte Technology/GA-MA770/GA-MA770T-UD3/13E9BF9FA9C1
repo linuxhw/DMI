@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 55 structures occupying 2813 bytes.
 Table at 0x000F0100.
@@ -56,7 +57,7 @@ Base Board Information
 	Version:  
 	Serial Number: --
 
-Handle 0x0003, DMI type 3, 17 bytes
+807075653E24ECB98B63F18E00309403
 Chassis Information
 	Manufacturer: Gigabyte Technology Co., Ltd.
 	Type: Desktop
@@ -64,7 +65,7 @@ Chassis Information
 	Version:  
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Unknown
+	...
 	Power Supply State: Unknown
 	Thermal State: Unknown
 	Security Status: Unknown
@@ -114,7 +115,7 @@ Processor Information
 	L3 Cache Handle: Not Provided
 	Serial Number: --
 	Asset Tag: --
-	Part Number:  
+	...
 
 Handle 0x0005, DMI type 5, 24 bytes
 Memory Controller Information
@@ -146,8 +147,8 @@ Memory Module Information
 	Bank Connections: 1
 	Current Speed: 64 ns
 	Type: Other Unknown EDO
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -166,8 +167,8 @@ Memory Module Information
 	Bank Connections: 3
 	Current Speed: 64 ns
 	Type: Other Unknown EDO
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
@@ -456,18 +457,18 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
 	Bank Locator: Bank0/1
 	Type: Unknown
 	Type Detail: None
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer:  
 	Serial Number: --
 	Asset Tag: --
-	Part Number:  
+	...
 
 Handle 0x0027, DMI type 17, 27 bytes
 Memory Device
@@ -482,11 +483,11 @@ Memory Device
 	Bank Locator: Bank2/3
 	Type: Unknown
 	Type Detail: None
-	Speed: 400 MHz
+	Speed: 400 MT/s
 	Manufacturer:  
 	Serial Number: --
 	Asset Tag: --
-	Part Number:  
+	...
 
 Handle 0x0028, DMI type 17, 27 bytes
 Memory Device
@@ -494,18 +495,18 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: A2
 	Bank Locator: Bank4/5
 	Type: Unknown
 	Type Detail: None
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer:  
 	Serial Number: --
 	Asset Tag: --
-	Part Number:  
+	...
 
 Handle 0x0029, DMI type 17, 27 bytes
 Memory Device
@@ -520,11 +521,11 @@ Memory Device
 	Bank Locator: Bank6/7
 	Type: Unknown
 	Type Detail: None
-	Speed: 400 MHz
+	Speed: 400 MT/s
 	Manufacturer:  
 	Serial Number: --
 	Asset Tag: --
-	Part Number:  
+	...
 
 Handle 0x002A, DMI type 19, 15 bytes
 Memory Array Mapped Address
@@ -537,8 +538,8 @@ Memory Array Mapped Address
 Handle 0x002B, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0026
 	Memory Array Mapped Address Handle: 0x002A
 	Partition Row Position: 1
@@ -555,8 +556,8 @@ Memory Device Mapped Address
 Handle 0x002D, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
 	Physical Device Handle: 0x0028
 	Memory Array Mapped Address Handle: 0x002A
 	Partition Row Position: 1
@@ -577,18 +578,18 @@ System Boot Information
 Handle 0x0030, DMI type 188, 212 bytes
 OEM-specific Type
 	Header and Data:
-		BC D4 30 00 00 00 00 C0 00 00 00 00 00 00 00 40
+		BC D4 30 00 00 00 00 D0 00 00 00 00 00 00 00 30
 		01 00 00 00 00 06 76 00 00 00 00 00 08 00 00 00
-		00 40 58 02 00 00 01 00 03 00 00 00 00 00 3F 01
+		00 40 58 02 00 00 01 00 03 00 00 00 00 00 2F 01
 		00 00 00 00 01 00 00 00 00 00 00 00 02 00 00 00
 		00 00 00 00 03 00 00 00 00 00 00 00 04 00 00 00
 		00 00 00 00 05 00 00 00 00 00 00 00 06 00 00 00
-		00 00 00 00 07 00 00 00 03 40 00 C0 00 00 00 00
-		00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 07 00 00 00 03 30 00 D0 01 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		E0 3F F8 00 00 00 00 00 00 00 00 00 06 02 08 0D
-		58 00 22 18 A0 00 00 00 E4 00 34 00 67 DB 5C F7
-		77 AA 02 02 00 00 01 00 00 02 00 00 40 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 E0 3F F8 00
+		00 00 00 00 00 00 00 00 00 00 00 00 06 02 C8 0C
+		58 00 02 18 0A 00 00 00 E4 00 34 00 67 DB 5C EF
+		77 7A 42 00 00 00 01 00 00 02 00 00 40 00 00 00
 		5C 00 B0 4A 0E 09 48 5F 00 00 00 00 00 00 00 00
 		00 00 00 00
 
@@ -599,9 +600,9 @@ OEM-specific Type
 		FB 0F E0 2C 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 06 00 C0 1E
-		00 00 00 00 00 00 00 00 27 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 27 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 06 00 80 1D
+		00 00 00 00 00 00 00 00 25 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 25 00 00 00 00 00 00 00
 		24 A4 40 04 FB 0F E0 2C 01 01 00 00 00 00 00 00
 		00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		04 00 00 00 00 00 00 FF 00 00 00 00 00 00 01 00
@@ -614,15 +615,15 @@ Handle 0x0032, DMI type 192, 244 bytes
 OEM-specific Type
 	Header and Data:
 		C0 F4 32 00 06 40 00 00 22 32 11 20 E7 88 71 0E
-		FB 2D 0A 00 00 00 00 00 22 32 11 20 00 00 00 00
-		22 29 35 39 00 00 00 00 43 4B 50 54 00 3D 00 00
-		00 00 2E 2E 2E 2E 0C 0C 0E 0A 2E 2E 2E 2E 0E 0E
-		0C 0C 00 0C D3 CB 2E 3B FB 2D 0A 00 00 20 00 20
-		00 00 00 00 00 00 00 00 00 00 B0 00 B4 00 B7 00
-		BC 00 C1 00 00 00 00 00 00 00 00 00 00 00 10 00
-		14 00 17 00 1C 00 00 00 00 00 00 00 00 00 00 00
-		C7 00 D1 00 DD 00 E6 00 00 00 00 00 00 00 00 00
-		07 00 11 00 1D 00 06 00 00 00 00 00 00 00 00 00
+		FE 2E 0A 00 00 00 00 00 22 32 11 20 1F 26 33 37
+		1F 06 13 17 41 48 50 51 01 08 10 11 3B 00 00 00
+		00 00 0E 0E 0A 08 0E 0E 0A 08 08 0C 0E 0E 08 0C
+		0E 0E 08 00 D3 CB 2E 3B FE 2E 0A 00 00 20 00 20
+		A9 00 AC 00 AD 00 B4 00 B9 00 09 00 0C 00 0D 00
+		14 00 00 00 09 00 0C 00 0D 00 14 00 00 00 09 00
+		0C 00 0D 00 14 00 00 00 BE 00 C8 00 D5 00 DF 00
+		1E 00 08 00 15 00 1F 00 1E 00 08 00 15 00 1F 00
+		1E 00 08 00 15 00 1F 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -637,7 +638,7 @@ OEM-specific Type
 		00 00 06 00 00 00 00 00 33 33 33 00 0F 0F 0F 0F
 		0F 0F 0F 0F 0F 0F 0F 0F 0F 0F 0F 0F 0F 0F 00 00
 		00 00 1F 1F 1F 1F 1F 1F 1F 1F 1F 1F 1F 1F 1F 1F
-		1F 1F 1F 1F ED E8 7A 36 00 00 06 00 00 00 00 00
+		1F 1F 1F 1F 6D F8 72 36 00 00 06 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -653,12 +654,12 @@ OEM-specific Type
 Handle 0x0034, DMI type 196, 244 bytes
 OEM-specific Type
 	Header and Data:
-		C4 F4 34 00 06 40 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 10 00 17 00 24 00 29 00 29 00 00 00
-		00 00 00 00 00 00 00 00 00 00 10 00 17 00 00 00
-		00 00 00 00 00 00 33 00 3C 00 3F 00 41 00 00 00
-		00 00 00 00 00 00 13 00 1C 00 1F 00 01 00 10 17
-		24 29 33 3C 3F 41 29 00 00 00 9C 01 00 00 00 00
+		C4 F4 34 00 06 40 00 00 0F 00 15 00 1E 00 24 00
+		00 00 00 00 0F 00 15 00 1E 00 04 00 00 00 0F 00
+		15 00 1E 00 04 00 00 00 00 00 0F 00 15 00 2E 00
+		37 00 3F 00 40 00 0E 00 17 00 1F 00 00 00 0E 00
+		17 00 1F 00 00 00 0E 00 17 00 1F 00 00 00 0F 15
+		1E 24 2E 37 3F 40 6B 00 00 00 F7 01 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

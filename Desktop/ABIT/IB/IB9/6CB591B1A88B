@@ -56,7 +56,7 @@ Base Board Information
 	Version: 1.0  
 	Serial Number: --
 
-Handle 0x0003, DMI type 3, 17 bytes
+807075653E24ECB98B63F18E00309403
 Chassis Information
 	Manufacturer: System Enclosure Manufacter
 	Type: Desktop
@@ -119,7 +119,7 @@ Processor Information
 	L3 Cache Handle: Not Provided
 	Serial Number: --
 	Asset Tag: --
-	Part Number:  
+	...
 
 Handle 0x0005, DMI type 5, 24 bytes
 Memory Controller Information
@@ -156,21 +156,21 @@ Memory Module Information
 Handle 0x0007, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A1
-	Bank Connections: None
+	Bank Connections: 2
 	Current Speed: Unknown
-	Type: Unknown
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Type: DIMM
+	Installed Size: 512 MB (Single-bank Connection)
+	Enabled Size: 512 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0008, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A2
-	Bank Connections: None
+	Bank Connections: 4
 	Current Speed: Unknown
-	Type: Unknown
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Type: DIMM
+	Installed Size: 512 MB (Single-bank Connection)
+	Enabled Size: 512 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
@@ -334,16 +334,16 @@ Handle 0x0018, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0016
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 512 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1
 	Bank Locator: Bank2/3
 	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
+	Type Detail: Synchronous
+	Speed: 18765 MHz
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
@@ -353,16 +353,16 @@ Handle 0x0019, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0016
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 512 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A2
 	Bank Locator: Bank4/5
 	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
+	Type Detail: Synchronous
+	Speed: 18765 MHz
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
@@ -390,8 +390,8 @@ Memory Device
 Handle 0x001B, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Array Handle: 0x0016
 	Partition Width: 1
 
@@ -406,18 +406,18 @@ Memory Device Mapped Address
 
 Handle 0x001D, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00040000000
+	Ending Address: 0x0005FFFFFFF
+	Range Size: 512 MB
 	Physical Device Handle: 0x0018
 	Memory Array Mapped Address Handle: 0x001B
 	Partition Row Position: 1
 
 Handle 0x001E, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00060000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 512 MB
 	Physical Device Handle: 0x0019
 	Memory Array Mapped Address Handle: 0x001B
 	Partition Row Position: 1

@@ -138,8 +138,8 @@ Physical Memory Array
 Handle 0x0009, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 6 GB
 	Physical Array Handle: 0x0008
 	Partition Width: 1
 
@@ -149,23 +149,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM0
 	Bank Locator: A1_BANK0
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer0
+	Speed: 1333 MT/s
+	Manufacturer: Undefined       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber0
-	Rank: Unknown
+	Part Number: CT25664BA160B.D8FE
+	Rank: 1
 	Configured Clock Speed: Unknown
 
-Handle 0x000B, DMI type 126, 35 bytes
-Inactive
+Handle 0x000B, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x000A
+	Memory Array Mapped Address Handle: 0x0009
+	Partition Row Position: 1
 
 Handle 0x000C, DMI type 17, 34 bytes
 Memory Device
@@ -214,8 +220,8 @@ Memory Device
 
 Handle 0x000F, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x0017FFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x000E
 	Memory Array Mapped Address Handle: 0x0009

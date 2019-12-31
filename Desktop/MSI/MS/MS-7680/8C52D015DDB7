@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 105 structures occupying 3786 bytes.
 Table at 0x000E9410.
@@ -422,8 +423,8 @@ Handle 0x0028, DMI type 18, 23 bytes
 Handle 0x0029, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0027
 	Partition Width: 1
 
@@ -433,19 +434,19 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM0
 	Bank Locator: A1_BANK0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Kingston        
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 99U5403-124.A00LF 
-	Rank: 2
+	Part Number: 99U5474-013.A00LF 
+	Rank: 1
 	Configured Clock Speed: Unknown
 
 Handle 0x002B, DMI type 18, 23 bytes
@@ -461,8 +462,8 @@ Handle 0x002B, DMI type 18, 23 bytes
 Handle 0x002C, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x002A
 	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: 1
@@ -507,20 +508,20 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM2
 	Bank Locator: A1_BANK2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Kingston        
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 99U5403-124.A00LF 
-	Rank: 2
-	Configured Clock Speed: 58785 MHz
+	Part Number: 99U5474-013.A00LF 
+	Rank: 1
+	Configured Clock Speed: 58785 MT/s
 
 Handle 0x0031, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -534,9 +535,9 @@ Handle 0x0031, DMI type 18, 23 bytes
 
 Handle 0x0032, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0030
 	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: 1
@@ -560,7 +561,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Array1_PartNumber3
 	Rank: Unknown
-	Configured Clock Speed: 66 MHz
+	Configured Clock Speed: 66 MT/s
 
 Handle 0x0034, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -740,8 +741,9 @@ System Power Supply
 	Input Current Probe Handle: 0x0044
 
 Handle 0x0048, DMI type 34, 16 bytes
+Invalid entry length (16). Fixed up to 11.
 Management Device
-	Description: 2
+	Description: LM78-2
 	Type: LM78
 	Address: 0x00000000
 	Address Type: I/O Port

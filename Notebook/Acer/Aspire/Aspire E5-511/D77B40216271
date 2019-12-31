@@ -1,7 +1,7 @@
-# dmidecode 2.12
-# SMBIOS entry point at 0x78607000
+# dmidecode 3.2
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-24 structures occupying 1217 bytes.
+25 structures occupying 1275 bytes.
 Table at 0x78606000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -50,7 +50,7 @@ Base Board Information
 	Version: V1.10
 	Serial Number: --
 	Asset Tag: --
-	Features:
+	...
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Type2 - Board Chassis Location
@@ -66,7 +66,7 @@ Chassis Information
 	Version: Chassis Version
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	...
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -152,8 +152,8 @@ Memory Module Information
 	Bank Connections: 0 0
 	Current Speed: Unknown
 	Type: None
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 7, 19 bytes
@@ -259,40 +259,40 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: 17
 	Serial Number: --
 	Asset Tag: --
 	Part Number: HMT451S6BFR8A-PB  
 	Rank: Unknown
-	Configured Clock Speed: 1333 MHz
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0011, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000F
 	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK 1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
+	Part Number: KHX1600C9S3L/4G   
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0012, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x000F
 	Partition Width: 2
 
@@ -305,25 +305,38 @@ Memory Device Mapped Address
 	Memory Array Mapped Address Handle: 0x0012
 	Partition Row Position: Unknown
 
-Handle 0x0014, DMI type 170, 70 bytes
-OEM-specific Type
-	Header and Data:
-		AA 46 14 00 01 08 19 00 FF 00 0F 00 06 00 03 01
-		01 08 41 01 04 00 42 01 20 00 43 01 40 00 44 01
-		08 00 45 01 10 00 48 01 01 00 49 01 02 00 61 01
-		08 00 62 01 01 00 63 01 02 00 64 01 04 00 81 01
-		04 00 83 01 02 00
+Handle 0x0014, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0011
+	Memory Array Mapped Address Handle: 0x0012
+	Partition Row Position: Unknown
 
-Handle 0x0015, DMI type 171, 24 bytes
+Handle 0x0015, DMI type 170, 70 bytes
+Acer Hotkey Function
+	Function bitmap for Communication Button: 0x0801
+		WiFi: Yes
+		3G: No
+		WiMAX: No
+		Bluetooth: Yes
+	Function bitmap for Application Button: 0x0019
+	Function bitmap for Media Button: 0x00ff
+	Function bitmap for Display Button: 0x000f
+	Function bitmap for Others Button: 0x0006
+	Communication Function Key Number: 3
+
+Handle 0x0016, DMI type 171, 24 bytes
 OEM-specific Type
 	Header and Data:
-		AB 18 15 00 01 86 80 31 0F 05 86 80 04 0F 07 8C
+		AB 18 16 00 01 86 80 31 0F 05 86 80 04 0F 07 8C
 		16 36 00 08 CA 04 0B 30
 
-Handle 0x0016, DMI type 172, 24 bytes
+Handle 0x0017, DMI type 172, 24 bytes
 OEM-specific Type
 	Header and Data:
-		AC 18 16 00 02 1D 01 FF 00 02 01 00 03 FF 00 04
+		AC 18 17 00 02 1D 01 FF 00 02 01 00 03 FF 00 04
 		01 00 05 0F 00 06 FF 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

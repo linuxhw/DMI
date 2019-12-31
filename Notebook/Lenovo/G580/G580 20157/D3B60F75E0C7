@@ -1,14 +1,14 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-63 structures occupying 2613 bytes.
+62 structures occupying 2582 bytes.
 Table at 0x000E0840.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: 62CN40WW
-	Release Date: 07/27/2012
+	Version: 62CN44WW
+	Release Date: 02/01/2013
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 4096 kB
@@ -31,8 +31,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.64
-	Firmware Revision: 1.54
+	BIOS Revision: 1.68
+	Firmware Revision: 1.57
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -593,7 +593,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -601,10 +601,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B2873FHS-CH9  
+	Part Number: HMT325S6CFR8C-PB  
 	Rank: Unknown
 	Configured Clock Speed: 1333 MT/s
 
@@ -674,10 +674,10 @@ Memory Device
 Handle 0x0039, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0035
-	Memory Array Mapped Address Handle: 0x003C
+	Memory Array Mapped Address Handle: 0x003B
 	Partition Row Position: 1
 	Interleave Position: 1
 	Interleaved Data Depth: 2
@@ -685,32 +685,23 @@ Memory Device Mapped Address
 Handle 0x003A, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0036
-	Memory Array Mapped Address Handle: 0x003C
+	Memory Array Mapped Address Handle: 0x003B
 	Partition Row Position: 1
 	Interleave Position: 2
 	Interleaved Data Depth: 2
 
-Handle 0x003B, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 1 GB
-	Physical Device Handle: 0x0037
-	Memory Array Mapped Address Handle: 0x003C
-	Partition Row Position: 1
-
-Handle 0x003C, DMI type 19, 31 bytes
+Handle 0x003B, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0034
 	Partition Width: 4
 
-Handle 0x003D, DMI type 15, 81 bytes
+Handle 0x003C, DMI type 15, 81 bytes
 System Event Log
 	Area Length: 18 bytes
 	Header Start Offset: 0x0000

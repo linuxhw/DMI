@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 26 structures occupying 1395 bytes.
 Table at 0x000FD5F0.
@@ -261,8 +262,8 @@ Physical Memory Array
 Handle 0x000F, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0025FFFFFFF
-	Range Size: 9728 MB
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
 	Physical Array Handle: 0x000E
 	Partition Width: 1
 
@@ -272,14 +273,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 667 MHz
+	Speed: 667 MT/s
 	Manufacturer: Manufacturer00
 	Serial Number: --
 	Asset Tag: --
@@ -288,8 +289,8 @@ Memory Device
 Handle 0x0011, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0010
 	Memory Array Mapped Address Handle: 0x000F
 	Partition Row Position: 1
@@ -298,29 +299,23 @@ Handle 0x0012, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x000E
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
+	Total Width: Unknown
 	Data Width: 64 bits
-	Size: 4096 MB
-	Form Factor: DIMM
+	Size: No Module Installed
+	Form Factor: Other
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Other
-	Type Detail: Synchronous
-	Speed: 667 MHz
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
 	Manufacturer: Manufacturer01
 	Serial Number: --
 	Asset Tag: --
 	Part Number: ModulePartNumber01
 
-Handle 0x0013, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0012
-	Memory Array Mapped Address Handle: 0x000F
-	Partition Row Position: 1
+Handle 0x0013, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x0014, DMI type 17, 27 bytes
 Memory Device
@@ -348,29 +343,23 @@ Handle 0x0016, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x000E
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
+	Total Width: Unknown
 	Data Width: 64 bits
-	Size: 1024 MB
-	Form Factor: DIMM
+	Size: No Module Installed
+	Form Factor: Other
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
-	Type: Other
-	Type Detail: Synchronous
-	Speed: 667 MHz
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
 	Manufacturer: Manufacturer03
 	Serial Number: --
 	Asset Tag: --
 	Part Number: ModulePartNumber03
 
-Handle 0x0017, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x0023FFFFFFF
-	Range Size: 1 GB
-	Physical Device Handle: 0x0016
-	Memory Array Mapped Address Handle: 0x000F
-	Partition Row Position: 1
+Handle 0x0017, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x0018, DMI type 32, 20 bytes
 System Boot Information

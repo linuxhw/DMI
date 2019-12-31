@@ -75,8 +75,8 @@ Processor Information
 	Type: Central Processor
 	Family: Other
 	Manufacturer: Intel
-	ID: F2 06 00 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 15, Stepping 2
+	ID: FB 06 00 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 15, Stepping 11
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -106,11 +106,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM)2 CPU 4300
+	Version: Intel(R) Core(TM)2 Duo CPU 
 	Voltage: 1.3 V
-	External Clock: 200 MHz
+	External Clock: 333 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 1800 MHz
+	Current Speed: 3000 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket 478
 	L1 Cache Handle: 0x000A
@@ -157,9 +157,9 @@ Memory Module Information
 	Socket Designation: A1
 	Bank Connections: 2
 	Current Speed: Unknown
-	Type: Unknown
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Type: Other
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0008, DMI type 6, 12 bytes
@@ -168,8 +168,8 @@ Memory Module Information
 	Bank Connections: 3
 	Current Speed: Unknown
 	Type: Other
-	Installed Size: 1024 MB (Single-bank Connection)
-	Enabled Size: 1024 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
@@ -177,9 +177,9 @@ Memory Module Information
 	Socket Designation: A3
 	Bank Connections: 4
 	Current Speed: Unknown
-	Type: Unknown
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Type: Other
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 7, 19 bytes
@@ -204,7 +204,7 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
+	Installed Size: 4096 kB
 	Maximum Size: 2048 kB
 	Supported SRAM Types:
 		Synchronous
@@ -387,16 +387,16 @@ Handle 0x001D, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x001B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1
 	Bank Locator: Bank2/3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
+	Speed: 800 MT/s
 	Manufacturer:  
 	Serial Number: --
 	Asset Tag: --
@@ -408,7 +408,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A2
@@ -425,16 +425,16 @@ Handle 0x001F, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x001B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A3
 	Bank Locator: Bank6/7
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
+	Speed: 800 MT/s
 	Manufacturer:  
 	Serial Number: --
 	Asset Tag: --
@@ -443,8 +443,8 @@ Memory Device
 Handle 0x0020, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x001B
 	Partition Width: 1
 
@@ -459,27 +459,27 @@ Memory Device Mapped Address
 
 Handle 0x0022, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x001D
 	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: 1
 
 Handle 0x0023, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 1 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: 1
 
 Handle 0x0024, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00180000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x001F
 	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: 1

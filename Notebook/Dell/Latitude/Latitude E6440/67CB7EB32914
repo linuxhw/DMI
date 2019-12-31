@@ -1,7 +1,7 @@
 # dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-96 structures occupying 4640 bytes.
+98 structures occupying 4806 bytes.
 Table at 0x000ECB60.
 
 Handle 0xDA00, DMI type 218, 251 bytes
@@ -603,7 +603,7 @@ Handle 0x0025, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: To Be Filled By O.E.M.
 
-Handle 0xDEDC, DMI type 13, 22 bytes
+Handle 0xDEE6, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
@@ -885,24 +885,24 @@ Onboard Device
 Handle 0x1601, DMI type 126, 26 bytes
 Inactive
 
-Handle 0xDED2, DMI type 130, 20 bytes
+Handle 0xDEDC, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 D2 DE 24 41 4D 54 00 00 00 00 00 A5 2F 02
+		82 14 DC DE 24 41 4D 54 00 00 00 00 00 A5 2F 02
 		01 00 00 00
 
-Handle 0xDED7, DMI type 131, 64 bytes
+Handle 0xDEE1, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 D7 DE 35 00 00 00 00 00 00 00 00 00 00 00
+		83 40 E1 DE 35 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 4F 8C 00 00 00 00 01 20 00 00 01 00 09 00
 		BA 0B 2A 00 00 00 00 00 C8 00 3A 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0xDECD, DMI type 136, 6 bytes
+Handle 0xDED7, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 CD DE 5A 5A
+		88 06 D7 DE 5A 5A
 
 Handle 0xB100, DMI type 177, 12 bytes
 OEM-specific Type
@@ -961,6 +961,24 @@ OEM-specific Type
 	Strings:
 		System Device Bay
 		CD-ROM,CD-RW,DVD,DVD+RW,DVD+/-RW,Hard Disk
+		CD-ROM
+
+Handle 0xDB01, DMI type 219, 11 bytes
+OEM-specific Type
+	Header and Data:
+		DB 0B 01 DB 03 01 02 03 FF 00 00
+	Strings:
+		System eSATA Bay
+		CD-ROM,CD-RW,DVD,DVD+RW,DVD+/-RW,Hard Disk
+		Hard Disk
+
+Handle 0xDB02, DMI type 219, 11 bytes
+OEM-specific Type
+	Header and Data:
+		DB 0B 02 DB 03 01 02 03 FF 00 00
+	Strings:
+		System eSATA Dock Bay
+		CD-ROM,CD-RW,DVD,DVD+RW,DVD+/-RW,Hard Disk
 		EMPTY     
 
 Handle 0xDC00, DMI type 220, 20 bytes
@@ -1008,6 +1026,6 @@ OEM-specific Type
 		_SIDAvf90w7wKZiZ
 		DELL
 
-Handle 0xDEE1, DMI type 127, 4 bytes
+Handle 0xDEEB, DMI type 127, 4 bytes
 End Of Table
 

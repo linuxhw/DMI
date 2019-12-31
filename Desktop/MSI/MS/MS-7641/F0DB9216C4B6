@@ -1,4 +1,4 @@
-# dmidecode 3.0
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 46 structures occupying 1578 bytes.
@@ -7,8 +7,8 @@ Table at 0x0009F800.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: V17.11
-	Release Date: 10/31/2012
+	Version: V17.17
+	Release Date: 04/22/2015
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 2048 kB
@@ -87,10 +87,10 @@ Handle 0x0004, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPU1
 	Type: Central Processor
-	Family: Athlon II
+	Family: FX
 	Manufacturer: AMD              
-	ID: 63 0F 10 00 FF FB 8B 17
-	Signature: Family 16, Model 6, Stepping 3
+	ID: 20 0F 60 00 FF FB 8B 17
+	Signature: Family 21, Model 2, Stepping 0
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -115,11 +115,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Athlon(tm) II X2 270 Processor                  
-	Voltage: 1.4 V
+	Version: AMD FX(tm)-6300 Six-Core Processor                  
+	Voltage: 1.2 V
 	External Clock: 200 MHz
-	Max Speed: 3400 MHz
-	Current Speed: 3400 MHz
+	Max Speed: 3500 MHz
+	Current Speed: 3500 MHz
 	Status: Populated, Disabled By BIOS
 	Upgrade: Socket AM3
 	L1 Cache Handle: 0x0005
@@ -128,9 +128,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
-	Core Count: 2
-	Core Enabled: 2
-	Thread Count: 2
+	Core Count: 6
+	Core Enabled: 6
+	Thread Count: 6
 	Characteristics:
 		64-bit capable
 
@@ -140,8 +140,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 256 kB
-	Maximum Size: 256 kB
+	Installed Size: 288 kB
+	Maximum Size: 288 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -156,8 +156,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 6144 kB
+	Maximum Size: 6144 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -172,15 +172,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 0 kB
-	Maximum Size: 0 kB
+	Installed Size: 8192 kB
+	Maximum Size: 8192 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
 	Speed: 1 ns
 	Error Correction Type: Multi-bit ECC
 	System Type: Unified
-	Associativity: Unknown
+	Associativity: 64-way Set-associative
 
 Handle 0x0008, DMI type 8, 9 bytes
 Port Connector Information
@@ -458,7 +458,7 @@ Memory Device
 	Bank Locator: BANK0
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Kingston      
 	Serial Number: --
 	Asset Tag: --
@@ -487,7 +487,7 @@ Memory Device
 	Bank Locator: BANK1
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Kingston      
 	Serial Number: --
 	Asset Tag: --

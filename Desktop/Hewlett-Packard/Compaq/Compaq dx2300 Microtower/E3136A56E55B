@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 34 structures occupying 995 bytes.
 Table at 0x000F0000.
@@ -58,7 +59,7 @@ Base Board Information
 	Version:  
 	Serial Number: --
 	Asset Tag: --
-	Features:
+	...
 		Board is a hosting board
 
 Handle 0x0003, DMI type 3, 17 bytes
@@ -124,7 +125,7 @@ Processor Information
 	L3 Cache Handle: Not Provided
 	Serial Number: --
 	Asset Tag: --
-	Part Number:  
+	...
 
 Handle 0x0005, DMI type 5, 20 bytes
 Memory Controller Information
@@ -149,21 +150,21 @@ Memory Controller Information
 Handle 0x0006, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A0
-	Bank Connections: 0
+	Bank Connections: 0 1
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 512 MB (Single-bank Connection)
-	Enabled Size: 512 MB (Single-bank Connection)
+	Installed Size: 1024 MB (Double-bank Connection)
+	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A1
-	Bank Connections: 2
+	Bank Connections: 2 3
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 512 MB (Single-bank Connection)
-	Enabled Size: 512 MB (Single-bank Connection)
+	Installed Size: 1024 MB (Double-bank Connection)
+	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0008, DMI type 7, 19 bytes
@@ -329,14 +330,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 512 MB
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
 	Bank Locator: Bank0/1
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MHz
+	Speed: 667 MT/s
 	Manufacturer: None
 	Serial Number: --
 	Asset Tag: --
@@ -348,14 +349,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 512 MB
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1
 	Bank Locator: Bank2/3
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MHz
+	Speed: 667 MT/s
 	Manufacturer: None
 	Serial Number: --
 	Asset Tag: --
@@ -364,25 +365,25 @@ Memory Device
 Handle 0x001B, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Array Handle: 0x0018
 	Partition Width: 1
 
 Handle 0x001C, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0001FFFFFFF
-	Range Size: 512 MB
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0019
 	Memory Array Mapped Address Handle: 0x001B
 	Partition Row Position: 1
 
 Handle 0x001D, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00020000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 512 MB
+	Starting Address: 0x00040000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x001A
 	Memory Array Mapped Address Handle: 0x001B
 	Partition Row Position: 1

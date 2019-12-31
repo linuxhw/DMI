@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 62 structures occupying 3060 bytes.
@@ -177,7 +177,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: KHX1600C9S3L/4G   
 	Rank: Unknown
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000A, DMI type 17, 34 bytes
 Memory Device
@@ -198,7 +198,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: KHX1600C9S3L/4G   
 	Rank: Unknown
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000B, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -391,7 +391,7 @@ Portable Battery
 	SBDS Version: 03.01
 	Maximum Error: Unknown
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 2015-10-15
+	SBDS Manufacture Date: 2017-05-10
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
@@ -421,12 +421,9 @@ Built-in Pointing Device
 	Buttons: 2
 
 Handle 0x002C, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 2C 00 01 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: No
 
 Handle 0x002D, DMI type 136, 6 bytes
 OEM-specific Type
@@ -461,8 +458,8 @@ OEM-specific Type
 Handle 0x0031, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: JDET59WW (1.21 )
-	Release Date: 07/13/2016
+	Version: JDET68WW (1.30 )
+	Release Date: 09/17/2018
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -478,19 +475,19 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.21
-	Firmware Revision: 1.21
+	BIOS Revision: 1.30
+	Firmware Revision: 1.28
 
 Handle 0x0032, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 578 bytes
+	Area Length: 594 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000023
+	Change Token: 0x00000024
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -520,7 +517,7 @@ OEM-specific Type
 Handle 0x0035, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 35 00 54 50 07 01 01 E5 06 00 00 00 06 00
+		87 12 35 00 54 50 07 01 01 E5 0E 00 00 00 0E 00
 		00 00
 
 Handle 0x0036, DMI type 24, 5 bytes
@@ -570,7 +567,7 @@ Handle 0x003A, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 3A 00 03 01 00 02 08 00 00 00 02 00 00 00
-		00 24 00 03 00 00 05 00 00 00
+		00 2B 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version

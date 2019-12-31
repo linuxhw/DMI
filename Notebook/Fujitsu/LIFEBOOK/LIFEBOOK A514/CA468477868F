@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.0
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 38 structures occupying 1602 bytes.
 Table at 0x000FBD60.
@@ -136,10 +137,10 @@ Handle 0x0006, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0005
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
+	Total Width: 8 bits
+	Data Width: 8 bits
 	Size: 8192 MB
-	Form Factor: SODIMM
+	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
@@ -178,10 +179,10 @@ Handle 0x0008, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0005
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
+	Total Width: 8 bits
+	Data Width: 8 bits
 	Size: 4096 MB
-	Form Factor: SODIMM
+	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
@@ -252,8 +253,8 @@ OEM-specific Type
 Handle 0x000E, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: FUJITSU // Phoenix Technologies Ltd.
-	Version: Version 2.07
-	Release Date: 07/03/2015
+	Version: Version 2.09
+	Release Date: 10/26/2016
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 4096 kB
@@ -277,7 +278,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
-	BIOS Revision: 2.7
+	BIOS Revision: 2.9
 
 Handle 0x000F, DMI type 1, 27 bytes
 System Information
@@ -297,7 +298,7 @@ Base Board Information
 	Version:  
 	Serial Number: --
 	Asset Tag: --
-	Features:
+	...
 		Board is a hosting board
 	Location In Chassis:  
 	Chassis Handle: 0x0000
@@ -312,7 +313,7 @@ Chassis Information
 	Version:  
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Unknown
+	...
 	Power Supply State: Unknown
 	Thermal State: Unknown
 	Security Status: Unknown
@@ -408,8 +409,8 @@ OEM-specific Type
 Handle 0x0020, DMI type 143, 32 bytes
 OEM-specific Type
 	Header and Data:
-		8F 20 20 00 03 06 01 02 0F 00 0C 00 A0 B9 00 00
-		9E 9A 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		8F 20 20 00 03 06 01 02 0F 00 4C 01 A0 B9 00 00
+		E2 9B 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 
 Handle 0x0021, DMI type 136, 6 bytes
 OEM-specific Type
@@ -431,14 +432,14 @@ Hardware Security
 
 Handle 0x0024, DMI type 15, 71 bytes
 System Event Log
-	Area Length: 1076 bytes
+	Area Length: 1190 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000043
+	Change Token: 0x0000004B
 	Header Format: Type 1
 	Supported Log Type Descriptors: 24
 	Descriptor 1: POST memory resize

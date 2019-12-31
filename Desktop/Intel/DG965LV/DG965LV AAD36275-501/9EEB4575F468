@@ -106,8 +106,8 @@ Cache Information
 Handle 0x0004, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Intel Corp.
-	Version: MQ96510J.15A.0386.2007.1206.0148
-	Release Date: 12/06/2007
+	Version: MQ96510J.15A.0375.2007.0403.1603
+	Release Date: 04/03/2007
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 1024 kB
@@ -348,32 +348,13 @@ Handle 0x001A, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0016
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: J6J1
-	Bank Locator: CHAN B DIMM 0
-	Type: DDR2
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: NO DIMM
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NO DIMM
-
-Handle 0x001B, DMI type 17, 27 bytes
-Memory Device
-	Array Handle: 0x0016
-	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
-	Locator: J6J2
-	Bank Locator: CHAN B DIMM 1
+	Locator: J6J1
+	Bank Locator: CHAN B DIMM 0
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 800 MT/s
@@ -382,16 +363,35 @@ Memory Device
 	Asset Tag: --
 	Part Number: 0x4E543247543634553848443042592D414420
 
-Handle 0x001C, DMI type 20, 19 bytes
+Handle 0x001B, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00080000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 2 GB
-	Physical Device Handle: 0x001B
+	Physical Device Handle: 0x001A
 	Memory Array Mapped Address Handle: 0x001D
 	Partition Row Position: 2
 	Interleave Position: 2
 	Interleaved Data Depth: 1
+
+Handle 0x001C, DMI type 17, 27 bytes
+Memory Device
+	Array Handle: 0x0016
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: J6J2
+	Bank Locator: CHAN B DIMM 1
+	Type: DDR2
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: NO DIMM
+	Serial Number: --
+	Asset Tag: --
+	Part Number: NO DIMM
 
 Handle 0x001D, DMI type 19, 15 bytes
 Memory Array Mapped Address
@@ -409,7 +409,7 @@ OEM-specific Type
 Handle 0x001F, DMI type 187, 9 bytes
 OEM-specific Type
 	Header and Data:
-		BB 09 1F 00 1B 00 03 20 03
+		BB 09 1F 00 1A 00 03 20 03
 
 Handle 0x0020, DMI type 136, 6 bytes
 OEM-specific Type

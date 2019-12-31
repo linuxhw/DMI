@@ -1,14 +1,14 @@
-# dmidecode 3.2
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-81 structures occupying 3164 bytes.
-Table at 0x000EB920.
+82 structures occupying 3172 bytes.
+Table at 0x000EC2F0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 0603
-	Release Date: 08/06/2013
+	Version: 2108
+	Release Date: 06/02/2015
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8192 kB
@@ -633,7 +633,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 99U5584-003.A00LF 
 	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0041, DMI type 16, 23 bytes
 Physical Memory Array
@@ -674,7 +674,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 99U5584-005.A00LF 
 	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0044, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -706,7 +706,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 99U5584-003.A00LF 
 	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0046, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -738,7 +738,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 99U5584-005.A00LF 
 	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0048, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -833,15 +833,20 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0055, DMI type 131, 64 bytes
+Handle 0x0055, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 55 00 31 00 00 00 00 00 00 00 00 00 00 00
+		88 06 55 00 00 00
+
+Handle 0x0056, DMI type 131, 64 bytes
+OEM-specific Type
+	Header and Data:
+		83 40 56 00 10 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 4A 8C 00 00 00 00 01 20 00 00 00 00 09 00
 		41 05 02 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0056, DMI type 13, 22 bytes
+Handle 0x0057, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 8
@@ -855,6 +860,6 @@ BIOS Language Information
 		zh|CN|unicode
 	Currently Installed Language: fr|FR|iso8859-1
 
-Handle 0x0058, DMI type 127, 4 bytes
+Handle 0x0059, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-36 structures occupying 1913 bytes.
+36 structures occupying 1847 bytes.
 Table at 0xDF699000.
 
 Handle 0x0000, DMI type 4, 42 bytes
@@ -45,7 +45,7 @@ Processor Information
 	Voltage: 1.1 V
 	External Clock: 100 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 3393 MHz
+	Current Speed: 3394 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
 	L1 Cache Handle: 0x0002
@@ -236,7 +236,7 @@ Handle 0x000D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE X16 SLOT 6
 	Type: x16 PCI Express 2
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 6
 	Characteristics:
@@ -275,7 +275,7 @@ Handle 0x0010, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SECONDARY PCIE (X8) SLOT 3
 	Type: x8 PCI Express 2
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 3
 	Characteristics:
@@ -389,8 +389,8 @@ Physical Memory Array
 Handle 0x001E, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x001D
 	Partition Width: 4
 
@@ -418,20 +418,20 @@ Handle 0x0020, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x001D
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4096 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: Channel A DIMM 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: 0x0198
+	Speed: Unknown
+	Manufacturer: NO DIMM
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 0x4B48583136303043313044332F3447202020
+	Part Number: NO DIMM
 	Rank: Unknown
 
 Handle 0x0021, DMI type 17, 28 bytes
@@ -458,20 +458,20 @@ Handle 0x0022, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x001D
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4096 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: Channel B DIMM 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: 0x0198
+	Speed: Unknown
+	Manufacturer: NO DIMM
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 0x4B48583136303043313044332F3447202020
+	Part Number: NO DIMM
 	Rank: Unknown
 
 Handle 0xFEFF, DMI type 127, 4 bytes

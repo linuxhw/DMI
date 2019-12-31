@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 105 structures occupying 3849 bytes.
 Table at 0x000EB8C0.
@@ -412,7 +413,7 @@ Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI1
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 5
 	Characteristics:
@@ -609,8 +610,9 @@ Management Device Component
 	Threshold Handle: 0x0033
 
 Handle 0x0039, DMI type 34, 16 bytes
+Invalid entry length (16). Fixed up to 11.
 Management Device
-	Description: 2
+	Description: LM78-2
 	Type: LM78
 	Address: 0x00000000
 	Address Type: I/O Port
@@ -987,13 +989,13 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
 	Part Number: HMT351U6CFR8C-H9  
 	Rank: 2
-	Configured Clock Speed: 1333 MHz
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x005F, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -1060,13 +1062,13 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
 	Part Number: HMT351U6CFR8C-H9  
 	Rank: 2
-	Configured Clock Speed: 1333 MHz
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0064, DMI type 18, 23 bytes
 32-bit Memory Error Information

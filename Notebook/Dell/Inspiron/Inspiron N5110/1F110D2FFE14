@@ -1,6 +1,7 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-56 structures occupying 2319 bytes.
+57 structures occupying 2331 bytes.
 Table at 0x000EBA00.
 
 Handle 0xDA00, DMI type 218, 245 bytes
@@ -300,15 +301,15 @@ Built-in Pointing Device
 Handle 0x0026, DMI type 22, 26 bytes
 Portable Battery
 	Location: Sys. Battery Bay
-	Manufacturer: Sanyo              
+	Manufacturer: Samsung            
 	Serial Number: --
-	Name: DELL 4YRJH1A
+	Name: DELL 7XFJJ05
 	Chemistry: Lithium Ion
-	Design Capacity: 45000 mWh
-	Design Voltage: 10800 mV
+	Design Capacity: 44000 mWh
+	Design Voltage: 11100 mV
 	SBDS Version: 1.0                
 	Maximum Error: 2%
-	SBDS Manufacture Date: 2011-10-10
+	SBDS Manufacture Date: 2018-11-08
 	OEM-specific Information: 0x00000001
 
 Handle 0x0027, DMI type 32, 20 bytes
@@ -416,42 +417,33 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
-Handle 0x001E, DMI type 17, 28 bytes
-Memory Device
-	Array Handle: 0x001D
-	Error Information Handle: 0x0000
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM_A
-	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-
-Handle 0x0020, DMI type 20, 19 bytes
+Handle 0x001F, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x001F
-	Memory Array Mapped Address Handle: 0x0021
+	Physical Device Handle: 0x001E
+	Memory Array Mapped Address Handle: 0x0022
 	Partition Row Position: 1
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x0021, DMI type 19, 15 bytes
+Handle 0x0021, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0020
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 1
+
+Handle 0x0022, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x001D
 	Partition Width: 2
 
@@ -569,7 +561,27 @@ On Board Device Information
 	Status: Enabled
 	Description: NVIDIA N12P GE
 
-Handle 0x001F, DMI type 17, 28 bytes
+Handle 0x001E, DMI type 17, 28 bytes
+Memory Device
+	Array Handle: 0x001D
+	Error Information Handle: 0x0000
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
+	Form Factor: SODIMM
+	Set: None
+	Locator: DIMM_A
+	Bank Locator: BANK 0
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: 0198
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 99U5469-046.A00LF 
+	Rank: Unknown
+
+Handle 0x0020, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x001D
 	Error Information Handle: 0x0000
@@ -582,7 +594,7 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: 80CE
 	Serial Number: --
 	Asset Tag: --

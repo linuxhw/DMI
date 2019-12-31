@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-35 structures occupying 1522 bytes.
+36 structures occupying 1597 bytes.
 Table at 0x000E0B70.
 
 Handle 0x0004, DMI type 4, 42 bytes
@@ -163,10 +163,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5173QH0-YK0  
+	Part Number: KHX1600C9S3L/4G   
 	Rank: Unknown
 	Configured Clock Speed: 1333 MT/s
 
@@ -174,37 +174,50 @@ Handle 0x000D, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
+	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
+	Part Number: KHX1600C9S3L/4G   
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x000E, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x000C
-	Memory Array Mapped Address Handle: 0x000F
+	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 2
 
-Handle 0x000F, DMI type 19, 31 bytes
+Handle 0x000F, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x000C
+	Memory Array Mapped Address Handle: 0x0010
+	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x0010, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x000B
 	Partition Width: 2
 
@@ -257,7 +270,7 @@ Base Board Information
 	Version:  
 	Serial Number: --
 	Asset Tag: --
-	Features:
+	...
 		Board is a hosting board
 	Location In Chassis:  
 	Chassis Handle: 0x0000
@@ -272,7 +285,7 @@ Chassis Information
 	Version:  
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Unknown
+	...
 	Power Supply State: Unknown
 	Thermal State: Unknown
 	Security Status: Unknown
@@ -282,20 +295,20 @@ Chassis Information
 	Contained Elements: 0
 	SKU Number: System SKUNumber
 
-Handle 0x0010, DMI type 11, 5 bytes
+Handle 0x0011, DMI type 11, 5 bytes
 OEM Strings
-	String 1: ofAuYO8NhrE0f
-	String 2: CkIgDXEqluu0W
-	String 3: QrYDsskD0F3kU
+	String 1: pnVi-nYlHjSQW
+	String 2: G7-R2QHM1NaMm
+	String 3: nfdkpov6IkEMs
 
-Handle 0x0011, DMI type 12, 5 bytes
+Handle 0x0012, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: SMI:00B2C801
-	Option 2: TIM:201803020817
-	Option 3: HDD:172607442915        
-	Option 4: MEM:M471B5173QH0-YK0  18A5F1A8
+	Option 2: TIM:201912040614
+	Option 3: HDD:1928E18E3C4B        
+	Option 4: MEM:KHX1600C9S3L/4G   4C300CD3
 
-Handle 0x0012, DMI type 13, 22 bytes
+Handle 0x0013, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 7
@@ -308,7 +321,7 @@ BIOS Language Information
 		ruRU
 	Currently Installed Language: enUS
 
-Handle 0x0013, DMI type 22, 26 bytes
+Handle 0x0014, DMI type 22, 26 bytes
 Portable Battery
 	Location: Internal Battery
 	Manufacturer: FUJITSU
@@ -322,83 +335,83 @@ Portable Battery
 	Maximum Error: Unknown
 	OEM-specific Information: 0x00000000
 
-Handle 0x0014, DMI type 32, 11 bytes
+Handle 0x0015, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0015, DMI type 136, 6 bytes
+Handle 0x0016, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 15 00 5A 5A
+		88 06 16 00 5A 5A
 
-Handle 0x0016, DMI type 143, 16 bytes
+Handle 0x0017, DMI type 143, 16 bytes
 OEM-specific Type
 	Header and Data:
-		8F 10 16 00 00 5F 46 4A 5F 4F 45 4D 5F 12 00 00
+		8F 10 17 00 00 5F 46 4A 5F 4F 45 4D 5F 12 00 00
 
-Handle 0x0017, DMI type 143, 8 bytes
+Handle 0x0018, DMI type 143, 8 bytes
 OEM-specific Type
 	Header and Data:
-		8F 08 17 00 01 03 00 00
-
-Handle 0x0018, DMI type 143, 11 bytes
-OEM-specific Type
-	Header and Data:
-		8F 0B 18 00 02 00 01 00 03 56 05
+		8F 08 18 00 01 03 00 00
 
 Handle 0x0019, DMI type 143, 11 bytes
 OEM-specific Type
 	Header and Data:
-		8F 0B 19 00 02 06 01 E4 30 03 3B
+		8F 0B 19 00 02 00 01 00 03 56 05
 
 Handle 0x001A, DMI type 143, 11 bytes
 OEM-specific Type
 	Header and Data:
-		8F 0B 1A 00 02 01 01 01 00 00 00
+		8F 0B 1A 00 02 06 01 E4 30 03 3B
 
 Handle 0x001B, DMI type 143, 11 bytes
 OEM-specific Type
 	Header and Data:
-		8F 0B 1B 00 02 02 01 01 00 00 00
+		8F 0B 1B 00 02 01 01 01 00 00 00
 
 Handle 0x001C, DMI type 143, 11 bytes
 OEM-specific Type
 	Header and Data:
-		8F 0B 1C 00 02 05 01 00 00 00 00
+		8F 0B 1C 00 02 02 01 01 00 00 00
 
 Handle 0x001D, DMI type 143, 11 bytes
 OEM-specific Type
 	Header and Data:
-		8F 0B 1D 00 02 07 01 00 01 00 00
+		8F 0B 1D 00 02 05 01 00 00 00 00
 
-Handle 0x001E, DMI type 136, 6 bytes
+Handle 0x001E, DMI type 143, 11 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 1E 00 5A 5A
+		8F 0B 1E 00 02 07 01 00 01 00 00
 
-Handle 0x001F, DMI type 21, 7 bytes
+Handle 0x001F, DMI type 136, 6 bytes
+OEM-specific Type
+	Header and Data:
+		88 06 1F 00 5A 5A
+
+Handle 0x0020, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Other
 	Interface: PS/2
 	Buttons: 2
 
-Handle 0x0020, DMI type 24, 5 bytes
+Handle 0x0021, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
-Handle 0x0021, DMI type 15, 105 bytes
+Handle 0x0022, DMI type 15, 105 bytes
 System Event Log
-	Area Length: 2738 bytes
+	Area Length: 3570 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x000000AA
+	Change Token: 0x000000DE
 	Header Format: Type 1
 	Supported Log Type Descriptors: 41
 	Descriptor 1: Single-bit ECC memory error

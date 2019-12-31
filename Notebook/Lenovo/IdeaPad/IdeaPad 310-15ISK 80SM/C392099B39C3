@@ -1,4 +1,4 @@
-# dmidecode 3.0
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 70 structures occupying 3564 bytes.
@@ -117,7 +117,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz
-	Voltage: 0.8 V
+	Voltage: 0.7 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
 	Current Speed: 2000 MHz
@@ -430,22 +430,22 @@ Handle 0x0022, DMI type 14, 17 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 4
-		0x003F (<OUT OF SPEC>)
-		0x003A (<OUT OF SPEC>)
-		0x0039 (<OUT OF SPEC>)
-		0x0038 (<OUT OF SPEC>)
+		0x003F (OEM-specific)
+		0x003A (OEM-specific)
+		0x0039 (OEM-specific)
+		0x0038 (OEM-specific)
 
 Handle 0x0023, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x0043 (<OUT OF SPEC>)
+		0x0043 (OEM-specific)
 
 Handle 0x0024, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
-		0x003E (<OUT OF SPEC>)
+		0x003E (OEM-specific)
 
 Handle 0x0025, DMI type 15, 29 bytes
 System Event Log
@@ -488,13 +488,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2133 MHz
+	Speed: 2133 MT/s
 	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
 	Part Number: 4ATF51264HZ-2G3AZ   
 	Rank: 1
-	Configured Clock Speed: 2133 MHz
+	Configured Clock Speed: 2133 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.2 V
@@ -717,7 +717,7 @@ OEM-specific Type
 Handle 0x003A, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 3A 00 10 00 00 00 00 00 00 00 00 00 00 00
+		83 40 3A 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 48 9D 00 00 00 00 01 00 00 00 00 00 0B 00
 		AA 04 00 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 FF 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
@@ -745,7 +745,7 @@ OEM-specific Type
 Handle 0x003E, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 3E 00 01 03 01 55 02 00 90 06 01 11 80 00
+		DB 51 3E 00 01 03 01 55 02 00 90 06 01 11 86 00
 		02 00 00 00 40 08 00 00 00 00 00 00 00 00 00 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 FF FF FF FF FF FF FF
