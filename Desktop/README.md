@@ -20,509 +20,509 @@ Probe  — latest probe ID of this device.
 
 | MFG        | Name                           | GHz  | Count | Probe      |
 |------------|--------------------------------|------|-------|------------|
-| Intel      | Core 2 Duo E8400               | 3.00 | 137   | D232DBDCE3 |
-| AMD        | FX -6300 Six-Core              |      | 122   | 1F7F86ED9E |
-| Intel      | Core i3-2120                   | 3.30 | 117   | 4BD42BC14C |
-| Intel      | Core 2 Quad Q6600              | 2.40 | 109   | 53C6C139DA |
-| Intel      | Core 2 Duo E7500               | 2.93 | 103   | 3134315807 |
-| AMD        | FX-8350 Eight-Core             |      | 100   | FEAA959521 |
-| Intel      | Core i3-2100                   | 3.10 | 98    | EB9D0FE3F5 |
-| AMD        | Athlon II X2 250               |      | 97    | 07BA810409 |
-| Intel      | Pentium Dual-Core E5300        | 2.60 | 97    | 0E497514B2 |
-| Intel      | Core i3-3220                   | 3.30 | 88    | 7D1A3490AA |
-| Intel      | Core i5-3470                   | 3.20 | 88    | 2703EE0766 |
-| Intel      | Core i5-2400                   | 3.10 | 86    | 66A5EA0BE5 |
-| Intel      | Core 2 Duo E6550               | 2.33 | 83    | 969A371A99 |
-| AMD        | FX-8320 Eight-Core             |      | 78    | 6A60A724F9 |
-| Intel      | Pentium 4                      | 3.00 | 75    | B8D44517A1 |
-| Intel      | Core i7-3770K                  | 3.50 | 74    | FB18F180A5 |
-| Intel      | Core i7-3770                   | 3.40 | 72    | 41F60D966A |
-| Intel      | Pentium 4                      | 3.00 | 71    | 642FED58C5 |
-| AMD        | FX -4300 Quad-Core             |      | 69    | C79641FC9B |
-| Intel      | Core i5-4460                   | 3.20 | 69    | 91C1AFF11E |
-| Intel      | Core 2 Duo E4500               | 2.20 | 65    | 1ACC3BBABB |
-| Intel      | Pentium Dual-Core E5700        | 3.00 | 64    | AD36B40663 |
-| Intel      | Pentium Dual E2180             | 2.00 | 59    | A0BFCB3B91 |
-| Intel      | Core i5-2500                   | 3.30 | 59    | 3D9E77AE8A |
-| AMD        | Phenom II X4 965               |      | 58    | F0FD8645E5 |
-| Intel      | Pentium 4                      | 3.20 | 58    | 59817A0992 |
-| Intel      | Core i7-2600                   | 3.40 | 57    | 55527427F9 |
-| Intel      | Core i7-2600K                  | 3.40 | 57    | EC6555DA94 |
-| Intel      | Core 2 Duo E8400               | 3.00 | 56    | 2893794AF3 |
-| Intel      | Core 2 Duo E8500               | 3.16 | 55    | E1D8ADF3C9 |
-| Intel      | Pentium Dual-Core E5400        | 2.70 | 55    | 1BDFB65A5B |
-| Intel      | Core i5-2500K                  | 3.30 | 55    | 640C9F1AB7 |
-| Intel      | Core i5-3570K                  | 3.40 | 55    | 0BFC90B6BA |
-| AMD        | FX -4100 Quad-Core             |      | 54    | ABBA273D4F |
-| AMD        | FX -6100 Six-Core              |      | 54    | 792BC1DD6F |
-| AMD        | Athlon 64 X2 Dual Core 5200+   |      | 53    | F87C76BA83 |
-| Intel      | Pentium Dual E2200             | 2.20 | 53    | D3B45DE297 |
-| AMD        | Athlon 64 X2 Dual Core 6000+   |      | 51    | EE184BFE51 |
-| AMD        | Phenom II X4 955               |      | 51    | 92145D937F |
-| Intel      | Core 2 Duo E6750               | 2.66 | 51    | 48709E5844 |
-| Intel      | Pentium Dual E2160             | 1.80 | 50    | FFC9B5ED4F |
-| Intel      | Core 2 Duo E7200               | 2.53 | 50    | F8AE92B32F |
-| Intel      | Core i5-3570                   | 3.40 | 50    | D3CBC50580 |
-| AMD        | Athlon II X4 640               |      | 49    | 28A9991FCB |
-| Intel      | Celeron E3400                  | 2.60 | 49    | B023115CE4 |
-| Intel      | Core i3-6100                   | 3.70 | 49    | BD6DC70775 |
-| Intel      | Pentium 4                      | 2.80 | 48    | D2C80DA520 |
-| Intel      | Pentium D                      | 3.20 | 48    | C6129C8C14 |
-| Intel      | Pentium G2020                  | 2.90 | 47    | 73CB5810A1 |
-| AMD        | Athlon II X2 240               |      | 46    | 2DE6892C13 |
-| Intel      | Celeron                        | 2.66 | 46    | 231DE8EA15 |
-| Intel      | Celeron                        | 2.93 | 46    | 8219FBB532 |
-| Intel      | Core 2 Quad Q8300              | 2.50 | 46    | BBFC5C83ED |
-| Intel      | Core 2 Duo E7400               | 2.80 | 45    | 2FDD668590 |
-| Intel      | Core i3-3240                   | 3.40 | 45    | F2FF6FB037 |
-| Intel      | Core 2 Duo E4600               | 2.40 | 44    | 04AE7D50B4 |
-| Intel      | Core i5-2320                   | 3.00 | 44    | 9FAB0B6F0B |
-| Intel      | Core i7-4770                   | 3.40 | 44    | B687FAFEA4 |
-| Intel      | Pentium G620                   | 2.60 | 43    | 8871866F65 |
-| Intel      | Pentium G630                   | 2.70 | 43    | 11581C9025 |
-| Intel      | Pentium Dual-Core E5200        | 2.50 | 42    | 758924E4F2 |
-| Intel      | Core i5-3450                   | 3.10 | 42    | 9EF947B594 |
-| Intel      | Pentium G3220                  | 3.00 | 42    | 3859A17AD1 |
-| AMD        | Athlon 64 X2 Dual Core 4000+   |      | 41    | B08E58BFEB |
-| Intel      | Pentium D                      | 2.66 | 41    | 7B78886CE4 |
-| Intel      | Core i5 760                    | 2.80 | 41    | 85F57C764C |
-| Intel      | Core i5-2300                   | 2.80 | 41    | E971779389 |
-| AMD        | Athlon 64 X2 Dual Core 4200+   |      | 40    | 31EC690BE3 |
+| Intel      | Core 2 Duo E8400               | 3.00 | 148   | 439AF540E7 |
+| AMD        | FX -6300 Six-Core              |      | 131   | BF8CFD0B4D |
+| Intel      | Core i3-2120                   | 3.30 | 124   | D4AB6C4E06 |
+| Intel      | Core 2 Quad Q6600              | 2.40 | 123   | 84ACE23538 |
+| Intel      | Core 2 Duo E7500               | 2.93 | 114   | 2B3693C8F3 |
+| Intel      | Core i3-2100                   | 3.10 | 108   | EF2DAAC6D3 |
+| AMD        | FX-8350 Eight-Core             |      | 107   | AFDF4A3A9C |
+| AMD        | Athlon II X2 250               |      | 104   | E5540CB969 |
+| Intel      | Pentium Dual-Core E5300        | 2.60 | 101   | CED3C3C6BB |
+| Intel      | Core i3-3220                   | 3.30 | 97    | 92100B9B64 |
+| Intel      | Core i5-3470                   | 3.20 | 97    | F85FDA7AF0 |
+| Intel      | Core i5-2400                   | 3.10 | 95    | D89BBA8D23 |
+| Intel      | Core i7-3770                   | 3.40 | 89    | 779B6B3344 |
+| Intel      | Core 2 Duo E6550               | 2.33 | 88    | DE0DC42CA0 |
+| AMD        | FX-8320 Eight-Core             |      | 83    | BB239C7852 |
+| Intel      | Pentium 4                      | 3.00 | 78    | 9463E5625F |
+| Intel      | Core i7-3770K                  | 3.50 | 78    | 44917A35A9 |
+| Intel      | Core i5-4460                   | 3.20 | 77    | C222E9C7D2 |
+| Intel      | Pentium 4                      | 3.00 | 76    | B64547F948 |
+| AMD        | FX -4300 Quad-Core             |      | 73    | 1362FF0163 |
+| Intel      | Core 2 Duo E4500               | 2.20 | 68    | E643B8ED58 |
+| Intel      | Pentium Dual-Core E5700        | 3.00 | 67    | CBB9AD4CE6 |
+| Intel      | Pentium 4                      | 3.20 | 64    | 967BB75CBB |
+| Intel      | Core i5-2500                   | 3.30 | 64    | B2626606CC |
+| Intel      | Core i7-2600                   | 3.40 | 63    | 6F8237E870 |
+| AMD        | Phenom II X4 965               |      | 62    | F1B384A82B |
+| Intel      | Core 2 Duo E8500               | 3.16 | 62    | A30E689A9E |
+| Intel      | Pentium Dual E2180             | 2.00 | 61    | 53D2EF8D02 |
+| Intel      | Core i7-2600K                  | 3.40 | 61    | 0C3D1FCEFE |
+| AMD        | Phenom II X4 955               |      | 60    | E722D70419 |
+| Intel      | Core 2 Duo E8400               | 3.00 | 60    | EE080EFD68 |
+| Intel      | Core i5-2500K                  | 3.30 | 60    | A43E9D5913 |
+| Intel      | Pentium Dual-Core E5400        | 2.70 | 58    | 71FC19AA7D |
+| AMD        | Athlon 64 X2 Dual Core 6000+   |      | 57    | 4908CB8960 |
+| Intel      | Core 2 Duo E6750               | 2.66 | 57    | 3DCC4EE3D0 |
+| Intel      | Core i5-3570K                  | 3.40 | 57    | 9FFF75FEE2 |
+| AMD        | FX -4100 Quad-Core             |      | 56    | B2DA218FF6 |
+| AMD        | Athlon 64 X2 Dual Core 5200+   |      | 55    | A26BD26890 |
+| AMD        | FX -6100 Six-Core              |      | 55    | 8D6E14813E |
+| Intel      | Pentium Dual E2200             | 2.20 | 55    | A5125B3A34 |
+| Intel      | Core i3-6100                   | 3.70 | 55    | A4F2FE8B73 |
+| AMD        | Athlon II X4 640               |      | 54    | 064DD1CCBF |
+| Intel      | Pentium 4                      | 2.80 | 53    | 4B792E24F9 |
+| Intel      | Pentium Dual E2160             | 1.80 | 53    | 0D49C08D24 |
+| Intel      | Core 2 Duo E7200               | 2.53 | 52    | 45021EC259 |
+| AMD        | Athlon II X2 240               |      | 51    | 93E77F9DC3 |
+| Intel      | Celeron E3400                  | 2.60 | 51    | 6FDB8DFE61 |
+| Intel      | Core i5-2320                   | 3.00 | 51    | 2D378E81BE |
+| Intel      | Core i5-3450                   | 3.10 | 51    | 831D7A504B |
+| Intel      | Core i5-3570                   | 3.40 | 51    | 2C4F68ECB1 |
+| Intel      | Core i7-4770                   | 3.40 | 51    | 0E2A4B6848 |
+| Intel      | Celeron                        | 2.66 | 50    | 83592C8857 |
+| Intel      | Core 2 Duo E7400               | 2.80 | 50    | A3F0007670 |
+| Intel      | Core 2 Quad Q8300              | 2.50 | 50    | 249DBA1826 |
+| Intel      | Pentium G2020                  | 2.90 | 50    | 06052B8628 |
+| Intel      | Core i7-4790                   | 3.60 | 50    | C7312AA534 |
+| Intel      | Pentium D                      | 3.20 | 49    | E587B4122A |
+| Intel      | Celeron                        | 2.93 | 48    | D0A8B9D7DA |
+| Intel      | Pentium Dual-Core E5200        | 2.50 | 47    | A5A20E3A8D |
+| Intel      | Core i5 750                    | 2.67 | 47    | B035986A93 |
+| Intel      | Pentium G620                   | 2.60 | 47    | FF8753AFA1 |
+| Intel      | Core i5-3330                   | 3.00 | 47    | 481DBAA60F |
+| Intel      | Core i5-4570                   | 3.20 | 47    | F1886B084F |
+| Intel      | Pentium D                      | 2.66 | 46    | 21AE6DBDF0 |
+| Intel      | Core 2 Duo E4600               | 2.40 | 46    | 865EB363F8 |
+| Intel      | Core i3-3240                   | 3.40 | 46    | 13AF031E5E |
+| Intel      | Core i3-7100                   | 3.90 | 45    | B8C562A7E5 |
+| AMD        | Athlon 64 X2 Dual Core 4000+   |      | 44    | 20F8191625 |
+| Intel      | Core i5 760                    | 2.80 | 44    | E40B76E473 |
+| Intel      | Core i3-4130                   | 3.40 | 44    | 15E3126F2C |
+| AMD        | Athlon 64 X2 Dual Core 4200+   |      | 43    | AA6F0FA908 |
+| Intel      | Core i3 550                    | 3.20 | 43    | C87B5D73CA |
+| Intel      | Core i5-2300                   | 2.80 | 43    | 417453E269 |
+| Intel      | Pentium G630                   | 2.70 | 43    | CDB6264206 |
+| Intel      | Core 2 Duo E7300               | 2.66 | 42    | B9B80DB558 |
+| Intel      | Pentium G3220                  | 3.00 | 42    | DAD43CAD90 |
+| Intel      | Pentium G4400                  | 3.30 | 42    | 114CA7D1AB |
+| Intel      | Pentium D                      | 3.40 | 41    | 28A9180BC4 |
+| Intel      | Core i3 540                    | 3.07 | 41    | E60C730AE2 |
+| Intel      | Celeron G530                   | 2.40 | 41    | 6D7E3AA70A |
+| Intel      | Core i5-2310                   | 2.90 | 41    | 2DB02E1414 |
+| Intel      | Core i5-6500                   | 3.20 | 41    | 984F33EE01 |
+| AMD        | Athlon 64 X2 Dual Core 5000+   |      | 40    | 6D882902AD |
 | Intel      | Core 2 6600                    | 2.40 | 40    | 7B106B9427 |
-| Intel      | Core i5 750                    | 2.67 | 40    | 551193665F |
-| Intel      | Core i3-4130                   | 3.40 | 40    | 02CBA6FDA0 |
-| Intel      | Core i5-4570                   | 3.20 | 40    | 1E5997F695 |
-| Intel      | Pentium D                      | 3.40 | 39    | 0C62C4C191 |
-| Intel      | Core 2 Duo E7300               | 2.66 | 39    | 3991181C75 |
-| Intel      | Core i7-4790                   | 3.60 | 39    | 2272E1FA1D |
-| Intel      | Core i3 550                    | 3.20 | 38    | 12256732C2 |
-| Intel      | Core i5-2310                   | 2.90 | 38    | A1E970227D |
-| Intel      | Core i5-3330                   | 3.00 | 38    | 0A593D376A |
-| Intel      | Core i3-7100                   | 3.90 | 37    | BD3CFBCE71 |
+| Intel      | Celeron G1840                  | 2.80 | 40    | F778A7E362 |
+| Intel      | Core i7-4770K                  | 3.50 | 40    | BAB2716FF6 |
+| Intel      | Core i5-4440                   | 3.10 | 39    | 1D2014DD53 |
+| Intel      | Atom D525                      | 1.80 | 38    | 61CA6E9A9A |
+| Intel      | Pentium G2030                  | 3.00 | 38    | E4374EAA46 |
 | Intel      | Core 2 Quad Q9300              | 2.50 | 37    | 36D3F979DC |
-| Intel      | Celeron G530                   | 2.40 | 37    | B1C86BAC64 |
-| Intel      | Pentium G2030                  | 3.00 | 37    | 154C64D953 |
-| Intel      | Core i5-4440                   | 3.10 | 37    | 1DBE9C51F6 |
-| Intel      | Pentium G4400                  | 3.30 | 37    | 0BF4CAF942 |
-| AMD        | Athlon 64 X2 Dual Core 5000+   |      | 36    | B4B7FB1E21 |
-| Intel      | Core i3 540                    | 3.07 | 36    | B4F81E84C8 |
-| Intel      | Celeron G1840                  | 2.80 | 36    | 8AE6B6F651 |
-| Intel      | Core i7-4770K                  | 3.50 | 35    | CC9738C393 |
-| AMD        | Athlon 64 X2 Dual Core 4400+   |      | 34    | CD4ECC0B42 |
-| Intel      | Celeron 430                    | 1.80 | 34    | 6154EA6AE1 |
-| Intel      | Core i5-6500                   | 3.20 | 34    | E4A1AC8DFE |
-| Intel      | Pentium 4                      | 3.20 | 33    | 5CED2505B9 |
-| Intel      | Atom D525                      | 1.80 | 33    | 682BC26535 |
-| Intel      | Core i3 530                    | 2.93 | 33    | 7D62E5BC34 |
-| AMD        | Athlon 64 X2 Dual Core 4800+   |      | 32    | 9B11B923A2 |
-| AMD        | Athlon II X2 245               |      | 32    | E3128E9139 |
-| Intel      | Pentium G860                   | 3.00 | 32    | 4C163D8A71 |
-| Intel      | Core i3-4170                   | 3.70 | 32    | 66D36BB608 |
-| AMD        | Athlon II X2 215               |      | 31    | C9F702BE07 |
-| AMD        | Athlon II X2 220               |      | 31    | E327FDD558 |
-| AMD        | Athlon II X2 270               |      | 31    | CC22922655 |
-| Intel      | Pentium Dual-Core E5200        | 2.50 | 31    | F6B9026258 |
-| AMD        | Athlon 64 X2 Dual Core 5600+   |      | 30    | 5824A23FE2 |
-| Intel      | Pentium 4                      | 3.00 | 30    | 03B6DE378D |
-| Intel      | Pentium Dual-Core E6500        | 2.93 | 30    | 6DB0F0B43C |
-| Intel      | Core i5-4670                   | 3.40 | 30    | F79161999A |
-| Intel      | Core 2 Quad Q8400              | 2.66 | 29    | FAC5E9FEFA |
+| AMD        | Athlon 64 X2 Dual Core 4400+   |      | 36    | F3B22A675A |
+| Intel      | Pentium 4                      | 3.20 | 36    | 21C788CAAC |
+| Intel      | Core i5-7400                   | 3.00 | 36    | 24140DAC5C |
+| Intel      | Celeron 430                    | 1.80 | 36    | DD1203BF56 |
+| Intel      | Core i3-4170                   | 3.70 | 36    | 6DA4739E26 |
+| Intel      | Core i7-4790K                  | 4.00 | 36    | 32BCF4D223 |
+| AMD        | Ryzen 3 2200G with Radeon V... |      | 35    | DE065F2CFC |
+| Intel      | Core i3 530                    | 2.93 | 35    | F0971CD52C |
+| Intel      | Core i7-6700                   | 3.40 | 35    | BEBF95FDC9 |
+| Intel      | Core 2 Quad Q9400              | 2.66 | 34    | 6949452F0E |
+| AMD        | Athlon 64 X2 Dual Core 4800+   |      | 33    | B656825800 |
+| AMD        | Athlon II X2 220               |      | 33    | 31971EE9A6 |
+| Intel      | Pentium Dual-Core E6500        | 2.93 | 33    | A55FB3FCA4 |
+| AMD        | Athlon 64 X2 Dual Core 5600+   |      | 32    | 007691F448 |
+| AMD        | Athlon II X2 215               |      | 32    | 5492A0F3E3 |
+| AMD        | Athlon II X2 245               |      | 32    | E7507BCF5F |
+| AMD        | Ryzen 5 1600 Six-Core          |      | 32    | 2E3A02EC4D |
+| AMD        | Ryzen 7 1700 Eight-Core        |      | 32    | A14B2C7156 |
+| AMD        | Ryzen 7 2700X Eight-Core       |      | 32    | E3B6CE369A |
+| Intel      | Pentium 4                      | 3.00 | 32    | 60EC6F52F9 |
+| Intel      | Pentium Dual-Core E5200        | 2.50 | 32    | 60CA74AFA7 |
+| Intel      | Pentium G860                   | 3.00 | 32    | E2B864CA2E |
+| AMD        | Athlon II X2 270               |      | 31    | 792F6ED009 |
+| Intel      | Celeron E3300                  | 2.50 | 31    | 92892F8A8B |
+| Intel      | Core 2 Quad Q8400              | 2.66 | 31    | 63957EF2A7 |
+| Intel      | Core i5-4670                   | 3.40 | 31    | 26F9516508 |
+| Intel      | Core i5-4670K                  | 3.40 | 31    | 2F0B3935B3 |
+| Intel      | Core 2 4300                    | 1.80 | 29    | 016937E08A |
+| Intel      | Pentium Dual-Core E6300        | 2.80 | 29    | B0661E077E |
 | Intel      | Pentium Dual-Core E6600        | 3.06 | 29    | 60A3A2F64B |
-| Intel      | Core i7-4790K                  | 4.00 | 29    | 7552A8CB4C |
-| Intel      | Core 2 4300                    | 1.80 | 28    | BF99369A01 |
-| Intel      | Core i5-7400                   | 3.00 | 28    | 2048B1ECF6 |
-| Intel      | Celeron E3300                  | 2.50 | 28    | BFC8CAB47C |
-| Intel      | Core 2 Quad Q9400              | 2.66 | 28    | F640B8A0CB |
+| AMD        | Athlon 64 3200+                |      | 28    | D14D031927 |
+| Intel      | Core 2 Quad Q8200              | 2.33 | 28    | F3BC57E21D |
+| Intel      | Core i5-3550                   | 3.30 | 28    | 8D6C4235C3 |
+| Intel      | Core i5-6400                   | 2.70 | 28    | 338994BD66 |
+| AMD        | Athlon 64 X2 Dual Core 3800+   |      | 27    | F1A5854551 |
+| AMD        | Phenom II X6 1055T             |      | 27    | B043C6BED9 |
 | AMD        | Athlon II X2 250               |      | 27    | 45F3041E55 |
-| Intel      | Core i5-3550                   | 3.30 | 27    | 435E64F300 |
-| Intel      | Core i5-4670K                  | 3.40 | 27    | 3166CD0BE4 |
-| Intel      | Core i7-6700                   | 3.40 | 27    | DA78DC8E90 |
+| AMD        | Athlon II X2 260               |      | 27    | A5C61E8040 |
+| AMD        | Ryzen 5 2600 Six-Core          |      | 27    | A1FCC1592D |
+| Intel      | Core 2 Duo E6850               | 3.00 | 27    | 847309C81D |
+| Intel      | Core 2 6400                    | 2.13 | 27    | 9E7FA667C7 |
+| Intel      | Core i3-4160                   | 3.60 | 27    | 4A970C7F9C |
+| Intel      | Core i5-4430                   | 3.00 | 27    | 2D2BB51F61 |
+| Intel      | Core i5-4590                   | 3.30 | 27    | 6145F43FAA |
+| Intel      | Core i5-4690K                  | 3.50 | 27    | A816D75097 |
 | AMD        | Athlon 64 X2 Dual Core 4200+   |      | 26    | 4F9FB84CF3 |
-| AMD        | Athlon 64 X2 Dual Core 3800+   |      | 26    | 0478804BE2 |
-| AMD        | Phenom II X6 1055T             |      | 26    | C44B707FC4 |
-| AMD        | Athlon II X4 630               |      | 26    | 4950E6BB13 |
-| AMD        | Athlon II X2 260               |      | 26    | 17C0C75B39 |
-| Intel      | Core 2 Duo E6850               | 3.00 | 26    | A4A45B8A8B |
-| Intel      | Core 2 6400                    | 2.13 | 26    | 9648FF0793 |
-| Intel      | Pentium G850                   | 2.90 | 26    | F68209E673 |
-| Intel      | Core i5-4430                   | 3.00 | 26    | 32D6CC8A86 |
-| Intel      | Core i5-4690K                  | 3.50 | 26    | 19AD634C13 |
-| AMD        | Athlon 64 3200+                |      | 25    | D753273D7B |
-| AMD        | Athlon II X4 620               |      | 25    | 24F00A45BF |
-| Intel      | Core 2 Quad Q8200              | 2.33 | 25    | DEB6214FDD |
-| AMD        | Athlon II X3 450               |      | 24    | 4B5D7735D0 |
-| AMD        | Athlon II X4 645               |      | 24    | A9ED28807E |
-| AMD        | Ryzen 5 1600 Six-Core          |      | 24    | 03B0E6294F |
-| Intel      | Core i3-4160                   | 3.60 | 24    | 9F42078526 |
-| Intel      | Core i5-6400                   | 2.70 | 24    | 99614383EB |
-| AMD        | Athlon II X3 440               |      | 23    | 7C80BF6FDA |
-| AMD        | A8-7600 Radeon R7, 10 Compu... |      | 23    | 33CFE3D019 |
-| AMD        | Ryzen 3 2200G with Radeon V... |      | 23    | 2B309F6855 |
-| Intel      | Core 2 6300                    | 1.86 | 23    | 7038954CEF |
-| Intel      | Pentium Dual-Core E6300        | 2.80 | 23    | 84C3697ACF |
-| Intel      | Core 2 Duo E8500               | 3.16 | 23    | 3B5FB81B88 |
-| Intel      | Celeron G1610                  | 2.60 | 23    | 2D5421E731 |
+| AMD        | Athlon II X4 620               |      | 26    | 772C191230 |
+| AMD        | Athlon II X4 630               |      | 26    | C43D48A7E8 |
+| AMD        | A4-6300 APU with Radeon HD ... |      | 26    | 0CABEB6C95 |
+| AMD        | Ryzen 5 2400G with Radeon V... |      | 26    | BF727C8928 |
+| Intel      | Core 2 6300                    | 1.86 | 26    | 41E70BF30B |
+| Intel      | Celeron G1610                  | 2.60 | 26    | 39CDF41760 |
+| Intel      | Core i5-4690                   | 3.50 | 26    | 0A6D5F5CB4 |
+| Intel      | Core i7-6700K                  | 4.00 | 26    | C24A536495 |
+| AMD        | Athlon II X3 450               |      | 25    | E7FEEA6B9C |
+| AMD        | FX-8300 Eight-Core             |      | 25    | 1FC27C2FFC |
+| AMD        | A8-7600 Radeon R7, 10 Compu... |      | 25    | 2396636695 |
+| Intel      | Pentium G4560                  | 3.50 | 25    | FF12D313A1 |
+| Intel      | Pentium G850                   | 2.90 | 25    | BE51211FE3 |
+| Intel      | Pentium G3260                  | 3.30 | 25    | 5697A7E164 |
+| AMD        | Athlon 64 X2 Dual Core 5600+   |      | 24    | 461D79E9EB |
+| AMD        | Phenom II X4 945               |      | 24    | 44F6DB57C6 |
+| AMD        | Athlon II X3 440               |      | 24    | BCAB53E2ED |
+| AMD        | Athlon II X4 645               |      | 24    | D8F9E9E4E5 |
+| Intel      | Core 2 Duo E8500               | 3.16 | 24    | FC04012849 |
+| Intel      | Celeron J1800                  | 2.41 | 24    | F962D4BBF9 |
+| AMD        | A4-5300 APU with Radeon HD ... |      | 23    | 8230399CC0 |
+| AMD        | A6-5400K APU with Radeon HD... |      | 23    | F9745466F5 |
+| Intel      | Pentium 4                      | 2.40 | 23    | A00B25B44B |
+| Intel      | Celeron E1400                  | 2.00 | 23    | 5F7B0470DD |
+| Intel      | Core i7-7700                   | 3.60 | 23    | 832335B676 |
 | Intel      | Core i3-4330                   | 3.50 | 23    | 8F8E9AFD24 |
-| Intel      | Core i5-4690                   | 3.50 | 23    | 66882A7F7D |
-| AMD        | Athlon 64 X2 Dual Core 5600+   |      | 22    | DAA890901E |
-| AMD        | Phenom II X4 945               |      | 22    | A270C78534 |
-| AMD        | A6-5400K APU with Radeon HD... |      | 22    | 77FDDE1684 |
-| AMD        | Ryzen 7 1700 Eight-Core        |      | 22    | 880E3D4D52 |
-| Intel      | Pentium 4                      | 2.40 | 22    | 6864E03577 |
-| Intel      | Celeron E1400                  | 2.00 | 22    | 4DAC736908 |
-| Intel      | Pentium G4560                  | 3.50 | 22    | 9B15CCEBAB |
-| Intel      | Pentium G840                   | 2.80 | 22    | 8EE1E332AF |
-| Intel      | Core i5-4590                   | 3.30 | 22    | 7BBCD6F17D |
-| Intel      | Core i7-6700K                  | 4.00 | 22    | 89F4BB64D7 |
-| AMD        | Phenom II X4 945               |      | 21    | FA67D28BA1 |
-| AMD        | A10-5800K APU with Radeon H... |      | 21    | 88E3DD8AEA |
-| AMD        | A4-5300 APU with Radeon HD ... |      | 21    | AEC91031D4 |
-| AMD        | A4-6300 APU with Radeon HD ... |      | 21    | 8BCC9C4C78 |
+| AMD        | A10-5800K APU with Radeon H... |      | 22    | FFBFB70794 |
+| AMD        | FX -4350 Quad-Core             |      | 22    | 4237BD1A34 |
+| Intel      | Core 2 Duo E8600               | 3.33 | 22    | 414DCC3FD6 |
+| Intel      | Core i7 860                    | 2.80 | 22    | 835282F510 |
+| Intel      | Pentium G840                   | 2.80 | 22    | B3473173DA |
+| Intel      | Core i3-4150                   | 3.50 | 22    | CF6B1C24E5 |
+| AMD        | Phenom II X4 945               |      | 21    | 67F0F7A699 |
+| AMD        | Athlon II X3 445               |      | 21    | 6BBE0ABF96 |
+| AMD        | FX-8120 Eight-Core             |      | 21    | 0D6CA866B0 |
+| AMD        | FX-8320E Eight-Core            |      | 21    | 1BF5907156 |
+| Intel      | Core 2 6300                    | 1.86 | 21    | AE7A8A6B97 |
 | Intel      | Core 2 Quad Q9550              | 2.83 | 21    | 77480282EB |
-| Intel      | Atom 330                       | 1.60 | 21    | 1CADF5EB87 |
-| Intel      | Celeron J1800                  | 2.41 | 21    | 35CFA6018F |
+| Intel      | Pentium Dual-Core E5500        | 2.80 | 21    | FE93074CAE |
+| Intel      | Core i7 930                    | 2.80 | 21    | 08C5527FC8 |
+| Intel      | Atom 330                       | 1.60 | 21    | 4DEAD658AD |
+| Intel      | Core i3 540                    | 3.07 | 21    | A57DCF32AA |
+| Intel      | Celeron G1620                  | 2.70 | 21    | AF0F782566 |
 | Intel      | Pentium G3420                  | 3.20 | 21    | 9770B67FA6 |
+| Intel      | Celeron G3900                  | 2.80 | 21    | 86457D8FC0 |
 | AMD        | Athlon 64 X2 Dual Core 5400+   |      | 20    | B28773FBED |
-| AMD        | Athlon II X3 445               |      | 20    | A1ADC281B3 |
-| AMD        | FX -4350 Quad-Core             |      | 20    | E68A02C0A3 |
-| AMD        | FX-8300 Eight-Core             |      | 20    | F79EDA31F9 |
-| Intel      | Core 2 Duo E8600               | 3.33 | 20    | 7D6812488D |
-| Intel      | Pentium Dual-Core E5500        | 2.80 | 20    | 1E185BA638 |
-| Intel      | Core 2 Duo E8200               | 2.66 | 20    | 64F39F56BD |
-| Intel      | Core i7 930                    | 2.80 | 20    | 7C64EA2E6D |
-| Intel      | Core i3 540                    | 3.07 | 20    | DA83A24C25 |
+| AMD        | Athlon II X4 635               |      | 20    | 6DCCA89FCA |
+| AMD        | FX -4130 Quad-Core             |      | 20    | 040D51AEF1 |
+| AMD        | A4-4000 APU with Radeon HD ... |      | 20    | 0C8768F146 |
+| AMD        | Athlon X4 840 Quad Core        |      | 20    | D05A7F257A |
+| Intel      | Pentium Dual E2140             | 1.60 | 20    | 40408157F6 |
+| Intel      | Core i5-7500                   | 3.40 | 20    | 02758758A0 |
+| Intel      | Core i7-7700K                  | 4.20 | 20    | B50FCF55B7 |
+| Intel      | Pentium Dual-Core E5800        | 3.20 | 20    | 4083A82BD5 |
+| Intel      | Pentium Dual-Core E6700        | 3.20 | 20    | C0D7396586 |
+| Intel      | Xeon E5450                     | 3.00 | 20    | 93523A8EB1 |
+| Intel      | Core 2 Duo E8200               | 2.66 | 20    | 0C06CBAE86 |
 | Intel      | Core i5 650                    | 3.20 | 20    | F58375E009 |
-| Intel      | Core i3-4150                   | 3.50 | 20    | 097B4FFD71 |
-| Intel      | Pentium G3260                  | 3.30 | 20    | C76B2FB327 |
-| AMD        | Phenom II X2 555               |      | 19    | 08D3C8B273 |
-| AMD        | Athlon II X4 635               |      | 19    | 583C276AD3 |
-| AMD        | FX-8120 Eight-Core             |      | 19    | AAA77437D5 |
+| AMD        | Phenom II X2 555               |      | 19    | 774B15B717 |
 | Intel      | Pentium 4                      | 2.80 | 19    | 4BF2C616B1 |
-| Intel      | Pentium Dual E2140             | 1.60 | 19    | 260C76AAF6 |
-| Intel      | Core 2 6300                    | 1.86 | 19    | 09F65DEA65 |
-| Intel      | Core i7-7700K                  | 4.20 | 19    | 1E9BB53944 |
+| Intel      | Pentium 4                      | 3.00 | 19    | D1F6910C12 |
+| Intel      | Core i3-8100                   | 3.60 | 19    | A410481B3F |
+| Intel      | Core 2 Duo E7600               | 3.06 | 19    | 20DFDBF35B |
 | Intel      | Core 2 Quad Q8200              | 2.33 | 19    | 5F6E1A3B61 |
-| Intel      | Celeron G3900                  | 2.80 | 19    | A3868738D5 |
+| Intel      | Core i5 650                    | 3.20 | 19    | EC0235805E |
+| Intel      | Celeron J1900                  | 1.99 | 19    | 2AD366F4C0 |
+| Intel      | Celeron G1820                  | 2.70 | 19    | 59FAF5DF8C |
+| Intel      | Pentium G3240                  | 3.10 | 19    | 3C957A3758 |
+| AMD        | Athlon 64 X2 Dual Core 4400+   |      | 18    | 44E3D900F5 |
+| AMD        | Athlon 64 X2 Dual Core 3600+   |      | 18    | C862E6269E |
+| AMD        | Athlon II X2 245               |      | 18    | 41F3167FB7 |
+| AMD        | A4-3400 APU with Radeon HD ... |      | 18    | 4E837094B0 |
 | AMD        | Athlon X4 740 Quad Core        |      | 18    | C7B45B917D |
-| AMD        | A4-4000 APU with Radeon HD ... |      | 18    | B10EB3E198 |
-| AMD        | FX-8320E Eight-Core            |      | 18    | 596AFEF750 |
-| AMD        | Athlon X4 840 Quad Core        |      | 18    | 88E51DFA85 |
+| AMD        | A10-6800K APU with Radeon H... |      | 18    | D32464D841 |
+| AMD        | A8-6600K APU with Radeon HD... |      | 18    | 928394BE8E |
+| AMD        | A10-7850K Radeon R7, 12 Com... |      | 18    | 646D568712 |
+| AMD        | Athlon X4 860K Quad Core       |      | 18    | 7B04002FF9 |
 | Intel      | Celeron                        | 2.60 | 18    | AE7CD5DF2C |
-| Intel      | Pentium 4                      | 3.00 | 18    | CE41D485F3 |
-| Intel      | Pentium Dual-Core E5800        | 3.20 | 18    | E822FDB214 |
-| Intel      | Xeon E5450                     | 3.00 | 18    | 1039518044 |
-| Intel      | Core i7 860                    | 2.80 | 18    | C5B8862A26 |
-| Intel      | Core i5 650                    | 3.20 | 18    | 05DC50AA11 |
-| Intel      | Celeron G1620                  | 2.70 | 18    | 07CABFD5DD |
-| Intel      | Celeron G1820                  | 2.70 | 18    | 43487CB040 |
-| AMD        | Athlon 64 X2 Dual Core 3600+   |      | 17    | 4E526BB85F |
-| AMD        | A4-3400 APU with Radeon HD ... |      | 17    | D969A32092 |
-| AMD        | A8-6600K APU with Radeon HD... |      | 17    | 426AE68B93 |
-| AMD        | Athlon X4 860K Quad Core       |      | 17    | D6529B50FB |
-| AMD        | Ryzen 5 2400G with Radeon V... |      | 17    | 76E2078928 |
+| Intel      | Core 2 6420                    | 2.13 | 18    | CE46BF7581 |
+| Intel      | Core i5-6600K                  | 3.50 | 18    | B6BFE6E9C8 |
+| AMD        | Phenom II X6 1090T             |      | 17    | 2F4B6DEB44 |
+| AMD        | Athlon II X3 455               |      | 17    | F81E1367B9 |
+| AMD        | FX-8150 Eight-Core             |      | 17    | 54E2BF8542 |
 | Intel      | Celeron D                      | 3.06 | 17    | BD61806194 |
 | Intel      | Core 2 4400                    | 2.00 | 17    | BBB6C77D49 |
-| Intel      | Core 2 Duo E7600               | 3.06 | 17    | E7AD4E06B0 |
-| Intel      | Pentium Dual-Core E6700        | 3.20 | 17    | 71A2CD183B |
+| Intel      | Core 2 Quad Q9450              | 2.66 | 17    | D87E2ED1BC |
+| Intel      | Core i7 950                    | 3.07 | 17    | 2E5524DD03 |
+| Intel      | Core i7-3820                   | 3.60 | 17    | 13DBC6F66D |
 | Intel      | Celeron 1037U                  | 1.80 | 17    | 90EAD0E5EE |
-| AMD        | Phenom II X6 1090T             |      | 16    | F164DA5974 |
+| AMD        | Phenom II X6 1075T             |      | 16    | BD81825A28 |
+| AMD        | Phenom 9550 Quad-Core          |      | 16    | 00931DD0B2 |
 | AMD        | Athlon II X3 425               |      | 16    | DD7F054971 |
-| AMD        | Athlon II X2 245               |      | 16    | BCD563149D |
-| AMD        | FX -4130 Quad-Core             |      | 16    | B2DB9E2035 |
-| AMD        | FX-8150 Eight-Core             |      | 16    | CFDCEB1356 |
-| AMD        | A10-6800K APU with Radeon H... |      | 16    | CEDA0A30C3 |
+| AMD        | Athlon II X2 255               |      | 16    | 203BAFF440 |
+| Intel      | Core 2 Duo E4700               | 2.60 | 16    | EAB1152D7D |
 | Intel      | Genuine 2140                   | 1.60 | 16    | CA59692108 |
-| Intel      | Core 2 Quad Q9450              | 2.66 | 16    | C8473D0EF0 |
-| Intel      | Core i7-3820                   | 3.60 | 16    | BD6FF7AA0F |
-| Intel      | Celeron J1900                  | 1.99 | 16    | 3450D4540C |
-| Intel      | Pentium G3240                  | 3.10 | 16    | D73E7CDAF7 |
-| Intel      | Core i5-6600K                  | 3.50 | 16    | E854740490 |
-| AMD        | Athlon 64 X2 Dual Core 4400+   |      | 15    | BB9A824482 |
+| Intel      | Core 2 6320                    | 1.86 | 16    | 68DB872DF1 |
+| Intel      | Core i5-8400                   | 2.80 | 16    | 69DF829AF1 |
+| Intel      | Pentium G2120                  | 3.10 | 16    | BBFED70437 |
+| AMD        | Athlon 64 X2 Dual Core 6000+   |      | 15    | 69749F7B95 |
+| AMD        | Athlon 64 3000+                |      | 15    | 1CB34AA937 |
 | AMD        | Athlon 64 X2 Dual Core 3800+   |      | 15    | 784F37710B |
-| AMD        | Phenom II X6 1075T             |      | 15    | A4119B2AD7 |
-| AMD        | Athlon II X3 455               |      | 15    | 82658003D4 |
+| AMD        | Phenom 8450 Triple-Core        |      | 15    | 2CB4EBD1DF |
+| AMD        | Athlon II X3 435               |      | 15    | 7F408D5AD5 |
 | AMD        | Sempron 140                    |      | 15    | 9643FFAA28 |
+| AMD        | Athlon II X2 240               |      | 15    | A365873A89 |
+| AMD        | A4-7300 APU with Radeon HD ... |      | 15    | 505DF04ABC |
 | AMD        | FX -6350 Six-Core              |      | 15    | 5711BD1130 |
-| AMD        | A10-7850K Radeon R7, 12 Com... |      | 15    | E1D561ABB4 |
-| AMD        | Ryzen 5 2600 Six-Core          |      | 15    | BF6F02A425 |
-| Intel      | Core 2 Duo E4700               | 2.60 | 15    | 982ACF395B |
+| AMD        | Ryzen 5 1600X Six-Core         |      | 15    | 617835BC00 |
 | Intel      | Pentium Dual E2220             | 2.40 | 15    | 3287F20A2A |
-| Intel      | Core 2 6320                    | 1.86 | 15    | ADB4F9193B |
-| Intel      | Core 2 6420                    | 2.13 | 15    | 943832F4C7 |
+| Intel      | Genuine 2160                   | 1.80 | 15    | B54A538301 |
 | Intel      | Core 2 Quad                    | 2.40 | 15    | 574DA789B0 |
-| Intel      | Core i5-7500                   | 3.40 | 15    | 239A2E1678 |
-| Intel      | Core i7 950                    | 3.07 | 15    | A265BAD98F |
-| Intel      | Celeron G540                   | 2.50 | 15    | 0D28868F69 |
-| Intel      | Core i3-3210                   | 3.20 | 15    | C2DCE3184C |
-| AMD        | Phenom 8450 Triple-Core        |      | 14    | 3F9F5FB840 |
-| AMD        | Phenom 9550 Quad-Core          |      | 14    | 56210ACC56 |
-| AMD        | Athlon II X2 240               |      | 14    | 8F8DBB4243 |
-| AMD        | Athlon II X2 255               |      | 14    | C8CDE63BC8 |
-| AMD        | A8-3870 APU with Radeon HD ... |      | 14    | 961DE73328 |
-| AMD        | E-350                          |      | 14    | 86B54A46B1 |
-| AMD        | A4-7300 APU with Radeon HD ... |      | 14    | E232F2DE61 |
-| Intel      | Celeron E1200                  | 1.60 | 14    | 9D3DBD169B |
-| Intel      | Genuine 2160                   | 1.80 | 14    | 1E807288A2 |
-| Intel      | Core i7-7700                   | 3.60 | 14    | 0FE2508B1C |
-| Intel      | Celeron E3200                  | 2.40 | 14    | BA2D406643 |
-| Intel      | Xeon E5450                     | 3.00 | 14    | A2768338C0 |
-| Intel      | Atom 230                       | 1.60 | 14    | E8574A6711 |
-| Intel      | Pentium G2120                  | 3.10 | 14    | A67F2E1C4D |
-| Intel      | Pentium G2130                  | 3.20 | 14    | D90CC4CBE3 |
-| AMD        | Athlon 64 X2 Dual Core 6000+   |      | 13    | 72886E4425 |
+| Intel      | Core i7-8700K                  | 3.70 | 15    | 345BBA3C1F |
+| Intel      | Xeon E5450                     | 3.00 | 15    | B5BA9A13DC |
+| Intel      | Atom 230                       | 1.60 | 15    | 9C396582BE |
 
 ### Memory
 
 | MFG        | Name               | Size     | Type | MT/s | Count | Probe      |
 |------------|--------------------|----------|------|------|-------|------------|
-|            | Module DIMM        | 2048 MB  | DDR2 | 800  | 429   | 2FDD668590 |
-|            | Module SDRAM       | 2048 MB  |      |      | 400   | F8AE92B32F |
-|            | Module             | 2048 MB  |      | 800  | 371   | F6B9026258 |
-|            | Module SDRAM       | 1024 MB  |      |      | 368   | 34021FD6BD |
-|            | Module             | 4096 MB  |      | 1333 | 332   | A9ED28807E |
-|            | Module             | 2048 MB  |      | 1333 | 320   | 551193665F |
-|            | Module DIMM        | 1024 MB  | DDR2 | 800  | 290   | 48709E5844 |
-|            | Module             | 1024 MB  |      | 800  | 217   | F6B9026258 |
-|            | Module SODIMM      | 1024 MB  | DDR2 | 667  | 212   | EE184BFE51 |
-|            | Module DIMM        | 2048 MB  | DDR2 | 667  | 173   | EE184BFE51 |
-|            | Module SODIMM      | 4096 MB  | DDR3 | 1333 | 154   | 6A60A724F9 |
-|            | Module             | 2048 MB  |      | 667  | 148   | E1D8ADF3C9 |
-|            | Module             | 1024 MB  |      | 667  | 143   | 6DB0F0B43C |
-|            | Module             | 2048 MB  |      | 400  | 124   | 982ACF395B |
-|            | Module SDRAM       | 512 MB   |      |      | 122   | 642FED58C5 |
-|            | Module             | 4096 MB  |      | 1600 | 121   | C79641FC9B |
-|            | Module             | 1024 MB  |      |      | 115   | 38155B66BB |
-| Kingston   | KHX1600C9D3/4GX... | 4096 MB  | DDR3 | 2400 | 106   | 1DBE9C51F6 |
-|            | Module SODIMM      | 2048 MB  | DDR3 | 1333 | 92    | 961DE73328 |
-|            | Module DIMM        | 4096 MB  | DDR3 | 1600 | 87    | B801DD3F7D |
-|            | Module             | 1024 MB  | DDR2 |      | 86    | CD4ECC0B42 |
-|            | Module DDR         | 2048 MB  |      | 1333 | 85    | 966D463C0C |
-|            | Module             | 1024 MB  | DDR2 | 333  | 84    | F87C76BA83 |
-|            | Module             | 4096 MB  |      | 400  | 84    | 666B4349AD |
-|            | Module             | 2048 MB  |      | 1066 | 81    | A2DBF52E17 |
-| Kingston   | KHX1600C10D3/8G... | 8192 MB  | DDR3 | 1600 | 71    | 0C7ACF2C99 |
-|            | Module             | 2048 MB  | DDR2 |      | 68    | FFC9B5ED4F |
-|            | Module             | 2048 MB  |      |      | 67    | 1293120120 |
-|            | Module             | 2048 MB  | DDR2 | 333  | 67    | 7D6812488D |
-| Kingston   | 99U5471-012.A00... | 4096 MB  | DDR3 | 1600 | 66    | 724F1F5F22 |
-|            | Module             | 512 MB   |      |      | 65    | 2E9805CB56 |
-|            | Module             | 1024 MB  |      | 400  | 59    | BD4727E558 |
-|            | Module SDRAM       | 4096 MB  |      |      | 56    | 5F6E1A3B61 |
-| Kingston   | 99U5584-005.A00... | 4096 MB  | DDR3 | 1600 | 53    | C0B50F9AE1 |
-|            | Module DDR         | 2048 MB  |      | 800  | 52    | C92DC5D0CF |
-|            | Module DIMM        | 512 MB   | DDR2 | 667  | 51    | 3DD6E989DE |
-|            | Module             | 2048 MB  |      | 1600 | 49    | 2F8132A2A1 |
-|            | Module             | 2048 MB  | DDR2 | 400  | 48    | C44B707FC4 |
-| Kingston   | 99U5471-020.A00... | 4096 MB  | DDR3 | 1600 | 47    | 88E3DD8AEA |
-|            | Module             | 4096 MB  |      | 667  | 45    | F0B3D3251C |
-|            | Module             | 4096 MB  |      | 1066 | 44    | 7C64EA2E6D |
+|            | Module DIMM        | 2048 MB  | DDR2 | 800  | 455   | B9B80DB558 |
+|            | Module SDRAM       | 2048 MB  |      |      | 421   | 6FDB8DFE61 |
+|            | Module             | 2048 MB  |      | 800  | 399   | D87E2ED1BC |
+|            | Module SDRAM       | 1024 MB  |      |      | 386   | 84495E0FB8 |
+|            | Module             | 4096 MB  |      | 1333 | 356   | 0D6CA866B0 |
+|            | Module             | 2048 MB  |      | 1333 | 347   | E722D70419 |
+|            | Module DIMM        | 1024 MB  | DDR2 | 800  | 308   | AFF249E34F |
+|            | Module             | 1024 MB  |      | 800  | 229   | CF7E7BC433 |
+|            | Module SODIMM      | 1024 MB  | DDR2 | 667  | 228   | 60EC6F52F9 |
+|            | Module DIMM        | 2048 MB  | DDR2 | 667  | 182   | 016937E08A |
+|            | Module SODIMM      | 4096 MB  | DDR3 | 1333 | 169   | 2AD366F4C0 |
+|            | Module             | 2048 MB  |      | 667  | 157   | 41F3167FB7 |
+|            | Module             | 1024 MB  |      | 667  | 154   | ABA2A5E5E6 |
+|            | Module             | 4096 MB  |      | 1600 | 129   | EE209BFCD3 |
+|            | Module             | 2048 MB  |      | 400  | 128   | 61CA6E9A9A |
+|            | Module SDRAM       | 512 MB   |      |      | 128   | 83592C8857 |
+|            | Module             | 1024 MB  |      |      | 121   | B656825800 |
+| Kingston   | KHX1600C9D3/4GX... | 4096 MB  | DDR3 | 2400 | 116   | C51735EE45 |
+|            | Module SODIMM      | 2048 MB  | DDR3 | 1333 | 101   | D4C9D16A5C |
+|            | Module DIMM        | 4096 MB  | DDR3 | 1600 | 95    | 7AA5BC6C52 |
+|            | Module             | 1024 MB  | DDR2 |      | 93    | 40408157F6 |
+|            | Module DDR         | 2048 MB  |      | 1333 | 90    | C87B5D73CA |
+|            | Module             | 4096 MB  |      | 400  | 90    | EC1F6C8A0B |
+|            | Module             | 1024 MB  | DDR2 | 333  | 89    | 9DF2C0E0DD |
+|            | Module             | 2048 MB  |      | 1066 | 87    | F7F43B688E |
+|            | Module             | 2048 MB  |      |      | 77    | B656825800 |
+| Kingston   | KHX1600C10D3/8G... | 8192 MB  | DDR3 | 1600 | 76    | 1D2014DD53 |
+|            | Module             | 2048 MB  | DDR2 |      | 70    | B326F5172B |
+|            | Module             | 512 MB   |      |      | 69    | 80274F5B0C |
+|            | Module             | 2048 MB  | DDR2 | 333  | 68    | E643B8ED58 |
+| Kingston   | 99U5471-012.A00... | 4096 MB  | DDR3 | 1600 | 67    | 8130E93C90 |
+| Kingston   | 99U5584-005.A00... | 4096 MB  | DDR3 | 1600 | 61    | 13AF031E5E |
+|            | Module             | 1024 MB  |      | 400  | 61    | 967BB75CBB |
+|            | Module SDRAM       | 4096 MB  |      |      | 61    | C0D7396586 |
+|            | Module DDR         | 2048 MB  |      | 800  | 56    | A03802AE0A |
+| Kingston   | 99U5471-020.A00... | 4096 MB  | DDR3 | 1600 | 53    | 2AD366F4C0 |
+|            | Module             | 2048 MB  | DDR2 | 400  | 53    | 4908CB8960 |
+|            | Module DIMM        | 512 MB   | DDR2 | 667  | 52    | 69669B5BDD |
+|            | Module             | 2048 MB  |      | 1600 | 50    | 60E213070F |
+|            | Module             | 4096 MB  |      | 667  | 50    | A5C61E8040 |
+|            | Module             | 4096 MB  |      | 1066 | 46    | 3FEC3F3DC6 |
+| Samsung    | M378B5273DH0-CH... | 4096 MB  | DDR2 | 2133 | 46    | 71F9B6C386 |
+| Kingston   | KHX1866C10D3/8G... | 8192 MB  | DDR3 | 2133 | 43    | 09C02E478D |
+| Samsung    | M378B5773CH0-CH... | 2048 MB  | DDR3 | 1867 | 43    | 2D378E81BE |
+| Samsung    | M378B5673FH0-CH... | 2048 MB  | DDR3 | 1600 | 42    | 2D378E81BE |
+| SK Hynix   | HMT351U6CFR8C-H... | 4096 MB  | DDR3 | 1600 | 40    | A644A3A3AD |
+|            | Module DIMM DDR    | 1024 MB  |      | 667  | 39    | 44E3D900F5 |
 |            | Module             | 512 MB   |      | 667  | 39    | 6DB0F0B43C |
-|            | Module SODIMM      | 8192 MB  | DDR3 | 1600 | 38    | 8C6609B568 |
-| Samsung    | M378B5273DH0-CH... | 4096 MB  | DDR3 | 2133 | 38    | C2DCE3184C |
-| Kingston   | KHX1866C10D3/8G... | 8192 MB  |      | 2133 | 37    | E969E52D33 |
-|            | Module             | 8192 MB  |      | 1333 | 37    | A9ED28807E |
-| Samsung    | M378B5773CH0-CH... | 2048 MB  | DDR3 | 1867 | 37    | 66A5EA0BE5 |
-| SK Hynix   | HMT351U6CFR8C-H... | 4096 MB  | DDR3 | 1600 | 36    | 8798B74A8F |
-| Samsung    | M378B5673FH0-CH... | 2048 MB  | DDR3 | 1600 | 36    | C8CDE63BC8 |
-| Kingston   | KHX1866C10D3/4G... | 4096 MB  | DDR3 | 1866 | 35    | 92145D937F |
-|            | Module SDRAM       | 2048 MB  |      | 800  | 35    | 72A18A259D |
-|            | Module SDRAM       | 256 MB   |      |      | 35    | 231DE8EA15 |
-|            | Module             | 4096 MB  |      | 800  | 35    | E411ED27AE |
-| Samsung    | M378B5773DH0-CH... | 2048 MB  | DDR3 | 1333 | 35    | 9F42078526 |
-|            | Module DIMM DDR    | 1024 MB  |      | 667  | 34    | A2E86EFF2D |
-|            | Module DDR         | 1024 MB  |      | 800  | 34    | CE5CCA6404 |
-|            | Module             | 1024 MB  | DDR2 | 266  | 34    | 0478804BE2 |
-|            | Module SDRAM       | 1024 MB  |      | 667  | 34    | 1E807288A2 |
-|            | Module SODIMM      | 1024 MB  | DDR2 | 533  | 33    | 4E526BB85F |
-|            | Module DDR         | 4096 MB  |      | 1333 | 33    | 05DC50AA11 |
-| Kingston   | KHX1600C10D3/8G... | 8192 MB  | DDR3 | 1600 | 32    | 680A34868A |
-| Kingston   | 99U5474-028.A00... | 4096 MB  | DDR3 | 1333 | 31    | C76B2FB327 |
-|            | Module SDRAM       | 1024 MB  |      | 533  | 31    | A4A45B8A8B |
-|            | Module             | 4096 MB  |      |      | 31    | 16ECB5A13F |
-|            | Module DIMM        | 8192 MB  | DDR3 | 1333 | 31    | 7CF6D970EC |
-| Samsung    | M378B5273CH0-CH... | 4096 MB  | DDR3 | 1867 | 31    | 2703EE0766 |
-| Kingston   | KHX1600C10D3/4G... | 4096 MB  | DDR3 | 1600 | 30    | 66D36BB608 |
-|            | Module DIMM DDR    | 2048 MB  |      | 667  | 30    | A2E86EFF2D |
-|            | Module             | 1024 MB  |      | 1333 | 29    | EEEE376F38 |
-|            | Module DDR         | 1024 MB  |      | 400  | 29    | 27FC10C18A |
-|            | Module DIMM        | 2048 MB  | DDR2 | 533  | 28    | 7C6281F09B |
-| Crucial    | CT51264BA160B.C... | 4096 MB  | DDR3 | 1600 | 27    | 762D77E60F |
-|            | Module             | 1024 MB  |      | 66   | 26    | 3F25A03C59 |
-|            | Module             | 2048 MB  | DDR2 | 266  | 26    | BD61806194 |
-| Kingston   | KHX1866C9D3/4GX... | 4096 MB  | DDR3 | 1867 | 25    | 56C7F5C529 |
-|            | Module DDR         | 1024 MB  |      |      | 25    | 04762D9B42 |
-|            | Module SDRAM       | 2048 MB  |      | 533  | 25    | 9643FFAA28 |
-| Corsair    | CMX8GX3M2A1600C... | 4096 MB  | DDR3 | 1600 | 24    | EC6555DA94 |
-|            | Module             | 256 MB   |      |      | 24    | 94E705D4A2 |
+|            | Module             | 8192 MB  |      | 1333 | 39    | 708DFF507F |
+|            | Module SODIMM      | 8192 MB  | DDR3 | 1600 | 39    | 4C99FBF4FA |
+| Kingston   | KHX1600C10D3/8G... | 8192 MB  | DDR3 | 1600 | 38    | 78C75E4ACF |
+| Kingston   | KHX1866C10D3/4G... | 4096 MB  | DDR3 | 1866 | 38    | 0C3D1FCEFE |
+|            | Module SDRAM       | 256 MB   |      |      | 37    | 83592C8857 |
+|            | Module DDR         | 4096 MB  |      | 1333 | 37    | E40B76E473 |
+| Samsung    | M378B5773DH0-CH... | 2048 MB  | DDR3 | 1333 | 37    | 2D378E81BE |
+| Kingston   | KHX1600C10D3/4G... | 4096 MB  | DDR3 | 1600 | 36    | 97152DC2A4 |
+|            | Module             | 1024 MB  | DDR2 | 266  | 36    | D9EABC54C1 |
+|            | Module SDRAM       | 1024 MB  |      | 667  | 36    | AE7A8A6B97 |
+|            | Module             | 4096 MB  |      | 800  | 36    | 6867C534AF |
+|            | Module DIMM        | 8192 MB  | DDR3 | 1333 | 36    | B2D6DABAA7 |
+| Kingston   | 99U5474-028.A00... | 4096 MB  | DDR3 | 1333 | 35    | FD20ECEEC0 |
+|            | Module DDR         | 1024 MB  |      | 800  | 35    | DABC1EE203 |
+|            | Module SODIMM      | 1024 MB  | DDR2 | 533  | 35    | 00931DD0B2 |
+|            | Module SDRAM       | 2048 MB  |      | 800  | 35    | 3DCC4EE3D0 |
+|            | Module DIMM DDR    | 2048 MB  |      | 667  | 33    | 0C343F4A5E |
+|            | Module             | 4096 MB  |      |      | 33    | 5C9AAAAB05 |
+|            | Module SDRAM       | 1024 MB  |      | 533  | 32    | DE0DC42CA0 |
+| Samsung    | M378B5273CH0-CH... | 4096 MB  | DDR3 | 1867 | 32    | 899A6FEBDE |
+| Crucial    | CT51264BA160B.C... | 4096 MB  | DDR3 | 1600 | 31    | E1685D9BA3 |
+|            | Module DDR         | 1024 MB  |      | 400  | 31    | 97CC3C4274 |
+|            | Module             | 1024 MB  |      | 1333 | 30    | 38598A4379 |
+|            | Module DIMM        | 2048 MB  | DDR2 | 533  | 30    | 00931DD0B2 |
+| SK Hynix   | HMT351U6CFR8C-P... | 4096 MB  | DDR3 | 1800 | 28    | F1886B084F |
+|            | Module DDR         | 1024 MB  |      |      | 28    | 6A89046DFB |
+|            | Module             | 2048 MB  | DDR2 | 266  | 28    | 2CB4EBD1DF |
+|            | Module             | 1024 MB  |      | 66   | 27    | F4389CC577 |
+|            | Module             | 4096 MB  | DDR3 | 800  | 27    | 8230399CC0 |
+|            | Module             | 8192 MB  |      | 1600 | 27    | 4237BD1A34 |
+| Kingston   | KHX1866C9D3/4GX... | 4096 MB  | DDR3 | 1867 | 26    | 0C3D1FCEFE |
+|            | Module SDRAM       | 2048 MB  |      | 533  | 26    | FC04012849 |
+| Corsair    | CMX8GX3M2A1600C... | 4096 MB  | DDR3 | 1600 | 25    | FB8D17D634 |
+| Corsair    | CMZ8GX3M2A1600C... | 4096 MB  | DDR2 | 1600 | 24    | F9847F8DC5 |
+|            | Module             | 256 MB   |      |      | 24    | 80274F5B0C |
+| Kingston   | 99U5471-054.A00... | 8192 MB  | DDR3 | 1600 | 23    | FBE43FC861 |
 |            | Module DIMM        | 512 MB   | DDR2 |      | 23    | 9DF0CEE262 |
-|            | Module             | 8192 MB  |      | 1600 | 23    | 792BC1DD6F |
-| Corsair    | CMZ8GX3M2A1600C... | 4096 MB  | DDR3 | 1600 | 22    | EC6555DA94 |
-| SK Hynix   | HMT351U6CFR8C-P... | 4096 MB  | DDR3 | 1800 | 22    | F0D35357D4 |
-|            | Module             | 4096 MB  | DDR3 | 800  | 22    | ACB1DA03CD |
-|            | Module             | 1024 MB  | DDR2 | 400  | 21    | C4135693FC |
+| Kingston   | 9905471-001.A01... | 2048 MB  |      | 1600 | 22    | CB82599869 |
+|            | Module             | 1024 MB  | DDR2 | 400  | 22    | 461D79E9EB |
+|            | Module             | 2048 MB  | DDR3 | 800  | 22    | 87C67E8141 |
+|            | Module SDRAM       | 2048 MB  |      | 667  | 22    | AE7A8A6B97 |
+| Kingston   | KHX2133C11D3/4G... | 4096 MB  | DDR3 | 2133 | 21    | 81DDFD7F61 |
+| Kingston   | Module DIMM        | 2048 MB  | DDR2 | 800  | 21    | 6D882902AD |
+|            | Module DDR         | 512 MB   |      | 400  | 21    | D20509CA50 |
 |            | Module             | 512 MB   | DDR2 | 333  | 21    | 753ED60051 |
+| Samsung    | M378B5173DB0-CK... | 4096 MB  | DDR3 | 1600 | 21    | 138F3B5EE7 |
 |            | Module SDRAM       | 1024 MB  |      | 800  | 20    | 1BC2451FA9 |
-| Kingston   | 9905471-001.A01... | 2048 MB  | DDR3 | 1600 | 19    | F2560038AF |
-| Kingston   | KHX2133C11D3/4G... | 4096 MB  | DDR3 | 2133 | 19    | 927A46266A |
+|            | Module             | 512 MB   |      | 400  | 20    | 9463E5625F |
+|            | Module             | 512 MB   |      | 66   | 20    | F4389CC577 |
+| Samsung    | M378B5173CB0-CK... | 4096 MB  | DDR3 | 2000 | 20    | 138F3B5EE7 |
+| Corsair    | CMV4GX3M1A1333C... | 4096 MB  | DDR3 | 1600 | 19    | 9B8840EF5D |
+| Kingston   | 9905403-439.A00... | 4096 MB  | DDR3 | 1600 | 19    | 8F3427E15F |
+| Kingston   | 99U5474-026.A00... | 4096 MB  | DDR3 | 1333 | 19    | FD20ECEEC0 |
+| Kingston   | KHX1600C10D3/ DIMM | 4096 MB  | DDR3 | 1600 | 19    | 0CABEB6C95 |
+| Kingston   | KHX2133C14D4/4G... | 4096 MB  | DDR4 | 2133 | 19    | 2E67402402 |
 | Kingston   | KHX2400C11D3/4G... | 4096 MB  | DDR3 | 2400 | 19    | 0A4CDB301F |
-|            | Module SDRAM       | 2048 MB  |      | 667  | 19    | 1E807288A2 |
-|            | Module             | 512 MB   |      | 400  | 19    | 119DCF1A1D |
-|            | Module             | 512 MB   |      | 66   | 19    | 5D3AF9A12C |
-| Kingston   | 9905403-439.A00... | 4096 MB  | DDR3 | 1600 | 18    | 2CA17B3AA6 |
-| Kingston   | 99U5471-054.A00... | 8192 MB  | DDR3 | 1600 | 18    | DEE955AF65 |
-|            | Module DIMM        | 2048 MB  | DDR3 | 1067 | 18    | DDE51ECD79 |
-|            | Module             | 2048 MB  | DDR3 | 800  | 18    | AA7248927B |
-|            | Module             | 512 MB   |      | 533  | 18    | 626C138C66 |
-| Samsung    | M378B5173CB0-CK... | 4096 MB  | DDR3 | 2000 | 18    | 775809ECAF |
-| Samsung    | M378B5173DB0-CK... | 4096 MB  | DDR3 | 1600 | 18    | 02CBA6FDA0 |
-| Corsair    | CMV4GX3M1A1333C... | 4096 MB  | DDR3 | 1600 | 17    | 46E78A6EC1 |
-| Kingston   | 99U5474-026.A00... | 4096 MB  | DDR3 | 1333 | 17    | 64BA0F1E35 |
-| Kingston   | KHX2133C14D4/4G... | 4096 MB  | DDR4 | 2133 | 17    | 291EF2F99E |
-|            | Module DDR         | 512 MB   |      | 333  | 17    | D753273D7B |
-|            | Module DDR         | 512 MB   |      | 400  | 17    | B7CEC1644D |
+|            | Module DIMM        | 2048 MB  | DDR3 | 1067 | 19    | 293EB63C5D |
+|            | Module             | 512 MB   |      | 533  | 19    | 8A49A38575 |
+|            | Module DDR         | 512 MB   |      | 333  | 19    | D14D031927 |
+| Kingston   | 99U5471-037.A00... | 8192 MB  | DDR3 | 1600 | 18    | 1A192E9A44 |
+| Kingston   | KHX2400C15/8G DIMM | 8192 MB  | DDR4 | 2400 | 18    | 4015843475 |
+|            | Module SDRAM       | 2048 MB  |      | 1066 | 18    | 8CADE9850F |
+| GOODRAM    | GR1333D364L9/4G... | 4096 MB  | DDR3 | 1600 | 17    | D8999854B8 |
+| Kingston   | 99U5471-040.A00... | 8192 MB  | DDR3 | 1333 | 17    | 7BA4EECA79 |
+| Kingston   | 99U5474-016.A00... | 4096 MB  | DDR3 | 1333 | 17    | FD20ECEEC0 |
+| Kingston   | 99U5584-010.A00... | 4096 MB  | DDR3 | 1600 | 17    | A96BD0FFB8 |
+| Patriot    | PSD34G13332 DIMM   | 4096 MB  | DDR3 | 1333 | 17    | D89BBA8D23 |
+|            | Module DIMM        | 2048 MB  | DDR3 | 1600 | 17    | 8B65FC0042 |
+| Samsung    | M378B5173QH0-CK... | 4096 MB  | DDR3 | 1866 | 17    | 47F806D2A7 |
+| Corsair    | CMK16GX4M2B3000... | 8192 MB  | DDR4 | 3000 | 16    | 3973A7CEF2 |
+| Corsair    | CMZ4GX3M1A1600C... | 4096 MB  | DDR3 | 1600 | 16    | 32DD5BAEEC |
 | Crucial    | CT51264BA160B DIMM | 4096 MB  | DDR3 | 1600 | 16    | AB45A7DD05 |
-| Kingston   | 99U5471-037.A00... | 8192 MB  | DDR3 | 1600 | 16    | F79161999A |
-| Kingston   | KHX1600C10D3/ DIMM | 8192 MB  | DDR3 | 1600 | 16    | 0533339E4E |
-| Kingston   | Module DIMM        | 2048 MB  | DDR2 | 800  | 16    | 758924E4F2 |
-| Patriot    | PSD34G13332 DIMM   | 4096 MB  | DDR3 | 1333 | 16    | 7E70F0DCAB |
-|            | Module DIMM        | 2048 MB  | DDR3 | 1600 | 16    | F3C86A9592 |
-|            | Module SDRAM       | 2048 MB  |      | 1066 | 16    | 4C4FE1538E |
-| GOODRAM    | GR1333D364L9/4G... | 4096 MB  | DDR3 | 1600 | 15    | 5626FAABD8 |
-| Kingston   | 9905471-011.A00... | 4096 MB  | DDR3 | 1600 | 15    | 9FAB0B6F0B |
-| Kingston   | 99U5474-016.A00... | 4096 MB  |      | 1333 | 15    | A60168346F |
-| Kingston   | 99U5584-003.A00... | 4096 MB  | DDR3 | 1600 | 15    | 98CB227CB5 |
-| Kingston   | 99U5584-010.A00... | 4096 MB  | DDR3 | 1600 | 15    | 40DDA90CBB |
-| Kingston   | KHX2400C15/8G DIMM | 8192 MB  | DDR4 | 2400 | 15    | 936BEEBE68 |
-|            | Module             | 1024 MB  |      | 333  | 15    | 6AC982730F |
-|            | Module SODIMM      | 4096 MB  | DDR3 | 1067 | 15    | 5DE102EE2E |
+| Kingston   | 9905471-011.A00... | 4096 MB  | DDR3 | 1600 | 16    | A3522AAC75 |
+| Kingston   | 99U5584-003.A00... | 4096 MB  | DDR3 | 1600 | 16    | E1DDFFDB07 |
+|            | Module SODIMM      | 4096 MB  | DDR3 | 1067 | 16    | 4BE423D57C |
+|            | Module DDR         | 512 MB   |      |      | 16    | 5B224C17B7 |
+| Samsung    | M3 78T2863QZS-C... | 1024 MB  | DDR2 | 800  | 16    | 6D882902AD |
+| Samsung    | M3 78T5663QZ3-C... | 2048 MB  | DDR2 | 800  | 16    | 6D882902AD |
+| Samsung    | M378B5673GB0-CH... | 2048 MB  | DDR3 | 1333 | 16    | 21F1D5CC81 |
+| SK Hynix   | HYMP112U64CP8-S... | 1024 MB  | DDR2 | 800  | 16    | 54000CEF8B |
+| Crucial    | BLS8G3D1609DS1S... | 8192 MB  | DDR3 | 1600 | 15    | 2454918501 |
+| Crucial    | CT51264BA160BJ.... | 4096 MB  | DDR3 | 1600 | 15    | 92100B9B64 |
+| SK Hynix   | HMT325U6BFR8C-H... | 2048 MB  | DDR3 | 1333 | 15    | 8446679D11 |
+| Kingston   | 9905474-012.A00... | 2048 MB  | DDR3 | 1333 | 15    | 2DB02E1414 |
+| Kingston   | 99U5471-002.A01... | 2048 MB  | DDR3 | 1333 | 15    | 0EB25514EE |
+| Kingston   | KHX1600C9D3/2GX... | 2048 MB  |      | 1600 | 15    | 57024648C9 |
+|            | Module             | 1024 MB  |      | 333  | 15    | FD8F010178 |
+|            | Module             | 2048 MB  |      | 533  | 15    | 1581CB5806 |
 |            | Module             | 512 MB   |      | 800  | 15    | 133D4E7388 |
-| Samsung    | M3 78T2863QZS-C... | 1024 MB  | DDR2 | 800  | 15    | 3998C99464 |
-| Samsung    | M378B5173QH0-CK... | 4096 MB  | DDR3 | 1866 | 15    | E169B6B458 |
-| Samsung    | M378B5673GB0-CH... | 2048 MB  | DDR3 | 1333 | 15    | 6DC8CCD0F6 |
-| Crucial    | BLS8G3D1609DS1S... | 8192 MB  | DDR3 | 1600 | 14    | FB18F180A5 |
-| Crucial    | CT51264BA160BJ.... | 4096 MB  | DDR3 | 1600 | 14    | C9DF4AAFD7 |
-| SK Hynix   | HMT325U6BFR8C-H... | 2048 MB  | DDR3 | 1333 | 14    | E971779389 |
-| Kingston   | 9905474-012.A00... | 2048 MB  | DDR3 | 1333 | 14    | 7F0BF9C65F |
-| Kingston   | 9905584-015.A00... | 4096 MB  | DDR3 | 1600 | 14    | 428E5A184D |
+| Corsair    | CMX8GX3M2A1333C... | 4096 MB  | DDR3 | 1333 | 14    | D841363848 |
+| SK Hynix   | HMT325U6CFR8C-H... | 2048 MB  | DDR3 | 1600 | 14    | CD2A8D8B1C |
+| Kingston   | 9905584-015.A00... | 4096 MB  | DDR3 | 1600 | 14    | 06399A8AEF |
 | Kingston   | 99P5474-013.A00... | 4096 MB  | DDR3 | 1600 | 14    | 900BC7E93C |
-| Kingston   | 99U5471-040.A00... | 8192 MB  | DDR3 | 1333 | 14    | 435E64F300 |
-| Kingston   | KHX1600C9D3/2GX... | 2048 MB  | DDR3 | 1600 | 14    | 6BD310EB97 |
-|            | Module             | 2048 MB  |      | 533  | 14    | 8AB31FE48E |
-|            | Module             | 4096 MB  | DDR2 | 800  | 14    | 682BC26535 |
+| Kingston   | 99U5474-010.A00... | 2048 MB  | DDR3 | 1333 | 14    | 480BEDA3E2 |
+| Kingston   | 99U5595-003.A00... | 2048 MB  | DDR3 | 1600 | 14    | 39CDF41760 |
+| Kingston   | KHX1866C10D3/ DIMM | 4096 MB  | DDR3 | 1866 | 14    | 1FC27C2FFC |
+|            | Module             | 4096 MB  | DDR2 | 800  | 14    | 0575F0EB86 |
+|            | Module             | 512 MB   | DDR2 | 266  | 14    | 53D2EF8D02 |
 |            | Module DIMM        | 512 MB   | DDR2 | 533  | 14    | 7C6281F09B |
-| Samsung    | M3 78T5663QZ3-C... | 2048 MB  | DDR2 | 800  | 14    | 6A6E981372 |
+| Samsung    | M378B5173EB0-CK... | 4096 MB  | DDR3 | 1600 | 14    | B2626606CC |
 | Samsung    | M378B5273CH0-CK... | 4096 MB  | DDR3 | 2000 | 14    | 9B14E30C35 |
-| Corsair    | CMZ4GX3M1A1600C... | 4096 MB  | DDR3 | 1600 | 13    | A1DEF515BF |
+| Corsair    | CMK16GX4M2B3200... | 8192 MB  | DDR4 | 3200 | 13    | B903AD14BD |
 | Crucial    | CT51264BD160B.C... | 4096 MB  | DDR3 | 1600 | 13    | 4D1EE88EC3 |
-| Kingston   | 99U5471-001.A00... | 2048 MB  | DDR3 | 1333 | 13    | F2560038AF |
-| Kingston   | 99U5471-002.A01... | 2048 MB  | DDR3 | 1333 | 13    | 8F74791E46 |
+| SK Hynix   | HMT451U6AFR8C-P... | 4096 MB  | DDR3 | 1600 | 13    | 779B6B3344 |
+| Kingston   | 2G-UDIMM DIMM S... | 2048 MB  |      |      | 13    | AC86A586B5 |
+| Kingston   | 9905471-017.A00... | 4096 MB  | DDR3 | 1333 | 13    | B035986A93 |
+| Kingston   | 99U5471-001.A00... | 2048 MB  | DDR3 | 1333 | 13    | A6C486FDB5 |
 | Kingston   | 99U5471-052.A00... | 8192 MB  | DDR3 | 1333 | 13    | A2785304CB |
-| Kingston   | 99U5474-010.A00... | 2048 MB  | DDR3 | 1333 | 13    | 2821399C59 |
-| Kingston   | KHX1866C10D3/ DIMM | 4096 MB  | DDR3 | 1866 | 13    | 5711BD1130 |
-|            | Module DDR         | 512 MB   |      |      | 13    | 03602DBEA6 |
+| Kingston   | KHX1600C9D3/8GX... | 8192 MB  | DDR3 | 1600 | 13    | CDA1D6E3F7 |
+| Kingston   | KHX2133C11D3/8G... | 8192 MB  | DDR3 | 2133 | 13    | 96948A8965 |
+| Micron     | 8JTF51264AZ-1G6... | 4096 MB  | DDR3 | 1600 | 13    | 90FC9AFA3E |
+| Nanya      | NT2GT64U8HD0BY-... | 2048 MB  | DDR2 | 800  | 13    | 2371D130D0 |
+|            | Module DDR         | 1024 MB  |      | 1333 | 13    | 67CB0D2295 |
 |            | Module             | 8192 MB  |      | 667  | 13    | 8B977245CF |
+| Samsung    | M378B1G73QH0-CK... | 8192 MB  | DDR3 | 1600 | 13    | F3873460A2 |
 | Samsung    | M378B5673EH1-CH... | 2048 MB  | DDR3 | 1333 | 13    | 7A06A01CC2 |
-| SK Hynix   | HYMP112U64CP8-S... | 1024 MB  | DDR2 | 800  | 13    | 1A3B0634EB |
+| Silicon... | DBLT4GN568S DIMM   | 4096 MB  | DDR3 | 1333 | 13    | B0CFF72D0C |
+| SK Hynix   | HYMP125U64CP8-S... | 2048 MB  | DDR2 | 800  | 13    | 54000CEF8B |
+| Corsair    | CML8GX3M2A1600C... | 4096 MB  | DDR3 | 1867 | 12    | 2C4F68ECB1 |
 | Corsair    | CMX4GX3M1A1600C... | 4096 MB  | DDR3 | 1333 | 12    | 416F646796 |
-| Corsair    | CMX8GX3M2A1333C... | 4096 MB  | DDR3 | 1333 | 12    | 9EF947B594 |
-| SK Hynix   | HMT325U6CFR8C-H... | 2048 MB  | DDR3 | 1600 | 12    | 6A06B236F4 |
+| G.Skill    | F4-3000C16-8GIS... | 8192 MB  | DDR4 | 3200 | 12    | 5E8A739106 |
+| GOODRAM    | GR1333D364L9/2G... | 2048 MB  | DDR3 | 1333 | 12    | 8F6439120F |
+| SK Hynix   | HMT351U6EFR8C-P... | 4096 MB  | DDR3 | 1600 | 12    | A08028C506 |
+| Kingston   | 9905678-024.A00... | 4096 MB  | DDR4 | 2133 | 12    | A4F2FE8B73 |
 | Kingston   | 99U5595-002.A00... | 2048 MB  | DDR3 | 1400 | 12    | 6169DA7CBD |
-| Kingston   | KHX2133C11D3/8G... | 8192 MB  | DDR3 | 2133 | 12    | 7B99FD4C95 |
-| Kingston   | KHX2400C11D3/8G... | 8192 MB  | DDR3 | 2400 | 12    | DBEF73BCED |
+| Kingston   | KHX2133C14D4/8G... | 8192 MB  | DDR4 | 2667 | 12    | F7668CB321 |
+| Kingston   | KHX2400C11D3/8G... | 8192 MB  | DDR3 | 2400 | 12    | AFDF4A3A9C |
 | Kingston   | Module DIMM        | 1024 MB  | DDR2 | 667  | 12    | 7A6835908D |
+| Kingston   | Module DIMM        | 1024 MB  | DDR2 | 800  | 12    | 9E7FA667C7 |
+| Micron     | 16JTF51264AZ-1G... | 4096 MB  | DDR3 | 1333 | 12    | C7A436A839 |
 | Micron     | 8JTF25664AZ-1G4... | 2048 MB  | DDR3 | 1333 | 12    | 35B986C185 |
+|            | Module SDRAM       | 2048 MB  |      | 1333 | 12    | 68EAD839C1 |
 |            | Module             | 512 MB   |      | 333  | 12    | 6AC982730F |
-| Silicon... | DBLT4GN568S DIMM   | 4096 MB  | DDR3 | 1333 | 12    | 86080E5FB7 |
 | Team       | Elite-1333 DIMM    | 4096 MB  | DDR3 | 1333 | 12    | 23ACB95370 |
-| Corsair    | CMK16GX4M2B3000... | 8192 MB  | DDR4 | 2934 | 11    | A588768A6C |
-| GOODRAM    | GR1333D364L9/2G... | 2048 MB  | DDR3 | 1333 | 11    | 20046D5D05 |
-| SK Hynix   | HMT351U6EFR8C-P... | 4096 MB  | DDR3 | 1600 | 11    | CBA5D3466F |
+| Corsair    | CMK16GX4M2A2400... | 8192 MB  | DDR4 | 2933 | 11    | B6BFE6E9C8 |
+| Corsair    | CMX4GX3M1A1333C... | 4096 MB  | DDR3 | 1333 | 11    | 1F7A0DCE02 |
+| G.Skill    | F4-3200C16-8GVK... | 8192 MB  | DDR4 | 3200 | 11    | 67FA1C4688 |
+| GeIL       | CL11-11-11 D3-1... | 4096 MB  | DDR3 | 1600 | 11    | ED01BDBB09 |
 | SK Hynix   | HMT451U6BFR8A-P... | 4096 MB  | DDR3 | 1600 | 11    | 9F42078526 |
-| Kingston   | 2G-UDIMM DIMM DDR  | 2048 MB  |      | 800  | 11    | 53C6C139DA |
-| Kingston   | 9905471-017.A00... | 4096 MB  | DDR3 | 1333 | 11    | 8AE6B6F651 |
-| Kingston   | 9905678-024.A00... | 4096 MB  | DDR4 | 2133 | 11    | 7B1F69214A |
+| SK Hynix   | HMT325U6BFR8C-H... | 2048 MB  |      | 1333 | 11    | A607675311 |
 | Kingston   | ACR256X64D3U133... | 2048 MB  | DDR3 | 1333 | 11    | 49D2D34EB5 |
-| Kingston   | KHX1600C9D3/8GX... | 8192 MB  | DDR3 | 1600 | 11    | D37E7AB88A |
-| Kingston   | Module DIMM        | 2048 MB  | DDR2 | 667  | 11    | 53C6C139DA |
-| Micron     | 16JTF51264AZ-1G... | 4096 MB  | DDR3 | 1333 | 11    | 5E8B8FCDBD |
-| Micron     | ITC DIMM           | 4096 MB  | DDR3 | 1648 | 11    | A67F2E1C4D |
-|            | Module DDR         | 1024 MB  |      | 1333 | 11    | 5D26A5028D |
+| Kingston   | KHX2133C14/8G DIMM | 8192 MB  | DDR4 | 2133 | 11    | 0B7127611F |
+| Kingston   | KHX3000C15D4/8G... | 8192 MB  | DDR4 | 3000 | 11    | E097415087 |
+| Kingston   | Module SODIMM      | 2048 MB  | DDR2 | 667  | 11    | 53C6C139DA |
+| Micron     | ITC SODIMM         | 2048 MB  | DDR2 | 1648 | 11    | A67F2E1C4D |
 |            | Module DRAM        | 1024 MB  |      |      | 11    | 940D3D20F9 |
-|            | Module SDRAM       | 2048 MB  |      | 1333 | 11    | B4F81E84C8 |
 |            | Module             | 4096 MB  | DDR3 | 1066 | 11    | B7DB1F6D08 |
-|            | Module DIMM        | 4096 MB  | DDR3 | 667  | 11    | F6DE22FD19 |
-| Samsung    | M378B1G73QH0-CK... | 8192 MB  | DDR3 | 1600 | 11    | D5AF14209B |
-| Samsung    | M378B5173EB0-CK... | 4096 MB  |      | 1600 | 11    | D5C119CB28 |
-| Silicon... | DCLT4GN128S DIMM   | 4096 MB  | DDR3 | 1600 | 11    | E7EE741AB9 |
-| Corsair    | CML8GX3M2A1600C... | 4096 MB  | DDR3 | 1867 | 10    | 0308FCA137 |
-| Corsair    | CMX4GX3M1A1333C... | 4096 MB  | DDR3 | 1333 | 10    | 5C758FAF74 |
-| Elpida     | EBJ21UE8BDF0-DJ... | 2048 MB  | DDR3 | 1333 | 10    | CBBECB86EA |
-| GeIL       | CL11-11-11 D3-1... | 8192 MB  | DDR3 | 1600 | 10    | 8CA925B490 |
-| SK Hynix   | HMT451U6AFR8C-P... | 4096 MB  | DDR3 | 1600 | 10    | 2272E1FA1D |
-| SK Hynix   | HMT325U6BFR8C-H... | 2048 MB  |      | 1333 | 10    | 80464E3EF6 |
+|            | Module DIMM        | 4096 MB  | DDR3 | 667  | 11    | FB8D17D634 |
+| Silicon... | DCLT4GN128S DIMM   | 4096 MB  | DDR3 | 1600 | 11    | E4A21122AA |
+| Crucial    | BLS4G3D1609DS1S... | 4096 MB  | DDR3 | 1600 | 10    | 27E1CE4F37 |
+| Crucial    | CT102464BA160B.... | 8192 MB  | DDR3 | 1600 | 10    | 8F4D0625BC |
+| Elpida     | EBJ21UE8BDF0-DJ... | 2048 MB  | DDR3 | 1333 | 10    | 8C6027330F |
+| SK Hynix   | DMT451E6AFR8C-P... | 4096 MB  | DDR3 | 1600 | 10    | 4847CB86B6 |
+| SK Hynix   | HMT351U6BFR8C-H... | 4096 MB  | DDR3 | 1333 | 10    | 8F6439120F |
 | Kingston   | 9905403-478.A00... | 4096 MB  | DDR3 | 1867 | 10    | AEC80C497F |
+| Kingston   | 9905584-017.A00... | 4096 MB  | DDR3 | 1600 | 10    | 1F44759168 |
+| Kingston   | 9905584-032.A00... | 4096 MB  | DDR3 | 1600 | 10    | 7827D7F971 |
 | Kingston   | 99P5471-004.A01... | 4096 MB  | DDR3 | 1333 | 10    | 88E3DD8AEA |
 | Kingston   | 99U5474-038.A00... | 4096 MB  | DDR3 | 1333 | 10    | 369FCFD593 |
-| Kingston   | 99U5595-003.A00... | 2048 MB  | DDR3 | 1600 | 10    | 7E70F0DCAB |
-| Kingston   | KHX2133C14/8G DIMM | 8192 MB  | DDR4 | 2133 | 10    | 4AC20149F9 |
-| Kingston   | KHX2400C15D4/8G... | 8192 MB  |      | 2400 | 10    | 70016620CE |
-| Nanya      | NT2GT64U8HD0BY-... | 2048 MB  | DDR2 | 800  | 10    | B4B7FB1E21 |
+| Kingston   | KHX2400C15D4/8G... | 8192 MB  | DDR4 | 2400 | 10    | B1985A8588 |
+|            | Module             | 1024 MB  |      | 533  | 10    | 8A49A38575 |
 |            | Module DDR         | 1024 MB  |      | 333  | 10    | D753273D7B |
+|            | Module             | 2048 MB  | DDR2 | 1067 | 10    | A9959E81F1 |
 |            | Module DIMM        | 2048 MB  | DDR3 | 1066 | 10    | D809F01B15 |
-|            | Module             | 512 MB   | DDR2 | 266  | 10    | BD61806194 |
+|            | Module DIMM        | 512 MB   | DDR2 | 800  | 10    | FBFD1473BD |
 |            | Module DRAM        | 512 MB   |      |      | 10    | E88218E9C4 |
 | Samsung    | M378A5143DB0-CP... | 4096 MB  | DDR4 | 2400 | 10    | D00463167E |
-| Samsung    | M378B5173BH0-CH... | 4096 MB  | DDR3 | 1867 | 10    | 2703EE0766 |
+| Samsung    | M378A5244CB0-CR... | 4096 MB  | DDR4 | 2400 | 10    | D33D13F0DF |
+| Samsung    | M378B2873FHS-CH... | 1024 MB  | DDR3 | 1333 | 10    | F1F1F7133A |
+| Samsung    | M378B5173BH0-CH... | 4096 MB  | DDR3 | 1867 | 10    | 899A6FEBDE |
 | Samsung    | M378B5273DH0-CK... | 4096 MB  | DDR3 | 2200 | 10    | 6ED6000D2E |
+| Samsung    | M471B5173QH0-YK... | 4096 MB  | DDR3 | 1600 | 10    | 6C2647AB1F |
 | Silicon... | DBLT2GN568S DIMM   | 2048 MB  | DDR3 | 1333 | 10    | F68209E673 |
+| SK Hynix   | HYMP512U64CP8-Y... | 1024 MB  | DDR2 | 667  | 10    | E8C153F59C |
+| Team       | Elite-1600 DIMM    | 8192 MB  | DDR3 | 1600 | 10    | E017E03ADA |
 | Corsair    | CMZ8GX3M2A1866C... | 4096 MB  | DDR3 | 1600 | 9     | 5595625922 |
-| Crucial    | CT102464BA160B.... | 8192 MB  | DDR3 | 1600 | 9     | 640F0195DD |
 | Crucial    | CT25664BA160B.C... | 2048 MB  | DDR3 | 1600 | 9     | C5B500154D |
-| SK Hynix   | DMT451E6AFR8C-P... | 4096 MB  | DDR3 | 1600 | 9     | CFFA4C6577 |
+| Crucial    | CT4G4DFS824A.C8... | 4096 MB  | DDR4 | 2400 | 9     | DE00942EB5 |
 | SK Hynix   | HMT325U6CFR8C-P... | 2048 MB  | DDR3 | 1600 | 9     | 112C1293E1 |
 | SK Hynix   | HMT451U6MFR8C-P... | 4096 MB  | DDR3 | 1600 | 9     | 1CAC6CF78B |
-| Kingston   | 9905584-017.A00... | 4096 MB  | DDR3 | 1600 | 9     | 68C1BC8BA6 |
+| Kingston   | 99U5471-002.A00... | 2048 MB  |      | 1333 | 9     | CB82599869 |
+| Kingston   | 99U5471-025.A00... | 4096 MB  | DDR3 | 1333 | 9     | A3522AAC75 |
+| Kingston   | 99U5471-056.A00... | 8192 MB  | DDR3 | 1600 | 9     | 73D148603E |
 | Kingston   | 99U5474-015.A00... | 2048 MB  | DDR3 | 1600 | 9     | F72A33F2BE |
-| Kingston   | KHX3000C15D4/8G... | 8192 MB  | DDR4 | 3000 | 9     | 69F2264D39 |
-| Kingston   | Module DIMM        | 1024 MB  | DDR2 | 800  | 9     | 9B671B15DD |
-|            | Module             | 1024 MB  |      | 533  | 9     | B8ECD9CD1E |
+| Kingston   | KTC1G-UDIMM DIMM   | 1024 MB  | DDR2 | 800  | 9     | AC86A586B5 |
 |            | Module             | 256 MB   |      | 400  | 9     | BFA8B08B4A |
-|            | Module DIMM        | 512 MB   | DDR2 | 800  | 9     | E327FDD558 |
+|            | Module DDR         | 256 MB   |      | 400  | 9     | 202F06DAEE |
+| Samsung    | M3 78T2863EHS-C... | 1024 MB  | DDR2 | 800  | 9     | 93E77F9DC3 |
+| Samsung    | M3 78T5663EH3-C... | 2048 MB  | DDR2 | 2048 | 9     | 439AF540E7 |
 | Samsung    | M378A1G43DB0-CP... | 8192 MB  |      | 2133 | 9     | B724162662 |
 | Samsung    | M378B2873EH1-CH... | 1024 MB  | DDR3 | 1334 | 9     | 44FFC77631 |
-| Samsung    | M378B2873FHS-CH... | 1024 MB  | DDR3 | 1333 | 9     | C8CDE63BC8 |
-| Samsung    | M471B5173QH0-YK... | 4096 MB  | DDR3 | 1600 | 9     | 00FCD6CB57 |
-| SK Hynix   | HYMP125U64CP8-S... | 2048 MB  | DDR2 | 800  | 9     | 1A3B0634EB |
-| Team       | Elite-1600 DIMM    | 4096 MB  | DDR3 | 1600 | 9     | 19146B787B |
-| Corsair    | CMK16GX4M2B3200... | 8192 MB  | DDR4 | 3200 | 8     | 4D739ABCDF |
+| SK Hynix   | HMA81GU6AFR8N-U... | 8192 MB  | DDR4 | 2400 | 9     | BEBF95FDC9 |
+| Transcend  | JM1333KLN-2G DIMM  | 2048 MB  | DDR3 | 1333 | 9     | E4374EAA46 |
 | Corsair    | CMX4GX3M2A1600C... | 2048 MB  |      | 1600 | 8     | A4119B2AD7 |
-| Crucial    | BLS4G3D1609DS1S... | 4096 MB  | DDR3 | 1600 | 8     | D6529B50FB |
-| G.Skill    | F4-3200C16-8GVK... | 8192 MB  | DDR4 | 3200 | 8     | BF6F02A425 |
+| Crucial    | CT4G4DFS8213.C8... | 4096 MB  | DDR4 | 2667 | 8     | 984F33EE01 |
+| Crucial    | CT8G4DFS824A.C8... | 8192 MB  | DDR4 | 2667 | 8     | D4D638D4B0 |
+| Crucial    | ST51264BA1339.1... | 4096 MB  | DDR3 | 1333 | 8     | 2AF2FAFEE0 |
+| G.Skill    | F3-12800CL9-4GB... | 4096 MB  | DDR3 | 1600 | 8     | 9C58E0BE44 |
+| SK Hynix   | HMT451U6BFR8C-P... | 4096 MB  | DDR3 | 1600 | 8     | CE3194FCDE |
+| Ketech     | Module SODIMM      | 4096 MB  | DDR3 | 1333 | 8     | 502C5D4B04 |
 | Kingmax    | FLFE85F-C8KM9 DIMM | 2048 MB  | DDR3 | 1333 | 8     | 491DB7C6BD |
 | Kingmax    | FLFF65F-C8KL9 DIMM | 4096 MB  | DDR3 | 1333 | 8     | D3017358B8 |
-| Kingston   | 9905471-001.A00... | 2048 MB  | DDR3 | 1333 | 8     | 0DB5CC39B3 |
-| Kingston   | 9905584-032.A00... | 4096 MB  | DDR3 | 1600 | 8     | 481B0A620E |
-| Kingston   | 99U5471-002.A00... | 2048 MB  |      | 1333 | 8     | 4B8FD34544 |
-| Micron     | 8JTF51264AZ-1G6... | 4096 MB  | DDR3 | 1600 | 8     | BBCA7D7D38 |
-|            | Module DDR         | 1024 MB  |      | 200  | 8     | CE41D485F3 |
-|            | Module             | 256 MB   |      | 333  | 8     | 4B6A3DE9F1 |
-|            | Module DDR         | 256 MB   |      |      | 8     | 948D2E214B |
-|            | Module DDR         | 256 MB   |      | 400  | 8     | 364473179A |
-|            | Module             | 4096 MB  |      | 533  | 8     | 2DE6892C13 |
-|            | Module SDRAM       | 4096 MB  |      | 1066 | 8     | 2E9A652851 |
-| Samsung    | M3 78T5663EH3-C... | 2048 MB  | DDR2 | 2048 | 8     | 09F65DEA65 |
-| Samsung    | M378A5244CB0-CR... | 4096 MB  | DDR4 | 2400 | 8     | 2048B1ECF6 |
-| SK Hynix   | HYMP512U64CP8-Y... | 1024 MB  |      | 667  | 8     | 09F65DEA65 |
-| Transcend  | JM1333KLN-2G DIMM  | 2048 MB  | DDR3 | 1333 | 8     | B52429650C |
-| Transcend  | JM1333KLN-4G DIMM  | 4096 MB  | DDR3 | 1333 | 8     | D0BA8A3715 |
-| Corsair    | CMZ16GX3M4A1600... | 4096 MB  | DDR3 | 1600 | 7     | 41F60D966A |
-| Crucial    | CT4G4DFS8213.C8... | 4096 MB  | DDR4 | 2667 | 7     | 907EB904C3 |
-| Crucial    | CT51264BA1339.C... | 4096 MB  | DDR3 | 1333 | 7     | 66F43E92ED |
-| Crucial    | CT51264BA160BJ.... | 4096 MB  | DDR3 | 1600 | 7     | 762D77E60F |
-| Crucial    | CT51264BA160BJ.... | 4096 MB  | DDR3 | 1600 | 7     | 63D9297F05 |
-| Crucial    | ST51264BA1339.1... | 4096 MB  | DDR3 | 1333 | 7     | B2A08DC2BE |
-| SK Hynix   | HMT351U6BFR8C-H... | 4096 MB  | DDR3 | 1333 | 7     | D5A5261203 |
-| SK Hynix   | HMT325U6CFR8C-H... | 2048 MB  | DDR3 | 1333 | 7     | 80464E3EF6 |
-| Ketech     | Module DIMM        | 4096 MB  | DDR3 | 1333 | 7     | 1CAB2B881B |
-| Kingston   | 9905403-198.A00... | 4096 MB  | DDR3 | 1600 | 7     | BA845B8712 |
 
