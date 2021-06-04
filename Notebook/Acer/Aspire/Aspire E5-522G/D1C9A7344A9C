@@ -1,8 +1,7 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-# SMBIOS implementations newer than version 2.7 are not
-# fully supported by this version of dmidecode.
-49 structures occupying 1997 bytes.
+49 structures occupying 1963 bytes.
 Table at 0x000E4C30.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -70,7 +69,7 @@ Chassis Information
 	Version: Chassis Version
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -155,8 +154,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: 1 ns
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 7, 19 bytes
@@ -424,23 +423,23 @@ Memory Device
 	Error Information Handle: 0x0022
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: CHANNEL A
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1600 MHz
-	Manufacturer: Hynix
+	Speed: 1600 MT/s
+	Manufacturer: <BAD INDEX>
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT451S6BFR8A-PB  
-	Rank: 1
-	Configured Clock Speed: 1600 MHz
-	Minimum voltage:  1.350 V
-	Maximum voltage:  1.500 V
-	Configured voltage:  1.350 V
+	Part Number: <BAD INDEX>
+	Rank: 2
+	Configured Clock Speed: 1600 MT/s
+	Minimum Voltage: 1.35 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: 1.35 V
 
 Handle 0x0022, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -465,16 +464,16 @@ Handle 0x0023, DMI type 18, 23 bytes
 Handle 0x0024, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0020
 	Partition Width: 255
 
 Handle 0x0025, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0021
 	Memory Array Mapped Address Handle: 0x0024
 	Partition Row Position: Unknown
@@ -533,13 +532,17 @@ Onboard Device
 	Bus Address: 0000:00:02.4
 
 Handle 0x002C, DMI type 170, 78 bytes
-OEM-specific Type
-	Header and Data:
-		AA 4E 2C 00 01 08 00 00 7F 00 0F 00 0E 10 01 01
-		01 08 41 01 01 00 42 01 02 00 43 01 04 00 44 01
-		08 00 45 01 10 00 46 01 20 00 47 01 40 00 61 01
-		01 00 62 01 02 00 63 01 04 00 64 01 08 00 82 01
-		02 00 83 01 04 00 84 01 08 00 8D 01 00 10
+Acer Hotkey Function
+	Function bitmap for Communication Button: 0x0801
+		WiFi: Yes
+		3G: No
+		WiMAX: No
+		Bluetooth: Yes
+	Function bitmap for Application Button: 0x0000
+	Function bitmap for Media Button: 0x007f
+	Function bitmap for Display Button: 0x000f
+	Function bitmap for Others Button: 0x100e
+	Communication Function Key Number: 1
 
 Handle 0x002D, DMI type 171, 49 bytes
 OEM-specific Type

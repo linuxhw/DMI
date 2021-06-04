@@ -1,7 +1,7 @@
-# dmidecode 3.0
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-61 structures occupying 2417 bytes.
+65 structures occupying 2465 bytes.
 Table at 0xCAE3A000.
 
 Handle 0x0004, DMI type 134, 16 bytes
@@ -64,7 +64,7 @@ Processor Information
 	Part Number: To Be Filled By O.E.M.
 	Core Count: 2
 	Core Enabled: 2
-	Thread Count: 2
+	Thread Count: 4
 	Characteristics:
 		64-bit capable
 
@@ -183,13 +183,13 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: 0000
 	Serial Number: --
 	Asset Tag: --
 	Part Number: SHARETRONIC
 	Rank: Unknown
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x000E, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -478,7 +478,7 @@ OEM-specific Type
 Handle 0x0033, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 33 00 10 00 00 00 08 00 00 00 00 00 42 00
+		83 40 33 00 31 00 00 00 08 00 00 00 00 00 42 00
 		F8 00 57 1E FF FF FF FF 21 20 00 00 01 00 08 00
 		F1 04 00 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 20 00 00 00 76 50 72 6F 00 00 00 00
@@ -506,14 +506,14 @@ OEM-specific Type
 
 Handle 0x0037, DMI type 15, 81 bytes
 System Event Log
-	Area Length: 98 bytes
+	Area Length: 2898 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000005
+	Change Token: 0x000000B4
 	Header Format: Type 1
 	Supported Log Type Descriptors: 29
 	Descriptor 1: Single-bit ECC memory error
@@ -600,6 +600,29 @@ OEM-specific Type
 	Strings:
 		H1EC31WW
 		10/05/2011
+
+Handle 0x003C, DMI type 135, 10 bytes
+OEM-specific Type
+	Header and Data:
+		87 0A 3C 00 54 50 07 03 01 04
+
+Handle 0x003D, DMI type 24, 5 bytes
+Hardware Security
+	Power-On Password Status: Disabled
+	Keyboard Password Status: Not Implemented
+	Administrator Password Status: Disabled
+	Front Panel Reset Status: Not Implemented
+
+Handle 0x003E, DMI type 132, 7 bytes
+OEM-specific Type
+	Header and Data:
+		84 07 3E 00 01 D8 36
+
+Handle 0x003F, DMI type 135, 18 bytes
+OEM-specific Type
+	Header and Data:
+		87 12 3F 00 54 50 07 01 01 D2 00 00 00 00 00 00
+		00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

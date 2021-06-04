@@ -1,7 +1,7 @@
-# dmidecode 3.0
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-64 structures occupying 2445 bytes.
+64 structures occupying 2459 bytes.
 Table at 0x000E0830.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -576,25 +576,25 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
-	Manufacturer: Elpida
+	Speed: 1600 MT/s
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: EBJ20UF8BDU0-GN-F 
+	Part Number: HMT351S6CFR8C-PB  
 	Rank: Unknown
 
 Handle 0x0036, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0035
 	Memory Array Mapped Address Handle: 0x003B
 	Partition Row Position: Unknown
@@ -627,25 +627,25 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
-	Manufacturer: Elpida
+	Speed: 1600 MT/s
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: EBJ20UF8BDU0-GN-F 
+	Part Number: HMT351S6CFR8C-PB  
 	Rank: Unknown
 
 Handle 0x0039, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0038
 	Memory Array Mapped Address Handle: 0x003B
 	Partition Row Position: Unknown
@@ -675,8 +675,8 @@ Memory Device
 Handle 0x003B, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0034
 	Partition Width: 4
 
@@ -698,14 +698,14 @@ OEM-specific Type
 
 Handle 0x003E, DMI type 15, 29 bytes
 System Event Log
-	Area Length: 34 bytes
+	Area Length: 66 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000001
+	Change Token: 0x00000003
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error

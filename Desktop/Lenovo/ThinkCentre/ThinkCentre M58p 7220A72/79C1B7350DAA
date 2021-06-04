@@ -1,7 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
-64 structures occupying 3110 bytes.
+64 structures occupying 3125 bytes.
 Table at 0x000EF400.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 01/10/2011
 	Address: 0xE0830
 	Runtime Size: 128976 bytes
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -46,7 +46,7 @@ Base Board Information
 	Version: NONE
 	Serial Number: --
 	Asset Tag: --
-	...
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: INSIDE
@@ -150,8 +150,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 12288 kB
+	Installed Size: 6 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -278,7 +278,7 @@ Handle 0x0015, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI Slot 1
 	Type: 32-bit PCI
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 2
 	Characteristics:
@@ -343,14 +343,14 @@ BIOS Language Information
 
 Handle 0x001D, DMI type 15, 29 bytes
 System Event Log
-	Area Length: 1024 bytes
+	Area Length: 32 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x0000
-	Status: Valid, Full
-	Change Token: 0x0000003F
+	Status: Valid, Not Full
+	Change Token: 0x0000003B
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -375,7 +375,7 @@ Memory Device
 	Error Information Handle: 0xFF00
 	Total Width: 40960 bits
 	Data Width: 40960 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: J6G1
@@ -394,7 +394,7 @@ Memory Device
 	Error Information Handle: 0xFF00
 	Total Width: 41472 bits
 	Data Width: 41472 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: J6G2
@@ -413,7 +413,7 @@ Memory Device
 	Error Information Handle: 0xFF00
 	Total Width: 41984 bits
 	Data Width: 41984 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: J6H1
@@ -432,7 +432,7 @@ Memory Device
 	Error Information Handle: 0xFF00
 	Total Width: 42496 bits
 	Data Width: 42496 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: J6H2
@@ -604,9 +604,9 @@ System Power Supply
 Handle 0x0033, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 33 00 3F 00 00 00 00 00 10 2E 0F 00 00 00
+		83 40 33 00 35 00 00 00 00 00 10 2E 07 00 00 00
 		F8 00 14 3A 00 00 00 00 0F 48 00 00 02 00 05 00
-		F1 03 00 00 03 00 01 02 C8 00 DE 10 00 00 00 00
+		F1 03 00 00 01 00 01 02 C8 00 DE 10 00 00 00 00
 		00 00 00 00 DF 03 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0034, DMI type 126, 6 bytes
@@ -623,12 +623,9 @@ OEM-specific Type
 		KEYPTRS 23h
 
 Handle 0x0036, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 36 00 01 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 80 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: Available
 
 Handle 0x0037, DMI type 140, 121 bytes
 OEM-specific Type

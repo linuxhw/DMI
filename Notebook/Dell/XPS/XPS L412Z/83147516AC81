@@ -1,6 +1,7 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-64 structures occupying 2497 bytes.
+64 structures occupying 2479 bytes.
 Table at 0x000E61F0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -260,11 +261,11 @@ Built-in Pointing Device
 Handle 0x0016, DMI type 22, 26 bytes
 Portable Battery
 	Location: Sys. Battery Bay
-	Manufacturer: SANYO
-	Name: DELL RMTVY1AQ
+	Manufacturer:  
+	Name: Not Specified
 	Chemistry: Lithium Ion
-	Design Capacity: 58000 mWh
-	Design Voltage: 14800 mV
+	Design Capacity: Unknown
+	Design Voltage: Unknown
 	SBDS Version: 1.0
 	Maximum Error: 100%
 	SBDS Serial Number: --
@@ -455,20 +456,20 @@ Memory Device
 	Error Information Handle: 0x0030
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Nanya Technology
 	Serial Number: --
 	Asset Tag: --
 	Part Number: NT4GC64B8HG0NS-CG 
 	Rank: Unknown
-	Configured Clock Speed: 1333 MHz
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x002F, DMI type 6, 12 bytes
 Memory Module Information
@@ -507,20 +508,20 @@ Memory Device
 	Error Information Handle: 0x0034
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Nanya Technology
 	Serial Number: --
 	Asset Tag: --
 	Part Number: NT4GC64B8HG0NS-CG 
 	Rank: Unknown
-	Configured Clock Speed: 1333 MHz
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0033, DMI type 6, 12 bytes
 Memory Module Information
@@ -719,8 +720,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous

@@ -64,8 +64,8 @@ Chassis Information
 	Lock: Not Present
 	Version: NF560-A2G
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Boot-up State: Unknown
 	Power Supply State: Unknown
 	Thermal State: Unknown
 	Security Status: Unknown
@@ -114,8 +114,8 @@ Processor Information
 	L2 Cache Handle: 0x000B
 	L3 Cache Handle: Not Provided
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 
 Handle 0x0005, DMI type 5, 24 bytes
 Memory Controller Information
@@ -143,41 +143,41 @@ Memory Controller Information
 Handle 0x0006, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A0
-	Bank Connections: 0 1
+	Bank Connections: None
 	Current Speed: 5 ns
 	Type: Other Unknown EDO
-	Installed Size: 1024 MB (Double-bank Connection)
-	Enabled Size: 1024 MB (Double-bank Connection)
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A1
-	Bank Connections: 2 3
+	Bank Connections: None
+	Current Speed: 5 ns
+	Type: Other Unknown EDO
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
+	Error Status: OK
+
+Handle 0x0008, DMI type 6, 12 bytes
+Memory Module Information
+	Socket Designation: A2
+	Bank Connections: 4 5
 	Current Speed: 5 ns
 	Type: Other Unknown EDO
 	Installed Size: 1024 MB (Double-bank Connection)
 	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
-Handle 0x0008, DMI type 6, 12 bytes
-Memory Module Information
-	Socket Designation: A2
-	Bank Connections: None
-	Current Speed: 5 ns
-	Type: Other Unknown EDO
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
-	Error Status: OK
-
 Handle 0x0009, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A3
-	Bank Connections: None
+	Bank Connections: 6 7
 	Current Speed: 5 ns
 	Type: Other Unknown EDO
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 1024 MB (Double-bank Connection)
+	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 7, 19 bytes
@@ -363,7 +363,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
@@ -382,7 +382,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: A1
@@ -401,7 +401,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A2
@@ -420,7 +420,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A3
@@ -444,17 +444,17 @@ Memory Array Mapped Address
 Handle 0x0021, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
 	Physical Device Handle: 0x001C
 	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: 1
 
 Handle 0x0022, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 1 GB
+	Starting Address: 0x00000000000
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
 	Physical Device Handle: 0x001D
 	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: 1
@@ -462,17 +462,17 @@ Memory Device Mapped Address
 Handle 0x0023, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: 1
 
 Handle 0x0024, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00040000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x001F
 	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: 1
@@ -490,15 +490,15 @@ OEM-specific Type
 		00 00 04 00 00 00 00 00 00 00 05 00 00 00 00 00
 		00 00 06 00 00 00 00 00 00 00 07 00 00 00 00 00
 		00 00 40 00 10 0A 00 00 00 00 00 00 05 00 EB 02
-		00 5D 01 00 00 00 01 01 00 00 00 00 00 00 00 00
+		00 AE 00 00 00 00 00 00 00 00 01 00 00 00 01 01
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 E0 3E 78 00 00 00 00 00 00 00 00 00 00 00
-		00 00 46 00 00 00 00 00 00 00 02 00 00 00 00 00
-		00 00 24 F2 7D 5D 20 13 12 00 10 08 01 00 6B 00
-		10 74 88 88 FF FE 15 15 15 17 15 14 15 16 15 00
-		00 00 14 12 13 12 14 14 12 14 14 00 00 00 2E 00
-		00 00 15 15 13 15 15 15 15 13 15 14 14 13 13 14
-		13 15 13 14 2F 00 00 00 22 32 11 20 20 25 20 10
+		00 00 00 00 00 00 E0 3E 78 00 00 00 00 00 00 00
+		00 00 46 00 00 00 00 00 00 00 20 00 00 00 00 00
+		00 00 24 F2 7D AE 20 13 82 00 10 08 01 00 6B 00
+		10 74 88 88 FF FE 16 15 17 16 15 15 15 18 16 00
+		00 00 13 14 13 13 15 13 13 13 13 00 00 00 00 33
+		00 00 15 16 14 15 17 17 16 15 15 14 14 14 14 14
+		12 15 13 14 00 33 00 00 22 32 11 20 20 25 20 10
 		22 32 11 20 20 25 20 00 00 00 00 00 00 00 00
 	Strings:
 		 

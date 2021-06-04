@@ -1,14 +1,14 @@
-# dmidecode 3.0
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-26 structures occupying 1487 bytes.
-Table at 0x000E67A0.
+26 structures occupying 1472 bytes.
+Table at 0x000E67F0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
-	Vendor: Hewlett-Packard
-	Version: F.32
-	Release Date: 07/28/2011
+	Vendor: Insyde
+	Version: F.66
+	Release Date: 01/24/2013
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 2560 kB
@@ -32,8 +32,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.50
-	Firmware Revision: 9.54
+	BIOS Revision: 15.102
+	Firmware Revision: 9.76
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -50,7 +50,7 @@ Handle 0x0002, DMI type 2, 16 bytes
 Base Board Information
 	Manufacturer: Hewlett-Packard
 	Product Name: 1670
-	Version: 09.36
+	Version: 09.4C
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -69,7 +69,7 @@ Chassis Information
 	Version: Chassis Version
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	...
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -153,7 +153,7 @@ Onboard Device
 Handle 0x000B, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 0B 00 31 00 00 00 07 00 00 00 00 00 35 00
+		83 40 0B 00 11 00 00 00 07 00 00 00 00 00 38 00
 		F8 00 49 1C FF FF FF FF 19 20 00 00 01 00 07 00
 		1D 04 03 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 FF 00 00 F6 00 00 00 76 50 72 6F 00 00 00 00
@@ -176,17 +176,17 @@ Memory Device
 	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
-	Locator: Bottom - Slot 1 (top)
+	Locator: Bottom-Slot 1(top)
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
-	Manufacturer: Kingmax Semiconductor
+	Speed: 1333 MT/s
+	Manufacturer: A-DATA Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: FSFF65F-D8KM9     
+	Part Number: AD73I1C1674EV     
 	Rank: Unknown
-	Configured Clock Speed: 1333 MHz
+	Configured Clock Speed: 666 MT/s
 
 Handle 0x000E, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -208,17 +208,17 @@ Memory Device
 	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
-	Locator: Bottom - Slot 2 (under)
+	Locator: Bottom-Slot 2(under)
 	Bank Locator: BANK 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
-	Manufacturer: A-DATA Technology
+	Speed: 1333 MT/s
+	Manufacturer: Kingmax Semiconductor
 	Serial Number: --
 	Asset Tag: --
-	Part Number: AD73I1C1674EV     
+	Part Number: FSFF65F-D8KM9     
 	Rank: Unknown
-	Configured Clock Speed: 1333 MHz
+	Configured Clock Speed: 666 MT/s
 
 Handle 0x0010, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -245,7 +245,7 @@ Onboard Device
 	Type: Other
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:04:00.0
+	Bus Address: 0000:02:00.0
 
 Handle 0x0013, DMI type 41, 11 bytes
 Onboard Device
@@ -253,7 +253,7 @@ Onboard Device
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:05:00.0
+	Bus Address: 0000:03:00.0
 
 Handle 0x0014, DMI type 4, 42 bytes
 Processor Information

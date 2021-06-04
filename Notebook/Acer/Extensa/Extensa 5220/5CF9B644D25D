@@ -1,8 +1,8 @@
-# dmidecode 3.0
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 28 structures occupying 1179 bytes.
-Table at 0x7F6E0000.
+Table at 0xBF6DF000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -65,12 +65,12 @@ Processor Information
 	Type: Central Processor
 	Family: Other
 	Manufacturer: Intel
-	ID: 61 06 01 00 FF FB EB AF
+	ID: FB 06 00 00 FF FB EB BF
 	Version: CPU Version
 	Voltage: 3.3 V
-	External Clock: 133 MHz
-	Max Speed: 2000 MHz
-	Current Speed: 2000 MHz
+	External Clock: 200 MHz
+	Max Speed: 2400 MHz
+	Current Speed: 2400 MHz
 	Status: Populated, Enabled
 	Upgrade: ZIF Socket
 	L1 Cache Handle: 0x0005
@@ -104,7 +104,7 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
+	Installed Size: 4096 kB
 	Maximum Size: 4096 kB
 	Supported SRAM Types:
 		Burst
@@ -231,7 +231,7 @@ Memory Device
 	Bank Locator: Bank 0
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 533 MHz
+	Speed: 667 MT/s
 	Manufacturer: Mfg 0
 	Serial Number: --
 	Asset Tag: --
@@ -243,14 +243,14 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: 1
 	Locator: M2
 	Bank Locator: Bank 1
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 533 MHz
+	Speed: 667 MT/s
 	Manufacturer: Mfg 1
 	Serial Number: --
 	Asset Tag: --
@@ -259,8 +259,8 @@ Memory Device
 Handle 0x0013, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 3 GB
 	Physical Array Handle: 0x0010
 	Partition Width: 2
 
@@ -278,8 +278,8 @@ Memory Device Mapped Address
 Handle 0x0015, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00040000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0012
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown

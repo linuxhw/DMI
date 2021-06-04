@@ -88,8 +88,8 @@ Processor Information
 	Type: Central Processor
 	Family: Phenom II
 	Manufacturer: AMD              
-	ID: 43 0F 10 00 FF FB 8B 17
-	Signature: Family 16, Model 4, Stepping 3
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -114,11 +114,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Phenom(tm) II X4 970 Processor                  
+	Version: AMD Phenom(tm) II X4 840 Processor                  
 	Voltage: 1.5 V
 	External Clock: 200 MHz
-	Max Speed: 3500 MHz
-	Current Speed: 3500 MHz
+	Max Speed: 3200 MHz
+	Current Speed: 3200 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -167,18 +167,18 @@ Cache Information
 Handle 0x0007, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L3-Cache
-	Configuration: Enabled, Not Socketed, Level 3
-	Operational Mode: Varies With Memory Address
+	Configuration: Disabled, Not Socketed, Level 3
+	Operational Mode: Unknown
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 0 kB
+	Maximum Size: 0 kB
 	Supported SRAM Types:
-		Pipeline Burst
-	Installed SRAM Type: Pipeline Burst
+		Unknown
+	Installed SRAM Type: Unknown
 	Speed: Unknown
-	Error Correction Type: Single-bit ECC
-	System Type: Unified
-	Associativity: 4-way Set-associative
+	Error Correction Type: Unknown
+	System Type: Unknown
+	Associativity: Unknown
 
 Handle 0x0008, DMI type 8, 9 bytes
 Port Connector Information
@@ -599,8 +599,8 @@ Physical Memory Array
 Handle 0x0038, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0016FFFFFFF
-	Range Size: 5888 MB
+	Ending Address: 0x00237FFFFFF
+	Range Size: 9088 MB
 	Physical Array Handle: 0x0037
 	Partition Width: 1
 
@@ -610,14 +610,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1600 MHz
 	Manufacturer: Manufacturer0
 	Serial Number: --
 	Asset Tag: --
@@ -626,8 +626,8 @@ Memory Device
 Handle 0x003A, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0039
 	Memory Array Mapped Address Handle: 0x0038
 	Partition Row Position: 1
@@ -658,29 +658,23 @@ Handle 0x003D, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0037
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4096 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
-	Type: Other
-	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
 	Manufacturer: Manufacturer2
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum2
 
-Handle 0x003E, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x0013FFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x003D
-	Memory Array Mapped Address Handle: 0x0038
-	Partition Row Position: 1
+Handle 0x003E, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x003F, DMI type 17, 27 bytes
 Memory Device

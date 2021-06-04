@@ -199,9 +199,9 @@ Memory Module Information
 	Socket Designation: DIMM0
 	Bank Connections: 1 0
 	Current Speed: Unknown
-	Type: DIMM SDRAM
-	Installed Size: 1024 MB (Double-bank Connection)
-	Enabled Size: 1024 MB (Double-bank Connection)
+	Type: Unknown
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
@@ -229,9 +229,9 @@ Memory Module Information
 	Socket Designation: DIMM3
 	Bank Connections: 7 6
 	Current Speed: Unknown
-	Type: Unknown
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Type: DIMM SDRAM
+	Installed Size: 1024 MB (Double-bank Connection)
+	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000D, DMI type 8, 9 bytes
@@ -530,7 +530,7 @@ Handle 0x0030, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI3
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 3
 	Characteristics:
@@ -591,15 +591,15 @@ Handle 0x0038, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0036
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 1024 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
-	Type: SDRAM
-	Type Detail: Synchronous
+	Type: Unknown
+	Type Detail: Unknown
 	Speed: Unknown
 	Manufacturer: Manufacturer0
 	Serial Number: --
@@ -609,8 +609,8 @@ Memory Device
 Handle 0x0039, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
 	Physical Device Handle: 0x0038
 	Memory Array Mapped Address Handle: 0x0037
 	Partition Row Position: 1
@@ -636,8 +636,8 @@ Memory Device
 
 Handle 0x003B, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x0007FFFFFFF
+	Starting Address: 0x00000000000
+	Ending Address: 0x0003FFFFFFF
 	Range Size: 1 GB
 	Physical Device Handle: 0x003A
 	Memory Array Mapped Address Handle: 0x0037
@@ -675,15 +675,15 @@ Handle 0x003E, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0036
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
-	Type: Unknown
-	Type Detail: Unknown
+	Type: SDRAM
+	Type Detail: Synchronous
 	Speed: Unknown
 	Manufacturer: Manufacturer3
 	Serial Number: --
@@ -692,9 +692,9 @@ Memory Device
 
 Handle 0x003F, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00040000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x003E
 	Memory Array Mapped Address Handle: 0x0037
 	Partition Row Position: 1

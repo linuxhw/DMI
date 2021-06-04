@@ -1,6 +1,7 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-77 structures occupying 2635 bytes.
+78 structures occupying 2647 bytes.
 Table at 0x000EC3D0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -101,11 +102,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Pentium(R) CPU        P6200  @ 2.13GH 
+	Version: Intel(R) Core(TM) i5 CPU       M 520  @ 2.40GH 
 	Voltage: 0.0 V
 	External Clock: 533 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 2133 MHz
+	Current Speed: 2399 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -116,6 +117,7 @@ Processor Information
 	Part Number: To Be Filled By O.E.M.
 	Core Count: 2
 	Core Enabled: 1
+	Thread Count: 2
 	Characteristics:
 		64-bit capable
 
@@ -701,7 +703,7 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1067 MHz
+	Speed: 1067 MT/s
 	Manufacturer: 80CE
 	Serial Number: --
 	Asset Tag: --
@@ -745,25 +747,25 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1067 MHz
-	Manufacturer: 0707
+	Speed: 1067 MT/s
+	Manufacturer: 89C2
 	Serial Number: --
 	Asset Tag: --
-	Part Number: GU672203EP0200
+	Part Number: KRE-D3S1333M/4G   
 	Rank: Unknown
 
 Handle 0x0046, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0045
 	Memory Array Mapped Address Handle: 0x004B
 	Partition Row Position: Unknown
@@ -793,8 +795,8 @@ Memory Device
 Handle 0x004B, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Array Handle: 0x0041
 	Partition Width: 4
 
@@ -803,6 +805,11 @@ OEM-specific Type
 	Header and Data:
 		88 06 49 00 00 00
 
-Handle 0x004A, DMI type 127, 4 bytes
+Handle 0x004A, DMI type 136, 6 bytes
+OEM-specific Type
+	Header and Data:
+		88 06 4A 00 00 00
+
+Handle 0x004B, DMI type 127, 4 bytes
 End Of Table
 

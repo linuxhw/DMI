@@ -330,8 +330,8 @@ System Event Log
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x0000
-	Status: Valid, Not Full
-	Change Token: 0x00000001
+	Status: Invalid, Not Full
+	Change Token: 0x00000000
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -356,7 +356,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: 1
 	Locator: M1
@@ -367,7 +367,7 @@ Memory Device
 	Manufacturer: 4444            
 	Serial Number: --
 	Asset Tag: --
-	Part Number: DDDDDEDDDDDDDDDDDD
+	Part Number: DDDDDDDDDDEDDDDDDD
 	Rank: Unknown
 
 Handle 0x001A, DMI type 17, 28 bytes
@@ -376,7 +376,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 1024 MB
 	Form Factor: SODIMM
 	Set: 1
 	Locator: M2
@@ -387,7 +387,7 @@ Memory Device
 	Manufacturer: 4444            
 	Serial Number: --
 	Asset Tag: --
-	Part Number: DDDDDDDDDDDDDDEDDD
+	Part Number: DDDDDDDDDDDDDEDDED
 	Rank: Unknown
 
 Handle 0x001B, DMI type 17, 28 bytes
@@ -406,8 +406,8 @@ Memory Device
 	Speed: Unknown
 	Manufacturer:                 
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148     
+	Part Number:                   
 	Rank: Unknown
 
 Handle 0x001C, DMI type 17, 28 bytes
@@ -426,8 +426,8 @@ Memory Device
 	Speed: Unknown
 	Manufacturer:                 
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148     
+	Part Number:                   
 	Rank: Unknown
 
 Handle 0x001D, DMI type 18, 23 bytes
@@ -461,8 +461,8 @@ Memory Array Mapped Address
 Handle 0x0020, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0019
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: Unknown
@@ -471,9 +471,9 @@ Memory Device Mapped Address
 
 Handle 0x0021, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
+	Starting Address: 0x00080000000
 	Ending Address: 0x000BFFFFFFF
-	Range Size: 2 GB
+	Range Size: 1 GB
 	Physical Device Handle: 0x001A
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: Unknown
@@ -607,7 +607,7 @@ OEM-specific Type
 Handle 0x002F, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 2F 00 10 00 00 00 00 00 00 00 00 00 00 00
+		83 40 2F 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 09 3B FF 00 00 00 01 A0 00 00 00 00 06 00
 		AB 04 03 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 36 00 00 00 76 50 72 6F 00 00 00 00

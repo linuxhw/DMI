@@ -1,14 +1,14 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-48 structures occupying 2153 bytes.
+51 structures occupying 2253 bytes.
 Table at 0x000E4800.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: A1CN24WW(V1.12)
-	Release Date: 10/17/2014
+	Version: A1CN33WW(V2.01)
+	Release Date: 08/25/2015
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 8192 kB
@@ -32,8 +32,8 @@ BIOS Information
 		USB legacy is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.24
-	Firmware Revision: 1.24
+	BIOS Revision: 1.33
+	Firmware Revision: 1.33
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -166,10 +166,10 @@ Handle 0x0006, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM 0
 	Bank Connections: None
-	Current Speed: Unknown
-	Type: None
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Current Speed: 1 ns
+	Type: DIMM
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -429,37 +429,37 @@ Physical Memory Array
 	Use: System Memory
 	Error Correction Type: None
 	Maximum Capacity: 32 GB
-	Error Information Handle: 0x0024
+	Error Information Handle: 0x0025
 	Number Of Devices: 2
 
 Handle 0x0021, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0020
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: <OUT OF SPEC>
+	Error Information Handle: 0x0023
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
+	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: CHANNEL A
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Empty
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 800 MT/s
+	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Empty
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
+	Part Number: RMT3170MK58F8F1600
+	Rank: 1
+	Configured Clock Speed: 667 MT/s
+	Minimum Voltage: 1.35 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: 1.35 V
 
 Handle 0x0022, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0020
-	Error Information Handle: 0x0023
+	Error Information Handle: 0x0024
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 2048 MB
@@ -476,9 +476,9 @@ Memory Device
 	Part Number: RMT3170MK58F8F1600
 	Rank: 1
 	Configured Clock Speed: 667 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
+	Minimum Voltage: 1.35 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: 1.35 V
 
 Handle 0x0023, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -500,32 +500,53 @@ Handle 0x0024, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0025, DMI type 19, 31 bytes
+Handle 0x0025, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0026, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0020
 	Partition Width: 255
 
-Handle 0x0026, DMI type 20, 35 bytes
+Handle 0x0027, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x0022
-	Memory Array Mapped Address Handle: 0x0025
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0021
+	Memory Array Mapped Address Handle: 0x0026
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0027, DMI type 21, 7 bytes
+Handle 0x0028, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0022
+	Memory Array Mapped Address Handle: 0x0026
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0029, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Touch Pad
 	Interface: PS/2
 	Buttons: 4
 
-Handle 0x0028, DMI type 26, 22 bytes
+Handle 0x002A, DMI type 26, 22 bytes
 Voltage Probe
 	Description: Voltage Probe Description.
 	Location: Unknown
@@ -538,11 +559,11 @@ Voltage Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x0029, DMI type 32, 20 bytes
+Handle 0x002B, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x002A, DMI type 40, 18 bytes
+Handle 0x002C, DMI type 40, 18 bytes
 Additional Information 1
 	Referenced Handle: 0x0017
 	Referenced Offset: 0x05
@@ -554,7 +575,7 @@ Additional Information 2
 	String: Compiler Version: VC 9.0
 	Value: 0x05dc
 
-Handle 0x002B, DMI type 41, 11 bytes
+Handle 0x002D, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: AR8151 Gigabit Network Connection
 	Type: Ethernet
@@ -562,7 +583,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:03.2
 
-Handle 0x002C, DMI type 41, 11 bytes
+Handle 0x002E, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: CX20752 HD AUDIO CODEC
 	Type: Sound
@@ -570,21 +591,29 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:02.4
 
-Handle 0x002D, DMI type 128, 8 bytes
+Handle 0x002F, DMI type 128, 8 bytes
 OEM-specific Type
 	Header and Data:
-		80 08 2D 00 55 AA 55 AA
+		80 08 2F 00 55 AA 55 AA
 	Strings:
 		Oem Test 1
 		Oem Test 2
 
-Handle 0x002E, DMI type 133, 5 bytes
+Handle 0x0030, DMI type 133, 5 bytes
 OEM-specific Type
 	Header and Data:
-		85 05 2E 00 01
+		85 05 30 00 01
 	Strings:
 		KHOIHGIUCCHHII
 
-Handle 0x002F, DMI type 127, 4 bytes
+Handle 0x0031, DMI type 200, 16 bytes
+OEM-specific Type
+	Header and Data:
+		C8 10 31 00 01 02 01 22 01 12 01 3D B0 80 01 04
+	Strings:
+		IdeaPad
+		20388
+
+Handle 0x0032, DMI type 127, 4 bytes
 End Of Table
 

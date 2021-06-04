@@ -2,7 +2,7 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 61 structures occupying 2521 bytes.
-Table at 0xDC264018.
+Table at 0xBC264018.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -405,7 +405,7 @@ Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE16_1
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 0
 	Characteristics:
@@ -457,7 +457,7 @@ Handle 0x0028, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE_X16/X8_3
 	Type: x16 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 3
 	Characteristics:
@@ -508,8 +508,8 @@ Physical Memory Array
 Handle 0x002E, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 24 GB
 	Physical Array Handle: 0x002D
 	Partition Width: 255
 
@@ -517,49 +517,65 @@ Handle 0x002F, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002D
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
-	Type: Unknown
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Manufacturer0
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1600 MT/s
+	Manufacturer: Kingston     
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber0
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: 99U5471-066.A00LF 
+	Rank: 2
+	Configured Clock Speed: 800 MT/s
 
-Handle 0x0030, DMI type 126, 35 bytes
-Inactive
+Handle 0x0030, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 24 GB
+	Physical Device Handle: 0x002F
+	Memory Array Mapped Address Handle: 0x002E
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x0031, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002D
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Manufacturer1
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1600 MT/s
+	Manufacturer: Kingston     
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber1
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: 99U5471-066.A00LF 
+	Rank: 2
+	Configured Clock Speed: 800 MT/s
 
-Handle 0x0032, DMI type 126, 35 bytes
-Inactive
+Handle 0x0032, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 24 GB
+	Physical Device Handle: 0x0031
+	Memory Array Mapped Address Handle: 0x002E
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x0033, DMI type 17, 34 bytes
 Memory Device
@@ -585,8 +601,8 @@ Memory Device
 Handle 0x0034, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0033
 	Memory Array Mapped Address Handle: 0x002E
 	Partition Row Position: Unknown
@@ -617,8 +633,8 @@ Memory Device
 Handle 0x0036, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0035
 	Memory Array Mapped Address Handle: 0x002E
 	Partition Row Position: Unknown

@@ -1,18 +1,17 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-# SMBIOS implementations newer than version 2.7 are not
-# fully supported by this version of dmidecode.
-25 structures occupying 1586 bytes.
-Table at 0x000E4630.
+26 structures occupying 1642 bytes.
+Table at 0x9F97C000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Insyde
-	Version: F.20
-	Release Date: 01/26/2016
+	Version: F.26
+	Release Date: 08/01/2018
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -33,8 +32,8 @@ BIOS Information
 		USB legacy is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.32
-	Firmware Revision: 99.46
+	BIOS Revision: 15.38
+	Firmware Revision: 99.51
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -51,7 +50,7 @@ Handle 0x0002, DMI type 2, 16 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 80CB
-	Version: 99.46
+	Version: 99.51
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -232,68 +231,77 @@ Handle 0x0011, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0010
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom
 	Bank Locator: CHANNEL A
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Empty
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1066 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Empty
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Part Number: 99U5428-041.A01LF 
+	Rank: 2
+	Configured Memory Speed: 533 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
-Handle 0x0013, DMI type 17, 40 bytes
+Handle 0x0013, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0011
+	Memory Array Mapped Address Handle: 0x0017
+	Partition Row Position: 1
+
+Handle 0x0014, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0010
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Top
 	Bank Locator: CHANNEL A
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
 	Part Number: HMT451S6BFR8A-PB  
 	Rank: 1
-	Configured Clock Speed: 800 MHz
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Configured Memory Speed: 533 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
-Handle 0x0015, DMI type 20, 35 bytes
+Handle 0x0016, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0013
-	Memory Array Mapped Address Handle: 0x0016
+	Physical Device Handle: 0x0014
+	Memory Array Mapped Address Handle: 0x0017
 	Partition Row Position: 1
 
-Handle 0x0016, DMI type 19, 31 bytes
+Handle 0x0017, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0010
 	Partition Width: 255
 
-Handle 0x0018, DMI type 4, 42 bytes
+Handle 0x0019, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: Socket FT3b
 	Type: Central Processor
@@ -332,8 +340,8 @@ Processor Information
 	Current Speed: 1500 MHz
 	Status: Populated, Enabled
 	Upgrade: None
-	L1 Cache Handle: 0x0019
-	L2 Cache Handle: 0x001A
+	L1 Cache Handle: 0x001A
+	L2 Cache Handle: 0x001B
 	L3 Cache Handle: Not Provided
 	Serial Number: --
 	Asset Tag: --
@@ -344,7 +352,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0019, DMI type 7, 19 bytes
+Handle 0x001A, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -360,14 +368,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 2-way Set-associative
 
-Handle 0x001A, DMI type 7, 19 bytes
+Handle 0x001B, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -376,6 +384,6 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x001B, DMI type 127, 4 bytes
+Handle 0x001C, DMI type 127, 4 bytes
 End Of Table
 

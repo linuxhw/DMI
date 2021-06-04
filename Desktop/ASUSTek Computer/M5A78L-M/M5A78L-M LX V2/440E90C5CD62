@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 52 structures occupying 1887 bytes.
 Table at 0x0009F400.
@@ -513,51 +514,51 @@ Handle 0x002E, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x002C
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2048 MB
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM0
-	Bank Locator: BANK0
-	Type: Other
-	Type Detail: Synchronous
-	Speed: 1333 MHz
-	Manufacturer: Manufacturer0
-	Serial Number: --
-	Asset Tag: --
-	Part Number: PartNum0
-
-Handle 0x002F, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x002E
-	Memory Array Mapped Address Handle: 0x002D
-	Partition Row Position: 1
-
-Handle 0x0030, DMI type 17, 27 bytes
-Memory Device
-	Array Handle: 0x002C
-	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
-	Locator: DIMM1
-	Bank Locator: BANK1
+	Locator: DIMM0
+	Bank Locator: BANK0
 	Type: Unknown
 	Type Detail: None
 	Speed: Unknown
+	Manufacturer: Manufacturer0
+	Serial Number: --
+	Asset Tag: --
+	Part Number: PartNum0
+
+Handle 0x002F, DMI type 126, 19 bytes
+Inactive
+
+Handle 0x0030, DMI type 17, 27 bytes
+Memory Device
+	Array Handle: 0x002C
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM1
+	Bank Locator: BANK1
+	Type: Other
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer1
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum1
 
-Handle 0x0031, DMI type 126, 19 bytes
-Inactive
+Handle 0x0031, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0030
+	Memory Array Mapped Address Handle: 0x002D
+	Partition Row Position: 1
 
 Handle 0x0032, DMI type 32, 20 bytes
 System Boot Information

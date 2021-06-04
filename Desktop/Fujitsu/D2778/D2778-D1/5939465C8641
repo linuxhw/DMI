@@ -67,7 +67,7 @@ Chassis Information
 	Version:                 
 	Serial Number: --
 	Asset Tag: --
-	...
+	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -429,14 +429,14 @@ BIOS Language Information
 
 Handle 0x0023, DMI type 15, 29 bytes
 System Event Log
-	Area Length: 48 bytes
+	Area Length: 96 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0xFFF05719
+	Access Address: 0xFFF054C9
 	Status: Valid, Not Full
-	Change Token: 0x00000003
+	Change Token: 0x00000002
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -478,9 +478,9 @@ Handle 0x0026, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0024
 	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: 4
 	Locator: DIMM-CHA1 CPU0
@@ -488,10 +488,10 @@ Memory Device
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 1066 MHz
-	Manufacturer:                                                 
+	Manufacturer: Corsair                                         
 	Serial Number: --
 	Asset Tag: --
-	...
+	Part Number: CM3X1G1333C9      
 
 Handle 0x0027, DMI type 17, 27 bytes
 Memory Device
@@ -516,9 +516,9 @@ Handle 0x0028, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0024
 	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: 5
 	Locator: DIMM-CHB1 CPU0
@@ -526,10 +526,10 @@ Memory Device
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 1066 MHz
-	Manufacturer:                                                 
+	Manufacturer: Corsair                                         
 	Serial Number: --
 	Asset Tag: --
-	...
+	Part Number: CM3X1G1333C9      
 
 Handle 0x0029, DMI type 17, 27 bytes
 Memory Device
@@ -554,9 +554,9 @@ Handle 0x002A, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0024
 	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: 6
 	Locator: DIMM-CHC1 CPU0
@@ -564,16 +564,16 @@ Memory Device
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 1066 MHz
-	Manufacturer:                                                 
+	Manufacturer: Corsair                                         
 	Serial Number: --
 	Asset Tag: --
-	...
+	Part Number: CM3X1G1333C9      
 
 Handle 0x002B, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 12 GB
+	Ending Address: 0x003BFFFFFFF
+	Range Size: 15 GB
 	Physical Array Handle: 0x0024
 	Partition Width: 2
 
@@ -590,9 +590,9 @@ Memory Device Mapped Address
 
 Handle 0x002D, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x000FFFFFC00
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 1 kB
+	Starting Address: 0x00100000000
+	Ending Address: 0x0013FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0026
 	Memory Array Mapped Address Handle: 0x002B
 	Partition Row Position: 1
@@ -601,8 +601,8 @@ Memory Device Mapped Address
 
 Handle 0x002E, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x00140000000
+	Ending Address: 0x0023FFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0027
 	Memory Array Mapped Address Handle: 0x002B
@@ -612,9 +612,9 @@ Memory Device Mapped Address
 
 Handle 0x002F, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x001FFFFFC00
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 1 kB
+	Starting Address: 0x00240000000
+	Ending Address: 0x0027FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0028
 	Memory Array Mapped Address Handle: 0x002B
 	Partition Row Position: 2
@@ -623,8 +623,8 @@ Memory Device Mapped Address
 
 Handle 0x0030, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x002FFFFFFFF
+	Starting Address: 0x00280000000
+	Ending Address: 0x0037FFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0029
 	Memory Array Mapped Address Handle: 0x002B
@@ -634,9 +634,9 @@ Memory Device Mapped Address
 
 Handle 0x0031, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x002FFFFFC00
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 1 kB
+	Starting Address: 0x00380000000
+	Ending Address: 0x003BFFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x002A
 	Memory Array Mapped Address Handle: 0x002B
 	Partition Row Position: 3

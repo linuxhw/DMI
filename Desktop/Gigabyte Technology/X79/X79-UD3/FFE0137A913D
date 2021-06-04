@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 101 structures occupying 3894 bytes.
 Table at 0x000EBD90.
@@ -115,7 +116,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-3820 CPU @ 3.60GHz
-	Voltage: 0.0 V
+	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 7000 MHz
 	Current Speed: 3700 MHz
@@ -486,8 +487,8 @@ Physical Memory Array
 Handle 0x002A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0029
 	Partition Width: 1
 
@@ -495,49 +496,65 @@ Handle 0x002B, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0029
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: Node0_Dimm0
 	Bank Locator: Node0_Bank0
-	Type: Unknown
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Dimm0_Manufacturer
+	Type: DDR3
+	Type Detail: Unbuffered (Unregistered)
+	Speed: 1600 MT/s
+	Manufacturer: Kingston          
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Dimm0_PartNum
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: KHX1600C10D3/
+	Rank: 2
+	Configured Clock Speed: 1600 MT/s
 
-Handle 0x002C, DMI type 126, 35 bytes
-Inactive
+Handle 0x002C, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x002B
+	Memory Array Mapped Address Handle: 0x002A
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x002D, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0029
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: Node0_Dimm1
 	Bank Locator: Node0_Bank0
-	Type: Unknown
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Dimm1_Manufacturer
+	Type: DDR3
+	Type Detail: Unbuffered (Unregistered)
+	Speed: 1600 MT/s
+	Manufacturer: Kingston          
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Dimm1_PartNum
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: KHX1600C10D3/
+	Rank: 2
+	Configured Clock Speed: 1600 MT/s
 
-Handle 0x002E, DMI type 126, 35 bytes
-Inactive
+Handle 0x002E, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x002D
+	Memory Array Mapped Address Handle: 0x002A
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x002F, DMI type 17, 34 bytes
 Memory Device
@@ -545,26 +562,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: Node0_Dimm2
 	Bank Locator: Node0_Bank0
 	Type: DDR3
 	Type Detail: Unbuffered (Unregistered)
-	Speed: 1600 MHz
-	Manufacturer: Undefined         
+	Speed: 1600 MT/s
+	Manufacturer: Kingston          
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F3-17000CL11-
+	Part Number: KHX1600C10D3/
 	Rank: 2
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0030, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x002F
 	Memory Array Mapped Address Handle: 0x002A
 	Partition Row Position: Unknown
@@ -577,26 +594,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: Node0_Dimm3
 	Bank Locator: Node0_Bank0
 	Type: DDR3
 	Type Detail: Unbuffered (Unregistered)
-	Speed: 1600 MHz
-	Manufacturer: Undefined         
+	Speed: 1600 MT/s
+	Manufacturer: Kingston          
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F3-17000CL11-
+	Part Number: KHX1600C10D3/
 	Rank: 2
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0032, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0031
 	Memory Array Mapped Address Handle: 0x002A
 	Partition Row Position: Unknown
@@ -748,8 +765,9 @@ Management Device Component
 	Threshold Handle: 0x003E
 
 Handle 0x0044, DMI type 34, 16 bytes
+Invalid entry length (16). Fixed up to 11.
 Management Device
-	Description: 2
+	Description: LM78-2
 	Type: LM78
 	Address: 0x00000000
 	Address Type: I/O Port

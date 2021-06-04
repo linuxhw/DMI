@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 32 structures occupying 1578 bytes.
 Table at 0x000FCED0.
@@ -10,7 +11,7 @@ BIOS Information
 	Release Date: 04/26/2010
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -53,7 +54,7 @@ Base Board Information
 	Product Name: A785GXH/128M
 	Version:                       
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148                       
 	Features:
 		Board is a hosting board
 		Board is replaceable
@@ -83,10 +84,10 @@ Handle 0x0004, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPUSocket
 	Type: Central Processor
-	Family: Athlon II
+	Family: Phenom X4
 	Manufacturer: AMD              
-	ID: 62 0F 10 00 FF FB 8B 17
-	Signature: Family 16, Model 6, Stepping 2
+	ID: 23 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 2, Stepping 3
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -111,11 +112,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Athlon(tm) II X2 250 Processor                  
+	Version: AMD Phenom(tm) 9550 Quad-Core Processor             
 	Voltage: 1.5 V
 	External Clock: 200 MHz
-	Max Speed: 3000 MHz
-	Current Speed: 3149 MHz
+	Max Speed: 2200 MHz
+	Current Speed: 2200 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket 940
 	L1 Cache Handle: 0x0005
@@ -124,8 +125,8 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
-	Core Count: 2
-	Core Enabled: 2
+	Core Count: 4
+	Core Enabled: 4
 	Characteristics:
 		64-bit capable
 
@@ -135,8 +136,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 256 kB
-	Maximum Size: 256 kB
+	Installed Size: 512 kB
+	Maximum Size: 512 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -151,8 +152,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -164,18 +165,18 @@ Cache Information
 Handle 0x0007, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L3-Cache
-	Configuration: Disabled, Not Socketed, Level 3
-	Operational Mode: Unknown
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 0 kB
-	Maximum Size: 0 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
-		Unknown
-	Installed SRAM Type: Unknown
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
 	Speed: Unknown
-	Error Correction Type: Unknown
-	System Type: Unknown
-	Associativity: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: 4-way Set-associative
 
 Handle 0x0008, DMI type 5, 24 bytes
 Memory Controller Information
@@ -252,20 +253,19 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:04:05.0
+	Bus Address: ffff:03:05.0
 
 Handle 0x000E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI2
 	Type: 32-bit PCI
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 2
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:04:06.0
 
 Handle 0x000F, DMI type 9, 17 bytes
 System Slot Information
@@ -278,7 +278,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:01:00.0
+	Bus Address: ffff:01:05.0
 
 Handle 0x0010, DMI type 9, 17 bytes
 System Slot Information
@@ -296,14 +296,13 @@ Handle 0x0011, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI5
 	Type: x1 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 19
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:02:00.0
 
 Handle 0x0012, DMI type 16, 15 bytes
 Physical Memory Array
@@ -317,8 +316,8 @@ Physical Memory Array
 Handle 0x0013, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00137FFFFFF
-	Range Size: 4992 MB
+	Ending Address: 0x0012FFFFFFF
+	Range Size: 4864 MB
 	Physical Array Handle: 0x0012
 	Partition Width: 1
 
@@ -328,14 +327,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 400 MHz
+	Speed: 400 MT/s
 	Manufacturer: Manufacturer00
 	Serial Number: --
 	Asset Tag: --
@@ -357,14 +356,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 400 MHz
+	Speed: 400 MT/s
 	Manufacturer: Manufacturer01
 	Serial Number: --
 	Asset Tag: --

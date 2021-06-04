@@ -1,7 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-25 structures occupying 1535 bytes.
+23 structures occupying 1423 bytes.
 Table at 0xAFABC000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 03/19/2013
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -173,21 +173,7 @@ Handle 0x000B, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x000C, DMI type 22, 26 bytes
-Portable Battery
-	Location: Primary
-	Manufacturer: 13-24
-	Name: MO06062
-	Chemistry: Lithium Ion
-	Design Capacity: 61993 mWh
-	Design Voltage: 11100 mV
-	SBDS Version: 1
-	Maximum Error: 3%
-	SBDS Serial Number: --
-	SBDS Manufacture Date: 2013-06-18
-	OEM-specific Information: 0x0000FFFF
-
-Handle 0x000D, DMI type 41, 11 bytes
+Handle 0x000C, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Hanksville Gbe Lan Connection
 	Type: Ethernet
@@ -195,92 +181,84 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:02:00.2
 
-Handle 0x000F, DMI type 41, 11 bytes
-Onboard Device
-	Reference Designation: Roma Ralink RT3290LE  802.11bgn 1x1 Wi-Fi
-	Type: Other
-	Status: Enabled
-	Type Instance: 1
-	Bus Address: 0000:03:00.0
-
-Handle 0x0010, DMI type 16, 23 bytes
+Handle 0x000E, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 6 GB
-	Error Information Handle: 0x0019
+	Maximum Capacity: 8 GB
+	Error Information Handle: 0x0017
 	Number Of Devices: 2
 
-Handle 0x0011, DMI type 17, 34 bytes
+Handle 0x000F, DMI type 17, 34 bytes
 Memory Device
-	Array Handle: 0x0010
-	Error Information Handle: 0x0013
+	Array Handle: 0x000E
+	Error Information Handle: 0x0011
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom
 	Bank Locator: CHANNEL A
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 667 MT/s
+	Speed: 800 MT/s
 	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
 	Part Number: HMT451S6AFR8A-PB  
 	Rank: 1
-	Configured Clock Speed: 667 MT/s
+	Configured Memory Speed: 800 MT/s
 
-Handle 0x0014, DMI type 20, 35 bytes
+Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
-	Physical Device Handle: 0x0011
-	Memory Array Mapped Address Handle: 0x001A
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x000F
+	Memory Array Mapped Address Handle: 0x0018
 	Partition Row Position: 1
 
-Handle 0x0015, DMI type 17, 34 bytes
+Handle 0x0013, DMI type 17, 34 bytes
 Memory Device
-	Array Handle: 0x0010
-	Error Information Handle: 0x0017
+	Array Handle: 0x000E
+	Error Information Handle: 0x0015
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Top
 	Bank Locator: CHANNEL B
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 667 MT/s
-	Manufacturer: Samsung
+	Speed: 800 MT/s
+	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5773CHS-CH9  
+	Part Number: HMT451S6AFR8A-PB  
 	Rank: 1
-	Configured Clock Speed: 667 MT/s
+	Configured Memory Speed: 800 MT/s
 
-Handle 0x0018, DMI type 20, 35 bytes
+Handle 0x0016, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0015
-	Memory Array Mapped Address Handle: 0x001A
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0013
+	Memory Array Mapped Address Handle: 0x0018
 	Partition Row Position: 1
 
-Handle 0x001A, DMI type 19, 31 bytes
+Handle 0x0018, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
-	Physical Array Handle: 0x0010
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Array Handle: 0x000E
 	Partition Width: 255
 
-Handle 0x001C, DMI type 4, 42 bytes
+Handle 0x001A, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: Socket FT1
 	Type: Central Processor
@@ -319,8 +297,8 @@ Processor Information
 	Current Speed: 2500 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket FS1
-	L1 Cache Handle: 0x001D
-	L2 Cache Handle: 0x001E
+	L1 Cache Handle: 0x001B
+	L2 Cache Handle: 0x001C
 	L3 Cache Handle: Not Provided
 	Serial Number: --
 	Asset Tag: --
@@ -331,7 +309,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x001D, DMI type 7, 19 bytes
+Handle 0x001B, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -347,14 +325,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 2-way Set-associative
 
-Handle 0x001E, DMI type 7, 19 bytes
+Handle 0x001C, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -363,6 +341,6 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x001F, DMI type 127, 4 bytes
+Handle 0x001D, DMI type 127, 4 bytes
 End Of Table
 

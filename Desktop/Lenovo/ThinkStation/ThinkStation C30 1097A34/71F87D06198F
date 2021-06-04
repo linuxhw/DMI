@@ -1,14 +1,14 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-83 structures occupying 3576 bytes.
-Table at 0x7CF8B018.
+83 structures occupying 3566 bytes.
+Table at 0x7CF64018.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: A1KT43AUS
-	Release Date: 12/04/2012
+	Version: A1KT61AUS
+	Release Date: 03/27/2017
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8192 kB
@@ -32,7 +32,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 0.43
+	BIOS Revision: 0.61
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -42,7 +42,7 @@ System Information
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
-	SKU Number: To be filled by O.E.M.
+	SKU Number: LENOVO_BI_A1
 	Family: To be filled by O.E.M.
 
 Handle 0x0002, DMI type 2, 15 bytes
@@ -115,11 +115,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Xeon(R) CPU E5-2637 0 @ 3.00GHz
+	Version: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
 	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 3000 MHz
+	Current Speed: 2000 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA2011
 	L1 Cache Handle: 0x0005
@@ -128,9 +128,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
-	Core Count: 2
-	Core Enabled: 2
-	Thread Count: 4
+	Core Count: 6
+	Core Enabled: 6
+	Thread Count: 12
 	Characteristics:
 		64-bit capable
 		Multi-Core
@@ -145,8 +145,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 128 kB
-	Maximum Size: 128 kB
+	Installed Size: 384 kB
+	Maximum Size: 384 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -161,8 +161,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 512 kB
-	Maximum Size: 512 kB
+	Installed Size: 1536 kB
+	Maximum Size: 1536 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -177,8 +177,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 5120 kB
-	Maximum Size: 5120 kB
+	Installed Size: 15360 kB
+	Maximum Size: 15360 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -224,11 +224,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Xeon(R) CPU E5-2637 0 @ 3.00GHz
+	Version: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
 	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 3000 MHz
+	Current Speed: 2000 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA2011
 	L1 Cache Handle: 0x0009
@@ -237,9 +237,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
-	Core Count: 2
-	Core Enabled: 2
-	Thread Count: 4
+	Core Count: 6
+	Core Enabled: 6
+	Thread Count: 12
 	Characteristics:
 		64-bit capable
 		Multi-Core
@@ -254,8 +254,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 128 kB
-	Maximum Size: 128 kB
+	Installed Size: 384 kB
+	Maximum Size: 384 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -270,8 +270,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 512 kB
-	Maximum Size: 512 kB
+	Installed Size: 1536 kB
+	Maximum Size: 1536 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -286,8 +286,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 5120 kB
-	Maximum Size: 5120 kB
+	Installed Size: 15360 kB
+	Maximum Size: 15360 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -445,7 +445,7 @@ System Slot Information
 
 Handle 0x001B, DMI type 11, 5 bytes
 OEM Strings
-	String 1: A143A  
+	String 1: A161A  
 
 Handle 0x001C, DMI type 12, 5 bytes
 System Configuration Options
@@ -491,13 +491,13 @@ Memory Device
 	Bank Locator: CPU0_Bank0
 	Type: DDR3
 	Type Detail: Unbuffered (Unregistered)
-	Speed: 1600 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: Hynix Semiconducto
 	Serial Number: --
 	Asset Tag: --
 	Part Number: HMT451U6AFR8C
 	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0021, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -547,13 +547,13 @@ Memory Device
 	Bank Locator: CPU0_Bank2
 	Type: DDR3
 	Type Detail: Unbuffered (Unregistered)
-	Speed: 1600 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: Hynix Semiconducto
 	Serial Number: --
 	Asset Tag: --
 	Part Number: HMT451U6AFR8C
 	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0029, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -630,13 +630,13 @@ Memory Device
 	Bank Locator: CPU1_Bank0
 	Type: DDR3
 	Type Detail: Unbuffered (Unregistered)
-	Speed: 1600 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: Hynix Semiconducto
 	Serial Number: --
 	Asset Tag: --
 	Part Number: HMT451U6AFR8C
 	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0034, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -686,13 +686,13 @@ Memory Device
 	Bank Locator: CPU1_Bank2
 	Type: DDR3
 	Type Detail: Unbuffered (Unregistered)
-	Speed: 1600 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: Hynix Semiconducto
 	Serial Number: --
 	Asset Tag: --
 	Part Number: HMT451U6AFR8C
 	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x003C, DMI type 20, 35 bytes
 Memory Device Mapped Address

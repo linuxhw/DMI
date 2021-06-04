@@ -1,8 +1,10 @@
-# dmidecode 3.1
-Getting SMBIOS data from sysfs.
+# dmidecode 2.12
+# SMBIOS entry point at 0x000f05b0
 SMBIOS 2.8 present.
+# SMBIOS implementations newer than version 2.7 are not
+# fully supported by this version of dmidecode.
 18 structures occupying 1161 bytes.
-Table at 0x7B194000.
+Table at 0x000ECED0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -136,16 +138,16 @@ Memory Device
 	Bank Locator: A1_BANK0
 	Type: DDR3
 	Type Detail: Unknown
-	Speed: 1600 MT/s
+	Speed: 1600 MHz
 	Manufacturer: Hynix Semiconduc
 	Serial Number: --
 	Asset Tag: --
 	Part Number: HMT425S6CFR6A-PB  
 	Rank: 1
-	Configured Clock Speed: 1066 MT/s
-	Minimum Voltage: 1.35 V
-	Maximum Voltage: 1.5 V
-	Configured Voltage: 1.35 V
+	Configured Clock Speed: 1066 MHz
+	Minimum voltage:  1.350 V
+	Maximum voltage:  1.500 V
+	Configured voltage:  1.350 V
 
 Handle 0x000D, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -178,9 +180,9 @@ Memory Device
 	Part Number: Array1_PartNumber1
 	Rank: Unknown
 	Configured Clock Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
+	Minimum voltage:  Unknown
+	Maximum voltage:  Unknown
+	Configured voltage:  Unknown
 
 Handle 0x000F, DMI type 126, 35 bytes
 Inactive

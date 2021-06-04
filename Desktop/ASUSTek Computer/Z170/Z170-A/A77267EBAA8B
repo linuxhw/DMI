@@ -1,8 +1,6 @@
-# dmidecode 2.12
-# SMBIOS entry point at 0x000f05b0
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 3.0 present.
-# SMBIOS implementations newer than version 2.7 are not
-# fully supported by this version of dmidecode.
 96 structures occupying 4393 bytes.
 Table at 0x97ED7000.
 
@@ -13,7 +11,7 @@ BIOS Information
 	Release Date: 08/18/2015
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 16384 kB
+	ROM Size: 16 MB
 	Characteristics:
 		PCI is supported
 		APM is supported
@@ -828,9 +826,9 @@ Memory Device
 	Part Number: Not Specified
 	Rank: Unknown
 	Configured Clock Speed: Unknown
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
 Handle 0x004C, DMI type 17, 40 bytes
 Memory Device
@@ -843,18 +841,18 @@ Memory Device
 	Set: None
 	Locator: ChannelA-DIMM2
 	Bank Locator: BANK 1
-	Type: <OUT OF SPEC>
+	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2133 MHz
+	Speed: 2133 MT/s
 	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CMV8GX4M1A2133C15   
 	Rank: 2
-	Configured Clock Speed: 2133 MHz
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  1.200 V
+	Configured Clock Speed: 2133 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 1.2 V
 
 Handle 0x004D, DMI type 17, 40 bytes
 Memory Device
@@ -876,9 +874,9 @@ Memory Device
 	Part Number: Not Specified
 	Rank: Unknown
 	Configured Clock Speed: Unknown
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
 Handle 0x004E, DMI type 17, 40 bytes
 Memory Device
@@ -891,18 +889,18 @@ Memory Device
 	Set: None
 	Locator: ChannelB-DIMM2
 	Bank Locator: BANK 3
-	Type: <OUT OF SPEC>
+	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2133 MHz
+	Speed: 2133 MT/s
 	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CMV8GX4M1A2133C15   
 	Rank: 2
-	Configured Clock Speed: 2133 MHz
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  1.200 V
+	Configured Clock Speed: 2133 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 1.2 V
 
 Handle 0x004F, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -1050,12 +1048,12 @@ Handle 0x005B, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 6
-		0x0050 (<OUT OF SPEC>)
-		0x0055 (<OUT OF SPEC>)
-		0x0056 (<OUT OF SPEC>)
-		0x0057 (<OUT OF SPEC>)
-		0x0058 (<OUT OF SPEC>)
-		0x0059 (<OUT OF SPEC>)
+		0x0050 (OEM-specific)
+		0x0055 (OEM-specific)
+		0x0056 (OEM-specific)
+		0x0057 (OEM-specific)
+		0x0058 (OEM-specific)
+		0x0059 (OEM-specific)
 
 Handle 0x005C, DMI type 13, 22 bytes
 BIOS Language Information
@@ -1075,12 +1073,12 @@ Handle 0x005D, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
-		0x0000 (<OUT OF SPEC>)
+		0x0000 (OEM-specific)
 
 Handle 0x005E, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 5E 00 01 03 01 45 02 00 90 06 03 10 86 00
+		DB 51 5E 00 01 03 01 45 02 00 90 06 03 10 80 00
 		00 00 00 00 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

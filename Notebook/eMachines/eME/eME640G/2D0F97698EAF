@@ -1,6 +1,7 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-51 structures occupying 2148 bytes.
+51 structures occupying 2158 bytes.
 Table at 0x000E7F50.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -8,7 +9,7 @@ BIOS Information
 	Vendor: eMachines       
 	Version: V1.06
 	Release Date: 06/01/2010
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -48,7 +49,7 @@ Base Board Information
 	Version: V1.06
 	Serial Number: --
 	Asset Tag: --
-	Features:
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Base Board Chassis Location
@@ -64,7 +65,7 @@ Chassis Information
 	Version: V1.06
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -396,8 +397,8 @@ Cache Information
 	Configuration: Disabled, Not Socketed, Level 1
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -411,7 +412,7 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 3 GB
+	Maximum Capacity: 6 GB
 	Error Information Handle: No Error
 	Number Of Devices: 2
 
@@ -421,18 +422,18 @@ Memory Device
 	Error Information Handle: 0x0025
 	Total Width: 64 bits
 	Data Width: 8 bits
-	Size: 1024 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MHz
-	Manufacturer: Elpida
+	Speed: 1066 MT/s
+	Manufacturer: Nanya Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: EBJ10UE8BDS0-DJ-F 
+	Part Number: NT2GC64B8HC0NS-CG 
 	Rank: Unknown
 
 Handle 0x0025, DMI type 18, 23 bytes
@@ -451,15 +452,15 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: Unknown DIMM
-	Installed Size: 1024 MB (Single-bank Connection)
-	Enabled Size: 1024 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0027, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0024
 	Memory Array Mapped Address Handle: 0x002D
 	Partition Row Position: 1
@@ -470,18 +471,18 @@ Memory Device
 	Error Information Handle: 0x0029
 	Total Width: 64 bits
 	Data Width: 8 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MHz
+	Speed: 1066 MT/s
 	Manufacturer: Nanya Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NT2GC64B8HC0NS-CG 
+	Part Number: NT4GC64B8HD0NS-CG 
 	Rank: Unknown
 
 Handle 0x0029, DMI type 18, 23 bytes
@@ -506,9 +507,9 @@ Memory Module Information
 
 Handle 0x002B, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00080000000
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0028
 	Memory Array Mapped Address Handle: 0x002D
 	Partition Row Position: 1
@@ -526,8 +527,8 @@ Handle 0x002C, DMI type 18, 23 bytes
 Handle 0x002D, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 6 GB
 	Physical Array Handle: 0x0023
 	Partition Width: 2
 

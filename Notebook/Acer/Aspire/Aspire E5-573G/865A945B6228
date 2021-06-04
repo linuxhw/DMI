@@ -117,7 +117,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz
-	Voltage: 0.8 V
+	Voltage: 0.7 V
 	External Clock: 100 MHz
 	Max Speed: 2000 MHz
 	Current Speed: 2000 MHz
@@ -156,8 +156,8 @@ Memory Module Information
 	Bank Connections: 0 0
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 7, 19 bytes
@@ -286,11 +286,11 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: 0420
+	Speed: Unknown
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: AO1L16BC4R1-BQSS  
+	Part Number: 99U5469-070.A00LF 
 	Rank: 1
 	Configured Clock Speed: 1600 MT/s
 
@@ -300,26 +300,26 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Kingston
+	Speed: Unknown
+	Manufacturer: 0420
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ACR256X64D3S1333C9
-	Rank: Unknown
+	Part Number: AO1L16BC4R1-BQSS  
+	Rank: 1
 	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0013, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0010
 	Partition Width: 2
 
@@ -337,8 +337,8 @@ Memory Device Mapped Address
 Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x3FFFFFFFFFF
-	Range Size: Invalid
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0012
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown

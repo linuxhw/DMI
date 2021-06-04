@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 62 structures occupying 2611 bytes.
@@ -41,7 +41,7 @@ System Information
 	Version: Lenovo Z580                     
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: Other
 	SKU Number: System SKUNumber
 	Family: IDEAPAD Z580   
 
@@ -188,8 +188,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -590,7 +590,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -603,7 +603,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: RMT3150ED58E8W1600
 	Rank: Unknown
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0036, DMI type 17, 34 bytes
 Memory Device
@@ -611,7 +611,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -624,7 +624,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: RMT3160ED58E9W1600
 	Rank: Unknown
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0037, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -674,14 +674,14 @@ OEM-specific Type
 
 Handle 0x003C, DMI type 15, 81 bytes
 System Event Log
-	Area Length: 34 bytes
+	Area Length: 50 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000001
+	Change Token: 0x00000002
 	Header Format: Type 1
 	Supported Log Type Descriptors: 29
 	Descriptor 1: Single-bit ECC memory error

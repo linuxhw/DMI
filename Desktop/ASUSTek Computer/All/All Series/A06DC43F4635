@@ -1,4 +1,4 @@
-# dmidecode 3.0
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 75 structures occupying 2962 bytes.
@@ -7,8 +7,8 @@ Table at 0x000EC2F0.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 2501
-	Release Date: 07/22/2015
+	Version: 3602
+	Release Date: 03/23/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8192 kB
@@ -259,7 +259,7 @@ Handle 0x001A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 1
 	Characteristics:
@@ -317,9 +317,9 @@ System Configuration Options
 
 Handle 0x0020, DMI type 24, 5 bytes
 Hardware Security
-	Power-On Password Status: Enabled
+	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
-	Administrator Password Status: Enabled
+	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
 
 Handle 0x0021, DMI type 32, 20 bytes
@@ -582,13 +582,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX1600C10D3/8G   
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x003C, DMI type 16, 23 bytes
 Physical Memory Array
@@ -644,13 +644,13 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: 99U5584-005.A00LF 
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0040, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -751,7 +751,7 @@ Processor Information
 	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 3900 MHz
-	Current Speed: 3500 MHz
+	Current Speed: 3508 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
 	L1 Cache Handle: 0x0043

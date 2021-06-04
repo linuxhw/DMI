@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-37 structures occupying 2103 bytes.
+37 structures occupying 2110 bytes.
 Table at 0x5CE12000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 04/06/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 14336 kB
+	ROM Size: 14 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -51,8 +51,8 @@ Base Board Information
 	Product Name: X99 Taichi
 	Version:                       
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148                       
+	Features:
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:                       
@@ -83,14 +83,14 @@ Handle 0x0008, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot1
 	Type: x1 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 17
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:0a:00.6
+	Bus Address: 0000:ff:00.6
 
 Handle 0x0009, DMI type 9, 17 bytes
 System Slot Information
@@ -103,7 +103,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:03:00.0
+	Bus Address: 0000:04:00.0
 
 Handle 0x000A, DMI type 9, 17 bytes
 System Slot Information
@@ -122,14 +122,14 @@ Handle 0x000B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot4
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 20
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:00.0
+	Bus Address: 0000:03:00.0
 
 Handle 0x000C, DMI type 9, 17 bytes
 System Slot Information
@@ -181,7 +181,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:08:00.3
+	Bus Address: 0000:09:00.3
 
 Handle 0x0010, DMI type 11, 5 bytes
 OEM Strings
@@ -214,20 +214,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 72 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A1
 	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2239 MT/s
+	Speed: 2133 MT/s
 	Manufacturer: Undefined
 	Serial Number: --
 	Asset Tag: --
 	Part Number: F4-3000C15-8GVGB   
 	Rank: 1
-	Configured Memory Speed: 2239 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -271,20 +271,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 72 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B1
 	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2239 MT/s
+	Speed: 2133 MT/s
 	Manufacturer: Undefined
 	Serial Number: --
 	Asset Tag: --
 	Part Number: F4-3000C15-8GVKB   
 	Rank: 1
-	Configured Memory Speed: 2239 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -345,20 +345,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 72 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_C1
 	Bank Locator: NODE 2
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2239 MT/s
+	Speed: 2133 MT/s
 	Manufacturer: Undefined
 	Serial Number: --
 	Asset Tag: --
 	Part Number: F4-3000C15-8GVGB   
 	Rank: 1
-	Configured Memory Speed: 2239 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -402,20 +402,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 72 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_D1
 	Bank Locator: NODE 2
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2239 MT/s
+	Speed: 2133 MT/s
 	Manufacturer: Undefined
 	Serial Number: --
 	Asset Tag: --
 	Part Number: F4-3000C15-8GVKB   
 	Rank: 1
-	Configured Memory Speed: 2239 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -475,8 +475,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -491,8 +491,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 30720 kB
-	Maximum Size: 30720 kB
+	Installed Size: 30 MB
+	Maximum Size: 30 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -574,7 +574,7 @@ OEM-specific Type
 		83 40 27 00 35 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 47 8D 00 00 00 00 01 00 00 00 01 00 09 00
 		EA 03 25 00 00 00 00 00 C8 00 A1 15 00 00 00 00
-		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
+		00 00 00 00 20 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0028, DMI type 127, 4 bytes
 End Of Table

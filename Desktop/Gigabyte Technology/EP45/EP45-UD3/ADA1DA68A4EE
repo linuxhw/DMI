@@ -7,8 +7,8 @@ Table at 0x000F0100.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Award Software International, Inc.
-	Version: F9
-	Release Date: 01/27/2010
+	Version: F10b
+	Release Date: 08/05/2010
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 1024 kB
@@ -54,7 +54,7 @@ Base Board Information
 	Version:  
 	Serial Number: --
 
-Handle 0x0003, DMI type 3, 17 bytes
+807075653E24ECB98B63F18E00309403
 Chassis Information
 	Manufacturer: Gigabyte Technology Co., Ltd.
 	Type: Desktop
@@ -62,7 +62,7 @@ Chassis Information
 	Version:  
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Unknown
+	...
 	Power Supply State: Unknown
 	Thermal State: Unknown
 	Security Status: Unknown
@@ -74,42 +74,12 @@ Processor Information
 	Type: Central Processor
 	Family: Other
 	Manufacturer: Intel
-	ID: 7A 06 01 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 23, Stepping 10
-	Flags:
-		FPU (Floating-point unit on-chip)
-		VME (Virtual mode extension)
-		DE (Debugging extension)
-		PSE (Page size extension)
-		TSC (Time stamp counter)
-		MSR (Model specific registers)
-		PAE (Physical address extension)
-		MCE (Machine check exception)
-		CX8 (CMPXCHG8 instruction supported)
-		APIC (On-chip APIC hardware supported)
-		SEP (Fast system call)
-		MTRR (Memory type range registers)
-		PGE (Page global enable)
-		MCA (Machine check architecture)
-		CMOV (Conditional move instruction supported)
-		PAT (Page attribute table)
-		PSE-36 (36-bit page size extension)
-		CLFSH (CLFLUSH instruction supported)
-		DS (Debug store)
-		ACPI (ACPI supported)
-		MMX (MMX technology supported)
-		FXSR (FXSAVE and FXSTOR instructions supported)
-		SSE (Streaming SIMD extensions)
-		SSE2 (Streaming SIMD extensions 2)
-		SS (Self-snoop)
-		HTT (Multi-threading)
-		TM (Thermal monitor supported)
-		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM)2 Quad CPU
+	ID: 76 06 01 00 FF FB EB BF
+	Version: Intel(R) Xeon(R) CPU X5450 @
 	Voltage: 1.0 V
 	External Clock: 333 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 2333 MHz
+	Current Speed: 3000 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket 478
 	L1 Cache Handle: 0x000A
@@ -117,7 +87,7 @@ Processor Information
 	L3 Cache Handle: Not Provided
 	Serial Number: --
 	Asset Tag: --
-	Part Number:  
+	...
 
 Handle 0x0005, DMI type 5, 24 bytes
 Memory Controller Information
@@ -147,8 +117,8 @@ Memory Module Information
 	Bank Connections: 1
 	Current Speed: Unknown
 	Type: Other
-	Installed Size: 1024 MB (Single-bank Connection)
-	Enabled Size: 1024 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -167,8 +137,8 @@ Memory Module Information
 	Bank Connections: 3
 	Current Speed: Unknown
 	Type: Other
-	Installed Size: 1024 MB (Single-bank Connection)
-	Enabled Size: 1024 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
@@ -203,7 +173,7 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
+	Installed Size: 6144 kB
 	Maximum Size: 2048 kB
 	Supported SRAM Types:
 		Synchronous
@@ -273,7 +243,7 @@ Handle 0x0013, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: PS/2 Mouse
 	Internal Connector Type: PS/2
-	External Reference Designator: No Detected
+	External Reference Designator: Detected
 	External Connector Type: PS/2
 	Port Type: Mouse Port
 
@@ -356,7 +326,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
@@ -367,7 +337,7 @@ Memory Device
 	Manufacturer:  
 	Serial Number: --
 	Asset Tag: --
-	Part Number:  
+	...
 
 Handle 0x001C, DMI type 17, 27 bytes
 Memory Device
@@ -386,7 +356,7 @@ Memory Device
 	Manufacturer:  
 	Serial Number: --
 	Asset Tag: --
-	Part Number:  
+	...
 
 Handle 0x001D, DMI type 17, 27 bytes
 Memory Device
@@ -394,7 +364,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A2
@@ -405,7 +375,7 @@ Memory Device
 	Manufacturer:  
 	Serial Number: --
 	Asset Tag: --
-	Part Number:  
+	...
 
 Handle 0x001E, DMI type 17, 27 bytes
 Memory Device
@@ -424,29 +394,29 @@ Memory Device
 	Manufacturer:  
 	Serial Number: --
 	Asset Tag: --
-	Part Number:  
+	...
 
 Handle 0x001F, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x001A
 	Partition Width: 1
 
 Handle 0x0020, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x001B
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: 1
 
 Handle 0x0021, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x000BFFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x001C
 	Memory Array Mapped Address Handle: 0x001F
@@ -454,17 +424,17 @@ Memory Device Mapped Address
 
 Handle 0x0022, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x000C0000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 1 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x001D
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: 1
 
 Handle 0x0023, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x0017FFFFFFF
+	Starting Address: 0x00180000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x001F

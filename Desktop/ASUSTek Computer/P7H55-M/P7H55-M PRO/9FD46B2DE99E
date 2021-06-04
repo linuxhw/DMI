@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 57 structures occupying 2174 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 06/07/2010
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -122,9 +122,9 @@ Processor Information
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i3 CPU 530 @ 2.93GHz              
 	Voltage: 1.0 V
-	External Clock: 160 MHz
+	External Clock: 133 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 3052 MHz
+	Current Speed: 2933 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -177,8 +177,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -226,8 +226,8 @@ Memory Module Information
 	Bank Connections: 2 3
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: 2048 MB (Double-bank Connection)
-	Enabled Size: 2048 MB (Double-bank Connection)
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x000B, DMI type 6, 12 bytes
@@ -246,8 +246,8 @@ Memory Module Information
 	Bank Connections: 6 7
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 4096 MB (Double-bank Connection)
+	Enabled Size: 4096 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000D, DMI type 8, 9 bytes
@@ -524,8 +524,8 @@ Physical Memory Array
 Handle 0x002C, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x002B
 	Partition Width: 4
 
@@ -535,7 +535,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
@@ -563,16 +563,16 @@ Handle 0x002F, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x002B
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 2048 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: DDR
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
 	Manufacturer: Manufacturer1
 	Serial Number: --
 	Asset Tag: --
@@ -581,9 +581,9 @@ Memory Device
 
 Handle 0x0030, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00000000000
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
 	Physical Device Handle: 0x002F
 	Memory Array Mapped Address Handle: 0x002C
 	Partition Row Position: 1
@@ -595,7 +595,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -611,8 +611,8 @@ Memory Device
 
 Handle 0x0032, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x0017FFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0031
 	Memory Array Mapped Address Handle: 0x002C
@@ -623,16 +623,16 @@ Handle 0x0033, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x002B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
+	Type: DDR
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer3
 	Serial Number: --
 	Asset Tag: --
@@ -641,9 +641,9 @@ Memory Device
 
 Handle 0x0034, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0033
 	Memory Array Mapped Address Handle: 0x002C
 	Partition Row Position: 1

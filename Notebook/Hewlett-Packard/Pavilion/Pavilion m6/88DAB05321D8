@@ -1,6 +1,7 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-60 structures occupying 2608 bytes.
+61 structures occupying 2671 bytes.
 Table at 0x000E66D0.
 
 Handle 0x0000, DMI type 16, 23 bytes
@@ -25,13 +26,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: ELPIDA
 	Serial Number: --
 	Asset Tag: --
 	Part Number: EBJ40UG8BBU0-GN-F 
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0003, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -67,13 +68,13 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
 	Part Number: HMT325S6CFR8C-PB  
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0007, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -463,7 +464,21 @@ Built-in Pointing Device
 	Interface: PS/2
 	Buttons: 4
 
-Handle 0x002D, DMI type 26, 22 bytes
+Handle 0x002D, DMI type 22, 26 bytes
+Portable Battery
+	Location: In the back
+	Manufacturer: 13-42
+	Name: MO06062
+	Chemistry: Lithium Ion
+	Design Capacity: 61993 mWh
+	Design Voltage: 11100 mV
+	SBDS Version: 1
+	Maximum Error: 1%
+	SBDS Serial Number: --
+	SBDS Manufacture Date: 2012-05-29
+	OEM-specific Information: 0x0000FFFF
+
+Handle 0x002E, DMI type 26, 22 bytes
 Voltage Probe
 	Description: Voltage Probe Description.
 	Location: Unknown
@@ -476,7 +491,7 @@ Voltage Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x002E, DMI type 27, 15 bytes
+Handle 0x002F, DMI type 27, 15 bytes
 Cooling Device
 	Type: Fan
 	Status: OK
@@ -484,11 +499,11 @@ Cooling Device
 	Nominal Speed: 2000 rpm
 	Description: Cooling Device Description.
 
-Handle 0x002F, DMI type 32, 20 bytes
+Handle 0x0030, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0030, DMI type 39, 22 bytes
+Handle 0x0031, DMI type 39, 22 bytes
 System Power Supply
 	Location: OEM_Define0
 	Name: OEM_Define1
@@ -503,9 +518,9 @@ System Power Supply
 	Input Voltage Range Switching: Auto-switch
 	Plugged: No
 	Hot Replaceable: No
-	Cooling Device Handle: 0x002E
+	Cooling Device Handle: 0x002F
 
-Handle 0x0031, DMI type 40, 18 bytes
+Handle 0x0032, DMI type 40, 18 bytes
 Additional Information 1
 	Referenced Handle: 0x0020
 	Referenced Offset: 0x05
@@ -517,7 +532,7 @@ Additional Information 2
 	String: Compiler Version: VC 9.0
 	Value: 0x05dc
 
-Handle 0x0032, DMI type 41, 11 bytes
+Handle 0x0033, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Realtek PCIe GBE Family Controller
 	Type: Ethernet
@@ -525,42 +540,42 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:07:00.2
 
-Handle 0x0033, DMI type 136, 6 bytes
+Handle 0x0034, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 33 00 FF FF
+		88 06 34 00 FF FF
 
-Handle 0x0034, DMI type 128, 8 bytes
+Handle 0x0035, DMI type 128, 8 bytes
 OEM-specific Type
 	Header and Data:
-		80 08 34 00 55 AA 55 AA
+		80 08 35 00 55 AA 55 AA
 	Strings:
 		Oem Test 1
 		Oem Test 2
 
-Handle 0x0035, DMI type 129, 8 bytes
+Handle 0x0036, DMI type 129, 8 bytes
 OEM-specific Type
 	Header and Data:
-		81 08 35 00 01 01 02 01
+		81 08 36 00 01 01 02 01
 	Strings:
 		Intel_ASF
 		Intel_ASF_001
 
-Handle 0x0036, DMI type 130, 20 bytes
+Handle 0x0037, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 36 00 24 41 4D 54 01 01 01 01 01 A5 1F 02
+		82 14 37 00 24 41 4D 54 01 01 01 01 01 A5 1F 02
 		00 00 00 00
 
-Handle 0x0037, DMI type 131, 64 bytes
+Handle 0x0038, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 37 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 38 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 57 1E FF FF FF FF 01 20 00 00 00 00 08 00
 		A1 05 04 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 FF 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0038, DMI type 41, 11 bytes
+Handle 0x0039, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Broadcom 802.11b/g/n WLAN
 	Type: Other
@@ -568,7 +583,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:08:00.0
 
-Handle 0x0039, DMI type 4, 42 bytes
+Handle 0x003A, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: U3E1
 	Type: Central Processor
@@ -612,9 +627,9 @@ Processor Information
 	Current Speed: 2500 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket rPGA988B
-	L1 Cache Handle: 0x003B
-	L2 Cache Handle: 0x003C
-	L3 Cache Handle: 0x003D
+	L1 Cache Handle: 0x003C
+	L2 Cache Handle: 0x003D
+	L3 Cache Handle: 0x003E
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
@@ -629,7 +644,7 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x003A, DMI type 7, 19 bytes
+Handle 0x003B, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -645,7 +660,7 @@ Cache Information
 	System Type: Data
 	Associativity: 8-way Set-associative
 
-Handle 0x003B, DMI type 7, 19 bytes
+Handle 0x003C, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -661,7 +676,7 @@ Cache Information
 	System Type: Instruction
 	Associativity: 8-way Set-associative
 
-Handle 0x003C, DMI type 7, 19 bytes
+Handle 0x003D, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -677,7 +692,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x003D, DMI type 7, 19 bytes
+Handle 0x003E, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L3 Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -693,6 +708,6 @@ Cache Information
 	System Type: Unified
 	Associativity: 12-way Set-associative
 
-Handle 0x003E, DMI type 127, 4 bytes
+Handle 0x003F, DMI type 127, 4 bytes
 End Of Table
 

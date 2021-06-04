@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 65 structures occupying 3167 bytes.
@@ -78,8 +78,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -164,7 +164,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Chip
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -188,7 +188,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Chip
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -417,13 +417,13 @@ Handle 0x0026, DMI type 22, 26 bytes
 Portable Battery
 	Location: Front
 	Manufacturer: LGC
-	Name: 00HW028
-	Design Capacity: 52260 mWh
+	Name: 01AV457
+	Design Capacity: 56000 mWh
 	Design Voltage: 15200 mV
 	SBDS Version: 03.01
 	Maximum Error: Unknown
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 2016-01-28
+	SBDS Manufacture Date: 2107-15-31
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000000
 
@@ -487,7 +487,7 @@ OEM-specific Type
 	Header and Data:
 		DD 44 2E 00 09 01 00 01 08 00 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 21 00 05 00 FF FF FF 21
-		00 06 00 02 0A 00 00 00 07 00 3E 00 00 00 00 08
+		00 06 00 FF FF FF FF FF 07 00 3E 00 00 00 00 08
 		00 34 00 00 00 00 09 00 3E 00 00 00 00 0A 00 34
 		00 00 00 00
 	Strings:
@@ -508,7 +508,7 @@ OEM-specific Type
 		DD 36 2F 00 07 01 00 01 08 00 00 00 02 00 01 08
 		00 01 00 03 00 01 08 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 08 00 07 00 FF FF FF 08 00 08
-		00 FF FF FF FF FF
+		00 FF FF FF 00 04
 	Strings:
 		Reference Code - SA - System Agent
 		Reference Code - MRC

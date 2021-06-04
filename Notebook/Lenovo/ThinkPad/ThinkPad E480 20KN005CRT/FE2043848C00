@@ -1,7 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0xDA85D000.
+Table at 0xBA838000.
 
 Handle 0x0000, DMI type 222, 14 bytes
 OEM-specific Type
@@ -51,7 +51,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: RMSA3260ME78HAF-2666
 	Rank: 1
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -75,7 +75,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: JM2400HSB-8G        
 	Rank: 1
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -177,7 +177,7 @@ Processor Information
 	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 1800 MHz
-	Current Speed: 3200 MHz
+	Current Speed: 3400 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1356
 	L1 Cache Handle: 0x0007
@@ -200,8 +200,8 @@ Processor Information
 Handle 0x000B, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: R0PET47W (1.24 )
-	Release Date: 08/29/2018
+	Version: R0PET63W (1.40 )
+	Release Date: 01/03/2020
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -224,8 +224,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.24
-	Firmware Revision: 1.24
+	BIOS Revision: 1.40
+	Firmware Revision: 1.40
 
 Handle 0x000C, DMI type 1, 27 bytes
 System Information
@@ -470,7 +470,7 @@ OEM-specific Type
 Handle 0x0028, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 28 00 10 00 00 00 0B 00 00 00 00 00 0A 00
+		83 40 28 00 31 00 00 00 0B 00 00 00 00 00 0A 00
 		F8 00 4E 9D 00 00 00 00 01 00 00 00 08 00 0B 00
 		61 0D 32 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
@@ -479,7 +479,7 @@ Handle 0x0029, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 29 00 03 01 00 02 07 00 00 00 02 00 00 00
-		00 84 00 03 00 00 05 00 00 00
+		00 C6 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -559,7 +559,7 @@ Handle 0x002E, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
-	Administrator Password Status: Disabled
+	Administrator Password Status: Enabled
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x002F, DMI type 132, 7 bytes
@@ -590,12 +590,9 @@ Built-in Pointing Device
 	Buttons: 2
 
 Handle 0x0033, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 33 00 01 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: No
 
 Handle 0x0034, DMI type 136, 6 bytes
 OEM-specific Type
@@ -603,12 +600,9 @@ OEM-specific Type
 		88 06 34 00 5A 5A
 
 Handle 0x0035, DMI type 140, 15 bytes
-OEM-specific Type
-	Header and Data:
-		8C 0F 35 00 4C 45 4E 4F 56 4F 0B 07 01 01 02
-	Strings:
-		R0PHT47W
-		08/27/2018
+ThinkPad Embedded Controller Program
+	Version ID: R0PHT63W
+	Release Date: 01/03/2020
 
 Handle 0x0036, DMI type 135, 18 bytes
 OEM-specific Type
@@ -625,7 +619,7 @@ Group Associations
 Handle 0x0038, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 38 00 01 03 01 45 02 00 90 06 03 10 80 20
+		DB 51 38 00 01 03 01 45 02 00 90 06 01 10 80 20
 		00 00 00 04 40 08 00 01 1F 00 00 C9 0A 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 37 structures occupying 1173 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 03/21/2012
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -40,7 +40,7 @@ System Information
 	Product Name: P67A-UD4-B3
 	Version:  
 	Serial Number: --
-	UUID: --
+	F34240217EC7D7DC5A33917560055992
 	Wake-up Type: Power Switch
 	SKU Number:  
 	Family:  
@@ -59,8 +59,8 @@ Chassis Information
 	Lock: Not Present
 	Version:  
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Boot-up State: Unknown
 	Power Supply State: Unknown
 	Thermal State: Unknown
 	Security Status: Unknown
@@ -84,8 +84,8 @@ Processor Information
 	L2 Cache Handle: 0x000B
 	L3 Cache Handle: Not Provided
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 
 Handle 0x0005, DMI type 5, 24 bytes
 Memory Controller Information
@@ -115,8 +115,8 @@ Memory Module Information
 	Bank Connections: 1
 	Current Speed: Unknown
 	Type: Other
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -135,8 +135,8 @@ Memory Module Information
 	Bank Connections: 3
 	Current Speed: Unknown
 	Type: Other
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
@@ -171,8 +171,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 2048 kB
+	Installed Size: 6 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -310,19 +310,19 @@ Memory Device
 	Array Handle: 0x0019
 	Error Information Handle: Not Provided
 	Total Width: 2304 bits
-	Data Width: 2274 bits
-	Size: 2048 MB
+	Data Width: 2050 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
 	Bank Locator: Bank0/1
 	Type: Unknown
 	Type Detail: None
-	Speed: 1066 MT/s
+	Speed: 1600 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 
 Handle 0x001B, DMI type 17, 27 bytes
 Memory Device
@@ -340,27 +340,27 @@ Memory Device
 	Speed: Unknown
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 
 Handle 0x001C, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0019
 	Error Information Handle: Not Provided
 	Total Width: 2304 bits
-	Data Width: 2274 bits
-	Size: 2048 MB
+	Data Width: 2050 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A2
 	Bank Locator: Bank4/5
 	Type: Unknown
 	Type Detail: None
-	Speed: 1066 MT/s
+	Speed: 1600 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 
 Handle 0x001D, DMI type 17, 27 bytes
 Memory Device
@@ -378,22 +378,22 @@ Memory Device
 	Speed: Unknown
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 
 Handle 0x001E, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0019
 	Partition Width: 1
 
 Handle 0x001F, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x001A
 	Memory Array Mapped Address Handle: 0x001E
 	Partition Row Position: 1
@@ -409,9 +409,9 @@ Memory Device Mapped Address
 
 Handle 0x0021, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x001C
 	Memory Array Mapped Address Handle: 0x001E
 	Partition Row Position: 1

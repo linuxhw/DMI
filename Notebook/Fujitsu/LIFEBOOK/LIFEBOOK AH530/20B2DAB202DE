@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 26 structures occupying 1182 bytes.
 Table at 0x000DF010.
@@ -6,11 +7,11 @@ Table at 0x000DF010.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: FUJITSU // Phoenix Technologies Ltd.
-	Version: Version 1.19  
-	Release Date: 08/15/2011
+	Version: Version 1.22  
+	Release Date: 04/03/2019
 	Address: 0xE1DD0
 	Runtime Size: 123440 bytes
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		PCI is supported
 		PC Card (PCMCIA) is supported
@@ -31,8 +32,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
-	BIOS Revision: 1.19
-	Firmware Revision: 0.14
+	BIOS Revision: 1.22
+	Firmware Revision: 0.16
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -52,7 +53,7 @@ Base Board Information
 	Version:  
 	Serial Number: --
 	Asset Tag: --
-	Features:
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 	Location In Chassis:                      
 	Chassis Handle: 0x0003
@@ -66,7 +67,7 @@ Chassis Information
 	Version:  
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Unknown
+	F6698203954ED9B7A20341549F7CA083
 	Power Supply State: Unknown
 	Thermal State: Unknown
 	Security Status: Unknown
@@ -75,7 +76,7 @@ Handle 0x0004, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: On Board
 	Type: Central Processor
-	Family: Core i3
+	Family: Core i5
 	Manufacturer: Intel
 	ID: 55 06 02 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 37, Stepping 5
@@ -108,11 +109,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i3 CPU       M 370  @ 2.40GHz
+	Version: Intel(R) Core(TM) i7 CPU       M 640  @ 2.80GHz
 	Voltage: 0.7 V
 	External Clock: 133 MHz
-	Max Speed: 2400 MHz
-	Current Speed: 2400 MHz
+	Max Speed: 2800 MHz
+	Current Speed: 2800 MHz
 	Status: Populated, Enabled
 	Upgrade: None
 	L1 Cache Handle: 0x0005
@@ -166,8 +167,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 8192 kB
+	Installed Size: 4 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 		Synchronous
@@ -204,18 +205,18 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: Bank 0
 	Type: Reserved
 	Type Detail: Synchronous
-	Speed: 667 MHz
-	Manufacturer: 80AD            
+	Speed: 533 MT/s
+	Manufacturer: 0000            
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT325S6BFR8C-H9  
+	Part Number:                   
 	Rank: Unknown
 
 Handle 0x000B, DMI type 17, 28 bytes
@@ -224,42 +225,42 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: Bank 1
 	Type: Reserved
 	Type Detail: Synchronous
-	Speed: 667 MHz
-	Manufacturer: 80AD            
+	Speed: 533 MT/s
+	Manufacturer: 0000            
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT325S6CFR8C-H9  
+	Part Number:                   
 	Rank: Unknown
 
 Handle 0x000C, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0009
 	Partition Width: 4
 
 Handle 0x000D, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x000A
 	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: 1
 
 Handle 0x000E, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x000B
 	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: 1

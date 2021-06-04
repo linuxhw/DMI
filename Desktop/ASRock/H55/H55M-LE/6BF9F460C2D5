@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 23 structures occupying 1202 bytes.
 Table at 0x000FD1D0.
@@ -53,8 +54,8 @@ Base Board Information
 	Product Name: H55M-LE
 	Version:                       
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148                       
+	Features:
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:                       
@@ -120,7 +121,7 @@ Processor Information
 	Voltage: Unknown
 	External Clock: 133 MHz
 	Max Speed: 3200 MHz
-	Current Speed: 3200 MHz
+	Current Speed: 2800 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -249,8 +250,17 @@ System Slot Information
 		PME signal is supported
 	Bus Address: ffff:04:00.0
 
-Handle 0x000D, DMI type 126, 17 bytes
-Inactive
+Handle 0x000D, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCIE1
+	Type: x16 PCI Express
+	Current Usage: Available
+	Length: Short
+	ID: 17
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
 
 Handle 0x000E, DMI type 9, 17 bytes
 System Slot Information

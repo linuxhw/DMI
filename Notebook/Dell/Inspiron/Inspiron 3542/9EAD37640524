@@ -1,4 +1,4 @@
-# dmidecode 3.0
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 45 structures occupying 2093 bytes.
@@ -34,11 +34,11 @@ OEM-specific Type
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: A14
-	Release Date: 05/23/2018
+	Version: A16
+	Release Date: 09/02/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		MCA is supported
 		PCI is supported
@@ -63,7 +63,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 65.14
+	BIOS Revision: 65.16
 
 Handle 0x002E, DMI type 13, 22 bytes
 BIOS Language Information
@@ -110,20 +110,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM_A
 	Bank Locator: Bank 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: 99U5428-018.A00LF 
 	Rank: 2
-	Configured Clock Speed: 1600 MHz
+	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.35 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.35 V
@@ -143,8 +143,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -256,7 +256,7 @@ Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: Dell Inc.
 	Product Name: 0926J6
-	Version: A14
+	Version: A16
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -380,7 +380,7 @@ OEM Strings
 	String 3: 3[3.3]
 	String 4: 4[0001]
 	String 5: 6[D0, D4, D8, D9, DA, DB, DC, DD, DE]
-	String 6: 10[A14]
+	String 6: 10[A16]
 	String 7: 13[P40F]
 	String 8: 14[0]
 	String 9: 15[11]

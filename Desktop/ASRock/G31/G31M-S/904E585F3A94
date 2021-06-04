@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 22 structures occupying 1126 bytes.
 Table at 0x000FC290.
@@ -53,7 +54,7 @@ Base Board Information
 	Product Name: G31M-S.  
 	Version:                       
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148                       
 	Features:
 		Board is a hosting board
 		Board is replaceable
@@ -199,8 +200,8 @@ Memory Module Information
 	Bank Connections: 4 5
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 9, 13 bytes
@@ -254,8 +255,8 @@ Physical Memory Array
 Handle 0x000F, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 3 GB
 	Physical Array Handle: 0x000E
 	Partition Width: 4
 
@@ -292,23 +293,30 @@ Handle 0x0012, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x000E
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: Unknown
+	Type: SDRAM
+	Type Detail: Synchronous
 	Speed: Unknown
 	Manufacturer: Manufacturer1
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum1
 
-Handle 0x0013, DMI type 126, 19 bytes
-Inactive
+Handle 0x0013, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00040000000
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0012
+	Memory Array Mapped Address Handle: 0x000F
+	Partition Row Position: 1
+	Interleaved Data Depth: 1
 
 Handle 0x0014, DMI type 32, 20 bytes
 System Boot Information

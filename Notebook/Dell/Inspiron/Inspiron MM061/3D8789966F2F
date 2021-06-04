@@ -149,7 +149,7 @@ Processor Information
 	Voltage: 3.3 V
 	External Clock: 166 MHz
 	Max Speed: 1833 MHz
-	Current Speed: 1333 MHz
+	Current Speed: 1833 MHz
 	Status: Populated, Enabled
 	Upgrade: None
 	L1 Cache Handle: 0x0700
@@ -266,7 +266,7 @@ On Board Device Information
 Handle 0x0B00, DMI type 11, 5 bytes
 OEM Strings
 	String 1: Dell System
-	String 2: 5[0083]
+	String 2: 5[0003]
 	String 3: 13[PP12L]
 
 Handle 0x0D00, DMI type 13, 22 bytes
@@ -291,7 +291,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B
@@ -299,10 +299,10 @@ Memory Device
 	Type: DDR
 	Type Detail: Synchronous
 	Speed: 667 MT/s
-	Manufacturer: 4000000000000000
+	Manufacturer: FFFFFFFFFFFFFFFF
 	Serial Number: --
 	Asset Tag: --
-	Part Number: V916765G24QCFW-G6 
+	Part Number: GU332G0AJEPR8H2L4C
 
 Handle 0x1101, DMI type 17, 27 bytes
 Memory Device
@@ -318,10 +318,10 @@ Memory Device
 	Type: DDR
 	Type Detail: Synchronous
 	Speed: 667 MT/s
-	Manufacturer: CE00000000000000
+	Manufacturer: FFFFFFFFFFFFFFFF
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M4 70T2864QZ3-CE6 
+	Part Number: GU331G0AJEPR612L4C
 
 Handle 0x1300, DMI type 19, 15 bytes
 Memory Array Mapped Address
@@ -334,8 +334,8 @@ Memory Array Mapped Address
 Handle 0x1301, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000100000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2047 MB
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 3071 MB
 	Physical Array Handle: 0x1000
 	Partition Width: 1
 
@@ -351,16 +351,16 @@ Memory Device Mapped Address
 Handle 0x1401, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000100000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1023 MB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2047 MB
 	Physical Device Handle: 0x1100
 	Memory Array Mapped Address Handle: 0x1301
 	Partition Row Position: 1
 
 Handle 0x1402, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x0007FFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x000BFFFFFFF
 	Range Size: 1 GB
 	Physical Device Handle: 0x1101
 	Memory Array Mapped Address Handle: 0x1301

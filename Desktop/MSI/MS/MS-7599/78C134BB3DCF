@@ -6,8 +6,8 @@ Table at 0x0009F400.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: V17.13
-	Release Date: 06/29/2011
+	Version: V17.20
+	Release Date: 11/27/2012
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 1024 kB
@@ -116,8 +116,8 @@ Processor Information
 	Version: AMD Phenom(tm) II X4 955 Processor                  
 	Voltage: 1.4 V
 	External Clock: 200 MHz
-	Max Speed: 3200 MHz
-	Current Speed: 3200 MHz
+	Max Speed: 3400 MHz
+	Current Speed: 3400 MHz
 	Status: Populated, Disabled By BIOS
 	Upgrade: Socket AM3
 	L1 Cache Handle: 0x0005
@@ -178,7 +178,7 @@ Cache Information
 	Speed: 1 ns
 	Error Correction Type: Multi-bit ECC
 	System Type: Unified
-	Associativity: Other
+	Associativity: 48-way Set-associative
 
 Handle 0x0008, DMI type 8, 9 bytes
 Port Connector Information
@@ -509,8 +509,8 @@ Physical Memory Array
 Handle 0x002D, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0032FFFFFFF
-	Range Size: 13056 MB
+	Ending Address: 0x003AFFFFFFF
+	Range Size: 15104 MB
 	Physical Array Handle: 0x002C
 	Partition Width: 1
 
@@ -518,24 +518,30 @@ Handle 0x002E, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x002C
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: Other
+	Size: 4096 MB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Manufacturer00
+	Type: Other
+	Type Detail: Synchronous
+	Speed: 1013 MHz
+	Manufacturer: Corsair       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ModulePartNumber00
+	Part Number: CMX4GX3M1A1600C9  
 	Rank: Unknown
 
-Handle 0x002F, DMI type 126, 19 bytes
-Inactive
+Handle 0x002F, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x002E
+	Memory Array Mapped Address Handle: 0x002D
+	Partition Row Position: 1
 
 Handle 0x0030, DMI type 17, 28 bytes
 Memory Device
@@ -550,17 +556,17 @@ Memory Device
 	Bank Locator: BANK1
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 1333 MHz
-	Manufacturer: Manufacturer01
+	Speed: 1013 MHz
+	Manufacturer: Corsair       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: DBLT4GN128S       
+	Part Number: CMX4GX3M1A1333C9  
 	Rank: Unknown
 
 Handle 0x0031, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0030
 	Memory Array Mapped Address Handle: 0x002D
@@ -579,17 +585,17 @@ Memory Device
 	Bank Locator: BANK2
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 1333 MHz
-	Manufacturer: Corsair       
+	Speed: 1013 MHz
+	Manufacturer: Manufacturer02
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMX4GX3M1A1333C9  
+	Part Number: DBLT4GN128S       
 	Rank: Unknown
 
 Handle 0x0033, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0032
 	Memory Array Mapped Address Handle: 0x002D
@@ -601,25 +607,25 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4
 	Bank Locator: BANK3
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 1333 MHz
-	Manufacturer: Corsair       
+	Speed: 1013 MHz
+	Manufacturer: Kingston      
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMX4GX3M1A1600C9  
+	Part Number: 9905403-011.A03LF 
 	Rank: Unknown
 
 Handle 0x0035, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00300000000
+	Ending Address: 0x0037FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0034
 	Memory Array Mapped Address Handle: 0x002D
 	Partition Row Position: 1

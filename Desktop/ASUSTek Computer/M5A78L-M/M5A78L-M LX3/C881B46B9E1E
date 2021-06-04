@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 46 structures occupying 1769 bytes.
 Table at 0x0009F400.
@@ -10,7 +11,7 @@ BIOS Information
 	Release Date: 01/17/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -88,8 +89,8 @@ Processor Information
 	Type: Central Processor
 	Family: Athlon II
 	Manufacturer: AMD              
-	ID: 63 0F 10 00 FF FB 8B 17
-	Signature: Family 16, Model 6, Stepping 3
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -114,11 +115,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Athlon(tm) II X2 270 Processor                  
+	Version: AMD Athlon(tm) II X3 440 Processor                  
 	Voltage: 1.4 V
 	External Clock: 200 MHz
-	Max Speed: 3400 MHz
-	Current Speed: 3400 MHz
+	Max Speed: 3000 MHz
+	Current Speed: 3000 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM3
 	L1 Cache Handle: 0x0005
@@ -127,9 +128,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
-	Core Count: 2
-	Core Enabled: 2
-	Thread Count: 2
+	Core Count: 3
+	Core Enabled: 3
+	Thread Count: 3
 	Characteristics:
 		64-bit capable
 
@@ -139,8 +140,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 256 kB
-	Maximum Size: 256 kB
+	Installed Size: 384 kB
+	Maximum Size: 384 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -155,8 +156,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 1536 kB
+	Maximum Size: 1536 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -369,7 +370,7 @@ Handle 0x001E, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI1
 	Type: 32-bit PCI
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 12
 	Characteristics:
@@ -463,14 +464,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer0
 	Serial Number: --
 	Asset Tag: --
@@ -491,14 +492,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer1
 	Serial Number: --
 	Asset Tag: --

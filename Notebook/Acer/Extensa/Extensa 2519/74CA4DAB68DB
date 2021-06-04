@@ -1,7 +1,6 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 3.0 present.
-# SMBIOS implementations newer than version 2.7 are not
-# fully supported by this version of dmidecode.
 20 structures occupying 1200 bytes.
 Table at 0x000E6EC0.
 
@@ -54,7 +53,7 @@ Base Board Information
 	Version: V1.22
 	Serial Number: --
 	Asset Tag: --
-	...
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Type2 - Board Chassis Location
@@ -70,7 +69,7 @@ Chassis Information
 	Version: V1.22
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -229,16 +228,16 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: 0420
 	Serial Number: --
 	Asset Tag: --
 	Part Number: AO1L16BC4R1-BQSS  
 	Rank: Unknown
-	Configured Clock Speed: 1600 MHz
-	Minimum voltage:  1.500 V
-	Maximum voltage:  1.500 V
-	Configured voltage:  Unknown
+	Configured Clock Speed: 1600 MT/s
+	Minimum Voltage: 1.5 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: Unknown
 
 Handle 0x000D, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -268,13 +267,17 @@ OEM-specific Type
 		00 00 00 00 00 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0010, DMI type 170, 70 bytes
-OEM-specific Type
-	Header and Data:
-		AA 46 10 00 01 08 00 00 7F 00 0F 00 06 00 04 01
-		01 08 41 01 01 00 42 01 02 00 43 01 04 00 44 01
-		08 00 45 01 10 00 48 01 20 00 49 01 40 00 61 01
-		01 00 62 01 02 00 63 01 04 00 64 01 08 00 82 01
-		02 00 83 01 04 00
+Acer Hotkey Function
+	Function bitmap for Communication Button: 0x0801
+		WiFi: Yes
+		3G: No
+		WiMAX: No
+		Bluetooth: Yes
+	Function bitmap for Application Button: 0x0000
+	Function bitmap for Media Button: 0x007f
+	Function bitmap for Display Button: 0x000f
+	Function bitmap for Others Button: 0x0006
+	Communication Function Key Number: 4
 
 Handle 0x0011, DMI type 171, 49 bytes
 OEM-specific Type

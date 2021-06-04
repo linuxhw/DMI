@@ -1,4 +1,4 @@
-# dmidecode 3.0
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 77 structures occupying 3142 bytes.
@@ -711,34 +711,55 @@ Handle 0x0043, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0042
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8192 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MHz
-	Manufacturer: 0215
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: [Empty]
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMX16GX3M2A1600C11
-	Rank: 2
-	Configured Clock Speed: 1333 MHz
+	Part Number: [Empty]
+	Rank: Unknown
+	Configured Clock Speed: Unknown
 
 Handle 0x0044, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0042
 	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8192 MB
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelA-DIMM1
+	Bank Locator: BANK 1
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: 0215
+	Serial Number: --
+	Asset Tag: --
+	Part Number: CMX16GX3M2A1600C11
+	Rank: 2
+	Configured Clock Speed: 1333 MT/s
+
+Handle 0x0045, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x0042
+	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
-	Locator: ChannelA-DIMM1
-	Bank Locator: BANK 1
+	Locator: ChannelB-DIMM0
+	Bank Locator: BANK 2
 	Type: Unknown
 	Type Detail: None
 	Speed: Unknown
@@ -749,7 +770,7 @@ Memory Device
 	Rank: Unknown
 	Configured Clock Speed: Unknown
 
-Handle 0x0045, DMI type 17, 34 bytes
+Handle 0x0046, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0042
 	Error Information Handle: Not Provided
@@ -758,38 +779,17 @@ Memory Device
 	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
-	Locator: ChannelB-DIMM0
-	Bank Locator: BANK 2
+	Locator: ChannelB-DIMM1
+	Bank Locator: BANK 3
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: 0215
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CMX16GX3M2A1600C11
 	Rank: 2
-	Configured Clock Speed: 1333 MHz
-
-Handle 0x0046, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x0042
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: ChannelB-DIMM1
-	Bank Locator: BANK 3
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0047, DMI type 19, 31 bytes
 Memory Array Mapped Address

@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-16 structures occupying 981 bytes.
+17 structures occupying 1030 bytes.
 Table at 0x000EB650.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -228,7 +228,7 @@ Memory Device Mapped Address
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x000B
-	Memory Array Mapped Address Handle: 0x000E
+	Memory Array Mapped Address Handle: 0x000F
 	Partition Row Position: Unknown
 	Interleave Position: 1
 	Interleaved Data Depth: 1
@@ -237,31 +237,42 @@ Handle 0x000D, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0009
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
+	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: M471B5273DH0-CH9  
+	Rank: 2
+	Configured Clock Speed: 1333 MT/s
 
-Handle 0x000E, DMI type 19, 31 bytes
+Handle 0x000E, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x000D
+	Memory Array Mapped Address Handle: 0x000F
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 1
+
+Handle 0x000F, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0009
 	Partition Width: 2
 
-Handle 0x0010, DMI type 127, 4 bytes
+Handle 0x0011, DMI type 127, 4 bytes
 End Of Table
 

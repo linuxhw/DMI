@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 61 structures occupying 2164 bytes.
 Table at 0x000F06E0.
@@ -6,11 +7,11 @@ Table at 0x000F06E0.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 1402   
-	Release Date: 06/25/2009
+	Version: 1104   
+	Release Date: 07/07/2008
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -155,8 +156,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -463,7 +464,7 @@ Handle 0x0027, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI_2
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 2
 	Characteristics:
@@ -579,14 +580,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MHz
+	Speed: 667 MT/s
 	Manufacturer: Manufacturer0
 	Serial Number: --
 	Asset Tag: --
@@ -608,14 +609,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MHz
+	Speed: 667 MT/s
 	Manufacturer: Manufacturer1
 	Serial Number: --
 	Asset Tag: --
@@ -637,14 +638,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MHz
+	Speed: 667 MT/s
 	Manufacturer: Manufacturer2
 	Serial Number: --
 	Asset Tag: --

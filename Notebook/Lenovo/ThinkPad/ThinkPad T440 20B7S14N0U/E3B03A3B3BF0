@@ -2,7 +2,7 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 61 structures occupying 2489 bytes.
-Table at 0xDCD3D000.
+Table at 0xBCD3D000.
 
 Handle 0x0000, DMI type 4, 42 bytes
 Processor Information
@@ -42,7 +42,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz
-	Voltage: 0.8 V
+	Voltage: 0.7 V
 	External Clock: 100 MHz
 	Max Speed: 2100 MHz
 	Current Speed: 2100 MHz
@@ -454,14 +454,14 @@ OEM-specific Type
 
 Handle 0x0030, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 178 bytes
+	Area Length: 242 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x0000000A
+	Change Token: 0x0000000E
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -477,7 +477,7 @@ Handle 0x0031, DMI type 140, 67 bytes
 OEM-specific Type
 	Header and Data:
 		8C 43 31 00 4C 45 4E 4F 56 4F 0B 00 01 F0 25 9C
-		24 F2 31 A9 19 B2 20 20 EA 79 75 FF DA 01 00 00
+		24 F2 31 A9 19 B2 20 20 EA 79 75 FF DA 05 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00
@@ -486,8 +486,8 @@ Handle 0x0032, DMI type 140, 47 bytes
 OEM-specific Type
 	Header and Data:
 		8C 2F 32 00 4C 45 4E 4F 56 4F 0B 01 01 28 00 6C
-		2A 49 47 5B CE F4 15 5A 27 F2 82 1E AA 2B F3 00
-		00 00 00 10 00 10 00 10 01 D0 00 20 01 00 01
+		2A 49 47 5B CE F4 15 5A 27 F2 82 1E AA 2B F3 05
+		00 01 00 10 00 10 00 10 01 D0 00 20 01 00 01
 
 Handle 0x0033, DMI type 140, 63 bytes
 OEM-specific Type
@@ -517,15 +517,15 @@ OEM-specific Type
 
 Handle 0x0037, DMI type 24, 5 bytes
 Hardware Security
-	Power-On Password Status: Disabled
+	Power-On Password Status: Enabled
 	Keyboard Password Status: Not Implemented
-	Administrator Password Status: Disabled
+	Administrator Password Status: Enabled
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x0038, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 38 00 01 D8 36
+		84 07 38 00 01 D9 36
 
 Handle 0x0039, DMI type 135, 18 bytes
 OEM-specific Type

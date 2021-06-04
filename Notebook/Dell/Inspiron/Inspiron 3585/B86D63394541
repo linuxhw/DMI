@@ -475,7 +475,7 @@ Memory Device
 	Error Information Handle: 0x0029
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 16384 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM A
@@ -486,8 +486,8 @@ Memory Device
 	Manufacturer: 0198000080AD
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX2400C14S4/8G     
-	Rank: 1
+	Part Number: KHX2400C14S4/16G    
+	Rank: 2
 	Configured Clock Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -499,7 +499,7 @@ Memory Device
 	Error Information Handle: 0x002A
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 16384 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM B
@@ -510,8 +510,8 @@ Memory Device
 	Manufacturer: 0198000080AD
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX2400C14S4/8G     
-	Rank: 1
+	Part Number: KHX2400C14S4/16G    
+	Rank: 2
 	Configured Clock Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -550,16 +550,16 @@ Handle 0x002A, DMI type 18, 23 bytes
 Handle 0x002B, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0025
 	Partition Width: 2
 
 Handle 0x002C, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0026
 	Memory Array Mapped Address Handle: 0x002B
 	Partition Row Position: Unknown
@@ -568,9 +568,9 @@ Memory Device Mapped Address
 
 Handle 0x002D, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00400000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0027
 	Memory Array Mapped Address Handle: 0x002B
 	Partition Row Position: Unknown
@@ -589,7 +589,7 @@ Portable Battery
 	Manufacturer: Simplo
 	Manufacture Date: 06/22/2019
 	Serial Number: --
-	Name: DELL VM73283596M
+	Name: DELL VM732835
 	Design Capacity: 671040 mWh
 	Design Voltage: 22136 mV
 	SBDS Version: 1.0

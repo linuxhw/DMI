@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
-70 structures occupying 2097 bytes.
+71 structures occupying 2118 bytes.
 Table at 0x000EA7C0.
 
 Handle 0x0001, DMI type 0, 24 bytes
@@ -53,7 +53,7 @@ Base Board Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	...
+	Features:
 		Board is a hosting board
 		Board is removable
 		Board is replaceable
@@ -69,7 +69,7 @@ Chassis Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	...
+	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: Unknown
@@ -81,8 +81,8 @@ Processor Information
 	Type: Central Processor
 	Family: Pentium 4
 	Manufacturer: Intel
-	ID: 77 06 01 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 23, Stepping 7
+	ID: 7A 06 01 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 23, Stepping 10
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -112,7 +112,7 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM)2 Quad  CPU   Q8200  @ 2.33GHz
+	Version: Intel(R) Core(TM)2 Quad CPU    Q8200  @ 2.33GHz
 	Voltage: 1.2 V
 	External Clock: 1333 MHz
 	Max Speed: 6000 MHz
@@ -503,7 +503,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: 1
 	Locator: XMM1
@@ -514,7 +514,7 @@ Memory Device
 	Manufacturer: JEDEC ID:CE 00 00 00 00 00 00 00
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M3 78T2863SHS-CF7
+	Part Number: M3 78T5663EH3-CF7
 
 Handle 0x0035, DMI type 17, 27 bytes
 Memory Device
@@ -530,31 +530,12 @@ Memory Device
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 800 MT/s
-	Manufacturer: JEDEC ID:7F 7F 7F 0B 00 00 00 00
+	Manufacturer: JEDEC ID:CE 00 00 00 00 00 00 00
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NT1GT64U8HB0BY-25D
+	Part Number: M3 78T2863QZS-CF7
 
 Handle 0x0036, DMI type 17, 27 bytes
-Memory Device
-	Array Handle: 0x0032
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 1024 MB
-	Form Factor: DIMM
-	Set: 2
-	Locator: XMM3
-	Bank Locator: Not Specified
-	Type: DDR2
-	Type Detail: Synchronous
-	Speed: 800 MT/s
-	Manufacturer: JEDEC ID:7F 98 00 00 00 00 00 00
-	Serial Number: --
-	Asset Tag: --
-	Part Number: 99U5316-028.A00LF
-
-Handle 0x0037, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0032
 	Error Information Handle: Not Provided
@@ -563,15 +544,34 @@ Memory Device
 	Size: No Module Installed
 	Form Factor: DIMM
 	Set: 2
-	Locator: XMM4
+	Locator: XMM3
 	Bank Locator: Not Specified
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: Unknown
 	Manufacturer: JEDEC ID:
 	Serial Number: --
-	Asset Tag: --
+	3D153A129FECFD993684B5FCC9BF367A
 	Part Number:  
+
+Handle 0x0037, DMI type 17, 27 bytes
+Memory Device
+	Array Handle: 0x0032
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 1024 MB
+	Form Factor: DIMM
+	Set: 2
+	Locator: XMM4
+	Bank Locator: Not Specified
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 800 MT/s
+	Manufacturer: JEDEC ID:7F 7F 7F 25 00 00 00 00
+	Serial Number: --
+	Asset Tag: --
+	Part Number: KLDD48F-B8KU5
 
 Handle 0x0039, DMI type 17, 27 bytes
 Memory Device
@@ -595,10 +595,18 @@ Memory Device
 Handle 0x003A, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x000DFFFFFFF
+	Range Size: 3584 MB
 	Physical Array Handle: 0x0032
 	Partition Width: 1
+
+Handle 0x003B, DMI type 19, 15 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x0011FFFFFFF
+	Range Size: 512 MB
+	Physical Array Handle: 0x0032
+	Partition Width: 2
 
 Handle 0x003C, DMI type 19, 15 bytes
 Memory Array Mapped Address
@@ -631,36 +639,36 @@ Memory Device Mapped Address
 Handle 0x003F, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
+	Physical Device Handle: 0x0036
+	Memory Array Mapped Address Handle: 0x003A
+	Partition Row Position: 1
+
+Handle 0x0040, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
 	Ending Address: 0x0007FFFFFFF
 	Range Size: 2 GB
-	Physical Device Handle: 0x0036
+	Physical Device Handle: 0x0037
 	Memory Array Mapped Address Handle: 0x003A
 	Partition Row Position: 1
 	Interleave Position: 2
 	Interleaved Data Depth: 2
 
-Handle 0x0040, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
-	Physical Device Handle: 0x0037
-	Memory Array Mapped Address Handle: 0x003A
-	Partition Row Position: 1
-
 Handle 0x0041, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0034
 	Memory Array Mapped Address Handle: 0x003A
 	Partition Row Position: 1
 
 Handle 0x0042, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000BFFFFFFF
+	Starting Address: 0x000C0000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 1 GB
 	Physical Device Handle: 0x0035
 	Memory Array Mapped Address Handle: 0x003A

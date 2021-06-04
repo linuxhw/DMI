@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 51 structures occupying 2306 bytes.
@@ -66,7 +66,7 @@ Chassis Information
 	Version: V1.16
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -189,14 +189,14 @@ On Board Device Information
 Handle 0x000D, DMI type 11, 5 bytes
 OEM Strings
 	String 1: Acer
-	String 2: BK8yqfn5EtqnK
-	String 3: 5xIlN1dv+tABw
-	String 4: yOAUhwa0EF0N0
+	String 2: Ndhc3mcJZCFdx
+	String 3: sY5fG6-HsHoKa
+	String 4: nVIkYSRmCB5VJ
 
 Handle 0x000E, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: SMI:00B2C102
-	Option 2: DSN:02927015500100000030           
+	Option 2: DSN:1850D3804101                   
 	Option 3: DSN:EBJ41UF8BCS0-DJ-7A06305A       
 	Option 4: DSN:355B                           
 	Option 5: TIM:            
@@ -312,7 +312,7 @@ OEM-specific Type
 Handle 0x001B, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 1B 00 11 00 00 00 07 00 00 00 00 00 35 00
+		83 40 1B 00 31 00 00 00 07 00 00 00 00 00 35 00
 		F8 00 49 1C FF FF FF FF 19 20 00 00 00 00 07 00
 		AD 04 04 00 80 00 40 BF C8 00 FF FF 00 00 00 00
 		00 FF 00 00 F6 00 00 00 76 50 72 6F 00 00 00 00
@@ -332,7 +332,7 @@ Memory Device
 	Error Information Handle: 0x001F
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -345,7 +345,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: EBJ41UF8BCS0-DJ-F 
 	Rank: Unknown
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x001E, DMI type 6, 12 bytes
 Memory Module Information
@@ -397,7 +397,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Not Specified
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0022, DMI type 6, 12 bytes
 Memory Module Information
@@ -428,7 +428,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Not Specified
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0024, DMI type 6, 12 bytes
 Memory Module Information
@@ -459,7 +459,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Not Specified
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0026, DMI type 6, 12 bytes
 Memory Module Information
@@ -526,8 +526,8 @@ Handle 0x002B, DMI type 171, 39 bytes
 OEM-specific Type
 	Header and Data:
 		AB 27 2B 00 01 02 10 40 68 02 69 19 83 10 05 86
-		80 20 1C 07 8C 16 2E 00 03 DA 0B 38 01 04 87 80
-		24 00 08 89 04 3C E0
+		80 20 1C 07 8C 16 2E 00 03 DA 0B 38 01 04 4E 06
+		1C C2 08 89 04 3C E0
 
 Handle 0x002C, DMI type 172, 6 bytes
 OEM-specific Type
@@ -644,8 +644,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous

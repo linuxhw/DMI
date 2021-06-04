@@ -1,13 +1,13 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-82 structures occupying 3639 bytes.
+82 structures occupying 3631 bytes.
 Table at 0x000EC430.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: E16GHIMS.10A
+	Version: E16GHIMR.10A
 	Release Date: 07/19/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
@@ -368,7 +368,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -376,21 +376,21 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Kingston
+	Manufacturer: 1201
 	Serial Number: --
 	Asset Tag: --
-	Part Number: MSI16D3LS1KFG/4G  
-	Rank: 1
-	Configured Clock Speed: 1333 MT/s
-	Minimum Voltage: 1.35 V
+	Part Number: R538G1601S2S      
+	Rank: 2
+	Configured Clock Speed: 1600 MT/s
+	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
 
 Handle 0x0026, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0025
 	Memory Array Mapped Address Handle: 0x002B
 	Partition Row Position: Unknown
@@ -427,29 +427,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Kingston
+	Speed: 1600 MT/s
+	Manufacturer: 1201
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9905469-144.A00LF 
-	Rank: 1
-	Configured Clock Speed: 1333 MT/s
+	Part Number: R538G1601S2S      
+	Rank: 2
+	Configured Clock Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
 
 Handle 0x0029, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0028
 	Memory Array Mapped Address Handle: 0x002B
 	Partition Row Position: Unknown
@@ -483,8 +483,8 @@ Memory Device
 Handle 0x002B, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0024
 	Partition Width: 4
 

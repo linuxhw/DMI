@@ -1,16 +1,16 @@
-# dmidecode 3.0
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x8A7EF000.
+Table at 0x867EF000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: INSYDE Corp.
-	Version: XMAKB5R0P0502
-	Release Date: 10/13/2017
+	Version: XMAKB5R0P0E07
+	Release Date: 09/11/2020
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 6144 kB
+	ROM Size: 6 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -31,8 +31,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 106.121
-	Firmware Revision: 0.2
+	BIOS Revision: 106.117
+	Firmware Revision: 0.7
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -42,7 +42,7 @@ System Information
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
-	SKU Number: Not Specified
+	SKU Number: TM1701-16771
 	Family: Timibook
 
 Handle 0x0002, DMI type 2, 15 bytes
@@ -116,12 +116,12 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
-	Voltage: 0.7 V
+	Voltage: 0.6 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
 	Current Speed: 1700 MHz
 	Status: Populated, Enabled
-	Upgrade: <OUT OF SPEC>
+	Upgrade: Socket BGA1356
 	L1 Cache Handle: 0x0005
 	L2 Cache Handle: 0x0006
 	L3 Cache Handle: 0x0007
@@ -161,8 +161,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -177,8 +177,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -413,19 +413,19 @@ Handle 0x0021, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x0041 (<OUT OF SPEC>)
+		0x0041 (OEM-specific)
 
 Handle 0x0022, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
-		0x003C (<OUT OF SPEC>)
+		0x003C (OEM-specific)
 
 Handle 0x0023, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
-		0x003B (<OUT OF SPEC>)
+		0x003B (OEM-specific)
 
 Handle 0x0024, DMI type 15, 29 bytes
 System Event Log
@@ -461,20 +461,20 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MHz
+	Speed: 2400 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M471A1K43BB1-CRC    
 	Rank: 1
-	Configured Clock Speed: 2400 MHz
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.2 V
@@ -485,20 +485,20 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MHz
+	Speed: 2400 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M471A1K43BB1-CRC    
 	Rank: 1
-	Configured Clock Speed: 2400 MHz
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.2 V
@@ -662,7 +662,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 38 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 4E 9D 00 00 00 00 01 00 00 00 08 00 0B 00
-		61 0D 32 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		22 0F 53 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 FF 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0039, DMI type 133, 5 bytes
@@ -680,7 +680,7 @@ OEM-specific Type
 Handle 0x003B, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 3B 00 01 03 01 45 02 00 A0 06 01 10 80 20
+		DB 51 3B 00 01 03 01 55 02 00 90 06 01 10 86 20
 		00 00 00 04 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -691,21 +691,23 @@ OEM-specific Type
 		MEI2
 		MEI3
 
-Handle 0x003C, DMI type 221, 26 bytes
+Handle 0x003C, DMI type 221, 33 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 3C 00 03 01 00 02 06 00 00 00 02 00 00 00
-		00 70 00 03 00 00 05 00 00 00
+		DD 21 3C 00 04 01 00 03 07 06 00 00 02 00 00 00
+		00 96 00 03 00 00 05 00 00 00 04 00 FF FF FF FF
+		FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
-		TXT ACM version
+		TXT ACM Version
+		BIOS Guard Version
 
 Handle 0x003D, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 3D 00 03 01 00 02 06 00 00 00 02 00 00 00
-		00 00 00 03 04 0B 08 32 61 0D
+		DD 1A 3D 00 03 01 00 03 07 06 00 00 02 00 00 00
+		00 00 00 03 04 0B 08 53 22 0F
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
@@ -715,7 +717,7 @@ OEM-specific Type
 Handle 0x003E, DMI type 221, 75 bytes
 OEM-specific Type
 	Header and Data:
-		DD 4B 3E 00 0A 01 00 02 06 00 00 00 02 03 FF FF
+		DD 4B 3E 00 0A 01 00 03 07 06 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 21 00 05 00 FF FF FF 21
 		00 06 00 FF FF FF FF FF 07 00 3E 00 00 00 00 08
 		00 34 00 00 00 00 09 00 0B 00 00 00 00 0A 00 3E
@@ -736,8 +738,8 @@ OEM-specific Type
 Handle 0x003F, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 3F 00 07 01 00 02 06 00 00 00 02 00 02 06
-		00 00 00 03 00 02 06 00 00 00 04 05 FF FF FF FF
+		DD 36 3F 00 07 01 00 03 07 06 00 00 02 00 03 07
+		06 01 00 03 00 03 07 06 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 08 00 07 00 FF FF FF 08 00 08
 		00 FF FF FF FF FF
 	Strings:
@@ -756,7 +758,7 @@ OEM-specific Type
 		DD 67 40 00 0E 01 00 00 00 00 FF 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 00 02 00 00 00 0C 00 00
+		00 FF FF FF FF FF 0B 00 00 07 00 00 00 0C 00 00
 		09 00 68 10 0D 00 FF FF FF FF FF 0E 00 FF FF FF
 		FF FF 0F 00 FF FF FF FF FF 10 11 01 03 04 01 00
 		12 00 00 07 03 00 00

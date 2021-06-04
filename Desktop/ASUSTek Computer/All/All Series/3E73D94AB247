@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 89 structures occupying 3936 bytes.
@@ -643,7 +643,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 9905403-437.A01LF 
 	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -667,7 +667,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: BLS8G3D1609DS1S00.
 	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -691,7 +691,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 9905403-437.A01LF 
 	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -715,7 +715,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: BLS8G3D1609DS1S00.
 	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -771,80 +771,6 @@ Memory Device Mapped Address
 	Partition Row Position: Unknown
 	Interleave Position: 2
 	Interleaved Data Depth: 2
-
-Handle 0x004F, DMI type 4, 42 bytes
-Processor Information
-	Socket Designation: SOCKET 1150
-	Type: Central Processor
-	Family: Other
-	Manufacturer: Intel
-	ID: C3 06 03 00 FF FB EB BF
-	Version: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
-	Voltage: 1.2 V
-	External Clock: 100 MHz
-	Max Speed: 3900 MHz
-	Current Speed: 3600 MHz
-	Status: Populated, Enabled
-	Upgrade: Socket BGA1155
-	L1 Cache Handle: 0x0050
-	L2 Cache Handle: 0x0051
-	L3 Cache Handle: 0x0052
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Fill By OEM
-	Core Count: 4
-	Core Enabled: 4
-	Thread Count: 8
-	Characteristics:
-		64-bit capable
-
-Handle 0x0050, DMI type 7, 19 bytes
-Cache Information
-	Socket Designation: CPU Internal L1
-	Configuration: Enabled, Not Socketed, Level 1
-	Operational Mode: Write Back
-	Location: Internal
-	Installed Size: 256 kB
-	Maximum Size: 256 kB
-	Supported SRAM Types:
-		Synchronous
-	Installed SRAM Type: Synchronous
-	Speed: Unknown
-	Error Correction Type: Parity
-	System Type: Other
-	Associativity: 8-way Set-associative
-
-Handle 0x0051, DMI type 7, 19 bytes
-Cache Information
-	Socket Designation: CPU Internal L2
-	Configuration: Enabled, Not Socketed, Level 2
-	Operational Mode: Write Back
-	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
-	Supported SRAM Types:
-		Synchronous
-	Installed SRAM Type: Synchronous
-	Speed: Unknown
-	Error Correction Type: Single-bit ECC
-	System Type: Unified
-	Associativity: 8-way Set-associative
-
-Handle 0x0052, DMI type 7, 19 bytes
-Cache Information
-	Socket Designation: CPU Internal L3
-	Configuration: Enabled, Not Socketed, Level 3
-	Operational Mode: Write Back
-	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
-	Supported SRAM Types:
-		Synchronous
-	Installed SRAM Type: Synchronous
-	Speed: Unknown
-	Error Correction Type: Multi-bit ECC
-	System Type: Unified
-	Associativity: 16-way Set-associative
 
 Handle 0x0054, DMI type 136, 6 bytes
 OEM-specific Type
@@ -946,11 +872,85 @@ Group Associations
 Handle 0x005E, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 5E 00 35 00 00 00 00 00 00 00 00 00 00 00
+		83 40 5E 00 14 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 00 00 00 00 00 00 01 00 00 00 01 00 09 00
 		ED 03 0A 00 00 00 00 00 C8 00 00 00 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x005F, DMI type 127, 4 bytes
+Handle 0x005F, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: SOCKET 1150
+	Type: Central Processor
+	Family: Other
+	Manufacturer: Intel
+	ID: C3 06 03 00 FF FB EB BF
+	Version: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+	Voltage: 1.2 V
+	External Clock: 100 MHz
+	Max Speed: 3900 MHz
+	Current Speed: 3600 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket BGA1155
+	L1 Cache Handle: 0x0060
+	L2 Cache Handle: 0x0061
+	L3 Cache Handle: 0x0062
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Fill By OEM
+	Core Count: 4
+	Core Enabled: 4
+	Thread Count: 8
+	Characteristics:
+		64-bit capable
+
+Handle 0x0060, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: CPU Internal L1
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 256 kB
+	Maximum Size: 256 kB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Parity
+	System Type: Other
+	Associativity: 8-way Set-associative
+
+Handle 0x0061, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: CPU Internal L2
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 1024 kB
+	Maximum Size: 1024 kB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x0062, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: CPU Internal L3
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 8192 kB
+	Maximum Size: 8192 kB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 16-way Set-associative
+
+Handle 0x0064, DMI type 127, 4 bytes
 End Of Table
 

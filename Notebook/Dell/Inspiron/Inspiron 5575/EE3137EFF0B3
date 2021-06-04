@@ -6,8 +6,8 @@ Table at 0xBC4B0000.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.3.2
-	Release Date: 05/10/2019
+	Version: 1.3.3
+	Release Date: 10/31/2019
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 8192 kB
@@ -40,7 +40,7 @@ Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Dell Inc.
 	Product Name: Inspiron 5575
-	Version: 1.3.2
+	Version: 1.3.3
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -67,10 +67,10 @@ Chassis Information
 	Manufacturer: Dell Inc.
 	Type: Notebook
 	Lock: Not Present
-	Version: 1.3.2
+	Version: 1.3.3
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -435,7 +435,7 @@ OEM Strings
 	String 7: 7[]
 	String 8: 8[]
 	String 9: 9[]
-	String 10: 10[1.3.2]
+	String 10: 10[1.3.3]
 	String 11: 11[]
 	String 12: 12[www.dell.com]
 	String 13: 13[P75F002]
@@ -475,7 +475,7 @@ Memory Device
 	Error Information Handle: 0x0029
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM A
@@ -483,10 +483,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2400 MT/s
-	Manufacturer: 80AD000080AD
+	Manufacturer: 029E00000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA851S6AFR6N-UH    
+	Part Number: CMSX16GX4M2A2400C16 
 	Rank: 1
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
@@ -499,7 +499,7 @@ Memory Device
 	Error Information Handle: 0x002A
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM B
@@ -507,10 +507,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2400 MT/s
-	Manufacturer: 80AD000080AD
+	Manufacturer: 029E00000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA851S6AFR6N-UH    
+	Part Number: CMSX16GX4M2A2400C16 
 	Rank: 1
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
@@ -550,16 +550,16 @@ Handle 0x002A, DMI type 18, 23 bytes
 Handle 0x002B, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0025
 	Partition Width: 2
 
 Handle 0x002C, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0026
 	Memory Array Mapped Address Handle: 0x002B
 	Partition Row Position: Unknown
@@ -568,9 +568,9 @@ Memory Device Mapped Address
 
 Handle 0x002D, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0027
 	Memory Array Mapped Address Handle: 0x002B
 	Partition Row Position: Unknown

@@ -1,5 +1,5 @@
-# dmidecode 3.1
-Getting SMBIOS data from sysfs.
+# dmidecode 3.0
+Scanning /dev/mem for entry point.
 SMBIOS 2.6 present.
 68 structures occupying 2476 bytes.
 Table at 0x000F0710.
@@ -122,9 +122,9 @@ Processor Information
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5 CPU 760 @ 2.80GHz              
 	Voltage: 1.0 V
-	External Clock: 148 MHz
+	External Clock: 133 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 2968 MHz
+	Current Speed: 2666 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -236,8 +236,8 @@ Memory Module Information
 	Bank Connections: 4 5
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: 4096 MB (Double-bank Connection)
-	Enabled Size: 4096 MB (Double-bank Connection)
+	Installed Size: 8192 MB (Double-bank Connection)
+	Enabled Size: 8192 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000C, DMI type 6, 12 bytes
@@ -246,8 +246,8 @@ Memory Module Information
 	Bank Connections: 6 7
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: 4096 MB (Double-bank Connection)
-	Enabled Size: 4096 MB (Double-bank Connection)
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x000D, DMI type 8, 9 bytes
@@ -490,14 +490,13 @@ Handle 0x002A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
 	Type: 32-bit PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 2
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:01:00.0
 
 Handle 0x002B, DMI type 9, 17 bytes
 System Slot Information
@@ -522,7 +521,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:0b:01.0
+	Bus Address: ffff:07:01.0
 
 Handle 0x002D, DMI type 9, 17 bytes
 System Slot Information
@@ -535,7 +534,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:0a:00.0
+	Bus Address: ffff:06:00.0
 
 Handle 0x002E, DMI type 9, 17 bytes
 System Slot Information
@@ -553,14 +552,13 @@ Handle 0x002F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_3
 	Type: 32-bit PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 7
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:07:00.0
 
 Handle 0x0030, DMI type 10, 6 bytes
 On Board Device Information
@@ -619,8 +617,8 @@ Physical Memory Array
 Handle 0x0036, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0035
 	Partition Width: 4
 
@@ -637,7 +635,7 @@ Memory Device
 	Bank Locator: BANK0
 	Type: DDR
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Speed: 1333 MHz
 	Manufacturer: Manufacturer0
 	Serial Number: --
 	Asset Tag: --
@@ -690,14 +688,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
 	Type: DDR
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Speed: 1333 MHz
 	Manufacturer: Manufacturer2
 	Serial Number: --
 	Asset Tag: --
@@ -707,8 +705,8 @@ Memory Device
 Handle 0x003C, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00200000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x003B
 	Memory Array Mapped Address Handle: 0x0036
 	Partition Row Position: 1
@@ -718,16 +716,16 @@ Handle 0x003D, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0035
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 4096 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
-	Type: DDR
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
 	Manufacturer: Manufacturer3
 	Serial Number: --
 	Asset Tag: --
@@ -736,9 +734,9 @@ Memory Device
 
 Handle 0x003E, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00300000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00000000000
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
 	Physical Device Handle: 0x003D
 	Memory Array Mapped Address Handle: 0x0036
 	Partition Row Position: 1

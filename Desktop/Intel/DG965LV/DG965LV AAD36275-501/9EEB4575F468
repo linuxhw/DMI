@@ -1,8 +1,8 @@
 # dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
-34 structures occupying 1552 bytes.
-Table at 0x000E43E0.
+36 structures occupying 1629 bytes.
+Table at 0x000E4390.
 
 Handle 0x0000, DMI type 4, 35 bytes
 Processor Information
@@ -41,11 +41,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM)2 CPU          6300  @ 1.86GHz
+	Version: Intel(R) Core(TM)2 CPU          6700  @ 2.66GHz
 	Voltage: 1.6 V
 	External Clock: 266 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 1866 MHz
+	Current Speed: 2666 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA775
 	L1 Cache Handle: 0x0003
@@ -61,15 +61,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 4096 kB
+	Maximum Size: 4096 kB
 	Supported SRAM Types:
 		Asynchronous
 	Installed SRAM Type: Asynchronous
 	Speed: Unknown
 	Error Correction Type: Single-bit ECC
 	System Type: Unified
-	Associativity: 8-way Set-associative
+	Associativity: 16-way Set-associative
 
 Handle 0x0002, DMI type 7, 19 bytes
 Cache Information
@@ -106,8 +106,8 @@ Cache Information
 Handle 0x0004, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Intel Corp.
-	Version: MQ96510J.15A.0375.2007.0403.1603
-	Release Date: 04/03/2007
+	Version: MQ96510J.15A.0373.2007.0316.1351
+	Release Date: 03/16/2007
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 1024 kB
@@ -164,8 +164,8 @@ Chassis Information
 	Lock: Not Present
 	Version:                         
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148                                 
+	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Other
 	Security Status: Other
@@ -209,7 +209,7 @@ Handle 0x000C, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIE X1 SLOT 1
 	Type: x1 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 12
 	Characteristics:
@@ -301,7 +301,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: J6H1
@@ -312,15 +312,15 @@ Memory Device
 	Manufacturer: 0x7F7F7F0B00000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 0x4E543247543634553848443042592D414420
+	Part Number: 0x4E543147543634553848423042592D323544
 
 Handle 0x0018, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0017
-	Memory Array Mapped Address Handle: 0x001D
+	Memory Array Mapped Address Handle: 0x001E
 	Partition Row Position: 1
 	Interleave Position: 1
 	Interleaved Data Depth: 1
@@ -329,28 +329,39 @@ Handle 0x0019, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0016
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: J6H2
 	Bank Locator: CHAN A DIMM 1
 	Type: DDR2
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: NO DIMM
+	Type Detail: Synchronous
+	Speed: 800 MT/s
+	Manufacturer: 0x7F7F7F0B00000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NO DIMM
+	Part Number: 0x4E543247543634553848443042592D414420
 
-Handle 0x001A, DMI type 17, 27 bytes
+Handle 0x001A, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00040000000
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0019
+	Memory Array Mapped Address Handle: 0x001E
+	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x001B, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0016
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: J6J1
@@ -361,20 +372,20 @@ Memory Device
 	Manufacturer: 0x7F7F7F0B00000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 0x4E543247543634553848443042592D414420
+	Part Number: 0x4E543147543634553848423042592D323544
 
-Handle 0x001B, DMI type 20, 19 bytes
+Handle 0x001C, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
+	Starting Address: 0x000C0000000
 	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x001A
-	Memory Array Mapped Address Handle: 0x001D
+	Range Size: 1 GB
+	Physical Device Handle: 0x001B
+	Memory Array Mapped Address Handle: 0x001E
 	Partition Row Position: 2
 	Interleave Position: 2
 	Interleaved Data Depth: 1
 
-Handle 0x001C, DMI type 17, 27 bytes
+Handle 0x001D, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0016
 	Error Information Handle: Not Provided
@@ -393,7 +404,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: NO DIMM
 
-Handle 0x001D, DMI type 19, 15 bytes
+Handle 0x001E, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
@@ -401,20 +412,25 @@ Memory Array Mapped Address
 	Physical Array Handle: 0x0016
 	Partition Width: 4
 
-Handle 0x001E, DMI type 187, 9 bytes
-OEM-specific Type
-	Header and Data:
-		BB 09 1E 00 17 00 03 20 03
-
 Handle 0x001F, DMI type 187, 9 bytes
 OEM-specific Type
 	Header and Data:
-		BB 09 1F 00 1A 00 03 20 03
+		BB 09 1F 00 17 00 03 20 03
 
-Handle 0x0020, DMI type 136, 6 bytes
+Handle 0x0020, DMI type 187, 9 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 20 00 5A 5A
+		BB 09 20 00 19 00 03 20 03
+
+Handle 0x0021, DMI type 187, 9 bytes
+OEM-specific Type
+	Header and Data:
+		BB 09 21 00 1B 00 03 20 03
+
+Handle 0x0022, DMI type 136, 6 bytes
+OEM-specific Type
+	Header and Data:
+		88 06 22 00 5A 5A
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

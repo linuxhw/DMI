@@ -1,13 +1,14 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-58 structures occupying 2467 bytes.
-Table at 0xBEEC4018.
+58 structures occupying 2560 bytes.
+Table at 0xBEBA3018.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: F1
-	Release Date: 08/06/2013
+	Version: F2g
+	Release Date: 10/07/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 4096 kB
@@ -84,6 +85,31 @@ Processor Information
 	Family: FX
 	Manufacturer: AMD              
 	ID: 20 0F 60 00 FF FB 8B 17
+	Signature: Family 21, Model 2, Stepping 0
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
 	Version: AMD FX(tm)-8350 Eight-Core Processor           
 	Voltage: 1.3 V
 	External Clock: 200 MHz
@@ -468,6 +494,10 @@ On Board Device Information
 Handle 0x002A, DMI type 11, 5 bytes
 OEM Strings
 	String 1: To Be Filled By O.E.M.
+	String 2: To Be Filled By O.E.M.
+	String 3: To Be Filled By O.E.M.
+	String 4: To Be Filled By O.E.M.
+	String 5: To Be Filled By O.E.M.
 
 Handle 0x002B, DMI type 12, 5 bytes
 System Configuration Options
@@ -494,59 +524,83 @@ Handle 0x002E, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002C
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
+	Total Width: Unknown
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: Node0_Dimm0
 	Bank Locator: Node0_Bank0
-	Type: DDR3
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 667 MHz
-	Manufacturer: Corsair           
+	Type: Unknown
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: Dimm0_Manufacturer
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMZ8GX3M2A186
-	Rank: 1
-	Configured Clock Speed: 933 MHz
+	Part Number: Dimm0_PartNum
+	Rank: Unknown
+	Configured Clock Speed: Unknown
 
-Handle 0x002F, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x002E
-	Memory Array Mapped Address Handle: 0x002D
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+Handle 0x002F, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x0030, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002C
 	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
+	Form Factor: DIMM
+	Set: None
+	Locator: Node0_Dimm1
+	Bank Locator: Node0_Bank0
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 667 MT/s
+	Manufacturer: Corsair           
+	Serial Number: --
+	Asset Tag: --
+	Part Number: CMZ8GX3M2A186
+	Rank: 1
+	Configured Clock Speed: 933 MT/s
+
+Handle 0x0031, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0030
+	Memory Array Mapped Address Handle: 0x002D
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0032, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x002C
+	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: 64 bits
 	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
-	Locator: Node0_Dimm1
+	Locator: Node0_Dimm2
 	Bank Locator: Node0_Bank0
 	Type: Unknown
 	Type Detail: Synchronous
 	Speed: Unknown
-	Manufacturer: Dimm1_Manufacturer
+	Manufacturer: Dimm2_Manufacturer
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Dimm1_PartNum
+	Part Number: Dimm2_PartNum
 	Rank: Unknown
 	Configured Clock Speed: Unknown
 
-Handle 0x0031, DMI type 126, 35 bytes
+Handle 0x0033, DMI type 126, 35 bytes
 Inactive
 
-Handle 0x0032, DMI type 17, 34 bytes
+Handle 0x0034, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002C
 	Error Information Handle: Not Provided
@@ -555,52 +609,28 @@ Memory Device
 	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
-	Locator: Node0_Dimm2
+	Locator: Node0_Dimm3
 	Bank Locator: Node0_Bank0
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 667 MHz
+	Speed: 667 MT/s
 	Manufacturer: Corsair           
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CMZ8GX3M2A186
 	Rank: 1
-	Configured Clock Speed: 933 MHz
+	Configured Clock Speed: 933 MT/s
 
-Handle 0x0033, DMI type 20, 35 bytes
+Handle 0x0035, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0032
+	Physical Device Handle: 0x0034
 	Memory Array Mapped Address Handle: 0x002D
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
-
-Handle 0x0034, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x002C
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: Node0_Dimm3
-	Bank Locator: Node0_Bank0
-	Type: Unknown
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Dimm3_Manufacturer
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Dimm3_PartNum
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-
-Handle 0x0035, DMI type 126, 35 bytes
-Inactive
 
 Handle 0x0036, DMI type 32, 20 bytes
 System Boot Information

@@ -1,4 +1,4 @@
-# dmidecode 3.0
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 54 structures occupying 1974 bytes.
@@ -94,7 +94,7 @@ Processor Information
 	Voltage: 1.5 V
 	External Clock: 200 MHz
 	Max Speed: 2800 MHz
-	Current Speed: 2817 MHz
+	Current Speed: 2815 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -197,8 +197,8 @@ Memory Module Information
 	Bank Connections: 0 5
 	Current Speed: 162 ns
 	Type: ECC DIMM
-	Installed Size: 1024 MB (Single-bank Connection)
-	Enabled Size: 1024 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000B, DMI type 6, 12 bytes
@@ -470,8 +470,8 @@ Physical Memory Array
 Handle 0x002C, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x0023FFFFFFF
+	Range Size: 9 GB
 	Physical Array Handle: 0x002B
 	Partition Width: 1
 
@@ -488,7 +488,7 @@ Memory Device
 	Bank Locator: BANK0
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 333 MHz
+	Speed: 200 MT/s
 	Manufacturer: Manufacturer0
 	Serial Number: --
 	Asset Tag: --
@@ -509,14 +509,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 72 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 333 MHz
+	Speed: 200 MT/s
 	Manufacturer: Manufacturer1
 	Serial Number: --
 	Asset Tag: --
@@ -525,8 +525,8 @@ Memory Device
 Handle 0x0030, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00080000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x002F
 	Memory Array Mapped Address Handle: 0x002C
 	Partition Row Position: 1
@@ -544,7 +544,7 @@ Memory Device
 	Bank Locator: BANK2
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 333 MHz
+	Speed: 200 MT/s
 	Manufacturer: Manufacturer2
 	Serial Number: --
 	Asset Tag: --
@@ -552,8 +552,8 @@ Memory Device
 
 Handle 0x0032, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x000C0000000
-	Ending Address: 0x0013FFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x0017FFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0031
 	Memory Array Mapped Address Handle: 0x002C
@@ -572,7 +572,7 @@ Memory Device
 	Bank Locator: BANK3
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 333 MHz
+	Speed: 200 MT/s
 	Manufacturer: Manufacturer3
 	Serial Number: --
 	Asset Tag: --
@@ -580,8 +580,8 @@ Memory Device
 
 Handle 0x0034, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00140000000
-	Ending Address: 0x001BFFFFFFF
+	Starting Address: 0x00180000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0033
 	Memory Array Mapped Address Handle: 0x002C

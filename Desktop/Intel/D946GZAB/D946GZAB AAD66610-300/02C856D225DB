@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 34 structures occupying 1584 bytes.
 Table at 0x000E43C0.
@@ -120,7 +121,7 @@ System Information
 	Product Name:                                 
 	Version:                         
 	Serial Number: --
-	UUID: --
+	AA2F12D83688122E735EB4DA9A2051BC
 	Wake-up Type: Power Switch
 	SKU Number: Not Specified
 	Family: Not Specified
@@ -147,7 +148,7 @@ Chassis Information
 	Lock: Not Present
 	Version:                         
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148                                 
 	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Other
@@ -304,24 +305,24 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: J6H1
 	Bank Locator: CHAN A DIMM 0
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MHz
-	Manufacturer: 0x7F98000000000000
+	Speed: 667 MT/s
+	Manufacturer: 0x8001440000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 0x202020202020202020202020202020202020
+	Part Number: 0x52333232473830355532532D55474F000000
 
 Handle 0x0018, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0017
 	Memory Array Mapped Address Handle: 0x001D
 	Partition Row Position: 1
@@ -353,24 +354,24 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: J6J1
 	Bank Locator: CHAN B DIMM 0
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MHz
-	Manufacturer: 0x7F98000000000000
+	Speed: 667 MT/s
+	Manufacturer: 0x8001440000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 0x202020202020202020202020202020202020
+	Part Number: 0x52333232473830355532532D55474F000000
 
 Handle 0x001B, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 1 GB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x001A
 	Memory Array Mapped Address Handle: 0x001D
 	Partition Row Position: 2
@@ -399,8 +400,8 @@ Memory Device
 Handle 0x001D, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0016
 	Partition Width: 4
 

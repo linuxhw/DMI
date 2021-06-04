@@ -1,8 +1,8 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-68 structures occupying 3702 bytes.
-Table at 0x000F2460.
+69 structures occupying 3719 bytes.
+Table at 0x000F2450.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -401,7 +401,7 @@ On Board Device Information
 Handle 0x0015, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Ethernet
-	Status: Disabled
+	Status: Enabled
 	Description: NETWORK_NAME_STRING
 
 Handle 0x0016, DMI type 11, 5 bytes
@@ -567,15 +567,6 @@ Voltage Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x0029, DMI type 27, 14 bytes
-Cooling Device
-	Temperature Probe Handle: 0x0028
-	Type: Unknown
-	Status: Unknown
-	Cooling Unit Group: 1
-	OEM-specific Information: 0x00000000
-	Nominal Speed: Unknown Or Non-rotating
-
 Handle 0x002A, DMI type 29, 22 bytes
 Electrical Current Probe
 	Description: ABC
@@ -606,7 +597,7 @@ System Power Supply
 	Plugged: Yes
 	Hot Replaceable: No
 	Input Voltage Probe Handle: 0x0027
-	Cooling Device Handle: 0x0029
+	Cooling Device Handle: 0x1B00
 	Input Current Probe Handle: 0x002A
 
 Handle 0x002C, DMI type 41, 11 bytes
@@ -621,7 +612,7 @@ Handle 0x002D, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation:  Onboard LAN
 	Type: Ethernet
-	Status: Disabled
+	Status: Enabled
 	Type Instance: 1
 	Bus Address: 0000:00:19.0
 
@@ -632,6 +623,12 @@ Onboard Device
 	Status: Disabled
 	Type Instance: 1
 	Bus Address: 0000:08:1b.0
+
+Handle 0x1B00, DMI type 27, 12 bytes
+Cooling Device
+	Type: Fan
+	Status: OK
+	OEM-specific Information: 0x0000DD00
 
 Handle 0x1C00, DMI type 28, 20 bytes
 Temperature Probe
@@ -701,7 +698,7 @@ OEM-specific Type
 	Strings:
 		System Device Bay
 		CD-ROM, CD-RW, DVD, DVD+RW, DVD+/-RW, Hard Disk
-		EMPTY     
+		DVD+/-RW
 
 Handle 0xDB01, DMI type 219, 11 bytes
 OEM-specific Type
@@ -735,6 +732,12 @@ OEM-specific Type
 	Header and Data:
 		DC 14 00 DC 01 F0 00 00 03 F0 00 00 00 00 06 F0
 		07 F0 00 00
+
+Handle 0xDD00, DMI type 221, 19 bytes
+OEM-specific Type
+	Header and Data:
+		DD 13 00 DD 00 00 00 00 00 03 00 00 00 00 00 00
+		00 00 00
 
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type

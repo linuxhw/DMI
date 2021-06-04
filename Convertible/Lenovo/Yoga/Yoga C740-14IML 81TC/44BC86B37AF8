@@ -6,11 +6,11 @@ Table at 0x8DDE1000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: BNCN32WW
-	Release Date: 09/04/2019
+	Version: BNCN41WW
+	Release Date: 11/30/2020
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 11264 kB
+	ROM Size: 11 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -31,8 +31,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.32
-	Firmware Revision: 1.32
+	BIOS Revision: 1.41
+	Firmware Revision: 1.41
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -118,7 +118,7 @@ Processor Information
 	Version: Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
 	Voltage: 0.6 V
 	External Clock: 100 MHz
-	Max Speed: 8300 MHz
+	Max Speed: 4200 MHz
 	Current Speed: 1485 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1528
@@ -334,6 +334,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.0
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001A, DMI type 9, 19 bytes
 System Slot Information
@@ -346,6 +348,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.1
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001B, DMI type 9, 19 bytes
 System Slot Information
@@ -358,6 +362,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.2
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001C, DMI type 9, 19 bytes
 System Slot Information
@@ -370,6 +376,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.3
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001D, DMI type 9, 19 bytes
 System Slot Information
@@ -382,6 +390,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.4
+	Data Bus Width: 10
+	Peer Devices: 0
 
 Handle 0x001E, DMI type 11, 5 bytes
 OEM Strings
@@ -455,7 +465,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -490,7 +500,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -654,8 +664,10 @@ Onboard Device
 Handle 0x0034, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: INTC
-	Specification Version: 2.0	Firmware Revision: 500.14
-	Description: TPM Device	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 500.14
+	Description: TPM Device
+	Characteristics:
 		TPM Device characteristics not supported
 	OEM-specific Information: 0x00000000
 
@@ -686,7 +698,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 38 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 84 02 00 00 00 00 01 00 00 00 00 00 0E 00
-		25 04 00 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		6D 05 2D 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 FF 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0039, DMI type 133, 5 bytes
@@ -729,7 +741,7 @@ Handle 0x003D, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 3D 00 03 01 00 09 00 14 30 00 02 00 00 00
-		00 BE 00 03 00 FF FF FF FF FF
+		00 DE 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -739,7 +751,7 @@ Handle 0x003E, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 3E 00 03 01 00 09 00 14 30 00 02 00 00 00
-		00 00 00 03 04 0E 00 00 25 04
+		00 00 00 03 04 0E 00 2D 6D 05
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -793,7 +805,7 @@ OEM-specific Type
 		DD 59 42 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 01 20 00 00 00 0C 00 00
+		00 FF FF FF FF FF 0B 00 01 29 00 00 00 0C 00 00
 		09 00 92 10 0D 0E 01 05 02 00 00 0F 00 00 07 03
 		00 00 10 00 00 02 00 0F 00
 	Strings:

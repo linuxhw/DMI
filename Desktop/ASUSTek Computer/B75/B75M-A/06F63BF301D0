@@ -1,6 +1,7 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-101 structures occupying 3662 bytes.
+101 structures occupying 3675 bytes.
 Table at 0x000EBA10.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -10,7 +11,7 @@ BIOS Information
 	Release Date: 07/31/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 16384 kB
+	ROM Size: 16 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -571,8 +572,9 @@ Management Device Component
 	Threshold Handle: 0x0030
 
 Handle 0x0036, DMI type 34, 16 bytes
+Invalid entry length (16). Fixed up to 11.
 Management Device
-	Description: 2
+	Description: LM78-2
 	Type: LM78
 	Address: 0x00000000
 	Address Type: I/O Port
@@ -902,20 +904,20 @@ Memory Device
 	Error Information Handle: 0x005D
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
-	Manufacturer: 86D3
+	Speed: 1333 MT/s
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: DCLT2GN568S       
+	Part Number: DMT451E6AFR8C-PB  
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0059, DMI type 16, 23 bytes
 Physical Memory Array
@@ -939,8 +941,8 @@ Handle 0x005A, DMI type 18, 23 bytes
 Handle 0x005B, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0058
 	Memory Array Mapped Address Handle: 0x005F
 	Partition Row Position: Unknown
@@ -953,20 +955,20 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
-	Manufacturer: 86D3
+	Speed: 1333 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: DCLT2GN568S       
+	Part Number: 99U5474-041.A00LF 
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x005D, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -980,9 +982,9 @@ Handle 0x005D, DMI type 18, 23 bytes
 
 Handle 0x005E, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x005C
 	Memory Array Mapped Address Handle: 0x005F
 	Partition Row Position: Unknown
@@ -992,8 +994,8 @@ Memory Device Mapped Address
 Handle 0x005F, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0059
 	Partition Width: 2
 
@@ -1014,7 +1016,7 @@ OEM-specific Type
 Handle 0x0063, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 63 00 10 00 00 00 08 00 00 00 00 00 41 00
+		83 40 63 00 31 00 00 00 08 00 00 00 00 00 41 00
 		F8 00 49 1E FF FF FF FF 21 20 00 00 01 00 08 00
 		26 05 02 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
@@ -1031,7 +1033,7 @@ BIOS Language Information
 		ja|JP|unicode
 		zh|TW|unicode
 		zh|CN|unicode
-	Currently Installed Language: en|US|iso8859-1
+	Currently Installed Language: ru|RU|iso8859-5
 
 Handle 0x0066, DMI type 127, 4 bytes
 End Of Table

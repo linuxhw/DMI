@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 106 structures occupying 3692 bytes.
 Table at 0x000EB410.
@@ -634,8 +635,9 @@ Management Device Component
 	Threshold Handle: 0x0036
 
 Handle 0x003C, DMI type 34, 16 bytes
+Invalid entry length (16). Fixed up to 11.
 Management Device
-	Description: 2
+	Description: LM78-2
 	Type: LM78
 	Address: 0x00000000
 	Address Type: I/O Port
@@ -962,23 +964,23 @@ OEM-specific Type
 Handle 0x005E, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x005F
-	Error Information Handle: 0x0062
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Error Information Handle: 0x0063
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: 8502
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: PSD38G16002
+	Rank: 2
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x005F, DMI type 16, 23 bytes
 Physical Memory Array
@@ -999,28 +1001,39 @@ Handle 0x0060, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0061, DMI type 17, 34 bytes
+Handle 0x0061, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x005E
+	Memory Array Mapped Address Handle: 0x0068
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x0062, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x005F
 	Error Information Handle: No Error
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8192 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 1
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1600 MHz
-	Manufacturer: 8502
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: [Empty]
 	Serial Number: --
 	Asset Tag: --
-	Part Number: PSD38G16002
-	Rank: 2
-	Configured Clock Speed: 1600 MHz
+	Part Number: [Empty]
+	Rank: Unknown
+	Configured Clock Speed: Unknown
 
-Handle 0x0062, DMI type 18, 23 bytes
+Handle 0x0063, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -1029,17 +1042,6 @@ Handle 0x0062, DMI type 18, 23 bytes
 	Memory Array Address: Unknown
 	Device Address: Unknown
 	Resolution: Unknown
-
-Handle 0x0063, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x0061
-	Memory Array Mapped Address Handle: 0x0068
-	Partition Row Position: Unknown
-	Interleave Position: 1
-	Interleaved Data Depth: 1
 
 Handle 0x0064, DMI type 17, 34 bytes
 Memory Device

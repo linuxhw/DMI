@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 80 structures occupying 3072 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 06/02/2015
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		APM is supported
@@ -324,7 +324,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:05:1c.7
+	Bus Address: 0000:ff:1c.7
 
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
@@ -337,7 +337,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:05:1d.0
+	Bus Address: 0000:ff:1d.0
 
 Handle 0x0022, DMI type 10, 8 bytes
 On Board Device 1 Information
@@ -620,7 +620,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -682,7 +682,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -759,8 +759,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -775,8 +775,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -796,7 +796,7 @@ Processor Information
 	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 3900 MHz
-	Current Speed: 3400 MHz
+	Current Speed: 3412 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
 	L1 Cache Handle: 0x0048
@@ -819,7 +819,7 @@ OEM-specific Type
 Handle 0x0054, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 54 00 14 00 00 00 00 00 00 00 00 00 00 00
+		83 40 54 00 35 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 4A 8C 00 00 00 00 01 20 00 00 00 00 09 00
 		41 05 02 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00

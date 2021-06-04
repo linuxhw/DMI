@@ -1,13 +1,13 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
-SMBIOS 3.0.0 present.
-Table at 0xDCEEF000.
+SMBIOS 3.2.1 present.
+Table at 0xEC9EA000.
 
-Handle 0x0000, DMI type 0, 24 bytes
+Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: P5.10
-	Release Date: 12/17/2018
+	Version: P6.40
+	Release Date: 07/28/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -31,7 +31,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 5.13
+	BIOS Revision: 5.14
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -51,7 +51,7 @@ Base Board Information
 	Version:                       
 	Serial Number: --
 	Asset Tag: --
-	...
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:                       
@@ -75,20 +75,20 @@ Chassis Information
 	Height: Unspecified
 	Number Of Power Cords: 1
 	Contained Elements: 0
-	SKU Number: To be filled by O.E.M.
+	SKU Number: To Be Filled By O.E.M.
 
 Handle 0x0004, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE1
 	Type: x1 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 17
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:2b:00.0
+	Bus Address: 0000:00:00.0
 
 Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
@@ -101,46 +101,46 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:2d:00.0
+	Bus Address: 0000:00:00.0
 
 Handle 0x0006, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE3
 	Type: x8 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 19
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:00.0
+	Bus Address: 0000:00:00.0
 
 Handle 0x0007, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE4
 	Type: x1 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 20
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:28:00.0
+	Bus Address: 0000:00:00.0
 
 Handle 0x0008, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE5_M2_2
 	Type: x4 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 21
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:2c:00.0
+	Bus Address: 0000:00:00.0
 
 Handle 0x0009, DMI type 9, 17 bytes
 System Slot Information
@@ -153,7 +153,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:01:00.0
+	Bus Address: 0000:00:00.0
 
 Handle 0x000A, DMI type 11, 5 bytes
 OEM Strings
@@ -173,8 +173,10 @@ Additional Information 1
 Handle 0x000D, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: 
-	Specification Version: 2.0	Firmware Revision: 3.5
-	Description: AMD	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 3.6
+	Description: AMD
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -193,7 +195,7 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 256 GB
+	Maximum Capacity: 128 GB
 	Error Information Handle: 0x000E
 	Number Of Devices: 4
 
@@ -205,7 +207,7 @@ Memory Array Mapped Address
 	Physical Array Handle: 0x000F
 	Partition Width: 4
 
-Handle 0x0011, DMI type 7, 19 bytes
+Handle 0x0011, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1 - Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -221,14 +223,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0012, DMI type 7, 19 bytes
+Handle 0x0012, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L2 - Cache
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -237,14 +239,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0013, DMI type 7, 19 bytes
+Handle 0x0013, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L3 - Cache
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 16384 kB
-	Maximum Size: 16384 kB
+	Installed Size: 16 MB
+	Maximum Size: 16 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -325,20 +327,20 @@ Memory Device
 	Error Information Handle: 0x0015
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2134 MT/s
-	Manufacturer: 029?
+	Speed: 3000 MT/s
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CMW32GX4M4C3000C15  
 	Rank: 1
-	Configured Memory Speed: 1067 MT/s
+	Configured Memory Speed: 3000 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -370,20 +372,20 @@ Memory Device
 	Error Information Handle: 0x0018
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2134 MT/s
-	Manufacturer: 029?
+	Speed: 3000 MT/s
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CMW32GX4M4C3000C15  
 	Rank: 1
-	Configured Memory Speed: 1067 MT/s
+	Configured Memory Speed: 3000 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -415,20 +417,20 @@ Memory Device
 	Error Information Handle: 0x001B
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2134 MT/s
-	Manufacturer: 029?
+	Speed: 3000 MT/s
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CMW32GX4M4C3000C15  
 	Rank: 1
-	Configured Memory Speed: 1067 MT/s
+	Configured Memory Speed: 3000 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -460,20 +462,20 @@ Memory Device
 	Error Information Handle: 0x001E
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2134 MT/s
-	Manufacturer: 029?
+	Speed: 3000 MT/s
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CMW32GX4M4C3000C15  
 	Rank: 1
-	Configured Memory Speed: 1067 MT/s
+	Configured Memory Speed: 3000 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V

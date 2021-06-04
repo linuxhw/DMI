@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 77 structures occupying 3198 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 01/09/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -265,7 +265,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:06:11.4
+	Bus Address: 0000:07:11.4
 
 Handle 0x001B, DMI type 9, 17 bytes
 System Slot Information
@@ -291,7 +291,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:04:1c.1
+	Bus Address: 0000:05:1c.1
 
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
@@ -304,20 +304,20 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:06:1c.2
+	Bus Address: 0000:07:1c.2
 
 Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B4
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 4
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:01.1
+	Bus Address: 0000:02:01.1
 
 Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
@@ -596,8 +596,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -628,8 +628,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -709,7 +709,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -741,7 +741,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
@@ -773,7 +773,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -805,7 +805,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1

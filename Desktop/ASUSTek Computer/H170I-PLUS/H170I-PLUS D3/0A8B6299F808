@@ -1,9 +1,6 @@
-# dmidecode 2.12
-# SMBIOS entry point at 0x000f05e0
-SMBIOS 3.0 present.
-# SMBIOS implementations newer than version 2.7 are not
-# fully supported by this version of dmidecode.
-82 structures occupying 4042 bytes.
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
+SMBIOS 3.0.0 present.
 Table at 0x871D6000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -13,7 +10,7 @@ BIOS Information
 	Release Date: 05/31/2016
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 16384 kB
+	ROM Size: 16 MB
 	Characteristics:
 		PCI is supported
 		APM is supported
@@ -710,16 +707,16 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX1600C10D3/8G   
 	Rank: 2
-	Configured Clock Speed: 1600 MHz
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  1.500 V
+	Configured Clock Speed: 1600 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 1.5 V
 
 Handle 0x0041, DMI type 17, 40 bytes
 Memory Device
@@ -734,16 +731,16 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX1600C10D3/8G   
 	Rank: 2
-	Configured Clock Speed: 1600 MHz
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  1.500 V
+	Configured Clock Speed: 1600 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 1.5 V
 
 Handle 0x0042, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -879,17 +876,17 @@ Handle 0x004D, DMI type 14, 20 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 5
-		0x0047 (<OUT OF SPEC>)
-		0x0048 (<OUT OF SPEC>)
-		0x0049 (<OUT OF SPEC>)
-		0x004A (<OUT OF SPEC>)
-		0x004B (<OUT OF SPEC>)
+		0x0047 (OEM-specific)
+		0x0048 (OEM-specific)
+		0x0049 (OEM-specific)
+		0x004A (OEM-specific)
+		0x004B (OEM-specific)
 
 Handle 0x004E, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
-		0x0000 (<OUT OF SPEC>)
+		0x0000 (OEM-specific)
 
 Handle 0x004F, DMI type 219, 81 bytes
 OEM-specific Type

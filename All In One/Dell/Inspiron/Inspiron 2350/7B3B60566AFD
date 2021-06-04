@@ -1,7 +1,7 @@
-# dmidecode 2.12
-# SMBIOS entry point at 0x000f04c0
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-35 structures occupying 1592 bytes.
+35 structures occupying 1565 bytes.
 Table at 0x000EBA90.
 
 Handle 0x0000, DMI type 218, 17 bytes
@@ -13,11 +13,11 @@ OEM-specific Type
 Handle 0x0001, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: A08
-	Release Date: 01/08/2015
+	Version: A12
+	Release Date: 06/05/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -48,7 +48,7 @@ System Information
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
-	SKU Number: Inspiron 2350
+	SKU Number: 05DB
 	Family: To be filled by O.E.M.
 
 Handle 0x0003, DMI type 2, 15 bytes
@@ -209,7 +209,7 @@ OEM Strings
 	String 7: 7[]
 	String 8: 8[]
 	String 9: 9[]
-	String 10: 10[A08]
+	String 10: 10[A12]
 	String 11: 11[]
 	String 12: 12[]
 	String 13: 13[$(REGULATORY_ID)]
@@ -327,8 +327,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -352,26 +352,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
-	Manufacturer: Hynix/Hyundai
+	Speed: 1600 MT/s
+	Manufacturer: 1315
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT451S6AFR8A-PB  
-	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Part Number: CT102464BF160B.C16
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x001C, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x001B
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: 1
@@ -384,26 +384,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
-	Manufacturer: Hynix/Hyundai
+	Speed: 1600 MT/s
+	Manufacturer: 1315
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT451S6AFR8A-PB  
-	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Part Number: CT102464BF160B.C16
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x001E, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x001D
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: 1
@@ -413,8 +413,8 @@ Memory Device Mapped Address
 Handle 0x001F, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x001A
 	Partition Width: 2
 

@@ -1,7 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-95 structures occupying 4643 bytes.
+95 structures occupying 4556 bytes.
 Table at 0x000E0000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
@@ -98,21 +98,18 @@ OEM-specific Type
 		03 01 00 1E 03 1E 03 00 00 1F 03 1F 03 01 00 20
 		03 20 03 00 00 25 03 25 03 01 00 26 03 26 03 01
 		00 29 03 29 03 01 00 2A 03 2A 03 00 00 2B 03 2B
-		03 01 00 2C 03 2C 03 00 00 3A 03 3A 03 01 00 3B
-		03 3B 03 00 00 41 03 41 03 03 00 42 03 42 03 04
-		00 43 03 43 03 05 00 44 03 44 03 01 00 45 03 45
-		03 02 00 46 03 46 03 01 00 47 03 47 03 02 00 48
-		03 48 03 05 00 FF FF FF FF 00 00
+		03 01 00 2C 03 2C 03 00 00 41 03 41 03 03 00 42
+		03 42 03 04 00 43 03 43 03 05 00 44 03 44 03 01
+		00 45 03 45 03 02 00 46 03 46 03 01 00 47 03 47
+		03 02 00 48 03 48 03 05 00 49 03 49 03 FF FF 4A
+		03 4A 03 FF FF FF FF FF FF 00 00
 
-Handle 0xDA05, DMI type 218, 251 bytes
+Handle 0xDA05, DMI type 218, 203 bytes
 OEM-specific Type
 	Header and Data:
-		DA FB 05 DA B2 00 37 5F 1F 36 40 49 03 49 03 FF
-		FF 4A 03 4A 03 FF FF 4D 03 4D 03 01 00 4E 03 4E
-		03 00 00 4F 03 4F 03 01 00 57 03 57 03 00 00 58
-		03 58 03 01 00 5B 03 5B 03 01 00 5C 03 5C 03 00
-		00 5D 03 5D 03 01 00 5E 03 5E 03 00 00 5F 03 5F
-		03 01 00 60 03 60 03 00 00 61 03 61 03 01 00 62
+		DA CB 05 DA B2 00 37 5F 1F 36 40 4D 03 4D 03 01
+		00 4E 03 4E 03 00 00 4F 03 4F 03 01 00 57 03 57
+		03 00 00 58 03 58 03 01 00 61 03 61 03 01 00 62
 		03 62 03 00 00 66 03 66 03 00 00 67 03 67 03 01
 		00 69 03 69 03 00 00 6A 03 6A 03 01 00 6B 03 6B
 		03 02 00 6C 03 6C 03 00 00 6D 03 6D 03 01 00 6E
@@ -134,11 +131,11 @@ OEM-specific Type
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: A23
-	Release Date: 10/08/2018
+	Version: A24
+	Release Date: 06/13/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 14336 kB
+	ROM Size: 14 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -161,7 +158,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 65.23
+	BIOS Revision: 65.24
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -177,7 +174,7 @@ System Information
 Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: Dell Inc.
-	Product Name: 061CGT
+	Product Name: 0TTRNR
 	Version: A00
 	Serial Number: --
 	Asset Tag: --
@@ -301,8 +298,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -643,7 +640,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM A
@@ -654,9 +651,9 @@ Memory Device
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5173EB0-YK0  
+	Part Number: M471B5173DB0-YK0  
 	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0049, DMI type 17, 34 bytes
 Memory Device
@@ -664,7 +661,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM B
@@ -675,9 +672,9 @@ Memory Device
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5173QH0-YK0  
+	Part Number: M471B5173EB0-YK0  
 	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x004B, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -718,14 +715,14 @@ Built-in Pointing Device
 Handle 0x1600, DMI type 22, 26 bytes
 Portable Battery
 	Location: Sys. Battery Bay
-	Manufacturer: LG
-	Manufacture Date: 03/14/2016
+	Manufacturer: Samsung SDI
+	Manufacture Date: 10/26/2018
 	Serial Number: --
-	Name: DELL NVWGM63
-	Design Capacity: 66600 mWh
+	Name: DELL P8TC727
+	Design Capacity: 48840 mWh
 	Design Voltage: 11100 mV
 	SBDS Version: 1.0
-	Maximum Error: 2%
+	Maximum Error: 1%
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000801
 
@@ -737,7 +734,7 @@ Hardware Security
 	Front Panel Reset Status: Disabled
 
 Handle 0x002C, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x1B00, DMI type 27, 15 bytes
@@ -888,7 +885,7 @@ Handle 0xDED7, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
 		83 40 D7 DE 35 00 00 00 00 00 00 00 00 00 00 00
-		F8 00 43 9C 00 00 00 00 01 00 00 00 05 00 09 00
+		F8 00 43 9C 00 00 00 00 01 20 00 00 05 00 09 00
 		B8 0B 41 00 00 00 00 00 C8 00 5A 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
@@ -989,7 +986,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 19 08 15 05 50 01 00 00
+		DE 10 00 DE 01 04 00 00 20 09 28 12 54 01 00 00
 
 Handle 0x0041, DMI type 255, 8 bytes
 OEM-specific Type

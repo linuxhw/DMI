@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 100 structures occupying 3930 bytes.
 Table at 0x000EBA10.
@@ -109,7 +110,7 @@ Processor Information
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
 	L2 Cache Handle: 0x0006
-	L3 Cache Handle: Not Provided
+	L3 Cache Handle: 0x0007
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
@@ -125,15 +126,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 0 kB
-	Maximum Size: 0 kB
+	Installed Size: 32 kB
+	Maximum Size: 32 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
 	Speed: Unknown
 	Error Correction Type: None
-	System Type: <OUT OF SPEC>
-	Associativity: <OUT OF SPEC>
+	System Type: Unified
+	Associativity: 8-way Set-associative
 
 Handle 0x0006, DMI type 7, 19 bytes
 Cache Information
@@ -141,18 +142,31 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 0 kB
-	Maximum Size: 0 kB
+	Installed Size: 256 kB
+	Maximum Size: 256 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
 	Speed: Unknown
 	Error Correction Type: None
-	System Type: <OUT OF SPEC>
-	Associativity: <OUT OF SPEC>
+	System Type: Unified
+	Associativity: 8-way Set-associative
 
-Handle 0x0007, DMI type 126, 19 bytes
-Inactive
+Handle 0x0007, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L3-Cache
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Varies With Memory Address
+	Location: Internal
+	Installed Size: 6144 kB
+	Maximum Size: 6144 kB
+	Supported SRAM Types:
+		Other
+	Installed SRAM Type: Other
+	Speed: Unknown
+	Error Correction Type: None
+	System Type: Unified
+	Associativity: Other
 
 Handle 0x0008, DMI type 8, 9 bytes
 Port Connector Information
@@ -916,7 +930,7 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
@@ -967,7 +981,7 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Elpida
 	Serial Number: --
 	Asset Tag: --

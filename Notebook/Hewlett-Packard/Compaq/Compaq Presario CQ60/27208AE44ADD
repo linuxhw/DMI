@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 33 structures occupying 1565 bytes.
@@ -9,7 +9,7 @@ BIOS Information
 	Vendor: Hewlett-Packard
 	Version: F.25
 	Release Date: 09/04/2008
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -235,7 +235,7 @@ Memory Device
 	Error Information Handle: 0x0015
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -243,10 +243,10 @@ Memory Device
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 667 MT/s
-	Manufacturer: 7F7F7F7FCB000000
+	Manufacturer: 7F7F7F7F7F510000
 	Serial Number: --
 	Asset Tag: --
-	Part Number:  DOVE1A0834E      
+	Part Number: 64T256020EDL2.5C2 
 
 Handle 0x0015, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -261,8 +261,8 @@ Handle 0x0015, DMI type 18, 23 bytes
 Handle 0x0016, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0014
 	Memory Array Mapped Address Handle: 0x001B
 	Partition Row Position: 1
@@ -275,7 +275,7 @@ Memory Device
 	Error Information Handle: 0x0018
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM2
@@ -283,10 +283,10 @@ Memory Device
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 667 MT/s
-	Manufacturer: 7F7F7F7FCB000000
+	Manufacturer: 7F7F7F7F7F510000
 	Serial Number: --
 	Asset Tag: --
-	Part Number:  DOVE1A0834E      
+	Part Number: 64T256020EDL2.5C2 
 
 Handle 0x0018, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -301,8 +301,8 @@ Handle 0x0018, DMI type 18, 23 bytes
 Handle 0x0019, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0017
 	Memory Array Mapped Address Handle: 0x001B
 	Partition Row Position: 2
@@ -322,8 +322,8 @@ Handle 0x001A, DMI type 18, 23 bytes
 Handle 0x001B, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0013
 	Partition Width: 2
 
@@ -384,8 +384,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous

@@ -1,14 +1,14 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-52 structures occupying 2069 bytes.
-Table at 0x000E6F50.
+54 structures occupying 2108 bytes.
+Table at 0x000E7150.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: 9CCN30WW(V2.08)
-	Release Date: 11/26/2014
+	Version: 9CCN35WW(V3.01)
+	Release Date: 10/16/2015
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 4096 kB
@@ -29,8 +29,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
-	BIOS Revision: 1.30
-	Firmware Revision: 1.30
+	BIOS Revision: 3.35
+	Firmware Revision: 3.35
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -47,7 +47,7 @@ Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: LENOVO
 	Product Name: Lenovo B50-30
-	Version: 00000000NO DPK
+	Version: 00000000 NO DPK
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -117,7 +117,7 @@ Processor Information
 	Voltage: 0.9 V
 	External Clock: 83 MHz
 	Max Speed: 2573 MHz
-	Current Speed: 2176 MHz
+	Current Speed: 2174 MHz
 	Status: Populated, Enabled
 	Upgrade: None
 	L1 Cache Handle: 0x0008
@@ -536,7 +536,14 @@ Portable Battery
 	Maximum Error: Unknown
 	OEM-specific Information: 0x00000000
 
-Handle 0x002C, DMI type 26, 22 bytes
+Handle 0x002C, DMI type 24, 5 bytes
+Hardware Security
+	Power-On Password Status: Disabled
+	Keyboard Password Status: Disabled
+	Administrator Password Status: Disabled
+	Front Panel Reset Status: Disabled
+
+Handle 0x002D, DMI type 26, 22 bytes
 Voltage Probe
 	Description: Voltage Probe Description.
 	Location: <OUT OF SPEC>
@@ -549,7 +556,7 @@ Voltage Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x002D, DMI type 27, 15 bytes
+Handle 0x002E, DMI type 27, 15 bytes
 Cooling Device
 	Type: Chip Fan
 	Status: OK
@@ -557,7 +564,7 @@ Cooling Device
 	Nominal Speed: Unknown Or Non-rotating
 	Description: Cooling Device Description.
 
-Handle 0x002E, DMI type 28, 22 bytes
+Handle 0x002F, DMI type 28, 22 bytes
 Temperature Probe
 	Description: Temperature Probe Description.
 	Location: Unknown
@@ -570,11 +577,11 @@ Temperature Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x002F, DMI type 32, 11 bytes
+Handle 0x0030, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0030, DMI type 39, 22 bytes
+Handle 0x0031, DMI type 39, 22 bytes
 System Power Supply
 	Location: OEM_Define0
 	Name: OEM_Define1
@@ -589,10 +596,10 @@ System Power Supply
 	Input Voltage Range Switching: Auto-switch
 	Plugged: No
 	Hot Replaceable: No
-	Input Voltage Probe Handle: 0x002C
-	Cooling Device Handle: 0x002D
+	Input Voltage Probe Handle: 0x002D
+	Cooling Device Handle: 0x002E
 
-Handle 0x0031, DMI type 41, 11 bytes
+Handle 0x0032, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: IGD
 	Type: Video
@@ -600,12 +607,20 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 
-Handle 0x0032, DMI type 133, 5 bytes
+Handle 0x0033, DMI type 133, 5 bytes
 OEM-specific Type
 	Header and Data:
-		85 05 32 00 01
+		85 05 33 00 01
 	Strings:
 		KHOIHGIUCCHHII
+
+Handle 0x0034, DMI type 200, 16 bytes
+OEM-specific Type
+	Header and Data:
+		C8 10 34 00 01 02 01 22 01 12 01 3D B2 80 01 05
+	Strings:
+		IdeaPad
+		20382
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

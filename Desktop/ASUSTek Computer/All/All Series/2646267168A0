@@ -308,7 +308,7 @@ Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
 	Type: x16 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 1
 	Characteristics:
@@ -379,9 +379,9 @@ System Configuration Options
 
 Handle 0x0027, DMI type 24, 5 bytes
 Hardware Security
-	Power-On Password Status: Disabled
+	Power-On Password Status: Enabled
 	Keyboard Password Status: Disabled
-	Administrator Password Status: Disabled
+	Administrator Password Status: Enabled
 	Front Panel Reset Status: Disabled
 
 Handle 0x0028, DMI type 32, 20 bytes
@@ -897,7 +897,7 @@ OEM-specific Type
 		DD 36 5A 00 07 01 00 02 00 00 00 00 02 00 01 08
 		00 00 00 03 00 02 00 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 06 00 07 00 FF FF FF 06 00 08
-		00 FF FF FF 00 00
+		00 FF FF FF 30 10
 	Strings:
 		Reference Code - SA - System Agent
 		Reference Code - MRC

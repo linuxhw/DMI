@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 24 structures occupying 1338 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 10/01/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -52,7 +52,7 @@ Base Board Information
 	Version:                       
 	Serial Number: --
 	Asset Tag: --
-	...
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:                       
@@ -89,7 +89,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:03:01.0
+	Bus Address: ffff:04:01.0
 
 Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
@@ -102,19 +102,20 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:03:02.0
+	Bus Address: ffff:04:02.0
 
 Handle 0x0006, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE1
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 17
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
+	Bus Address: ffff:01:00.0
 
 Handle 0x0007, DMI type 9, 17 bytes
 System Slot Information
@@ -127,7 +128,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:01:00.0
+	Bus Address: ffff:02:00.0
 
 Handle 0x0008, DMI type 11, 5 bytes
 OEM Strings
@@ -175,8 +176,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -232,7 +233,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Celeron(R) CPU G1620 @ 2.70GHz
-	Voltage: 5.0 V 3.3 V
+	Voltage: 5.0 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
 	Current Speed: 2700 MHz
@@ -256,7 +257,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -288,7 +289,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0

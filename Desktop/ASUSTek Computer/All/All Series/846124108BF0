@@ -1,6 +1,7 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-68 structures occupying 2661 bytes.
+69 structures occupying 2716 bytes.
 Table at 0x000EC1F0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -540,22 +541,22 @@ Handle 0x0037, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0038
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: 0420
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: F3-1600C11-4GIS   
+	Rank: 1
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0038, DMI type 16, 23 bytes
 Physical Memory Array
@@ -566,7 +567,18 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
-Handle 0x0039, DMI type 17, 34 bytes
+Handle 0x0039, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0037
+	Memory Array Mapped Address Handle: 0x003C
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x003A, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0038
 	Error Information Handle: Not Provided
@@ -579,34 +591,34 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
-	Manufacturer: 0420
+	Speed: 1600 MT/s
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F3-1600C11-4GIS   
+	Part Number: HMT451U6AFR8C-PB  
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1600 MT/s
 
-Handle 0x003A, DMI type 20, 35 bytes
+Handle 0x003B, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0039
-	Memory Array Mapped Address Handle: 0x003B
+	Physical Device Handle: 0x003A
+	Memory Array Mapped Address Handle: 0x003C
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x003B, DMI type 19, 31 bytes
+Handle 0x003C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0038
 	Partition Width: 2
 
-Handle 0x003C, DMI type 7, 19 bytes
+Handle 0x003D, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L1
 	Configuration: Enabled, Not Socketed, Level 1
@@ -622,7 +634,7 @@ Cache Information
 	System Type: Other
 	Associativity: 8-way Set-associative
 
-Handle 0x003D, DMI type 7, 19 bytes
+Handle 0x003E, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L2
 	Configuration: Enabled, Not Socketed, Level 2
@@ -638,7 +650,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x003E, DMI type 7, 19 bytes
+Handle 0x003F, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L3
 	Configuration: Enabled, Not Socketed, Level 3
@@ -654,7 +666,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 12-way Set-associative
 
-Handle 0x0042, DMI type 4, 42 bytes
+Handle 0x0043, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: SOCKET 1150
 	Type: Central Processor
@@ -668,9 +680,9 @@ Processor Information
 	Current Speed: 3700 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
-	L1 Cache Handle: 0x003C
-	L2 Cache Handle: 0x003D
-	L3 Cache Handle: 0x003E
+	L1 Cache Handle: 0x003D
+	L2 Cache Handle: 0x003E
+	L3 Cache Handle: 0x003F
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Fill By OEM
@@ -680,20 +692,20 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0047, DMI type 136, 6 bytes
+Handle 0x0048, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 47 00 00 00
+		88 06 48 00 00 00
 
-Handle 0x0048, DMI type 131, 64 bytes
+Handle 0x0049, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 48 00 10 00 00 00 00 00 00 00 00 00 00 00
+		83 40 49 00 10 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 5C 8C 00 00 00 00 01 20 00 00 00 00 09 00
 		CA 05 1E 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0049, DMI type 13, 22 bytes
+Handle 0x004A, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 8
@@ -707,6 +719,6 @@ BIOS Language Information
 		zh|CN|unicode
 	Currently Installed Language: ru|RU|iso8859-5
 
-Handle 0x004B, DMI type 127, 4 bytes
+Handle 0x004C, DMI type 127, 4 bytes
 End Of Table
 

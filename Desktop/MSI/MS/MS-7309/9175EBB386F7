@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 47 structures occupying 1614 bytes.
 Table at 0x000FD1C0.
@@ -114,11 +115,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Athlon(tm) II X2 245 Processor                  
+	Version: AMD Athlon(tm) II X2 250 Processor                  
 	Voltage: 1.5 V
 	External Clock: 200 MHz
-	Max Speed: 2900 MHz
-	Current Speed: 2900 MHz
+	Max Speed: 3000 MHz
+	Current Speed: 3000 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -396,7 +397,7 @@ Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI2
 	Type: 32-bit PCI
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 2
 	Characteristics:
@@ -465,11 +466,11 @@ Memory Device
 	Bank Locator: BANK0
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 800 MHz
-	Manufacturer: Hyundai       
+	Speed: 800 MT/s
+	Manufacturer: Manufacturer00
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HYMP125U64CP8-S600
+	Part Number: 000000000000000000
 	Rank: Unknown
 
 Handle 0x0029, DMI type 20, 19 bytes
@@ -494,11 +495,11 @@ Memory Device
 	Bank Locator: BANK1
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 800 MHz
-	Manufacturer: Manufacturer01
+	Speed: 800 MT/s
+	Manufacturer: Hyundai       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 000000000000000000
+	Part Number: HYMP125U64CP8-S600
 	Rank: Unknown
 
 Handle 0x002B, DMI type 20, 19 bytes

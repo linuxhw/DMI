@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-38 structures occupying 1978 bytes.
+39 structures occupying 2024 bytes.
 Table at 0x000E6DF0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -69,7 +69,7 @@ Chassis Information
 	Version: V2.21
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -168,8 +168,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -402,22 +402,22 @@ Handle 0x001B, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x001A
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8192 MB
+	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Empty
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Empty
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: KRE-D3S1600M/8G   
+	Rank: 2
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x001C, DMI type 17, 34 bytes
 Memory Device
@@ -454,10 +454,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Nanya Technology
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NT4GC64B8HB0NS-CG 
+	Part Number: KRE-D3S1333M/4G   
 	Rank: 2
 	Configured Clock Speed: 1333 MT/s
 
@@ -485,12 +485,23 @@ Memory Device
 Handle 0x001F, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x001A
 	Partition Width: 4
 
 Handle 0x0020, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x001B
+	Memory Array Mapped Address Handle: 0x001F
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x0021, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
@@ -501,7 +512,7 @@ Memory Device Mapped Address
 	Interleave Position: 2
 	Interleaved Data Depth: 1
 
-Handle 0x0021, DMI type 170, 82 bytes
+Handle 0x0022, DMI type 170, 82 bytes
 Acer Hotkey Function
 	Function bitmap for Communication Button: 0x0801
 		WiFi: Yes
@@ -514,24 +525,24 @@ Acer Hotkey Function
 	Function bitmap for Others Button: 0x0006
 	Communication Function Key Number: 3
 
-Handle 0x0022, DMI type 171, 39 bytes
+Handle 0x0023, DMI type 171, 39 bytes
 OEM-specific Type
 	Header and Data:
-		AB 27 22 00 01 86 80 66 01 01 DE 10 E1 0F 02 E4
+		AB 27 23 00 01 86 80 66 01 01 DE 10 E1 0F 02 E4
 		14 B5 16 04 F2 04 74 B3 05 86 80 20 1E 07 8C 16
 		34 00 08 89 04 4E E0
 
-Handle 0x0023, DMI type 172, 21 bytes
+Handle 0x0024, DMI type 172, 21 bytes
 OEM-specific Type
 	Header and Data:
-		AC 15 23 00 02 1A 01 FF 00 02 03 00 03 FF 00 04
+		AC 15 24 00 02 1A 01 FF 00 02 03 00 03 FF 00 04
 		01 00 05 0F 00
 
-Handle 0x0024, DMI type 173, 9 bytes
+Handle 0x0025, DMI type 173, 9 bytes
 OEM-specific Type
 	Header and Data:
-		AD 09 24 00 00 00 00 00 00
+		AD 09 25 00 00 00 00 00 00
 
-Handle 0x0025, DMI type 127, 4 bytes
+Handle 0x0026, DMI type 127, 4 bytes
 End Of Table
 

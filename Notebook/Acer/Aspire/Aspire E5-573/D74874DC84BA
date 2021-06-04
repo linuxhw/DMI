@@ -1,7 +1,6 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-# SMBIOS implementations newer than version 2.7 are not
-# fully supported by this version of dmidecode.
 32 structures occupying 2292 bytes.
 Table at 0x000E6BF0.
 
@@ -70,7 +69,7 @@ Chassis Information
 	Version: Chassis Version
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -123,7 +122,7 @@ Processor Information
 	Max Speed: 2000 MHz
 	Current Speed: 2000 MHz
 	Status: Populated, Enabled
-	Upgrade: <OUT OF SPEC>
+	Upgrade: Socket BGA1168
 	L1 Cache Handle: 0x0008
 	L2 Cache Handle: 0x0009
 	L3 Cache Handle: 0x000A
@@ -253,17 +252,17 @@ Handle 0x000E, DMI type 14, 20 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 5
-		0x0019 (<OUT OF SPEC>)
-		0x0017 (<OUT OF SPEC>)
-		0x0016 (<OUT OF SPEC>)
-		0x0015 (<OUT OF SPEC>)
-		0x0014 (<OUT OF SPEC>)
+		0x0019 (OEM-specific)
+		0x0017 (OEM-specific)
+		0x0016 (OEM-specific)
+		0x0015 (OEM-specific)
+		0x0014 (OEM-specific)
 
 Handle 0x000F, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x001E (<OUT OF SPEC>)
+		0x001E (OEM-specific)
 
 Handle 0x0010, DMI type 16, 23 bytes
 Physical Memory Array
@@ -287,13 +286,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: ACR16D3LS1KNG/4G  
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0012, DMI type 17, 34 bytes
 Memory Device
@@ -344,13 +343,17 @@ OEM-specific Type
 		00 FF 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0016, DMI type 170, 78 bytes
-OEM-specific Type
-	Header and Data:
-		AA 4E 16 00 01 00 00 00 7F 00 0F 00 06 00 01 01
-		01 08 41 01 01 00 42 01 02 00 43 01 04 00 44 01
-		08 00 45 01 10 00 46 01 20 00 47 01 40 00 61 01
-		01 00 62 01 02 00 63 01 04 00 64 01 08 00 82 01
-		02 00 83 01 04 00 84 01 08 00 8A 01 00 10
+Acer Hotkey Function
+	Function bitmap for Communication Button: 0x0001
+		WiFi: Yes
+		3G: No
+		WiMAX: No
+		Bluetooth: No
+	Function bitmap for Application Button: 0x0000
+	Function bitmap for Media Button: 0x007f
+	Function bitmap for Display Button: 0x000f
+	Function bitmap for Others Button: 0x0006
+	Communication Function Key Number: 1
 
 Handle 0x0017, DMI type 171, 39 bytes
 OEM-specific Type

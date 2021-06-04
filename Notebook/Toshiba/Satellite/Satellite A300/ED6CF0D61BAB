@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 25 structures occupying 1272 bytes.
@@ -9,7 +9,7 @@ BIOS Information
 	Vendor: INSYDE
 	Version: 1.80
 	Release Date: 02/13/2009
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -159,9 +159,9 @@ OEM Strings
 Handle 0x000B, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: NVR:00707002
-	Option 2: DSN: WD-WXE608F11555    
-	Option 3: DSN:64T128021EDL3SB2  030773A8 
-	Option 4: DSN:03537166
+	Option 2: DSN:GX5028087           
+	Option 3: DSN:M4 70T5663QZ3-CE6 8563B1A8 
+	Option 4: DSN:00000000
 
 Handle 0x000C, DMI type 15, 29 bytes
 System Event Log
@@ -242,8 +242,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Asynchronous
 	Installed SRAM Type: Asynchronous
@@ -299,7 +299,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
@@ -307,16 +307,16 @@ Memory Device
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 667 MT/s
-	Manufacturer: 0x7F7F7F7F7F510000
+	Manufacturer: 0xCE00000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 0x36345431323830323145444C335342322020
+	Part Number: 0x4D342037305435363633515A332D43453620
 
 Handle 0x0014, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0013
 	Memory Array Mapped Address Handle: 0x0017
 	Partition Row Position: 1
@@ -329,7 +329,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -337,15 +337,15 @@ Memory Device
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 667 MT/s
-	Manufacturer: 0xCE00000000000000
+	Manufacturer: 0x7F94000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 0x4D342037305435363633515A332D43453620
+	Part Number: 0x53473536343536385647384E57494C202020
 
 Handle 0x0016, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x000BFFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0015
 	Memory Array Mapped Address Handle: 0x0017
@@ -356,8 +356,8 @@ Memory Device Mapped Address
 Handle 0x0017, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0012
 	Partition Width: 4
 

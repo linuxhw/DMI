@@ -1,14 +1,14 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-91 structures occupying 3324 bytes.
+92 structures occupying 3363 bytes.
 Table at 0x000E94B0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 4001
-	Release Date: 04/20/2012
+	Version: 4601
+	Release Date: 09/18/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 4096 kB
@@ -82,8 +82,8 @@ Processor Information
 	Type: Central Processor
 	Family: Core 2 Duo
 	Manufacturer: Intel            
-	ID: A7 06 02 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 42, Stepping 7
+	ID: A9 06 03 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 58, Stepping 9
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -113,11 +113,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Celeron(R) CPU G530 @ 2.40GHz         
+	Version: Intel(R) Pentium(R) CPU G2030 @ 3.00GHz        
 	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 2400 MHz
+	Current Speed: 3000 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -169,15 +169,15 @@ Cache Information
 	Configuration: Disabled, Not Socketed, Level 3
 	Operational Mode: Unknown
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 3072 kB
+	Maximum Size: 3072 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
 	Speed: Unknown
 	Error Correction Type: None
 	System Type: Unified
-	Associativity: 8-way Set-associative
+	Associativity: Other
 
 Handle 0x0008, DMI type 8, 9 bytes
 Port Connector Information
@@ -860,11 +860,11 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1067 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT325U6CFR8C-H9  
+	Part Number: HMT325U6BFR8C-H9  
 	Rank: 1
 
 Handle 0x0055, DMI type 18, 23 bytes
@@ -883,7 +883,7 @@ Memory Device Mapped Address
 	Ending Address: 0x0007FFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0052
-	Memory Array Mapped Address Handle: 0x0059
+	Memory Array Mapped Address Handle: 0x0058
 	Partition Row Position: Unknown
 	Interleave Position: 1
 	Interleaved Data Depth: 1
@@ -892,21 +892,21 @@ Handle 0x0057, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0053
 	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
+	Part Number: HMT325U6CFR8C-H9  
+	Rank: 1
 
 Handle 0x0056, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -918,11 +918,22 @@ Handle 0x0056, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0059, DMI type 19, 15 bytes
+Handle 0x0059, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0057
+	Memory Array Mapped Address Handle: 0x0058
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 1
+
+Handle 0x0058, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0053
 	Partition Width: 2
 

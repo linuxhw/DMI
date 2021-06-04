@@ -165,8 +165,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -175,8 +175,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0008, DMI type 7, 19 bytes
@@ -524,7 +524,7 @@ Memory Device
 	Error Information Handle: 0x002B
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -532,10 +532,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5173QH0-YK0  
+	Part Number: RMT3190ME76F8F1600
 	Rank: 1
 	Configured Clock Speed: 1600 MT/s
 
@@ -545,7 +545,7 @@ Memory Device
 	Error Information Handle: 0x002C
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM1
@@ -553,10 +553,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Unknown
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: RMT3190ME76F8F1600
+	Part Number: M471B5173QH0-YK0  
 	Rank: 1
 	Configured Clock Speed: 1600 MT/s
 
@@ -601,8 +601,8 @@ Memory Array Mapped Address
 Handle 0x002F, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0029
 	Memory Array Mapped Address Handle: 0x002E
 	Partition Row Position: Unknown
@@ -612,8 +612,8 @@ Memory Device Mapped Address
 Handle 0x0030, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x002A
 	Memory Array Mapped Address Handle: 0x002E
 	Partition Row Position: Unknown

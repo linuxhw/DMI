@@ -1,7 +1,8 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 57 structures occupying 2331 bytes.
-Table at 0x000EBA00.
+Table at 0x000E9CE0.
 
 Handle 0xDA00, DMI type 218, 245 bytes
 OEM-specific Type
@@ -429,8 +430,8 @@ Memory Device Mapped Address
 
 Handle 0x0021, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0020
 	Memory Array Mapped Address Handle: 0x0022
@@ -441,8 +442,8 @@ Memory Device Mapped Address
 Handle 0x0022, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x001D
 	Partition Width: 2
 
@@ -472,8 +473,8 @@ OEM-specific Type
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: A06
-	Release Date: 05/26/2011
+	Version: A11
+	Release Date: 08/03/2012
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 2048 kB
@@ -500,14 +501,14 @@ BIOS Information
 		ATAPI Zip drive boot is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
-	BIOS Revision: 0.6
-	Firmware Revision: 0.6
+	BIOS Revision: 1.1
+	Firmware Revision: 1.1
 
 Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: Dell Inc.
 	Product Name: 0HVRTT
-	Version: A06
+	Version: A11
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -573,7 +574,7 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: 029E
 	Serial Number: --
 	Asset Tag: --
@@ -593,7 +594,7 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: 029E
 	Serial Number: --
 	Asset Tag: --

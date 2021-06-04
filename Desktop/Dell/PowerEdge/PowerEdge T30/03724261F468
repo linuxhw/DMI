@@ -1,8 +1,8 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 104 structures occupying 4768 bytes.
-Table at 0x000ED9A0.
+Table at 0x000EDA30.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -304,8 +304,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -320,8 +320,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -606,13 +606,13 @@ Handle 0x0040, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT3
 	Type: 32-bit PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 3
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:ff:1f.7
+	Bus Address: 0000:04:00.0
 
 Handle 0x0041, DMI type 9, 17 bytes
 System Slot Information
@@ -718,7 +718,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -742,7 +742,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -766,7 +766,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
@@ -790,7 +790,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4
@@ -861,7 +861,7 @@ Memory Device Mapped Address
 	Interleaved Data Depth: 2
 
 Handle 0x0007, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x1B00, DMI type 27, 15 bytes

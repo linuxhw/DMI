@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-67 structures occupying 2576 bytes.
+69 structures occupying 2593 bytes.
 Table at 0xBAE9C000.
 
 Handle 0x0000, DMI type 134, 16 bytes
@@ -482,19 +482,8 @@ BIOS Language Information
 		en-US
 	Currently Installed Language: en-US
 
-Handle 0x0030, DMI type 22, 26 bytes
-Portable Battery
-	Location: Rear
-	Manufacturer: SANYO
-	Name: 42T4710
-	Design Capacity: 71280 mWh
-	Design Voltage: 10800 mV
-	SBDS Version: 03.01
-	Maximum Error: Unknown
-	SBDS Serial Number: --
-	SBDS Manufacture Date: 2018-07-28
-	SBDS Chemistry: LION
-	OEM-specific Information: 0x00000000
+Handle 0x0030, DMI type 126, 26 bytes
+Inactive
 
 Handle 0x0031, DMI type 126, 26 bytes
 Inactive
@@ -543,14 +532,26 @@ OEM-specific Type
 		00 00 00 FF 00 00 00 00 00 00 00 FF 00 00 00 00
 		00 00 00 06 00 02 01 03 03 FF
 
-Handle 0x0038, DMI type 133, 5 bytes
+Handle 0x0038, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		85 05 38 00 01
+		8C 13 38 00 4C 45 4E 4F 56 4F 0B 05 01 03 00 00
+		00 00 00
+
+Handle 0x0039, DMI type 140, 23 bytes
+OEM-specific Type
+	Header and Data:
+		8C 17 39 00 4C 45 4E 4F 56 4F 0B 06 01 7E 14 00
+		00 00 00 00 00 00 00
+
+Handle 0x003A, DMI type 133, 5 bytes
+OEM-specific Type
+	Header and Data:
+		85 05 3A 00 01
 	Strings:
 		KHOIHGIUCCHHII
 
-Handle 0x0039, DMI type 15, 29 bytes
+Handle 0x003B, DMI type 15, 29 bytes
 System Event Log
 	Area Length: 66 bytes
 	Header Start Offset: 0x0000
@@ -569,58 +570,58 @@ System Event Log
 	Descriptor 3: Multi-bit ECC memory error
 	Data Format 3: Multiple-event
 
-Handle 0x003A, DMI type 140, 67 bytes
+Handle 0x003C, DMI type 140, 67 bytes
 OEM-specific Type
 	Header and Data:
-		8C 43 3A 00 4C 45 4E 4F 56 4F 0B 00 01 59 67 FD
+		8C 43 3C 00 4C 45 4E 4F 56 4F 0B 00 01 59 67 FD
 		B3 78 35 85 0D 07 EC 86 0A 53 C5 02 09 01 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 BA A7 9B 03 76 63 3D E9 48 79 3F 41 EA 7C BC
 		C2 01 00
 
-Handle 0x003B, DMI type 140, 47 bytes
+Handle 0x003D, DMI type 140, 47 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2F 3B 00 4C 45 4E 4F 56 4F 0B 01 01 29 00 52
+		8C 2F 3D 00 4C 45 4E 4F 56 4F 0B 01 01 29 00 52
 		D3 97 C8 75 70 DF E4 0C 92 C7 DD FA E2 07 A0 00
 		00 00 00 10 00 10 00 10 01 D0 00 20 01 00 01
 
-Handle 0x003C, DMI type 140, 63 bytes
+Handle 0x003E, DMI type 140, 63 bytes
 OEM-specific Type
 	Header and Data:
-		8C 3F 3C 00 4C 45 4E 4F 56 4F 0B 02 01 00 00 00
+		8C 3F 3E 00 4C 45 4E 4F 56 4F 0B 02 01 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 
-Handle 0x003D, DMI type 140, 17 bytes
+Handle 0x003F, DMI type 140, 17 bytes
 OEM-specific Type
 	Header and Data:
-		8C 11 3D 00 4C 45 4E 4F 56 4F 0B 03 01 00 00 00
+		8C 11 3F 00 4C 45 4E 4F 56 4F 0B 03 01 00 00 00
 		00
 
-Handle 0x003E, DMI type 140, 19 bytes
+Handle 0x0040, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 3E 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
+		8C 13 40 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
 		53 20 00
 
-Handle 0x003F, DMI type 24, 5 bytes
+Handle 0x0041, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
-Handle 0x0040, DMI type 132, 7 bytes
+Handle 0x0042, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 40 00 01 18 36
+		84 07 42 00 01 18 36
 
-Handle 0x0041, DMI type 135, 18 bytes
+Handle 0x0043, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 41 00 54 50 07 01 01 C9 01 00 00 00 00 00
+		87 12 43 00 54 50 07 01 01 C9 01 00 00 00 00 00
 		00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

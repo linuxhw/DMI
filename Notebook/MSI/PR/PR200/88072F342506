@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 26 structures occupying 1278 bytes.
 Table at 0x000FBB90.
@@ -201,8 +202,8 @@ Memory Module Information
 	Bank Connections: 0 1
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
@@ -293,8 +294,8 @@ Physical Memory Array
 Handle 0x0011, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0010
 	Partition Width: 4
 
@@ -302,15 +303,15 @@ Handle 0x0012, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0010
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
-	Type: Unknown
-	Type Detail: Unknown
+	Type: DDR2
+	Type Detail: Synchronous
 	Speed: Unknown
 	Manufacturer: Manufacturer0
 	Serial Number: --

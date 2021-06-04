@@ -137,7 +137,7 @@ System Information
 	Product Name:                                 
 	Version:                         
 	Serial Number: --
-	UUID: --
+	9690E8C9CCF705671356B7826880E066
 	Wake-up Type: Power Switch
 	SKU Number: Not Specified
 	Family: Not Specified
@@ -164,8 +164,8 @@ Chassis Information
 	Lock: Not Present
 	Version:                         
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148                                 
+	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Other
 	Security Status: Other
@@ -283,44 +283,14 @@ Handle 0x0015, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0014
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2048 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: J6H1
 	Bank Locator: CHAN A DIMM 0
 	Type: DDR2
-	Type Detail: Synchronous
-	Speed: 800 MT/s
-	Manufacturer: 0xAD00000000000000
-	Serial Number: --
-	Asset Tag: --
-	Part Number: 0x4D5050553247425043383030202020202020
-
-Handle 0x0016, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x0015
-	Memory Array Mapped Address Handle: 0x001B
-	Partition Row Position: 1
-	Interleave Position: 1
-	Interleaved Data Depth: 1
-
-Handle 0x0017, DMI type 17, 27 bytes
-Memory Device
-	Array Handle: 0x0014
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: J6H2
-	Bank Locator: CHAN A DIMM 1
-	Type: DDR2
 	Type Detail: None
 	Speed: Unknown
 	Manufacturer: NO DIMM
@@ -328,7 +298,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: NO DIMM
 
-Handle 0x0018, DMI type 17, 27 bytes
+Handle 0x0016, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0014
 	Error Information Handle: Not Provided
@@ -337,8 +307,8 @@ Memory Device
 	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
-	Locator: J6J1
-	Bank Locator: CHAN B DIMM 0
+	Locator: J6H2
+	Bank Locator: CHAN A DIMM 1
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 800 MT/s
@@ -347,18 +317,18 @@ Memory Device
 	Asset Tag: --
 	Part Number: 0x4D5050553247425043383030202020202020
 
-Handle 0x0019, DMI type 20, 19 bytes
+Handle 0x0017, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
 	Range Size: 2 GB
-	Physical Device Handle: 0x0018
+	Physical Device Handle: 0x0016
 	Memory Array Mapped Address Handle: 0x001B
-	Partition Row Position: 2
-	Interleave Position: 2
+	Partition Row Position: 1
+	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x001A, DMI type 17, 27 bytes
+Handle 0x0018, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0014
 	Error Information Handle: Not Provided
@@ -367,8 +337,8 @@ Memory Device
 	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
-	Locator: J6J2
-	Bank Locator: CHAN B DIMM 1
+	Locator: J6J1
+	Bank Locator: CHAN B DIMM 0
 	Type: DDR2
 	Type Detail: None
 	Speed: Unknown
@@ -376,6 +346,36 @@ Memory Device
 	Serial Number: --
 	Asset Tag: --
 	Part Number: NO DIMM
+
+Handle 0x0019, DMI type 17, 27 bytes
+Memory Device
+	Array Handle: 0x0014
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
+	Form Factor: DIMM
+	Set: None
+	Locator: J6J2
+	Bank Locator: CHAN B DIMM 1
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 800 MT/s
+	Manufacturer: 0xAD00000000000000
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 0x4D5050553247425043383030202020202020
+
+Handle 0x001A, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0019
+	Memory Array Mapped Address Handle: 0x001B
+	Partition Row Position: 2
+	Interleave Position: 2
+	Interleaved Data Depth: 1
 
 Handle 0x001B, DMI type 19, 15 bytes
 Memory Array Mapped Address
@@ -388,12 +388,12 @@ Memory Array Mapped Address
 Handle 0x001C, DMI type 187, 9 bytes
 OEM-specific Type
 	Header and Data:
-		BB 09 1C 00 15 00 03 20 03
+		BB 09 1C 00 16 00 03 20 03
 
 Handle 0x001D, DMI type 187, 9 bytes
 OEM-specific Type
 	Header and Data:
-		BB 09 1D 00 18 00 03 20 03
+		BB 09 1D 00 19 00 03 20 03
 
 Handle 0x001E, DMI type 136, 6 bytes
 OEM-specific Type

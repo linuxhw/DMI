@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.2
+Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 25 structures occupying 906 bytes.
 Table at 0x000DC010.
@@ -220,14 +221,14 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: 1
 	Locator: M1
 	Bank Locator: Bank 0
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MHz
+	Speed: 667 MT/s
 	Manufacturer: Mfg 0
 	Serial Number: --
 	Asset Tag: --
@@ -239,14 +240,14 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: 1
 	Locator: M2
 	Bank Locator: Bank 1
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MHz
+	Speed: 667 MT/s
 	Manufacturer: Mfg 1
 	Serial Number: --
 	Asset Tag: --
@@ -255,16 +256,16 @@ Memory Device
 Handle 0x0010, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x000D
 	Partition Width: 2
 
 Handle 0x0011, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x000E
 	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: Unknown
@@ -273,9 +274,9 @@ Memory Device Mapped Address
 
 Handle 0x0012, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 1 GB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x000F
 	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: Unknown
@@ -287,20 +288,14 @@ System Boot Information
 	Status: <OUT OF SPEC>
 
 Handle 0x0014, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 14 00 01 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: No
 
 Handle 0x0015, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 15 00 01 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: No
 
 Handle 0x0016, DMI type 133, 5 bytes
 OEM-specific Type

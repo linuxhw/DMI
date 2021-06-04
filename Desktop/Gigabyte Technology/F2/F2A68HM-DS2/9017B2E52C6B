@@ -352,8 +352,8 @@ Physical Memory Array
 Handle 0x0024, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0023
 	Partition Width: 255
 
@@ -418,12 +418,12 @@ Memory Device
 	Total Width: Unknown
 	Data Width: 64 bits
 	Size: No Module Installed
-	Form Factor: Unknown
+	Form Factor: DIMM
 	Set: None
 	Locator: Node0_Dimm2
 	Bank Locator: Node0_Bank0
 	Type: Unknown
-	Type Detail: None
+	Type Detail: Synchronous
 	Speed: Unknown
 	Manufacturer: Dimm2_Manufacturer
 	Serial Number: --
@@ -439,31 +439,25 @@ Handle 0x002B, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0023
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
+	Total Width: Unknown
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: Node0_Dimm3
 	Bank Locator: Node0_Bank0
-	Type: DDR3
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1600 MT/s
-	Manufacturer: Undefined         
+	Type: Unknown
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: Dimm3_Manufacturer
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F3-12800CL9-4
-	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Part Number: Dimm3_PartNum
+	Rank: Unknown
+	Configured Clock Speed: Unknown
 
-Handle 0x002C, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x002B
-	Memory Array Mapped Address Handle: 0x0024
-	Partition Row Position: 1
+Handle 0x002C, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x002D, DMI type 32, 20 bytes
 System Boot Information
@@ -509,7 +503,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0039, DMI type 4, 42 bytes
+Handle 0x0035, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: P0
 	Type: Central Processor
@@ -560,7 +554,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x003A, DMI type 13, 22 bytes
+Handle 0x0036, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 7
@@ -573,6 +567,6 @@ BIOS Language Information
 		zh|CT|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x003E, DMI type 127, 4 bytes
+Handle 0x003A, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
-33 structures occupying 1024 bytes.
+33 structures occupying 1027 bytes.
 Table at 0x000F0100.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -76,41 +76,11 @@ Processor Information
 	Family: Other
 	Manufacturer: Intel
 	ID: 7A 06 01 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 23, Stepping 10
-	Flags:
-		FPU (Floating-point unit on-chip)
-		VME (Virtual mode extension)
-		DE (Debugging extension)
-		PSE (Page size extension)
-		TSC (Time stamp counter)
-		MSR (Model specific registers)
-		PAE (Physical address extension)
-		MCE (Machine check exception)
-		CX8 (CMPXCHG8 instruction supported)
-		APIC (On-chip APIC hardware supported)
-		SEP (Fast system call)
-		MTRR (Memory type range registers)
-		PGE (Page global enable)
-		MCA (Machine check architecture)
-		CMOV (Conditional move instruction supported)
-		PAT (Page attribute table)
-		PSE-36 (36-bit page size extension)
-		CLFSH (CLFLUSH instruction supported)
-		DS (Debug store)
-		ACPI (ACPI supported)
-		MMX (MMX technology supported)
-		FXSR (FXSAVE and FXSTOR instructions supported)
-		SSE (Streaming SIMD extensions)
-		SSE2 (Streaming SIMD extensions 2)
-		SS (Self-snoop)
-		HTT (Multi-threading)
-		TM (Thermal monitor supported)
-		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM)2 Duo CPU 
-	Voltage: 1.3 V
+	Version: Intel(R) Xeon(R) CPU E5450 
+	Voltage: 1.2 V
 	External Clock: 333 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 3166 MHz
+	Current Speed: 2833 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket 478
 	L1 Cache Handle: 0x0008
@@ -146,8 +116,8 @@ Memory Module Information
 	Bank Connections: 1
 	Current Speed: Unknown
 	Type: Other
-	Installed Size: 1024 MB (Single-bank Connection)
-	Enabled Size: 1024 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -252,7 +222,7 @@ Handle 0x0011, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: PS/2 Mouse
 	Internal Connector Type: PS/2
-	External Reference Designator: Detected
+	External Reference Designator: No Detected
 	External Connector Type: PS/2
 	Port Type: Mouse Port
 
@@ -348,7 +318,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
@@ -383,24 +353,24 @@ Memory Device
 Handle 0x001C, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0019
 	Partition Width: 1
 
 Handle 0x001D, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x001A
 	Memory Array Mapped Address Handle: 0x001C
 	Partition Row Position: 1
 
 Handle 0x001E, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x000BFFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x001B
 	Memory Array Mapped Address Handle: 0x001C

@@ -1,7 +1,6 @@
-# dmidecode 2.12
+# dmidecode 3.2
+Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-# SMBIOS implementations newer than version 2.7 are not
-# fully supported by this version of dmidecode.
 87 structures occupying 3844 bytes.
 Table at 0x000EC2B0.
 
@@ -12,7 +11,7 @@ BIOS Information
 	Release Date: 10/09/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		APM is supported
@@ -631,23 +630,23 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A1
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX1600C10D3/8G   
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
-	Minimum voltage:  1.500 V
-	Maximum voltage:  1.500 V
-	Configured voltage:  1.500 V
+	Configured Memory Speed: 1600 MT/s
+	Minimum Voltage: 1.5 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: 1.5 V
 
 Handle 0x0042, DMI type 17, 40 bytes
 Memory Device
@@ -668,10 +667,10 @@ Memory Device
 	Asset Tag: --
 	Part Number: [Empty]
 	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
 Handle 0x0043, DMI type 17, 40 bytes
 Memory Device
@@ -679,23 +678,23 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B1
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX1600C10D3/8G   
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
-	Minimum voltage:  1.500 V
-	Maximum voltage:  1.500 V
-	Configured voltage:  1.500 V
+	Configured Memory Speed: 1600 MT/s
+	Minimum Voltage: 1.5 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: 1.5 V
 
 Handle 0x0044, DMI type 17, 40 bytes
 Memory Device
@@ -716,10 +715,10 @@ Memory Device
 	Asset Tag: --
 	Part Number: [Empty]
 	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
 Handle 0x0045, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -751,7 +750,112 @@ Memory Device Mapped Address
 	Interleave Position: 2
 	Interleaved Data Depth: 2
 
-Handle 0x0052, DMI type 4, 42 bytes
+Handle 0x0052, DMI type 136, 6 bytes
+OEM-specific Type
+	Header and Data:
+		88 06 52 00 00 00
+
+Handle 0x0053, DMI type 13, 22 bytes
+BIOS Language Information
+	Language Description Format: Long
+	Installable Languages: 3
+		en|US|iso8859-1
+		fr|FR|iso8859-1
+		zh|CN|unicode
+	Currently Installed Language: en|US|iso8859-1
+
+Handle 0x0055, DMI type 221, 12 bytes
+OEM-specific Type
+	Header and Data:
+		DD 0C 55 00 01 01 00 02 00 00 00 00
+	Strings:
+		Reference Code - ACPI
+
+Handle 0x0056, DMI type 221, 26 bytes
+OEM-specific Type
+	Header and Data:
+		DD 1A 56 00 03 01 00 02 00 00 00 00 02 00 00 00
+		00 19 00 03 00 00 05 00 00 00
+	Strings:
+		Reference Code - CPU
+		uCode Version
+		TXT ACM version
+
+Handle 0x0057, DMI type 221, 68 bytes
+OEM-specific Type
+	Header and Data:
+		DD 44 57 00 09 01 00 02 00 00 00 00 02 03 FF FF
+		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
+		00 06 00 FF FF FF FF FF 07 00 19 00 00 00 00 08
+		00 2C 00 00 00 00 09 00 03 00 00 00 00 0A 00 01
+		00 00 00 00
+	Strings:
+		Reference Code - PCH - Lynxpoint
+		PCH-CRID Status
+		Disabled
+		PCH-CRID Original Value
+		PCH-CRID New Value
+		OPROM - RST - RAID
+		LPTLp Bx Hsio Version
+		LPTH Cx Hsio Version
+		PCH9S A0 Hsio Version
+		WPTLp B0 Hsio Version
+
+Handle 0x0058, DMI type 221, 26 bytes
+OEM-specific Type
+	Header and Data:
+		DD 1A 58 00 03 01 00 02 00 00 00 00 02 00 FF FF
+		FF FF 00 03 04 09 01 0A ED 03
+	Strings:
+		Reference Code - ME 10.0
+		MEBx version
+		ME Firmware Version
+		1.5MB SKU
+
+Handle 0x0059, DMI type 221, 54 bytes
+OEM-specific Type
+	Header and Data:
+		DD 36 59 00 07 01 00 02 00 00 00 00 02 00 01 08
+		00 00 00 03 00 02 00 00 00 00 04 05 FF FF FF FF
+		FF 06 00 FF FF FF 06 00 07 00 FF FF FF 06 00 08
+		00 FF FF FF 30 10
+	Strings:
+		Reference Code - SA - System Agent
+		Reference Code - MRC
+		SA - PCIe Version
+		SA-CRID Status
+		Disabled
+		SA-CRID Original Value
+		SA-CRID New Value
+		OPROM - VBIOS
+
+Handle 0x005A, DMI type 221, 12 bytes
+OEM-specific Type
+	Header and Data:
+		DD 0C 5A 00 01 01 00 02 00 00 00 00
+	Strings:
+		Reference Code - Intel Rapid Start
+
+Handle 0x005B, DMI type 14, 23 bytes
+Group Associations
+	Name: Firmware Version Info
+	Items: 6
+		0x0055 (OEM-specific)
+		0x0056 (OEM-specific)
+		0x0057 (OEM-specific)
+		0x0058 (OEM-specific)
+		0x0059 (OEM-specific)
+		0x005A (OEM-specific)
+
+Handle 0x005C, DMI type 131, 64 bytes
+OEM-specific Type
+	Header and Data:
+		83 40 5C 00 14 00 00 00 00 00 00 00 00 00 00 00
+		F8 00 00 00 00 00 00 00 01 00 00 00 01 00 09 00
+		ED 03 0A 00 00 00 00 00 C8 00 00 00 00 00 00 00
+		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
+
+Handle 0x005D, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: SOCKET 1150
 	Type: Central Processor
@@ -765,9 +869,9 @@ Processor Information
 	Current Speed: 3600 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
-	L1 Cache Handle: 0x0053
-	L2 Cache Handle: 0x0054
-	L3 Cache Handle: 0x0055
+	L1 Cache Handle: 0x005E
+	L2 Cache Handle: 0x005F
+	L3 Cache Handle: 0x0060
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Fill By OEM
@@ -777,7 +881,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0053, DMI type 7, 19 bytes
+Handle 0x005E, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L1
 	Configuration: Enabled, Not Socketed, Level 1
@@ -793,14 +897,14 @@ Cache Information
 	System Type: Other
 	Associativity: 8-way Set-associative
 
-Handle 0x0054, DMI type 7, 19 bytes
+Handle 0x005F, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L2
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -809,14 +913,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0055, DMI type 7, 19 bytes
+Handle 0x0060, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L3
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -824,111 +928,6 @@ Cache Information
 	Error Correction Type: Multi-bit ECC
 	System Type: Unified
 	Associativity: 16-way Set-associative
-
-Handle 0x0057, DMI type 136, 6 bytes
-OEM-specific Type
-	Header and Data:
-		88 06 57 00 00 00
-
-Handle 0x0058, DMI type 13, 22 bytes
-BIOS Language Information
-	Language Description Format: Long
-	Installable Languages: 3
-		en|US|iso8859-1
-		fr|FR|iso8859-1
-		zh|CN|unicode
-	Currently Installed Language: en|US|iso8859-1
-
-Handle 0x005A, DMI type 221, 12 bytes
-OEM-specific Type
-	Header and Data:
-		DD 0C 5A 00 01 01 00 02 00 00 00 00
-	Strings:
-		Reference Code - ACPI
-
-Handle 0x005B, DMI type 221, 26 bytes
-OEM-specific Type
-	Header and Data:
-		DD 1A 5B 00 03 01 00 02 00 00 00 00 02 00 00 00
-		00 19 00 03 00 00 05 00 00 00
-	Strings:
-		Reference Code - CPU
-		uCode Version
-		TXT ACM version
-
-Handle 0x005C, DMI type 221, 68 bytes
-OEM-specific Type
-	Header and Data:
-		DD 44 5C 00 09 01 00 02 00 00 00 00 02 03 FF FF
-		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
-		00 06 00 0D 00 00 00 00 07 00 19 00 00 00 00 08
-		00 2C 00 00 00 00 09 00 03 00 00 00 00 0A 00 01
-		00 00 00 00
-	Strings:
-		Reference Code - PCH - Lynxpoint
-		PCH-CRID Status
-		Disabled
-		PCH-CRID Original Value
-		PCH-CRID New Value
-		OPROM - RST - RAID
-		LPTLp Bx Hsio Version
-		LPTH Cx Hsio Version
-		PCH9S A0 Hsio Version
-		WPTLp B0 Hsio Version
-
-Handle 0x005D, DMI type 221, 26 bytes
-OEM-specific Type
-	Header and Data:
-		DD 1A 5D 00 03 01 00 02 00 00 00 00 02 00 FF FF
-		FF FF 00 03 04 09 01 0A ED 03
-	Strings:
-		Reference Code - ME 10.0
-		MEBx version
-		ME Firmware Version
-		1.5MB SKU
-
-Handle 0x005E, DMI type 221, 54 bytes
-OEM-specific Type
-	Header and Data:
-		DD 36 5E 00 07 01 00 02 00 00 00 00 02 00 01 08
-		00 00 00 03 00 02 00 00 00 00 04 05 FF FF FF FF
-		FF 06 00 FF FF FF 06 00 07 00 FF FF FF 06 00 08
-		00 FF FF FF 30 10
-	Strings:
-		Reference Code - SA - System Agent
-		Reference Code - MRC
-		SA - PCIe Version
-		SA-CRID Status
-		Disabled
-		SA-CRID Original Value
-		SA-CRID New Value
-		OPROM - VBIOS
-
-Handle 0x005F, DMI type 221, 12 bytes
-OEM-specific Type
-	Header and Data:
-		DD 0C 5F 00 01 01 00 02 00 00 00 00
-	Strings:
-		Reference Code - Intel Rapid Start
-
-Handle 0x0060, DMI type 14, 23 bytes
-Group Associations
-	Name: Firmware Version Info
-	Items: 6
-		0x005A (<OUT OF SPEC>)
-		0x005B (<OUT OF SPEC>)
-		0x005C (<OUT OF SPEC>)
-		0x005D (<OUT OF SPEC>)
-		0x005E (<OUT OF SPEC>)
-		0x005F (<OUT OF SPEC>)
-
-Handle 0x0061, DMI type 131, 64 bytes
-OEM-specific Type
-	Header and Data:
-		83 40 61 00 14 00 00 00 00 00 00 00 00 00 00 00
-		F8 00 00 00 00 00 00 00 01 00 00 00 01 00 09 00
-		ED 03 0A 00 00 00 00 00 C8 00 00 00 00 00 00 00
-		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0062, DMI type 127, 4 bytes
 End Of Table

@@ -93,8 +93,8 @@ OEM-specific Type
 Handle 0x0007, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 07 00 03 01 00 07 00 5C 50 00 02 00 00 00
-		00 B8 00 03 00 01 05 00 00 00
+		DD 1A 07 00 03 01 00 07 00 68 40 00 02 00 00 00
+		00 CA 00 03 00 01 06 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -103,8 +103,8 @@ OEM-specific Type
 Handle 0x0008, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 08 00 03 01 00 07 00 5C 50 00 02 00 0C 00
-		00 0A 00 03 04 0C 00 23 93 05
+		DD 1A 08 00 03 01 00 07 00 68 40 00 02 00 0C 00
+		00 0A 00 03 04 0C 00 2F F4 05
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -114,7 +114,7 @@ OEM-specific Type
 Handle 0x0009, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 09 00 0B 01 00 07 00 5C 50 00 02 03 FF FF
+		DD 52 09 00 0B 01 00 07 00 68 40 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 30 00 05 00 FF FF FF 11
 		00 06 00 02 0A 00 00 00 07 00 02 00 00 00 00 08
 		00 09 00 00 00 00 09 00 0A 00 00 00 00 0A 00 07
@@ -137,8 +137,8 @@ OEM-specific Type
 Handle 0x000A, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 0A 00 07 01 00 07 00 5C 50 00 02 00 00 07
-		01 67 00 03 00 07 00 5C 50 00 04 05 FF FF FF FF
+		DD 36 0A 00 07 01 00 07 00 68 40 00 02 00 00 07
+		01 6E 00 03 00 07 00 68 40 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 0C 00 07 00 00 00 00 0C 00 08
 		00 FF FF FF FF FF
 	Strings:
@@ -275,8 +275,8 @@ OEM-specific Type
 Handle 0x0011, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: N2HET31W (1.14 )
-	Release Date: 07/23/2019
+	Version: N2HET43W (1.26 )
+	Release Date: 12/09/2019
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -299,8 +299,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.14
-	Firmware Revision: 1.5
+	BIOS Revision: 1.26
+	Firmware Revision: 1.12
 
 Handle 0x0012, DMI type 1, 27 bytes
 System Information
@@ -434,34 +434,24 @@ Inactive
 
 Handle 0x0026, DMI type 9, 17 bytes
 System Slot Information
-	Designation: Media Card Slot
-	Type: Other
-	Current Usage: Available
-	Length: Other
-	Characteristics:
-		Hot-plug devices are supported
-	Bus Address: 0000:00:00.0
-
-Handle 0x0027, DMI type 9, 17 bytes
-System Slot Information
 	Designation: SimCard Slot
 	Type: Other
 	Current Usage: Available
 	Length: Other
 	Characteristics: None
-	Bus Address: 0000:00:00.0
+	Bus Address: 00ff:ff:1f.7
 
-Handle 0x0028, DMI type 12, 5 bytes
+Handle 0x0027, DMI type 12, 5 bytes
 System Configuration Options
 
-Handle 0x0029, DMI type 13, 22 bytes
+Handle 0x0028, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 1
 		en-US
 	Currently Installed Language: en-US
 
-Handle 0x002A, DMI type 22, 26 bytes
+Handle 0x0029, DMI type 22, 26 bytes
 Portable Battery
 	Location: Front
 	Manufacturer: LGC
@@ -475,57 +465,57 @@ Portable Battery
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000000
 
-Handle 0x002B, DMI type 126, 26 bytes
+Handle 0x002A, DMI type 126, 26 bytes
 Inactive
 
-Handle 0x002C, DMI type 140, 15 bytes
+Handle 0x002B, DMI type 140, 15 bytes
 OEM-specific Type
 	Header and Data:
-		8C 0F 2C 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
+		8C 0F 2B 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
 	Strings:
-		1.14 
-		1.03 
+		1.26 
+		1.25 
 
-Handle 0x002D, DMI type 133, 5 bytes
+Handle 0x002C, DMI type 133, 5 bytes
 OEM-specific Type
 	Header and Data:
-		85 05 2D 00 01
+		85 05 2C 00 01
 	Strings:
 		KHOIHGIUCCHHII
 
-Handle 0x002E, DMI type 135, 19 bytes
+Handle 0x002D, DMI type 135, 19 bytes
 OEM-specific Type
 	Header and Data:
-		87 13 2E 00 54 50 07 02 42 41 59 20 49 2F 4F 20
+		87 13 2D 00 54 50 07 02 42 41 59 20 49 2F 4F 20
 		04 00 00
 
-Handle 0x002F, DMI type 130, 20 bytes
+Handle 0x002E, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 2F 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
+		82 14 2E 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
 		C0 00 00 00
 
-Handle 0x0030, DMI type 131, 64 bytes
+Handle 0x002F, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 30 00 31 00 00 00 0C 00 00 00 00 00 0A 00
+		83 40 2F 00 31 00 00 00 0C 00 00 00 00 00 0A 00
 		F8 00 84 9D 00 00 00 00 01 00 00 00 00 00 0C 00
-		93 05 23 00 00 00 00 00 FE 00 BE 15 00 00 00 00
+		F4 05 2F 00 00 00 00 00 FE 00 BE 15 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0031, DMI type 24, 5 bytes
+Handle 0x0030, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
-Handle 0x0032, DMI type 132, 7 bytes
+Handle 0x0031, DMI type 132, 8 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 32 00 01 D8 36
+		84 08 31 00 02 D8 36 00
 
-Handle 0x0033, DMI type 18, 23 bytes
+Handle 0x0032, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -535,29 +525,29 @@ Handle 0x0033, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0034, DMI type 21, 7 bytes
+Handle 0x0033, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Track Point
 	Interface: PS/2
 	Buttons: 3
 
-Handle 0x0035, DMI type 21, 7 bytes
+Handle 0x0034, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Touch Pad
-	Interface: PS/2
+	Interface: Other
 	Buttons: 2
 
-Handle 0x0036, DMI type 131, 22 bytes
+Handle 0x0035, DMI type 131, 22 bytes
 ThinkVantage Technologies
 	Version: 1
 	Diagnostics: No
 
-Handle 0x0037, DMI type 136, 6 bytes
+Handle 0x0036, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 37 00 5A 5A
+		88 06 36 00 5A 5A
 
-Handle 0x0038, DMI type 15, 31 bytes
+Handle 0x0037, DMI type 15, 31 bytes
 System Event Log
 	Area Length: 1298 bytes
 	Header Start Offset: 0x0000
@@ -578,34 +568,34 @@ System Event Log
 	Descriptor 4: Log area reset/cleared
 	Data Format 4: None
 
+Handle 0x0038, DMI type 140, 19 bytes
+OEM-specific Type
+	Header and Data:
+		8C 13 38 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
+		53 20 00
+
 Handle 0x0039, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 39 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
-		53 20 00
-
-Handle 0x003A, DMI type 140, 19 bytes
-OEM-specific Type
-	Header and Data:
-		8C 13 3A 00 4C 45 4E 4F 56 4F 0B 05 01 07 00 00
+		8C 13 39 00 4C 45 4E 4F 56 4F 0B 05 01 07 00 00
 		00 00 00
 
-Handle 0x003B, DMI type 140, 23 bytes
+Handle 0x003A, DMI type 140, 23 bytes
 OEM-specific Type
 	Header and Data:
-		8C 17 3B 00 4C 45 4E 4F 56 4F 0B 06 01 CB 06 51
-		04 01 60 00 00 00 00
+		8C 17 3A 00 4C 45 4E 4F 56 4F 0B 06 01 CB 06 51
+		74 01 60 00 00 00 00
 
-Handle 0x003C, DMI type 14, 8 bytes
+Handle 0x003B, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x003D, DMI type 219, 106 bytes
+Handle 0x003C, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 3D 00 01 04 01 45 02 00 A0 06 01 85 30 20
+		DB 6A 3C 00 01 04 01 45 02 00 90 06 01 85 30 20
 		00 00 00 00 40 00 00 01 1F 00 00 C9 0A 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -618,22 +608,22 @@ OEM-specific Type
 		MEI3
 		MEI4
 
-Handle 0x003E, DMI type 140, 15 bytes
+Handle 0x003D, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: N2HHT22W
-	Release Date: 07/09/2019
+	Version ID: N2HHT29W
+	Release Date: 12/19/2019
 
-Handle 0x003F, DMI type 140, 43 bytes
+Handle 0x003E, DMI type 140, 43 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2B 3F 00 4C 45 4E 4F 56 4F 0B 08 01 03 19 08
-		08 19 34 03 19 08 08 19 33 03 19 08 08 14 03 03
-		19 08 08 13 54 03 19 08 08 13 29
+		8C 2B 3E 00 4C 45 4E 4F 56 4F 0B 08 01 03 20 01
+		21 13 57 03 20 01 06 18 52 03 20 01 06 18 49 03
+		20 01 06 18 45 03 20 01 02 22 39
 
-Handle 0x0040, DMI type 135, 18 bytes
+Handle 0x003F, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 40 00 54 50 07 01 01 00 00 00 00 00 00 00
+		87 12 3F 00 54 50 07 01 01 00 00 00 00 00 00 00
 		00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

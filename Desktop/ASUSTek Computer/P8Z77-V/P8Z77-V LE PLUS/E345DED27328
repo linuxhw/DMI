@@ -993,23 +993,23 @@ OEM-specific Type
 Handle 0x0062, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0063
-	Error Information Handle: 0x0066
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Error Information Handle: 0x0067
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MHz
+	Manufacturer: 859B
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: CT51264BA160B.D16F
+	Rank: 2
+	Configured Clock Speed: 1600 MHz
 
 Handle 0x0063, DMI type 16, 23 bytes
 Physical Memory Array
@@ -1030,59 +1030,28 @@ Handle 0x0064, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0065, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x0063
-	Error Information Handle: No Error
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4096 MB
-	Form Factor: DIMM
-	Set: None
-	Locator: ChannelA-DIMM1
-	Bank Locator: BANK 1
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1600 MHz
-	Manufacturer: 859B
-	Serial Number: --
-	Asset Tag: --
-	Part Number: CT51264BA160B.D16F
-	Rank: 2
-	Configured Clock Speed: 1600 MHz
-
-Handle 0x0066, DMI type 18, 23 bytes
-32-bit Memory Error Information
-	Type: OK
-	Granularity: Unknown
-	Operation: Unknown
-	Vendor Syndrome: Unknown
-	Memory Array Address: Unknown
-	Device Address: Unknown
-	Resolution: Unknown
-
-Handle 0x0067, DMI type 20, 35 bytes
+Handle 0x0065, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0065
+	Physical Device Handle: 0x0062
 	Memory Array Mapped Address Handle: 0x006D
 	Partition Row Position: Unknown
 	Interleave Position: 1
 	Interleaved Data Depth: 2
 
-Handle 0x0068, DMI type 17, 34 bytes
+Handle 0x0066, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0063
-	Error Information Handle: 0x0069
+	Error Information Handle: No Error
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
-	Locator: ChannelB-DIMM0
-	Bank Locator: BANK 2
+	Locator: ChannelA-DIMM1
+	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
 	Speed: Unknown
@@ -1092,6 +1061,37 @@ Memory Device
 	Part Number: [Empty]
 	Rank: Unknown
 	Configured Clock Speed: Unknown
+
+Handle 0x0067, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0068, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x0063
+	Error Information Handle: 0x0069
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelB-DIMM0
+	Bank Locator: BANK 2
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MHz
+	Manufacturer: 859B
+	Serial Number: --
+	Asset Tag: --
+	Part Number: CT51264BA160B.D16F
+	Rank: 2
+	Configured Clock Speed: 1600 MHz
 
 Handle 0x0069, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -1103,28 +1103,39 @@ Handle 0x0069, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x006A, DMI type 17, 34 bytes
+Handle 0x006A, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0068
+	Memory Array Mapped Address Handle: 0x006D
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x006B, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0063
 	Error Information Handle: No Error
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4096 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 3
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1600 MHz
-	Manufacturer: 859B
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: [Empty]
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT51264BA160B.D16F
-	Rank: 2
-	Configured Clock Speed: 1600 MHz
+	Part Number: [Empty]
+	Rank: Unknown
+	Configured Clock Speed: Unknown
 
-Handle 0x006B, DMI type 18, 23 bytes
+Handle 0x006C, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -1133,17 +1144,6 @@ Handle 0x006B, DMI type 18, 23 bytes
 	Memory Array Address: Unknown
 	Device Address: Unknown
 	Resolution: Unknown
-
-Handle 0x006C, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x006A
-	Memory Array Mapped Address Handle: 0x006D
-	Partition Row Position: Unknown
-	Interleave Position: 2
-	Interleaved Data Depth: 2
 
 Handle 0x006D, DMI type 19, 31 bytes
 Memory Array Mapped Address

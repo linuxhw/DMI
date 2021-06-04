@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 81 structures occupying 2512 bytes.
 Table at 0x000FBC80.
@@ -72,8 +73,8 @@ Chassis Information
 	Lock: Not Present
 	Version:  
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -130,8 +131,8 @@ Processor Information
 	L2 Cache Handle: 0x0006
 	L3 Cache Handle: 0x0007
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 	Core Count: 4
 	Core Enabled: 4
 	Thread Count: 4
@@ -215,8 +216,8 @@ Memory Module Information
 	Bank Connections: 0 1
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
@@ -225,8 +226,8 @@ Memory Module Information
 	Bank Connections: 2 3
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: 1024 MB (Double-bank Connection)
-	Enabled Size: 1024 MB (Double-bank Connection)
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x000B, DMI type 6, 12 bytes
@@ -235,8 +236,8 @@ Memory Module Information
 	Bank Connections: 4 5
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: 2048 MB (Double-bank Connection)
-	Enabled Size: 2048 MB (Double-bank Connection)
+	Installed Size: 1024 MB (Double-bank Connection)
+	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000C, DMI type 6, 12 bytes
@@ -636,15 +637,15 @@ Handle 0x0038, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0035
 	Error Information Handle: 0x0039
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
-	Type: Unknown
-	Type Detail: Unknown
+	Type: SDRAM
+	Type Detail: Synchronous
 	Speed: Unknown
 	Manufacturer: Manufacturer00
 	Serial Number: --
@@ -664,8 +665,8 @@ Handle 0x0039, DMI type 18, 23 bytes
 Handle 0x003A, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0038
 	Memory Array Mapped Address Handle: 0x0037
 	Partition Row Position: 1
@@ -675,15 +676,15 @@ Handle 0x003B, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0035
 	Error Information Handle: 0x003C
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 1024 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: SDRAM
-	Type Detail: Synchronous
+	Type: Unknown
+	Type Detail: Unknown
 	Speed: Unknown
 	Manufacturer: Manufacturer01
 	Serial Number: --
@@ -703,8 +704,8 @@ Handle 0x003C, DMI type 18, 23 bytes
 Handle 0x003D, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
 	Physical Device Handle: 0x003B
 	Memory Array Mapped Address Handle: 0x0037
 	Partition Row Position: 1
@@ -716,7 +717,7 @@ Memory Device
 	Error Information Handle: 0x003F
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -741,9 +742,9 @@ Handle 0x003F, DMI type 18, 23 bytes
 
 Handle 0x0040, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
+	Starting Address: 0x00080000000
 	Ending Address: 0x000BFFFFFFF
-	Range Size: 2 GB
+	Range Size: 1 GB
 	Physical Device Handle: 0x003E
 	Memory Array Mapped Address Handle: 0x0037
 	Partition Row Position: 1

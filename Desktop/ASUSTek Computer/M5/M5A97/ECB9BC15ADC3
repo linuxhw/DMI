@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 55 structures occupying 2517 bytes.
 Table at 0x000EED90.
@@ -10,7 +11,7 @@ BIOS Information
 	Release Date: 10/25/2012
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -84,6 +85,31 @@ Processor Information
 	Family: FX
 	Manufacturer: AMD              
 	ID: 20 0F 60 00 FF FB 8B 17
+	Signature: Family 21, Model 2, Stepping 0
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
 	Version: AMD FX(tm)-8350 Eight-Core Processor           
 	Voltage: 1.4 V
 	External Clock: 200 MHz
@@ -125,8 +151,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -141,8 +167,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -435,7 +461,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Array1_PartNumber0
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0029, DMI type 126, 35 bytes
 Inactive
@@ -446,20 +472,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer1
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Array1_PartNumber1
 	Rank: Unknown
-	Configured Clock Speed: 667 MHz
+	Configured Memory Speed: 667 MT/s
 
 Handle 0x002B, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -491,7 +517,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Array1_PartNumber2
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x002D, DMI type 126, 35 bytes
 Inactive
@@ -502,20 +528,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer3
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Array1_PartNumber3
 	Rank: Unknown
-	Configured Clock Speed: 667 MHz
+	Configured Memory Speed: 667 MT/s
 
 Handle 0x002F, DMI type 20, 35 bytes
 Memory Device Mapped Address

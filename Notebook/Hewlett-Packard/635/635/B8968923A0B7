@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-42 structures occupying 1718 bytes.
+44 structures occupying 1838 bytes.
 Table at 0x000E3FF0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -159,12 +159,12 @@ Portable Battery
 	Manufacturer: 13-42
 	Name: MU06047
 	Chemistry: Lithium Ion
-	Design Capacity: Unknown
-	Design Voltage: Unknown
+	Design Capacity: 47000 mWh
+	Design Voltage: 10800 mV
 	SBDS Version: v1.1
 	Maximum Error: 7%
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 1980-00-00
+	SBDS Manufacture Date: 2011-05-12
 	OEM-specific Information: 0x0000FFFF
 
 Handle 0x000B, DMI type 26, 22 bytes
@@ -325,35 +325,54 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 2 GB
-	Error Information Handle: 0x0023
+	Maximum Capacity: 4 GB
+	Error Information Handle: 0x0025
 	Number Of Devices: 2
 
 Handle 0x001F, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x001E
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Error Information Handle: 0x0020
+	Total Width: 64 bits
+	Data Width: 8 bits
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Ramaxel Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: 8
-	Configured Clock Speed: Unknown
+	Part Number: RMT3020EF48E8W1333
+	Rank: 2
+	Configured Clock Speed: 667 MT/s
 
-Handle 0x0020, DMI type 17, 34 bytes
+Handle 0x0020, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0021, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x001F
+	Memory Array Mapped Address Handle: 0x0026
+	Partition Row Position: 1
+
+Handle 0x0022, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x001E
-	Error Information Handle: 0x0021
+	Error Information Handle: 0x0023
 	Total Width: 64 bits
 	Data Width: 8 bits
 	Size: 2048 MB
@@ -364,31 +383,12 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Ramaxel Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5773DH0-CH9  
-	Rank: 1
+	Part Number: RMT3020EF48E8W1333
+	Rank: 2
 	Configured Clock Speed: 667 MT/s
-
-Handle 0x0021, DMI type 18, 23 bytes
-32-bit Memory Error Information
-	Type: OK
-	Granularity: Unknown
-	Operation: Unknown
-	Vendor Syndrome: Unknown
-	Memory Array Address: Unknown
-	Device Address: Unknown
-	Resolution: Unknown
-
-Handle 0x0022, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x0020
-	Memory Array Mapped Address Handle: 0x0024
-	Partition Row Position: 1
 
 Handle 0x0023, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -400,15 +400,34 @@ Handle 0x0023, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0024, DMI type 19, 31 bytes
+Handle 0x0024, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0022
+	Memory Array Mapped Address Handle: 0x0026
+	Partition Row Position: 1
+
+Handle 0x0025, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0026, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x001E
 	Partition Width: 2
 
-Handle 0x0025, DMI type 4, 42 bytes
+Handle 0x0027, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: Socket FT1
 	Type: Central Processor
@@ -447,8 +466,8 @@ Processor Information
 	Current Speed: 1650 MHz
 	Status: Populated, Enabled
 	Upgrade: None
-	L1 Cache Handle: 0x0026
-	L2 Cache Handle: 0x0027
+	L1 Cache Handle: 0x0028
+	L2 Cache Handle: 0x0029
 	L3 Cache Handle: Not Provided
 	Serial Number: --
 	Asset Tag: --
@@ -459,7 +478,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0026, DMI type 7, 19 bytes
+Handle 0x0028, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -475,7 +494,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 2-way Set-associative
 
-Handle 0x0027, DMI type 7, 19 bytes
+Handle 0x0029, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -491,7 +510,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0028, DMI type 41, 11 bytes
+Handle 0x002A, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Atheros AR3011 Bluetooth 2.1+EDR  Adapter
 	Type: Other
@@ -499,6 +518,6 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:07:00.0
 
-Handle 0x0029, DMI type 127, 4 bytes
+Handle 0x002B, DMI type 127, 4 bytes
 End Of Table
 

@@ -6,8 +6,8 @@ Table at 0x000E0000.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.12.1
-	Release Date: 05/09/2019
+	Version: 1.15.0
+	Release Date: 10/19/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -32,7 +32,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.12
+	BIOS Revision: 1.15
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -660,7 +660,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 19 07 03 06 36 01 00 00
+		DE 10 00 DE 01 04 00 00 21 01 23 18 04 01 00 00
 
 Handle 0xF01F, DMI type 218, 41 bytes
 OEM-specific Type
@@ -680,14 +680,14 @@ OEM-specific Type
 	Header and Data:
 		83 40 21 F0 31 00 00 00 0B 00 00 00 00 00 0A 00
 		F8 00 C6 A2 00 00 00 00 01 00 00 00 08 00 0B 00
-		06 0E 41 00 00 00 00 00 FE 00 D6 15 00 00 00 00
+		C5 0E 51 00 00 00 00 00 FE 00 D6 15 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0xF022, DMI type 237, 26 bytes
 OEM-specific Type
 	Header and Data:
 		ED 1A 22 F0 03 01 00 01 09 00 00 00 02 00 00 00
-		00 C6 00 03 00 00 05 00 00 00
+		00 E2 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -697,7 +697,7 @@ Handle 0xF023, DMI type 237, 26 bytes
 OEM-specific Type
 	Header and Data:
 		ED 1A 23 F0 03 01 00 01 09 00 00 00 02 00 0B 00
-		00 0A 00 03 04 0B 08 41 06 0E
+		00 0A 00 03 04 0B 08 51 C5 0E
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
@@ -772,12 +772,12 @@ OEM-specific Type
 		BP1.3.3.0_RP01
 		Platform Version
 
-Handle 0xF030, DMI type 136, 6 bytes
+Handle 0xF02D, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 30 F0 5A 5A
+		88 06 2D F0 5A 5A
 
-Handle 0xF031, DMI type 14, 20 bytes
+Handle 0xF02E, DMI type 14, 20 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 5
@@ -787,7 +787,7 @@ Group Associations
 		0xF025 (OEM-specific)
 		0xF026 (OEM-specific)
 
-Handle 0xF032, DMI type 13, 22 bytes
+Handle 0xF02F, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 2
@@ -795,16 +795,16 @@ BIOS Language Information
 		<BAD INDEX>
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0xF033, DMI type 14, 8 bytes
+Handle 0xF030, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0xF034, DMI type 235, 81 bytes
+Handle 0xF031, DMI type 235, 81 bytes
 OEM-specific Type
 	Header and Data:
-		EB 51 34 F0 01 03 01 45 02 00 90 06 83 10 80 30
+		EB 51 31 F0 01 03 01 45 02 00 94 06 81 10 89 30
 		00 00 00 04 40 68 00 01 1F 00 00 C9 03 C0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -815,6 +815,6 @@ OEM-specific Type
 		MEI2
 		MEI3
 
-Handle 0xF035, DMI type 127, 4 bytes
+Handle 0xF032, DMI type 127, 4 bytes
 End Of Table
 

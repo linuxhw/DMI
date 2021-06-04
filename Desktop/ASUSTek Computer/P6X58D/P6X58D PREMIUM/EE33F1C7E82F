@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.2
+Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 79 structures occupying 3002 bytes.
 Table at 0x000F0700.
@@ -218,8 +219,8 @@ Memory Module Information
 	Bank Connections: 1
 	Current Speed: 1 ns
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
@@ -228,8 +229,8 @@ Memory Module Information
 	Bank Connections: 2
 	Current Speed: 1 ns
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000B, DMI type 6, 12 bytes
@@ -238,8 +239,8 @@ Memory Module Information
 	Bank Connections: 3
 	Current Speed: 1 ns
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000C, DMI type 6, 12 bytes
@@ -248,8 +249,8 @@ Memory Module Information
 	Bank Connections: 4
 	Current Speed: 1 ns
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000D, DMI type 6, 12 bytes
@@ -258,8 +259,8 @@ Memory Module Information
 	Bank Connections: 5
 	Current Speed: 1 ns
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000E, DMI type 6, 12 bytes
@@ -268,8 +269,8 @@ Memory Module Information
 	Bank Connections: 6
 	Current Speed: 1 ns
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000F, DMI type 8, 9 bytes
@@ -584,7 +585,7 @@ Handle 0x0035, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIEX16_1
 	Type: 32-bit PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 2
 	Characteristics:
@@ -596,7 +597,7 @@ Handle 0x0036, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI1
 	Type: 32-bit PCI
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 3
 	Characteristics:
@@ -620,7 +621,7 @@ Handle 0x0038, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIEX16_2
 	Type: 32-bit PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 5
 	Characteristics:
@@ -702,14 +703,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
 	Type: Other
 	Type Detail: Other
-	Speed: 1066 MHz
+	Speed: 1066 MT/s
 	Manufacturer: Manufacturer00
 	Serial Number: --
 	Asset Tag: --
@@ -732,14 +733,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
 	Type: Other
 	Type Detail: Other
-	Speed: 1066 MHz
+	Speed: 1066 MT/s
 	Manufacturer: Manufacturer01
 	Serial Number: --
 	Asset Tag: --
@@ -762,14 +763,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
 	Type: Other
 	Type Detail: Other
-	Speed: 1066 MHz
+	Speed: 1066 MT/s
 	Manufacturer: Manufacturer02
 	Serial Number: --
 	Asset Tag: --
@@ -792,14 +793,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
 	Type: Other
 	Type Detail: Other
-	Speed: 1066 MHz
+	Speed: 1066 MT/s
 	Manufacturer: Manufacturer03
 	Serial Number: --
 	Asset Tag: --
@@ -822,14 +823,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4
 	Bank Locator: BANK4
 	Type: Other
 	Type Detail: Other
-	Speed: 1066 MHz
+	Speed: 1066 MT/s
 	Manufacturer: Manufacturer04
 	Serial Number: --
 	Asset Tag: --
@@ -852,14 +853,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM5
 	Bank Locator: BANK5
 	Type: Other
 	Type Detail: Other
-	Speed: 1066 MHz
+	Speed: 1066 MT/s
 	Manufacturer: Manufacturer05
 	Serial Number: --
 	Asset Tag: --

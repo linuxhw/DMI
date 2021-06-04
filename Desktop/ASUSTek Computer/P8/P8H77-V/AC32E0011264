@@ -1,13 +1,14 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 109 structures occupying 3924 bytes.
-Table at 0x000E96F0.
+Table at 0x000E98F0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 0906
-	Release Date: 07/31/2012
+	Version: 1905
+	Release Date: 10/27/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8192 kB
@@ -139,8 +140,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 32 kB
-	Maximum Size: 32 kB
+	Installed Size: 128 kB
+	Maximum Size: 128 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -155,8 +156,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 256 kB
-	Maximum Size: 256 kB
+	Installed Size: 512 kB
+	Maximum Size: 512 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -458,7 +459,7 @@ Handle 0x0027, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI2
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 6
 	Characteristics:
@@ -642,8 +643,9 @@ Management Device Component
 	Threshold Handle: 0x0037
 
 Handle 0x003D, DMI type 34, 16 bytes
+Invalid entry length (16). Fixed up to 11.
 Management Device
-	Description: 2
+	Description: LM78-2
 	Type: LM78
 	Address: 0x00000000
 	Address Type: I/O Port
@@ -980,13 +982,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
 	Part Number: HMT325U6BFR8C-H9  
 	Rank: 1
-	Configured Clock Speed: 1333 MHz
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0060, DMI type 16, 23 bytes
 Physical Memory Array
@@ -1062,13 +1064,13 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M378B5273DH0-CH9  
 	Rank: 2
-	Configured Clock Speed: 1333 MHz
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0066, DMI type 18, 23 bytes
 32-bit Memory Error Information

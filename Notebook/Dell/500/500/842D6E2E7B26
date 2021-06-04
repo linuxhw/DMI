@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 45 structures occupying 1944 bytes.
 Table at 0x000F7640.
@@ -101,7 +102,7 @@ Base Board Information
 	Serial Number: --
 	Asset Tag: --
 
-Handle 0x0300, DMI type 3, 13 bytes
+5977B1E14E8F708A5CB03358AE2DB83A
 Chassis Information
 	Manufacturer: Dell Inc.
 	Type: Portable
@@ -118,10 +119,10 @@ Handle 0x0400, DMI type 4, 40 bytes
 Processor Information
 	Socket Designation: Microprocessor
 	Type: Central Processor
-	Family: Celeron
+	Family: Core 2 Duo
 	Manufacturer: Intel
-	ID: 61 06 01 00 FF FB EB AF
-	Signature: Type 0, Family 6, Model 22, Stepping 1
+	ID: 76 06 01 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 23, Stepping 6
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -148,13 +149,14 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		SS (Self-snoop)
+		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Not Specified
 	Voltage: 3.3 V
-	External Clock: 133 MHz
-	Max Speed: 1866 MHz
-	Current Speed: 1866 MHz
+	External Clock: 200 MHz
+	Max Speed: 2400 MHz
+	Current Speed: 2400 MHz
 	Status: Populated, Enabled
 	Upgrade: None
 	L1 Cache Handle: 0x0700
@@ -163,9 +165,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
-	Core Count: 1
-	Core Enabled: 1
-	Thread Count: 1
+	Core Count: 2
+	Core Enabled: 2
+	Thread Count: 2
 	Characteristics:
 		64-bit capable
 
@@ -191,8 +193,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 3072 kB
+	Maximum Size: 3072 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -271,7 +273,7 @@ On Board Device Information
 Handle 0x0B00, DMI type 11, 5 bytes
 OEM Strings
 	String 1: Dell System
-	String 2: 5[0002]
+	String 2: 5[0003]
 	String 3: 13[PP22L]
 
 Handle 0x0D00, DMI type 13, 22 bytes
@@ -303,7 +305,7 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR
 	Type Detail: Synchronous
-	Speed: 667 MHz
+	Speed: 667 MT/s
 	Manufacturer: 7F98000000000000
 	Serial Number: --
 	Asset Tag: --
@@ -315,7 +317,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B
@@ -323,7 +325,7 @@ Memory Device
 	Type: DDR
 	Type Detail: Synchronous
 	Speed: Unknown
-	Manufacturer:                 
+	Manufacturer: FFFFFFFFFFFFFFFF
 	Serial Number: --
 	Asset Tag: --
 	Part Number:                   
@@ -331,25 +333,35 @@ Memory Device
 Handle 0x1301, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x1000
 	Partition Width: 1
 
 Handle 0x1401, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x1100
 	Memory Array Mapped Address Handle: 0x1301
 	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 8
 
 Handle 0x1411, DMI type 126, 19 bytes
 Inactive
 
-Handle 0x1402, DMI type 126, 19 bytes
-Inactive
+Handle 0x1402, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x1101
+	Memory Array Mapped Address Handle: 0x1301
+	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 8
 
 Handle 0x1412, DMI type 126, 19 bytes
 Inactive

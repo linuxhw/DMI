@@ -1,6 +1,7 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-66 structures occupying 2478 bytes.
+66 structures occupying 2474 bytes.
 Table at 0x000F9E10.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -582,11 +583,11 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: 0443
 	Serial Number: --
 	Asset Tag: --
-	Part Number: RMT3170ME68F9F1600
+	Part Number: RMT3160ED58E9W1600
 	Rank: Unknown
 
 Handle 0x0036, DMI type 20, 19 bytes
@@ -644,11 +645,11 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
-	Manufacturer: Kingston
+	Speed: 1333 MT/s
+	Manufacturer: 0443
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 99U5469-032.A00LF 
+	Part Number: RMT3170ME68F9F1600
 	Rank: Unknown
 
 Handle 0x003A, DMI type 20, 19 bytes
@@ -719,14 +720,14 @@ OEM-specific Type
 
 Handle 0x0040, DMI type 15, 29 bytes
 System Event Log
-	Area Length: 50 bytes
+	Area Length: 82 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000002
+	Change Token: 0x00000004
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error

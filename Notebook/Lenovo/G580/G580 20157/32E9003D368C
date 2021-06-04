@@ -1,6 +1,6 @@
 # dmidecode 2.12
 SMBIOS 2.7 present.
-61 structures occupying 2499 bytes.
+62 structures occupying 2575 bytes.
 Table at 0x000E0840.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -40,7 +40,7 @@ System Information
 	Version: Lenovo G580
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: Other
 	SKU Number: System SKUNumber
 	Family: ChiefRiver System
 
@@ -590,22 +590,22 @@ Handle 0x0035, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0034
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
+	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MHz
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
+	Part Number: HMT325S6CFR8C-H9  
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Clock Speed: 1333 MHz
 
 Handle 0x0036, DMI type 17, 34 bytes
 Memory Device
@@ -634,7 +634,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -642,10 +642,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MHz
-	Manufacturer: Samsung
+	Manufacturer: 830B
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5273DH0-CK0  
+	Part Number: NT2GC64B88B0NS-CG 
 	Rank: Unknown
 	Configured Clock Speed: 1333 MHz
 
@@ -676,10 +676,23 @@ Memory Device Mapped Address
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0035
-	Memory Array Mapped Address Handle: 0x003A
+	Memory Array Mapped Address Handle: 0x003B
 	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 2
 
-Handle 0x003A, DMI type 19, 31 bytes
+Handle 0x003A, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0036
+	Memory Array Mapped Address Handle: 0x003B
+	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x003B, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
@@ -687,16 +700,16 @@ Memory Array Mapped Address
 	Physical Array Handle: 0x0034
 	Partition Width: 4
 
-Handle 0x003B, DMI type 15, 81 bytes
+Handle 0x003C, DMI type 15, 81 bytes
 System Event Log
-	Area Length: 34 bytes
+	Area Length: 50 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000001
+	Change Token: 0x00000002
 	Header Format: Type 1
 	Supported Log Type Descriptors: 29
 	Descriptor 1: Single-bit ECC memory error

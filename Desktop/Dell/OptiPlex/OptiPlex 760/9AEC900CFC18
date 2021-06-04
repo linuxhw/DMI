@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 82 structures occupying 3001 bytes.
@@ -99,7 +99,7 @@ BIOS Information
 	Release Date: 08/06/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -149,7 +149,7 @@ Chassis Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -232,8 +232,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -468,7 +468,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFE81000
 	Status: Valid, Not Full
-	Change Token: 0x0000001C
+	Change Token: 0x00000021
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -493,7 +493,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_1
@@ -512,7 +512,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_3
@@ -531,7 +531,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_2
@@ -550,7 +550,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_4
@@ -626,7 +626,7 @@ Hardware Security
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x1900, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x1B10, DMI type 27, 12 bytes
@@ -740,7 +740,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE C1 0B 00 00 15 03 24 18 03 00 00 01
+		DE 10 00 DE C1 0B FF FF 00 00 00 00 00 00 00 01
 
 Handle 0x7F00, DMI type 127, 4 bytes
 End Of Table

@@ -1,8 +1,8 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-52 structures occupying 2244 bytes.
-Table at 0x9FABC000.
+52 structures occupying 2233 bytes.
+Table at 0x000E4800.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -168,8 +168,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: 1 ns
 	Type: DIMM
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -178,8 +178,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: 1 ns
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0008, DMI type 7, 19 bytes
@@ -436,18 +436,18 @@ Memory Device
 	Error Information Handle: 0x0023
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 8192 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: CHANNEL A
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 533 MT/s
-	Manufacturer: Samsung
+	Speed: 800 MT/s
+	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5673EH1-CF8  
+	Part Number: R538G1601S2SL
 	Rank: 2
 	Configured Clock Speed: 533 MT/s
 	Minimum Voltage: Unknown
@@ -460,19 +460,19 @@ Memory Device
 	Error Information Handle: 0x0024
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: CHANNEL A
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 800 MT/s
-	Manufacturer: Hynix
+	Speed: 533 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT451S6BFR8A-PB  
-	Rank: 1
+	Part Number: M471B5673EH1-CF8  
+	Rank: 2
 	Configured Clock Speed: 533 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -511,16 +511,16 @@ Handle 0x0025, DMI type 18, 23 bytes
 Handle 0x0026, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x0027FFFFFFF
+	Range Size: 10 GB
 	Physical Array Handle: 0x0020
 	Partition Width: 255
 
 Handle 0x0027, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0021
 	Memory Array Mapped Address Handle: 0x0026
 	Partition Row Position: Unknown
@@ -529,9 +529,9 @@ Memory Device Mapped Address
 
 Handle 0x0028, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x0027FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0022
 	Memory Array Mapped Address Handle: 0x0026
 	Partition Row Position: Unknown

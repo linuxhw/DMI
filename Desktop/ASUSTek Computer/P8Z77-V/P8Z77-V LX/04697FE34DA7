@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-109 structures occupying 3920 bytes.
+109 structures occupying 3928 bytes.
 Table at 0x000EB8C0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -117,9 +117,9 @@ Processor Information
 		PBE (Pending break enabled)
 	Version: Intel(R) Pentium(R) CPU G620 @ 2.60GHz
 	Voltage: 1.0 V
-	External Clock: 115 MHz
+	External Clock: 100 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 2990 MHz
+	Current Speed: 2600 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -437,7 +437,7 @@ Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI2
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 5
 	Characteristics:
@@ -973,13 +973,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: 04EF
+	Speed: 1600 MT/s
+	Manufacturer: 8502
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Team--Elite-1333
+	Part Number: PSD34G16002
 	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x005F, DMI type 16, 23 bytes
 Physical Memory Array
@@ -1024,13 +1024,13 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: 8394
+	Speed: 1600 MT/s
+	Manufacturer: 8502
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 991586
-	Rank: 1
-	Configured Clock Speed: 1333 MT/s
+	Part Number: PSD32G16002
+	Rank: 2
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0063, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -1044,8 +1044,8 @@ Handle 0x0063, DMI type 18, 23 bytes
 
 Handle 0x0064, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00180000000
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x0027FFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0062
 	Memory Array Mapped Address Handle: 0x006A
@@ -1059,20 +1059,20 @@ Memory Device
 	Error Information Handle: 0x0066
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: 0000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Part Number: QUM3U-4G1600C11
+	Rank: 1
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0066, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -1087,8 +1087,8 @@ Handle 0x0066, DMI type 18, 23 bytes
 Handle 0x0067, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0065
 	Memory Array Mapped Address Handle: 0x006A
 	Partition Row Position: Unknown
@@ -1129,8 +1129,8 @@ Handle 0x0069, DMI type 18, 23 bytes
 Handle 0x006A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x0027FFFFFFF
+	Range Size: 10 GB
 	Physical Array Handle: 0x005F
 	Partition Width: 4
 

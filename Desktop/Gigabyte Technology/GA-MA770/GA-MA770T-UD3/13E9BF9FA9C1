@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 55 structures occupying 2813 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 12/09/2009
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -45,7 +45,7 @@ System Information
 	Product Name: GA-MA770T-UD3
 	Version:  
 	Serial Number: --
-	UUID: --
+	C5E4F3579AD4033A210CAE53B52699C7
 	Wake-up Type: Power Switch
 	SKU Number:  
 	Family:  
@@ -64,8 +64,8 @@ Chassis Information
 	Lock: Not Present
 	Version:  
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Boot-up State: Unknown
 	Power Supply State: Unknown
 	Thermal State: Unknown
 	Security Status: Unknown
@@ -114,8 +114,8 @@ Processor Information
 	L2 Cache Handle: 0x000C
 	L3 Cache Handle: Not Provided
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 
 Handle 0x0005, DMI type 5, 24 bytes
 Memory Controller Information
@@ -236,7 +236,7 @@ Cache Information
 	Operational Mode: Write Through
 	Location: Internal
 	Installed Size: 0 kB
-	Maximum Size: 1024 kB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -457,7 +457,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
@@ -467,8 +467,8 @@ Memory Device
 	Speed: 1600 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 
 Handle 0x0027, DMI type 17, 27 bytes
 Memory Device
@@ -486,8 +486,8 @@ Memory Device
 	Speed: 400 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 
 Handle 0x0028, DMI type 17, 27 bytes
 Memory Device
@@ -505,8 +505,8 @@ Memory Device
 	Speed: 1600 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 
 Handle 0x0029, DMI type 17, 27 bytes
 Memory Device
@@ -524,8 +524,8 @@ Memory Device
 	Speed: 400 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 
 Handle 0x002A, DMI type 19, 15 bytes
 Memory Array Mapped Address
@@ -587,9 +587,9 @@ OEM-specific Type
 		00 00 00 00 07 00 00 00 03 30 00 D0 01 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 E0 3F F8 00
-		00 00 00 00 00 00 00 00 00 00 00 00 06 02 C8 0C
+		00 00 00 00 00 00 00 00 00 00 00 00 06 02 08 0D
 		58 00 02 18 0A 00 00 00 E4 00 34 00 67 DB 5C EF
-		77 7A 42 00 00 00 01 00 00 02 00 00 40 00 00 00
+		77 AA 42 00 00 00 01 00 00 02 00 00 40 00 00 00
 		5C 00 B0 4A 0E 09 48 5F 00 00 00 00 00 00 00 00
 		00 00 00 00
 
@@ -600,7 +600,7 @@ OEM-specific Type
 		FB 0F E0 2C 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 06 00 80 1D
+		00 00 00 00 00 00 00 00 00 00 00 00 06 00 C0 1E
 		00 00 00 00 00 00 00 00 25 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 25 00 00 00 00 00 00 00
 		24 A4 40 04 FB 0F E0 2C 01 01 00 00 00 00 00 00
@@ -615,15 +615,15 @@ Handle 0x0032, DMI type 192, 244 bytes
 OEM-specific Type
 	Header and Data:
 		C0 F4 32 00 06 40 00 00 22 32 11 20 E7 88 71 0E
-		FE 2E 0A 00 00 00 00 00 22 32 11 20 1F 26 33 37
-		1F 06 13 17 41 48 50 51 01 08 10 11 3B 00 00 00
-		00 00 0E 0E 0A 08 0E 0E 0A 08 08 0C 0E 0E 08 0C
-		0E 0E 08 00 D3 CB 2E 3B FE 2E 0A 00 00 20 00 20
-		A9 00 AC 00 AD 00 B4 00 B9 00 09 00 0C 00 0D 00
-		14 00 00 00 09 00 0C 00 0D 00 14 00 00 00 09 00
-		0C 00 0D 00 14 00 00 00 BE 00 C8 00 D5 00 DF 00
-		1E 00 08 00 15 00 1F 00 1E 00 08 00 15 00 1F 00
-		1E 00 08 00 15 00 1F 00 00 00 00 00 00 00 00 00
+		FE 2E 0B 00 00 00 00 00 22 32 11 20 20 27 34 38
+		00 07 14 18 42 49 50 52 02 09 10 12 3C 00 00 00
+		00 00 0E 0E 0A 08 0E 0E 0A 08 0A 0C 0E 0E 0A 0C
+		0E 0E 08 00 34 4C 30 3F FE 2E 0B 00 00 20 00 20
+		AC 00 AE 00 B0 00 B7 00 BB 00 0C 00 0E 00 10 00
+		17 00 00 00 0C 00 0E 00 10 00 17 00 00 00 0C 00
+		0E 00 10 00 17 00 00 00 C0 00 CC 00 D9 00 E1 00
+		00 00 0C 00 19 00 01 00 00 00 0C 00 19 00 01 00
+		00 00 0C 00 19 00 01 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -635,10 +635,10 @@ Handle 0x0033, DMI type 194, 244 bytes
 OEM-specific Type
 	Header and Data:
 		C2 F4 33 00 06 40 00 00 33 33 33 00 63 8C 31 06
-		00 00 06 00 00 00 00 00 33 33 33 00 0F 0F 0F 0F
+		00 00 0A 00 00 00 00 00 33 33 33 00 0F 0F 0F 0F
 		0F 0F 0F 0F 0F 0F 0F 0F 0F 0F 0F 0F 0F 0F 00 00
 		00 00 1F 1F 1F 1F 1F 1F 1F 1F 1F 1F 1F 1F 1F 1F
-		1F 1F 1F 1F 6D F8 72 36 00 00 06 00 00 00 00 00
+		1F 1F 1F 1F ED F8 7A 36 00 00 0A 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -654,12 +654,12 @@ OEM-specific Type
 Handle 0x0034, DMI type 196, 244 bytes
 OEM-specific Type
 	Header and Data:
-		C4 F4 34 00 06 40 00 00 0F 00 15 00 1E 00 24 00
-		00 00 00 00 0F 00 15 00 1E 00 04 00 00 00 0F 00
-		15 00 1E 00 04 00 00 00 00 00 0F 00 15 00 2E 00
-		37 00 3F 00 40 00 0E 00 17 00 1F 00 00 00 0E 00
-		17 00 1F 00 00 00 0E 00 17 00 1F 00 00 00 0F 15
-		1E 24 2E 37 3F 40 6B 00 00 00 F7 01 00 00 00 00
+		C4 F4 34 00 06 40 00 00 0F 00 16 00 1F 00 24 00
+		00 00 00 00 0F 00 16 00 1F 00 04 00 00 00 0F 00
+		16 00 1F 00 04 00 00 00 00 00 0F 00 16 00 2F 00
+		38 00 3F 00 41 00 0F 00 18 00 1F 00 01 00 0F 00
+		18 00 1F 00 01 00 0F 00 18 00 1F 00 01 00 0F 16
+		1F 24 2F 38 3F 41 7C 00 00 00 C0 01 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -678,8 +678,8 @@ OEM-specific Type
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 4E 4E
-		4E 4E 4E 4E 4E 4E 4E 00 00 00 FF 01 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 4E 5E
+		4E 5E 4E 4E 4E 4E 4E 00 00 00 FF 01 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

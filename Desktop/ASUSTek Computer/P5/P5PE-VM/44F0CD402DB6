@@ -1,4 +1,4 @@
-# dmidecode 3.0
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.3 present.
 53 structures occupying 1639 bytes.
@@ -105,11 +105,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Pentium(R) Dual-Core CPU E6300 @ 2.80GHz            
+	Version: Intel(R) Core(TM)2 Duo CPU E7500 @ 2.93GHz          
 	Voltage: 1.3 V
 	External Clock: 267 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 2729 MHz
+	Current Speed: 2200 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -138,23 +138,7 @@ Cache Information
 Handle 0x0006, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2-Cache
-	Configuration: Enabled, Not Socketed, Level 2
-	Operational Mode: Varies With Memory Address
-	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
-	Supported SRAM Types:
-		Pipeline Burst
-	Installed SRAM Type: Pipeline Burst
-	Speed: Unknown
-	Error Correction Type: Single-bit ECC
-	System Type: Unified
-	Associativity: 4-way Set-associative
-
-Handle 0x0007, DMI type 7, 19 bytes
-Cache Information
-	Socket Designation: L3-Cache
-	Configuration: Disabled, Not Socketed, Level 3
+	Configuration: Disabled, Not Socketed, Level 2
 	Operational Mode: Unknown
 	Location: Internal
 	Installed Size: 0 kB
@@ -166,6 +150,22 @@ Cache Information
 	Error Correction Type: Unknown
 	System Type: Unknown
 	Associativity: Unknown
+
+Handle 0x0007, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L3-Cache
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Varies With Memory Address
+	Location: Internal
+	Installed Size: 12288 kB
+	Maximum Size: 12288 kB
+	Supported SRAM Types:
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: 4-way Set-associative
 
 Handle 0x0008, DMI type 5, 20 bytes
 Memory Controller Information
@@ -431,7 +431,7 @@ Handle 0x0026, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI1
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 1
 	Characteristics:

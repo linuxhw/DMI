@@ -1,8 +1,9 @@
 # dmidecode 2.12
+# SMBIOS entry point at 0x000f04c0
 SMBIOS 2.8 present.
 # SMBIOS implementations newer than version 2.7 are not
 # fully supported by this version of dmidecode.
-55 structures occupying 2837 bytes.
+54 structures occupying 2791 bytes.
 Table at 0x000EB130.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -51,7 +52,7 @@ Base Board Information
 	Version: 2.10 
 	Serial Number: --
 	Asset Tag: --
-	Features:
+	...
 		Board is a hosting board
 		Board is removable
 		Board is replaceable
@@ -351,7 +352,7 @@ System Power Supply
 	Manufacturer:                       
 	Serial Number: --
 	Asset Tag: --
-	Model Part Number: Standard Efficiency   
+	...
 	Revision:                       
 	Max Power Capacity: Unknown
 	Status: Present, OK
@@ -525,31 +526,31 @@ Handle 0x0029, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0027
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2048 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK 2
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MHz
-	Manufacturer: 0000
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: [Empty]
 	Serial Number: --
 	Asset Tag: --
-	Part Number: GR1333D364L9/2G   
-	Rank: 1
-	Configured Clock Speed: 1333 MHz
-	Minimum voltage:  1.500 V
+	Part Number: [Empty]
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+	Minimum voltage:  1.250 V
 	Maximum voltage:  1.500 V
 	Configured voltage:  1.500 V
 
 Handle 0x002A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0027FFFFFFF
-	Range Size: 10 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0027
 	Partition Width: 2
 
@@ -564,23 +565,12 @@ Memory Device Mapped Address
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x002C, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x0027FFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x0029
-	Memory Array Mapped Address Handle: 0x002A
-	Partition Row Position: 1
-	Interleave Position: 2
-	Interleaved Data Depth: 1
-
-Handle 0x002F, DMI type 208, 5 bytes
+Handle 0x002E, DMI type 208, 5 bytes
 OEM-specific Type
 	Header and Data:
-		D0 05 2F 00 02
+		D0 05 2E 00 00
 
-Handle 0x0032, DMI type 13, 22 bytes
+Handle 0x0031, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 13
@@ -599,32 +589,32 @@ BIOS Language Information
 		zh|CN|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0034, DMI type 136, 6 bytes
+Handle 0x0033, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 34 00 00 00
+		88 06 33 00 00 00
 
-Handle 0x0035, DMI type 221, 12 bytes
+Handle 0x0034, DMI type 221, 12 bytes
 OEM-specific Type
 	Header and Data:
-		DD 0C 35 00 01 01 00 02 08 00 00 00
+		DD 0C 34 00 01 01 00 02 08 00 00 00
 	Strings:
 		Reference Code - ACPI
 
-Handle 0x0036, DMI type 221, 26 bytes
+Handle 0x0035, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 36 00 03 01 00 02 08 00 00 00 02 00 00 00
+		DD 1A 35 00 03 01 00 02 08 00 00 00 02 00 00 00
 		00 1D 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
 		TXT ACM version
 
-Handle 0x0037, DMI type 221, 68 bytes
+Handle 0x0036, DMI type 221, 68 bytes
 OEM-specific Type
 	Header and Data:
-		DD 44 37 00 09 01 00 02 08 00 00 00 02 03 FF FF
+		DD 44 36 00 09 01 00 02 08 00 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 05 00 05 00 FF FF FF 05
 		00 06 00 FF FF FF FF FF 07 00 19 00 00 00 00 08
 		00 2C 00 00 00 00 09 00 03 00 00 00 00 0A 00 01
@@ -641,10 +631,10 @@ OEM-specific Type
 		PCH9S A0 Hsio Version
 		WPTLp B0 Hsio Version
 
-Handle 0x0038, DMI type 221, 26 bytes
+Handle 0x0037, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 38 00 03 01 00 02 08 00 00 00 02 00 FF FF
+		DD 1A 37 00 03 01 00 02 08 00 00 00 02 00 FF FF
 		FF FF 00 03 04 09 01 1A EE 03
 	Strings:
 		Reference Code - ME 10.0
@@ -652,13 +642,13 @@ OEM-specific Type
 		ME Firmware Version
 		1.5MB SKU
 
-Handle 0x0039, DMI type 221, 54 bytes
+Handle 0x0038, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 39 00 07 01 00 02 08 00 00 00 02 00 01 08
+		DD 36 38 00 07 01 00 02 08 00 00 00 02 00 01 08
 		00 03 00 03 00 02 08 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 06 00 07 00 FF FF FF 06 00 08
-		00 FF FF FF 00 00
+		00 FF FF FF 01 00
 	Strings:
 		Reference Code - SA - System Agent
 		Reference Code - MRC
@@ -669,32 +659,32 @@ OEM-specific Type
 		SA-CRID New Value
 		OPROM - VBIOS
 
-Handle 0x003A, DMI type 221, 12 bytes
+Handle 0x0039, DMI type 221, 12 bytes
 OEM-specific Type
 	Header and Data:
-		DD 0C 3A 00 01 01 00 02 08 00 00 00
+		DD 0C 39 00 01 01 00 02 08 00 00 00
 	Strings:
 		Reference Code - Intel Rapid Start
 
-Handle 0x003B, DMI type 14, 23 bytes
+Handle 0x003A, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 6
+		0x0034 (<OUT OF SPEC>)
 		0x0035 (<OUT OF SPEC>)
 		0x0036 (<OUT OF SPEC>)
 		0x0037 (<OUT OF SPEC>)
 		0x0038 (<OUT OF SPEC>)
 		0x0039 (<OUT OF SPEC>)
-		0x003A (<OUT OF SPEC>)
 
-Handle 0x003C, DMI type 131, 64 bytes
+Handle 0x003B, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 3C 00 10 00 00 00 00 00 00 00 00 00 00 00
+		83 40 3B 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 00 00 00 00 00 00 01 20 00 00 01 00 09 00
 		EE 03 1A 00 00 00 00 00 C8 00 00 00 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x003D, DMI type 127, 4 bytes
+Handle 0x003C, DMI type 127, 4 bytes
 End Of Table
 

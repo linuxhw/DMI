@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 51 structures occupying 2154 bytes.
 Table at 0x0009B000.
@@ -71,7 +72,7 @@ Chassis Information
 	Lock: Not Present
 	Version:         
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148                       
 	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Safe
@@ -214,8 +215,8 @@ Memory Module Information
 	Bank Connections: 0 1
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: 2048 MB (Double-bank Connection)
-	Enabled Size: 2048 MB (Double-bank Connection)
+	Installed Size: 1024 MB (Single-bank Connection)
+	Enabled Size: 1024 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
@@ -224,8 +225,8 @@ Memory Module Information
 	Bank Connections: 2 3
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: 1024 MB (Single-bank Connection)
-	Enabled Size: 1024 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000B, DMI type 6, 12 bytes
@@ -234,8 +235,8 @@ Memory Module Information
 	Bank Connections: 4 5
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: 2048 MB (Double-bank Connection)
-	Enabled Size: 2048 MB (Double-bank Connection)
+	Installed Size: 1024 MB (Single-bank Connection)
+	Enabled Size: 1024 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000C, DMI type 6, 12 bytes
@@ -244,8 +245,8 @@ Memory Module Information
 	Bank Connections: 6 7
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: 1024 MB (Single-bank Connection)
-	Enabled Size: 1024 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000D, DMI type 9, 17 bytes
@@ -341,25 +342,25 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 1024 MB
 	Form Factor: DIMM
-	Set: 11
+	Set: 10
 	Locator: DIMM0
 	Bank Locator: BANK0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Samsung       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M378B5673FH0-CH9  
-	Rank: 9
+	Part Number: M378B2873FHS-CH9  
+	Rank: 8
 
 Handle 0x0018, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0017
 	Memory Array Mapped Address Handle: 0x0016
 	Partition Row Position: 1
@@ -371,25 +372,25 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: DIMM
-	Set: 10
+	Set: 11
 	Locator: DIMM1
 	Bank Locator: BANK1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Samsung       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M378B2873FHS-CH9  
-	Rank: 8
+	Part Number: M378B5673FH0-CH9  
+	Rank: 9
 
 Handle 0x001A, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
+	Starting Address: 0x00040000000
 	Ending Address: 0x000BFFFFFFF
-	Range Size: 1 GB
+	Range Size: 2 GB
 	Physical Device Handle: 0x0019
 	Memory Array Mapped Address Handle: 0x0016
 	Partition Row Position: 1
@@ -401,25 +402,25 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 1024 MB
 	Form Factor: DIMM
-	Set: 11
+	Set: 10
 	Locator: DIMM2
 	Bank Locator: BANK2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Samsung       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M378B5673FH0-CH9  
-	Rank: 9
+	Part Number: M378B2873FHS-CH9  
+	Rank: 8
 
 Handle 0x001C, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x000C0000000
-	Ending Address: 0x0013FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x001B
 	Memory Array Mapped Address Handle: 0x0016
 	Partition Row Position: 1
@@ -431,25 +432,25 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: DIMM
-	Set: 10
+	Set: 11
 	Locator: DIMM3
 	Bank Locator: BANK3
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Samsung       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M378B2873FHS-CH9  
-	Rank: 8
+	Part Number: M378B5673FH0-CH9  
+	Rank: 9
 
 Handle 0x001E, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00140000000
+	Starting Address: 0x00100000000
 	Ending Address: 0x0017FFFFFFF
-	Range Size: 1 GB
+	Range Size: 2 GB
 	Physical Device Handle: 0x001D
 	Memory Array Mapped Address Handle: 0x0016
 	Partition Row Position: 1

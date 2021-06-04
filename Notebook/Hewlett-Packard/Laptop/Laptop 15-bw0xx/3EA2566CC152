@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0xCF1DC000.
@@ -10,7 +10,7 @@ BIOS Information
 	Release Date: 05/31/2019
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -151,8 +151,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -414,7 +414,7 @@ Memory Device
 	Error Information Handle: 0x0023
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-slot 1(left)
@@ -427,7 +427,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: AO1P24HC4R1-BQZS    
 	Rank: 1
-	Configured Clock Speed: 1866 MT/s
+	Configured Memory Speed: 1866 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -438,7 +438,7 @@ Memory Device
 	Error Information Handle: 0x0024
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-slot 2(right)
@@ -451,7 +451,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: M471A5644EB0-CRC    
 	Rank: 1
-	Configured Clock Speed: 1866 MT/s
+	Configured Memory Speed: 1866 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -560,14 +560,6 @@ Additional Information 2
 	Referenced Offset: 0x05
 	String: Compiler Version: VC 9.0
 	Value: 0x05dc
-
-Handle 0x002E, DMI type 41, 11 bytes
-Onboard Device
-	Reference Designation:  
-	Type: Other
-	Status: Enabled
-	Type Instance: 1
-	Bus Address: 0000:03:00.0
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

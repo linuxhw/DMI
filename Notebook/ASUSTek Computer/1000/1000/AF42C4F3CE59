@@ -1,13 +1,14 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 30 structures occupying 1287 bytes.
-Table at 0x000F0700.
+Table at 0x000F0710.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 0803   
-	Release Date: 08/01/2008
+	Version: 1003   
+	Release Date: 06/11/2009
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 512 kB
@@ -38,7 +39,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 	BIOS Revision: 8.12
-	Firmware Revision: 0.1
+	Firmware Revision: 0.18
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -87,9 +88,38 @@ Handle 0x0004, DMI type 4, 35 bytes
 Processor Information
 	Socket Designation: PBGA 437
 	Type: Central Processor
-	Family: Unknown
+	Family: Core Solo
 	Manufacturer: Intel            
 	ID: C2 06 01 00 FF FB E9 BF
+	Signature: Type 0, Family 6, Model 28, Stepping 2
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		CLFSH (CLFLUSH instruction supported)
+		DS (Debug store)
+		ACPI (ACPI supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		SS (Self-snoop)
+		HTT (Multi-threading)
+		TM (Thermal monitor supported)
+		PBE (Pending break enabled)
 	Version: Intel(R) Atom(TM) CPU N270   @ 1.60GHz              
 	Voltage: 1.2 V
 	External Clock: 133 MHz

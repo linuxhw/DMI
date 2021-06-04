@@ -1,6 +1,7 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
-20 structures occupying 959 bytes.
+20 structures occupying 960 bytes.
 Table at 0xBDEC3000.
 
 Handle 0x000A, DMI type 0, 24 bytes
@@ -109,11 +110,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM)2 Duo CPU     T6570  @ 2.10GHz
+	Version: Intel(R) Core(TM)2 Duo CPU     T9600  @ 2.80GHz
 	Voltage: 1.6 V
-	External Clock: 200 MHz
-	Max Speed: 2100 MHz
-	Current Speed: 1300 MHz
+	External Clock: 266 MHz
+	Max Speed: 2800 MHz
+	Current Speed: 1733 MHz
 	Status: Populated, Enabled
 	Upgrade: ZIF Socket
 	L1 Cache Handle: 0x0003
@@ -129,15 +130,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 6144 kB
+	Maximum Size: 6144 kB
 	Supported SRAM Types:
 		Asynchronous
 	Installed SRAM Type: Asynchronous
 	Speed: Unknown
 	Error Correction Type: Single-bit ECC
 	System Type: Unified
-	Associativity: 8-way Set-associative
+	Associativity: 24-way Set-associative
 
 Handle 0x0003, DMI type 7, 19 bytes
 Cache Information
@@ -204,18 +205,18 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Top
 	Bank Locator: BANK 0
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 800 MHz
+	Speed: 800 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M4 70T5663QZ3-CF7 
+	Part Number: M4 70T5267AZ3-CF7 
 
 Handle 0x0007, DMI type 17, 27 bytes
 Memory Device
@@ -223,32 +224,32 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom
 	Bank Locator: BANK 2
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 800 MHz
-	Manufacturer: Micron
+	Speed: 800 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 16HTF25664HY-800G1
+	Part Number: M4 70T5267AZ3-CF7 
 
 Handle 0x0009, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0004
 	Partition Width: 2
 
 Handle 0x0006, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0005
 	Memory Array Mapped Address Handle: 0x0009
 	Partition Row Position: 1
@@ -258,8 +259,8 @@ Memory Device Mapped Address
 Handle 0x0008, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0007
 	Memory Array Mapped Address Handle: 0x0009
 	Partition Row Position: 1

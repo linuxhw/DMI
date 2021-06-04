@@ -8,8 +8,8 @@ Table at 0x000E0000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.6.0
-	Release Date: 07/11/2019
+	Version: 1.8.0
+	Release Date: 02/12/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -36,7 +36,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.6
+	BIOS Revision: 1.8
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -551,7 +551,7 @@ Handle 0x0047, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 47 00 03 01 00 07 00 58 40 00 02 00 00 00
-		00 AE 00 03 00 01 05 00 00 00
+		00 CA 00 03 00 01 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -561,7 +561,7 @@ Handle 0x0048, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 48 00 03 01 00 07 00 58 40 00 02 00 00 00
-		00 00 00 03 04 0C 00 23 93 05
+		00 00 00 03 04 0C 00 31 FE 05
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -697,7 +697,7 @@ Processor Information
 	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 4600 MHz
-	Current Speed: 3600 MHz
+	Current Speed: 4100 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1528
 	L1 Cache Handle: 0x004B
@@ -812,6 +812,14 @@ Portable Battery
 	Maximum Error: 3%
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000801
+
+Handle 0x1602, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: CTNI
+	Specification Version: 2.0	Firmware Revision: 403.1
+	Description: INTEL	Characteristics:
+		Family configurable via platform software support
+	OEM-specific Information: 0x00000000
 
 Handle 0x1B00, DMI type 27, 15 bytes
 Cooling Device
@@ -1081,7 +1089,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 19 09 21 21 47 01 00 00
+		DE 10 00 DE 01 04 00 00 20 03 28 16 53 01 00 00
 
 Handle 0xF024, DMI type 218, 77 bytes
 OEM-specific Type
@@ -1103,7 +1111,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 26 F0 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 84 9D 00 00 00 00 01 00 00 00 00 00 0C 00
-		93 05 23 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		FE 05 31 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0xF02B, DMI type 41, 11 bytes

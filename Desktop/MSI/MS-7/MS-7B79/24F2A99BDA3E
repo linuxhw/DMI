@@ -1,14 +1,14 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-59 structures occupying 2670 bytes.
+59 structures occupying 2494 bytes.
 Table at 0x000E6CF0.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: A.F0
-	Release Date: 09/26/2019
+	Version: A.H0
+	Release Date: 06/12/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -289,10 +289,10 @@ Processor Information
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
 	Version: AMD Ryzen 7 1700 Eight-Core Processor          
-	Voltage: 1.2 V
+	Voltage: 1.4 V
 	External Clock: 100 MHz
 	Max Speed: 3750 MHz
-	Current Speed: 3700 MHz
+	Current Speed: 3900 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
 	L1 Cache Handle: 0x0011
@@ -322,7 +322,7 @@ Handle 0x0015, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0016, DMI type 17, 84 bytes
+Handle 0x0016, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x000F
 	Error Information Handle: 0x0015
@@ -335,13 +335,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: 3066 MT/s
+	Speed: 2667 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Unknown
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Clock Speed: 2667 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -356,7 +356,7 @@ Handle 0x0017, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0018, DMI type 17, 84 bytes
+Handle 0x0018, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x000F
 	Error Information Handle: 0x0017
@@ -369,13 +369,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3066 MT/s
+	Speed: 2667 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: R748G2606U2S-U      
 	Rank: 1
-	Configured Clock Speed: 1533 MT/s
+	Configured Clock Speed: 2667 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -401,31 +401,42 @@ Handle 0x001A, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x001B, DMI type 17, 84 bytes
+Handle 0x001B, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x000F
 	Error Information Handle: 0x001A
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8192 MB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL B
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: 3066 MT/s
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 2667 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
+	Part Number: R748G2606U2S-U      
+	Rank: 1
+	Configured Clock Speed: 2667 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
 
-Handle 0x001C, DMI type 18, 23 bytes
+Handle 0x001C, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x001B
+	Memory Array Mapped Address Handle: 0x0010
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x001D, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -435,40 +446,29 @@ Handle 0x001C, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x001D, DMI type 17, 84 bytes
+Handle 0x001E, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x000F
-	Error Information Handle: 0x001C
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8192 MB
-	Form Factor: DIMM
+	Error Information Handle: 0x001D
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: P0 CHANNEL B
-	Type: DDR4
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3066 MT/s
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: 2667 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: R748G2606U2S-U      
-	Rank: 1
-	Configured Clock Speed: 1533 MT/s
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
-
-Handle 0x001E, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x001D
-	Memory Array Mapped Address Handle: 0x0010
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+	Part Number: Unknown
+	Rank: Unknown
+	Configured Clock Speed: 2667 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
 Handle 0x001F, DMI type 8, 9 bytes
 Port Connector Information
@@ -702,9 +702,9 @@ Handle 0x0038, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Broadcom 5762
 	Type: Ethernet
-	Status: Enabled
+	Status: Disabled
 	Type Instance: 1
-	Bus Address: 0000:20:00.0
+	Bus Address: 0000:03:00.0
 
 Handle 0x0039, DMI type 143, 16 bytes
 OEM-specific Type

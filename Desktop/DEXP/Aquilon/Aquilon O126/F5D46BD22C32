@@ -1,10 +1,8 @@
-# dmidecode 2.12
-# SMBIOS entry point at 0x000f04d0
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-# SMBIOS implementations newer than version 2.7 are not
-# fully supported by this version of dmidecode.
 17 structures occupying 1003 bytes.
-Table at 0x000EBD30.
+Table at 0x000E9490.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -97,8 +95,8 @@ Physical Memory Array
 Handle 0x000A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0009
 	Partition Width: 2
 
@@ -108,29 +106,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM0
 	Bank Locator: A1_BANK0
 	Type: DDR3
 	Type Detail: Unknown
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Undefined       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: GKH200SO25608-1600
+	Part Number: R534G1601S1S-UO   
 	Rank: 1
-	Configured Clock Speed: 1333 MHz
-	Minimum voltage:  23.960 V
-	Maximum voltage:  30.828 V
-	Configured voltage:  Unknown
+	Configured Clock Speed: 1333 MT/s
+	Minimum Voltage: 23.96 V
+	Maximum Voltage: 39.02 V
+	Configured Voltage: Unknown
 
 Handle 0x000C, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x000B
 	Memory Array Mapped Address Handle: 0x000A
 	Partition Row Position: Unknown
@@ -157,9 +155,9 @@ Memory Device
 	Part Number: Array1_PartNumber1
 	Rank: Unknown
 	Configured Clock Speed: Unknown
-	Minimum voltage:  31.225 V
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Minimum Voltage: 39.417 V
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
 Handle 0x000E, DMI type 126, 35 bytes
 Inactive

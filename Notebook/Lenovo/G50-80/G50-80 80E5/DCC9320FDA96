@@ -1,17 +1,17 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-68 structures occupying 3378 bytes.
-Table at 0x9C3F7000.
+68 structures occupying 3390 bytes.
+Table at 0x9C708000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: B0CN69WW
-	Release Date: 06/20/2014
+	Version: B0CNA0WW
+	Release Date: 09/30/2016
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 6144 kB
+	ROM Size: 6 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -32,8 +32,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.69
-	Firmware Revision: 1.69
+	BIOS Revision: 1.170
+	Firmware Revision: 1.160
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -194,8 +194,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -471,13 +471,13 @@ Physical Memory Array
 	Error Information Handle: No Error
 	Number Of Devices: 2
 
-Handle 0x0026, DMI type 17, 34 bytes
+Handle 0x0026, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0025
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -490,15 +490,18 @@ Memory Device
 	Asset Tag: --
 	Part Number: M471B5173EB0-YK0  
 	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
+	Minimum Voltage: 1.5 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: Unknown
 
-Handle 0x0027, DMI type 17, 34 bytes
+Handle 0x0027, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0025
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -511,7 +514,10 @@ Memory Device
 	Asset Tag: --
 	Part Number: CT102464BF160B.M16
 	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
+	Minimum Voltage: 1.5 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: Unknown
 
 Handle 0x0028, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -698,17 +704,17 @@ OEM-specific Type
 Handle 0x003C, DMI type 221, 12 bytes
 OEM-specific Type
 	Header and Data:
-		DD 0C 3C 00 01 01 00 02 04 00 00 00
+		DD 0C 3C 00 01 01 00 02 08 00 00 00
 	Strings:
 		Reference Code - ACPI
 
 Handle 0x003D, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 3D 00 07 01 00 02 04 00 00 00 02 00 02 04
-		00 01 00 03 00 02 04 00 00 00 04 05 FF FF FF FF
+		DD 36 3D 00 07 01 00 02 08 00 00 00 02 00 02 08
+		00 00 00 03 00 02 08 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 09 00 07 00 FF FF FF 09 00 08
-		00 FF FF FF 00 00
+		00 FF FF FF FF FF
 	Strings:
 		Reference Code - SA - System Agent
 		Reference Code - MRC
@@ -722,15 +728,15 @@ OEM-specific Type
 Handle 0x003E, DMI type 221, 12 bytes
 OEM-specific Type
 	Header and Data:
-		DD 0C 3E 00 01 01 00 02 04 00 00 00
+		DD 0C 3E 00 01 01 00 02 08 00 00 00
 	Strings:
 		Reference Code - Intel Rapid Start
 
 Handle 0x003F, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 3F 00 03 01 00 02 04 00 00 00 02 00 00 00
-		00 19 00 03 00 00 05 00 00 00
+		DD 1A 3F 00 03 01 00 02 08 00 00 00 02 00 00 00
+		00 1D 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -739,7 +745,7 @@ OEM-specific Type
 Handle 0x0040, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 40 00 03 01 00 02 04 00 00 00 02 00 FF FF
+		DD 1A 40 00 03 01 00 02 08 00 00 00 02 00 FF FF
 		FF FF 00 03 04 0A 00 1C EE 03
 	Strings:
 		Reference Code - ME 10.0
@@ -750,7 +756,7 @@ OEM-specific Type
 Handle 0x0041, DMI type 221, 68 bytes
 OEM-specific Type
 	Header and Data:
-		DD 44 41 00 09 01 00 02 04 00 00 00 02 03 FF FF
+		DD 44 41 00 09 01 00 02 08 00 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 03 00 05 00 FF FF FF 03
 		00 06 00 FF FF FF FF FF 07 00 19 00 00 00 00 08
 		00 2C 00 00 00 00 09 00 03 00 00 00 00 0A 00 01

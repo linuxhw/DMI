@@ -45,7 +45,7 @@ System Information
 	Product Name: 6100M2MA
 	Version: FAB2.0
 	Serial Number: --
-	UUID: --
+	6973542FEB55903CB699196DE744DB4D
 	Wake-up Type: Power Switch
 	SKU Number:  
 	Family:  
@@ -152,8 +152,8 @@ Processor Information
 	L2 Cache Handle: 0x000E
 	L3 Cache Handle: Not Provided
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 
 Handle 0x0008, DMI type 5, 24 bytes
 Memory Controller Information
@@ -183,37 +183,37 @@ Handle 0x0009, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A0
 	Bank Connections: 0
-	Current Speed: 6 ns
+	Current Speed: 7 ns
 	Type: Other Unknown EDO
-	Installed Size: 1024 MB (Double-bank Connection)
-	Enabled Size: 1024 MB (Double-bank Connection)
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A1
 	Bank Connections: 0
-	Current Speed: 6 ns
+	Current Speed: 7 ns
 	Type: Other Unknown EDO
-	Installed Size: 1024 MB (Single-bank Connection)
-	Enabled Size: 1024 MB (Single-bank Connection)
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x000B, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A2
 	Bank Connections: 0
-	Current Speed: 6 ns
+	Current Speed: 7 ns
 	Type: Other Unknown EDO
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 1024 MB (Single-bank Connection)
+	Enabled Size: 1024 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000C, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A3
 	Bank Connections: 0
-	Current Speed: 6 ns
+	Current Speed: 7 ns
 	Type: Other Unknown EDO
 	Installed Size: Not Installed
 	Enabled Size: Not Installed
@@ -469,7 +469,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
@@ -488,12 +488,12 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: A1
 	Bank Locator: Bank2/3
-	Type: DDR2
+	Type: Unknown
 	Type Detail: None
 	Speed: Unknown
 	Manufacturer: None
@@ -507,12 +507,12 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A2
 	Bank Locator: Bank4/5
-	Type: Unknown
+	Type: DDR2
 	Type Detail: None
 	Speed: Unknown
 	Manufacturer: None
@@ -542,34 +542,34 @@ Memory Device
 Handle 0x002C, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 3 GB
 	Physical Array Handle: 0x0027
 	Partition Width: 1
 
 Handle 0x002D, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0028
 	Memory Array Mapped Address Handle: 0x002C
 	Partition Row Position: 1
 
 Handle 0x002E, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 1 GB
+	Starting Address: 0x00000000000
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
 	Physical Device Handle: 0x0029
 	Memory Array Mapped Address Handle: 0x002C
 	Partition Row Position: 1
 
 Handle 0x002F, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x002A
 	Memory Array Mapped Address Handle: 0x002C
 	Partition Row Position: 1
@@ -591,28 +591,28 @@ Handle 0x0032, DMI type 188, 255 bytes
 OEM-specific Type
 	Header and Data:
 		BC FF 32 00 4B 38 4E 50 54 44 52 41 4D 30 03 00
-		00 00 00 00 7F 00 00 00 00 00 01 00 00 00 00 00
+		00 00 00 00 BF 00 00 00 00 00 01 00 00 00 00 00
 		00 00 02 00 00 00 00 00 00 00 03 00 00 00 00 00
 		00 00 04 00 00 00 00 00 00 00 05 00 00 00 00 00
 		00 00 06 00 00 00 00 00 00 00 07 00 00 00 00 00
-		00 00 40 00 10 0A 00 00 00 00 00 00 03 00 FF 02
-		00 5D 01 00 40 00 01 00 60 00 00 00 00 00 00 00
-		00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 E0 3F 18 00 00 00 00 00 E0 3F 38 00 00 00
-		00 00 46 00 00 00 00 00 00 00 02 05 00 00 00 00
-		00 00 24 C2 6A 5D 20 13 12 08 10 04 01 00 6A 80
-		00 67 88 88 FF FE 15 13 14 13 11 12 12 14 15 00
-		00 00 13 14 15 15 15 15 15 15 13 00 00 00 31 00
-		31 00 15 15 16 16 15 15 14 14 15 15 17 17 16 17
-		15 16 15 15 36 00 36 00 22 12 11 20 20 22 20 00
-		22 12 11 20 20 22 20 00 00 00 00 00 00 00 00
+		00 00 40 00 10 0A 00 00 00 00 00 00 03 00 EF 02
+		00 FF 01 00 00 00 01 00 40 00 01 00 80 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 E0 3F 38 00 E0 3F 38 00 00 00 00 00 00 00
+		00 00 46 00 00 00 00 00 00 00 55 00 00 00 00 00
+		00 00 14 91 16 0C 20 12 22 01 10 04 01 00 69 80
+		10 37 88 88 FF FE 16 16 16 17 16 16 16 17 16 00
+		00 00 15 17 15 15 16 16 16 16 15 00 00 00 36 3C
+		00 00 00 00 00 00 00 00 00 00 00 2F 2F 2F 2F 2F
+		2F 2F 2F 00 00 00 00 00 22 13 11 10 00 2F 37 00
+		22 12 11 10 00 2F 2F 00 00 00 00 00 00 00 00
 	Strings:
 		 
 
 Handle 0x0033, DMI type 190, 255 bytes
 OEM-specific Type
 	Header and Data:
-		BE FF 33 00 00 00 00 80 00 00 00 00 00 00 00 00
+		BE FF 33 00 00 00 00 C0 00 00 00 00 00 00 00 00
 		00 00 00 00 01 06 16 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

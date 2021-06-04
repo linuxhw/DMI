@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-39 structures occupying 2034 bytes.
+39 structures occupying 2022 bytes.
 Table at 0x9AEBC000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -168,8 +168,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -404,7 +404,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -412,11 +412,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Kingston
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 99U5469-035.A00LF 
-	Rank: 1
+	Part Number: GR1333S364L9/8G
+	Rank: 2
 	Configured Clock Speed: 1333 MT/s
 
 Handle 0x001C, DMI type 17, 34 bytes
@@ -454,11 +454,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Nanya Technology
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NT4GC64B8HB0NS-CG 
-	Rank: 2
+	Part Number: 99U5469-035.A00LF 
+	Rank: 1
 	Configured Clock Speed: 1333 MT/s
 
 Handle 0x001E, DMI type 17, 34 bytes
@@ -485,16 +485,16 @@ Memory Device
 Handle 0x001F, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x001A
 	Partition Width: 4
 
 Handle 0x0020, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x001B
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: Unknown

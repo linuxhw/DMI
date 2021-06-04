@@ -93,7 +93,7 @@ Processor Information
 	Voltage: 1.5 V
 	External Clock: 200 MHz
 	Max Speed: 2000 MHz
-	Current Speed: 2022 MHz
+	Current Speed: 2021 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -180,8 +180,8 @@ Memory Module Information
 	Bank Connections: 0 5
 	Current Speed: 160 ns
 	Type: ECC DIMM
-	Installed Size: 2048 MB (Double-bank Connection)
-	Enabled Size: 2048 MB (Double-bank Connection)
+	Installed Size: 1024 MB (Single-bank Connection)
+	Enabled Size: 1024 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
@@ -190,8 +190,8 @@ Memory Module Information
 	Bank Connections: 0 5
 	Current Speed: 162 ns
 	Type: ECC DIMM
-	Installed Size: 512 MB (Single-bank Connection)
-	Enabled Size: 512 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000B, DMI type 8, 9 bytes
@@ -443,8 +443,8 @@ Physical Memory Array
 Handle 0x002A, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0009FFFFFFF
-	Range Size: 2560 MB
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 3 GB
 	Physical Array Handle: 0x0029
 	Partition Width: 1
 
@@ -454,7 +454,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 72 bits
-	Size: 2048 MB
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
@@ -470,8 +470,8 @@ Memory Device
 Handle 0x002C, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x002B
 	Memory Array Mapped Address Handle: 0x002A
 	Partition Row Position: 1
@@ -482,7 +482,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 72 bits
-	Size: 512 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -497,9 +497,9 @@ Memory Device
 
 Handle 0x002E, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x0009FFFFFFF
-	Range Size: 512 MB
+	Starting Address: 0x00040000000
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x002D
 	Memory Array Mapped Address Handle: 0x002A
 	Partition Row Position: 1

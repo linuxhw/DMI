@@ -582,8 +582,8 @@ Physical Memory Array
 Handle 0x0035, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0012FFFFFFF
-	Range Size: 4864 MB
+	Ending Address: 0x0042FFFFFFF
+	Range Size: 17152 MB
 	Physical Array Handle: 0x0034
 	Partition Width: 1
 
@@ -593,14 +593,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
 	Type: DDR
 	Type Detail: Synchronous
-	Speed: 1066 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: Manufacturer00
 	Serial Number: --
 	Asset Tag: --
@@ -609,8 +609,8 @@ Memory Device
 Handle 0x0037, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0036
 	Memory Array Mapped Address Handle: 0x0035
 	Partition Row Position: 1
@@ -621,14 +621,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
 	Type: DDR
 	Type Detail: Synchronous
-	Speed: 1066 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: Manufacturer01
 	Serial Number: --
 	Asset Tag: --
@@ -636,9 +636,9 @@ Memory Device
 
 Handle 0x0039, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0038
 	Memory Array Mapped Address Handle: 0x0035
 	Partition Row Position: 1
@@ -647,45 +647,57 @@ Handle 0x003A, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0034
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
+	Type: DDR
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
 	Manufacturer: Manufacturer02
 	Serial Number: --
 	Asset Tag: --
 	Part Number: ModulePartNumber02
 
-Handle 0x003B, DMI type 126, 19 bytes
-Inactive
+Handle 0x003B, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x003A
+	Memory Array Mapped Address Handle: 0x0035
+	Partition Row Position: 1
 
 Handle 0x003C, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0034
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
+	Type: DDR
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
 	Manufacturer: Manufacturer03
 	Serial Number: --
 	Asset Tag: --
 	Part Number: ModulePartNumber03
 
-Handle 0x003D, DMI type 126, 19 bytes
-Inactive
+Handle 0x003D, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00300000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x003C
+	Memory Array Mapped Address Handle: 0x0035
+	Partition Row Position: 1
 
 Handle 0x003E, DMI type 32, 20 bytes
 System Boot Information

@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 62 structures occupying 2112 bytes.
 Table at 0x000F0680.
@@ -121,9 +122,9 @@ Processor Information
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM)2 Quad CPU Q6700 @ 2.66GHz         
 	Voltage: 1.2 V
-	External Clock: 266 MHz
+	External Clock: 287 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 2666 MHz
+	Current Speed: 2870 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA775
 	L1 Cache Handle: 0x0005
@@ -139,15 +140,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 128 kB
-	Maximum Size: 128 kB
+	Installed Size: 32 kB
+	Maximum Size: 32 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
 	Speed: Unknown
 	Error Correction Type: Parity
 	System Type: Data
-	Associativity: 8-way Set-associative
+	Associativity: 2-way Set-associative
 
 Handle 0x0006, DMI type 7, 19 bytes
 Cache Information
@@ -155,15 +156,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 4096 kB
+	Maximum Size: 4096 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
 	Speed: Unknown
 	Error Correction Type: Single-bit ECC
-	System Type: Instruction
-	Associativity: 8-way Set-associative
+	System Type: Data
+	Associativity: 2-way Set-associative
 
 Handle 0x0007, DMI type 7, 19 bytes
 Cache Information
@@ -212,8 +213,8 @@ Memory Module Information
 	Bank Connections: 0 1
 	Current Speed: 30 ns
 	Type: DIMM SDRAM
-	Installed Size: 1024 MB (Single-bank Connection)
-	Enabled Size: 1024 MB (Single-bank Connection)
+	Installed Size: 1024 MB (Double-bank Connection)
+	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
@@ -232,8 +233,8 @@ Memory Module Information
 	Bank Connections: 4 5
 	Current Speed: 30 ns
 	Type: DIMM SDRAM
-	Installed Size: 1024 MB (Double-bank Connection)
-	Enabled Size: 1024 MB (Double-bank Connection)
+	Installed Size: 1024 MB (Single-bank Connection)
+	Enabled Size: 1024 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000C, DMI type 6, 12 bytes
@@ -601,7 +602,7 @@ Memory Device
 	Bank Locator: BANK_A1
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MHz
+	Speed: 667 MT/s
 	Manufacturer: Manufacturer0
 	Serial Number: --
 	Asset Tag: --
@@ -630,7 +631,7 @@ Memory Device
 	Bank Locator: BANK_A2
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MHz
+	Speed: 667 MT/s
 	Manufacturer: Manufacturer1
 	Serial Number: --
 	Asset Tag: --
@@ -659,7 +660,7 @@ Memory Device
 	Bank Locator: BANK_B1
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MHz
+	Speed: 667 MT/s
 	Manufacturer: Manufacturer2
 	Serial Number: --
 	Asset Tag: --
@@ -688,7 +689,7 @@ Memory Device
 	Bank Locator: BANK_B2
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MHz
+	Speed: 667 MT/s
 	Manufacturer: Manufacturer3
 	Serial Number: --
 	Asset Tag: --

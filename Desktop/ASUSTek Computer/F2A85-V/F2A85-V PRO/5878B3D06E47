@@ -1,13 +1,14 @@
-# dmidecode 2.12
+# dmidecode 3.0
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 71 structures occupying 2745 bytes.
-Table at 0x000EB330.
+Table at 0x000E9650.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 5104
-	Release Date: 09/14/2012
+	Version: 6504
+	Release Date: 11/27/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8192 kB
@@ -385,53 +386,53 @@ Handle 0x002A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_1
 	Type: 32-bit PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 1
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:1c.3
+	Bus Address: 0000:03:1c.3
 
 Handle 0x002B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
 	Type: 32-bit PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 2
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:01.0
+	Bus Address: 0000:ff:01.0
 
 Handle 0x002C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_2
 	Type: 32-bit PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 3
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:1c.4
+	Bus Address: 0000:ff:1c.4
 
 Handle 0x002D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI1
 	Type: 32-bit PCI
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 4
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:1c.6
+	Bus Address: 0000:02:1c.6
 
 Handle 0x002E, DMI type 9, 17 bytes
 System Slot Information
@@ -444,33 +445,33 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:01.0
+	Bus Address: 0000:01:01.0
 
 Handle 0x002F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI2
 	Type: 32-bit PCI
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 6
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:1c.7
+	Bus Address: 0000:02:1c.7
 
 Handle 0x0030, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_3
 	Type: 32-bit PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 5
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:01.0
+	Bus Address: 0000:ff:01.0
 
 Handle 0x0031, DMI type 10, 10 bytes
 On Board Device 1 Information
@@ -499,15 +500,15 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 8 GB
+	Maximum Capacity: 12 GB
 	Error Information Handle: Not Provided
 	Number Of Devices: 4
 
 Handle 0x0035, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x0034
 	Partition Width: 255
 
@@ -515,25 +516,31 @@ Handle 0x0036, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0034
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A1
 	Bank Locator: A1_BANK0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1333 MHz
 	Manufacturer: A1_Manufacturer1
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Array1_PartNumber1
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Clock Speed: 1600 MHz
 
-Handle 0x0037, DMI type 126, 35 bytes
-Inactive
+Handle 0x0037, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0036
+	Memory Array Mapped Address Handle: 0x0035
+	Partition Row Position: 1
 
 Handle 0x0038, DMI type 17, 34 bytes
 Memory Device
@@ -548,18 +555,18 @@ Memory Device
 	Bank Locator: A1_BANK1
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 667 MHz
+	Speed: 1333 MHz
 	Manufacturer: Corsair         
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMZ4GX3M1A1600C9  
-	Rank: 2
-	Configured Clock Speed: 55531 MHz
+	Part Number: CMZ8GX3M2A1600C9  
+	Rank: 1
+	Configured Clock Speed: 1600 MHz
 
 Handle 0x0039, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0038
 	Memory Array Mapped Address Handle: 0x0035
@@ -569,25 +576,31 @@ Handle 0x003A, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0034
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B1
 	Bank Locator: A1_BANK2
-	Type: Unknown
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer2
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1333 MHz
+	Manufacturer: Corsair         
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber2
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: CMZ8GX3M2A1600C9  
+	Rank: 1
+	Configured Clock Speed: 1600 MHz
 
-Handle 0x003B, DMI type 126, 35 bytes
-Inactive
+Handle 0x003B, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x003A
+	Memory Array Mapped Address Handle: 0x0035
+	Partition Row Position: 1
 
 Handle 0x003C, DMI type 17, 34 bytes
 Memory Device
@@ -596,12 +609,12 @@ Memory Device
 	Total Width: Unknown
 	Data Width: 64 bits
 	Size: No Module Installed
-	Form Factor: DIMM
+	Form Factor: Unknown
 	Set: None
 	Locator: DIMM_B2
 	Bank Locator: A1_BANK3
 	Type: Unknown
-	Type Detail: Synchronous
+	Type Detail: None
 	Speed: Unknown
 	Manufacturer: A1_Manufacturer3
 	Serial Number: --
@@ -673,7 +686,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0048, DMI type 4, 42 bytes
+Handle 0x004C, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: FM2 
 	Type: Central Processor
@@ -724,7 +737,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0049, DMI type 13, 22 bytes
+Handle 0x004D, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 8
@@ -736,8 +749,8 @@ BIOS Language Information
 		ja|JP|unicode
 		zh|TW|unicode
 		zh|CN|unicode
-	Currently Installed Language: en|US|iso8859-1
+	Currently Installed Language: ru|RU|iso8859-5
 
-Handle 0x004A, DMI type 127, 4 bytes
+Handle 0x004E, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.3 present.
 16 structures occupying 939 bytes.
 Table at 0x000FB180.
@@ -199,8 +200,8 @@ Physical Memory Array
 Handle 0x000A, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003F7FFFFF
-	Range Size: 1016 MB
+	Ending Address: 0x000BF7FFFFF
+	Range Size: 3064 MB
 	Physical Array Handle: 0x0009
 	Partition Width: 4
 
@@ -210,7 +211,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 512 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
@@ -226,8 +227,8 @@ Memory Device
 Handle 0x000C, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0001FFFFFFF
-	Range Size: 512 MB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x000B
 	Memory Array Mapped Address Handle: 0x000A
 	Partition Row Position: 223
@@ -238,7 +239,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 512 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -253,13 +254,13 @@ Memory Device
 
 Handle 0x000E, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00020000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 512 MB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x000D
 	Memory Array Mapped Address Handle: 0x000A
-	Partition Row Position: 16
-	Interleave Position: 32
+	Partition Row Position: 64
+	Interleave Position: 128
 
 Handle 0x000F, DMI type 127, 4 bytes
 End Of Table

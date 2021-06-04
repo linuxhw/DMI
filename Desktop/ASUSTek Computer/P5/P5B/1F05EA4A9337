@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 76 structures occupying 2531 bytes.
 Table at 0x000F06B0.
@@ -228,10 +229,10 @@ Handle 0x000B, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM2
 	Bank Connections: 4 5
-	Current Speed: 25 ns
+	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: 2048 MB (Double-bank Connection)
-	Enabled Size: 2048 MB (Double-bank Connection)
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x000C, DMI type 6, 12 bytes
@@ -693,8 +694,8 @@ Physical Memory Array
 Handle 0x0041, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0040
 	Partition Width: 4
 
@@ -711,7 +712,7 @@ Memory Device
 	Bank Locator: BANK0
 	Type: SDRAM
 	Type Detail: Synchronous
-	Speed: 800 MHz
+	Speed: 800 MT/s
 	Manufacturer: Manufacturer0
 	Serial Number: --
 	Asset Tag: --
@@ -733,7 +734,7 @@ Memory Device
 	Bank Locator: BANK1
 	Type: SDRAM
 	Type Detail: Synchronous
-	Speed: 800 MHz
+	Speed: 800 MT/s
 	Manufacturer: Manufacturer1
 	Serial Number: --
 	Asset Tag: --
@@ -746,16 +747,16 @@ Handle 0x0046, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0040
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2048 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
-	Type: SDRAM
-	Type Detail: Synchronous
-	Speed: 800 MHz
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
 	Manufacturer: Manufacturer2
 	Serial Number: --
 	Asset Tag: --

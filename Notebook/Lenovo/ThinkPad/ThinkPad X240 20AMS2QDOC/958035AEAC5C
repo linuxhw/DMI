@@ -2,7 +2,7 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 59 structures occupying 2387 bytes.
-Table at 0xBCD3D000.
+Table at 0xBCD3C000.
 
 Handle 0x0000, DMI type 4, 42 bytes
 Processor Information
@@ -139,7 +139,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -147,18 +147,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 0467
+	Manufacturer: 0215
 	Serial Number: --
 	Asset Tag: --
-	Part Number: RMT3170EF68F9W1600
+	Part Number: CMSA8GX3M1A1600C11
 	Rank: Unknown
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0007, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0005
 	Partition Width: 1
 
@@ -314,7 +314,7 @@ System Slot Information
 Handle 0x001F, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Other
-	Status: Disabled
+	Status: Enabled
 	Description: IBM Embedded Security hardware
 
 Handle 0x0020, DMI type 12, 5 bytes
@@ -390,7 +390,7 @@ OEM-specific Type
 Handle 0x0029, DMI type 134, 16 bytes
 OEM-specific Type
 	Header and Data:
-		86 10 29 00 00 53 54 4D 20 01 01 00 00 00 01 02
+		86 10 29 00 00 53 54 4D 20 01 01 00 00 03 01 02
 	Strings:
 		TPM INFO
 		System Reserved
@@ -398,15 +398,15 @@ OEM-specific Type
 Handle 0x002A, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 2A 00 24 41 4D 54 00 00 00 00 01 A5 FF 03
-		01 00 00 00
+		82 14 2A 00 24 41 4D 54 01 01 01 01 01 A5 FF 03
+		01 00 01 00
 
 Handle 0x002B, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
 		83 40 2B 00 35 00 00 00 09 00 00 00 00 00 1C 00
-		F8 00 43 9C 00 00 00 00 21 00 00 00 05 00 09 00
-		BA 0B 3E 00 00 00 00 00 C8 00 5A 15 00 00 00 00
+		F8 00 43 9C 00 00 00 00 09 C0 00 00 05 00 09 00
+		B8 0B 41 00 00 00 00 00 C8 00 5A 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x002C, DMI type 133, 5 bytes
@@ -429,8 +429,8 @@ OEM-specific Type
 Handle 0x002E, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: GIET94WW (2.44 )
-	Release Date: 09/20/2018
+	Version: GIET99WW (2.49 )
+	Release Date: 03/17/2020
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -446,19 +446,19 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.44
-	Firmware Revision: 1.17
+	BIOS Revision: 2.49
+	Firmware Revision: 1.18
 
 Handle 0x002F, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 866 bytes
+	Area Length: 3970 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
-	Status: Valid, Not Full
-	Change Token: 0x00000035
+	Status: Valid, Full
+	Change Token: 0x000000F7
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -473,9 +473,9 @@ System Event Log
 Handle 0x0030, DMI type 140, 67 bytes
 OEM-specific Type
 	Header and Data:
-		8C 43 30 00 4C 45 4E 4F 56 4F 0B 00 01 8D 4D 60
-		76 9D 3B E6 77 07 7F ED 03 CF 08 8E 02 01 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		8C 43 30 00 4C 45 4E 4F 56 4F 0B 00 01 4D 45 22
+		43 FE 18 CD 37 33 0F A9 8F 5E 15 AF A1 01 00 54
+		6F A0 3F 63 E0 8F 4C AB 8B 24 D2 B6 1C 96 36 01
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00
 
@@ -506,34 +506,34 @@ OEM-specific Type
 		8C 13 34 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
 		53 20 00
 
-Handle 0x0035, DMI type 140, 19 bytes
+Handle 0x0035, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 35 00 4C 45 4E 4F 56 4F 0B 05 01 00 00 00
+		87 12 35 00 54 50 07 01 01 DE 7F 00 00 00 7F 00
+		00 00
+
+Handle 0x0036, DMI type 140, 19 bytes
+OEM-specific Type
+	Header and Data:
+		8C 13 36 00 4C 45 4E 4F 56 4F 0B 05 01 00 00 00
 		00 00 00
 
-Handle 0x0036, DMI type 24, 5 bytes
+Handle 0x0037, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
-Handle 0x0037, DMI type 132, 7 bytes
+Handle 0x0038, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 37 00 01 D8 36
-
-Handle 0x0038, DMI type 135, 18 bytes
-OEM-specific Type
-	Header and Data:
-		87 12 38 00 54 50 07 01 01 DE 3F 00 00 00 3F 00
-		00 00
+		84 07 38 00 01 C0 36
 
 Handle 0x0039, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: GIHT32WW
-	Release Date: 02/17/2016
+	Version ID: GIHT33WW
+	Release Date: 08/08/2019
 
 Handle 0x003A, DMI type 140, 43 bytes
 OEM-specific Type

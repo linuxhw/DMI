@@ -1,8 +1,8 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-89 structures occupying 4084 bytes.
-Table at 0x000ED770.
+90 structures occupying 4158 bytes.
+Table at 0x000E0000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -689,28 +689,28 @@ Handle 0x0065, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x005B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
+	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM B
 	Bank Locator: Not Specified
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: 99U5469-070.A00LF 
+	Rank: 1
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x006A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x005B
 	Partition Width: 2
 
@@ -723,6 +723,17 @@ Memory Device Mapped Address
 	Memory Array Mapped Address Handle: 0x006A
 	Partition Row Position: 1
 	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x0074, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0065
+	Memory Array Mapped Address Handle: 0x006A
+	Partition Row Position: 1
+	Interleave Position: 2
 	Interleaved Data Depth: 1
 
 Handle 0x0026, DMI type 21, 7 bytes
