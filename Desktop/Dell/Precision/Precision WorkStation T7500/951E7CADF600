@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 113 structures occupying 4666 bytes.
@@ -19,8 +19,8 @@ Handle 0xDA01, DMI type 218, 107 bytes
 OEM-specific Type
 	Header and Data:
 		DA 6B 01 DA B2 00 17 4B 0E 38 00 20 F3 20 F3 00
-		00 10 F3 10 F3 00 00 30 F3 30 F3 00 00 21 F3 21
-		F3 00 00 11 F3 11 F3 00 00 31 F3 31 F3 00 00 10
+		00 10 F3 10 F3 00 00 30 F3 30 F3 00 00 00 00 21
+		F3 00 00 00 00 11 F3 00 00 00 00 31 F3 00 00 10
 		F5 10 F5 00 00 11 F5 11 F5 00 00 12 F5 12 F5 00
 		00 13 F5 13 F5 00 00 14 F5 14 F5 00 00 15 F5 15
 		F5 00 00 16 F5 16 F5 00 00 17 F5 17 F5 00 00 18
@@ -31,8 +31,8 @@ OEM-specific Type
 	Header and Data:
 		DA 71 02 DA B2 00 17 4B 0E 38 00 20 F4 20 F4 00
 		00 10 F4 10 F4 00 00 30 F4 30 F4 00 00 40 F4 40
-		F4 00 00 21 F4 21 F4 00 00 11 F4 11 F4 00 00 31
-		F4 31 F4 00 00 41 F4 41 F4 00 00 22 F4 22 F4 00
+		F4 00 00 00 00 21 F4 00 00 00 00 11 F4 00 00 00
+		00 31 F4 00 00 00 00 41 F4 00 00 22 F4 22 F4 00
 		00 12 F4 12 F4 00 00 32 F4 32 F4 00 00 42 F4 42
 		F4 00 00 00 00 23 F4 00 00 00 00 13 F4 00 00 00
 		00 33 F4 00 00 00 00 43 F4 00 00 FF FF 00 00 00
@@ -133,7 +133,7 @@ BIOS Information
 	Release Date: 10/30/2011
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -164,7 +164,7 @@ System Information
 	Version: Not Specified
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: APM Timer
 	SKU Number: Not Specified
 	Family: Not Specified
 
@@ -250,43 +250,15 @@ Processor Information
 	Type: Central Processor
 	Family: Xeon
 	Manufacturer: Intel
-	ID: C2 06 02 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 44, Stepping 2
-	Flags:
-		FPU (Floating-point unit on-chip)
-		VME (Virtual mode extension)
-		DE (Debugging extension)
-		PSE (Page size extension)
-		TSC (Time stamp counter)
-		MSR (Model specific registers)
-		PAE (Physical address extension)
-		MCE (Machine check exception)
-		CX8 (CMPXCHG8 instruction supported)
-		APIC (On-chip APIC hardware supported)
-		SEP (Fast system call)
-		MTRR (Memory type range registers)
-		PGE (Page global enable)
-		MCA (Machine check architecture)
-		CMOV (Conditional move instruction supported)
-		PAT (Page attribute table)
-		PSE-36 (36-bit page size extension)
-		CLFSH (CLFLUSH instruction supported)
-		DS (Debug store)
-		ACPI (ACPI supported)
-		MMX (MMX technology supported)
-		FXSR (FXSAVE and FXSTOR instructions supported)
-		SSE (Streaming SIMD extensions)
-		SSE2 (Streaming SIMD extensions 2)
-		SS (Self-snoop)
-		HTT (Multi-threading)
-		TM (Thermal monitor supported)
-		PBE (Pending break enabled)
+	ID: 00 00 00 00 00 00 00 00
+	Signature: Type 0, Family 0, Model 0, Stepping 0
+	Flags: None
 	Version: Not Specified
 	Voltage: Unknown
-	External Clock: 6400 MHz
+	External Clock: 100 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 2666 MHz
-	Status: Populated, Idle
+	Current Speed: Unknown
+	Status: Unpopulated
 	Upgrade: Socket LGA771
 	L1 Cache Handle: 0x0702
 	L2 Cache Handle: 0x0703
@@ -294,11 +266,10 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
-	Core Count: 6
-	Core Enabled: 6
-	Thread Count: 2
-	Characteristics:
-		64-bit capable
+	Core Count: 1
+	Core Enabled: 1
+	Thread Count: 1
+	Characteristics: None
 
 Handle 0x0700, DMI type 7, 19 bytes
 Cache Information
@@ -338,8 +309,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 12288 kB
-	Maximum Size: 12288 kB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -386,8 +357,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 12288 kB
-	Maximum Size: 12288 kB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -555,7 +526,7 @@ Handle 0x0901, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT1  
 	Type: x8 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 1
 	Characteristics:
@@ -577,7 +548,7 @@ Handle 0x0903, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT3  
 	Type: x8 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 3
 	Characteristics:
@@ -588,7 +559,7 @@ Handle 0x0904, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT4  
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 4
 	Characteristics:
@@ -641,13 +612,13 @@ On Board Device Information
 Handle 0x0A03, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Sound
-	Status: Disabled
+	Status: Enabled
 	Description: Intel(R) High Definition Audio Controller
 
 Handle 0x0A05, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Other
-	Status: Disabled
+	Status: Enabled
 	Description: IEEE-1394
 
 Handle 0x0A08, DMI type 10, 6 bytes
@@ -676,7 +647,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFE01000
 	Status: Valid, Not Full
-	Change Token: 0x000000DD
+	Change Token: 0x00000108
 	Header Format: Type 1
 	Supported Log Type Descriptors: 5
 	Descriptor 1: POST error
@@ -695,9 +666,9 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: Multi-bit ECC
-	Maximum Capacity: 192 GB
+	Maximum Capacity: 96 GB
 	Error Information Handle: Not Provided
-	Number Of Devices: 12
+	Number Of Devices: 6
 
 Handle 0x1100, DMI type 17, 27 bytes
 Memory Device
@@ -705,7 +676,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1          
@@ -713,10 +684,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Registered (Buffered)
 	Speed: 1600 MT/s
-	Manufacturer: 80AD04B380AD    
+	Manufacturer: 80CE80B380CE    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT42GR7AFR4A-PB  
+	Part Number: M393B2G70BH0-CK0  
 
 Handle 0x1101, DMI type 17, 27 bytes
 Memory Device
@@ -724,7 +695,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 2          
@@ -732,10 +703,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Registered (Buffered)
 	Speed: 1600 MT/s
-	Manufacturer: 80AD04B380AD    
+	Manufacturer: 80CE80B380CE    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT42GR7AFR4A-PB  
+	Part Number: M393B2G70BH0-CK0  
 
 Handle 0x1102, DMI type 17, 27 bytes
 Memory Device
@@ -743,7 +714,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 3          
@@ -751,10 +722,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Registered (Buffered)
 	Speed: 1600 MT/s
-	Manufacturer: 80AD04B380AD    
+	Manufacturer: 80CE80B380CE    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT42GR7AFR4A-PB  
+	Part Number: M393B2G70BH0-CK0  
 
 Handle 0x1103, DMI type 17, 27 bytes
 Memory Device
@@ -762,7 +733,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 4          
@@ -770,10 +741,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Registered (Buffered)
 	Speed: 1600 MT/s
-	Manufacturer: 80AD04B380AD    
+	Manufacturer: 80CE80B380CE    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT42GR7AFR4A-PB  
+	Part Number: M393B2G70BH0-CK0  
 
 Handle 0x1104, DMI type 17, 27 bytes
 Memory Device
@@ -781,86 +752,10 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 5          
-	Bank Locator: Not Specified
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1600 MT/s
-	Manufacturer: 80AD04B380AD    
-	Serial Number: --
-	Asset Tag: --
-	Part Number: HMT42GR7AFR4A-PB  
-
-Handle 0x1105, DMI type 17, 27 bytes
-Memory Device
-	Array Handle: 0x1000
-	Error Information Handle: No Error
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 16384 MB
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM 6          
-	Bank Locator: Not Specified
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1600 MT/s
-	Manufacturer: 80AD04B380AD    
-	Serial Number: --
-	Asset Tag: --
-	Part Number: HMT42GR7AFR4A-PB  
-
-Handle 0x1106, DMI type 17, 27 bytes
-Memory Device
-	Array Handle: 0x1000
-	Error Information Handle: No Error
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 16384 MB
-	Form Factor: DIMM
-	Set: None
-	Locator: RISER DIMM 1
-	Bank Locator: Not Specified
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1600 MT/s
-	Manufacturer: 802C8097802C    
-	Serial Number: --
-	Asset Tag: --
-	Part Number: 36JSF2G72PZ-1G6E1 
-
-Handle 0x1107, DMI type 17, 27 bytes
-Memory Device
-	Array Handle: 0x1000
-	Error Information Handle: No Error
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 16384 MB
-	Form Factor: DIMM
-	Set: None
-	Locator: RISER DIMM 2
-	Bank Locator: Not Specified
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1600 MT/s
-	Manufacturer: 80AD04B380AD    
-	Serial Number: --
-	Asset Tag: --
-	Part Number: HMT42GR7AFR4A-PB  
-
-Handle 0x1108, DMI type 17, 27 bytes
-Memory Device
-	Array Handle: 0x1000
-	Error Information Handle: No Error
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 16384 MB
-	Form Factor: DIMM
-	Set: None
-	Locator: RISER DIMM 3
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Registered (Buffered)
@@ -868,70 +763,50 @@ Memory Device
 	Manufacturer: 80CE80B380CE    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M393B2G70QH0-YH9  
+	Part Number: M393B2G70BH0-YH9  
 
-Handle 0x1109, DMI type 17, 27 bytes
+Handle 0x1105, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x1000
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: RISER DIMM 4
-	Bank Locator: Not Specified
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1333 MT/s
-	Manufacturer: 802C04B3802C    
-	Serial Number: --
-	Asset Tag: --
-	Part Number: 36KSF2G72PZ-1G4E1 
-
-Handle 0x110A, DMI type 17, 27 bytes
-Memory Device
-	Array Handle: 0x1000
-	Error Information Handle: No Error
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 16384 MB
-	Form Factor: DIMM
-	Set: None
-	Locator: RISER DIMM 5
+	Locator: DIMM 6          
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Registered (Buffered)
 	Speed: 1600 MT/s
-	Manufacturer: 80AD04B380AD    
+	Manufacturer: 80CE80B380CE    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT42GR7AFR4A-PB  
+	Part Number: M393B2G70BH0-CK0  
 
-Handle 0x110B, DMI type 17, 27 bytes
-Memory Device
-	Array Handle: 0x1000
-	Error Information Handle: No Error
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 16384 MB
-	Form Factor: DIMM
-	Set: None
-	Locator: RISER DIMM 6
-	Bank Locator: Not Specified
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1333 MT/s
-	Manufacturer: 802C04B3802C    
-	Serial Number: --
-	Asset Tag: --
-	Part Number: 36KSF2G72PZ-1G4E1 
+Handle 0x1106, DMI type 126, 27 bytes
+Inactive
+
+Handle 0x1107, DMI type 126, 27 bytes
+Inactive
+
+Handle 0x1108, DMI type 126, 27 bytes
+Inactive
+
+Handle 0x1109, DMI type 126, 27 bytes
+Inactive
+
+Handle 0x110A, DMI type 126, 27 bytes
+Inactive
+
+Handle 0x110B, DMI type 126, 27 bytes
+Inactive
 
 Handle 0x1300, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x02FFFFFFFFF
-	Range Size: 192 GB
+	Ending Address: 0x017FFFFFFFF
+	Range Size: 96 GB
 	Physical Array Handle: 0x1000
 	Partition Width: 1
 
@@ -943,7 +818,7 @@ Hardware Security
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x1900, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x1A00, DMI type 26, 20 bytes
@@ -958,17 +833,8 @@ Voltage Probe
 	Accuracy: 2.00%
 	OEM-specific Information: 0x0000DC00
 
-Handle 0x1A01, DMI type 26, 20 bytes
-Voltage Probe
-	Description: CPU1 Voltage
-	Location: Motherboard
-	Status: OK
-	Maximum Value: 1.990 V
-	Minimum Value: 0.000 V
-	Resolution: 7.8 mV
-	Tolerance: Unknown
-	Accuracy: 2.00%
-	OEM-specific Information: 0x0000DC01
+Handle 0x1A01, DMI type 126, 20 bytes
+Inactive
 
 Handle 0x1A02, DMI type 26, 20 bytes
 Voltage Probe
@@ -1027,17 +893,11 @@ Cooling Device
 	Status: OK
 	OEM-specific Information: 0x0000DD04
 
-Handle 0x1B15, DMI type 27, 12 bytes
-Cooling Device
-	Type: Fan
-	Status: OK
-	OEM-specific Information: 0x0000DD05
+Handle 0x1B15, DMI type 126, 12 bytes
+Inactive
 
-Handle 0x1B16, DMI type 27, 12 bytes
-Cooling Device
-	Type: Fan
-	Status: OK
-	OEM-specific Information: 0x0000DD06
+Handle 0x1B16, DMI type 126, 12 bytes
+Inactive
 
 Handle 0x1B17, DMI type 126, 12 bytes
 Inactive
@@ -1057,17 +917,8 @@ Temperature Probe
 	Accuracy: Unknown
 	OEM-specific Information: 0x0000DC11
 
-Handle 0x1C01, DMI type 28, 20 bytes
-Temperature Probe
-	Description: CPU1
-	Location: Processor
-	Status: OK
-	Maximum Value: 127.0 deg C
-	Minimum Value: -127.0 deg C
-	Resolution: 1.000 deg C
-	Tolerance: Unknown
-	Accuracy: Unknown
-	OEM-specific Information: 0x0000DC12
+Handle 0x1C01, DMI type 126, 20 bytes
+Inactive
 
 Handle 0x2000, DMI type 32, 11 bytes
 System Boot Information

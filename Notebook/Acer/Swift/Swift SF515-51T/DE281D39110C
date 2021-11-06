@@ -1,15 +1,15 @@
-# dmidecode 3.1
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.1 present.
-# SMBIOS implementations newer than version 3.1.1 are not
+# SMBIOS implementations newer than version 3.2.0 are not
 # fully supported by this version of dmidecode.
 Table at 0x8A9AB000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: V1.03
-	Release Date: 11/28/2018
+	Version: V1.04
+	Release Date: 05/24/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -32,14 +32,14 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.3
+	BIOS Revision: 1.4
 	Firmware Revision: 1.6
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Acer
 	Product Name: Swift SF515-51T
-	Version: V1.03
+	Version: V1.04
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -50,7 +50,7 @@ Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: WL
 	Product Name: Guinness_WL
-	Version: V1.03
+	Version: V1.04
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -66,10 +66,10 @@ Chassis Information
 	Manufacturer: Acer
 	Type: Notebook
 	Lock: Not Present
-	Version: V1.03
+	Version: V1.04
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -595,7 +595,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 4ATS1G64HZ-2G6E1    
 	Rank: 1
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -619,7 +619,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 4ATS1G64HZ-2G6E1    
 	Rank: 1
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -800,7 +800,7 @@ Processor Information
 	Max Speed: 2000 MHz
 	Current Speed: 1683 MHz
 	Status: Populated, Enabled
-	Upgrade: <OUT OF SPEC>
+	Upgrade: Socket BGA1528
 	L1 Cache Handle: 0x0044
 	L2 Cache Handle: 0x0045
 	L3 Cache Handle: 0x0046
@@ -1099,7 +1099,7 @@ Group Associations
 Handle 0x0079, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 79 00 01 04 01 45 02 00 90 06 01 85 36 20
+		DB 6A 79 00 01 04 01 45 02 00 90 06 01 85 30 20
 		00 00 00 04 40 00 00 01 1F 00 00 08 0B 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

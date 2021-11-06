@@ -1,14 +1,14 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
-70 structures occupying 2504 bytes.
-Table at 0x000F0720.
+70 structures occupying 2524 bytes.
+Table at 0x000F0730.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 1101   
-	Release Date: 07/18/2008
+	Version: 2103   
+	Release Date: 04/27/2009
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 1024 kB
@@ -38,7 +38,7 @@ BIOS Information
 		ATAPI Zip drive boot is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
-	BIOS Revision: 11.1
+	BIOS Revision: 21.3
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -223,7 +223,7 @@ Handle 0x000A, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM1
 	Bank Connections: 2 3
-	Current Speed: 19 ns
+	Current Speed: 15 ns
 	Type: DIMM
 	Installed Size: 4096 MB (Double-bank Connection)
 	Enabled Size: 4096 MB (Double-bank Connection)
@@ -243,10 +243,10 @@ Handle 0x000C, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM3
 	Bank Connections: 6 7
-	Current Speed: 19 ns
+	Current Speed: 15 ns
 	Type: DIMM
-	Installed Size: 2048 MB (Double-bank Connection)
-	Enabled Size: 2048 MB (Double-bank Connection)
+	Installed Size: 4096 MB (Double-bank Connection)
+	Enabled Size: 4096 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000D, DMI type 8, 9 bytes
@@ -617,30 +617,35 @@ BIOS Language Information
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0039, DMI type 15, 35 bytes
+Handle 0x0039, DMI type 15, 55 bytes
 System Event Log
-	Area Length: 4 bytes
-	Header Start Offset: 0x0000
-	Header Length: 2 bytes
-	Data Start Offset: 0x0002
-	Access Method: Indexed I/O, one 16-bit index port, one 8-bit data port
-	Access Address: Index 0x046A, Data 0x046C
-	Status: Invalid, Not Full
+	Area Length: 1008 bytes
+	Header Start Offset: 0x2010
+	Data Start Offset: 0x2010
+	Access Method: OEM-specific
+	Access Address: Unknown
+	Status: Valid, Not Full
 	Change Token: 0x00000000
 	Header Format: No Header
-	Supported Log Type Descriptors: 6
-	Descriptor 1: End of log
-	Data Format 1: OEM-specific
-	Descriptor 2: End of log
-	Data Format 2: OEM-specific
-	Descriptor 3: End of log
-	Data Format 3: OEM-specific
-	Descriptor 4: End of log
-	Data Format 4: OEM-specific
-	Descriptor 5: End of log
-	Data Format 5: OEM-specific
-	Descriptor 6: End of log
-	Data Format 6: OEM-specific
+	Supported Log Type Descriptors: 9
+	Descriptor 1: Single-bit ECC memory error
+	Data Format 1: Multiple-event handle
+	Descriptor 2: Multi-bit ECC memory error
+	Data Format 2: Multiple-event handle
+	Descriptor 3: Parity memory error
+	Data Format 3: Multiple-event
+	Descriptor 4: I/O channel block
+	Data Format 4: Multiple-event
+	Descriptor 5: POST error
+	Data Format 5: POST results bitmap
+	Descriptor 6: PCI parity error
+	Data Format 6: Multiple-event handle
+	Descriptor 7: PCI system error
+	Data Format 7: Multiple-event handle
+	Descriptor 8: System limit exceeded
+	Data Format 8: Multiple-event system management
+	Descriptor 9: OEM-specific
+	Data Format 9: POST results bitmap
 
 Handle 0x003A, DMI type 16, 15 bytes
 Physical Memory Array
@@ -654,8 +659,8 @@ Physical Memory Array
 Handle 0x003B, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x003A
 	Partition Width: 4
 
@@ -699,9 +704,9 @@ Memory Device
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: DDR
+	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 1066 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer01
 	Serial Number: --
 	Asset Tag: --
@@ -752,14 +757,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
-	Type: DDR
+	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 1066 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer03
 	Serial Number: --
 	Asset Tag: --
@@ -768,8 +773,8 @@ Memory Device
 Handle 0x0043, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00004000000
-	Ending Address: 0x00083FFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x00103FFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0042
 	Memory Array Mapped Address Handle: 0x003B
 	Partition Row Position: 1

@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 93 structures occupying 3297 bytes.
 Table at 0x000E92A0.
@@ -436,7 +437,7 @@ Memory Device
 	Bank Locator: BANK0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Samsung      
 	Serial Number: --
 	Asset Tag: --
@@ -475,7 +476,7 @@ Memory Device
 	Bank Locator: BANK1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer1
 	Serial Number: --
 	Asset Tag: --
@@ -664,8 +665,9 @@ System Power Supply
 	Input Current Probe Handle: 0x0039
 
 Handle 0x003D, DMI type 34, 16 bytes
+Invalid entry length (16). Fixed up to 11.
 Management Device
-	Description: 2
+	Description: LM78-2
 	Type: LM78
 	Address: 0x00000000
 	Address Type: I/O Port

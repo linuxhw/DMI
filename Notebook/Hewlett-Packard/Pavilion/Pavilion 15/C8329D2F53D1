@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-32 structures occupying 1766 bytes.
+31 structures occupying 1690 bytes.
 Table at 0xAFABC000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -9,7 +9,7 @@ BIOS Information
 	Vendor: Insyde
 	Version: F.35
 	Release Date: 11/11/2014
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -205,21 +205,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x0016, DMI type 22, 26 bytes
-Portable Battery
-	Location: Primary
-	Manufacturer: 13-54
-	Manufacture Date: 01/01/2013
-	Serial Number: --
-	Name: PI06047
-	Chemistry: Lithium Ion
-	Design Capacity: 47520 mWh
-	Design Voltage: 10800 mV
-	SBDS Version: 3.1
-	Maximum Error: 1%
-	OEM-specific Information: 0x00000000
-
-Handle 0x0018, DMI type 41, 11 bytes
+Handle 0x0017, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: RICHLAND (9997)
 	Type: Video
@@ -227,7 +213,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:01.0
 
-Handle 0x001A, DMI type 41, 11 bytes
+Handle 0x0019, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Realtek RTL8188EE 802.11bgn Wi-Fi Adapter
 	Type: Other
@@ -235,7 +221,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:02:00.0
 
-Handle 0x001B, DMI type 41, 11 bytes
+Handle 0x001A, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Realtek PCIE CardReader
 	Type: Other
@@ -243,7 +229,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:04:00.0
 
-Handle 0x001C, DMI type 41, 11 bytes
+Handle 0x001B, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Realtek PCIe FE Family Controller
 	Type: Ethernet
@@ -251,7 +237,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:05:00.0
 
-Handle 0x001D, DMI type 16, 23 bytes
+Handle 0x001C, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -260,9 +246,9 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
-Handle 0x001E, DMI type 17, 34 bytes
+Handle 0x001D, DMI type 17, 34 bytes
 Memory Device
-	Array Handle: 0x001D
+	Array Handle: 0x001C
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -281,13 +267,13 @@ Memory Device
 	Rank: Unknown
 	Configured Memory Speed: Unknown
 
-Handle 0x0020, DMI type 17, 34 bytes
+Handle 0x001F, DMI type 17, 34 bytes
 Memory Device
-	Array Handle: 0x001D
+	Array Handle: 0x001C
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(under)
@@ -302,24 +288,24 @@ Memory Device
 	Rank: 1
 	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0022, DMI type 20, 35 bytes
+Handle 0x0021, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0020
-	Memory Array Mapped Address Handle: 0x0023
+	Physical Device Handle: 0x001F
+	Memory Array Mapped Address Handle: 0x0022
 	Partition Row Position: 1
 
-Handle 0x0023, DMI type 19, 31 bytes
+Handle 0x0022, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Array Handle: 0x001D
+	Physical Array Handle: 0x001C
 	Partition Width: 255
 
-Handle 0x0025, DMI type 4, 42 bytes
+Handle 0x0024, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: Socket FT1
 	Type: Central Processor
@@ -358,8 +344,8 @@ Processor Information
 	Current Speed: 2700 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket FS1
-	L1 Cache Handle: 0x0026
-	L2 Cache Handle: 0x0027
+	L1 Cache Handle: 0x0025
+	L2 Cache Handle: 0x0026
 	L3 Cache Handle: Not Provided
 	Serial Number: --
 	Asset Tag: --
@@ -370,7 +356,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0026, DMI type 7, 19 bytes
+Handle 0x0025, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -386,14 +372,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 2-way Set-associative
 
-Handle 0x0027, DMI type 7, 19 bytes
+Handle 0x0026, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -402,6 +388,6 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0028, DMI type 127, 4 bytes
+Handle 0x0027, DMI type 127, 4 bytes
 End Of Table
 

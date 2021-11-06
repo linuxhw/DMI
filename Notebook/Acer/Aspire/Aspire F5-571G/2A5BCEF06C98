@@ -1,7 +1,7 @@
 # dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-33 structures occupying 2368 bytes.
+33 structures occupying 2360 bytes.
 Table at 0x9C6A3000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -145,8 +145,8 @@ Memory Module Information
 	Bank Connections: 0 0
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0006, DMI type 6, 12 bytes
@@ -155,8 +155,8 @@ Memory Module Information
 	Bank Connections: 0 0
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 7, 19 bytes
@@ -278,7 +278,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -286,11 +286,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Kingston
+	Manufacturer: 1315
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ACR16D3LS1KNG/4G  
-	Rank: 1
+	Part Number: CT102464BF160B.C16
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0012, DMI type 17, 34 bytes
@@ -299,7 +299,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -307,26 +307,26 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Kingston
+	Manufacturer: 1315
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9905469-143.A00LF 
-	Rank: 1
+	Part Number: CT102464BF160B.C16
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0013, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0010
 	Partition Width: 2
 
 Handle 0x0014, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0011
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown
@@ -336,8 +336,8 @@ Memory Device Mapped Address
 Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0012
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown

@@ -1,7 +1,7 @@
 # dmidecode 2.12
 # SMBIOS entry point at 0xbfec3000
 SMBIOS 2.4 present.
-42 structures occupying 1913 bytes.
+44 structures occupying 2179 bytes.
 Table at 0xBFEC2000.
 
 Handle 0x0000, DMI type 4, 35 bytes
@@ -182,8 +182,8 @@ Physical Memory Array
 Handle 0x0007, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0006
 	Partition Width: 2
 
@@ -227,30 +227,59 @@ Memory Device
 	Array Handle: 0x0006
 	Error Information Handle: No Error
 	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Data Width: 65508 bits
+	Size: 2048 MB
+	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK 1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1067 MHz
+	Manufacturer: 0x80AD
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
+	Part Number: 0x484D54313235533642465238432D47372020
 
-Handle 0x000B, DMI type 20, 19 bytes
+Handle 0x000B, DMI type 130, 186 bytes
+OEM-specific Type
+	Header and Data:
+		82 BA 0B 00 0A 00 00 00 B0 00 92 10 0B 03 02 11
+		00 09 03 52 01 08 0F 00 1C 00 69 78 69 3C 69 11
+		2C 95 70 03 3C 3C 01 2C 83 05 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 0F 11 05 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80
+		AD 01 09 19 2A 30 AD 72 E3 B8 48 4D 54 31 32 35
+		53 36 42 46 52 38 43 2D 47 37 20 20 4E 30 80 AD
+		00 54 48 39 35 4E 34 34 32 30 31 30 31 00 00 00
+		00 00 00 00 00 00 00 00 00 00
+
+Handle 0x000C, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0008
 	Memory Array Mapped Address Handle: 0x0007
 	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 1
 
-Handle 0x000C, DMI type 0, 24 bytes
+Handle 0x000D, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x000A
+	Memory Array Mapped Address Handle: 0x0007
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 1
+
+Handle 0x000E, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Apple Inc.
 	Version:    MBP53.88Z.00AC.B03.0906151647
@@ -268,7 +297,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 	BIOS Revision: 0.1
 
-Handle 0x000D, DMI type 1, 27 bytes
+Handle 0x000F, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Apple Inc.
 	Product Name: MacBookPro5,4
@@ -279,7 +308,7 @@ System Information
 	SKU Number: System SKU#
 	Family: MacBook Pro
 
-Handle 0x000E, DMI type 2, 16 bytes
+Handle 0x0010, DMI type 2, 16 bytes
 Base Board Information
 	Manufacturer: Apple Inc.
 	Product Name: Mac-F22587A1
@@ -290,11 +319,11 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Part Component
-	Chassis Handle: 0x000F
+	Chassis Handle: 0x0011
 	Type: Motherboard
 	Contained Object Handles: 0
 
-Handle 0x000F, DMI type 3, 21 bytes
+Handle 0x0011, DMI type 3, 21 bytes
 Chassis Information
 	Manufacturer: Apple Inc.
 	Type: Notebook
@@ -311,7 +340,7 @@ Chassis Information
 	Number Of Power Cords: Unspecified
 	Contained Elements: 0
 
-Handle 0x0010, DMI type 8, 9 bytes
+Handle 0x0012, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: None
 	Internal Connector Type: None
@@ -319,7 +348,7 @@ Port Connector Information
 	External Connector Type: IEEE 1394
 	Port Type: Firewire (IEEE P1394)
 
-Handle 0x0011, DMI type 8, 9 bytes
+Handle 0x0013, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: None
 	Internal Connector Type: None
@@ -327,7 +356,7 @@ Port Connector Information
 	External Connector Type: RJ-45
 	Port Type: Network Port
 
-Handle 0x0012, DMI type 8, 9 bytes
+Handle 0x0014, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: None
 	Internal Connector Type: None
@@ -335,7 +364,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0013, DMI type 8, 9 bytes
+Handle 0x0015, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: None
 	Internal Connector Type: None
@@ -343,7 +372,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0014, DMI type 8, 9 bytes
+Handle 0x0016, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: None
 	Internal Connector Type: None
@@ -351,7 +380,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0015, DMI type 8, 9 bytes
+Handle 0x0017, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: None
 	Internal Connector Type: Other
@@ -359,7 +388,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0016, DMI type 8, 9 bytes
+Handle 0x0018, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: None
 	Internal Connector Type: Other
@@ -367,7 +396,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0017, DMI type 8, 9 bytes
+Handle 0x0019, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: None
 	Internal Connector Type: Other
@@ -375,7 +404,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0018, DMI type 8, 9 bytes
+Handle 0x001A, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: None
 	Internal Connector Type: None
@@ -383,7 +412,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x0019, DMI type 8, 9 bytes
+Handle 0x001B, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: None
 	Internal Connector Type: None
@@ -391,7 +420,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x001A, DMI type 8, 9 bytes
+Handle 0x001C, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: None
 	Internal Connector Type: None
@@ -399,7 +428,7 @@ Port Connector Information
 	External Connector Type: Other
 	Port Type: Other
 
-Handle 0x001B, DMI type 8, 9 bytes
+Handle 0x001D, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: SATA Port A
 	Internal Connector Type: On Board IDE
@@ -407,7 +436,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x001C, DMI type 8, 9 bytes
+Handle 0x001E, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: SATA Port B
 	Internal Connector Type: On Board IDE
@@ -415,7 +444,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x001D, DMI type 8, 9 bytes
+Handle 0x001F, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: None
 	Internal Connector Type: None
@@ -423,7 +452,7 @@ Port Connector Information
 	External Connector Type: Other
 	Port Type: Other
 
-Handle 0x001E, DMI type 9, 13 bytes
+Handle 0x0020, DMI type 9, 13 bytes
 System Slot Information
 	Designation: AirPort
 	Type: x1 PCI Express
@@ -435,41 +464,41 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 
-Handle 0x001F, DMI type 10, 6 bytes
+Handle 0x0021, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
 	Description: Nvidia G84 Video
 
-Handle 0x0020, DMI type 10, 6 bytes
+Handle 0x0022, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Sound
 	Status: Enabled
 	Description: Azalia Audio Codec
 
-Handle 0x0021, DMI type 10, 6 bytes
+Handle 0x0023, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Ethernet
 	Status: Enabled
 	Description: Yukon Ultra Ethernet Controller
 
-Handle 0x0022, DMI type 10, 6 bytes
+Handle 0x0024, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Other
 	Status: Enabled
 	Description: Sata
 
-Handle 0x0123, DMI type 12, 5 bytes
+Handle 0x0125, DMI type 12, 5 bytes
 System Configuration Options
 
-Handle 0x0124, DMI type 13, 22 bytes
+Handle 0x0126, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		<BAD INDEX>
 	Currently Installed Language: Not Specified
 
-Handle 0x0125, DMI type 22, 32 bytes
+Handle 0x0127, DMI type 22, 32 bytes
 Portable Battery
 	Location: Unknown
 	Manufacturer: Unknown
@@ -483,19 +512,19 @@ Portable Battery
 	SBDS Chemistry: Unknown
 	OEM-specific Information: 0x00000000
 
-Handle 0x0126, DMI type 32, 20 bytes
+Handle 0x0128, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0127, DMI type 131, 6 bytes
+Handle 0x0129, DMI type 131, 6 bytes
 OEM-specific Type
 	Header and Data:
-		83 06 27 01 01 03
+		83 06 29 01 01 03
 
-Handle 0x0128, DMI type 128, 88 bytes
+Handle 0x012A, DMI type 128, 88 bytes
 OEM-specific Type
 	Header and Data:
-		80 58 28 01 03 00 00 00 03 14 00 C0 FF 7F 00 C0
+		80 58 2A 01 03 00 00 00 03 14 00 C0 FF 7F 00 C0
 		01 02 03 00 00 00 00 00 00 00 C0 FF FF FF C3 FF
 		00 40 CB FF FF BF FF FF 00 00 C8 FF FF 3F CA FF
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

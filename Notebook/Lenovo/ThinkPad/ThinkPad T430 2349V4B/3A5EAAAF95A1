@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-68 structures occupying 2594 bytes.
+69 structures occupying 2648 bytes.
 Table at 0xDAE9C000.
 
 Handle 0x0000, DMI type 134, 16 bytes
@@ -431,8 +431,19 @@ BIOS Language Information
 		en-US
 	Currently Installed Language: en-US
 
-Handle 0x002C, DMI type 126, 26 bytes
-Inactive
+Handle 0x002C, DMI type 22, 26 bytes
+Portable Battery
+	Location: Rear
+	Manufacturer: SANYO
+	Name: 45N1015
+	Design Capacity: 47520 mWh
+	Design Voltage: 10800 mV
+	SBDS Version: 03.01
+	Maximum Error: Unknown
+	SBDS Serial Number: --
+	SBDS Manufacture Date: 2020-10-13
+	SBDS Chemistry: LION
+	OEM-specific Information: 0x00000000
 
 Handle 0x002D, DMI type 126, 26 bytes
 Inactive
@@ -559,36 +570,42 @@ OEM-specific Type
 Handle 0x003D, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 3D 00 4C 45 4E 4F 56 4F 0B 05 01 04 00 00
+		8C 13 3D 00 4C 45 4E 4F 56 4F 0B 05 01 05 00 00
 		00 00 00
 
-Handle 0x003E, DMI type 24, 5 bytes
+Handle 0x003E, DMI type 140, 23 bytes
+OEM-specific Type
+	Header and Data:
+		8C 17 3E 00 4C 45 4E 4F 56 4F 0B 06 01 7E 14 00
+		00 00 00 00 00 00 00
+
+Handle 0x003F, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
 	Administrator Password Status: Enabled
 	Front Panel Reset Status: Not Implemented
 
-Handle 0x003F, DMI type 132, 7 bytes
+Handle 0x0040, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 3F 00 01 D8 36
+		84 07 40 00 01 D8 36
 
-Handle 0x0040, DMI type 135, 18 bytes
+Handle 0x0041, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 40 00 54 50 07 01 01 D2 FF 01 00 00 FD 01
+		87 12 41 00 54 50 07 01 01 D2 FF 01 00 00 FD 01
 		00 00
 
-Handle 0x0041, DMI type 140, 15 bytes
+Handle 0x0042, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
 	Version ID: G1HT36WW
 	Release Date: 08/07/2019
 
-Handle 0x0042, DMI type 140, 43 bytes
+Handle 0x0043, DMI type 140, 43 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2B 42 00 4C 45 4E 4F 56 4F 0B 08 01 FF FF FF
+		8C 2B 43 00 4C 45 4E 4F 56 4F 0B 08 01 FF FF FF
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF FF FF FF
 

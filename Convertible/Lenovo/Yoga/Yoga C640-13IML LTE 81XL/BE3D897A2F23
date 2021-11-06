@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x80520000.
@@ -33,7 +33,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -68,7 +68,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -189,8 +189,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -205,8 +205,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -709,6 +709,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.0
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0048, DMI type 9, 24 bytes
 System Slot Information
@@ -723,6 +725,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.1
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0049, DMI type 9, 24 bytes
 System Slot Information
@@ -737,6 +741,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.2
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x004A, DMI type 9, 24 bytes
 System Slot Information
@@ -751,6 +757,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.3
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x004B, DMI type 9, 24 bytes
 System Slot Information
@@ -765,6 +773,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.4
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x004C, DMI type 9, 24 bytes
 System Slot Information
@@ -779,6 +789,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.5
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x004D, DMI type 9, 24 bytes
 System Slot Information
@@ -793,6 +805,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.6
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x004E, DMI type 200, 16 bytes
 OEM-specific Type
@@ -897,7 +911,7 @@ System Information
 	Version: Lenovo YOGA C640-13IML LTE
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: Other
 	SKU Number: LENOVO_MT_81XL_BU_idea_FM_YOGA C640-13IML LTE
 	Family: YOGA C640-13IML LTE
 
@@ -920,14 +934,14 @@ Group Associations
 
 Handle 0x0056, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 1170 bytes
+	Area Length: 3394 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000048
+	Change Token: 0x000000D3
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -948,7 +962,7 @@ Group Associations
 Handle 0x0058, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 58 00 01 04 01 45 02 00 A0 06 01 10 80 20
+		DB 6A 58 00 01 04 01 45 02 00 A0 06 01 10 86 20
 		00 00 00 00 48 00 00 00 00 00 00 06 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

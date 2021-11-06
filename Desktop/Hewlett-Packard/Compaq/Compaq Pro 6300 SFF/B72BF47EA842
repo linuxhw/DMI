@@ -83,8 +83,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 64 kB
-	Maximum Size: 64 kB
+	Installed Size: 128 kB
+	Maximum Size: 128 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -99,8 +99,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 256 kB
-	Maximum Size: 256 kB
+	Installed Size: 512 kB
+	Maximum Size: 512 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -155,7 +155,7 @@ Handle 0x000B, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation:  Onboard VGA
 	Type: Video
-	Status: Enabled
+	Status: Disabled
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 
@@ -270,9 +270,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Fill By OEM
-	Core Count: 1
-	Core Enabled: 1
-	Thread Count: 1
+	Core Count: 2
+	Core Enabled: 2
+	Thread Count: 4
 	Characteristics:
 		64-bit capable
 		Multi-Core
@@ -666,13 +666,13 @@ Handle 0x0047, DMI type 9, 17 bytes
 System Slot Information
 	Designation: X16PCIEXP
 	Type: x16 PCI Express 2 x16
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 255
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:ff:00.0
+	Bus Address: 0000:01:00.0
 
 Handle 0x0048, DMI type 9, 17 bytes
 System Slot Information
@@ -702,13 +702,13 @@ Handle 0x004A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI1
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 255
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:01:00.0
+	Bus Address: 0000:02:00.0
 
 Handle 0x004C, DMI type 8, 9 bytes
 Port Connector Information

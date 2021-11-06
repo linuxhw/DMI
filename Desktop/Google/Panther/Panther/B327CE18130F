@@ -1,15 +1,15 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
-SMBIOS 2.7 present.
-7 structures occupying 309 bytes.
-Table at 0x7F7D7020.
+SMBIOS 2.8 present.
+19 structures occupying 841 bytes.
+Table at 0x7F73D020.
 
-Handle 0x0000, DMI type 0, 24 bytes
+Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: coreboot
-	Version: 4.0-6588-g4acd8ea-dirty
-	Release Date: 09/04/2014
-	ROM Size: 8192 kB
+	Version: MrChromebox-4.12
+	Release Date: 06/18/2020
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		PC Card (PCMCIA) is supported
@@ -17,30 +17,34 @@ BIOS Information
 		Selectable boot is supported
 		ACPI is supported
 		Targeted content distribution is supported
-	BIOS Revision: 4.0
-	Firmware Revision: 0.0
+	BIOS Revision: 4.12
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
-	Manufacturer: Google
+	Manufacturer: GOOGLE
 	Product Name: Panther
 	Version: 1.0
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Reserved
 	SKU Number: Not Specified
-	Family: Not Specified
+	Family: Google_Beltino
 
-Handle 0x0002, DMI type 2, 8 bytes
+Handle 0x0002, DMI type 2, 14 bytes
 Base Board Information
-	Manufacturer: Google
+	Manufacturer: GOOGLE
 	Product Name: Panther
 	Version: 1.0
 	Serial Number: --
+	Asset Tag: --
+	Features: None
+	Location In Chassis: Not Specified
+	Chassis Handle: 0x0003
+	Type: Unknown
 
-Handle 0x0003, DMI type 3, 21 bytes
+Handle 0x0003, DMI type 3, 22 bytes
 Chassis Information
-	Manufacturer: Google
+	Manufacturer: GOOGLE
 	Type: Desktop
 	Lock: Not Present
 	Version: Not Specified
@@ -54,6 +58,7 @@ Chassis Information
 	Height: Unspecified
 	Number Of Power Cords: Unspecified
 	Contained Elements: 0
+	SKU Number: Not Specified
 
 Handle 0x0004, DMI type 4, 42 bytes
 Processor Information
@@ -92,26 +97,194 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz
+	Version: Intel(R) Celeron(R) 2955U @ 1.40GHz
 	Voltage: Unknown
 	External Clock: Unknown
 	Max Speed: Unknown
 	Current Speed: Unknown
 	Status: Unpopulated
-	Upgrade: Other
-	L1 Cache Handle: Not Provided
-	L2 Cache Handle: Not Provided
-	L3 Cache Handle: Not Provided
+	Upgrade: Unknown
+	L1 Cache Handle: 0x0006
+	L2 Cache Handle: 0x0007
+	L3 Cache Handle: 0x0008
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
-	Core Count: 16
+	Core Count: 2
+	Core Enabled: 2
 	Characteristics: None
 
-Handle 0x0005, DMI type 32, 11 bytes
+Handle 0x0005, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: CACHE0
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Unknown
+	Location: Internal
+	Installed Size: 32 kB
+	Maximum Size: 32 kB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Unknown
+	System Type: Data
+	Associativity: 8-way Set-associative
+
+Handle 0x0006, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: CACHE1
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Unknown
+	Location: Internal
+	Installed Size: 32 kB
+	Maximum Size: 32 kB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Unknown
+	System Type: Instruction
+	Associativity: 8-way Set-associative
+
+Handle 0x0007, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: CACHE2
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Unknown
+	Location: Internal
+	Installed Size: 256 kB
+	Maximum Size: 256 kB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Unknown
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x0008, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: CACHE3
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Unknown
+	Location: Internal
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Unknown
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x0009, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 16 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 2
+
+Handle 0x000A, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0009
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
+	Form Factor: SODIMM
+	Set: None
+	Locator: Channel-0-DIMM-0
+	Bank Locator: BANK 0
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Unknown (0)
+	Serial Number: --
+	Asset Tag: --
+	Part Number: None
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+
+Handle 0x000B, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0009
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
+	Form Factor: SODIMM
+	Set: None
+	Locator: Channel-1-DIMM-0
+	Bank Locator: BANK 2
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Unknown (0)
+	Serial Number: --
+	Asset Tag: --
+	Part Number: None
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+
+Handle 0x000C, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Array Handle: 0x0009
+	Partition Width: 2
+
+Handle 0x000D, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x000A
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x000E, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x000B
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x000F, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0006, DMI type 127, 4 bytes
+Handle 0x0010, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: VGA compatible controller
+	Type: Video
+	Status: Enabled
+	Type Instance: 0
+	Bus Address: 0000:00:02.0
+
+Handle 0x0011, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: SATA controller
+	Type: SATA Controller
+	Status: Enabled
+	Type Instance: 0
+	Bus Address: 0000:00:1f.2
+
+Handle 0x0012, DMI type 127, 4 bytes
 End Of Table
 

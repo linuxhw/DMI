@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 36 structures occupying 1994 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 11/03/2009
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -153,8 +153,8 @@ Memory Module Information
 	Bank Connections: 2
 	Current Speed: 32 ns
 	Type: Other Unknown EDO
-	Installed Size: 2048 MB (Double-bank Connection)
-	Enabled Size: 2048 MB (Double-bank Connection)
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x0008, DMI type 7, 19 bytes
@@ -212,7 +212,7 @@ Cache Information
 	Operational Mode: Write Through
 	Location: Internal
 	Installed Size: 0 kB
-	Maximum Size: 1024 kB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -310,7 +310,7 @@ Handle 0x0016, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 7
 	Characteristics:
@@ -343,7 +343,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
@@ -362,7 +362,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: A1
@@ -378,8 +378,8 @@ Memory Device
 Handle 0x001B, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Array Handle: 0x0018
 	Partition Width: 1
 
@@ -394,9 +394,9 @@ Memory Device Mapped Address
 
 Handle 0x001D, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00000000000
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
 	Physical Device Handle: 0x001A
 	Memory Array Mapped Address Handle: 0x001B
 	Partition Row Position: 1
@@ -408,18 +408,18 @@ System Boot Information
 Handle 0x001F, DMI type 188, 244 bytes
 OEM-specific Type
 	Header and Data:
-		BC F4 1F 00 00 00 00 D0 00 00 00 00 00 00 00 30
-		01 00 00 00 01 06 76 00 00 00 00 00 03 00 00 00
-		00 00 2F 01 00 00 00 00 01 00 00 00 00 00 00 00
+		BC F4 1F 00 00 00 00 80 00 00 00 00 00 00 00 00
+		00 00 00 00 01 06 16 00 00 00 00 00 03 00 00 00
+		00 00 7F 00 00 00 00 00 01 00 00 00 00 00 00 00
 		02 00 00 00 00 00 00 00 03 00 00 00 00 00 00 00
 		04 00 00 00 00 00 00 00 05 00 00 00 00 00 00 00
-		06 00 00 00 00 00 00 00 07 00 00 00 01 30 00 D0
-		40 00 10 02 00 00 00 00 00 00 01 00 EF 02 00 5D
-		01 00 00 00 01 02 00 00 00 00 00 00 00 00 00 00
+		06 00 00 00 00 00 00 00 07 00 00 00 00 00 00 00
+		40 00 10 02 00 00 00 00 00 00 01 00 EF 02 00 FF
+		01 00 00 00 01 01 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		E0 3D F8 00 00 00 00 00 00 00 00 00 00 00 00 00
+		E0 3E 78 00 00 00 00 00 00 00 00 00 00 00 00 00
 		46 00 00 00 00 00 00 00 05 00 00 00 00 00 00 00
-		35 FB 7D 5D 20 13 22 00 10 0C 01 00 6B 00 50 77
+		35 FB 7D 5D 20 13 22 00 10 04 01 00 5B 00 50 77
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -446,11 +446,11 @@ OEM-specific Type
 Handle 0x0021, DMI type 192, 244 bytes
 OEM-specific Type
 	Header and Data:
-		C0 F4 21 00 17 16 17 18 17 16 17 17 17 00 00 00
-		18 19 19 17 18 18 18 1A 18 00 00 00 2C 00 00 00
-		14 13 16 14 14 15 14 13 14 16 17 18 17 16 15 18
-		16 16 2E 00 00 00 22 32 11 20 20 25 20 00 22 32
-		11 20 20 25 20 00 00 00 00 00 00 00 00 00 00 00
+		C0 F4 21 00 18 18 18 19 18 17 19 17 18 00 00 00
+		17 17 16 17 17 15 16 17 17 00 00 00 28 00 00 00
+		00 00 00 00 00 00 00 00 00 2F 2F 2F 2F 2F 2F 2F
+		2F 00 00 00 00 00 22 32 11 20 20 25 20 00 22 12
+		11 10 20 25 20 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

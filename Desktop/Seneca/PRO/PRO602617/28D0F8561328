@@ -276,7 +276,7 @@ Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 1
 	Characteristics:
@@ -588,7 +588,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A1
@@ -599,12 +599,12 @@ Memory Device
 	Manufacturer: 0420
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F3-12800CL9-4GBRL 
+	Part Number: F3-2133C10-8GXM   
 	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
-	Configured Voltage: 1.5 V
+	Configured Voltage: 1.6 V
 
 Handle 0x003E, DMI type 17, 40 bytes
 Memory Device
@@ -612,7 +612,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B1
@@ -623,26 +623,26 @@ Memory Device
 	Manufacturer: 0420
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F3-12800CL9-4GBRL 
+	Part Number: F3-2133C10-8GXM   
 	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
-	Configured Voltage: 1.5 V
+	Configured Voltage: 1.6 V
 
 Handle 0x003F, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x003C
 	Partition Width: 2
 
 Handle 0x0040, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x003E
 	Memory Array Mapped Address Handle: 0x003F
 	Partition Row Position: Unknown
@@ -651,9 +651,9 @@ Memory Device Mapped Address
 
 Handle 0x0041, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x003E
 	Memory Array Mapped Address Handle: 0x003F
 	Partition Row Position: Unknown
@@ -671,7 +671,7 @@ Processor Information
 	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 3900 MHz
-	Current Speed: 2900 MHz
+	Current Speed: 2912 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
 	L1 Cache Handle: 0x004D
@@ -759,7 +759,7 @@ Handle 0x0055, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 55 00 03 01 00 02 00 00 00 00 02 00 00 00
-		00 19 00 03 00 00 05 00 00 00
+		00 07 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -802,7 +802,7 @@ OEM-specific Type
 		DD 36 58 00 07 01 00 02 00 00 00 00 02 00 01 08
 		00 00 00 03 00 02 00 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 06 00 07 00 FF FF FF 06 00 08
-		00 FF FF FF 30 10
+		00 FF FF FF 00 00
 	Strings:
 		Reference Code - SA - System Agent
 		Reference Code - MRC

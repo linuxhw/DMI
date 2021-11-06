@@ -3,13 +3,13 @@ Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
 # SMBIOS implementations newer than version 3.2.0 are not
 # fully supported by this version of dmidecode.
-Table at 0xBB052000.
+Table at 0xAAE56000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: F5j
-	Release Date: 09/07/2020
+	Version: F5q
+	Release Date: 04/12/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -124,18 +124,18 @@ Physical Memory Array
 Handle 0x000B, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x000AFFFFFFF
+	Range Size: 2816 MB
 	Physical Array Handle: 0x000A
-	Partition Width: 4
+	Partition Width: 8
 
 Handle 0x000C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0103FFFFFFF
-	Range Size: 61 GB
+	Ending Address: 0x0204FFFFFFF
+	Range Size: 128256 MB
 	Physical Array Handle: 0x000A
-	Partition Width: 4
+	Partition Width: 8
 
 Handle 0x000D, DMI type 7, 27 bytes
 Cache Information
@@ -143,8 +143,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2 MB
-	Maximum Size: 2 MB
+	Installed Size: 2048 kB
+	Maximum Size: 2048 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -159,8 +159,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 16 MB
-	Maximum Size: 16 MB
+	Installed Size: 16384 kB
+	Maximum Size: 16384 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -175,8 +175,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 128 MB
-	Maximum Size: 128 MB
+	Installed Size: 131072 kB
+	Maximum Size: 131072 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -255,38 +255,49 @@ Handle 0x0012, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x000A
 	Error Information Handle: 0x0011
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 16384 MB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL A
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 3000 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
+	Part Number: F4-3200C16-16GTZ
+	Rank: 2
+	Configured Memory Speed: 3000 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Unknown
+	Module Manufacturer ID: Bank 5, Hex 0xCD
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: None
+	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0013, DMI type 18, 23 bytes
+Handle 0x0013, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
+	Physical Device Handle: 0x0012
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0014, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -296,13 +307,13 @@ Handle 0x0013, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0014, DMI type 17, 84 bytes
+Handle 0x0015, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x000A
-	Error Information Handle: 0x0013
+	Error Information Handle: 0x0014
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 16384 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -330,17 +341,6 @@ Memory Device
 	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
-
-Handle 0x0015, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 64 GB
-	Physical Device Handle: 0x0014
-	Memory Array Mapped Address Handle: 0x000C
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
 
 Handle 0x0016, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -356,38 +356,49 @@ Handle 0x0017, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x000A
 	Error Information Handle: 0x0016
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 16384 MB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL B
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 3000 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
+	Part Number: F4-3200C16-16GTZ
+	Rank: 2
+	Configured Memory Speed: 3000 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Unknown
+	Module Manufacturer ID: Bank 5, Hex 0xCD
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: None
+	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0018, DMI type 18, 23 bytes
+Handle 0x0018, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
+	Physical Device Handle: 0x0017
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0019, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -397,13 +408,13 @@ Handle 0x0018, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0019, DMI type 17, 84 bytes
+Handle 0x001A, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x000A
-	Error Information Handle: 0x0018
+	Error Information Handle: 0x0019
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 16384 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -431,17 +442,6 @@ Memory Device
 	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
-
-Handle 0x001A, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 64 GB
-	Physical Device Handle: 0x0019
-	Memory Array Mapped Address Handle: 0x000C
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
 
 Handle 0x001B, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -457,38 +457,49 @@ Handle 0x001C, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x000A
 	Error Information Handle: 0x001B
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 16384 MB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL C
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 3000 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
+	Part Number: F4-3200C16-16GTZ
+	Rank: 2
+	Configured Memory Speed: 3000 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Unknown
+	Module Manufacturer ID: Bank 5, Hex 0xCD
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: None
+	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x001D, DMI type 18, 23 bytes
+Handle 0x001D, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
+	Physical Device Handle: 0x001C
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x001E, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -498,13 +509,13 @@ Handle 0x001D, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x001E, DMI type 17, 84 bytes
+Handle 0x001F, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x000A
-	Error Information Handle: 0x001D
+	Error Information Handle: 0x001E
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 16384 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -532,17 +543,6 @@ Memory Device
 	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
-
-Handle 0x001F, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 64 GB
-	Physical Device Handle: 0x001E
-	Memory Array Mapped Address Handle: 0x000C
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
 
 Handle 0x0020, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -558,38 +558,49 @@ Handle 0x0021, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x000A
 	Error Information Handle: 0x0020
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 16384 MB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL D
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 3000 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
+	Part Number: F4-3200C16-16GTZ
+	Rank: 2
+	Configured Memory Speed: 3000 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Unknown
+	Module Manufacturer ID: Bank 5, Hex 0xCD
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: None
+	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0022, DMI type 18, 23 bytes
+Handle 0x0022, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
+	Physical Device Handle: 0x0021
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0023, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -599,13 +610,13 @@ Handle 0x0022, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0023, DMI type 17, 84 bytes
+Handle 0x0024, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x000A
-	Error Information Handle: 0x0022
+	Error Information Handle: 0x0023
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 16384 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -633,17 +644,6 @@ Memory Device
 	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
-
-Handle 0x0024, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 64 GB
-	Physical Device Handle: 0x0023
-	Memory Array Mapped Address Handle: 0x000C
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
 
 Handle 0x0025, DMI type 8, 9 bytes
 Port Connector Information
@@ -852,6 +852,19 @@ System Slot Information
 
 Handle 0x003E, DMI type 9, 17 bytes
 System Slot Information
+	Designation: PCIE4
+	Type: x1 PCI Express x1
+	Current Usage: In Use
+	Length: Short
+	ID: 3
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 0000:42:05.0
+
+Handle 0x003F, DMI type 9, 17 bytes
+System Slot Information
 	Designation: PCIE5
 	Type: x8 PCI Express x8
 	Current Usage: Available
@@ -863,31 +876,39 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:01.3
 
-Handle 0x003F, DMI type 41, 11 bytes
+Handle 0x0040, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard LAN RTL8125
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 2
-	Bus Address: 0000:45:00.0
+	Bus Address: 0000:46:00.0
 
-Handle 0x0040, DMI type 41, 11 bytes
+Handle 0x0041, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Soc SATA0
+	Type: SATA Controller
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:24:00.0
+
+Handle 0x0042, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: X570/590 SATA0
 	Type: SATA Controller
 	Status: Enabled
 	Type Instance: 5
-	Bus Address: 0000:47:00.0
+	Bus Address: 0000:48:00.0
 
-Handle 0x0041, DMI type 41, 11 bytes
+Handle 0x0043, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: X570/590 SATA1
 	Type: SATA Controller
 	Status: Enabled
 	Type Instance: 6
-	Bus Address: 0000:48:00.0
+	Bus Address: 0000:49:00.0
 
-Handle 0x0042, DMI type 13, 22 bytes
+Handle 0x0044, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 15
@@ -908,6 +929,6 @@ BIOS Language Information
 		pl|PL|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0043, DMI type 127, 4 bytes
+Handle 0x0045, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 58 structures occupying 2387 bytes.
@@ -122,8 +122,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3 MB
-	Maximum Size: 3 MB
+	Installed Size: 3072 kB
+	Maximum Size: 3072 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -163,7 +163,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -176,7 +176,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: HMT351S6EFR8C-PB  
 	Rank: Unknown
-	Configured Memory Speed: 1600 MT/s
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x000A, DMI type 17, 34 bytes
 Memory Device
@@ -197,7 +197,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Not Specified
 	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Configured Clock Speed: Unknown
 
 Handle 0x000B, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -219,7 +219,7 @@ BIOS Information
 	Release Date: 01/21/2014
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8 MB
+	ROM Size: 8192 kB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -444,7 +444,7 @@ Portable Battery
 	Name: 45N1173
 	Design Capacity: 93960 mWh
 	Design Voltage: 10800 mV
-	SBDS Version: 01.00
+	SBDS Version: 01.08
 	Maximum Error: Unknown
 	SBDS Serial Number: --
 	SBDS Manufacture Date: 2013-12-25
@@ -468,9 +468,12 @@ Built-in Pointing Device
 	Buttons: 3
 
 Handle 0x0030, DMI type 131, 22 bytes
-ThinkVantage Technologies
-	Version: 1
-	Diagnostics: No
+OEM-specific Type
+	Header and Data:
+		83 16 30 00 01 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 01
+	Strings:
+		TVT-Enablement
 
 Handle 0x0031, DMI type 136, 6 bytes
 OEM-specific Type

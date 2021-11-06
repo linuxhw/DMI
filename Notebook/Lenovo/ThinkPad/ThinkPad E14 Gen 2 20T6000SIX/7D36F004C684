@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0xBF906000.
@@ -243,8 +243,8 @@ OEM-specific Type
 Handle 0x000D, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: R1AET34W (1.10 )
-	Release Date: 12/19/2020
+	Version: R1AET38W (1.14 )
+	Release Date: 06/11/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -267,8 +267,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.10
-	Firmware Revision: 1.10
+	BIOS Revision: 1.14
+	Firmware Revision: 1.14
 
 Handle 0x000E, DMI type 1, 27 bytes
 System Information
@@ -576,8 +576,8 @@ OEM-specific Type
 	Header and Data:
 		8C 0F 2D 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
 	Strings:
-		1.10 
-		1.10 
+		1.14 
+		1.14 
 
 Handle 0x002E, DMI type 135, 19 bytes
 OEM-specific Type
@@ -671,18 +671,24 @@ OEM-specific Type
 Handle 0x003A, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3A 00 54 48 4E 4B 00 00 40 00 00 00 30 00
+		8D 12 3A 00 54 48 4E 4B 00 00 40 00 00 00 4D 00
 		00 00
 
-Handle 0x003B, DMI type 140, 15 bytes
-ThinkPad Embedded Controller Program
-	Version ID: R1AHT34W
-	Release Date: 12/15/2020
-
-Handle 0x003C, DMI type 135, 18 bytes
+Handle 0x003B, DMI type 141, 30 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 3C 00 54 50 07 01 01 00 02 00 02 00 02 00
+		8D 1E 3B 00 54 48 4E 4B 00 00 50 00 00 00 CB 7A
+		3E 05 00 00 00 00 65 89 49 04 00 00 00 00
+
+Handle 0x003C, DMI type 140, 15 bytes
+ThinkPad Embedded Controller Program
+	Version ID: R1AHT38W
+	Release Date: 06/11/2021
+
+Handle 0x003D, DMI type 135, 18 bytes
+OEM-specific Type
+	Header and Data:
+		87 12 3D 00 54 50 07 01 01 00 06 00 02 00 06 00
 		02 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

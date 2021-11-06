@@ -1,6 +1,7 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-67 structures occupying 2806 bytes.
+67 structures occupying 2807 bytes.
 Table at 0x000E6E20.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -121,7 +122,7 @@ Processor Information
 	Max Speed: 2500 MHz
 	Current Speed: 2500 MHz
 	Status: Populated, Enabled
-	Upgrade: <OUT OF SPEC>
+	Upgrade: Socket LGA1150
 	L1 Cache Handle: 0x000B
 	L2 Cache Handle: 0x000C
 	L3 Cache Handle: 0x000D
@@ -187,8 +188,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
@@ -553,13 +554,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
-	Manufacturer: Samsung
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5173BH0-YK0  
+	Part Number: 99U5417-027.A00G  
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x002C, DMI type 17, 34 bytes
 Memory Device
@@ -588,20 +589,20 @@ Memory Device
 	Error Information Handle: 0x0030
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 99U5417-027.A00G  
-	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Part Number: 99U5428-063.A00LF 
+	Rank: 2
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x002E, DMI type 17, 34 bytes
 Memory Device
@@ -657,8 +658,8 @@ Handle 0x0031, DMI type 18, 23 bytes
 Handle 0x0032, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x002A
 	Partition Width: 4
 
@@ -676,8 +677,8 @@ Memory Device Mapped Address
 Handle 0x0034, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x002D
 	Memory Array Mapped Address Handle: 0x0032
 	Partition Row Position: Unknown

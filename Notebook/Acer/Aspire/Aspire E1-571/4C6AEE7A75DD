@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-39 structures occupying 1998 bytes.
+39 structures occupying 2007 bytes.
 Table at 0xAAEBC000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -256,8 +256,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -404,7 +404,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -446,7 +446,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM1
@@ -512,10 +512,10 @@ Memory Device Mapped Address
 	Interleave Position: 2
 	Interleaved Data Depth: 1
 
-Handle 0x0022, DMI type 170, 78 bytes
+Handle 0x0022, DMI type 170, 82 bytes
 Acer Hotkey Function
-	Function bitmap for Communication Button: 0x0000
-		WiFi: No
+	Function bitmap for Communication Button: 0x0001
+		WiFi: Yes
 		3G: No
 		WiMAX: No
 		Bluetooth: No
@@ -523,13 +523,13 @@ Acer Hotkey Function
 	Function bitmap for Media Button: 0x007f
 	Function bitmap for Display Button: 0x000f
 	Function bitmap for Others Button: 0x0006
-	Communication Function Key Number: 33
+	Communication Function Key Number: 3
 
-Handle 0x0023, DMI type 171, 19 bytes
+Handle 0x0023, DMI type 171, 24 bytes
 OEM-specific Type
 	Header and Data:
-		AB 13 23 00 01 86 80 66 01 02 E4 14 B5 16 05 86
-		80 20 1E
+		AB 18 23 00 01 86 80 66 01 02 E4 14 B5 16 05 86
+		80 20 1E 07 8C 16 32 00
 
 Handle 0x0024, DMI type 172, 21 bytes
 OEM-specific Type

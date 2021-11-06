@@ -1,8 +1,8 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-26 structures occupying 1666 bytes.
-Table at 0x8F97C000.
+26 structures occupying 1649 bytes.
+Table at 0xBF97C000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 05/17/2019
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -233,7 +233,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom
@@ -266,18 +266,18 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Top
 	Bank Locator: CHANNEL A
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1333 MT/s
-	Manufacturer: Nanya Technology
+	Speed: 1600 MT/s
+	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M2S4G64CB8HG5N-CG 
+	Part Number: MLLSE 1600 8GB    
 	Rank: 2
 	Configured Memory Speed: 667 MT/s
 	Minimum Voltage: Unknown
@@ -287,8 +287,8 @@ Memory Device
 Handle 0x0016, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0014
 	Memory Array Mapped Address Handle: 0x0017
 	Partition Row Position: 1
@@ -296,8 +296,8 @@ Memory Device Mapped Address
 Handle 0x0017, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x0010
 	Partition Width: 255
 
@@ -374,8 +374,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst

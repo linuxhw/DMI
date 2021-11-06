@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
 91 structures occupying 6210 bytes.
@@ -271,10 +271,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
-	Voltage: 0.8 V
+	Voltage: 0.7 V
 	External Clock: 100 MHz
 	Max Speed: 2300 MHz
-	Current Speed: 2673 MHz
+	Current Speed: 2574 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1528
 	L1 Cache Handle: 0x0700
@@ -316,8 +316,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -332,8 +332,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -491,6 +491,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.0
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0901, DMI type 9, 24 bytes
 System Slot Information
@@ -505,6 +507,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.1
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0902, DMI type 9, 24 bytes
 System Slot Information
@@ -519,6 +523,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.2
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0903, DMI type 9, 24 bytes
 System Slot Information
@@ -533,6 +539,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.3
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0904, DMI type 9, 24 bytes
 System Slot Information
@@ -547,6 +555,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.4
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0905, DMI type 9, 24 bytes
 System Slot Information
@@ -561,6 +571,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.5
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0906, DMI type 9, 24 bytes
 System Slot Information
@@ -575,6 +587,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.6
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0B00, DMI type 11, 5 bytes
 OEM Strings
@@ -670,7 +684,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM B
@@ -723,7 +737,7 @@ Portable Battery
 	Design Capacity: 41990 mWh
 	Design Voltage: 11400 mV
 	SBDS Version: 1.0
-	Maximum Error: 100%
+	Maximum Error: 2%
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000801
 
@@ -905,7 +919,7 @@ OEM-specific Type
 Handle 0xCB00, DMI type 203, 106 bytes
 OEM-specific Type
 	Header and Data:
-		CB 6A 00 CB 01 04 01 45 02 00 A0 06 01 85 30 20
+		CB 6A 00 CB 01 04 01 45 02 00 90 06 01 85 36 20
 		00 00 00 00 40 00 00 01 01 00 00 C9 0B C0 43 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

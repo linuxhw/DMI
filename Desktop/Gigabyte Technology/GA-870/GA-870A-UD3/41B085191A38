@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 57 structures occupying 2845 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 03/03/2011
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -45,7 +45,7 @@ System Information
 	Product Name: GA-870A-UD3
 	Version:  
 	Serial Number: --
-	UUID: --
+	5908CD1DC9A8AB7C5FAC53A56D9B0483
 	Wake-up Type: Power Switch
 	SKU Number:  
 	Family:  
@@ -64,8 +64,8 @@ Chassis Information
 	Lock: Not Present
 	Version:  
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Boot-up State: Unknown
 	Power Supply State: Unknown
 	Thermal State: Unknown
 	Security Status: Unknown
@@ -114,8 +114,8 @@ Processor Information
 	L2 Cache Handle: 0x000C
 	L3 Cache Handle: Not Provided
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 
 Handle 0x0005, DMI type 5, 24 bytes
 Memory Controller Information
@@ -236,7 +236,7 @@ Cache Information
 	Operational Mode: Write Through
 	Location: Internal
 	Installed Size: 0 kB
-	Maximum Size: 1024 kB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -478,7 +478,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
@@ -488,8 +488,8 @@ Memory Device
 	Speed: 1333 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 
 Handle 0x0029, DMI type 17, 27 bytes
 Memory Device
@@ -497,7 +497,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1
@@ -507,8 +507,8 @@ Memory Device
 	Speed: 1333 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 
 Handle 0x002A, DMI type 17, 27 bytes
 Memory Device
@@ -516,7 +516,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A2
@@ -526,8 +526,8 @@ Memory Device
 	Speed: 1333 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 
 Handle 0x002B, DMI type 17, 27 bytes
 Memory Device
@@ -535,7 +535,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A3
@@ -545,8 +545,8 @@ Memory Device
 	Speed: 1333 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 
 Handle 0x002C, DMI type 19, 15 bytes
 Memory Array Mapped Address
@@ -636,14 +636,14 @@ Handle 0x0034, DMI type 192, 244 bytes
 OEM-specific Type
 	Header and Data:
 		C0 F4 34 00 06 40 00 00 23 33 22 20 A3 08 31 0A
-		F0 00 0C 00 35 00 00 00 23 33 22 20 22 2A 31 34
-		20 2B 31 35 41 46 4B 4C 41 44 49 4A 3A 3A 35 00
-		00 00 10 0E 0E 0E 0E 0E 0A 0E 10 10 10 0E 0C 0E
-		0E 0E 0E 0C B1 4B 20 3D F0 00 0C 00 00 00 00 00
-		8B 00 8F 00 90 00 93 00 99 00 90 00 95 00 94 00
-		97 00 9C 00 0B 00 0F 00 10 00 13 00 00 00 10 00
-		15 00 14 00 17 00 00 00 A0 00 AB 00 B1 00 BE 00
-		A2 00 AC 00 B6 00 C0 00 00 00 0B 00 11 00 1E 00
+		F0 00 0B 00 35 00 00 00 23 33 22 20 22 2A 30 34
+		20 2B 30 34 41 46 4A 4C 41 44 49 49 3A 3A 35 00
+		00 00 10 0E 0E 0E 0E 10 0C 0E 10 0E 10 0E 0E 10
+		0E 0E 0E 0E D2 4B 20 3D F0 00 0B 00 00 00 00 00
+		8D 00 8F 00 90 00 93 00 99 00 90 00 94 00 93 00
+		96 00 9C 00 0D 00 0F 00 10 00 13 00 00 00 10 00
+		14 00 13 00 16 00 00 00 9F 00 A8 00 B2 00 BD 00
+		A2 00 AC 00 B6 00 C0 00 1F 00 08 00 12 00 1D 00
 		02 00 0C 00 16 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -656,15 +656,15 @@ Handle 0x0035, DMI type 194, 244 bytes
 OEM-specific Type
 	Header and Data:
 		C2 F4 35 00 06 40 00 00 23 33 22 20 A3 08 31 0A
-		F0 00 0C 00 35 00 00 00 23 33 22 20 1C 28 30 36
-		1B 26 2F 33 3F 46 49 49 3E 41 45 46 3A 38 35 00
-		00 00 10 12 10 10 0E 10 10 0E 12 12 10 12 10 12
+		F0 00 0C 00 35 00 00 00 23 33 22 20 1D 28 31 36
+		1A 26 2D 33 40 46 49 48 3D 41 44 46 3A 37 35 00
+		00 00 10 10 10 10 0E 10 10 0E 10 10 10 12 10 12
 		0E 12 10 0E DF F7 6F 3D F0 00 0C 00 00 00 00 00
-		9A 00 9B 00 9B 00 9F 00 A6 00 A0 00 A0 00 A0 00
-		A2 00 A8 00 1A 00 1B 00 1B 00 1F 00 00 00 00 00
-		00 00 00 00 02 00 00 00 AD 00 B4 00 C0 00 C9 00
-		AF 00 B8 00 C4 00 CC 00 0D 00 14 00 00 00 09 00
-		0F 00 18 00 04 00 0C 00 00 00 00 00 00 00 00 00
+		99 00 9C 00 9B 00 9E 00 A5 00 9E 00 9E 00 9F 00
+		A2 00 A8 00 19 00 1C 00 1B 00 1E 00 00 00 1E 00
+		1E 00 1F 00 02 00 00 00 AC 00 B3 00 C1 00 C8 00
+		AE 00 B8 00 C5 00 CC 00 0C 00 13 00 01 00 08 00
+		0E 00 18 00 05 00 0C 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -675,12 +675,12 @@ OEM-specific Type
 Handle 0x0036, DMI type 196, 244 bytes
 OEM-specific Type
 	Header and Data:
-		C4 F4 36 00 06 40 00 00 12 00 1B 00 1F 00 24 00
-		01 00 00 00 0F 00 1B 00 1F 00 24 00 55 00 12 00
-		1B 00 1F 00 04 00 01 00 00 00 0F 00 1B 00 30 00
-		35 00 3B 00 3C 00 2F 00 34 00 38 00 3A 00 10 00
-		15 00 1B 00 1C 00 0F 00 14 00 18 00 1A 00 0F 1B
-		1F 24 2F 34 38 3A 55 00 00 00 80 01 00 00 00 00
+		C4 F4 36 00 06 40 00 00 12 00 1B 00 1E 00 23 00
+		54 00 00 00 0F 00 1B 00 1E 00 23 00 29 00 12 00
+		1B 00 1E 00 03 00 14 00 00 00 0F 00 1B 00 30 00
+		35 00 3A 00 3C 00 2F 00 34 00 38 00 39 00 10 00
+		15 00 1A 00 1C 00 0F 00 14 00 18 00 19 00 0F 1B
+		1E 23 2F 34 38 39 69 00 00 00 C0 01 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -695,12 +695,12 @@ OEM-specific Type
 Handle 0x0037, DMI type 198, 244 bytes
 OEM-specific Type
 	Header and Data:
-		C6 F4 37 00 06 40 00 00 0F 00 1C 00 21 00 28 00
-		00 00 00 00 0E 00 1A 00 20 00 23 00 01 00 0F 00
-		1C 00 01 00 08 00 00 00 00 00 0E 00 1A 00 31 00
-		38 00 3B 00 3D 00 30 00 34 00 36 00 39 00 11 00
-		18 00 1B 00 1D 00 10 00 14 00 16 00 19 00 0E 1A
-		20 23 30 34 36 39 01 00 00 00 C0 01 00 00 00 00
+		C6 F4 37 00 06 40 00 00 10 00 1C 00 21 00 28 00
+		5B 00 00 00 0D 00 1A 00 1F 00 24 00 46 00 10 00
+		1C 00 01 00 08 00 1B 00 00 00 0D 00 1A 00 31 00
+		38 00 3B 00 3C 00 2F 00 34 00 35 00 39 00 11 00
+		18 00 1B 00 1C 00 0F 00 14 00 15 00 19 00 0D 1A
+		1F 24 2F 34 35 39 46 00 00 00 1A 01 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

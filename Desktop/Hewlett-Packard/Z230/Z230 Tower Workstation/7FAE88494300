@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-86 structures occupying 3310 bytes.
+86 structures occupying 3296 bytes.
 Table at 0xDEF2C018.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -129,13 +129,13 @@ Handle 0x0008, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 5
 	Type: 32-bit PCI
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 4
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:04:00.0
+	Bus Address: 0000:00:00.0
 
 Handle 0x0009, DMI type 11, 5 bytes
 OEM Strings
@@ -243,7 +243,7 @@ Handle 0x0013, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: SOCKET 0
 	Type: Central Processor
-	Family: Core i5
+	Family: Core i7
 	Manufacturer: Intel
 	ID: C3 06 03 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 60, Stepping 3
@@ -276,11 +276,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i5-4570 CPU @ 3.20GHz
+	Version: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
 	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 3200 MHz
+	Current Speed: 3600 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
 	L1 Cache Handle: 0x0015
@@ -291,7 +291,7 @@ Processor Information
 	Part Number: Fill By OEM
 	Core Count: 4
 	Core Enabled: 4
-	Thread Count: 4
+	Thread Count: 8
 	Characteristics:
 		64-bit capable
 
@@ -333,15 +333,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6 MB
-	Maximum Size: 6 MB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
 	Speed: Unknown
 	Error Correction Type: Single-bit ECC
 	System Type: Unified
-	Associativity: 12-way Set-associative
+	Associativity: 16-way Set-associative
 
 Handle 0x0017, DMI type 16, 23 bytes
 Physical Memory Array
@@ -358,7 +358,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4
@@ -366,18 +366,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 0000
+	Manufacturer: 1302
 	Serial Number: --
 	Asset Tag: --
-	Part Number: R532G1601U1S-UGO  
-	Rank: 1
+	Part Number: 1600 CL9 Series   
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0019, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0018
 	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: Unknown
@@ -390,7 +390,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
@@ -398,18 +398,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: 1302
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT451U6AFR8C-PB  
-	Rank: 1
+	Part Number: 1600 CL9 Series   
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x001B, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x001A
 	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: Unknown
@@ -422,7 +422,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -430,18 +430,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 0000
+	Manufacturer: 1302
 	Serial Number: --
 	Asset Tag: --
-	Part Number: R532G1601U1S-UGO  
-	Rank: 1
+	Part Number: 1600 CL9 Series   
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x001D, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x001C
 	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: Unknown
@@ -454,7 +454,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -462,18 +462,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: 1302
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT451U6AFR8C-PB  
-	Rank: 1
+	Part Number: 1600 CL9 Series   
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x001F, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: Unknown
@@ -483,8 +483,8 @@ Memory Device Mapped Address
 Handle 0x0020, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 12 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0017
 	Partition Width: 4
 
@@ -493,7 +493,7 @@ Cooling Device
 	Type: Cabinet Fan
 	Status: OK
 	OEM-specific Information: 0x00000000
-	Nominal Speed: 1176 rpm
+	Nominal Speed: 1249 rpm
 	Description: Rear chassis fan
 
 Handle 0x0022, DMI type 27, 15 bytes
@@ -501,7 +501,7 @@ Cooling Device
 	Type: Chip Fan
 	Status: OK
 	OEM-specific Information: 0x00000000
-	Nominal Speed: 1063 rpm
+	Nominal Speed: 1074 rpm
 	Description: CPU fan
 
 Handle 0x0023, DMI type 27, 15 bytes
@@ -519,7 +519,7 @@ System Power Supply
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	Model Part Number: High Efficiency
+	Model Part Number: Standard Efficiency
 	Revision: Not Specified
 	Max Power Capacity: Unknown
 	Status: Present, Unknown

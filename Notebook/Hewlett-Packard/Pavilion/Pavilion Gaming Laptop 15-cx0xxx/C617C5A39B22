@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.1 present.
 Table at 0x7AD53000.
@@ -10,7 +10,7 @@ BIOS Information
 	Release Date: 06/18/2020
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 11264 kB
+	ROM Size: 11 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -116,10 +116,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
-	Voltage: 1.1 V
+	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 3700 MHz
+	Current Speed: 3900 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -295,7 +295,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1 (under)
@@ -308,7 +308,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 4ATF51264HZ-3G2J1   
 	Rank: 1
-	Configured Clock Speed: 2667 MT/s
+	Configured Memory Speed: 2667 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.2 V
@@ -319,7 +319,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2 (top)
@@ -332,7 +332,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 4ATF51264HZ-3G2J1   
 	Rank: 1
-	Configured Clock Speed: 2667 MT/s
+	Configured Memory Speed: 2667 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.2 V
@@ -544,8 +544,8 @@ HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 4: Not Installed
 	NIC 5: Not Installed
 	NIC 6: Disabled
-	NIC 7: PCI device 00:08.2, MAC address 0B:00:46:3A:00:00
-	NIC 8: PCI device 0c:00.0, MAC address 00:00:09:00:74:10
+	NIC 7: Not Installed
+	NIC 8: PCI device 0c:00.0, MAC address 00:FF:FF:FF:FF:FF
 	NIC 9: PCI device 0e:01.5, MAC address 01:04:01:00:00:0F
 	NIC 10: Disabled
 

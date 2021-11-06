@@ -1,14 +1,14 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-17 structures occupying 719 bytes.
-Table at 0xAAEBC000.
+18 structures occupying 740 bytes.
+Table at 0x000E6EC0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Insyde Corp.
-	Version: R0150D5
-	Release Date: 08/30/2012
+	Version: R0200D5
+	Release Date: 09/26/2016
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 3072 kB
@@ -29,8 +29,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.50
-	Firmware Revision: 1.50
+	BIOS Revision: 2.0
+	Firmware Revision: 2.0
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -211,21 +211,21 @@ Handle 0x000B, DMI type 17, 21 bytes
 Memory Device
 	Array Handle: 0x0009
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: SODIMM2
 	Bank Locator: Bank 1
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Unknown
 
 Handle 0x000C, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0009
 	Partition Width: 2
 
@@ -240,15 +240,26 @@ Memory Device Mapped Address
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x000E, DMI type 32, 20 bytes
+Handle 0x000E, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x000B
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x000F, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x000F, DMI type 136, 6 bytes
+Handle 0x0010, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 0F 00 04 09
+		88 06 10 00 04 09
 
-Handle 0x0010, DMI type 127, 4 bytes
+Handle 0x0011, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.0 present.
-Table at 0x8DFDF000.
+Table at 0x8D977000.
 
 Handle 0x0000, DMI type 222, 14 bytes
 OEM-specific Type
@@ -33,7 +33,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -103,8 +103,8 @@ OEM-specific Type
 	Header and Data:
 		DD 36 08 00 07 01 00 09 00 0B 40 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
-		00 06 00 02 0A 00 00 00 07 00 06 FF FF FF FF 08
-		00 09 FF FF FF FF
+		00 06 00 02 0A 00 00 00 07 00 00 FF FF FF FF 08
+		00 02 FF FF FF FF
 	Strings:
 		Reference Code - CML PCH
 		PCH-CRID Status
@@ -161,8 +161,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -177,8 +177,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -563,7 +563,7 @@ Group Associations
 Handle 0x003A, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 3A 00 01 04 01 45 02 00 90 06 01 85 30 20
+		DB 6A 3A 00 01 04 01 45 02 00 90 06 01 85 36 20
 		00 00 00 04 40 00 00 01 1F 00 00 C9 02 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

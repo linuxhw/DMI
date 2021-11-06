@@ -1,7 +1,7 @@
-# dmidecode 2.12
-# SMBIOS entry point at 0x000f04c0
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-24 structures occupying 1006 bytes.
+28 structures occupying 1287 bytes.
 Table at 0x000EC160.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -52,7 +52,7 @@ Base Board Information
 	Version: NOK
 	Serial Number: --
 	Asset Tag: --
-	Features:
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:  
@@ -68,7 +68,7 @@ Chassis Information
 	Version:  
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -195,19 +195,61 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 4 GB
+	Maximum Capacity: 8 GB
 	Error Information Handle: Not Provided
 	Number Of Devices: 4
 
 Handle 0x0018, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0017
 	Partition Width: 255
 
 Handle 0x0019, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x0017
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: No Module Installed
+	Form Factor: SODIMM
+	Set: None
+	Locator: DIMM 0
+	Bank Locator: CHANNEL A
+	Type: DDR3
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: A1_Manufacturer0
+	Serial Number: --
+	Asset Tag: --
+	Part Number: A1_PartNum0
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x001A, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x0017
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM 1
+	Bank Locator: CHANNEL A
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1600 MT/s
+	Manufacturer: Samsung        
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M378B5273DH0-CK0  
+	Rank: 2
+	Configured Clock Speed: 1333 MT/s
+
+Handle 0x001B, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0017
 	Error Information Handle: Not Provided
@@ -228,7 +270,7 @@ Memory Device
 	Rank: Unknown
 	Configured Clock Speed: Unknown
 
-Handle 0x001A, DMI type 17, 34 bytes
+Handle 0x001C, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0017
 	Error Information Handle: Not Provided
@@ -241,15 +283,15 @@ Memory Device
 	Bank Locator: CHANNEL B
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1600 MHz
-	Manufacturer: Samsung        
+	Speed: 1333 MT/s
+	Manufacturer: <BAD INDEX>
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M378B5273DH0-CK0  
-	Rank: 2
-	Configured Clock Speed: 1600 MHz
+	Part Number: CMX4GX3M1A1600C9  
+	Rank: 1
+	Configured Clock Speed: 1333 MT/s
 
-Handle 0x001B, DMI type 20, 35 bytes
+Handle 0x001D, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000000003FF
@@ -258,7 +300,7 @@ Memory Device Mapped Address
 	Memory Array Mapped Address Handle: 0x0000
 	Partition Row Position: <OUT OF SPEC>
 
-Handle 0x001C, DMI type 20, 35 bytes
+Handle 0x001E, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
@@ -269,7 +311,27 @@ Memory Device Mapped Address
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x001F, DMI type 4, 42 bytes
+Handle 0x001F, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
+	Physical Device Handle: 0x0000
+	Memory Array Mapped Address Handle: 0x0000
+	Partition Row Position: <OUT OF SPEC>
+
+Handle 0x0020, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x001A
+	Memory Array Mapped Address Handle: 0x0018
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0023, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: P0
 	Type: Central Processor
@@ -320,13 +382,13 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0020, DMI type 13, 22 bytes
+Handle 0x0024, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0022, DMI type 127, 4 bytes
+Handle 0x0026, DMI type 127, 4 bytes
 End Of Table
 

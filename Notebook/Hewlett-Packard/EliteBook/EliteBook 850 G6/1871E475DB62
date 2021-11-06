@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1 present.
-34 structures occupying 2398 bytes.
+35 structures occupying 2465 bytes.
 Table at 0x96E75000.
 
 Handle 0x0000, DMI type 43, 31 bytes
@@ -121,10 +121,10 @@ Physical Memory Array
 Handle 0x000C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0007
-	Partition Width: 1
+	Partition Width: 2
 
 Handle 0x000D, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
@@ -356,25 +356,25 @@ Handle 0x0008, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0007
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Other
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 16 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(right)
 	Bank Locator: ChannelB0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2667 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: 9905700-047.A00G    
+	Rank: 1
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
+	Configured Voltage: 1.2 V
 
 Handle 0x0009, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -385,7 +385,17 @@ Memory Device Mapped Address
 	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: 1
 
-Handle 0x000A, DMI type 22, 26 bytes
+Handle 0x000A, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00400000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x0008
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: 1
+	Interleave Position: 1
+
+Handle 0x000B, DMI type 22, 26 bytes
 Portable Battery
 	Location: Primary
 	Manufacturer: 333-54-2C-A
@@ -399,18 +409,18 @@ Portable Battery
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
-Handle 0x000B, DMI type 24, 5 bytes
+Handle 0x001D, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
 
-Handle 0x001D, DMI type 32, 11 bytes
+Handle 0x001E, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x001E, DMI type 11, 5 bytes
+Handle 0x001F, DMI type 11, 5 bytes
 OEM Strings
 	String 1: FBYTE#3X476J6S6b7B7H7M7Q7W7m7saBaEapaqauawbUbhcAdUdpdqfAfPhKhkjhk8.BQ;
 	String 2: BUILDID#19WWCFAT603#SBED#DBED;
@@ -425,13 +435,13 @@ On Board Device Information
 	Status: Enabled
 	Description: 32 MB
 
-Handle 0x001F, DMI type 14, 8 bytes
+Handle 0x0020, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x0020, DMI type 219, 106 bytes
+Handle 0x0021, DMI type 219, 106 bytes
 HP ProLiant Information
 	Power Features: 0x45010401
 	Omega Features: 0x06900002

@@ -1,7 +1,6 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 3.0 present.
-# SMBIOS implementations newer than version 2.7 are not
-# fully supported by this version of dmidecode.
 26 structures occupying 2083 bytes.
 Table at 0x000EC550.
 
@@ -250,7 +249,7 @@ Processor Information
 	Max Speed: 2000 MHz
 	Current Speed: 2000 MHz
 	Status: Populated, Enabled
-	Upgrade: <OUT OF SPEC>
+	Upgrade: Socket BGA1168
 	L1 Cache Handle: 0x000E
 	L2 Cache Handle: 0x000F
 	L3 Cache Handle: 0x0010
@@ -297,16 +296,16 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
 	Part Number: 8KTF51264HZ-1G9P2 
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Configured Clock Speed: 1600 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
 Handle 0x0015, DMI type 17, 40 bytes
 Memory Device
@@ -328,9 +327,9 @@ Memory Device
 	Part Number: Not Specified
 	Rank: Unknown
 	Configured Clock Speed: Unknown
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
 Handle 0x0016, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -428,11 +427,11 @@ Handle 0x001E, DMI type 14, 20 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 5
-		0x0012 (<OUT OF SPEC>)
-		0x0018 (<OUT OF SPEC>)
-		0x0019 (<OUT OF SPEC>)
-		0x001A (<OUT OF SPEC>)
-		0x001B (<OUT OF SPEC>)
+		0x0012 (OEM-specific)
+		0x0018 (OEM-specific)
+		0x0019 (OEM-specific)
+		0x001A (OEM-specific)
+		0x001B (OEM-specific)
 
 Handle 0x001F, DMI type 127, 4 bytes
 End Of Table

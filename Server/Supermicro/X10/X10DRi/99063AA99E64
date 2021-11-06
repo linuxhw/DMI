@@ -1,17 +1,17 @@
-# dmidecode 3.1
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0 present.
-128 structures occupying 5272 bytes.
+127 structures occupying 5247 bytes.
 Table at 0x000EC9B0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 2.1a
-	Release Date: 05/05/2017
+	Version: 3.1
+	Release Date: 09/14/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -300,7 +300,7 @@ Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: CPU1 SLOT3
 	Type: x8 PCI Express 3 x8
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 3
 	Characteristics:
@@ -788,7 +788,7 @@ Onboard Device
 	Type: Video
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:00:02.0
+	Bus Address: 0000:05:00.0
 
 Handle 0x0056, DMI type 41, 11 bytes
 Onboard Device
@@ -796,17 +796,9 @@ Onboard Device
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:00:19.0
+	Bus Address: 0000:03:00.0
 
-Handle 0x0057, DMI type 41, 11 bytes
-Onboard Device
-	Reference Designation:  Onboard 1394
-	Type: Other
-	Status: Enabled
-	Type Instance: 1
-	Bus Address: 0000:03:1c.2
-
-Handle 0x0058, DMI type 38, 18 bytes
+Handle 0x0057, DMI type 38, 18 bytes
 IPMI Device Information
 	Interface Type: KCS (Keyboard Control Style)
 	Specification Version: 2.0
@@ -815,7 +807,7 @@ IPMI Device Information
 	Base Address: 0x0000000000000CA2 (I/O)
 	Register Spacing: Successive Byte Boundaries
 
-Handle 0x005D, DMI type 15, 81 bytes
+Handle 0x005C, DMI type 15, 81 bytes
 System Event Log
 	Area Length: 65535 bytes
 	Header Start Offset: 0x0000
@@ -886,7 +878,7 @@ System Event Log
 	Descriptor 29: OEM-specific
 	Data Format 29: Multiple-event handle
 
-Handle 0x005E, DMI type 16, 23 bytes
+Handle 0x005D, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -895,21 +887,21 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 8
 
-Handle 0x005F, DMI type 19, 31 bytes
+Handle 0x005E, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x007FFFFFFFF
 	Range Size: 32 GB
-	Physical Array Handle: 0x005E
+	Physical Array Handle: 0x005D
 	Partition Width: 4
 
-Handle 0x0060, DMI type 17, 40 bytes
+Handle 0x005F, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x005E
+	Array Handle: 0x005D
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 72 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: P1_DIMMA1
@@ -922,23 +914,23 @@ Memory Device
 	Asset Tag: --
 	Part Number: <BAD INDEX>
 	Rank: 1
-	Configured Clock Speed: 1866 MT/s
+	Configured Memory Speed: 1866 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x0061, DMI type 20, 35 bytes
+Handle 0x0060, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0060
-	Memory Array Mapped Address Handle: 0x005F
+	Physical Device Handle: 0x005F
+	Memory Array Mapped Address Handle: 0x005E
 	Partition Row Position: 1
 
-Handle 0x0062, DMI type 17, 40 bytes
+Handle 0x0061, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x005E
+	Array Handle: 0x005D
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -955,18 +947,18 @@ Memory Device
 	Asset Tag: --
 	Part Number: NO DIMM
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x0063, DMI type 17, 40 bytes
+Handle 0x0062, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x005E
+	Array Handle: 0x005D
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 72 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: P1_DIMMB1
@@ -979,23 +971,23 @@ Memory Device
 	Asset Tag: --
 	Part Number: <BAD INDEX>
 	Rank: 1
-	Configured Clock Speed: 1866 MT/s
+	Configured Memory Speed: 1866 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x0064, DMI type 20, 35 bytes
+Handle 0x0063, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00200000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0063
-	Memory Array Mapped Address Handle: 0x005F
+	Physical Device Handle: 0x0062
+	Memory Array Mapped Address Handle: 0x005E
 	Partition Row Position: 1
 
-Handle 0x0065, DMI type 17, 40 bytes
+Handle 0x0064, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x005E
+	Array Handle: 0x005D
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -1012,18 +1004,18 @@ Memory Device
 	Asset Tag: --
 	Part Number: NO DIMM
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x0066, DMI type 17, 40 bytes
+Handle 0x0065, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x005E
+	Array Handle: 0x005D
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 72 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: P1_DIMMC1
@@ -1036,23 +1028,23 @@ Memory Device
 	Asset Tag: --
 	Part Number: <BAD INDEX>
 	Rank: 1
-	Configured Clock Speed: 1866 MT/s
+	Configured Memory Speed: 1866 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x0067, DMI type 20, 35 bytes
+Handle 0x0066, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00400000000
 	Ending Address: 0x005FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0066
-	Memory Array Mapped Address Handle: 0x005F
+	Physical Device Handle: 0x0065
+	Memory Array Mapped Address Handle: 0x005E
 	Partition Row Position: 1
 
-Handle 0x0068, DMI type 17, 40 bytes
+Handle 0x0067, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x005E
+	Array Handle: 0x005D
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -1069,18 +1061,18 @@ Memory Device
 	Asset Tag: --
 	Part Number: NO DIMM
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x0069, DMI type 17, 40 bytes
+Handle 0x0068, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x005E
+	Array Handle: 0x005D
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 72 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: P1_DIMMD1
@@ -1093,23 +1085,23 @@ Memory Device
 	Asset Tag: --
 	Part Number: <BAD INDEX>
 	Rank: 1
-	Configured Clock Speed: 1866 MT/s
+	Configured Memory Speed: 1866 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x006A, DMI type 20, 35 bytes
+Handle 0x0069, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00600000000
 	Ending Address: 0x007FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0069
-	Memory Array Mapped Address Handle: 0x005F
+	Physical Device Handle: 0x0068
+	Memory Array Mapped Address Handle: 0x005E
 	Partition Row Position: 1
 
-Handle 0x006B, DMI type 17, 40 bytes
+Handle 0x006A, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x005E
+	Array Handle: 0x005D
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -1126,12 +1118,12 @@ Memory Device
 	Asset Tag: --
 	Part Number: NO DIMM
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x006C, DMI type 16, 23 bytes
+Handle 0x006B, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -1140,21 +1132,21 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 8
 
-Handle 0x006D, DMI type 19, 31 bytes
+Handle 0x006C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00800000000
 	Ending Address: 0x00FFFFFFFFF
 	Range Size: 32 GB
-	Physical Array Handle: 0x006C
+	Physical Array Handle: 0x006B
 	Partition Width: 4
 
-Handle 0x006E, DMI type 17, 40 bytes
+Handle 0x006D, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x006C
+	Array Handle: 0x006B
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 72 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: P2_DIMME1
@@ -1167,23 +1159,23 @@ Memory Device
 	Asset Tag: --
 	Part Number: <BAD INDEX>
 	Rank: 1
-	Configured Clock Speed: 1866 MT/s
+	Configured Memory Speed: 1866 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x006F, DMI type 20, 35 bytes
+Handle 0x006E, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00800000000
 	Ending Address: 0x009FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x006E
-	Memory Array Mapped Address Handle: 0x006D
+	Physical Device Handle: 0x006D
+	Memory Array Mapped Address Handle: 0x006C
 	Partition Row Position: 1
 
-Handle 0x0070, DMI type 17, 40 bytes
+Handle 0x006F, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x006C
+	Array Handle: 0x006B
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -1200,18 +1192,18 @@ Memory Device
 	Asset Tag: --
 	Part Number: NO DIMM
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x0071, DMI type 17, 40 bytes
+Handle 0x0070, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x006C
+	Array Handle: 0x006B
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 72 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: P2_DIMMF1
@@ -1224,23 +1216,23 @@ Memory Device
 	Asset Tag: --
 	Part Number: <BAD INDEX>
 	Rank: 1
-	Configured Clock Speed: 1866 MT/s
+	Configured Memory Speed: 1866 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x0072, DMI type 20, 35 bytes
+Handle 0x0071, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00A00000000
 	Ending Address: 0x00BFFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0071
-	Memory Array Mapped Address Handle: 0x006D
+	Physical Device Handle: 0x0070
+	Memory Array Mapped Address Handle: 0x006C
 	Partition Row Position: 1
 
-Handle 0x0073, DMI type 17, 40 bytes
+Handle 0x0072, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x006C
+	Array Handle: 0x006B
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -1257,18 +1249,18 @@ Memory Device
 	Asset Tag: --
 	Part Number: NO DIMM
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x0074, DMI type 17, 40 bytes
+Handle 0x0073, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x006C
+	Array Handle: 0x006B
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 72 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: P2_DIMMG1
@@ -1279,25 +1271,25 @@ Memory Device
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M393A1G40DB0-CPB   
+	Part Number: M393A1G40DB0-CPB    
 	Rank: 1
-	Configured Clock Speed: 1866 MT/s
+	Configured Memory Speed: 1866 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x0075, DMI type 20, 35 bytes
+Handle 0x0074, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00C00000000
 	Ending Address: 0x00DFFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0074
-	Memory Array Mapped Address Handle: 0x006D
+	Physical Device Handle: 0x0073
+	Memory Array Mapped Address Handle: 0x006C
 	Partition Row Position: 1
 
-Handle 0x0076, DMI type 17, 40 bytes
+Handle 0x0075, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x006C
+	Array Handle: 0x006B
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -1314,18 +1306,18 @@ Memory Device
 	Asset Tag: --
 	Part Number: NO DIMM
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x0077, DMI type 17, 40 bytes
+Handle 0x0076, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x006C
+	Array Handle: 0x006B
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 72 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: P2_DIMMH1
@@ -1336,25 +1328,25 @@ Memory Device
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M393A1G40DB0-CPB   
+	Part Number: M393A1G40DB0-CPB    
 	Rank: 1
-	Configured Clock Speed: 1866 MT/s
+	Configured Memory Speed: 1866 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x0078, DMI type 20, 35 bytes
+Handle 0x0077, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00E00000000
 	Ending Address: 0x00FFFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0077
-	Memory Array Mapped Address Handle: 0x006D
+	Physical Device Handle: 0x0076
+	Memory Array Mapped Address Handle: 0x006C
 	Partition Row Position: 1
 
-Handle 0x0079, DMI type 17, 40 bytes
+Handle 0x0078, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x006C
+	Array Handle: 0x006B
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -1371,12 +1363,12 @@ Memory Device
 	Asset Tag: --
 	Part Number: NO DIMM
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x007A, DMI type 39, 22 bytes
+Handle 0x0079, DMI type 39, 22 bytes
 System Power Supply
 	Power Unit Group: 1
 	Location: System Power Supply #1
@@ -1393,7 +1385,7 @@ System Power Supply
 	Plugged: Yes
 	Hot Replaceable: No
 
-Handle 0x007B, DMI type 39, 22 bytes
+Handle 0x007A, DMI type 39, 22 bytes
 System Power Supply
 	Power Unit Group: 2
 	Location: System Power Supply #2
@@ -1410,7 +1402,7 @@ System Power Supply
 	Plugged: Yes
 	Hot Replaceable: No
 
-Handle 0x007C, DMI type 7, 19 bytes
+Handle 0x007B, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L1
 	Configuration: Enabled, Not Socketed, Level 1
@@ -1426,14 +1418,14 @@ Cache Information
 	System Type: Other
 	Associativity: 8-way Set-associative
 
-Handle 0x007D, DMI type 7, 19 bytes
+Handle 0x007C, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L2
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -1442,14 +1434,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x007E, DMI type 7, 19 bytes
+Handle 0x007D, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L3
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 20480 kB
-	Maximum Size: 20480 kB
+	Installed Size: 20 MB
+	Maximum Size: 20 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -1458,7 +1450,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 20-way Set-associative
 
-Handle 0x007F, DMI type 4, 48 bytes
+Handle 0x007E, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: SOCKET 0
 	Type: Central Processor
@@ -1502,9 +1494,9 @@ Processor Information
 	Current Speed: 2400 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA2011-3
-	L1 Cache Handle: 0x007C
-	L2 Cache Handle: 0x007D
-	L3 Cache Handle: 0x007E
+	L1 Cache Handle: 0x007B
+	L2 Cache Handle: 0x007C
+	L3 Cache Handle: 0x007D
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
@@ -1519,7 +1511,7 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0080, DMI type 7, 19 bytes
+Handle 0x007F, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L1
 	Configuration: Enabled, Not Socketed, Level 1
@@ -1535,14 +1527,14 @@ Cache Information
 	System Type: Other
 	Associativity: 8-way Set-associative
 
-Handle 0x0081, DMI type 7, 19 bytes
+Handle 0x0080, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L2
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -1551,14 +1543,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0082, DMI type 7, 19 bytes
+Handle 0x0081, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L3
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 20480 kB
-	Maximum Size: 20480 kB
+	Installed Size: 20 MB
+	Maximum Size: 20 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -1567,7 +1559,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 20-way Set-associative
 
-Handle 0x0083, DMI type 4, 48 bytes
+Handle 0x0082, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: SOCKET 1
 	Type: Central Processor
@@ -1611,9 +1603,9 @@ Processor Information
 	Current Speed: 2400 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA2011-3
-	L1 Cache Handle: 0x0080
-	L2 Cache Handle: 0x0081
-	L3 Cache Handle: 0x0082
+	L1 Cache Handle: 0x007F
+	L2 Cache Handle: 0x0080
+	L3 Cache Handle: 0x0081
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
@@ -1628,13 +1620,13 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0084, DMI type 13, 22 bytes
+Handle 0x0083, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0085, DMI type 127, 4 bytes
+Handle 0x0084, DMI type 127, 4 bytes
 End Of Table
 

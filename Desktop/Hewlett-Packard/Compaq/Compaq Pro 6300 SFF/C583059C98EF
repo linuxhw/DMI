@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 60 structures occupying 2536 bytes.
@@ -50,7 +50,7 @@ Base Board Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	97946E993916094B22613E03B8339091
+	...
 		Board is a hosting board
 		Board is removable
 		Board is replaceable
@@ -67,7 +67,7 @@ Chassis Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	380AD15AAB729CF25C4397C21C466ACE
+	...
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -159,8 +159,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 1 MB
-	Maximum Size: 1 MB
+	Installed Size: 1024 kB
+	Maximum Size: 1024 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -175,8 +175,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6 MB
-	Maximum Size: 6 MB
+	Installed Size: 6144 kB
+	Maximum Size: 6144 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -499,7 +499,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4
@@ -512,7 +512,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: NT2GC64B88G0NF-DI 
 	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x002D, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -531,7 +531,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
@@ -544,7 +544,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: NT2GC64B88G0NF-CG 
 	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x002F, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -563,7 +563,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -576,7 +576,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: NT2GC64B88B0NF-CG 
 	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0031, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -595,7 +595,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -608,7 +608,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: NT2GC64B88G0NF-DI 
 	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0033, DMI type 20, 35 bytes
 Memory Device Mapped Address

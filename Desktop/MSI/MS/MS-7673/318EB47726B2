@@ -1,6 +1,7 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-106 structures occupying 3926 bytes.
+106 structures occupying 3927 bytes.
 Table at 0x000E9670.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -83,8 +84,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 128 kB
-	Maximum Size: 128 kB
+	Installed Size: 256 kB
+	Maximum Size: 256 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -99,8 +100,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 512 kB
-	Maximum Size: 512 kB
+	Installed Size: 1024 kB
+	Maximum Size: 1024 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -115,8 +116,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 6144 kB
+	Maximum Size: 6144 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -474,7 +475,7 @@ Memory Device
 	Bank Locator: A1_BANK1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Kingston        
 	Serial Number: --
 	Asset Tag: --
@@ -520,7 +521,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Array1_PartNumber2
 	Rank: Unknown
-	Configured Clock Speed: 58785 MHz
+	Configured Clock Speed: 58785 MT/s
 
 Handle 0x0031, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -548,13 +549,13 @@ Memory Device
 	Bank Locator: A1_BANK3
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Kingston        
 	Serial Number: --
 	Asset Tag: --
 	Part Number: 9905471-001.A01LF 
 	Rank: 2
-	Configured Clock Speed: 66 MHz
+	Configured Clock Speed: 66 MT/s
 
 Handle 0x0034, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -740,8 +741,9 @@ System Power Supply
 	Input Current Probe Handle: 0x0044
 
 Handle 0x0048, DMI type 34, 16 bytes
+Invalid entry length (16). Fixed up to 11.
 Management Device
-	Description: 2
+	Description: LM78-2
 	Type: LM78
 	Address: 0x00000000
 	Address Type: I/O Port
@@ -1008,10 +1010,40 @@ Handle 0x0068, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: SOCKET 0
 	Type: Central Processor
-	Family: <OUT OF SPEC>
+	Family: Core i5
 	Manufacturer: Intel
 	ID: A7 06 02 00 FF FB EB BF
-	Version: Intel(R) Pentium(R) CPU G620 @ 2.60GHz
+	Signature: Type 0, Family 6, Model 42, Stepping 7
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		DS (Debug store)
+		ACPI (ACPI supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		SS (Self-snoop)
+		HTT (Multi-threading)
+		TM (Thermal monitor supported)
+		PBE (Pending break enabled)
+	Version: Intel(R) Core(TM) i5-2320 CPU @ 3.00GHz
 	Voltage: 0.0 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
@@ -1024,9 +1056,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
-	Core Count: 2
-	Core Enabled: 2
-	Thread Count: 2
+	Core Count: 4
+	Core Enabled: 4
+	Thread Count: 4
 	Characteristics:
 		64-bit capable
 

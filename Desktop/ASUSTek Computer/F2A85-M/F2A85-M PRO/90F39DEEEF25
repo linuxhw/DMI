@@ -460,8 +460,8 @@ Physical Memory Array
 Handle 0x0031, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 24 GB
 	Physical Array Handle: 0x0030
 	Partition Width: 255
 
@@ -469,25 +469,31 @@ Handle 0x0032, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0030
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A1
 	Bank Locator: A1_BANK0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer1
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 667 MT/s
+	Manufacturer: Corsair         
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber1
-	Rank: Unknown
+	Part Number: CMV4GX3M1A1333C9  
+	Rank: 1
 	Configured Memory Speed: Unknown
 
-Handle 0x0033, DMI type 126, 35 bytes
-Inactive
+Handle 0x0033, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0032
+	Memory Array Mapped Address Handle: 0x0031
+	Partition Row Position: 1
 
 Handle 0x0034, DMI type 17, 34 bytes
 Memory Device
@@ -512,8 +518,8 @@ Memory Device
 
 Handle 0x0035, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0034
 	Memory Array Mapped Address Handle: 0x0031
@@ -523,25 +529,31 @@ Handle 0x0036, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0030
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B1
 	Bank Locator: A1_BANK2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer2
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 667 MT/s
+	Manufacturer: Undefined       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber2
-	Rank: Unknown
+	Part Number:                   
+	Rank: 1
 	Configured Memory Speed: Unknown
 
-Handle 0x0037, DMI type 126, 35 bytes
-Inactive
+Handle 0x0037, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00300000000
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0036
+	Memory Array Mapped Address Handle: 0x0031
+	Partition Row Position: 1
 
 Handle 0x0038, DMI type 17, 34 bytes
 Memory Device
@@ -557,17 +569,17 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 667 MT/s
-	Manufacturer: A1_Manufacturer3
+	Manufacturer: Undefined       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber3
-	Rank: Unknown
+	Part Number:                   
+	Rank: 1
 	Configured Memory Speed: 1 MT/s
 
 Handle 0x0039, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x00500000000
+	Ending Address: 0x005FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0038
 	Memory Array Mapped Address Handle: 0x0031

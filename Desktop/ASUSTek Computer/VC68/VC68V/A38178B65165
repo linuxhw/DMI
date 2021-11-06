@@ -611,7 +611,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 32 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -619,10 +619,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2400 MT/s
-	Manufacturer: 859B
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: BLS16G4S240FSD.16FBD
+	Part Number: 16ATF4G64HZ-2G6B2   
 	Rank: 2
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: Unknown
@@ -635,7 +635,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 32 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -643,10 +643,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2400 MT/s
-	Manufacturer: 859B
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: BLS16G4S240FSD.16FBD
+	Part Number: 16ATF4G64HZ-2G6B2   
 	Rank: 2
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: Unknown
@@ -656,8 +656,8 @@ Memory Device
 Handle 0x0040, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Array Handle: 0x003D
 	Partition Width: 2
 
@@ -772,9 +772,9 @@ Processor Information
 Handle 0x0045, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x003E
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0xFFFF
 	Memory Array Mapped Address Handle: 0x0040
 	Partition Row Position: Unknown
 	Interleave Position: 1
@@ -782,10 +782,10 @@ Memory Device Mapped Address
 
 Handle 0x0046, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x003F
+	Starting Address: 0x00800000000
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0xFFFF
 	Memory Array Mapped Address Handle: 0x0040
 	Partition Row Position: Unknown
 	Interleave Position: 2

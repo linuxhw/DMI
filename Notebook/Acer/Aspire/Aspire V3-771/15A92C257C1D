@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 39 structures occupying 2113 bytes.
 Table at 0x000E6E20.
@@ -68,7 +69,7 @@ Chassis Information
 	Version: Chassis Version
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -410,13 +411,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Nanya Technology
 	Serial Number: --
 	Asset Tag: --
 	Part Number: NT4GC64B8HG0NS-CG 
 	Rank: 2
-	Configured Clock Speed: 1333 MHz
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x001C, DMI type 17, 34 bytes
 Memory Device
@@ -452,13 +453,13 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: 99U5428-040.A01LF 
 	Rank: 2
-	Configured Clock Speed: 1333 MHz
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x001E, DMI type 17, 34 bytes
 Memory Device
@@ -512,13 +513,17 @@ Memory Device Mapped Address
 	Interleaved Data Depth: 1
 
 Handle 0x0022, DMI type 170, 70 bytes
-OEM-specific Type
-	Header and Data:
-		AA 46 22 00 01 08 00 00 7F 00 0F 00 06 00 01 02
-		01 08 41 02 04 00 42 02 20 00 43 02 40 00 44 02
-		08 00 45 02 10 00 48 02 01 00 49 02 02 00 61 02
-		08 00 62 02 01 00 63 02 02 00 64 02 04 00 81 02
-		04 00 83 02 02 00
+Acer Hotkey Function
+	Function bitmap for Communication Button: 0x0801
+		WiFi: Yes
+		3G: No
+		WiMAX: No
+		Bluetooth: Yes
+	Function bitmap for Application Button: 0x0000
+	Function bitmap for Media Button: 0x007f
+	Function bitmap for Display Button: 0x000f
+	Function bitmap for Others Button: 0x0006
+	Communication Function Key Number: 1
 
 Handle 0x0023, DMI type 171, 34 bytes
 OEM-specific Type

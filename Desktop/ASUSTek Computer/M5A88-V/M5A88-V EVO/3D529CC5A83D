@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 68 structures occupying 2501 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 03/16/2012
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -156,8 +156,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -172,8 +172,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -610,81 +610,53 @@ Handle 0x0039, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0037
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4096 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
-	Type: Other
-	Type Detail: Synchronous
-	Speed: 1600 MT/s
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
 	Manufacturer: Manufacturer0
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum0
 
-Handle 0x003A, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0039
-	Memory Array Mapped Address Handle: 0x0038
-	Partition Row Position: 1
+Handle 0x003A, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x003B, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0037
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
+	Type: Other
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
 	Manufacturer: Manufacturer1
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum1
 
-Handle 0x003C, DMI type 126, 19 bytes
-Inactive
-
-Handle 0x003D, DMI type 17, 27 bytes
-Memory Device
-	Array Handle: 0x0037
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 1024 MB
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM2
-	Bank Locator: BANK2
-	Type: Other
-	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Manufacturer2
-	Serial Number: --
-	Asset Tag: --
-	Part Number: PartNum2
-
-Handle 0x003E, DMI type 20, 19 bytes
+Handle 0x003C, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x0013FFFFFFF
-	Range Size: 1 GB
-	Physical Device Handle: 0x003D
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x003B
 	Memory Array Mapped Address Handle: 0x0038
 	Partition Row Position: 1
 
-Handle 0x003F, DMI type 17, 27 bytes
+Handle 0x003D, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0037
 	Error Information Handle: Not Provided
@@ -693,18 +665,46 @@ Memory Device
 	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
-	Locator: DIMM3
-	Bank Locator: BANK3
+	Locator: DIMM2
+	Bank Locator: BANK2
 	Type: Unknown
 	Type Detail: None
 	Speed: Unknown
+	Manufacturer: Manufacturer2
+	Serial Number: --
+	Asset Tag: --
+	Part Number: PartNum2
+
+Handle 0x003E, DMI type 126, 19 bytes
+Inactive
+
+Handle 0x003F, DMI type 17, 27 bytes
+Memory Device
+	Array Handle: 0x0037
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 1 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM3
+	Bank Locator: BANK3
+	Type: Other
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
 	Manufacturer: Manufacturer3
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum3
 
-Handle 0x0040, DMI type 126, 19 bytes
-Inactive
+Handle 0x0040, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x0013FFFFFFF
+	Range Size: 1 GB
+	Physical Device Handle: 0x003F
+	Memory Array Mapped Address Handle: 0x0038
+	Partition Row Position: 1
 
 Handle 0x0041, DMI type 32, 20 bytes
 System Boot Information

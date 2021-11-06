@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 66 structures occupying 2692 bytes.
@@ -114,8 +114,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Asynchronous
 	Installed SRAM Type: Asynchronous
@@ -139,7 +139,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -147,10 +147,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: 1302
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT41GS6AFR8A-PB  
+	Part Number: PSD38G1600L2S     
 	Rank: Unknown
 	Configured Memory Speed: 1600 MT/s
 
@@ -160,7 +160,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -168,10 +168,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 1302
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: PSD38G1600L2S     
+	Part Number: HMT41GS6AFR8A-PB  
 	Rank: Unknown
 	Configured Memory Speed: 1600 MT/s
 
@@ -470,7 +470,7 @@ BIOS Information
 	Release Date: 04/20/2020
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 12288 kB
+	ROM Size: 12 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -488,14 +488,14 @@ BIOS Information
 
 Handle 0x0036, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 402 bytes
+	Area Length: 594 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000018
+	Change Token: 0x00000024
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error

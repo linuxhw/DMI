@@ -352,8 +352,8 @@ Physical Memory Array
 Handle 0x0024, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0023
 	Partition Width: 255
 
@@ -361,25 +361,31 @@ Handle 0x0025, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0023
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: Unknown
+	Size: 2048 MB
+	Form Factor: DIMM
 	Set: None
 	Locator: Node0_Dimm0
 	Bank Locator: Node0_Bank0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Dimm0_Manufacturer
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1333 MT/s
+	Manufacturer: Kingston          
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Dimm0_PartNum
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: 99U5402-060.A
+	Rank: 1
+	Configured Clock Speed: 1333 MT/s
 
-Handle 0x0026, DMI type 126, 35 bytes
-Inactive
+Handle 0x0026, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0025
+	Memory Array Mapped Address Handle: 0x0024
+	Partition Row Position: 1
 
 Handle 0x0027, DMI type 17, 34 bytes
 Memory Device
@@ -400,12 +406,12 @@ Memory Device
 	Asset Tag: --
 	Part Number: 99U5595-003.A
 	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0028, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0027
 	Memory Array Mapped Address Handle: 0x0024
@@ -415,25 +421,31 @@ Handle 0x0029, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0023
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: Unknown
+	Size: 2048 MB
+	Form Factor: DIMM
 	Set: None
 	Locator: Node0_Dimm2
 	Bank Locator: Node0_Bank0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Dimm2_Manufacturer
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1333 MT/s
+	Manufacturer: Kingston          
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Dimm2_PartNum
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: 99U5402-060.A
+	Rank: 1
+	Configured Clock Speed: 1333 MT/s
 
-Handle 0x002A, DMI type 126, 35 bytes
-Inactive
+Handle 0x002A, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0029
+	Memory Array Mapped Address Handle: 0x0024
+	Partition Row Position: 1
 
 Handle 0x002B, DMI type 17, 34 bytes
 Memory Device
@@ -454,12 +466,12 @@ Memory Device
 	Asset Tag: --
 	Part Number: 99U5595-003.A
 	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x002C, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00180000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x002B
 	Memory Array Mapped Address Handle: 0x0024

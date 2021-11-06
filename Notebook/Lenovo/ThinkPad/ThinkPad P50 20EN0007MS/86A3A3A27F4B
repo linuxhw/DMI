@@ -1,8 +1,8 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-67 structures occupying 3353 bytes.
-Table at 0x4EFCF000.
+67 structures occupying 3350 bytes.
+Table at 0x4EFD1000.
 
 Handle 0x0000, DMI type 222, 16 bytes
 OEM-specific Type
@@ -265,8 +265,8 @@ Memory Array Mapped Address
 Handle 0x000E, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: N1EET89W (1.62 )
-	Release Date: 06/18/2020
+	Version: N1EET91W (1.64 )
+	Release Date: 05/12/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -289,7 +289,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.62
+	BIOS Revision: 1.64
 	Firmware Revision: 1.18
 
 Handle 0x000F, DMI type 1, 27 bytes
@@ -307,7 +307,7 @@ Handle 0x0010, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: LENOVO
 	Product Name: 20EN0007MS
-	Version: SDK0J40705 WIN
+	Version: Not Defined
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -548,22 +548,22 @@ OEM-specific Type
 Handle 0x002C, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 2C 00 24 41 4D 54 01 00 01 00 01 A5 AF 02
-		C0 00 00 00
+		82 14 2C 00 24 41 4D 54 01 01 01 01 01 A5 AF 02
+		C0 00 01 00
 
 Handle 0x002D, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
 		83 40 2D 00 35 00 00 00 0B 00 00 00 00 00 0A 00
 		F8 00 50 A1 00 00 00 00 09 C0 00 00 08 00 0B 00
-		A2 0E 50 00 00 00 00 00 FE 00 B7 15 00 00 00 00
+		22 0F 53 00 00 00 00 00 FE 00 B7 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x002E, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 2E 00 03 01 00 02 01 00 00 00 02 00 00 00
-		00 DC 00 03 00 00 05 00 00 00
+		00 EA 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -573,7 +573,7 @@ Handle 0x002F, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 2F 00 03 01 00 02 01 00 00 00 02 00 0B 00
-		00 0A 00 03 04 0B 08 50 A2 0E
+		00 0A 00 03 04 0B 08 53 22 0F
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
@@ -734,9 +734,9 @@ ThinkPad Embedded Controller Program
 Handle 0x0041, DMI type 140, 43 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2B 41 00 4C 45 4E 4F 56 4F 0B 08 01 02 18 08
-		06 22 02 01 17 12 12 07 42 FF FF FF FF FF FF FF
-		FF FF FF FF FF FF FF FF FF FF FF
+		8C 2B 41 00 4C 45 4E 4F 56 4F 0B 08 01 01 21 06
+		24 06 35 01 21 06 24 06 27 02 18 08 06 22 02 01
+		17 12 12 07 42 FF FF FF FF FF FF
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

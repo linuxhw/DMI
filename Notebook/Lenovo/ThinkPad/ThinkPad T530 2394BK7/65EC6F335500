@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-67 structures occupying 2595 bytes.
+67 structures occupying 2566 bytes.
 Table at 0xBAE9C000.
 
 Handle 0x0000, DMI type 134, 16 bytes
@@ -122,8 +122,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -155,7 +155,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -176,7 +176,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -206,7 +206,7 @@ BIOS Information
 	Release Date: 09/09/2019
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 12288 kB
+	ROM Size: 12 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -424,19 +424,8 @@ BIOS Language Information
 		en-US
 	Currently Installed Language: en-US
 
-Handle 0x002B, DMI type 22, 26 bytes
-Portable Battery
-	Location: Rear
-	Manufacturer: SANYO
-	Name: 45N1001
-	Design Capacity: 56160 mWh
-	Design Voltage: 10800 mV
-	SBDS Version: 03.01
-	Maximum Error: Unknown
-	SBDS Serial Number: --
-	SBDS Manufacture Date: 2012-07-30
-	SBDS Chemistry: LION
-	OEM-specific Information: 0x00000000
+Handle 0x002B, DMI type 126, 26 bytes
+Inactive
 
 Handle 0x002C, DMI type 126, 26 bytes
 Inactive
@@ -505,14 +494,14 @@ OEM-specific Type
 
 Handle 0x0036, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 114 bytes
+	Area Length: 146 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000006
+	Change Token: 0x00000008
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -528,15 +517,15 @@ Handle 0x0037, DMI type 140, 67 bytes
 OEM-specific Type
 	Header and Data:
 		8C 43 37 00 4C 45 4E 4F 56 4F 0B 00 01 9E D3 B5
-		4C A4 2C 0E CD 6A BB D6 2C 66 B0 33 A6 01 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		4C A4 2C 0E CD 6A BB D6 2C 66 B0 33 A6 01 00 A2
+		3A 70 FC 38 42 28 C4 86 3A 7A 16 A4 E8 08 69 01
 		00 81 3F 8D 7E 43 A6 D3 C8 96 04 9A 79 01 EB 48
 		5E 01 00
 
 Handle 0x0038, DMI type 140, 47 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2F 38 00 4C 45 4E 4F 56 4F 0B 01 01 29 00 AE
+		8C 2F 38 00 4C 45 4E 4F 56 4F 0B 01 01 28 00 AE
 		C3 7F 3B D4 F1 A2 A0 50 65 D6 34 F5 F8 5A E1 00
 		00 00 00 10 00 10 00 10 01 D0 00 20 01 00 01
 
@@ -563,7 +552,7 @@ OEM-specific Type
 Handle 0x003C, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 3C 00 4C 45 4E 4F 56 4F 0B 05 01 06 00 00
+		8C 13 3C 00 4C 45 4E 4F 56 4F 0B 05 01 02 00 00
 		00 00 00
 
 Handle 0x003D, DMI type 24, 5 bytes
@@ -576,7 +565,7 @@ Hardware Security
 Handle 0x003E, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 3E 00 01 18 36
+		84 07 3E 00 01 00 36
 
 Handle 0x003F, DMI type 135, 18 bytes
 OEM-specific Type

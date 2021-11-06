@@ -6,8 +6,8 @@ Table at 0x000E0000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.11.0
-	Release Date: 07/04/2019
+	Version: 1.20.0
+	Release Date: 05/19/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -34,7 +34,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.11
+	BIOS Revision: 1.20
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -562,19 +562,19 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 16384 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM A
 	Bank Locator: BANK 0
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
-	Manufacturer: 80CE000080CE
+	Speed: 2667 MT/s
+	Manufacturer: 059B0000059B
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471A1K43CB1-CRC    
-	Rank: 1
+	Part Number: M471A2K43BB1-CRC    
+	Rank: 2
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -586,19 +586,19 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 16384 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM B
 	Bank Locator: BANK 2
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
-	Manufacturer: 80CE000080CE
+	Speed: 2667 MT/s
+	Manufacturer: 059B0000059B
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471A1K43BB1-CRC    
-	Rank: 1
+	Part Number: M471A2K43BB1-CRC    
+	Rank: 2
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -607,8 +607,8 @@ Memory Device
 Handle 0x0050, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x004D
 	Partition Width: 2
 
@@ -709,7 +709,7 @@ Processor Information
 	L3 Cache Handle: 0x0053
 	Serial Number: --
 	Asset Tag: --
-	Part Number: To Be Filled By O.E.M.
+	Part Number: Not Specified
 	Core Count: 4
 	Core Enabled: 4
 	Thread Count: 8
@@ -724,8 +724,8 @@ Processor Information
 Handle 0x0055, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x004E
 	Memory Array Mapped Address Handle: 0x0050
 	Partition Row Position: 1
@@ -734,9 +734,9 @@ Memory Device Mapped Address
 
 Handle 0x0056, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00400000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x004F
 	Memory Array Mapped Address Handle: 0x0050
 	Partition Row Position: 1
@@ -849,7 +849,7 @@ OEM-specific Type
 Handle 0xD000, DMI type 208, 16 bytes
 OEM-specific Type
 	Header and Data:
-		D0 10 00 D0 03 0A FE 00 1C 08 01 02 00 00 00 00
+		D0 10 00 D0 03 11 FE 00 1C 08 01 02 00 00 00 00
 	Strings:
 		20180201
 		20180212
@@ -1053,7 +1053,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 19 09 20 01 15 01 00 00
+		DE 10 00 DE 01 04 00 00 21 09 01 15 37 01 00 00
 
 Handle 0xF026, DMI type 218, 77 bytes
 OEM-specific Type
@@ -1075,14 +1075,14 @@ OEM-specific Type
 	Header and Data:
 		83 40 28 F0 35 00 00 00 0B 00 00 00 00 00 0A 00
 		F8 00 4E 9D 00 00 00 00 01 00 00 00 08 00 0B 00
-		06 0E 41 00 00 00 00 00 FE 00 D7 15 00 00 00 00
+		25 0F 56 00 00 00 00 00 FE 00 D7 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0xF029, DMI type 205, 33 bytes
 OEM-specific Type
 	Header and Data:
 		CD 21 29 F0 04 01 00 03 00 00 00 00 02 00 00 00
-		00 B4 00 03 00 00 05 00 00 00 04 00 02 00 00 63
+		00 EA 00 03 00 00 05 00 00 00 04 00 02 00 00 63
 		0E
 	Strings:
 		Reference Code - CPU
@@ -1094,7 +1094,7 @@ Handle 0xF02A, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 2A F0 03 01 00 03 00 00 00 00 02 00 0B 00
-		00 0A 00 03 04 0B 08 41 06 0E
+		00 0A 00 03 04 0B 08 56 25 0F
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
@@ -1167,12 +1167,12 @@ OEM-specific Type
 		BP1.3.3.0_RP01
 		Platform Version
 
-Handle 0xF041, DMI type 136, 6 bytes
+Handle 0xF03E, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 41 F0 00 00
+		88 06 3E F0 00 00
 
-Handle 0xF042, DMI type 14, 20 bytes
+Handle 0xF03F, DMI type 14, 20 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 5
@@ -1182,7 +1182,7 @@ Group Associations
 		0xF02C (OEM-specific)
 		0xF033 (OEM-specific)
 
-Handle 0xF043, DMI type 13, 22 bytes
+Handle 0xF040, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 2
@@ -1190,16 +1190,16 @@ BIOS Language Information
 		<BAD INDEX>
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0xF044, DMI type 14, 8 bytes
+Handle 0xF041, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0xF045, DMI type 203, 81 bytes
+Handle 0xF042, DMI type 203, 81 bytes
 OEM-specific Type
 	Header and Data:
-		CB 51 45 F0 01 03 01 45 02 00 94 06 83 10 89 30
+		CB 51 42 F0 01 03 01 45 02 00 94 06 81 10 89 30
 		00 00 00 00 40 68 00 01 1F 00 00 C9 0B C0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -1210,6 +1210,6 @@ OEM-specific Type
 		MEI2
 		MEI3
 
-Handle 0xF046, DMI type 127, 4 bytes
+Handle 0xF043, DMI type 127, 4 bytes
 End Of Table
 

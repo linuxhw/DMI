@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 111 structures occupying 5003 bytes.
 Table at 0x000EB6F0.
@@ -6,8 +7,8 @@ Table at 0x000EB6F0.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 4701
-	Release Date: 05/06/2014
+	Version: 4801
+	Release Date: 07/24/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8192 kB
@@ -419,7 +420,7 @@ Handle 0x0027, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_2
 	Type: 32-bit PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 4
 	Characteristics:
@@ -439,7 +440,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:09:1e.0
+	Bus Address: 0000:0a:1e.0
 
 Handle 0x0029, DMI type 9, 17 bytes
 System Slot Information
@@ -505,13 +506,13 @@ Memory Device
 	Bank Locator: ChannelA
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Undefined                  
 	Serial Number: --
 	Asset Tag: --
 	Part Number: GR1600D364L11/8G      
 	Rank: 2
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0030, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -537,13 +538,13 @@ Memory Device
 	Bank Locator: ChannelA
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Undefined                  
 	Serial Number: --
 	Asset Tag: --
 	Part Number: GY1600D364L10/8G      
 	Rank: 2
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0032, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -569,13 +570,13 @@ Memory Device
 	Bank Locator: ChannelB
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Undefined                  
 	Serial Number: --
 	Asset Tag: --
 	Part Number: GR1600D364L11/8G      
 	Rank: 2
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0034, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -625,13 +626,13 @@ Memory Device
 	Bank Locator: ChannelC
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Undefined                  
 	Serial Number: --
 	Asset Tag: --
 	Part Number: GR1600D364L11/8G      
 	Rank: 2
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0038, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -657,13 +658,13 @@ Memory Device
 	Bank Locator: ChannelC
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Undefined                  
 	Serial Number: --
 	Asset Tag: --
 	Part Number: GY1600D364L10/8G      
 	Rank: 2
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x003A, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -689,13 +690,13 @@ Memory Device
 	Bank Locator: ChannelD
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Undefined                  
 	Serial Number: --
 	Asset Tag: --
 	Part Number: GR1600D364L11/8G      
 	Rank: 2
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x003C, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -897,8 +898,9 @@ System Power Supply
 	Input Current Probe Handle: 0x004D
 
 Handle 0x0051, DMI type 34, 16 bytes
+Invalid entry length (16). Fixed up to 11.
 Management Device
-	Description: 2
+	Description: LM78-2
 	Type: LM78
 	Address: 0x00000000
 	Address Type: I/O Port

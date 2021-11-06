@@ -1,9 +1,7 @@
-# dmidecode 2.12
-# SMBIOS entry point at 0x000f04d0
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-# SMBIOS implementations newer than version 2.7 are not
-# fully supported by this version of dmidecode.
-20 structures occupying 970 bytes.
+20 structures occupying 963 bytes.
 Table at 0x000EBED0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -191,23 +189,23 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: CHANNEL A
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1600 MHz
-	Manufacturer: AMD            
+	Speed: 1866 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: R538G1601U2S
-	Rank: 2
-	Configured Clock Speed: 1600 MHz
-	Minimum voltage:  1.500 V
-	Maximum voltage:  1.500 V
-	Configured voltage:  1.500 V
+	Part Number: KHX1866C10D3/4G   
+	Rank: 1
+	Configured Clock Speed: 1866 MT/s
+	Minimum Voltage: 1.5 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: 1.5 V
 
 Handle 0x0012, DMI type 17, 40 bytes
 Memory Device
@@ -215,29 +213,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: CHANNEL B
 	Type: DDR3
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer1
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1866 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: A1_PartNum1
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Part Number: KHX1866C10D3/4G   
+	Rank: 1
+	Configured Clock Speed: 1866 MT/s
+	Minimum Voltage: 1.5 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: 1.5 V
 
 Handle 0x0013, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0011
 	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: Unknown
@@ -246,20 +244,47 @@ Memory Device Mapped Address
 
 Handle 0x0014, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
-	Physical Device Handle: 0x0000
-	Memory Array Mapped Address Handle: 0x0000
-	Partition Row Position: <OUT OF SPEC>
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0012
+	Memory Array Mapped Address Handle: 0x0010
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x0017, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: P0
 	Type: Central Processor
-	Family: <OUT OF SPEC>
+	Family: Athlon X4
 	Manufacturer: AuthenticAMD
 	ID: 01 0F 63 00 FF FB 8B 17
+	Signature: Family 21, Model 48, Stepping 1
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
 	Version: AMD Athlon(tm) X4 840 Quad Core Processor      
 	Voltage: 1.2 V
 	External Clock: 100 MHz

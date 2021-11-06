@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 50 structures occupying 1954 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 08/26/2011
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -150,8 +150,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -420,8 +420,8 @@ Physical Memory Array
 Handle 0x0027, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0026
 	Partition Width: 255
 
@@ -431,26 +431,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM0
 	Bank Locator: A1_BANK0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MT/s
-	Manufacturer: Samsung         
+	Speed: 1333 MT/s
+	Manufacturer: Nanya           
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B2873FHS-CF8  
-	Rank: 1
+	Part Number: NT4GC64B8HD0NS-CG 
+	Rank: 2
 	Configured Memory Speed: Unknown
 
 Handle 0x0029, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0028
 	Memory Array Mapped Address Handle: 0x0027
 	Partition Row Position: 1
@@ -461,26 +461,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM1
 	Bank Locator: A1_BANK1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MT/s
-	Manufacturer: Elpida          
+	Speed: 1600 MT/s
+	Manufacturer: Hynix Semiconduc
 	Serial Number: --
 	Asset Tag: --
-	Part Number: EBJ21UE8BAU0-AE-E 
+	Part Number: HMT351S6CFR8C-PB  
 	Rank: 2
 	Configured Memory Speed: Unknown
 
 Handle 0x002B, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x002A
 	Memory Array Mapped Address Handle: 0x0027
 	Partition Row Position: 1

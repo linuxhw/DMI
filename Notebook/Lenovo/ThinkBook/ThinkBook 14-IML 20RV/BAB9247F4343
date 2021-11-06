@@ -1,7 +1,7 @@
 # dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0x80521000.
+Table at 0x80520000.
 
 Handle 0x0000, DMI type 222, 14 bytes
 OEM-specific Type
@@ -108,8 +108,8 @@ Memory Array Mapped Address
 Handle 0x0006, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 06 00 03 01 00 09 00 14 30 00 02 00 00 00
-		00 C6 00 03 00 01 05 00 00 00
+		DD 1A 06 00 03 01 00 09 00 15 50 00 02 00 00 00
+		00 D6 00 03 00 01 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -118,7 +118,7 @@ OEM-specific Type
 Handle 0x0007, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 07 00 03 01 00 09 00 14 30 00 02 00 0D 00
+		DD 1A 07 00 03 01 00 09 00 15 50 00 02 00 0D 00
 		00 04 00 03 04 0E 00 00 25 04
 	Strings:
 		Reference Code - ME
@@ -129,7 +129,7 @@ OEM-specific Type
 Handle 0x0008, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 08 00 07 01 00 09 00 14 30 00 02 03 FF FF
+		DD 36 08 00 07 01 00 09 00 15 50 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
 		00 06 00 02 0A 00 00 00 07 00 15 FF FF FF FF 08
 		00 00 FF FF FF FF
@@ -146,8 +146,8 @@ OEM-specific Type
 Handle 0x0009, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 09 00 07 01 00 09 00 14 30 00 02 00 00 07
-		01 65 00 03 00 09 00 14 30 00 04 05 FF FF FF FF
+		DD 36 09 00 07 01 00 09 00 15 50 00 02 00 00 07
+		01 6C 00 03 00 09 00 15 50 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 0C 00 07 00 00 00 00 0C 00 08
 		00 FF FF FF FF FF
 	Strings:
@@ -815,16 +815,10 @@ OEM-specific Type
 		F8 12 51 00 AC AC AA 17 FF FF 00 00 00 00 00 00
 		00 00
 
-Handle 0x0052, DMI type 130, 20 bytes
+Handle 0x0052, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 52 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
-		C0 00 00 00
-
-Handle 0x0053, DMI type 131, 64 bytes
-OEM-specific Type
-	Header and Data:
-		83 40 53 00 31 00 00 00 0D 00 00 00 00 00 04 00
+		83 40 52 00 31 00 00 00 0D 00 00 00 00 00 04 00
 		F8 00 84 02 00 00 00 00 01 00 00 00 00 00 0E 00
 		25 04 00 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 E2 01 00 00 76 50 72 6F 00 00 00 00
@@ -832,8 +826,8 @@ OEM-specific Type
 Handle 0x000F, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: CJCN26WW
-	Release Date: 02/15/2020
+	Version: CJCN29WW
+	Release Date: 06/19/2020
 	ROM Size: 16 MB
 	Characteristics:
 		PCI is supported
@@ -854,8 +848,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.26
-	Firmware Revision: 1.28
+	BIOS Revision: 1.29
+	Firmware Revision: 1.31
 
 Handle 0x0011, DMI type 2, 17 bytes
 Base Board Information
@@ -901,14 +895,14 @@ System Information
 	SKU Number: LENOVO_MT_20RV_BU_idea_FM_Lenovo ThinkBook 14-IML
 	Family: Lenovo ThinkBook 14-IML
 
-Handle 0x0054, DMI type 24, 5 bytes
+Handle 0x0053, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Not Implemented
 	Keyboard Password Status: Not Implemented
 	Administrator Password Status: Not Implemented
 	Front Panel Reset Status: Not Implemented
 
-Handle 0x0055, DMI type 14, 20 bytes
+Handle 0x0054, DMI type 14, 20 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 5
@@ -918,16 +912,16 @@ Group Associations
 		0x0009 (OEM-specific)
 		0x000A (OEM-specific)
 
-Handle 0x0056, DMI type 15, 31 bytes
+Handle 0x0055, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 2178 bytes
+	Area Length: 3970 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
-	Status: Valid, Not Full
-	Change Token: 0x00000087
+	Status: Valid, Full
+	Change Token: 0x000000F7
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -939,16 +933,16 @@ System Event Log
 	Descriptor 4: Log area reset/cleared
 	Data Format 4: None
 
-Handle 0x0057, DMI type 14, 8 bytes
+Handle 0x0056, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x0058, DMI type 219, 106 bytes
+Handle 0x0057, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 58 00 01 04 01 45 02 00 90 06 01 10 86 20
+		DB 6A 57 00 01 04 01 45 02 00 90 06 01 85 36 20
 		00 00 00 00 48 00 00 00 00 00 00 06 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

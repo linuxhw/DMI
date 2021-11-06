@@ -3,13 +3,13 @@ Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
 # SMBIOS implementations newer than version 3.2.0 are not
 # fully supported by this version of dmidecode.
-Table at 0xEDBDC000.
+Table at 0xECBD9000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: GV301QH.404
-	Release Date: 03/17/2021
+	Version: GV301QH.407
+	Release Date: 05/31/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -27,7 +27,7 @@ BIOS Information
 		Targeted content distribution is supported
 		UEFI is supported
 	BIOS Revision: 5.19
-	Firmware Revision: 3.8
+	Firmware Revision: 3.9
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -99,7 +99,7 @@ Handle 0x0011, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.55
+	Firmware Revision: 3.57
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -246,7 +246,7 @@ Handle 0x0019, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x001A, DMI type 17, 84 bytes
+Handle 0x001A, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x0013
 	Error Information Handle: 0x0019
@@ -284,11 +284,13 @@ Memory Device
 Handle 0x001B, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x001A
 	Memory Array Mapped Address Handle: 0x0014
 	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x001C, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -300,7 +302,7 @@ Handle 0x001C, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x001D, DMI type 17, 84 bytes
+Handle 0x001D, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x0013
 	Error Information Handle: 0x001C
@@ -337,12 +339,14 @@ Memory Device
 
 Handle 0x001E, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
+	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
+	Range Size: 16 GB
 	Physical Device Handle: 0x001D
 	Memory Array Mapped Address Handle: 0x0014
 	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x0031, DMI type 10, 26 bytes
 On Board Device 1 Information

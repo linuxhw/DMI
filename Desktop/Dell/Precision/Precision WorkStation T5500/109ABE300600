@@ -128,8 +128,8 @@ OEM-specific Type
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: A16
-	Release Date: 05/28/2013
+	Version: A18
+	Release Date: 10/15/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 2048 kB
@@ -182,7 +182,7 @@ Chassis Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	380AD15AAB729CF25C4397C21C466ACE
+	F41CD6153DF9A03E5FB730CF14D557D5
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -226,9 +226,9 @@ Processor Information
 		PBE (Pending break enabled)
 	Version: Not Specified
 	Voltage: Unknown
-	External Clock: 5860 MHz
+	External Clock: 6400 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 2400 MHz
+	Current Speed: 3466 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA771
 	L1 Cache Handle: 0x0700
@@ -237,8 +237,8 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
-	Core Count: 4
-	Core Enabled: 4
+	Core Count: 6
+	Core Enabled: 6
 	Thread Count: 2
 	Characteristics:
 		64-bit capable
@@ -282,9 +282,9 @@ Processor Information
 		PBE (Pending break enabled)
 	Version: Not Specified
 	Voltage: Unknown
-	External Clock: 5860 MHz
+	External Clock: 6400 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 2400 MHz
+	Current Speed: 3466 MHz
 	Status: Populated, Idle
 	Upgrade: Socket LGA771
 	L1 Cache Handle: 0x0702
@@ -293,8 +293,8 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
-	Core Count: 4
-	Core Enabled: 4
+	Core Count: 6
+	Core Enabled: 6
 	Thread Count: 2
 	Characteristics:
 		64-bit capable
@@ -305,8 +305,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 256 kB
-	Maximum Size: 256 kB
+	Installed Size: 384 kB
+	Maximum Size: 384 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -321,8 +321,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1536 kB
+	Maximum Size: 1536 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -353,8 +353,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 256 kB
-	Maximum Size: 256 kB
+	Installed Size: 384 kB
+	Maximum Size: 384 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -369,8 +369,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1536 kB
+	Maximum Size: 1536 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -571,7 +571,7 @@ Handle 0x0904, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT4  
 	Type: x16 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 4
 	Characteristics:
@@ -594,7 +594,7 @@ Handle 0x0906, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT6  
 	Type: 64-bit PCI-X
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 6
 	Characteristics:
@@ -639,7 +639,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFE01000
 	Status: Valid, Not Full
-	Change Token: 0x0000001E
+	Change Token: 0x00000029
 	Header Format: Type 1
 	Supported Log Type Descriptors: 5
 	Descriptor 1: POST error
@@ -668,18 +668,18 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1          
 	Bank Locator: Not Specified
 	Type: DDR3
-	Type Detail: Unbuffered (Unregistered)
+	Type Detail: Registered (Buffered)
 	Speed: 1333 MT/s
-	Manufacturer: 80CE000080CE    
+	Manufacturer: 80AD04B380AD    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M391B5673FH0-CH9  
+	Part Number: HMT31GR7BFR4C-H9  
 
 Handle 0x1101, DMI type 17, 27 bytes
 Memory Device
@@ -687,18 +687,18 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 2          
 	Bank Locator: Not Specified
 	Type: DDR3
-	Type Detail: Unbuffered (Unregistered)
+	Type Detail: Registered (Buffered)
 	Speed: 1333 MT/s
-	Manufacturer: 80CE000080CE    
+	Manufacturer: 80AD04B380AD    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M391B5673FH0-CH9  
+	Part Number: HMT31GR7BFR4C-H9  
 
 Handle 0x1102, DMI type 17, 27 bytes
 Memory Device
@@ -706,18 +706,18 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 3          
 	Bank Locator: Not Specified
 	Type: DDR3
-	Type Detail: Unbuffered (Unregistered)
-	Speed: 1333 MT/s
-	Manufacturer: 80CE000080CE    
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: FFFFFFFFFFFF    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M391B5673FH0-CH9  
+	Part Number:                   
 
 Handle 0x1103, DMI type 17, 27 bytes
 Memory Device
@@ -782,18 +782,18 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: RISER DIMM 1
 	Bank Locator: Not Specified
 	Type: DDR3
-	Type Detail: Unbuffered (Unregistered)
+	Type Detail: Registered (Buffered)
 	Speed: 1333 MT/s
-	Manufacturer: 80CE000080CE    
+	Manufacturer: 80AD04B380AD    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M391B5673FH0-CH9  
+	Part Number: HMT31GR7BFR4C-H9  
 
 Handle 0x1107, DMI type 17, 27 bytes
 Memory Device
@@ -801,18 +801,18 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: RISER DIMM 2
 	Bank Locator: Not Specified
 	Type: DDR3
-	Type Detail: Unbuffered (Unregistered)
+	Type Detail: Registered (Buffered)
 	Speed: 1333 MT/s
-	Manufacturer: 80CE000080CE    
+	Manufacturer: 80AD04B380AD    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M391B5673FH0-CH9  
+	Part Number: HMT31GR7BFR4C-H9  
 
 Handle 0x1108, DMI type 17, 27 bytes
 Memory Device
@@ -820,24 +820,24 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: RISER DIMM 3
 	Bank Locator: Not Specified
 	Type: DDR3
-	Type Detail: Unbuffered (Unregistered)
-	Speed: 1333 MT/s
-	Manufacturer: 80CE000080CE    
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: FFFFFFFFFFFF    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M391B5673FH0-CH9  
+	Part Number:                   
 
 Handle 0x1300, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 12 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x1000
 	Partition Width: 1
 

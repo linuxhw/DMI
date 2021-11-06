@@ -1,14 +1,14 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-61 structures occupying 2215 bytes.
-Table at 0x000E8776.
+65 structures occupying 2325 bytes.
+Table at 0x000E86E7.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Hewlett-Packard
-	Version: K06 v02.09
-	Release Date: 01/07/2013
+	Version: K06 v02.77
+	Release Date: 03/22/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8 MB
@@ -29,7 +29,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.9
+	BIOS Revision: 2.77
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -61,7 +61,7 @@ Handle 0x0003, DMI type 3, 22 bytes
 Chassis Information
 	Manufacturer: Hewlett-Packard
 	Type: Mini Tower
-	Lock: Present
+	Lock: Not Present
 	Version:  
 	Serial Number: --
 	Asset Tag: --
@@ -73,7 +73,7 @@ Chassis Information
 	Height: Unspecified
 	Number Of Power Cords: 1
 	Contained Elements: 0
-	SKU Number: <BAD INDEX>
+	SKU Number: QZ709AV
 
 Handle 0x0004, DMI type 8, 9 bytes
 Port Connector Information
@@ -410,7 +410,7 @@ Memory Device
 	Total Width: Unknown
 	Data Width: 64 bits
 	Size: No Module Installed
-	Form Factor: DIMM
+	Form Factor: Unknown
 	Set: None
 	Locator: XMM4
 	Bank Locator:  
@@ -440,13 +440,13 @@ Memory Device
 	Bank Locator:  
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 800 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: S
 	Serial Number: --
 	Asset Tag: --
 	0F45537778DBBBF507B44A5A7986CF16
 	Rank: 1
-	Configured Memory Speed: 43780 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x002E, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -464,7 +464,7 @@ Memory Device
 	Total Width: Unknown
 	Data Width: 64 bits
 	Size: No Module Installed
-	Form Factor: DIMM
+	Form Factor: Unknown
 	Set: None
 	Locator: XMM2
 	Bank Locator:  
@@ -494,13 +494,13 @@ Memory Device
 	Bank Locator:  
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 800 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: S
 	Serial Number: --
 	Asset Tag: --
 	0F45537778DBBBF507B44A5A7986CF16
 	Rank: 1
-	Configured Memory Speed: 6 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0032, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -511,37 +511,18 @@ Memory Device Mapped Address
 	Memory Array Mapped Address Handle: 0x002A
 	Partition Row Position: 1
 
-Handle 0x0033, DMI type 32, 20 bytes
+Handle 0x0033, DMI type 24, 5 bytes
+Hardware Security
+	Power-On Password Status: Enabled
+	Keyboard Password Status: Disabled
+	Administrator Password Status: Enabled
+	Front Panel Reset Status: Disabled
+
+Handle 0x0034, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0034, DMI type 27, 15 bytes
-Cooling Device
-	Type: Power Supply Fan
-	Status: OK
-	OEM-specific Information: 0x00000000
-	Nominal Speed: Unknown Or Non-rotating
-	Description: Power Supply Fan
-
-Handle 0x0035, DMI type 39, 22 bytes
-System Power Supply
-	Power Unit Group: 1
-	Location:  
-	Name:  
-	Manufacturer:  
-	Serial Number: --
-	271882FD79060B21C43F805A2DE81148  
-	Model Part Number: High Efficiency
-	Revision:  
-	Max Power Capacity: Unknown
-	Status: Present, OK
-	Type: Switching
-	Input Voltage Range Switching: Auto-switch
-	Plugged: Yes
-	Hot Replaceable: No
-	Cooling Device Handle: 0x0034
-
-Handle 0x0036, DMI type 41, 11 bytes
+Handle 0x0035, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation:  Onboard LAN
 	Type: Ethernet
@@ -549,7 +530,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:00.0
 
-Handle 0x0037, DMI type 7, 19 bytes
+Handle 0x0036, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 CACHE
 	Configuration: Enabled, Not Socketed, Level 1
@@ -565,7 +546,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 2-way Set-associative
 
-Handle 0x0038, DMI type 7, 19 bytes
+Handle 0x0037, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 CACHE
 	Configuration: Enabled, Not Socketed, Level 2
@@ -581,7 +562,74 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0041, DMI type 4, 42 bytes
+Handle 0x0038, DMI type 27, 15 bytes
+Cooling Device
+	Type: Cabinet Fan
+	Status: OK
+	OEM-specific Information: 0x00000000
+	Nominal Speed: Unknown Or Non-rotating
+	Description: Front chassis fan
+
+Handle 0x0039, DMI type 27, 15 bytes
+Cooling Device
+	Type: Cabinet Fan
+	Status: OK
+	OEM-specific Information: 0x00000000
+	Nominal Speed: Unknown Or Non-rotating
+	Description: Rear chassis fan
+
+Handle 0x003A, DMI type 27, 15 bytes
+Cooling Device
+	Type: Power Supply Fan
+	Status: OK
+	OEM-specific Information: 0x00000000
+	Nominal Speed: Unknown Or Non-rotating
+	Description: PSU fan
+
+Handle 0x003B, DMI type 39, 22 bytes
+System Power Supply
+	Location: Not Specified
+	Name: Not Specified
+	Manufacturer: Not Specified
+	Serial Number: --
+	Asset Tag: --
+	Model Part Number: High Efficiency
+	Revision: Not Specified
+	Max Power Capacity: Unknown
+	Status: Present, Unknown
+	Type: Unknown
+	Input Voltage Range Switching: Unknown
+	Plugged: Yes
+	Hot Replaceable: No
+	Cooling Device Handle: 0x003A
+
+Handle 0x003C, DMI type 28, 22 bytes
+Temperature Probe
+	Description: Chassis Temperature
+	Location: Motherboard
+	Status: OK
+	Maximum Value: Unknown
+	Minimum Value: Unknown
+	Resolution: 0.100 deg C
+	Tolerance: Unknown
+	Accuracy: Unknown
+	OEM-specific Information: 0x00000000
+	Nominal Value: Unknown
+
+Handle 0x003D, DMI type 28, 22 bytes
+Temperature Probe
+	Description: CPU Temperature
+	Location: Processor
+	Status: OK
+	Maximum Value: Unknown
+	Minimum Value: Unknown
+	Resolution: 0.100 deg C
+	Tolerance: Unknown
+	Accuracy: Unknown
+	OEM-specific Information: 0x00000000
+	Nominal Value: Unknown
+
+Handle 0x0040, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: P0
 	Type: Central Processor
@@ -620,8 +668,8 @@ Processor Information
 	Current Speed: 3400 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket FM2
-	L1 Cache Handle: 0x0037
-	L2 Cache Handle: 0x0038
+	L1 Cache Handle: 0x0036
+	L2 Cache Handle: 0x0037
 	L3 Cache Handle: Not Provided
 	Serial Number: --
 	Asset Tag: --
@@ -632,7 +680,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x004A, DMI type 13, 22 bytes
+Handle 0x004E, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 12
@@ -650,14 +698,6 @@ BIOS Language Information
 		ja|JP|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x004C, DMI type 129, 8 bytes
-OEM-specific Type
-	Header and Data:
-		81 08 4C 00 01 01 02 01
-	Strings:
-		Intel_ASF
-		Intel_ASF_001
-
-Handle 0x004D, DMI type 127, 4 bytes
+Handle 0x0050, DMI type 127, 4 bytes
 End Of Table
 

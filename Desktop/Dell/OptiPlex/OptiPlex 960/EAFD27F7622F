@@ -163,8 +163,8 @@ Processor Information
 	Type: Central Processor
 	Family: Core 2 Quad
 	Manufacturer: Intel
-	ID: 77 06 01 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 23, Stepping 7
+	ID: 7A 06 01 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 23, Stepping 10
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -198,7 +198,7 @@ Processor Information
 	Voltage: 1.2 V
 	External Clock: 1333 MHz
 	Max Speed: 5200 MHz
-	Current Speed: 2333 MHz
+	Current Speed: 2833 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA775
 	L1 Cache Handle: 0x0700
@@ -235,15 +235,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 12288 kB
+	Maximum Size: 12288 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
 	Speed: Unknown
 	Error Correction Type: Single-bit ECC
 	System Type: Unified
-	Associativity: 16-way Set-associative
+	Associativity: <OUT OF SPEC>
 
 Handle 0x0800, DMI type 8, 9 bytes
 Port Connector Information
@@ -479,7 +479,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFE01000
 	Status: Valid, Not Full
-	Change Token: 0x00000275
+	Change Token: 0x00000364
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -504,18 +504,18 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_1
 	Bank Locator: Not Specified
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MT/s
-	Manufacturer: 7F94000000000000
+	Speed: 800 MT/s
+	Manufacturer: 0000000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: SG564288FG8N6KF-Z1
+	Part Number: Kllisre DDR2 2G   
 
 Handle 0x1101, DMI type 17, 27 bytes
 Memory Device
@@ -530,11 +530,11 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MT/s
-	Manufacturer: 7F98000000000000
+	Speed: 800 MT/s
+	Manufacturer: 7F94000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number:        "          
+	Part Number: SG564568FG8N6KFSQR
 
 Handle 0x1102, DMI type 17, 27 bytes
 Memory Device
@@ -542,18 +542,18 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_2
 	Bank Locator: Not Specified
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MT/s
-	Manufacturer: 7F94000000000000
+	Speed: 800 MT/s
+	Manufacturer: 0000000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: SH564288FG8N6KFSEG
+	Part Number: Kllisre DDR2 2G   
 
 Handle 0x1103, DMI type 17, 27 bytes
 Memory Device
@@ -568,25 +568,25 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MT/s
-	Manufacturer: 7F98000000000000
+	Speed: 800 MT/s
+	Manufacturer: 7F94000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number:        "          
+	Part Number: SG564568FG8N6KFSQR
 
 Handle 0x1300, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017DFFFFFF
-	Range Size: 6112 MB
+	Ending Address: 0x001FDFFFFFF
+	Range Size: 8160 MB
 	Physical Array Handle: 0x1000
 	Partition Width: 1
 
 Handle 0x1400, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x1100
 	Memory Array Mapped Address Handle: 0x1300
 	Partition Row Position: 1
@@ -595,8 +595,8 @@ Memory Device Mapped Address
 
 Handle 0x1401, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x0017DFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FDFFFFFF
 	Range Size: 4064 MB
 	Physical Device Handle: 0x1101
 	Memory Array Mapped Address Handle: 0x1300
@@ -607,8 +607,8 @@ Memory Device Mapped Address
 Handle 0x1402, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x1102
 	Memory Array Mapped Address Handle: 0x1300
 	Partition Row Position: 1
@@ -617,8 +617,8 @@ Memory Device Mapped Address
 
 Handle 0x1403, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x0017DFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FDFFFFFF
 	Range Size: 4064 MB
 	Physical Device Handle: 0x1103
 	Memory Array Mapped Address Handle: 0x1300
@@ -631,13 +631,13 @@ Inactive
 
 Handle 0x1800, DMI type 24, 5 bytes
 Hardware Security
-	Power-On Password Status: Enabled
+	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
-	Administrator Password Status: Enabled
+	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x1900, DMI type 25, 9 bytes
-System Power Controls
+	System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x1B10, DMI type 27, 12 bytes
@@ -684,9 +684,9 @@ OEM-specific Type
 Handle 0x8300, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 00 83 00 00 00 00 00 00 10 2E 07 00 00 00
+		83 40 00 83 35 00 00 00 00 00 10 2E 07 00 00 00
 		F8 00 14 3A 00 00 00 00 0D 00 00 00 02 00 05 00
-		18 04 47 00 01 00 01 02 C8 00 DE 10 00 00 00 00
+		18 04 47 00 03 00 01 02 C8 00 DE 10 00 00 00 00
 		00 00 00 00 DF 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x8800, DMI type 136, 6 bytes
@@ -705,7 +705,7 @@ OEM-specific Type
 Handle 0xD100, DMI type 209, 12 bytes
 OEM-specific Type
 	Header and Data:
-		D1 0C 00 D1 78 03 07 03 04 0F 80 05
+		D1 0C 00 D1 78 03 07 03 04 0F 80 04
 
 Handle 0xD200, DMI type 210, 12 bytes
 OEM-specific Type

@@ -1,17 +1,17 @@
-# dmidecode 3.3
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-32 structures occupying 1512 bytes.
-Table at 0xDBECB018.
+32 structures occupying 1515 bytes.
+Table at 0x000EA000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: FCKT73AUS
-	Release Date: 08/28/2015
+	Version: FCKT98AUS
+	Release Date: 04/17/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 4 MB
+	ROM Size: 4096 kB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -32,7 +32,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.73
+	BIOS Revision: 1.152
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -48,7 +48,7 @@ System Information
 Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: LENOVO
-	Product Name:  
+	Product Name: 3098
 	Version: SDK0J40705 WIN 3425036812630
 	Serial Number: --
 	Asset Tag: --
@@ -165,7 +165,7 @@ On Board Device 4 Information
 Handle 0x000A, DMI type 11, 5 bytes
 OEM Strings
 	String 1: LENOVO ThinkCentre Embedded Controller -[N/A]-
-	String 2: LENOVO ThinkCentre BIOS Boot Block Revision 1.73
+	String 2: LENOVO ThinkCentre BIOS Boot Block Revision 1.98
 
 Handle 0x000B, DMI type 12, 5 bytes
 System Configuration Options
@@ -276,8 +276,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3 MB
-	Maximum Size: 3 MB
+	Installed Size: 3072 kB
+	Maximum Size: 3072 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -301,7 +301,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -326,7 +326,7 @@ System Event Log
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0xFFE68000
+	Access Address: 0x000ED110
 	Status: Valid, Not Full
 	Change Token: 0x00000001
 	Header Format: Type 1
@@ -399,7 +399,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -439,7 +439,7 @@ Memory Array Mapped Address
 Handle 0x001C, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 1C 00 4C 45 4E 4F 56 4F 0B 05 01 0B 00 00
+		8C 13 1C 00 4C 45 4E 4F 56 4F 0B 05 01 0F 00 00
 		00 53 55
 
 Handle 0x001D, DMI type 140, 23 bytes
@@ -475,6 +475,6 @@ BIOS Language Information
 		zh|CN|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0023, DMI type 127, 4 bytes
+Handle 0x0024, DMI type 127, 4 bytes
 End Of Table
 

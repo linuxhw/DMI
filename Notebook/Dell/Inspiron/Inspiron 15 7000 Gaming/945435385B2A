@@ -6,8 +6,8 @@ Table at 0x000EAB40.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.12.1
-	Release Date: 06/19/2020
+	Version: 1.13.1
+	Release Date: 12/18/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -34,7 +34,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.12
+	BIOS Revision: 1.13
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -624,8 +624,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1 MB
-	Maximum Size: 1 MB
+	Installed Size: 1024 kB
+	Maximum Size: 1024 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -640,8 +640,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6 MB
-	Maximum Size: 6 MB
+	Installed Size: 6144 kB
+	Maximum Size: 6144 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -1043,7 +1043,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 20 09 30 16 22 01 00 00
+		DE 10 00 DE 01 04 00 00 21 05 05 13 44 01 00 00
 
 Handle 0xF026, DMI type 130, 20 bytes
 OEM-specific Type
@@ -1056,14 +1056,14 @@ OEM-specific Type
 	Header and Data:
 		83 40 27 F0 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 52 A1 00 00 00 00 01 00 00 00 08 00 0B 00
-		50 0E 4D 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		FE 0E 52 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0xF028, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 28 F0 03 01 00 01 03 00 00 00 02 00 00 00
-		00 D6 00 03 00 00 05 00 00 00
+		00 DE 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -1073,7 +1073,7 @@ Handle 0xF029, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 29 F0 03 01 00 01 03 00 00 00 02 00 00 00
-		00 00 00 03 04 0B 08 4D 50 0E
+		00 00 00 03 04 0B 08 52 FE 0E
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
@@ -1180,7 +1180,7 @@ Group Associations
 Handle 0xF03C, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 3C F0 01 03 01 45 02 00 90 06 01 00 60 20
+		DB 51 3C F0 01 03 01 45 02 00 A0 06 01 00 60 20
 		00 00 00 04 40 08 00 01 1F 00 00 C9 0B C0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -1191,6 +1191,6 @@ OEM-specific Type
 		MEI2
 		MEI3
 
-Handle 0xF043, DMI type 127, 4 bytes
+Handle 0xF051, DMI type 127, 4 bytes
 End Of Table
 

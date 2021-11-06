@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
 Table at 0x000E6BF0.
@@ -50,8 +50,8 @@ Base Board Information
 	Product Name: 3130
 	Version: NOK
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148                          
+	Features:
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Default string
@@ -67,7 +67,7 @@ Chassis Information
 	Version: None
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -463,8 +463,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -479,8 +479,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -561,7 +561,7 @@ Memory Device
 	Error Information Handle: 0x0030
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -574,7 +574,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 9905711-017.A00G    
 	Rank: 1
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -606,7 +606,7 @@ Memory Device
 	Error Information Handle: 0x0033
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -619,7 +619,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: HMA851S6CJR6N-VK    
 	Rank: 1
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -905,15 +905,12 @@ Onboard Device
 	Type: Sound
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:03:00.6
+	Bus Address: 0000:04:00.6
 
 Handle 0x0058, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 58 00 01 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 80 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: Available
 
 Handle 0x0059, DMI type 15, 73 bytes
 System Event Log
@@ -922,9 +919,9 @@ System Event Log
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0x9C643018
+	Access Address: 0x9C62B018
 	Status: Valid, Not Full
-	Change Token: 0x00000016
+	Change Token: 0x0000002C
 	Header Format: Type 1
 	Supported Log Type Descriptors: 25
 	Descriptor 1: Single-bit ECC memory error

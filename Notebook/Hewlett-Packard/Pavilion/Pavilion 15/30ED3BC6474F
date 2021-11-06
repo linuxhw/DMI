@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-32 structures occupying 1778 bytes.
+32 structures occupying 1755 bytes.
 Table at 0x000E4800.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -248,7 +248,7 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 8 GB
+	Maximum Capacity: 16 GB
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
@@ -258,7 +258,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(top)
@@ -269,15 +269,15 @@ Memory Device
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	Part Number: R534G1601S1SL
-	Rank: 1
+	Part Number: R538G1601S2SL
+	Rank: 2
 	Configured Clock Speed: 1333 MT/s
 
 Handle 0x001F, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x001D
 	Memory Array Mapped Address Handle: 0x0023
 	Partition Row Position: 1
@@ -288,7 +288,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(under)
@@ -296,18 +296,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 1333 MT/s
-	Manufacturer: Micron Technology
+	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 8KTF51264HZ-1G6E1 
-	Rank: 1
+	Part Number: R538G1601S2SL
+	Rank: 2
 	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0022, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0020
 	Memory Array Mapped Address Handle: 0x0023
 	Partition Row Position: 1
@@ -315,8 +315,8 @@ Memory Device Mapped Address
 Handle 0x0023, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x001C
 	Partition Width: 255
 

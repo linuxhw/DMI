@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x66DD6000.
@@ -10,7 +10,7 @@ BIOS Information
 	Release Date: 05/22/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 12288 kB
+	ROM Size: 12 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -42,7 +42,7 @@ System Information
 	Version:  
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: PCI PME#
 	SKU Number: 9EJ43PA#ACJ
 	Family: 103C_5336AN HP Notebook
 
@@ -201,8 +201,10 @@ Onboard Device
 Handle 0x0011, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: CTNI
-	Specification Version: 2.0	Firmware Revision: 500.5
-	Description: INTEL	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 500.5
+	Description: INTEL
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -229,7 +231,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom - Slot 1 (left)
@@ -264,7 +266,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom - Slot 2 (right)
@@ -540,7 +542,7 @@ Group Associations
 Handle 0x002C, DMI type 219, 106 bytes
 HP ProLiant Information
 	Power Features: 0x45010401
-	Omega Features: 0x06a00002
+	Omega Features: 0x06900002
 	Misc. Features: 0x00000000
 		iCRU: No
 		UEFI: No

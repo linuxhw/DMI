@@ -1,6 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.1 present.
+# SMBIOS implementations newer than version 3.1.1 are not
+# fully supported by this version of dmidecode.
 Table at 0x8F29F000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -290,8 +292,6 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:01:1c.3
-	Data Bus Width: 93
-	Peer Devices: 0
 
 Handle 0x001E, DMI type 9, 19 bytes
 System Slot Information
@@ -305,8 +305,6 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:ff:1c.4
-	Data Bus Width: 83
-	Peer Devices: 0
 
 Handle 0x001F, DMI type 9, 19 bytes
 System Slot Information
@@ -320,8 +318,6 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:ff:1c.6
-	Data Bus Width: 214
-	Peer Devices: 0
 
 Handle 0x0020, DMI type 9, 19 bytes
 System Slot Information
@@ -335,8 +331,6 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:ff:1c.5
-	Data Bus Width: 140
-	Peer Devices: 0
 
 Handle 0x0021, DMI type 10, 6 bytes
 On Board Device Information
@@ -625,7 +619,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Not Specified
 	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Configured Clock Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -636,7 +630,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM2
@@ -649,7 +643,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: KHX2400C15/8G       
 	Rank: 1
-	Configured Memory Speed: 2400 MT/s
+	Configured Clock Speed: 2400 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -673,7 +667,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Not Specified
 	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Configured Clock Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -684,7 +678,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM2
@@ -697,7 +691,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: KHX2400C15/8G       
 	Rank: 1
-	Configured Memory Speed: 2400 MT/s
+	Configured Clock Speed: 2400 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -816,8 +810,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 9 MB
-	Maximum Size: 9 MB
+	Installed Size: 9216 kB
+	Maximum Size: 9216 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous

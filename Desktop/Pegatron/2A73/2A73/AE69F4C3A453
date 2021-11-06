@@ -363,7 +363,7 @@ Handle 0x001F, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI-E x16
 	Type: 32-bit PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 0
 	Characteristics:
@@ -504,8 +504,8 @@ Physical Memory Array
 Handle 0x002A, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 6 GB
 	Physical Array Handle: 0x0029
 	Partition Width: 4
 
@@ -522,11 +522,11 @@ Memory Device
 	Bank Locator: BANK0
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 800 MT/s
+	Speed: 667 MT/s
 	Manufacturer: CE00000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M3 78T5663QZ3-CF7 
+	Part Number: M3 78T5663QZ3-CE6 
 
 Handle 0x002C, DMI type 20, 19 bytes
 Memory Device Mapped Address
@@ -542,26 +542,26 @@ Handle 0x002D, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0029
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer:                 
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 667 MT/s
+	Manufacturer: CE00000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number:                   
+	Part Number: M3 78T5663QZ3-CF7 
 
 Handle 0x002E, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x002D
 	Memory Array Mapped Address Handle: 0x002A
 	Partition Row Position: 1
@@ -571,26 +571,26 @@ Handle 0x002F, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0029
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer:                 
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 667 MT/s
+	Manufacturer: CE00000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number:                   
+	Part Number: M3 78T5663QZ3-CE6 
 
 Handle 0x0030, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00100000000
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x002F
 	Memory Array Mapped Address Handle: 0x002A
 	Partition Row Position: 1

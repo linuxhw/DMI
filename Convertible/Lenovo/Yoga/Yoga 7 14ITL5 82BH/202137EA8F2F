@@ -1,18 +1,16 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0x439DD000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: F5CN38WW
-	Release Date: 10/26/2020
+	Version: F5CN40WW
+	Release Date: 01/14/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 12288 kB
+	ROM Size: 12 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -33,8 +31,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.38
-	Firmware Revision: 1.38
+	BIOS Revision: 1.40
+	Firmware Revision: 1.40
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -352,6 +350,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.0
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001B, DMI type 9, 19 bytes
 System Slot Information
@@ -364,6 +364,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.1
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001C, DMI type 9, 19 bytes
 System Slot Information
@@ -376,6 +378,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.2
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001D, DMI type 9, 19 bytes
 System Slot Information
@@ -388,6 +392,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.3
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001E, DMI type 9, 19 bytes
 System Slot Information
@@ -400,6 +406,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.4
+	Data Bus Width: 10
+	Peer Devices: 0
 
 Handle 0x001F, DMI type 11, 5 bytes
 OEM Strings
@@ -476,7 +484,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelA
@@ -511,7 +519,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelA
@@ -594,7 +602,7 @@ Handle 0x002C, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
-	Administrator Password Status: Disabled
+	Administrator Password Status: Enabled
 	Front Panel Reset Status: Disabled
 
 Handle 0x002D, DMI type 26, 24 bytes
@@ -675,8 +683,10 @@ Onboard Device
 Handle 0x0034, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: INTC
-	Specification Version: 2.0	Firmware Revision: 600.7
-	Description: TPM Device	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 600.7
+	Description: TPM Device
+	Characteristics:
 		TPM Device characteristics not supported
 	OEM-specific Information: 0x00000000
 
@@ -733,7 +743,7 @@ OEM-specific Type
 Handle 0x003C, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 3C 00 01 04 01 45 02 00 90 06 01 85 39 20
+		DB 6A 3C 00 01 04 01 45 02 00 A0 06 01 85 39 20
 		00 00 00 00 40 00 00 00 00 00 00 00 00 40 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -749,8 +759,8 @@ OEM-specific Type
 Handle 0x003D, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 3D 00 03 01 00 0A 00 2A 32 00 02 00 00 00
-		00 52 00 03 00 FF FF FF FF FF
+		DD 1A 3D 00 03 01 00 0A 00 30 51 00 02 00 00 00
+		00 66 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -759,7 +769,7 @@ OEM-specific Type
 Handle 0x003E, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 3E 00 03 01 00 0A 00 2A 32 00 02 00 00 00
+		DD 1A 3E 00 03 01 00 0A 00 30 51 00 02 00 00 00
 		00 00 00 03 04 0F 00 00 28 05
 	Strings:
 		Reference Code - ME
@@ -770,7 +780,7 @@ OEM-specific Type
 Handle 0x003F, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 3F 00 06 01 00 0A 00 2A 32 00 02 03 FF FF
+		DD 2F 3F 00 06 01 00 0A 00 30 51 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 20 00 05 00 FF FF FF 20
 		00 06 00 02 46 00 00 00 07 00 04 00 00 00 00
 	Strings:
@@ -785,8 +795,8 @@ OEM-specific Type
 Handle 0x0040, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 40 00 0B 01 00 0A 00 2A 32 00 02 00 01 00
-		00 00 00 03 00 0A 00 2A 32 00 04 05 FF FF FF FF
+		DD 52 40 00 0B 01 00 0A 00 30 51 00 02 00 01 00
+		06 00 00 03 00 0A 00 30 51 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 01 00 07 00 00 00 00 01 00 08
 		00 FF FF FF FF FF 09 00 11 00 0C 00 00 0A 00 00
 		00 00 EC 00 0B 00 1E 02 00 00 00 0C 00 FF FF FF
@@ -818,8 +828,8 @@ OEM-specific Type
 		DD 59 42 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 01 26 00 00 00 0C 00 00
-		17 00 42 10 0D 00 FF FF FF FF FF 0E 00 00 07 03
+		00 FF FF FF FF FF 0B 00 01 28 00 00 00 0C 00 00
+		17 00 45 10 0D 00 FF FF FF FF FF 0E 00 00 07 03
 		00 00 0F 00 00 02 00 0F 00
 	Strings:
 		Lan Phy Version

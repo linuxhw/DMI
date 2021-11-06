@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-57 structures occupying 2435 bytes.
+60 structures occupying 2556 bytes.
 Table at 0x000E9297.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -664,6 +664,28 @@ Port Connector Information
 	External Connector Type: Other
 	Port Type: Other
 
-Handle 0x0044, DMI type 127, 4 bytes
+Handle 0x0044, DMI type 129, 8 bytes
+OEM-specific Type
+	Header and Data:
+		81 08 44 00 01 01 02 01
+	Strings:
+		Intel_ASF
+		Intel_ASF_001
+
+Handle 0x0045, DMI type 130, 20 bytes
+OEM-specific Type
+	Header and Data:
+		82 14 45 00 24 41 4D 54 00 00 00 00 00 A5 2F 02
+		00 00 00 00
+
+Handle 0x0046, DMI type 131, 64 bytes
+OEM-specific Type
+	Header and Data:
+		83 40 46 00 31 00 00 00 08 00 00 00 00 00 3D 00
+		F8 00 48 1E FF FF FF FF 11 00 00 00 00 00 08 00
+		A1 05 04 00 00 00 00 00 C8 00 02 15 00 00 00 00
+		00 00 00 00 36 00 00 00 76 50 72 6F 00 00 00 00
+
+Handle 0x0047, DMI type 127, 4 bytes
 End Of Table
 

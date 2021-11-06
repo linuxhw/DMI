@@ -1,14 +1,14 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-47 structures occupying 2021 bytes.
+47 structures occupying 2043 bytes.
 Table at 0x000E3E00.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Insyde Corp.
-	Version: V1.04
-	Release Date: 01/12/2012
+	Version: V1.10
+	Release Date: 07/23/2013
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 2048 kB
@@ -32,13 +32,13 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 4.240
+	BIOS Revision: 10.240
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Packard Bell
 	Product Name: dot s
-	Version: V1.04
+	Version: V1.10
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -375,7 +375,7 @@ Memory Device
 	Error Information Handle: 0x0025
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM1
@@ -383,11 +383,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 666 MT/s
-	Manufacturer: Not Specified
+	Manufacturer: A-DATA Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: GU672203EP0200
-	Rank: 1
+	Part Number: AD73I1B1672EG     
+	Rank: 2
 	Configured Clock Speed: 800 MT/s
 
 Handle 0x0024, DMI type 6, 12 bytes
@@ -396,15 +396,15 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: 1 ns
 	Type: DIMM
-	Installed Size: 1024 MB (Single-bank Connection)
-	Enabled Size: 1024 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0025, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0023
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: Unknown
@@ -412,8 +412,8 @@ Memory Device Mapped Address
 Handle 0x0026, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Array Handle: 0x0020
 	Partition Width: 2
 
@@ -543,7 +543,7 @@ OEM-specific Type
 Handle 0x002D, DMI type 172, 9 bytes
 OEM-specific Type
 	Header and Data:
-		AC 09 2D 00 02 09 00 01 00
+		AC 09 2D 00 02 09 00 02 00
 
 Handle 0x002E, DMI type 127, 4 bytes
 End Of Table

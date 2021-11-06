@@ -1,7 +1,7 @@
 # dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-66 structures occupying 2452 bytes.
+66 structures occupying 2429 bytes.
 Table at 0xDAA9C000.
 
 Handle 0x0000, DMI type 134, 16 bytes
@@ -203,8 +203,8 @@ OEM-specific Type
 Handle 0x000D, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: 8DET70WW (1.40 )
-	Release Date: 05/14/2015
+	Version: 8DET76WW (1.46 )
+	Release Date: 06/21/2018
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 8192 kB
@@ -226,7 +226,7 @@ BIOS Information
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
-	BIOS Revision: 1.40
+	BIOS Revision: 1.46
 	Firmware Revision: 1.24
 
 Handle 0x000E, DMI type 1, 27 bytes
@@ -418,15 +418,15 @@ BIOS Language Information
 Handle 0x002C, DMI type 22, 26 bytes
 Portable Battery
 	Location: Rear
-	Manufacturer: LGC
-	Name: 42T4865
-	Design Capacity: 47520 mWh
-	Design Voltage: 11100 mV
-	SBDS Version: 03.01
+	Manufacturer: <BAD INDEX>
+	Name: <BAD INDEX>
+	Design Capacity: Unknown
+	Design Voltage: Unknown
+	SBDS Version: <BAD INDEX>
 	Maximum Error: Unknown
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 2016-08-01
-	SBDS Chemistry: LION
+	SBDS Manufacture Date: 1980-00-00
+	SBDS Chemistry: <BAD INDEX>
 	OEM-specific Information: 0x00000000
 
 Handle 0x002D, DMI type 126, 26 bytes
@@ -464,27 +464,27 @@ OEM-specific Type
 	Header and Data:
 		88 06 32 00 5A 5A
 
-Handle 0x0033, DMI type 135, 74 bytes
+Handle 0x0033, DMI type 133, 5 bytes
 OEM-specific Type
 	Header and Data:
-		87 4A 33 00 54 50 07 02 42 41 59 20 49 2F 4F 20
+		85 05 33 00 01
+	Strings:
+		KHOIHGIUCCHHII
+
+Handle 0x0034, DMI type 135, 74 bytes
+OEM-specific Type
+	Header and Data:
+		87 4A 34 00 54 50 07 02 42 41 59 20 49 2F 4F 20
 		02 00 06 FF 00 00 00 00 00 00 00 FF 00 00 00 00
 		00 00 00 FF 00 00 00 00 00 00 00 FF 00 00 00 00
 		00 00 00 FF 00 00 00 00 00 00 00 FF 00 00 00 00
 		00 00 00 06 00 02 01 FF FF 03
 
-Handle 0x0034, DMI type 135, 30 bytes
+Handle 0x0035, DMI type 135, 30 bytes
 OEM-specific Type
 	Header and Data:
-		87 1E 34 00 54 50 07 04 01 05 01 01 02 00 02 01
+		87 1E 35 00 54 50 07 04 01 05 01 01 02 00 02 01
 		02 00 03 01 02 00 05 01 02 00 06 01 02 00
-
-Handle 0x0035, DMI type 133, 5 bytes
-OEM-specific Type
-	Header and Data:
-		85 05 35 00 01
-	Strings:
-		KHOIHGIUCCHHII
 
 Handle 0x0036, DMI type 140, 19 bytes
 OEM-specific Type
@@ -568,7 +568,7 @@ OEM-specific Type
 Handle 0x0040, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 40 00 54 50 07 01 01 CB 01 00 00 00 00 00
+		87 12 40 00 54 50 07 01 01 CB 07 00 00 00 06 00
 		00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

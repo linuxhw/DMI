@@ -1,6 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.1 present.
+# SMBIOS implementations newer than version 3.2.0 are not
+# fully supported by this version of dmidecode.
 Table at 0x8F197000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -438,8 +440,6 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:ff:1c.7
-	Data Bus Width: 255
-	Peer Devices: 0
 
 Handle 0x002E, DMI type 9, 19 bytes
 System Slot Information
@@ -453,8 +453,6 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:02:1b.0
-	Data Bus Width: 15
-	Peer Devices: 0
 
 Handle 0x002F, DMI type 10, 6 bytes
 On Board Device Information
@@ -759,7 +757,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM2
@@ -807,7 +805,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM2
@@ -923,8 +921,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2 MB
-	Maximum Size: 2 MB
+	Installed Size: 2048 kB
+	Maximum Size: 2048 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -939,8 +937,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12 MB
-	Maximum Size: 12 MB
+	Installed Size: 12288 kB
+	Maximum Size: 12288 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous

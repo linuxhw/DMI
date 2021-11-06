@@ -2,7 +2,7 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 25 structures occupying 1295 bytes.
-Table at 0x9DFC0018.
+Table at 0x000EBA40.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -83,7 +83,7 @@ Handle 0x0004, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE#1
 	Type: x16 PCI Express 2 x16
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 0
 	Characteristics:
@@ -108,7 +108,7 @@ System Slot Information
 Handle 0x0006, DMI type 10, 12 bytes
 On Board Device 1 Information
 	Type: Video
-	Status: Enabled
+	Status: Disabled
 	Description: Onboard ATI Graphics
 On Board Device 2 Information
 	Type: Ethernet
@@ -129,9 +129,9 @@ OEM Strings
 
 Handle 0x000E, DMI type 24, 5 bytes
 Hardware Security
-	Power-On Password Status: Enabled
+	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
-	Administrator Password Status: Enabled
+	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x000F, DMI type 32, 20 bytes
@@ -142,7 +142,7 @@ Handle 0x0010, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard ATI Graphics
 	Type: Video
-	Status: Enabled
+	Status: Disabled
 	Type Instance: 1
 	Bus Address: f000:80:01.0
 
@@ -152,7 +152,7 @@ Onboard Device
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: f000:02:00.0
+	Bus Address: f000:03:00.0
 
 Handle 0x0012, DMI type 41, 11 bytes
 Onboard Device

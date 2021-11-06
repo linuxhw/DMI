@@ -164,9 +164,9 @@ Memory Module Information
 	Socket Designation: A2
 	Bank Connections: 3
 	Current Speed: Unknown
-	Type: Unknown
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Type: Other
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
@@ -185,8 +185,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 852672 kB
-	Maximum Size: 852672 kB
+	Installed Size: 64 kB
+	Maximum Size: 64 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -201,7 +201,7 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 0 kB
+	Installed Size: 3072 kB
 	Maximum Size: 2048 kB
 	Supported SRAM Types:
 		Synchronous
@@ -351,16 +351,16 @@ Handle 0x001A, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0017
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 256 bits
+	Data Width: 4 bits
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A2
 	Bank Locator: Bank4/5
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
+	Speed: 1066 MT/s
 	Manufacturer:  
 	Serial Number: --
 	271882FD79060B21C43F805A2DE81148  
@@ -388,8 +388,8 @@ Memory Device
 Handle 0x001C, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0017
 	Partition Width: 1
 
@@ -413,9 +413,9 @@ Memory Device Mapped Address
 
 Handle 0x001F, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x001A
 	Memory Array Mapped Address Handle: 0x001C
 	Partition Row Position: 1
