@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
-Table at 0x89C75000.
+Table at 0x89B4F000.
 
 Handle 0x0000, DMI type 222, 14 bytes
 OEM-specific Type
@@ -33,7 +33,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -57,7 +57,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -86,15 +86,15 @@ Memory Array Mapped Address
 Handle 0x0006, DMI type 221, 12 bytes
 OEM-specific Type
 	Header and Data:
-		DD 0C 06 00 01 01 00 02 00 00 AD 10
+		DD 0C 06 00 01 01 00 02 00 00 BD 10
 	Strings:
 		BIOS Guard
 
 Handle 0x0007, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 07 00 03 01 00 07 00 42 10 00 02 00 00 00
-		00 A4 00 03 00 01 01 00 00 00
+		DD 1A 07 00 03 01 00 07 00 65 40 00 02 00 00 00
+		00 EC 00 03 00 01 06 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -103,23 +103,23 @@ OEM-specific Type
 Handle 0x0008, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 08 00 03 01 00 07 00 42 10 00 02 00 0C 00
-		00 06 00 03 04 0C 00 23 93 05
+		DD 1A 08 00 03 01 00 07 00 65 40 00 02 00 0C 00
+		00 0A 00 03 04 0C 00 51 D9 06
 	Strings:
 		Reference Code - ME
 		MEBx version
 		ME Firmware Version
 		Consumer SKU
 
-Handle 0x0009, DMI type 221, 89 bytes
+Handle 0x0009, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 59 09 00 0C 01 00 07 00 42 10 00 02 03 FF FF
+		DD 52 09 00 0B 01 00 07 00 65 40 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 30 00 05 00 FF FF FF 30
 		00 06 00 02 0A 00 00 00 07 00 02 00 00 00 00 08
-		00 09 00 00 00 00 09 00 0A 00 00 00 00 0A 00 13
-		00 00 00 00 0B 00 07 00 00 00 00 0C 00 06 00 00
-		00 00 0D 00 07 00 00 00 00
+		00 09 00 00 00 00 09 00 0A 00 00 00 00 0A 00 07
+		00 00 00 00 0B 00 06 00 00 00 00 0C 00 07 00 00
+		00 00
 	Strings:
 		Reference Code - CNL PCH
 		PCH-CRID Status
@@ -130,7 +130,6 @@ OEM-specific Type
 		CNL PCH H A0 Hsio Version
 		CNL PCH H Ax Hsio Version
 		CNL PCH H Bx Hsio Version
-		CNL PCH LP Ax Hsio Version
 		CNL PCH LP B0 Hsio Version
 		CNL PCH LP Bx Hsio Version
 		CNL PCH LP Dx Hsio Version
@@ -138,8 +137,8 @@ OEM-specific Type
 Handle 0x000A, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 0A 00 07 01 00 07 00 42 10 00 02 00 00 07
-		01 51 00 03 00 07 00 42 10 00 04 05 FF FF FF FF
+		DD 36 0A 00 07 01 00 07 00 65 40 00 02 00 00 07
+		01 5D 00 03 00 07 00 65 40 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 0B 00 07 00 00 00 00 0B 00 08
 		00 FF FF FF FF FF
 	Strings:
@@ -181,8 +180,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -197,8 +196,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -245,7 +244,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz
-	Voltage: 0.7 V
+	Voltage: 0.6 V
 	External Clock: 100 MHz
 	Max Speed: 2000 MHz
 	Current Speed: 1800 MHz
@@ -276,8 +275,8 @@ OEM-specific Type
 Handle 0x0011, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: R0YET27W (1.10 )
-	Release Date: 01/22/2019
+	Version: R0YET48W (1.31 )
+	Release Date: 09/29/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -300,8 +299,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.10
-	Firmware Revision: 1.16
+	BIOS Revision: 1.31
+	Firmware Revision: 1.23
 
 Handle 0x0012, DMI type 1, 27 bytes
 System Information
@@ -501,9 +500,9 @@ OEM-specific Type
 Handle 0x002F, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 2F 00 31 00 00 00 0C 00 00 00 00 00 06 00
+		83 40 2F 00 31 00 00 00 0C 00 00 00 00 00 0A 00
 		F8 00 84 9D 00 00 00 00 01 00 00 00 00 00 0C 00
-		93 05 23 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		D9 06 51 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0030, DMI type 24, 5 bytes
@@ -580,8 +579,8 @@ Group Associations
 Handle 0x0039, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 39 00 01 04 01 45 02 00 90 06 01 85 32 20
-		00 00 00 00 40 00 00 01 1F 00 00 C9 0A 40 44 02
+		DB 6A 39 00 01 04 01 45 02 00 A0 06 01 85 36 20
+		00 00 00 04 40 00 00 01 1F 00 00 C9 0A 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -595,8 +594,8 @@ OEM-specific Type
 
 Handle 0x003A, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: R0YHT33W
-	Release Date: 07/04/2019
+	Version ID: R0YHT40W
+	Release Date: 09/29/2021
 
 Handle 0x003B, DMI type 135, 18 bytes
 OEM-specific Type

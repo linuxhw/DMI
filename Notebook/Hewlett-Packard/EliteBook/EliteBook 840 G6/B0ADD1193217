@@ -1,14 +1,16 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1 present.
-35 structures occupying 2472 bytes.
+35 structures occupying 2457 bytes.
 Table at 0x96E73000.
 
 Handle 0x0000, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: IFX
-	Specification Version: 2.0	Firmware Revision: 7.85
-	Description: SLB9670	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 7.85
+	Description: SLB9670
+	Characteristics:
 		Family configurable via firmware update
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
@@ -16,8 +18,8 @@ TPM Device
 Handle 0x0001, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: R70 Ver. 01.05.03
-	Release Date: 04/27/2020
+	Version: R70 Ver. 01.08.01
+	Release Date: 01/08/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -40,8 +42,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 5.3
-	Firmware Revision: 82.95
+	BIOS Revision: 8.1
+	Firmware Revision: 82.103
 
 Handle 0x0002, DMI type 1, 27 bytes
 System Information
@@ -58,7 +60,7 @@ Handle 0x0003, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 8549
-	Version: KBC Version 52.5F.00
+	Version: KBC Version 52.67.00
 	Serial Number: --
 	Asset Tag: --
 	97946E993916094B22613E03B8339091
@@ -119,24 +121,24 @@ Physical Memory Array
 Handle 0x000C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0007
 	Partition Width: 2
 
 Handle 0x000D, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:07:00:6E:40:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:CA:00:03
+	NIC 1: PCI device 01:00.3, MAC address 00:07:00:74:20:00
+	NIC 2: PCI device 00:00.2, MAC address 00:00:00:DE:00:03
 
 Handle 0x000E, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:07:00:6E:40:00
+	NIC 1: PCI device 01:00.3, MAC address 00:07:00:74:20:00
 	NIC 2: PCI device 00:00.2, MAC address 0C:00:00:0A:00:03
 
 Handle 0x000F, DMI type 221, 82 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:01.3, MAC address 00:07:00:6E:40:00
+	NIC 1: PCI device 01:01.3, MAC address 00:07:00:74:20:00
 	NIC 2: PCI device 03:00.2, MAC address FF:FF:FF:FF:FF:04
 	NIC 3: PCI device ff:00.0, MAC address FF:FF:30:00:05:00
 	NIC 4: Not Installed
@@ -148,9 +150,9 @@ HP BIOS iSCSI NIC PCI and MAC Information
 
 Handle 0x0010, DMI type 221, 54 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.7, MAC address 00:07:00:6E:40:00
-	NIC 2: PCI device 00:00.2, MAC address 00:07:01:70:00:03
-	NIC 3: PCI device 07:00.0, MAC address 00:6E:40:00:04:05
+	NIC 1: PCI device 01:00.7, MAC address 00:07:00:74:20:00
+	NIC 2: PCI device 00:00.2, MAC address 00:07:01:77:00:03
+	NIC 3: PCI device 07:00.0, MAC address 00:74:20:00:04:05
 	NIC 4: Not Installed
 	NIC 5: Disabled
 	NIC 6: PCI device 0c:00.0, MAC address 00:08:00:FF:FF:FF
@@ -181,8 +183,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -197,8 +199,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -323,7 +325,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 1B 00 31 00 00 00 0C 00 00 00 00 00 0A 00
 		F8 00 84 9D 00 00 00 00 01 00 00 00 00 00 0C 00
-		0F 06 40 00 00 00 00 00 FE 00 BE 15 00 00 00 00
+		74 06 46 00 00 00 00 00 FE 00 BE 15 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x001C, DMI type 17, 40 bytes
@@ -332,19 +334,19 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(left)
 	Bank Locator: ChannelA0
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2400 MT/s
-	Manufacturer: Unknown - [0x9B85]
+	Speed: 3200 MT/s
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT16G4SFD824A.C16FDD
-	Rank: 2
+	540D5F3134500CB2C1A1BDEBA4A8249C    
+	Rank: 1
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -356,19 +358,19 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(right)
 	Bank Locator: ChannelB0
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2400 MT/s
-	Manufacturer: Unknown - [0x9B85]
+	Speed: 3200 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT16G4SFD824A.C16FDD
-	Rank: 2
+	4CACC841179AB105CEDDD7E07C4FE037      
+	Rank: 1
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -377,17 +379,17 @@ Memory Device
 Handle 0x0009, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x001C
 	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: 1
 
 Handle 0x000A, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 16 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0008
 	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: 1
@@ -442,7 +444,7 @@ Group Associations
 Handle 0x0021, DMI type 219, 106 bytes
 HP ProLiant Information
 	Power Features: 0x45010401
-	Omega Features: 0x06910002
+	Omega Features: 0x06a10002
 	Misc. Features: 0x04000000
 		iCRU: No
 		UEFI: No

@@ -6,8 +6,8 @@ Table at 0x000E0000.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.17.1
-	Release Date: 12/23/2020
+	Version: 1.19.0
+	Release Date: 07/11/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -32,7 +32,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.17
+	BIOS Revision: 1.19
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -868,42 +868,44 @@ OEM-specific Type
 		03 1D 03 01 00 1E 03 1E 03 00 00 1F 03 1F 03 01
 		00 20 03 20 03 00 00 25 03 25 03 01 00 26 03 26
 		03 01 00 4F 03 4F 03 01 00 50 03 50 03 00 00 57
-		03 57 03 00 00 58 03 58 03 01 00 61 03 61 03 01
-		00 62 03 62 03 00 00 69 03 69 03 00 00 6A 03 6A
-		03 01 00 6B 03 6B 03 02 00 6F 03 6F 03 FF FF 83
-		03 83 03 07 00 BE 03 BE 03 FF FF C9 03 C9 03 01
-		00 CA 03 CA 03 00 00 E2 03 E2 03 00 00 E3 03 E3
-		03 01 00 E4 03 E4 03 00 00 E5 03 E5 03 01 00 E6
-		03 E6 03 00 00 E7 03 E7 03 01 00 E8 03 E8 03 00
-		00 E9 03 E9 03 01 00 F6 03 F6 03 01 00 F7 03 F7
-		03 00 00 FC 03 FC 03 01 00 FD 03 FD 03 00 00 1A
-		04 1A 04 01 00 FF FF FF FF 00 00
+		03 57 03 00 00 58 03 58 03 01 00 5D 03 5D 03 01
+		00 5E 03 5E 03 00 00 5F 03 5F 03 01 00 60 03 60
+		03 00 00 61 03 61 03 01 00 62 03 62 03 00 00 69
+		03 69 03 00 00 6A 03 6A 03 01 00 6B 03 6B 03 02
+		00 6F 03 6F 03 FF FF 83 03 83 03 07 00 BE 03 BE
+		03 FF FF C9 03 C9 03 01 00 CA 03 CA 03 00 00 E2
+		03 E2 03 00 00 E3 03 E3 03 01 00 E4 03 E4 03 00
+		00 E5 03 E5 03 01 00 E6 03 E6 03 00 00 E7 03 E7
+		03 01 00 E8 03 E8 03 00 00 E9 03 E9 03 01 00 F6
+		03 F6 03 01 00 FF FF FF FF 00 00
 
 Handle 0xDA05, DMI type 218, 251 bytes
 OEM-specific Type
 	Header and Data:
-		DA FB 05 DA B2 00 04 EF 1E B6 00 1B 04 1B 04 00
-		00 1E 04 1E 04 01 00 1F 04 1F 04 00 00 20 04 20
-		04 FF FF 24 04 24 04 01 00 25 04 25 04 00 00 2B
-		04 2B 04 FF FF 31 04 31 04 FF FF 32 04 32 04 01
-		00 33 04 33 04 00 00 36 04 36 04 01 00 37 04 37
-		04 00 00 3A 04 3A 04 01 00 3B 04 3B 04 00 00 61
-		04 61 04 01 00 62 04 62 04 00 00 85 04 85 04 01
-		00 86 04 86 04 00 00 87 04 87 04 01 00 88 04 88
-		04 00 00 98 04 98 04 FF FF 9E 04 9E 04 01 00 9F
-		04 9F 04 00 00 E6 04 E6 04 01 00 E7 04 E7 04 00
-		00 EC 04 EC 04 01 00 ED 04 ED 04 00 00 3E 40 3E
-		40 00 00 3F 40 3F 40 01 00 00 80 00 80 00 00 02
-		80 02 80 02 00 03 80 03 80 03 00 0C 80 0C 80 00
-		00 0D 80 0D 80 00 00 0E 80 0E 80 01 00 00 A0 00
-		A0 01 00 04 A0 04 A0 01 00 00 F0 00 F0 55 00 02
-		F0 02 F0 03 00 FF FF FF FF 00 00
+		DA FB 05 DA B2 00 04 EF 1E B6 00 F7 03 F7 03 00
+		00 FC 03 FC 03 01 00 FD 03 FD 03 00 00 1A 04 1A
+		04 01 00 1B 04 1B 04 00 00 1E 04 1E 04 01 00 1F
+		04 1F 04 00 00 20 04 20 04 FF FF 24 04 24 04 01
+		00 25 04 25 04 00 00 2B 04 2B 04 FF FF 31 04 31
+		04 FF FF 32 04 32 04 01 00 33 04 33 04 00 00 36
+		04 36 04 01 00 37 04 37 04 00 00 3A 04 3A 04 01
+		00 3B 04 3B 04 00 00 61 04 61 04 01 00 62 04 62
+		04 00 00 85 04 85 04 01 00 86 04 86 04 00 00 87
+		04 87 04 01 00 88 04 88 04 00 00 98 04 98 04 FF
+		FF 9E 04 9E 04 01 00 9F 04 9F 04 00 00 E6 04 E6
+		04 01 00 E7 04 E7 04 00 00 EC 04 EC 04 01 00 ED
+		04 ED 04 00 00 3E 40 3E 40 00 00 3F 40 3F 40 01
+		00 00 80 00 80 00 00 02 80 02 80 02 00 03 80 03
+		80 03 00 0C 80 0C 80 00 00 0D 80 0D 80 00 00 0E
+		80 0E 80 01 00 FF FF FF FF 00 00
 
-Handle 0xDA06, DMI type 218, 29 bytes
+Handle 0xDA06, DMI type 218, 53 bytes
 OEM-specific Type
 	Header and Data:
-		DA 1D 06 DA B2 00 04 EF 1E B6 00 05 F0 05 F0 7F
-		00 06 F0 06 F0 00 00 FF FF FF FF 00 00
+		DA 35 06 DA B2 00 04 EF 1E B6 00 00 A0 00 A0 01
+		00 04 A0 04 A0 01 00 00 F0 00 F0 55 00 02 F0 02
+		F0 03 00 05 F0 05 F0 7F 00 06 F0 06 F0 00 00 FF
+		FF FF FF 00 00
 
 Handle 0xDA07, DMI type 218, 65 bytes
 OEM-specific Type
@@ -941,7 +943,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 21 06 30 20 01 01 00 00
+		DE 10 00 DE 01 04 00 00 00 00 00 00 00 01 00 00
 
 Handle 0xF024, DMI type 130, 20 bytes
 OEM-specific Type
@@ -954,14 +956,14 @@ OEM-specific Type
 	Header and Data:
 		83 40 25 F0 35 00 00 00 0B 00 00 00 00 00 0A 00
 		F8 00 46 A1 00 00 00 00 11 00 00 00 08 00 0B 00
-		FE 0E 52 00 00 00 00 00 FE 00 B8 15 00 00 00 00
+		25 0F 56 00 00 00 00 00 FE 00 B8 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0xF026, DMI type 237, 26 bytes
 OEM-specific Type
 	Header and Data:
 		ED 1A 26 F0 03 01 00 01 09 00 00 00 02 00 00 00
-		00 E2 00 03 00 00 05 00 00 00
+		00 EA 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -971,7 +973,7 @@ Handle 0xF027, DMI type 237, 26 bytes
 OEM-specific Type
 	Header and Data:
 		ED 1A 27 F0 03 01 00 01 09 00 00 00 02 00 0B 00
-		00 0A 00 03 04 0B 08 52 FE 0E
+		00 0A 00 03 04 0B 08 56 25 0F
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
@@ -998,47 +1000,29 @@ OEM-specific Type
 		SKL PCH LP Bx Hsio Version
 		SKL PCH LP Cx Hsio Version
 
-Handle 0xF029, DMI type 237, 54 bytes
+Handle 0xF02F, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		ED 36 29 F0 07 01 00 01 09 00 00 00 02 00 01 09
-		00 00 00 03 00 01 09 00 00 00 04 05 FF FF FF FF
-		FF 06 00 FF FF FF 07 00 07 00 FF FF FF 07 00 08
-		00 FF FF FF FF FF
-	Strings:
-		Reference Code - SA - System Agent
-		Reference Code - MRC
-		SA - PCIe Version
-		SA-CRID Status
-		Disabled
-		SA-CRID Original Value
-		SA-CRID New Value
-		OPROM - VBIOS
+		88 06 2F F0 5A 5A
 
-Handle 0xF030, DMI type 136, 6 bytes
-OEM-specific Type
-	Header and Data:
-		88 06 30 F0 5A 5A
-
-Handle 0xF031, DMI type 14, 17 bytes
+Handle 0xF030, DMI type 14, 14 bytes
 Group Associations
 	Name: Firmware Version Info
-	Items: 4
+	Items: 3
 		0xF026 (OEM-specific)
 		0xF027 (OEM-specific)
 		0xF028 (OEM-specific)
-		0xF029 (OEM-specific)
 
-Handle 0xF032, DMI type 14, 8 bytes
+Handle 0xF031, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0xF033, DMI type 235, 81 bytes
+Handle 0xF032, DMI type 235, 81 bytes
 OEM-specific Type
 	Header and Data:
-		EB 51 33 F0 01 03 01 45 02 00 90 06 81 10 82 30
+		EB 51 32 F0 01 03 01 45 02 00 94 06 81 10 89 30
 		00 00 00 04 40 68 00 01 1F 00 00 C9 0B C0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 FF FF FF FF FF FF FF
@@ -1049,7 +1033,7 @@ OEM-specific Type
 		MEI2
 		MEI3
 
-Handle 0xF034, DMI type 13, 22 bytes
+Handle 0xF033, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 2
@@ -1057,6 +1041,6 @@ BIOS Language Information
 		<BAD INDEX>
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0xF035, DMI type 127, 4 bytes
+Handle 0xF034, DMI type 127, 4 bytes
 End Of Table
 

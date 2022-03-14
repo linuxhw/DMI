@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1 present.
 37 structures occupying 2580 bytes.
@@ -7,8 +7,10 @@ Table at 0x8EF92000.
 Handle 0x0000, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: IFX
-	Specification Version: 2.0	Firmware Revision: 7.63
-	Description: SLB9670	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 7.63
+	Description: SLB9670
+	Characteristics:
 		Family configurable via firmware update
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
@@ -197,8 +199,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 9216 kB
-	Maximum Size: 9216 kB
+	Installed Size: 9 MB
+	Maximum Size: 9 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -329,7 +331,7 @@ Onboard Device
 Handle 0x001C, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 1C 00 10 00 00 00 0C 00 00 00 00 00 0A 00
+		83 40 1C 00 31 00 00 00 0C 00 00 00 00 00 0A 00
 		F8 00 0E A3 00 00 00 00 01 00 00 00 00 00 0C 00
 		D9 06 51 00 00 00 00 00 FE 00 BB 15 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
@@ -340,7 +342,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Top-Slot 1(left)
@@ -364,7 +366,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Top-Slot 2(right)
@@ -480,7 +482,7 @@ OEM Strings
 	String 2: BUILDID#18WWAVBT601#SABD#DABD;
 	String 3: EDK2_1
 	String 4: Buff=2
-	String 5: HRDWFEATS=VTX:0;VTD:0;SGX:1;NONHPBATDET:1
+	String 5: HRDWFEATS=VTX:1;VTD:1;SGX:1;NONHPBATDET:1
 
 Handle 0x0005, DMI type 14, 8 bytes
 Group Associations

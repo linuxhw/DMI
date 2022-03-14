@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 82 structures occupying 3118 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 10/27/2010
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		PC Card (PCMCIA) is supported
@@ -242,8 +242,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -441,7 +441,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 1
@@ -461,7 +461,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 2
@@ -481,7 +481,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 3
@@ -501,7 +501,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 4
@@ -602,12 +602,9 @@ OEM-specific Type
 		KEYPTRS 23h
 
 Handle 0x003C, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 3C 00 01 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: No
 
 Handle 0x003D, DMI type 132, 7 bytes
 OEM-specific Type
@@ -660,9 +657,8 @@ OEM-specific Type
 		02 00 03 01 02 00 05 01 02 00 06 01 02 00
 
 Handle 0x0045, DMI type 135, 10 bytes
-OEM-specific Type
-	Header and Data:
-		87 0A 45 00 54 50 07 03 01 00
+ThinkPad Device Presence Detection
+	Fingerprint Reader: No
 
 Handle 0x0046, DMI type 136, 6 bytes
 OEM-specific Type

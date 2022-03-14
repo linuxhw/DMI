@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 25 structures occupying 1277 bytes.
@@ -7,11 +7,11 @@ Table at 0x000FC8C0.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: P1.10
-	Release Date: 09/22/2011
+	Version: P1.40
+	Release Date: 02/05/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -84,10 +84,10 @@ Handle 0x0004, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPUSocket
 	Type: Central Processor
-	Family: Athlon II
+	Family: FX
 	Manufacturer: AMD              
-	ID: 53 0F 10 00 FF FB 8B 17
-	Signature: Family 16, Model 5, Stepping 3
+	ID: 20 0F 60 00 FF FB 8B 17
+	Signature: Family 21, Model 2, Stepping 0
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -112,11 +112,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Athlon(tm) II X3 450 Processor                  
-	Voltage: 1.4 V
+	Version: AMD FX(tm)-8300 Eight-Core Processor                
+	Voltage: 1.1 V
 	External Clock: 200 MHz
-	Max Speed: 3200 MHz
-	Current Speed: 3200 MHz
+	Max Speed: 3300 MHz
+	Current Speed: 3300 MHz
 	Status: Populated, Disabled By BIOS
 	Upgrade: Socket AM3
 	L1 Cache Handle: 0x0005
@@ -125,9 +125,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
-	Core Count: 3
-	Core Enabled: 3
-	Thread Count: 3
+	Core Count: 8
+	Core Enabled: 8
+	Thread Count: 8
 	Characteristics:
 		64-bit capable
 
@@ -153,8 +153,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1536 kB
-	Maximum Size: 1536 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -169,15 +169,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 0 kB
-	Maximum Size: 0 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
 	Speed: 1 ns
 	Error Correction Type: Multi-bit ECC
 	System Type: Unified
-	Associativity: Other
+	Associativity: 64-way Set-associative
 
 Handle 0x0008, DMI type 5, 20 bytes
 Memory Controller Information
@@ -249,13 +249,14 @@ Handle 0x000D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE1
 	Type: x1 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 17
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
+	Bus Address: ffff:01:05.0
 
 Handle 0x000E, DMI type 9, 17 bytes
 System Slot Information
@@ -268,7 +269,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:01:00.0
+	Bus Address: ffff:02:00.0
 
 Handle 0x000F, DMI type 16, 15 bytes
 Physical Memory Array
@@ -282,8 +283,8 @@ Physical Memory Array
 Handle 0x0010, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0022FFFFFFF
-	Range Size: 8960 MB
+	Ending Address: 0x00237FFFFFF
+	Range Size: 9088 MB
 	Physical Array Handle: 0x000F
 	Partition Width: 1
 
@@ -293,14 +294,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 533 MT/s
+	Speed: 333 MT/s
 	Manufacturer: A-DATA        
 	Serial Number: --
 	Asset Tag: --
@@ -322,14 +323,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 533 MT/s
+	Speed: 333 MT/s
 	Manufacturer: A-DATA        
 	Serial Number: --
 	Asset Tag: --

@@ -1,16 +1,17 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-22 structures occupying 1296 bytes.
-Table at 0x000EF370.
+22 structures occupying 1288 bytes.
+Table at 0x000EE870.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: P1.00
-	Release Date: 03/06/2012
+	Version: P1.60
+	Release Date: 08/09/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -50,7 +51,7 @@ Base Board Information
 	Product Name: H77M
 	Version:                       
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148                       
 	Features:
 		Board is a hosting board
 		Board is replaceable
@@ -81,7 +82,7 @@ Handle 0x0004, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI1
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 1
 	Characteristics:
@@ -142,15 +143,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
 	Speed: Unknown
 	Error Correction Type: Multi-bit ECC
-	System Type: Instruction
-	Associativity: 16-way Set-associative
+	System Type: Unified
+	Associativity: 8-way Set-associative
 
 Handle 0x000B, DMI type 7, 19 bytes
 Cache Information
@@ -158,15 +159,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 128 kB
-	Maximum Size: 128 kB
+	Installed Size: 256 kB
+	Maximum Size: 256 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
 	Speed: Unknown
 	Error Correction Type: Parity
-	System Type: Other
-	Associativity: 16-way Set-associative
+	System Type: Data
+	Associativity: 8-way Set-associative
 
 Handle 0x000C, DMI type 7, 19 bytes
 Cache Information
@@ -174,15 +175,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
 	Speed: Unknown
 	Error Correction Type: Multi-bit ECC
-	System Type: Instruction
-	Associativity: 48-way Set-associative
+	System Type: Unified
+	Associativity: 12-way Set-associative
 
 Handle 0x000D, DMI type 16, 23 bytes
 Physical Memory Array
@@ -231,7 +232,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-3550 CPU @ 3.30GHz
-	Voltage: 4.1 V
+	Voltage: 4.6 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
 	Current Speed: 3300 MHz
@@ -255,20 +256,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
-	Manufacturer: Kingston
+	Speed: 1600 MT/s
+	Manufacturer: 0194
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 99U5458-005.A00LF 
-	Rank: 2
-	Configured Clock Speed: 1333 MHz
+	Part Number: SH564128FH8N6TNSQG
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0010, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -287,20 +288,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
-	Manufacturer: Kingston
+	Speed: 1600 MT/s
+	Manufacturer: 0194
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 99U5458-005.A00LF 
-	Rank: 2
-	Configured Clock Speed: 1333 MHz
+	Part Number: SH564128FH8N6TNSQG
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -325,9 +326,9 @@ Handle 0x0016, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
 		83 40 16 00 35 00 00 00 00 00 00 00 00 00 00 00
-		F8 00 4A 1E FF FF FF FF 01 00 00 00 00 00 08 00
-		82 05 02 00 00 00 00 00 C8 00 FF FF 00 00 00 00
-		00 00 00 00 36 00 00 00 76 50 72 6F 00 00 00 00
+		F8 00 4A 1E 00 00 00 00 01 00 00 00 01 00 08 00
+		38 05 14 00 00 00 00 00 C8 00 FF FF 00 00 00 00
+		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0017, DMI type 127, 4 bytes
 End Of Table

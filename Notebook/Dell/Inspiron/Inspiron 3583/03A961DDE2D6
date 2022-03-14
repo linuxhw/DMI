@@ -3,7 +3,7 @@ Getting SMBIOS data from sysfs.
 SMBIOS 3.2.1 present.
 # SMBIOS implementations newer than version 3.2.0 are not
 # fully supported by this version of dmidecode.
-Table at 0x000E0000.
+Table at 0x000EA390.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
@@ -573,7 +573,7 @@ OEM-specific Type
 	Header and Data:
 		CD 52 49 00 0B 01 00 07 00 58 40 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 30 00 05 00 FF FF FF 30
-		00 06 00 11 00 00 00 00 07 00 02 00 00 00 00 08
+		00 06 00 FF FF FF FF FF 07 00 02 00 00 00 00 08
 		00 09 00 00 00 00 09 00 0A 00 00 00 00 0A 00 07
 		00 00 00 00 0B 00 06 00 00 00 00 0C 00 07 00 00
 		00 00
@@ -694,10 +694,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz
-	Voltage: 0.6 V
+	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 4600 MHz
-	Current Speed: 3600 MHz
+	Current Speed: 3300 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1528
 	L1 Cache Handle: 0x004B
@@ -812,14 +812,6 @@ Portable Battery
 	Maximum Error: 2%
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000801
-
-Handle 0x1602, DMI type 43, 31 bytes
-TPM Device
-	Vendor ID: CTNI
-	Specification Version: 2.0	Firmware Revision: 403.1
-	Description: INTEL	Characteristics:
-		Family configurable via platform software support
-	OEM-specific Information: 0x00000000
 
 Handle 0x1B00, DMI type 27, 15 bytes
 Cooling Device
@@ -1185,10 +1177,10 @@ Onboard Device
 
 Handle 0xF034, DMI type 41, 11 bytes
 Onboard Device
-	Reference Designation: Onboard - Other
-	Type: Other
+	Reference Designation: Onboard - SATA
+	Type: SATA Controller
 	Status: Enabled
-	Type Instance: 10
+	Type Instance: 1
 	Bus Address: 0000:00:17.0
 
 Handle 0xF035, DMI type 41, 11 bytes
@@ -1196,7 +1188,7 @@ Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
-	Type Instance: 11
+	Type Instance: 10
 	Bus Address: 0000:00:19.0
 
 Handle 0xF036, DMI type 41, 11 bytes
@@ -1204,7 +1196,7 @@ Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
-	Type Instance: 12
+	Type Instance: 11
 	Bus Address: 0000:00:1f.0
 
 Handle 0xF037, DMI type 41, 11 bytes
@@ -1220,7 +1212,7 @@ Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
-	Type Instance: 13
+	Type Instance: 12
 	Bus Address: 0000:00:1f.4
 
 Handle 0xF039, DMI type 41, 11 bytes
@@ -1228,7 +1220,7 @@ Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
-	Type Instance: 14
+	Type Instance: 13
 	Bus Address: 0000:00:1f.5
 
 Handle 0xF03A, DMI type 205, 89 bytes
@@ -1237,8 +1229,8 @@ OEM-specific Type
 		CD 59 3A F0 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
-		09 00 85 10 0D 0E 01 04 03 00 00 0F 00 00 07 00
+		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
+		FF FF FF FF 0D 0E 01 04 03 00 00 0F 00 00 07 00
 		00 00 10 00 00 02 00 0E 00
 	Strings:
 		Lan Phy Version
@@ -1291,7 +1283,7 @@ Group Associations
 Handle 0xF048, DMI type 203, 106 bytes
 OEM-specific Type
 	Header and Data:
-		CB 6A 48 F0 01 04 01 45 02 00 A0 00 01 85 32 20
+		CB 6A 48 F0 01 04 01 45 02 00 A0 00 01 10 80 20
 		00 00 00 04 40 00 00 01 1F 00 00 C9 0B C0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

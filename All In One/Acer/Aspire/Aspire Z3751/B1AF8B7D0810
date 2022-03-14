@@ -72,8 +72,8 @@ Chassis Information
 	Lock: Not Present
 	Version:         
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148                       
+	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -215,8 +215,8 @@ Memory Module Information
 	Bank Connections: 0 1
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: 2048 MB (Double-bank Connection)
-	Enabled Size: 2048 MB (Double-bank Connection)
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
@@ -225,8 +225,8 @@ Memory Module Information
 	Bank Connections: 2 3
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000B, DMI type 6, 12 bytes
@@ -235,8 +235,8 @@ Memory Module Information
 	Bank Connections: 4 5
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: 1024 MB (Single-bank Connection)
-	Enabled Size: 1024 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000C, DMI type 6, 12 bytes
@@ -245,8 +245,8 @@ Memory Module Information
 	Bank Connections: 6 7
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000D, DMI type 9, 17 bytes
@@ -301,8 +301,8 @@ Physical Memory Array
 Handle 0x0013, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0012
 	Partition Width: 4
 
@@ -320,11 +320,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Kingston      
+	Manufacturer: Hyundai       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ACR256X64D3U1333C9
-	Rank: 5
+	Part Number: HMT325U6BFR8C-H9  
+	Rank: 3
 
 Handle 0x0015, DMI type 20, 19 bytes
 Memory Device Mapped Address
@@ -340,27 +340,27 @@ Handle 0x0016, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0012
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
 	Form Factor: DIMM
-	Set: None
+	Set: 11
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: None          
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Hyundai       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: None              
-	Rank: Unknown
+	Part Number: HMT325U6BFR8C-H9  
+	Rank: 3
 
 Handle 0x0017, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0016
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: 1
@@ -372,25 +372,25 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: DIMM
-	Set: 10
+	Set: 11
 	Locator: DIMM2
 	Bank Locator: BANK2
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Kingston      
+	Manufacturer: Hyundai       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ACR128X64D3U1333C9
+	Part Number: HMT325U6BFR8C-H9  
 	Rank: 2
 
 Handle 0x0019, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 1 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0018
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: 1
@@ -400,27 +400,27 @@ Handle 0x001A, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0012
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
 	Form Factor: DIMM
-	Set: None
+	Set: 11
 	Locator: DIMM3
 	Bank Locator: BANK3
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: None          
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Hyundai       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: None              
-	Rank: Unknown
+	Part Number: HMT325U6BFR8C-H9  
+	Rank: 2
 
 Handle 0x001B, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00180000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x001A
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: 1

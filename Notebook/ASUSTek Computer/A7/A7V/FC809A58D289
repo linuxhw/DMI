@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.3 present.
 37 structures occupying 1393 bytes.
@@ -142,8 +142,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -183,8 +183,8 @@ Memory Module Information
 	Bank Connections: 0 1
 	Current Speed: 7 ns
 	Type: Standard DIMM SDRAM
-	Installed Size: 512 MB (Double-bank Connection)
-	Enabled Size: 512 MB (Double-bank Connection)
+	Installed Size: 1024 MB (Double-bank Connection)
+	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
@@ -193,8 +193,8 @@ Memory Module Information
 	Bank Connections: 2 3
 	Current Speed: 7 ns
 	Type: Standard DIMM SDRAM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 1024 MB (Double-bank Connection)
+	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 8, 9 bytes
@@ -358,8 +358,8 @@ Physical Memory Array
 Handle 0x001E, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000200003FF
-	Range Size: 524289 kB
+	Ending Address: 0x000800003FF
+	Range Size: 2 GB
 	Physical Array Handle: 0x001D
 	Partition Width: 1
 
@@ -369,7 +369,7 @@ Memory Device
 	Error Information Handle: 0x001C
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 512 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -385,8 +385,8 @@ Memory Device
 Handle 0x0020, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0001FFFFFFF
-	Range Size: 512 MB
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x001F
 	Memory Array Mapped Address Handle: 0x001E
 	Partition Row Position: 1
@@ -396,15 +396,15 @@ Handle 0x0021, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x001D
 	Error Information Handle: 0x001C
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: Unknown
+	Type: SDRAM
+	Type Detail: Synchronous
 	Speed: Unknown
 	Manufacturer: Manufacturer2
 	Serial Number: --
@@ -413,9 +413,9 @@ Memory Device
 
 Handle 0x0022, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00040000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0021
 	Memory Array Mapped Address Handle: 0x001E
 	Partition Row Position: 1

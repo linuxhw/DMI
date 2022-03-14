@@ -54,7 +54,7 @@ System Information
 	Version: Not Specified
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: APM Timer
 
 Handle 0x0200, DMI type 2, 8 bytes
 Base Board Information
@@ -385,8 +385,8 @@ System Event Log
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFF81000
-	Status: Valid, Full
-	Change Token: 0x000000C4
+	Status: Valid, Not Full
+	Change Token: 0x000000C9
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -411,7 +411,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_1
@@ -419,10 +419,10 @@ Memory Device
 	Type: DDR
 	Type Detail: Synchronous
 	Speed: 533 MT/s
-	Manufacturer: 7F7F7F2500000000
+	Manufacturer: FFFFFFFFFFFFFFFF
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KLDE88F-E8KW6     
+	Part Number:                   
 
 Handle 0x1101, DMI type 17, 27 bytes
 Memory Device
@@ -430,7 +430,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_3
@@ -438,10 +438,10 @@ Memory Device
 	Type: DDR
 	Type Detail: Synchronous
 	Speed: 533 MT/s
-	Manufacturer: 7F7F7F2500000000
+	Manufacturer: FFFFFFFFFFFFFFFF
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KLDE88F-E8KW6     
+	Part Number:                   
 
 Handle 0x1102, DMI type 17, 27 bytes
 Memory Device
@@ -484,33 +484,21 @@ Memory Device
 Handle 0x1301, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x1000
 	Partition Width: 1
 
-Handle 0x1402, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x1100
-	Memory Array Mapped Address Handle: 0x1301
-	Partition Row Position: 1
+Handle 0x1402, DMI type 126, 19 bytes
+Inactive
 
-Handle 0x1403, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x1101
-	Memory Array Mapped Address Handle: 0x1301
-	Partition Row Position: 1
+Handle 0x1403, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x1404, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x0017FFFFFFF
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x1102
 	Memory Array Mapped Address Handle: 0x1301
@@ -518,8 +506,8 @@ Memory Device Mapped Address
 
 Handle 0x1405, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00180000000
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x1103
 	Memory Array Mapped Address Handle: 0x1301

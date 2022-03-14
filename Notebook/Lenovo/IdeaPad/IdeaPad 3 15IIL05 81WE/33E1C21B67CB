@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x4A448000.
@@ -6,11 +6,11 @@ Table at 0x4A448000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: EMCN40WW
-	Release Date: 08/10/2020
+	Version: EMCN51WW
+	Release Date: 12/20/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 10240 kB
+	ROM Size: 10 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -31,8 +31,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.40
-	Firmware Revision: 1.40
+	BIOS Revision: 1.51
+	Firmware Revision: 1.51
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -350,6 +350,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.0
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001B, DMI type 9, 19 bytes
 System Slot Information
@@ -362,6 +364,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.1
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001C, DMI type 9, 19 bytes
 System Slot Information
@@ -374,6 +378,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.2
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001D, DMI type 9, 19 bytes
 System Slot Information
@@ -386,6 +392,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.3
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001E, DMI type 9, 19 bytes
 System Slot Information
@@ -398,6 +406,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.4
+	Data Bus Width: 10
+	Peer Devices: 0
 
 Handle 0x001F, DMI type 11, 5 bytes
 OEM Strings
@@ -475,7 +485,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -510,7 +520,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -674,8 +684,10 @@ Onboard Device
 Handle 0x0036, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: INTC
-	Specification Version: 2.0	Firmware Revision: 500.5
-	Description: TPM 2.0, ManufacturerID: INTC, Firmware Version: 0x01F40005.0x0	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 500.5
+	Description: TPM 2.0, ManufacturerID: INTC, Firmware Version: 0x01F40005.0x0
+	Characteristics:
 		TPM Device characteristics not supported
 	OEM-specific Information: 0x00000000
 
@@ -732,7 +744,7 @@ OEM-specific Type
 Handle 0x003E, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 3E 00 01 04 01 45 02 00 90 06 01 10 86 20
+		DB 6A 3E 00 01 04 01 45 02 00 A0 06 01 10 80 20
 		00 00 00 04 40 00 00 00 00 00 00 00 00 40 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -749,7 +761,7 @@ Handle 0x003F, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 3F 00 03 01 00 08 00 51 30 00 02 00 00 00
-		00 78 00 03 00 FF FF FF FF FF
+		00 A6 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -817,7 +829,7 @@ OEM-specific Type
 		DD 59 44 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 01 28 00 00 00 0C 00 00
+		00 FF FF FF FF FF 0B 00 01 33 00 00 00 0C 00 00
 		14 00 26 10 0D 0E 01 05 02 00 00 0F 00 00 07 03
 		00 00 10 00 00 02 00 0F 00
 	Strings:

@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x9980C000.
@@ -14,8 +14,8 @@ OEM Strings
 Handle 0x0001, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: E17E7IMS.109
-	Release Date: 05/20/2020
+	Version: E17E7IMS.10C
+	Release Date: 11/17/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -38,7 +38,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.9
+	BIOS Revision: 1.12
 
 Handle 0x0002, DMI type 1, 27 bytes
 System Information
@@ -567,8 +567,10 @@ System Power Supply
 Handle 0x003A, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: INTC
-	Specification Version: 2.0	Firmware Revision: 500.14
-	Description: INTEL	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 500.14
+	Description: INTEL
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -587,7 +589,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -622,7 +624,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -685,7 +687,7 @@ Handle 0x0041, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 41 00 03 01 00 09 00 2D 50 00 02 00 00 00
-		00 C8 00 03 00 01 07 02 00 00
+		00 E2 00 03 00 01 07 02 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -781,8 +783,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12288 kB
-	Maximum Size: 12288 kB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -1007,7 +1009,7 @@ Group Associations
 Handle 0x005B, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 5B 00 01 04 01 45 02 00 90 06 01 85 30 20
+		DB 6A 5B 00 01 04 01 45 02 00 90 06 01 85 36 20
 		00 00 00 00 40 00 00 01 1F 00 00 C9 0B 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

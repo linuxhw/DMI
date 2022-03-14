@@ -1,8 +1,8 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-82 structures occupying 3055 bytes.
-Table at 0x000ECE00.
+84 structures occupying 3155 bytes.
+Table at 0x000EC280.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -658,7 +658,7 @@ Memory Device Mapped Address
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x0041
-	Memory Array Mapped Address Handle: 0x0048
+	Memory Array Mapped Address Handle: 0x004A
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
@@ -686,11 +686,11 @@ Memory Device
 
 Handle 0x0045, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x0044
-	Memory Array Mapped Address Handle: 0x0048
+	Memory Array Mapped Address Handle: 0x004A
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
@@ -699,53 +699,75 @@ Handle 0x0046, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0042
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: 99U5469-046.A00LF 
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0047, DMI type 17, 34 bytes
+Handle 0x0047, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0046
+	Memory Array Mapped Address Handle: 0x004A
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0048, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0042
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 3
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: 99U5469-046.A00LF 
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0048, DMI type 19, 31 bytes
+Handle 0x0049, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0048
+	Memory Array Mapped Address Handle: 0x004A
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x004A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0042
 	Partition Width: 4
 
-Handle 0x0049, DMI type 7, 19 bytes
+Handle 0x004B, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L1
 	Configuration: Enabled, Not Socketed, Level 1
@@ -761,7 +783,7 @@ Cache Information
 	System Type: Other
 	Associativity: 8-way Set-associative
 
-Handle 0x004A, DMI type 7, 19 bytes
+Handle 0x004C, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L2
 	Configuration: Enabled, Not Socketed, Level 2
@@ -777,7 +799,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x004B, DMI type 7, 19 bytes
+Handle 0x004D, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L3
 	Configuration: Enabled, Not Socketed, Level 3
@@ -793,26 +815,26 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0054, DMI type 136, 6 bytes
+Handle 0x0056, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 54 00 00 00
+		88 06 56 00 00 00
 
-Handle 0x0055, DMI type 130, 20 bytes
+Handle 0x0057, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 55 00 24 41 4D 54 01 01 01 01 01 A5 2F 02
+		82 14 57 00 24 41 4D 54 01 01 01 01 01 A5 2F 02
 		01 00 01 00
 
-Handle 0x0056, DMI type 131, 64 bytes
+Handle 0x0058, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 56 00 35 00 00 00 09 00 00 00 00 00 1C 00
+		83 40 58 00 35 00 00 00 09 00 00 00 00 00 1C 00
 		F8 00 4E 8C 00 00 00 00 09 E0 00 00 00 00 09 00
 		CF 05 1F 00 00 00 00 00 C8 00 3A 15 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0057, DMI type 13, 22 bytes
+Handle 0x0059, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 8
@@ -826,7 +848,7 @@ BIOS Language Information
 		zh|CN|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0059, DMI type 4, 42 bytes
+Handle 0x005B, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: SOCKET 1150
 	Type: Central Processor
@@ -870,9 +892,9 @@ Processor Information
 	Current Speed: 3600 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
-	L1 Cache Handle: 0x0049
-	L2 Cache Handle: 0x004A
-	L3 Cache Handle: 0x004B
+	L1 Cache Handle: 0x004B
+	L2 Cache Handle: 0x004C
+	L3 Cache Handle: 0x004D
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Fill By OEM
@@ -882,6 +904,6 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x005E, DMI type 127, 4 bytes
+Handle 0x0060, DMI type 127, 4 bytes
 End Of Table
 

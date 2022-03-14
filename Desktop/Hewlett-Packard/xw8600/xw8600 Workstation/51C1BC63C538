@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 91 structures occupying 2876 bytes.
@@ -9,9 +9,9 @@ BIOS Information
 	Vendor: Hewlett-Packard
 	Version: 786F5 v01.46
 	Release Date: 09/20/2012
-	Address: 0x04000
-	Runtime Size: 1008 kB
-	ROM Size: 1024 kB
+	Address: 0xE0000
+	Runtime Size: 128 kB
+	ROM Size: 1 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -203,8 +203,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12288 kB
-	Maximum Size: 12288 kB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Burst
 	Installed SRAM Type: Burst
@@ -235,8 +235,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12288 kB
-	Maximum Size: 12288 kB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Burst
 	Installed SRAM Type: Burst
@@ -606,7 +606,7 @@ Handle 0x0037, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT 2 PCIe x16
 	Type: x16 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 2
 	Characteristics:
@@ -629,8 +629,8 @@ System Slot Information
 Handle 0x0039, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT 4 PCIe x16 or x8
-	Type: x8 PCI Express
-	Current Usage: Available
+	Type: x16 PCI Express
+	Current Usage: In Use
 	Length: Long
 	ID: 4
 	Characteristics:
@@ -641,7 +641,7 @@ System Slot Information
 Handle 0x003A, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT 5 PCIe x1 or x8
-	Type: x8 PCI Express
+	Type: x1 PCI Express
 	Current Usage: Available
 	Length: Long
 	ID: 3
@@ -654,7 +654,7 @@ Handle 0x003B, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT 6 PCIe x8 (4)
 	Type: x4 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 3
 	Characteristics:
@@ -666,7 +666,7 @@ Handle 0x003C, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT 7 PCI-X 133
 	Type: 64-bit PCI-X
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 5
 	Characteristics:
@@ -710,7 +710,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: FB-DIMM
 	Set: 1
 	Locator: DIMM01
@@ -729,7 +729,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: FB-DIMM
 	Set: 3
 	Locator: DIMM02
@@ -748,7 +748,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: FB-DIMM
 	Set: 1
 	Locator: DIMM03
@@ -767,7 +767,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: FB-DIMM
 	Set: 3
 	Locator: DIMM04
@@ -786,7 +786,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: FB-DIMM
 	Set: 2
 	Locator: DIMM05
@@ -805,7 +805,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: FB-DIMM
 	Set: 4
 	Locator: DIMM06
@@ -824,7 +824,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: FB-DIMM
 	Set: 2
 	Locator: DIMM07
@@ -843,7 +843,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: FB-DIMM
 	Set: 4
 	Locator: DIMM08
@@ -862,7 +862,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 2 bits
 	Data Width: 2 bits
-	Size: 1024 kB
+	Size: 1 MB
 	Form Factor: Chip
 	Set: None
 	Locator: SYSTEM ROM
@@ -878,8 +878,8 @@ Memory Device
 Handle 0x0053, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0082FFFFFFF
-	Range Size: 33536 MB
+	Ending Address: 0x0083FFFFFFF
+	Range Size: 33 GB
 	Physical Array Handle: 0x003F
 	Partition Width: 8
 
@@ -894,16 +894,16 @@ Memory Array Mapped Address
 Handle 0x0055, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0012FFFFFFF
-	Range Size: 4864 MB
+	Ending Address: 0x0013FFFFFFF
+	Range Size: 5 GB
 	Physical Device Handle: 0x0041
 	Memory Array Mapped Address Handle: 0x0053
 	Partition Row Position: 1
 
 Handle 0x0056, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00130000000
-	Ending Address: 0x0022FFFFFFF
+	Starting Address: 0x00140000000
+	Ending Address: 0x0023FFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0042
 	Memory Array Mapped Address Handle: 0x0053
@@ -911,8 +911,8 @@ Memory Device Mapped Address
 
 Handle 0x0057, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00230000000
-	Ending Address: 0x0032FFFFFFF
+	Starting Address: 0x00240000000
+	Ending Address: 0x0033FFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0043
 	Memory Array Mapped Address Handle: 0x0053
@@ -920,8 +920,8 @@ Memory Device Mapped Address
 
 Handle 0x0058, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00330000000
-	Ending Address: 0x0042FFFFFFF
+	Starting Address: 0x00340000000
+	Ending Address: 0x0043FFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0044
 	Memory Array Mapped Address Handle: 0x0053
@@ -929,8 +929,8 @@ Memory Device Mapped Address
 
 Handle 0x0059, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00430000000
-	Ending Address: 0x0052FFFFFFF
+	Starting Address: 0x00440000000
+	Ending Address: 0x0053FFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0045
 	Memory Array Mapped Address Handle: 0x0053
@@ -938,8 +938,8 @@ Memory Device Mapped Address
 
 Handle 0x005A, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00530000000
-	Ending Address: 0x0062FFFFFFF
+	Starting Address: 0x00540000000
+	Ending Address: 0x0063FFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0046
 	Memory Array Mapped Address Handle: 0x0053
@@ -947,8 +947,8 @@ Memory Device Mapped Address
 
 Handle 0x005B, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00630000000
-	Ending Address: 0x0072FFFFFFF
+	Starting Address: 0x00640000000
+	Ending Address: 0x0073FFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0047
 	Memory Array Mapped Address Handle: 0x0053
@@ -956,8 +956,8 @@ Memory Device Mapped Address
 
 Handle 0x005C, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00730000000
-	Ending Address: 0x0082FFFFFFF
+	Starting Address: 0x00740000000
+	Ending Address: 0x0083FFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0048
 	Memory Array Mapped Address Handle: 0x0053

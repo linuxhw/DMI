@@ -1,14 +1,13 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
-SMBIOS 2.8 present.
-109 structures occupying 3903 bytes.
-Table at 0x3B4B8000.
+SMBIOS 3.0.0 present.
+Table at 0x000EBC60.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 1.80
-	Release Date: 03/20/2015
+	Version: 1.F2
+	Release Date: 06/13/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -32,7 +31,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 5.6
+	BIOS Revision: 5.11
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -42,8 +41,8 @@ System Information
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
-	SKU Number: To be filled by O.E.M.
-	Family: To be filled by O.E.M.
+	SKU Number: Default string
+	Family: Default string
 
 Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
@@ -55,12 +54,12 @@ Base Board Information
 	Features:
 		Board is a hosting board
 		Board is replaceable
-	Location In Chassis: To be filled by O.E.M.
+	Location In Chassis: Default string
 	Chassis Handle: 0x0003
 	Type: Motherboard
 	Contained Object Handles: 0
 
-Handle 0x0003, DMI type 3, 25 bytes
+Handle 0x0003, DMI type 3, 22 bytes
 Chassis Information
 	Manufacturer: MSI
 	Type: Desktop
@@ -75,9 +74,8 @@ Chassis Information
 	OEM Information: 0x00000000
 	Height: Unspecified
 	Number Of Power Cords: 1
-	Contained Elements: 1
-		<OUT OF SPEC> (0)
-	SKU Number: To be filled by O.E.M.
+	Contained Elements: 0
+	SKU Number: Default string
 
 Handle 0x0004, DMI type 8, 9 bytes
 Port Connector Information
@@ -282,33 +280,33 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:03:00.7
+	Bus Address: 0000:02:00.3
 
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot2
 	Type: x8 PCI Express 3 x8
-	Current Usage: In Use
+	Current Usage: Unknown
 	Length: Short
 	ID: 2
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:01:00.0
+	Bus Address: 0000:ff:00.0
 
 Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot3
 	Type: x1 PCI Express 3 x1
-	Current Usage: Available
+	Current Usage: Unknown
 	Length: Short
 	ID: 3
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:02:00.5
+	Bus Address: 0000:ff:00.0
 
 Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
@@ -327,14 +325,14 @@ Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot5
 	Type: x4 PCI Express 3 x4
-	Current Usage: Available
+	Current Usage: Unknown
 	Length: Short
 	ID: 5
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:02:00.0
+	Bus Address: 0000:ff:00.4
 
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
@@ -360,7 +358,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:06:00.6
+	Bus Address: 0000:05:00.1
 
 Handle 0x0023, DMI type 10, 6 bytes
 On Board Device Information
@@ -370,11 +368,11 @@ On Board Device Information
 
 Handle 0x0024, DMI type 11, 5 bytes
 OEM Strings
-	String 1: To Be Filled By O.E.M.
+	String 1: Default string
 
 Handle 0x0025, DMI type 12, 5 bytes
 System Configuration Options
-	Option 1: To Be Filled By O.E.M.
+	Option 1: Default string
 
 Handle 0x0026, DMI type 32, 20 bytes
 System Boot Information
@@ -411,7 +409,7 @@ Management Device Threshold Data
 
 Handle 0x002A, DMI type 35, 11 bytes
 Management Device Component
-	Description: To Be Filled By O.E.M.
+	Description: Default string
 	Management Device Handle: 0x0027
 	Component Handle: 0x0027
 	Threshold Handle: 0x0028
@@ -440,7 +438,7 @@ Management Device Threshold Data
 
 Handle 0x002D, DMI type 35, 11 bytes
 Management Device Component
-	Description: To Be Filled By O.E.M.
+	Description: Default string
 	Management Device Handle: 0x0027
 	Component Handle: 0x002A
 	Threshold Handle: 0x002B
@@ -466,7 +464,7 @@ Management Device Threshold Data
 
 Handle 0x0030, DMI type 35, 11 bytes
 Management Device Component
-	Description: To Be Filled By O.E.M.
+	Description: Default string
 	Management Device Handle: 0x0027
 	Component Handle: 0x002D
 	Threshold Handle: 0x002E
@@ -492,7 +490,7 @@ Management Device Threshold Data
 
 Handle 0x0033, DMI type 35, 11 bytes
 Management Device Component
-	Description: To Be Filled By O.E.M.
+	Description: Default string
 	Management Device Handle: 0x0027
 	Component Handle: 0x0030
 	Threshold Handle: 0x0031
@@ -515,7 +513,7 @@ Management Device Threshold Data
 
 Handle 0x0036, DMI type 35, 11 bytes
 Management Device Component
-	Description: To Be Filled By O.E.M.
+	Description: Default string
 	Management Device Handle: 0x0027
 	Component Handle: 0x0033
 	Threshold Handle: 0x0031
@@ -552,7 +550,7 @@ Management Device Threshold Data
 
 Handle 0x003A, DMI type 35, 11 bytes
 Management Device Component
-	Description: To Be Filled By O.E.M.
+	Description: Default string
 	Management Device Handle: 0x0037
 	Component Handle: 0x0037
 	Threshold Handle: 0x0038
@@ -581,7 +579,7 @@ Management Device Threshold Data
 
 Handle 0x003D, DMI type 35, 11 bytes
 Management Device Component
-	Description: To Be Filled By O.E.M.
+	Description: Default string
 	Management Device Handle: 0x0037
 	Component Handle: 0x003A
 	Threshold Handle: 0x003B
@@ -610,7 +608,7 @@ Management Device Threshold Data
 
 Handle 0x0040, DMI type 35, 11 bytes
 Management Device Component
-	Description: To Be Filled By O.E.M.
+	Description: Default string
 	Management Device Handle: 0x0037
 	Component Handle: 0x003D
 	Threshold Handle: 0x003E
@@ -636,7 +634,7 @@ Management Device Threshold Data
 
 Handle 0x0043, DMI type 35, 11 bytes
 Management Device Component
-	Description: To Be Filled By O.E.M.
+	Description: Default string
 	Management Device Handle: 0x0037
 	Component Handle: 0x0040
 	Threshold Handle: 0x0041
@@ -665,7 +663,7 @@ Management Device Threshold Data
 
 Handle 0x0046, DMI type 35, 11 bytes
 Management Device Component
-	Description: To Be Filled By O.E.M.
+	Description: Default string
 	Management Device Handle: 0x0037
 	Component Handle: 0x0043
 	Threshold Handle: 0x0044
@@ -691,7 +689,7 @@ Management Device Threshold Data
 
 Handle 0x0049, DMI type 35, 11 bytes
 Management Device Component
-	Description: To Be Filled By O.E.M.
+	Description: Default string
 	Management Device Handle: 0x0037
 	Component Handle: 0x0046
 	Threshold Handle: 0x0047
@@ -714,7 +712,7 @@ Management Device Threshold Data
 
 Handle 0x004C, DMI type 35, 11 bytes
 Management Device Component
-	Description: To Be Filled By O.E.M.
+	Description: Default string
 	Management Device Handle: 0x0037
 	Component Handle: 0x0049
 	Threshold Handle: 0x0047
@@ -737,7 +735,7 @@ Management Device Threshold Data
 
 Handle 0x004F, DMI type 35, 11 bytes
 Management Device Component
-	Description: To Be Filled By O.E.M.
+	Description: Default string
 	Management Device Handle: 0x0037
 	Component Handle: 0x004C
 	Threshold Handle: 0x0047
@@ -835,32 +833,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:03:1c.2
 
-Handle 0x0058, DMI type 143, 16 bytes
-OEM-specific Type
-	Header and Data:
-		8F 10 58 00 00 01 02 03 04 05 06 07 08 09 0A 0B
-	Strings:
-		MEFW-9.1.25.1005
-		GOP1-[N/A]     
-		PXEL1-v1.5.43
-		AMI-AptioV
-		N/A
-		N/A
-		N/A
-		N/A
-		N/A
-		N/A
-		N/A
-		N/A
-
-Handle 0x0059, DMI type 144, 5 bytes
-OEM-specific Type
-	Header and Data:
-		90 05 59 00 01
-	Strings:
-		$INT15SWIDd0c1
-
-Handle 0x005A, DMI type 16, 23 bytes
+Handle 0x0058, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -869,199 +842,248 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 8
 
-Handle 0x005B, DMI type 19, 31 bytes
+Handle 0x0059, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
-	Physical Array Handle: 0x005A
+	Physical Array Handle: 0x0058
 	Partition Width: 2
 
-Handle 0x005C, DMI type 17, 34 bytes
+Handle 0x005A, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x005A
+	Array Handle: 0x0058
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 8192 MB
+	Data Width: 72 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A1
 	Bank Locator: NODE 1
-	Type: Other
+	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 3200 MT/s
-	Manufacturer: <BAD INDEX>
+	Manufacturer: Undefined
 	Serial Number: --
 	Asset Tag: --
-	Part Number: <BAD INDEX>
+	Part Number: F4-3200C16-8GVKB   
 	Rank: 2
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2133 MT/s
+	Minimum Voltage: 1.14 V
+	Maximum Voltage: 1.26 V
+	Configured Voltage: 0.003 V
 
-Handle 0x005D, DMI type 20, 35 bytes
+Handle 0x005B, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x005C
-	Memory Array Mapped Address Handle: 0x005B
+	Physical Device Handle: 0x005A
+	Memory Array Mapped Address Handle: 0x0059
 	Partition Row Position: 1
 
-Handle 0x005E, DMI type 17, 34 bytes
+Handle 0x005C, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x005A
+	Array Handle: 0x0058
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
-	Form Factor: DIMM
+	Form Factor: Unknown
 	Set: None
-	Locator: DIMM_A2
-	Bank Locator: NODE 1
-	Type: Other
-	Type Detail: Synchronous
+	Locator: NO DIMM
+	Bank Locator: NO DIMM
+	Type: Unknown
+	Type Detail: Unknown
 	Speed: Unknown
 	Manufacturer: NO DIMM
 	Serial Number: --
 	Asset Tag: --
 	Part Number: NO DIMM
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: 1.14 V
+	Maximum Voltage: 1.26 V
+	Configured Voltage: 0.003 V
 
-Handle 0x005F, DMI type 17, 34 bytes
+Handle 0x005D, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x005A
+	Array Handle: 0x0058
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 8192 MB
+	Data Width: 72 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B1
 	Bank Locator: NODE 1
-	Type: Other
+	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 3200 MT/s
-	Manufacturer: <BAD INDEX>
+	Manufacturer: Undefined
 	Serial Number: --
 	Asset Tag: --
-	Part Number: <BAD INDEX>
+	Part Number: F4-3200C16-8GVKB   
 	Rank: 2
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2133 MT/s
+	Minimum Voltage: 1.14 V
+	Maximum Voltage: 1.26 V
+	Configured Voltage: 0.003 V
 
-Handle 0x0060, DMI type 20, 35 bytes
+Handle 0x005E, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00200000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x005F
-	Memory Array Mapped Address Handle: 0x005B
+	Physical Device Handle: 0x005D
+	Memory Array Mapped Address Handle: 0x0059
 	Partition Row Position: 1
 
-Handle 0x0061, DMI type 17, 34 bytes
+Handle 0x005F, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x005A
+	Array Handle: 0x0058
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
-	Form Factor: DIMM
+	Form Factor: Unknown
 	Set: None
-	Locator: DIMM_B2
-	Bank Locator: NODE 1
-	Type: Other
-	Type Detail: Synchronous
+	Locator: NO DIMM
+	Bank Locator: NO DIMM
+	Type: Unknown
+	Type Detail: Unknown
 	Speed: Unknown
 	Manufacturer: NO DIMM
 	Serial Number: --
 	Asset Tag: --
 	Part Number: NO DIMM
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: 1.14 V
+	Maximum Voltage: 1.26 V
+	Configured Voltage: 0.003 V
 
-Handle 0x0062, DMI type 17, 34 bytes
+Handle 0x0060, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x005A
+	Array Handle: 0x0058
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
-	Form Factor: DIMM
+	Form Factor: Unknown
 	Set: None
-	Locator: DIMM_C1
-	Bank Locator: NODE 1
-	Type: Other
-	Type Detail: Synchronous
+	Locator: NO DIMM
+	Bank Locator: NO DIMM
+	Type: Unknown
+	Type Detail: Unknown
 	Speed: Unknown
 	Manufacturer: NO DIMM
 	Serial Number: --
 	Asset Tag: --
 	Part Number: NO DIMM
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: 1.14 V
+	Maximum Voltage: 1.26 V
+	Configured Voltage: 0.003 V
 
-Handle 0x0063, DMI type 17, 34 bytes
+Handle 0x0061, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x005A
+	Array Handle: 0x0058
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
-	Form Factor: DIMM
+	Form Factor: Unknown
 	Set: None
-	Locator: DIMM_C2
-	Bank Locator: NODE 1
-	Type: Other
-	Type Detail: Synchronous
+	Locator: NO DIMM
+	Bank Locator: NO DIMM
+	Type: Unknown
+	Type Detail: Unknown
 	Speed: Unknown
 	Manufacturer: NO DIMM
 	Serial Number: --
 	Asset Tag: --
 	Part Number: NO DIMM
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: 1.14 V
+	Maximum Voltage: 1.26 V
+	Configured Voltage: 0.003 V
 
-Handle 0x0064, DMI type 17, 34 bytes
+Handle 0x0062, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x005A
+	Array Handle: 0x0058
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
-	Form Factor: DIMM
+	Form Factor: Unknown
 	Set: None
-	Locator: DIMM_D1
-	Bank Locator: NODE 1
-	Type: Other
-	Type Detail: Synchronous
+	Locator: NO DIMM
+	Bank Locator: NO DIMM
+	Type: Unknown
+	Type Detail: Unknown
 	Speed: Unknown
 	Manufacturer: NO DIMM
 	Serial Number: --
 	Asset Tag: --
 	Part Number: NO DIMM
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: 1.14 V
+	Maximum Voltage: 1.26 V
+	Configured Voltage: 0.003 V
 
-Handle 0x0065, DMI type 17, 34 bytes
+Handle 0x0063, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x005A
+	Array Handle: 0x0058
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
-	Form Factor: DIMM
+	Form Factor: Unknown
 	Set: None
-	Locator: DIMM_D2
-	Bank Locator: NODE 1
-	Type: Other
-	Type Detail: Synchronous
+	Locator: NO DIMM
+	Bank Locator: NO DIMM
+	Type: Unknown
+	Type Detail: Unknown
 	Speed: Unknown
 	Manufacturer: NO DIMM
 	Serial Number: --
 	Asset Tag: --
 	Part Number: NO DIMM
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: 1.14 V
+	Maximum Voltage: 1.26 V
+	Configured Voltage: 0.003 V
+
+Handle 0x0064, DMI type 143, 16 bytes
+OEM-specific Type
+	Header and Data:
+		8F 10 64 00 00 01 02 03 04 05 06 07 08 09 0A 0B
+	Strings:
+		MEFW-9.1.37.1002
+		VBIOS-N/A
+		PXEL1-v1.5.43
+		AMI-AptioV
+		GSES-5/3
+		N/A
+		N/A
+		N/A
+		N/A
+		N/A
+		N/A
+		N/A
+
+Handle 0x0065, DMI type 144, 5 bytes
+OEM-specific Type
+	Header and Data:
+		90 05 65 00 01
+	Strings:
+		$INT15SWIDd0c1
 
 Handle 0x0066, DMI type 7, 19 bytes
 Cache Information
@@ -1101,8 +1123,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 15360 kB
-	Maximum Size: 15360 kB
+	Installed Size: 15 MB
+	Maximum Size: 15 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -1111,7 +1133,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 20-way Set-associative
 
-Handle 0x0069, DMI type 4, 42 bytes
+Handle 0x0069, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: SOCKET 0
 	Type: Central Processor
@@ -1149,7 +1171,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-5930K CPU @ 3.50GHz
-	Voltage: 0.0 V
+	Voltage: 0.2 V
 	External Clock: 100 MHz
 	Max Speed: 4000 MHz
 	Current Speed: 3500 MHz
@@ -1183,7 +1205,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 6B 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 47 8D 00 00 00 00 01 00 00 00 01 00 09 00
-		ED 03 19 00 00 00 00 00 C8 00 A1 15 00 00 00 00
+		EA 03 25 00 00 00 00 00 C8 00 A1 15 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x006C, DMI type 127, 4 bytes

@@ -1,8 +1,8 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3 present.
-47 structures occupying 3942 bytes.
-Table at 0x3C970000.
+47 structures occupying 3943 bytes.
+Table at 0x20970000.
 
 Handle 0x0000, DMI type 43, 31 bytes
 TPM Device
@@ -18,8 +18,8 @@ TPM Device
 Handle 0x0001, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: T93 Ver. 01.01.06
-	Release Date: 05/20/2021
+	Version: T93 Ver. 01.06.02
+	Release Date: 08/12/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -42,8 +42,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.6
-	Firmware Revision: 56.39
+	BIOS Revision: 6.2
+	Firmware Revision: 56.44
 
 Handle 0x0002, DMI type 1, 27 bytes
 System Information
@@ -60,7 +60,7 @@ Handle 0x0003, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 8720
-	Version: KBC Version 38.27.00
+	Version: KBC Version 38.2C.00
 	Serial Number: --
 	Asset Tag: --
 	97946E993916094B22613E03B8339091
@@ -128,17 +128,17 @@ Memory Array Mapped Address
 
 Handle 0x0019, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:0A:00:44:51:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:78:00:03
+	NIC 1: PCI device 01:00.3, MAC address 00:0A:00:4A:32:00
+	NIC 2: PCI device 00:00.2, MAC address 00:00:00:8A:00:03
 
 Handle 0x001A, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:0A:00:44:51:00
+	NIC 1: PCI device 01:00.3, MAC address 00:0A:00:4A:32:00
 	NIC 2: PCI device 00:00.2, MAC address 0F:00:00:03:00:03
 
 Handle 0x001B, DMI type 221, 47 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.6, MAC address 00:0A:00:44:51:00
+	NIC 1: PCI device 01:00.6, MAC address 00:0A:00:4A:32:00
 	NIC 2: PCI device 03:00.2, MAC address FF:FF:FF:FF:FF:04
 	NIC 3: PCI device ff:00.0, MAC address FF:FF:20:00:05:00
 	NIC 4: Not Installed
@@ -146,15 +146,15 @@ HP BIOS iSCSI NIC PCI and MAC Information
 
 Handle 0x001C, DMI type 221, 82 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:01.3, MAC address 00:0A:00:44:51:00
-	NIC 2: PCI device 00:00.2, MAC address 01:00:12:01:00:03
-	NIC 3: PCI device 0a:00.0, MAC address 00:44:51:00:04:05
+	NIC 1: PCI device 01:01.3, MAC address 00:0A:00:4A:32:00
+	NIC 2: PCI device 00:00.2, MAC address 01:00:14:02:00:03
+	NIC 3: PCI device 0a:00.0, MAC address 00:4A:32:00:04:05
 	NIC 4: Not Installed
 	NIC 5: Disabled
 	NIC 6: PCI device 01:00.0, MAC address 00:08:00:FF:FF:FF
 	NIC 7: Not Installed
-	NIC 8: PCI device 0a:00.0, MAC address 00:00:00:00:F6:00
-	NIC 9: PCI device 00:01.3, MAC address 24:01:00:00:00:0C
+	NIC 8: PCI device 0a:00.0, MAC address 00:00:00:00:F8:00
+	NIC 9: PCI device 00:01.3, MAC address 29:00:00:00:00:0C
 
 Handle 0x001D, DMI type 221, 12 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
@@ -265,7 +265,7 @@ Processor Information
 	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 4700 MHz
-	Current Speed: 2800 MHz
+	Current Speed: 4100 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x001F
@@ -336,7 +336,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 28 00 31 00 00 00 0F 00 00 00 00 00 03 00
 		F8 00 82 A0 00 00 00 00 01 00 00 00 00 00 0F 00
-		A7 05 0A 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		AA 06 17 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0027, DMI type 17, 92 bytes
@@ -726,20 +726,20 @@ Handle 0x0012, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0013, DMI type 11, 5 bytes
+Handle 0x0005, DMI type 11, 5 bytes
 OEM Strings
 	String 1: FBYTE#3X476J6S6b7B7H7M7R7W7maBaEapaqauawbVbhcAd6dUdpdqfAfPguhKhZjhk8mEmwnVng.aD;
 	String 2: BUILDID#21WWSKBT601#SUUZ#DUUZ;
 	String 3: EDK2_1
 	String 4: Buff=2
-	String 5: MEFWRec
-	String 6: HRDWFEATS=VTX:1;VTD:1;SGX:0;PROGKEY:1;NONHPBATDET:1;
+	String 5: HRDWFEATS=VTX:1;VTD:1;SGX:0;PROGKEY:1;NONHPBATDET:1;
+	String 6: MEFWRec
 
-Handle 0x0005, DMI type 10, 6 bytes
+Handle 0x0013, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
-	Description: 64 MB
+	Description: 512 MB
 
 Handle 0x0014, DMI type 14, 8 bytes
 Group Associations
@@ -750,7 +750,7 @@ Group Associations
 Handle 0x0015, DMI type 219, 106 bytes
 HP ProLiant Information
 	Power Features: 0x45010401
-	Omega Features: 0x06900002
+	Omega Features: 0x06a00002
 	Misc. Features: 0x00000000
 		iCRU: No
 		UEFI: No

@@ -1,7 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
-53 structures occupying 2827 bytes.
+53 structures occupying 2840 bytes.
 Table at 0x000F0100.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 10/04/2013
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -46,7 +46,7 @@ System Information
 	Product Name: GA-78LMT-S2PV
 	Version:  
 	Serial Number: --
-	D25B450F1B4A34F42901938AC3EAEA8D
+	F58CB1E05CD6D38269015497AF77C99C
 	Wake-up Type: Power Switch
 	SKU Number:  
 	Family:  
@@ -78,8 +78,8 @@ Processor Information
 	Type: Central Processor
 	Family: Athlon
 	Manufacturer: AMD
-	ID: 63 0F 10 00 FF FB 8B 17
-	Signature: Family 16, Model 6, Stepping 3
+	ID: 20 0F 60 00 FF FB 8B 17
+	Signature: Family 21, Model 2, Stepping 0
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -104,11 +104,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Athlon(tm) II X2 270 Processor
+	Version: AMD FX(tm)-4320 Quad-Core Processor            
 	Voltage: 1.6 V
 	External Clock: 200 MHz
 	Max Speed: 3000 MHz
-	Current Speed: 3400 MHz
+	Current Speed: 4000 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket 754
 	L1 Cache Handle: 0x000A
@@ -147,7 +147,7 @@ Handle 0x0006, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A0
 	Bank Connections: 1
-	Current Speed: 144 ns
+	Current Speed: 53 ns
 	Type: Other Unknown EDO
 	Installed Size: Not Installed
 	Enabled Size: Not Installed
@@ -167,7 +167,7 @@ Handle 0x0008, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A2
 	Bank Connections: 3
-	Current Speed: 144 ns
+	Current Speed: 53 ns
 	Type: Other Unknown EDO
 	Installed Size: Not Installed
 	Enabled Size: Not Installed
@@ -221,8 +221,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -238,7 +238,7 @@ Cache Information
 	Operational Mode: Write Through
 	Location: Internal
 	Installed Size: 0 kB
-	Maximum Size: 1024 kB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -447,7 +447,7 @@ Memory Device
 	Bank Locator: Bank0/1
 	Type: Unknown
 	Type Detail: None
-	Speed: 400 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: None
 	Serial Number: --
 	Asset Tag: --
@@ -459,7 +459,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1
@@ -485,7 +485,7 @@ Memory Device
 	Bank Locator: Bank4/5
 	Type: Unknown
 	Type Detail: None
-	Speed: 400 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: None
 	Serial Number: --
 	Asset Tag: --
@@ -497,7 +497,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A3
@@ -561,18 +561,18 @@ System Boot Information
 Handle 0x002E, DMI type 188, 212 bytes
 OEM-specific Type
 	Header and Data:
-		BC D4 2E 00 00 00 00 D0 00 00 00 00 00 00 00 B0
+		BC D4 2E 00 00 00 00 D8 00 00 00 00 00 00 00 A8
 		02 00 00 00 00 06 76 00 00 00 00 00 08 00 00 00
-		00 40 58 42 00 00 01 00 03 00 00 00 00 00 AF 02
+		00 40 58 42 00 00 01 00 03 00 00 00 00 00 A7 02
 		00 00 00 00 01 00 00 00 00 00 00 00 02 00 00 00
 		00 00 00 00 03 00 00 00 00 00 00 00 04 00 00 00
 		00 00 00 00 05 00 00 00 00 00 00 00 06 00 00 00
-		00 00 00 00 07 00 00 00 03 30 00 D0 00 00 00 00
+		00 00 00 00 07 00 00 00 03 28 00 D8 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 25
-		00 00 00 00 00 00 00 00 10 00 00 00 00 00 00 FF
-		FF 18 02 00 00 00 01 00 00 02 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 40 26
+		00 00 00 00 00 00 00 00 20 00 00 00 00 00 00 FF
+		FF 19 02 00 00 00 01 00 00 02 00 00 00 00 00 00
 		5C 00 B0 4A 00 48 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00
 
@@ -583,12 +583,12 @@ OEM-specific Type
 		FB 0F E0 2C 01 00 00 00 09 00 00 01 01 00 00 02
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 E0 3F F8 00 E0 3F 78 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 06 00 08 0E
-		28 04 11 18 00 00 00 00 55 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 55 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 06 02 C8 0F
+		28 04 11 18 00 00 00 00 54 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 54 00 00 00 00 00 00 00
 		24 B4 40 14 FB 0F E0 2C 01 01 00 00 00 02 00 00
-		00 00 00 00 40 00 00 00 7A 00 00 00 D4 0A 24 00
-		45 96 16 E3 66 B9 C2 01 00 00 01 00 0D 09 58 3F
+		00 00 00 00 40 00 00 00 7A 00 00 00 E4 0A 24 00
+		67 DB 5C E3 88 BA C2 01 00 00 01 00 0D 09 58 3F
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -618,15 +618,15 @@ Handle 0x0031, DMI type 194, 244 bytes
 OEM-specific Type
 	Header and Data:
 		C2 F4 31 00 06 40 00 00 23 33 22 20 A3 08 31 0A
-		F8 08 0C 00 35 00 00 00 23 33 22 20 1A 25 29 33
-		1B 28 2C 32 38 3E 45 46 3B 43 48 47 36 37 35 00
-		00 00 0E 0C 10 08 0C 0A 0C 0A 0E 0E 12 10 0C 0C
-		10 0E 0A 0A 39 D7 24 30 F8 08 0C 00 00 00 00 00
-		9D 00 9F 00 A0 00 A7 00 AA 00 A0 00 A2 00 A1 00
-		A9 00 AD 00 1D 00 1F 00 00 00 07 00 00 00 00 00
-		02 00 01 00 09 00 00 00 AD 00 B5 00 BD 00 C8 00
-		B2 00 B9 00 C3 00 CE 00 0D 00 15 00 1D 00 08 00
-		12 00 19 00 03 00 0E 00 00 00 00 00 00 00 00 00
+		F8 08 0B 00 35 00 00 00 23 33 22 20 1B 28 2E 39
+		1B 2A 30 3B 40 47 4E 4F 44 4A 4F 51 3D 40 35 00
+		00 00 0E 0A 10 08 0A 0A 0C 0A 0C 0C 10 0E 0C 0C
+		0E 0C 0A 0A B9 C7 A1 34 F8 08 0B 00 00 00 00 00
+		B3 00 B7 00 B9 00 BF 00 C3 00 B8 00 BB 00 BD 00
+		C4 00 C9 00 13 00 17 00 19 00 1F 00 00 00 18 00
+		1B 00 1D 00 04 00 00 00 C7 00 CF 00 DA 00 E6 00
+		CF 00 D6 00 E1 00 EE 00 07 00 0F 00 1A 00 06 00
+		0F 00 16 00 01 00 0E 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -657,12 +657,12 @@ OEM-specific Type
 Handle 0x0033, DMI type 198, 244 bytes
 OEM-specific Type
 	Header and Data:
-		C6 F4 33 00 06 40 00 00 0D 00 18 00 1D 00 22 00
-		48 00 00 00 0B 00 18 00 1D 00 1F 00 00 00 0D 00
-		18 00 1D 00 02 00 08 00 00 00 0B 00 18 00 29 00
-		2F 00 39 00 3B 00 2A 00 33 00 3A 00 3A 00 09 00
-		0F 00 19 00 1B 00 0A 00 13 00 1A 00 1A 00 0B 18
-		1D 1F 2A 33 3A 3A 77 00 00 00 4F 01 00 00 00 00
+		C6 F4 33 00 06 40 00 00 0D 00 1C 00 24 00 2C 00
+		12 00 00 00 09 00 1A 00 22 00 29 00 61 00 0D 00
+		1C 00 04 00 0C 00 12 00 00 00 09 00 1A 00 34 00
+		3C 00 43 00 40 00 33 00 3C 00 41 00 40 00 14 00
+		1C 00 03 00 00 00 13 00 1C 00 01 00 00 00 09 1A
+		22 29 33 3C 41 40 21 00 00 00 7F 01 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

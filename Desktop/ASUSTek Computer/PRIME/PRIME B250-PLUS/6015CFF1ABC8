@@ -1,8 +1,6 @@
-# dmidecode 2.12
-SMBIOS 3.0 present.
-# SMBIOS implementations newer than version 2.7 are not
-# fully supported by this version of dmidecode.
-90 structures occupying 4419 bytes.
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
+SMBIOS 3.0.0 present.
 Table at 0xC79A5000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -12,7 +10,7 @@ BIOS Information
 	Release Date: 03/24/2017
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 16384 kB
+	ROM Size: 16 MB
 	Characteristics:
 		PCI is supported
 		APM is supported
@@ -305,7 +303,7 @@ Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_2
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 1
 	Characteristics:
@@ -357,7 +355,7 @@ Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI2
 	Type: 32-bit PCI
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 5
 	Characteristics:
@@ -657,97 +655,97 @@ Handle 0x0042, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0041
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8192 MB
+	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
-
-Handle 0x0043, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x0041
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8192 MB
-	Form Factor: DIMM
-	Set: None
-	Locator: ChannelA-DIMM2
-	Bank Locator: BANK 1
-	Type: <OUT OF SPEC>
+	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2400 MHz
-	Manufacturer: Kingston
-	Serial Number: --
-	Asset Tag: --
-	Part Number: 9905678-012.A00G    
-	Rank: 1
-	Configured Clock Speed: 2400 MHz
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  1.200 V
-
-Handle 0x0044, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x0041
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
-	Set: None
-	Locator: ChannelB-DIMM1
-	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
-
-Handle 0x0045, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x0041
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8192 MB
-	Form Factor: DIMM
-	Set: None
-	Locator: ChannelB-DIMM2
-	Bank Locator: BANK 3
-	Type: <OUT OF SPEC>
-	Type Detail: Synchronous
-	Speed: 2400 MHz
+	Speed: 2400 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: 9905678-173.A00G    
 	Rank: 1
-	Configured Clock Speed: 2400 MHz
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  1.200 V
+	Configured Clock Speed: 2400 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 1.2 V
+
+Handle 0x0043, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0041
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: ChannelA-DIMM2
+	Bank Locator: BANK 1
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+
+Handle 0x0044, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0041
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8192 MB
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelB-DIMM1
+	Bank Locator: BANK 2
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2400 MT/s
+	Manufacturer: Kingston
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 9905678-012.A00G    
+	Rank: 1
+	Configured Clock Speed: 2400 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 1.2 V
+
+Handle 0x0045, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0041
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: ChannelB-DIMM2
+	Bank Locator: BANK 3
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
 Handle 0x0046, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -871,7 +869,7 @@ Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0043
+	Physical Device Handle: 0x0042
 	Memory Array Mapped Address Handle: 0x0046
 	Partition Row Position: Unknown
 	Interleave Position: 1
@@ -882,7 +880,7 @@ Memory Device Mapped Address
 	Starting Address: 0x00200000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0045
+	Physical Device Handle: 0x0044
 	Memory Array Mapped Address Handle: 0x0046
 	Partition Row Position: Unknown
 	Interleave Position: 2
@@ -897,7 +895,7 @@ OEM-specific Type
 Handle 0x004E, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 4E 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 4E 00 10 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 C8 A2 00 00 00 00 01 00 00 00 06 00 0B 00
 		66 04 00 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
@@ -997,11 +995,11 @@ Handle 0x0055, DMI type 14, 20 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 5
-		0x004F (<OUT OF SPEC>)
-		0x0050 (<OUT OF SPEC>)
-		0x0051 (<OUT OF SPEC>)
-		0x0052 (<OUT OF SPEC>)
-		0x0053 (<OUT OF SPEC>)
+		0x004F (OEM-specific)
+		0x0050 (OEM-specific)
+		0x0051 (OEM-specific)
+		0x0052 (OEM-specific)
+		0x0053 (OEM-specific)
 
 Handle 0x0056, DMI type 13, 22 bytes
 BIOS Language Information
@@ -1021,12 +1019,12 @@ Handle 0x0057, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
-		0x0000 (<OUT OF SPEC>)
+		0x0000 (OEM-specific)
 
 Handle 0x0058, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 58 00 01 03 01 45 02 00 90 06 03 10 86 20
+		DB 51 58 00 01 03 01 45 02 00 90 06 03 10 80 20
 		00 00 00 00 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

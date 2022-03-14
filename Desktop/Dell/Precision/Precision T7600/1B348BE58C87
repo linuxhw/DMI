@@ -1,8 +1,8 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-146 structures occupying 6840 bytes.
-Table at 0x000F35E0.
+150 structures occupying 6924 bytes.
+Table at 0x000F1970.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -119,7 +119,7 @@ BIOS Information
 	Release Date: 09/29/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 10240 kB
+	ROM Size: 10 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -318,8 +318,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -334,8 +334,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 10240 kB
-	Maximum Size: 10240 kB
+	Installed Size: 10 MB
+	Maximum Size: 10 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -366,8 +366,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -382,8 +382,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 10240 kB
-	Maximum Size: 10240 kB
+	Installed Size: 10 MB
+	Maximum Size: 10 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -604,50 +604,50 @@ Handle 0x0026, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot1
 	Type: x4 PCI Express 2 x8
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 1
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:ff:1f.7
+	Bus Address: 0000:02:00.0
 
 Handle 0x0027, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot2
 	Type: x16 PCI Express 2
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 2
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:03:00.0
+	Bus Address: 0000:ff:1f.7
 
 Handle 0x0028, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot3
 	Type: x4 PCI Express 2 x16
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 3
 	Characteristics:
 		5.0 V is provided
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:ff:1f.7
+	Bus Address: 0000:09:00.0
 
 Handle 0x0029, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot4
 	Type: x16 PCI Express 2
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 4
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:04:00.0
+	Bus Address: 0000:ff:1f.7
 
 Handle 0x002A, DMI type 9, 17 bytes
 System Slot Information
@@ -758,7 +758,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1_CPU1
@@ -766,11 +766,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Registered (Buffered)
 	Speed: 1067 MT/s
-	Manufacturer: Samsung-00CE    
+	Manufacturer: Hyundai-00AD    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M393B1G70QH0-YK0  
-	Rank: 1
+	Part Number: HMT42GR7AFR4A-PB  
+	Rank: 2
 
 Handle 0x0037, DMI type 17, 28 bytes
 Memory Device
@@ -796,21 +796,21 @@ Handle 0x0039, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0033
 	Error Information Handle: No Error
-	Total Width: 72 bits
+	Total Width: 65534 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3_CPU1
 	Bank Locator: Not Specified
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1067 MT/s
-	Manufacturer: Samsung-00CE    
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer:                 
 	Serial Number: --
-	Asset Tag: --
-	Part Number: M393B1G70QH0-YK0  
-	Rank: 1
+	271882FD79060B21C43F805A2DE81148       
+	Part Number:                   
+	Rank: Unknown
 
 Handle 0x003B, DMI type 17, 28 bytes
 Memory Device
@@ -838,7 +838,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2_CPU1
@@ -846,10 +846,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Registered (Buffered)
 	Speed: 1067 MT/s
-	Manufacturer: Toshiba-0098    
+	Manufacturer: Samsung-00CE    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9965516-057.A00LF 
+	Part Number: M393B2G70BH0-CK0  
 	Rank: 2
 
 Handle 0x003F, DMI type 17, 28 bytes
@@ -876,21 +876,21 @@ Handle 0x0041, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0033
 	Error Information Handle: No Error
-	Total Width: 72 bits
+	Total Width: 65534 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4_CPU1
 	Bank Locator: Not Specified
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1067 MT/s
-	Manufacturer: Toshiba-0098    
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer:                 
 	Serial Number: --
-	Asset Tag: --
-	Part Number: 9965516-069.A00LF 
-	Rank: 2
+	271882FD79060B21C43F805A2DE81148       
+	Part Number:                   
+	Rank: Unknown
 
 Handle 0x0043, DMI type 17, 28 bytes
 Memory Device
@@ -918,7 +918,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1_CPU2
@@ -926,10 +926,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Registered (Buffered)
 	Speed: 1067 MT/s
-	Manufacturer: Toshiba-0098    
+	Manufacturer: Hyundai-00AD    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9965516-069.A00LF 
+	Part Number: HMT42GR7AFR4A-PB  
 	Rank: 2
 
 Handle 0x0047, DMI type 17, 28 bytes
@@ -956,21 +956,21 @@ Handle 0x0049, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0033
 	Error Information Handle: No Error
-	Total Width: 72 bits
+	Total Width: 65534 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3_CPU2
 	Bank Locator: Not Specified
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1067 MT/s
-	Manufacturer: Toshiba-0098    
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer:                 
 	Serial Number: --
-	Asset Tag: --
-	Part Number: 9965516-069.A00LF 
-	Rank: 2
+	271882FD79060B21C43F805A2DE81148       
+	Part Number:                   
+	Rank: Unknown
 
 Handle 0x004B, DMI type 17, 28 bytes
 Memory Device
@@ -998,7 +998,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2_CPU2
@@ -1006,10 +1006,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Registered (Buffered)
 	Speed: 1067 MT/s
-	Manufacturer: Toshiba-0098    
+	Manufacturer: Samsung-00CE    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9965516-069.A00LF 
+	Part Number: M393B2G70BH0-CK0  
 	Rank: 2
 
 Handle 0x004F, DMI type 17, 28 bytes
@@ -1036,21 +1036,21 @@ Handle 0x0051, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0033
 	Error Information Handle: No Error
-	Total Width: 72 bits
+	Total Width: 65534 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4_CPU2
 	Bank Locator: Not Specified
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1067 MT/s
-	Manufacturer: Toshiba-0098    
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer:                 
 	Serial Number: --
-	Asset Tag: --
-	Part Number: 9965516-069.A00LF 
-	Rank: 2
+	271882FD79060B21C43F805A2DE81148       
+	Part Number:                   
+	Rank: Unknown
 
 Handle 0x0053, DMI type 17, 28 bytes
 Memory Device
@@ -1078,7 +1078,7 @@ Memory Array Mapped Address
 	Ending Address: 0x00FFFFFFFFF
 	Range Size: 64 GB
 	Physical Array Handle: 0x0033
-	Partition Width: 8
+	Partition Width: 4
 
 Handle 0x0055, DMI type 24, 5 bytes
 Hardware Security
@@ -1088,7 +1088,7 @@ Hardware Security
 	Front Panel Reset Status: Disabled
 
 Handle 0x0056, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x1B00, DMI type 27, 15 bytes
@@ -1392,10 +1392,16 @@ Onboard Device
 Handle 0x0038, DMI type 126, 19 bytes
 Inactive
 
+Handle 0x003A, DMI type 126, 19 bytes
+Inactive
+
 Handle 0x003C, DMI type 126, 19 bytes
 Inactive
 
 Handle 0x0040, DMI type 126, 19 bytes
+Inactive
+
+Handle 0x0042, DMI type 126, 19 bytes
 Inactive
 
 Handle 0x0044, DMI type 126, 19 bytes
@@ -1404,10 +1410,16 @@ Inactive
 Handle 0x0048, DMI type 126, 19 bytes
 Inactive
 
+Handle 0x004A, DMI type 126, 19 bytes
+Inactive
+
 Handle 0x004C, DMI type 126, 19 bytes
 Inactive
 
 Handle 0x0050, DMI type 126, 19 bytes
+Inactive
+
+Handle 0x0052, DMI type 126, 19 bytes
 Inactive
 
 Handle 0x0054, DMI type 126, 19 bytes

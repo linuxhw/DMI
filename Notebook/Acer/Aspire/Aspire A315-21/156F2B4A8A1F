@@ -1,0 +1,377 @@
+# dmidecode 3.2
+Getting SMBIOS data from sysfs.
+SMBIOS 3.0.0 present.
+Table at 0xDF264000.
+
+Handle 0x0000, DMI type 0, 24 bytes
+BIOS Information
+	Vendor: Insyde Corp.
+	Version: V1.23
+	Release Date: 05/27/2019
+	Address: 0xE0000
+	Runtime Size: 128 kB
+	ROM Size: 4608 kB
+	Characteristics:
+		PCI is supported
+		BIOS is upgradeable
+		BIOS shadowing is allowed
+		Boot from CD is supported
+		Selectable boot is supported
+		EDD is supported
+		Japanese floppy for NEC 9800 1.2 MB is supported (int 13h)
+		Japanese floppy for Toshiba 1.2 MB is supported (int 13h)
+		5.25"/360 kB floppy services are supported (int 13h)
+		5.25"/1.2 MB floppy services are supported (int 13h)
+		3.5"/720 kB floppy services are supported (int 13h)
+		3.5"/2.88 MB floppy services are supported (int 13h)
+		8042 keyboard services are supported (int 9h)
+		CGA/mono video services are supported (int 10h)
+		ACPI is supported
+		USB legacy is supported
+		BIOS boot specification is supported
+		Targeted content distribution is supported
+		UEFI is supported
+	BIOS Revision: 0.0
+	Firmware Revision: 2.0
+
+Handle 0x0001, DMI type 1, 27 bytes
+System Information
+	Manufacturer: Acer
+	Product Name: Aspire A315-21
+	Version: V1.23
+	Serial Number: --
+	UUID: --
+	Wake-up Type: Power Switch
+	SKU Number: 0000000000000000
+	Family: Aspire 3
+
+Handle 0x0002, DMI type 2, 17 bytes
+Base Board Information
+	Manufacturer: SR
+	Product Name: Squirtle_SR
+	Version: V1.23
+	Serial Number: --
+	Asset Tag: --
+	Features:
+		Board is a hosting board
+		Board is replaceable
+	Location In Chassis: Type2 - Board Chassis Location
+	Chassis Handle: 0x0003
+	Type: Motherboard
+	Contained Object Handles: 0
+
+Handle 0x0003, DMI type 3, 24 bytes
+Chassis Information
+	Manufacturer: Chassis Manufacturer
+	Type: Notebook
+	Lock: Not Present
+	Version: Chassis Version
+	Serial Number: --
+	Asset Tag: --
+	380AD15AAB729CF25C4397C21C466ACE
+	Power Supply State: Safe
+	Thermal State: Safe
+	Security Status: None
+	OEM Information: 0x00000000
+	Height: Unspecified
+	Number Of Power Cords: 1
+	Contained Elements: 0
+	SKU Number: <BAD INDEX>
+
+Handle 0x0004, DMI type 4, 48 bytes
+Processor Information
+	Socket Designation: Socket FP4
+	Type: Central Processor
+	Family: A-Series
+	Manufacturer: Advanced Micro Devices, Inc.
+	ID: 00 0F 67 00 FF FB 8B 17
+	Signature: Family 21, Model 112, Stepping 0
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD A6-9220 RADEON R4, 5 COMPUTE CORES 2C+3G   
+	Voltage: 1.1 V
+	External Clock: 100 MHz
+	Max Speed: 2500 MHz
+	Current Speed: 2500 MHz
+	Status: Populated, Enabled
+	Upgrade: None
+	L1 Cache Handle: 0x0008
+	L2 Cache Handle: 0x0009
+	L3 Cache Handle: Not Provided
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Unknown
+	Core Count: 2
+	Core Enabled: 2
+	Thread Count: 2
+	Characteristics:
+		64-bit capable
+
+Handle 0x0005, DMI type 5, 19 bytes
+Memory Controller Information
+	Error Detecting Method: None
+	Error Correcting Capabilities:
+		None
+	Supported Interleave: One-way Interleave
+	Current Interleave: One-way Interleave
+	Maximum Memory Module Size: 8192 MB
+	Maximum Total Memory Size: 16384 MB
+	Supported Speeds:
+		Other
+	Supported Memory Types:
+		Other
+	Memory Module Voltage: 3.3 V
+	Associated Memory Slots: 2
+		0x0006
+		0x0007
+
+Handle 0x0006, DMI type 6, 12 bytes
+Memory Module Information
+	Socket Designation: DIMM 0
+	Bank Connections: None
+	Current Speed: Unknown
+	Type: DIMM
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
+	Error Status: OK
+
+Handle 0x0007, DMI type 6, 12 bytes
+Memory Module Information
+	Socket Designation: DIMM 1
+	Bank Connections: None
+	Current Speed: Unknown
+	Type: DIMM
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
+	Error Status: OK
+
+Handle 0x0008, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L1-Cache
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 160 kB
+	Maximum Size: 160 kB
+	Supported SRAM Types:
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 2-way Set-associative
+
+Handle 0x0009, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L2-Cache
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 1024 kB
+	Maximum Size: 1024 kB
+	Supported SRAM Types:
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 16-way Set-associative
+
+Handle 0x000A, DMI type 10, 6 bytes
+On Board Device Information
+	Type: Video
+	Status: Enabled
+	Description: Video Graphics Controller
+
+Handle 0x000B, DMI type 11, 5 bytes
+OEM Strings
+	String 1: OemString1
+	String 2: OemString2
+	String 3: OemString3
+	String 4: OemString4
+	String 5: OemString5
+	String 6: OemString6
+
+Handle 0x000C, DMI type 12, 5 bytes
+System Configuration Options
+	Option 1: ConfigOptions1
+	Option 2: ConfigOptions2
+	Option 3: ConfigOptions3
+	Option 4: ConfigOptions4
+	Option 5: ConfigOptions5
+	Option 6: ConfigOptions6
+
+Handle 0x000D, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 32 GB
+	Error Information Handle: 0x0012
+	Number Of Devices: 2
+
+Handle 0x000E, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x000D
+	Error Information Handle: 0x0010
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
+	Form Factor: SODIMM
+	Set: None
+	Locator: DIMM 0
+	Bank Locator: CHANNEL A
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1200 MT/s
+	Manufacturer: Hynix
+	Serial Number: --
+	Asset Tag: --
+	Part Number: HMA851S6AFR6N-UH    
+	Rank: 1
+	Configured Memory Speed: 800 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+
+Handle 0x000F, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x000D
+	Error Information Handle: 0x0011
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
+	Form Factor: SODIMM
+	Set: None
+	Locator: DIMM 1
+	Bank Locator: CHANNEL A
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1200 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 4ATF51264HZ-2G3A1
+	Rank: 1
+	Configured Memory Speed: 800 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+
+Handle 0x0010, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0011, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0012, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0013, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Array Handle: 0x000D
+	Partition Width: 2
+
+Handle 0x0014, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x000E
+	Memory Array Mapped Address Handle: 0x0013
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0015, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x000F
+	Memory Array Mapped Address Handle: 0x0013
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0016, DMI type 170, 78 bytes
+Acer Hotkey Function
+	Function bitmap for Communication Button: 0x0801
+		WiFi: Yes
+		3G: No
+		WiMAX: No
+		Bluetooth: Yes
+	Function bitmap for Application Button: 0x0000
+	Function bitmap for Media Button: 0x007f
+	Function bitmap for Display Button: 0x000f
+	Function bitmap for Others Button: 0x100e
+	Communication Function Key Number: 1
+
+Handle 0x0017, DMI type 171, 49 bytes
+OEM-specific Type
+	Header and Data:
+		AB 31 17 00 04 F2 04 E0 B5 08 CA 04 15 30 01 02
+		10 E4 98 02 EC 10 68 81 03 EC 10 87 52 05 22 10
+		7A 15 07 8C 16 42 00 0D 00 00 00 00 16 00 00 00
+		00
+
+Handle 0x0018, DMI type 172, 27 bytes
+OEM-specific Type
+	Header and Data:
+		AC 1B 18 00 02 37 01 FF 00 02 01 00 03 FF 00 04
+		01 00 05 0F 00 06 FF 00 07 FF 00
+
+Handle 0x0019, DMI type 248, 10 bytes
+OEM-specific Type
+	Header and Data:
+		F8 0A 19 00 00 02 6C 00 00 00
+
+Handle 0xFEFF, DMI type 127, 4 bytes
+End Of Table
+

@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-70 structures occupying 2729 bytes.
+70 structures occupying 2721 bytes.
 Table at 0x000EC2F0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -551,7 +551,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -559,11 +559,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Kingston
+	Manufacturer: 0215
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX1600C10D3/8G   
-	Rank: 1
+	Part Number: CMZ16GX3M2A1600C10
+	Rank: 2
 	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0039, DMI type 16, 23 bytes
@@ -578,8 +578,8 @@ Physical Memory Array
 Handle 0x003A, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0038
 	Memory Array Mapped Address Handle: 0x003D
 	Partition Row Position: Unknown
@@ -592,7 +592,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -600,18 +600,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Kingston
+	Manufacturer: 0215
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX1600C10D3/8G   
-	Rank: 1
+	Part Number: CMZ16GX3M2A1600C10
+	Rank: 2
 	Configured Clock Speed: 1600 MT/s
 
 Handle 0x003C, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x003B
 	Memory Array Mapped Address Handle: 0x003D
 	Partition Row Position: Unknown
@@ -621,8 +621,8 @@ Memory Device Mapped Address
 Handle 0x003D, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0039
 	Partition Width: 2
 
@@ -685,7 +685,7 @@ Processor Information
 	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 3900 MHz
-	Current Speed: 3311 MHz
+	Current Speed: 3308 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
 	L1 Cache Handle: 0x003E

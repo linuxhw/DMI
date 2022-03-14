@@ -134,8 +134,8 @@ Memory Module Information
 	Bank Connections: 0 1
 	Current Speed: 43 ns
 	Type: DIMM SDRAM
-	Installed Size: 2048 MB (Double-bank Connection)
-	Enabled Size: 2048 MB (Double-bank Connection)
+	Installed Size: 4096 MB (Double-bank Connection)
+	Enabled Size: 4096 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
@@ -144,8 +144,8 @@ Memory Module Information
 	Bank Connections: 2 3
 	Current Speed: 43 ns
 	Type: DIMM SDRAM
-	Installed Size: 2048 MB (Double-bank Connection)
-	Enabled Size: 2048 MB (Double-bank Connection)
+	Installed Size: 4096 MB (Double-bank Connection)
+	Enabled Size: 4096 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 7, 19 bytes
@@ -394,18 +394,18 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: Bank 0/1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MT/s
-	Manufacturer: 0443            
+	Speed: 1600 MT/s
+	Manufacturer: 04CB            
 	Serial Number: --
 	Asset Tag: --
-	Part Number: RMT1970ED48E8F1066
+	Part Number: AM1U16BC4P2-B19H  
 	Rank: Unknown
 
 Handle 0x002C, DMI type 17, 28 bytes
@@ -414,18 +414,18 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 2
 	Bank Locator: Bank 2/3
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MT/s
-	Manufacturer: 0443            
+	Speed: 1334 MT/s
+	Manufacturer: 0198            
 	Serial Number: --
 	Asset Tag: --
-	Part Number: RMT1970ED48E8F1066
+	Part Number: 99U5428-042.A00G  
 	Rank: Unknown
 
 Handle 0x002D, DMI type 18, 23 bytes
@@ -441,25 +441,25 @@ Handle 0x002D, DMI type 18, 23 bytes
 Handle 0x002E, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x002A
 	Partition Width: 2
 
 Handle 0x002F, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x002B
 	Memory Array Mapped Address Handle: 0x002E
 	Partition Row Position: 1
 
 Handle 0x0030, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x002C
 	Memory Array Mapped Address Handle: 0x002E
 	Partition Row Position: 1

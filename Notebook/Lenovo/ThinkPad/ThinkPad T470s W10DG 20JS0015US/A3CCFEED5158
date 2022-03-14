@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x7A294000.
+Table at 0x6F0D4000.
 
 Handle 0x0000, DMI type 222, 14 bytes
 OEM-specific Type
@@ -62,7 +62,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -70,11 +70,11 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2133 MT/s
-	Manufacturer: 8502
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 2400 C15 Series     
-	Rank: 2
+	Part Number: 8ATF1G64HZ-2G3B2    
+	Rank: 1
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -83,8 +83,8 @@ Memory Device
 Handle 0x0006, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x004FFFFFFFF
-	Range Size: 20 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x0003
 	Partition Width: 2
 
@@ -200,8 +200,8 @@ Processor Information
 Handle 0x000B, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: N1WET61W (1.40 )
-	Release Date: 10/19/2020
+	Version: N1WET62W (1.41 )
+	Release Date: 04/27/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -224,7 +224,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.40
+	BIOS Revision: 1.41
 	Firmware Revision: 1.21
 
 Handle 0x000C, DMI type 1, 27 bytes
@@ -442,7 +442,7 @@ Handle 0x0029, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 29 00 03 01 00 03 07 03 00 00 02 00 00 00
-		00 E2 00 03 00 00 05 00 00 00
+		00 EA 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -589,7 +589,7 @@ Group Associations
 Handle 0x0039, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 39 00 01 03 01 45 02 00 94 06 81 10 89 30
+		DB 51 39 00 01 03 01 45 02 00 90 06 83 10 80 30
 		00 00 00 00 40 08 00 01 1F 00 00 C9 0A 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

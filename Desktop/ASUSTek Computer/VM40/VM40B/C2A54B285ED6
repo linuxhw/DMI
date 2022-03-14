@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-31 structures occupying 1551 bytes.
+31 structures occupying 1560 bytes.
 Table at 0x000EB820.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -320,13 +320,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M471B5173QH0-YK0  
 	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x001A, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -342,22 +342,22 @@ Handle 0x001B, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0018
 	Error Information Handle: 0x001C
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
+	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: 029E
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: CMSO4GX3M1C1333C9 
+	Rank: 1
+	Configured Clock Speed: 1333 MT/s
 
 Handle 0x001C, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -372,8 +372,8 @@ Handle 0x001C, DMI type 18, 23 bytes
 Handle 0x001D, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0018
 	Partition Width: 2
 

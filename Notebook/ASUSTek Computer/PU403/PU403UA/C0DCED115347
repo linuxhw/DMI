@@ -1,13 +1,13 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x000EDAC0.
+Table at 0x87668000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: ASUSTeK COMPUTER INC.
-	Version: PU403UA.304
-	Release Date: 07/11/2017
+	Version: PU403UA.313
+	Release Date: 04/13/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 6016 kB
@@ -126,9 +126,9 @@ On Board Device 11 Information
 
 Handle 0x0005, DMI type 11, 5 bytes
 OEM Strings
-	String 1: MoXocfQns4BNJ
-	String 2: Fc0x+0NnwOunK
-	String 3: ivIIEk-U1Ijux
+	String 1: -LnoiBsYJljvi
+	String 2: Mnf3O3K+yPiUw
+	String 3: wHcBZ+rtweYoq
 	String 4: 90NX00V1-M0426X
 	String 5:  
 	String 6:  
@@ -140,7 +140,7 @@ OEM Strings
 Handle 0x0006, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: SMI:00B2CA
-	Option 2: DSN:81741E8DE7A7                    
+	Option 2: DSN:12945EEE3245                    
 	Option 3: DSN:2CFDA184DC7A                    
 	Option 4: DSN:A7CD481ADFC2                    
 
@@ -250,7 +250,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz
-	Voltage: 0.8 V
+	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
 	Current Speed: 2200 MHz
@@ -312,7 +312,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -323,7 +323,7 @@ Memory Device
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9905624-033.A00G    
+	Part Number: 9905700-072.A01G    
 	Rank: 1
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
@@ -333,8 +333,8 @@ Memory Device
 Handle 0x0016, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 12 GB
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 20 GB
 	Physical Array Handle: 0x0013
 	Partition Width: 2
 
@@ -359,8 +359,8 @@ Memory Device Mapped Address
 Handle 0x0019, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0015
 	Memory Array Mapped Address Handle: 0x0016
 	Partition Row Position: Unknown
@@ -385,7 +385,7 @@ Handle 0x001C, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 1C 00 03 01 00 01 07 00 00 00 02 00 00 00
-		00 BA 00 03 00 00 05 00 00 00
+		00 D6 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -428,7 +428,7 @@ OEM-specific Type
 		DD 36 1F 00 07 01 00 01 07 00 00 00 02 00 01 07
 		00 00 00 03 00 01 07 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 08 00 07 00 FF FF FF 08 00 08
-		00 FF FF FF 46 10
+		00 FF FF FF FF FF
 	Strings:
 		Reference Code - SA - System Agent
 		Reference Code - MRC
@@ -445,8 +445,8 @@ OEM-specific Type
 		DD 60 20 00 0D 01 00 00 00 00 00 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
-		FF FF FF FF 0D 00 02 00 00 00 00 0E 00 FF FF FF
+		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
+		09 00 39 10 0D 00 02 00 00 00 00 0E 00 FF FF FF
 		FF FF 0F 00 FF FF FF FF FF 10 11 01 02 02 03 00
 	Strings:
 		Lan Phy Version
@@ -492,7 +492,7 @@ Group Associations
 Handle 0x0024, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 24 00 01 03 01 45 02 00 A0 06 03 10 86 00
+		DB 51 24 00 01 03 01 45 00 00 90 06 01 00 60 00
 		02 00 00 00 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

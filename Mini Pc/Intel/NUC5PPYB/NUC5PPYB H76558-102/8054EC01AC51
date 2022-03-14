@@ -1,15 +1,13 @@
-# dmidecode 2.12
-SMBIOS 2.8 present.
-# SMBIOS implementations newer than version 2.7 are not
-# fully supported by this version of dmidecode.
-49 structures occupying 2070 bytes.
-Table at 0x000EDCB0.
+# dmidecode 3.2
+Getting SMBIOS data from sysfs.
+SMBIOS 3.0.0 present.
+Table at 0x6B654000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Intel Corp.
-	Version: PYBSWCEL.86A.0056.2016.0901.1751
-	Release Date: 09/01/2016
+	Version: PYBSWCEL.86A.0079.2020.0420.1316
+	Release Date: 04/20/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 6656 kB
@@ -41,7 +39,7 @@ System Information
 	Product Name:                                  
 	Version:                                  
 	Serial Number: --
-	UUID: --
+	65F3E473D0202F81198260A83D0D9C37
 	Wake-up Type: Power Switch
 	SKU Number:                                  
 	Family:                                  
@@ -53,7 +51,7 @@ Base Board Information
 	Version: H76558-102
 	Serial Number: --
 	Asset Tag: --
-	Features:
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: To be filled by O.E.M.
@@ -68,7 +66,7 @@ Chassis Information
 	Lock: Not Present
 	Version:                                  
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148                                  
 	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Safe
@@ -278,14 +276,14 @@ Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B1
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 0
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:00.0
+	Bus Address: 0000:01:00.0
 
 Handle 0x0021, DMI type 10, 16 bytes
 On Board Device 1 Information
@@ -310,7 +308,7 @@ On Board Device 5 Information
 	Description: SD
 On Board Device 6 Information
 	Type: Other
-	Status: Enabled
+	Status: Disabled
 	Description: WIFI
 
 Handle 0x0022, DMI type 11, 5 bytes
@@ -336,7 +334,7 @@ Memory Array Mapped Address
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Array Handle: 0x0024
-	Partition Width: 2
+	Partition Width: 1
 
 Handle 0x0026, DMI type 17, 40 bytes
 Memory Device
@@ -350,17 +348,17 @@ Memory Device
 	Locator: SODIMM 0
 	Bank Locator: Memory Channel A
 	Type: DDR3
-	Type Detail: Unknown
-	Speed: 1600 MHz
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
 	Manufacturer: Kingston        
 	Serial Number: --
 	Asset Tag: --
 	Part Number: 99U5469-051.A00LF 
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
-	Minimum voltage:  1.350 V
-	Maximum voltage:  1.500 V
-	Configured voltage:  1.350 V
+	Configured Memory Speed: 1600 MT/s
+	Minimum Voltage: 1.35 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: 1.35 V
 
 Handle 0x0027, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -421,7 +419,7 @@ Handle 0x002E, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation:  WIFI
 	Type: Other
-	Status: Enabled
+	Status: Disabled
 	Type Instance: 1
 	Bus Address: 0000:00:1b.0
 
@@ -457,7 +455,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0031, DMI type 4, 42 bytes
+Handle 0x0031, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: SOCKET 0
 	Type: Central Processor

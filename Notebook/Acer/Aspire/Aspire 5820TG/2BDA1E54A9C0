@@ -1,13 +1,14 @@
-# dmidecode 2.12
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-51 structures occupying 2308 bytes.
-Table at 0x000EA0C0.
+50 structures occupying 2264 bytes.
+Table at 0x000E9480.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: INSYDE
-	Version: V1.19
-	Release Date: 09/08/2010
+	Version: V1.25
+	Release Date: 03/16/2011
 	ROM Size: 2048 kB
 	Characteristics:
 		PCI is supported
@@ -28,13 +29,13 @@ BIOS Information
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
-	BIOS Revision: 19.240
+	BIOS Revision: 25.240
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Acer
 	Product Name: Aspire 5820TG
-	Version: V1.19
+	Version: V1.25
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -44,7 +45,7 @@ System Information
 Handle 0x0002, DMI type 2, 16 bytes
 Base Board Information
 	Manufacturer: Acer
-	Product Name: ZR7B
+	Product Name: JM51_CP
 	Version: Base Board Version
 	Serial Number: --
 	Asset Tag: --
@@ -64,7 +65,7 @@ Chassis Information
 	Version: Chassis Version
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -294,7 +295,7 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1067 MHz
+	Speed: 1067 MT/s
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
@@ -327,7 +328,7 @@ Memory Device Mapped Address
 	Ending Address: 0x0007FFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0019
-	Memory Array Mapped Address Handle: 0x0028
+	Memory Array Mapped Address Handle: 0x0027
 	Partition Row Position: Unknown
 	Interleave Position: 1
 	Interleaved Data Depth: 1
@@ -345,7 +346,7 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1067 MHz
+	Speed: 1067 MT/s
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
@@ -375,21 +376,21 @@ Handle 0x001F, DMI type 18, 23 bytes
 Handle 0x0020, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0018
-	Error Information Handle: 0x0022
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 1024 MB
-	Form Factor: SODIMM
+	Error Information Handle: Not Provided
+	Total Width: 8 bits
+	Data Width: 8 bits
+	Size: No Module Installed
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1067 MHz
-	Manufacturer: ELPIDA
+	Speed: 1067 MT/s
+	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	Part Number: EBJ10UE8BDS0-DJ-F 
+	Part Number: Not Specified
 	Rank: Unknown
 
 Handle 0x0021, DMI type 6, 12 bytes
@@ -398,8 +399,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 1024 MB (Single-bank Connection)
-	Enabled Size: 1024 MB (Single-bank Connection)
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x0022, DMI type 18, 23 bytes
@@ -412,18 +413,7 @@ Handle 0x0022, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0023, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
-	Physical Device Handle: 0x0020
-	Memory Array Mapped Address Handle: 0x0028
-	Partition Row Position: Unknown
-	Interleave Position: 2
-	Interleaved Data Depth: 1
-
-Handle 0x0024, DMI type 17, 28 bytes
+Handle 0x0023, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0018
 	Error Information Handle: Not Provided
@@ -436,14 +426,14 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1067 MHz
+	Speed: 1067 MT/s
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
 	Rank: Unknown
 
-Handle 0x0025, DMI type 6, 12 bytes
+Handle 0x0024, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM3
 	Bank Connections: None
@@ -452,6 +442,16 @@ Memory Module Information
 	Installed Size: Not Installed
 	Enabled Size: Not Installed
 	Error Status: OK
+
+Handle 0x0025, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
 
 Handle 0x0026, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -463,25 +463,15 @@ Handle 0x0026, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0027, DMI type 18, 23 bytes
-32-bit Memory Error Information
-	Type: OK
-	Granularity: Unknown
-	Operation: Unknown
-	Vendor Syndrome: Unknown
-	Memory Array Address: Unknown
-	Device Address: Unknown
-	Resolution: Unknown
-
-Handle 0x0028, DMI type 19, 15 bytes
+Handle 0x0027, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Array Handle: 0x0018
 	Partition Width: 2
 
-Handle 0x0029, DMI type 5, 20 bytes
+Handle 0x0028, DMI type 5, 20 bytes
 Memory Controller Information
 	Error Detecting Method: None
 	Error Correcting Capabilities:
@@ -502,7 +492,7 @@ Memory Controller Information
 	Enabled Error Correcting Capabilities:
 		None
 
-Handle 0x002A, DMI type 4, 42 bytes
+Handle 0x0029, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPU
 	Type: Central Processor
@@ -543,12 +533,12 @@ Processor Information
 	Voltage: 0.0 V
 	External Clock: 1066 MHz
 	Max Speed: 2400 MHz
-	Current Speed: 2396 MHz
+	Current Speed: 2399 MHz
 	Status: Populated, Enabled
 	Upgrade: ZIF Socket
-	L1 Cache Handle: 0x002E
-	L2 Cache Handle: 0x002D
-	L3 Cache Handle: 0x002B
+	L1 Cache Handle: 0x002D
+	L2 Cache Handle: 0x002C
+	L3 Cache Handle: 0x002A
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
@@ -558,7 +548,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x002B, DMI type 7, 19 bytes
+Handle 0x002A, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L3 Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -574,7 +564,7 @@ Cache Information
 	System Type: Unified
 	Associativity: Other
 
-Handle 0x002C, DMI type 7, 19 bytes
+Handle 0x002B, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -590,7 +580,7 @@ Cache Information
 	System Type: Data
 	Associativity: 8-way Set-associative
 
-Handle 0x002D, DMI type 7, 19 bytes
+Handle 0x002C, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -606,7 +596,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x002E, DMI type 7, 19 bytes
+Handle 0x002D, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -622,26 +612,30 @@ Cache Information
 	System Type: Instruction
 	Associativity: 4-way Set-associative
 
-Handle 0x002F, DMI type 170, 78 bytes
-OEM-specific Type
-	Header and Data:
-		AA 4E 2F 00 01 00 00 00 7F 00 0F 00 17 00 01 02
-		41 08 41 02 04 00 42 02 08 00 43 02 10 00 44 02
-		20 00 45 02 40 00 46 02 01 00 47 02 02 00 61 02
-		08 00 62 02 04 00 63 02 01 00 64 02 02 00 81 02
-		04 00 82 02 02 00 83 01 10 00 84 01 01 00
+Handle 0x002E, DMI type 170, 78 bytes
+Acer Hotkey Function
+	Function bitmap for Communication Button: 0x0001
+		WiFi: Yes
+		3G: No
+		WiMAX: No
+		Bluetooth: No
+	Function bitmap for Application Button: 0x0000
+	Function bitmap for Media Button: 0x007f
+	Function bitmap for Display Button: 0x000f
+	Function bitmap for Others Button: 0x0017
+	Communication Function Key Number: 1
 
-Handle 0x0030, DMI type 171, 29 bytes
+Handle 0x002F, DMI type 171, 29 bytes
 OEM-specific Type
 	Header and Data:
-		AB 1D 30 00 01 02 10 E0 68 02 69 19 73 10 04 02
+		AB 1D 2F 00 01 02 10 E0 68 02 69 19 73 10 04 02
 		04 65 96 05 86 80 56 3B 07 8C 16 2B 00
 
-Handle 0x0031, DMI type 172, 6 bytes
+Handle 0x0030, DMI type 172, 6 bytes
 OEM-specific Type
 	Header and Data:
-		AC 06 31 00 01 00
+		AC 06 30 00 01 00
 
-Handle 0x0032, DMI type 127, 4 bytes
+Handle 0x0031, DMI type 127, 4 bytes
 End Of Table
 

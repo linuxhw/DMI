@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 38 structures occupying 1861 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 05/08/2014
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -252,7 +252,7 @@ Portable Battery
 	Design Capacity: 47520 mWh
 	Design Voltage: 10800 mV
 	SBDS Version: v1.1
-	Maximum Error: 1%
+	Maximum Error: 2%
 	SBDS Serial Number: --
 	SBDS Manufacture Date: 2012-10-29
 	OEM-specific Information: 0x0000FFFF
@@ -280,7 +280,7 @@ Memory Device
 	Error Information Handle: 0x001F
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(top)
@@ -293,7 +293,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: M471B5173BH0-YK0  
 	Rank: 1
-	Configured Clock Speed: 1066 MT/s
+	Configured Memory Speed: 1066 MT/s
 
 Handle 0x001F, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -320,7 +320,7 @@ Memory Device
 	Error Information Handle: 0x0023
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(under)
@@ -333,7 +333,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: SHARETRONIC
 	Rank: 1
-	Configured Clock Speed: 1066 MT/s
+	Configured Memory Speed: 1066 MT/s
 
 Handle 0x0023, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -445,8 +445,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst

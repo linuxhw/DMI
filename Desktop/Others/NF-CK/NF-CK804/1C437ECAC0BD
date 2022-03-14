@@ -99,9 +99,9 @@ Processor Information
 		SSE2 (Streaming SIMD extensions 2)
 	Version: AMD Athlon(tm) 64 Processor 3200+
 	Voltage: 1.4 V
-	External Clock: 230 MHz
+	External Clock: 216 MHz
 	Max Speed: 3000 MHz
-	Current Speed: 2300 MHz
+	Current Speed: 2160 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket 939
 	L1 Cache Handle: 0x000B
@@ -117,9 +117,9 @@ Processor Information
 	ID: 00 00 00 00 00 00 00 00
 	Version: AMD Athlon(tm) 64 Processor 3200+
 	Voltage: 1.4 V
-	External Clock: 230 MHz
+	External Clock: 216 MHz
 	Max Speed: 3000 MHz
-	Current Speed: 2300 MHz
+	Current Speed: 2160 MHz
 	Status: Populated, Disabled By User
 	Upgrade: Socket 939
 	L1 Cache Handle: 0x000C
@@ -173,21 +173,21 @@ Memory Module Information
 Handle 0x0009, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A2
-	Bank Connections: 4
+	Bank Connections: 4 5
 	Current Speed: 129 ns
 	Type: Unknown EDO
-	Installed Size: 512 MB (Single-bank Connection)
-	Enabled Size: 512 MB (Single-bank Connection)
+	Installed Size: 1024 MB (Double-bank Connection)
+	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A3
-	Bank Connections: 6
+	Bank Connections: 6 7
 	Current Speed: 129 ns
 	Type: Unknown EDO
-	Installed Size: 512 MB (Single-bank Connection)
-	Enabled Size: 512 MB (Single-bank Connection)
+	Installed Size: 1024 MB (Double-bank Connection)
+	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000B, DMI type 7, 19 bytes
@@ -433,7 +433,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 512 MB
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A2
@@ -447,7 +447,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 512 MB
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A3
@@ -458,8 +458,8 @@ Memory Device
 Handle 0x0023, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x001E
 	Partition Width: 1
 
@@ -484,17 +484,17 @@ Memory Device Mapped Address
 Handle 0x0026, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00080000000
-	Ending Address: 0x0009FFFFFFF
-	Range Size: 512 MB
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0021
 	Memory Array Mapped Address Handle: 0x0023
 	Partition Row Position: 1
 
 Handle 0x0027, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x000A0000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 512 MB
+	Starting Address: 0x000C0000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0022
 	Memory Array Mapped Address Handle: 0x0023
 	Partition Row Position: 1

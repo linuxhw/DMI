@@ -1,8 +1,9 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
-SMBIOS 3.2.1 present.
+SMBIOS 3.2 present.
 # SMBIOS implementations newer than version 3.1.1 are not
 # fully supported by this version of dmidecode.
+97 structures occupying 4908 bytes.
 Table at 0x8F1A6000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -296,7 +297,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x001F, DMI type 9, 19 bytes
+Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_1
 	Type: x1 PCI Express
@@ -309,7 +310,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:02:00.2
 
-Handle 0x0020, DMI type 9, 19 bytes
+Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
 	Type: x16 PCI Express
@@ -322,7 +323,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:01:00.0
 
-Handle 0x0021, DMI type 9, 19 bytes
+Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_2
 	Type: x1 PCI Express
@@ -335,7 +336,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:ff:00.3
 
-Handle 0x0022, DMI type 9, 19 bytes
+Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_2
 	Type: x16 PCI Express
@@ -635,10 +636,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: Hyundai.lnc
+	Manufacturer: G-Skill
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA451U6AFR8N-TF    
+	Part Number: F4-2400C15-4GRK     
 	Rank: 1
 	Configured Clock Speed: 2133 MT/s
 	Minimum Voltage: Unknown
@@ -649,25 +650,25 @@ Handle 0x003F, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x003D
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
+	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM2
 	Bank Locator: BANK 1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2133 MT/s
+	Manufacturer: G-Skill
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: F4-2400C15-4GRK     
+	Rank: 1
+	Configured Clock Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
+	Configured Voltage: 1.2 V
 
 Handle 0x0040, DMI type 17, 40 bytes
 Memory Device
@@ -683,10 +684,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: Hyundai.lnc
+	Manufacturer: G-Skill
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA451U6AFR8N-TF    
+	Part Number: F4-2400C15-4GRK     
 	Rank: 1
 	Configured Clock Speed: 2133 MT/s
 	Minimum Voltage: Unknown
@@ -697,33 +698,33 @@ Handle 0x0041, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x003D
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
+	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM2
 	Bank Locator: BANK 3
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2133 MT/s
+	Manufacturer: G-Skill
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: F4-2400C15-4GRK     
+	Rank: 1
+	Configured Clock Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
+	Configured Voltage: 1.2 V
 
 Handle 0x0042, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x003D
-	Partition Width: 2
+	Partition Width: 4
 
 Handle 0x0043, DMI type 221, 26 bytes
 OEM-specific Type
@@ -914,6 +915,17 @@ Memory Device Mapped Address
 
 Handle 0x004D, DMI type 20, 35 bytes
 Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x003F
+	Memory Array Mapped Address Handle: 0x0042
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 2
+
+Handle 0x004E, DMI type 20, 35 bytes
+Memory Device Mapped Address
 	Starting Address: 0x00100000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
@@ -923,15 +935,26 @@ Memory Device Mapped Address
 	Interleave Position: 2
 	Interleaved Data Depth: 2
 
-Handle 0x004E, DMI type 131, 64 bytes
+Handle 0x004F, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00300000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0041
+	Memory Array Mapped Address Handle: 0x0042
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x0050, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 4E 00 35 00 00 00 00 00 00 00 00 00 00 00
+		83 40 50 00 35 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 04 A3 00 00 00 00 01 00 00 00 00 00 0C 00
 		FE 05 31 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x004F, DMI type 13, 22 bytes
+Handle 0x0051, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 9
@@ -946,7 +969,7 @@ BIOS Language Information
 		ko|KR|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0050, DMI type 41, 11 bytes
+Handle 0x0052, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -954,7 +977,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:00.0
 
-Handle 0x0051, DMI type 41, 11 bytes
+Handle 0x0053, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -962,7 +985,7 @@ Onboard Device
 	Type Instance: 2
 	Bus Address: 0000:00:14.0
 
-Handle 0x0052, DMI type 41, 11 bytes
+Handle 0x0054, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -970,7 +993,7 @@ Onboard Device
 	Type Instance: 3
 	Bus Address: 0000:00:14.2
 
-Handle 0x0053, DMI type 41, 11 bytes
+Handle 0x0055, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -978,7 +1001,7 @@ Onboard Device
 	Type Instance: 4
 	Bus Address: 0000:00:16.0
 
-Handle 0x0054, DMI type 41, 11 bytes
+Handle 0x0056, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -986,7 +1009,7 @@ Onboard Device
 	Type Instance: 5
 	Bus Address: 0000:00:17.0
 
-Handle 0x0055, DMI type 41, 11 bytes
+Handle 0x0057, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -994,7 +1017,7 @@ Onboard Device
 	Type Instance: 6
 	Bus Address: 0000:00:1f.0
 
-Handle 0x0056, DMI type 41, 11 bytes
+Handle 0x0058, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Sound
 	Type: Sound
@@ -1002,7 +1025,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:1f.3
 
-Handle 0x0057, DMI type 41, 11 bytes
+Handle 0x0059, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1010,7 +1033,7 @@ Onboard Device
 	Type Instance: 7
 	Bus Address: 0000:00:1f.4
 
-Handle 0x0058, DMI type 41, 11 bytes
+Handle 0x005A, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1018,10 +1041,10 @@ Onboard Device
 	Type Instance: 8
 	Bus Address: 0000:00:1f.5
 
-Handle 0x0059, DMI type 221, 89 bytes
+Handle 0x005B, DMI type 221, 89 bytes
 OEM-specific Type
 	Header and Data:
-		DD 59 59 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
+		DD 59 5B 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
 		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
@@ -1045,17 +1068,17 @@ OEM-specific Type
 		Platform Version
 		Client Silicon Version
 
-Handle 0x005A, DMI type 14, 8 bytes
+Handle 0x005C, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x005B, DMI type 219, 106 bytes
+Handle 0x005D, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 5B 00 01 04 01 45 02 00 90 06 01 85 30 20
-		00 00 00 00 48 00 00 00 00 00 00 00 00 00 40 02
+		DB 6A 5D 00 01 04 01 45 02 00 90 06 01 85 30 20
+		00 00 00 04 48 00 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -1067,12 +1090,12 @@ OEM-specific Type
 		MEI3
 		MEI4
 
-Handle 0x005C, DMI type 136, 6 bytes
+Handle 0x005E, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 5C 00 00 00
+		88 06 5E 00 00 00
 
-Handle 0x005D, DMI type 14, 23 bytes
+Handle 0x005F, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 6
@@ -1081,8 +1104,8 @@ Group Associations
 		0x0045 (OEM-specific)
 		0x0046 (OEM-specific)
 		0x0047 (OEM-specific)
-		0x0059 (OEM-specific)
+		0x005B (OEM-specific)
 
-Handle 0x005E, DMI type 127, 4 bytes
+Handle 0x0060, DMI type 127, 4 bytes
 End Of Table
 

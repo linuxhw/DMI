@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
 Table at 0x28F82000.
@@ -21,8 +21,10 @@ Group Associations
 Handle 0x0002, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: INTC
-	Specification Version: 2.0	Firmware Revision: 500.5
-	Description: TPM 2.0, ManufacturerID: INTC, Firmware Version: 0x01F40005.0x0	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 500.5
+	Description: TPM 2.0, ManufacturerID: INTC, Firmware Version: 0x01F40005.0x0
+	Characteristics:
 		TPM Device characteristics not supported
 	OEM-specific Information: 0x00000000
 
@@ -41,7 +43,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -95,7 +97,7 @@ Handle 0x0007, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 07 00 03 01 00 08 00 49 30 00 02 00 00 00
-		00 70 00 03 00 01 08 00 00 00
+		00 A0 00 03 00 01 08 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -117,7 +119,7 @@ OEM-specific Type
 	Header and Data:
 		DD 36 09 00 07 01 00 08 00 49 30 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 30 00 05 00 FF FF FF 30
-		00 06 00 02 0A 00 00 00 07 00 17 FF FF FF FF 08
+		00 06 00 02 0A 00 00 00 07 00 1A FF FF FF FF 08
 		00 00 FF FF FF FF
 	Strings:
 		Reference Code - ICL PCH
@@ -838,9 +840,9 @@ OEM-specific Type
 Handle 0x0011, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: DJCN20WW
-	Release Date: 08/10/2020
-	ROM Size: 11264 kB
+	Version: DJCN25WW
+	Release Date: 03/29/2021
+	ROM Size: 11 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -860,13 +862,13 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.20
-	Firmware Revision: 1.17
+	BIOS Revision: 1.25
+	Firmware Revision: 1.20
 
 Handle 0x0013, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: LENOVO
-	Product Name: LVAC/LVAD
+	Product Name: LNVNB161216
 	Version: NO DPK
 	Serial Number: --
 	Asset Tag: --
@@ -926,14 +928,14 @@ Group Associations
 
 Handle 0x0058, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 2978 bytes
+	Area Length: 3970 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
-	Status: Valid, Not Full
-	Change Token: 0x000000B9
+	Status: Valid, Full
+	Change Token: 0x000000F7
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error

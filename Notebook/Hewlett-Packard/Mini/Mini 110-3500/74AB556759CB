@@ -1,6 +1,7 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-19 structures occupying 1008 bytes.
+18 structures occupying 945 bytes.
 Table at 0x000E6030.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -8,7 +9,7 @@ BIOS Information
 	Vendor: Hewlett-Packard
 	Version: F.25
 	Release Date: 03/14/2012
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -94,25 +95,11 @@ OEM Strings
 	String 4: CNB1 058D10A000203300000300100
 	String 5: HP_Mute_LED_0_0
 
-Handle 0x0006, DMI type 22, 26 bytes
-Portable Battery
-	Location: In the back
-	Manufacturer: 13-22
-	Name: ED03028
-	Design Capacity: 28000 mWh
-	Design Voltage: 10800 mV
-	SBDS Version: 1.0
-	Maximum Error: 1%
-	SBDS Serial Number: --
-	SBDS Manufacture Date: 2011-01-07
-	SBDS Chemistry: Li-ion
-	OEM-specific Information: 0x0000FFFF
-
-Handle 0x0007, DMI type 32, 20 bytes
+Handle 0x0006, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0008, DMI type 41, 11 bytes
+Handle 0x0007, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Realtek RTL8105E
 	Type: Ethernet
@@ -120,7 +107,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:00.1
 
-Handle 0x0009, DMI type 16, 15 bytes
+Handle 0x0008, DMI type 16, 15 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -129,27 +116,27 @@ Physical Memory Array
 	Error Information Handle: No Error
 	Number Of Devices: 2
 
-Handle 0x000A, DMI type 17, 28 bytes
+Handle 0x0009, DMI type 17, 28 bytes
 Memory Device
-	Array Handle: 0x0009
-	Error Information Handle: 0x000B
+	Array Handle: 0x0008
+	Error Information Handle: 0x000A
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 667 MHz
-	Manufacturer: Elpida
+	Speed: 667 MT/s
+	Manufacturer: Ramaxel
 	Serial Number: --
 	Asset Tag: --
-	Part Number: EBJ10UE8BDS0-DJ-F 
+	Part Number: RMT3170ED58F8W1600
 	Rank: Unknown
 
-Handle 0x000B, DMI type 18, 23 bytes
+Handle 0x000A, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -159,16 +146,16 @@ Handle 0x000B, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x000C, DMI type 20, 19 bytes
+Handle 0x000B, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
-	Physical Device Handle: 0x000A
-	Memory Array Mapped Address Handle: 0x000E
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0009
+	Memory Array Mapped Address Handle: 0x000D
 	Partition Row Position: 1
 
-Handle 0x000D, DMI type 18, 23 bytes
+Handle 0x000C, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -178,15 +165,15 @@ Handle 0x000D, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x000E, DMI type 19, 15 bytes
+Handle 0x000D, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
-	Physical Array Handle: 0x0009
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
+	Physical Array Handle: 0x0008
 	Partition Width: 2
 
-Handle 0x000F, DMI type 4, 42 bytes
+Handle 0x000E, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPU
 	Type: Central Processor
@@ -229,8 +216,8 @@ Processor Information
 	Current Speed: 1666 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket 478
-	L1 Cache Handle: 0x0011
-	L2 Cache Handle: 0x0010
+	L1 Cache Handle: 0x0010
+	L2 Cache Handle: 0x000F
 	L3 Cache Handle: Not Provided
 	Serial Number: --
 	Asset Tag: --
@@ -241,7 +228,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0010, DMI type 7, 19 bytes
+Handle 0x000F, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: Unknown
 	Configuration: Enabled, Not Socketed, Level 2
@@ -257,7 +244,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0011, DMI type 7, 19 bytes
+Handle 0x0010, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: Unknown
 	Configuration: Enabled, Not Socketed, Level 1
@@ -273,6 +260,6 @@ Cache Information
 	System Type: Instruction
 	Associativity: 8-way Set-associative
 
-Handle 0x0012, DMI type 127, 4 bytes
+Handle 0x0011, DMI type 127, 4 bytes
 End Of Table
 

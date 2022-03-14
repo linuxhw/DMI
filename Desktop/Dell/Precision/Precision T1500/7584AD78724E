@@ -228,8 +228,8 @@ Physical Memory Array
 Handle 0x000F, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 12 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x000E
 	Partition Width: 4
 
@@ -269,41 +269,11 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Other
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Manufacturer01
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NMUD340C81-1333CA0
-	Rank: Unknown
-
-Handle 0x0013, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0012
-	Memory Array Mapped Address Handle: 0x000F
-	Partition Row Position: 1
-	Interleaved Data Depth: 1
-
-Handle 0x0014, DMI type 17, 28 bytes
-Memory Device
-	Array Handle: 0x000E
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2048 MB
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM2
-	Bank Locator: BANK2
 	Type: Other
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
@@ -313,11 +283,41 @@ Memory Device
 	Part Number: M378B5773CH0-CH9  
 	Rank: Unknown
 
+Handle 0x0013, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0012
+	Memory Array Mapped Address Handle: 0x000F
+	Partition Row Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x0014, DMI type 17, 28 bytes
+Memory Device
+	Array Handle: 0x000E
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM2
+	Bank Locator: BANK2
+	Type: Other
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Manufacturer02
+	Serial Number: --
+	Asset Tag: --
+	Part Number: ModulePartNumber02
+	Rank: Unknown
+
 Handle 0x0015, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00180000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00000000000
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
 	Physical Device Handle: 0x0014
 	Memory Array Mapped Address Handle: 0x000F
 	Partition Row Position: 1
@@ -340,13 +340,13 @@ Memory Device
 	Manufacturer: Manufacturer03
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NMUD340C81-1333CA0
+	Part Number: 64C0MHHHJ-HS      
 	Rank: Unknown
 
 Handle 0x0017, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x002FFFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0016
 	Memory Array Mapped Address Handle: 0x000F

@@ -18,7 +18,15 @@ Probe  — latest probe ID of this device.
 
 ### Cpu
 
-| MFG        | Name                             | GHz  | Count | Probe      |
-|------------|----------------------------------|------|-------|------------|
+| MFG        | Name                             | GHz  | Count | Probe |
+|------------|----------------------------------|------|-------|-------|
 | Intel      | Pentium G3420                    | 3.20 | 1     | 0012DC289A |
+| Intel      | Atom C2358                       | 1.74 | 1     | 4A3E898F12 |
+
+### Memory
+
+| MFG        | Name                         | Size     | Type | MT/s | Count | Probe |
+|------------|------------------------------|----------|------|------|-------|-------|
+|            | Module DIMM                  | 4096 MB  | DDR3 | 1333 | 1     | 4A3E898F12 |
+| Samsung    | MM91B5273CH0-CK0 DIMM        | 4096 MB  | DDR3 | 1333 | 1     | 4A3E898F12 |
 

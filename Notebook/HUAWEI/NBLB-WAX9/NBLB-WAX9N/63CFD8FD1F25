@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x8E2C1000.
@@ -6,11 +6,11 @@ Table at 0x8E2C1000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HUAWEI
-	Version: 1.34
-	Release Date: 06/07/2021
+	Version: 1.35
+	Release Date: 06/23/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 11264 kB
+	ROM Size: 11 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -25,8 +25,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.34
-	Firmware Revision: 1.34
+	BIOS Revision: 1.35
+	Firmware Revision: 1.35
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -35,7 +35,7 @@ System Information
 	Version: M1010
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: APM Timer
 	SKU Number: C178
 	Family: MateBook D
 
@@ -222,7 +222,7 @@ Handle 0x000C, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x001B (OEM-specific)
+		0x001C (OEM-specific)
 
 Handle 0x000D, DMI type 14, 8 bytes
 Group Associations
@@ -245,7 +245,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -351,7 +351,7 @@ Portable Battery
 Handle 0x0015, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 15 00 01 04 01 45 02 00 90 06 01 10 86 20
+		DB 6A 15 00 01 04 01 45 02 00 A0 06 01 10 86 20
 		00 00 00 00 48 00 00 00 00 00 00 06 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -426,10 +426,36 @@ OEM-specific Type
 	Strings:
 		FSP Binary Version
 
-Handle 0x001B, DMI type 222, 14 bytes
+Handle 0x001B, DMI type 221, 89 bytes
 OEM-specific Type
 	Header and Data:
-		DE 0E 1B 00 01 99 00 03 10 01 20 02 30 03
+		DD 59 1B 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
+		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
+		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
+		00 FF FF FF FF FF 0B 00 01 23 00 00 00 0C 00 00
+		09 00 05 11 0D 00 FF FF FF FF FF 0E 00 00 07 03
+		00 00 0F 00 00 02 00 0F 00
+	Strings:
+		Lan Phy Version
+		Sensor Firmware Version
+		Debug Mode Status
+		Disabled
+		Performance Mode Status
+		Disabled
+		Debug Use USB(Disabled:Serial)
+		Disabled
+		ICC Overclocking Version
+		UNDI Version
+		EC FW Version
+		GOP Version
+		Royal Park Version
+		Platform Version
+		Client Silicon Version
+
+Handle 0x001C, DMI type 222, 14 bytes
+OEM-specific Type
+	Header and Data:
+		DE 0E 1C 00 01 99 00 03 10 01 20 02 30 03
 	Strings:
 		Memory Init Complete
 		End of DXE Phase

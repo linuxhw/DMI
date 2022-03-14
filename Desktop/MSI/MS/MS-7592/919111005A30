@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 62 structures occupying 2307 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 12/10/2012
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -87,10 +87,10 @@ Handle 0x0004, DMI type 4, 40 bytes
 Processor Information
 	Socket Designation: CPU 1
 	Type: Central Processor
-	Family: Core 2 Quad
+	Family: Pentium D
 	Manufacturer: Intel            
-	ID: 77 06 01 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 23, Stepping 7
+	ID: 7A 06 01 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 23, Stepping 10
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -120,11 +120,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM)2 Quad  CPU   Q9450  @ 2.66GHz     
-	Voltage: 1.2 V
-	External Clock: 333 MHz
-	Max Speed: 2666 MHz
-	Current Speed: 2666 MHz
+	Version: Pentium(R) Dual-Core  CPU      E6500  @ 2.93GHz     
+	Voltage: 1.3 V
+	External Clock: 267 MHz
+	Max Speed: 2933 MHz
+	Current Speed: 2933 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -133,9 +133,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
-	Core Count: 4
-	Core Enabled: 4
-	Thread Count: 4
+	Core Count: 2
+	Core Enabled: 2
+	Thread Count: 2
 	Characteristics:
 		64-bit capable
 
@@ -145,8 +145,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 128 kB
-	Maximum Size: 128 kB
+	Installed Size: 64 kB
+	Maximum Size: 64 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -161,15 +161,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12288 kB
-	Maximum Size: 12288 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
 	Speed: Unknown
 	Error Correction Type: Single-bit ECC
 	System Type: Unified
-	Associativity: Other
+	Associativity: 8-way Set-associative
 
 Handle 0x0007, DMI type 7, 19 bytes
 Cache Information
@@ -214,8 +214,8 @@ Memory Module Information
 	Bank Connections: 0 1
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: 4096 MB (Double-bank Connection)
-	Enabled Size: 4096 MB (Double-bank Connection)
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
@@ -224,8 +224,8 @@ Memory Module Information
 	Bank Connections: 4 5
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000B, DMI type 8, 9 bytes
@@ -424,7 +424,7 @@ Handle 0x0023, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI1
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 1
 	Characteristics:
@@ -490,7 +490,7 @@ Memory Device
 	Error Information Handle: 0x002B
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
@@ -516,8 +516,8 @@ Handle 0x002B, DMI type 18, 23 bytes
 Handle 0x002C, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x002A
 	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: 1
@@ -527,16 +527,16 @@ Handle 0x002D, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0027
 	Error Information Handle: 0x002E
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
+	Type: SDRAM
+	Type Detail: Synchronous
+	Speed: 1066 MT/s
 	Manufacturer: Manufacturer01
 	Serial Number: --
 	Asset Tag: --

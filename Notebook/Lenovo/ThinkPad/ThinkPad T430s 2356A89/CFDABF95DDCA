@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-69 structures occupying 2648 bytes.
+69 structures occupying 2613 bytes.
 Table at 0xDAE9C000.
 
 Handle 0x0000, DMI type 134, 16 bytes
@@ -155,47 +155,47 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Elpida
-	Serial Number: --
-	Asset Tag: --
-	Part Number: EBJ21UE8BDS0-DJ-F 
-	Rank: Unknown
-	Configured Memory Speed: 1333 MT/s
-
-Handle 0x0009, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x0007
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8 GB
-	Form Factor: SODIMM
-	Set: None
-	Locator: ChannelB-DIMM0
-	Bank Locator: BANK 2
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: 99U5428-063.A00LF 
 	Rank: Unknown
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
+
+Handle 0x0009, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x0007
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelB-DIMM0
+	Bank Locator: BANK 2
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x000A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0027FFFFFFF
-	Range Size: 10 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0007
 	Partition Width: 2
 
@@ -512,14 +512,14 @@ OEM-specific Type
 
 Handle 0x0037, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 82 bytes
+	Area Length: 98 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000004
+	Change Token: 0x00000005
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -534,9 +534,9 @@ System Event Log
 Handle 0x0038, DMI type 140, 67 bytes
 OEM-specific Type
 	Header and Data:
-		8C 43 38 00 4C 45 4E 4F 56 4F 0B 00 01 71 52 A5
-		92 76 FF 24 6A 35 72 A5 7E 32 39 73 A2 01 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		8C 43 38 00 4C 45 4E 4F 56 4F 0B 00 01 0A 1F DA
+		35 17 23 67 50 15 C4 C3 68 52 E1 25 52 01 00 71
+		52 A5 92 76 FF 24 6A 35 72 A5 7E 32 39 73 A2 01
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00
 
@@ -570,7 +570,7 @@ OEM-specific Type
 Handle 0x003D, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 3D 00 4C 45 4E 4F 56 4F 0B 05 01 07 00 00
+		8C 13 3D 00 4C 45 4E 4F 56 4F 0B 05 01 05 00 00
 		00 00 00
 
 Handle 0x003E, DMI type 140, 23 bytes
@@ -589,7 +589,7 @@ Hardware Security
 Handle 0x0040, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 40 00 01 D8 36
+		84 07 40 00 01 C0 36
 
 Handle 0x0041, DMI type 135, 18 bytes
 OEM-specific Type

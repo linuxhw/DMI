@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.1 present.
 Table at 0x6ED4D000.
@@ -6,11 +6,11 @@ Table at 0x6ED4D000.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: BWCN14WW
-	Release Date: 11/27/2019
+	Version: BWCN19WW
+	Release Date: 05/26/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 10240 kB
+	ROM Size: 10 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -26,8 +26,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.14
-	Firmware Revision: 1.14
+	BIOS Revision: 1.19
+	Firmware Revision: 1.19
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -111,10 +111,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz
-	Voltage: 0.8 V
+	Voltage: 0.7 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
-	Current Speed: 2574 MHz
+	Current Speed: 1782 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1528
 	L1 Cache Handle: 0x0005
@@ -456,7 +456,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -464,13 +464,13 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2400 MT/s
-	Manufacturer: Ramaxel
+	Manufacturer: 859B
 	Serial Number: --
 	Asset Tag: --
-	Part Number: RMSA3270ME86H9F-2666
+	Part Number: CB16GS2666.C8ET     
 	Rank: 1
 	Configured Memory Speed: 2400 MT/s
-	Minimum Voltage: 1.25 V
+	Minimum Voltage: 1.35 V
 	Maximum Voltage: 1.35 V
 	Configured Voltage: 1.2 V
 
@@ -480,7 +480,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -494,23 +494,23 @@ Memory Device
 	Part Number: M471A5244CB0-CTD    
 	Rank: 1
 	Configured Memory Speed: 2400 MT/s
-	Minimum Voltage: 1.25 V
+	Minimum Voltage: 1.35 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.2 V
 
 Handle 0x0028, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 20 GB
 	Physical Array Handle: 0x0025
 	Partition Width: 2
 
 Handle 0x0029, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0026
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: Unknown
@@ -545,7 +545,7 @@ Portable Battery
 	Design Capacity: 52500 mWh
 	Design Voltage: 11340 mV
 	SBDS Version: Not Specified
-	Maximum Error: 4%
+	Maximum Error: 6%
 	OEM-specific Information: 0x00000000
 
 Handle 0x002D, DMI type 24, 5 bytes
@@ -683,7 +683,7 @@ OEM-specific Type
 Handle 0x003C, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 3C 00 01 04 01 45 02 00 90 06 01 10 86 20
+		DB 6A 3C 00 01 04 01 45 02 00 A0 06 01 10 80 20
 		00 00 00 04 40 00 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -700,7 +700,7 @@ Handle 0x003D, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 3D 00 03 01 00 07 00 58 40 00 02 00 00 00
-		00 C6 00 03 00 FF FF FF FF FF
+		00 EA 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -770,7 +770,7 @@ OEM-specific Type
 		DD 59 42 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 01 0E 00 00 00 0C 00 00
+		00 FF FF FF FF FF 0B 00 01 13 00 00 00 0C 00 00
 		09 00 85 10 0D 0E 01 04 01 00 00 0F 00 00 07 03
 		00 00 10 00 00 02 00 0E 00
 	Strings:

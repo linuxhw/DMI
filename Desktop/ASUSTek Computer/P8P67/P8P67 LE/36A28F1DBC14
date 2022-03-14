@@ -448,7 +448,7 @@ Handle 0x0026, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI3
 	Type: 32-bit PCI
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 6
 	Characteristics:
@@ -935,22 +935,22 @@ Physical Memory Array
 Handle 0x005B, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x005C
-	Error Information Handle: 0x0060
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Error Information Handle: 0x005F
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: 029E
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
+	Part Number: CM3X2G1333C9      
+	Rank: 1
 
 Handle 0x005E, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -962,27 +962,38 @@ Handle 0x005E, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x005D, DMI type 17, 28 bytes
+Handle 0x005D, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x005B
+	Memory Array Mapped Address Handle: 0x0065
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 2
+
+Handle 0x0060, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x005C
 	Error Information Handle: No Error
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 1
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: 029E
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: [Empty]
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CM3X2G1333C9      
-	Rank: 1
+	Part Number: [Empty]
+	Rank: Unknown
 
-Handle 0x0060, DMI type 18, 23 bytes
+Handle 0x005F, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -992,36 +1003,25 @@ Handle 0x0060, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x005F, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x005D
-	Memory Array Mapped Address Handle: 0x0065
-	Partition Row Position: Unknown
-	Interleave Position: 1
-	Interleaved Data Depth: 2
-
 Handle 0x0062, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x005C
 	Error Information Handle: 0x0061
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: 029E
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
+	Part Number: CM3X2G1333C9      
+	Rank: 1
 
 Handle 0x0061, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -1033,27 +1033,38 @@ Handle 0x0061, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0064, DMI type 17, 28 bytes
+Handle 0x0064, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0062
+	Memory Array Mapped Address Handle: 0x0065
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x0063, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x005C
 	Error Information Handle: No Error
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 3
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: 029E
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: [Empty]
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CM3X2G1333C9      
-	Rank: 1
+	Part Number: [Empty]
+	Rank: Unknown
 
-Handle 0x0063, DMI type 18, 23 bytes
+Handle 0x0066, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -1062,17 +1073,6 @@ Handle 0x0063, DMI type 18, 23 bytes
 	Memory Array Address: Unknown
 	Device Address: Unknown
 	Resolution: Unknown
-
-Handle 0x0066, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x0064
-	Memory Array Mapped Address Handle: 0x0065
-	Partition Row Position: Unknown
-	Interleave Position: 2
-	Interleaved Data Depth: 2
 
 Handle 0x0065, DMI type 19, 15 bytes
 Memory Array Mapped Address

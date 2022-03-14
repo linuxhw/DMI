@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0xBADCB000.
+Table at 0xBA3CA000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -10,7 +10,7 @@ BIOS Information
 	Release Date: 01/10/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8 MB
+	ROM Size: 8192 kB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -599,7 +599,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -647,7 +647,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -719,8 +719,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1 MB
-	Maximum Size: 1 MB
+	Installed Size: 1024 kB
+	Maximum Size: 1024 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -735,8 +735,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6 MB
-	Maximum Size: 6 MB
+	Installed Size: 6144 kB
+	Maximum Size: 6144 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -967,7 +967,7 @@ Group Associations
 Handle 0x0054, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 54 00 01 03 01 55 02 00 90 06 03 10 86 20
+		DB 51 54 00 01 03 01 55 02 00 90 06 01 10 86 20
 		04 00 00 04 40 08 00 00 00 00 00 00 00 00 00 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

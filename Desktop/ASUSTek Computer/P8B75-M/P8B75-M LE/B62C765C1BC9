@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-103 structures occupying 3691 bytes.
+103 structures occupying 3679 bytes.
 Table at 0x000EB950.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 12/09/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -119,7 +119,7 @@ Processor Information
 	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 3100 MHz
+	Current Speed: 3103 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -155,8 +155,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -171,8 +171,8 @@ Cache Information
 	Configuration: Disabled, Not Socketed, Level 3
 	Operational Mode: Unknown
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -377,7 +377,7 @@ Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
 	Type: 32-bit PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 1
 	Characteristics:
@@ -919,20 +919,20 @@ Memory Device
 	Error Information Handle: 0x005F
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Kingston
+	Speed: 1600 MT/s
+	Manufacturer: 8502
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX1600C10D3/8G   
-	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Part Number: 1600 CL10 Series
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x005B, DMI type 16, 23 bytes
 Physical Memory Array
@@ -956,8 +956,8 @@ Handle 0x005C, DMI type 18, 23 bytes
 Handle 0x005D, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x005A
 	Memory Array Mapped Address Handle: 0x0061
 	Partition Row Position: Unknown
@@ -970,20 +970,20 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Kingston
+	Speed: 1600 MT/s
+	Manufacturer: 8502
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9905403-442.A00LF 
+	Part Number: 1600 CL10 Series
 	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x005F, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -997,9 +997,9 @@ Handle 0x005F, DMI type 18, 23 bytes
 
 Handle 0x0060, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x005E
 	Memory Array Mapped Address Handle: 0x0061
 	Partition Row Position: Unknown
@@ -1009,8 +1009,8 @@ Memory Device Mapped Address
 Handle 0x0061, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x005B
 	Partition Width: 2
 

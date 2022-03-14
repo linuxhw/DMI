@@ -1,18 +1,17 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 3.0 present.
-# SMBIOS implementations newer than version 2.7 are not
-# fully supported by this version of dmidecode.
 70 structures occupying 3868 bytes.
 Table at 0x000E6A50.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: BHCN41WW
-	Release Date: 11/30/2020
+	Version: BHCN42WW
+	Release Date: 05/21/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 10240 kB
+	ROM Size: 10 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -33,8 +32,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.41
-	Firmware Revision: 1.41
+	BIOS Revision: 1.42
+	Firmware Revision: 1.42
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -123,7 +122,7 @@ Processor Information
 	Max Speed: 4100 MHz
 	Current Speed: 2277 MHz
 	Status: Populated, Enabled
-	Upgrade: <OUT OF SPEC>
+	Upgrade: Socket BGA1440
 	L1 Cache Handle: 0x0005
 	L2 Cache Handle: 0x0006
 	L3 Cache Handle: 0x0007
@@ -147,8 +146,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 256 kB
-	Maximum Size: 256 kB
+	Installed Size: 0 kB
+	Maximum Size: 0 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -163,8 +162,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 0 kB
+	Maximum Size: 0 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -179,8 +178,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 0 kB
+	Maximum Size: 0 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -417,19 +416,19 @@ Handle 0x0022, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x0043 (<OUT OF SPEC>)
+		0x0043 (OEM-specific)
 
 Handle 0x0023, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
-		0x003D (<OUT OF SPEC>)
+		0x003D (OEM-specific)
 
 Handle 0x0024, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
-		0x003C (<OUT OF SPEC>)
+		0x003C (OEM-specific)
 
 Handle 0x0025, DMI type 15, 29 bytes
 System Event Log
@@ -465,23 +464,23 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: <OUT OF SPEC>
+	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2667 MHz
+	Speed: 2667 MT/s
 	Manufacturer: Ramaxel
 	Serial Number: --
 	Asset Tag: --
 	Part Number: RMSA3260ME78HAF-2666
 	Rank: 1
-	Configured Clock Speed: 2667 MHz
-	Minimum voltage:  1.250 V
-	Maximum voltage:  1.500 V
-	Configured voltage:  1.200 V
+	Configured Memory Speed: 2667 MT/s
+	Minimum Voltage: 1.25 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: 1.2 V
 
 Handle 0x0028, DMI type 17, 40 bytes
 Memory Device
@@ -502,10 +501,10 @@ Memory Device
 	Asset Tag: --
 	Part Number: Not Specified
 	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
 Handle 0x0029, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -681,7 +680,7 @@ OEM-specific Type
 Handle 0x003C, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 3C 00 01 04 01 45 02 00 90 06 01 10 80 20
+		DB 6A 3C 00 01 04 01 45 02 00 90 06 01 10 8B 20
 		00 00 00 00 48 00 00 00 00 00 00 06 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -698,7 +697,7 @@ Handle 0x003D, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 3D 00 03 01 00 07 00 4E 20 00 02 00 00 00
-		00 DE 00 03 00 FF FF FF FF FF
+		00 EA 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -768,7 +767,7 @@ OEM-specific Type
 		DD 59 42 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 01 29 00 00 00 0C 00 FF
+		00 FF FF FF FF FF 0B 00 01 2A 00 00 00 0C 00 FF
 		FF FF FF FF 0D 0E 01 04 01 00 00 0F 00 00 07 03
 		00 00 10 00 00 02 00 0E 00
 	Strings:

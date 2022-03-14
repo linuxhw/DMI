@@ -1,7 +1,7 @@
 # dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
-Table at 0x000E0000.
+Table at 0x000ED050.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
@@ -462,37 +462,13 @@ Handle 0x003E, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x003D
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4096 MB
-	Form Factor: SODIMM
-	Set: None
-	Locator: DIMM A
-	Bank Locator: BANK 0
-	Type: DDR4
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
-	Manufacturer: 802C0000802C
-	Serial Number: --
-	Asset Tag: --
-	Part Number: 4ATF51264HZ-2G3B1   
-	Rank: 1
-	Configured Memory Speed: 2133 MT/s
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
-
-Handle 0x003F, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x003D
-	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
 	Form Factor: Unknown
 	Set: None
-	Locator: ChannelB-DIMM0
-	Bank Locator: BANK 2
+	Locator: ChannelA-DIMM0
+	Bank Locator: BANK 0
 	Type: Unknown
 	Type Detail: None
 	Speed: Unknown
@@ -505,6 +481,30 @@ Memory Device
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
+
+Handle 0x003F, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x003D
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
+	Form Factor: SODIMM
+	Set: None
+	Locator: DIMM B
+	Bank Locator: BANK 2
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 2400 MT/s
+	Manufacturer: 802C0000802C
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 4ATF51264HZ-2G3B1   
+	Rank: 1
+	Configured Memory Speed: 2133 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
 
 Handle 0x0040, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -628,7 +628,7 @@ Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x003E
+	Physical Device Handle: 0x003F
 	Memory Array Mapped Address Handle: 0x0040
 	Partition Row Position: 1
 
@@ -977,8 +977,8 @@ OEM-specific Type
 		DD 60 27 F0 0D 01 00 00 00 00 00 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
-		09 00 61 10 0D 00 FF FF FF FF FF 0E 00 FF FF FF
+		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
+		FF FF FF FF 0D 00 FF FF FF FF FF 0E 00 FF FF FF
 		FF FF 0F 10 01 03 03 01 00 11 00 00 07 03 00 00
 	Strings:
 		Lan Phy Version
@@ -1024,7 +1024,7 @@ Group Associations
 Handle 0xF038, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 38 F0 01 03 01 55 02 00 90 06 01 00 60 20
+		DB 51 38 F0 01 03 01 55 02 00 90 06 01 10 80 20
 		00 00 00 04 40 08 00 01 1F 00 00 C9 0B C0 07 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

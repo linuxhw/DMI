@@ -3,13 +3,13 @@ Getting SMBIOS data from sysfs.
 SMBIOS 3.2.1 present.
 # SMBIOS implementations newer than version 3.2.0 are not
 # fully supported by this version of dmidecode.
-Table at 0x5DD2C000.
+Table at 0x5DD28000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: X509DA.306
-	Release Date: 10/11/2019
+	Version: X509DA.309
+	Release Date: 10/08/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8192 kB
@@ -43,7 +43,7 @@ System Information
 	Version: 1.0       
 	Serial Number: --
 	UUID: --
-	Wake-up Type: PCI PME#
+	Wake-up Type: Power Switch
 	SKU Number:  
 	Family: VivoBook
 
@@ -114,8 +114,8 @@ Physical Memory Array
 Handle 0x000B, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 20 GB
 	Physical Array Handle: 0x000A
 	Partition Width: 2
 
@@ -284,19 +284,19 @@ Memory Device
 	Error Information Handle: 0x0013
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 16384 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2667 MT/s
-	Manufacturer: Hynix
+	Speed: 3200 MT/s
+	Manufacturer: A-DATA Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA851S6JJR6N-VK    
-	Rank: 1
+	Part Number:                     
+	Rank: 2
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -305,8 +305,8 @@ Memory Device
 Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 20 GB
 	Physical Device Handle: 0x0014
 	Memory Array Mapped Address Handle: 0x000B
 	Partition Row Position: Unknown

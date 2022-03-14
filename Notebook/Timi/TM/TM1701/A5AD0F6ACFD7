@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x867EF000.
+Table at 0x8A7EF000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -32,7 +32,7 @@ BIOS Information
 		Targeted content distribution is supported
 		UEFI is supported
 	BIOS Revision: 106.117
-	Firmware Revision: 0.7
+	Firmware Revision: 0.2
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -116,7 +116,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
-	Voltage: 0.6 V
+	Voltage: 0.7 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
 	Current Speed: 1700 MHz
@@ -413,7 +413,7 @@ Handle 0x0021, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x0041 (OEM-specific)
+		0x0040 (OEM-specific)
 
 Handle 0x0022, DMI type 14, 8 bytes
 Group Associations
@@ -680,7 +680,7 @@ OEM-specific Type
 Handle 0x003B, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 3B 00 01 03 01 55 02 00 90 06 01 10 86 20
+		DB 51 3B 00 01 03 01 55 02 00 A0 06 01 10 80 20
 		00 00 00 04 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -752,40 +752,10 @@ OEM-specific Type
 		SA-CRID New Value
 		OPROM - VBIOS
 
-Handle 0x0040, DMI type 221, 103 bytes
+Handle 0x0040, DMI type 222, 14 bytes
 OEM-specific Type
 	Header and Data:
-		DD 67 40 00 0E 01 00 00 00 00 FF 00 02 00 FF FF
-		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
-		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 00 07 00 00 00 0C 00 00
-		09 00 68 10 0D 00 FF FF FF FF FF 0E 00 FF FF FF
-		FF FF 0F 00 FF FF FF FF FF 10 11 01 03 04 01 00
-		12 00 00 07 03 00 00
-	Strings:
-		Lan Phy Version
-		Sensor Firmware Version
-		Debug Mode Status
-		Disabled
-		Performance Mode Status
-		Disabled
-		Debug Use USB(Disabled:Serial)
-		Disabled
-		ICC Overclocking Version
-		UNDI Version
-		EC FW Version
-		GOP Version
-		BIOS Guard Version
-		Base EC FW Version
-		EC-EC Protocol Version
-		Royal Park Version
-		BP1.3.4.0_RP01
-		Platform Version
-
-Handle 0x0041, DMI type 222, 14 bytes
-OEM-specific Type
-	Header and Data:
-		DE 0E 41 00 01 99 00 03 10 01 20 02 30 03
+		DE 0E 40 00 01 99 00 03 10 01 20 02 30 03
 	Strings:
 		Memory Init Complete
 		End of DXE Phase

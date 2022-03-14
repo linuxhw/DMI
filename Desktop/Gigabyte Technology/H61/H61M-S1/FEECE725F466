@@ -644,34 +644,13 @@ Handle 0x0040, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0007
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: ChannelB-DIMM0
-	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-
-Handle 0x0041, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x0007
-	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
-	Locator: ChannelA-DIMM0
-	Bank Locator: BANK 0
+	Locator: ChannelB-DIMM0
+	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
@@ -682,16 +661,37 @@ Memory Device
 	Rank: 2
 	Configured Clock Speed: 1333 MT/s
 
-Handle 0x0042, DMI type 20, 35 bytes
+Handle 0x0041, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0041
+	Physical Device Handle: 0x0040
 	Memory Array Mapped Address Handle: 0x0044
 	Partition Row Position: Unknown
 	Interleave Position: 1
 	Interleaved Data Depth: 1
+
+Handle 0x0042, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x0007
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelA-DIMM0
+	Bank Locator: BANK 0
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: [Empty]
+	Serial Number: --
+	Asset Tag: --
+	Part Number: [Empty]
+	Rank: Unknown
+	Configured Clock Speed: Unknown
 
 Handle 0x0043, DMI type 4, 42 bytes
 Processor Information

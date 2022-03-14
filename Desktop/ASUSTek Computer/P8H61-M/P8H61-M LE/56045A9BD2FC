@@ -1,6 +1,7 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-91 structures occupying 3311 bytes.
+92 structures occupying 3312 bytes.
 Table at 0x000E94B0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -10,7 +11,7 @@ BIOS Information
 	Release Date: 09/18/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -168,8 +169,8 @@ Cache Information
 	Configuration: Disabled, Not Socketed, Level 3
 	Operational Mode: Unknown
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -562,8 +563,9 @@ System Power Supply
 	Input Current Probe Handle: 0x0030
 
 Handle 0x0034, DMI type 34, 16 bytes
+Invalid entry length (16). Fixed up to 11.
 Management Device
-	Description: 2
+	Description: LM78-2
 	Type: LM78
 	Address: 0x00000000
 	Address Type: I/O Port
@@ -851,18 +853,18 @@ Memory Device
 	Error Information Handle: 0x0056
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1067 MHz
-	Manufacturer: Hynix/Hyundai
+	Speed: 1067 MT/s
+	Manufacturer: 0000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT351U6BFR8C-H9  
+	Part Number: [Empty]
 	Rank: 2
 
 Handle 0x0055, DMI type 18, 23 bytes
@@ -881,7 +883,7 @@ Memory Device Mapped Address
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0052
-	Memory Array Mapped Address Handle: 0x0059
+	Memory Array Mapped Address Handle: 0x0058
 	Partition Row Position: Unknown
 	Interleave Position: 1
 	Interleaved Data Depth: 1
@@ -890,21 +892,21 @@ Handle 0x0057, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0053
 	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1067 MT/s
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
 	Part Number: [Empty]
-	Rank: Unknown
+	Rank: 2
 
 Handle 0x0056, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -916,11 +918,22 @@ Handle 0x0056, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0059, DMI type 19, 15 bytes
+Handle 0x0059, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0057
+	Memory Array Mapped Address Handle: 0x0058
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 1
+
+Handle 0x0058, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0053
 	Partition Width: 2
 

@@ -6,8 +6,8 @@ Table at 0x99D5C000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 0707
-	Release Date: 04/21/2021
+	Version: 1007
+	Release Date: 07/08/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -33,7 +33,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 7.7
+	BIOS Revision: 10.7
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -444,7 +444,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:06:1c.4
+	Bus Address: 0000:07:1c.4
 
 Handle 0x0030, DMI type 9, 17 bytes
 System Slot Information
@@ -513,7 +513,7 @@ Management Device Threshold Data
 
 Handle 0x0038, DMI type 35, 11 bytes
 Management Device Component
-	Description: Default string
+	Description: MGMT_VP_DEV_COMPONENT_DESCRIPTION_1_1
 	Management Device Handle: 0x0035
 	Component Handle: 0x0036
 	Threshold Handle: 0x0037
@@ -542,7 +542,7 @@ Management Device Threshold Data
 
 Handle 0x003B, DMI type 35, 11 bytes
 Management Device Component
-	Description: Default string
+	Description: MGMT_TP_DEV_COMPONENT_DESCRIPTION_1_1
 	Management Device Handle: 0x0035
 	Component Handle: 0x0039
 	Threshold Handle: 0x003A
@@ -568,7 +568,7 @@ Management Device Threshold Data
 
 Handle 0x003E, DMI type 35, 11 bytes
 Management Device Component
-	Description: Default string
+	Description: MGMT_CD_DEV_COMPONENT_DESCRIPTION_1_1_1
 	Management Device Handle: 0x0035
 	Component Handle: 0x003C
 	Threshold Handle: 0x003D
@@ -594,7 +594,7 @@ Management Device Threshold Data
 
 Handle 0x0041, DMI type 35, 11 bytes
 Management Device Component
-	Description: Default string
+	Description: MGMT_CD_DEV_COMPONENT_DESCRIPTION_1_1_2
 	Management Device Handle: 0x0035
 	Component Handle: 0x003F
 	Threshold Handle: 0x0040
@@ -759,7 +759,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: CMK16GX4M2B3000C15  
 	Rank: 1
-	Configured Memory Speed: 2133 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -794,7 +794,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: CMK16GX4M2B3000C15  
 	Rank: 1
-	Configured Memory Speed: 2133 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -829,7 +829,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: CMK16GX4M2B3000C15  
 	Rank: 1
-	Configured Memory Speed: 2133 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -864,7 +864,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: CMK16GX4M2B3000C15  
 	Rank: 1
-	Configured Memory Speed: 2133 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -928,7 +928,7 @@ Handle 0x005A, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 5A 00 03 01 00 0B 01 37 50 00 02 00 00 00
-		00 3C 00 03 00 FF FF FF FF FF
+		00 40 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -1092,7 +1092,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: 11th Gen Intel(R) Core(TM) i5-11600KF @ 3.90GHz
-	Voltage: 1.0 V
+	Voltage: 0.0 V
 	External Clock: 100 MHz
 	Max Speed: 12000 MHz
 	Current Speed: 3861 MHz
@@ -1133,7 +1133,7 @@ Unknown Type
 Handle 0x0065, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 65 00 10 00 00 00 0F 00 00 00 00 00 02 00
+		83 40 65 00 31 00 00 00 0F 00 00 00 00 00 02 00
 		F8 00 85 43 00 00 00 00 01 00 00 00 00 00 0F 00
 		BA 05 14 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
@@ -1268,7 +1268,7 @@ BIOS Language Information
 		es|ES|iso8859-1
 		ru|RU|iso8859-5
 		ko|KR|unicode
-	Currently Installed Language: en|US|iso8859-1
+	Currently Installed Language: es|ES|iso8859-1
 
 Handle 0x0074, DMI type 136, 8 bytes
 OEM-specific Type
@@ -1284,7 +1284,7 @@ Group Associations
 Handle 0x0076, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 76 00 01 04 01 45 02 00 90 06 01 10 89 20
+		DB 6A 76 00 01 04 01 45 02 00 90 06 01 85 39 20
 		00 00 00 00 40 00 00 00 00 00 00 00 00 20 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

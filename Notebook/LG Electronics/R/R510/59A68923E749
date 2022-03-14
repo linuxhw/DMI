@@ -1,15 +1,15 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
-36 structures occupying 1670 bytes.
-Table at 0x000E5130.
+36 structures occupying 1671 bytes.
+Table at 0xB903A020.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: INSYDE
 	Version: QL8L3F22
 	Release Date: 06/17/2009
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -296,8 +296,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -363,7 +363,7 @@ Memory Device
 	Error Information Handle: 0x001B
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -374,7 +374,7 @@ Memory Device
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 818181818181818181818181818181818181
+	Part Number: 8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E
 
 Handle 0x001B, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -403,8 +403,8 @@ Memory Module Information
 	Bank Connections: 0 0
 	Current Speed: 1 ns
 	Type: None
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x001E, DMI type 17, 27 bytes
@@ -413,7 +413,7 @@ Memory Device
 	Error Information Handle: 0x001F
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM2
@@ -421,10 +421,10 @@ Memory Device
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 800 MT/s
-	Manufacturer: Micron
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3
+	Part Number: 818181818181818181818181818181818181
 
 Handle 0x001F, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -439,8 +439,8 @@ Handle 0x001F, DMI type 18, 23 bytes
 Handle 0x0020, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x0022
 	Partition Row Position: Unknown
@@ -460,8 +460,8 @@ Handle 0x0021, DMI type 18, 23 bytes
 Handle 0x0022, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0018
 	Partition Width: 2
 

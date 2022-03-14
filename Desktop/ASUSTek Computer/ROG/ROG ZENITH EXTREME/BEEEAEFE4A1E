@@ -6,8 +6,8 @@ Table at 0x000EA800.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 2001
-	Release Date: 07/31/2019
+	Version: 2201
+	Release Date: 07/15/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -36,7 +36,7 @@ BIOS Information
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
-	Manufacturer: System manufacturer
+	Manufacturer: ASUS
 	Product Name: System Product Name
 	Version: System Version
 	Serial Number: --
@@ -521,7 +521,7 @@ Additional Information 2
 	String: Not Specified
 	Value: 0x0000001e
 Additional Information 3
-	Referenced Handle: 0x0040
+	Referenced Handle: 0x0041
 	Referenced Offset: 0x01
 	String: Mordor
 	Value: 0x00000000
@@ -550,7 +550,17 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:03:1c.2
 
-Handle 0x003B, DMI type 18, 23 bytes
+Handle 0x003B, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: 
+	Specification Version: 2.0
+	Firmware Revision: 3.5
+	Description: AMD
+	Characteristics:
+		Family configurable via platform software support
+	OEM-specific Information: 0x00000000
+
+Handle 0x003C, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -560,32 +570,32 @@ Handle 0x003B, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x003C, DMI type 16, 23 bytes
+Handle 0x003D, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
 	Maximum Capacity: 512 GB
-	Error Information Handle: 0x003B
+	Error Information Handle: 0x003C
 	Number Of Devices: 8
 
-Handle 0x003D, DMI type 19, 31 bytes
+Handle 0x003E, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x0007FFFFFFF
 	Range Size: 2 GB
-	Physical Array Handle: 0x003C
+	Physical Array Handle: 0x003D
 	Partition Width: 8
 
-Handle 0x003E, DMI type 19, 31 bytes
+Handle 0x003F, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
 	Ending Address: 0x0087FFFFFFF
 	Range Size: 30 GB
-	Physical Array Handle: 0x003C
+	Physical Array Handle: 0x003D
 	Partition Width: 8
 
-Handle 0x003F, DMI type 7, 19 bytes
+Handle 0x0040, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 - Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -601,7 +611,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0040, DMI type 7, 19 bytes
+Handle 0x0041, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 - Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -617,7 +627,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0041, DMI type 7, 19 bytes
+Handle 0x0042, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L3 - Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -633,7 +643,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 32-way Set-associative
 
-Handle 0x0042, DMI type 4, 48 bytes
+Handle 0x0043, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: SP3r2
 	Type: Central Processor
@@ -666,15 +676,15 @@ Processor Information
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
 	Version: AMD Ryzen Threadripper 1950X 16-Core Processor 
-	Voltage: 1.1 V
+	Voltage: 1.3 V
 	External Clock: 100 MHz
 	Max Speed: 4200 MHz
-	Current Speed: 3750 MHz
+	Current Speed: 3700 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket SP3r2
-	L1 Cache Handle: 0x003F
-	L2 Cache Handle: 0x0040
-	L3 Cache Handle: 0x0041
+	L1 Cache Handle: 0x0040
+	L2 Cache Handle: 0x0041
+	L3 Cache Handle: 0x0042
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Unknown
@@ -689,7 +699,7 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0043, DMI type 18, 23 bytes
+Handle 0x0044, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -699,10 +709,10 @@ Handle 0x0043, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0044, DMI type 17, 40 bytes
+Handle 0x0045, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x003C
-	Error Information Handle: 0x0043
+	Array Handle: 0x003D
+	Error Information Handle: 0x0044
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
@@ -723,7 +733,7 @@ Memory Device
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x0045, DMI type 18, 23 bytes
+Handle 0x0046, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -733,10 +743,10 @@ Handle 0x0045, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0046, DMI type 17, 40 bytes
+Handle 0x0047, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x003C
-	Error Information Handle: 0x0045
+	Array Handle: 0x003D
+	Error Information Handle: 0x0046
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
@@ -752,23 +762,23 @@ Memory Device
 	Asset Tag: --
 	Part Number: F4-3200C14-8GFX
 	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0047, DMI type 20, 35 bytes
+Handle 0x0048, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x007FFFFFFFF
 	Range Size: 32 GB
-	Physical Device Handle: 0x0046
-	Memory Array Mapped Address Handle: 0x003E
+	Physical Device Handle: 0x0047
+	Memory Array Mapped Address Handle: 0x003F
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0048, DMI type 18, 23 bytes
+Handle 0x0049, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -778,10 +788,10 @@ Handle 0x0048, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0049, DMI type 17, 40 bytes
+Handle 0x004A, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x003C
-	Error Information Handle: 0x0048
+	Array Handle: 0x003D
+	Error Information Handle: 0x0049
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
@@ -802,7 +812,7 @@ Memory Device
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x004A, DMI type 18, 23 bytes
+Handle 0x004B, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -812,10 +822,10 @@ Handle 0x004A, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x004B, DMI type 17, 40 bytes
+Handle 0x004C, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x003C
-	Error Information Handle: 0x004A
+	Array Handle: 0x003D
+	Error Information Handle: 0x004B
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
@@ -831,23 +841,23 @@ Memory Device
 	Asset Tag: --
 	Part Number: F4-3200C14-8GFX
 	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x004C, DMI type 20, 35 bytes
+Handle 0x004D, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x007FFFFFFFF
 	Range Size: 32 GB
-	Physical Device Handle: 0x004B
-	Memory Array Mapped Address Handle: 0x003E
+	Physical Device Handle: 0x004C
+	Memory Array Mapped Address Handle: 0x003F
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x004D, DMI type 18, 23 bytes
+Handle 0x004E, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -857,10 +867,10 @@ Handle 0x004D, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x004E, DMI type 17, 40 bytes
+Handle 0x004F, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x003C
-	Error Information Handle: 0x004D
+	Array Handle: 0x003D
+	Error Information Handle: 0x004E
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
@@ -881,7 +891,7 @@ Memory Device
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x004F, DMI type 18, 23 bytes
+Handle 0x0050, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -891,10 +901,10 @@ Handle 0x004F, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0050, DMI type 17, 40 bytes
+Handle 0x0051, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x003C
-	Error Information Handle: 0x004F
+	Array Handle: 0x003D
+	Error Information Handle: 0x0050
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
@@ -910,23 +920,23 @@ Memory Device
 	Asset Tag: --
 	Part Number: F4-3200C14-8GFX
 	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0051, DMI type 20, 35 bytes
+Handle 0x0052, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x007FFFFFFFF
 	Range Size: 32 GB
-	Physical Device Handle: 0x0050
-	Memory Array Mapped Address Handle: 0x003E
+	Physical Device Handle: 0x0051
+	Memory Array Mapped Address Handle: 0x003F
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0052, DMI type 18, 23 bytes
+Handle 0x0053, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -936,10 +946,10 @@ Handle 0x0052, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0053, DMI type 17, 40 bytes
+Handle 0x0054, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x003C
-	Error Information Handle: 0x0052
+	Array Handle: 0x003D
+	Error Information Handle: 0x0053
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
@@ -960,7 +970,7 @@ Memory Device
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x0054, DMI type 18, 23 bytes
+Handle 0x0055, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -970,10 +980,10 @@ Handle 0x0054, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0055, DMI type 17, 40 bytes
+Handle 0x0056, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x003C
-	Error Information Handle: 0x0054
+	Array Handle: 0x003D
+	Error Information Handle: 0x0055
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
@@ -989,22 +999,22 @@ Memory Device
 	Asset Tag: --
 	Part Number: F4-3200C14-8GFX
 	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0056, DMI type 20, 35 bytes
+Handle 0x0057, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x007FFFFFFFF
 	Range Size: 32 GB
-	Physical Device Handle: 0x0055
-	Memory Array Mapped Address Handle: 0x003E
+	Physical Device Handle: 0x0056
+	Memory Array Mapped Address Handle: 0x003F
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0057, DMI type 127, 4 bytes
+Handle 0x0058, DMI type 127, 4 bytes
 End Of Table
 

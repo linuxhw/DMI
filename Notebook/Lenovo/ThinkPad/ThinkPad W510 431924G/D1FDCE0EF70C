@@ -166,8 +166,8 @@ Memory Module Information
 	Bank Connections: 0 1
 	Current Speed: 43 ns
 	Type: DIMM SDRAM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
@@ -176,8 +176,8 @@ Memory Module Information
 	Bank Connections: 2 3
 	Current Speed: 43 ns
 	Type: DIMM SDRAM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
@@ -186,8 +186,8 @@ Memory Module Information
 	Bank Connections: 4 5
 	Current Speed: 43 ns
 	Type: DIMM SDRAM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000B, DMI type 6, 12 bytes
@@ -448,41 +448,21 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: Bank 0/1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: 80AD            
+	Speed: 1066 MT/s
+	Manufacturer: 80CE            
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT351S6EFR8C-PB  
+	Part Number: M471B5673EH1-CF8  
 	Rank: Unknown
 
 Handle 0x002E, DMI type 17, 28 bytes
-Memory Device
-	Array Handle: 0x002C
-	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: SODIMM
-	Set: None
-	Locator: DIMM 2
-	Bank Locator: Bank 2/3
-	Type: Unknown
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer:                 
-	Serial Number: --
-	Asset Tag: --
-	...
-	Rank: Unknown
-
-Handle 0x002F, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x002C
 	Error Information Handle: No Error
@@ -491,15 +471,35 @@ Memory Device
 	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
-	Locator: DIMM 3
-	Bank Locator: Bank 4/5
+	Locator: DIMM 2
+	Bank Locator: Bank 2/3
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
 	Manufacturer: 80AD            
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT351S6CFR8C-PB  
+	Part Number: HMT451S6AFR8A-PB  
+	Rank: Unknown
+
+Handle 0x002F, DMI type 17, 28 bytes
+Memory Device
+	Array Handle: 0x002C
+	Error Information Handle: No Error
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
+	Form Factor: SODIMM
+	Set: None
+	Locator: DIMM 3
+	Bank Locator: Bank 4/5
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1066 MT/s
+	Manufacturer: 802C            
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 16JSF25664HZ-1G1F1
 	Rank: Unknown
 
 Handle 0x0030, DMI type 17, 28 bytes
@@ -543,17 +543,17 @@ Memory Array Mapped Address
 Handle 0x0033, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x002D
 	Memory Array Mapped Address Handle: 0x0032
 	Partition Row Position: 1
 
 Handle 0x0034, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x000FFFFFC00
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 1 kB
+	Starting Address: 0x00080000000
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x002E
 	Memory Array Mapped Address Handle: 0x0032
 	Partition Row Position: 1
@@ -657,8 +657,8 @@ OEM-specific Type
 	Header and Data:
 		87 3A 43 00 54 50 07 02 42 41 59 20 49 2F 4F 20
 		02 00 04 00 00 0E 00 F0 01 F6 03 02 00 0F 00 70
-		01 76 03 03 00 00 00 00 00 00 00 03 01 00 00 00
-		00 00 00 06 00 02 FF FF 03 03
+		01 76 03 03 00 04 00 98 18 0E 18 03 00 04 00 90
+		18 0A 18 06 00 02 FF FF 03 03
 
 Handle 0x0044, DMI type 135, 30 bytes
 OEM-specific Type

@@ -1,17 +1,17 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-111 structures occupying 5003 bytes.
+111 structures occupying 5005 bytes.
 Table at 0x000EB6F0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 4701
-	Release Date: 05/06/2014
+	Version: 4801
+	Release Date: 07/24/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		APM is supported
@@ -85,12 +85,12 @@ Processor Information
 	Type: Central Processor
 	Family: Other
 	Manufacturer: Intel            
-	ID: D7 06 02 00 FF FB EB BF
-	Version: Intel(R) Core(TM) i7-3820 CPU @ 3.60GHz
+	ID: E4 06 03 00 FF FB EB BF
+	Version: Intel(R) Xeon(R) CPU E5-2697 v2 @ 2.70GHz
 	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 3600 MHz
+	Current Speed: 2700 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -99,9 +99,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
-	Core Count: 4
-	Core Enabled: 4
-	Thread Count: 8
+	Core Count: 12
+	Core Enabled: 12
+	Thread Count: 24
 	Characteristics:
 		64-bit capable
 
@@ -143,8 +143,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 10240 kB
-	Maximum Size: 10240 kB
+	Installed Size: 30 MB
+	Maximum Size: 30 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -394,14 +394,14 @@ Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_1
 	Type: 32-bit PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 2
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:1c.7
+	Bus Address: 0000:0a:1c.7
 
 Handle 0x0026, DMI type 9, 17 bytes
 System Slot Information
@@ -420,7 +420,7 @@ Handle 0x0027, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_2
 	Type: 32-bit PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 4
 	Characteristics:
@@ -440,13 +440,13 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:0a:1e.0
+	Bus Address: 0000:0b:1e.0
 
 Handle 0x0029, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_3
 	Type: 32-bit PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 6
 	Characteristics:
@@ -488,8 +488,8 @@ Physical Memory Array
 Handle 0x002E, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x002D
 	Partition Width: 1
 
@@ -497,25 +497,33 @@ Handle 0x002F, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002D
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA_Dimm1
 	Bank Locator: ChannelA
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: ChannelA_Dimm1_Manufacturer
+	Speed: 1600 MT/s
+	Manufacturer: Corsair                    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ChannelA_Dimm1_PartNum
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: CMZ16GX3M2A1600C9     
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0030, DMI type 126, 35 bytes
-Inactive
+Handle 0x0030, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x002F
+	Memory Array Mapped Address Handle: 0x002E
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x0031, DMI type 17, 34 bytes
 Memory Device
@@ -536,7 +544,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: ChannelA_Dimm2_PartNum
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0032, DMI type 126, 35 bytes
 Inactive
@@ -547,7 +555,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB_Dimm1
@@ -558,14 +566,14 @@ Memory Device
 	Manufacturer: Corsair                    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMZ16GX3M2A1600C9     
+	Part Number: CMZ8GX3M1A1600C9      
 	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0034, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x0033
 	Memory Array Mapped Address Handle: 0x002E
@@ -592,7 +600,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: ChannelB_Dimm2_PartNum
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0036, DMI type 126, 35 bytes
 Inactive
@@ -601,25 +609,33 @@ Handle 0x0037, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002D
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelC_Dimm1
 	Bank Locator: ChannelC
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: ChannelC_Dimm1_Manufacturer
+	Speed: 1600 MT/s
+	Manufacturer: Corsair                    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ChannelC_Dimm1_PartNum
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: CMZ16GX3M2A1600C9     
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0038, DMI type 126, 35 bytes
-Inactive
+Handle 0x0038, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0037
+	Memory Array Mapped Address Handle: 0x002E
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x0039, DMI type 17, 34 bytes
 Memory Device
@@ -640,7 +656,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: ChannelC_Dimm2_PartNum
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x003A, DMI type 126, 35 bytes
 Inactive
@@ -651,7 +667,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelD_Dimm1
@@ -662,14 +678,14 @@ Memory Device
 	Manufacturer: Corsair                    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMZ16GX3M2A1600C9     
+	Part Number: CMZ8GX3M1A1600C9      
 	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x003C, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x003B
 	Memory Array Mapped Address Handle: 0x002E
@@ -696,7 +712,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: ChannelD_Dimm2_PartNum
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x003E, DMI type 126, 35 bytes
 Inactive
@@ -1140,7 +1156,7 @@ BIOS Language Information
 		ja|JP|unicode
 		zh|TW|unicode
 		zh|CN|unicode
-	Currently Installed Language: ru|RU|iso8859-5
+	Currently Installed Language: en|US|iso8859-1
 
 Handle 0x006E, DMI type 127, 4 bytes
 End Of Table

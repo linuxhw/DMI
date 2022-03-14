@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 42 structures occupying 2009 bytes.
 Table at 0x000E4800.
@@ -10,7 +11,7 @@ BIOS Information
 	Release Date: 04/15/2014
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -41,7 +42,7 @@ System Information
 	Version: 0976110000405E00000620180
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Other
+	Wake-up Type: Power Switch
 	SKU Number: G6Q52EA#ABZ
 	Family: 103C_5335KV G=N L=CON B=HP S=PAV
 
@@ -324,20 +325,20 @@ Memory Device
 	Error Information Handle: 0x0024
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(top)
 	Bank Locator: CHANNEL A
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Elpida
 	Serial Number: --
 	Asset Tag: --
 	Part Number: EBJ40UG8EFU0-GN-F 
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0025, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -354,20 +355,20 @@ Memory Device
 	Error Information Handle: 0x0028
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(under)
 	Bank Locator: CHANNEL A
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Elpida
 	Serial Number: --
 	Asset Tag: --
 	Part Number: EBJ40UG8EFU0-GN-F 
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0029, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -459,8 +460,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst

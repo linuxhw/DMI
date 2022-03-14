@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-71 structures occupying 2782 bytes.
+71 structures occupying 2780 bytes.
 Table at 0xDAE9D000.
 
 Handle 0x0000, DMI type 134, 16 bytes
@@ -122,8 +122,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -155,7 +155,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -176,7 +176,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -233,7 +233,7 @@ BIOS Information
 	Release Date: 07/24/2012
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 12288 kB
+	ROM Size: 12 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -449,14 +449,14 @@ BIOS Language Information
 Handle 0x002E, DMI type 22, 26 bytes
 Portable Battery
 	Location: Rear
-	Manufacturer: SANYO
-	Name: 45N1172
-	Design Capacity: 62640 mWh
-	Design Voltage: 10800 mV
+	Manufacturer: LGC
+	Name: 45N1029
+	Design Capacity: 86580 mWh
+	Design Voltage: 11100 mV
 	SBDS Version: 03.01
 	Maximum Error: Unknown
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 2013-12-03
+	SBDS Manufacture Date: 2012-04-10
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
@@ -614,8 +614,8 @@ OEM-specific Type
 		8C 43 3C 00 4C 45 4E 4F 56 4F 0B 00 01 43 F6 6B
 		34 91 08 C6 C5 F7 40 10 11 CB 96 A2 75 01 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00
+		00 C1 62 8B FD 31 92 3A 0D DD 87 07 FD D6 6F 29
+		8F 01 00
 
 Handle 0x003D, DMI type 140, 47 bytes
 OEM-specific Type
@@ -654,7 +654,7 @@ Hardware Security
 Handle 0x0042, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 42 00 01 D8 36
+		84 07 42 00 01 18 36
 
 Handle 0x0043, DMI type 135, 18 bytes
 OEM-specific Type

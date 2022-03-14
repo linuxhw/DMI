@@ -437,7 +437,7 @@ Handle 0x0023, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x0041 (OEM-specific)
+		0x0042 (OEM-specific)
 
 Handle 0x0024, DMI type 14, 8 bytes
 Group Associations
@@ -562,7 +562,7 @@ Portable Battery
 	Design Capacity: 41926 mWh
 	Design Voltage: 11550 mV
 	SBDS Version: 1
-	Maximum Error: 5%
+	Maximum Error: 8%
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x000C090E
 
@@ -730,10 +730,24 @@ HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 5: Not Installed
 	NIC 6: PCI device 08:1f.7, MAC address 00:08:00:FF:FF:FF
 
-Handle 0x0041, DMI type 222, 14 bytes
+Handle 0x0041, DMI type 221, 96 bytes
+HP BIOS iSCSI NIC PCI and MAC Information
+	NIC 1: PCI device 01:01.5, MAC address 00:00:00:00:00:00
+	NIC 2: PCI device 00:00.2, MAC address FF:FF:FF:FF:FF:03
+	NIC 3: PCI device ff:00.4, MAC address FF:FF:FF:FF:05:06
+	NIC 4: Not Installed
+	NIC 5: Not Installed
+	NIC 6: Disabled
+	NIC 7: Not Installed
+	NIC 8: PCI device 0c:00.0, MAC address 00:00:09:00:74:10
+	NIC 9: PCI device 00:01.5, MAC address FF:FF:FF:FF:FF:0E
+	NIC 10: PCI device ff:00.0, MAC address FF:FF:FF:FF:0F:10
+	NIC 11: PCI device 03:00.1, MAC address 04:01:00:11:00:00
+
+Handle 0x0042, DMI type 222, 14 bytes
 OEM-specific Type
 	Header and Data:
-		DE 0E 41 00 01 99 00 03 10 01 20 02 30 03
+		DE 0E 42 00 01 99 00 03 10 01 20 02 30 03
 	Strings:
 		Memory Init Complete
 		End of DXE Phase

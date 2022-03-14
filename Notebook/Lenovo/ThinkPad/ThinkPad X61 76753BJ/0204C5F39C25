@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 63 structures occupying 2131 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 03/22/2011
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		PC Card (PCMCIA) is supported
@@ -197,8 +197,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Burst
 	Installed SRAM Type: Burst
@@ -370,7 +370,7 @@ Memory Device
 	Error Information Handle: 0xFF01
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 1
@@ -389,7 +389,7 @@ Memory Device
 	Error Information Handle: 0xFF01
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 2
@@ -483,12 +483,9 @@ OEM-specific Type
 		KEYPTRS 23h
 
 Handle 0x002F, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 2F 00 01 02 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: No
 
 Handle 0x0030, DMI type 132, 7 bytes
 OEM-specific Type

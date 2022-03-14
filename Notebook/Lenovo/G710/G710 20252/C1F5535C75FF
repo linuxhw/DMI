@@ -2,7 +2,7 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 68 structures occupying 2878 bytes.
-Table at 0x9CEBC000.
+Table at 0x000E6DD0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -168,8 +168,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -188,8 +188,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
@@ -546,23 +546,23 @@ Physical Memory Array
 Handle 0x002B, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002A
-	Error Information Handle: 0x002F
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4 GB
-	Form Factor: SODIMM
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK 0
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Unknown
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Empty
 	Serial Number: --
 	Asset Tag: --
-	Part Number: RMT3170EB68F9W1600
-	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Part Number: Empty
+	Rank: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x002C, DMI type 17, 34 bytes
 Memory Device
@@ -588,23 +588,23 @@ Memory Device
 Handle 0x002D, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002A
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Error Information Handle: 0x002F
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Empty
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Empty
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: RMT3170EB68F9W1600
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x002E, DMI type 17, 34 bytes
 Memory Device
@@ -660,10 +660,10 @@ Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x002B
+	Physical Device Handle: 0x002D
 	Memory Array Mapped Address Handle: 0x0031
 	Partition Row Position: Unknown
-	Interleave Position: 1
+	Interleave Position: 2
 	Interleaved Data Depth: 1
 
 Handle 0x0033, DMI type 21, 7 bytes

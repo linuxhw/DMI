@@ -1,8 +1,8 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-87 structures occupying 4180 bytes.
-Table at 0x000ED780.
+88 structures occupying 4250 bytes.
+Table at 0x000E0000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -135,7 +135,7 @@ BIOS Information
 	Release Date: 07/30/2015
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -319,8 +319,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -624,33 +624,12 @@ Handle 0x0057, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0052
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM A
-	Bank Locator: Not Specified
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-
-Handle 0x005C, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x0052
-	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
-	Locator: DIMM B
+	Locator: DIMM A
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
@@ -660,13 +639,34 @@ Memory Device
 	Asset Tag: --
 	Part Number: HMT451S6BFR8A-PB  
 	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
+
+Handle 0x005C, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x0052
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: SODIMM
+	Set: None
+	Locator: DIMM B
+	Bank Locator: Not Specified
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: 0793
+	Serial Number: --
+	Asset Tag: --
+	Part Number: IR1600S3V64L11S/4G
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0061, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0052
 	Partition Width: 2
 
@@ -679,6 +679,17 @@ Memory Device Mapped Address
 	Memory Array Mapped Address Handle: 0x0061
 	Partition Row Position: 1
 	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x006B, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x005C
+	Memory Array Mapped Address Handle: 0x0061
+	Partition Row Position: 1
+	Interleave Position: 2
 	Interleaved Data Depth: 1
 
 Handle 0x0021, DMI type 21, 7 bytes
@@ -709,7 +720,7 @@ Hardware Security
 	Front Panel Reset Status: Disabled
 
 Handle 0x0027, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x1B00, DMI type 27, 15 bytes

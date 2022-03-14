@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 22 structures occupying 1128 bytes.
 Table at 0x000FCE30.
@@ -10,7 +11,7 @@ BIOS Information
 	Release Date: 08/25/2010
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -53,7 +54,7 @@ Base Board Information
 	Product Name: N68C-GS UCC
 	Version:                       
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148                       
 	Features:
 		Board is a hosting board
 		Board is replaceable
@@ -147,8 +148,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -182,21 +183,21 @@ Memory Controller Information
 Handle 0x0008, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM0
-	Bank Connections: 0
-	Current Speed: Unknown
-	Type: Other
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Bank Connections: 0 7
+	Current Speed: 164 ns
+	Type: ECC DIMM
+	Installed Size: 4096 MB (Double-bank Connection)
+	Enabled Size: 4096 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM1
-	Bank Connections: 0 7
-	Current Speed: 166 ns
-	Type: ECC DIMM
-	Installed Size: 4096 MB (Double-bank Connection)
-	Enabled Size: 4096 MB (Double-bank Connection)
+	Bank Connections: 0
+	Current Speed: Unknown
+	Type: Other
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x000A, DMI type 9, 13 bytes
@@ -268,51 +269,51 @@ Handle 0x0010, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x000E
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: Other
+	Size: 4 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
+	Type: Other
+	Type Detail: Synchronous
+	Speed: 400 MT/s
 	Manufacturer: Manufacturer0
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum0
 
-Handle 0x0011, DMI type 126, 19 bytes
-Inactive
+Handle 0x0011, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0010
+	Memory Array Mapped Address Handle: 0x000F
+	Partition Row Position: 1
 
 Handle 0x0012, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x000E
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
+	Total Width: Unknown
 	Data Width: 64 bits
-	Size: 4096 MB
-	Form Factor: DIMM
+	Size: No Module Installed
+	Form Factor: Other
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Other
-	Type Detail: Synchronous
-	Speed: 400 MHz
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
 	Manufacturer: Manufacturer1
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum1
 
-Handle 0x0013, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0012
-	Memory Array Mapped Address Handle: 0x000F
-	Partition Row Position: 1
+Handle 0x0013, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x0014, DMI type 32, 20 bytes
 System Boot Information

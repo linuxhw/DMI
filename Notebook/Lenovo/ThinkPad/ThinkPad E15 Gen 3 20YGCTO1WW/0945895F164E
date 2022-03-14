@@ -25,10 +25,10 @@ Physical Memory Array
 Handle 0x0002, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0001
-	Partition Width: 1
+	Partition Width: 2
 
 Handle 0x0003, DMI type 7, 27 bytes
 Cache Information
@@ -148,38 +148,49 @@ Handle 0x0008, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x0001
 	Error Information Handle: 0x0007
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL A
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Null
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 3200 MT/s
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Null
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
+	Part Number: CT8G4SFRA32A.C4FE
+	Rank: 1
+	Configured Memory Speed: 3200 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Unknown
+	Module Manufacturer ID: Bank 6, Hex 0x9B
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: None
+	Volatile Size: 8 GB
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0009, DMI type 18, 23 bytes
+Handle 0x0009, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x0008
+	Memory Array Mapped Address Handle: 0x0002
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x000A, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -189,10 +200,10 @@ Handle 0x0009, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x000A, DMI type 17, 92 bytes
+Handle 0x000B, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x0001
-	Error Information Handle: 0x0009
+	Error Information Handle: 0x000A
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
@@ -224,25 +235,27 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x000B, DMI type 20, 35 bytes
+Handle 0x000C, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x000A
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x000B
 	Memory Array Mapped Address Handle: 0x0002
 	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
-Handle 0x000C, DMI type 134, 13 bytes
+Handle 0x000D, DMI type 134, 13 bytes
 OEM-specific Type
 	Header and Data:
-		86 0D 0C 00 28 09 21 20 00 00 00 00 00
+		86 0D 0D 00 28 09 21 20 00 00 00 00 00
 
-Handle 0x000D, DMI type 0, 26 bytes
+Handle 0x000E, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: R1OET28W (1.07 )
-	Release Date: 07/15/2021
+	Version: R1OET31W (1.10 )
+	Release Date: 11/29/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -265,10 +278,10 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.7
-	Firmware Revision: 1.7
+	BIOS Revision: 1.10
+	Firmware Revision: 1.10
 
-Handle 0x000E, DMI type 1, 27 bytes
+Handle 0x000F, DMI type 1, 27 bytes
 System Information
 	Manufacturer: LENOVO
 	Product Name: 20YGCTO1WW
@@ -279,7 +292,7 @@ System Information
 	SKU Number: LENOVO_MT_20YG_BU_Think_FM_ThinkPad E15 Gen 3
 	Family: ThinkPad E15 Gen 3
 
-Handle 0x000F, DMI type 2, 15 bytes
+Handle 0x0010, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: LENOVO
 	Product Name: 20YGCTO1WW
@@ -294,7 +307,7 @@ Base Board Information
 	Type: Motherboard
 	Contained Object Handles: 0
 
-Handle 0x0010, DMI type 3, 22 bytes
+Handle 0x0011, DMI type 3, 22 bytes
 Chassis Information
 	Manufacturer: LENOVO
 	Type: Notebook
@@ -312,7 +325,7 @@ Chassis Information
 	Contained Elements: 0
 	SKU Number: Not Specified
 
-Handle 0x0011, DMI type 8, 9 bytes
+Handle 0x0012, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J2605
 	Internal Connector Type: None
@@ -320,7 +333,7 @@ Port Connector Information
 	External Connector Type: PS/2
 	Port Type: Mouse Port
 
-Handle 0x0012, DMI type 8, 9 bytes
+Handle 0x0013, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1300
 	Internal Connector Type: None
@@ -328,7 +341,7 @@ Port Connector Information
 	External Connector Type: RJ-45
 	Port Type: Network Port
 
-Handle 0x0013, DMI type 8, 9 bytes
+Handle 0x0014, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1501
 	Internal Connector Type: None
@@ -336,7 +349,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0014, DMI type 8, 9 bytes
+Handle 0x0015, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1502
 	Internal Connector Type: None
@@ -344,7 +357,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0015, DMI type 8, 9 bytes
+Handle 0x0016, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1500
 	Internal Connector Type: None
@@ -352,7 +365,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0016, DMI type 8, 9 bytes
+Handle 0x0017, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J3803
 	Internal Connector Type: None
@@ -360,7 +373,7 @@ Port Connector Information
 	External Connector Type: Other
 	Port Type: Other
 
-Handle 0x0017, DMI type 8, 9 bytes
+Handle 0x0018, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J3812
 	Internal Connector Type: None
@@ -368,7 +381,7 @@ Port Connector Information
 	External Connector Type: Other
 	Port Type: Other
 
-Handle 0x0018, DMI type 8, 9 bytes
+Handle 0x0019, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: USB10
 	Internal Connector Type: None
@@ -376,7 +389,7 @@ Port Connector Information
 	External Connector Type: Other
 	Port Type: Other
 
-Handle 0x0019, DMI type 8, 9 bytes
+Handle 0x001A, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1707
 	Internal Connector Type: None
@@ -384,7 +397,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x001A, DMI type 8, 9 bytes
+Handle 0x001B, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1705
 	Internal Connector Type: None
@@ -392,7 +405,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x001B, DMI type 8, 9 bytes
+Handle 0x001C, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J2105
 	Internal Connector Type: None
@@ -400,7 +413,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x001C, DMI type 8, 9 bytes
+Handle 0x001D, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J2106
 	Internal Connector Type: None
@@ -408,7 +421,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x001D, DMI type 8, 9 bytes
+Handle 0x001E, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1100
 	Internal Connector Type: None
@@ -416,7 +429,7 @@ Port Connector Information
 	External Connector Type: Other
 	Port Type: Video Port
 
-Handle 0x001E, DMI type 8, 9 bytes
+Handle 0x001F, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1101
 	Internal Connector Type: None
@@ -424,7 +437,7 @@ Port Connector Information
 	External Connector Type: Other
 	Port Type: Video Port
 
-Handle 0x001F, DMI type 8, 9 bytes
+Handle 0x0020, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1102
 	Internal Connector Type: None
@@ -432,7 +445,7 @@ Port Connector Information
 	External Connector Type: Other
 	Port Type: Video Port
 
-Handle 0x0020, DMI type 9, 17 bytes
+Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-E x1 (J3600)
 	Type: x1 PCI Express x1
@@ -446,7 +459,7 @@ System Slot Information
 		SMBus signal is supported
 	Bus Address: 0000:00:00.0
 
-Handle 0x0021, DMI type 9, 17 bytes
+Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-E x8 (J3605)
 	Type: x1 PCI Express x1
@@ -460,7 +473,7 @@ System Slot Information
 		SMBus signal is supported
 	Bus Address: 0000:00:00.0
 
-Handle 0x0022, DMI type 9, 17 bytes
+Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2 PCI-E Connector (J3700)
 	Type: x1 PCI Express x1
@@ -474,7 +487,7 @@ System Slot Information
 		SMBus signal is supported
 	Bus Address: 0000:00:00.0
 
-Handle 0x0023, DMI type 9, 17 bytes
+Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2 WWAN Connector (J3702)
 	Type: x1 PCI Express x1
@@ -488,7 +501,7 @@ System Slot Information
 		SMBus signal is supported
 	Bus Address: 0000:00:00.0
 
-Handle 0x0024, DMI type 9, 17 bytes
+Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2 WLAN/BT Connector (J3703)
 	Type: x1 PCI Express x1
@@ -502,7 +515,7 @@ System Slot Information
 		SMBus signal is supported
 	Bus Address: 0000:00:00.0
 
-Handle 0x0025, DMI type 9, 17 bytes
+Handle 0x0026, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE SD_Card (J4000)
 	Type: x1 PCI Express x1
@@ -516,31 +529,31 @@ System Slot Information
 		SMBus signal is supported
 	Bus Address: 0000:00:00.0
 
-Handle 0x0026, DMI type 10, 6 bytes
+Handle 0x0027, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
 	Description: AMD Carrizo FP4 GPU
 
-Handle 0x0027, DMI type 10, 6 bytes
+Handle 0x0028, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Sound
 	Status: Enabled
 	Description: AZALIA HD Audio
 
-Handle 0x0028, DMI type 10, 6 bytes
+Handle 0x0029, DMI type 10, 6 bytes
 On Board Device Information
 	Type: SATA Controller
 	Status: Enabled
 	Description: AMD Carrizo FP4
 
-Handle 0x0029, DMI type 10, 6 bytes
+Handle 0x002A, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Unknown
 	Status: Enabled
 	Description: ST TPM ST33TPMF12SPI
 
-Handle 0x002A, DMI type 13, 22 bytes
+Handle 0x002B, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 6
@@ -552,7 +565,7 @@ BIOS Language Information
 		zh-CHS
 	Currently Installed Language: en-US
 
-Handle 0x002B, DMI type 22, 26 bytes
+Handle 0x002C, DMI type 22, 26 bytes
 Portable Battery
 	Location: Front
 	Manufacturer: SMP
@@ -566,24 +579,24 @@ Portable Battery
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000000
 
-Handle 0x002C, DMI type 126, 26 bytes
+Handle 0x002D, DMI type 126, 26 bytes
 Inactive
 
-Handle 0x002D, DMI type 140, 15 bytes
+Handle 0x002E, DMI type 140, 15 bytes
 OEM-specific Type
 	Header and Data:
-		8C 0F 2D 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
+		8C 0F 2E 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
 	Strings:
-		1.07 
-		1.07 
+		1.10 
+		1.10 
 
-Handle 0x002E, DMI type 135, 19 bytes
+Handle 0x002F, DMI type 135, 19 bytes
 OEM-specific Type
 	Header and Data:
-		87 13 2E 00 54 50 07 02 42 41 59 20 49 2F 4F 20
+		87 13 2F 00 54 50 07 02 42 41 59 20 49 2F 4F 20
 		04 00 00
 
-Handle 0x002F, DMI type 18, 23 bytes
+Handle 0x0030, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -593,50 +606,50 @@ Handle 0x002F, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0030, DMI type 21, 7 bytes
+Handle 0x0031, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Track Point
 	Interface: PS/2
 	Buttons: 3
 
-Handle 0x0031, DMI type 21, 7 bytes
+Handle 0x0032, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Touch Pad
 	Interface: PS/2
 	Buttons: 2
 
-Handle 0x0032, DMI type 131, 22 bytes
+Handle 0x0033, DMI type 131, 22 bytes
 ThinkVantage Technologies
 	Version: 1
 	Diagnostics: No
 
-Handle 0x0033, DMI type 136, 6 bytes
+Handle 0x0034, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 33 00 5A 5A
+		88 06 34 00 5A 5A
 
-Handle 0x0034, DMI type 24, 5 bytes
+Handle 0x0035, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
-Handle 0x0035, DMI type 132, 8 bytes
+Handle 0x0036, DMI type 132, 8 bytes
 OEM-specific Type
 	Header and Data:
-		84 08 35 00 02 D8 36 00
+		84 08 36 00 02 D8 36 00
 
-Handle 0x0036, DMI type 15, 31 bytes
+Handle 0x0037, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 66 bytes
+	Area Length: 82 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000003
+	Change Token: 0x00000004
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -648,53 +661,53 @@ System Event Log
 	Descriptor 4: Log area reset/cleared
 	Data Format 4: None
 
-Handle 0x0037, DMI type 141, 18 bytes
-OEM-specific Type
-	Header and Data:
-		8D 12 37 00 54 48 4E 4B 00 00 00 00 00 00 03 00
-		00 00
-
 Handle 0x0038, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 38 00 54 48 4E 4B 00 00 10 00 00 00 00 00
+		8D 12 38 00 54 48 4E 4B 00 00 00 00 00 00 03 00
 		00 00
 
 Handle 0x0039, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 39 00 54 48 4E 4B 00 00 30 00 00 00 00 00
+		8D 12 39 00 54 48 4E 4B 00 00 10 00 00 00 00 00
 		00 00
 
 Handle 0x003A, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3A 00 54 48 4E 4B 00 00 40 00 00 00 03 00
+		8D 12 3A 00 54 48 4E 4B 00 00 30 00 00 00 00 00
 		00 00
 
-Handle 0x003B, DMI type 141, 30 bytes
+Handle 0x003B, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 1E 3B 00 54 48 4E 4B 00 00 50 00 00 00 87 86
-		1A 00 00 00 00 00 ED ED 13 00 00 00 00 00
+		8D 12 3B 00 54 48 4E 4B 00 00 40 00 00 00 34 00
+		00 00
 
-Handle 0x003C, DMI type 140, 15 bytes
+Handle 0x003C, DMI type 141, 30 bytes
+OEM-specific Type
+	Header and Data:
+		8D 1E 3C 00 54 48 4E 4B 00 00 50 00 00 00 C7 5C
+		9C 00 00 00 00 00 81 2E 79 00 00 00 00 00
+
+Handle 0x003D, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: R1OHT28W
-	Release Date: 07/15/2021
+	Version ID: R1OHT31W
+	Release Date: 11/29/2021
 
-Handle 0x003D, DMI type 141, 56 bytes
+Handle 0x003E, DMI type 141, 56 bytes
 OEM-specific Type
 	Header and Data:
-		8D 38 3D 00 54 48 4E 4B 00 00 60 00 00 00 24 00
-		21 20 10 15 06 12 14 00 21 20 10 14 09 48 23 00
-		21 20 10 13 17 29 34 00 21 20 10 13 17 29 24 00
-		21 20 10 13 17 28 55 00
+		8D 38 3E 00 54 48 4E 4B 00 00 60 00 00 00 FF 00
+		22 20 02 25 14 53 57 00 22 20 02 25 07 08 37 00
+		22 20 02 23 14 30 20 00 22 20 02 23 09 08 29 00
+		22 20 02 19 07 11 58 00
 
-Handle 0x003E, DMI type 135, 18 bytes
+Handle 0x003F, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 3E 00 54 50 07 01 01 00 02 00 00 00 02 00
+		87 12 3F 00 54 50 07 01 01 00 02 00 00 00 02 00
 		00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0xB374E000.
+Table at 0xB354E000.
 
 Handle 0x0000, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -25,10 +25,10 @@ Physical Memory Array
 Handle 0x0002, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0001
-	Partition Width: 1
+	Partition Width: 2
 
 Handle 0x0003, DMI type 7, 27 bytes
 Cache Information
@@ -154,7 +154,7 @@ Handle 0x000B, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x000E, DMI type 43, 31 bytes
+Handle 0x000F, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: IFX
 	Specification Version: 2.0
@@ -165,11 +165,16 @@ TPM Device
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
-Handle 0x000F, DMI type 0, 26 bytes
+Handle 0x0010, DMI type 253, 7 bytes
+OEM-specific Type
+	Header and Data:
+		FD 07 10 00 00 00 00
+
+Handle 0x0011, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: S77 Ver. 01.03.01
-	Release Date: 01/28/2021
+	Version: S77 Ver. 01.07.00
+	Release Date: 11/02/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -191,10 +196,10 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 3.1
-	Firmware Revision: 7.45
+	BIOS Revision: 7.0
+	Firmware Revision: 7.55
 
-Handle 0x0010, DMI type 1, 27 bytes
+Handle 0x0012, DMI type 1, 27 bytes
 System Information
 	Manufacturer: HP
 	Product Name: HP EliteBook 855 G7 Notebook PC
@@ -205,11 +210,11 @@ System Information
 	SKU Number: 2F1R0PA#AB1
 	Family: 103C_5336AN HP EliteBook
 
-Handle 0x0011, DMI type 2, 17 bytes
+Handle 0x0013, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 8760
-	Version: KBC Version 07.2D.00
+	Version: KBC Version 07.37.00
 	Serial Number: --
 	Asset Tag: --
 	97946E993916094B22613E03B8339091
@@ -219,7 +224,7 @@ Base Board Information
 	Type: Motherboard
 	Contained Object Handles: 0
 
-Handle 0x0012, DMI type 3, 24 bytes
+Handle 0x0014, DMI type 3, 24 bytes
 Chassis Information
 	Manufacturer: HP
 	Type: Notebook
@@ -237,7 +242,7 @@ Chassis Information
 	Contained Elements: 0
 	SKU Number: Not Specified
 
-Handle 0x0014, DMI type 13, 22 bytes
+Handle 0x0016, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 15
@@ -258,7 +263,7 @@ BIOS Language Information
 		ruRU
 	Currently Installed Language: enUS
 
-Handle 0x0015, DMI type 8, 9 bytes
+Handle 0x0017, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port0
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -266,7 +271,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x0016, DMI type 9, 24 bytes
+Handle 0x0018, DMI type 9, 24 bytes
 System Slot Information
 	Designation: M.2 NVMe SSD
 	Type: 32-bit PCI Express 3 x4
@@ -281,7 +286,7 @@ System Slot Information
 	Data Bus Width: 77
 	Peer Devices: 46
 
-Handle 0x0017, DMI type 9, 24 bytes
+Handle 0x0019, DMI type 9, 24 bytes
 System Slot Information
 	Designation: M.2 WLAN/BT
 	Type: 32-bit PCI Express x1
@@ -296,7 +301,7 @@ System Slot Information
 	Data Bus Width: 77
 	Peer Devices: 46
 
-Handle 0x0018, DMI type 9, 24 bytes
+Handle 0x001A, DMI type 9, 24 bytes
 System Slot Information
 	Designation: M.2 WWAN
 	Type: 32-bit PCI Express x1
@@ -311,7 +316,7 @@ System Slot Information
 	Data Bus Width: 0
 	Peer Devices: 0
 
-Handle 0x0019, DMI type 41, 11 bytes
+Handle 0x001B, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard IGD
 	Type: Video
@@ -319,7 +324,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:03:00.0
 
-Handle 0x001A, DMI type 17, 84 bytes
+Handle 0x001C, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x0001
 	Error Information Handle: 0x0007
@@ -358,34 +363,34 @@ Handle 0x0008, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x0001
 	Error Information Handle: 0x000B
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Other
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(right)
 	Bank Locator: ChannelB0
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Not Installed
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 3200 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
-	Firmware Version: Unknown
-	Module Manufacturer ID: Unknown
+	BC3C17CCE7DBFEAC9E13C8B4CC4D6E3F    
+	Rank: 1
+	Configured Memory Speed: 3200 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: M471A1K43EB1-CWE    
+	Module Manufacturer ID: Bank 1, Hex 0xCE
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: None
+	Volatile Size: 8 GB
 	Cache Size: None
 	Logical Size: None
 
@@ -394,11 +399,21 @@ Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x001A
+	Physical Device Handle: 0x001C
 	Memory Array Mapped Address Handle: 0x0002
 	Partition Row Position: 1
 
-Handle 0x000A, DMI type 22, 26 bytes
+Handle 0x000A, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0008
+	Memory Array Mapped Address Handle: 0x0002
+	Partition Row Position: 1
+	Interleave Position: 1
+
+Handle 0x000C, DMI type 22, 26 bytes
 Portable Battery
 	Location: Primary
 	Manufacturer: 333-54-2C-A
@@ -412,18 +427,18 @@ Portable Battery
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
-Handle 0x000C, DMI type 24, 5 bytes
+Handle 0x000D, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Enabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Enabled
 	Front Panel Reset Status: Disabled
 
-Handle 0x000D, DMI type 32, 11 bytes
+Handle 0x000E, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x001B, DMI type 11, 5 bytes
+Handle 0x001D, DMI type 11, 5 bytes
 OEM Strings
 	String 1: FBYTE#3Y6E6J6S6a7H7M7Q7W7d7m7saEawbUbhcAfPgSguhKjhk8m6.fr;
 	String 2: BUILDID#20WWLDAD301#SAB1#DAB1;
@@ -431,7 +446,7 @@ OEM Strings
 	String 4: Buff=2
 	String 5: HRDWFEATS=;PROGKEY:1;NONHPBATDET:1;
 
-Handle 0x0013, DMI type 10, 6 bytes
+Handle 0x0015, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled

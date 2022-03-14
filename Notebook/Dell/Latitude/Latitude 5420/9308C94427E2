@@ -1,8 +1,8 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
-69 structures occupying 5198 bytes.
-Table at 0x553E6000.
+70 structures occupying 5258 bytes.
+Table at 0x553EB000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -136,20 +136,21 @@ OEM-specific Type
 		80 14 80 00 00 00 A0 00 A0 01 00 04 A0 04 A0 01
 		00 FF FF FF FF 00 00
 
-Handle 0xDA07, DMI type 218, 77 bytes
+Handle 0xDA07, DMI type 218, 89 bytes
 OEM-specific Type
 	Header and Data:
-		DA 4D 07 DA B2 00 7C FF 1F B6 50 00 F1 00 F1 01
+		DA 59 07 DA B2 00 7C FF 1F B6 50 00 F1 00 F1 01
 		00 02 F1 02 F1 01 00 10 F1 10 F1 01 00 12 F1 12
 		F1 01 00 20 F1 20 F1 01 00 22 F1 22 F1 01 00 30
-		F1 30 F1 01 00 32 F1 32 F1 01 00 00 F6 00 F6 01
-		00 01 F6 01 F6 01 00 FF FF FF FF 00 00
+		F1 30 F1 01 00 32 F1 32 F1 01 00 40 F1 40 F1 01
+		00 42 F1 42 F1 01 00 00 F6 00 F6 01 00 01 F6 01
+		F6 01 00 FF FF FF FF 00 00
 
 Handle 0x0001, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.8.0
-	Release Date: 06/08/2021
+	Version: 1.14.1
+	Release Date: 11/22/2021
 	ROM Size: 32 MB
 	Characteristics:
 		PCI is supported
@@ -170,7 +171,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.8
+	BIOS Revision: 1.14
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -194,7 +195,7 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Not Specified
-	Chassis Handle: 0x0000
+	Chassis Handle: 0x0300
 	Type: Motherboard
 	Contained Object Handles: 0
 
@@ -254,10 +255,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: 11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz
-	Voltage: 0.7 V
+	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 4800 MHz
-	Current Speed: 1800 MHz
+	Current Speed: 4300 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0701
@@ -535,13 +536,6 @@ Portable Battery
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000801
 
-Handle 0x1800, DMI type 24, 5 bytes
-Hardware Security
-	Power-On Password Status: Not Implemented
-	Keyboard Password Status: Not Implemented
-	Administrator Password Status: Not Implemented
-	Front Panel Reset Status: Not Implemented
-
 Handle 0x1900, DMI type 25, 9 bytes
 System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
@@ -604,6 +598,19 @@ Temperature Probe
 	Tolerance: Unknown
 	Accuracy: Unknown
 	OEM-specific Information: 0x0000DC03
+	Nominal Value: 10.0 deg C
+
+Handle 0x1C04, DMI type 28, 22 bytes
+Temperature Probe
+	Description: OTHER 
+	Location: Other
+	Status: OK
+	Maximum Value: 127.0 deg C
+	Minimum Value: -127.0 deg C
+	Resolution: 1.000 deg C
+	Tolerance: Unknown
+	Accuracy: Unknown
+	OEM-specific Information: 0x0000DC04
 	Nominal Value: 10.0 deg C
 
 Handle 0x2000, DMI type 32, 11 bytes
@@ -871,6 +878,12 @@ OEM-specific Type
 		DC 16 03 DC 30 F1 00 00 32 F1 00 00 00 00 00 00
 		00 00 00 00 00 00
 
+Handle 0xDC04, DMI type 220, 22 bytes
+OEM-specific Type
+	Header and Data:
+		DC 16 04 DC 40 F1 00 00 42 F1 00 00 00 00 00 00
+		00 00 00 00 00 00
+
 Handle 0xDD00, DMI type 221, 19 bytes
 OEM-specific Type
 	Header and Data:
@@ -880,7 +893,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 21 07 05 13 32 01 00 00
+		DE 10 00 DE 01 04 00 00 21 12 30 09 20 01 00 00
 
 Handle 0x0000, DMI type 255, 6 bytes
 OEM-specific Type

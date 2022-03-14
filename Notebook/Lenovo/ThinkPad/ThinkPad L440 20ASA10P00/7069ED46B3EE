@@ -1,4 +1,4 @@
-# dmidecode 3.0
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 57 structures occupying 2395 bytes.
@@ -146,13 +146,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M471B1G73QH0-YK0  
 	Rank: Unknown
-	Configured Clock Speed: 1600 MHz
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0007, DMI type 17, 34 bytes
 Memory Device
@@ -195,9 +195,9 @@ Handle 0x000A, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
 		83 40 0A 00 31 00 00 00 00 00 00 00 00 00 00 00
-		F8 00 49 8C 00 00 00 00 01 20 00 00 00 00 09 00
+		F8 00 49 8C 00 00 00 00 01 00 00 00 00 00 09 00
 		A7 05 14 00 00 00 00 00 C8 00 3B 15 00 00 00 00
-		00 00 00 00 64 00 00 00 76 50 72 6F 00 00 00 00
+		00 00 00 00 24 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x000B, DMI type 134, 13 bytes
 OEM-specific Type
@@ -264,8 +264,13 @@ Port Connector Information
 	External Connector Type: Other
 	Port Type: Video Port
 
-Handle 0x0012, DMI type 126, 9 bytes
-Inactive
+Handle 0x0012, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: Not Available
+	Internal Connector Type: None
+	External Reference Designator: DisplayPort/DVI-D 1
+	External Connector Type: Other
+	Port Type: Video Port
 
 Handle 0x0013, DMI type 126, 9 bytes
 Inactive
@@ -278,11 +283,21 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x0015, DMI type 126, 9 bytes
-Inactive
+Handle 0x0015, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: Not Available
+	Internal Connector Type: None
+	External Reference Designator: Headphone Jack
+	External Connector Type: Mini Jack (headphones)
+	Port Type: Audio Port
 
-Handle 0x0016, DMI type 126, 9 bytes
-Inactive
+Handle 0x0016, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: Not Available
+	Internal Connector Type: None
+	External Reference Designator: Microphone Jack
+	External Connector Type: Mini Jack (headphones)
+	Port Type: Audio Port
 
 Handle 0x0017, DMI type 8, 9 bytes
 Port Connector Information
@@ -359,11 +374,21 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0021, DMI type 126, 9 bytes
-Inactive
+Handle 0x0021, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: Not Available
+	Internal Connector Type: None
+	External Reference Designator: USB 9
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
 
-Handle 0x0022, DMI type 126, 9 bytes
-Inactive
+Handle 0x0022, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: Not Available
+	Internal Connector Type: None
+	External Reference Designator: USB 10
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
 
 Handle 0x0023, DMI type 126, 9 bytes
 Inactive
@@ -430,7 +455,7 @@ Portable Battery
 	SBDS Version: 01.08
 	Maximum Error: Unknown
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 2016-02-03
+	SBDS Manufacture Date: 2015-02-13
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
@@ -484,14 +509,14 @@ OEM-specific Type
 
 Handle 0x0033, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 306 bytes
+	Area Length: 354 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000012
+	Change Token: 0x00000015
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error

@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-92 structures occupying 3428 bytes.
+91 structures occupying 3367 bytes.
 Table at 0x000EB8B0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 02/25/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -172,8 +172,8 @@ Cache Information
 	Configuration: Disabled, Not Socketed, Level 3
 	Operational Mode: Unknown
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -851,7 +851,7 @@ Memory Device
 	Error Information Handle: 0x0057
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -859,11 +859,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Kingston
+	Manufacturer: 8502
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 99U5474-010.A00LF 
-	Rank: 1
+	Part Number: PSD38G13332
+	Rank: 2
 	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0053, DMI type 16, 23 bytes
@@ -888,10 +888,10 @@ Handle 0x0054, DMI type 18, 23 bytes
 Handle 0x0055, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0052
-	Memory Array Mapped Address Handle: 0x0059
+	Memory Array Mapped Address Handle: 0x0058
 	Partition Row Position: Unknown
 	Interleave Position: 1
 	Interleaved Data Depth: 1
@@ -900,22 +900,22 @@ Handle 0x0056, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0053
 	Error Information Handle: No Error
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2048 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Kingston
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: [Empty]
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 99U5474-010.A00LF 
-	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Part Number: [Empty]
+	Rank: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0057, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -927,26 +927,15 @@ Handle 0x0057, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0058, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x0056
-	Memory Array Mapped Address Handle: 0x0059
-	Partition Row Position: Unknown
-	Interleave Position: 2
-	Interleaved Data Depth: 1
-
-Handle 0x0059, DMI type 19, 31 bytes
+Handle 0x0058, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0053
 	Partition Width: 2
 
-Handle 0x005B, DMI type 13, 22 bytes
+Handle 0x005A, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 8
@@ -960,6 +949,6 @@ BIOS Language Information
 		zh|CN|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x005D, DMI type 127, 4 bytes
+Handle 0x005C, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0xE66D4000.
@@ -10,7 +10,7 @@ BIOS Information
 	Release Date: 07/06/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -64,7 +64,7 @@ Chassis Information
 	Lock: Not Present
 	Version:  
 	Serial Number: --
-	Asset Tag: --
+	C7C32AAB0C47FFF4C21133AB8174AFC5
 	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Safe
@@ -367,8 +367,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -577,8 +577,8 @@ System Power Supply
 	Name:  
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Model Part Number: Standard Efficiency
 	Revision:  
 	Max Power Capacity: Unknown
 	Status: Present, OK
@@ -617,8 +617,10 @@ Onboard Device
 Handle 0x0040, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: 
-	Specification Version: 2.0	Firmware Revision: 2.1
-	Description: AMD	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 2.12
+	Description: AMD
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -650,7 +652,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -663,7 +665,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: M378A1K43CB2-CRC    
 	Rank: 1
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.25 V
 	Maximum Voltage: 1.35 V
 	Configured Voltage: 1.35 V
@@ -674,7 +676,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 3
@@ -687,7 +689,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: CMK16GX4M2A2400C16  
 	Rank: 1
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.25 V
 	Maximum Voltage: 1.35 V
 	Configured Voltage: 1.35 V

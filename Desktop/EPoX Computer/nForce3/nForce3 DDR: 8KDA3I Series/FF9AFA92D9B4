@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.2 present.
 37 structures occupying 987 bytes.
 Table at 0x000F0000.
@@ -43,7 +44,7 @@ System Information
 	Product Name:  
 	Version:  
 	Serial Number: --
-	UUID: --
+	8D31E5AF29A007550013C5E3EADF8343
 	Wake-up Type: Power Switch
 
 Handle 0x0002, DMI type 2, 8 bytes
@@ -60,8 +61,8 @@ Chassis Information
 	Lock: Not Present
 	Version:  
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Boot-up State: Unknown
 	Power Supply State: Unknown
 	Thermal State: Unknown
 	Security Status: Unknown
@@ -99,9 +100,9 @@ Processor Information
 		SSE2 (Streaming SIMD extensions 2)
 	Version: AMD Sempron(tm) Processor 2600+
 	Voltage: 1.5 V
-	External Clock: 285 MHz
+	External Clock: 265 MHz
 	Max Speed: 3000 MHz
-	Current Speed: 2280 MHz
+	Current Speed: 2120 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket 754
 	L1 Cache Handle: 0x0009
@@ -154,11 +155,11 @@ Memory Module Information
 Handle 0x0008, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A2
-	Bank Connections: None
+	Bank Connections: 4 5
 	Current Speed: 6 ns
 	Type: Unknown EDO
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 1024 MB (Double-bank Connection)
+	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 7, 19 bytes
@@ -291,7 +292,7 @@ Handle 0x0016, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI2
 	Type: 32-bit PCI
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 3
 	Characteristics:
@@ -354,7 +355,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
@@ -368,7 +369,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1
@@ -382,7 +383,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A2
@@ -393,8 +394,8 @@ Memory Device
 Handle 0x001F, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 3 GB
 	Physical Array Handle: 0x001B
 	Partition Width: 1
 
@@ -418,9 +419,9 @@ Memory Device Mapped Address
 
 Handle 0x0022, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: 1

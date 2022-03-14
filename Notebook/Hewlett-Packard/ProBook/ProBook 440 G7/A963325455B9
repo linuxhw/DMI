@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
-32 structures occupying 2267 bytes.
+33 structures occupying 2344 bytes.
 Table at 0xAEEB5000.
 
 Handle 0x0000, DMI type 43, 31 bytes
@@ -121,10 +121,10 @@ Physical Memory Array
 Handle 0x000C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0007
-	Partition Width: 1
+	Partition Width: 2
 
 Handle 0x000D, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
@@ -317,34 +317,34 @@ Handle 0x001A, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x0007
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Other
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(left)
 	Bank Locator: ChannelA
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2667 MT/s
+	Manufacturer: Unknown - [0xC289]
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	96DF62AA60E3B143A94AB1A0B0B9AA1B     
+	Rank: 1
+	Configured Memory Speed: 2667 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: None
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
+	Module Manufacturer ID: Bank 10, Hex 0xC2
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: None
+	Volatile Size: 8 GB
 	Cache Size: None
 	Logical Size: None
 
@@ -388,12 +388,21 @@ Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
+	Physical Device Handle: 0x001A
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: 1
+
+Handle 0x000A, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0008
 	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: 1
 	Interleave Position: 1
 
-Handle 0x000A, DMI type 22, 26 bytes
+Handle 0x000B, DMI type 22, 26 bytes
 Portable Battery
 	Location: Primary
 	Manufacturer: 333-54-35-A
@@ -407,18 +416,18 @@ Portable Battery
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
-Handle 0x000B, DMI type 24, 5 bytes
+Handle 0x001B, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
 
-Handle 0x001B, DMI type 32, 11 bytes
+Handle 0x001C, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x001C, DMI type 11, 5 bytes
+Handle 0x001D, DMI type 11, 5 bytes
 OEM Strings
 	String 1: FBYTE#3Y6E6J6S6a7J7M7Q7W7d7m7sawbUbhcAfPk8m6.H4;
 	String 2: BUILDID#19WWR4CD302#SACB#DACB;
@@ -433,17 +442,17 @@ On Board Device Information
 	Status: Enabled
 	Description: 512 MB
 
-Handle 0x001D, DMI type 14, 8 bytes
+Handle 0x001E, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x001E, DMI type 219, 106 bytes
+Handle 0x001F, DMI type 219, 106 bytes
 HP ProLiant Information
 	Power Features: 0x45010401
 	Omega Features: 0x06900002
-	Misc. Features: 0x00000000
+	Misc. Features: 0x04000000
 		iCRU: No
 		UEFI: No
 

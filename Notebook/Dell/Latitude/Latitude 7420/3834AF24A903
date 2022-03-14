@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
-79 structures occupying 6237 bytes.
+80 structures occupying 6309 bytes.
 Table at 0x5FCD0000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
@@ -121,33 +121,35 @@ OEM-specific Type
 		05 FF FF 6D 05 6D 05 01 00 6E 05 6E 05 00 00 72
 		05 72 05 00 00 73 05 73 05 01 00 74 05 74 05 02
 		00 75 05 75 05 01 00 76 05 76 05 00 00 77 05 77
-		05 FF FF 4A 40 4A 40 01 00 4B 40 4B 40 00 00 4C
-		40 4C 40 FF FF FF FF FF FF 00 00
+		05 FF FF 7E 05 7E 05 01 00 7F 05 7F 05 00 00 4A
+		40 4A 40 01 00 FF FF FF FF 00 00
 
-Handle 0xDA06, DMI type 218, 95 bytes
+Handle 0xDA06, DMI type 218, 107 bytes
 OEM-specific Type
 	Header and Data:
-		DA 5F 06 DA B2 00 7C FF 1F B6 50 4F 40 4F 40 01
-		00 50 40 50 40 00 00 00 80 00 80 00 00 02 80 02
-		80 02 00 03 80 03 80 03 00 0E 80 0E 80 01 00 0F
-		80 0F 80 FF FF 11 80 11 80 01 00 12 80 12 80 FF
-		FF 13 80 13 80 00 00 14 80 14 80 00 00 00 A0 00
-		A0 01 00 04 A0 04 A0 01 00 FF FF FF FF 00 00
+		DA 6B 06 DA B2 00 7C FF 1F B6 50 4B 40 4B 40 00
+		00 4C 40 4C 40 FF FF 4F 40 4F 40 01 00 50 40 50
+		40 00 00 00 80 00 80 00 00 02 80 02 80 02 00 03
+		80 03 80 03 00 0E 80 0E 80 01 00 0F 80 0F 80 FF
+		FF 11 80 11 80 01 00 12 80 12 80 FF FF 13 80 13
+		80 00 00 14 80 14 80 00 00 00 A0 00 A0 01 00 04
+		A0 04 A0 01 00 FF FF FF FF 00 00
 
-Handle 0xDA07, DMI type 218, 77 bytes
+Handle 0xDA07, DMI type 218, 89 bytes
 OEM-specific Type
 	Header and Data:
-		DA 4D 07 DA B2 00 7C FF 1F B6 50 00 F1 00 F1 01
+		DA 59 07 DA B2 00 7C FF 1F B6 50 00 F1 00 F1 01
 		00 02 F1 02 F1 01 00 10 F1 10 F1 01 00 12 F1 12
 		F1 01 00 20 F1 20 F1 01 00 22 F1 22 F1 01 00 30
-		F1 30 F1 01 00 32 F1 32 F1 01 00 00 F6 00 F6 01
-		00 01 F6 01 F6 01 00 FF FF FF FF 00 00
+		F1 30 F1 01 00 32 F1 32 F1 01 00 40 F1 40 F1 01
+		00 42 F1 42 F1 01 00 00 F6 00 F6 01 00 01 F6 01
+		F6 01 00 FF FF FF FF 00 00
 
 Handle 0x0001, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.6.0
-	Release Date: 05/06/2021
+	Version: 1.14.1
+	Release Date: 12/18/2021
 	ROM Size: 32 MB
 	Characteristics:
 		PCI is supported
@@ -168,7 +170,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.6
+	BIOS Revision: 1.14
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -177,7 +179,7 @@ System Information
 	Version: Not Specified
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Other
+	Wake-up Type: Power Switch
 	SKU Number: 0A36
 	Family: Latitude
 
@@ -192,7 +194,7 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Not Specified
-	Chassis Handle: 0x0000
+	Chassis Handle: 0x0300
 	Type: Motherboard
 	Contained Object Handles: 0
 
@@ -252,10 +254,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: 11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz
-	Voltage: 0.7 V
+	Voltage: 0.6 V
 	External Clock: 100 MHz
 	Max Speed: 4800 MHz
-	Current Speed: 4300 MHz
+	Current Speed: 1800 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0701
@@ -313,8 +315,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 5120 kB
-	Maximum Size: 5120 kB
+	Installed Size: 5 MB
+	Maximum Size: 5 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -329,8 +331,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12288 kB
-	Maximum Size: 12288 kB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -352,6 +354,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.0
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0901, DMI type 9, 24 bytes
 System Slot Information
@@ -366,6 +370,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.1
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0902, DMI type 9, 24 bytes
 System Slot Information
@@ -380,6 +386,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.2
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0903, DMI type 9, 24 bytes
 System Slot Information
@@ -394,6 +402,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.3
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0904, DMI type 9, 24 bytes
 System Slot Information
@@ -408,6 +418,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.4
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0905, DMI type 9, 24 bytes
 System Slot Information
@@ -422,6 +434,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.5
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0906, DMI type 9, 24 bytes
 System Slot Information
@@ -436,6 +450,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.6
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0B00, DMI type 11, 5 bytes
 OEM Strings
@@ -491,7 +507,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Motherboard
@@ -526,7 +542,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Motherboard
@@ -561,7 +577,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Motherboard
@@ -596,7 +612,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Motherboard
@@ -631,7 +647,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Motherboard
@@ -666,7 +682,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Motherboard
@@ -701,7 +717,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Motherboard
@@ -736,7 +752,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Motherboard
@@ -793,15 +809,8 @@ Portable Battery
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000801
 
-Handle 0x1800, DMI type 24, 5 bytes
-Hardware Security
-	Power-On Password Status: Not Implemented
-	Keyboard Password Status: Not Implemented
-	Administrator Password Status: Not Implemented
-	Front Panel Reset Status: Not Implemented
-
 Handle 0x1900, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x1B00, DMI type 27, 15 bytes
@@ -864,6 +873,19 @@ Temperature Probe
 	OEM-specific Information: 0x0000DC03
 	Nominal Value: 10.0 deg C
 
+Handle 0x1C04, DMI type 28, 22 bytes
+Temperature Probe
+	Description: OTHER 
+	Location: Other
+	Status: OK
+	Maximum Value: 127.0 deg C
+	Minimum Value: -127.0 deg C
+	Resolution: 1.000 deg C
+	Tolerance: Unknown
+	Accuracy: Unknown
+	OEM-specific Information: 0x0000DC04
+	Nominal Value: 10.0 deg C
+
 Handle 0x2000, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
@@ -923,8 +945,10 @@ Onboard Device
 Handle 0x2B00, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: STM
-	Specification Version: 2.0	Firmware Revision: 1.258
-	Description: TPM 2.0, ManufacturerID: STM , Firmware Version: 0x00010102.0x0	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 1.258
+	Description: TPM 2.0, ManufacturerID: STM , Firmware Version: 0x00010102.0x0
+	Characteristics:
 		TPM Device characteristics not supported
 	OEM-specific Information: 0x00000000
 
@@ -937,9 +961,9 @@ OEM-specific Type
 Handle 0x8300, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 00 83 3F 00 00 00 0F 00 00 00 00 00 03 00
+		83 40 00 83 3F 00 00 00 0F 00 00 00 00 00 04 00
 		F8 00 82 A0 00 00 00 00 09 C0 00 00 00 00 0F 00
-		42 06 0A 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		F7 07 23 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x8800, DMI type 136, 8 bytes
@@ -967,8 +991,8 @@ OEM-specific Type
 Handle 0xCB00, DMI type 203, 106 bytes
 OEM-specific Type
 	Header and Data:
-		CB 6A 00 CB 01 04 01 45 02 00 90 06 81 85 39 30
-		00 00 00 00 40 00 00 03 1F 00 00 C9 03 E0 C7 02
+		CB 6A 00 CB 01 04 01 45 02 00 A0 06 81 85 39 30
+		00 00 00 00 40 00 00 03 1F 04 00 C9 03 E0 C7 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -991,7 +1015,7 @@ Handle 0xCD01, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 01 CD 03 01 00 0A 00 34 21 00 02 00 00 00
-		00 86 00 03 00 01 0E 0C 00 00
+		00 9C 00 03 00 01 0E 19 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -1001,7 +1025,7 @@ Handle 0xCD02, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 02 CD 03 01 00 0A 00 34 21 00 02 00 0F 00
-		00 03 00 03 04 0F 00 0A 42 06
+		00 04 00 03 04 0F 00 23 F7 07
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -1026,11 +1050,11 @@ OEM-specific Type
 Handle 0xCD04, DMI type 205, 82 bytes
 OEM-specific Type
 	Header and Data:
-		CD 52 04 CD 0B 01 00 0A 00 34 21 00 02 00 01 00
-		0A 00 00 03 00 0A 00 34 21 00 04 05 FF FF FF FF
+		CD 52 04 CD 0B 01 00 0A 00 34 21 00 02 00 02 00
+		02 06 00 03 00 0A 00 34 21 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 01 00 07 00 00 00 00 01 00 08
-		00 FF FF FF FF FF 09 00 11 01 01 00 00 0A 00 00
-		00 00 DF 00 0B 00 23 01 00 00 00 0C 00 FF FF FF
+		00 FF FF FF FF FF 09 00 11 01 06 00 00 0A 00 00
+		00 00 F9 00 0B 00 2B 01 00 00 00 0C 00 FF FF FF
 		FF FF
 	Strings:
 		Reference Code - SA - System Agent
@@ -1127,6 +1151,12 @@ OEM-specific Type
 		DC 16 03 DC 30 F1 00 00 32 F1 00 00 00 00 00 00
 		00 00 00 00 00 00
 
+Handle 0xDC04, DMI type 220, 22 bytes
+OEM-specific Type
+	Header and Data:
+		DC 16 04 DC 40 F1 00 00 42 F1 00 00 00 00 00 00
+		00 00 00 00 00 00
+
 Handle 0xDD00, DMI type 221, 19 bytes
 OEM-specific Type
 	Header and Data:
@@ -1136,7 +1166,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 21 06 07 16 47 01 00 00
+		DE 10 00 DE 01 04 00 00 22 01 20 14 30 01 00 00
 
 Handle 0x0000, DMI type 255, 6 bytes
 OEM-specific Type

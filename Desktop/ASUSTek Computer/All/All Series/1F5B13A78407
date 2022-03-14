@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 87 structures occupying 3318 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 10/03/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		APM is supported
@@ -675,7 +675,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -688,7 +688,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: KHX1866C10D3/8G   
 	Rank: 2
-	Configured Clock Speed: 1867 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0046, DMI type 16, 23 bytes
 Physical Memory Array
@@ -716,7 +716,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
@@ -729,7 +729,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: KHX1866C10D3/8G   
 	Rank: 2
-	Configured Clock Speed: 1867 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0049, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -748,7 +748,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -761,7 +761,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: KHX1866C10D3/8G   
 	Rank: 2
-	Configured Clock Speed: 1867 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x004B, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -780,7 +780,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
@@ -793,7 +793,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: KHX1866C10D3/8G   
 	Rank: 2
-	Configured Clock Speed: 1867 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x004D, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -836,8 +836,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -852,8 +852,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -861,6 +861,32 @@ Cache Information
 	Error Correction Type: Single-bit ECC
 	System Type: Unified
 	Associativity: 16-way Set-associative
+
+Handle 0x0055, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: SOCKET 1150
+	Type: Central Processor
+	Family: Other
+	Manufacturer: Intel
+	ID: C3 06 03 00 FF FB EB BF
+	Version: Intel(R) Core(TM) i7-4770K CPU @ 3.50GHz
+	Voltage: 1.2 V
+	External Clock: 100 MHz
+	Max Speed: 3800 MHz
+	Current Speed: 4268 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket BGA1155
+	L1 Cache Handle: 0x004F
+	L2 Cache Handle: 0x0050
+	L3 Cache Handle: 0x0051
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Fill By OEM
+	Core Count: 4
+	Core Enabled: 4
+	Thread Count: 8
+	Characteristics:
+		64-bit capable
 
 Handle 0x005A, DMI type 136, 6 bytes
 OEM-specific Type
@@ -889,32 +915,6 @@ BIOS Language Information
 		zh|CN|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0063, DMI type 4, 42 bytes
-Processor Information
-	Socket Designation: SOCKET 1150
-	Type: Central Processor
-	Family: Other
-	Manufacturer: Intel
-	ID: C3 06 03 00 FF FB EB BF
-	Version: Intel(R) Core(TM) i7-4770K CPU @ 3.50GHz
-	Voltage: 1.2 V
-	External Clock: 100 MHz
-	Max Speed: 3800 MHz
-	Current Speed: 3504 MHz
-	Status: Populated, Enabled
-	Upgrade: Socket BGA1155
-	L1 Cache Handle: 0x004F
-	L2 Cache Handle: 0x0050
-	L3 Cache Handle: 0x0051
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Fill By OEM
-	Core Count: 4
-	Core Enabled: 4
-	Thread Count: 8
-	Characteristics:
-		64-bit capable
-
-Handle 0x0068, DMI type 127, 4 bytes
+Handle 0x005E, DMI type 127, 4 bytes
 End Of Table
 

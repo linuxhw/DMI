@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0xAB7ED000.
@@ -23,8 +23,8 @@ Memory Array Mapped Address
 Handle 0x0004, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: P85 Ver. 01.37
-	Release Date: 10/19/2020
+	Version: P85 Ver. 01.40
+	Release Date: 11/19/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 0 MB
@@ -47,8 +47,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.37
-	Firmware Revision: 66.128
+	BIOS Revision: 1.40
+	Firmware Revision: 66.129
 
 Handle 0x0005, DMI type 1, 27 bytes
 System Information
@@ -65,7 +65,7 @@ Handle 0x0006, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 8234
-	Version: KBC Version 42.80
+	Version: KBC Version 42.81
 	Serial Number: --
 	Asset Tag: --
 	97946E993916094B22613E03B8339091
@@ -300,7 +300,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 8192 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(top)
@@ -324,7 +324,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 8192 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(under)
@@ -388,18 +388,18 @@ System Boot Information
 
 Handle 0x001A, DMI type 221, 33 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.4, MAC address 00:03:08:01:00:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:DE:00:03
+	NIC 1: PCI device 01:00.4, MAC address 00:03:08:04:00:00
+	NIC 2: PCI device 00:00.2, MAC address 00:00:00:EC:00:03
 	NIC 3: Disabled
 
 Handle 0x001B, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:03:08:01:00:00
+	NIC 1: PCI device 01:00.3, MAC address 00:03:08:04:00:00
 	NIC 2: PCI device 00:00.2, MAC address 00:00:00:00:00:03
 
 Handle 0x001C, DMI type 221, 75 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:01.2, MAC address 00:03:08:01:00:00
+	NIC 1: PCI device 01:01.2, MAC address 00:03:08:04:00:00
 	NIC 2: PCI device 03:00.2, MAC address FF:FF:FF:FF:FF:04
 	NIC 3: PCI device ff:00.0, MAC address FF:FF:21:00:05:00
 	NIC 4: Not Installed
@@ -410,9 +410,9 @@ HP BIOS iSCSI NIC PCI and MAC Information
 
 Handle 0x001D, DMI type 221, 54 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.7, MAC address 00:03:08:01:00:00
-	NIC 2: PCI device 00:00.2, MAC address 03:08:01:00:00:03
-	NIC 3: PCI device 03:00.0, MAC address 08:01:00:00:04:05
+	NIC 1: PCI device 01:00.7, MAC address 00:03:08:04:00:00
+	NIC 2: PCI device 00:00.2, MAC address 03:08:04:00:00:03
+	NIC 3: PCI device 03:00.0, MAC address 08:04:00:00:04:05
 	NIC 4: Not Installed
 	NIC 5: Not Installed
 	NIC 6: PCI device 02:1f.7, MAC address 00:08:00:FF:FF:FF

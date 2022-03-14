@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
 33 structures occupying 2344 bytes.
@@ -7,8 +7,10 @@ Table at 0xCEDB4000.
 Handle 0x0000, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: NTC
-	Specification Version: 2.0	Firmware Revision: 7.2
-	Description: NPCT75x	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 7.2
+	Description: NPCT75x
+	Characteristics:
 		Family configurable via firmware update
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
@@ -178,8 +180,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -194,8 +196,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -277,6 +279,8 @@ System Slot Information
 		PME signal is supported
 		SMBus signal is supported
 	Bus Address: 0000:00:14.3
+	Data Bus Width: 77
+	Peer Devices: 50
 
 Handle 0x0017, DMI type 9, 24 bytes
 System Slot Information
@@ -290,6 +294,8 @@ System Slot Information
 		PME signal is supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1d.4
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0018, DMI type 41, 11 bytes
 Onboard Device
@@ -313,7 +319,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(left)
@@ -348,7 +354,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(right)

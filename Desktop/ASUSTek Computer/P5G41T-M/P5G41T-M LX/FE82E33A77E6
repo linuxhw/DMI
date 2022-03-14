@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 48 structures occupying 1883 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 06/22/2010
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -131,8 +131,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -435,8 +435,8 @@ Physical Memory Array
 Handle 0x0028, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Array Handle: 0x0027
 	Partition Width: 4
 
@@ -444,15 +444,15 @@ Handle 0x0029, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0027
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2048 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM A1
 	Bank Locator: BANK0
-	Type: Other
-	Type Detail: Synchronous
+	Type: Unknown
+	Type Detail: Unknown
 	Speed: Unknown
 	Manufacturer: Manufacturer0
 	Serial Number: --
@@ -462,8 +462,8 @@ Memory Device
 Handle 0x002A, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
 	Physical Device Handle: 0x0029
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: 1
@@ -475,7 +475,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM B1
@@ -490,8 +490,8 @@ Memory Device
 
 Handle 0x002C, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x002B
 	Memory Array Mapped Address Handle: 0x0028

@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0 present.
 33 structures occupying 2464 bytes.
@@ -7,8 +7,8 @@ Table at 0x000E6380.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Insyde Corp.
-	Version: V1.17
-	Release Date: 11/15/2018
+	Version: V1.19
+	Release Date: 08/13/2019
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 4608 kB
@@ -32,25 +32,25 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.17
-	Firmware Revision: 1.9
+	BIOS Revision: 1.19
+	Firmware Revision: 1.10
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Acer
 	Product Name: Extensa 2540
-	Version: V1.17
+	Version: V1.19
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
-	SKU Number: Extensa 2540_1085_V1.17
+	SKU Number: Extensa 2540_1085_V1.19
 	Family: SKL
 
 Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: Acer
 	Product Name: Gemini_SK
-	Version: V1.17
+	Version: V1.19
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -66,10 +66,10 @@ Chassis Information
 	Manufacturer: Acer
 	Type: Notebook
 	Lock: Not Present
-	Version: V1.17
+	Version: V1.19
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -178,8 +178,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -241,7 +241,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -254,7 +254,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: ACR24D4S7S1MB-4     
 	Rank: 1
-	Configured Clock Speed: 2133 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.25 V
 	Maximum Voltage: 1.25 V
 	Configured Voltage: 1.2 V
@@ -278,7 +278,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Not Specified
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -289,7 +289,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -302,7 +302,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: M471A5244BB0-CRC    
 	Rank: 1
-	Configured Clock Speed: 2133 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.25 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.2 V
@@ -326,7 +326,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Not Specified
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -399,7 +399,7 @@ OEM-specific Type
 Handle 0x0019, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 19 00 01 03 01 45 02 00 90 06 01 10 80 20
+		DB 51 19 00 01 03 01 45 02 00 90 06 01 10 86 20
 		00 00 00 00 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -414,7 +414,7 @@ Handle 0x001A, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 1A 00 03 01 00 01 00 03 00 00 02 00 00 00
-		00 C6 00 03 00 00 05 00 00 00
+		00 CC 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version

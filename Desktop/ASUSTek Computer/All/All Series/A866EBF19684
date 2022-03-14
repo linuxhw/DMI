@@ -1,7 +1,7 @@
 # dmidecode 3.0
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-75 structures occupying 2954 bytes.
+77 structures occupying 3062 bytes.
 Table at 0x000EC2F0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -582,13 +582,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
-	Manufacturer: 1315
+	Speed: 1333 MHz
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT51264BA160BJ.C8F
-	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Part Number: 9905471-011.A00LF 
+	Rank: 2
+	Configured Clock Speed: 1333 MHz
 
 Handle 0x003C, DMI type 16, 23 bytes
 Physical Memory Array
@@ -605,7 +605,7 @@ Memory Device Mapped Address
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x003B
-	Memory Array Mapped Address Handle: 0x0042
+	Memory Array Mapped Address Handle: 0x0044
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
@@ -614,24 +614,35 @@ Handle 0x003E, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x003C
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MHz
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: 99U5471-020.A00LF 
+	Rank: 2
+	Configured Clock Speed: 1333 MHz
 
-Handle 0x003F, DMI type 17, 34 bytes
+Handle 0x003F, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x003E
+	Memory Array Mapped Address Handle: 0x0044
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0040, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x003C
 	Error Information Handle: Not Provided
@@ -644,55 +655,66 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
-	Manufacturer: 1315
+	Speed: 1333 MHz
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT51264BA160BJ.C8F
-	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Part Number: 9905471-011.A00LF 
+	Rank: 2
+	Configured Clock Speed: 1333 MHz
 
-Handle 0x0040, DMI type 20, 35 bytes
+Handle 0x0041, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00100000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x003F
-	Memory Array Mapped Address Handle: 0x0042
+	Physical Device Handle: 0x0040
+	Memory Array Mapped Address Handle: 0x0044
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0041, DMI type 17, 34 bytes
+Handle 0x0042, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x003C
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 3
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MHz
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: 99U5471-020.A00LF 
+	Rank: 2
+	Configured Clock Speed: 1333 MHz
 
-Handle 0x0042, DMI type 19, 31 bytes
+Handle 0x0043, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00300000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0042
+	Memory Array Mapped Address Handle: 0x0044
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0044, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x003C
 	Partition Width: 4
 
-Handle 0x0043, DMI type 7, 19 bytes
+Handle 0x0045, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L1
 	Configuration: Enabled, Not Socketed, Level 1
@@ -708,7 +730,7 @@ Cache Information
 	System Type: Other
 	Associativity: 8-way Set-associative
 
-Handle 0x0044, DMI type 7, 19 bytes
+Handle 0x0046, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L2
 	Configuration: Enabled, Not Socketed, Level 2
@@ -724,7 +746,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0045, DMI type 7, 19 bytes
+Handle 0x0047, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L3
 	Configuration: Enabled, Not Socketed, Level 3
@@ -740,7 +762,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 12-way Set-associative
 
-Handle 0x0049, DMI type 4, 42 bytes
+Handle 0x004B, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: SOCKET 1150
 	Type: Central Processor
@@ -754,9 +776,9 @@ Processor Information
 	Current Speed: 3200 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
-	L1 Cache Handle: 0x0043
-	L2 Cache Handle: 0x0044
-	L3 Cache Handle: 0x0045
+	L1 Cache Handle: 0x0045
+	L2 Cache Handle: 0x0046
+	L3 Cache Handle: 0x0047
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Fill By OEM
@@ -766,20 +788,20 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x004E, DMI type 136, 6 bytes
+Handle 0x0050, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 4E 00 00 00
+		88 06 50 00 00 00
 
-Handle 0x004F, DMI type 131, 64 bytes
+Handle 0x0051, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 4F 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 51 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 50 8C 00 00 00 00 01 20 00 00 00 00 09 00
 		CA 05 1E 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0050, DMI type 13, 22 bytes
+Handle 0x0052, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 8
@@ -793,6 +815,6 @@ BIOS Language Information
 		zh|CN|unicode
 	Currently Installed Language: ru|RU|iso8859-5
 
-Handle 0x0052, DMI type 127, 4 bytes
+Handle 0x0054, DMI type 127, 4 bytes
 End Of Table
 

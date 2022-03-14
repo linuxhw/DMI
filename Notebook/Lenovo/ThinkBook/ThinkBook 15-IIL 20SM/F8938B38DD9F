@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
-Table at 0x000E3410.
+Table at 0x28F82000.
 
 Handle 0x0000, DMI type 222, 14 bytes
 OEM-specific Type
@@ -137,7 +137,7 @@ OEM-specific Type
 		DD 4B 0A 00 0A 01 00 08 00 60 30 00 02 00 00 00
 		04 68 00 03 00 08 00 60 30 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 03 00 07 00 00 00 00 03 00 08
-		00 00 00 00 04 10 09 00 04 11 00 00 00 0A 00 00
+		00 FF FF FF FF FF 09 00 04 11 00 00 00 0A 00 00
 		00 00 06 00 0B 00 00 00 00 00 00
 	Strings:
 		Reference Code - SA - System Agent
@@ -261,10 +261,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-1035G4 CPU @ 1.10GHz
-	Voltage: 0.7 V
+	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 1500 MHz
-	Current Speed: 1100 MHz
+	Current Speed: 3300 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x000D
@@ -898,17 +898,6 @@ Chassis Information
 	Contained Elements: 0
 	SKU Number: Not Specified
 
-Handle 0x0012, DMI type 1, 27 bytes
-System Information
-	Manufacturer: LENOVO
-	Product Name: 20SM
-	Version: Lenovo ThinkBook 15-IIL
-	Serial Number: --
-	UUID: --
-	Wake-up Type: Power Switch
-	SKU Number: LENOVO_MT_20SM_BU_idea_FM_Thinkbook 15-IIL
-	Family: Thinkbook 15-IIL
-
 Handle 0x0056, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Not Implemented
@@ -956,7 +945,7 @@ Group Associations
 Handle 0x005A, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 5A 00 01 04 01 45 02 00 90 06 01 85 30 20
+		DB 6A 5A 00 01 04 01 45 02 00 A0 06 01 85 30 20
 		00 00 00 04 40 00 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -975,6 +964,17 @@ Hardware Security
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
+
+Handle 0x0012, DMI type 1, 27 bytes
+System Information
+	Manufacturer: LENOVO
+	Product Name: 20SM
+	Version: Lenovo ThinkBook 15-IIL
+	Serial Number: --
+	UUID: --
+	Wake-up Type: Power Switch
+	SKU Number: LENOVO_MT_20SM_BU_idea_FM_Thinkbook 15-IIL
+	Family: Thinkbook 15-IIL
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

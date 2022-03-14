@@ -6,8 +6,8 @@ Table at 0x000E0000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.15.1
-	Release Date: 06/23/2020
+	Version: 1.22.0
+	Release Date: 10/06/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -34,7 +34,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.15
+	BIOS Revision: 1.22
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -709,7 +709,7 @@ Processor Information
 	L3 Cache Handle: 0x0053
 	Serial Number: --
 	Asset Tag: --
-	Part Number: To Be Filled By O.E.M.
+	Part Number: Not Specified
 	Core Count: 4
 	Core Enabled: 4
 	Thread Count: 8
@@ -1057,7 +1057,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 20 07 06 10 04 01 00 00
+		DE 10 00 DE 01 04 00 00 21 11 25 12 51 01 00 00
 
 Handle 0xF026, DMI type 218, 77 bytes
 OEM-specific Type
@@ -1079,14 +1079,14 @@ OEM-specific Type
 	Header and Data:
 		83 40 28 F0 35 00 00 00 0B 00 00 00 00 00 0A 00
 		F8 00 4E 9D 00 00 00 00 09 C0 00 00 08 00 0B 00
-		50 0E 4D 00 00 00 00 00 FE 00 D7 15 00 00 00 00
+		25 0F 56 00 00 00 00 00 FE 00 D7 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0xF029, DMI type 205, 33 bytes
 OEM-specific Type
 	Header and Data:
 		CD 21 29 F0 04 01 00 03 00 00 00 00 02 00 00 00
-		00 D6 00 03 00 00 05 00 00 00 04 00 02 00 00 63
+		00 EA 00 03 00 00 05 00 00 00 04 00 02 00 00 63
 		0E
 	Strings:
 		Reference Code - CPU
@@ -1098,7 +1098,7 @@ Handle 0xF02A, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 2A F0 03 01 00 03 00 00 00 00 02 00 0B 00
-		00 0A 00 03 04 0B 08 4D 50 0E
+		00 0A 00 03 04 0B 08 56 25 0F
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
@@ -1203,7 +1203,7 @@ Group Associations
 Handle 0xF042, DMI type 203, 81 bytes
 OEM-specific Type
 	Header and Data:
-		CB 51 42 F0 01 03 01 45 02 00 A4 06 83 10 89 30
+		CB 51 42 F0 01 03 01 45 02 00 90 06 81 10 89 30
 		00 00 00 04 40 A8 00 01 1F 00 00 C9 0B C0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

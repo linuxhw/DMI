@@ -2,7 +2,7 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
 99 structures occupying 6866 bytes.
-Table at 0x5BDA2000.
+Table at 0x5BD8F000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -148,8 +148,8 @@ OEM-specific Type
 Handle 0x0001, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.1.0
-	Release Date: 03/17/2021
+	Version: 1.8.1
+	Release Date: 11/12/2021
 	ROM Size: 32 MB
 	Characteristics:
 		PCI is supported
@@ -170,7 +170,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.1
+	BIOS Revision: 1.8
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -194,7 +194,7 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Not Specified
-	Chassis Handle: 0x0000
+	Chassis Handle: 0x0300
 	Type: Motherboard
 	Contained Object Handles: 0
 
@@ -254,10 +254,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: 11th Gen Intel(R) Core(TM) i7-1180G7 @ 1.30GHz
-	Voltage: 0.9 V
+	Voltage: 0.6 V
 	External Clock: 100 MHz
 	Max Speed: 4600 MHz
-	Current Speed: 3700 MHz
+	Current Speed: 1300 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0701
@@ -1112,7 +1112,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 00 83 35 00 00 00 0F 00 00 00 00 00 03 00
 		F8 00 87 A0 00 00 00 00 09 C0 00 00 00 00 0F 00
-		26 06 0A 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		AA 06 17 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x8800, DMI type 136, 8 bytes
@@ -1163,8 +1163,8 @@ OEM-specific Type
 Handle 0xCD01, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
-		CD 1A 01 CD 03 01 00 0A 00 3B 31 00 02 00 00 00
-		00 6E 00 03 00 01 0E 0E 00 00
+		CD 1A 01 CD 03 01 00 0A 00 51 31 00 02 00 00 00
+		00 86 00 03 00 01 0E 0E 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -1173,8 +1173,8 @@ OEM-specific Type
 Handle 0xCD02, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
-		CD 1A 02 CD 03 01 00 0A 00 3B 31 00 02 00 0F 00
-		00 03 00 03 04 0F 00 0A 26 06
+		CD 1A 02 CD 03 01 00 0A 00 51 31 00 02 00 0F 00
+		00 03 00 03 04 0F 00 17 AA 06
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -1184,7 +1184,7 @@ OEM-specific Type
 Handle 0xCD03, DMI type 205, 47 bytes
 OEM-specific Type
 	Header and Data:
-		CD 2F 03 CD 06 01 00 0A 00 3B 31 00 02 03 FF FF
+		CD 2F 03 CD 06 01 00 0A 00 51 31 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 20 00 05 00 FF FF FF 20
 		00 06 00 02 0A 00 00 00 07 00 04 00 00 00 00
 	Strings:
@@ -1199,11 +1199,11 @@ OEM-specific Type
 Handle 0xCD04, DMI type 205, 82 bytes
 OEM-specific Type
 	Header and Data:
-		CD 52 04 CD 0B 01 00 0A 00 3B 31 00 02 00 01 00
-		0C 01 00 03 00 0A 00 3B 31 00 04 05 FF FF FF FF
+		CD 52 04 CD 0B 01 00 0A 00 51 31 00 02 00 02 00
+		02 02 00 03 00 0A 00 51 31 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 01 00 07 00 00 00 00 01 00 08
 		00 FF FF FF FF FF 09 00 11 01 04 00 00 0A 00 00
-		00 00 E0 00 0B 00 28 00 00 00 00 0C 00 FF FF FF
+		00 00 F8 00 0B 00 29 00 00 00 00 0C 00 FF FF FF
 		FF FF
 	Strings:
 		Reference Code - SA - System Agent
@@ -1232,7 +1232,7 @@ OEM-specific Type
 		CD 59 06 CD 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF 00 0B 00 FF FF 00 00 00 0C 00 00
+		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
 		17 00 52 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
 		00 00 0F 00 00 02 00 0F 00
 	Strings:
@@ -1319,7 +1319,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 00 00 FF FF 00 00 00 00 00 00 00 00
+		DE 10 00 DE 01 04 00 00 21 12 28 18 05 01 00 00
 
 Handle 0x0000, DMI type 255, 6 bytes
 OEM-specific Type

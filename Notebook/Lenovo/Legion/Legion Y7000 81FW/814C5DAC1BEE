@@ -413,19 +413,19 @@ Handle 0x0021, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x003D (OEM-specific)
+		0x003E (OEM-specific)
 
 Handle 0x0022, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
-		0x003C (OEM-specific)
+		0x003D (OEM-specific)
 
 Handle 0x0023, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
-		0x003B (OEM-specific)
+		0x003C (OEM-specific)
 
 Handle 0x0024, DMI type 15, 29 bytes
 System Event Log
@@ -461,7 +461,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -469,66 +469,77 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2667 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471A1K43CB1-CTD    
-	Rank: 1
+	Part Number: KF2666C15S4/16G     
+	Rank: 2
 	Configured Memory Speed: 2667 MT/s
 	Minimum Voltage: 1.25 V
-	Maximum Voltage: 1.35 V
+	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.2 V
 
 Handle 0x0027, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0025
 	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 16 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2667 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
+	Part Number: KF2666C15S4/16G     
+	Rank: 2
+	Configured Memory Speed: 2667 MT/s
+	Minimum Voltage: 1.25 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: 1.2 V
 
 Handle 0x0028, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0025
-	Partition Width: 1
+	Partition Width: 2
 
 Handle 0x0029, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0026
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: Unknown
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x002A, DMI type 21, 7 bytes
+Handle 0x002A, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x0027
+	Memory Array Mapped Address Handle: 0x0028
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 1
+
+Handle 0x002B, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Touch Pad
 	Interface: PS/2
 	Buttons: 4
 
-Handle 0x002B, DMI type 22, 26 bytes
+Handle 0x002C, DMI type 22, 26 bytes
 Portable Battery
 	Location: Fake
 	Manufacturer: -Virtual Battery 0-
@@ -542,14 +553,14 @@ Portable Battery
 	Maximum Error: Unknown
 	OEM-specific Information: 0x00000000
 
-Handle 0x002C, DMI type 24, 5 bytes
+Handle 0x002D, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
 
-Handle 0x002D, DMI type 26, 24 bytes
+Handle 0x002E, DMI type 26, 24 bytes
 Voltage Probe
 	Description: Voltage Probe Description
 	Location: Unknown
@@ -562,16 +573,16 @@ Voltage Probe
 	OEM-specific Information: 0x00008000
 	Nominal Value: 0.000 V
 
-Handle 0x002E, DMI type 27, 15 bytes
+Handle 0x002F, DMI type 27, 15 bytes
 Cooling Device
-	Temperature Probe Handle: 0x002F
+	Temperature Probe Handle: 0x0030
 	Type: Fan
 	Status: OK
 	OEM-specific Information: 0x00000000
 	Nominal Speed: 8192 rpm
 	Description: Cooling Device Description
 
-Handle 0x002F, DMI type 28, 24 bytes
+Handle 0x0030, DMI type 28, 24 bytes
 Temperature Probe
 	Description: Temperature Probe Description
 	Location: Unknown
@@ -584,11 +595,11 @@ Temperature Probe
 	OEM-specific Information: 0x00008000
 	Nominal Value: 0.0 deg C
 
-Handle 0x0030, DMI type 32, 11 bytes
+Handle 0x0031, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0031, DMI type 39, 22 bytes
+Handle 0x0032, DMI type 39, 22 bytes
 System Power Supply
 	Location: OEM Define 0
 	Name: OEM Define 1
@@ -604,7 +615,7 @@ System Power Supply
 	Plugged: No
 	Hot Replaceable: No
 
-Handle 0x0032, DMI type 40, 17 bytes
+Handle 0x0033, DMI type 40, 17 bytes
 Additional Information 1
 	Referenced Handle: 0x000d
 	Referenced Offset: 0x05
@@ -616,7 +627,7 @@ Additional Information 2
 	String: Compiler Version: VC 9.0
 	Value: 0x00
 
-Handle 0x0033, DMI type 41, 11 bytes
+Handle 0x0034, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: IGD
 	Type: Video
@@ -624,60 +635,60 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 
-Handle 0x0034, DMI type 128, 8 bytes
+Handle 0x0035, DMI type 128, 8 bytes
 OEM-specific Type
 	Header and Data:
-		80 08 34 00 55 AA 55 AA
+		80 08 35 00 55 AA 55 AA
 	Strings:
 		Oem Type 128 Test 1
 		Oem Type 128 Test 2
 
-Handle 0x0035, DMI type 129, 8 bytes
+Handle 0x0036, DMI type 129, 8 bytes
 OEM-specific Type
 	Header and Data:
-		81 08 35 00 01 01 02 01
+		81 08 36 00 01 01 02 01
 	Strings:
 		Insyde_ASF_001
 		Insyde_ASF_002
 
-Handle 0x0036, DMI type 130, 20 bytes
+Handle 0x0037, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 36 00 24 41 4D 54 01 01 01 01 01 A5 BF 02
+		82 14 37 00 24 41 4D 54 01 01 01 01 01 A5 BF 02
 		C0 00 01 00
 
-Handle 0x0037, DMI type 131, 64 bytes
+Handle 0x0038, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 37 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 38 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 0D A3 00 00 00 00 01 00 00 00 00 00 0C 00
 		2D 04 00 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 FF 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0038, DMI type 133, 5 bytes
+Handle 0x0039, DMI type 133, 5 bytes
 OEM-specific Type
 	Header and Data:
-		85 05 38 00 01
+		85 05 39 00 01
 	Strings:
 		KHOIHGIUCCHHII
 
-Handle 0x0039, DMI type 136, 6 bytes
+Handle 0x003A, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 39 00 FF FF
+		88 06 3A 00 FF FF
 
-Handle 0x003A, DMI type 200, 16 bytes
+Handle 0x003B, DMI type 200, 16 bytes
 OEM-specific Type
 	Header and Data:
-		C8 10 3A 00 01 02 01 26 01 14 01 3D B2 80 01 05
+		C8 10 3B 00 01 02 01 26 01 14 01 3D B2 80 01 05
 	Strings:
 		IdeaPad
 		81FW000DCD
 
-Handle 0x003B, DMI type 219, 106 bytes
+Handle 0x003C, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 3B 00 01 04 01 45 02 00 90 06 01 10 86 20
+		DB 6A 3C 00 01 04 01 45 02 00 90 06 01 10 86 20
 		00 00 00 04 48 00 00 00 00 00 00 06 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -690,10 +701,10 @@ OEM-specific Type
 		MEI3
 		MEI4
 
-Handle 0x003C, DMI type 221, 89 bytes
+Handle 0x003D, DMI type 221, 89 bytes
 OEM-specific Type
 	Header and Data:
-		DD 59 3C 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
+		DD 59 3D 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
 		00 FF FF FF FF FF 0B 00 01 34 00 00 00 0C 00 00
@@ -717,19 +728,19 @@ OEM-specific Type
 		Platform Version
 		Client Silicon Version
 
-Handle 0x003D, DMI type 222, 14 bytes
+Handle 0x003E, DMI type 222, 14 bytes
 OEM-specific Type
 	Header and Data:
-		DE 0E 3D 00 01 99 00 03 10 01 20 02 30 03
+		DE 0E 3E 00 01 99 00 03 10 01 20 02 30 03
 	Strings:
 		Memory Init Complete
 		End of DXE Phase
 		BIOS Boot Complete
 
-Handle 0x003E, DMI type 248, 18 bytes
+Handle 0x003F, DMI type 248, 18 bytes
 OEM-specific Type
 	Header and Data:
-		F8 12 3E 00 AC AC AA 17 00 00 00 00 00 00 00 00
+		F8 12 3F 00 AC AC AA 17 00 00 00 00 00 00 00 00
 		00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

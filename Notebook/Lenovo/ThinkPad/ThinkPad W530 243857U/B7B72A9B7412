@@ -1,7 +1,8 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-71 structures occupying 2813 bytes.
-Table at 0xDF69D000.
+70 structures occupying 2740 bytes.
+Table at 0xDF69C000.
 
 Handle 0x0000, DMI type 134, 16 bytes
 OEM-specific Type
@@ -121,8 +122,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -167,7 +168,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Not Specified
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0009, DMI type 17, 34 bytes
 Memory Device
@@ -175,20 +176,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: 029E
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CMSO8GX3M1A1333C9 
 	Rank: Unknown
-	Configured Clock Speed: 1333 MHz
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x000A, DMI type 17, 34 bytes
 Memory Device
@@ -209,7 +210,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Not Specified
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x000B, DMI type 17, 34 bytes
 Memory Device
@@ -217,20 +218,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 3
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: 029E
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CMSO8GX3M1A1333C9 
 	Rank: Unknown
-	Configured Clock Speed: 1333 MHz
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x000C, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -248,11 +249,11 @@ OEM-specific Type
 Handle 0x000E, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: G5ET94WW (2.54 )
-	Release Date: 08/12/2013
+	Version: G5ETA6WW (2.66 )
+	Release Date: 08/24/2016
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 12288 kB
+	ROM Size: 12 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -272,8 +273,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.54
-	Firmware Revision: 1.11
+	BIOS Revision: 2.66
+	Firmware Revision: 1.13
 
 Handle 0x000F, DMI type 1, 27 bytes
 System Information
@@ -473,14 +474,14 @@ BIOS Language Information
 Handle 0x002E, DMI type 22, 26 bytes
 Portable Battery
 	Location: Rear
-	Manufacturer: LGC
-	Name: 45N1011
-	Design Capacity: 93600 mWh
+	Manufacturer: SANYO
+	Name: 45N1023
+	Design Capacity: 84240 mWh
 	Design Voltage: 11100 mV
 	SBDS Version: 03.01
 	Maximum Error: Unknown
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 2013-01-27
+	SBDS Manufacture Date: 2020-08-17
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
@@ -510,12 +511,9 @@ Built-in Pointing Device
 	Buttons: 2
 
 Handle 0x0033, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 33 00 01 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: No
 
 Handle 0x0034, DMI type 136, 6 bytes
 OEM-specific Type
@@ -532,7 +530,7 @@ Handle 0x0036, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
 		83 40 36 00 35 00 00 00 08 00 00 00 00 00 45 00
-		F8 00 55 1E FF FF FF FF 09 E0 00 00 01 00 08 00
+		F8 00 55 1E FF FF FF FF 09 C0 00 00 01 00 08 00
 		38 05 14 00 00 00 00 00 C8 00 02 15 00 00 00 00
 		00 00 00 00 62 00 00 00 76 50 72 6F 00 00 00 00
 
@@ -540,10 +538,10 @@ Handle 0x0037, DMI type 135, 74 bytes
 OEM-specific Type
 	Header and Data:
 		87 4A 37 00 54 50 07 02 42 41 59 20 49 2F 4F 20
-		03 00 06 FF 00 00 00 00 00 00 00 FF 00 00 00 00
-		00 00 00 FF 00 00 00 00 00 00 00 FF 00 00 00 00
-		00 00 00 FF 00 00 00 00 00 00 00 FF 00 00 00 00
-		00 00 00 06 00 02 04 FF 03 FF
+		03 00 06 00 00 0E 00 F0 01 F6 03 02 00 0F 00 70
+		01 76 03 04 01 0E 00 F0 01 F6 03 FF 01 0F 00 70
+		01 76 03 03 00 00 00 80 60 AA 60 FF 00 00 00 80
+		60 AA 60 06 00 02 04 FF 03 FF
 
 Handle 0x0038, DMI type 133, 5 bytes
 OEM-specific Type
@@ -552,7 +550,7 @@ OEM-specific Type
 	Strings:
 		KHOIHGIUCCHHII
 
-Handle 0x0039, DMI type 15, 81 bytes
+Handle 0x0039, DMI type 15, 31 bytes
 System Event Log
 	Area Length: 50 bytes
 	Header Start Offset: 0x0000
@@ -563,72 +561,22 @@ System Event Log
 	Status: Valid, Not Full
 	Change Token: 0x00000002
 	Header Format: Type 1
-	Supported Log Type Descriptors: 29
-	Descriptor 1: Single-bit ECC memory error
-	Data Format 1: Multiple-event handle
-	Descriptor 2: Multi-bit ECC memory error
-	Data Format 2: Multiple-event handle
-	Descriptor 3: Parity memory error
+	Supported Log Type Descriptors: 4
+	Descriptor 1: POST error
+	Data Format 1: POST results bitmap
+	Descriptor 2: PCI system error
+	Data Format 2: None
+	Descriptor 3: System reconfigured
 	Data Format 3: None
-	Descriptor 4: Bus timeout
+	Descriptor 4: Log area reset/cleared
 	Data Format 4: None
-	Descriptor 5: I/O channel block
-	Data Format 5: None
-	Descriptor 6: Software NMI
-	Data Format 6: None
-	Descriptor 7: POST memory resize
-	Data Format 7: None
-	Descriptor 8: POST error
-	Data Format 8: POST results bitmap
-	Descriptor 9: PCI parity error
-	Data Format 9: None
-	Descriptor 10: PCI system error
-	Data Format 10: None
-	Descriptor 11: CPU failure
-	Data Format 11: None
-	Descriptor 12: EISA failsafe timer timeout
-	Data Format 12: None
-	Descriptor 13: Correctable memory log disabled
-	Data Format 13: None
-	Descriptor 14: Logging disabled
-	Data Format 14: None
-	Descriptor 15: System limit exceeded
-	Data Format 15: None
-	Descriptor 16: Asynchronous hardware timer expired
-	Data Format 16: None
-	Descriptor 17: System configuration information
-	Data Format 17: None
-	Descriptor 18: Hard disk information
-	Data Format 18: None
-	Descriptor 19: System reconfigured
-	Data Format 19: None
-	Descriptor 20: Uncorrectable CPU-complex error
-	Data Format 20: None
-	Descriptor 21: Log area reset/cleared
-	Data Format 21: None
-	Descriptor 22: System boot
-	Data Format 22: None
-	Descriptor 23: OEM-specific
-	Data Format 23: None
-	Descriptor 24: OEM-specific
-	Data Format 24: None
-	Descriptor 25: OEM-specific
-	Data Format 25: None
-	Descriptor 26: OEM-specific
-	Data Format 26: None
-	Descriptor 27: OEM-specific
-	Data Format 27: None
-	Descriptor 28: OEM-specific
-	Data Format 28: None
-	Descriptor 29: OEM-specific
-	Data Format 29: None
 
 Handle 0x003A, DMI type 140, 67 bytes
 OEM-specific Type
 	Header and Data:
-		8C 43 3A 00 4C 45 4E 4F 56 4F 0B 00 01 5E 91 BC
-		4F 84 48 13 7B F8 AD 42 A6 33 40 59 77 01 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		8C 43 3A 00 4C 45 4E 4F 56 4F 0B 00 01 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 A1
+		E8 22 3A 55 31 5C 13 8F 13 36 BF 21 C9 2B 37 01
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00
 
@@ -662,45 +610,36 @@ OEM-specific Type
 Handle 0x003F, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 3F 00 4C 45 4E 4F 56 4F 0B 05 01 03 00 00
+		8C 13 3F 00 4C 45 4E 4F 56 4F 0B 05 01 02 00 00
 		00 00 00
 
-Handle 0x0040, DMI type 140, 23 bytes
-OEM-specific Type
-	Header and Data:
-		8C 17 40 00 4C 45 4E 4F 56 4F 0B 06 01 7E 14 00
-		00 00 00 00 00 00 00
-
-Handle 0x0041, DMI type 24, 5 bytes
+Handle 0x0040, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
-Handle 0x0042, DMI type 132, 7 bytes
+Handle 0x0041, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 42 00 01 D8 36
+		84 07 41 00 01 C3 36
 
-Handle 0x0043, DMI type 135, 18 bytes
+Handle 0x0042, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 43 00 54 50 07 01 01 D5 03 00 00 00 01 00
+		87 12 42 00 54 50 07 01 01 D5 F7 00 00 00 F5 00
 		00 00
 
-Handle 0x0044, DMI type 140, 15 bytes
-OEM-specific Type
-	Header and Data:
-		8C 0F 44 00 4C 45 4E 4F 56 4F 0B 07 01 01 02
-	Strings:
-		G4HT37WW
-		05/20/2013
+Handle 0x0043, DMI type 140, 15 bytes
+ThinkPad Embedded Controller Program
+	Version ID: G4HT39WW
+	Release Date: 03/31/2014
 
-Handle 0x0045, DMI type 140, 43 bytes
+Handle 0x0044, DMI type 140, 43 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2B 45 00 4C 45 4E 4F 56 4F 0B 08 01 FF FF FF
+		8C 2B 44 00 4C 45 4E 4F 56 4F 0B 08 01 FF FF FF
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF FF FF FF
 

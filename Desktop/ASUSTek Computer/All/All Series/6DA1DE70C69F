@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 89 structures occupying 3839 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 04/18/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		APM is supported
 		BIOS is upgradeable
@@ -324,7 +324,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:04:00.0
+	Bus Address: 0000:ff:00.0
 
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
@@ -363,7 +363,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:00.0
+	Bus Address: 0000:04:00.0
 
 Handle 0x0024, DMI type 10, 6 bytes
 On Board Device Information
@@ -675,7 +675,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A2
@@ -723,7 +723,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B2
@@ -819,8 +819,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -835,8 +835,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -857,7 +857,7 @@ BIOS Language Information
 		en|US|iso8859-1
 		fr|FR|iso8859-1
 		zh|CN|unicode
-	Currently Installed Language: <BAD INDEX>
+	Currently Installed Language: Not Specified
 
 Handle 0x0057, DMI type 221, 12 bytes
 OEM-specific Type
@@ -945,7 +945,7 @@ Group Associations
 Handle 0x005E, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 5E 00 10 00 00 00 00 00 00 00 00 00 00 00
+		83 40 5E 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 00 00 00 00 00 00 01 00 00 00 01 00 09 00
 		E8 03 01 00 00 00 00 00 C8 00 00 00 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00

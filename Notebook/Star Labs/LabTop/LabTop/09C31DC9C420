@@ -1,13 +1,15 @@
-# dmidecode 3.3
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0x45E5EF000.
+# SMBIOS implementations newer than version 3.2.0 are not
+# fully supported by this version of dmidecode.
+Table at 0x99A20000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: coreboot
-	Version: CB_5
-	Release Date: 05/08/2021
+	Version: 7
+	Release Date: 10/06/2021
 	ROM Size: 16 MB
 	Characteristics:
 		PCI is supported
@@ -16,8 +18,8 @@ BIOS Information
 		Selectable boot is supported
 		ACPI is supported
 		Targeted content distribution is supported
-	BIOS Revision: 4.13
-	Firmware Revision: 1.4
+	BIOS Revision: 4.14
+	Firmware Revision: 1.7
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -174,8 +176,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Unknown
 	Location: Internal
-	Installed Size: 12 MB
-	Maximum Size: 12 MB
+	Installed Size: 12288 kB
+	Maximum Size: 12288 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -199,7 +201,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 8192 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Channel-0-DIMM-0
@@ -223,7 +225,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 8192 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Channel-1-DIMM-0
@@ -277,8 +279,6 @@ System Slot Information
 	Length: Other
 	Characteristics: Unknown
 	Bus Address: 0000:00:1d.0
-	Data Bus Width: 1
-	Peer Devices: 0
 
 Handle 0x0011, DMI type 133, 5 bytes
 OEM-specific Type

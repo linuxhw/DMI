@@ -1,14 +1,14 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-107 structures occupying 3736 bytes.
-Table at 0x000E9030.
+104 structures occupying 3737 bytes.
+Table at 0x000E94B0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 0803
-	Release Date: 02/11/2011
+	Version: 3801
+	Release Date: 09/12/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 4 MB
@@ -41,12 +41,12 @@ System Information
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
-	SKU Number: To be filled by O.E.M.
+	SKU Number: SKU
 	Family: To be filled by O.E.M.
 
 Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
-	Manufacturer: ASUSTeK Computer INC.
+	Manufacturer: ASUSTeK COMPUTER INC.
 	Product Name: P8H67
 	Version: Rev X.0x
 	Serial Number: --
@@ -238,7 +238,7 @@ Port Connector Information
 
 Handle 0x000F, DMI type 8, 9 bytes
 Port Connector Information
-	Internal Reference Designator: SATA1
+	Internal Reference Designator: SATA3G_1
 	Internal Connector Type: SAS/SATA Plug Receptacle
 	External Reference Designator: Not Specified
 	External Connector Type: None
@@ -246,7 +246,7 @@ Port Connector Information
 
 Handle 0x0010, DMI type 8, 9 bytes
 Port Connector Information
-	Internal Reference Designator: SATA2
+	Internal Reference Designator: SATA3G_2
 	Internal Connector Type: SAS/SATA Plug Receptacle
 	External Reference Designator: Not Specified
 	External Connector Type: None
@@ -254,7 +254,7 @@ Port Connector Information
 
 Handle 0x0011, DMI type 8, 9 bytes
 Port Connector Information
-	Internal Reference Designator: SATA3
+	Internal Reference Designator: SATA3G_3
 	Internal Connector Type: SAS/SATA Plug Receptacle
 	External Reference Designator: Not Specified
 	External Connector Type: None
@@ -262,7 +262,7 @@ Port Connector Information
 
 Handle 0x0012, DMI type 8, 9 bytes
 Port Connector Information
-	Internal Reference Designator: SATA4
+	Internal Reference Designator: SATA3G_4
 	Internal Connector Type: SAS/SATA Plug Receptacle
 	External Reference Designator: Not Specified
 	External Connector Type: None
@@ -270,7 +270,7 @@ Port Connector Information
 
 Handle 0x0013, DMI type 8, 9 bytes
 Port Connector Information
-	Internal Reference Designator: SATA5
+	Internal Reference Designator: SATA6G_1
 	Internal Connector Type: SAS/SATA Plug Receptacle
 	External Reference Designator: Not Specified
 	External Connector Type: None
@@ -278,7 +278,7 @@ Port Connector Information
 
 Handle 0x0014, DMI type 8, 9 bytes
 Port Connector Information
-	Internal Reference Designator: SATA6
+	Internal Reference Designator: SATA6G_2
 	Internal Connector Type: SAS/SATA Plug Receptacle
 	External Reference Designator: Not Specified
 	External Connector Type: None
@@ -383,85 +383,85 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:01.0
+	Bus Address: 0000:01:01.0
 
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_2
 	Type: 32-bit PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 17
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:1c.1
+	Bus Address: 0000:ff:1c.1
 
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_1
 	Type: 32-bit PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 19
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:1c.3
+	Bus Address: 0000:ff:1c.3
 
 Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_2
 	Type: 32-bit PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 20
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:1c.4
+	Bus Address: 0000:04:1c.4
 
 Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI1
 	Type: 32-bit PCI
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 33
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:1c.6
+	Bus Address: 0000:04:1c.6
 
 Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI2
 	Type: 32-bit PCI
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 34
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:1c.7
+	Bus Address: 0000:04:1c.7
 
 Handle 0x0026, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI3
 	Type: 32-bit PCI
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 35
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:1d.0
+	Bus Address: 0000:02:1d.0
 
 Handle 0x0027, DMI type 10, 6 bytes
 On Board Device Information
@@ -472,194 +472,26 @@ On Board Device Information
 Handle 0x0028, DMI type 11, 5 bytes
 OEM Strings
 	String 1: BCAEC5E35080
+	String 2: To Be Filled By O.E.M.
+	String 3: To Be Filled By O.E.M.
+	String 4: To Be Filled By O.E.M.
 
 Handle 0x0029, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: To Be Filled By O.E.M.
 
-Handle 0x002A, DMI type 16, 15 bytes
-Physical Memory Array
-	Location: System Board Or Motherboard
-	Use: System Memory
-	Error Correction Type: None
-	Maximum Capacity: 16 GB
-	Error Information Handle: No Error
-	Number Of Devices: 4
-
-Handle 0x002B, DMI type 18, 23 bytes
-32-bit Memory Error Information
-	Type: OK
-	Granularity: Unknown
-	Operation: Unknown
-	Vendor Syndrome: Unknown
-	Memory Array Address: Unknown
-	Device Address: Unknown
-	Resolution: Unknown
-
-Handle 0x002C, DMI type 19, 15 bytes
-Memory Array Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
-	Physical Array Handle: 0x002A
-	Partition Width: 1
-
-Handle 0x002D, DMI type 17, 28 bytes
-Memory Device
-	Array Handle: 0x002A
-	Error Information Handle: No Error
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM0
-	Bank Locator: BANK0
-	Type: Unknown
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Manufacturer0
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Array1_PartNumber0
-	Rank: Unknown
-
-Handle 0x002E, DMI type 18, 23 bytes
-32-bit Memory Error Information
-	Type: OK
-	Granularity: Unknown
-	Operation: Unknown
-	Vendor Syndrome: Unknown
-	Memory Array Address: Unknown
-	Device Address: Unknown
-	Resolution: Unknown
-
-Handle 0x002F, DMI type 126, 19 bytes
-Inactive
-
-Handle 0x0030, DMI type 17, 28 bytes
-Memory Device
-	Array Handle: 0x002A
-	Error Information Handle: No Error
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4 GB
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM1
-	Bank Locator: BANK1
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Kingston     
-	Serial Number: --
-	Asset Tag: --
-	Part Number: 9905471-006.A00LF 
-	Rank: 2
-
-Handle 0x0031, DMI type 18, 23 bytes
-32-bit Memory Error Information
-	Type: OK
-	Granularity: Unknown
-	Operation: Unknown
-	Vendor Syndrome: Unknown
-	Memory Array Address: Unknown
-	Device Address: Unknown
-	Resolution: Unknown
-
-Handle 0x0032, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0030
-	Memory Array Mapped Address Handle: 0x002C
-	Partition Row Position: 1
-
-Handle 0x0033, DMI type 17, 28 bytes
-Memory Device
-	Array Handle: 0x002A
-	Error Information Handle: No Error
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM2
-	Bank Locator: BANK2
-	Type: Unknown
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Manufacturer2
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Array1_PartNumber2
-	Rank: Unknown
-
-Handle 0x0034, DMI type 18, 23 bytes
-32-bit Memory Error Information
-	Type: OK
-	Granularity: Unknown
-	Operation: Unknown
-	Vendor Syndrome: Unknown
-	Memory Array Address: Unknown
-	Device Address: Unknown
-	Resolution: Unknown
-
-Handle 0x0035, DMI type 126, 19 bytes
-Inactive
-
-Handle 0x0036, DMI type 17, 28 bytes
-Memory Device
-	Array Handle: 0x002A
-	Error Information Handle: No Error
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4 GB
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM3
-	Bank Locator: BANK3
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Kingston     
-	Serial Number: --
-	Asset Tag: --
-	Part Number: 9905471-006.A00LF 
-	Rank: 2
-
-Handle 0x0037, DMI type 18, 23 bytes
-32-bit Memory Error Information
-	Type: OK
-	Granularity: Unknown
-	Operation: Unknown
-	Vendor Syndrome: Unknown
-	Memory Array Address: Unknown
-	Device Address: Unknown
-	Resolution: Unknown
-
-Handle 0x0038, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0036
-	Memory Array Mapped Address Handle: 0x002C
-	Partition Row Position: 1
-
-Handle 0x0039, DMI type 32, 20 bytes
+Handle 0x002A, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x003A, DMI type 34, 11 bytes
+Handle 0x002B, DMI type 34, 11 bytes
 Management Device
-	Description: LM78-1
-	Type: LM78
-	Address: 0x00000000
+	Description: Nuvoton NCT6776F
+	Type: Other
+	Address: 0x00000295
 	Address Type: I/O Port
 
-Handle 0x003B, DMI type 26, 22 bytes
+Handle 0x002C, DMI type 26, 22 bytes
 Voltage Probe
 	Description: LM78A
 	Location: <OUT OF SPEC>
@@ -672,7 +504,7 @@ Voltage Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x003C, DMI type 36, 16 bytes
+Handle 0x002D, DMI type 36, 16 bytes
 Management Device Threshold Data
 	Lower Non-critical Threshold: 1
 	Upper Non-critical Threshold: 2
@@ -681,14 +513,14 @@ Management Device Threshold Data
 	Lower Non-recoverable Threshold: 5
 	Upper Non-recoverable Threshold: 6
 
-Handle 0x003D, DMI type 35, 11 bytes
+Handle 0x002E, DMI type 35, 11 bytes
 Management Device Component
 	Description: To Be Filled By O.E.M.
-	Management Device Handle: 0x003A
-	Component Handle: 0x003A
-	Threshold Handle: 0x003B
+	Management Device Handle: 0x002B
+	Component Handle: 0x002B
+	Threshold Handle: 0x002C
 
-Handle 0x003E, DMI type 28, 22 bytes
+Handle 0x002F, DMI type 28, 22 bytes
 Temperature Probe
 	Description: LM78A
 	Location: <OUT OF SPEC>
@@ -701,7 +533,7 @@ Temperature Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x003F, DMI type 36, 16 bytes
+Handle 0x0030, DMI type 36, 16 bytes
 Management Device Threshold Data
 	Lower Non-critical Threshold: 1
 	Upper Non-critical Threshold: 2
@@ -710,23 +542,23 @@ Management Device Threshold Data
 	Lower Non-recoverable Threshold: 5
 	Upper Non-recoverable Threshold: 6
 
-Handle 0x0040, DMI type 35, 11 bytes
+Handle 0x0031, DMI type 35, 11 bytes
 Management Device Component
 	Description: To Be Filled By O.E.M.
-	Management Device Handle: 0x003A
-	Component Handle: 0x003D
-	Threshold Handle: 0x003E
+	Management Device Handle: 0x002B
+	Component Handle: 0x002E
+	Threshold Handle: 0x002F
 
-Handle 0x0041, DMI type 27, 14 bytes
+Handle 0x0032, DMI type 27, 14 bytes
 Cooling Device
-	Temperature Probe Handle: 0x003E
+	Temperature Probe Handle: 0x002F
 	Type: <OUT OF SPEC>
 	Status: <OUT OF SPEC>
 	Cooling Unit Group: 1
 	OEM-specific Information: 0x00000000
 	Nominal Speed: Unknown Or Non-rotating
 
-Handle 0x0042, DMI type 36, 16 bytes
+Handle 0x0033, DMI type 36, 16 bytes
 Management Device Threshold Data
 	Lower Non-critical Threshold: 1
 	Upper Non-critical Threshold: 2
@@ -735,23 +567,23 @@ Management Device Threshold Data
 	Lower Non-recoverable Threshold: 5
 	Upper Non-recoverable Threshold: 6
 
-Handle 0x0043, DMI type 35, 11 bytes
+Handle 0x0034, DMI type 35, 11 bytes
 Management Device Component
 	Description: To Be Filled By O.E.M.
-	Management Device Handle: 0x003A
-	Component Handle: 0x0040
-	Threshold Handle: 0x0041
+	Management Device Handle: 0x002B
+	Component Handle: 0x0031
+	Threshold Handle: 0x0032
 
-Handle 0x0044, DMI type 27, 14 bytes
+Handle 0x0035, DMI type 27, 14 bytes
 Cooling Device
-	Temperature Probe Handle: 0x003E
+	Temperature Probe Handle: 0x002F
 	Type: <OUT OF SPEC>
 	Status: <OUT OF SPEC>
 	Cooling Unit Group: 1
 	OEM-specific Information: 0x00000000
 	Nominal Speed: Unknown Or Non-rotating
 
-Handle 0x0045, DMI type 36, 16 bytes
+Handle 0x0036, DMI type 36, 16 bytes
 Management Device Threshold Data
 	Lower Non-critical Threshold: 1
 	Upper Non-critical Threshold: 2
@@ -760,14 +592,14 @@ Management Device Threshold Data
 	Lower Non-recoverable Threshold: 5
 	Upper Non-recoverable Threshold: 6
 
-Handle 0x0046, DMI type 35, 11 bytes
+Handle 0x0037, DMI type 35, 11 bytes
 Management Device Component
 	Description: To Be Filled By O.E.M.
-	Management Device Handle: 0x003A
-	Component Handle: 0x0043
-	Threshold Handle: 0x0044
+	Management Device Handle: 0x002B
+	Component Handle: 0x0034
+	Threshold Handle: 0x0035
 
-Handle 0x0047, DMI type 29, 22 bytes
+Handle 0x0038, DMI type 29, 22 bytes
 Electrical Current Probe
 	Description: ABC
 	Location: <OUT OF SPEC>
@@ -780,17 +612,17 @@ Electrical Current Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x0048, DMI type 36, 16 bytes
+Handle 0x0039, DMI type 36, 16 bytes
 Management Device Threshold Data
 
-Handle 0x0049, DMI type 35, 11 bytes
+Handle 0x003A, DMI type 35, 11 bytes
 Management Device Component
 	Description: To Be Filled By O.E.M.
-	Management Device Handle: 0x003A
-	Component Handle: 0x0046
-	Threshold Handle: 0x0044
+	Management Device Handle: 0x002B
+	Component Handle: 0x0037
+	Threshold Handle: 0x0035
 
-Handle 0x004A, DMI type 39, 22 bytes
+Handle 0x003B, DMI type 39, 22 bytes
 System Power Supply
 	Power Unit Group: 1
 	Location: To Be Filled By O.E.M.
@@ -806,11 +638,11 @@ System Power Supply
 	Input Voltage Range Switching: <OUT OF SPEC>
 	Plugged: Yes
 	Hot Replaceable: No
-	Input Voltage Probe Handle: 0x003B
-	Cooling Device Handle: 0x0041
-	Input Current Probe Handle: 0x0047
+	Input Voltage Probe Handle: 0x002C
+	Cooling Device Handle: 0x0032
+	Input Current Probe Handle: 0x0038
 
-Handle 0x004B, DMI type 34, 16 bytes
+Handle 0x003C, DMI type 34, 16 bytes
 Invalid entry length (16). Fixed up to 11.
 Management Device
 	Description: LM78-2
@@ -818,7 +650,7 @@ Management Device
 	Address: 0x00000000
 	Address Type: I/O Port
 
-Handle 0x004C, DMI type 26, 22 bytes
+Handle 0x003D, DMI type 26, 22 bytes
 Voltage Probe
 	Description: LM78B
 	Location: <OUT OF SPEC>
@@ -831,7 +663,7 @@ Voltage Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x004D, DMI type 36, 16 bytes
+Handle 0x003E, DMI type 36, 16 bytes
 Management Device Threshold Data
 	Lower Non-critical Threshold: 7
 	Upper Non-critical Threshold: 8
@@ -840,14 +672,14 @@ Management Device Threshold Data
 	Lower Non-recoverable Threshold: 11
 	Upper Non-recoverable Threshold: 12
 
-Handle 0x004E, DMI type 35, 11 bytes
+Handle 0x003F, DMI type 35, 11 bytes
 Management Device Component
 	Description: To Be Filled By O.E.M.
-	Management Device Handle: 0x004B
-	Component Handle: 0x004B
-	Threshold Handle: 0x004C
+	Management Device Handle: 0x003C
+	Component Handle: 0x003C
+	Threshold Handle: 0x003D
 
-Handle 0x004F, DMI type 26, 22 bytes
+Handle 0x0040, DMI type 26, 22 bytes
 Voltage Probe
 	Description: LM78B
 	Location: <OUT OF SPEC>
@@ -860,7 +692,7 @@ Voltage Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x0050, DMI type 36, 16 bytes
+Handle 0x0041, DMI type 36, 16 bytes
 Management Device Threshold Data
 	Lower Non-critical Threshold: 13
 	Upper Non-critical Threshold: 14
@@ -869,14 +701,14 @@ Management Device Threshold Data
 	Lower Non-recoverable Threshold: 17
 	Upper Non-recoverable Threshold: 18
 
-Handle 0x0051, DMI type 35, 11 bytes
+Handle 0x0042, DMI type 35, 11 bytes
 Management Device Component
 	Description: To Be Filled By O.E.M.
-	Management Device Handle: 0x004B
-	Component Handle: 0x004E
-	Threshold Handle: 0x004F
+	Management Device Handle: 0x003C
+	Component Handle: 0x003F
+	Threshold Handle: 0x0040
 
-Handle 0x0052, DMI type 28, 22 bytes
+Handle 0x0043, DMI type 28, 22 bytes
 Temperature Probe
 	Description: LM78B
 	Location: <OUT OF SPEC>
@@ -889,7 +721,7 @@ Temperature Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x0053, DMI type 36, 16 bytes
+Handle 0x0044, DMI type 36, 16 bytes
 Management Device Threshold Data
 	Lower Non-critical Threshold: 1
 	Upper Non-critical Threshold: 2
@@ -898,23 +730,23 @@ Management Device Threshold Data
 	Lower Non-recoverable Threshold: 5
 	Upper Non-recoverable Threshold: 6
 
-Handle 0x0054, DMI type 35, 11 bytes
+Handle 0x0045, DMI type 35, 11 bytes
 Management Device Component
 	Description: To Be Filled By O.E.M.
-	Management Device Handle: 0x004B
-	Component Handle: 0x0051
-	Threshold Handle: 0x0052
+	Management Device Handle: 0x003C
+	Component Handle: 0x0042
+	Threshold Handle: 0x0043
 
-Handle 0x0055, DMI type 27, 14 bytes
+Handle 0x0046, DMI type 27, 14 bytes
 Cooling Device
-	Temperature Probe Handle: 0x0052
+	Temperature Probe Handle: 0x0043
 	Type: <OUT OF SPEC>
 	Status: <OUT OF SPEC>
 	Cooling Unit Group: 1
 	OEM-specific Information: 0x00000000
 	Nominal Speed: Unknown Or Non-rotating
 
-Handle 0x0056, DMI type 36, 16 bytes
+Handle 0x0047, DMI type 36, 16 bytes
 Management Device Threshold Data
 	Lower Non-critical Threshold: 1
 	Upper Non-critical Threshold: 2
@@ -923,14 +755,14 @@ Management Device Threshold Data
 	Lower Non-recoverable Threshold: 5
 	Upper Non-recoverable Threshold: 6
 
-Handle 0x0057, DMI type 35, 11 bytes
+Handle 0x0048, DMI type 35, 11 bytes
 Management Device Component
 	Description: To Be Filled By O.E.M.
-	Management Device Handle: 0x004B
-	Component Handle: 0x0054
-	Threshold Handle: 0x0055
+	Management Device Handle: 0x003C
+	Component Handle: 0x0045
+	Threshold Handle: 0x0046
 
-Handle 0x0058, DMI type 28, 22 bytes
+Handle 0x0049, DMI type 28, 22 bytes
 Temperature Probe
 	Description: LM78B
 	Location: <OUT OF SPEC>
@@ -943,7 +775,7 @@ Temperature Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x0059, DMI type 36, 16 bytes
+Handle 0x004A, DMI type 36, 16 bytes
 Management Device Threshold Data
 	Lower Non-critical Threshold: 1
 	Upper Non-critical Threshold: 2
@@ -952,23 +784,23 @@ Management Device Threshold Data
 	Lower Non-recoverable Threshold: 5
 	Upper Non-recoverable Threshold: 6
 
-Handle 0x005A, DMI type 35, 11 bytes
+Handle 0x004B, DMI type 35, 11 bytes
 Management Device Component
 	Description: To Be Filled By O.E.M.
-	Management Device Handle: 0x004B
-	Component Handle: 0x0057
-	Threshold Handle: 0x0058
+	Management Device Handle: 0x003C
+	Component Handle: 0x0048
+	Threshold Handle: 0x0049
 
-Handle 0x005B, DMI type 27, 14 bytes
+Handle 0x004C, DMI type 27, 14 bytes
 Cooling Device
-	Temperature Probe Handle: 0x0058
+	Temperature Probe Handle: 0x0049
 	Type: <OUT OF SPEC>
 	Status: <OUT OF SPEC>
 	Cooling Unit Group: 1
 	OEM-specific Information: 0x00000000
 	Nominal Speed: Unknown Or Non-rotating
 
-Handle 0x005C, DMI type 36, 16 bytes
+Handle 0x004D, DMI type 36, 16 bytes
 Management Device Threshold Data
 	Lower Non-critical Threshold: 1
 	Upper Non-critical Threshold: 2
@@ -977,14 +809,14 @@ Management Device Threshold Data
 	Lower Non-recoverable Threshold: 5
 	Upper Non-recoverable Threshold: 6
 
-Handle 0x005D, DMI type 35, 11 bytes
+Handle 0x004E, DMI type 35, 11 bytes
 Management Device Component
 	Description: To Be Filled By O.E.M.
-	Management Device Handle: 0x004B
-	Component Handle: 0x005A
-	Threshold Handle: 0x005B
+	Management Device Handle: 0x003C
+	Component Handle: 0x004B
+	Threshold Handle: 0x004C
 
-Handle 0x005E, DMI type 29, 22 bytes
+Handle 0x004F, DMI type 29, 22 bytes
 Electrical Current Probe
 	Description: DEF
 	Location: <OUT OF SPEC>
@@ -997,17 +829,17 @@ Electrical Current Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x005F, DMI type 36, 16 bytes
+Handle 0x0050, DMI type 36, 16 bytes
 Management Device Threshold Data
 
-Handle 0x0060, DMI type 35, 11 bytes
+Handle 0x0051, DMI type 35, 11 bytes
 Management Device Component
 	Description: To Be Filled By O.E.M.
-	Management Device Handle: 0x004B
-	Component Handle: 0x005D
-	Threshold Handle: 0x005B
+	Management Device Handle: 0x003C
+	Component Handle: 0x004E
+	Threshold Handle: 0x004C
 
-Handle 0x0061, DMI type 29, 22 bytes
+Handle 0x0052, DMI type 29, 22 bytes
 Electrical Current Probe
 	Description: GHI
 	Location: <OUT OF SPEC>
@@ -1020,17 +852,17 @@ Electrical Current Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x0062, DMI type 36, 16 bytes
+Handle 0x0053, DMI type 36, 16 bytes
 Management Device Threshold Data
 
-Handle 0x0063, DMI type 35, 11 bytes
+Handle 0x0054, DMI type 35, 11 bytes
 Management Device Component
 	Description: To Be Filled By O.E.M.
-	Management Device Handle: 0x004B
-	Component Handle: 0x0060
-	Threshold Handle: 0x005B
+	Management Device Handle: 0x003C
+	Component Handle: 0x0051
+	Threshold Handle: 0x004C
 
-Handle 0x0064, DMI type 39, 22 bytes
+Handle 0x0055, DMI type 39, 22 bytes
 System Power Supply
 	Power Unit Group: 1
 	Location: To Be Filled By O.E.M.
@@ -1046,11 +878,11 @@ System Power Supply
 	Input Voltage Range Switching: <OUT OF SPEC>
 	Plugged: Yes
 	Hot Replaceable: No
-	Input Voltage Probe Handle: 0x003B
-	Cooling Device Handle: 0x0041
-	Input Current Probe Handle: 0x0047
+	Input Voltage Probe Handle: 0x002C
+	Cooling Device Handle: 0x0032
+	Input Current Probe Handle: 0x0038
 
-Handle 0x0065, DMI type 41, 11 bytes
+Handle 0x0056, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation:  Onboard IGD
 	Type: Video
@@ -1058,7 +890,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 
-Handle 0x0066, DMI type 41, 11 bytes
+Handle 0x0057, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation:  Onboard LAN
 	Type: Ethernet
@@ -1066,7 +898,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:19.0
 
-Handle 0x0067, DMI type 41, 11 bytes
+Handle 0x0058, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation:  Onboard 1394
 	Type: Other
@@ -1074,10 +906,10 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:03:1c.2
 
-Handle 0x0068, DMI type 139, 94 bytes
+Handle 0x0059, DMI type 139, 94 bytes
 OEM-specific Type
 	Header and Data:
-		8B 5E 68 00 FE DC BA 98 76 54 32 10 04 04 32 55
+		8B 5E 59 00 FE DC BA 98 76 54 32 10 04 04 32 55
 		F8 00 A2 02 A1 00 40 63 06 11 03 34 03 DF 40 80
 		00 20 00 73 3C 10 08 00 60 0F 06 11 15 04 20 00
 		3C 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -1086,18 +918,177 @@ OEM-specific Type
 	Strings:
 		V1394GUID
 
-Handle 0x0069, DMI type 13, 22 bytes
+Handle 0x005B, DMI type 16, 15 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 32 GB
+	Error Information Handle: 0x005D
+	Number Of Devices: 4
+
+Handle 0x005A, DMI type 17, 28 bytes
+Memory Device
+	Array Handle: 0x005B
+	Error Information Handle: 0x005F
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelA-DIMM0
+	Bank Locator: BANK 0
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: [Empty]
+	Serial Number: --
+	Asset Tag: --
+	Part Number: [Empty]
+	Rank: Unknown
+
+Handle 0x005D, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x005C, DMI type 17, 28 bytes
+Memory Device
+	Array Handle: 0x005B
+	Error Information Handle: No Error
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelA-DIMM1
+	Bank Locator: BANK 1
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Kingston
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 9905471-006.A00LF 
+	Rank: 2
+
+Handle 0x005F, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x005E, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x005C
+	Memory Array Mapped Address Handle: 0x0064
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 2
+
+Handle 0x0061, DMI type 17, 28 bytes
+Memory Device
+	Array Handle: 0x005B
+	Error Information Handle: 0x0060
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelB-DIMM0
+	Bank Locator: BANK 2
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: [Empty]
+	Serial Number: --
+	Asset Tag: --
+	Part Number: [Empty]
+	Rank: Unknown
+
+Handle 0x0060, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0063, DMI type 17, 28 bytes
+Memory Device
+	Array Handle: 0x005B
+	Error Information Handle: No Error
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelB-DIMM1
+	Bank Locator: BANK 3
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Kingston
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 9905471-006.A00LF 
+	Rank: 2
+
+Handle 0x0062, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0065, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0063
+	Memory Array Mapped Address Handle: 0x0064
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x0064, DMI type 19, 15 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Array Handle: 0x005B
+	Partition Width: 4
+
+Handle 0x0066, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 6
-		eng
-		fra
-		ger
+		en-
+		fr-
+		de-
+		ja-
+		zh-
 		chs
-		chi
-		jpn
-	Currently Installed Language: eng
+	Currently Installed Language: en-
 
-Handle 0x006A, DMI type 127, 4 bytes
+Handle 0x0067, DMI type 127, 4 bytes
 End Of Table
 

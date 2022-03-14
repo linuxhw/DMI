@@ -19,766 +19,766 @@ Probe  — latest probe ID of this device.
 
 ### Cpu
 
-| MFG        | Name                             | GHz  | Count | Probe      |
-|------------|----------------------------------|------|-------|------------|
-| Intel      | Core i5-8250U                    | 1.60 | 606   | 8272A05168 |
-| Intel      | 11th Gen Core i5-1135G7          | 2.40 | 575   | DA5E2F59CC |
-| Intel      | Core i7-8550U                    | 1.80 | 554   | 08D287D2E2 |
-| Intel      | Core i5-7200U                    | 2.50 | 488   | 9C8BB9558A |
-| Intel      | Core i7-8750H                    | 2.20 | 450   | 2C6C86B1FB |
-| Intel      | Core i7-9750H                    | 2.60 | 436   | 58E43F0514 |
-| Intel      | Core i5-3210M                    | 2.50 | 415   | 783D081B5A |
-| AMD        | Ryzen 5 3500U with Radeon Veg... |      | 389   | 1310B8ABF4 |
-| Intel      | Core i7-7700HQ                   | 2.80 | 389   | EDD545A455 |
-| Intel      | Core i7-10510U                   | 1.80 | 354   | A35AAAEB6D |
-| Intel      | Core i5-6200U                    | 2.30 | 349   | 1069B24865 |
-| Intel      | Core i7-8565U                    | 1.80 | 330   | A01E524A66 |
-| Intel      | Core i5-2520M                    | 2.50 | 323   | E07ABB010E |
-| Intel      | Core i5-3230M                    | 2.60 | 315   | 4639F065C8 |
-| Intel      | Core i7-7500U                    | 2.70 | 311   | C74129A618 |
-| Intel      | Celeron N2840                    | 2.16 | 310   | 8C4669BE5C |
-| Intel      | Core i5-2450M                    | 2.50 | 282   | 85A514F622 |
-| Intel      | Core i5-2410M                    | 2.30 | 280   | 7EAEAE034C |
-| Intel      | Core i5-5200U                    | 2.20 | 278   | 0D89B6423C |
-| Intel      | Core i5-10210U                   | 1.60 | 268   | BA8F31C45F |
-| Intel      | Core i5-4210U                    | 1.70 | 268   | DBF0FD04C3 |
-| Intel      | Core i5-8265U                    | 1.60 | 267   | 8F25043C64 |
-| Intel      | Core i5-3320M                    | 2.60 | 258   | EC8AF5F350 |
-| Intel      | Core i3-2350M                    | 2.30 | 244   | F5112DBF47 |
-| Intel      | Core i3-3110M                    | 2.40 | 240   | 60A030AED3 |
-| Intel      | Core i7-6700HQ                   | 2.60 | 239   | CFA4E16D46 |
-| Intel      | Core i3-2310M                    | 2.10 | 219   | B96D5D5FDC |
-| Intel      | Core i7-10750H                   | 2.60 | 213   | 32F01CCAAB |
-| Intel      | Pentium B960                     | 2.20 | 213   | CB2F8C100B |
-| Intel      | Core i7-8565U                    | 1.80 | 212   | 111B26A250 |
-| Intel      | Core i5-2430M                    | 2.40 | 212   | A610876405 |
-| Intel      | Atom N270                        | 1.60 | 211   | 24833C6A59 |
-| Intel      | Core i5-4200U                    | 1.60 | 209   | 1014243935 |
-| Intel      | Core i3-6006U                    | 2.00 | 208   | 2BF6813AD9 |
-| Intel      | Core i5-8265U                    | 1.60 | 207   | 55A32EF8DC |
-| Intel      | Core i3 M 370                    | 2.40 | 207   | DEC993FE87 |
-| Intel      | Core i3-5005U                    | 2.00 | 205   | A5F750922A |
-| Intel      | Atom N450                        | 1.66 | 200   | 09B8FC981C |
-| AMD        | Ryzen 7 4800H with Radeon Gra... |      | 198   | 1E059DB869 |
-| Intel      | Core i7-6500U                    | 2.50 | 194   | 9B5832381A |
-| Intel      | Core i3 M 380                    | 2.53 | 193   | 6547CDED19 |
-| Intel      | Core i5-6300U                    | 2.40 | 186   | 436E9BF227 |
-| Intel      | Core i5-1035G1                   | 1.00 | 182   | 7125C6F5DD |
-| Intel      | Core i7-2670QM                   | 2.20 | 177   | C9D463149F |
-| Intel      | Celeron N3060                    | 1.60 | 177   | B9D36307A5 |
-| Intel      | Core i7-3630QM                   | 2.40 | 175   | 95C381CCD9 |
-| AMD        | E-450 APU with Radeon HD Grap... |      | 173   | AF980DC491 |
-| AMD        | Ryzen 7 4700U with Radeon Gra... |      | 171   | 1719B2DC9D |
-| Intel      | Core i5-5300U                    | 2.30 | 168   | A7CC3183F2 |
-| Intel      | Core i5-8300H                    | 2.30 | 161   | D55AC505B9 |
-| AMD        | Ryzen 5 2500U with Radeon Veg... |      | 157   | 31B241368B |
-| Intel      | Core i5-5250U                    | 1.60 | 157   | 5B47E8EFCB |
-| Intel      | Atom N455                        | 1.66 | 154   | F696958F46 |
-| Intel      | Core i3-2330M                    | 2.20 | 150   | 8A74691BA9 |
-| Intel      | Core i3-3217U                    | 1.80 | 150   | 831FFF897A |
-| AMD        | Ryzen 7 PRO 4750U with Radeon... |      | 149   | 273A5FF27D |
-| Intel      | Core i7-5500U                    | 2.40 | 146   | 545EB61311 |
-| Intel      | Pentium Dual-Core T4500          | 2.30 | 145   | C8F8ADC564 |
-| Intel      | Core i7-2630QM                   | 2.00 | 142   | 997A879973 |
-| Intel      | Core i5-3337U                    | 1.80 | 142   | 58CC91ABA3 |
-| AMD        | Ryzen 5 4500U with Radeon Gra... |      | 141   | 8948989999 |
-| Intel      | Pentium 2020M                    | 2.40 | 141   | 5CEAD11297 |
-| Intel      | Core i5-4300U                    | 1.90 | 139   | E2559AC29A |
-| Intel      | Core i3-4005U                    | 1.70 | 138   | 0862DC626B |
-| Intel      | Atom N2600                       | 1.60 | 137   | A83E302ABA |
-| Intel      | Core i7-8650U                    | 1.90 | 135   | 92DCB677F7 |
-| Intel      | Core i3-3120M                    | 2.50 | 135   | 779684E41D |
-| Intel      | Core i7-1065G7                   | 1.30 | 132   | BCC27223CC |
-| Intel      | Core i7-4700MQ                   | 2.40 | 132   | A817ED896E |
-| Intel      | Core i7-4510U                    | 2.00 | 127   | B2CDA34B7E |
-| AMD        | Ryzen 7 3700U with Radeon Veg... |      | 124   | C62BB4ADC9 |
-| Intel      | Celeron N3350                    | 1.10 | 123   | A2D784B2EA |
-| Intel      | Core i5 M 460                    | 2.53 | 122   | 2AF79BA873 |
-| Intel      | Pentium Dual-Core T4300          | 2.10 | 121   | AA058ED867 |
-| Intel      | Core i5-4200M                    | 2.50 | 121   | CD55B73689 |
-| Intel      | Atom x5-Z8350                    | 1.44 | 120   | AFBB6F50C8 |
-| Intel      | Core i7-3610QM                   | 2.30 | 118   | AAF9EFF6BD |
-| Intel      | Core i7-6600U                    | 2.60 | 118   | FDC6203A6E |
-| Intel      | Core i7-8665U                    | 1.90 | 117   | 6A14ED2D5E |
-| Intel      | Core i3 M 350                    | 2.27 | 117   | C3F92D48E5 |
-| Intel      | Core 2 Duo P8400                 | 2.26 | 116   | 8C2D9E608C |
-| Intel      | Pentium N3540                    | 2.16 | 116   | 8F1DD3CE3A |
-| Intel      | Pentium Dual-Core T4400          | 2.20 | 115   | 3BFB2E5E7B |
-| Intel      | Celeron N3050                    | 1.60 | 115   | DF9E8736C9 |
-| Intel      | Core i5 M 520                    | 2.40 | 114   | 4A54D7FD48 |
-| Intel      | Core i5-3317U                    | 1.70 | 114   | 94471889B0 |
-| Intel      | Core i5-9300H                    | 2.40 | 113   | FB676E6E3F |
-| Intel      | Core i5-7300HQ                   | 2.50 | 113   | 1B93E3C1C9 |
-| Intel      | Core 2 Duo P8600                 | 2.40 | 112   | 80E0B6AF9E |
-| Intel      | Pentium Dual-Core T4200          | 2.00 | 112   | C0FAA178A2 |
-| Intel      | Core i5 M 480                    | 2.67 | 112   | 557421F62E |
-| Intel      | Pentium M processor              | 1.20 | 111   | 61FEA93E97 |
-| Intel      | Core i7-4500U                    | 1.80 | 109   | 4BAEB2CAFC |
-| Intel      | Pentium P6200                    | 2.13 | 105   | 0D72CF73AC |
-| Intel      | Atom N570                        | 1.66 | 104   | 1D2C227997 |
-| AMD        | Ryzen 5 4600H with Radeon Gra... |      | 103   | F581CF8319 |
-| Intel      | Celeron 2955U                    | 1.40 | 103   | 5515480ED0 |
-| Intel      | Core i7-4600U                    | 2.10 | 103   | FC5E995432 |
-| Intel      | Core i3 M 330                    | 2.13 | 102   | 0BC832BD49 |
-| Intel      | Pentium N3710                    | 1.60 | 99    | 0BA26CCC72 |
-| Intel      | Celeron N2830                    | 2.16 | 98    | E6F3F8F6EE |
-| AMD        | E-300 APU with Radeon HD Grap... |      | 97    | 60D72BDCE7 |
-| Intel      | Celeron N4000                    | 1.10 | 97    | 75C78480D2 |
-| Intel      | Pentium P6100                    | 2.00 | 97    | 6450BA7397 |
-| Intel      | Core i5-2540M                    | 2.60 | 95    | 3405536413 |
-| Intel      | Core i5 M 430                    | 2.27 | 94    | 3861FCE83E |
-| AMD        | A10-4600M APU with Radeon HD ... |      | 93    | 7332DA68EC |
-| Intel      | Core i7-3632QM                   | 2.20 | 92    | D7E853A51C |
-| Intel      | Core i5 M 560                    | 2.67 | 91    | BA51FC9216 |
-| Intel      | Core i3-2370M                    | 2.40 | 91    | 923479D039 |
-| Intel      | Core 2 Duo T7500                 | 2.20 | 89    | 34FC60E37E |
-| Intel      | Core i7-4710HQ                   | 2.50 | 88    | 739623468A |
-| Intel      | Core 2 Duo P8700                 | 2.53 | 87    | 22BD0169BD |
-| Intel      | Core 2 Duo T6600                 | 2.20 | 87    | B9D6CE69B0 |
-| Intel      | Celeron 1000M                    | 1.80 | 87    | 0790E099FA |
-| Intel      | Core i3-4030U                    | 1.90 | 87    | 8D5A256374 |
-| Intel      | Core i7-3520M                    | 2.90 | 86    | F37394899F |
-| Intel      | Core i7-5600U                    | 2.60 | 85    | FFB40F821B |
-| Intel      | Core i3-6100U                    | 2.30 | 85    | 60B294879D |
-| AMD        | C-60 APU with Radeon HD Graphics |      | 84    | 95653B7969 |
-| Intel      | Pentium B950                     | 2.10 | 83    | 70CB0EACD3 |
-| Intel      | Atom Z3735F                      | 1.33 | 83    | DE0A5F2925 |
-| AMD        | E-350                            |      | 82    | 71753D9A10 |
-| Intel      | Pentium N3700                    | 1.60 | 82    | FF46DC73D4 |
-| AMD        | A8-7410 APU with AMD Radeon R... |      | 81    | 65B33599F0 |
-| AMD        | Ryzen 5 3550H with Radeon Veg... |      | 81    | 9B0872B3D4 |
-| Intel      | Core 2 Duo T7250                 | 2.00 | 81    | B6302B710D |
-| AMD        | Ryzen 3 3200U with Radeon Veg... |      | 80    | 8DB63E7A74 |
-| Intel      | Core 2 T7200                     | 2.00 | 80    | E402A0B407 |
-| Intel      | Core 2 Duo T5750                 | 2.00 | 79    | 89842BEC44 |
-| Intel      | Core i7 Q 720                    | 1.60 | 78    | 13796B8E87 |
-| Intel      | Core i7-2620M                    | 2.70 | 77    | E72B8E6BA0 |
-| AMD        | A6-6310 APU with AMD Radeon R... |      | 76    | 0B2EC748F2 |
-| AMD        | A8-4500M APU with Radeon HD G... |      | 75    | 261221A1DA |
-| Intel      | Core i3-8130U                    | 2.20 | 75    | AF67B942EC |
-| Intel      | Core i7-8850H                    | 2.60 | 75    | C625F457A9 |
-| Intel      | Core i3-4000M                    | 2.40 | 75    | 532FD196D0 |
-| Intel      | Pentium Silver N5000             | 1.10 | 74    | D08EFA2EF3 |
-| Intel      | Core i5-10300H                   | 2.50 | 74    | C205261FA4 |
-| Intel      | Core 2 Duo T8100                 | 2.10 | 72    | 287379AF9F |
-| Intel      | Core 2 Duo T8300                 | 2.40 | 72    | A9BA9DF656 |
-| Intel      | Core i5-8350U                    | 1.70 | 71    | 4EFDBAEEA5 |
-| Intel      | Celeron 900                      | 2.20 | 70    | 7962A481CB |
-| Intel      | Core i7-6820HQ                   | 2.70 | 70    | F45B082C14 |
-| Intel      | Core i3-1005G1                   | 1.20 | 69    | FF8C85568E |
-| Intel      | Core i3-7100U                    | 2.40 | 69    | C9153E029E |
-| Intel      | Core i7-9850H                    | 2.60 | 68    | B59369E8E7 |
-| Intel      | Core i7-10710U                   | 1.10 | 68    | 68E8F5B427 |
-| Intel      | Core i7-4700HQ                   | 2.40 | 68    | 5369ACA258 |
-| Intel      | Core i7-4702MQ                   | 2.20 | 68    | 10E7FFC71D |
-| Intel      | Core i3-7020U                    | 2.30 | 67    | F3511CB0AA |
-| Intel      | Core i3-4010U                    | 1.70 | 67    | DC154FE7C0 |
-| Intel      | Pentium B940                     | 2.00 | 66    | FFC397F9F8 |
-| Intel      | Core i5-3340M                    | 2.70 | 66    | 6518CC22CF |
-| Intel      | Core i7-4720HQ                   | 2.60 | 66    | 36ACEDB60B |
-| AMD        | A6-9225 RADEON R4, 5 COMPUTE ... |      | 65    | D9D0DD7C3C |
-| Intel      | Celeron B800                     | 1.50 | 65    | B01543C6B8 |
-| Intel      | Pentium 2117U                    | 1.80 | 65    | 3498166FA2 |
-| AMD        | E1-1200 APU with Radeon HD Gr... |      | 64    | 553A61003F |
-| Intel      | Celeron 1005M                    | 1.90 | 64    | 7ED2650105 |
-| AMD        | A8-6410 APU with AMD Radeon R... |      | 63    | 0CDC6E9D84 |
-| Intel      | Atom x5-Z8300                    | 1.44 | 63    | C17C589AF5 |
-| Intel      | Core i5-6300HQ                   | 2.30 | 63    | 2FCA11CF26 |
-| AMD        | E1-2100 APU with Radeon HD Gr... |      | 62    | AC95ECC04E |
-| AMD        | A6-4400M APU with Radeon HD G... |      | 61    | C4C890F06A |
-| Intel      | Core 2 Duo T5550                 | 1.83 | 61    | A1F9398A77 |
-| Intel      | Pentium Dual T2390               | 1.86 | 61    | 8CB5FC39C1 |
-| Intel      | Core i7-10875H                   | 2.30 | 61    | 5E25D50915 |
-| AMD        | A4-5000 APU with Radeon HD Gr... |      | 60    | 1F91E82C9F |
-| AMD        | E1-6010 APU with AMD Radeon R... |      | 60    | A01DD88BFB |
-| Intel      | Core i5-4300M                    | 2.60 | 60    | E1E44B58F3 |
-| Intel      | 11th Gen Core i7-11850H          | 2.50 | 59    | 27AFF8DCBD |
-| Intel      | Core 2 Duo T5250                 | 1.50 | 59    | EE6FDF4608 |
-| Intel      | Core i7-2640M                    | 2.80 | 59    | 33CEC7AE6F |
-| Intel      | Core 2 Duo T7100                 | 1.80 | 58    | 51AB06C26F |
-| Intel      | Core i5 M 520                    | 2.40 | 58    | C8C010B75C |
-| Intel      | Celeron M processor              | 1.50 | 57    | 5CA4E6101B |
-| Intel      | Core i5-8365U                    | 1.60 | 57    | 8A880E6565 |
-| Intel      | Celeron B820                     | 1.70 | 57    | EB4D94004C |
-| Intel      | Celeron 540                      | 1.86 | 56    | 9583110B21 |
-| Intel      | Pentium N4200                    | 1.10 | 56    | E393D9BC10 |
-| AMD        | A6-3420M APU with Radeon HD G... |      | 55    | 0585DD7016 |
-| Intel      | Core 2 Duo T7300                 | 2.00 | 55    | 2FCBE348D6 |
-| Intel      | Pentium Dual T3400               | 2.16 | 55    | 82E0C7193F |
-| Intel      | Pentium B980                     | 2.40 | 55    | 68759B0315 |
-| AMD        | E2-1800 APU with Radeon HD Gr... |      | 54    | 953078DDF4 |
-| Intel      | Core 2 Duo T5800                 | 2.00 | 54    | F0AE431E2C |
-| Intel      | Celeron B815                     | 1.60 | 54    | 91787044C1 |
-| AMD        | C-50                             |      | 53    | 170DE9CFFB |
-| Intel      | Core i7-4710MQ                   | 2.50 | 53    | AEA7EFB8B2 |
-| Intel      | Core 2 Duo T6400                 | 2.00 | 52    | A97E17FC48 |
-| Intel      | Core 2 Duo P8600                 | 2.40 | 52    | 8F41815859 |
-| Intel      | Core i7-4800MQ                   | 2.70 | 52    | 298AB39418 |
-| AMD        | Ryzen 7 5800H with Radeon Gra... |      | 51    | EF955BCB31 |
-| Intel      | Pentium B970                     | 2.30 | 51    | 068771CE30 |
-| AMD        | A4-9125 RADEON R3, 4 COMPUTE ... |      | 50    | 567F0F4A13 |
-| Intel      | Pentium Dual T2330               | 1.60 | 50    | 66D41EFD4C |
+| MFG        | Name                             | GHz  | Count | Probe |
+|------------|----------------------------------|------|-------|-------|
+| Intel      | 11th Gen Core i5-1135G7          | 2.40 | 1022  | 1F4FADBE2E |
+| Intel      | Core i5-8250U                    | 1.60 | 693   | 2F136D5BF5 |
+| Intel      | Core i7-8550U                    | 1.80 | 636   | 755854F7D4 |
+| Intel      | Core i5-7200U                    | 2.50 | 560   | CC637B12DE |
+| Intel      | Core i7-9750H                    | 2.60 | 505   | 3411708DDF |
+| Intel      | Core i7-8750H                    | 2.20 | 498   | E7C5306C00 |
+| AMD        | Ryzen 5 3500U with Radeon Veg... |      | 464   | 2B1AC5C4F4 |
+| Intel      | Core i5-3210M                    | 2.50 | 461   | A1D8D94B5F |
+| Intel      | Core i7-7700HQ                   | 2.80 | 435   | 156E7734BE |
+| Intel      | Core i7-10510U                   | 1.80 | 421   | B48A6240BF |
+| Intel      | Core i5-6200U                    | 2.30 | 404   | 6BED69BCDB |
+| Intel      | Core i7-8565U                    | 1.80 | 366   | 4766FE6362 |
+| Intel      | Core i7-7500U                    | 2.70 | 357   | C31B5D363F |
+| Intel      | Core i5-2520M                    | 2.50 | 357   | 508A68F09E |
+| Intel      | Core i5-3230M                    | 2.60 | 355   | 1F84B1E42D |
+| Intel      | Celeron N2840                    | 2.16 | 347   | 370CC0B317 |
+| Intel      | Core i5-10210U                   | 1.60 | 338   | 2DDDD7B8DF |
+| Intel      | Core i5-5200U                    | 2.20 | 330   | E6D7592AF0 |
+| Intel      | Core i5-8265U                    | 1.60 | 313   | 85FB049C80 |
+| Intel      | Core i5-2450M                    | 2.50 | 304   | 4206238FCE |
+| Intel      | Core i5-4210U                    | 1.70 | 303   | 3E4AC3A045 |
+| Intel      | Core i5-2410M                    | 2.30 | 302   | 0659469DBE |
+| Intel      | Core i5-3320M                    | 2.60 | 301   | 493F378237 |
+| Intel      | Core i7-10750H                   | 2.60 | 287   | 8DDA7F6478 |
+| Intel      | Core i7-6700HQ                   | 2.60 | 284   | C39FE1A3E3 |
+| Intel      | Core i3-3110M                    | 2.40 | 269   | 46D63F7527 |
+| Intel      | Core i3-2350M                    | 2.30 | 263   | C79056479E |
+| AMD        | Ryzen 7 4800H with Radeon Gra... |      | 256   | 286D140BD5 |
+| Intel      | Core i7-8565U                    | 1.80 | 241   | A7FBE4B7C8 |
+| Intel      | Core i5-4200U                    | 1.60 | 241   | 2DF54EF02E |
+| Intel      | Core i3-6006U                    | 2.00 | 239   | 5AF22F3639 |
+| Intel      | Core i5-2430M                    | 2.40 | 235   | 2D58D0613A |
+| Intel      | Core i3-2310M                    | 2.10 | 233   | F6068483CE |
+| Intel      | Core i5-6300U                    | 2.40 | 230   | 5E026C07C0 |
+| Intel      | Core i5-8265U                    | 1.60 | 228   | B3CBED05F5 |
+| Intel      | Core i3-5005U                    | 2.00 | 228   | 7D4FB351F4 |
+| Intel      | Core i3 M 370                    | 2.40 | 225   | A860ECEBE5 |
+| Intel      | Pentium B960                     | 2.20 | 225   | 570C07EE5C |
+| Intel      | Core i7-6500U                    | 2.50 | 224   | CE5FD5227F |
+| Intel      | Atom N270                        | 1.60 | 220   | 6956607BFD |
+| Intel      | Core i5-1035G1                   | 1.00 | 216   | ECA1413F3F |
+| Intel      | Core i3 M 380                    | 2.53 | 211   | 79A1D21F1E |
+| AMD        | Ryzen 7 4700U with Radeon Gra... |      | 209   | 68E933E6A3 |
+| Intel      | Atom N450                        | 1.66 | 207   | E138DDE726 |
+| Intel      | Celeron N3060                    | 1.60 | 207   | F820B3F676 |
+| Intel      | Core i7-2670QM                   | 2.20 | 194   | 03B19F857F |
+| Intel      | Core i5-5300U                    | 2.30 | 194   | BD60AAE97A |
+| Intel      | Core i5-8300H                    | 2.30 | 190   | 85F724141F |
+| Intel      | Core i7-3630QM                   | 2.40 | 189   | 3DF16E8D72 |
+| AMD        | E-450 APU with Radeon HD Grap... |      | 183   | 262BD2B6B5 |
+| AMD        | Ryzen 5 4500U with Radeon Gra... |      | 179   | EBB68892DC |
+| AMD        | Ryzen 5 2500U with Radeon Veg... |      | 173   | B950D195CE |
+| AMD        | Ryzen 7 PRO 4750U with Radeon... |      | 173   | 034F4D4131 |
+| Intel      | Core i3-3217U                    | 1.80 | 166   | 835313A116 |
+| Intel      | Core i7-1065G7                   | 1.30 | 163   | F094B510C8 |
+| Intel      | 11th Gen Core i7-11850H          | 2.50 | 162   | 1804E5EB77 |
+| Intel      | Atom N455                        | 1.66 | 161   | C9670FC791 |
+| Intel      | Core i3-2330M                    | 2.20 | 161   | 713F08757A |
+| Intel      | Core i7-5500U                    | 2.40 | 161   | F2CB3C2498 |
+| Intel      | Core i7-2630QM                   | 2.00 | 160   | 86F68B585B |
+| Intel      | Pentium Dual-Core T4500          | 2.30 | 157   | BB9DAA5AB1 |
+| Intel      | Core i5-5250U                    | 1.60 | 157   | 91FA01F5A6 |
+| Intel      | Core i7-8650U                    | 1.90 | 156   | 75B63C2D2C |
+| Intel      | Core i5-3337U                    | 1.80 | 156   | E909E31559 |
+| Intel      | Core i5-4300U                    | 1.90 | 155   | 10655C6E60 |
+| Intel      | Core i3-4005U                    | 1.70 | 152   | C2F6FAF193 |
+| Intel      | Pentium 2020M                    | 2.40 | 149   | A66540BC44 |
+| Intel      | Celeron N3350                    | 1.10 | 149   | C166EC8175 |
+| Intel      | Core i7-4700MQ                   | 2.40 | 148   | 6D0CD0F4B9 |
+| AMD        | Ryzen 7 3700U with Radeon Veg... |      | 147   | 9D3A4E4A04 |
+| AMD        | Ryzen 5 4600H with Radeon Gra... |      | 146   | E9EEB0B8C7 |
+| Intel      | Atom N2600                       | 1.60 | 145   | 486F5C28AD |
+| Intel      | Core i3-3120M                    | 2.50 | 143   | 2B4257B1C2 |
+| Intel      | Core i7-4510U                    | 2.00 | 139   | 0EF953E74D |
+| Intel      | Core i7-6600U                    | 2.60 | 139   | 02E748E3AC |
+| Intel      | Pentium Dual-Core T4300          | 2.10 | 136   | 9F926D363E |
+| Intel      | Core i5-9300H                    | 2.40 | 135   | 3327E56999 |
+| Intel      | Core i5 M 460                    | 2.53 | 135   | 937E0F27C0 |
+| Intel      | Atom x5-Z8350                    | 1.44 | 135   | FA7F40245B |
+| Intel      | Core i5 M 520                    | 2.40 | 134   | 4601C3AA77 |
+| Intel      | Core i5-4200M                    | 2.50 | 131   | 870C0D1042 |
+| Intel      | Core i7-3610QM                   | 2.30 | 128   | 2F54A2EAD3 |
+| Intel      | Core i7-8665U                    | 1.90 | 127   | 42921AEBFD |
+| Intel      | Core i3 M 350                    | 2.27 | 126   | 59246D05E2 |
+| Intel      | Pentium N3540                    | 2.16 | 126   | D1282EBBCA |
+| Intel      | Core i5-7300HQ                   | 2.50 | 124   | F8602E7DBF |
+| Intel      | Core i5 M 480                    | 2.67 | 124   | D04802B99E |
+| Intel      | Core i5-3317U                    | 1.70 | 124   | 988417AAA7 |
+| Intel      | Core i7-4500U                    | 1.80 | 124   | 5C29218EBD |
+| Intel      | Pentium Dual-Core T4200          | 2.00 | 122   | 8762E9C632 |
+| Intel      | Core i7-4600U                    | 2.10 | 122   | AF08AB87C5 |
+| Intel      | Celeron N3050                    | 1.60 | 122   | AB39875441 |
+| Intel      | Core 2 Duo P8600                 | 2.40 | 121   | 874AFB5AFD |
+| Intel      | Core 2 Duo P8400                 | 2.26 | 121   | BCACEFE427 |
+| Intel      | Pentium Dual-Core T4400          | 2.20 | 120   | F26F40AA50 |
+| Intel      | Celeron N4000                    | 1.10 | 117   | B3086480E5 |
+| Intel      | Pentium M processor              | 1.20 | 117   | 9BBB0B47C9 |
+| AMD        | Ryzen 7 5800H with Radeon Gra... |      | 116   | 14237B32D9 |
+| Intel      | Celeron 2955U                    | 1.40 | 115   | 9A0F2A2848 |
+| Intel      | Pentium P6200                    | 2.13 | 113   | FB656318F6 |
+| Intel      | Pentium N3710                    | 1.60 | 113   | 03A49E64CF |
+| Intel      | Core i5-2540M                    | 2.60 | 112   | A83A1FFE1A |
+| AMD        | Ryzen 5 5500U with Radeon Gra... |      | 111   | D3AD998DFA |
+| Intel      | Core i3 M 330                    | 2.13 | 110   | 532E0A288F |
+| Intel      | Core i7-3520M                    | 2.90 | 110   | EF06C07EA8 |
+| Intel      | Atom N570                        | 1.66 | 109   | 776D052837 |
+| Intel      | Core i5 M 560                    | 2.67 | 109   | FF568F1C19 |
+| Intel      | Celeron N2830                    | 2.16 | 109   | 5B544E4AF7 |
+| Intel      | Core i5 M 430                    | 2.27 | 107   | C039F0A68D |
+| AMD        | E-300 APU with Radeon HD Grap... |      | 106   | D52D456239 |
+| Intel      | Core i5-10300H                   | 2.50 | 103   | 7E967F4DAA |
+| Intel      | Pentium P6100                    | 2.00 | 103   | 7F2FC1617A |
+| Intel      | Core i3-2370M                    | 2.40 | 103   | FBC726A0B8 |
+| Intel      | Core i7-3632QM                   | 2.20 | 103   | B69439C244 |
+| Intel      | Core 2 Duo P8700                 | 2.53 | 102   | E801665544 |
+| Intel      | Core i3-4030U                    | 1.90 | 102   | D4775DF51B |
+| Intel      | Core 2 Duo T7500                 | 2.20 | 99    | AB9D32A3FF |
+| Intel      | Core i3-6100U                    | 2.30 | 98    | 5E63DB91A1 |
+| AMD        | A10-4600M APU with Radeon HD ... |      | 97    | 47A0325074 |
+| Intel      | Core 2 Duo T6600                 | 2.20 | 95    | 18C21AABF3 |
+| Intel      | Celeron 1000M                    | 1.80 | 93    | 9ACE91EEB9 |
+| Intel      | Core i7-5600U                    | 2.60 | 93    | 73881AD12E |
+| AMD        | A8-7410 APU with AMD Radeon R... |      | 92    | 4C84C909EB |
+| AMD        | Ryzen 3 3200U with Radeon Veg... |      | 92    | 03394E745C |
+| Intel      | Core i3-1005G1                   | 1.20 | 92    | 83F0BBB366 |
+| Intel      | Atom Z3735F                      | 1.33 | 92    | 1558C31A17 |
+| Intel      | Core i3-8130U                    | 2.20 | 91    | 134D1CF65B |
+| Intel      | Core 2 Duo T7250                 | 2.00 | 91    | A1FD190F57 |
+| Intel      | Pentium B950                     | 2.10 | 91    | 5850A8DD22 |
+| Intel      | Core i7-4710HQ                   | 2.50 | 91    | 2A0CBE38D7 |
+| AMD        | C-60 APU with Radeon HD Graphics |      | 90    | 70FEBDD28F |
+| AMD        | Ryzen 5 3550H with Radeon Veg... |      | 90    | ED4DB5233E |
+| Intel      | Pentium N3700                    | 1.60 | 90    | 4C896C9379 |
+| AMD        | E-350                            |      | 89    | EA3BB81AAF |
+| Intel      | Core 2 Duo T8300                 | 2.40 | 89    | 17E3CB9771 |
+| Intel      | Core i7-2620M                    | 2.70 | 89    | 30AA9C3047 |
+| AMD        | Ryzen 7 5700U with Radeon Gra... |      | 87    | 6D16601F06 |
+| Intel      | Core i7-8850H                    | 2.60 | 87    | 1947127EF5 |
+| Intel      | Core 2 T7200                     | 2.00 | 86    | 55A6D982B3 |
+| Intel      | Core i5-8350U                    | 1.70 | 85    | 2B8A4F4664 |
+| Intel      | Core i7 Q 720                    | 1.60 | 85    | 1E8448B824 |
+| AMD        | A6-6310 APU with AMD Radeon R... |      | 83    | 952057EE2B |
+| Intel      | Core i3-4000M                    | 2.40 | 83    | C8929CD98B |
+| Intel      | Core i7-6820HQ                   | 2.70 | 83    | 7B9E3082BF |
+| AMD        | A8-4500M APU with Radeon HD G... |      | 82    | C6AD6EDF70 |
+| Intel      | Pentium Silver N5000             | 1.10 | 82    | 6A4971B810 |
+| Intel      | Core 2 Duo T5750                 | 2.00 | 82    | 1715199AFD |
+| Intel      | Core 2 Duo T8100                 | 2.10 | 81    | B00D789D5D |
+| Intel      | Core i7-4702MQ                   | 2.20 | 81    | F61C04B0A8 |
+| Intel      | Core i5-3340M                    | 2.70 | 80    | 2D2BD57C8B |
+| Intel      | Core i3-7100U                    | 2.40 | 77    | 9B5BA1CD95 |
+| Intel      | Celeron 900                      | 2.20 | 77    | 3DCD8CED36 |
+| Intel      | Core i3-7020U                    | 2.30 | 76    | 0AE0E53B53 |
+| Intel      | Core i7-9850H                    | 2.60 | 76    | E7A8B4AF9F |
+| Intel      | Core i7-4720HQ                   | 2.60 | 76    | 32556E3C15 |
+| AMD        | E1-1200 APU with Radeon HD Gr... |      | 75    | 8C712AA419 |
+| AMD        | A6-9225 RADEON R4, 5 COMPUTE ... |      | 75    | 1064E67665 |
+| Intel      | Core i7-10710U                   | 1.10 | 74    | 978273C0AA |
+| Intel      | Core i7-2677M                    | 1.80 | 74    | 62F3B41D12 |
+| Intel      | Core i7-10875H                   | 2.30 | 73    | 0391AC1BA1 |
+| Intel      | Core i5-4300M                    | 2.60 | 73    | D782BEA38A |
+| Intel      | Core i3-4010U                    | 1.70 | 73    | 0948114AF7 |
+| AMD        | A8-6410 APU with AMD Radeon R... |      | 72    | E72FBDDBC9 |
+| Intel      | Core i5-6300HQ                   | 2.30 | 72    | 7FCD9D2C98 |
+| Intel      | Celeron N4020                    | 1.10 | 70    | 5C45B0B08A |
+| Intel      | Pentium 2117U                    | 1.80 | 70    | EEA123637A |
+| Intel      | Core i7-4700HQ                   | 2.40 | 70    | 0D64CBAB8E |
+| Intel      | Celeron B800                     | 1.50 | 69    | 55A854B0C1 |
+| Intel      | Pentium B940                     | 2.00 | 69    | 3A2EF6B552 |
+| Intel      | Celeron 1005M                    | 1.90 | 69    | 9A400FF743 |
+| Intel      | Pentium Dual T2390               | 1.86 | 68    | 4702DAB234 |
+| Intel      | Core i5 M 520                    | 2.40 | 68    | 0BA38C6605 |
+| Intel      | Atom x5-Z8300                    | 1.44 | 68    | 89FF3431E1 |
+| AMD        | E1-2100 APU with Radeon HD Gr... |      | 67    | 06B11BF254 |
+| Intel      | Core i7-2640M                    | 2.80 | 67    | B99A5F9B59 |
+| AMD        | A4-5000 APU with Radeon HD Gr... |      | 66    | C42D057B96 |
+| Intel      | Core 2 Duo T5550                 | 1.83 | 66    | 83A319F258 |
+| AMD        | E1-6010 APU with AMD Radeon R... |      | 64    | 28F40DF81D |
+| Intel      | Core i7-10850H                   | 2.70 | 64    | B56BB115A0 |
+| Intel      | Core i5-8365U                    | 1.60 | 63    | 05BB30084A |
+| Intel      | Core 2 Duo T5800                 | 2.00 | 63    | 889A7EFCA0 |
+| Intel      | Core 2 Duo T7100                 | 1.80 | 63    | B7B428082A |
+| AMD        | A6-4400M APU with Radeon HD G... |      | 62    | AB412A55D6 |
+| Intel      | Core i3-10110U                   | 2.10 | 62    | D21A10BEB4 |
+| Intel      | Core 2 Duo T7300                 | 2.00 | 62    | 6A8BE21D50 |
+| Intel      | Pentium Dual T3400               | 2.16 | 62    | 85B90B81CE |
+| AMD        | A4-9125 RADEON R3, 4 COMPUTE ... |      | 61    | 2DC15462EB |
+| Intel      | Celeron M processor              | 1.50 | 61    | 8373F78D4E |
+| Intel      | Core 2 Duo T5250                 | 1.50 | 61    | 30424B62BE |
+| Intel      | Pentium N4200                    | 1.10 | 61    | B9AEFFA5F3 |
+| AMD        | E2-1800 APU with Radeon HD Gr... |      | 60    | C7C38F077D |
+| Intel      | Core 2 Duo T6400                 | 2.00 | 60    | 5124A5816C |
+| Intel      | Celeron B820                     | 1.70 | 60    | 2D71998513 |
+| Intel      | Core i5-7300U                    | 2.60 | 59    | 64D768D709 |
+| Intel      | Core i7-7600U                    | 2.80 | 59    | 817E973E9D |
+| Intel      | Celeron 540                      | 1.86 | 59    | 77D8F165C0 |
+| Intel      | Pentium B980                     | 2.40 | 59    | 57531C7393 |
+| AMD        | A6-3420M APU with Radeon HD G... |      | 58    | 1A3F77BE23 |
+| Intel      | Core i7-3537U                    | 2.00 | 58    | 2AA0C05F64 |
+| Intel      | Core i7-4800MQ                   | 2.70 | 58    | 665BF5DAE7 |
+| AMD        | C-50                             |      | 57    | A174EE5AA1 |
+| AMD        | Ryzen 9 5900HX with Radeon Gr... |      | 57    | 33CE116B8A |
+| Intel      | Celeron B815                     | 1.60 | 57    | AEAF750011 |
+| Intel      | Core i5-4210M                    | 2.60 | 57    | 54C2CAB341 |
+| Intel      | Pentium B970                     | 2.30 | 56    | B9824D8702 |
+| Intel      | Core i3-7020U                    | 2.30 | 55    | CC638E722F |
+| Intel      | Core i7-7820HQ                   | 2.90 | 55    | CD1A178797 |
+| Intel      | Core i3-2328M                    | 2.20 | 55    | AE05784A4A |
+| Intel      | Core i7-3740QM                   | 2.70 | 55    | 21C4433BF2 |
+| Intel      | Core i7-4710MQ                   | 2.50 | 55    | CE5123C914 |
+| Intel      | Core 2 T5500                     | 1.66 | 54    | 0687A8A072 |
+| Intel      | Core i7-4810MQ                   | 2.80 | 54    | 239DD5797A |
+| Intel      | Pentium Dual T2330               | 1.60 | 53    | 046587A2D1 |
+| Intel      | Pentium Dual T3200               | 2.00 | 53    | 463CA7F3A3 |
+| Intel      | Core 2 Duo P8600                 | 2.40 | 53    | D3C8923C22 |
+| AMD        | A4-3300M APU with Radeon HD G... |      | 52    | 2AEA4AB8F4 |
+| Intel      | Core i5 M 450                    | 2.40 | 52    | 7109402C58 |
+| Intel      | Core 2 T5600                     | 1.83 | 51    | A1A7A8FD65 |
+| Intel      | Celeron B830                     | 1.80 | 51    | 99286EFD08 |
+| Intel      | Celeron 1007U                    | 1.50 | 51    | 5D6D43C8D1 |
+| Intel      | Core i7-3612QM                   | 2.10 | 51    | D20EF03D37 |
+| Intel      | Celeron N3450                    | 1.10 | 51    | 6CF2CC07ED |
+| AMD        | A9-9420 RADEON R5, 5 COMPUTE ... |      | 50    | E7C5BDA932 |
+| Intel      | Pentium Dual T2370               | 1.73 | 50    | 3104016080 |
 | Intel      | Celeron Dual-Core T3100          | 1.90 | 50    | 3A7457A01E |
-| Intel      | Core i7-3537U                    | 2.00 | 50    | D70E2B74D0 |
-| Intel      | Core i5-4210M                    | 2.60 | 50    | 60FA5FF04C |
-| AMD        | A4-3300M APU with Radeon HD G... |      | 49    | 43A34F4589 |
-| Intel      | Core i5-7300U                    | 2.60 | 48    | 80FB4514C5 |
-| Intel      | Pentium Dual T3200               | 2.00 | 48    | 95CF81718F |
-| Intel      | Core 2 T5600                     | 1.83 | 48    | D4F86565B3 |
-| Intel      | Core i3-2328M                    | 2.20 | 48    | BCA6D30092 |
-| Intel      | Celeron 1007U                    | 1.50 | 48    | 318F8D1653 |
-| AMD        | A9-9420 RADEON R5, 5 COMPUTE ... |      | 47    | 9FF8561F02 |
-| Intel      | Core 2 T5500                     | 1.66 | 47    | 4192E41344 |
-| Intel      | Core i7-3517U                    | 1.90 | 47    | 986BA47618 |
-| Intel      | Core i7-3740QM                   | 2.70 | 47    | EA79D2496D |
-| AMD        | Athlon II P320 Dual-Core         |      | 46    | B6EEEBA9D1 |
-| Intel      | Core 2 Duo T5450                 | 1.66 | 46    | A8F19BA877 |
-| Intel      | Pentium Dual T2370               | 1.73 | 46    | 8EFF816347 |
-| Intel      | Celeron B830                     | 1.80 | 46    | 8C02734135 |
-| Intel      | Core i3-7020U                    | 2.30 | 45    | 06114B7EB7 |
-| Intel      | Core i7-7600U                    | 2.80 | 45    | E6643F7ED1 |
-| Intel      | Core i7-7820HQ                   | 2.90 | 45    | 69A5D79A58 |
-| Intel      | Core i7-2677M                    | 1.80 | 45    | 62CE68EDEF |
-| Intel      | Core i7-3612QM                   | 2.10 | 45    | 8BD0954BE7 |
-| AMD        | A6-3400M APU with Radeon HD G... |      | 44    | DFCCB89900 |
-| AMD        | A10-5750M APU with Radeon HD ... |      | 44    | 8F9DA6144D |
-| Intel      | Core i3-10110U                   | 2.10 | 44    | 7BA2477E56 |
-| Intel      | Core i7-10850H                   | 2.70 | 44    | 6105164E23 |
-| Intel      | Core 2 Duo T9300                 | 2.50 | 44    | 810AE66791 |
-| Intel      | Core 2 Duo T6500                 | 2.10 | 43    | 9ED49AE55E |
-| Intel      | Core i5 M 450                    | 2.40 | 43    | 0C8AC8E636 |
-| Intel      | Core i5 M 540                    | 2.53 | 43    | 43EA3F634D |
-| Intel      | Celeron N4100                    | 1.10 | 42    | AC834BEC82 |
-| Intel      | Core i9-9880H                    | 2.30 | 42    | 3517455DF5 |
-| Intel      | Core 2 Duo P7350                 | 2.00 | 42    | 6DE34F58AF |
-| Intel      | Pentium N3530                    | 2.16 | 42    | 7354EACFC5 |
-| Intel      | Core i7-4810MQ                   | 2.80 | 42    | B046A9DFE3 |
-| AMD        | Athlon II P340 Dual-Core         |      | 41    | 2189125FE8 |
-| Intel      | Celeron Dual-Core T3500          | 2.10 | 41    | A0FF38D606 |
-| Intel      | Atom N550                        | 1.50 | 41    | D66EBD7A47 |
-| Intel      | Atom N2800                       | 1.86 | 41    | 61E7DC1D25 |
-| AMD        | A12-9720P RADEON R7, 12 COMPU... |      | 40    | E4AA5740C5 |
-| AMD        | A6-5200 APU with Radeon HD Gr... |      | 40    | EB823BF260 |
-| AMD        | Ryzen 5 5500U with Radeon Gra... |      | 40    | 04852A18CB |
-| AMD        | A6-9220 RADEON R4, 5 COMPUTE ... |      | 39    | 9823C616ED |
-| Intel      | Celeron Dual-Core T3000          | 1.80 | 39    | 8120E40BF1 |
-| Intel      | Core i5-4310U                    | 2.00 | 39    | 278EC34902 |
-| AMD        | A6-7310 APU with AMD Radeon R... |      | 38    | 421C375338 |
-| Intel      | Core i9-8950HK                   | 2.90 | 38    | A72AAD9B00 |
-| Intel      | Core i3 M 350                    | 2.27 | 38    | CAE9EEEF46 |
-| Intel      | Celeron N3450                    | 1.10 | 38    | B9AAD755EE |
-| AMD        | A9-9425 RADEON R5, 5 COMPUTE ... |      | 37    | 692A1A1A57 |
-| Intel      | Core 2 Duo T9400                 | 2.53 | 37    | 90799CA6B2 |
-| AMD        | Ryzen 7 3750H with Radeon Veg... |      | 36    | 456B686D28 |
-| Intel      | Core i9-10885H                   | 2.40 | 36    | 94E0E3F047 |
+| Intel      | Core 2 Duo T6500                 | 2.10 | 50    | 0920EE7ED1 |
+| AMD        | Athlon II P320 Dual-Core         |      | 49    | 99C0E6257F |
+| AMD        | Ryzen 7 3750H with Radeon Veg... |      | 49    | F719A93837 |
+| Intel      | Celeron N4100                    | 1.10 | 49    | F6383E06D7 |
+| Intel      | Core 2 Duo T5450                 | 1.66 | 49    | 67C210B75C |
+| Intel      | Core i9-9880H                    | 2.30 | 48    | 46656CB5CC |
+| Intel      | Core 2 Duo P7350                 | 2.00 | 48    | 38D3A28768 |
+| Intel      | Core i5 M 540                    | 2.53 | 48    | D2B007CB44 |
+| Intel      | Core i7-3517U                    | 1.90 | 48    | E82910B9D3 |
+| Intel      | Core i5-4310U                    | 2.00 | 48    | 91CC26A6AC |
+| AMD        | A6-3400M APU with Radeon HD G... |      | 47    | ED8A6EB12F |
+| AMD        | A10-5750M APU with Radeon HD ... |      | 47    | 36CD8309BC |
+| AMD        | Ryzen 5 5600H with Radeon Gra... |      | 47    | 4B2B4E7F5A |
+| Intel      | Core 2 Duo T9300                 | 2.50 | 47    | 87E9CA3A01 |
+| AMD        | Athlon II P340 Dual-Core         |      | 46    | 5CB594A70D |
+| AMD        | A6-9220 RADEON R4, 5 COMPUTE ... |      | 45    | 30A18704D2 |
+| AMD        | A6-5200 APU with Radeon HD Gr... |      | 45    | F5724FA5F6 |
+| Intel      | Core i9-8950HK                   | 2.90 | 45    | 3F8FE40793 |
+| Intel      | Pentium N3530                    | 2.16 | 45    | 8544ED95E5 |
+| AMD        | A12-9720P RADEON R7, 12 COMPU... |      | 44    | BF565614CA |
+| AMD        | A9-9425 RADEON R5, 5 COMPUTE ... |      | 44    | 0C52B3AB5C |
+| Intel      | Core i9-10885H                   | 2.40 | 44    | 7D27557EBE |
+| Intel      | Core 2 Duo T6570                 | 2.10 | 43    | 83A16EF7F8 |
+| Intel      | Core i3 M 350                    | 2.27 | 43    | 67BC301EE6 |
+| Intel      | Celeron Dual-Core T3000          | 1.80 | 42    | 154348AE3A |
 
 ### Memory
 
-| MFG        | Name                         | Size     | Type | MT/s | Count | Probe      |
-|------------|------------------------------|----------|------|------|-------|------------|
-| Samsung    | M471B5273DH0-CH9 SODIMM      | 4 GB     | DDR3 | 1334 | 654   | 045B2CD511 |
-| Samsung    | M471B5173DB0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 503   | DBF0FD04C3 |
-| SK Hynix   | HMA81GS6AFR8N-UH SODIMM      | 8 GB     | DDR4 | 2667 | 490   | 66255CA7B5 |
-| Samsung    | M471A5244CB0-CTD SODIMM      | 4096 MB  | DDR4 | 3266 | 488   | F1941A09E5 |
-| Samsung    | M471B5273CH0-CH9 SODIMM      | 4096 MB  | DDR3 | 1334 | 458   | 90895AAB86 |
-| Samsung    | M471B5173QH0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 445   | 50B1B1A6C5 |
-| Samsung    | M471A5244CB0-CRC SODIMM      | 4096 MB  | DDR4 | 2667 | 387   | C9153E029E |
-| Samsung    | M471B5173EB0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 372   | A7CC3183F2 |
-| Samsung    | M471B5773CHS-CH9 SODIMM      | 2048 MB  | DDR3 | 4199 | 342   | F442DF91A1 |
-| Samsung    | M471B5773DH0-CH9 SODIMM      | 2 GB     | DDR3 | 1600 | 330   | 045B2CD511 |
-|            | Module SODIMM                | 2048 MB  | DDR2 | 667  | 329   | DBBFDA6004 |
-| Samsung    | M471B5273DH0-CK0 SODIMM      | 4 GB     | DDR3 | 1600 | 326   | 69A252CCD6 |
-| SK Hynix   | HMT451S6BFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 306   | B2CDA34B7E |
-| Samsung    | M471A1K43CB1-CRC SODIMM      | 8192 MB  | DDR4 | 2667 | 291   | 9C8BB9558A |
-| SK Hynix   | HMT351S6CFR8C-PB SODIMM      | 4096 MB  | DDR3 | 1600 | 285   | A120083D3C |
-|            | Module SODIMM                | 2048 MB  | DDR2 |      | 279   | 06C3B56836 |
-| Samsung    | M471A1K43CB1-CTD SODIMM      | 8192 MB  | DDR4 | 2667 | 268   | 212240B258 |
-| Samsung    | M471B1G73DB0-YK0 SODIMM      | 8 GB     | DDR3 | 1600 | 249   | FFB40F821B |
-| Micron     | 4ATF51264HZ-2G6E1 SODIMM     | 4 GB     | DDR4 | 2667 | 241   | 2DB4EBB6EF |
-|            | Module SODIMM                | 1024 MB  | DDR2 |      | 239   | 57043D09FE |
-| Samsung    | M471B1G73QH0-YK0 SODIMM      | 8 GB     | DDR3 | 2667 | 237   | FB61A77E5C |
-| Samsung    | M471A1K43DB1-CTD SODIMM      | 8192 MB  | DDR4 | 2667 | 230   | A01E524A66 |
-| Elpida     | EBJ41UF8BCS0-DJ-F SODIMM     | 4096 MB  | DDR3 | 1334 | 218   | C6E87F1FB7 |
-|            | Module SODIMM                | 1024 MB  | DDR2 | 667  | 215   | EE90608B54 |
-| SK Hynix   | HMA851S6AFR6N-UH SODIMM      | 4 GB     | DDR4 | 2667 | 214   | F3511CB0AA |
-|            | Module SODIMM                | 4096 MB  | DDR3 |      | 211   | 1D79ED8874 |
-| SK Hynix   | HMT41GS6BFR8A-PB SODIMM      | 8192 MB  | DDR3 | 1600 | 209   | 22A87CB141 |
-| Samsung    | M471A1K43DB1-CWE SODIMM      | 8 GB     | DDR4 | 3200 | 207   | 3CDC08297E |
-| Samsung    | M471B5673FH0-CH9 SODIMM      | 2048 MB  | DDR3 | 1334 | 207   | 1427EBFFB0 |
-| SK Hynix   | HMA81GS6CJR8N-VK SODIMM      | 8 GB     | DDR4 | 2667 | 198   | 2C6C86B1FB |
-| SK Hynix   | HMA81GS6JJR8N-VK SODIMM      | 8192 MB  | DDR4 | 2667 | 191   | 22728E37FE |
-| Samsung    | M471B5673FH0-CF8 SODIMM      | 2 GB     | DDR3 | 1067 | 183   | 18F27D1F5C |
-| Nanya      | NT2GC64B88B0NS-CG SODIMM     | 2 GB     | DDR3 | 1334 | 181   | 387EE22BC4 |
-| Samsung    | M471B1G73EB0-YK0 SODIMM      | 8192 MB  | DDR3 | 1600 | 178   | A7CC3183F2 |
-| Samsung    | M471A1K43BB1-CRC SODIMM      | 8 GB     | DDR4 | 2667 | 174   | 6EE47924BD |
-| Samsung    | M471A1G44AB0-CWE SODIMM      | 8 GB     | DDR4 | 3200 | 170   | 8D45D9544E |
-| Micron     | 8KTF51264HZ-1G6E1 SODIMM     | 4096 MB  | DDR3 | 1600 | 167   | C4C890F06A |
-| SK Hynix   | HMT451S6AFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 161   | 0AD916110D |
-| Samsung    | M471A2K43CB1-CTD SODIMM      | 16 GB    | DDR4 | 2667 | 158   | 1F4A66B99A |
-| Micron     | 16KTF51264HZ-1G6M1 SODIMM    | 4 GB     | DDR3 | 1600 | 151   | 60D72BDCE7 |
-| Micron     | 8ATF1G64HZ-2G6E1 SODIMM      | 8192 MB  | DDR4 | 2667 | 151   | D55AC505B9 |
-|            | 123456789012345678 SODIMM    | 2048 MB  | DDR3 | 2400 | 150   | AF7CBA0079 |
-| SK Hynix   | HMA41GS6AFR8N-TF SODIMM      | 8192 MB  | DDR4 | 2667 | 149   | 64F2D60B7E |
-| Nanya      | NT4GC64B8HB0NS-CG SODIMM     | 4 GB     | DDR3 | 1334 | 141   | 1217A94F61 |
-| SK Hynix   | H9CCNNNCLGALAR-NVD Row Of... | 8192 MB  |      | 2133 | 138   | 8956FEE2F3 |
-| 48spaces   | 0123456789012345678901234... | 2048 MB  | DDR2 | 667  | 134   | D66EBD7A47 |
-| Micron     | 4ATF51264HZ-2G3B1 SODIMM     | 4096 MB  | DDR4 | 2400 | 134   | 06114B7EB7 |
-| Samsung    | M471A2K43DB1-CWE SODIMM      | 16 GB    | DDR4 | 3200 | 134   | 32F01CCAAB |
-| SK Hynix   | HMT351S6EFR8A-PB SODIMM      | 4096 MB  | DDR3 | 1600 | 133   | E1E44B58F3 |
-| Samsung    | M471B5273CH0-CK0 SODIMM      | 4 GB     | DDR3 | 1600 | 132   | F37394899F |
-| Samsung    | M471A2K43CB1-CRC SODIMM      | 16384 MB | DDR4 | 2667 | 131   | 2AD271E81F |
-| Samsung    | M471B5773DH0-CK0 SODIMM      | 2 GB     | DDR3 | 1600 | 131   | 13D221E327 |
-| SK Hynix   | HMT325S6BFR8C-H9 SODIMM      | 2048 MB  | DDR3 | 1600 | 131   | 5B2D90A434 |
-| Micron     | 8ATF1G64HZ-3G2J1 SODIMM      | 8 GB     | DDR4 | 3200 | 129   | DA5E2F59CC |
-| SK Hynix   | HMT351S6CFR8C-H9 SODIMM      | 4 GB     | DDR3 | 1333 | 128   | 33CEC7AE6F |
-| Micron     | 16JSF51264HZ-1G4D1 SODIMM    | 4096 MB  |      | 1334 | 123   | 15CE74DCD6 |
-| Elpida     | EBJ40UG8BBU0-GN-F SODIMM     | 4 GB     | DDR3 | 1600 | 121   | 562BD81383 |
-| Samsung    | M471B5674QH0-YK0 SODIMM      | 2 GB     | DDR3 | 1600 | 121   | D04BD787B3 |
-| SK Hynix   | HYMP125S64CP8-S6 SODIMM      | 2 GB     | DDR2 | 975  | 121   | C0FAA178A2 |
-|            | Module SODIMM DDR            | 1024 MB  |      |      | 120   | 61FEA93E97 |
-| SK Hynix   | HMA82GS6JJR8N-VK SODIMM      | 16 GB    | DDR4 | 2667 | 120   | DEA3395C5A |
-| Elpida     | EBJ21UE8BFU0-DJ-F SODIMM     | 2 GB     | DDR3 | 1334 | 119   | D7893B2025 |
-| SK Hynix   | HMT351S6CFR8C-H9 SODIMM      | 4096 MB  | DDR3 | 1334 | 119   | F5112DBF47 |
-| SK Hynix   | HMT451S6BFR8A-PB SODIMM      | 4096 MB  | DDR3 | 1600 | 117   | 3CDDE1061C |
-|            | Module SODIMM DRAM           | 1024 MB  |      |      | 116   | 392BE37A79 |
-| Samsung    | M471A2K43DB1-CTD SODIMM      | 16 GB    | DDR4 | 2667 | 115   | 3517455DF5 |
-| Nanya      | NT4GC64B8HG0NS-CG SODIMM     | 4 GB     | DDR3 | 1334 | 114   | 4BEA60D049 |
-|            | Module SODIMM SDRAM          | 2048 MB  |      |      | 114   | B8C2DF18DB |
-| SK Hynix   | HMA82GS6AFR8N-UH SODIMM      | 16 GB    | DDR4 | 2667 | 110   | 4EFDBAEEA5 |
-| ELPIDA     | EBJ21UE8BDS0-DJ-F SODIMM     | 2 GB     | DDR3 | 1334 | 108   | 11329DED30 |
-| Crucial    | CT102464BF160B.C16 SODIMM    | 8 GB     | DDR3 | 1600 | 107   | D520F23D4E |
-|            | Module SODIMM                | 2048 MB  | DDR3 | 1333 | 107   | 3871A3C4FC |
-| Kingston   | 99U5428-018.A00LF SODIMM     | 8192 MB  | DDR3 | 1600 | 106   | 00E8B6E3FD |
-| Ramaxel    | RMT3160ED58E9W1600 SODIMM    | 4 GB     | DDR3 | 1600 | 105   | 986BA47618 |
-| SK Hynix   | HMT425S6AFR6A-PB SODIMM      | 2 GB     | DDR3 | 1600 | 104   | BBED87466A |
-| Micron     | 8JSF25664HZ-1G4D1 SODIMM     | 2 GB     | DDR3 | 1334 | 104   | E92D8556E9 |
-| SK Hynix   | HMT351S6CFR8C-PB SODIMM      | 4096 MB  | DDR3 | 1600 | 103   | C4C890F06A |
-|            | Module SODIMM                | 2048 MB  | DDR3 |      | 103   | FFAE60B13A |
-| Samsung    | M471B5173BH0-CK0 SODIMM      | 4096 MB  | DDR3 | 1600 | 103   | E6D67EBC2E |
-| SK Hynix   | HMT351S6BFR8C-H9 SODIMM      | 4 GB     | DDR3 | 1333 | 102   | 9AACCAF459 |
-| Micron     | 16KTF1G64HZ-1G6E1 SODIMM     | 8 GB     | DDR3 | 1600 | 102   | DD20DE340C |
-| Crucial    | CT102464BF160B.M16 SODIMM    | 8 GB     | DDR3 | 1600 | 101   | 2F027FCBC2 |
-| Micron     | 4ATF1G64HZ-3G2E1 SODIMM      | 8 GB     | DDR4 | 3200 | 101   | 8D45D9544E |
-|            | Module SODIMM                | 2048 MB  | DDR2 | 800  | 100   | C8F8ADC564 |
-| Samsung    | M471B2873FHS-CH9 SODIMM      | 1024 MB  | DDR3 | 1334 | 99    | F696958F46 |
-| SK Hynix   | HMT41GS6AFR8A-PB SODIMM      | 8 GB     | DDR3 | 1600 | 98    | B4C3816A33 |
-| Kingston   | ACR256X64D3S1333C9 SODIMM    | 2 GB     | DDR3 | 1334 | 98    | 387EE22BC4 |
-| Samsung    | M471B5673EH1-CF8 SODIMM      | 2 GB     | DDR3 | 4199 | 98    | D9521929DA |
-| Samsung    | M471A4G43MB1-CTD SODIMM      | 32 GB    | DDR4 | 2667 | 97    | 7555392D34 |
-| Micron     | 4ATF51264HZ-3G2J1 SODIMM     | 4096 MB  | DDR4 | 3200 | 95    | 0071FAABAC |
-|            | Module SODIMM SDRAM          | 1024 MB  |      |      | 95    | FFB279A366 |
-| Kingston   | KHX1600C9S3L/8G SODIMM       | 8 GB     | DDR3 | 1600 | 94    | 070723F36C |
-|            | Module SODIMM                | 4096 MB  | DDR3 | 1333 | 94    | F5112DBF47 |
-| Ramaxel    | RMT3170EB68F9W1600 SODIMM    | 4096 MB  | DDR3 | 1600 | 94    | D064F3DA02 |
-| SK Hynix   | HMA851S6AFR6N-UH SODIMM      | 4 GB     | DDR4 | 2400 | 93    | 0C3651AF28 |
-| Samsung    | M471B5273EB0-CK0 SODIMM      | 4096 MB  | DDR3 | 4199 | 93    | D5CF70DB0C |
-| SK Hynix   | HMT325S6CFR8C-PB SODIMM      | 2 GB     | DDR3 | 1600 | 92    | 91787044C1 |
-| SK Hynix   | HMT351S6BFR8C-H9 SODIMM      | 4 GB     | DDR3 | 1334 | 92    | 69B1B6E13E |
-| SK Hynix   | HMT351S6CFR8C-PB SODIMM      | 4 GB     | DDR3 | 1600 | 92    | 8C2D9E608C |
-| Ramaxel    | RMSA3260ME78HAF-2666 SODIMM  | 8 GB     | DDR4 | 2667 | 91    | D180CF6EFC |
-| Micron     | MT52L1G32D4PG-093 Row Of ... | 8 GB     |      | 2133 | 90    | 68C01947C9 |
-| Samsung    | M4 70T5663QZ3-CF7 SODIMM     | 2048 MB  | DDR2 | 2048 | 90    | CE99148B7C |
-| SK Hynix   | HMT325S6BFR8C-H9 SODIMM      | 2048 MB  | DDR3 | 1333 | 89    | 3405536413 |
-| SK Hynix   | HMA851S6CJR6N-VK SODIMM      | 4 GB     | DDR4 | 2667 | 89    | 905FCE5118 |
-| Samsung    | M471A1K43BB0-CPB SODIMM      | 8192 MB  | DDR4 | 2133 | 88    | B67458A3DA |
-| SK Hynix   | HMA82GS6CJR8N-VK SODIMM      | 16 GB    | DDR4 | 2667 | 86    | 744799A3C4 |
-| Crucial    | CT51264BF160B.C16F SODIMM    | 4 GB     | DDR3 | 1600 | 85    | A2AEE507A3 |
-| Samsung    | Module SODIMM                | 16384 MB | DDR4 | 2667 | 85    | A814284F0B |
-| A-DATA     | AD73I1C1674EV SODIMM         | 4096 MB  | DDR3 | 1334 | 84    | 2173E84F13 |
-|            | Module SODIMM                | 2 GB     | DDR2 | 667  | 84    | A1F9398A77 |
-| SK Hynix   | HMT351S6EFR8C-PB SODIMM      | 4096 MB  | DDR3 | 1600 | 83    | EAF1BB2C45 |
-|            | Module SODIMM                | 512 MB   | DDR2 |      | 83    | 1517AC0D45 |
-| Ramaxel    | RMSA3270ME86H9F-2666 SODIMM  | 4 GB     | DDR4 | 2667 | 83    | 3B7BF6FDEB |
-| Kingston   | 99U5469-045.A00LF SODIMM     | 4 GB     | DDR3 | 1600 | 82    | 88AC236A11 |
-| Kingston   | ACR16D3LS1KFG/4G SODIMM      | 4 GB     | DDR3 | 1600 | 80    | 0B2EC748F2 |
-| Samsung    | M471A5244BB0-CRC SODIMM      | 4096 MB  | DDR4 | 2667 | 79    | 75C78480D2 |
-| Samsung    | M4 70T5663EH3-CF7 SODIMM     | 2 GB     | DDR2 |      | 78    | E84CD86EB0 |
-| Samsung    | M471A2G44AM0-CWE SODIMM      | 16 GB    | DDR4 | 3200 | 78    | 273A5FF27D |
-| Samsung    | M471B2873FHS-CF8 SODIMM      | 1024 MB  | DDR3 | 1067 | 77    | 18F27D1F5C |
-| Nanya      | NT4GC64B8HG0NS-DI SODIMM     | 4 GB     | DDR3 | 1600 | 76    | 13D221E327 |
-| Ramaxel    | RMT3020EC58E9F1333 SODIMM    | 4 GB     | DDR3 | 4199 | 74    | 6074680FBA |
-| Samsung    | M471A5244CB0-CWE SODIMM      | 4 GB     | DDR4 | 3200 | 73    | 905FCE5118 |
-|            | Module SODIMM                | 2048 MB  |      | 800  | 72    | 3BBEC8B8FD |
-| Samsung    | M471A1G44AB0-CWE Row Of C... | 8192 MB  | DDR4 | 3200 | 72    | F5385D6B10 |
-| SK Hynix   | HMA81GS6DJR8N-XN SODIMM      | 8 GB     | DDR4 | 3200 | 72    | 51B5E6CB3F |
-|            | Module SODIMM DRAM           | 2048 MB  |      |      | 71    | 8AE1EA1D6B |
-| Ramaxel    | RMT3170ME68F9F1600 SODIMM    | 4096 MB  | DDR3 | 1600 | 71    | 58CC91ABA3 |
-| Samsung    | M471A5244CB0-CTD Row Of C... | 4 GB     | DDR4 | 2667 | 71    | BE75240E07 |
-| Samsung    | M471B5273CH0-YK0 SODIMM      | 4096 MB  | DDR3 | 1600 | 71    | E07ABB010E |
-| SK Hynix   | HMT451S6BFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 71    | 2F027FCBC2 |
-| SK Hynix   | HMA851S6JJR6N-VK SODIMM      | 4096 MB  | DDR4 | 2667 | 70    | 2A54689FB3 |
-| A-DATA     | AD73I1C1674EV SODIMM         | 4 GB     | DDR3 | 1334 | 68    | D8167A915B |
-| SK Hynix   | HMA851S6CJR6N-VK SODIMM      | 4 GB     | DDR4 | 2667 | 66    | B754C74B11 |
-| Samsung    | M471B5173BH0-YK0 SODIMM      | 4096 MB  | DDR3 | 1600 | 66    | 553A61003F |
-| SK Hynix   | HMT451S6AFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 66    | BB444038CF |
-| Kingston   | 99U5428-063.A00LF SODIMM     | 8 GB     | DDR3 | 1600 | 65    | 7332DA68EC |
-| Micron     | 16JSF25664HZ-1G1F1 SODIMM    | 2048 MB  | DDR3 | 1067 | 65    | 610E2BA453 |
-| Micron     | 8ATF1G64HZ-2G3B1 SODIMM      | 8 GB     | DDR4 | 2400 | 65    | E81F21F44C |
-| Micron     | 8KTF51264HZ-1G6N1 SODIMM     | 4 GB     | DDR3 | 1600 | 65    | 858657E291 |
-| Nanya      | NT2GC64B88G0NS-CG SODIMM     | 2 GB     | DDR3 | 1600 | 65    | 3518FEB297 |
-| Samsung    | M471A1K43BB1-CTD SODIMM      | 8192 MB  | DDR4 | 2667 | 65    | A01E524A66 |
-| Samsung    | Module SODIMM                | 8192 MB  | DDR4 | 2133 | 65    | 436E9BF227 |
-| Kingston   | ACR16D3LFS1KBG/2G SODIMM     | 2 GB     | DDR3 | 1600 | 64    | 216D1DA088 |
-| Micron     | 4ATF1G64HZ-3G2E2 SODIMM      | 8 GB     | DDR4 | 3200 | 64    | BCC27223CC |
-|            | Module SODIMM                | 1024 MB  | DDR2 | 533  | 64    | 3A627AAB0A |
-|            | Module SODIMM                | 2048 MB  |      | 667  | 64    | 1A2D7BC306 |
-| Samsung    | Module SODIMM                | 2 GB     | DDR3 | 1600 | 64    | 5B47E8EFCB |
-| Micron     | 4ATS1G64HZ-2G6E1 SODIMM      | 8 GB     | DDR4 | 2667 | 63    | 235E8C9537 |
-| SK Hynix   | HMT41GS6BFR8A-PB SODIMM      | 8192 MB  | DDR3 | 1600 | 63    | D2E08434A9 |
-| SK Hynix   | HMA81GS6AFR8N-UH SODIMM      | 8 GB     | DDR4 | 2400 | 62    | 99FC59557A |
-| SK Hynix   | HMA851S6CJR6N-VK Row Of C... | 4 GB     | DDR4 | 2667 | 62    | 1310B8ABF4 |
-| SK Hynix   | HMA851S6JJR6N-VK SODIMM      | 4096 MB  | DDR4 | 2667 | 62    | 28930B356E |
-| Ramaxel    | RMT3010EC58E8F1333 SODIMM    | 2 GB     | DDR3 | 1600 | 60    | 5038083B91 |
-| Samsung    | K4EBE304EB-EGCG Row Of Ch... | 8 GB     |      | 2133 | 59    | 2B4A1A20D9 |
-| SK Hynix   | HMT451S6MFR8C-PB SODIMM      | 4 GB     | DDR3 | 1600 | 59    | D74C10F41F |
-| Nanya      | NT2GC64B8HC0NS-CG SODIMM     | 2048 MB  | DDR3 | 1334 | 58    | D4BCC9A744 |
-| SK Hynix   | HMA451S6AFR8N-TF SODIMM      | 4 GB     | DDR4 | 2133 | 58    | 1215C27927 |
-| SK Hynix   | HMT351S6BFR8C-H9 SODIMM      | 4 GB     | DDR3 | 1333 | 57    | 8CA90EBADB |
-| Micron     | 16ATF2G64HZ-2G6E1 SODIMM     | 16 GB    | DDR4 | 2667 | 57    | A72AAD9B00 |
-| Elpida     | Module SODIMM                | 4096 MB  | DDR3 | 1600 | 56    | 23B984DCC7 |
-| Kingston   | KNWMX1-ETB SODIMM            | 4 GB     | DDR3 | 1600 | 56    | F1B660B91C |
-| A-DATA     | AM1U16BC4P2-B19H SODIMM      | 4 GB     | DDR3 | 1600 | 55    | AF980DC491 |
-| Kingston   | 99U5469-046.A00LF SODIMM     | 4096 MB  | DDR3 | 1333 | 55    | 7D07855699 |
-| Micron     | 8KTF25664HZ-1G6M1 SODIMM     | 2048 MB  | DDR3 | 1600 | 55    | E2559AC29A |
-|            | Module SODIMM DDR            | 2048 MB  |      |      | 55    | 8B9BE19E69 |
-|            | Module SODIMM                | 4096 MB  | DDR3 | 1600 | 55    | B976BAC417 |
-| Ramaxel    | RMT3170MN68F9F1600 SODIMM    | 4 GB     | DDR3 | 1600 | 55    | 0CDC6E9D84 |
-| Samsung    | M471A5143EB0-CPB SODIMM      | 4096 MB  | DDR4 | 2133 | 55    | 6D2D97674C |
-| SMART B... | SMS4TDC3C0K0446SCG SODIMM    | 4 GB     | DDR4 | 2667 | 55    | 6F89504680 |
-| Elpida     | EBJ21UE8BDS0-AE-F SODIMM     | 2 GB     |      | 1067 | 54    | 3BFB2E5E7B |
-| SK Hynix   | HMT451S6AFR8A-PB SODIMM      | 4096 MB  | DDR3 | 1600 | 54    | B67C01F6E2 |
-| Kingston   | KHX2666C15S4/16G SODIMM      | 16 GB    | DDR4 | 2667 | 54    | FBE1D68B82 |
-| Samsung    | M471A5244BB0-CPB SODIMM      | 4096 MB  | DDR4 | 2400 | 54    | 9199D4A103 |
-| SK Hynix   | HMA82GS6DJR8N-XN SODIMM      | 16 GB    | DDR4 | 3200 | 54    | 20123F6B2F |
-| SK Hynix   | HMT325S6CFR8C-H9 SODIMM      | 2 GB     | DDR3 | 1334 | 54    | 348655AB4C |
-| Samsung    | Module Row Of Chips LPDDR3   | 8192 MB  |      | 2133 | 53    | 2A1930C4E4 |
-| SK Hynix   | HMT425S6AFR6A-PB SODIMM      | 2 GB     | DDR3 | 1600 | 52    | CA125D2F3C |
-| Micron     | Module SODIMM                | 4096 MB  | DDR3 | 1600 | 52    | 70B6961D1D |
-| Ramaxel    | RMSA3300ME78HBF-2666 SODIMM  | 16384 MB | DDR4 | 2667 | 52    | A35AAAEB6D |
-| Samsung    | K4EBE304EC-EGCG Row Of Ch... | 8 GB     |      | 2133 | 52    | E68DFE0824 |
-| SK Hynix   | HMA82GS6DJR8N-VK SODIMM      | 16 GB    | DDR4 | 2667 | 51    | 6A14ED2D5E |
-| SK Hynix   | HYMP125S64CP8-Y5 SODIMM DDR  | 2048 MB  |      | 667  | 51    | A9BA9DF656 |
-| Kingston   | ACR16D3LS1NGG/4G SODIMM      | 4096 MB  | DDR3 | 1600 | 50    | D2A5CA4ACA |
-|            | Module SODIMM                | 4 GB     | DDR3 |      | 50    | 2AF79BA873 |
-| Samsung    | K4E6E304EC-EGCG Row Of Ch... | 4 GB     |      | 2133 | 50    | D9CD722532 |
-| ASint      | SSZ3128M8-EDJEF SODIMM       | 2 GB     | DDR3 | 1333 | 49    | EDEC5D042A |
-| Corsair    | CMSO4GX3M1A1333C9 SODIMM     | 4 GB     | DDR3 | 1334 | 48    | 60FA5FF04C |
-| Crucial    | CT8G4SFS824A.M8FE SODIMM     | 8 GB     | DDR4 | 2667 | 48    | CAD3A5EB69 |
-| SK Hynix   | HMT351S6EFR8A-PB SODIMM      | 4096 MB  | DDR3 | 1600 | 48    | B34FA14C55 |
-| Micron     | 4ATF51264HZ-2G3E1 SODIMM     | 4096 MB  | DDR4 | 2667 | 48    | 111B26A250 |
-|            | Module SODIMM                | 2 GB     | DDR2 |      | 48    | DBFD29F616 |
-| Samsung    | M4 70T5663QZ3-CE6 SODIMM     | 2 GB     | DDR2 | 667  | 48    | 9ED49AE55E |
-| SK Hynix   | HMT125S6BFR8C-G7 SODIMM      | 2 GB     |      | 1067 | 48    | 18CBC8A35F |
-| Samsung    | M471B5773CHS-CF8 SODIMM      | 2 GB     | DDR3 | 1067 | 47    | 8BD68017A2 |
-| Elpida     | EBJ20UF8BCS0-DJ-F SODIMM     | 2 GB     | DDR3 | 1334 | 46    | 1013F2F693 |
-| Elpida     | EBJ40UG8EFU0-GN-F SODIMM     | 4 GB     | DDR3 | 1600 | 46    | B96D5D5FDC |
-| SK Hynix   | HMT325S6CFR8C-H9 SODIMM      | 2 GB     | DDR3 | 1333 | 46    | A1027F938F |
-| Nanya      | NT2GT64U8HD0BN-AD SODIMM     | 2 GB     | DDR2 | 975  | 46    | 9B21D843CD |
-| Ramaxel    | RMT3170EF68F9W1600 SODIMM    | 4096 MB  | DDR3 | 1600 | 46    | 8DD420EE26 |
-| Samsung    | M471A1G43DB0-CPB SODIMM      | 8 GB     | DDR4 | 2400 | 46    | 2FCA11CF26 |
-| Samsung    | M471A1G44AB0-CTD SODIMM      | 8 GB     | DDR4 | 2667 | 46    | C62BB4ADC9 |
-| SK Hynix   | HMT351S6EFR8A-PB SODIMM      | 4096 MB  | DDR3 | 1600 | 46    | 167DA11BB6 |
-| Elpida     | EBJ40UG8EFU0 SODIMM          | 4 GB     | DDR3 | 1600 | 45    | 00D9651C96 |
-| Kingston   | KHX2400C14S4/16G SODIMM      | 16 GB    | DDR4 | 2667 | 45    | 9403539ACC |
-|            | Module SODIMM                | 2048 MB  | DDR2 | 533  | 45    | C344D683B4 |
-|            | Module SODIMM DDR            | 512 MB   |      |      | 45    | 61FEA93E97 |
-| SK Hynix   | HMA81GS6DJR8N-VK SODIMM      | 8 GB     | DDR4 | 2667 | 45    | 8A880E6565 |
-| Toshiba    | 64T128020EDL2.5C2 SODIMM     | 2048 MB  |      | 1066 | 45    | 14A96B5CEC |
-| SK Hynix   | HMT325S6BFR8C-H9 SODIMM      | 2 GB     | DDR3 | 1334 | 44    | 0585DD7016 |
-| SK Hynix   | HYMP125S64CP8-S6 SODIMM      | 2048 MB  | DDR2 | 800  | 44    | 77895F2A3B |
-| Kingston   | 99U5469-041.A00LF SODIMM     | 4 GB     | DDR3 | 1600 | 44    | BB444038CF |
-| Samsung    | M471B5273CM0-CH9 SODIMM      | 4 GB     | DDR3 | 1334 | 44    | 1BC41499CE |
-| SK Hynix   | HMA81GS6DJR8N-XN SODIMM      | 8 GB     | DDR4 | 3200 | 43    | D14FE5657A |
-| Micron     | 4ATF51264HZ-3G2J1 Row Of ... | 4 GB     | DDR4 | 3200 | 43    | 338DDD258E |
-| Micron     | MT8KTF51264HZ-1G6 SODIMM     | 4 GB     | DDR3 | 1600 | 43    | 3498166FA2 |
-| Samsung    | M4 70T2953EZ3-CE6 SODIMM     | 1 GB     | DDR2 | 667  | 43    | 1E89CEC8EB |
-| Samsung    | M471A4G43AB1-CWE SODIMM      | 32 GB    | DDR4 | 3200 | 43    | 769328E65E |
-| Kingston   | 99U5428-040.A01LF SODIMM     | 4 GB     | DDR3 | 1334 | 42    | 0DDEA0A24E |
-| Micron     | 4ATF1G64HZ-3G2E1 Row Of C... | 8192 MB  | DDR4 | 3200 | 42    | 04852A18CB |
-|            | Module SODIMM                | 2048 MB  | DDR3 | 1600 | 42    | 95653B7969 |
-| Samsung    | M471A2G43AB2-CWE SODIMM      | 16 GB    | DDR4 | 3200 | 42    | 7FED676309 |
-| Elpida     | Module SODIMM                | 2 GB     | DDR3 | 1333 | 41    | 62CE68EDEF |
-| SK Hynix   | HMA81GS6JJR8N-VK SODIMM      | 8192 MB  | DDR4 | 2667 | 41    | E6B4924676 |
-| Kingston   | 99U5428-046.A00LF SODIMM     | 4 GB     | DDR3 | 1334 | 41    | 5CEAD11297 |
-| ASint      | SSY3128M8-EDJEF SODIMM       | 1024 MB  | DDR3 | 1333 | 40    | 2E6FAD8350 |
-| Micron     | 4ATS2G64HZ-3G2B1 SODIMM      | 16 GB    | DDR4 | 3200 | 40    | D111902EAC |
-|            | Module SODIMM                | 1024 MB  | DDR2 | 333  | 40    | 8DB6FA7A1C |
-| SK Hynix   | HYMP112S64CP6-Y5 SODIMM      | 1024 MB  | DDR2 | 667  | 40    | D408DE645F |
-| Toshiba    | 8HTF12864HDY-800G1 SODIMM    | 2048 MB  |      | 1066 | 40    | 14A96B5CEC |
-| Elpida     | Module SODIMM                | 4 GB     | DDR3 | 1600 | 39    | 966E771791 |
-| SK Hynix   | HMT451S6MFR8C-PB SODIMM      | 4 GB     | DDR3 | 1600 | 39    | 93116D84F3 |
-| Samsung    | M471B5773CHS-CK0 SODIMM      | 2 GB     | DDR3 | 1600 | 39    | 56448C0F76 |
-| SK Hynix   | HMA81GS6CJR8N-VK SODIMM      | 8 GB     | DDR4 | 2667 | 38    | 0064D74421 |
-| SK Hynix   | HMT325S6EFR8A-PB SODIMM      | 2 GB     | DDR3 | 1600 | 38    | 80CE139934 |
-| SK Hynix   | Module SODIMM                | 8192 MB  | DDR4 | 2133 | 38    | 3790956B6E |
-| Kingston   | ACR16D3LS1KNG/4G SODIMM      | 4096 MB  | DDR3 | 1600 | 38    | DE7BEE5C36 |
-| Kingston   | KN2M64-ETB SODIMM            | 8 GB     | DDR3 | 1600 | 38    | 0862DC626B |
-| Micron     | 4ATF51264HZ-2G6E! SODIMM     | 4 GB     | DDR4 | 2400 | 38    | 9E35238CD2 |
-| Samsung    | M471B1G73BH0-YK0 SODIMM      | 8192 MB  | DDR3 | 1600 | 38    | EC8AF5F350 |
-| Samsung    | Module SODIMM                | 4096 MB  | DDR3 | 1600 | 38    | 08BA22FC67 |
-| SK Hynix   | HYMP512S64CP8-Y5 SODIMM      | 1 GB     | DDR2 | 667  | 38    | D52A2C8101 |
-| SK Hynix   | HMT41GS6MFR8C-PB SODIMM      | 8 GB     | DDR3 | 1600 | 37    | A610876405 |
-| Kingston   | LV32D4S2S8HD-8 SODIMM        | 8192 MB  | DDR4 | 3200 | 37    | 4770866D46 |
-| Micron     | 8ATF1G64HZ-2G3E1 SODIMM      | 8192 MB  | DDR4 | 2400 | 37    | 31B241368B |
-|            | Module SODIMM                | 1 GB     | DDR2 | 667  | 37    | 68AC15EEDA |
-|            | Module SODIMM SDRAM          | 512 MB   |      |      | 37    | A27652B00A |
-| SK Hynix   | HMT325S6CFR8C-PB SODIMM      | 2 GB     | DDR3 | 1600 | 36    | 10A67C9E23 |
-| SK Hynix   | HMT451S6AFR8C-PB SODIMM      | 4 GB     | DDR3 | 1600 | 36    | 779684E41D |
-| SK Hynix   | Module SODIMM                | 4096 MB  | DDR3 | 1600 | 36    | E97B7FCE6B |
-| Kingston   | ACR26D4S9S8ME-8 SODIMM       | 8 GB     | DDR4 | 2667 | 36    | 4E8F164E16 |
+| MFG        | Name                         | Size     | Type | MT/s | Count | Probe |
+|------------|------------------------------|----------|------|------|-------|-------|
+| Samsung    | M471B5273DH0-CH9 SODIMM      | 4 GB     | DDR3 | 1334 | 720   | 86F68B585B |
+| Samsung    | M471A5244CB0-CTD SODIMM      | 4 GB     | DDR4 | 3266 | 572   | A630A0C13C |
+| Samsung    | M471B5173DB0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 571   | FC0BCCC42D |
+| SK Hynix   | HMA81GS6AFR8N-UH SODIMM      | 8 GB     | DDR4 | 2667 | 562   | 3BEF060804 |
+| Samsung    | M471B5173QH0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 501   | 46D63F7527 |
+| Samsung    | M471B5273CH0-CH9 SODIMM      | 4 GB     | DDR3 | 1334 | 500   | 55DA3AB4E0 |
+| Samsung    | M471A5244CB0-CRC SODIMM      | 4 GB     | DDR4 | 2667 | 434   | 5AF22F3639 |
+| Samsung    | M471B5173EB0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 431   | 46D63F7527 |
+| Samsung    | M471B5773CHS-CH9 SODIMM      | 2 GB     | DDR3 | 4199 | 379   | A7394D72A0 |
+| Samsung    | M471B5773DH0-CH9 SODIMM      | 2 GB     | DDR3 | 1600 | 361   | F6068483CE |
+| Samsung    | M471B5273DH0-CK0 SODIMM      | 4 GB     | DDR3 | 1600 | 358   | 2AF2BBA8DA |
+| SK Hynix   | HMT451S6BFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 348   | FBC726A0B8 |
+|            | Module SODIMM                | 2048 MB  | DDR2 | 667  | 344   | E138DDE726 |
+| SK Hynix   | HMT351S6CFR8C-PB SODIMM      | 4 GB     | DDR3 | 1600 | 329   | A1D8D94B5F |
+| Samsung    | M471A1K43CB1-CRC SODIMM      | 8 GB     | DDR4 | 2667 | 325   | C31B5D363F |
+| Samsung    | M471A1G44AB0-CWE SODIMM      | 8192 MB  | DDR4 | 3200 | 316   | 14237B32D9 |
+| Samsung    | M471A1K43CB1-CTD SODIMM      | 8 GB     | DDR4 | 2667 | 310   | 3411708DDF |
+| Samsung    | M471B1G73DB0-YK0 SODIMM      | 8 GB     | DDR3 | 1600 | 297   | 0E6289A2AD |
+|            | Module SODIMM                | 2048 MB  | DDR2 |      | 289   | 0429DB8C01 |
+| Samsung    | M471A1K43DB1-CWE SODIMM      | 8 GB     | DDR4 | 3200 | 280   | C9B7431269 |
+| Micron     | 4ATF51264HZ-2G6E1 SODIMM     | 4 GB     | DDR4 | 2667 | 278   | DCEFFFBBBF |
+| Samsung    | M471A1K43DB1-CTD SODIMM      | 8 GB     | DDR4 | 2667 | 271   | 4D274AFB4A |
+| Samsung    | M471B1G73QH0-YK0 SODIMM      | 8192 MB  | DDR3 | 2667 | 268   | 3DF16E8D72 |
+| SK Hynix   | HMT41GS6BFR8A-PB SODIMM      | 8 GB     | DDR3 | 1600 | 253   | BD60AAE97A |
+| SK Hynix   | HMA851S6AFR6N-UH SODIMM      | 4 GB     | DDR4 | 2667 | 243   | 8E7B1DB68F |
+|            | Module SODIMM                | 1024 MB  | DDR2 |      | 241   | FB5B6D4C90 |
+| Elpida     | EBJ41UF8BCS0-DJ-F SODIMM     | 4096 MB  | DDR3 | 1334 | 231   | DAD6067F40 |
+| SK Hynix   | HMA81GS6CJR8N-VK SODIMM      | 8 GB     | DDR4 | 2667 | 222   | ECA1413F3F |
+|            | Module SODIMM                | 1024 MB  | DDR2 | 667  | 221   | AA5079471B |
+|            | Module SODIMM                | 4096 MB  | DDR3 |      | 221   | 76AFE39F5E |
+| Samsung    | M471B5673FH0-CH9 SODIMM      | 2048 MB  | DDR3 | 1334 | 221   | 600A3137E2 |
+| SK Hynix   | HMA81GS6JJR8N-VK SODIMM      | 8 GB     | DDR4 | 2667 | 220   | 4766FE6362 |
+|            | 123456789012345678 SODIMM... | 1024 MB  |      | 2400 | 212   | 674A4FBEDE |
+| Samsung    | M471A1K43BB1-CRC SODIMM      | 8192 MB  | DDR4 | 2667 | 204   | 1064E67665 |
+| Samsung    | M471B5673FH0-CF8 SODIMM      | 2 GB     | DDR3 | 1067 | 202   | 73D930BE97 |
+| Samsung    | M471B1G73EB0-YK0 SODIMM      | 8 GB     | DDR3 | 1600 | 200   | CBBA045D50 |
+| Nanya      | NT2GC64B88B0NS-CG SODIMM     | 2 GB     | DDR3 | 1334 | 194   | 30AA9C3047 |
+| Samsung    | M471A2K43CB1-CTD SODIMM      | 16 GB    | DDR4 | 2667 | 192   | E7C5306C00 |
+| Micron     | 8KTF51264HZ-1G6E1 SODIMM     | 4 GB     | DDR3 | 1600 | 184   | 21C7863329 |
+| SK Hynix   | HMT451S6AFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 180   | 10655C6E60 |
+| Micron     | 8ATF1G64HZ-2G6E1 SODIMM      | 8 GB     | DDR4 | 2667 | 174   | F094B510C8 |
+| Samsung    | M471A2K43DB1-CWE SODIMM      | 16 GB    | DDR4 | 3200 | 174   | 7D27557EBE |
+| Micron     | 16KTF51264HZ-1G6M1 SODIMM    | 4 GB     | DDR3 | 1600 | 173   | 16BA341CCD |
+| SK Hynix   | HMA41GS6AFR8N-TF SODIMM      | 8 GB     | DDR4 | 2667 | 173   | D7D139723F |
+| Micron     | 8ATF1G64HZ-3G2J1 SODIMM      | 8192 MB  | DDR4 | 3200 | 162   | ED4DB5233E |
+| Micron     | 4ATF51264HZ-2G3B1 SODIMM     | 4096 MB  | DDR4 | 2400 | 161   | B950D195CE |
+| Samsung    | M471A2K43CB1-CRC SODIMM      | 16384 MB | DDR4 | 2667 | 153   | FDA7557AA0 |
+| SK Hynix   | HMT351S6EFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 151   | 838F13E574 |
+| Micron     | 4ATF1G64HZ-3G2E1 SODIMM      | 8192 MB  | DDR4 | 3200 | 149   | 4F65353F3E |
+| Nanya      | NT4GC64B8HB0NS-CG SODIMM     | 4 GB     | DDR3 | 1334 | 149   | C88C351A35 |
+| SK Hynix   | H9CCNNNCLGALAR-NVD Row Of... | 8 GB     |      | 2133 | 149   | CB1FD6A511 |
+| SK Hynix   | HMT325S6BFR8C-H9 SODIMM      | 2 GB     | DDR3 | 1600 | 146   | D52D456239 |
+| Samsung    | M471B5273CH0-CK0 SODIMM      | 4096 MB  | DDR3 | 1600 | 145   | 14AC6C1F51 |
+| SK Hynix   | HMT351S6CFR8C-H9 SODIMM      | 4 GB     | DDR3 | 1333 | 141   | C11B6B6A56 |
+| 48spaces   | 0123456789012345678901234... | 2 GB     | DDR2 | 667  | 140   | C9670FC791 |
+| SK Hynix   | HYMP125S64CP8-S6 SODIMM DDR  | 2 GB     |      | 975  | 140   | BB9DAA5AB1 |
+| Samsung    | M471B5773DH0-CK0 SODIMM      | 2 GB     | DDR3 | 1600 | 139   | A1D8D94B5F |
+| SK Hynix   | HMA82GS6JJR8N-VK SODIMM      | 16 GB    | DDR4 | 2667 | 135   | E5D00C6D74 |
+| SK Hynix   | HMT451S6BFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 133   | 879094E00F |
+| Samsung    | M471A2K43DB1-CTD SODIMM      | 16 GB    | DDR4 | 2667 | 132   | A48BD2E59B |
+| Crucial    | CT102464BF160B.C16 SODIMM    | 8 GB     | DDR3 | 1600 | 131   | D52BA5F273 |
+| SK Hynix   | HMT351S6CFR8C-H9 SODIMM      | 4 GB     | DDR3 | 1334 | 131   | 67E8021C81 |
+| Micron     | 16JSF51264HZ-1G4D1 SODIMM    | 4 GB     | DDR3 | 1334 | 130   | 47099A8C6C |
+| Micron     | 4ATF51264HZ-3G2J1 SODIMM     | 4 GB     | DDR4 | 3200 | 130   | 83F0BBB366 |
+| Elpida     | EBJ40UG8BBU0-GN-F SODIMM     | 4 GB     | DDR3 | 1600 | 126   | 1A3F77BE23 |
+| Nanya      | NT4GC64B8HG0NS-CG SODIMM     | 4 GB     | DDR3 | 1334 | 126   | E9C9CA949C |
+|            | Module SODIMM                | 2 GB     | DDR2 | 667  | 126   | AB9D32A3FF |
+| SK Hynix   | HMA82GS6AFR8N-UH SODIMM      | 16 GB    | DDR4 | 2667 | 126   | 156E7734BE |
+| Samsung    | M471B5674QH0-YK0 SODIMM      | 2 GB     | DDR3 | 1600 | 124   | D1282EBBCA |
+| Elpida     | EBJ21UE8BFU0-DJ-F SODIMM     | 2048 MB  | DDR3 | 1334 | 123   | 2AEA4AB8F4 |
+| Micron     | 16KTF1G64HZ-1G6E1 SODIMM     | 8 GB     | DDR3 | 1600 | 123   | 6D0CD0F4B9 |
+| Kingston   | 99U5428-018.A00LF SODIMM     | 8192 MB  | DDR3 | 1600 | 122   | 52E97DFFC1 |
+|            | Module SODIMM DDR            | 1024 MB  |      |      | 122   | 0AEEE18806 |
+| SK Hynix   | HMT425S6AFR6A-PB SODIMM      | 2048 MB  | DDR3 | 1600 | 121   | 0A1F5E9BED |
+| Samsung    | M471A1G44AB0-CWE Row Of C... | 8 GB     | DDR4 | 3200 | 121   | 3B3220EEEE |
+|            | Module SODIMM DRAM           | 1024 MB  |      |      | 120   | 548187B430 |
+| Crucial    | CT102464BF160B.M16 SODIMM    | 8 GB     | DDR3 | 1600 | 119   | AF3BEF5727 |
+| SK Hynix   | HMT351S6BFR8C-H9 SODIMM      | 4 GB     | DDR3 | 1333 | 119   | 6A57DF1A59 |
+| SK Hynix   | HMA851S6CJR6N-VK SODIMM      | 4 GB     | DDR4 | 2667 | 119   | 22BB5F0B44 |
+| SK Hynix   | HMT41GS6AFR8A-PB SODIMM      | 8192 MB  | DDR3 | 1600 | 118   | B15D6EB8FB |
+| Samsung    | M471B5173BH0-CK0 SODIMM      | 4096 MB  | DDR3 | 1600 | 117   | 4A4FD37E32 |
+| ELPIDA     | EBJ21UE8BDS0-DJ-F SODIMM     | 2 GB     | DDR3 | 1334 | 116   | CB777C91BC |
+|            | Module SODIMM SDRAM          | 2048 MB  |      |      | 115   | ACDFE6952B |
+| Ramaxel    | RMT3160ED58E9W1600 SODIMM    | 4 GB     | DDR3 | 1600 | 115   | 124B030AC3 |
+| Samsung    | M471A5244CB0-CWE SODIMM      | 4 GB     | DDR4 | 3200 | 115   | 5C45B0B08A |
+| Samsung    | M471A4G43MB1-CTD SODIMM      | 32 GB    | DDR4 | 2667 | 114   | 69CE23B9F3 |
+| Micron     | 8JSF25664HZ-1G4D1 SODIMM     | 2048 MB  | DDR3 | 1334 | 113   | CAF1F719F4 |
+| SK Hynix   | HMT351S6CFR8C-PB SODIMM      | 4 GB     | DDR3 | 1600 | 111   | EDA63A0BB2 |
+| SK Hynix   | HMA81GS6DJR8N-XN SODIMM      | 8 GB     | DDR4 | 3200 | 110   | E99C4341CA |
+|            | Module SODIMM                | 2048 MB  | DDR3 | 1333 | 109   | 1558C31A17 |
+| Samsung    | M471B5673EH1-CF8 SODIMM      | 2048 MB  | DDR3 | 4199 | 109   | 2D9FFC1CE5 |
+| SK Hynix   | HMT351S6CFR8C-PB SODIMM      | 4 GB     | DDR3 | 1600 | 109   | 55A854B0C1 |
+| Ramaxel    | RMSA3260ME78HAF-2666 SODIMM  | 8192 MB  | DDR4 | 2667 | 108   | 2F136D5BF5 |
+| Samsung    | M471A1K43BB0-CPB SODIMM      | 8 GB     | DDR4 | 2133 | 107   | 379733B3E7 |
+| SK Hynix   | HMT351S6BFR8C-H9 SODIMM      | 4 GB     | DDR3 | 1334 | 106   | 7535A8D317 |
+|            | Module SODIMM                | 2048 MB  | DDR3 |      | 105   | 49294D3345 |
+| Samsung    | M471B2873FHS-CH9 SODIMM      | 1 GB     | DDR3 | 1334 | 104   | F6068483CE |
+| Kingston   | ACR256X64D3S1333C9 SODIMM    | 2 GB     | DDR3 | 1334 | 103   | 92EAB3E301 |
+|            | Module SODIMM                | 2048 MB  | DDR2 | 800  | 103   | D780A75DDD |
+| SK Hynix   | HMA851S6AFR6N-UH SODIMM      | 4 GB     | DDR4 | 2400 | 102   | 435C237F8F |
+| Micron     | 4ATF1G64HZ-3G2E2 SODIMM      | 8 GB     | DDR4 | 3200 | 102   | 589486D805 |
+| Micron     | MT52L1G32D4PG-093 Row Of ... | 8 GB     |      | 2133 | 102   | A76E22E410 |
+| Samsung    | M4 70T5663QZ3-CF7 SODIMM     | 2 GB     | DDR2 | 2048 | 101   | 8023F07E6C |
+| Samsung    | M471B5273EB0-CK0 SODIMM      | 4096 MB  | DDR3 | 4199 | 101   | A66540BC44 |
+| Kingston   | KHX1600C9S3L/8G SODIMM       | 8192 MB  | DDR3 | 1600 | 100   | 693E94BDB6 |
+|            | Module SODIMM                | 4096 MB  | DDR3 | 1333 | 100   | 94EBAA5D9B |
+| Ramaxel    | RMT3170EB68F9W1600 SODIMM    | 4 GB     | DDR3 | 1600 | 99    | 1085285F79 |
+| SK Hynix   | HMT325S6BFR8C-H9 SODIMM      | 2048 MB  | DDR3 | 1333 | 98    | 6A40EF6090 |
+|            | Module SODIMM SDRAM          | 1024 MB  |      |      | 98    | ACDFE6952B |
+| Samsung    | M471A2G44AM0-CWE SODIMM      | 16 GB    | DDR4 | 3200 | 98    | ABED4A5863 |
+| Samsung    | M471A5244BB0-CRC SODIMM      | 4 GB     | DDR4 | 2667 | 97    | 30A18704D2 |
+| SK Hynix   | HMT325S6CFR8C-PB SODIMM      | 2 GB     | DDR3 | 1600 | 96    | E7723C7A12 |
+| Crucial    | CT51264BF160B.C16F SODIMM    | 4096 MB  | DDR3 | 1600 | 95    | 90D39053DF |
+| Ramaxel    | RMSA3270ME86H9F-2666 SODIMM  | 4096 MB  | DDR4 | 2667 | 94    | B950D195CE |
+| SK Hynix   | HMA82GS6CJR8N-VK SODIMM      | 16384 MB | DDR4 | 2667 | 93    | DF9633E08E |
+| SK Hynix   | HMT351S6EFR8C-PB SODIMM      | 4 GB     | DDR3 | 1600 | 91    | B567C4922E |
+| A-DATA     | AD73I1C1674EV SODIMM         | 4 GB     | DDR3 | 1334 | 90    | C79056479E |
+| Samsung    | Module SODIMM                | 16384 MB | DDR4 | 2667 | 88    | 30565CB2F9 |
+| Kingston   | 99U5469-045.A00LF SODIMM     | 4096 MB  | DDR3 | 1600 | 87    | 132557A51B |
+| Kingston   | ACR16D3LS1KFG/4G SODIMM      | 4 GB     | DDR3 | 1600 | 87    | F7BEB95AC9 |
+| Samsung    | M471A5244CB0-CTD Row Of C... | 4 GB     | DDR4 | 2667 | 87    | 13BC7E73F1 |
+|            | Module SODIMM                | 512 MB   | DDR2 |      | 86    | 35DD7239E3 |
+| Nanya      | NT4GC64B8HG0NS-DI SODIMM     | 4 GB     | DDR3 | 1600 | 85    | 3CB7DA8E63 |
+| Samsung    | M4 70T5663EH3-CF7 SODIMM     | 2048 MB  | DDR2 | 975  | 85    | D4C070B714 |
+| Micron     | 8ATF1G64HZ-2G3B1 SODIMM      | 8192 MB  | DDR4 | 2400 | 83    | 6BED69BCDB |
+| SK Hynix   | HMA851S6CJR6N-VK SODIMM      | 4 GB     | DDR4 | 2667 | 81    | 23C2A93047 |
+| Ramaxel    | RMT3020EC58E9F1333 SODIMM    | 4 GB     | DDR3 | 4199 | 81    | C039F0A68D |
+| Ramaxel    | RMT3170ME68F9F1600 SODIMM    | 4096 MB  | DDR3 | 1600 | 81    | 6075D8D8B2 |
+| Samsung    | M471B5173BH0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 81    | F82673BB20 |
+|            | Module SODIMM                | 2 GB     | DDR2 |      | 80    | 17E3CB9771 |
+| Samsung    | M471B2873FHS-CF8 SODIMM      | 1 GB     | DDR3 | 1067 | 80    | 73D930BE97 |
+| SK Hynix   | HMA851S6JJR6N-VK SODIMM      | 4 GB     | DDR4 | 2667 | 80    | 9B95F2AE1D |
+| SK Hynix   | HMT451S6BFR8A-PB SODIMM      | 4096 MB  | DDR3 | 1600 | 80    | 89C67BC757 |
+| Micron     | 4ATF1G64HZ-3G2E1 Row Of C... | 8192 MB  | DDR4 | 3200 | 79    | E9EEB0B8C7 |
+|            | Module SODIMM                | 4 GB     | DDR3 |      | 79    | 5A60A14CF4 |
+| Samsung    | M471A1K43BB1-CTD SODIMM      | 8 GB     | DDR4 | 2667 | 77    | 4766FE6362 |
+| Micron     | 8KTF51264HZ-1G6N1 SODIMM     | 4096 MB  | DDR3 | 1600 | 76    | 4F9B339DD5 |
+| Samsung    | M471B5273CH0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 76    | 2C06FC7359 |
+| SK Hynix   | HMT41GS6BFR8A-PB SODIMM      | 8 GB     | DDR3 | 1600 | 76    | E604CD4180 |
+| SK Hynix   | HMA851S6CJR6N-VK Row Of C... | 4096 MB  | DDR4 | 2667 | 75    | 6ADD82CE5C |
+| SK Hynix   | HMA851S6JJR6N-VK SODIMM      | 4 GB     | DDR4 | 2667 | 75    | A9BCAE50D2 |
+| A-DATA     | AD73I1C1674EV SODIMM         | 4096 MB  | DDR3 | 1334 | 73    | 6EB04C2750 |
+|            | Module SODIMM                | 2048 MB  |      | 800  | 73    | 4AA5E2B180 |
+| Samsung    | Module SODIMM                | 8192 MB  | DDR4 | 2133 | 73    | 9FFC6B43EC |
+|            | Module SODIMM DRAM           | 2048 MB  |      |      | 72    | C04F0FCB02 |
+| Micron     | 4ATS1G64HZ-2G6E1 SODIMM      | 8 GB     | DDR4 | 2667 | 71    | D8002E9EAE |
+| Samsung    | M471A1K43EB1-CWE SODIMM      | 8 GB     | DDR4 | 3200 | 71    | 3210667E8D |
+| SK Hynix   | HMT451S6AFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 71    | 36CD8309BC |
+| Elpida     | Module SODIMM                | 2 GB     | DDR3 | 1333 | 70    | 62F3B41D12 |
+| SK Hynix   | HMT351S6BFR8C-H9 SODIMM      | 4 GB     | DDR3 | 1333 | 70    | 67BC301EE6 |
+| Samsung    | K4EBE304EB-EGCG Row Of Ch... | 8192 MB  |      | 2133 | 70    | 94CF359935 |
+| Kingston   | 99U5428-063.A00LF SODIMM     | 8 GB     | DDR3 | 1600 | 68    | 6D5ACC6BE7 |
+| Kingston   | ACR16D3LFS1KBG/2G SODIMM     | 2048 MB  | DDR3 | 1600 | 68    | E534D71DC2 |
+| Micron     | 16JSF25664HZ-1G1F1 SODIMM    | 2 GB     | DDR3 | 1067 | 68    | A6605F0FA3 |
+|            | Module SODIMM                | 2048 MB  |      | 667  | 68    | 776D052837 |
+| SK Hynix   | HMA451S6AFR8N-TF SODIMM      | 4 GB     | DDR4 | 2133 | 68    | 55773FEEEE |
+|            | Module SODIMM                | 1024 MB  | DDR2 | 533  | 67    | 046587A2D1 |
+| Samsung    | M471A2G43AB2-CWE SODIMM      | 16384 MB | DDR4 | 3200 | 67    | BB234C5FD0 |
+| SK Hynix   | HMA81GS6AFR8N-UH SODIMM      | 8 GB     | DDR4 | 2400 | 66    | 435C237F8F |
+| Kingston   | KHX2666C15S4/16G SODIMM      | 16 GB    | DDR4 | 2667 | 66    | F89153C3E1 |
+| Nanya      | NT2GC64B88G0NS-CG SODIMM     | 2048 MB  | DDR3 | 1600 | 66    | 0D571DE480 |
+| Ramaxel    | RMT3010EC58E8F1333 SODIMM    | 2 GB     | DDR3 | 1600 | 66    | 262BD2B6B5 |
+| Samsung    | M471A5143EB0-CPB SODIMM      | 4 GB     | DDR4 | 2133 | 66    | 20764E8EDE |
+| Samsung    | Module SODIMM                | 2 GB     | DDR3 | 1600 | 66    | 0F818BF6E7 |
+| Ramaxel    | RMT3170MN68F9F1600 SODIMM    | 4 GB     | DDR3 | 1600 | 65    | 2A1C30169A |
+| SK Hynix   | HMA82GS6DJR8N-XN SODIMM      | 16 GB    | DDR4 | 3200 | 65    | B56BB115A0 |
+| Micron     | 16ATF2G64HZ-2G6E1 SODIMM     | 16 GB    | DDR4 | 2667 | 64    | 3F8FE40793 |
+| Micron     | 4ATF51264HZ-3G2J1 Row Of ... | 4 GB     | DDR4 | 3200 | 64    | D3AD998DFA |
+| SMART B... | SMS4TDC3C0K0446SCG SODIMM    | 4 GB     | DDR4 | 2667 | 64    | 8C1BCAB1D9 |
+| Samsung    | M471A4G43AB1-CWE SODIMM      | 32 GB    | DDR4 | 3200 | 62    | 1804E5EB77 |
+| Samsung    | M471A5244BB0-CPB SODIMM      | 4 GB     | DDR4 | 2400 | 62    | E6A6F71BB5 |
+| SK Hynix   | HMT451S6MFR8C-PB SODIMM      | 4 GB     | DDR3 | 1600 | 62    | 7535A8D317 |
+| Elpida     | EBJ21UE8BDS0-AE-F SODIMM     | 2 GB     | DDR3 | 1067 | 61    | 7326D20B88 |
+| Kingston   | KNWMX1-ETB SODIMM            | 4 GB     | DDR3 | 1600 | 61    | E6B604B9DC |
+| Nanya      | NT2GC64B8HC0NS-CG SODIMM     | 2048 MB  | DDR3 | 1334 | 61    | 5C76391813 |
+| Samsung    | K4EBE304EC-EGCG Row Of Ch... | 8192 MB  |      | 2133 | 60    | 5BCA4C6855 |
+| Elpida     | Module SODIMM                | 4096 MB  | DDR3 | 1600 | 59    | 835313A116 |
+| SK Hynix   | HMT451S6AFR8A-PB SODIMM      | 4096 MB  | DDR3 | 1600 | 59    | D2D231DDEB |
+| Micron     | Module SODIMM                | 4096 MB  | DDR3 | 1600 | 59    | 66D68E3A5C |
+| Samsung    | K4E6E304EC-EGCG Row Of Ch... | 4 GB     |      | 2133 | 59    | B3CBED05F5 |
+| Samsung    | M471A1G43DB0-CPB SODIMM      | 8 GB     | DDR4 | 2400 | 59    | 0F20B300EC |
+| SK Hynix   | HMA81GS6DJR8N-XN SODIMM      | 8192 MB  | DDR4 | 3200 | 58    | 574D71E586 |
+| Kingston   | 99U5469-046.A00LF SODIMM     | 4096 MB  | DDR3 | 1333 | 58    | 31FF379E39 |
+| Micron     | 4ATF51264HZ-2G3E1 SODIMM     | 4 GB     | DDR4 | 2667 | 58    | 6DF20F0F72 |
+| Micron     | 8KTF25664HZ-1G6M1 SODIMM     | 2 GB     | DDR3 | 1600 | 58    | 073FABE370 |
+| SK Hynix   | HMAA1GS6CJR6N-XN SODIMM      | 8 GB     | DDR4 | 3200 | 58    | DA9F6479F1 |
+| SK Hynix   | HMT325S6CFR8C-H9 SODIMM      | 2048 MB  | DDR3 | 1334 | 58    | 4206238FCE |
+| A-DATA     | AM1U16BC4P2-B19H SODIMM      | 4 GB     | DDR3 | 1600 | 57    | 06B11BF254 |
+|            | Module SODIMM DDR            | 2048 MB  |      |      | 57    | D091BE7BDC |
+|            | Module SODIMM                | 4096 MB  | DDR3 | 1600 | 57    | EC217B7BD1 |
+| Corsair    | CMSO4GX3M1A1333C9 SODIMM     | 4 GB     | DDR3 | 1334 | 56    | 577F05089D |
+| Micron     | 4ATS2G64HZ-3G2B1 SODIMM      | 16 GB    | DDR4 | 3200 | 56    | BCB0D0C077 |
+| Ramaxel    | RMSA3300ME78HBF-2666 SODIMM  | 16 GB    | DDR4 | 2667 | 56    | D8002E9EAE |
+| SK Hynix   | HYMP125S64CP8-Y5 SODIMM DDR  | 2048 MB  |      | 667  | 56    | 067E57EAB9 |
+| Crucial    | CT8G4SFS824A.M8FE SODIMM     | 8 GB     | DDR4 | 2667 | 55    | 3E10EA1487 |
+| SK Hynix   | HMT325S6CFR8C-H9 SODIMM      | 2 GB     | DDR3 | 1333 | 55    | 493F378237 |
+| Kingston   | ACR16D3LS1NGG/4G SODIMM      | 4 GB     | DDR3 | 1600 | 55    | 16BA341CCD |
+|            | Module SODIMM                | 1 GB     | DDR2 | 667  | 55    | AB9D32A3FF |
+| Samsung    | M471A1G44AB0-CTD SODIMM      | 8 GB     | DDR4 | 2667 | 55    | CCA94F2EDA |
+| SK Hynix   | HMA81GS6DJR8N-VK SODIMM      | 8 GB     | DDR4 | 2667 | 55    | 0268BB19D1 |
+| SK Hynix   | HMT425S6AFR6A-PB SODIMM      | 2048 MB  | DDR3 | 1600 | 54    | B821AEBA3B |
+| Nanya      | NT2GT64U8HD0BN-AD SODIMM     | 2 GB     | DDR2 | 2048 | 54    | 1B8D8FFA33 |
+| Samsung    | Module Row Of Chips LPDDR3   | 8192 MB  |      | 2133 | 54    | E00760F649 |
+| SK Hynix   | HMA82GS6DJR8N-VK SODIMM      | 16 GB    | DDR4 | 2667 | 54    | 96F81D9300 |
+| SK Hynix   | HMT125S6BFR8C-G7 SODIMM      | 2 GB     | DDR3 | 1067 | 54    | 4308EDFD8D |
+| ASint      | SSZ3128M8-EDJEF SODIMM       | 2 GB     | DDR3 | 1333 | 53    | 46E3780BE8 |
+| SK Hynix   | HMT325S6BFR8C-H9 SODIMM      | 2 GB     | DDR3 | 1334 | 53    | 298655060C |
+| SK Hynix   | HMT351S6EFR8A-PB SODIMM      | 4096 MB  | DDR3 | 1600 | 53    | B415C9CBAB |
+| SK Hynix   | HYMP125S64CP8-S6 SODIMM      | 2048 MB  | DDR2 | 800  | 52    | 4EF0D3D150 |
+| Kingston   | KHX2400C14S4/16G SODIMM      | 16 GB    | DDR4 | 2667 | 52    | B4979C164C |
+| Kingston   | LV32D4S2S8HD-8 SODIMM        | 8 GB     | DDR4 | 3200 | 52    | 8DDA7F6478 |
+| Elpida     | EBJ40UG8EFU0-GN-F SODIMM     | 4 GB     | DDR3 | 1600 | 51    | 53C885FA6E |
+| Micron     | MT8KTF51264HZ-1G6 SODIMM     | 4096 MB  | DDR3 | 1600 | 51    | 0A1F5E9BED |
+| Samsung    | M471A5244CB0-CWE Row Of C... | 4 GB     | DDR4 | 3200 | 50    | 77188D21BF |
+| Samsung    | M471B5773CHS-CF8 SODIMM      | 2 GB     | DDR3 | 1067 | 50    | 7E3A87A955 |
+|            | Module SODIMM DDR            | 512 MB   |      |      | 49    | 7F4F9AD483 |
+| Ramaxel    | RMT3170EF68F9W1600 SODIMM    | 4 GB     | DDR3 | 1600 | 49    | FD797AC0C1 |
+| Samsung    | M4 70T5663QZ3-CE6 SODIMM     | 2 GB     | DDR2 | 667  | 49    | EA58337BA8 |
+| SK Hynix   | HMT351S6EFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 49    | 7813A47A19 |
+| Elpida     | EBJ40UG8EFU0 SODIMM          | 4 GB     | DDR3 | 1600 | 48    | FB82E73470 |
+| Elpida     | Module SODIMM                | 4 GB     | DDR3 | 1600 | 48    | 2DF54EF02E |
+| SK Hynix   | HMA81GS6JJR8N-VK SODIMM      | 8192 MB  | DDR4 | 2667 | 48    | 4CB3686EE5 |
+| Kingston   | 99U5428-040.A01LF SODIMM     | 4096 MB  | DDR3 | 1334 | 48    | D894476C06 |
+| Elpida     | EBJ20UF8BCS0-DJ-F SODIMM     | 2 GB     | DDR3 | 1334 | 47    | 4110664747 |
+| SK Hynix   | HMT451S6MFR8C-PB SODIMM      | 4 GB     | DDR3 | 1600 | 47    | E909E31559 |
+| Samsung    | M471B5273CM0-CH9 SODIMM      | 4 GB     | DDR3 | 1334 | 47    | 25518083E9 |
+| Toshiba    | 64T128020EDL2.5C2 SODIMM     | 2 GB     | DDR2 | 1066 | 47    | 343578BF21 |
+| Kingston   | ACR26D4S9S8ME-8 SODIMM       | 8192 MB  | DDR4 | 2667 | 46    | DB1D64253E |
+|            | Module SODIMM                | 2048 MB  | DDR2 | 533  | 46    | 524256971B |
+|            | Module SODIMM                | 2048 MB  | DDR3 | 1600 | 46    | FAF162367F |
+| Samsung    | M4 70T2953EZ3-CE6 SODIMM     | 1 GB     | DDR2 | 667  | 46    | 1BA50507CC |
+| SK Hynix   | HMA851S6DJR6N-XN SODIMM      | 4 GB     | DDR4 | 3200 | 46    | A4C0271977 |
+| Kingston   | 99U5428-046.A00LF SODIMM     | 4 GB     | DDR3 | 1334 | 45    | 8BB90D9533 |
+| Kingston   | KN2M64-ETB SODIMM            | 8 GB     | DDR3 | 1600 | 45    | D734CD43D3 |
+| Micron     | 8ATF1G64HZ-2G3E1 SODIMM      | 8192 MB  | DDR4 | 2400 | 45    | 86796279CB |
+| Samsung    | M471B1G73BH0-YK0 SODIMM      | 8 GB     | DDR3 | 1600 | 45    | 70FEBDD28F |
+| Samsung    | M471B5773CHS-CK0 SODIMM      | 2 GB     | DDR3 | 1600 | 45    | B9824D8702 |
+| SK Hynix   | HMAA2GS6CJR8N-XN SODIMM      | 16384 MB | DDR4 | 3200 | 45    | 42B439636A |
+| Kingston   | 99U5469-041.A00LF SODIMM     | 4 GB     | DDR3 | 1600 | 44    | E909E31559 |
+| Samsung    | Module SODIMM                | 4 GB     | DDR3 | 1600 | 44    | C2D198AB83 |
+| SK Hynix   | Module SODIMM                | 8192 MB  | DDR4 | 2133 | 43    | E612C279BF |
+| SK Hynix   | Module SODIMM                | 4 GB     | DDR3 | 1600 | 43    | EF06C07EA8 |
+| ASint      | SSY3128M8-EDJEF SODIMM       | 1024 MB  | DDR3 | 1333 | 42    | C935A13F9F |
+| Kingston   | ACR16D3LS1KNG/4G SODIMM      | 4096 MB  | DDR3 | 1600 | 42    | 80E97BBB78 |
+| Micron     | 4ATF51264HZ-2G6E! SODIMM     | 4 GB     | DDR4 | 2400 | 42    | ABA110F180 |
+| Samsung    | Module SODIMM                | 4096 MB  | DDR3 | 1600 | 42    | E2BC04B6F4 |
+| SK Hynix   | HYMP112S64CP6-S6 SODIMM DDR  | 1 GB     |      | 975  | 42    | B2D5D4AA5A |
+| SK Hynix   | HYMP112S64CP6-Y5 SODIMM DDR  | 1 GB     |      | 667  | 42    | 83A319F258 |
+| Toshiba    | 8HTF12864HDY-800G1 SODIMM    | 2 GB     | DDR2 | 1066 | 42    | 343578BF21 |
+|            | Module SODIMM                | 1024 MB  | DDR2 | 333  | 41    | E5A8A22561 |
 
 ### Battery
 
-| MFG        | Name           | Wh    | Type    | Count | Probe      |
-|------------|----------------|-------|---------|-------|------------|
-| ASUSTek    | ASUS           | 33.2  | Li-ion  | 1238  | 32F01CCAAB |
-| Compal     | PABAS0241231   | 57.7  | Li-ion  | 613   | 75C78480D2 |
-| Hewlett... | PABAS0241231   | 41.0  | Li-ion  | 567   | D9CB962295 |
-| Lenovo     | PABAS0241231   | 45.0  | Li-ion  | 550   | EE0A6FC9CA |
-| Samsung    |                | 49    | Li-ion  | 382   | A83E302ABA |
-| SMP        | bq20z451       | 71.8  | Li-ion  | 324   | 6E17FB6EA4 |
-| MSI        | BIF0_9         | 53.2  | Li-ion  | 287   | 4BF23FF82D |
-| SANYO      | Li_Ion_4000mA  | 48.8  | Li-ion  | 262   | 1217A94F61 |
-| Hewlett... | Primary        | 48    | Li-ion  | 239   | E84CD86EB0 |
-| SMP        | DELL GPM0365   | 97.0  | Li-ion  | 235   | E68FF3079C |
-| OEM        | standard       | 32.6  | Li-ion  | 223   | B198944AD7 |
-| Hewlett... | Primary        | 45    | Li-ion  | 219   | 87B3274937 |
-| Hewlett... | Primary        | 40    | Li-ion  | 175   | 1719B2DC9D |
-| Hewlett... | Primary        | 44    | Li-ion  | 171   | 1069B24865 |
-| Intel SR 1 | SR Real        | 57.7  |         | 167   | A2D784B2EA |
-| Samsung    |                | 44    | Li-ion  | 165   | 6BB3A162B5 |
-| Notebook   | BAT            | 49    | Li-ion  | 164   | A6732AB721 |
-| Samsung    | SR Real        | 43.1  | Li-ion  | 164   | 95C381CCD9 |
-| LG         | PABAS0241231   | 48.9  | Li-ion  | 160   | 3D54291DE2 |
-| Hewlett... | Primary        | 42    | Li-ion  | 154   | 0071FAABAC |
-| SANYO      | 45N1773        | 23.2  | Li-ion  | 147   | 92FB8505AA |
-| ASUSTek    | X550A26        | 38.0  | Li-ion  | 145   | 50B1B1A6C5 |
-| DP         | bq20z451       | 74.9  | Li-ion  | 142   | ECC4515014 |
-| ASUSTek    | A32-K55        | 64.4  | Li-ion  | 139   | 22728E37FE |
-| Hewlett... | Primary        | 41    | Li-ion  | 137   | A0A111A38E |
-| Hewlett... | Primary        | 39    | Li-ion  | 131   | B754C74B11 |
-| SANYO      | AL10B31        | 48.8  | Li-ion  | 129   | E12C8838C3 |
-| SMP        | L16M2PB1       | 30.0  | Li-poly | 127   | 8948989999 |
-| SANYO      | PABAS0241231   | 28.5  | Li-ion  | 126   | 8C4669BE5C |
-| Hewlett... | Primary        | 43    | Li-ion  | 123   | 65EC913842 |
-| LGC        | 45N1127        | 23.5  | Li-ion  | 122   | 92FB8505AA |
-| Hewlett... | Primary        | 38    | Li-ion  | 120   | 9347A8D008 |
-| PANASONIC  | Li_Ion_4000mA  | 47.5  | Li-ion  | 120   | D74C10F41F |
-| SANYO      | AL12A32        | 37.0  | Li-ion  | 118   | 7302DC6BE1 |
-| LG         | Li_Ion_4000mA  | 47.5  | Li-ion  | 114   | D2A5CA4ACA |
-| Hewlett... | Primary        | 46    | Li-ion  | 106   | 46392181D6 |
-| Hewlett... | Primary        | 36    | Li-ion  | 104   | 5BB4E443F9 |
-| ASUSTek    | K52F-44        | 48.4  | Li-ion  | 103   | 0D72CF73AC |
-| SMP        | DELL G8VCF6C   | 52.0  | Li-poly | 100   | 8956FEE2F3 |
-| Hewlett... | Primary        | 50    | Li-ion  | 99    | A814284F0B |
-| SANYO      | AL15A32        | 37.0  | Li-ion  | 99    | 216D1DA088 |
-| SANYO      | AS10D31        | 47.5  | Li-ion  | 99    | 1427EBFFB0 |
-| ASUSTek    | F82--22        | 48.4  | Li-ion  | 98    | DBBFDA6004 |
-| Hewlett... | Primary        | 49    | Li-ion  | 98    | 69FC64DF8B |
-| Samsung    |                | 48    | Li-ion  | 96    | 103EDB36D2 |
-|            | Battery        |       |         | 93    | D70E2B74D0 |
-| SANYO      | 45N1775        | 23.2  | Li-ion  | 93    | 0151EADF78 |
-| SANYO      | GC86508SAT0    | 73.3  | Li-ion  | 93    | 64B6992B74 |
-| Hewlett... | Primary        | 37    | Li-ion  | 89    | A7CC3183F2 |
-| SANYO      | PABAS024       | 38.9  | Li-ion  | 89    | A0FF38D606 |
-| PANASONIC  | AP16M5J        | 37.0  | Li-ion  | 88    | E8B00FA29B |
-| LGC        | 45N1049        | 40.4  | Li-ion  | 87    | 231E5AFD60 |
-| ASUSTek    | X550A30        | 31.7  | Li-ion  | 85    | BBED87466A |
-| Hewlett... | Primary        |       | Li-ion  | 85    | 1E89CEC8EB |
-| SMP        | DELL Y3F7Y6B   | 42.0  | Li-ion  | 85    | BEB9349C6E |
-| Notebook   | BAT            | 62    | Li-ion  | 83    | EC41EEB7C0 |
-| SANYO      | 00323341343... | 559.4 | Li-ion  | 83    | B967DF63CE |
-| Sony       | VGP-BPS26      | 45.0  | Li-ion  | 83    | 11EF4D4BAF |
-| Hewlett... | Primary        | 53    | Li-ion  | 82    | 713C29AA23 |
-| LGC        | AC14B8K        | 48.9  | Li-ion  | 81    | 55A32EF8DC |
-| CPT-COS    | L16C2PB2       | 30.6  | Li-poly | 79    | 2BF6813AD9 |
-| LGC        | L16L2PB2       | 30.0  | Li-poly | 79    | 374E69046B |
-| SIMPLO     | PABAS0241231   | 35.0  | Li-ion  | 79    | BF5D74D554 |
-| Sony       | 45N1111        | 23.2  | Li-poly | 76    | C8F2959FDC |
-| TKBSS      | NS2P3SZMC4WR   | 48.4  | Li-ion  | 76    | 37B87B5C45 |
-| Hewlett... | Primary        | 35    | Li-ion  | 75    | B67C01F6E2 |
-| Hewlett... | Primary        | 47    | Li-ion  | 75    | CECD552E89 |
-| Samsung    |                | 58    | Li-ion  | 74    | 70CB0EACD3 |
-| Hewlett... | Primary        | 56    | Li-ion  | 73    | 3F5DD495D5 |
-| LG         | PABAS024       | 40.0  | Li-ion  | 73    | B16CB4D0DC |
-| PANASONIC  | AS16A5K        | 41.4  | Li-ion  | 73    | A03FC24624 |
-| ASUSTek    | K55--44        | 49.5  | Li-ion  | 72    | 953078DDF4 |
-|            | 47.52          | 48    | Li-ion  | 70    | 087FC97D07 |
-| Hewlett... | Primary        | 28    | Li-ion  | 67    | 1014243935 |
-| Hewlett... | Primary        | 32    | Li-ion  | 67    | B703149715 |
-| Hewlett... | Primary        | 55    | Li-ion  | 66    | EC02A5333B |
-| ASUSTek    | X555-50        | 37.3  | Li-ion  | 65    | A08DA25590 |
-| Hewlett... | Primary        | 34    | Li-ion  | 65    | 7AA667BA1A |
-| LG         | 004B3842343... | 48.9  | Li-ion  | 65    | AF67B942EC |
-| ASUSTek    | K53--52        | 57.2  | Li-ion  | 64    | C98E6E26CE |
-| Hewlett... | Primary        | 30    | Li-ion  | 63    | 27D7E6D461 |
-| LGC        | 5B10W139       | 50.5  | Li-poly | 63    | 273A5FF27D |
-| SMP        | L16M2PB2       | 35.0  | Li-poly | 62    | FF8C85568E |
-| LGC        | AC14B18J       | 36.7  | Li-ion  | 61    | 8F1DD3CE3A |
-| SANYO      | GRAPE32        | 44.4  | Li-ion  | 59    | 1889E6A3BA |
-| Sony       | Li_Ion_4000mA  | 47.5  | Li-ion  | 59    | 2B132C74B6 |
-| ASUSTek    | F3---24        | 51.3  | Li-ion  | 58    | 843C7A8519 |
-| LGC        | AP18C8K        | 48.0  | Li-ion  | 58    | 1E4856A770 |
-| Hewlett... | 5600           | 62.2  |         | 56    | 045B2CD511 |
-| LGC        | 45N1113        | 23.5  | Li-ion  | 56    | E02C35310A |
-| SANYO      | 45N1001        | 47.5  | Li-ion  | 56    | B36A94241D |
-| SMP        | 01AV447        | 45.7  | Li-poly | 56    | BA847BC0C4 |
-| Hewlett... | Primary        | 29    | Li-ion  | 55    | F66BA65DC8 |
-| Lenovo     | BASE-BAT       | 30.0  | Li-poly | 55    | 8735C1E718 |
-| ASUSTek    | N56--52        | 57.2  | Li-ion  | 54    | 7332DA68EC |
-| Celxpert   | 01AV448        | 45.7  | Li-poly | 54    | 204598F27D |
-| Hewlett... | Primary        | 89    | Li-ion  | 54    | 1410381A3D |
-| SMP        | DELL TP1GT61   | 60.0  | Li-poly | 54    | 8BB0307157 |
-| ASUSTek    | F5---22        | 47.3  | Li-ion  | 53    | CD0276A1E8 |
-| Hewlett... | Primary        | 31    | Li-ion  | 53    | 0646FC1739 |
-| SMP        | 01AV421        | 24.0  | Li-poly | 53    | EA23D24F90 |
-| ASUSTek    | UX31-35        | 50.6  | Li-ion  | 51    | 62CE68EDEF |
-| Lenovo ... |                | 28    |         | 51    | 60E3FE1197 |
-| LGC        | AP18E8M        | 57.5  | Li-ion  | 51    | F581CF8319 |
-| Notebook   | BAT            | 48    | Li-ion  | 51    | 435743B201 |
-| SANYO      | 45N1043        | 38.9  | Li-ion  | 51    | 779684E41D |
-| Sony       |                | 42    | Li-ion  | 51    | 2AF79BA873 |
-| ASUSTek    | K53--27        | 37.8  | Li-ion  | 50    | 3C199F4247 |
-| Hewlett... | Primary        | 27    | Li-ion  | 50    | 1A6FF4210F |
-| Samsung    |                | 24    | Li-ion  | 50    | EB98AC12A4 |
-| SANYO      | L09S6Y02       | 38.9  | Li-ion  | 50    | F305E4AB46 |
-| Notebook   | BAT            | 53    | Li-ion  | 49    | 1BB63BE9B2 |
-| SMP        | DELL VN3N047   | 41.4  | Li-ion  | 49    | 2C2761E770 |
-| Hewlett... | Primary        | 41    | Li-ion  | 48    | A56C0A6B4D |
-| Lenovo     |                | 28    |         | 47    | 4E11B29D08 |
-|            | 48.6           | 49    | Li-ion  | 46    | 070723F36C |
-| ASUSTek    | X453-42        | 29.4  | Li-ion  | 46    | 4A70424B2F |
-| LGC        | 45N1025        | 62.2  | Li-ion  | 46    | 2139D7269B |
-| Simplo     | SDI ICR18650   | 48.2  | Li-ion  | 46    | 8A5F05E4C1 |
-| ASUSTek    | 1015PE         | 23.8  | Li-ion  | 45    | 051265DF6E |
+| MFG        | Name           | Wh    | Type    | Count | Probe |
+|------------|----------------|-------|---------|-------|-------|
+| ASUSTek    | ASUS           | 63.0  | Li-ion  | 1534  | 14237B32D9 |
+| Compal     | PABAS0241231   | 47.5  | Li-ion  | 678   | F6068483CE |
+| Hewlett... | PABAS0241231   | 41.1  | Li-ion  | 656   | 1064E67665 |
+| Lenovo     | PABAS0241231   | 23.8  | Li-ion  | 606   | D20EF03D37 |
+| Samsung    |                | 49    | Li-ion  | 408   | 7E3A87A955 |
+| SMP        | bq20z451       | 54.7  | Li-ion  | 383   | 2A4E580BD6 |
+| MSI        | BIF0_9         | 52.4  | Li-ion  | 357   | 698AF00B9C |
+| SANYO      | Li_Ion_4000mA  | 73.3  | Li-ion  | 284   | 79A1D21F1E |
+| OEM        | standard       | 47.5  | Li-ion  | 270   | C2A1BE9B32 |
+| SMP        | DELL GPM0365   | 97.0  | Li-ion  | 266   | 73526F92AC |
+| Hewlett... | Primary        | 48    | Li-ion  | 264   | 02DF6E8B6E |
+| Hewlett... | Primary        | 45    | Li-ion  | 256   | 311C6DA8E0 |
+| Intel SR 1 | SR Real        | 35.5  |         | 207   | C166EC8175 |
+| Hewlett... | Primary        | 40    | Li-ion  | 199   | 05BB30084A |
+| Samsung    | SR Real        | 43.1  | Li-ion  | 192   | CCA05024CE |
+| Hewlett... | Primary        | 44    | Li-ion  | 188   | FBC726A0B8 |
+| Notebook   | BAT            | 49    | Li-ion  | 181   | 04622692C4 |
+| LG         | PABAS0241231   | 4.0   | Li-ion  | 180   | F7CF64AFDE |
+| ASUSTek    | A32-K55        | 48.0  | Li-ion  | 173   | 5546A82362 |
+| Hewlett... | Primary        | 42    | Li-ion  | 169   | B610AEABED |
+| Samsung    |                | 44    | Li-ion  | 169   | 546B3E4C0B |
+| SANYO      | 45N1773        | 23.2  | Li-ion  | 168   | 5E026C07C0 |
+| DP         | bq20z451       | 63.2  | Li-ion  | 166   | FB03915A3E |
+| Hewlett... | Primary        | 41    | Li-ion  | 164   | 3B6604EFC1 |
+| ASUSTek    | X550A26        | 38.5  | Li-ion  | 160   | A7394D72A0 |
+| Hewlett... | Primary        | 39    | Li-ion  | 150   | CC637B12DE |
+| SMP        | L16M2PB1       | 30.0  | Li-poly | 144   | 5AF22F3639 |
+| LGC        | 45N1127        | 23.5  | Li-ion  | 141   | 5E026C07C0 |
+| Hewlett... | Primary        | 38    | Li-ion  | 140   | C98FCBEC3C |
+| Hewlett... | Primary        | 43    | Li-ion  | 140   | C5BF02A4D7 |
+| SANYO      | PABAS0241231   | 3.9   | Li-ion  | 140   | 1F84B1E42D |
+| SANYO      | AL10B31        | 48.8  | Li-ion  | 135   | FC0BCCC42D |
+| SANYO      | AL12A32        | 48.8  | Li-ion  | 128   | E909E31559 |
+| Hewlett... | Primary        | 46    | Li-ion  | 124   | 9FFC6B43EC |
+| PANASONIC  | Li_Ion_4000mA  | 47.5  | Li-ion  | 124   | 3D4087DC2A |
+| LG         | Li_Ion_4000mA  | 47.5  | Li-ion  | 119   | 7535A8D317 |
+| Hewlett... | Primary        | 36    | Li-ion  | 117   | 863340BAB2 |
+| Hewlett... | Primary        | 50    | Li-ion  | 116   | 55A6D982B3 |
+| SMP        | DELL G8VCF6C   | 52.0  | Li-poly | 116   | EFC6123D49 |
+| SANYO      | 45N1775        | 23.2  | Li-ion  | 114   | 10655C6E60 |
+| Hewlett... | Primary        | 53    | Li-ion  | 111   | 034F4D4131 |
+| ASUSTek    | K52F-44        | 48.4  | Li-ion  | 107   | 51504B5B77 |
+| SANYO      | AS10D31        | 47.5  | Li-ion  | 107   | 65C44B63D6 |
+| Hewlett... | Primary        | 49    | Li-ion  | 105   | 1F26DFD88F |
+| PANASONIC  | AP16M5J        | 37.0  | Li-ion  | 104   | 435C237F8F |
+| SANYO      | AL15A32        | 37.0  | Li-ion  | 104   | C1CD812A42 |
+| ASUSTek    | F82--22        | 48.4  | Li-ion  | 103   | F20C485A7B |
+| Hewlett... | Primary        | 37    | Li-ion  | 103   | 65130B9760 |
+|            | Battery        |       |         | 100   | D7B0AE17C0 |
+| CPT-COS    | L16C2PB2       | 30.6  | Li-poly | 99    | 4D274AFB4A |
+| Samsung    |                | 48    | Li-ion  | 99    | A0A9CF96A8 |
+| LGC        | 45N1049        | 40.4  | Li-ion  | 98    | 46D63F7527 |
+| Hewlett... | Primary        | 56    | Li-ion  | 97    | 42921AEBFD |
+| SANYO      | GC86508SAT0    | 44.4  | Li-ion  | 97    | B18E761C0F |
+| SMP        | DELL Y3F7Y6B   | 42.0  | Li-ion  | 96    | 298E22210D |
+| Hewlett... | Primary        |       | Li-ion  | 95    | 1BA50507CC |
+| ASUSTek    | X550A30        | 44.6  | Li-ion  | 93    | 0A1F5E9BED |
+| LGC        | L16L2PB2       | 30.0  | Li-poly | 93    | BF565614CA |
+| Sony       | 45N1111        | 23.2  | Li-poly | 93    | 10655C6E60 |
+| Sony       | VGP-BPS26      | 43.2  | Li-ion  | 92    | 5A60A14CF4 |
+| SANYO      | 00323341343... | 48.8  | Li-ion  | 91    | C2F6FAF193 |
+| SANYO      | PABAS024       | 47.5  | Li-ion  | 91    | A3A3EA2BD9 |
+| LGC        | AC14B8K        | 48.9  | Li-ion  | 90    | 038CC99EAD |
+| SIMPLO     | PABAS0241231   | 37.5  | Li-ion  | 90    | 36CD8309BC |
+| Notebook   | BAT            | 62    | Li-ion  | 87    | 371FBC5A98 |
+| PANASONIC  | AS16A5K        | 41.4  | Li-ion  | 84    | 9D9AE9F531 |
+| LGC        | AP18C8K        | 48.0  | Li-ion  | 83    | 160A8DD021 |
+| TKBSS      | NS2P3SZMC4WR   | 48.4  | Li-ion  | 83    | 14AC6C1F51 |
+| Hewlett... | Primary        | 32    | Li-ion  | 82    | 33D5B7046B |
+| Hewlett... | Primary        | 35    | Li-ion  | 82    | 838F13E574 |
+| Hewlett... | Primary        | 47    | Li-ion  | 82    | 166E1147D2 |
+| ASUSTek    | K55--44        | 47.5  | Li-ion  | 81    | C7C38F077D |
+| LG         | 004B3842343... | 48.9  | Li-ion  | 81    | 156E7734BE |
+|            | 47.52          | 48    | Li-ion  | 80    | 73D930BE97 |
+| ASUSTek    | UX31-35        | 47.9  | Li-ion  | 79    | 62F3B41D12 |
+| LGC        | 5B10W139       | 50.5  | Li-poly | 79    | 3333E54277 |
+| Samsung    |                | 58    | Li-ion  | 78    | 88AA731039 |
+| SMP        | L16M2PB2       | 35.0  | Li-poly | 78    | 13BC7E73F1 |
+| LG         | PABAS024       | 47.5  | Li-ion  | 77    | 7109402C58 |
+| LGC        | AC14B18J       | 36.7  | Li-ion  | 76    | 6F53445C9D |
+| ASUSTek    | X555-50        | 37.3  | Li-ion  | 74    | 74E5474A84 |
+| Hewlett... | Primary        | 34    | Li-ion  | 74    | 34D4439B39 |
+| Hewlett... | Primary        | 28    | Li-ion  | 73    | AD18E8D0B3 |
+| Notebook   | BAT            | 48    | Li-ion  | 73    | E4CACB360F |
+| Hewlett... | Primary        | 55    | Li-ion  | 70    | 7AC4ED97E7 |
+| Lenovo     | BASE-BAT       | 30.0  | Li-poly | 70    | B950D195CE |
+| Hewlett... | Primary        | 30    | Li-ion  | 68    | C4F663B37B |
+| LGC        | AP18E8M        | 57.5  | Li-ion  | 68    | 7E967F4DAA |
+| LGC        | 45N1113        | 23.5  | Li-ion  | 67    | BD60AAE97A |
+| ASUSTek    | K53--52        | 57.2  | Li-ion  | 66    | D0ECEBAB71 |
+| Celxpert   | 01AV448        | 45.7  | Li-poly | 66    | 5DBB969BD8 |
+| SMP        | 01AV421        | 24.0  | Li-poly | 66    | 755854F7D4 |
+| SANYO      | 45N1001        | 47.5  | Li-ion  | 63    | CEEC77F198 |
+| Hewlett... | Primary        | 41    | Li-ion  | 62    | 5C45B0B08A |
+| SANYO      | GRAPE32        | 44.4  | Li-ion  | 62    | FA85BE94B2 |
+| Sony       | Li_Ion_4000mA  | 48.8  | Li-ion  | 62    | C039F0A68D |
+| Hewlett... | Primary        | 31    | Li-ion  | 61    | 81371D4535 |
+| Hewlett... | Primary        | 89    | Li-ion  | 60    | 4702DAB234 |
+| SMP        | DELL 70N2F95   | 84.3  | Li-poly | 60    | 0391AC1BA1 |
+| ASUSTek    | F3---24        |       | Li-ion  | 59    | AB9D32A3FF |
+| SMP        | 01AV447        | 45.7  | Li-poly | 59    | 235260070B |
+| Hewlett... | 5600           | 62.2  |         | 58    | 3BD981AA35 |
+| Hewlett... | Primary        | 29    | Li-ion  | 58    | 8ADB026A31 |
+| Sony       |                | 42    | Li-ion  | 58    | B00A6A15B2 |
+| Hewlett... | Primary        | 27    | Li-ion  | 57    | E72FBDDBC9 |
+| SMP        | DELL TP1GT61   | 60.0  | Li-poly | 57    | 76D17811E3 |
+| SMP        | DELL VN3N047   | 41.4  | Li-ion  | 57    | 523CBA2431 |
+| ASUSTek    | N56--52        | 57.2  | Li-ion  | 56    | A1D8D94B5F |
+| Lenovo ... |                | 28    |         | 56    | 3EA53E359A |
+| ASUSTek    | F5---22        | 46.2  | Li-ion  | 55    | 01ACCF63AD |
+| SANYO      | 45N1043        | 38.9  | Li-ion  | 55    | B69439C244 |
+| Hewlett... | Primary        | 42    | Li-ion  | 54    | 80B844D396 |
+| ASUSTek    | K53--27        | 37.8  | Li-ion  | 52    | 5850A8DD22 |
+| Notebook   | BAT            | 53    | Li-ion  | 52    | 7C9F5C83CF |
+| SANYO      | L09S6Y02       | 38.9  | Li-ion  | 52    | 92822445BB |
+|            | 48.6           | 49    | Li-ion  | 51    | A757F64435 |
+| Lenovo     |                | 28    |         | 51    | 18BD9BBBE0 |
+| OEM        | FX50442        | 48.0  | Li-ion  | 51    | ED4DB5233E |
+| Samsung    |                | 24    | Li-ion  | 51    | 47EC2E67D9 |
+| Simplo     | SDI ICR18650   | 47.5  | Li-ion  | 51    | 80A80D7619 |
+|            | 48.84          | 49    | Li-ion  | 50    | 463CA7F3A3 |
+| CPT-COS    | L16C2PB1       | 35.3  | Li-poly | 50    | 0A92C063A1 |
+| LGC        | L16L2PB3       | 35.0  | Li-poly | 50    | 77188D21BF |
+| DYNAPACK   | HB4593R1ECW    | 56.3  | Li-ion  | 49    | 2816CB0172 |
+| Hewlett... | Primary        | 33    | Li-ion  | 49    | C313B8EE39 |
+| LGC        | 01AV445        | 45.0  | Li-poly | 49    | 2F136D5BF5 |
+| LGC        | 45N1025        | 62.2  | Li-ion  | 49    | D8480748C7 |
+| SMP        | L19M4PC0       | 60.0  | Li-poly | 49    | 92CCEBCC90 |
+| ASUSTek    | K55--47        | 51.7  | Li-ion  | 48    | 3DF16E8D72 |
+| ASUSTek    | X453-42        | 31.7  | Li-ion  | 48    | 94EBAA5D9B |
+| LGC        | 45N1005        | 56.2  | Li-ion  | 48    | B567C4922E |
+| LGC        | 45N1011        | 93.6  | Li-ion  | 48    | 6EB3E0ED53 |
+| LGC        | LNV-45N1       | 47.5  | Li-ion  | 48    | 470CD66AE6 |
+| SMP        | 01AV430        | 57.0  | Li-poly | 48    | 0278765EF8 |
+| Sunwoda-H  | HB4692Z9ECW-41 | 55.2  | Li-ion  | 48    | 6ADD82CE5C |
+| ASUSTek    | 1015PE         | 56.2  | Li-ion  | 47    | 776D052837 |
+| Razer      | Blade          | 65.0  |         | 46    | 4B78377A27 |
 | CPT-COS    | L14C3P6        | 36.6  | Li-ion  | 45    | CB421B796B |
-| DYNAPACK   | HB4593R1ECW    | 56.3  | Li-ion  | 45    | 68C01947C9 |
-| SMP        | DELL 70N2F95   | 84.3  | Li-poly | 45    | 58ADBD547F |
-|            | 48.84          | 49    | Li-ion  | 43    | 498E89971E |
-| LGC        | LNV-45N1       | 47.5  | Li-ion  | 43    | C7D8DC11CA |
-| SMP        | L19M4PC0       | 60.0  | Li-poly | 42    | 214D892F21 |
-| ASUSTek    | K55--47        | 51.7  | Li-ion  | 41    | 5163F83320 |
-| CPT-COS    | L16C2PB1       | 35.3  | Li-poly | 41    | FF57DE0FFA |
-| Hewlett... | Primary        | 33    | Li-ion  | 41    | 193B294617 |
-| LGC        | 01AV445        | 45.0  | Li-poly | 41    | D1CDBD537E |
-| LGC        | L16L2PB3       | 35.0  | Li-poly | 41    | 87D959803D |
-| Notebook   | BAT            | 60    | Li-ion  | 41    | E60CDC9748 |
-| Panasonic  | AS10D51        | 47.5  | Li-ion  | 41    | 8A74691BA9 |
-| Sony       |                | 51    | Li-ion  | 41    | DBFD29F616 |
-| ASUSTek    | T12--22        | 47.3  | Li-ion  | 40    | AC8D412B54 |
-| LGC        | 45N1011        | 86.6  | Li-ion  | 40    | B0087EF7C8 |
-| OEM        | FX50442        | 48.0  | Li-ion  | 40    | 456B686D28 |
-| SMP        | 01AV430        | 57.0  | Li-poly | 40    | B063890F08 |
-| Sunwoda-H  | HB4692Z9ECW-41 | 55.2  | Li-ion  | 40    | EB4D7C93C0 |
-| TPS        | S10            | 44.4  | Li-ion  | 40    | C74129A618 |
-| ASUSTek    | K56--30        | 44.2  | Li-ion  | 39    | 1A44FC7E8F |
-| Hewlett... | Primary        | 24    | Li-ion  | 39    | D098305F2A |
+| Hewlett... | Primary        | 26    | Li-ion  | 45    | 67825B30B9 |
+| Sony       |                | 51    | Li-ion  | 45    | 47587383D1 |
+| Celxpert   | 01AV424        | 24.1  | Li-poly | 44    | 755854F7D4 |
+| LGC        | L17L2PF1       | 30.0  | Li-poly | 44    | 1E700D65EA |
+| PANASONIC  | AP19B5L        | 53.0  | Li-ion  | 44    | 68E933E6A3 |
+| SANYO      | 01AV405        | 26.3  | Li-ion  | 44    | 964C1A1526 |
+| SUNWODA    | R15B01W        | 60.0  | Li-ion  | 44    | 5886B2F027 |
+| TPS        | S10            | 48.8  | Li-ion  | 44    | F3B678924D |
+| LGC        | L11L6Y01       | 43.6  | Li-ion  | 43    | C6AAA68E9C |
+| Notebook   | BAT            | 60    | Li-ion  | 43    | 0EC0943D03 |
+| Panasonic  | AS10D51        | 47.5  | Li-ion  | 43    | 0659469DBE |
+| SANYO      | 42T4799        | 93.2  | Li-ion  | 43    | 41C5DD8A4A |
+| SMP        | 00NY493        | 90.0  | Li-poly | 43    | 1F8ABAC9D7 |
+| SMP        | 5B10W138       | 45.7  | Li-poly | 43    | B48A6240BF |
+| SMP        | DELL DM3WC64   | 60.0  | Li-poly | 43    | 64F0D004CE |
+| Hewlett... | Primary        | 24    | Li-ion  | 42    | FE042017E6 |
+| Hewlett... | Primary        | 40    | Li-ion  | 42    | 3FA68165EA |
+| Lenovo ... |                | 38    |         | 42    | 5210DE65B3 |
+| Samsung... | DELL P8TC727   | 48.8  | Li-ion  | 42    | 282F0E1F65 |
+| SANYO      | AP13B3K        | 53.4  | Li-ion  | 42    | 924C20D0E4 |
+| SMP        | L17M3PG2       | 57.0  | Li-poly | 42    | E1DA80EC6F |
+| ASUSTek    | T12--22        | 47.3  | Li-ion  | 41    | E1425F037E |
+| ASUSTek    | X200-30        | 33.5  | Li-ion  | 41    | EEA123637A |
+| Notebook   | BAT            | 35    | Li-ion  | 41    | 9F2FDBFCE5 |
+| ASUSTek    | K56--30        | 38.5  | Li-ion  | 40    | C6E3CAD977 |
+| Hewlett... | Primary        | 57    | Li-ion  | 40    | C9B7431269 |
+| SANYO      | 42T4763        | 71.3  | Li-ion  | 40    | A83A1FFE1A |
+| SANYO      | AS07A31        | 48.8  | Li-ion  | 40    | 13C6C15C9E |
+| SMP        | 00HW023        | 23.5  | Li-poly | 40    | 964C1A1526 |
+| SMP        | DELL VM73283   | 42.0  | Li-poly | 40    | 83DEC4F285 |
+| SMP        | L14M3P24       | 45.0  | Li-poly | 40    | 59476747E2 |
+| Celxpert   | 5B10X026       | 45.0  | Li-poly | 39    | 39A12EAEF0 |
+| Hewlett... | Primary        | 51    | Li-ion  | 39    | CF41CC6DDB |
+| LGC        | 02DL004        | 51.0  | Li-poly | 39    | E00760F649 |
+| Notebook   | BAT            | 45    | Li-ion  | 39    | 8AC7D4890E |
+| SANYO      | 00HW022        | 23.5  | Li-poly | 39    | 6A6C0B0B39 |
+| SANYO      | AS07B31        | 63.9  | Li-ion  | 39    | 2DA9BDB8AF |
+| Sony       | PABAS024       | 57.5  | Li-ion  | 39    | AA5079471B |
 | ASUSTek    | M50--24        | 51.3  | Li-ion  | 38    | C9D463149F |
-| Hewlett... | Primary        | 42    | Li-ion  | 38    | 984D3D9933 |
-| SANYO      | 01AV405        | 26.3  | Li-ion  | 38    | 11539DC528 |
-| SANYO      | AP13B3K        | 53.4  | Li-ion  | 38    | 17710EBD6D |
-| ASUSTek    | N550-40        | 60.5  | Li-ion  | 37    | 5369ACA258 |
-| Lenovo ... |                | 38    |         | 37    | 3CDDE1061C |
-| LGC        | L11L6Y01       | 40.4  | Li-ion  | 37    | 661F69EB29 |
-| LGC        | L17L2PF1       | 30.0  | Li-poly | 37    | EA290C0520 |
-| SANYO      | AS07A31        | 48.8  | Li-ion  | 37    | 95CF81718F |
-| SMP        | 00NY493        | 90.0  | Li-poly | 37    | F45B082C14 |
-| SMP        | L14M3P24       | 45.0  | Li-poly | 37    | CFA4E16D46 |
-| Sony       | PABAS024       | 52.7  | Li-ion  | 37    | A98AA9041E |
-| ASUSTek    | X101CH         | 28.1  | Li-ion  | 36    | FCA7DBD9FE |
-| ASUSTek    | X200-30        | 28.9  | Li-ion  | 36    | D8057F1C4D |
-| Celxpert   | 01AV424        | 24.1  | Li-poly | 36    | EA23D24F90 |
-| Hewlett... | Primary        | 26    | Li-ion  | 36    | 7797008E19 |
-| LGC        | 02DL004        | 51.0  | Li-poly | 36    | 127874B25B |
-| Notebook   | BAT            | 45    | Li-ion  | 36    | 4BAEB2CAFC |
-| SMP        | 5B10W138       | 45.7  | Li-poly | 36    | 1221048E12 |
-| SMP        | DELL DM3WC64   | 60.0  | Li-poly | 36    | E4D0ECB120 |
-| SMP        | DELL VM73283   | 42.0  | Li-poly | 36    | 0A8AA1439F |
-| SMP        | L09M6Y02       | 46.4  | Li-ion  | 36    | 6074680FBA |
-| SUNWODA    | R15B01W        | 60.0  | Li-ion  | 36    | 6EE47924BD |
-| Compal     | PA3817U-1BRS   | 48.6  | Li-ion  | 35    | DE29066B72 |
-| Hewlett... | Primary        | 51    | Li-ion  | 35    | E6643F7ED1 |
-| LGC        | 42T4911        | 56.2  | Li-ion  | 35    | 3947636B4D |
-| OEM        | AS10D31        | 48.4  | Li-ion  | 35    | 9371836E3E |
-| Samsung    |                | 45    | Li-ion  | 35    | 0396EAC317 |
-| SANYO      | 42T4799        | 86.6  | Li-ion  | 35    | 90895AAB86 |
-| SMP        | L17M3PG2       | 57.0  | Li-poly | 35    | 167DF4C15E |
-| Toshiba    | PABAS0241231   | 96.5  | Li-ion  | 35    | CBE7430492 |
-| ASUSTek    | X550E26        | 37.4  | Li-ion  | 34    | 7A7899C096 |
-| Hewlett... | Primary        | 57    | Li-ion  | 34    | 2392366002 |
-| LGC        | 01AV490        | 23.9  | Li-poly | 34    | 227465CF98 |
-| SANYO      | AL10A31        | 24.4  | Li-ion  | 34    | C3DB5ACB34 |
-| SANYO      | AS07B31        | 48.8  | Li-ion  | 34    | 97C667E3C0 |
-| SMP        | 00HW023        | 23.5  | Li-poly | 34    | A567978A3C |
-| Hewlett... | Primary        | 40    | Li-ion  | 33    | D14FE5657A |
-| Notebook   | BAT            | 35    | Li-ion  | 33    | 6089EEE99C |
-| SANYO      | 00HW022        | 23.5  | Li-poly | 33    | 6D2D97674C |
-| SANYO      | 42T4791        | 51.3  | Li-ion  | 33    | 387EE22BC4 |
-| SMP        | 45N1045        | 42.8  | Li-ion  | 33    | 7ED2650105 |
-| ASUSTek    | PA3533U        | 50.8  | Li-ion  | 32    | E6A17619D6 |
-| Lenovo     | LCFC           |       |         | 32    | A34F4E81C4 |
-| LGC        | 01AV489        | 23.9  | Li-poly | 32    | 80FB4514C5 |
-| Razer      | Blade          | 80.2  |         | 32    | 744799A3C4 |
-| SANYO      | AS09A31        | 47.5  | Li-ion  | 32    | 85C9DD8233 |
-| SMP        | 02DL005        | 51.0  | Li-poly | 32    | 3A2547FB3C |
-| SMP        | L17M3PG1       | 52.5  | Li-poly | 32    | 2AD271E81F |
-| Celxpert   | 5B10X026       | 45.0  | Li-poly | 31    | CEC5669039 |
-| Hewlett... | Primary        | 52    | Li-ion  | 31    | 18F27D1F5C |
-| Hewlett... | Primary        | 54    | Li-ion  | 31    | A5331A4D5E |
-| LGC        | 02DL007        | 50.5  | Li-poly | 31    | A01E524A66 |
-| PANASONIC  | AP19B5L        | 53.0  | Li-ion  | 31    | 3D398D4B58 |
-| SANYO      | 45N1023        | 73.3  | Li-ion  | 31    | A120083D3C |
-| Sony       | VGP-BPS35A     | 42.3  | Li-ion  | 31    | 1D79ED8874 |
-| Hewlett... | Primary        | 22    | Li-ion  | 30    | 3C24201057 |
-| Lenovo     |                | 32    |         | 30    | 3D5411B3F0 |
-| LGC        | 01AV494        | 57.0  | Li-poly | 30    | D8DB7F3FBD |
-| LGC        | 45N1005        | 56.2  | Li-ion  | 30    | 5CE9661292 |
-| LGC        | 45N1738        | 71.1  | Li-ion  | 30    | E02C35310A |
-| PANASONIC  | AS16B5J        | 62.2  | Li-ion  | 30    | 97A2A90138 |
-| SANYO      | 42T4763        | 56.2  | Li-ion  | 30    | 4AFF5A6A0C |
-| SANYO      | AC14B13J       | 37.7  | Li-ion  | 30    | 2A96C0566A |
-| SIMPLO     | MWL32b         | 47.5  | Li-ion  | 30    | C33F99576F |
-| SMP        | DELL GD1JP65   | 68.0  | Li-poly | 30    | F2FB6B98EA |
-| Hewlett... | 4400           | 47.5  |         | 29    | DFCCB89900 |
-| Hewlett... | 5100           | 55.1  |         | 29    | 7A13EB86C2 |
-| Hewlett... | Primary        | 5     | Li-ion  | 29    | 62284DF376 |
-| LGC        | 5B10W138       | 45.0  | Li-poly | 29    | A35AAAEB6D |
-| Samsung... | DELL P8TC727   | 48.8  | Li-ion  | 29    | B046A9DFE3 |
-| SMP        | 01AV446        | 45.3  | Li-poly | 29    | 52BA950565 |
-| SMP        | 5B10W139       | 57.0  | Li-poly | 29    | 9BA5143844 |
-| Toshiba    | PA3817U-1BRS   | 47.5  | Li-ion  | 29    | 14A96B5CEC |
-| Compal     | PABAS024       | 48.8  | Li-ion  | 28    | F5112DBF47 |
-| DYNAPACK   | HB4593J6ECW    | 41.2  | Li-ion  | 28    | C62BB4ADC9 |
-| Hewlett... | Primary        | 18    | Li-ion  | 28    | B409334E94 |
-| LGC        | 45N1147        | 56.2  | Li-ion  | 28    | E1E44B58F3 |
-| LGC        | AC14A8L        | 52.5  | Li-ion  | 28    | F2C465DCBE |
+| ASUSTek    | N550-40        | 60.5  | Li-ion  | 38    | 0D64CBAB8E |
+| ASUSTek    | X550E26        | 37.4  | Li-ion  | 38    | C2D198AB83 |
+| LGC        | 42T4911        | 47.5  | Li-ion  | 38    | 2D58D0613A |
+| SANYO      | 42T4791        | 56.2  | Li-ion  | 38    | 15DD95FDFD |
+| SMP        | 45N1045        | 42.8  | Li-ion  | 38    | AF3BEF5727 |
+| SMP        | DELL GD1JP65   | 68.0  | Li-poly | 38    | 86796279CB |
+| SMP        | L09M6Y02       | 46.4  | Li-ion  | 38    | 68B04EEF9D |
+| ASUSTek    | X101CH         | 24.3  | Li-ion  | 37    | 486F5C28AD |
+| LG         | LGC-LGC        | 80.0  | Li-ion  | 37    | F4B91CFB92 |
+| LGC        | 01AV490        | 23.9  | Li-poly | 37    | B552B967E4 |
+| OEM        | AS10D31        | 48.4  | Li-ion  | 37    | 1046915C3B |
+| Samsung    |                | 45    | Li-ion  | 37    | 18B982D433 |
+| Sony       | VGP-BPS35A     | 42.3  | Li-ion  | 37    | 365EF21D2A |
+| Toshiba    | PABAS0241231   | 44.1  | Li-ion  | 37    | 5F8AB9C9CE |
+| Hewlett... | Primary        | 52    | Li-ion  | 36    | 792465EE85 |
+| LGC        | 02DL007        | 50.5  | Li-poly | 36    | AF354B9537 |
+| LGC        | 45N1738        | 71.1  | Li-ion  | 36    | 08006B1C3A |
+| LGC KT0... | AP18C8K        | 48.0  | Li-ion  | 36    | 23C2A93047 |
+| SANYO      | AL10A31        | 24.4  | Li-ion  | 36    | 337BBF93B3 |
+| SMP        | 5B10W139       | 48.0  | Li-poly | 36    | A122EE336D |
+| SMP        | DELL VM73297   | 42.0  | Li-poly | 36    | F094B510C8 |
+| SMP        | L17M3PG1       | 52.5  | Li-poly | 36    | F79196E39C |
+| Compal     | PA3817U-1BRS   | 47.5  | Li-ion  | 35    | DE29066B72 |
+| SANYO      | 45N1023        | 84.2  | Li-ion  | 35    | 21C4433BF2 |
+| SMP        | 02DL005        | 51.0  | Li-poly | 35    | 6AF6121C33 |
+| ASUSTek    | PA3533U        | 56.2  | Li-ion  | 34    | 1A3F77BE23 |
+| Celxpert   | 5B10W138       | 45.7  | Li-poly | 34    | BC65FFE3B4 |
+| Hewlett... | Primary        | 18    | Li-ion  | 34    | 6956607BFD |
+| Hewlett... | Primary        | 54    | Li-ion  | 34    | A97A0BA0EE |
+| SANYO      | AC14B13J       | 38.3  | Li-ion  | 34    | 58E5E2C95C |
+| SANYO      | AS09A31        | 47.5  | Li-ion  | 34    | 0F12BE73FA |
+| DYNAPACK   | HB4593J6ECW    | 41.2  | Li-ion  | 33    | 98C6CBB320 |
+| Hewlett... | Primary        | 22    | Li-ion  | 33    | 8ABEE6201F |
+| Lenovo     | LCFC           | 23.8  |         | 33    | 0A5275C755 |
+| LGC        | 01AV489        | 23.9  | Li-poly | 33    | A06DA55EBE |
+| LGC        | 45N1147        | 56.2  | Li-ion  | 33    | 3A79F95039 |
+| LGC        | 5B10W138       | 45.0  | Li-poly | 33    | B34CCF2C06 |
+| Notebook   | BAT            | 74    | Li-ion  | 33    | 69CE23B9F3 |
+| PANASONIC  | AS16B5J        | 62.2  | Li-ion  | 33    | E1F58E9713 |
+| SMP        | 01AV446        | 45.3  | Li-poly | 33    | 4CCCE94591 |
+| SMP        | 01AV452        | 24.0  | Li-poly | 33    | FDA7557AA0 |
+| Sunwoda    | 5B10X025       | 45.0  | Li-poly | 33    | 8AAFEBE07C |
+| Celxpert   | 01AY969        | 80.4  | Li-poly | 32    | E12FB3CD9D |
+| Emdoor     |  Li-ion        | 36.5  | Li-ion  | 32    | 674A4FBEDE |
+| Hewlett... | 5100           | 55.1  |         | 32    | 577F05089D |
+| Hewlett... | Primary        | 5     | Li-ion  | 32    | 52CFF70BE5 |
+| LGC        | 01AV494        | 57.0  | Li-poly | 32    | 48CFC7D185 |
+| LGC        | AC14A8L        | 52.5  | Li-ion  | 32    | FE5DD7A63B |
+| SANYO      | 45N1777        | 71.3  | Li-ion  | 32    | 5819FC1B20 |
+| SIMPLO     | MWL32b         | 47.5  | Li-ion  | 32    | 43F645DE28 |
+| Toshiba    | PA3817U-1BRS   | 48.6  | Li-ion  | 32    | 51FB2A4A10 |
+| ASUSTek    | PA3533U        | 56.2  | Li-ion  | 31    | 262BD2B6B5 |
+| Hewlett... | 4400           | 47.5  |         | 31    | B32286ECAD |
+| Lenovo     |                | 32    |         | 31    | 6D631D4A4D |
+| LGC        | 45N1735        | 47.5  | Li-ion  | 31    | F246D643B4 |
+| SMP        | 01AV413        | 45.3  | Li-poly | 31    | D717AE7A04 |
+| Compal     | PABAS024       | 40.0  | Li-ion  | 30    | 55A854B0C1 |
+| Hewlett... | Primary        | 23    | Li-ion  | 30    | 6248023E72 |
+| SMP        | 02DL008        | 50.5  | Li-poly | 30    | 76D3C2CFA2 |
+| CPT-COS    | L17C4PB0       | 45.5  | Li-poly | 29    | 408821B06E |
+| LGC        | 01AV492        | 71.1  | Li-ion  | 29    | 661BF15DCC |
+| SMP        | DELL MKD6223   | 62.2  | Li-ion  | 29    | A7AFDD9D95 |
+| SMP        | L19M3PF7       | 45.0  | Li-poly | 29    | 87E1EB605A |
+| Toshiba    | PA3533U        | 71.3  | Li-ion  | 29    | 15ADF4F30A |
+| Hewlett... | Primary        | 16    | Li-ion  | 28    | 570C07EE5C |
+| LGC        | 5B10X026       | 45.0  | Li-poly | 28    | E60367127E |
+| SANYO      | 45N1779        | 99.5  | Li-ion  | 28    | 6D0CD0F4B9 |
+| SANYO      | LNV-45N1       | 47.5  | Li-ion  | 28    | DDA932E1AE |
 | Simplo     | Li_Ion_4000mA  | 48.8  | Li-ion  | 28    | FA287E0453 |
-| SMP        | 02DL008        | 50.5  | Li-poly | 28    | FBE1D68B82 |
-| Toshiba    | PA3533U        | 57.7  | Li-ion  | 28    | B884D58259 |
-| ASUSTek    | PA3533U        | 56.2  | Li-ion  | 27    | AF980DC491 |
-| Celxpert   | 5B10W138       | 45.7  | Li-poly | 27    | 85C8487CA5 |
-| SMP        | 01AV452        | 24.0  | Li-poly | 27    | C13569FCA7 |
-| CPT-COS    | L17C4PB0       | 45.5  | Li-poly | 26    | 8272A05168 |
-| Hewlett... | Primary        | 23    | Li-ion  | 26    | 9185255B98 |
-| LGC        | 01AV492        | 71.1  | Li-ion  | 26    | D2C417C68B |
-| LGC        | 45N1735        | 47.5  | Li-ion  | 26    | 55689E67B3 |
-| SMP        | 5B10W13931     | 51.0  | Li-poly | 26    | 2A1930C4E4 |
-| SMP        | DELL VM73297   | 42.0  | Li-poly | 26    | 1ABAE7ECBD |
-| Sunwoda    | 5B10X025       | 45.0  | Li-poly | 26    | BE67E01A7D |
-| Celxpert   | 01AY969        | 80.4  | Li-poly | 25    | 5459662EC3 |
-| Lenovo ... |                | 32    |         | 25    | B37415E3C3 |
-| Lenovo     | L11S6Y01       | 38.9  | Li-ion  | 25    | 2A59A10BB7 |
-| SANYO      | 45N1777        | 71.3  | Li-ion  | 25    | D7F1B3F27E |
-| SANYO      | LNV-45N1       | 47.5  | Li-ion  | 25    | B64E2C4A07 |
-| SMP        | DELL MKD6223   | 62.2  | Li-ion  | 25    | 39348A932E |
-| Toshiba    | PA3534U        | 44.4  | Li-ion  | 25    | 371CF70DA6 |
-| ASUSTek    | N750-62        | 69.5  | Li-ion  | 24    | D6E91115B4 |
-| ASUSTek    | UX431          | 47.1  | Li-ion  | 24    | 60CA0301DF |
-|            |                |       | Li-ion  | 24    | AC6597929A |
-| Hewlett... | Primary        | 16    | Li-ion  | 24    | BA5B7E2996 |
-| Hewlett... | Primary        | 20    | Li-ion  | 24    | BEF47B45EE |
-| LGC KT0... | AP18C8K        | 48.0  | Li-ion  | 24    | 5CFAF3DF18 |
-| MSI        | PC-VP-BP77     | 48.8  | Li-ion  | 24    | 36ACEDB60B |
-| Notebook   | BAT            | 74    | Li-ion  | 24    | AD8B0E22A7 |
-| SANYO      | 45N1767        | 47.5  | Li-ion  | 24    | 2C09CDD5BD |
+| AS3GWAF3KC | GA50358        | 90.0  | Li-ion  | 27    | 3A12ACCC7D |
+| ASUSTek    | UX425          | 63.0  | Li-ion  | 27    | 571C932872 |
+|            |                |       | Li-ion  | 27    | 28339307B2 |
+| Celxpert   | 5B10W139       | 57.0  | Li-poly | 27    | F904E185FB |
 

@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0x000EDDD0.
@@ -10,7 +10,7 @@ BIOS Information
 	Release Date: 12/13/2016
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 7168 kB
+	ROM Size: 7 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -51,8 +51,8 @@ Base Board Information
 	Product Name: 0x36C4
 	Version: Not Defined                   
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148                          
+	Features:
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Default string
@@ -68,7 +68,7 @@ Chassis Information
 	Version: Default string
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -189,7 +189,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -202,7 +202,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: RMT3170MP68F9F1600
 	Rank: Unknown
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.35 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -237,8 +237,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -311,12 +311,9 @@ OEM-specific Type
 		KHOIHGIUCCHHII
 
 Handle 0x0019, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 19 00 01 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 80 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: Available
 
 Handle 0x001A, DMI type 13, 22 bytes
 BIOS Language Information

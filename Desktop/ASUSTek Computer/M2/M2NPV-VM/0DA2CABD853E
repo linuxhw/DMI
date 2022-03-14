@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 67 structures occupying 1930 bytes.
@@ -112,8 +112,8 @@ Processor Information
 	L2 Cache Handle: 0x000B
 	L3 Cache Handle: Not Provided
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 
 Handle 0x0005, DMI type 5, 24 bytes
 Memory Controller Information
@@ -142,11 +142,11 @@ Memory Controller Information
 Handle 0x0006, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A0
-	Bank Connections: 0
+	Bank Connections: 0 1
 	Current Speed: 6 ns
 	Type: DIMM
-	Installed Size: 512 MB (Single-bank Connection)
-	Enabled Size: 512 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -165,18 +165,18 @@ Memory Module Information
 	Bank Connections: 2 3
 	Current Speed: 6 ns
 	Type: DIMM
-	Installed Size: 2048 MB (Double-bank Connection)
-	Enabled Size: 2048 MB (Double-bank Connection)
+	Installed Size: 1024 MB (Double-bank Connection)
+	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A3
-	Bank Connections: 6 7
+	Bank Connections: 6
 	Current Speed: 6 ns
 	Type: DIMM
-	Installed Size: 1024 MB (Double-bank Connection)
-	Enabled Size: 1024 MB (Double-bank Connection)
+	Installed Size: 512 MB (Single-bank Connection)
+	Enabled Size: 512 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 7, 19 bytes
@@ -583,7 +583,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 512 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
@@ -621,7 +621,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A2
@@ -640,7 +640,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 512 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A3
@@ -664,16 +664,16 @@ Memory Array Mapped Address
 Handle 0x003D, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0001FFFFFFF
-	Range Size: 512 MB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0038
 	Memory Array Mapped Address Handle: 0x003C
 	Partition Row Position: 1
 
 Handle 0x003E, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00020000000
-	Ending Address: 0x0003FFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x0009FFFFFFF
 	Range Size: 512 MB
 	Physical Device Handle: 0x0039
 	Memory Array Mapped Address Handle: 0x003C
@@ -681,18 +681,18 @@ Memory Device Mapped Address
 
 Handle 0x003F, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x000A0000000
+	Ending Address: 0x000DFFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x003A
 	Memory Array Mapped Address Handle: 0x003C
 	Partition Row Position: 1
 
 Handle 0x0040, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x000C0000000
+	Starting Address: 0x000E0000000
 	Ending Address: 0x000FFFFFFFF
-	Range Size: 1 GB
+	Range Size: 512 MB
 	Physical Device Handle: 0x003B
 	Memory Array Mapped Address Handle: 0x003C
 	Partition Row Position: 1

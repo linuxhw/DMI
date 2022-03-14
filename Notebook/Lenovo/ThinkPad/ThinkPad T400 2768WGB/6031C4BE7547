@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
-80 structures occupying 2859 bytes.
+80 structures occupying 2833 bytes.
 Table at 0x000E0010.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 10/17/2012
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		PC Card (PCMCIA) is supported
@@ -197,8 +197,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Burst
 	Installed SRAM Type: Burst
@@ -404,7 +404,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 1
@@ -423,7 +423,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 2
@@ -484,19 +484,8 @@ Built-in Pointing Device
 	Interface: PS/2
 	Buttons: 0
 
-Handle 0x0034, DMI type 22, 26 bytes
-Portable Battery
-	Location: Rear
-	Manufacturer: LENOVO
-	Name: 93P5030
-	Design Capacity: 48840 mWh
-	Design Voltage: 11100 mV
-	SBDS Version: 03.01
-	Maximum Error: Unknown
-	SBDS Serial Number: --
-	SBDS Manufacture Date: 2017-05-08
-	SBDS Chemistry: LION
-	OEM-specific Information: 0x00000000
+Handle 0x0034, DMI type 126, 26 bytes
+Inactive
 
 Handle 0x0035, DMI type 126, 26 bytes
 Inactive

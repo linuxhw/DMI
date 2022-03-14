@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-34 structures occupying 1906 bytes.
+34 structures occupying 1912 bytes.
 Table at 0x78F8A000.
 
 Handle 0x0000, DMI type 7, 19 bytes
@@ -148,8 +148,8 @@ Processor Information
 Handle 0x0006, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Apple Inc.
-	Version: 427.0.0.0.0
-	Release Date: 02/23/2021
+	Version: 428.60.3.0.0
+	Release Date: 10/27/2021
 	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
@@ -257,7 +257,7 @@ Port Connector Information
 
 Handle 0x0010, DMI type 11, 5 bytes
 OEM Strings
-	String 1: Apple ROM Version.  Model:        MBP114.  EFI Version:  427.0.0.0.0.  Built by:     root@bb-g8-pdb76.  Date:         Tue Feb 23 21:35:05 PST 2021.  Revision:     427 (B&I).  ROM Version:  F000_B00.  Build Type:   Official Build, Release.  Compiler:     clang-1205.0.19.59.6.
+	String 1: Apple ROM Version.  Model:        MBP114.  EFI Version:  428.60.3.0.0.  Built by:     root@bb-g8-pdb150.  Date:         Wed Oct 27 18:08:31 PDT 2021.  Revision:     428.60.3 (B&I).  ROM Version:  F000_B00.  Build Type:   Official Build, Release.  Compiler:     clang-1300.0.29.10.
 
 Handle 0x0011, DMI type 41, 11 bytes
 Onboard Device
@@ -317,16 +317,6 @@ Handle 0x0018, DMI type 133, 12 bytes
 OEM-specific Type
 	Header and Data:
 		85 0C 18 00 02 00 00 00 00 00 00 00
-
-Handle 0x0019, DMI type 128, 96 bytes
-OEM-specific Type
-	Header and Data:
-		80 60 19 00 03 00 00 00 76 F5 0F FF 7F FF 1F FF
-		02 00 03 00 00 00 00 00 00 00 99 FF FF FF AF FF
-		00 00 B0 FF FF FF D4 FF 00 00 D7 FF FF FF D9 FF
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 01 00 00 00 01 00 00 00
 
 Handle 0x001A, DMI type 134, 20 bytes
 OEM-specific Type
@@ -424,6 +414,16 @@ Memory Array Mapped Address
 	Range Size: 16 GB
 	Physical Array Handle: 0x001B
 	Partition Width: 0
+
+Handle 0x0019, DMI type 128, 96 bytes
+OEM-specific Type
+	Header and Data:
+		80 60 19 00 03 00 00 00 76 F5 0B FF FF FF FF FF
+		02 00 03 00 00 00 00 00 00 00 99 FF FF FF AF FF
+		00 00 B0 FF FF FF D4 FF 00 00 D7 FF FF FF D9 FF
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 0D 00 00 00 FF FF FF FF
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

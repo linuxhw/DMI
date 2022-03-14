@@ -1,8 +1,8 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
-72 structures occupying 5152 bytes.
-Table at 0x84FDF000.
+72 structures occupying 5153 bytes.
+Table at 0x7CFDF000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -146,8 +146,8 @@ OEM-specific Type
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.9.0
-	Release Date: 05/28/2021
+	Version: 1.10.1
+	Release Date: 08/05/2021
 	ROM Size: 32 MB
 	Characteristics:
 		PCI is supported
@@ -168,7 +168,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.9
+	BIOS Revision: 1.10
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -252,10 +252,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i3-10110U CPU @ 2.10GHz
-	Voltage: 0.8 V
+	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 2600 MHz
-	Current Speed: 2574 MHz
+	Current Speed: 2673 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1528
 	L1 Cache Handle: 0x0700
@@ -313,8 +313,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -336,6 +336,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.0
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0901, DMI type 9, 24 bytes
 System Slot Information
@@ -350,6 +352,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.1
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0902, DMI type 9, 24 bytes
 System Slot Information
@@ -364,6 +368,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.2
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0903, DMI type 9, 24 bytes
 System Slot Information
@@ -378,6 +384,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.3
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0904, DMI type 9, 24 bytes
 System Slot Information
@@ -392,6 +400,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.4
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0905, DMI type 9, 24 bytes
 System Slot Information
@@ -406,6 +416,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.5
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0906, DMI type 9, 24 bytes
 System Slot Information
@@ -420,6 +432,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.6
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0B00, DMI type 11, 5 bytes
 OEM Strings
@@ -480,7 +494,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM A
@@ -515,7 +529,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM B
@@ -573,7 +587,7 @@ Portable Battery
 	OEM-specific Information: 0x00000801
 
 Handle 0x1900, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x1B00, DMI type 27, 15 bytes
@@ -740,7 +754,7 @@ OEM-specific Type
 Handle 0xCB00, DMI type 203, 106 bytes
 OEM-specific Type
 	Header and Data:
-		CB 6A 00 CB 01 04 01 45 02 00 90 06 01 10 86 20
+		CB 6A 00 CB 01 04 01 45 02 00 90 06 01 10 80 20
 		00 00 00 00 40 00 00 01 1F 00 00 C9 0B C0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -907,7 +921,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 21 07 03 13 57 01 00 00
+		DE 10 00 DE 01 04 00 00 21 12 05 23 11 01 00 00
 
 Handle 0xF800, DMI type 248, 9 bytes
 OEM-specific Type

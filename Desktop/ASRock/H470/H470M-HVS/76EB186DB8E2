@@ -1,13 +1,13 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0x9EB72000.
+Table at 0x9EB71000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: P1.10
-	Release Date: 01/11/2021
+	Version: P1.30
+	Release Date: 07/26/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -124,7 +124,17 @@ Handle 0x0008, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0009, DMI type 16, 23 bytes
+Handle 0x0009, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: INTC
+	Specification Version: 2.0
+	Firmware Revision: 500.14
+	Description: INTEL
+	Characteristics:
+		Family configurable via platform software support
+	OEM-specific Information: 0x00000000
+
+Handle 0x000A, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -133,13 +143,13 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
-Handle 0x000A, DMI type 17, 84 bytes
+Handle 0x000B, DMI type 17, 84 bytes
 Memory Device
-	Array Handle: 0x0009
+	Array Handle: 0x000A
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -168,70 +178,57 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x000B, DMI type 17, 84 bytes
+Handle 0x000C, DMI type 17, 84 bytes
 Memory Device
-	Array Handle: 0x0009
+	Array Handle: 0x000A
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 16384 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: DDR4
-	Type Detail: Synchronous
-	Speed: 2667 MT/s
-	Manufacturer: 0B2C
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HKED4161DAA1D0MA1   
-	Rank: 1
-	Configured Memory Speed: 2667 MT/s
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
-	Memory Technology: DRAM
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+	Memory Technology: <OUT OF SPEC>
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Not Specified
-	Module Manufacturer ID: Bank 12, Hex 0x2C
+	Module Manufacturer ID: Unknown
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 16 GB
+	Volatile Size: None
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x000C, DMI type 19, 31 bytes
+Handle 0x000D, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
-	Physical Array Handle: 0x0009
-	Partition Width: 2
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
+	Physical Array Handle: 0x000A
+	Partition Width: 1
 
-Handle 0x000D, DMI type 20, 35 bytes
+Handle 0x000E, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
-	Physical Device Handle: 0x000A
-	Memory Array Mapped Address Handle: 0x000C
-	Partition Row Position: 1
-	Interleave Position: 1
-	Interleaved Data Depth: 1
-
-Handle 0x000E, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 16 GB
 	Physical Device Handle: 0x000B
-	Memory Array Mapped Address Handle: 0x000C
+	Memory Array Mapped Address Handle: 0x000D
 	Partition Row Position: 1
-	Interleave Position: 2
-	Interleaved Data Depth: 1
 
 Handle 0x000F, DMI type 221, 26 bytes
 OEM-specific Type
@@ -317,8 +314,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -333,8 +330,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 16384 kB
-	Maximum Size: 16384 kB
+	Installed Size: 16 MB
+	Maximum Size: 16 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -384,7 +381,7 @@ Processor Information
 	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
-	Current Speed: 2892 MHz
+	Current Speed: 2893 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0014
@@ -533,7 +530,7 @@ Group Associations
 Handle 0x0026, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 26 00 01 04 01 45 02 00 90 06 01 85 36 20
+		DB 6A 26 00 01 04 01 45 02 00 90 06 01 85 32 20
 		00 00 00 00 40 00 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

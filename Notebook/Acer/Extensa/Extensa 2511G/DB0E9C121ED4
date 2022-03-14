@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 33 structures occupying 2370 bytes.
@@ -69,7 +69,7 @@ Chassis Information
 	Version: Chassis Version
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -214,8 +214,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -279,7 +279,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -292,7 +292,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: M471B5173EB0-YK0  
 	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0012, DMI type 17, 34 bytes
 Memory Device
@@ -300,7 +300,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -313,7 +313,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 99U5428-018.A00LF 
 	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0013, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -350,8 +350,8 @@ OEM-specific Type
 	Header and Data:
 		83 40 16 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 C3 9C 00 00 00 00 01 00 00 00 00 00 0A 00
-		30 04 1E 00 00 00 00 00 C8 00 FF FF 00 00 00 00
-		00 FF 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
+		30 04 1E 00 00 00 00 00 C8 00 FF FF 00 00 00 05
+		FB 24 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0017, DMI type 170, 78 bytes
 Acer Hotkey Function
@@ -369,9 +369,9 @@ Acer Hotkey Function
 Handle 0x0018, DMI type 171, 44 bytes
 OEM-specific Type
 	Header and Data:
-		AB 2C 18 00 03 E3 05 45 07 04 F2 04 20 B5 08 CA
-		04 12 20 01 86 80 16 16 01 DE 10 47 13 02 EC 10
-		68 81 05 86 80 A0 9C 07 E4 14 65 43
+		AB 2C 18 00 03 E3 05 45 07 04 F2 04 20 B5 08 87
+		80 A7 0A 01 86 80 16 16 01 DE 10 47 13 02 EC 10
+		68 81 05 86 80 A0 9C 07 86 80 FB 24
 
 Handle 0x0019, DMI type 172, 27 bytes
 OEM-specific Type

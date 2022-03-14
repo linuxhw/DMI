@@ -1,16 +1,17 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
-SMBIOS 3.0.0 present.
-Table at 0x9C73F000.
+SMBIOS 3.0 present.
+26 structures occupying 1446 bytes.
+Table at 0x000E6BF0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Insyde Corp.
-	Version: V1.03
-	Release Date: 04/29/2016
+	Version: V1.06
+	Release Date: 03/22/2018
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -31,28 +32,28 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.3
+	BIOS Revision: 1.6
 	Firmware Revision: 1.1
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Acer
 	Product Name: Aspire ES1-571
-	Version: V1.03
+	Version: V1.06
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
-	SKU Number: Aspire ES1-571_111D_1.03
+	SKU Number: Aspire ES1-571_111D_1.06
 	Family: HSW
 
 Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: Acer
 	Product Name: Aspire ES1-571
-	Version: V1.03
+	Version: V1.06
 	Serial Number: --
 	Asset Tag: --
-	Features:
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Type2 - Board Chassis Location
@@ -65,10 +66,10 @@ Chassis Information
 	Manufacturer: Acer
 	Type: Notebook
 	Lock: Not Present
-	Version: V1.03
+	Version: V1.06
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -155,8 +156,8 @@ Memory Module Information
 	Bank Connections: 0 0
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 7, 19 bytes
@@ -213,8 +214,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -257,7 +258,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -270,7 +271,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: D3L16S28MP-4G-ACER
 	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: Unknown
@@ -279,31 +280,31 @@ Handle 0x0010, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x000E
 	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
+	Part Number: CT102464BF160B.M16
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
+	Minimum Voltage: 1.5 V
+	Maximum Voltage: 1.5 V
 	Configured Voltage: Unknown
 
 Handle 0x0011, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x000E
 	Partition Width: 2
 
@@ -318,15 +319,26 @@ Memory Device Mapped Address
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x0013, DMI type 131, 64 bytes
+Handle 0x0013, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0010
+	Memory Array Mapped Address Handle: 0x0011
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 1
+
+Handle 0x0014, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 13 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 14 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 43 9C 00 00 00 00 01 00 00 00 00 00 0A 00
 		EE 03 2F 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 FF 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0014, DMI type 170, 70 bytes
+Handle 0x0015, DMI type 170, 70 bytes
 Acer Hotkey Function
 	Function bitmap for Communication Button: 0x0801
 		WiFi: Yes
@@ -339,18 +351,25 @@ Acer Hotkey Function
 	Function bitmap for Others Button: 0x0006
 	Communication Function Key Number: 4
 
-Handle 0x0015, DMI type 171, 44 bytes
+Handle 0x0016, DMI type 171, 44 bytes
 OEM-specific Type
 	Header and Data:
-		AB 2C 15 00 03 DA 0B 29 01 08 CA 04 14 30 01 86
+		AB 2C 16 00 03 DA 0B 29 01 08 CA 04 14 30 01 86
 		80 16 0A 02 EC 10 68 81 05 00 00 00 00 07 8C 16
 		36 00 0D 00 00 00 00 11 CB 06 70 29
 
-Handle 0x0016, DMI type 172, 24 bytes
+Handle 0x0017, DMI type 172, 24 bytes
 OEM-specific Type
 	Header and Data:
-		AC 18 16 00 02 23 01 FF 00 02 01 00 03 FF 00 04
+		AC 18 17 00 02 23 01 FF 00 02 01 00 03 FF 00 04
 		01 00 05 0F 00 06 FF 00
+
+Handle 0x0018, DMI type 248, 9 bytes
+OEM-specific Type
+	Header and Data:
+		F8 09 18 00 00 02 6C 00 01
+	Strings:
+		BDF
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

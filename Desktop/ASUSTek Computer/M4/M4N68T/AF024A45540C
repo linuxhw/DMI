@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 59 structures occupying 2136 bytes.
@@ -7,11 +7,11 @@ Table at 0x0009F400.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 0902   
-	Release Date: 06/12/2010
+	Version: 1102   
+	Release Date: 02/28/2011
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -155,8 +155,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -208,11 +208,11 @@ Memory Controller Information
 Handle 0x0009, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM0
-	Bank Connections: 0 4
-	Current Speed: Unknown
-	Type: Unknown
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Bank Connections: 0 7
+	Current Speed: 15 ns
+	Type: ECC DIMM
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
@@ -238,11 +238,11 @@ Memory Module Information
 Handle 0x000C, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM3
-	Bank Connections: 0 7
-	Current Speed: 50 ns
-	Type: ECC DIMM
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Bank Connections: 0 4
+	Current Speed: Unknown
+	Type: Unknown
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x000D, DMI type 8, 9 bytes
@@ -452,7 +452,7 @@ Handle 0x0026, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIEX1_1
 	Type: x1 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 6
 	Characteristics:
@@ -561,23 +561,29 @@ Handle 0x0031, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x002F
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
+	Type: Other
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer0
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum0
 
-Handle 0x0032, DMI type 126, 19 bytes
-Inactive
+Handle 0x0032, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0031
+	Memory Array Mapped Address Handle: 0x0030
+	Partition Row Position: 1
 
 Handle 0x0033, DMI type 17, 27 bytes
 Memory Device
@@ -627,29 +633,23 @@ Handle 0x0037, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x002F
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2048 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
-	Type: Other
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
 	Manufacturer: Manufacturer3
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum3
 
-Handle 0x0038, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x0037
-	Memory Array Mapped Address Handle: 0x0030
-	Partition Row Position: 1
+Handle 0x0038, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x0039, DMI type 32, 20 bytes
 System Boot Information

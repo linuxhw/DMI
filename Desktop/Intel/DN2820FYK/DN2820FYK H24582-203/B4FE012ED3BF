@@ -1,15 +1,14 @@
-# dmidecode 2.12
+# dmidecode 3.2
+Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-# SMBIOS implementations newer than version 2.7 are not
-# fully supported by this version of dmidecode.
 46 structures occupying 1996 bytes.
-Table at 0x000EBEC0.
+Table at 0xB98D2000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Intel Corp.
-	Version: FYBYT10H.86A.0053.2016.0205.1707
-	Release Date: 02/05/2016
+	Version: FYBYT10H.86A.0072.2020.0609.0913
+	Release Date: 06/09/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8192 kB
@@ -36,14 +35,14 @@ BIOS Information
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
-	Manufacturer: .................................
-	Product Name: .................................
-	Version: .................................
+	Manufacturer:                                  
+	Product Name:                                  
+	Version:                                  
 	Serial Number: --
-	UUID: --
+	CEC3095F8DD611980022520E3F3BC20E
 	Wake-up Type: Power Switch
-	SKU Number: .................................
-	Family: .................................
+	SKU Number:                                  
+	Family:                                  
 
 Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
@@ -52,7 +51,7 @@ Base Board Information
 	Version: H24582-203
 	Serial Number: --
 	Asset Tag: --
-	Features:
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: To be filled by O.E.M.
@@ -62,12 +61,12 @@ Base Board Information
 
 Handle 0x0003, DMI type 3, 25 bytes
 Chassis Information
-	Manufacturer: .................................
+	Manufacturer:                                  
 	Type: Desktop
 	Lock: Not Present
-	Version: .................................
+	Version:                                  
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148                                  
 	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Safe
@@ -302,7 +301,7 @@ On Board Device 3 Information
 	Description: Intel High Definition Audio Device
 On Board Device 4 Information
 	Type: Other
-	Status: Enabled
+	Status: Disabled
 	Description: CIR Device
 
 Handle 0x0022, DMI type 11, 5 bytes
@@ -343,16 +342,16 @@ Memory Device
 	Bank Locator: CHANNEL A Slot 0
 	Type: DDR3
 	Type Detail: Unknown
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Kingston        
 	Serial Number: --
 	Asset Tag: --
 	Part Number: ACR16D3LS1KFG/4G  
 	Rank: 1
-	Configured Clock Speed: 1333 MHz
-	Minimum voltage:  1.350 V
-	Maximum voltage:  1.500 V
-	Configured voltage:  1.350 V
+	Configured Memory Speed: 1333 MT/s
+	Minimum Voltage: 1.35 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: 1.35 V
 
 Handle 0x0027, DMI type 20, 35 bytes
 Memory Device Mapped Address

@@ -1,7 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-39 structures occupying 1993 bytes.
+39 structures occupying 2003 bytes.
 Table at 0x000E6AA0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -69,7 +69,7 @@ Chassis Information
 	Version: V1.13
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -217,7 +217,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
@@ -225,12 +225,12 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 666 MT/s
-	Manufacturer: Unknown
+	Manufacturer: A-DATA Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT112S6TFR8C-H9  
-	Rank: 1
-	Configured Clock Speed: 1333 MT/s
+	Part Number: AD73I1C1674EV     
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0012, DMI type 6, 12 bytes
 Memory Module Information
@@ -238,15 +238,15 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 1024 MB (Single-bank Connection)
-	Enabled Size: 1024 MB (Single-bank Connection)
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0013, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0011
 	Memory Array Mapped Address Handle: 0x001B
 	Partition Row Position: Unknown
@@ -272,7 +272,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Empty
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0015, DMI type 6, 12 bytes
 Memory Module Information
@@ -290,7 +290,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -303,7 +303,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: AD73I1C1674EV     
 	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0017, DMI type 6, 12 bytes
 Memory Module Information
@@ -345,7 +345,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Empty
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x001A, DMI type 6, 12 bytes
 Memory Module Information
@@ -360,8 +360,8 @@ Memory Module Information
 Handle 0x001B, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0013FFFFFFF
-	Range Size: 5 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0010
 	Partition Width: 4
 
@@ -533,8 +533,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown

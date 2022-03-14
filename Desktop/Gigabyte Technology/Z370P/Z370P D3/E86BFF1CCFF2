@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0xCEE6D000.
@@ -623,7 +623,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
@@ -634,8 +634,8 @@ Memory Device
 	Manufacturer: 029E
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMK16GX4M2B3000C15  
-	Rank: 1
+	Part Number: CMK32GX4M2D3600C18  
+	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -671,7 +671,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
@@ -682,8 +682,8 @@ Memory Device
 	Manufacturer: 029E
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMK16GX4M2B3000C15  
-	Rank: 1
+	Part Number: CMK32GX4M2D3600C18  
+	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -692,8 +692,8 @@ Memory Device
 Handle 0x0042, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x003D
 	Partition Width: 2
 
@@ -735,8 +735,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 9216 kB
-	Maximum Size: 9216 kB
+	Installed Size: 9 MB
+	Maximum Size: 9 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -783,7 +783,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
-	Voltage: 1.1 V
+	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
 	Current Speed: 3800 MHz
@@ -808,8 +808,8 @@ Processor Information
 Handle 0x0047, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x003F
 	Memory Array Mapped Address Handle: 0x0042
 	Partition Row Position: Unknown
@@ -818,9 +818,9 @@ Memory Device Mapped Address
 
 Handle 0x0048, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00400000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0041
 	Memory Array Mapped Address Handle: 0x0042
 	Partition Row Position: Unknown
@@ -954,7 +954,7 @@ Group Associations
 Handle 0x0053, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 53 00 01 03 01 55 02 00 90 06 03 10 80 20
+		DB 51 53 00 01 03 01 55 02 00 90 06 03 10 86 20
 		00 00 00 00 40 08 00 00 00 00 00 00 00 00 00 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

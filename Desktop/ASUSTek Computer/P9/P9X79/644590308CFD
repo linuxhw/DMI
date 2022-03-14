@@ -488,8 +488,8 @@ Physical Memory Array
 Handle 0x002E, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00BFFFFFFFF
-	Range Size: 48 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Array Handle: 0x002D
 	Partition Width: 1
 
@@ -593,25 +593,33 @@ Handle 0x0035, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002D
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB_Dimm2
 	Bank Locator: ChannelB
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: ChannelB_Dimm2_Manufacturer
+	Speed: 1333 MT/s
+	Manufacturer: Undefined                  
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ChannelB_Dimm2_PartNum
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: GR1600D364L11/8G      
+	Rank: 2
+	Configured Clock Speed: 1333 MT/s
 
-Handle 0x0036, DMI type 126, 35 bytes
-Inactive
+Handle 0x0036, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0035
+	Memory Array Mapped Address Handle: 0x002E
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x0037, DMI type 17, 34 bytes
 Memory Device
@@ -636,8 +644,8 @@ Memory Device
 
 Handle 0x0038, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00600000000
-	Ending Address: 0x007FFFFFFFF
+	Starting Address: 0x00800000000
+	Ending Address: 0x009FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x0037
 	Memory Array Mapped Address Handle: 0x002E
@@ -668,8 +676,8 @@ Memory Device
 
 Handle 0x003A, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00800000000
-	Ending Address: 0x009FFFFFFFF
+	Starting Address: 0x00A00000000
+	Ending Address: 0x00BFFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x0039
 	Memory Array Mapped Address Handle: 0x002E
@@ -700,8 +708,8 @@ Memory Device
 
 Handle 0x003C, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00A00000000
-	Ending Address: 0x00BFFFFFFFF
+	Starting Address: 0x00C00000000
+	Ending Address: 0x00DFFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x003B
 	Memory Array Mapped Address Handle: 0x002E
@@ -713,25 +721,33 @@ Handle 0x003D, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002D
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelD_Dimm2
 	Bank Locator: ChannelD
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: ChannelD_Dimm2_Manufacturer
+	Speed: 1333 MT/s
+	Manufacturer: Undefined                  
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ChannelD_Dimm2_PartNum
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: GR1600D364L11/8G      
+	Rank: 2
+	Configured Clock Speed: 1333 MT/s
 
-Handle 0x003E, DMI type 126, 35 bytes
-Inactive
+Handle 0x003E, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00E00000000
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x003D
+	Memory Array Mapped Address Handle: 0x002E
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x003F, DMI type 32, 20 bytes
 System Boot Information

@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-62 structures occupying 2622 bytes.
+62 structures occupying 2606 bytes.
 Table at 0x000E0840.
 
 Handle 0x0005, DMI type 0, 24 bytes
@@ -41,7 +41,7 @@ System Information
 	Version: Lenovo Z580                     
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: Other
 	SKU Number: System SKUNumber
 	Family: IDEAPAD Z580   
 
@@ -116,7 +116,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz
-	Voltage: 0.9 V
+	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 2500 MHz
 	Current Speed: 2500 MHz
@@ -590,7 +590,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -598,10 +598,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT125S6TFR8C-H9  
+	Part Number: 16JSF51264HZ-1G4D1
 	Rank: Unknown
 	Configured Memory Speed: 1333 MT/s
 
@@ -619,20 +619,20 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Micron
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 16JSF51264HZ-1G4D1
+	Part Number: HMT351S6CFR8C-PB  
 	Rank: Unknown
 	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0037, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0035
-	Memory Array Mapped Address Handle: 0x003A
+	Memory Array Mapped Address Handle: 0x0039
 	Partition Row Position: 1
 	Interleave Position: 1
 	Interleaved Data Depth: 2
@@ -640,48 +640,39 @@ Memory Device Mapped Address
 Handle 0x0038, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0035
-	Memory Array Mapped Address Handle: 0x003A
+	Memory Array Mapped Address Handle: 0x0039
 	Partition Row Position: 1
 	Interleave Position: 2
 	Interleaved Data Depth: 2
 
-Handle 0x0039, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x0036
-	Memory Array Mapped Address Handle: 0x003A
-	Partition Row Position: 1
-
-Handle 0x003A, DMI type 19, 31 bytes
+Handle 0x0039, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0034
 	Partition Width: 2
 
-Handle 0x003B, DMI type 133, 5 bytes
+Handle 0x003A, DMI type 133, 5 bytes
 OEM-specific Type
 	Header and Data:
-		85 05 3B 00 01
+		85 05 3A 00 01
 	Strings:
 		KHOIHGIUCCHHII
 
-Handle 0x003C, DMI type 15, 81 bytes
+Handle 0x003B, DMI type 15, 81 bytes
 System Event Log
-	Area Length: 82 bytes
+	Area Length: 162 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000004
+	Change Token: 0x00000009
 	Header Format: Type 1
 	Supported Log Type Descriptors: 29
 	Descriptor 1: Single-bit ECC memory error
@@ -742,6 +733,13 @@ System Event Log
 	Data Format 28: None
 	Descriptor 29: OEM-specific
 	Data Format 29: None
+
+Handle 0x003C, DMI type 133, 5 bytes
+OEM-specific Type
+	Header and Data:
+		85 05 3C 00 01
+	Strings:
+		KHOIHGIUCCHHII
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

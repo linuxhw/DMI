@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
 Table at 0x7A9A3000.
@@ -580,7 +580,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -604,7 +604,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -656,7 +656,7 @@ OEM-specific Type
 	Header and Data:
 		DD 59 40 00 0C 01 00 07 00 38 30 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 30 00 05 00 FF FF FF 30
-		00 06 00 10 05 00 00 00 07 00 02 00 00 00 00 08
+		00 06 00 FF FF FF FF FF 07 00 02 00 00 00 00 08
 		00 09 00 00 00 00 09 00 08 00 00 00 00 0A 00 13
 		00 00 00 00 0B 00 07 00 00 00 00 0C 00 06 00 00
 		00 00 0D 00 07 00 00 00 00
@@ -721,8 +721,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -737,8 +737,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -995,17 +995,9 @@ Onboard Device
 	Type: Other
 	Status: Enabled
 	Type Instance: 10
-	Bus Address: 0000:00:17.0
-
-Handle 0x006F, DMI type 41, 11 bytes
-Onboard Device
-	Reference Designation: Onboard - Other
-	Type: Other
-	Status: Enabled
-	Type Instance: 11
 	Bus Address: 0000:00:1f.0
 
-Handle 0x0070, DMI type 41, 11 bytes
+Handle 0x006F, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Sound
 	Type: Sound
@@ -1013,26 +1005,26 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:1f.3
 
+Handle 0x0070, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - Other
+	Type: Other
+	Status: Enabled
+	Type Instance: 11
+	Bus Address: 0000:00:1f.4
+
 Handle 0x0071, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
 	Type Instance: 12
-	Bus Address: 0000:00:1f.4
-
-Handle 0x0072, DMI type 41, 11 bytes
-Onboard Device
-	Reference Designation: Onboard - Other
-	Type: Other
-	Status: Enabled
-	Type Instance: 13
 	Bus Address: 0000:00:1f.5
 
-Handle 0x0073, DMI type 221, 89 bytes
+Handle 0x0072, DMI type 221, 89 bytes
 OEM-specific Type
 	Header and Data:
-		DD 59 73 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
+		DD 59 72 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
 		00 FF FF FF FF FF 0B 00 01 08 00 00 00 0C 00 00
@@ -1056,12 +1048,12 @@ OEM-specific Type
 		Platform Version
 		Client Silicon Version
 
-Handle 0x0074, DMI type 136, 6 bytes
+Handle 0x0073, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 74 00 00 00
+		88 06 73 00 00 00
 
-Handle 0x0075, DMI type 14, 23 bytes
+Handle 0x0074, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 6
@@ -1070,19 +1062,19 @@ Group Associations
 		0x0040 (OEM-specific)
 		0x0041 (OEM-specific)
 		0x0042 (OEM-specific)
-		0x0073 (OEM-specific)
+		0x0072 (OEM-specific)
 
-Handle 0x0076, DMI type 14, 8 bytes
+Handle 0x0075, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x0077, DMI type 219, 106 bytes
+Handle 0x0076, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 77 00 01 04 01 45 02 00 90 00 01 85 30 20
-		00 00 00 00 40 00 00 01 1F 00 00 08 0B 40 44 02
+		DB 6A 76 00 01 04 01 45 02 00 90 00 01 85 30 20
+		00 00 00 04 40 00 00 01 1F 00 00 08 0B 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -1094,6 +1086,6 @@ OEM-specific Type
 		MEI3
 		MEI4
 
-Handle 0x0078, DMI type 127, 4 bytes
+Handle 0x0077, DMI type 127, 4 bytes
 End Of Table
 

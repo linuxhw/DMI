@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 29 structures occupying 1046 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 09/26/2008
 	Address: 0xE47C0
 	Runtime Size: 112704 bytes
-	ROM Size: 1 MB
+	ROM Size: 1024 kB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -106,8 +106,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6 MB
-	Maximum Size: 4 MB
+	Installed Size: 6144 kB
+	Maximum Size: 4096 kB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -153,7 +153,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: 1
 	Locator: J400
@@ -172,7 +172,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: 3
 	Locator: J501
@@ -253,7 +253,7 @@ Hardware Security
 	Front Panel Reset Status: Unknown
 
 Handle 0x0014, DMI type 25, 9 bytes
-System Power Controls
+	System Power Controls
 	Next Scheduled Power-on: 12-31 23:59:59
 
 Handle 0x0015, DMI type 26, 22 bytes

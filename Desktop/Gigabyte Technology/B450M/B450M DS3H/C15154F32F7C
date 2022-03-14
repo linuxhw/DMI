@@ -1,13 +1,15 @@
-# dmidecode 3.3
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
-SMBIOS 3.2.0 present.
+SMBIOS 3.3.0 present.
+# SMBIOS implementations newer than version 3.2.0 are not
+# fully supported by this version of dmidecode.
 Table at 0x000E8D60.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
-	Vendor: American Megatrends Inc.
-	Version: F50
-	Release Date: 11/27/2019
+	Vendor: American Megatrends International, LLC.
+	Version: F62d
+	Release Date: 10/13/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -19,18 +21,22 @@ BIOS Information
 		Selectable boot is supported
 		BIOS ROM is socketed
 		EDD is supported
+		Japanese floppy for NEC 9800 1.2 MB is supported (int 13h)
+		Japanese floppy for Toshiba 1.2 MB is supported (int 13h)
+		5.25"/360 kB floppy services are supported (int 13h)
 		5.25"/1.2 MB floppy services are supported (int 13h)
 		3.5"/720 kB floppy services are supported (int 13h)
 		3.5"/2.88 MB floppy services are supported (int 13h)
 		Print screen service is supported (int 5h)
 		Serial services are supported (int 14h)
 		Printer services are supported (int 17h)
+		CGA/mono video services are supported (int 10h)
 		ACPI is supported
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 5.14
+	BIOS Revision: 5.17
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -41,13 +47,13 @@ System Information
 	UUID: --
 	Wake-up Type: Power Switch
 	SKU Number: Default string
-	Family: Default string
+	Family: B450 MB
 
 Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: Gigabyte Technology Co., Ltd.
 	Product Name: B450M DS3H-CF
-	Version: x.x
+	Version: Default string
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -94,7 +100,12 @@ Handle 0x0007, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0008, DMI type 18, 23 bytes
+Handle 0x0008, DMI type 44, 9 bytes
+Unknown Type
+	Header and Data:
+		2C 09 08 00 FF FF 01 01 00
+
+Handle 0x0009, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -104,32 +115,32 @@ Handle 0x0008, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0009, DMI type 16, 23 bytes
+Handle 0x000A, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
 	Maximum Capacity: 128 GB
-	Error Information Handle: 0x0008
+	Error Information Handle: 0x0009
 	Number Of Devices: 4
-
-Handle 0x000A, DMI type 19, 31 bytes
-Memory Array Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000DFFFFFFF
-	Range Size: 3584 MB
-	Physical Array Handle: 0x0009
-	Partition Width: 2
 
 Handle 0x000B, DMI type 19, 31 bytes
 Memory Array Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x0041FFFFFFF
-	Range Size: 12800 MB
-	Physical Array Handle: 0x0009
+	Starting Address: 0x00000000000
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 3 GB
+	Physical Array Handle: 0x000A
 	Partition Width: 2
 
-Handle 0x000C, DMI type 7, 27 bytes
+Handle 0x000C, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x0043FFFFFFF
+	Range Size: 13 GB
+	Physical Array Handle: 0x000A
+	Partition Width: 2
+
+Handle 0x000D, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1 - Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -145,14 +156,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x000D, DMI type 7, 27 bytes
+Handle 0x000E, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L2 - Cache
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2 MB
-	Maximum Size: 2 MB
+	Installed Size: 2048 kB
+	Maximum Size: 2048 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -161,14 +172,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x000E, DMI type 7, 27 bytes
+Handle 0x000F, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L3 - Cache
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 16 MB
-	Maximum Size: 16 MB
+	Installed Size: 16384 kB
+	Maximum Size: 16384 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -177,7 +188,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x000F, DMI type 4, 48 bytes
+Handle 0x0010, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: AM4
 	Type: Central Processor
@@ -216,9 +227,9 @@ Processor Information
 	Current Speed: 3600 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
-	L1 Cache Handle: 0x000C
-	L2 Cache Handle: 0x000D
-	L3 Cache Handle: 0x000E
+	L1 Cache Handle: 0x000D
+	L2 Cache Handle: 0x000E
+	L3 Cache Handle: 0x000F
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Unknown
@@ -233,7 +244,7 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0010, DMI type 18, 23 bytes
+Handle 0x0011, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -243,10 +254,10 @@ Handle 0x0010, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0011, DMI type 17, 84 bytes
+Handle 0x0012, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x0009
-	Error Information Handle: 0x0010
+	Array Handle: 0x000A
+	Error Information Handle: 0x0011
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
@@ -278,7 +289,7 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0012, DMI type 18, 23 bytes
+Handle 0x0013, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -288,13 +299,13 @@ Handle 0x0012, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0013, DMI type 17, 84 bytes
+Handle 0x0014, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x0009
-	Error Information Handle: 0x0012
+	Array Handle: 0x000A
+	Error Information Handle: 0x0013
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -323,18 +334,18 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0014, DMI type 20, 35 bytes
+Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
-	Physical Device Handle: 0x0013
-	Memory Array Mapped Address Handle: 0x000B
+	Physical Device Handle: 0x0014
+	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0015, DMI type 18, 23 bytes
+Handle 0x0016, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -344,10 +355,10 @@ Handle 0x0015, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0016, DMI type 17, 84 bytes
+Handle 0x0017, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x0009
-	Error Information Handle: 0x0015
+	Array Handle: 0x000A
+	Error Information Handle: 0x0016
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
@@ -379,7 +390,7 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0017, DMI type 18, 23 bytes
+Handle 0x0018, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -389,13 +400,13 @@ Handle 0x0017, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0018, DMI type 17, 84 bytes
+Handle 0x0019, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x0009
-	Error Information Handle: 0x0017
+	Array Handle: 0x000A
+	Error Information Handle: 0x0018
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -424,37 +435,16 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0019, DMI type 20, 35 bytes
+Handle 0x001A, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
-	Physical Device Handle: 0x0018
-	Memory Array Mapped Address Handle: 0x000B
+	Physical Device Handle: 0x0019
+	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
-
-Handle 0x001A, DMI type 13, 22 bytes
-BIOS Language Information
-	Language Description Format: Long
-	Installable Languages: 15
-		en|US|iso8859-1
-		zh|TW|unicode
-		zh|CN|unicode
-		ru|RU|iso8859-5
-		de|DE|iso8859-1
-		ja|JP|unicode
-		ko|KR|unicode
-		es|ES|iso8859-1
-		fr|FR|iso8859-1
-		it|IT|iso8859-1
-		pt|PT|iso8859-1
-		vi|VI|iso8859-1
-		id|ID|iso8859-1
-		tr|TR|iso8859-1
-		pl|PL|iso8859-1
-	Currently Installed Language: en|US|iso8859-1
 
 Handle 0x001B, DMI type 8, 9 bytes
 Port Connector Information
@@ -606,7 +596,7 @@ System Slot Information
 	Type: x16 PCI Express x16
 	Current Usage: In Use
 	Length: Short
-	ID: 56
+	ID: 12
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
@@ -618,7 +608,7 @@ System Slot Information
 	Type: x8 PCI Express x8
 	Current Usage: Available
 	Length: Short
-	ID: 57
+	ID: 13
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
@@ -632,6 +622,27 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:03:00.0
 
-Handle 0x0030, DMI type 127, 4 bytes
+Handle 0x0030, DMI type 13, 22 bytes
+BIOS Language Information
+	Language Description Format: Long
+	Installable Languages: 15
+		en|US|iso8859-1
+		zh|TW|unicode
+		zh|CN|unicode
+		ru|RU|iso8859-5
+		de|DE|iso8859-1
+		ja|JP|unicode
+		ko|KR|unicode
+		es|ES|iso8859-1
+		fr|FR|iso8859-1
+		it|IT|iso8859-1
+		pt|PT|iso8859-1
+		vi|VI|iso8859-1
+		id|ID|iso8859-1
+		tr|TR|iso8859-1
+		pl|PL|iso8859-1
+	Currently Installed Language: en|US|iso8859-1
+
+Handle 0x0031, DMI type 127, 4 bytes
 End Of Table
 
