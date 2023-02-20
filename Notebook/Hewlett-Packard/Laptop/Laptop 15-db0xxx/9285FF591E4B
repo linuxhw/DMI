@@ -1,13 +1,13 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
-Table at 0xBC469000.
+Table at 0x8BEFF000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Insyde
-	Version: F.16
-	Release Date: 12/14/2018
+	Version: F.37
+	Release Date: 08/24/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 8 MB
@@ -31,8 +31,8 @@ BIOS Information
 		USB legacy is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.16
-	Firmware Revision: 86.21
+	BIOS Revision: 15.37
+	Firmware Revision: 86.32
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -49,7 +49,7 @@ Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 84AE
-	Version: 86.21
+	Version: 86.32
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -304,7 +304,7 @@ Port Connector Information
 
 Handle 0x0017, DMI type 9, 17 bytes
 System Slot Information
-	Designation: J3600
+	Designation: J3606
 	Type: x1 PCI Express x1
 	Current Usage: Available
 	Length: Short
@@ -313,11 +313,11 @@ System Slot Information
 		3.3 V is provided
 		PME signal is supported
 		Hot-plug devices are supported
-	Bus Address: 0200:00:02.2
+	Bus Address: 0200:00:01.3
 
 Handle 0x0018, DMI type 9, 17 bytes
 System Slot Information
-	Designation: J3700
+	Designation: J3704
 	Type: x1 PCI Express x1
 	Current Usage: Available
 	Length: Short
@@ -326,11 +326,11 @@ System Slot Information
 		3.3 V is provided
 		PME signal is supported
 		Hot-plug devices are supported
-	Bus Address: 0200:00:02.2
+	Bus Address: 0200:00:01.7
 
 Handle 0x0019, DMI type 9, 17 bytes
 System Slot Information
-	Designation: J3605
+	Designation: J3604
 	Type: x8 PCI Express x8
 	Current Usage: Available
 	Length: Short
@@ -339,11 +339,11 @@ System Slot Information
 		3.3 V is provided
 		PME signal is supported
 		Hot-plug devices are supported
-	Bus Address: 0200:00:02.2
+	Bus Address: 0200:00:00.5
 
 Handle 0x001A, DMI type 9, 17 bytes
 System Slot Information
-	Designation: J3702
+	Designation: J3712
 	Type: x1 Other
 	Current Usage: Available
 	Length: Short
@@ -355,15 +355,15 @@ System Slot Information
 
 Handle 0x001B, DMI type 9, 17 bytes
 System Slot Information
-	Designation: J3703
+	Designation: J3711
 	Type: x1 Other
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
 		Hot-plug devices are supported
-	Bus Address: 0200:00:02.5
+	Bus Address: 0200:00:01.2
 
 Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
@@ -435,10 +435,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2400 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471A1K43BB1-CRC    
+	Part Number: KHX2666C15S4/8G     
 	Rank: 1
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
@@ -459,10 +459,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2400 MT/s
-	Manufacturer: Kingston
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX2666C15S4/8G     
+	Part Number: M471A1K43BB1-CRC    
 	Rank: 1
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
@@ -545,7 +545,14 @@ Portable Battery
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x000A070C
 
-Handle 0x002B, DMI type 26, 22 bytes
+Handle 0x002B, DMI type 24, 5 bytes
+Hardware Security
+	Power-On Password Status: Disabled
+	Keyboard Password Status: Not Implemented
+	Administrator Password Status: Disabled
+	Front Panel Reset Status: Not Implemented
+
+Handle 0x002C, DMI type 26, 22 bytes
 Voltage Probe
 	Description: Voltage Probe Description
 	Location: Unknown
@@ -558,11 +565,11 @@ Voltage Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x002C, DMI type 32, 20 bytes
+Handle 0x002D, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x002D, DMI type 40, 18 bytes
+Handle 0x002E, DMI type 40, 18 bytes
 Additional Information 1
 	Referenced Handle: 0x0018
 	Referenced Offset: 0x05
@@ -574,21 +581,13 @@ Additional Information 2
 	String: Compiler Version: VC 9.0
 	Value: 0x05dc
 
-Handle 0x002E, DMI type 41, 11 bytes
+Handle 0x002F, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Hanksville Gbe Lan Connection
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 1
 	Bus Address: 0000:02:00.0
-
-Handle 0x002F, DMI type 41, 11 bytes
-Onboard Device
-	Reference Designation: WLAN
-	Type: Other
-	Status: Enabled
-	Type Instance: 1
-	Bus Address: 0000:03:00.0
 
 Handle 0x0030, DMI type 41, 11 bytes
 Onboard Device

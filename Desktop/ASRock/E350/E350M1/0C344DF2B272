@@ -185,15 +185,15 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 4 GB
+	Maximum Capacity: 16 GB
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
 Handle 0x000B, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x000A
 	Partition Width: 255
 
@@ -203,7 +203,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM0
@@ -214,15 +214,15 @@ Memory Device
 	Manufacturer: Nanya           
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M2F4GH64CB8HB6N-DI
+	Part Number: M2F8G64CB8HD5N-DI 
 	Rank: 2
 	Configured Memory Speed: Unknown
 
 Handle 0x000D, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x000C
 	Memory Array Mapped Address Handle: 0x000B
 	Partition Row Position: 1
@@ -231,25 +231,31 @@ Handle 0x000E, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000A
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM1
 	Bank Locator: A1_BANK1
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer1
+	Speed: 800 MT/s
+	Manufacturer: Nanya           
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber1
-	Rank: Unknown
+	Part Number: M2F8G64CC8HD5N-DI 
+	Rank: 2
 	Configured Memory Speed: 20888 MT/s
 
-Handle 0x000F, DMI type 126, 35 bytes
-Inactive
+Handle 0x000F, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x000E
+	Memory Array Mapped Address Handle: 0x000B
+	Partition Row Position: 1
 
 Handle 0x0010, DMI type 32, 20 bytes
 System Boot Information

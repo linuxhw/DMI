@@ -127,9 +127,9 @@ Memory Module Information
 	Socket Designation: A1
 	Bank Connections: 2
 	Current Speed: Unknown
-	Type: Other
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Type: Unknown
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x0008, DMI type 6, 12 bytes
@@ -158,8 +158,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 64 kB
-	Maximum Size: 64 kB
+	Installed Size: 23933 kB
+	Maximum Size: 23933 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -174,7 +174,7 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
+	Installed Size: 0 kB
 	Maximum Size: 2048 kB
 	Supported SRAM Types:
 		Synchronous
@@ -331,16 +331,16 @@ Handle 0x001B, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0019
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2048 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: A1
 	Bank Locator: Bank2/3
 	Type: Unknown
 	Type Detail: None
-	Speed: 800 MT/s
+	Speed: Unknown
 	Manufacturer:  
 	Serial Number: --
 	271882FD79060B21C43F805A2DE81148  
@@ -387,8 +387,8 @@ Memory Device
 Handle 0x001E, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0019
 	Partition Width: 1
 
@@ -403,17 +403,17 @@ Memory Device Mapped Address
 
 Handle 0x0020, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00000000000
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
 	Physical Device Handle: 0x001B
 	Memory Array Mapped Address Handle: 0x001E
 	Partition Row Position: 1
 
 Handle 0x0021, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x0017FFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x001C
 	Memory Array Mapped Address Handle: 0x001E

@@ -1,17 +1,17 @@
-# dmidecode 3.0
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-77 structures occupying 3146 bytes.
-Table at 0x000EC130.
+79 structures occupying 3248 bytes.
+Table at 0x000ECF50.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: F5
-	Release Date: 06/26/2014
+	Version: F9c
+	Release Date: 03/03/2016
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -672,8 +672,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -688,8 +688,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -713,62 +713,62 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: 99U5474-038.A00LF 
 	Rank: 1
-	Configured Clock Speed: 1333 MHz
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0044, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0042
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: HMT351U6EFR8C-PB  
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0045, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0042
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: 0000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number:                   
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0046, DMI type 17, 34 bytes
 Memory Device
@@ -776,26 +776,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 3
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: 0000
 	Serial Number: --
 	Asset Tag: --
 	Part Number:                   
-	Rank: 2
-	Configured Clock Speed: 1333 MHz
+	Rank: 1
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0047, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 12 GB
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 20 GB
 	Physical Array Handle: 0x0042
 	Partition Width: 4
 
@@ -812,6 +812,17 @@ Memory Device Mapped Address
 
 Handle 0x0049, DMI type 20, 35 bytes
 Memory Device Mapped Address
+	Starting Address: 0x00300000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0046
+	Memory Array Mapped Address Handle: 0x0047
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 2
+
+Handle 0x004A, DMI type 20, 35 bytes
+Memory Device Mapped Address
 	Starting Address: 0x00100000000
 	Ending Address: 0x002FFFFFFFF
 	Range Size: 8 GB
@@ -821,12 +832,23 @@ Memory Device Mapped Address
 	Interleave Position: 2
 	Interleaved Data Depth: 2
 
-Handle 0x004A, DMI type 136, 6 bytes
+Handle 0x004B, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00400000000
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0046
+	Memory Array Mapped Address Handle: 0x0047
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x004C, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 4A 00 00 00
+		88 06 4C 00 00 00
 
-Handle 0x004B, DMI type 13, 22 bytes
+Handle 0x004D, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 7
@@ -839,14 +861,14 @@ BIOS Language Information
 		zh|CT|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0050, DMI type 131, 64 bytes
+Handle 0x0052, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 50 00 35 00 00 00 00 00 00 00 00 00 00 00
+		83 40 52 00 35 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 00 00 00 00 00 00 01 00 00 00 01 00 09 00
-		60 04 00 00 00 00 00 00 C8 00 00 00 00 00 00 00
+		ED 03 19 00 00 00 00 00 C8 00 00 00 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0051, DMI type 127, 4 bytes
+Handle 0x0053, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,8 +1,8 @@
 # dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1 present.
-92 structures occupying 6288 bytes.
-Table at 0x56882000.
+91 structures occupying 5988 bytes.
+Table at 0x5686A000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -162,8 +162,8 @@ OEM-specific Type
 Handle 0x0001, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.4.1
-	Release Date: 11/23/2020
+	Version: 1.10.0
+	Release Date: 02/10/2022
 	ROM Size: 16064 kB
 	Characteristics:
 		PCI is supported
@@ -185,7 +185,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.4
+	BIOS Revision: 1.10
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -209,7 +209,7 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Not Specified
-	Chassis Handle: 0x0000
+	Chassis Handle: 0x0300
 	Type: Motherboard
 	Contained Object Handles: 0
 
@@ -279,8 +279,8 @@ Processor Information
 	L2 Cache Handle: 0x0702
 	L3 Cache Handle: 0x0703
 	Serial Number: --
-	Asset Tag: --
-	Part Number: To Be Filled By O.E.M.
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 	Core Count: 4
 	Core Enabled: 4
 	Thread Count: 8
@@ -663,13 +663,6 @@ Portable Battery
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000801
 
-Handle 0x1800, DMI type 24, 5 bytes
-Hardware Security
-	Power-On Password Status: Not Implemented
-	Keyboard Password Status: Not Implemented
-	Administrator Password Status: Not Implemented
-	Front Panel Reset Status: Not Implemented
-
 Handle 0x1900, DMI type 25, 9 bytes
 	System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
@@ -775,13 +768,13 @@ System Boot Information
 Handle 0x2700, DMI type 39, 22 bytes
 System Power Supply
 	Power Unit Group: 1
-	Location: To Be Filled by O.E.M.
-	Name: To Be Filled by O.E.M.
-	Manufacturer: To Be Filled by O.E.M.
+	Location:  
+	Name:  
+	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
-	Model Part Number: To Be Filled by O.E.M.
-	Revision: To Be Filled by O.E.M.
+	271882FD79060B21C43F805A2DE81148  
+	Model Part Number:  
+	Revision:  
 	Max Power Capacity: Unknown
 	Status: Present, Unknown
 	Type: Unknown
@@ -794,7 +787,7 @@ System Power Supply
 
 Handle 0x2900, DMI type 41, 11 bytes
 Onboard Device
-	Reference Designation: To Be Filled by O.E.M.
+	Reference Designation:  
 	Type: Video
 	Status: Enabled
 	Type Instance: 0
@@ -802,7 +795,7 @@ Onboard Device
 
 Handle 0x2901, DMI type 41, 11 bytes
 Onboard Device
-	Reference Designation: To Be Filled by O.E.M.
+	Reference Designation:  
 	Type: Ethernet
 	Status: Disabled
 	Type Instance: 0
@@ -810,7 +803,7 @@ Onboard Device
 
 Handle 0x2902, DMI type 41, 11 bytes
 Onboard Device
-	Reference Designation: To Be Filled by O.E.M.
+	Reference Designation:  
 	Type: Sound
 	Status: Disabled
 	Type Instance: 0
@@ -818,7 +811,7 @@ Onboard Device
 
 Handle 0x2903, DMI type 41, 11 bytes
 Onboard Device
-	Reference Designation: To Be Filled by O.E.M.
+	Reference Designation:  
 	Type: SATA Controller
 	Status: Disabled
 	Type Instance: 0
@@ -846,7 +839,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 00 83 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 82 34 00 00 00 00 01 00 00 00 00 00 0D 00
-		3A 06 28 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		33 08 37 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x8800, DMI type 136, 8 bytes
@@ -874,8 +867,8 @@ OEM-specific Type
 Handle 0xCB00, DMI type 203, 106 bytes
 OEM-specific Type
 	Header and Data:
-		CB 6A 00 CB 01 04 01 45 02 00 A0 06 01 8A 30 20
-		00 00 00 04 48 00 00 03 1F 00 00 C9 0B C0 47 02
+		CB 6A 00 CB 01 04 01 45 02 00 90 06 01 10 80 20
+		00 00 00 04 40 00 00 03 1F 00 00 C9 0B C0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -898,7 +891,7 @@ Handle 0xCD01, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 01 CD 03 01 00 08 00 51 30 00 02 00 00 00
-		00 A0 00 03 00 FF FF FF FF FF
+		00 A8 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -908,7 +901,7 @@ Handle 0xCD02, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 02 CD 03 01 00 08 00 51 30 00 02 00 00 00
-		00 00 00 03 04 0D 00 28 3A 06
+		00 00 00 03 04 0D 00 37 33 08
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -992,7 +985,7 @@ OEM-specific Type
 Handle 0xD000, DMI type 208, 16 bytes
 OEM-specific Type
 	Header and Data:
-		D0 10 00 D0 03 0A FE 00 6D 09 01 02 00 00 00 00
+		D0 10 00 D0 03 11 FE 00 6D 09 01 02 00 00 00 00
 	Strings:
 		20200429
 		20200506
@@ -1064,7 +1057,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 20 12 16 19 44 01 00 00
+		DE 10 00 DE 01 04 00 00 22 04 02 16 21 01 00 00
 
 Handle 0xF800, DMI type 248, 9 bytes
 OEM-specific Type

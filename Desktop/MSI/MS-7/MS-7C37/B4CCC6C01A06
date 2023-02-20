@@ -1,14 +1,14 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-61 structures occupying 2579 bytes.
-Table at 0xCDA04000.
+61 structures occupying 2590 bytes.
+Table at 0xACA07000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: A.C0
-	Release Date: 01/25/2021
+	Version: A.F0
+	Release Date: 12/16/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -190,7 +190,17 @@ Unknown Type
 	Header and Data:
 		2C 09 0E 00 FF FF 01 01 00
 
-Handle 0x000F, DMI type 18, 23 bytes
+Handle 0x000F, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: AMD
+	Specification Version: 2.0
+	Firmware Revision: 3.76
+	Description: AMD
+	Characteristics:
+		Family configurable via platform software support
+	OEM-specific Information: 0x00000000
+
+Handle 0x0010, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -200,29 +210,21 @@ Handle 0x000F, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0010, DMI type 16, 23 bytes
+Handle 0x0011, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
 	Maximum Capacity: 128 GB
-	Error Information Handle: 0x000F
+	Error Information Handle: 0x0010
 	Number Of Devices: 4
-
-Handle 0x0011, DMI type 19, 31 bytes
-Memory Array Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000CFFFFFFF
-	Range Size: 3328 MB
-	Physical Array Handle: 0x0010
-	Partition Width: 4
 
 Handle 0x0012, DMI type 19, 31 bytes
 Memory Array Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x00C2FFFFFFF
-	Range Size: 45824 MB
-	Physical Array Handle: 0x0010
+	Starting Address: 0x00000000000
+	Ending Address: 0x00BFFFFFFFF
+	Range Size: 48 GB
+	Physical Array Handle: 0x0011
 	Partition Width: 4
 
 Handle 0x0013, DMI type 7, 19 bytes
@@ -263,8 +265,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 32 MB
-	Maximum Size: 32 MB
+	Installed Size: 16 MB
+	Maximum Size: 16 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -279,8 +281,8 @@ Processor Information
 	Type: Central Processor
 	Family: Zen
 	Manufacturer: Advanced Micro Devices, Inc.
-	ID: 10 0F 87 00 FF FB 8B 17
-	Signature: Family 23, Model 113, Stepping 0
+	ID: 00 0F A5 00 FF FB 8B 17
+	Signature: Family 25, Model 80, Stepping 0
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -305,11 +307,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Ryzen 5 3600 6-Core Processor              
-	Voltage: 1.1 V
+	Version: AMD Ryzen 5 5600G with Radeon Graphics         
+	Voltage: 1.4 V
 	External Clock: 100 MHz
-	Max Speed: 4200 MHz
-	Current Speed: 3600 MHz
+	Max Speed: 4450 MHz
+	Current Speed: 3900 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
 	L1 Cache Handle: 0x0013
@@ -341,7 +343,7 @@ Handle 0x0017, DMI type 18, 23 bytes
 
 Handle 0x0018, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0010
+	Array Handle: 0x0011
 	Error Information Handle: 0x0017
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -386,7 +388,7 @@ Handle 0x001A, DMI type 18, 23 bytes
 
 Handle 0x001B, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0010
+	Array Handle: 0x0011
 	Error Information Handle: 0x001A
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -431,7 +433,7 @@ Handle 0x001D, DMI type 18, 23 bytes
 
 Handle 0x001E, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0010
+	Array Handle: 0x0011
 	Error Information Handle: 0x001D
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -476,7 +478,7 @@ Handle 0x0020, DMI type 18, 23 bytes
 
 Handle 0x0021, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0010
+	Array Handle: 0x0011
 	Error Information Handle: 0x0020
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -643,11 +645,11 @@ System Slot Information
 	Type: x16 PCI Express x16
 	Current Usage: In Use
 	Length: Short
-	ID: 12
+	ID: 1
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:00:03.1
+	Bus Address: 0000:00:01.1
 
 Handle 0x0034, DMI type 9, 17 bytes
 System Slot Information
@@ -655,7 +657,7 @@ System Slot Information
 	Type: x8 PCI Express x8
 	Current Usage: Available
 	Length: Short
-	ID: 13
+	ID: 57
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
@@ -713,13 +715,13 @@ Handle 0x0039, DMI type 9, 17 bytes
 System Slot Information
 	Designation: U3700 M.2 Slot
 	Type: x1 PCI Express x1
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
-	ID: 14
+	ID: 15
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:00:01.1
+	Bus Address: 0000:00:1f.7
 
 Handle 0x003A, DMI type 41, 11 bytes
 Onboard Device

@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-85 structures occupying 3883 bytes.
+85 structures occupying 3873 bytes.
 Table at 0x000EC1A0.
 
 Handle 0xDA00, DMI type 218, 251 bytes
@@ -586,20 +586,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT325U6CFR8C-H9  
-	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Part Number: HMT41GU6DFR8A-PB  
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x003E, DMI type 17, 34 bytes
 Memory Device
@@ -607,20 +607,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT325U6CFR8C-H9  
-	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Part Number: HMT41GU6DFR8A-PB  
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0040, DMI type 17, 34 bytes
 Memory Device
@@ -628,20 +628,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Hynix/Hyundai
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT325U6CFR8C-H9  
-	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Part Number: 99U5471-050.A00LF 
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0042, DMI type 17, 34 bytes
 Memory Device
@@ -649,34 +649,34 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Hynix/Hyundai
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT325U6CFR8C-H9  
-	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Part Number: 99U5471-050.A00LF 
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0044, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x003B
 	Partition Width: 4
 
 Handle 0x003D, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x003C
 	Memory Array Mapped Address Handle: 0x0044
 	Partition Row Position: 1
@@ -685,9 +685,9 @@ Memory Device Mapped Address
 
 Handle 0x003F, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x003E
 	Memory Array Mapped Address Handle: 0x0044
 	Partition Row Position: 1
@@ -696,9 +696,9 @@ Memory Device Mapped Address
 
 Handle 0x0041, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0040
 	Memory Array Mapped Address Handle: 0x0044
 	Partition Row Position: 1
@@ -707,9 +707,9 @@ Memory Device Mapped Address
 
 Handle 0x0043, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00180000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0042
 	Memory Array Mapped Address Handle: 0x0044
 	Partition Row Position: 1

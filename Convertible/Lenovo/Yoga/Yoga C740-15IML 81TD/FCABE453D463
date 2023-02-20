@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x8DDE1000.
@@ -10,7 +10,7 @@ BIOS Information
 	Release Date: 11/18/2019
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 11264 kB
+	ROM Size: 11 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -334,6 +334,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.0
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001A, DMI type 9, 19 bytes
 System Slot Information
@@ -346,6 +348,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.1
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001B, DMI type 9, 19 bytes
 System Slot Information
@@ -358,6 +362,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.2
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001C, DMI type 9, 19 bytes
 System Slot Information
@@ -370,6 +376,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.3
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001D, DMI type 9, 19 bytes
 System Slot Information
@@ -382,6 +390,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.4
+	Data Bus Width: 10
+	Peer Devices: 0
 
 Handle 0x001E, DMI type 11, 5 bytes
 OEM Strings
@@ -413,7 +423,7 @@ Handle 0x0021, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x0043 (OEM-specific)
+		0x0042 (OEM-specific)
 
 Handle 0x0022, DMI type 14, 8 bytes
 Group Associations
@@ -455,7 +465,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -490,7 +500,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -654,8 +664,10 @@ Onboard Device
 Handle 0x0034, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: INTC
-	Specification Version: 2.0	Firmware Revision: 500.14
-	Description: TPM Device	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 500.14
+	Description: TPM Device
+	Characteristics:
 		TPM Device characteristics not supported
 	OEM-specific Information: 0x00000000
 
@@ -712,7 +724,7 @@ OEM-specific Type
 Handle 0x003C, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 3C 00 01 04 01 45 02 00 A0 06 01 10 86 20
+		DB 6A 3C 00 01 04 01 45 02 00 90 06 01 10 80 20
 		00 00 00 00 48 00 00 00 00 00 00 06 00 40 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -787,46 +799,19 @@ OEM-specific Type
 	Strings:
 		FSP Binary Version
 
-Handle 0x0042, DMI type 221, 89 bytes
+Handle 0x0042, DMI type 222, 14 bytes
 OEM-specific Type
 	Header and Data:
-		DD 59 42 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
-		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
-		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 01 23 00 00 00 0C 00 00
-		09 00 92 10 0D 0E 01 05 02 00 00 0F 00 00 07 03
-		00 00 10 00 00 02 00 0F 00
-	Strings:
-		Lan Phy Version
-		Sensor Firmware Version
-		Debug Mode Status
-		Disabled
-		Performance Mode Status
-		Disabled
-		Debug Use USB(Disabled:Serial)
-		Disabled
-		ICC Overclocking Version
-		UNDI Version
-		EC FW Version
-		GOP Version
-		Royal Park Version
-		BP1520_Formal_P01_RP01
-		Platform Version
-		Client Silicon Version
-
-Handle 0x0043, DMI type 222, 14 bytes
-OEM-specific Type
-	Header and Data:
-		DE 0E 43 00 01 99 00 03 10 01 20 02 30 03
+		DE 0E 42 00 01 99 00 03 10 01 20 02 30 03
 	Strings:
 		Memory Init Complete
 		End of DXE Phase
 		BIOS Boot Complete
 
-Handle 0x0044, DMI type 248, 18 bytes
+Handle 0x0043, DMI type 248, 18 bytes
 OEM-specific Type
 	Header and Data:
-		F8 12 44 00 AC AC AA 17 00 00 00 00 00 00 00 00
+		F8 12 43 00 AC AC AA 17 00 00 00 00 00 00 00 00
 		00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

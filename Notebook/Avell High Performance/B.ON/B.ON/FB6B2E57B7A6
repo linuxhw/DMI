@@ -1,15 +1,13 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
-Table at 0x5A596000.
+Table at 0x56596000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Intel Corp.
-	Version: BCTGL357.0071.2021.1021.1647
-	Release Date: 10/21/2021
+	Version: BCTGL357.0076.2022.0722.1956
+	Release Date: 07/22/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 0 MB
@@ -26,7 +24,7 @@ BIOS Information
 		Targeted content distribution is supported
 		UEFI is supported
 	BIOS Revision: 5.19
-	Firmware Revision: 0.34
+	Firmware Revision: 0.38
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -455,8 +453,10 @@ Unknown Type
 Handle 0x0037, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: INTC
-	Specification Version: 2.0	Firmware Revision: 600.7
-	Description: INTEL	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 600.7
+	Description: INTEL
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -479,14 +479,14 @@ Memory Array Mapped Address
 
 Handle 0x0042, DMI type 15, 73 bytes
 System Event Log
-	Area Length: 4096 bytes
+	Area Length: 24 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFF060000
 	Status: Valid, Not Full
-	Change Token: 0x00000002
+	Change Token: 0x00000001
 	Header Format: Type 1
 	Supported Log Type Descriptors: 25
 	Descriptor 1: Single-bit ECC memory error
@@ -546,7 +546,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelA
@@ -581,7 +581,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelB
@@ -616,7 +616,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelC
@@ -651,7 +651,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelD
@@ -686,7 +686,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelA
@@ -721,7 +721,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelB
@@ -756,7 +756,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelC
@@ -791,7 +791,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelD
@@ -829,7 +829,7 @@ Memory Device Mapped Address
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: Unknown
 	Interleave Position: 1
-	Interleaved Data Depth: 1
+	Interleaved Data Depth: 4
 
 Handle 0x004C, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -839,8 +839,8 @@ Memory Device Mapped Address
 	Physical Device Handle: 0x0044
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: Unknown
-	Interleave Position: 2
-	Interleaved Data Depth: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 4
 
 Handle 0x004D, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -851,7 +851,7 @@ Memory Device Mapped Address
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: Unknown
 	Interleave Position: 2
-	Interleaved Data Depth: 1
+	Interleaved Data Depth: 4
 
 Handle 0x004E, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -862,7 +862,7 @@ Memory Device Mapped Address
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: Unknown
 	Interleave Position: 2
-	Interleaved Data Depth: 1
+	Interleaved Data Depth: 4
 
 Handle 0x004F, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -873,7 +873,7 @@ Memory Device Mapped Address
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: Unknown
 	Interleave Position: 2
-	Interleaved Data Depth: 1
+	Interleaved Data Depth: 4
 
 Handle 0x0050, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -884,7 +884,7 @@ Memory Device Mapped Address
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: Unknown
 	Interleave Position: 2
-	Interleaved Data Depth: 1
+	Interleaved Data Depth: 4
 
 Handle 0x0051, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -895,7 +895,7 @@ Memory Device Mapped Address
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: Unknown
 	Interleave Position: 2
-	Interleaved Data Depth: 1
+	Interleaved Data Depth: 4
 
 Handle 0x0052, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -906,7 +906,7 @@ Memory Device Mapped Address
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: Unknown
 	Interleave Position: 2
-	Interleaved Data Depth: 1
+	Interleaved Data Depth: 4
 
 Handle 0x0053, DMI type 221, 12 bytes
 OEM-specific Type
@@ -918,8 +918,8 @@ OEM-specific Type
 Handle 0x0054, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 54 00 03 01 00 0A 00 3D 20 00 02 00 00 00
-		00 86 00 03 00 01 0E 0F 00 00
+		DD 1A 54 00 03 01 00 0A 00 5D 32 00 02 00 00 00
+		00 9A 00 03 00 01 0E 19 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -928,8 +928,8 @@ OEM-specific Type
 Handle 0x0055, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 55 00 03 01 00 0A 00 3D 20 00 02 00 00 00
-		00 00 00 03 04 0F 00 17 AA 06
+		DD 1A 55 00 03 01 00 0A 00 5D 32 00 02 00 00 00
+		00 00 00 03 04 0F 00 23 6A 07
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -939,7 +939,7 @@ OEM-specific Type
 Handle 0x0056, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 56 00 06 01 00 0A 00 3D 20 00 02 03 FF FF
+		DD 2F 56 00 06 01 00 0A 00 5D 32 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 20 00 05 00 FF FF FF 20
 		00 06 00 02 46 00 00 00 07 00 04 00 00 00 00
 	Strings:
@@ -954,11 +954,11 @@ OEM-specific Type
 Handle 0x0057, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 57 00 0B 01 00 0A 00 3D 20 00 02 00 01 00
-		0E 00 00 03 00 0A 00 3D 20 00 04 05 FF FF FF FF
+		DD 52 57 00 0B 01 00 0A 00 5D 32 00 02 00 02 00
+		02 08 00 03 00 0A 00 5D 32 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 01 00 07 00 00 00 00 01 00 08
-		00 FF FF FF FF FF 09 00 11 01 04 00 00 0A 00 00
-		00 00 F8 00 0B 00 29 00 00 00 00 0C 00 FF FF FF
+		00 FF FF FF FF FF 09 00 11 01 05 00 00 0A 00 00
+		00 00 F9 00 0B 00 2B 01 00 00 00 0C 00 FF FF FF
 		FF FF
 	Strings:
 		Reference Code - SA - System Agent
@@ -1019,8 +1019,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 5120 kB
-	Maximum Size: 5120 kB
+	Installed Size: 5 MB
+	Maximum Size: 5 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -1035,8 +1035,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12288 kB
-	Maximum Size: 12288 kB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -1083,7 +1083,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
-	Voltage: 0.8 V
+	Voltage: 0.7 V
 	External Clock: 100 MHz
 	Max Speed: 4700 MHz
 	Current Speed: 2800 MHz
@@ -1111,7 +1111,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 5F 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 82 A0 00 00 00 00 01 00 00 00 00 00 0F 00
-		AA 06 17 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		6A 07 23 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0060, DMI type 41, 11 bytes
@@ -1305,7 +1305,7 @@ OEM-specific Type
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
 		00 FF FF FF FF FF 0B 00 00 22 00 00 00 0C 00 00
-		17 00 55 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
+		17 00 71 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
 		00 00 0F 00 00 02 00 0F 00
 	Strings:
 		Lan Phy Version
@@ -1677,7 +1677,7 @@ Group Associations
 Handle 0x00A5, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A A5 00 01 04 01 55 02 00 A0 06 01 85 3B 20
+		DB 6A A5 00 01 04 01 55 02 00 A0 06 01 85 39 20
 		00 00 00 00 40 00 00 03 1F 00 00 C9 03 40 04 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x000ED450.
+Table at 0x6DC4C000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -118,17 +118,6 @@ Memory Device Mapped Address
 	Interleave Position: 1
 	Interleaved Data Depth: 2
 
-Handle 0x000C, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0010
-	Memory Array Mapped Address Handle: 0x0011
-	Partition Row Position: 1
-	Interleave Position: 2
-	Interleaved Data Depth: 2
-
 Handle 0x000D, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
@@ -170,31 +159,31 @@ Handle 0x0010, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x000E
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4 GB
-	Form Factor: SODIMM
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 1
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Unde
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	Part Number: QUM3S-4G1600K11L  
-	Rank: 2
+	Part Number: Not Specified
+	Rank: Unknown
 	Configured Memory Speed: 1600 MT/s
-	Minimum Voltage: 1.35 V
-	Maximum Voltage: 1.5 V
-	Configured Voltage: 1.5 V
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
 Handle 0x0011, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x000E
 	Partition Width: 2
 

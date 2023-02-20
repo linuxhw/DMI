@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-37 structures occupying 1789 bytes.
+37 structures occupying 1771 bytes.
 Table at 0x000EBD50.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -249,7 +249,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-3550S CPU @ 3.00GHz
-	Voltage: 1.6 V
+	Voltage: 1.1 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
 	Current Speed: 3000 MHz
@@ -274,7 +274,7 @@ System Event Log
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0x000ED490
+	Access Address: 0x000ED480
 	Status: Valid, Not Full
 	Change Token: 0x00000001
 	Header Format: Type 1
@@ -336,7 +336,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -344,18 +344,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: 0000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT325U6CFR8C-H9  
-	Rank: 1
+	Part Number:                   
+	Rank: 2
 	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0013, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0012
 	Memory Array Mapped Address Handle: 0x0018
 	Partition Row Position: Unknown
@@ -389,7 +389,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -397,18 +397,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: 0000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT325U6CFR8C-H9  
-	Rank: 1
+	Part Number:                   
+	Rank: 2
 	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0016, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0015
 	Memory Array Mapped Address Handle: 0x0018
 	Partition Row Position: Unknown
@@ -439,8 +439,8 @@ Memory Device
 Handle 0x0018, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x000F
 	Partition Width: 4
 
@@ -455,14 +455,14 @@ OEM-specific Type
 Handle 0x001B, DMI type 140, 31 bytes
 OEM-specific Type
 	Header and Data:
-		8C 1F 1B 00 4C 45 4E 4F 56 4F 00 00 01 B0 BC 3C
-		D7 8C 39 BA F3 F4 67 EA 44 86 D3 F4 01 07 00
+		8C 1F 1B 00 4C 45 4E 4F 56 4F 00 00 01 10 8E 6A
+		1F 69 25 E4 86 0F B1 53 9C 32 C6 80 92 07 00
 
 Handle 0x001C, DMI type 140, 31 bytes
 OEM-specific Type
 	Header and Data:
-		8C 1F 1C 00 4C 45 4E 4F 56 4F 00 00 01 10 8E 6A
-		1F 69 25 E4 86 0F B1 53 9C 32 C6 80 92 07 00
+		8C 1F 1C 00 4C 45 4E 4F 56 4F 00 00 01 28 F9 AE
+		EC 6F A6 C4 33 D9 0B F6 DA C5 89 64 BC 07 00
 
 Handle 0x001D, DMI type 140, 19 bytes
 OEM-specific Type
@@ -479,8 +479,8 @@ OEM-specific Type
 Handle 0x001F, DMI type 140, 85 bytes
 OEM-specific Type
 	Header and Data:
-		8C 55 1F 00 4C 45 4E 4F 56 4F 0B 00 01 0E 42 B3
-		B1 9D 17 12 0B C3 8E 71 E7 A8 C7 E5 7D 01 00 00
+		8C 55 1F 00 4C 45 4E 4F 56 4F 0B 00 01 58 2E 9D
+		91 94 38 D7 D9 15 56 11 2D 5D D3 D7 FA 01 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

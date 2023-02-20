@@ -116,7 +116,7 @@ Handle 0x0007, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 07 00 03 01 00 09 00 3B 30 00 02 00 00 00
-		00 EA 00 03 00 01 08 00 00 00
+		00 EC 00 03 00 01 08 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -126,7 +126,7 @@ Handle 0x0008, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 08 00 03 01 00 09 00 3B 30 00 02 00 0E 00
-		00 01 00 03 04 0E 01 35 71 06
+		00 01 00 03 04 0E 01 3C 0F 07
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -260,7 +260,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
-	Voltage: 0.9 V
+	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 2100 MHz
 	Current Speed: 1600 MHz
@@ -291,8 +291,8 @@ OEM-specific Type
 Handle 0x0011, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: N2WET29W (1.19 )
-	Release Date: 06/21/2021
+	Version: N2WET34W (1.24 )
+	Release Date: 12/23/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -315,8 +315,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.19
-	Firmware Revision: 1.8
+	BIOS Revision: 1.24
+	Firmware Revision: 1.13
 
 Handle 0x0012, DMI type 1, 27 bytes
 System Information
@@ -489,8 +489,8 @@ OEM-specific Type
 	Header and Data:
 		8C 0F 2B 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
 	Strings:
-		1.19 
-		1.19 
+		1.24 
+		1.24 
 
 Handle 0x002C, DMI type 133, 5 bytes
 OEM-specific Type
@@ -516,7 +516,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 2F 00 31 00 00 00 0E 00 00 00 00 00 01 00
 		F8 00 84 02 00 00 00 00 01 00 00 00 01 00 0E 00
-		71 06 35 00 00 00 00 00 FE 00 4F 0D 00 00 00 00
+		0F 07 3C 00 00 00 00 00 FE 00 4F 0D 00 00 00 00
 		00 00 00 00 E2 01 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0030, DMI type 24, 5 bytes
@@ -540,7 +540,7 @@ Group Associations
 Handle 0x0033, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 33 00 01 04 01 45 02 00 A0 06 01 85 36 20
+		DB 6A 33 00 01 04 01 45 02 00 A0 06 01 85 30 20
 		00 00 00 00 40 00 00 01 1F 00 00 C9 0B 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -587,14 +587,14 @@ OEM-specific Type
 
 Handle 0x0039, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 1090 bytes
+	Area Length: 1170 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000043
+	Change Token: 0x00000048
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -609,32 +609,32 @@ System Event Log
 Handle 0x003A, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3A 00 54 48 4E 4B 00 00 00 00 00 00 6C 07
+		8D 12 3A 00 54 48 4E 4B 00 00 00 00 00 00 09 09
 		00 00
 
 Handle 0x003B, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3B 00 54 48 4E 4B 00 00 10 00 00 00 04 00
+		8D 12 3B 00 54 48 4E 4B 00 00 10 00 00 00 07 00
 		00 00
 
 Handle 0x003C, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3C 00 54 48 4E 4B 00 00 30 00 00 00 DB 00
+		8D 12 3C 00 54 48 4E 4B 00 00 30 00 00 00 5B 01
 		00 00
 
 Handle 0x003D, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3D 00 54 48 4E 4B 00 00 40 00 00 00 50 00
+		8D 12 3D 00 54 48 4E 4B 00 00 40 00 00 00 AD 00
 		00 00
 
 Handle 0x003E, DMI type 141, 30 bytes
 OEM-specific Type
 	Header and Data:
-		8D 1E 3E 00 54 48 4E 4B 00 00 50 00 00 00 38 CE
-		9A 00 00 00 00 00 B5 4B BB 02 00 00 00 00
+		8D 1E 3E 00 54 48 4E 4B 00 00 50 00 00 00 C5 FD
+		DD 00 00 00 00 00 12 10 97 04 00 00 00 00
 
 Handle 0x003F, DMI type 140, 19 bytes
 OEM-specific Type
@@ -652,12 +652,12 @@ Handle 0x0041, DMI type 140, 23 bytes
 OEM-specific Type
 	Header and Data:
 		8C 17 41 00 4C 45 4E 4F 56 4F 0B 06 01 CB 06 51
-		F4 02 60 00 00 00 00
+		44 03 60 00 00 00 00
 
 Handle 0x0042, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: N2WHT14W
-	Release Date: 10/16/2020
+	Version ID: N2WHT19W
+	Release Date: 07/23/2021
 
 Handle 0x0043, DMI type 140, 43 bytes
 OEM-specific Type

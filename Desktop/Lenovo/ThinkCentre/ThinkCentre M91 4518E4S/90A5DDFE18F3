@@ -358,8 +358,8 @@ Handle 0x001C, DMI type 18, 23 bytes
 Handle 0x001D, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x001B
 	Partition Width: 1
 
@@ -369,19 +369,19 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM0
 	Bank Locator: A1_BANK0
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer0
+	Speed: 1333 MT/s
+	Manufacturer: Undefined       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber0
-	Rank: Unknown
+	Part Number:                   
+	Rank: 2
 
 Handle 0x001F, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -393,8 +393,16 @@ Handle 0x001F, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0020, DMI type 126, 19 bytes
-Inactive
+Handle 0x0020, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x001E
+	Memory Array Mapped Address Handle: 0x001D
+	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 1
 
 Handle 0x0021, DMI type 17, 28 bytes
 Memory Device
@@ -428,8 +436,8 @@ Handle 0x0022, DMI type 18, 23 bytes
 
 Handle 0x0023, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0021
 	Memory Array Mapped Address Handle: 0x001D
@@ -441,19 +449,19 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM2
 	Bank Locator: A1_BANK2
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer2
+	Speed: 1333 MT/s
+	Manufacturer: Undefined       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber2
-	Rank: Unknown
+	Part Number:                   
+	Rank: 2
 
 Handle 0x0025, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -465,8 +473,16 @@ Handle 0x0025, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0026, DMI type 126, 19 bytes
-Inactive
+Handle 0x0026, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0024
+	Memory Array Mapped Address Handle: 0x001D
+	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 1
 
 Handle 0x0027, DMI type 17, 28 bytes
 Memory Device

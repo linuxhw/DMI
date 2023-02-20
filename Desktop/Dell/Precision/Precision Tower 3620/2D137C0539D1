@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0x000ECFB0.
@@ -6,8 +6,8 @@ Table at 0x000ECFB0.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 2.13.1
-	Release Date: 06/14/2019
+	Version: 2.22.0
+	Release Date: 07/13/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -32,7 +32,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.13
+	BIOS Revision: 2.22
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -87,6 +87,7 @@ OEM Strings
 	String 5: 14[1]
 	String 6: 15[3]
 	String 7: 27[35640390926]
+	String 8: 28[3]
 
 Handle 0x0005, DMI type 12, 5 bytes
 System Configuration Options
@@ -118,7 +119,7 @@ System Event Log
 	Data Format 6: OEM-specific
 
 Handle 0x0007, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x0008, DMI type 32, 20 bytes
@@ -140,7 +141,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -164,7 +165,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -260,8 +261,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -276,8 +277,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -797,7 +798,7 @@ OEM-specific Type
 Handle 0xD000, DMI type 208, 16 bytes
 OEM-specific Type
 	Header and Data:
-		D0 10 00 D0 03 0A FE 00 B7 06 01 02 00 00 00 00
+		D0 10 00 D0 03 11 FE 00 B7 06 01 02 00 00 00 00
 	Strings:
 		20180312
 		20180320
@@ -970,7 +971,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 19 11 06 20 30 01 00 00
+		DE 10 00 DE 01 04 00 00 22 08 26 13 27 01 00 00
 
 Handle 0xF023, DMI type 130, 20 bytes
 OEM-specific Type
@@ -981,16 +982,16 @@ OEM-specific Type
 Handle 0xF024, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 24 F0 35 00 00 00 0B 00 00 00 00 00 0A 00
+		83 40 24 F0 35 00 00 00 0B 00 00 00 00 00 0C 00
 		F8 00 49 A1 00 00 00 00 01 00 00 00 08 00 0B 00
-		06 0E 41 00 00 00 00 00 FE 00 B7 15 00 00 00 00
+		7E 10 5C 00 00 00 00 00 FE 00 B7 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0xF025, DMI type 237, 26 bytes
 OEM-specific Type
 	Header and Data:
 		ED 1A 25 F0 03 01 00 01 07 00 00 00 02 00 00 00
-		00 CC 00 03 00 00 05 00 00 00
+		00 F0 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -1000,7 +1001,7 @@ Handle 0xF026, DMI type 237, 26 bytes
 OEM-specific Type
 	Header and Data:
 		ED 1A 26 F0 03 01 00 01 07 00 00 00 02 00 0B 00
-		00 0A 00 03 04 0B 08 41 06 0E
+		00 0C 00 03 04 0B 08 5C 7E 10
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
@@ -1075,12 +1076,12 @@ OEM-specific Type
 		BP1.3.3.0_RP01
 		Platform Version
 
-Handle 0xF036, DMI type 136, 6 bytes
+Handle 0xF033, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 36 F0 5A 5A
+		88 06 33 F0 5A 5A
 
-Handle 0xF037, DMI type 14, 20 bytes
+Handle 0xF034, DMI type 14, 20 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 5
@@ -1090,7 +1091,7 @@ Group Associations
 		0xF028 (OEM-specific)
 		0xF029 (OEM-specific)
 
-Handle 0xF038, DMI type 13, 22 bytes
+Handle 0xF035, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 2
@@ -1098,16 +1099,16 @@ BIOS Language Information
 		<BAD INDEX>
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0xF039, DMI type 14, 8 bytes
+Handle 0xF036, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0xF03A, DMI type 235, 81 bytes
+Handle 0xF037, DMI type 235, 81 bytes
 OEM-specific Type
 	Header and Data:
-		EB 51 3A F0 01 03 01 45 02 00 90 06 83 10 82 30
+		EB 51 37 F0 01 03 01 45 02 00 90 06 83 10 83 30
 		00 00 00 00 40 68 00 01 1F 00 00 C9 0B C0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -1118,6 +1119,6 @@ OEM-specific Type
 		MEI2
 		MEI3
 
-Handle 0xF03B, DMI type 127, 4 bytes
+Handle 0xF038, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,8 +1,8 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
-25 structures occupying 1242 bytes.
-Table at 0x7EE98000.
+27 structures occupying 1319 bytes.
+Table at 0xFFFFFFFFCEE98000.
 
 Handle 0x0000, DMI type 4, 35 bytes
 Processor Information
@@ -45,7 +45,7 @@ Processor Information
 	Voltage: 1.1 V
 	External Clock: 200 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 1802 MHz
+	Current Speed: 1801 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA775
 	L1 Cache Handle: 0x0003
@@ -110,7 +110,7 @@ BIOS Information
 	Release Date: 05/24/2011
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -137,7 +137,7 @@ System Information
 	Product Name:                                 
 	Version:                         
 	Serial Number: --
-	57D0C1E99123FD0F33739E22810EA166
+	B84A2BAC66C239BFD8662BB72B6FB2C3
 	Wake-up Type: Power Switch
 	SKU Number: Not Specified
 	Family: Not Specified
@@ -263,7 +263,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: J1MY
@@ -278,44 +278,58 @@ Memory Device
 
 Handle 0x0014, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0013
-	Memory Array Mapped Address Handle: 0x0016
+	Memory Array Mapped Address Handle: 0x0017
 	Partition Row Position: 1
 
 Handle 0x0015, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0012
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: J2MY
 	Bank Locator: CHAN A DIMM 1
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: NO DIMM
+	Speed: 800 MT/s
+	Manufacturer: 0x0000000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NO DIMM
+	Part Number: 0x000000000000000000000000000000000000
 
-Handle 0x0016, DMI type 19, 15 bytes
+Handle 0x0016, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0015
+	Memory Array Mapped Address Handle: 0x0017
+	Partition Row Position: 1
+
+Handle 0x0017, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0012
 	Partition Width: 2
 
-Handle 0x0017, DMI type 187, 9 bytes
+Handle 0x0018, DMI type 187, 9 bytes
 OEM-specific Type
 	Header and Data:
-		BB 09 17 00 13 00 FF 35 05
+		BB 09 18 00 13 00 FF 35 05
+
+Handle 0x0019, DMI type 187, 9 bytes
+OEM-specific Type
+	Header and Data:
+		BB 09 19 00 15 00 FF 35 05
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

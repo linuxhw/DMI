@@ -1,7 +1,7 @@
 # dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-33 structures occupying 2198 bytes.
+33 structures occupying 2188 bytes.
 Table at 0xB77EB000.
 
 Handle 0x0000, DMI type 7, 19 bytes
@@ -141,8 +141,8 @@ Physical Memory Array
 Handle 0x000A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0005
 	Partition Width: 2
 
@@ -302,7 +302,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 16384 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(left)
@@ -310,11 +310,11 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2133 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	7AD661140FEC9B4333828392828E2AA3    
-	Rank: 1
+	6F137107C8E9A53AB3D1D057F5E92201          
+	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -326,7 +326,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 16384 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(right)
@@ -334,11 +334,11 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2133 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	7AD661140FEC9B4333828392828E2AA3    
-	Rank: 1
+	6F137107C8E9A53AB3D1D057F5E92201          
+	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -347,17 +347,17 @@ Memory Device
 Handle 0x0007, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0017
 	Memory Array Mapped Address Handle: 0x000A
 	Partition Row Position: 1
 
 Handle 0x0008, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00400000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0006
 	Memory Array Mapped Address Handle: 0x000A
 	Partition Row Position: 1

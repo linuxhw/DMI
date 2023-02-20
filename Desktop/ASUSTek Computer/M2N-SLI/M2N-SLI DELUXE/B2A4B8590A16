@@ -1,14 +1,14 @@
-# dmidecode 3.1
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
-76 structures occupying 2155 bytes.
+76 structures occupying 2151 bytes.
 Table at 0x000F0000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Phoenix Technologies, LTD
-	Version: ASUS M2N-SLI DELUXE ACPI BIOS Revision 1502
-	Release Date: 03/31/2008
+	Version: ASUS M2N-SLI DELUXE ACPI BIOS Revision 1804
+	Release Date: 09/16/2010
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 512 kB
@@ -76,8 +76,8 @@ Processor Information
 	Type: Central Processor
 	Family: Athlon 64
 	Manufacturer: AMD
-	ID: B2 0F 04 00 FF FB 8B 17
-	Signature: Family 15, Model 75, Stepping 2
+	ID: 43 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 4, Stepping 3
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -102,19 +102,19 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Athlon(tm) 64 X2 Dual Core Processor 4200+
-	Voltage: 1.2 V
+	Version: AMD Processor model unknown
+	Voltage: 1.5 V
 	External Clock: 200 MHz
 	Max Speed: 3700 MHz
-	Current Speed: 2200 MHz
+	Current Speed: 3000 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket 940
 	L1 Cache Handle: 0x000A
 	L2 Cache Handle: 0x000B
 	L3 Cache Handle: Not Provided
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 
 Handle 0x0005, DMI type 5, 24 bytes
 Memory Controller Information
@@ -143,41 +143,41 @@ Memory Controller Information
 Handle 0x0006, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM_B1
-	Bank Connections: None
-	Current Speed: Unknown
-	Type: Unknown
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Bank Connections: 2 3
+	Current Speed: 6 ns
+	Type: Unknown EDO
+	Installed Size: 1024 MB (Double-bank Connection)
+	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM_B2
-	Bank Connections: None
-	Current Speed: Unknown
-	Type: Unknown
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Bank Connections: 6 7
+	Current Speed: 6 ns
+	Type: Unknown EDO
+	Installed Size: 1024 MB (Double-bank Connection)
+	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0008, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM_A1
-	Bank Connections: None
-	Current Speed: Unknown
-	Type: Unknown
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Bank Connections: 0 1
+	Current Speed: 6 ns
+	Type: Unknown EDO
+	Installed Size: 1024 MB (Double-bank Connection)
+	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM_A2
 	Bank Connections: 4 5
-	Current Speed: 5 ns
+	Current Speed: 6 ns
 	Type: Unknown EDO
-	Installed Size: 2048 MB (Double-bank Connection)
-	Enabled Size: 2048 MB (Double-bank Connection)
+	Installed Size: 1024 MB (Double-bank Connection)
+	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 7, 19 bytes
@@ -646,8 +646,8 @@ BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 3
 		n|US|iso8859-1
+		n|US|iso8859-1
 		r|CA|iso8859-1
-		a|JP|unicode
 	Currently Installed Language: n|US|iso8859-1
 
 Handle 0x0040, DMI type 16, 15 bytes
@@ -665,14 +665,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B1
 	Bank Locator: Bank0/1
-	Type: Unknown
+	Type: DDR
 	Type Detail: None
-	Speed: Unknown
+	Speed: 667 MT/s
 	Manufacturer: None
 	Serial Number: --
 	Asset Tag: --
@@ -684,14 +684,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B2
 	Bank Locator: Bank2/3
-	Type: Unknown
+	Type: DDR
 	Type Detail: None
-	Speed: Unknown
+	Speed: 667 MT/s
 	Manufacturer: None
 	Serial Number: --
 	Asset Tag: --
@@ -703,14 +703,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A1
 	Bank Locator: Bank4/5
-	Type: Unknown
+	Type: DDR
 	Type Detail: None
-	Speed: Unknown
+	Speed: 667 MT/s
 	Manufacturer: None
 	Serial Number: --
 	Asset Tag: --
@@ -722,14 +722,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A2
 	Bank Locator: Bank6/7
 	Type: DDR
 	Type Detail: None
-	Speed: 800 MT/s
+	Speed: 667 MT/s
 	Manufacturer: None
 	Serial Number: --
 	Asset Tag: --
@@ -738,43 +738,43 @@ Memory Device
 Handle 0x0045, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0040
 	Partition Width: 1
 
 Handle 0x0046, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0041
 	Memory Array Mapped Address Handle: 0x0045
 	Partition Row Position: 1
 
 Handle 0x0047, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00040000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0042
 	Memory Array Mapped Address Handle: 0x0045
 	Partition Row Position: 1
 
 Handle 0x0048, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0043
 	Memory Array Mapped Address Handle: 0x0045
 	Partition Row Position: 1
 
 Handle 0x0049, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x000C0000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0044
 	Memory Array Mapped Address Handle: 0x0045
 	Partition Row Position: 1

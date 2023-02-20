@@ -1,15 +1,15 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-34 structures occupying 1866 bytes.
-Table at 0xAFABC000.
+34 structures occupying 1847 bytes.
+Table at 0x000E4800.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Insyde
 	Version: F.26
 	Release Date: 02/21/2013
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -208,15 +208,15 @@ Port Connector Information
 Handle 0x0016, DMI type 22, 26 bytes
 Portable Battery
 	Location: Primary
-	Manufacturer: 13-12
-	Name: MU06047
+	Manufacturer: Not Specified
+	Name: Not Specified
 	Chemistry: Lithium Ion
 	Design Capacity: 47520 mWh
 	Design Voltage: 10800 mV
-	SBDS Version: 3.1
-	Maximum Error: 1%
+	SBDS Version: 0.0
+	Maximum Error: 0%
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 2012-09-08
+	SBDS Manufacture Date: 1980-00-00
 	OEM-specific Information: 0x0000FFFF
 
 Handle 0x0018, DMI type 41, 11 bytes
@@ -274,7 +274,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(top)
@@ -287,7 +287,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: M471B5273DH0-CH9  
 	Rank: 2
-	Configured Clock Speed: 667 MT/s
+	Configured Memory Speed: 667 MT/s
 
 Handle 0x0021, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -304,7 +304,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(under)
@@ -317,7 +317,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: M471B5273DH0-CH9  
 	Rank: 2
-	Configured Clock Speed: 667 MT/s
+	Configured Memory Speed: 667 MT/s
 
 Handle 0x0024, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -409,8 +409,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst

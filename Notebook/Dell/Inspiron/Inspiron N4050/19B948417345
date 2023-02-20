@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 49 structures occupying 2197 bytes.
@@ -126,8 +126,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -356,8 +356,8 @@ Physical Memory Array
 Handle 0x0016, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0015
 	Memory Array Mapped Address Handle: 0x0019
 	Partition Row Position: 1
@@ -366,8 +366,8 @@ Memory Device Mapped Address
 
 Handle 0x0018, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x0017FFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0017
 	Memory Array Mapped Address Handle: 0x0019
@@ -378,8 +378,8 @@ Memory Device Mapped Address
 Handle 0x0019, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0014
 	Partition Width: 2
 
@@ -413,7 +413,7 @@ BIOS Information
 	Release Date: 03/23/2012
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		MCA is supported
 		PCI is supported
@@ -503,7 +503,7 @@ Memory Device
 	Error Information Handle: 0x0000
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM_A
@@ -511,10 +511,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1067 MT/s
-	Manufacturer: 80CE
+	Manufacturer: 0198
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5673FH0-CF8  
+	Part Number: 9905428-005.A02LF 
 	Rank: Unknown
 
 Handle 0x0017, DMI type 17, 28 bytes
@@ -523,7 +523,7 @@ Memory Device
 	Error Information Handle: 0x0000
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM_B
@@ -531,10 +531,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1067 MT/s
-	Manufacturer: 0194
+	Manufacturer: 0198
 	Serial Number: --
 	Asset Tag: --
-	Part Number: SH564128FH8NZPHSCG
+	Part Number: 9905428-131.A00LF 
 	Rank: Unknown
 
 Handle 0x0031, DMI type 127, 4 bytes

@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 54 structures occupying 4137 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 08/08/2008
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -157,8 +157,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -363,7 +363,7 @@ Handle 0x001F, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI-E x16
 	Type: 32-bit PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 0
 	Characteristics:
@@ -399,7 +399,7 @@ Handle 0x0022, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI1
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 3
 	Characteristics:
@@ -504,8 +504,8 @@ Physical Memory Array
 Handle 0x002A, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0029
 	Partition Width: 4
 
@@ -515,14 +515,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 800 MT/s
+	Speed: 667 MT/s
 	Manufacturer: 7F98000000000000
 	Serial Number: --
 	Asset Tag: --
@@ -542,26 +542,26 @@ Handle 0x002D, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0029
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer:                 
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 667 MT/s
+	Manufacturer: 7F7F7F7F7FF70000
 	Serial Number: --
 	Asset Tag: --
-	Part Number:                   
+	Part Number:   F6456U61E5667F  
 
 Handle 0x002E, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x002D
 	Memory Array Mapped Address Handle: 0x002A
 	Partition Row Position: 1
@@ -571,26 +571,26 @@ Handle 0x002F, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0029
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer:                 
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 667 MT/s
+	Manufacturer: 7F7F7F7F7FF70000
 	Serial Number: --
 	Asset Tag: --
-	Part Number:                   
+	Part Number:   F6456U61E5667F  
 
 Handle 0x0030, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00100000000
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x002F
 	Memory Array Mapped Address Handle: 0x002A
 	Partition Row Position: 1
@@ -600,26 +600,26 @@ Handle 0x0031, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0029
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer:                 
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 667 MT/s
+	Manufacturer: 7F7F7F7F7FF70000
 	Serial Number: --
 	Asset Tag: --
-	Part Number:                   
+	Part Number:   F6456U61E5667F  
 
 Handle 0x0032, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00180000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0031
 	Memory Array Mapped Address Handle: 0x002A
 	Partition Row Position: 1

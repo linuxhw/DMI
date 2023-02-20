@@ -1,14 +1,14 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-77 structures occupying 2896 bytes.
+77 structures occupying 2908 bytes.
 Table at 0x000EC1E0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 3.08
-	Release Date: 08/05/2014
+	Version: 3.14
+	Release Date: 09/17/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 3 MB
@@ -706,29 +706,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Samsung
+	Speed: 1600 MT/s
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5773DH0-CH9  
-	Rank: 1
+	Part Number: HMT41GS6BFR8A-PB  
+	Rank: 2
 	Configured Memory Speed: 1333 MT/s
-	Minimum Voltage: 1.5 V
+	Minimum Voltage: 1.35 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
 
 Handle 0x0043, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0042
 	Memory Array Mapped Address Handle: 0x0048
 	Partition Row Position: Unknown
@@ -765,29 +765,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Samsung
+	Speed: 1600 MT/s
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5773CHS-CH9  
-	Rank: 1
+	Part Number: HMT41GS6BFR8A-PB  
+	Rank: 2
 	Configured Memory Speed: 1333 MT/s
-	Minimum Voltage: 1.5 V
+	Minimum Voltage: 1.35 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
 
 Handle 0x0046, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0045
 	Memory Array Mapped Address Handle: 0x0048
 	Partition Row Position: Unknown
@@ -821,8 +821,8 @@ Memory Device
 Handle 0x0048, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0041
 	Partition Width: 4
 

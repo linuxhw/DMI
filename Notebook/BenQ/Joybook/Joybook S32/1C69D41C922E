@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 41 structures occupying 1402 bytes.
 Table at 0x7F6E0000.
@@ -8,7 +9,7 @@ BIOS Information
 	Vendor: Phoenix BIOS
 	Version: 01.17 
 	Release Date: 12/10/2007
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -130,8 +131,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 4096 kB
+	Installed Size: 1 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -295,14 +296,14 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: SODIMM
 	Set: 1
 	Locator: M1
 	Bank Locator: Bank 0
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 533 MHz
+	Speed: 533 MT/s
 	Manufacturer: Mfg 0
 	Serial Number: --
 	Asset Tag: --
@@ -314,14 +315,14 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: SODIMM
 	Set: 1
 	Locator: M2
 	Bank Locator: Bank 1
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 533 MHz
+	Speed: 533 MT/s
 	Manufacturer: Mfg 1
 	Serial Number: --
 	Asset Tag: --
@@ -390,7 +391,7 @@ Hardware Security
 	Front Panel Reset Status: Unknown
 
 Handle 0x001E, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: 12-31 23:59:59
 
 Handle 0x001F, DMI type 26, 20 bytes

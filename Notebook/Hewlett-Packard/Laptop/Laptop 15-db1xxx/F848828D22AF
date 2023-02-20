@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
 Table at 0xAE5C1000.
@@ -156,8 +156,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -172,8 +172,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -429,7 +429,7 @@ Memory Device
 	Error Information Handle: 0x0024
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-slot 1(left)
@@ -442,7 +442,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: M471A5244CB0-CTD    
 	Rank: 1
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -450,26 +450,26 @@ Memory Device
 Handle 0x0022, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0020
-	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Error Information Handle: 0x0025
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-slot 2(right)
 	Bank Locator: P0 CHANNEL B
-	Type: DDR
-	Type Detail: Unknown Synchronous
-	Speed: Unknown
-	Manufacturer: Unknown
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 2667 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
+	Part Number: M471A5244CB0-CTD    
+	Rank: 1
+	Configured Memory Speed: 2400 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
 
 Handle 0x0023, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -504,27 +504,36 @@ Handle 0x0025, DMI type 18, 23 bytes
 Handle 0x0026, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0020
-	Partition Width: 1
+	Partition Width: 2
 
 Handle 0x0027, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0021
 	Memory Array Mapped Address Handle: 0x0026
 	Partition Row Position: 1
 
-Handle 0x0028, DMI type 21, 7 bytes
+Handle 0x0028, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0022
+	Memory Array Mapped Address Handle: 0x0026
+	Partition Row Position: 1
+
+Handle 0x0029, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Touch Pad
 	Interface: PS/2
 	Buttons: 4
 
-Handle 0x0029, DMI type 22, 26 bytes
+Handle 0x002A, DMI type 22, 26 bytes
 Portable Battery
 	Location: Primary
 	Manufacturer: 333-2D-34-A
@@ -538,7 +547,7 @@ Portable Battery
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x000A070C
 
-Handle 0x002A, DMI type 26, 22 bytes
+Handle 0x002B, DMI type 26, 22 bytes
 Voltage Probe
 	Description: Voltage Probe Description
 	Location: Unknown
@@ -551,16 +560,16 @@ Voltage Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x002B, DMI type 27, 15 bytes
+Handle 0x002C, DMI type 27, 15 bytes
 Cooling Device
-	Temperature Probe Handle: 0x002C
+	Temperature Probe Handle: 0x002D
 	Type: Fan
 	Status: OK
 	OEM-specific Information: 0x00000000
 	Nominal Speed: 8192 rpm
 	Description: Cooling Device Description
 
-Handle 0x002C, DMI type 28, 24 bytes
+Handle 0x002D, DMI type 28, 24 bytes
 Temperature Probe
 	Description: Temperature Probe Description
 	Location: Unknown
@@ -573,11 +582,11 @@ Temperature Probe
 	OEM-specific Information: 0x00008000
 	Nominal Value: 0.0 deg C
 
-Handle 0x002D, DMI type 32, 20 bytes
+Handle 0x002E, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x002E, DMI type 40, 18 bytes
+Handle 0x002F, DMI type 40, 18 bytes
 Additional Information 1
 	Referenced Handle: 0x0018
 	Referenced Offset: 0x05
@@ -589,7 +598,7 @@ Additional Information 2
 	String: Compiler Version: VC 9.0
 	Value: 0x05dc
 
-Handle 0x002F, DMI type 41, 11 bytes
+Handle 0x0030, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Broadcom 5762
 	Type: Ethernet
@@ -597,7 +606,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:03:00.0
 
-Handle 0x0030, DMI type 41, 11 bytes
+Handle 0x0031, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Realtek ALC701
 	Type: Sound
@@ -605,7 +614,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 00ff:ff:1f.7
 
-Handle 0x0031, DMI type 41, 11 bytes
+Handle 0x0032, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Hanksville Gbe Lan Connection
 	Type: Ethernet
@@ -613,7 +622,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:02:00.0
 
-Handle 0x0032, DMI type 41, 11 bytes
+Handle 0x0033, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: WLAN
 	Type: Other
@@ -621,12 +630,12 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:03:00.0
 
-Handle 0x0033, DMI type 43, 31 bytes
+Handle 0x0034, DMI type 43, 31 bytes
 TPM Device
-	Vendor ID: AMD
-	Specification Version: 2.0	Firmware Revision: 3.1
-	Description: TPM Device	Characteristics:
-		TPM Device characteristics not supported
+	Vendor ID: 
+	Specification Version: 0.0
+	Description: TPM Device
+	Characteristics:
 	OEM-specific Information: 0x00000000
 
 Handle 0xFEFF, DMI type 127, 4 bytes

@@ -1,17 +1,17 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
-SMBIOS 2.5 present.
-78 structures occupying 2328 bytes.
-Table at 0x000EB400.
+SMBIOS 2.6 present.
+98 structures occupying 2934 bytes.
+Table at 0x000EB300.
 
 Handle 0x0001, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Hewlett-Packard
-	Version: 786G4 v01.08
-	Release Date: 03/27/2009
+	Version: 786G4 v03.61
+	Release Date: 03/05/2018
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -33,7 +33,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
-	BIOS Revision: 1.8
+	BIOS Revision: 3.61
 
 Handle 0x0002, DMI type 1, 27 bytes
 System Information
@@ -46,20 +46,21 @@ System Information
 	SKU Number: FW863AV
 	Family: 103C_53335X
 
-Handle 0x0003, DMI type 2, 14 bytes
+Handle 0x0003, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: Hewlett-Packard
 	Product Name: 0AE8h
-	Version: Not Specified
+	Version: C
 	Serial Number: --
 	Asset Tag: --
-	97946E993916094B22613E03B8339091
+	Features:
 		Board is a hosting board
 		Board is removable
 		Board is replaceable
 	Location In Chassis: Not Specified
 	Chassis Handle: 0x0004
 	Type: Motherboard
+	Contained Object Handles: 0
 
 Handle 0x0004, DMI type 3, 17 bytes
 Chassis Information
@@ -75,7 +76,7 @@ Chassis Information
 	Security Status: Unknown
 	OEM Information: 0x00000000
 
-Handle 0x0005, DMI type 4, 40 bytes
+Handle 0x0005, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPU0 PROCESSOR
 	Type: Central Processor
@@ -131,7 +132,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0006, DMI type 4, 40 bytes
+Handle 0x0006, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPU1 PROCESSOR
 	Type: Central Processor
@@ -200,7 +201,7 @@ Cache Information
 	Installed SRAM Type: Burst
 	Speed: Unknown
 	Error Correction Type: Parity
-	System Type: Data
+	System Type: Unified
 	Associativity: 8-way Set-associative
 
 Handle 0x0008, DMI type 7, 19 bytes
@@ -209,8 +210,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Burst
 	Installed SRAM Type: Burst
@@ -225,8 +226,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Burst
 	Installed SRAM Type: Burst
@@ -248,7 +249,7 @@ Cache Information
 	Installed SRAM Type: Burst
 	Speed: Unknown
 	Error Correction Type: Parity
-	System Type: Data
+	System Type: Unified
 	Associativity: 8-way Set-associative
 
 Handle 0x000B, DMI type 7, 19 bytes
@@ -257,8 +258,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Burst
 	Installed SRAM Type: Burst
@@ -273,8 +274,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Burst
 	Installed SRAM Type: Burst
@@ -579,22 +580,10 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0032, DMI type 9, 13 bytes
+Handle 0x0032, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 1
-	Type: x4 PCI Express
-	Current Usage: Available
-	Length: Long
-	ID: 4
-	Characteristics:
-		3.3 V is provided
-		PME signal is supported
-		SMBus signal is supported
-
-Handle 0x0033, DMI type 9, 13 bytes
-System Slot Information
-	Designation: SLOT 2
-	Type: x16 PCI Express
+	Type: x4 PCI Express 2 x8
 	Current Usage: In Use
 	Length: Long
 	ID: 1
@@ -602,11 +591,25 @@ System Slot Information
 		3.3 V is provided
 		PME signal is supported
 		SMBus signal is supported
+	Bus Address: 0000:03:00.0
 
-Handle 0x0034, DMI type 9, 13 bytes
+Handle 0x0033, DMI type 9, 17 bytes
+System Slot Information
+	Designation: SLOT 2
+	Type: x16 PCI Express 2
+	Current Usage: In Use
+	Length: Long
+	ID: 2
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		SMBus signal is supported
+	Bus Address: 0000:0f:00.0
+
+Handle 0x0034, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 3
-	Type: x4 PCI Express
+	Type: x4 PCI Express x8
 	Current Usage: Available
 	Length: Long
 	ID: 3
@@ -614,35 +617,24 @@ System Slot Information
 		3.3 V is provided
 		PME signal is supported
 		SMBus signal is supported
+	Bus Address: 0000:1c:00.0
 
-Handle 0x0035, DMI type 9, 13 bytes
+Handle 0x0035, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 4
-	Type: x16 PCI Express
+	Type: x16 PCI Express 2
 	Current Usage: Available
 	Length: Long
-	ID: 1
+	ID: 4
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
 		SMBus signal is supported
+	Bus Address: 0000:28:00.0
 
-Handle 0x0036, DMI type 9, 13 bytes
+Handle 0x0036, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 5
-	Type: 32-bit PCI
-	Current Usage: Available
-	Length: Long
-	ID: 2
-	Characteristics:
-		5.0 V is provided
-		3.3 V is provided
-		PME signal is supported
-		SMBus signal is supported
-
-Handle 0x0037, DMI type 9, 13 bytes
-System Slot Information
-	Designation: SLOT 6
 	Type: 32-bit PCI
 	Current Usage: Available
 	Length: Long
@@ -652,6 +644,21 @@ System Slot Information
 		3.3 V is provided
 		PME signal is supported
 		SMBus signal is supported
+	Bus Address: 0000:37:04.0
+
+Handle 0x0037, DMI type 9, 17 bytes
+System Slot Information
+	Designation: SLOT 6
+	Type: 32-bit PCI
+	Current Usage: Available
+	Length: Long
+	ID: 6
+	Characteristics:
+		5.0 V is provided
+		3.3 V is provided
+		PME signal is supported
+		SMBus signal is supported
+	Bus Address: 0000:37:09.0
 
 Handle 0x0038, DMI type 11, 5 bytes
 OEM Strings
@@ -697,7 +704,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0 DIMM1
@@ -705,10 +712,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 1333 MT/s
-	Manufacturer: JEDEC ID:80 AD
+	Manufacturer: JEDEC ID:85 7F
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT125U7AFP8C-H9
+	Part Number: F7251U64F9333G
 	Rank: 2
 
 Handle 0x003E, DMI type 17, 28 bytes
@@ -717,7 +724,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0 DIMM2
@@ -725,31 +732,31 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 1333 MT/s
-	Manufacturer: JEDEC ID:80 AD
+	Manufacturer: JEDEC ID:85 7F
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT125U7AFP8C-H9
+	Part Number: F7251U64F9333G
 	Rank: 2
 
 Handle 0x003F, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x003A
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0 DIMM3
 	Bank Locator: Not Specified
 	Type: DDR3
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1333 MT/s
+	Manufacturer: JEDEC ID:85 7F
 	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
-	Part Number:  
-	Rank: Unknown
+	Asset Tag: --
+	Part Number: F7251U64F9333G
+	Rank: 2
 
 Handle 0x0040, DMI type 17, 28 bytes
 Memory Device
@@ -757,7 +764,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU1 DIMM1
@@ -765,10 +772,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 1333 MT/s
-	Manufacturer: JEDEC ID:80 AD
+	Manufacturer: JEDEC ID:85 7F
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT125U7AFP8C-H9
+	Part Number: F7251U64F9333G
 	Rank: 2
 
 Handle 0x0041, DMI type 17, 28 bytes
@@ -777,7 +784,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU1 DIMM2
@@ -785,31 +792,31 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 1333 MT/s
-	Manufacturer: JEDEC ID:80 AD
+	Manufacturer: JEDEC ID:85 7F
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT125U7AFP8C-H9
+	Part Number: F7251U64F9333G
 	Rank: 2
 
 Handle 0x0042, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x003B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU1 DIMM3
 	Bank Locator: Not Specified
 	Type: DDR3
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1333 MT/s
+	Manufacturer: JEDEC ID:85 7F
 	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
-	Part Number:  
-	Rank: Unknown
+	Asset Tag: --
+	Part Number: F7251U64F9333G
+	Rank: 2
 
 Handle 0x0044, DMI type 17, 27 bytes
 Memory Device
@@ -817,7 +824,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 2 bits
 	Data Width: 2 bits
-	Size: 2048 kB
+	Size: 2 MB
 	Form Factor: Chip
 	Set: None
 	Locator: SYSTEM ROM
@@ -841,16 +848,16 @@ Memory Array Mapped Address
 Handle 0x0046, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0011FFFFFFF
-	Range Size: 512 MB
+	Ending Address: 0x0031FFFFFFF
+	Range Size: 8704 MB
 	Physical Array Handle: 0x003A
 	Partition Width: 1
 
 Handle 0x0047, DMI type 19, 15 bytes
 Memory Array Mapped Address
-	Starting Address: 0x00120000000
-	Ending Address: 0x0021FFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00320000000
+	Ending Address: 0x0061FFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x003B
 	Partition Width: 1
 
@@ -880,21 +887,176 @@ OEM-specific Type
 	Header and Data:
 		88 06 4C 00 5A 5A
 
-Handle 0x004D, DMI type 197, 10 bytes
+Handle 0x004D, DMI type 27, 15 bytes
+Cooling Device
+	Type: Fan
+	Status: OK
+	OEM-specific Information: 0x00000000
+	Nominal Speed: Unknown Or Non-rotating
+	Description: CPU0 Fan
+
+Handle 0x004E, DMI type 153, 19 bytes
 OEM-specific Type
 	Header and Data:
-		C5 0A 4D 00 05 00 00 01 FF 01
+		99 13 4E 00 7F 04 1B 01 00 01 00 4D 00 01 04 03
+		01 05 00
 
-Handle 0x004E, DMI type 197, 10 bytes
+Handle 0x004F, DMI type 27, 15 bytes
+Cooling Device
+	Type: Fan
+	Status: OK
+	OEM-specific Information: 0x00000000
+	Nominal Speed: Unknown Or Non-rotating
+	Description: CPU1 Fan
+
+Handle 0x0050, DMI type 153, 19 bytes
 OEM-specific Type
 	Header and Data:
-		C5 0A 4E 00 06 00 02 00 FF 02
+		99 13 50 00 7F 04 1B 01 00 02 00 4F 00 01 04 03
+		01 06 00
 
-Handle 0x004F, DMI type 207, 9 bytes
+Handle 0x0051, DMI type 27, 15 bytes
+Cooling Device
+	Type: Cabinet Fan
+	Status: OK
+	OEM-specific Information: 0x00000000
+	Nominal Speed: Unknown Or Non-rotating
+	Description: Rear Chassis Fan0
+
+Handle 0x0052, DMI type 153, 19 bytes
 OEM-specific Type
 	Header and Data:
-		CF 09 4F 00 00 00 00 24 00
+		99 13 52 00 7F 04 1B 01 00 03 00 51 00 01 04 07
+		01 04 00
 
-Handle 0x0050, DMI type 127, 4 bytes
+Handle 0x0053, DMI type 27, 15 bytes
+Cooling Device
+	Type: Cabinet Fan
+	Status: OK
+	OEM-specific Information: 0x00000000
+	Nominal Speed: Unknown Or Non-rotating
+	Description: Rear Chassis Fan1
+
+Handle 0x0054, DMI type 153, 19 bytes
+OEM-specific Type
+	Header and Data:
+		99 13 54 00 7F 04 1B 01 00 04 00 53 00 01 04 07
+		01 04 00
+
+Handle 0x0055, DMI type 27, 15 bytes
+Cooling Device
+	Type: Cabinet Fan
+	Status: OK
+	OEM-specific Information: 0x00000000
+	Nominal Speed: Unknown Or Non-rotating
+	Description: Front Chassis Fan0
+
+Handle 0x0056, DMI type 153, 19 bytes
+OEM-specific Type
+	Header and Data:
+		99 13 56 00 7F 04 1B 01 00 05 00 55 00 01 04 07
+		01 04 00
+
+Handle 0x0057, DMI type 27, 15 bytes
+Cooling Device
+	Type: Cabinet Fan
+	Status: OK
+	OEM-specific Information: 0x00000000
+	Nominal Speed: Unknown Or Non-rotating
+	Description: Memory Fan0
+
+Handle 0x0058, DMI type 153, 19 bytes
+OEM-specific Type
+	Header and Data:
+		99 13 58 00 7F 04 1B 01 00 07 00 57 00 01 04 07
+		01 04 00
+
+Handle 0x0059, DMI type 27, 15 bytes
+Cooling Device
+	Type: Chip Fan
+	Status: OK
+	OEM-specific Information: 0x00000000
+	Nominal Speed: Unknown Or Non-rotating
+	Description: ChipSet Fan
+
+Handle 0x005A, DMI type 153, 19 bytes
+OEM-specific Type
+	Header and Data:
+		99 13 5A 00 7F 04 1B 01 00 09 00 59 00 01 04 07
+		01 04 00
+
+Handle 0x005B, DMI type 28, 22 bytes
+Temperature Probe
+	Description: CPU0 Temperature
+	Location: Processor
+	Status: OK
+	Maximum Value: Unknown
+	Minimum Value: Unknown
+	Resolution: 0.100 deg C
+	Tolerance: Unknown
+	Accuracy: Unknown
+	OEM-specific Information: 0x00000000
+	Nominal Value: Unknown
+
+Handle 0x005C, DMI type 153, 19 bytes
+OEM-specific Type
+	Header and Data:
+		99 13 5C 00 7F 01 1C 01 00 0A 00 5B 00 01 04 03
+		01 05 00
+
+Handle 0x005D, DMI type 28, 22 bytes
+Temperature Probe
+	Description: CPU1 Temperature
+	Location: Processor
+	Status: OK
+	Maximum Value: Unknown
+	Minimum Value: Unknown
+	Resolution: 0.100 deg C
+	Tolerance: Unknown
+	Accuracy: Unknown
+	OEM-specific Information: 0x00000000
+	Nominal Value: Unknown
+
+Handle 0x005E, DMI type 153, 19 bytes
+OEM-specific Type
+	Header and Data:
+		99 13 5E 00 7F 01 1C 01 00 0B 00 5D 00 01 04 03
+		01 06 00
+
+Handle 0x005F, DMI type 28, 22 bytes
+Temperature Probe
+	Description: System Temperature
+	Location: Motherboard
+	Status: OK
+	Maximum Value: Unknown
+	Minimum Value: Unknown
+	Resolution: 0.100 deg C
+	Tolerance: Unknown
+	Accuracy: Unknown
+	OEM-specific Information: 0x00000000
+	Nominal Value: Unknown
+
+Handle 0x0060, DMI type 153, 19 bytes
+OEM-specific Type
+	Header and Data:
+		99 13 60 00 7F 01 1C 01 00 0C 00 5F 00 01 04 07
+		01 04 00
+
+Handle 0x0061, DMI type 197, 10 bytes
+OEM-specific Type
+	Header and Data:
+		C5 0A 61 00 05 00 00 01 FF 01
+
+Handle 0x0062, DMI type 197, 10 bytes
+OEM-specific Type
+	Header and Data:
+		C5 0A 62 00 06 00 02 00 FF 02
+
+Handle 0x0063, DMI type 207, 9 bytes
+OEM-specific Type
+	Header and Data:
+		CF 09 63 00 00 00 00 24 00
+
+Handle 0x0064, DMI type 127, 4 bytes
 End Of Table
 

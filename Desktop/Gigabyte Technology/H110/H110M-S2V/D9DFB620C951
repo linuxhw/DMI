@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0xBEBCC000.
+Table at 0xBF5CC000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -647,7 +647,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -655,11 +655,11 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2400 MT/s
-	Manufacturer: 859B
+	Manufacturer: 8502
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT4G4DFS824A.C8FF   
-	Rank: 1
+	Part Number: PSD416G24002        
+	Rank: 2
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -692,8 +692,8 @@ Memory Device
 Handle 0x0042, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 20 GB
 	Physical Array Handle: 0x003D
 	Partition Width: 2
 
@@ -783,7 +783,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i3-7100 CPU @ 3.90GHz
-	Voltage: 1.1 V
+	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
 	Current Speed: 3900 MHz
@@ -820,8 +820,8 @@ Memory Device Mapped Address
 Handle 0x0048, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0040
 	Memory Array Mapped Address Handle: 0x0042
 	Partition Row Position: Unknown
@@ -968,7 +968,7 @@ Group Associations
 Handle 0x0054, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 54 00 01 03 01 55 02 00 90 06 01 10 80 20
+		DB 51 54 00 01 03 01 55 02 00 90 06 01 10 86 20
 		00 00 00 04 40 08 00 00 00 00 00 00 00 00 00 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

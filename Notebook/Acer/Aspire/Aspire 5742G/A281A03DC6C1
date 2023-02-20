@@ -1,14 +1,14 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 47 structures occupying 1926 bytes.
-Table at 0x000EA7E0.
+Table at 0x000E9D80.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Acer
-	Version: V1.19
-	Release Date: 04/01/2011
+	Version: V1.30
+	Release Date: 08/13/2012
 	ROM Size: 1536 kB
 	Characteristics:
 		PCI is supported
@@ -29,13 +29,13 @@ BIOS Information
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
-	BIOS Revision: 19.240
+	BIOS Revision: 30.240
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Acer
 	Product Name: Aspire 5742G
-	Version: V1.19
+	Version: V1.30
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -46,7 +46,7 @@ Handle 0x0002, DMI type 2, 16 bytes
 Base Board Information
 	Manufacturer: Acer
 	Product Name: Aspire 5742G
-	Version: V1.19
+	Version: V1.30
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -62,10 +62,10 @@ Chassis Information
 	Manufacturer: Acer
 	Type: Notebook
 	Lock: Not Present
-	Version: V1.19
+	Version: V1.30
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -300,7 +300,7 @@ Memory Device
 	Error Information Handle: 0x001D
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -351,7 +351,7 @@ Memory Device
 	Error Information Handle: 0x0021
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM1
@@ -501,7 +501,7 @@ Processor Information
 	Voltage: 0.0 V
 	External Clock: 1066 MHz
 	Max Speed: 2400 MHz
-	Current Speed: 2403 MHz
+	Current Speed: 2385 MHz
 	Status: Populated, Enabled
 	Upgrade: ZIF Socket
 	L1 Cache Handle: 0x002D
@@ -522,8 +522,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous

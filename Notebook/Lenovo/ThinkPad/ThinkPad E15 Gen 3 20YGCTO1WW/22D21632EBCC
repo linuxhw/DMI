@@ -1,8 +1,6 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0xC7C4F000.
 
 Handle 0x0000, DMI type 18, 23 bytes
@@ -54,8 +52,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -70,8 +68,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -152,7 +150,7 @@ Memory Device
 	Error Information Handle: 0x0007
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -208,7 +206,7 @@ Memory Device
 	Error Information Handle: 0x000A
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -684,14 +682,14 @@ OEM-specific Type
 Handle 0x003B, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3B 00 54 48 4E 4B 00 00 40 00 00 00 05 00
+		8D 12 3B 00 54 48 4E 4B 00 00 40 00 00 00 0B 00
 		00 00
 
 Handle 0x003C, DMI type 141, 30 bytes
 OEM-specific Type
 	Header and Data:
-		8D 1E 3C 00 54 48 4E 4B 00 00 50 00 00 00 38 A9
-		1C 01 00 00 00 00 F7 4E D0 02 00 00 00 00
+		8D 1E 3C 00 54 48 4E 4B 00 00 50 00 00 00 A6 2C
+		91 01 00 00 00 00 64 0E 42 03 00 00 00 00
 
 Handle 0x003D, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
@@ -701,10 +699,10 @@ ThinkPad Embedded Controller Program
 Handle 0x003E, DMI type 141, 56 bytes
 OEM-specific Type
 	Header and Data:
-		8D 38 3E 00 54 48 4E 4B 00 00 60 00 00 00 CF 00
-		22 20 01 25 07 03 24 00 22 20 01 24 08 07 57 00
-		22 20 01 20 12 00 27 00 22 20 01 18 12 11 41 00
-		22 20 01 18 09 21 12 00
+		8D 38 3E 00 54 48 4E 4B 00 00 60 00 00 00 FF 00
+		22 20 09 04 10 56 38 00 22 20 09 04 10 05 21 00
+		22 20 09 04 09 56 13 00 22 20 06 18 13 03 03 00
+		22 20 06 18 12 54 50 00
 
 Handle 0x003F, DMI type 135, 18 bytes
 OEM-specific Type

@@ -1,7 +1,7 @@
 # dmidecode 2.11
 SMBIOS 2.4 present.
-35 structures occupying 1623 bytes.
-Table at 0x000E33A0.
+39 structures occupying 1777 bytes.
+Table at 0x000E3300.
 
 Handle 0x0000, DMI type 4, 35 bytes
 Processor Information
@@ -331,7 +331,7 @@ Memory Device
 	Manufacturer: 0x7F98000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 0x393930353331362D3030352E4130344C4600
+	Part Number: 0x000000000000000000000000000000000000
 
 Handle 0x0019, DMI type 20, 19 bytes
 Memory Device Mapped Address
@@ -339,7 +339,7 @@ Memory Device Mapped Address
 	Ending Address: 0x0003FFFFFFF
 	Range Size: 1 GB
 	Physical Device Handle: 0x0018
-	Memory Array Mapped Address Handle: 0x001E
+	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: 1
 	Interleave Position: 1
 	Interleaved Data Depth: 1
@@ -348,22 +348,33 @@ Handle 0x001A, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0017
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 512 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: J2MY
 	Bank Locator: CHAN A DIMM 1
 	Type: DDR2
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: NO DIMM
+	Type Detail: Synchronous
+	Speed: 667 MHz
+	Manufacturer: 0xAD00000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NO DIMM
+	Part Number: 0x48594D503536345536344250382D59352020
 
-Handle 0x001B, DMI type 17, 27 bytes
+Handle 0x001B, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00040000000
+	Ending Address: 0x0005FFFFFFF
+	Range Size: 512 MB
+	Physical Device Handle: 0x001A
+	Memory Array Mapped Address Handle: 0x0020
+	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x001C, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0017
 	Error Information Handle: Not Provided
@@ -380,60 +391,81 @@ Memory Device
 	Manufacturer: 0x7F98000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 0x000000000000000000000000000000000000
+	Part Number: 0x393930353331362D3030352E4130344C4600
 
-Handle 0x001C, DMI type 20, 19 bytes
+Handle 0x001D, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x0007FFFFFFF
+	Starting Address: 0x00060000000
+	Ending Address: 0x0009FFFFFFF
 	Range Size: 1 GB
-	Physical Device Handle: 0x001B
-	Memory Array Mapped Address Handle: 0x001E
+	Physical Device Handle: 0x001C
+	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: 2
 	Interleave Position: 2
 	Interleaved Data Depth: 1
 
-Handle 0x001D, DMI type 17, 27 bytes
+Handle 0x001E, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0017
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 256 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: J4MY
 	Bank Locator: CHAN B DIMM 1
 	Type: DDR2
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: NO DIMM
+	Type Detail: Synchronous
+	Speed: 667 MHz
+	Manufacturer: 0x7F4F000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NO DIMM
+	Part Number: 0x4A4D33333551363434412D36202020202020
 
-Handle 0x001E, DMI type 19, 15 bytes
+Handle 0x001F, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x000A0000000
+	Ending Address: 0x000AFFFFFFF
+	Range Size: 256 MB
+	Physical Device Handle: 0x001E
+	Memory Array Mapped Address Handle: 0x0020
+	Partition Row Position: 2
+	Interleave Position: 2
+	Interleaved Data Depth: 1
+
+Handle 0x0020, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000AFFFFFFF
+	Range Size: 2816 MB
 	Physical Array Handle: 0x0017
 	Partition Width: 4
 
-Handle 0x001F, DMI type 187, 9 bytes
+Handle 0x0021, DMI type 187, 9 bytes
 OEM-specific Type
 	Header and Data:
-		BB 09 1F 00 18 00 03 9B 02
+		BB 09 21 00 18 00 03 9B 02
 
-Handle 0x0020, DMI type 187, 9 bytes
+Handle 0x0022, DMI type 187, 9 bytes
 OEM-specific Type
 	Header and Data:
-		BB 09 20 00 1B 00 03 9B 02
+		BB 09 22 00 1A 00 03 9B 02
 
-Handle 0x0021, DMI type 136, 6 bytes
+Handle 0x0023, DMI type 187, 9 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 21 00 5A 5A
+		BB 09 23 00 1C 00 03 9B 02
+
+Handle 0x0024, DMI type 187, 9 bytes
+OEM-specific Type
+	Header and Data:
+		BB 09 24 00 1E 00 03 9B 02
+
+Handle 0x0025, DMI type 136, 6 bytes
+OEM-specific Type
+	Header and Data:
+		88 06 25 00 5A 5A
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

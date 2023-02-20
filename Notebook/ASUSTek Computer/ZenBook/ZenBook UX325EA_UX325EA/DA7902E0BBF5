@@ -1,8 +1,6 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0x425A4000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -450,8 +448,10 @@ Unknown Type
 Handle 0x0039, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: INTC
-	Specification Version: 2.0	Firmware Revision: 600.7
-	Description: INTEL	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 600.7
+	Description: INTEL
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -478,7 +478,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelA
@@ -513,7 +513,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelB
@@ -548,7 +548,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelC
@@ -583,7 +583,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelD
@@ -618,7 +618,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelA
@@ -653,7 +653,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelB
@@ -688,7 +688,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelC
@@ -723,7 +723,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelD
@@ -951,8 +951,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 5120 kB
-	Maximum Size: 5120 kB
+	Installed Size: 5 MB
+	Maximum Size: 5 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -967,8 +967,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -1577,7 +1577,7 @@ Group Associations
 Handle 0x00AA, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A AA 00 01 04 01 45 02 00 A0 06 01 85 30 20
+		DB 6A AA 00 01 04 01 45 02 00 90 06 01 85 39 20
 		00 00 00 00 40 00 00 03 1F 00 00 C9 03 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

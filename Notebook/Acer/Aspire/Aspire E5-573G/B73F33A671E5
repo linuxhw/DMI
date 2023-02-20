@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-32 structures occupying 2298 bytes.
+33 structures occupying 2371 bytes.
 Table at 0x000E6860.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -156,8 +156,8 @@ Memory Module Information
 	Bank Connections: 0 0
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 7, 19 bytes
@@ -252,17 +252,17 @@ Handle 0x000E, DMI type 14, 20 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 5
-		0x0019 (OEM-specific)
+		0x001A (OEM-specific)
+		0x0018 (OEM-specific)
 		0x0017 (OEM-specific)
 		0x0016 (OEM-specific)
 		0x0015 (OEM-specific)
-		0x0014 (OEM-specific)
 
 Handle 0x000F, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x001E (OEM-specific)
+		0x001F (OEM-specific)
 
 Handle 0x0010, DMI type 16, 23 bytes
 Physical Memory Array
@@ -298,28 +298,28 @@ Handle 0x0012, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0010
 	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: M471B5173DB0-YK0  
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0013, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0010
 	Partition Width: 2
 
@@ -334,15 +334,26 @@ Memory Device Mapped Address
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x0015, DMI type 131, 64 bytes
+Handle 0x0015, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0012
+	Memory Array Mapped Address Handle: 0x0013
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 1
+
+Handle 0x0016, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 15 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 16 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 43 9C 00 00 00 00 01 00 00 00 00 00 0A 00
 		30 04 1E 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 FF 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0016, DMI type 170, 78 bytes
+Handle 0x0017, DMI type 170, 78 bytes
 Acer Hotkey Function
 	Function bitmap for Communication Button: 0x0001
 		WiFi: Yes
@@ -355,30 +366,30 @@ Acer Hotkey Function
 	Function bitmap for Others Button: 0x0006
 	Communication Function Key Number: 1
 
-Handle 0x0017, DMI type 171, 44 bytes
+Handle 0x0018, DMI type 171, 44 bytes
 OEM-specific Type
 	Header and Data:
-		AB 2C 17 00 03 E3 05 45 07 04 CF 1B 81 2C 08 89
+		AB 2C 18 00 03 E3 05 45 07 04 CF 1B 81 2C 08 89
 		04 87 E0 01 86 80 16 0A 01 DE 10 99 12 02 EC 10
 		68 81 05 86 80 20 9C 07 E4 14 59 43
 
-Handle 0x0018, DMI type 172, 27 bytes
+Handle 0x0019, DMI type 172, 27 bytes
 OEM-specific Type
 	Header and Data:
-		AC 1B 18 00 02 21 01 FF 00 02 03 00 03 FF 00 04
+		AC 1B 19 00 02 21 01 FF 00 02 03 00 03 FF 00 04
 		01 00 05 0F 00 06 FF 00 07 FF 00
 
-Handle 0x0019, DMI type 221, 12 bytes
+Handle 0x001A, DMI type 221, 12 bytes
 OEM-specific Type
 	Header and Data:
-		DD 0C 19 00 01 01 00 02 08 00 00 00
+		DD 0C 1A 00 01 01 00 02 08 00 00 00
 	Strings:
 		Reference Code - ACPI
 
-Handle 0x001A, DMI type 221, 54 bytes
+Handle 0x001B, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 1A 00 07 01 00 02 08 00 00 00 02 00 01 08
+		DD 36 1B 00 07 01 00 02 08 00 00 00 02 00 01 08
 		00 03 00 03 00 02 08 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 0B 00 07 00 FF FF FF 0B 00 08
 		00 FF FF FF 00 00
@@ -392,20 +403,20 @@ OEM-specific Type
 		SA-CRID New Value
 		OPROM - VBIOS
 
-Handle 0x001B, DMI type 221, 26 bytes
+Handle 0x001C, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 1B 00 03 01 00 02 08 00 00 00 02 00 00 00
+		DD 1A 1C 00 03 01 00 02 08 00 00 00 02 00 00 00
 		00 1C 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
 		TXT ACM version
 
-Handle 0x001C, DMI type 221, 26 bytes
+Handle 0x001D, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 1C 00 03 01 00 02 08 00 00 00 02 00 FF FF
+		DD 1A 1D 00 03 01 00 02 08 00 00 00 02 00 FF FF
 		FF FF 00 03 04 0A 00 1E 30 04
 	Strings:
 		Reference Code - ME 10.0
@@ -413,10 +424,10 @@ OEM-specific Type
 		ME Firmware Version
 		1.5MB SKU
 
-Handle 0x001D, DMI type 221, 68 bytes
+Handle 0x001E, DMI type 221, 68 bytes
 OEM-specific Type
 	Header and Data:
-		DD 44 1D 00 09 01 00 02 08 00 00 00 02 03 FF FF
+		DD 44 1E 00 09 01 00 02 08 00 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 04 00 05 00 FF FF FF 04
 		00 06 00 FF FF FF FF FF 07 00 19 00 00 00 00 08
 		00 2C 00 00 00 00 09 00 03 00 00 00 00 0A 00 01
@@ -433,10 +444,10 @@ OEM-specific Type
 		PCH9S A0 Hsio Version
 		WPTLp B0 Hsio Version
 
-Handle 0x001E, DMI type 222, 14 bytes
+Handle 0x001F, DMI type 222, 14 bytes
 OEM-specific Type
 	Header and Data:
-		DE 0E 1E 00 01 99 00 03 10 01 20 02 30 03
+		DE 0E 1F 00 01 99 00 03 10 01 20 02 30 03
 	Strings:
 		Memory Init Complete
 		End of DXE Phase

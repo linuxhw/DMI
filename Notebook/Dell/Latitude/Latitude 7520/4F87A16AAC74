@@ -1,8 +1,8 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
-81 structures occupying 6309 bytes.
-Table at 0x5F8D7000.
+80 structures occupying 6315 bytes.
+Table at 0x5F8D0000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -121,19 +121,20 @@ OEM-specific Type
 		05 FF FF 65 05 65 05 FF FF 6D 05 6D 05 01 00 6E
 		05 6E 05 00 00 72 05 72 05 00 00 73 05 73 05 01
 		00 74 05 74 05 02 00 75 05 75 05 01 00 76 05 76
-		05 00 00 77 05 77 05 FF FF 4A 40 4A 40 01 00 4B
-		40 4B 40 00 00 FF FF FF FF 00 00
+		05 00 00 77 05 77 05 FF FF 7E 05 7E 05 01 00 7F
+		05 7F 05 00 00 FF FF FF FF 00 00
 
-Handle 0xDA06, DMI type 218, 101 bytes
+Handle 0xDA06, DMI type 218, 113 bytes
 OEM-specific Type
 	Header and Data:
-		DA 65 06 DA B2 00 7C FF 1F B6 50 4C 40 4C 40 FF
-		FF 4F 40 4F 40 01 00 50 40 50 40 00 00 00 80 00
-		80 00 00 02 80 02 80 02 00 03 80 03 80 03 00 0E
-		80 0E 80 01 00 0F 80 0F 80 FF FF 11 80 11 80 01
-		00 12 80 12 80 FF FF 13 80 13 80 00 00 14 80 14
-		80 00 00 00 A0 00 A0 01 00 04 A0 04 A0 01 00 FF
-		FF FF FF 00 00
+		DA 71 06 DA B2 00 7C FF 1F B6 50 4A 40 4A 40 01
+		00 4B 40 4B 40 00 00 4C 40 4C 40 FF FF 4F 40 4F
+		40 01 00 50 40 50 40 00 00 00 80 00 80 00 00 02
+		80 02 80 02 00 03 80 03 80 03 00 0E 80 0E 80 01
+		00 0F 80 0F 80 FF FF 11 80 11 80 01 00 12 80 12
+		80 FF FF 13 80 13 80 00 00 14 80 14 80 00 00 00
+		A0 00 A0 01 00 04 A0 04 A0 01 00 FF FF FF FF 00
+		00
 
 Handle 0xDA07, DMI type 218, 89 bytes
 OEM-specific Type
@@ -148,8 +149,8 @@ OEM-specific Type
 Handle 0x0001, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.7.1
-	Release Date: 06/08/2021
+	Version: 1.14.1
+	Release Date: 12/18/2021
 	ROM Size: 32 MB
 	Characteristics:
 		PCI is supported
@@ -170,7 +171,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.7
+	BIOS Revision: 1.14
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -194,7 +195,7 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Not Specified
-	Chassis Handle: 0x0000
+	Chassis Handle: 0x0300
 	Type: Motherboard
 	Contained Object Handles: 0
 
@@ -257,7 +258,7 @@ Processor Information
 	Voltage: 0.6 V
 	External Clock: 100 MHz
 	Max Speed: 4400 MHz
-	Current Speed: 1500 MHz
+	Current Speed: 4000 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0701
@@ -315,8 +316,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 5120 kB
-	Maximum Size: 5120 kB
+	Installed Size: 5 MB
+	Maximum Size: 5 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -331,8 +332,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -354,6 +355,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.0
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0901, DMI type 9, 24 bytes
 System Slot Information
@@ -368,6 +371,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.1
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0902, DMI type 9, 24 bytes
 System Slot Information
@@ -382,6 +387,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.2
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0903, DMI type 9, 24 bytes
 System Slot Information
@@ -396,6 +403,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.3
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0904, DMI type 9, 24 bytes
 System Slot Information
@@ -410,6 +419,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.4
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0905, DMI type 9, 24 bytes
 System Slot Information
@@ -424,6 +435,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.5
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0906, DMI type 9, 24 bytes
 System Slot Information
@@ -438,6 +451,8 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.6
+	Data Bus Width: 0
+	Peer Devices: 0
 
 Handle 0x0B00, DMI type 11, 5 bytes
 OEM Strings
@@ -493,20 +508,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Motherboard
 	Bank Locator: BANK 0
 	Type: LPDDR4
 	Type Detail: Synchronous
-	Speed: 4267 MT/s
+	Speed: 3733 MT/s
 	Manufacturer:  
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HCNNNCPMBLHR-NEE  
+	Part Number: HCNNNCPMMLXR-NEE  
 	Rank: 2
-	Configured Memory Speed: 4267 MT/s
+	Configured Memory Speed: 3733 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 0.6 V
@@ -528,20 +543,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Motherboard
 	Bank Locator: BANK 1
 	Type: LPDDR4
 	Type Detail: Synchronous
-	Speed: 4267 MT/s
+	Speed: 3733 MT/s
 	Manufacturer:  
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HCNNNCPMBLHR-NEE  
+	Part Number: HCNNNCPMMLXR-NEE  
 	Rank: 2
-	Configured Memory Speed: 4267 MT/s
+	Configured Memory Speed: 3733 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 0.6 V
@@ -563,20 +578,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Motherboard
 	Bank Locator: BANK 2
 	Type: LPDDR4
 	Type Detail: Synchronous
-	Speed: 4267 MT/s
+	Speed: 3733 MT/s
 	Manufacturer:  
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HCNNNCPMBLHR-NEE  
+	Part Number: HCNNNCPMMLXR-NEE  
 	Rank: 2
-	Configured Memory Speed: 4267 MT/s
+	Configured Memory Speed: 3733 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 0.6 V
@@ -598,20 +613,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Motherboard
 	Bank Locator: BANK 3
 	Type: LPDDR4
 	Type Detail: Synchronous
-	Speed: 4267 MT/s
+	Speed: 3733 MT/s
 	Manufacturer:  
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HCNNNCPMBLHR-NEE  
+	Part Number: HCNNNCPMMLXR-NEE  
 	Rank: 2
-	Configured Memory Speed: 4267 MT/s
+	Configured Memory Speed: 3733 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 0.6 V
@@ -633,20 +648,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Motherboard
 	Bank Locator: BANK 0
 	Type: LPDDR4
 	Type Detail: Synchronous
-	Speed: 4267 MT/s
+	Speed: 3733 MT/s
 	Manufacturer:  
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HCNNNCPMBLHR-NEE  
+	Part Number: HCNNNCPMMLXR-NEE  
 	Rank: 2
-	Configured Memory Speed: 4267 MT/s
+	Configured Memory Speed: 3733 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 0.6 V
@@ -668,20 +683,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Motherboard
 	Bank Locator: BANK 1
 	Type: LPDDR4
 	Type Detail: Synchronous
-	Speed: 4267 MT/s
+	Speed: 3733 MT/s
 	Manufacturer:  
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HCNNNCPMBLHR-NEE  
+	Part Number: HCNNNCPMMLXR-NEE  
 	Rank: 2
-	Configured Memory Speed: 4267 MT/s
+	Configured Memory Speed: 3733 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 0.6 V
@@ -703,20 +718,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Motherboard
 	Bank Locator: BANK 2
 	Type: LPDDR4
 	Type Detail: Synchronous
-	Speed: 4267 MT/s
+	Speed: 3733 MT/s
 	Manufacturer:  
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HCNNNCPMBLHR-NEE  
+	Part Number: HCNNNCPMMLXR-NEE  
 	Rank: 2
-	Configured Memory Speed: 4267 MT/s
+	Configured Memory Speed: 3733 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 0.6 V
@@ -738,20 +753,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Motherboard
 	Bank Locator: BANK 3
 	Type: LPDDR4
 	Type Detail: Synchronous
-	Speed: 4267 MT/s
+	Speed: 3733 MT/s
 	Manufacturer:  
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HCNNNCPMBLHR-NEE  
+	Part Number: HCNNNCPMMLXR-NEE  
 	Rank: 2
-	Configured Memory Speed: 4267 MT/s
+	Configured Memory Speed: 3733 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 0.6 V
@@ -795,15 +810,8 @@ Portable Battery
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000801
 
-Handle 0x1800, DMI type 24, 5 bytes
-Hardware Security
-	Power-On Password Status: Not Implemented
-	Keyboard Password Status: Not Implemented
-	Administrator Password Status: Not Implemented
-	Front Panel Reset Status: Not Implemented
-
 Handle 0x1900, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x1B00, DMI type 27, 15 bytes
@@ -938,8 +946,10 @@ Onboard Device
 Handle 0x2B00, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: STM
-	Specification Version: 2.0	Firmware Revision: 1.258
-	Description: TPM 2.0, ManufacturerID: STM , Firmware Version: 0x00010102.0x0	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 1.258
+	Description: TPM 2.0, ManufacturerID: STM , Firmware Version: 0x00010102.0x0
+	Characteristics:
 		TPM Device characteristics not supported
 	OEM-specific Information: 0x00000000
 
@@ -952,9 +962,9 @@ OEM-specific Type
 Handle 0x8300, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 00 83 35 00 00 00 0F 00 00 00 00 00 03 00
+		83 40 00 83 35 00 00 00 0F 00 00 00 00 00 04 00
 		F8 00 82 A0 00 00 00 00 09 C0 00 00 00 00 0F 00
-		AA 06 17 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		F7 07 23 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x8800, DMI type 136, 8 bytes
@@ -1006,7 +1016,7 @@ Handle 0xCD01, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 01 CD 03 01 00 0A 00 34 21 00 02 00 00 00
-		00 86 00 03 00 01 0E 12 00 00
+		00 9C 00 03 00 01 0E 19 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -1016,7 +1026,7 @@ Handle 0xCD02, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 02 CD 03 01 00 0A 00 34 21 00 02 00 0F 00
-		00 03 00 03 04 0F 00 17 AA 06
+		00 04 00 03 04 0F 00 23 F7 07
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -1041,11 +1051,11 @@ OEM-specific Type
 Handle 0xCD04, DMI type 205, 82 bytes
 OEM-specific Type
 	Header and Data:
-		CD 52 04 CD 0B 01 00 0A 00 34 21 00 02 00 01 00
-		0A 00 00 03 00 0A 00 34 21 00 04 05 FF FF FF FF
+		CD 52 04 CD 0B 01 00 0A 00 34 21 00 02 00 02 00
+		02 06 00 03 00 0A 00 34 21 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 01 00 07 00 00 00 00 01 00 08
-		00 FF FF FF FF FF 09 00 11 01 04 00 00 0A 00 00
-		00 00 F8 00 0B 00 29 00 00 00 00 0C 00 FF FF FF
+		00 FF FF FF FF FF 09 00 11 01 06 00 00 0A 00 00
+		00 00 F9 00 0B 00 2B 01 00 00 00 0C 00 FF FF FF
 		FF FF
 	Strings:
 		Reference Code - SA - System Agent
@@ -1157,7 +1167,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 00 00 FF FF 00 00 00 00 00 00 00 00
+		DE 10 00 DE 01 04 00 00 22 03 03 22 44 01 00 00
 
 Handle 0x0000, DMI type 255, 6 bytes
 OEM-specific Type

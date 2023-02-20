@@ -6,8 +6,8 @@ Table at 0x8A7EF000.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: INSYDE Corp.
-	Version: XMAKB5R0P0C07
-	Release Date: 02/22/2019
+	Version: XMAKB5R0P0E07
+	Release Date: 09/11/2020
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 6 MB
@@ -557,7 +557,7 @@ Handle 0x002D, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Not Implemented
 	Keyboard Password Status: Not Implemented
-	Administrator Password Status: Enabled
+	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x002E, DMI type 26, 24 bytes
@@ -691,20 +691,22 @@ OEM-specific Type
 		MEI2
 		MEI3
 
-Handle 0x003C, DMI type 221, 26 bytes
+Handle 0x003C, DMI type 221, 33 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 3C 00 03 01 00 02 06 00 00 00 02 00 00 00
-		00 96 00 03 00 00 05 00 00 00
+		DD 21 3C 00 04 01 00 03 07 06 00 00 02 00 00 00
+		00 96 00 03 00 00 05 00 00 00 04 00 FF FF FF FF
+		FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
-		TXT ACM version
+		TXT ACM Version
+		BIOS Guard Version
 
 Handle 0x003D, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 3D 00 03 01 00 02 06 00 00 00 02 00 00 00
+		DD 1A 3D 00 03 01 00 03 07 06 00 00 02 00 00 00
 		00 00 00 03 04 0B 08 32 61 0D
 	Strings:
 		Reference Code - ME 11.0
@@ -715,7 +717,7 @@ OEM-specific Type
 Handle 0x003E, DMI type 221, 75 bytes
 OEM-specific Type
 	Header and Data:
-		DD 4B 3E 00 0A 01 00 02 06 00 00 00 02 03 FF FF
+		DD 4B 3E 00 0A 01 00 03 07 06 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 21 00 05 00 FF FF FF 21
 		00 06 00 FF FF FF FF FF 07 00 3E 00 00 00 00 08
 		00 34 00 00 00 00 09 00 0B 00 00 00 00 0A 00 3E
@@ -736,8 +738,8 @@ OEM-specific Type
 Handle 0x003F, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 3F 00 07 01 00 02 06 00 00 00 02 00 02 06
-		00 00 00 03 00 02 06 00 00 00 04 05 FF FF FF FF
+		DD 36 3F 00 07 01 00 03 07 06 00 00 02 00 03 07
+		06 01 00 03 00 03 07 06 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 08 00 07 00 FF FF FF 08 00 08
 		00 FF FF FF FF FF
 	Strings:

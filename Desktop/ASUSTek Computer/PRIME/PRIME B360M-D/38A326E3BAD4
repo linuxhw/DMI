@@ -1,8 +1,6 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.1 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0x8AA9E000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -43,7 +41,7 @@ System Information
 	Version: System Version
 	Serial Number: --
 	UUID: --
-	Wake-up Type: PCI PME#
+	Wake-up Type: Power Switch
 	SKU Number: ASUS_MB_CNL
 	Family: To be filled by O.E.M.
 
@@ -260,18 +258,18 @@ Handle 0x001A, DMI type 9, 19 bytes
 System Slot Information
 	Designation: PCIEX16
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 0
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:01.0
-	Data Bus Width: 1
+	Bus Address: 0000:01:01.0
+	Data Bus Width: 93
 	Peer Devices: 0
 
-Handle 0x001B, DMI type 9, 17 bytes
+Handle 0x001B, DMI type 9, 19 bytes
 System Slot Information
 	Designation: PCIEX1_1
 	Type: x1 PCI Express
@@ -282,9 +280,11 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:02:1c.3
+	Bus Address: 0000:03:1c.3
+	Data Bus Width: 211
+	Peer Devices: 0
 
-Handle 0x001C, DMI type 9, 17 bytes
+Handle 0x001C, DMI type 9, 19 bytes
 System Slot Information
 	Designation: PCIEX1_2
 	Type: x1 PCI Express
@@ -296,8 +296,10 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:ff:1c.4
+	Data Bus Width: 160
+	Peer Devices: 0
 
-Handle 0x001D, DMI type 9, 17 bytes
+Handle 0x001D, DMI type 9, 19 bytes
 System Slot Information
 	Designation: PCI
 	Type: 32-bit PCI
@@ -308,7 +310,9 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:04:1c.5
+	Bus Address: 0000:05:1c.5
+	Data Bus Width: 136
+	Peer Devices: 0
 
 Handle 0x001E, DMI type 10, 6 bytes
 On Board Device Information
@@ -798,7 +802,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Pentium(R) Gold G5400 CPU @ 3.70GHz
-	Voltage: 1.1 V
+	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
 	Current Speed: 3663 MHz

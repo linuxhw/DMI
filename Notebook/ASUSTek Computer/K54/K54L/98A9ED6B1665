@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 75 structures occupying 2583 bytes.
 Table at 0x000EB940.
@@ -133,7 +134,7 @@ Cache Information
 	Installed SRAM Type: Other
 	Speed: Unknown
 	Error Correction Type: None
-	System Type: Unified
+	System Type: Instruction
 	Associativity: 8-way Set-associative
 
 Handle 0x0006, DMI type 7, 19 bytes
@@ -142,15 +143,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 256 kB
-	Maximum Size: 256 kB
+	Installed Size: 0 kB
+	Maximum Size: 0 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
 	Speed: Unknown
 	Error Correction Type: None
-	System Type: Unified
-	Associativity: 8-way Set-associative
+	System Type: <OUT OF SPEC>
+	Associativity: <OUT OF SPEC>
 
 Handle 0x0007, DMI type 126, 19 bytes
 Inactive
@@ -700,14 +701,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
@@ -748,7 +749,7 @@ OEM-specific Type
 Handle 0x0049, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 49 00 10 00 00 00 00 07 00 00 00 00 00 36
+		83 40 49 00 31 00 00 00 00 07 00 00 00 00 00 36
 		F8 00 49 1C FF FF FF FF 01 20 00 00 01 00 07 00
 		40 04 0D 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 70 01 00 00 76 50 72 6F 00 00 00 00

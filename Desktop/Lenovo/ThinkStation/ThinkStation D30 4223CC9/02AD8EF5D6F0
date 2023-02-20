@@ -1,8 +1,8 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-97 structures occupying 4745 bytes.
-Table at 0x7CF58018.
+98 structures occupying 4767 bytes.
+Table at 0x7D291018.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -364,7 +364,7 @@ Handle 0x0014, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J19
 	Type: x4 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 0
 	Characteristics:
@@ -377,7 +377,7 @@ Handle 0x0015, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J17
 	Type: x16 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 1
 	Characteristics:
@@ -397,13 +397,13 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:0b:02.0
+	Bus Address: 0000:0a:02.0
 
 Handle 0x0017, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J18
 	Type: x16 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 3
 	Characteristics:
@@ -423,7 +423,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:08:04.0
+	Bus Address: 0000:07:04.0
 
 Handle 0x0019, DMI type 9, 17 bytes
 System Slot Information
@@ -436,7 +436,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:0b:04.1
+	Bus Address: 0000:0a:04.1
 
 Handle 0x001A, DMI type 9, 17 bytes
 System Slot Information
@@ -481,8 +481,8 @@ Handle 0x001E, DMI type 18, 23 bytes
 Handle 0x001F, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x01FFFFFFFFF
-	Range Size: 128 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Array Handle: 0x001D
 	Partition Width: 8
 
@@ -522,33 +522,25 @@ Handle 0x0022, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x001D
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 16 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
-	Set: 1
+	Set: None
 	Locator: CPU0_Dimm1
 	Bank Locator: CPU0_Bank0
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1600 MT/s
-	Manufacturer: Hynix Semiconducto
+	Type: Unknown
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: Dimm1_Manufacturer
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT42GR7AFR4A
-	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Part Number: Dimm1_PartNum
+	Rank: Unknown
+	Configured Memory Speed: Unknown
 
-Handle 0x0023, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x0022
-	Memory Array Mapped Address Handle: 0x001F
-	Partition Row Position: 1
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+Handle 0x0023, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x0024, DMI type 17, 34 bytes
 Memory Device
@@ -573,8 +565,8 @@ Memory Device
 
 Handle 0x0025, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00800000000
-	Ending Address: 0x00BFFFFFFFF
+	Starting Address: 0x00400000000
+	Ending Address: 0x007FFFFFFFF
 	Range Size: 16 GB
 	Physical Device Handle: 0x0024
 	Memory Array Mapped Address Handle: 0x001F
@@ -586,33 +578,25 @@ Handle 0x0026, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x001D
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 16 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
-	Set: 1
+	Set: None
 	Locator: CPU0_Dimm3
 	Bank Locator: CPU0_Bank1
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1600 MT/s
-	Manufacturer: Hynix Semiconducto
+	Type: Unknown
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: Dimm3_Manufacturer
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT42GR7AFR4A
-	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Part Number: Dimm3_PartNum
+	Rank: Unknown
+	Configured Memory Speed: Unknown
 
-Handle 0x0027, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00C00000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x0026
-	Memory Array Mapped Address Handle: 0x001F
-	Partition Row Position: 1
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+Handle 0x0027, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x0028, DMI type 17, 34 bytes
 Memory Device
@@ -637,8 +621,8 @@ Memory Device
 
 Handle 0x0029, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x01000000000
-	Ending Address: 0x013FFFFFFFF
+	Starting Address: 0x00800000000
+	Ending Address: 0x00BFFFFFFFF
 	Range Size: 16 GB
 	Physical Device Handle: 0x0028
 	Memory Array Mapped Address Handle: 0x001F
@@ -650,33 +634,25 @@ Handle 0x002A, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x001D
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 16 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
-	Set: 1
+	Set: None
 	Locator: CPU0_Dimm5
 	Bank Locator: CPU0_Bank2
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1600 MT/s
-	Manufacturer: Hynix Semiconducto
+	Type: Unknown
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: Dimm5_Manufacturer
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT42GR7AFR4A
-	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Part Number: Dimm5_PartNum
+	Rank: Unknown
+	Configured Memory Speed: Unknown
 
-Handle 0x002B, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x01400000000
-	Ending Address: 0x017FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x002A
-	Memory Array Mapped Address Handle: 0x001F
-	Partition Row Position: 1
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+Handle 0x002B, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x002C, DMI type 17, 34 bytes
 Memory Device
@@ -701,8 +677,8 @@ Memory Device
 
 Handle 0x002D, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x01800000000
-	Ending Address: 0x01BFFFFFFFF
+	Starting Address: 0x00C00000000
+	Ending Address: 0x00FFFFFFFFF
 	Range Size: 16 GB
 	Physical Device Handle: 0x002C
 	Memory Array Mapped Address Handle: 0x001F
@@ -714,33 +690,25 @@ Handle 0x002E, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x001D
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 16 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
-	Set: 1
+	Set: None
 	Locator: CPU0_Dimm7
 	Bank Locator: CPU0_Bank3
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1600 MT/s
-	Manufacturer: Hynix Semiconducto
+	Type: Unknown
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: Dimm7_Manufacturer
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT42GR7AFR4A
-	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Part Number: Dimm7_PartNum
+	Rank: Unknown
+	Configured Memory Speed: Unknown
 
-Handle 0x002F, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x01C00000000
-	Ending Address: 0x01FFFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x002E
-	Memory Array Mapped Address Handle: 0x001F
-	Partition Row Position: 1
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+Handle 0x002F, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x0030, DMI type 16, 23 bytes
 Physical Memory Array
@@ -763,9 +731,9 @@ Handle 0x0031, DMI type 18, 23 bytes
 
 Handle 0x0032, DMI type 19, 31 bytes
 Memory Array Mapped Address
-	Starting Address: 0x02000000000
-	Ending Address: 0x03FFFFFFFFF
-	Range Size: 128 GB
+	Starting Address: 0x01000000000
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 64 GB
 	Physical Array Handle: 0x0030
 	Partition Width: 8
 
@@ -792,8 +760,8 @@ Memory Device
 
 Handle 0x0034, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x02000000000
-	Ending Address: 0x023FFFFFFFF
+	Starting Address: 0x01000000000
+	Ending Address: 0x013FFFFFFFF
 	Range Size: 16 GB
 	Physical Device Handle: 0x0033
 	Memory Array Mapped Address Handle: 0x0032
@@ -805,33 +773,25 @@ Handle 0x0035, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0030
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 16 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
-	Set: 1
+	Set: None
 	Locator: CPU1_Dimm1
 	Bank Locator: CPU1_Bank0
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1600 MT/s
-	Manufacturer: Hynix Semiconducto
+	Type: Unknown
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: Dimm1_Manufacturer
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT42GR7AFR4A
-	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Part Number: Dimm1_PartNum
+	Rank: Unknown
+	Configured Memory Speed: Unknown
 
-Handle 0x0036, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x02400000000
-	Ending Address: 0x027FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x0035
-	Memory Array Mapped Address Handle: 0x0032
-	Partition Row Position: 2
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+Handle 0x0036, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x0037, DMI type 17, 34 bytes
 Memory Device
@@ -856,8 +816,8 @@ Memory Device
 
 Handle 0x0038, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x02800000000
-	Ending Address: 0x02BFFFFFFFF
+	Starting Address: 0x01400000000
+	Ending Address: 0x017FFFFFFFF
 	Range Size: 16 GB
 	Physical Device Handle: 0x0037
 	Memory Array Mapped Address Handle: 0x0032
@@ -869,33 +829,25 @@ Handle 0x0039, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0030
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 16 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
-	Set: 1
+	Set: None
 	Locator: CPU1_Dimm3
 	Bank Locator: CPU1_Bank1
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1600 MT/s
-	Manufacturer: Hynix Semiconducto
+	Type: Unknown
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: Dimm3_Manufacturer
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT42GR7AFR4A
-	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Part Number: Dimm3_PartNum
+	Rank: Unknown
+	Configured Memory Speed: Unknown
 
-Handle 0x003A, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x02C00000000
-	Ending Address: 0x02FFFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x0039
-	Memory Array Mapped Address Handle: 0x0032
-	Partition Row Position: 2
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+Handle 0x003A, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x003B, DMI type 17, 34 bytes
 Memory Device
@@ -920,8 +872,8 @@ Memory Device
 
 Handle 0x003C, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x03000000000
-	Ending Address: 0x033FFFFFFFF
+	Starting Address: 0x01800000000
+	Ending Address: 0x01BFFFFFFFF
 	Range Size: 16 GB
 	Physical Device Handle: 0x003B
 	Memory Array Mapped Address Handle: 0x0032
@@ -933,33 +885,25 @@ Handle 0x003D, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0030
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 16 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
-	Set: 1
+	Set: None
 	Locator: CPU1_Dimm5
 	Bank Locator: CPU1_Bank2
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1600 MT/s
-	Manufacturer: Hynix Semiconducto
+	Type: Unknown
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: Dimm5_Manufacturer
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT42GR7AFR4A
-	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Part Number: Dimm5_PartNum
+	Rank: Unknown
+	Configured Memory Speed: Unknown
 
-Handle 0x003E, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x03400000000
-	Ending Address: 0x037FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x003D
-	Memory Array Mapped Address Handle: 0x0032
-	Partition Row Position: 2
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+Handle 0x003E, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x003F, DMI type 17, 34 bytes
 Memory Device
@@ -984,8 +928,8 @@ Memory Device
 
 Handle 0x0040, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x03800000000
-	Ending Address: 0x03BFFFFFFFF
+	Starting Address: 0x01C00000000
+	Ending Address: 0x01FFFFFFFFF
 	Range Size: 16 GB
 	Physical Device Handle: 0x003F
 	Memory Array Mapped Address Handle: 0x0032
@@ -997,33 +941,25 @@ Handle 0x0041, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0030
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 16 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
-	Set: 1
+	Set: None
 	Locator: CPU1_Dimm7
 	Bank Locator: CPU1_Bank3
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1600 MT/s
-	Manufacturer: Hynix Semiconducto
+	Type: Unknown
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: Dimm7_Manufacturer
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT42GR7AFR4A
-	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Part Number: Dimm7_PartNum
+	Rank: Unknown
+	Configured Memory Speed: Unknown
 
-Handle 0x0042, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x03C00000000
-	Ending Address: 0x03FFFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x0041
-	Memory Array Mapped Address Handle: 0x0032
-	Partition Row Position: 2
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+Handle 0x0042, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x0043, DMI type 24, 5 bytes
 Hardware Security
@@ -1185,99 +1121,107 @@ ThinkVantage Technologies
 Handle 0x005A, DMI type 140, 31 bytes
 OEM-specific Type
 	Header and Data:
-		8C 1F 5A 00 4C 45 4E 4F 56 4F 00 00 01 46 01 FF
-		1A CD FD 12 39 E1 A3 DC EC A9 1E 2E 0F 07 00
+		8C 1F 5A 00 4C 45 4E 4F 56 4F 00 00 01 3E F4 78
+		5E AE 41 37 A7 BA 09 94 52 7D DF A2 AB 07 00
 
 Handle 0x005B, DMI type 140, 31 bytes
 OEM-specific Type
 	Header and Data:
-		8C 1F 5B 00 4C 45 4E 4F 56 4F 00 00 01 D2 61 F4
-		6A 43 57 81 D1 2C 98 5D 85 9F 68 97 89 07 00
-
-Handle 0x005C, DMI type 140, 31 bytes
-OEM-specific Type
-	Header and Data:
-		8C 1F 5C 00 4C 45 4E 4F 56 4F 00 00 01 A0 9A 83
+		8C 1F 5B 00 4C 45 4E 4F 56 4F 00 00 01 A0 9A 83
 		F1 76 EB 0C 53 55 3B C4 FF 58 D3 C2 B9 07 00
 
-Handle 0x005D, DMI type 140, 19 bytes
+Handle 0x005C, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 5D 00 4C 45 4E 4F 56 4F 05 05 01 0F 00 00
+		8C 13 5C 00 4C 45 4E 4F 56 4F 05 05 01 0F 00 00
 		00 53 55
 
-Handle 0x005E, DMI type 140, 23 bytes
+Handle 0x005D, DMI type 140, 23 bytes
 OEM-specific Type
 	Header and Data:
-		8C 17 5E 00 4C 45 4E 4F 56 4F 06 06 01 00 00 00
+		8C 17 5D 00 4C 45 4E 4F 56 4F 06 06 01 00 00 00
 		00 00 00 00 00 00 00
 
-Handle 0x005F, DMI type 140, 85 bytes
+Handle 0x005E, DMI type 140, 85 bytes
 OEM-specific Type
 	Header and Data:
-		8C 55 5F 00 4C 45 4E 4F 56 4F 0B 00 01 38 71 FB
-		3F 05 EE E4 96 E8 51 E3 E0 CF DA 83 1C 01 00 D1
-		83 FC 2F 64 14 46 1C 68 3D F0 B0 EC E1 58 C3 01
-		00 7C 64 99 F4 3F 3F 9D C0 C0 5A CE 19 1C 40 9F
-		8D 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		8C 55 5E 00 4C 45 4E 4F 56 4F 0B 00 01 E1 53 84
+		11 85 2E 68 3E 68 16 3E A6 1A 67 85 9F 01 00 7C
+		64 99 F4 3F 3F 9D C0 C0 5A CE 19 1C 40 9F 8D 01
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00
 
-Handle 0x0060, DMI type 140, 47 bytes
+Handle 0x005F, DMI type 140, 47 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2F 60 00 4C 45 4E 4F 56 4F 0B 01 01 09 00 7D
+		8C 2F 5F 00 4C 45 4E 4F 56 4F 0B 01 01 09 00 7D
 		2D 0E 1C 3B F5 6A 95 45 FB AD 3D 17 B1 19 CA 00
 		00 00 00 10 00 10 00 10 01 D0 00 20 01 00 01
 
-Handle 0x0061, DMI type 140, 63 bytes
+Handle 0x0060, DMI type 140, 63 bytes
 OEM-specific Type
 	Header and Data:
-		8C 3F 61 00 4C 45 4E 4F 56 4F 0B 02 01 00 00 00
+		8C 3F 60 00 4C 45 4E 4F 56 4F 0B 02 01 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 
-Handle 0x0062, DMI type 140, 17 bytes
+Handle 0x0061, DMI type 140, 17 bytes
 OEM-specific Type
 	Header and Data:
-		8C 11 62 00 4C 45 4E 4F 56 4F 0B 03 01 00 00 00
+		8C 11 61 00 4C 45 4E 4F 56 4F 0B 03 01 00 00 00
 		00
 
-Handle 0x0063, DMI type 140, 19 bytes
+Handle 0x0062, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 63 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 53
+		8C 13 62 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 53
 		4D 20 00
 
-Handle 0x0064, DMI type 134, 16 bytes
+Handle 0x0063, DMI type 134, 16 bytes
 OEM-specific Type
 	Header and Data:
-		86 10 64 00 00 50 10 00 00 47 00 00 00 02 01 02
+		86 10 63 00 00 50 10 00 00 47 00 00 00 02 01 02
 	Strings:
 		TPM INFO
 		System Reserved
 
-Handle 0x0065, DMI type 10, 6 bytes
+Handle 0x0064, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Other
 	Status: Disabled
 	Description: IBM Embedded Security Hardware Type 3
 
-Handle 0x0066, DMI type 13, 22 bytes
+Handle 0x0065, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0068, DMI type 131, 64 bytes
+Handle 0x0067, DMI type 129, 8 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 68 00 35 00 00 00 07 00 00 00 00 00 3F 00
-		F8 00 41 1D FF FF FF FF 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 C8 00 02 15 00 00 00 00
+		81 08 67 00 01 01 02 01
+	Strings:
+		Intel_ASF
+		Intel_ASF_001
+
+Handle 0x0068, DMI type 130, 20 bytes
+OEM-specific Type
+	Header and Data:
+		82 14 68 00 24 41 4D 54 01 01 01 01 01 A5 1B 02
+		00 00 00 00
+
+Handle 0x0069, DMI type 131, 64 bytes
+OEM-specific Type
+	Header and Data:
+		83 40 69 00 35 00 00 00 07 00 00 00 00 00 3F 00
+		F8 00 41 1D FF FF FF FF 09 00 00 00 01 00 07 00
+		A9 04 3C 00 00 00 00 00 C8 00 02 15 00 00 00 00
 		00 00 00 00 36 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x006A, DMI type 127, 4 bytes
+Handle 0x006B, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,14 +1,14 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-62 structures occupying 2626 bytes.
-Table at 0xDDA06000.
+62 structures occupying 2634 bytes.
+Table at 0xCDA06000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: A.B1
-	Release Date: 08/05/2021
+	Version: A.D2
+	Release Date: 05/09/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -193,8 +193,10 @@ Unknown Type
 Handle 0x000F, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: IFX
-	Specification Version: 2.0	Firmware Revision: 5.62
-	Description: INFINEON	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 5.62
+	Description: INFINEON
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -220,16 +222,16 @@ Physical Memory Array
 Handle 0x0012, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000DFFFFFFF
-	Range Size: 3584 MB
+	Ending Address: 0x000CFFFFFFF
+	Range Size: 3328 MB
 	Physical Array Handle: 0x0011
 	Partition Width: 4
 
 Handle 0x0013, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0081FFFFFFF
-	Range Size: 29184 MB
+	Ending Address: 0x0202FFFFFFF
+	Range Size: 127744 MB
 	Physical Array Handle: 0x0011
 	Partition Width: 4
 
@@ -255,8 +257,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -271,8 +273,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 32768 kB
-	Maximum Size: 32768 kB
+	Installed Size: 32 MB
+	Maximum Size: 32 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -353,7 +355,7 @@ Memory Device
 	Error Information Handle: 0x0018
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
@@ -364,8 +366,8 @@ Memory Device
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F4-3600C16-8GVKC
-	Rank: 1
+	Part Number: CMK64GX4M2E3200C16
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -374,8 +376,8 @@ Memory Device
 Handle 0x001A, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
 	Physical Device Handle: 0x0019
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown
@@ -398,7 +400,7 @@ Memory Device
 	Error Information Handle: 0x001B
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -409,8 +411,8 @@ Memory Device
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F4-3600C16-8GVKC
-	Rank: 1
+	Part Number: CMK64GX4M2E3200C16
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -419,8 +421,8 @@ Memory Device
 Handle 0x001D, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
 	Physical Device Handle: 0x001C
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown
@@ -443,7 +445,7 @@ Memory Device
 	Error Information Handle: 0x001E
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
@@ -454,8 +456,8 @@ Memory Device
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F4-3600C16-8GVKC
-	Rank: 1
+	Part Number: CMK64GX4M2E3200C16
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -464,8 +466,8 @@ Memory Device
 Handle 0x0020, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
 	Physical Device Handle: 0x001F
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown
@@ -488,7 +490,7 @@ Memory Device
 	Error Information Handle: 0x0021
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -499,8 +501,8 @@ Memory Device
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F4-3600C16-8GVKC
-	Rank: 1
+	Part Number: CMK64GX4M2E3200C16
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -509,8 +511,8 @@ Memory Device
 Handle 0x0023, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
 	Physical Device Handle: 0x0022
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown

@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.1 present.
 Table at 0x7ED15000.
@@ -6,11 +6,11 @@ Table at 0x7ED15000.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: ALCN27WW(V2.04)
-	Release Date: 07/02/2019
+	Version: ALCN32WW(V2.09)
+	Release Date: 01/15/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 10240 kB
+	ROM Size: 10 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -31,8 +31,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.27
-	Firmware Revision: 2.27
+	BIOS Revision: 2.32
+	Firmware Revision: 2.32
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -449,7 +449,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -473,7 +473,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -628,7 +628,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 34 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 84 9D 00 00 00 00 01 00 00 00 00 00 0C 00
-		8D 05 20 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		74 06 46 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 FF 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0035, DMI type 133, 5 bytes
@@ -654,7 +654,7 @@ OEM-specific Type
 Handle 0x0038, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 38 00 01 04 01 55 02 00 A0 00 01 10 80 20
+		DB 6A 38 00 01 04 01 55 02 00 A0 06 01 10 80 20
 		00 00 00 04 40 00 00 00 00 00 00 00 00 00 00 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -671,7 +671,7 @@ Handle 0x0039, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 39 00 03 01 00 07 00 58 40 00 02 00 00 00
-		00 B8 00 03 00 FF FF FF FF FF
+		00 DE 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -681,7 +681,7 @@ Handle 0x003A, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 3A 00 03 01 00 07 00 58 40 00 02 00 00 00
-		00 00 00 03 04 0C 00 20 8D 05
+		00 00 00 03 04 0C 00 46 74 06
 	Strings:
 		Reference Code - ME
 		MEBx version

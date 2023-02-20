@@ -1,17 +1,17 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
-42 structures occupying 1671 bytes.
+42 structures occupying 1623 bytes.
 Table at 0x000E8170.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Intel Corp.
-	Version: PRG3110H.86A.0047.2008.0227.1745
-	Release Date: 02/27/2008
+	Version: PRG3110H.86A.0071.2010.0318.1704
+	Release Date: 03/18/2010
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -85,8 +85,8 @@ Processor Information
 	Type: Central Processor
 	Family: Pentium 4
 	Manufacturer: Intel
-	ID: 76 06 01 00 FF FB EB AF
-	Signature: Type 0, Family 6, Model 23, Stepping 6
+	ID: 7A 06 01 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 23, Stepping 10
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -113,13 +113,14 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		SS (Self-snoop)
+		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM)2 Duo CPU     E7300  @ 2.66GHz
+	Version: Not Specified
 	Voltage: 5.0 V 3.3 V
-	External Clock: 1066 MHz
+	External Clock: 1333 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 2660 MHz
+	Current Speed: 2664 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -151,8 +152,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -296,7 +297,7 @@ Handle 0x0018, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIE X16 SLOT
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 11
 	Characteristics:
@@ -318,7 +319,7 @@ Handle 0x001A, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIE X1 SLOT 2
 	Type: x1 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 13
 	Characteristics:
@@ -383,8 +384,8 @@ Physical Memory Array
 Handle 0x0023, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0022
 	Partition Width: 1
 
@@ -394,14 +395,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: J6H1
 	Bank Locator: CHAN A DIMM 0
 	Type: DDR
 	Type Detail: Synchronous
-	Speed: 800 MT/s
+	Speed: 667 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
@@ -422,21 +423,27 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: J6H2
 	Bank Locator: CHAN A DIMM 1
 	Type: DDR
 	Type Detail: Synchronous
-	Speed: 800 MT/s
+	Speed: 667 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Unknown
 
-Handle 0x0027, DMI type 126, 19 bytes
-Inactive
+Handle 0x0027, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0026
+	Memory Array Mapped Address Handle: 0x0023
+	Partition Row Position: 1
 
 Handle 0x0028, DMI type 32, 20 bytes
 System Boot Information

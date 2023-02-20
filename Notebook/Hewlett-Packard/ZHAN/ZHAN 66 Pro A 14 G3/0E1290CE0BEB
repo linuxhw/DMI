@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
 Table at 0xB75FA000.
@@ -25,8 +25,8 @@ Physical Memory Array
 Handle 0x0002, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0001
 	Partition Width: 2
 
@@ -52,8 +52,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -68,8 +68,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -335,7 +335,7 @@ Memory Device
 	Error Information Handle: 0x0007
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(left)
@@ -343,10 +343,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 3200 MT/s
-	Manufacturer: Micron
+	Manufacturer: Unknown - [0xCD04]
 	Serial Number: --
 	Asset Tag: --
-	B761DB6C3206DAA1A1DC37758E5C0E31    
+	75010696FA3935AB80B5660FF5B79B9A
 	Rank: 1
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
@@ -359,7 +359,7 @@ Memory Device
 	Error Information Handle: 0x000B
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(right)
@@ -367,10 +367,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 3200 MT/s
-	Manufacturer: Micron
+	Manufacturer: Unknown - [0xCD04]
 	Serial Number: --
 	Asset Tag: --
-	B761DB6C3206DAA1A1DC37758E5C0E31    
+	75010696FA3935AB80B5660FF5B79B9A
 	Rank: 1
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
@@ -380,17 +380,17 @@ Memory Device
 Handle 0x0009, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x0002
 	Partition Row Position: 1
 
 Handle 0x000A, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00400000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0008
 	Memory Array Mapped Address Handle: 0x0002
 	Partition Row Position: 1

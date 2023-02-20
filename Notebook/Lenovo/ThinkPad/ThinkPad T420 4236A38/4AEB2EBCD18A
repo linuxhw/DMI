@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 63 structures occupying 2383 bytes.
@@ -106,8 +106,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -131,7 +131,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -151,7 +151,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -207,7 +207,7 @@ BIOS Information
 	Release Date: 06/04/2018
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -424,13 +424,13 @@ Handle 0x002C, DMI type 22, 26 bytes
 Portable Battery
 	Location: Rear
 	Manufacturer: SANYO
-	Name: 42T4791
-	Design Capacity: 56160 mWh
+	Name: 45N1001
+	Design Capacity: 47520 mWh
 	Design Voltage: 10800 mV
 	SBDS Version: 03.01
 	Maximum Error: Unknown
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 2011-12-20
+	SBDS Manufacture Date: 2021-04-02
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
@@ -487,14 +487,14 @@ OEM-specific Type
 
 Handle 0x0035, DMI type 15, 29 bytes
 System Event Log
-	Area Length: 66 bytes
+	Area Length: 82 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000003
+	Change Token: 0x00000004
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -510,8 +510,8 @@ OEM-specific Type
 		8C 43 36 00 4C 45 4E 4F 56 4F 0B 00 01 61 A4 2D
 		B9 42 16 96 4E 9A 5E 8D F0 D4 91 92 08 01 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00
+		00 8B 6A 9B 3D 39 22 FB 47 20 47 D0 EA 81 53 3B
+		B6 01 00
 
 Handle 0x0037, DMI type 140, 47 bytes
 OEM-specific Type
@@ -550,7 +550,7 @@ Hardware Security
 Handle 0x003C, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 3C 00 01 D8 36
+		84 07 3C 00 01 18 36
 
 Handle 0x003D, DMI type 135, 18 bytes
 OEM-specific Type

@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-65 structures occupying 2462 bytes.
+62 structures occupying 2339 bytes.
 Table at 0xDAA9C000.
 
 Handle 0x0000, DMI type 134, 16 bytes
 OEM-specific Type
 	Header and Data:
-		86 10 00 00 00 53 54 4D 20 01 01 00 00 02 01 02
+		86 10 00 00 00 53 54 4D 20 01 01 00 00 03 01 02
 	Strings:
 		TPM INFO
 		System Reserved
@@ -16,7 +16,7 @@ Handle 0x0001, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPU
 	Type: Central Processor
-	Family: Core i5
+	Family: Core i7
 	Manufacturer: Intel(R) Corporation
 	ID: A7 06 02 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 42, Stepping 7
@@ -49,11 +49,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz
+	Version: Intel(R) Core(TM) i7-2760QM CPU @ 2.40GHz
 	Voltage: 1.2 V
 	External Clock: 100 MHz
-	Max Speed: 2500 MHz
-	Current Speed: 2500 MHz
+	Max Speed: 2400 MHz
+	Current Speed: 2400 MHz
 	Status: Populated, Enabled
 	Upgrade: ZIF Socket
 	L1 Cache Handle: 0x0002
@@ -62,9 +62,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: None
-	Core Count: 2
-	Core Enabled: 2
-	Thread Count: 4
+	Core Count: 4
+	Core Enabled: 4
+	Thread Count: 8
 	Characteristics:
 		64-bit capable
 
@@ -106,8 +106,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3 MB
-	Maximum Size: 3 MB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -149,27 +149,21 @@ Handle 0x0007, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0005
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2 GB
-	Form Factor: SODIMM
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Hynix/Hyundai
-	Serial Number: --
-	Asset Tag: --
-	Part Number: HMT125S6BFR8C-H9  
-	Rank: Unknown
+	Type: Unknown
+	Type Detail: None
 
 Handle 0x0008, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0027FFFFFFF
-	Range Size: 10 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0005
 	Partition Width: 2
 
@@ -203,8 +197,8 @@ OEM-specific Type
 Handle 0x000D, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: 83ET79WW (1.49 )
-	Release Date: 09/05/2016
+	Version: 83ET82WW (1.52 )
+	Release Date: 06/04/2018
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 8 MB
@@ -226,7 +220,7 @@ BIOS Information
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
-	BIOS Revision: 1.49
+	BIOS Revision: 1.52
 	Firmware Revision: 1.20
 
 Handle 0x000E, DMI type 1, 27 bytes
@@ -288,13 +282,8 @@ Port Connector Information
 	External Connector Type: Other
 	Port Type: Video Port
 
-Handle 0x0013, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: Not Available
-	Internal Connector Type: None
-	External Reference Designator: DisplayPort/DVI-D 1
-	External Connector Type: Other
-	Port Type: Video Port
+Handle 0x0013, DMI type 126, 9 bytes
+Inactive
 
 Handle 0x0014, DMI type 126, 9 bytes
 Inactive
@@ -307,21 +296,11 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x0016, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: Not Available
-	Internal Connector Type: None
-	External Reference Designator: Headphone Jack
-	External Connector Type: Mini Jack (headphones)
-	Port Type: Audio Port
+Handle 0x0016, DMI type 126, 9 bytes
+Inactive
 
-Handle 0x0017, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: Not Available
-	Internal Connector Type: None
-	External Reference Designator: Microphone Jack
-	External Connector Type: Mini Jack (headphones)
-	Port Type: Audio Port
+Handle 0x0017, DMI type 126, 9 bytes
+Inactive
 
 Handle 0x0018, DMI type 8, 9 bytes
 Port Connector Information
@@ -366,53 +345,23 @@ Port Connector Information
 	External Connector Type: Other
 	Port Type: Other
 
-Handle 0x001E, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: Not Available
-	Internal Connector Type: None
-	External Reference Designator: USB 5
-	External Connector Type: Access Bus (USB)
-	Port Type: USB
+Handle 0x001E, DMI type 126, 9 bytes
+Inactive
 
-Handle 0x001F, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: Not Available
-	Internal Connector Type: None
-	External Reference Designator: USB 6
-	External Connector Type: Access Bus (USB)
-	Port Type: USB
+Handle 0x001F, DMI type 126, 9 bytes
+Inactive
 
-Handle 0x0020, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: Not Available
-	Internal Connector Type: None
-	External Reference Designator: USB 7
-	External Connector Type: Access Bus (USB)
-	Port Type: USB
+Handle 0x0020, DMI type 126, 9 bytes
+Inactive
 
-Handle 0x0021, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: Not Available
-	Internal Connector Type: None
-	External Reference Designator: USB 8
-	External Connector Type: Access Bus (USB)
-	Port Type: USB
+Handle 0x0021, DMI type 126, 9 bytes
+Inactive
 
-Handle 0x0022, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: Not Available
-	Internal Connector Type: None
-	External Reference Designator: USB 9
-	External Connector Type: Access Bus (USB)
-	Port Type: USB
+Handle 0x0022, DMI type 126, 9 bytes
+Inactive
 
-Handle 0x0023, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: Not Available
-	Internal Connector Type: None
-	External Reference Designator: USB 10
-	External Connector Type: Access Bus (USB)
-	Port Type: USB
+Handle 0x0023, DMI type 126, 9 bytes
+Inactive
 
 Handle 0x0024, DMI type 8, 9 bytes
 Port Connector Information
@@ -459,7 +408,7 @@ System Slot Information
 Handle 0x0029, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Other
-	Status: Disabled
+	Status: Enabled
 	Description: IBM Embedded Security hardware
 
 Handle 0x002A, DMI type 12, 5 bytes
@@ -472,19 +421,8 @@ BIOS Language Information
 		en-US
 	Currently Installed Language: en-US
 
-Handle 0x002C, DMI type 22, 26 bytes
-Portable Battery
-	Location: Rear
-	Manufacturer: LGC
-	Name: 45N1005
-	Design Capacity: 56160 mWh
-	Design Voltage: 10800 mV
-	SBDS Version: 03.01
-	Maximum Error: Unknown
-	SBDS Serial Number: --
-	SBDS Manufacture Date: 2014-10-10
-	SBDS Chemistry: LION
-	OEM-specific Information: 0x00000000
+Handle 0x002C, DMI type 126, 26 bytes
+Inactive
 
 Handle 0x002D, DMI type 126, 26 bytes
 Inactive
@@ -505,21 +443,24 @@ Built-in Pointing Device
 	Interface: PS/2
 	Buttons: 3
 
-Handle 0x0030, DMI type 21, 7 bytes
-Built-in Pointing Device
-	Type: Touch Pad
-	Interface: PS/2
-	Buttons: 2
-
-Handle 0x0031, DMI type 131, 22 bytes
+Handle 0x0030, DMI type 131, 22 bytes
 ThinkVantage Technologies
 	Version: 1
 	Diagnostics: No
 
-Handle 0x0032, DMI type 136, 6 bytes
+Handle 0x0031, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 32 00 5A 5A
+		88 06 31 00 5A 5A
+
+Handle 0x0032, DMI type 135, 74 bytes
+OEM-specific Type
+	Header and Data:
+		87 4A 32 00 54 50 07 02 42 41 59 20 49 2F 4F 20
+		02 00 06 FF 00 00 00 00 00 00 00 FF 00 00 00 00
+		00 00 00 FF 00 00 00 00 00 00 00 FF 00 00 00 00
+		00 00 00 FF 00 00 00 00 00 00 00 FF 00 00 00 00
+		00 00 00 06 00 02 01 03 03 FF
 
 Handle 0x0033, DMI type 133, 5 bytes
 OEM-specific Type
@@ -528,37 +469,16 @@ OEM-specific Type
 	Strings:
 		KHOIHGIUCCHHII
 
-Handle 0x0034, DMI type 135, 74 bytes
-OEM-specific Type
-	Header and Data:
-		87 4A 34 00 54 50 07 02 42 41 59 20 49 2F 4F 20
-		02 00 06 FF 00 00 00 00 00 00 00 FF 00 00 00 00
-		00 00 00 FF 00 00 00 00 00 00 00 FF 00 00 00 00
-		00 00 00 FF 00 00 00 00 00 00 00 FF 00 00 00 00
-		00 00 00 06 00 02 01 03 03 FF
-
-Handle 0x0035, DMI type 140, 19 bytes
-OEM-specific Type
-	Header and Data:
-		8C 13 35 00 4C 45 4E 4F 56 4F 0B 05 01 01 00 00
-		00 00 00
-
-Handle 0x0036, DMI type 140, 23 bytes
-OEM-specific Type
-	Header and Data:
-		8C 17 36 00 4C 45 4E 4F 56 4F 0B 06 01 7E 14 00
-		00 00 00 00 00 00 00
-
-Handle 0x0037, DMI type 15, 29 bytes
+Handle 0x0034, DMI type 15, 29 bytes
 System Event Log
-	Area Length: 114 bytes
+	Area Length: 130 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000006
+	Change Token: 0x00000007
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -568,58 +488,58 @@ System Event Log
 	Descriptor 3: Multi-bit ECC memory error
 	Data Format 3: Multiple-event
 
-Handle 0x0038, DMI type 140, 67 bytes
+Handle 0x0035, DMI type 140, 67 bytes
 OEM-specific Type
 	Header and Data:
-		8C 43 38 00 4C 45 4E 4F 56 4F 0B 00 01 19 81 3F
+		8C 43 35 00 4C 45 4E 4F 56 4F 0B 00 01 19 81 3F
 		93 6F 3B 2D 44 6A 74 5D CF 07 98 FD 87 01 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00
+		00 4C 10 82 87 7E 5E 5D 4E 6D EA 7C C0 94 97 48
+		1A 01 00
 
-Handle 0x0039, DMI type 140, 47 bytes
+Handle 0x0036, DMI type 140, 47 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2F 39 00 4C 45 4E 4F 56 4F 0B 01 01 29 00 70
+		8C 2F 36 00 4C 45 4E 4F 56 4F 0B 01 01 29 00 70
 		50 9D 12 F0 1B 78 25 69 47 AE 63 36 C1 44 B9 04
 		00 00 00 10 00 10 00 10 01 D0 00 20 01 00 01
 
-Handle 0x003A, DMI type 140, 63 bytes
+Handle 0x0037, DMI type 140, 63 bytes
 OEM-specific Type
 	Header and Data:
-		8C 3F 3A 00 4C 45 4E 4F 56 4F 0B 02 01 00 00 00
+		8C 3F 37 00 4C 45 4E 4F 56 4F 0B 02 01 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 
-Handle 0x003B, DMI type 140, 17 bytes
+Handle 0x0038, DMI type 140, 17 bytes
 OEM-specific Type
 	Header and Data:
-		8C 11 3B 00 4C 45 4E 4F 56 4F 0B 03 01 00 00 00
+		8C 11 38 00 4C 45 4E 4F 56 4F 0B 03 01 00 00 00
 		00
 
-Handle 0x003C, DMI type 140, 19 bytes
+Handle 0x0039, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 3C 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
+		8C 13 39 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
 		53 20 00
 
-Handle 0x003D, DMI type 24, 5 bytes
+Handle 0x003A, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
 	Administrator Password Status: Enabled
 	Front Panel Reset Status: Not Implemented
 
-Handle 0x003E, DMI type 132, 7 bytes
+Handle 0x003B, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 3E 00 01 D8 36
+		84 07 3B 00 01 18 36
 
-Handle 0x003F, DMI type 135, 18 bytes
+Handle 0x003C, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 3F 00 54 50 07 01 01 C8 07 00 00 00 06 00
+		87 12 3C 00 54 50 07 01 01 C8 07 00 00 00 06 00
 		00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

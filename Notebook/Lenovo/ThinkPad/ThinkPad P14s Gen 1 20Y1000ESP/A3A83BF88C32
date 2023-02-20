@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0xBF704000.
@@ -25,8 +25,8 @@ Physical Memory Array
 Handle 0x0002, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x009FFFFFFFF
+	Range Size: 40 GB
 	Physical Array Handle: 0x0001
 	Partition Width: 2
 
@@ -206,7 +206,7 @@ Memory Device
 	Error Information Handle: 0x000A
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 32 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -214,11 +214,11 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 3200 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Micron Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471A1K43DB1-CWE    
-	Rank: 1
+	Part Number: 16ATF4G64HZ-3G2F1   
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -226,20 +226,20 @@ Memory Device
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Manufacturer ID: Bank 1, Hex 0x2C
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x000C, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x009FFFFFFFF
+	Range Size: 40 GB
 	Physical Device Handle: 0x000B
 	Memory Array Mapped Address Handle: 0x0002
 	Partition Row Position: Unknown
@@ -254,8 +254,8 @@ OEM-specific Type
 Handle 0x000E, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: R1BET65W(1.34 )
-	Release Date: 06/17/2021
+	Version: R1BET70W(1.39 )
+	Release Date: 03/04/2022
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -278,8 +278,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.34
-	Firmware Revision: 1.34
+	BIOS Revision: 1.39
+	Firmware Revision: 1.39
 
 Handle 0x000F, DMI type 1, 27 bytes
 System Information
@@ -587,8 +587,8 @@ OEM-specific Type
 	Header and Data:
 		8C 0F 2E 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
 	Strings:
-		1.34 
-		1.34 
+		1.39 
+		1.39 
 
 Handle 0x002F, DMI type 133, 5 bytes
 OEM-specific Type
@@ -649,14 +649,14 @@ OEM-specific Type
 
 Handle 0x0038, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 1410 bytes
+	Area Length: 1426 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000057
+	Change Token: 0x00000058
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -671,8 +671,8 @@ System Event Log
 Handle 0x0039, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 39 00 54 48 4E 4B 00 00 00 00 00 00 00 00
-		00 00
+		8D 12 39 00 54 48 4E 4B 00 00 00 00 00 00 4C 69
+		50 00
 
 Handle 0x003A, DMI type 141, 18 bytes
 OEM-specific Type
@@ -689,14 +689,14 @@ OEM-specific Type
 Handle 0x003C, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3C 00 54 48 4E 4B 00 00 40 00 00 00 06 00
+		8D 12 3C 00 54 48 4E 4B 00 00 40 00 00 00 39 02
 		00 00
 
 Handle 0x003D, DMI type 141, 30 bytes
 OEM-specific Type
 	Header and Data:
-		8D 1E 3D 00 54 48 4E 4B 00 00 50 00 00 00 27 12
-		8D 00 00 00 00 00 DF FA 78 00 00 00 00 00
+		8D 1E 3D 00 54 48 4E 4B 00 00 50 00 00 00 A7 F8
+		4B 53 00 00 00 00 6D 24 3C 1E 00 00 00 00
 
 Handle 0x003E, DMI type 140, 19 bytes
 OEM-specific Type
@@ -714,17 +714,17 @@ Handle 0x0040, DMI type 140, 23 bytes
 OEM-specific Type
 	Header and Data:
 		8C 17 40 00 4C 45 4E 4F 56 4F 0B 06 01 CB 06 51
-		74 01 60 00 00 00 00
+		44 03 60 00 00 00 00
 
 Handle 0x0041, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: R1BHT65W
-	Release Date: 06/17/2021
+	Version ID: R1BHT70W
+	Release Date: 03/04/2022
 
 Handle 0x0042, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 42 00 54 50 07 01 01 00 06 00 01 00 06 00
+		87 12 42 00 54 50 07 01 01 00 0E 00 01 00 0E 00
 		01 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

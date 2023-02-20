@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0x000E68E0.
+Table at 0x000E6CC0.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 3003
-	Release Date: 12/09/2019
+	Version: 4007
+	Release Date: 12/08/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -32,7 +32,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 5.13
+	BIOS Revision: 5.17
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -316,16 +316,16 @@ Physical Memory Array
 Handle 0x0022, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000DFFFFFFF
-	Range Size: 3584 MB
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 3 GB
 	Physical Array Handle: 0x0021
 	Partition Width: 4
 
 Handle 0x0023, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0081FFFFFFF
-	Range Size: 29184 MB
+	Ending Address: 0x0083FFFFFFF
+	Range Size: 29 GB
 	Physical Array Handle: 0x0021
 	Partition Width: 4
 
@@ -456,13 +456,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2666 MT/s
+	Speed: 3000 MT/s
 	Manufacturer: A-DATA
 	Serial Number: --
 	Asset Tag: --
 	Part Number: DDR4 3000           
 	Rank: 1
-	Configured Memory Speed: 2666 MT/s
+	Configured Memory Speed: 3000 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -512,13 +512,13 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2666 MT/s
+	Speed: 3000 MT/s
 	Manufacturer: A-DATA
 	Serial Number: --
 	Asset Tag: --
 	Part Number: DDR4 2400 2OZ       
 	Rank: 1
-	Configured Memory Speed: 2666 MT/s
+	Configured Memory Speed: 3000 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -568,13 +568,13 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2666 MT/s
+	Speed: 3000 MT/s
 	Manufacturer: A-DATA
 	Serial Number: --
 	Asset Tag: --
 	Part Number: DDR4 3000           
 	Rank: 1
-	Configured Memory Speed: 2666 MT/s
+	Configured Memory Speed: 3000 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -624,13 +624,13 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2666 MT/s
+	Speed: 3000 MT/s
 	Manufacturer: A-DATA
 	Serial Number: --
 	Asset Tag: --
 	Part Number: DDR4 2400 2OZ       
 	Rank: 1
-	Configured Memory Speed: 2666 MT/s
+	Configured Memory Speed: 3000 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -664,12 +664,12 @@ BIOS Language Information
 		en|US|iso8859-1
 		fr|FR|iso8859-1
 		zh|TW|unicode
+		zh|CN|unicode
 		ja|JP|unicode
 		de|DE|iso8859-1
 		es|ES|iso8859-1
 		ru|RU|iso8859-5
 		ko|KR|unicode
-		<BAD INDEX>
 	Currently Installed Language: en|US|iso8859-1
 
 Handle 0x0035, DMI type 9, 17 bytes

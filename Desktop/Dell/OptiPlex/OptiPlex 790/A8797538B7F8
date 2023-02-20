@@ -1,8 +1,8 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-69 structures occupying 2941 bytes.
-Table at 0x000F2490.
+70 structures occupying 2987 bytes.
+Table at 0x000F2460.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -517,7 +517,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -525,48 +525,61 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Micron
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 8JTF51264AZ-1G6E1 
-	Rank: 1
+	Part Number: DDR3 1600 8G      
+	Rank: 2
 
 Handle 0x0030, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x002D
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
+	Part Number: DDR3 1600 8G      
+	Rank: 2
 
-Handle 0x0031, DMI type 19, 15 bytes
+Handle 0x0032, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x002D
 	Partition Width: 2
 
 Handle 0x002F, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x002E
-	Memory Array Mapped Address Handle: 0x0031
+	Memory Array Mapped Address Handle: 0x0032
 	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x0031, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0030
+	Memory Array Mapped Address Handle: 0x0032
+	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 1
 
 Handle 0x0033, DMI type 24, 5 bytes
 Hardware Security

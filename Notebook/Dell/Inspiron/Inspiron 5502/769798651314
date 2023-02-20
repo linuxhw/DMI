@@ -1,8 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
-85 structures occupying 6502 bytes.
-Table at 0x5FD64000.
+85 structures occupying 6503 bytes.
+Table at 0x5FD55000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -169,8 +169,8 @@ OEM-specific Type
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.7.1
-	Release Date: 08/06/2021
+	Version: 1.16.0
+	Release Date: 07/14/2022
 	ROM Size: 32 MB
 	Characteristics:
 		PCI is supported
@@ -191,7 +191,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.7
+	BIOS Revision: 1.16
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -200,7 +200,7 @@ System Information
 	Version: Not Specified
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Other
+	Wake-up Type: Power Switch
 	SKU Number: 0A02
 	Family: Inspiron
 
@@ -215,7 +215,7 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Not Specified
-	Chassis Handle: 0x0000
+	Chassis Handle: 0x0300
 	Type: Motherboard
 	Contained Object Handles: 0
 
@@ -275,7 +275,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-	Voltage: 0.6 V
+	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 1400 MHz
 	Current Speed: 3800 MHz
@@ -457,6 +457,7 @@ System Slot Information
 	Bus Address: 0000:00:1c.0
 	Data Bus Width: 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0901, DMI type 9, 24 bytes
 System Slot Information
@@ -473,6 +474,7 @@ System Slot Information
 	Bus Address: 0000:00:14.3
 	Data Bus Width: 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0B00, DMI type 11, 5 bytes
 OEM Strings
@@ -570,27 +572,6 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x1102, DMI type 17, 84 bytes
 Memory Device
@@ -605,27 +586,6 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x1103, DMI type 17, 84 bytes
 Memory Device
@@ -640,27 +600,6 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x1104, DMI type 17, 84 bytes
 Memory Device
@@ -710,27 +649,6 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x1106, DMI type 17, 84 bytes
 Memory Device
@@ -745,27 +663,6 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x1107, DMI type 17, 84 bytes
 Memory Device
@@ -780,27 +677,6 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x1300, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -980,7 +856,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 00 83 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 82 A0 00 00 00 00 01 00 00 00 00 00 0F 00
-		AA 06 17 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		6E 08 29 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x8800, DMI type 136, 8 bytes
@@ -1008,7 +884,7 @@ OEM-specific Type
 Handle 0xCB00, DMI type 203, 106 bytes
 OEM-specific Type
 	Header and Data:
-		CB 6A 00 CB 01 04 01 45 02 00 90 06 01 85 32 20
+		CB 6A 00 CB 01 04 01 45 02 00 A0 06 01 85 39 20
 		00 00 00 00 40 00 00 03 1F 04 00 C9 03 E0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -1032,7 +908,7 @@ Handle 0xCD01, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 01 CD 03 01 00 0A 00 2A 32 00 02 00 00 00
-		00 86 00 03 00 FF FF FF FF FF
+		00 A4 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -1042,7 +918,7 @@ Handle 0xCD02, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 02 CD 03 01 00 0A 00 2A 32 00 02 00 00 00
-		00 00 00 03 04 0F 00 17 AA 06
+		00 00 00 03 04 0F 00 29 6E 08
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -1070,8 +946,8 @@ OEM-specific Type
 		CD 52 04 CD 0B 01 00 0A 00 2A 32 00 02 00 01 00
 		00 00 00 03 00 0A 00 2A 32 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 01 00 07 00 00 00 00 01 00 08
-		00 FF FF FF FF FF 09 00 11 01 04 00 00 0A 00 00
-		00 00 F8 00 0B 00 29 00 00 00 00 0C 00 FF FF FF
+		00 FF FF FF FF FF 09 00 11 01 07 00 00 0A 00 00
+		00 00 FA 00 0B 00 2E 01 00 00 00 0C 00 FF FF FF
 		FF FF
 	Strings:
 		Reference Code - SA - System Agent
@@ -1101,7 +977,7 @@ OEM-specific Type
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
 		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
-		17 00 45 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
+		17 00 61 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
 		00 00 0F 00 00 02 00 0F 00
 	Strings:
 		Lan Phy Version
@@ -1134,7 +1010,7 @@ OEM-specific Type
 		D8 09 00 D8 01 02 01 88 00
 	Strings:
 		"Intel Corp."
-		"1045"
+		"1061"
 
 Handle 0xD900, DMI type 217, 8 bytes
 OEM-specific Type
@@ -1177,7 +1053,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 21 08 20 09 15 01 00 00
+		DE 10 00 DE 01 04 00 00 22 09 02 16 25 01 00 00
 
 Handle 0xF800, DMI type 248, 9 bytes
 OEM-specific Type

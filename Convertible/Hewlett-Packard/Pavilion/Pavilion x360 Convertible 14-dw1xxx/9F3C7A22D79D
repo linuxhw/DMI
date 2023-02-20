@@ -1,18 +1,16 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0x41CA1000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: AMI
-	Version: F.11
-	Release Date: 02/18/2021
+	Version: F.36
+	Release Date: 08/30/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -25,8 +23,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.11
-	Firmware Revision: 39.25
+	BIOS Revision: 15.36
+	Firmware Revision: 39.32
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -43,7 +41,7 @@ Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 87F4
-	Version: 39.25
+	Version: 39.32
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -169,7 +167,7 @@ Portable Battery
 	Design Voltage: 11550 mV
 	SBDS Version: Not Specified
 	Maximum Error: Unknown
-	OEM-specific Information: 0x000A070C
+	OEM-specific Information: 0x00060308
 
 Handle 0x000E, DMI type 41, 11 bytes
 Onboard Device
@@ -187,8 +185,10 @@ Unknown Type
 Handle 0x0010, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: INTC
-	Specification Version: 2.0	Firmware Revision: 600.7
-	Description: INTEL	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 600.7
+	Description: INTEL
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -215,7 +215,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom - Slot 1 (left)
@@ -291,7 +291,7 @@ Memory Device Mapped Address
 Handle 0x0024, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 1: PCI device 01:00.3, MAC address 00:0A:00:37:41:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:6E:00:03
+	NIC 2: PCI device 00:00.2, MAC address 00:00:00:8A:00:03
 
 Handle 0x0025, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
@@ -315,7 +315,7 @@ HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 5: Disabled
 	NIC 6: PCI device 01:00.0, MAC address 00:08:00:FF:FF:FF
 	NIC 7: Not Installed
-	NIC 8: PCI device 0a:00.0, MAC address 00:00:00:00:DD:00
+	NIC 8: PCI device 0a:00.0, MAC address 00:00:00:00:F8:00
 	NIC 9: PCI device 00:01.3, MAC address 00:00:00:00:00:0C
 
 Handle 0x0028, DMI type 221, 12 bytes
@@ -376,8 +376,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -458,7 +458,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 2F 00 31 00 00 00 0A 00 00 00 00 00 01 00
 		F8 00 82 A0 00 00 00 00 01 00 00 00 00 00 0F 00
-		61 05 02 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		AA 06 17 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0030, DMI type 8, 9 bytes

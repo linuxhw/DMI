@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0x7AEFC000.
@@ -41,8 +41,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -57,8 +57,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -143,7 +143,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -151,10 +151,10 @@ Memory Device
 	Type: LPDDR3
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: 0x802C
+	Manufacturer: 0x80CE
 	Serial Number: --
 	Asset Tag: --
-	C7839C896CC6E2D6E19382DFA9DA630D
+	0DC8D5F042F98217F8AD7EC3924E7FB0
 	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
@@ -165,15 +165,15 @@ Handle 0x0007, DMI type 130, 186 bytes
 OEM-specific Type
 	Header and Data:
 		82 BA 07 00 06 00 00 00 B0 00 91 20 F1 03 05 1A
-		05 0A 03 11 01 08 08 00 00 15 78 78 90 50 90 11
-		50 E0 90 06 3C 3C 01 90 00 00 00 31 C2 08 00 00
+		05 0A 03 11 01 08 08 00 50 15 78 78 90 50 90 11
+		50 E0 90 06 3C 3C 01 90 00 00 00 00 C2 08 00 00
 		00 A8 00 88 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80
-		2C 00 00 00 00 00 00 00 93 41 4D 54 35 32 4C 31
-		47 33 32 44 34 50 47 2D 30 39 33 20 00 00 00 00
+		CE 01 00 00 55 00 00 00 00 00 4B 34 45 42 45 33
+		30 34 45 42 2D 45 47 43 47 20 20 20 00 00 80 CE
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00
 
@@ -183,7 +183,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -191,10 +191,10 @@ Memory Device
 	Type: LPDDR3
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: 0x802C
+	Manufacturer: 0x80CE
 	Serial Number: --
 	Asset Tag: --
-	C7839C896CC6E2D6E19382DFA9DA630D
+	0DC8D5F042F98217F8AD7EC3924E7FB0
 	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
@@ -205,15 +205,15 @@ Handle 0x0009, DMI type 130, 186 bytes
 OEM-specific Type
 	Header and Data:
 		82 BA 09 00 08 00 00 00 B0 00 91 20 F1 03 05 1A
-		05 0A 03 11 01 08 08 00 00 15 78 78 90 50 90 11
-		50 E0 90 06 3C 3C 01 90 00 00 00 31 C2 08 00 00
+		05 0A 03 11 01 08 08 00 50 15 78 78 90 50 90 11
+		50 E0 90 06 3C 3C 01 90 00 00 00 00 C2 08 00 00
 		00 A8 00 88 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80
-		2C 00 00 00 00 00 00 00 93 41 4D 54 35 32 4C 31
-		47 33 32 44 34 50 47 2D 30 39 33 20 00 00 00 00
+		CE 01 00 00 55 00 00 00 00 00 4B 34 45 42 45 33
+		30 34 45 42 2D 45 47 43 47 20 20 20 00 00 80 CE
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00
 
@@ -228,9 +228,9 @@ Memory Array Mapped Address
 Handle 0x000B, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Apple Inc.
-	Version: 447.40.12.0.0
-	Release Date: 09/25/2021
-	ROM Size: 8192 kB
+	Version: 499.40.2.0.0
+	Release Date: 08/22/2022
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -366,7 +366,7 @@ System Slot Information
 
 Handle 0x0018, DMI type 11, 5 bytes
 OEM Strings
-	String 1: Apple ROM Version.  BIOS ID:      MBP133.88Z.F000.B00.2109250324.  Model:        MBP133.  EFI Version:  447.40.12.0.0.  Built by:     root@bb-g9-pdb123.  Date:         Sat Sep 25 03:24:38 2021.  Revision:     447.40.12 (B&I).  ROM Version:  F000_B00.  Build Type:   Official Build, RELEASE.  Compiler:     clang-1300.0.29.1.
+	String 1: Apple ROM Version.  BIOS ID:      MBP133.88Z.F000.B00.2208220701.  Model:        MBP133.  EFI Version:  499.40.2.0.0.  Built by:     root@4h85r.  Date:         Mon Aug 22 07:01:06 2022.  Revision:     499.40.2 (B&I).  ROM Version:  F000_B00.  Build Type:   Official Build, RELEASE.  Compiler:     clang-1400.0.29.1.
 
 Handle 0x0019, DMI type 41, 11 bytes
 Onboard Device
@@ -437,7 +437,7 @@ Handle 0x0023, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 23 00 03 01 00 01 09 00 00 00 02 00 00 00
-		00 EA 00 03 00 00 05 00 00 00
+		00 F0 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version

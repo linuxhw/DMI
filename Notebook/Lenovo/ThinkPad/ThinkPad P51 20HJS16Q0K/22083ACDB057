@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0x5F038000.
@@ -45,16 +45,6 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x0005, DMI type 17, 40 bytes
 Memory Device
@@ -69,16 +59,6 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x0006, DMI type 17, 40 bytes
 Memory Device
@@ -117,16 +97,6 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x0008, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -222,7 +192,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz
-	Voltage: 1.0 V
+	Voltage: 0.7 V
 	External Clock: 100 MHz
 	Max Speed: 2900 MHz
 	Current Speed: 2900 MHz
@@ -248,8 +218,8 @@ Processor Information
 Handle 0x000D, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: N1UET82W (1.56 )
-	Release Date: 08/12/2021
+	Version: N1UET85W (1.59 )
+	Release Date: 07/18/2022
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -272,7 +242,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.56
+	BIOS Revision: 1.59
 	Firmware Revision: 1.10
 
 Handle 0x000E, DMI type 1, 27 bytes
@@ -290,7 +260,7 @@ Handle 0x000F, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: LENOVO
 	Product Name: 20HJS16Q0K
-	Version: SDK0J40697 WIN
+	Version: Not Defined
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -481,22 +451,22 @@ OEM-specific Type
 Handle 0x002B, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 2B 00 24 41 4D 54 01 01 01 01 01 A5 AF 02
-		C0 00 01 00
+		82 14 2B 00 24 41 4D 54 01 00 01 00 01 A5 AF 02
+		C0 00 00 00
 
 Handle 0x002C, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 2C 00 35 00 00 00 0B 00 00 00 00 00 0A 00
+		83 40 2C 00 3F 00 00 00 0B 00 00 00 00 00 0C 00
 		F8 00 54 A1 00 00 00 00 09 C0 00 00 08 00 0B 00
-		61 0D 32 00 00 00 00 00 FE 00 E3 15 00 00 00 00
+		93 0F 5A 00 00 00 00 00 FE 00 E3 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x002D, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 2D 00 03 01 00 03 07 03 00 00 02 00 00 00
-		00 EA 00 03 00 00 05 00 00 00
+		00 F0 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -506,7 +476,7 @@ Handle 0x002E, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 2E 00 03 01 00 03 07 03 00 00 02 00 0B 00
-		00 0A 00 03 04 0B 08 32 61 0D
+		00 0C 00 03 04 0B 08 5A 93 0F
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
@@ -643,8 +613,8 @@ Group Associations
 Handle 0x003D, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 3D 00 01 03 01 45 02 00 A4 06 83 10 89 30
-		00 00 00 00 40 08 00 01 1F 00 00 C9 0A 40 44 02
+		DB 51 3D 00 01 03 01 45 02 00 A0 06 81 10 80 30
+		00 00 00 00 40 68 00 01 1F 00 00 C9 0A 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

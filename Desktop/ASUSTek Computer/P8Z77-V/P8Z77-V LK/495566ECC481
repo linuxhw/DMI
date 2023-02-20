@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 112 structures occupying 4043 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 03/21/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -117,9 +117,9 @@ Processor Information
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-3770K CPU @ 3.50GHz
 	Voltage: 1.0 V
-	External Clock: 100 MHz
+	External Clock: 103 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 3523 MHz
+	Current Speed: 3624 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -156,8 +156,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -172,8 +172,8 @@ Cache Information
 	Configuration: Disabled, Not Socketed, Level 3
 	Operational Mode: Unknown
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -983,20 +983,20 @@ Memory Device
 	Error Information Handle: 0x0065
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1067 MT/s
-	Manufacturer: 8358
+	Speed: 1333 MT/s
+	Manufacturer: 029E
 	Serial Number: --
 	Asset Tag: --
-	Part Number: TMS2GB364D081138YE
+	Part Number: CMZ8GX3M2A1600C9  
 	Rank: 2
-	Configured Clock Speed: 1067 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0061, DMI type 16, 23 bytes
 Physical Memory Array
@@ -1020,8 +1020,8 @@ Handle 0x0062, DMI type 18, 23 bytes
 Handle 0x0063, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0060
 	Memory Array Mapped Address Handle: 0x006D
 	Partition Row Position: Unknown
@@ -1034,20 +1034,20 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1067 MT/s
-	Manufacturer: 029E
+	Speed: 1333 MT/s
+	Manufacturer: 8358
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMZ8GX3M2A1600C9  
+	Part Number: TMS2GB364D081138YE
 	Rank: 2
-	Configured Clock Speed: 1067 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0065, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -1061,9 +1061,9 @@ Handle 0x0065, DMI type 18, 23 bytes
 
 Handle 0x0066, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x0027FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0064
 	Memory Array Mapped Address Handle: 0x006D
 	Partition Row Position: Unknown
@@ -1076,20 +1076,20 @@ Memory Device
 	Error Information Handle: 0x0068
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1067 MT/s
-	Manufacturer: 8358
+	Speed: 1333 MT/s
+	Manufacturer: 029E
 	Serial Number: --
 	Asset Tag: --
-	Part Number: TMS2GB364D081138YE
+	Part Number: CMZ8GX3M2A1600C9  
 	Rank: 2
-	Configured Clock Speed: 1067 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0068, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -1103,9 +1103,9 @@ Handle 0x0068, DMI type 18, 23 bytes
 
 Handle 0x0069, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0067
 	Memory Array Mapped Address Handle: 0x006D
 	Partition Row Position: Unknown
@@ -1118,20 +1118,20 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 3
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1067 MT/s
-	Manufacturer: 029E
+	Speed: 1333 MT/s
+	Manufacturer: 8358
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMZ8GX3M2A1600C9  
+	Part Number: TMS2GB364D081138YE
 	Rank: 2
-	Configured Clock Speed: 1067 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x006B, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -1145,9 +1145,9 @@ Handle 0x006B, DMI type 18, 23 bytes
 
 Handle 0x006C, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
+	Starting Address: 0x00280000000
 	Ending Address: 0x002FFFFFFFF
-	Range Size: 4 GB
+	Range Size: 2 GB
 	Physical Device Handle: 0x006A
 	Memory Array Mapped Address Handle: 0x006D
 	Partition Row Position: Unknown

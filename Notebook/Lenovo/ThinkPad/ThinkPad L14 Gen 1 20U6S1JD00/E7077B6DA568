@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0xC887C000.
@@ -57,8 +57,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3 MB
-	Maximum Size: 3 MB
+	Installed Size: 3072 kB
+	Maximum Size: 3072 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -73,8 +73,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8 MB
-	Maximum Size: 8 MB
+	Installed Size: 8192 kB
+	Maximum Size: 8192 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -155,7 +155,7 @@ Memory Device
 	Error Information Handle: 0x0008
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 16384 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -211,7 +211,7 @@ Memory Device
 	Error Information Handle: 0x000B
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 16384 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -254,8 +254,8 @@ Memory Device Mapped Address
 Handle 0x000E, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: R19ET39W (1.23 )
-	Release Date: 12/01/2021
+	Version: R19ET42W (1.26 )
+	Release Date: 05/27/2022
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -278,7 +278,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.23
+	BIOS Revision: 1.26
 	Firmware Revision: 1.17
 
 Handle 0x000F, DMI type 1, 27 bytes
@@ -551,8 +551,8 @@ OEM-specific Type
 	Header and Data:
 		8C 0F 29 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
 	Strings:
-		1.23 
-		1.23 
+		1.26 
+		1.26 
 
 Handle 0x002A, DMI type 133, 5 bytes
 OEM-specific Type
@@ -652,9 +652,9 @@ ThinkPad Embedded Controller Program
 Handle 0x0037, DMI type 140, 43 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2B 37 00 4C 45 4E 4F 56 4F 0B 08 01 03 22 02
-		20 13 59 03 22 02 20 13 32 03 22 02 20 12 55 03
-		22 02 20 12 40 03 22 02 18 14 04
+		8C 2B 37 00 4C 45 4E 4F 56 4F 0B 08 01 03 22 10
+		10 04 15 03 22 10 10 04 03 03 22 10 10 03 17 03
+		22 10 10 03 13 03 22 10 10 02 58
 
 Handle 0x0038, DMI type 135, 18 bytes
 OEM-specific Type

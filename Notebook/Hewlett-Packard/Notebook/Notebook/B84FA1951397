@@ -2,7 +2,7 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 65 structures occupying 3411 bytes.
-Table at 0x8C00F000.
+Table at 0x8C010000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -478,37 +478,13 @@ Handle 0x0027, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0026
 	Error Information Handle: No Error
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4 GB
-	Form Factor: SODIMM
-	Set: None
-	Locator: Bottom-slot 1(left)
-	Bank Locator: BANK 0
-	Type: DDR4
-	Type Detail: Synchronous
-	Speed: 2133 MT/s
-	Manufacturer: SK Hynix
-	Serial Number: --
-	Asset Tag: --
-	Part Number: HMA451S6AFR8N-TF    
-	Rank: 1
-	Configured Memory Speed: 2133 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: 1.2 V
-
-Handle 0x0028, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x0026
-	Error Information Handle: No Error
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
 	Form Factor: SODIMM
 	Set: None
-	Locator: Bottom-slot 2(right)
-	Bank Locator: BANK 2
+	Locator: Bottom-slot 1(left)
+	Bank Locator: BANK 0
 	Type: DDR
 	Type Detail: Synchronous
 	Speed: Unknown
@@ -521,6 +497,30 @@ Memory Device
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
+
+Handle 0x0028, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0026
+	Error Information Handle: No Error
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: SODIMM
+	Set: None
+	Locator: Bottom-slot 2(right)
+	Bank Locator: BANK 2
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2133 MT/s
+	Manufacturer: SK Hynix
+	Serial Number: --
+	Asset Tag: --
+	Part Number: HMA451S6AFR8N-TF    
+	Rank: 1
+	Configured Memory Speed: 2133 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 1.2 V
 
 Handle 0x0029, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -535,10 +535,10 @@ Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0027
+	Physical Device Handle: 0x0028
 	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: 1
-	Interleave Position: 1
+	Interleave Position: 2
 	Interleaved Data Depth: 1
 
 Handle 0x002B, DMI type 21, 7 bytes
@@ -551,7 +551,7 @@ Handle 0x002C, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Not Implemented
 	Keyboard Password Status: Not Implemented
-	Administrator Password Status: Disabled
+	Administrator Password Status: Enabled
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x002D, DMI type 26, 24 bytes

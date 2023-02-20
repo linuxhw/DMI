@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
-67 structures occupying 2015 bytes.
+67 structures occupying 2098 bytes.
 Table at 0x000EE600.
 
 Handle 0x0001, DMI type 0, 24 bytes
@@ -63,7 +63,7 @@ Chassis Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: Unknown
@@ -500,7 +500,7 @@ Handle 0x0030, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI2
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 2
 	Characteristics:
@@ -562,20 +562,20 @@ Handle 0x0038, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0036
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: XMM1
 	Bank Locator: Not Specified
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
+	Speed: 667 MT/s
+	Manufacturer: JEDEC ID:CE 00 00 00 00 00 00 00
 	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
-	Part Number:  
+	Asset Tag: --
+	Part Number: M3 78T2863RZS-CE6
 
 Handle 0x0039, DMI type 17, 27 bytes
 Memory Device
@@ -613,26 +613,26 @@ Memory Device
 	Manufacturer: JEDEC ID:CE 00 00 00 00 00 00 00
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M3 78T2953CZ3-CE6
+	Part Number: M3 78T2863RZS-CE6
 
 Handle 0x003B, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0036
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: XMM4
 	Bank Locator: Not Specified
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
+	Speed: 667 MT/s
+	Manufacturer: JEDEC ID:CE 00 00 00 00 00 00 00
 	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
-	Part Number:  
+	Asset Tag: --
+	Part Number: M3 78T2953CZ3-CE6
 
 Handle 0x003D, DMI type 17, 27 bytes
 Memory Device
@@ -656,8 +656,8 @@ Memory Device
 Handle 0x003E, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0036
 	Partition Width: 4
 
@@ -672,16 +672,16 @@ Memory Array Mapped Address
 Handle 0x0040, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0038
 	Memory Array Mapped Address Handle: 0x003E
 	Partition Row Position: 1
 
 Handle 0x0041, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
+	Starting Address: 0x00040000000
+	Ending Address: 0x0007FFFFFFF
 	Range Size: 1 GB
 	Physical Device Handle: 0x0039
 	Memory Array Mapped Address Handle: 0x003E
@@ -689,8 +689,8 @@ Memory Device Mapped Address
 
 Handle 0x0042, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x0007FFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x000BFFFFFFF
 	Range Size: 1 GB
 	Physical Device Handle: 0x003A
 	Memory Array Mapped Address Handle: 0x003E
@@ -698,9 +698,9 @@ Memory Device Mapped Address
 
 Handle 0x0043, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x000C0000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x003B
 	Memory Array Mapped Address Handle: 0x003E
 	Partition Row Position: 4

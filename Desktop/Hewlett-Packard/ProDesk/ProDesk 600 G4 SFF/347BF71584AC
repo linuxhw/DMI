@@ -1,8 +1,8 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1 present.
-75 structures occupying 3663 bytes.
-Table at 0xCB375000.
+77 structures occupying 3795 bytes.
+Table at 0xCAE45000.
 
 Handle 0x0000, DMI type 43, 31 bytes
 TPM Device
@@ -18,8 +18,8 @@ TPM Device
 Handle 0x0001, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: Q07 Ver. 02.01.08
-	Release Date: 05/23/2018
+	Version: Q07 Ver. 02.20.01
+	Release Date: 07/27/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -41,8 +41,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.8
-	Firmware Revision: 7.152
+	BIOS Revision: 20.1
+	Firmware Revision: 7.209
 
 Handle 0x0002, DMI type 1, 27 bytes
 System Information
@@ -59,7 +59,7 @@ Handle 0x0003, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 83EE
-	Version: KBC Version 07.98.00
+	Version: KBC Version 07.D1.00
 	Serial Number: --
 	Asset Tag: --
 	97946E993916094B22613E03B8339091
@@ -90,21 +90,22 @@ Chassis Information
 Handle 0x0006, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
-	Installable Languages: 14
+	Installable Languages: 15
 		enUS
 		deDE
 		esES
 		itIT
 		frFR
-		jaJA
+		jaJP
 		ptPT
-		daDA
-		svSV
+		daDK
+		svSE
 		nlBE
 		noNO
 		fiFI
 		zhCN
 		zhTW
+		ruRU
 	Currently Installed Language: enUS
 
 Handle 0x0007, DMI type 16, 23 bytes
@@ -119,10 +120,10 @@ Physical Memory Array
 Handle 0x000C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0007
-	Partition Width: 2
+	Partition Width: 4
 
 Handle 0x000D, DMI type 207, 9 bytes
 OEM-specific Type
@@ -139,38 +140,38 @@ Cooling Device
 
 Handle 0x000F, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:07:00:1C:63:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:84:00:03
+	NIC 1: PCI device 01:00.3, MAC address 00:07:00:76:30:00
+	NIC 2: PCI device 00:00.2, MAC address 00:00:00:F0:00:03
 
 Handle 0x0010, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:07:00:1C:63:00
-	NIC 2: PCI device 00:00.2, MAC address 0C:00:00:09:00:03
+	NIC 1: PCI device 01:00.3, MAC address 00:07:00:76:30:00
+	NIC 2: PCI device 00:00.2, MAC address 0C:00:00:0B:00:03
 
 Handle 0x0011, DMI type 221, 82 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:01.3, MAC address 00:07:00:1C:63:00
+	NIC 1: PCI device 01:01.3, MAC address 00:07:00:76:30:00
 	NIC 2: PCI device 03:00.2, MAC address FF:FF:FF:FF:FF:04
 	NIC 3: PCI device ff:00.0, MAC address FF:FF:10:00:05:00
 	NIC 4: Not Installed
 	NIC 5: PCI device 00:01.2, MAC address 00:00:07:00:02:00
 	NIC 6: Disabled
 	NIC 7: Disabled
-	NIC 8: PCI device 0a:00.0, MAC address 00:13:00:00:00:00
-	NIC 9: PCI device 00:01.3, MAC address 07:00:00:00:00:0C
+	NIC 8: PCI device 0a:00.0, MAC address 00:07:00:00:00:00
+	NIC 9: PCI device 00:01.3, MAC address 06:00:00:00:00:0C
 
 Handle 0x0012, DMI type 221, 54 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.7, MAC address 00:07:00:1C:63:00
-	NIC 2: PCI device 00:00.2, MAC address 00:07:01:31:00:03
-	NIC 3: PCI device 07:00.0, MAC address 00:1C:63:00:04:05
+	NIC 1: PCI device 01:00.7, MAC address 00:07:00:76:30:00
+	NIC 2: PCI device 00:00.2, MAC address 00:07:01:79:00:03
+	NIC 3: PCI device 07:00.0, MAC address 00:76:30:00:04:05
 	NIC 4: Not Installed
 	NIC 5: Disabled
 	NIC 6: PCI device 07:00.0, MAC address 00:08:00:FF:FF:FF
 
 Handle 0x0013, DMI type 221, 12 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 00:00.1, MAC address 00:04:00:00:00:00
+	NIC 1: PCI device 01:00.1, MAC address 00:04:00:00:00:00
 
 Handle 0x0014, DMI type 7, 27 bytes
 Cache Information
@@ -178,8 +179,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 0 kB
-	Maximum Size: 0 kB
+	Installed Size: 384 kB
+	Maximum Size: 384 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -194,8 +195,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 0 kB
-	Maximum Size: 0 kB
+	Installed Size: 1536 kB
+	Maximum Size: 1536 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -210,8 +211,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 0 kB
-	Maximum Size: 0 kB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -263,7 +264,7 @@ Processor Information
 	Max Speed: 3200 MHz
 	Current Speed: 3200 MHz
 	Status: Populated, Enabled
-	Upgrade: Other
+	Upgrade: Socket LGA1151
 	L1 Cache Handle: 0x0014
 	L2 Cache Handle: 0x0015
 	L3 Cache Handle: 0x0016
@@ -646,9 +647,9 @@ OEM-specific Type
 Handle 0x0042, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 42 00 35 00 00 00 0C 00 00 00 00 00 09 00
+		83 40 42 00 35 00 00 00 0C 00 00 00 00 00 0B 00
 		F8 00 06 A3 00 00 00 00 09 C0 00 00 00 00 0C 00
-		3F 04 02 00 00 00 00 00 FE 00 BB 15 00 00 00 00
+		18 08 5A 00 00 00 00 00 FE 00 BB 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0043, DMI type 17, 40 bytes
@@ -670,7 +671,7 @@ Memory Device
 	Asset Tag: --
 	2176B89E00DD6F7A9396E82FD01C8E49      
 	Rank: 1
-	Configured Memory Speed: 2667 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -679,25 +680,25 @@ Handle 0x000B, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0007
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Other
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: ChannelB
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2667 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	04A0209B820808A9440FFAC61FB1DBB4    
+	Rank: 1
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
+	Configured Voltage: 1.2 V
 
 Handle 0x000A, DMI type 17, 40 bytes
 Memory Device
@@ -718,7 +719,7 @@ Memory Device
 	Asset Tag: --
 	2176B89E00DD6F7A9396E82FD01C8E49      
 	Rank: 1
-	Configured Memory Speed: 2667 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -727,25 +728,25 @@ Handle 0x0009, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0007
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Other
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4
 	Bank Locator: ChannelA
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2667 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	04A0209B820808A9440FFAC61FB1DBB4    
+	Rank: 1
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
+	Configured Voltage: 1.2 V
 
 Handle 0x0008, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -761,23 +762,44 @@ Memory Device Mapped Address
 	Starting Address: 0x00200000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 8 GB
+	Physical Device Handle: 0x000B
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: 1
+	Interleave Position: 1
+
+Handle 0x0045, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x000A
 	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x0045, DMI type 24, 5 bytes
+Handle 0x0046, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0009
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x0047, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
 
-Handle 0x0046, DMI type 32, 11 bytes
+Handle 0x0048, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0047, DMI type 11, 5 bytes
+Handle 0x0049, DMI type 11, 5 bytes
 OEM Strings
 	String 1: FBYTE#3E5K6J6S6b7B7H7M7Q7T7W7maBapaqasaubhdUdpdqfNj6.YQ;
 	String 2: BUILDID#18WWP6AT602#SABA#DABA;
@@ -791,13 +813,13 @@ On Board Device Information
 	Status: Enabled
 	Description: 64 MB
 
-Handle 0x0048, DMI type 14, 8 bytes
+Handle 0x004A, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x0049, DMI type 219, 106 bytes
+Handle 0x004B, DMI type 219, 106 bytes
 HP ProLiant Information
 	Power Features: 0x45010401
 	Omega Features: 0x06900002

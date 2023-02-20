@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
 Table at 0x000E0000.
@@ -6,8 +6,8 @@ Table at 0x000E0000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 2.14.1
-	Release Date: 05/06/2021
+	Version: 2.18.0
+	Release Date: 12/15/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -34,7 +34,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.14
+	BIOS Revision: 2.18
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -58,7 +58,7 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Not Specified
-	Chassis Handle: 0x0003
+	Chassis Handle: 0x0300
 	Type: Motherboard
 	Contained Object Handles: 0
 
@@ -373,7 +373,7 @@ Built-in Pointing Device
 	Buttons: 2
 
 Handle 0x0028, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x0029, DMI type 32, 20 bytes
@@ -465,7 +465,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM A
@@ -553,8 +553,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -661,15 +661,17 @@ Portable Battery
 	Design Capacity: 41440 mWh
 	Design Voltage: 14800 mV
 	SBDS Version: 1.0
-	Maximum Error: 19%
+	Maximum Error: 4%
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000801
 
 Handle 0x1604, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: CTNI
-	Specification Version: 2.0	Firmware Revision: 302.12
-	Description: INTEL	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 302.12
+	Description: INTEL
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -728,7 +730,7 @@ OEM-specific Type
 Handle 0xD000, DMI type 208, 16 bytes
 OEM-specific Type
 	Header and Data:
-		D0 10 00 D0 03 0A FE 00 8B 07 01 02 00 00 00 00
+		D0 10 00 D0 03 11 FE 00 8B 07 01 02 00 00 00 00
 	Strings:
 		20180920
 		20181121
@@ -914,7 +916,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 21 05 20 21 52 01 00 00
+		DE 10 00 DE 01 04 00 00 22 01 27 01 27 01 00 00
 
 Handle 0xF021, DMI type 130, 20 bytes
 OEM-specific Type
@@ -927,14 +929,14 @@ OEM-specific Type
 	Header and Data:
 		83 40 22 F0 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 4E 9D 00 00 00 00 01 00 00 00 08 00 0B 00
-		FE 0E 52 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		93 0F 5A 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0xF023, DMI type 221, 33 bytes
 OEM-specific Type
 	Header and Data:
 		DD 21 23 F0 04 01 00 02 09 00 00 00 02 00 00 00
-		00 DE 00 03 00 00 05 00 00 00 04 00 02 00 00 63
+		00 EC 00 03 00 00 05 00 00 00 04 00 02 00 00 63
 		0E
 	Strings:
 		Reference Code - CPU
@@ -946,7 +948,7 @@ Handle 0xF024, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 24 F0 03 01 00 02 09 00 00 00 02 00 00 00
-		00 00 00 03 04 0B 08 52 FE 0E
+		00 00 00 03 04 0B 08 5A 93 0F
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version

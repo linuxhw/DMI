@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 90 structures occupying 4359 bytes.
@@ -134,11 +134,11 @@ OEM-specific Type
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: A23
-	Release Date: 11/25/2019
+	Version: A24
+	Release Date: 06/18/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 12288 kB
+	ROM Size: 12 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -161,7 +161,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 65.23
+	BIOS Revision: 65.24
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -322,8 +322,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -629,7 +629,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM A
@@ -637,10 +637,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 0793
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: GR1600S3V64L11/8G 
+	Part Number: HMT41GS6BFR8A-PB  
 	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
@@ -650,7 +650,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM B
@@ -658,10 +658,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: 0793
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT41GS6BFR8A-PB  
+	Part Number: GR1600S3V64L11/8G 
 	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
@@ -723,7 +723,7 @@ Hardware Security
 	Front Panel Reset Status: Disabled
 
 Handle 0x0027, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x1B00, DMI type 27, 15 bytes
@@ -957,7 +957,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 20 02 12 21 47 01 00 00
+		DE 10 00 DE 01 04 00 00 20 07 07 01 17 01 00 00
 
 Handle 0x0038, DMI type 255, 8 bytes
 OEM-specific Type

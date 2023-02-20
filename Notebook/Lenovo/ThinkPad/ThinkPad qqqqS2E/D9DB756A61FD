@@ -1,10 +1,10 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-59 structures occupying 2310 bytes.
+58 structures occupying 2285 bytes.
 Table at 0xBCD3D000.
 
-Wrong DMI structures length: 2310 bytes announced, only 2298 bytes available.
+Wrong DMI structures length: 2285 bytes announced, only 2273 bytes available.
 Handle 0x0000, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPU Socket - U3E1
@@ -43,7 +43,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz
-	Voltage: 0.8 V
+	Voltage: 0.7 V
 	External Clock: 100 MHz
 	Max Speed: 2100 MHz
 	Current Speed: 2100 MHz
@@ -115,8 +115,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Asynchronous
 	Installed SRAM Type: Asynchronous
@@ -140,7 +140,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -413,9 +413,9 @@ Handle 0x002B, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
 		83 40 2B 00 35 00 00 00 09 00 00 00 00 00 1C 00
-		F8 00 43 9C 00 00 00 00 09 C0 00 00 05 00 09 00
+		F8 00 43 9C 00 00 00 00 09 E0 00 00 05 00 09 00
 		64 07 28 00 00 00 00 00 C8 00 5A 15 00 00 00 00
-		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
+		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x002C, DMI type 133, 5 bytes
 OEM-specific Type
@@ -436,14 +436,14 @@ OEM-specific Type
 
 Handle 0x002E, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 1010 bytes
+	Area Length: 1090 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x0000003E
+	Change Token: 0x00000043
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -493,28 +493,22 @@ OEM-specific Type
 Handle 0x0034, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 34 00 4C 45 4E 4F 56 4F 0B 05 01 03 00 00
+		8C 13 34 00 4C 45 4E 4F 56 4F 0B 05 01 00 00 00
 		00 00 00
 
-Handle 0x0035, DMI type 140, 23 bytes
-OEM-specific Type
-	Header and Data:
-		8C 17 35 00 4C 45 4E 4F 56 4F 0B 06 01 8A 13 04
-		00 00 00 00 00 00 00
-
-Handle 0x0036, DMI type 24, 5 bytes
+Handle 0x0035, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
-Handle 0x0037, DMI type 132, 7 bytes
+Handle 0x0036, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 37 00 01 D8 36
+		84 07 36 00 01 D8 36
 
-Handle 0x0038, DMI type 0, 24 bytes
+Handle 0x0037, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
 	Version: GIET99WW (2.49 )
@@ -537,15 +531,15 @@ BIOS Information
 	BIOS Revision: 2.49
 	Firmware Revision: 1.17
 
-Handle 0x0039, DMI type 140, 15 bytes
+Handle 0x0038, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
 	Version ID: GIHT32WW
 	Release Date: 02/17/2016
 
-Handle 0x003A, DMI type 140, 43 bytes
+Handle 0x0039, DMI type 140, 43 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2B 3A 00 4C 45 4E 4F 56 4F 0B 08 01 FF FF FF
+		8C 2B 39 00 4C 45 4E 4F 56 4F 0B 08 01 FF FF FF
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF FF FF FF
 

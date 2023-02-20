@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0xBD80A000.
+Table at 0x000E6CC0.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
@@ -316,12 +316,20 @@ Physical Memory Array
 Handle 0x0022, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 3 GB
 	Physical Array Handle: 0x0021
 	Partition Width: 4
 
-Handle 0x0023, DMI type 7, 27 bytes
+Handle 0x0023, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x0063FFFFFFF
+	Range Size: 21 GB
+	Physical Array Handle: 0x0021
+	Partition Width: 4
+
+Handle 0x0024, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1 - Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -337,14 +345,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0024, DMI type 7, 27 bytes
+Handle 0x0025, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L2 - Cache
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2 MB
-	Maximum Size: 2 MB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -353,14 +361,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0025, DMI type 7, 27 bytes
+Handle 0x0026, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L3 - Cache
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4 MB
-	Maximum Size: 4 MB
+	Installed Size: 32 MB
+	Maximum Size: 32 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -369,14 +377,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0026, DMI type 4, 48 bytes
+Handle 0x0027, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: AM4
 	Type: Central Processor
 	Family: Zen
 	Manufacturer: Advanced Micro Devices, Inc.
-	ID: 81 0F 81 00 FF FB 8B 17
-	Signature: Family 23, Model 24, Stepping 1
+	ID: 10 0F 87 00 FF FB 8B 17
+	Signature: Family 23, Model 113, Stepping 0
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -401,22 +409,22 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Ryzen 3 3200G with Radeon Vega Graphics    
-	Voltage: 1.4 V
+	Version: AMD Ryzen 5 3600 6-Core Processor              
+	Voltage: 1.1 V
 	External Clock: 100 MHz
-	Max Speed: 4000 MHz
+	Max Speed: 4200 MHz
 	Current Speed: 3600 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
-	L1 Cache Handle: 0x0023
-	L2 Cache Handle: 0x0024
-	L3 Cache Handle: 0x0025
+	L1 Cache Handle: 0x0024
+	L2 Cache Handle: 0x0025
+	L3 Cache Handle: 0x0026
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Unknown
-	Core Count: 4
-	Core Enabled: 4
-	Thread Count: 4
+	Core Count: 6
+	Core Enabled: 6
+	Thread Count: 12
 	Characteristics:
 		64-bit capable
 		Multi-Core
@@ -425,7 +433,7 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0027, DMI type 18, 23 bytes
+Handle 0x0028, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -435,13 +443,13 @@ Handle 0x0027, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0028, DMI type 17, 84 bytes
+Handle 0x0029, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x0021
-	Error Information Handle: 0x0027
+	Error Information Handle: 0x0028
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A1
@@ -449,10 +457,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2133 MT/s
-	Manufacturer: Crucial Technology
+	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
-	Part Number: BLS4G4D26BFSB.8FB
+	Part Number: CMK16GX4M2B3200C16  
 	Rank: 1
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
@@ -461,27 +469,27 @@ Memory Device
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 6, Hex 0x9B
+	Module Manufacturer ID: Bank 3, Hex 0x9E
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 4 GB
+	Volatile Size: 8 GB
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0029, DMI type 20, 35 bytes
+Handle 0x002A, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x0028
-	Memory Array Mapped Address Handle: 0x0022
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 24 GB
+	Physical Device Handle: 0x0029
+	Memory Array Mapped Address Handle: 0x0023
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x002A, DMI type 18, 23 bytes
+Handle 0x002B, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -491,17 +499,73 @@ Handle 0x002A, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x002B, DMI type 17, 84 bytes
+Handle 0x002C, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x0021
-	Error Information Handle: 0x002A
+	Error Information Handle: 0x002B
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_A2
+	Bank Locator: BANK 1
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 2133 MT/s
+	Manufacturer: Corsair
+	Serial Number: --
+	Asset Tag: --
+	Part Number: CMK16GX4M2B3200C16  
+	Rank: 1
+	Configured Memory Speed: 2133 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 3, Hex 0x9E
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 8 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x002D, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 24 GB
+	Physical Device Handle: 0x002C
+	Memory Array Mapped Address Handle: 0x0023
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x002E, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x002F, DMI type 17, 84 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x002E
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: DIMM_A2
-	Bank Locator: BANK 1
+	Locator: DIMM_B1
+	Bank Locator: BANK 2
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2133 MT/s
@@ -526,18 +590,18 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x002C, DMI type 20, 35 bytes
+Handle 0x0030, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
-	Physical Device Handle: 0x002B
-	Memory Array Mapped Address Handle: 0x0022
+	Physical Device Handle: 0x002F
+	Memory Array Mapped Address Handle: 0x0023
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x002D, DMI type 18, 23 bytes
+Handle 0x0031, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -547,66 +611,10 @@ Handle 0x002D, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x002E, DMI type 17, 84 bytes
+Handle 0x0032, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x0021
-	Error Information Handle: 0x002D
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4 GB
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM_B1
-	Bank Locator: BANK 2
-	Type: DDR4
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2133 MT/s
-	Manufacturer: Crucial Technology
-	Serial Number: --
-	Asset Tag: --
-	Part Number: BLS4G4D26BFSB.8FB
-	Rank: 1
-	Configured Memory Speed: 2133 MT/s
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
-	Memory Technology: DRAM
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 6, Hex 0x9B
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: 4 GB
-	Cache Size: None
-	Logical Size: None
-
-Handle 0x002F, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x002E
-	Memory Array Mapped Address Handle: 0x0022
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
-
-Handle 0x0030, DMI type 18, 23 bytes
-32-bit Memory Error Information
-	Type: OK
-	Granularity: Unknown
-	Operation: Unknown
-	Vendor Syndrome: Unknown
-	Memory Array Address: Unknown
-	Device Address: Unknown
-	Resolution: Unknown
-
-Handle 0x0031, DMI type 17, 84 bytes
-Memory Device
-	Array Handle: 0x0021
-	Error Information Handle: 0x0030
+	Error Information Handle: 0x0031
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 4 GB
@@ -638,18 +646,18 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0032, DMI type 20, 35 bytes
+Handle 0x0033, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
-	Physical Device Handle: 0x0031
-	Memory Array Mapped Address Handle: 0x0022
+	Physical Device Handle: 0x0032
+	Memory Array Mapped Address Handle: 0x0023
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0033, DMI type 13, 22 bytes
+Handle 0x0034, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 9
@@ -664,7 +672,7 @@ BIOS Language Information
 		ko|KR|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0034, DMI type 9, 17 bytes
+Handle 0x0035, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_1
 	Type: x1 PCI Express
@@ -677,7 +685,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x0035, DMI type 9, 17 bytes
+Handle 0x0036, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
 	Type: x16 PCI Express
@@ -688,9 +696,9 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:01.1
+	Bus Address: 0000:00:03.1
 
-Handle 0x0036, DMI type 9, 17 bytes
+Handle 0x0037, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_2
 	Type: x1 PCI Express
@@ -703,7 +711,20 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x0037, DMI type 9, 17 bytes
+Handle 0x0038, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCIEX16_2
+	Type: x16 PCI Express
+	Current Usage: Available
+	Length: Long
+	ID: 3
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 0000:00:1f.7
+
+Handle 0x0039, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_3
 	Type: x1 PCI Express
@@ -714,9 +735,9 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:03:07.0
+	Bus Address: 0000:02:07.0
 
-Handle 0x0038, DMI type 9, 17 bytes
+Handle 0x003A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_3
 	Type: x16 PCI Express
@@ -729,6 +750,6 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x0039, DMI type 127, 4 bytes
+Handle 0x003B, DMI type 127, 4 bytes
 End Of Table
 

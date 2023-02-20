@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0xACE17000.
@@ -6,8 +6,8 @@ Table at 0xACE17000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: AMI
-	Version: F.20
-	Release Date: 11/04/2020
+	Version: F.27
+	Release Date: 03/17/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -32,8 +32,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.20
-	Firmware Revision: 31.21
+	BIOS Revision: 15.27
+	Firmware Revision: 31.25
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -50,7 +50,7 @@ Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 87B2
-	Version: 31.21
+	Version: 31.25
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -182,8 +182,8 @@ Physical Memory Array
 Handle 0x000E, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x000D
 	Partition Width: 2
 
@@ -307,7 +307,7 @@ Memory Device
 	Error Information Handle: 0x0013
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom - Slot 1 (left)
@@ -315,11 +315,11 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 3200 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471A5244CB0-CWE    
-	Rank: 1
+	Part Number: F4-3200C22-16GRS
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -327,20 +327,20 @@ Memory Device
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Manufacturer ID: Bank 5, Hex 0xCD
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 4 GB
+	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Device Handle: 0x0014
 	Memory Array Mapped Address Handle: 0x000E
 	Partition Row Position: 1
@@ -361,7 +361,7 @@ Memory Device
 	Error Information Handle: 0x0016
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom - Slot 2 (right)
@@ -369,11 +369,11 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 3200 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471A5244CB0-CWE    
-	Rank: 1
+	Part Number: F4-3200C22-16GRS
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -381,20 +381,20 @@ Memory Device
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Manufacturer ID: Bank 5, Hex 0xCD
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 4 GB
+	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0018, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Device Handle: 0x0017
 	Memory Array Mapped Address Handle: 0x000E
 	Partition Row Position: 1

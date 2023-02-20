@@ -1,14 +1,14 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-63 structures occupying 2663 bytes.
-Table at 0xBDA04000.
+63 structures occupying 2655 bytes.
+Table at 0xBDA06000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: H.C0
-	Release Date: 05/18/2021
+	Version: H.G0
+	Release Date: 07/27/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -220,8 +220,8 @@ Memory Array Mapped Address
 Handle 0x0012, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0083FFFFFFF
-	Range Size: 29 GB
+	Ending Address: 0x0103FFFFFFF
+	Range Size: 61 GB
 	Physical Array Handle: 0x0010
 	Partition Width: 4
 
@@ -231,8 +231,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 384 kB
-	Maximum Size: 384 kB
+	Installed Size: 512 kB
+	Maximum Size: 512 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -247,8 +247,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3 MB
-	Maximum Size: 3 MB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -279,8 +279,8 @@ Processor Information
 	Type: Central Processor
 	Family: Zen
 	Manufacturer: Advanced Micro Devices, Inc.
-	ID: 10 0F 87 00 FF FB 8B 17
-	Signature: Family 23, Model 113, Stepping 0
+	ID: 10 0F A2 00 FF FB 8B 17
+	Signature: Family 25, Model 33, Stepping 0
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -305,11 +305,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Ryzen 5 3600 6-Core Processor              
+	Version: AMD Ryzen 7 5800X 8-Core Processor             
 	Voltage: 1.1 V
 	External Clock: 100 MHz
-	Max Speed: 4200 MHz
-	Current Speed: 3600 MHz
+	Max Speed: 4850 MHz
+	Current Speed: 3800 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
 	L1 Cache Handle: 0x0013
@@ -318,9 +318,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Unknown
-	Core Count: 6
-	Core Enabled: 6
-	Thread Count: 12
+	Core Count: 8
+	Core Enabled: 8
+	Thread Count: 16
 	Characteristics:
 		64-bit capable
 		Multi-Core
@@ -345,20 +345,20 @@ Memory Device
 	Error Information Handle: 0x0017
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3000 MT/s
+	Speed: 3200 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMK16GX4M2B3000C15  
-	Rank: 1
-	Configured Memory Speed: 3000 MT/s
+	Part Number: CMK32GX4M2D3600C18
+	Rank: 2
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -366,8 +366,8 @@ Memory Device
 Handle 0x0019, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Device Handle: 0x0018
 	Memory Array Mapped Address Handle: 0x0012
 	Partition Row Position: Unknown
@@ -390,20 +390,20 @@ Memory Device
 	Error Information Handle: 0x001A
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3000 MT/s
+	Speed: 3200 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMK16GX4M2B3000C15  
+	Part Number: CMK32GX4M2D3600C18
 	Rank: 2
-	Configured Memory Speed: 3000 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -411,8 +411,8 @@ Memory Device
 Handle 0x001C, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Device Handle: 0x001B
 	Memory Array Mapped Address Handle: 0x0012
 	Partition Row Position: Unknown
@@ -435,20 +435,20 @@ Memory Device
 	Error Information Handle: 0x001D
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3000 MT/s
+	Speed: 3200 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMK16GX4M2B3000C15  
+	Part Number: CMK32GX4M2D3600C18
 	Rank: 2
-	Configured Memory Speed: 3000 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -456,8 +456,8 @@ Memory Device
 Handle 0x001F, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x0012
 	Partition Row Position: Unknown
@@ -480,20 +480,20 @@ Memory Device
 	Error Information Handle: 0x0020
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3000 MT/s
+	Speed: 3200 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMK16GX4M2B3000C15  
-	Rank: 1
-	Configured Memory Speed: 3000 MT/s
+	Part Number: CMK32GX4M2D3600C18
+	Rank: 2
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -501,8 +501,8 @@ Memory Device
 Handle 0x0022, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Device Handle: 0x0021
 	Memory Array Mapped Address Handle: 0x0012
 	Partition Row Position: Unknown
@@ -669,13 +669,13 @@ Handle 0x0036, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3600 Pcie x8 slot
 	Type: x8 PCI Express x8
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 13
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:00:1f.7
+	Bus Address: 0000:00:03.2
 
 Handle 0x0037, DMI type 9, 17 bytes
 System Slot Information

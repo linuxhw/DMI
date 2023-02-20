@@ -1,0 +1,394 @@
+# dmidecode 3.4
+Getting SMBIOS data from sysfs.
+SMBIOS 3.1.1 present.
+Table at 0xF2A70000.
+
+Handle 0x1000, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L1 Instruction Cache
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 32 kB
+	Maximum Size: 32 kB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Instruction
+	Associativity: 8-way Set-associative
+
+Handle 0x1001, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L1 Data Cache
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 32 kB
+	Maximum Size: 32 kB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Data
+	Associativity: 8-way Set-associative
+
+Handle 0x1002, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L2 Cache
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Varies With Memory Address
+	Location: Internal
+	Installed Size: 32 MB
+	Maximum Size: 32 MB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x0000, DMI type 4, 48 bytes
+Processor Information
+	Socket Designation: CPU01
+	Type: Central Processor
+	Family: ARMv8
+	Manufacturer: Phytium
+	ID: 22 66 1F 70 00 00 00 00
+	Signature: Implementor 0x70, Variant 0x1, Architecture 15, Part 0x662, Revision 2
+	Version: FT-2000+/64
+	Voltage: 0.9 V
+	External Clock: 50 MHz
+	Max Speed: 2200 MHz
+	Current Speed: 2200 MHz
+	Status: Populated, Enabled
+	Upgrade: Unknown
+	L1 Cache Handle: 0x1001
+	L2 Cache Handle: 0x1002
+	L3 Cache Handle: Not Provided
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 14
+	Core Count: 64
+	Core Enabled: 64
+	Thread Count: 64
+	Characteristics:
+		64-bit capable
+		Multi-Core
+		Execute Protection
+		Enhanced Virtualization
+		Power/Performance Control
+
+Handle 0x0001, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 256 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 8
+
+Handle 0x0002, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
+	Physical Array Handle: 0x0001
+	Partition Width: 8
+
+Handle 0x0003, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0001
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM0
+	Bank Locator: SOCKET 0 CHANNEL 0 DIMM 0
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2666 MT/s
+	Manufacturer: Micron
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 6478545886
+	Rank: Unknown
+	Configured Memory Speed: 2666 MT/s
+	Minimum Voltage: 1.5 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: Unknown
+
+Handle 0x0004, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x0003
+	Memory Array Mapped Address Handle: 0x0002
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0005, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0001
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM1
+	Bank Locator: SOCKET 0 CHANNEL 1 DIMM 1
+	Type: DDR4
+	Type Detail: Synchronous
+
+Handle 0x0006, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0001
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM2
+	Bank Locator: SOCKET 0 CHANNEL 2 DIMM 2
+	Type: DDR4
+	Type Detail: Synchronous
+
+Handle 0x0007, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0001
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM3
+	Bank Locator: SOCKET 0 CHANNEL 3 DIMM 3
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2666 MT/s
+	Manufacturer: Micron
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 6478545886
+	Rank: Unknown
+	Configured Memory Speed: 2666 MT/s
+	Minimum Voltage: 1.5 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: Unknown
+
+Handle 0x0008, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00800000000
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x0007
+	Memory Array Mapped Address Handle: 0x0002
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0009, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0001
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM4
+	Bank Locator: SOCKET 0 CHANNEL 4 DIMM 4
+	Type: DDR4
+	Type Detail: Synchronous
+
+Handle 0x000A, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0001
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM5
+	Bank Locator: SOCKET 0 CHANNEL 5 DIMM 5
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2666 MT/s
+	Manufacturer: Micron
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 6478545886
+	Rank: Unknown
+	Configured Memory Speed: 2666 MT/s
+	Minimum Voltage: 1.5 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: Unknown
+
+Handle 0x000B, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x01000000000
+	Ending Address: 0x017FFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x000A
+	Memory Array Mapped Address Handle: 0x0002
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x000C, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0001
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM6
+	Bank Locator: SOCKET 0 CHANNEL 6 DIMM 6
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2666 MT/s
+	Manufacturer: Micron
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 6478545886
+	Rank: Unknown
+	Configured Memory Speed: 2666 MT/s
+	Minimum Voltage: 1.5 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: Unknown
+
+Handle 0x000D, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x01800000000
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x000C
+	Memory Array Mapped Address Handle: 0x0002
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x000E, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0001
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM7
+	Bank Locator: SOCKET 0 CHANNEL 7 DIMM 7
+	Type: DDR4
+	Type Detail: Synchronous
+
+Handle 0x000F, DMI type 38, 18 bytes
+IPMI Device Information
+	Interface Type: KCS (Keyboard Control Style)
+	Specification Version: 2.0
+	I2C Slave Address: 0x10
+	NV Storage Device: Not Present
+	Base Address: 0x0000000000000CA2 (I/O)
+	Register Spacing: Successive Byte Boundaries
+
+Handle 0x0010, DMI type 42, 12 bytes
+Management Controller Host Interface
+	Interface Type: KCS: Keyboard Controller Style
+
+Handle 0x0011, DMI type 0, 26 bytes
+BIOS Information
+	Vendor: ZD-TECH
+	Version: KL.4.010.20201204
+	Release Date: 12/04/20 11:22:03
+	Address: 0x88000
+	Runtime Size: 480 kB
+	ROM Size: 16 MB
+	Characteristics:
+		BIOS characteristics not supported
+		ACPI is supported
+		USB legacy is supported
+		BIOS boot specification is supported
+		Targeted content distribution is supported
+		UEFI is supported
+
+Handle 0x0012, DMI type 1, 27 bytes
+System Information
+	Manufacturer: Lenovo
+	Product Name: Lenovo
+	Version: 1.0.0
+	Serial Number: --
+	UUID: --
+	Wake-up Type: Power Switch
+	SKU Number: Reserved for System Vendor
+	Family: Reserved for System Vendor
+
+Handle 0x0013, DMI type 2, 17 bytes
+Base Board Information
+	Manufacturer: Lenovo
+	Product Name: Lenovo ThinkSystem SR358FV2
+	Version: Reserved for BaseBoard Vendor
+	Serial Number: --
+	Asset Tag: --
+	Features:
+		Board is a hosting board
+		Board is replaceable
+	Location In Chassis: Reserved for BaseBoard Vendor
+	Chassis Handle: 0x0000
+	Type: Motherboard
+	Contained Object Handles: 0
+
+Handle 0x0014, DMI type 3, 25 bytes
+Chassis Information
+	Manufacturer: Lenovo
+	Type: Main Server Chassis
+	Lock: Not Present
+	Version: Reserved for System Enclosure or Chassis Vendor
+	Serial Number: --
+	Asset Tag: --
+	Boot-up State: Safe
+	Power Supply State: Safe
+	Thermal State: Safe
+	Security Status: None
+	OEM Information: 0x00000000
+	Height: 2 U
+	Number Of Power Cords: 1
+	Contained Elements: 0
+	SKU Number: Not Specified
+
+Handle 0x0015, DMI type 32, 11 bytes
+System Boot Information
+	Status: No errors detected
+
+Handle 0x0016, DMI type 39, 22 bytes
+System Power Supply
+	Power Unit Group: 1
+	Location: Not specified
+	Name: Not specified
+	Manufacturer: Not specified
+	Serial Number: --
+	Asset Tag: --
+	Model Part Number: Not specified
+	Revision: Not specified
+	Max Power Capacity: Unknown
+	Status: Present, OK
+	Type: Switching
+	Input Voltage Range Switching: Unknown
+	Plugged: Yes
+	Hot Replaceable: No
+
+Handle 0xFEFF, DMI type 127, 4 bytes
+End Of Table
+

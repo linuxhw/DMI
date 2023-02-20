@@ -1,5 +1,5 @@
-# dmidecode 2.12
-# SMBIOS entry point at 0xda13e398
+# dmidecode 3.4
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 21 structures occupying 1604 bytes.
 Table at 0xDA120018.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 09/18/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 6144 kB
+	ROM Size: 6 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -127,9 +127,9 @@ On Board Device 11 Information
 
 Handle 0x0005, DMI type 11, 5 bytes
 OEM Strings
-	String 1: 1FGlkjt0Siz61
-	String 2: 827t70QAkMymG
-	String 3: YFDogodni9XHh
+	String 1: Zv9byHWOZsVqK
+	String 2: vligOAqg7-QW0
+	String 3: wqMmNWLXs0Gk8
 	String 4: 90NB02X5-M02430
 	String 5:  
 	String 6:  
@@ -140,7 +140,7 @@ OEM Strings
 
 Handle 0x0006, DMI type 12, 5 bytes
 System Configuration Options
-	Option 1: DSN:      ET5AC59L02T0PD            
+	Option 1: DSN:6S6PLNT03A7503 V                
 	Option 2: DSN:0B79E4B7EECB                    
 	Option 3: DSN:BCEE7B4E97B0                    
 	Option 4: SMI:00B2CA
@@ -187,8 +187,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -244,7 +244,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Pentium(R) CPU 2117U @ 1.80GHz
-	Voltage: 4.7 V
+	Voltage: 6.7 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
 	Current Speed: 1800 MHz
@@ -268,20 +268,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Elpida
 	Serial Number: --
 	Asset Tag: --
 	Part Number: EDJ4216EFBG-GNL-F
 	Rank: 2
-	Configured Clock Speed: 1600 MHz
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000E, DMI type 17, 34 bytes
 Memory Device
@@ -296,13 +296,6 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
 
 Handle 0x000F, DMI type 17, 34 bytes
 Memory Device
@@ -317,13 +310,6 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
 
 Handle 0x0010, DMI type 17, 34 bytes
 Memory Device
@@ -338,13 +324,6 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
 
 Handle 0x0011, DMI type 19, 31 bytes
 Memory Array Mapped Address

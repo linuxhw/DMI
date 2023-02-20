@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
 Table at 0x000E6B60.
@@ -333,7 +333,7 @@ Additional Information 2
 	String: Not Specified
 	Value: 0x0000001e
 Additional Information 3
-	Referenced Handle: 0x0029
+	Referenced Handle: 0x002a
 	Referenced Offset: 0x01
 	String: To Be Filled By O.E.M. 3
 	Value: 0x00000000
@@ -356,7 +356,17 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 
-Handle 0x0025, DMI type 18, 23 bytes
+Handle 0x0025, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: AMD
+	Specification Version: 2.0
+	Firmware Revision: 3.39
+	Description: AMD
+	Characteristics:
+		Family configurable via platform software support
+	OEM-specific Information: 0x00000000
+
+Handle 0x0026, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -366,24 +376,24 @@ Handle 0x0025, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0026, DMI type 16, 23 bytes
+Handle 0x0027, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
 	Maximum Capacity: 128 GB
-	Error Information Handle: 0x0025
+	Error Information Handle: 0x0026
 	Number Of Devices: 2
 
-Handle 0x0027, DMI type 19, 31 bytes
+Handle 0x0028, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
-	Physical Array Handle: 0x0026
+	Physical Array Handle: 0x0027
 	Partition Width: 2
 
-Handle 0x0028, DMI type 7, 19 bytes
+Handle 0x0029, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 - Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -399,14 +409,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0029, DMI type 7, 19 bytes
+Handle 0x002A, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 - Cache
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -415,14 +425,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x002A, DMI type 7, 19 bytes
+Handle 0x002B, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L3 - Cache
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -431,7 +441,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x002B, DMI type 4, 48 bytes
+Handle 0x002C, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: AM4
 	Type: Central Processor
@@ -470,9 +480,9 @@ Processor Information
 	Current Speed: 3700 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
-	L1 Cache Handle: 0x0028
-	L2 Cache Handle: 0x0029
-	L3 Cache Handle: 0x002A
+	L1 Cache Handle: 0x0029
+	L2 Cache Handle: 0x002A
+	L3 Cache Handle: 0x002B
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Unknown
@@ -487,7 +497,7 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x002C, DMI type 18, 23 bytes
+Handle 0x002D, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -497,13 +507,13 @@ Handle 0x002C, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x002D, DMI type 17, 40 bytes
+Handle 0x002E, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0026
-	Error Information Handle: 0x002C
+	Array Handle: 0x0027
+	Error Information Handle: 0x002D
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A1
@@ -516,23 +526,23 @@ Memory Device
 	Asset Tag: --
 	Part Number: F4-3000C15-8GRBB
 	Rank: 1
-	Configured Clock Speed: 2133 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x002E, DMI type 20, 35 bytes
+Handle 0x002F, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
-	Physical Device Handle: 0x002D
-	Memory Array Mapped Address Handle: 0x0027
+	Physical Device Handle: 0x002E
+	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x002F, DMI type 18, 23 bytes
+Handle 0x0030, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -542,13 +552,13 @@ Handle 0x002F, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0030, DMI type 17, 40 bytes
+Handle 0x0031, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0026
-	Error Information Handle: 0x002F
+	Array Handle: 0x0027
+	Error Information Handle: 0x0030
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B1
@@ -561,23 +571,23 @@ Memory Device
 	Asset Tag: --
 	Part Number: F4-3000C15-8GRBB
 	Rank: 1
-	Configured Clock Speed: 2133 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0031, DMI type 20, 35 bytes
+Handle 0x0032, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
-	Physical Device Handle: 0x0030
-	Memory Array Mapped Address Handle: 0x0027
+	Physical Device Handle: 0x0031
+	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0032, DMI type 13, 22 bytes
+Handle 0x0033, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 9
@@ -592,7 +602,7 @@ BIOS Language Information
 		<BAD INDEX>
 	Currently Installed Language: ru|RU|iso8859-5
 
-Handle 0x0033, DMI type 9, 17 bytes
+Handle 0x0034, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16
 	Type: x8 PCI Express
@@ -605,7 +615,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:01.1
 
-Handle 0x0034, DMI type 9, 17 bytes
+Handle 0x0035, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_1
 	Type: x1 PCI Express
@@ -618,7 +628,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x0035, DMI type 9, 17 bytes
+Handle 0x0036, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_2
 	Type: x1 PCI Express
@@ -631,6 +641,6 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x0036, DMI type 127, 4 bytes
+Handle 0x0037, DMI type 127, 4 bytes
 End Of Table
 

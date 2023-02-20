@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 110 structures occupying 4946 bytes.
@@ -7,8 +7,8 @@ Table at 0x000EB6F0.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 4801
-	Release Date: 07/25/2014
+	Version: 4607
+	Release Date: 12/02/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8 MB
@@ -86,11 +86,11 @@ Processor Information
 	Family: Other
 	Manufacturer: Intel            
 	ID: D7 06 02 00 FF FB EB BF
-	Version: Intel(R) Core(TM) i7-3930K CPU @ 3.20GHz
+	Version: Intel(R) Core(TM) i7-3970X CPU @ 3.50GHz
 	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 3200 MHz
+	Current Speed: 3500 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -143,15 +143,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 12 MB
-	Maximum Size: 12 MB
+	Installed Size: 15 MB
+	Maximum Size: 15 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
 	Speed: Unknown
 	Error Correction Type: None
 	System Type: Unified
-	Associativity: 16-way Set-associative
+	Associativity: <OUT OF SPEC>
 
 Handle 0x0008, DMI type 8, 9 bytes
 Port Connector Information
@@ -480,8 +480,8 @@ Physical Memory Array
 Handle 0x002D, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 24 GB
 	Physical Array Handle: 0x002C
 	Partition Width: 1
 
@@ -499,10 +499,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Corsair                    
+	Manufacturer: Kingston                   
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMX8GX3M2A1333C9      
+	Part Number: KHX1600C9D3/4GX       
 	Rank: 2
 	Configured Memory Speed: 1333 MT/s
 
@@ -521,25 +521,33 @@ Handle 0x0030, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002C
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA_Dimm2
 	Bank Locator: ChannelA
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: ChannelA_Dimm2_Manufacturer
+	Speed: 1333 MT/s
+	Manufacturer: Kingston                   
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ChannelA_Dimm2_PartNum
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: KHX1600C9D3/4GX       
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
-Handle 0x0031, DMI type 126, 35 bytes
-Inactive
+Handle 0x0031, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0030
+	Memory Array Mapped Address Handle: 0x002D
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x0032, DMI type 17, 34 bytes
 Memory Device
@@ -547,7 +555,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB_Dimm1
@@ -555,18 +563,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Corsair                    
+	Manufacturer: Undefined                  
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMX8GX3M2A1333C9      
+	Part Number: 1600 CL9 Series       
 	Rank: 2
 	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0033, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0032
 	Memory Array Mapped Address Handle: 0x002D
 	Partition Row Position: Unknown
@@ -601,49 +609,65 @@ Handle 0x0036, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002C
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelC_Dimm1
 	Bank Locator: ChannelC
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: ChannelC_Dimm1_Manufacturer
+	Speed: 1333 MT/s
+	Manufacturer: Kingston                   
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ChannelC_Dimm1_PartNum
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: KHX1600C9D3/4GX       
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
-Handle 0x0037, DMI type 126, 35 bytes
-Inactive
+Handle 0x0037, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00400000000
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0036
+	Memory Array Mapped Address Handle: 0x002D
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x0038, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002C
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelC_Dimm2
 	Bank Locator: ChannelC
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: ChannelC_Dimm2_Manufacturer
+	Speed: 1333 MT/s
+	Manufacturer: Kingston                   
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ChannelC_Dimm2_PartNum
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: KHX1600C9D3/4GX       
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
-Handle 0x0039, DMI type 126, 35 bytes
-Inactive
+Handle 0x0039, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00500000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0038
+	Memory Array Mapped Address Handle: 0x002D
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x003A, DMI type 17, 34 bytes
 Memory Device
@@ -1130,7 +1154,7 @@ BIOS Language Information
 		ja|JP|unicode
 		zh|TW|unicode
 		zh|CN|unicode
-	Currently Installed Language: en|US|iso8859-1
+	Currently Installed Language: ru|RU|iso8859-5
 
 Handle 0x006D, DMI type 127, 4 bytes
 End Of Table

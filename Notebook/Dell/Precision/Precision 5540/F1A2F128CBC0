@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x000E0000.
@@ -6,8 +6,8 @@ Table at 0x000E0000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.6.0
-	Release Date: 02/06/2020
+	Version: 1.19.0
+	Release Date: 09/14/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -34,7 +34,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.6
+	BIOS Revision: 1.19
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -58,7 +58,7 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Not Specified
-	Chassis Handle: 0x0003
+	Chassis Handle: 0x0300
 	Type: Motherboard
 	Contained Object Handles: 0
 
@@ -316,7 +316,7 @@ Built-in Pointing Device
 	Buttons: 2
 
 Handle 0x0024, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x0025, DMI type 32, 20 bytes
@@ -420,7 +420,7 @@ Handle 0x003C, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 3C 00 03 01 00 07 00 5C 50 00 02 00 00 00
-		00 CA 00 03 00 01 05 00 00 00
+		00 F0 00 03 00 01 08 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -430,7 +430,7 @@ Handle 0x003D, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 3D 00 03 01 00 07 00 5C 50 00 02 00 0C 00
-		00 0A 00 03 04 0C 00 31 14 06
+		00 0B 00 03 04 0C 00 5C 61 08
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -515,8 +515,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12288 kB
-	Maximum Size: 12288 kB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -566,15 +566,15 @@ Processor Information
 	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 4600 MHz
-	Current Speed: 2772 MHz
+	Current Speed: 2673 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1440
 	L1 Cache Handle: 0x0040
 	L2 Cache Handle: 0x0041
 	L3 Cache Handle: 0x0042
 	Serial Number: --
-	Asset Tag: --
-	Part Number: To Be Filled By O.E.M.
+	271882FD79060B21C43F805A2DE81148  
+	Part Number:  
 	Core Count: 6
 	Core Enabled: 6
 	Thread Count: 12
@@ -592,7 +592,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM A
@@ -627,7 +627,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM B
@@ -691,7 +691,7 @@ Portable Battery
 	Design Capacity: 97000 mWh
 	Design Voltage: 11400 mV
 	SBDS Version: 1.0
-	Maximum Error: 100%
+	Maximum Error: 18%
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000801
 
@@ -776,7 +776,7 @@ OEM-specific Type
 Handle 0xD000, DMI type 208, 16 bytes
 OEM-specific Type
 	Header and Data:
-		D0 10 00 D0 03 0A FE 00 06 09 01 02 00 00 00 00
+		D0 10 00 D0 03 11 FE 00 06 09 01 02 00 00 00 00
 	Strings:
 		20191219
 		20200106
@@ -977,7 +977,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 20 05 01 22 40 01 00 00
+		DE 10 00 DE 01 04 00 00 22 11 17 06 56 01 00 00
 
 Handle 0xF026, DMI type 218, 77 bytes
 OEM-specific Type
@@ -997,9 +997,9 @@ OEM-specific Type
 Handle 0xF028, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 28 F0 35 00 00 00 0C 00 00 00 00 00 0A 00
+		83 40 28 F0 35 00 00 00 0C 00 00 00 00 00 0B 00
 		F8 00 0E A3 00 00 00 00 09 C0 00 00 00 00 0C 00
-		14 06 31 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		61 08 5C 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0xF030, DMI type 9, 19 bytes
@@ -1014,6 +1014,8 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:00:1c.0
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0xF031, DMI type 9, 19 bytes
 System Slot Information
@@ -1027,6 +1029,8 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:00:1c.4
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0xF032, DMI type 9, 19 bytes
 System Slot Information
@@ -1040,6 +1044,8 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:00:1d.0
+	Data Bus Width: 10
+	Peer Devices: 0
 
 Handle 0xF033, DMI type 9, 19 bytes
 System Slot Information
@@ -1053,6 +1059,8 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:00:1b.0
+	Data Bus Width: 10
+	Peer Devices: 0
 
 Handle 0xF034, DMI type 205, 89 bytes
 OEM-specific Type
@@ -1114,8 +1122,8 @@ Group Associations
 Handle 0xF042, DMI type 203, 106 bytes
 OEM-specific Type
 	Header and Data:
-		CB 6A 42 F0 01 04 01 45 02 00 A0 06 81 10 89 30
-		00 00 00 00 40 00 00 01 1F 00 00 C9 0B C0 47 02
+		CB 6A 42 F0 01 04 01 45 02 00 A0 06 81 85 39 30
+		00 00 00 04 40 00 00 01 1F 00 00 C9 0B C0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

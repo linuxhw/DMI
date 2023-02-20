@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 27 structures occupying 1410 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 06/05/2012
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -153,8 +153,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -169,8 +169,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -275,8 +275,8 @@ Physical Memory Array
 Handle 0x0010, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0013FFFFFFF
-	Range Size: 5 GB
+	Ending Address: 0x001BFFFFFFF
+	Range Size: 7 GB
 	Physical Array Handle: 0x000F
 	Partition Width: 1
 
@@ -286,14 +286,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 333 MT/s
+	Speed: 800 MT/s
 	Manufacturer: Manufacturer00
 	Serial Number: --
 	Asset Tag: --
@@ -334,23 +334,29 @@ Handle 0x0015, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x000F
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: Other
+	Size: 2 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
+	Type: Other
+	Type Detail: Synchronous
+	Speed: 800 MT/s
 	Manufacturer: Manufacturer02
 	Serial Number: --
 	Asset Tag: --
 	Part Number: ModulePartNumber02
 
-Handle 0x0016, DMI type 126, 19 bytes
-Inactive
+Handle 0x0016, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0015
+	Memory Array Mapped Address Handle: 0x0010
+	Partition Row Position: 1
 
 Handle 0x0017, DMI type 17, 27 bytes
 Memory Device

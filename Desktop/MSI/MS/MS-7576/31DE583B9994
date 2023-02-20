@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 54 structures occupying 1933 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 09/03/2010
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1 MB
+	ROM Size: 1024 kB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -155,8 +155,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 2 MB
-	Maximum Size: 2 MB
+	Installed Size: 2048 kB
+	Maximum Size: 2048 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -171,8 +171,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 6 MB
-	Maximum Size: 6 MB
+	Installed Size: 6144 kB
+	Maximum Size: 6144 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -401,7 +401,7 @@ Handle 0x0023, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI1
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 1
 	Characteristics:
@@ -425,7 +425,7 @@ Handle 0x0025, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIE1
 	Type: 32-bit PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 3
 	Characteristics:
@@ -488,8 +488,8 @@ Physical Memory Array
 Handle 0x002B, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0022FFFFFFF
-	Range Size: 8960 MB
+	Ending Address: 0x00237FFFFFF
+	Range Size: 9088 MB
 	Physical Array Handle: 0x002A
 	Partition Width: 1
 
@@ -543,7 +543,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 72 bits
-	Size: 4 GB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
@@ -571,7 +571,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 72 bits
-	Size: 4 GB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4

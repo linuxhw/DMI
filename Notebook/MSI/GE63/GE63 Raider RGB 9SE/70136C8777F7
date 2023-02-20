@@ -1,9 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.1 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
-Table at 0x79DA1000.
+Table at 0x7A9A1000.
 
 Handle 0x0000, DMI type 11, 5 bytes
 OEM Strings
@@ -16,8 +14,8 @@ OEM Strings
 Handle 0x0001, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: E16P7IMS.112
-	Release Date: 07/02/2019
+	Version: E16P7IMS.113
+	Release Date: 05/18/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -40,7 +38,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.18
+	BIOS Revision: 1.19
 
 Handle 0x0002, DMI type 1, 27 bytes
 System Information
@@ -586,32 +584,27 @@ Memory Array Mapped Address
 Handle 0x003E, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: CTNI
-	Specification Version: 2.0	Firmware Revision: 403.1
-	Description: INTEL	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 403.1
+	Description: INTEL
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
-Handle 0x003F, DMI type 221, 12 bytes
+Handle 0x003F, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 0C 3F 00 01 01 00 02 00 00 BD 10
-	Strings:
-		BIOS Guard
-
-Handle 0x0040, DMI type 221, 26 bytes
-OEM-specific Type
-	Header and Data:
-		DD 1A 40 00 03 01 00 07 00 51 41 00 02 00 00 00
+		DD 1A 3F 00 03 01 00 07 00 51 41 00 02 00 00 00
 		00 B4 00 03 00 01 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
 		TXT ACM version
 
-Handle 0x0041, DMI type 221, 26 bytes
+Handle 0x0040, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 41 00 03 01 00 07 00 51 41 00 02 00 00 00
+		DD 1A 40 00 03 01 00 07 00 51 41 00 02 00 00 00
 		00 00 00 03 04 0C 00 16 1E 05
 	Strings:
 		Reference Code - ME
@@ -619,10 +612,10 @@ OEM-specific Type
 		ME Firmware Version
 		Consumer SKU
 
-Handle 0x0042, DMI type 221, 82 bytes
+Handle 0x0041, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 42 00 0B 01 00 07 00 51 41 00 02 03 FF FF
+		DD 52 41 00 0B 01 00 07 00 51 41 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 10 00 05 00 FF FF FF 10
 		00 06 00 FF FF FF FF FF 07 00 02 00 00 00 00 08
 		00 09 00 00 00 00 09 00 0A 00 00 00 00 0A 00 07
@@ -642,10 +635,10 @@ OEM-specific Type
 		CNL PCH LP Bx Hsio Version
 		CNL PCH LP Dx Hsio Version
 
-Handle 0x0043, DMI type 221, 54 bytes
+Handle 0x0042, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 43 00 07 01 00 07 00 51 41 00 02 00 00 07
+		DD 36 42 00 07 01 00 07 00 51 41 00 02 00 00 07
 		01 5F 00 03 00 07 00 51 41 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 07 00 07 00 00 00 00 07 00 08
 		00 FF FF FF FF FF
@@ -659,14 +652,14 @@ OEM-specific Type
 		SA-CRID New Value
 		OPROM - VBIOS
 
-Handle 0x0044, DMI type 221, 12 bytes
+Handle 0x0043, DMI type 221, 12 bytes
 OEM-specific Type
 	Header and Data:
-		DD 0C 44 00 01 01 00 04 00 00 00 00
+		DD 0C 43 00 01 01 00 04 00 00 00 00
 	Strings:
 		FSP Binary Version
 
-Handle 0x0045, DMI type 7, 27 bytes
+Handle 0x0044, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -682,7 +675,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0046, DMI type 7, 27 bytes
+Handle 0x0045, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -698,14 +691,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 4-way Set-associative
 
-Handle 0x0047, DMI type 7, 27 bytes
+Handle 0x0046, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L3 Cache
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12288 kB
-	Maximum Size: 12288 kB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -714,7 +707,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0048, DMI type 4, 48 bytes
+Handle 0x0047, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: U3E1
 	Type: Central Processor
@@ -758,9 +751,9 @@ Processor Information
 	Current Speed: 2475 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1440
-	L1 Cache Handle: 0x0045
-	L2 Cache Handle: 0x0046
-	L3 Cache Handle: 0x0047
+	L1 Cache Handle: 0x0044
+	L2 Cache Handle: 0x0045
+	L3 Cache Handle: 0x0046
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
@@ -775,7 +768,7 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0049, DMI type 17, 84 bytes
+Handle 0x0048, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x003A
 	Error Information Handle: Not Provided
@@ -810,7 +803,7 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x004A, DMI type 17, 84 bytes
+Handle 0x0049, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x003A
 	Error Information Handle: Not Provided
@@ -845,7 +838,7 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x004B, DMI type 20, 35 bytes
+Handle 0x004A, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x007FFFFFFFF
@@ -856,7 +849,7 @@ Memory Device Mapped Address
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x004C, DMI type 20, 35 bytes
+Handle 0x004B, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00800000000
 	Ending Address: 0x00FFFFFFFFF
@@ -867,15 +860,15 @@ Memory Device Mapped Address
 	Interleave Position: 2
 	Interleaved Data Depth: 1
 
-Handle 0x004D, DMI type 131, 64 bytes
+Handle 0x004C, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 4D 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 4C 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 0D A3 00 00 00 00 01 00 00 00 00 00 0C 00
 		1E 05 16 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x004E, DMI type 13, 22 bytes
+Handle 0x004D, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 3
@@ -884,7 +877,7 @@ BIOS Language Information
 		zh|TW|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x004F, DMI type 41, 11 bytes
+Handle 0x004E, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -892,7 +885,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:00.0
 
-Handle 0x0050, DMI type 41, 11 bytes
+Handle 0x004F, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Video
 	Type: Video
@@ -900,7 +893,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 
-Handle 0x0051, DMI type 41, 11 bytes
+Handle 0x0050, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -908,7 +901,7 @@ Onboard Device
 	Type Instance: 2
 	Bus Address: 0000:00:12.0
 
-Handle 0x0052, DMI type 41, 11 bytes
+Handle 0x0051, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -916,7 +909,7 @@ Onboard Device
 	Type Instance: 3
 	Bus Address: 0000:00:14.0
 
-Handle 0x0053, DMI type 41, 11 bytes
+Handle 0x0052, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -924,7 +917,7 @@ Onboard Device
 	Type Instance: 4
 	Bus Address: 0000:00:14.2
 
-Handle 0x0054, DMI type 41, 11 bytes
+Handle 0x0053, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Ethernet
 	Type: Ethernet
@@ -932,7 +925,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:14.3
 
-Handle 0x0055, DMI type 41, 11 bytes
+Handle 0x0054, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -940,7 +933,7 @@ Onboard Device
 	Type Instance: 5
 	Bus Address: 0000:00:16.0
 
-Handle 0x0056, DMI type 41, 11 bytes
+Handle 0x0055, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - SATA
 	Type: SATA Controller
@@ -948,7 +941,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:17.0
 
-Handle 0x0057, DMI type 41, 11 bytes
+Handle 0x0056, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -956,7 +949,7 @@ Onboard Device
 	Type Instance: 6
 	Bus Address: 0000:00:1f.0
 
-Handle 0x0058, DMI type 41, 11 bytes
+Handle 0x0057, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Sound
 	Type: Sound
@@ -964,7 +957,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:1f.3
 
-Handle 0x0059, DMI type 41, 11 bytes
+Handle 0x0058, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -972,7 +965,7 @@ Onboard Device
 	Type Instance: 7
 	Bus Address: 0000:00:1f.4
 
-Handle 0x005A, DMI type 41, 11 bytes
+Handle 0x0059, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -980,13 +973,13 @@ Onboard Device
 	Type Instance: 8
 	Bus Address: 0000:00:1f.5
 
-Handle 0x005B, DMI type 221, 89 bytes
+Handle 0x005A, DMI type 221, 89 bytes
 OEM-specific Type
 	Header and Data:
-		DD 59 5B 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
+		DD 59 5A 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF 00 0B 00 FF FF 00 00 00 0C 00 00
+		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
 		09 00 85 10 0D 0E 01 04 03 00 00 0F 00 00 07 00
 		00 00 10 00 00 02 00 0E 00
 	Strings:
@@ -1007,33 +1000,32 @@ OEM-specific Type
 		Platform Version
 		Client Silicon Version
 
-Handle 0x005C, DMI type 136, 6 bytes
+Handle 0x005B, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 5C 00 00 00
+		88 06 5B 00 00 00
 
-Handle 0x005D, DMI type 14, 26 bytes
+Handle 0x005C, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
-	Items: 7
+	Items: 6
 		0x003F (OEM-specific)
 		0x0040 (OEM-specific)
 		0x0041 (OEM-specific)
 		0x0042 (OEM-specific)
 		0x0043 (OEM-specific)
-		0x0044 (OEM-specific)
-		0x005B (OEM-specific)
+		0x005A (OEM-specific)
 
-Handle 0x005E, DMI type 14, 8 bytes
+Handle 0x005D, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x005F, DMI type 219, 106 bytes
+Handle 0x005E, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 5F 00 01 04 01 45 02 00 90 06 01 10 80 20
+		DB 6A 5E 00 01 04 01 45 02 00 90 06 01 10 86 20
 		00 00 00 04 40 00 00 01 1F 00 00 C9 03 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -1046,6 +1038,6 @@ OEM-specific Type
 		MEI3
 		MEI4
 
-Handle 0x0060, DMI type 127, 4 bytes
+Handle 0x005F, DMI type 127, 4 bytes
 End Of Table
 

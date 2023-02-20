@@ -1,8 +1,8 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-48 structures occupying 2380 bytes.
-Table at 0x000E6A40.
+48 structures occupying 2362 bytes.
+Table at 0x000E6A30.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -320,13 +320,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: Kinston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B1G73BH0-YK0  
+	Part Number: Not Specified
 	Rank: Unknown
-	Configured Clock Speed: 1333 MT/s
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x001B, DMI type 6, 12 bytes
 Memory Module Information
@@ -396,20 +396,20 @@ Memory Device
 	Error Information Handle: 0x0022
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: Kinston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 99U5428-040.A01LF 
+	Part Number: M471B1G73BH0-YK0  
 	Rank: Unknown
-	Configured Clock Speed: 1333 MT/s
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0021, DMI type 6, 12 bytes
 Memory Module Information
@@ -417,8 +417,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0022, DMI type 18, 23 bytes
@@ -434,8 +434,8 @@ Handle 0x0022, DMI type 18, 23 bytes
 Handle 0x0023, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00200000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0020
 	Memory Array Mapped Address Handle: 0x0027
 	Partition Row Position: Unknown
@@ -486,8 +486,8 @@ Handle 0x0026, DMI type 18, 23 bytes
 Handle 0x0027, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 12 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0019
 	Partition Width: 2
 
@@ -522,7 +522,7 @@ Handle 0x002A, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPU1
 	Type: Central Processor
-	Family: Core i3
+	Family: Core i7
 	Manufacturer: Intel(R) Corporation
 	ID: A7 06 02 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 42, Stepping 7
@@ -555,11 +555,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i3-2350M CPU @ 2.30GHz
+	Version: Intel(R) Core(TM) i7-2630QM CPU @ 2.00GHz
 	Voltage: 0.0 V
-	External Clock: 1333 MHz
+	External Clock: 1600 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 2300 MHz
+	Current Speed: 2000 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x002C
@@ -568,9 +568,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
-	Core Count: 2
-	Core Enabled: 2
-	Thread Count: 4
+	Core Count: 4
+	Core Enabled: 4
+	Thread Count: 8
 	Characteristics:
 		64-bit capable
 
@@ -628,8 +628,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 6144 kB
+	Maximum Size: 6144 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous

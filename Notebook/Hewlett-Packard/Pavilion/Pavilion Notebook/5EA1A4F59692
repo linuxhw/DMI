@@ -1,8 +1,8 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-55 structures occupying 3463 bytes.
-Table at 0x7A4FA000.
+54 structures occupying 3362 bytes.
+Table at 0x7A4FB000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -306,12 +306,11 @@ BIOS Language Information
 		es|ES|iso8859-1,0
 	Currently Installed Language: en|US|iso8859-1,0
 
-Handle 0x0014, DMI type 14, 17 bytes
+Handle 0x0014, DMI type 14, 14 bytes
 Group Associations
 	Name: Firmware Version Info
-	Items: 4
+	Items: 3
 		0x0031 (OEM-specific)
-		0x002F (OEM-specific)
 		0x002E (OEM-specific)
 		0x002D (OEM-specific)
 
@@ -319,7 +318,7 @@ Handle 0x0015, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x0035 (OEM-specific)
+		0x0034 (OEM-specific)
 
 Handle 0x0016, DMI type 14, 8 bytes
 Group Associations
@@ -585,8 +584,8 @@ Handle 0x002E, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
 		83 40 2E 00 31 00 00 00 00 00 00 00 00 00 00 00
-		F8 00 4E A1 00 00 00 00 01 00 00 00 00 00 0B 00
-		B5 04 00 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		F8 00 4E A1 00 00 00 00 01 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 FF 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x002F, DMI type 136, 6 bytes
@@ -596,9 +595,9 @@ OEM-specific Type
 
 Handle 0x0030, DMI type 219, 81 bytes
 HP ProLiant Information
-	Power Features: 0x45010301
-	Omega Features: 0x06900002
-	Misc. Features: 0x00000002
+	Power Features: 0x04010301
+	Omega Features: 0x42800320
+	Misc. Features: 0x04000002
 		iCRU: No
 		UEFI: No
 
@@ -607,12 +606,7 @@ HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 1: PCI device 01:00.3, MAC address 00:01:08:00:00:00
 	NIC 2: PCI device 00:00.2, MAC address 00:00:00:CC:00:03
 
-Handle 0x0032, DMI type 221, 26 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:01:08:00:00:00
-	NIC 2: PCI device 00:00.2, MAC address 01:08:00:00:00:03
-
-Handle 0x0033, DMI type 221, 68 bytes
+Handle 0x0032, DMI type 221, 68 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 1: PCI device 01:01.1, MAC address 00:01:08:00:00:00
 	NIC 2: PCI device 03:00.2, MAC address FF:FF:FF:FF:FF:04
@@ -623,7 +617,7 @@ HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 7: Disabled
 	NIC 8: PCI device 0a:00.0, MAC address 00:34:00:00:00:00
 
-Handle 0x0034, DMI type 221, 54 bytes
+Handle 0x0033, DMI type 221, 54 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 1: PCI device 01:00.7, MAC address 00:01:08:00:00:00
 	NIC 2: PCI device 00:00.2, MAC address 01:08:00:01:00:03
@@ -632,10 +626,10 @@ HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 5: Not Installed
 	NIC 6: PCI device 07:1f.7, MAC address 00:08:00:FF:FF:FF
 
-Handle 0x0035, DMI type 222, 14 bytes
+Handle 0x0034, DMI type 222, 14 bytes
 OEM-specific Type
 	Header and Data:
-		DE 0E 35 00 01 99 00 03 10 01 20 02 30 03
+		DE 0E 34 00 01 99 00 03 10 01 20 02 30 03
 	Strings:
 		Memory Init Complete
 		End of DXE Phase

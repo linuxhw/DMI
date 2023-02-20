@@ -1,7 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-27 structures occupying 1473 bytes.
+26 structures occupying 1412 bytes.
 Table at 0x000E4800.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 06/27/2012
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -168,21 +168,7 @@ Handle 0x000E, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0020, DMI type 22, 26 bytes
-Portable Battery
-	Location: Primary
-	Manufacturer: 11-85
-	Name: MU06047
-	Chemistry: Lithium Ion
-	Design Capacity: 47520 mWh
-	Design Voltage: 10800 mV
-	SBDS Version: v1.1
-	Maximum Error: 0%
-	SBDS Serial Number: --
-	SBDS Manufacture Date: 2012-06-21
-	OEM-specific Information: 0x0000FFFF
-
-Handle 0x0022, DMI type 41, 11 bytes
+Handle 0x0021, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: AMD Radeon HD 7340 Graphics
 	Type: Video
@@ -190,22 +176,22 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:01.0
 
-Handle 0x0023, DMI type 16, 23 bytes
+Handle 0x0022, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
 	Maximum Capacity: 2 GB
-	Error Information Handle: 0x002A
+	Error Information Handle: 0x0029
 	Number Of Devices: 2
 
-Handle 0x0024, DMI type 17, 34 bytes
+Handle 0x0023, DMI type 17, 34 bytes
 Memory Device
-	Array Handle: 0x0023
-	Error Information Handle: 0x0026
+	Array Handle: 0x0022
+	Error Information Handle: 0x0025
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(top)
@@ -218,9 +204,9 @@ Memory Device
 	Asset Tag: --
 	Part Number: HMT325S6CFR8C-PB  
 	Rank: 1
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 
-Handle 0x0026, DMI type 18, 23 bytes
+Handle 0x0025, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -230,18 +216,18 @@ Handle 0x0026, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0027, DMI type 20, 35 bytes
+Handle 0x0026, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x0007FFFFFFF
 	Range Size: 2 GB
-	Physical Device Handle: 0x0024
-	Memory Array Mapped Address Handle: 0x002B
+	Physical Device Handle: 0x0023
+	Memory Array Mapped Address Handle: 0x002A
 	Partition Row Position: 2
 
-Handle 0x0028, DMI type 17, 34 bytes
+Handle 0x0027, DMI type 17, 34 bytes
 Memory Device
-	Array Handle: 0x0023
+	Array Handle: 0x0022
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -258,9 +244,9 @@ Memory Device
 	Asset Tag: --
 	Part Number: Empty
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
-Handle 0x002A, DMI type 18, 23 bytes
+Handle 0x0029, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -270,15 +256,15 @@ Handle 0x002A, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x002B, DMI type 19, 31 bytes
+Handle 0x002A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x0007FFFFFFF
 	Range Size: 2 GB
-	Physical Array Handle: 0x0023
+	Physical Array Handle: 0x0022
 	Partition Width: 255
 
-Handle 0x002D, DMI type 4, 42 bytes
+Handle 0x002C, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: Socket FT1
 	Type: Central Processor
@@ -317,8 +303,8 @@ Processor Information
 	Current Speed: 1700 MHz
 	Status: Populated, Enabled
 	Upgrade: None
-	L1 Cache Handle: 0x002E
-	L2 Cache Handle: 0x002F
+	L1 Cache Handle: 0x002D
+	L2 Cache Handle: 0x002E
 	L3 Cache Handle: Not Provided
 	Serial Number: --
 	Asset Tag: --
@@ -329,7 +315,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x002E, DMI type 7, 19 bytes
+Handle 0x002D, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -345,14 +331,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 2-way Set-associative
 
-Handle 0x002F, DMI type 7, 19 bytes
+Handle 0x002E, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -361,7 +347,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0030, DMI type 41, 11 bytes
+Handle 0x002F, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Realtek PCIe GBE Family Controller
 	Type: Ethernet
@@ -369,7 +355,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:03:00.0
 
-Handle 0x0031, DMI type 41, 11 bytes
+Handle 0x0030, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Atheros AR9485 802.11b/g/n WiFi Adapter
 	Type: Other
@@ -377,6 +363,6 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:04:00.0
 
-Handle 0x0032, DMI type 127, 4 bytes
+Handle 0x0031, DMI type 127, 4 bytes
 End Of Table
 

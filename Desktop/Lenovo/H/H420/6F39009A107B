@@ -2,7 +2,7 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 114 structures occupying 4095 bytes.
-Table at 0x000EB6E0.
+Table at 0x000E99C0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -496,8 +496,8 @@ Handle 0x002D, DMI type 18, 23 bytes
 Handle 0x002E, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x002C
 	Partition Width: 1
 
@@ -531,11 +531,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Micron          
+	Manufacturer: Undefined       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 16KTF51264AZ-1G6M1
-	Rank: 2
+	Part Number: PSD34G160081      
+	Rank: 1
 
 Handle 0x0033, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -580,19 +580,19 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM3
 	Bank Locator: A1_BANK3
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer3
+	Speed: 1333 MT/s
+	Manufacturer: Undefined       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber3
-	Rank: Unknown
+	Part Number: PSD34G160081      
+	Rank: 1
 
 Handle 0x0039, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -604,8 +604,16 @@ Handle 0x0039, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x003A, DMI type 126, 19 bytes
-Inactive
+Handle 0x003A, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0038
+	Memory Array Mapped Address Handle: 0x002E
+	Partition Row Position: 1
+	Interleave Position: 4
+	Interleaved Data Depth: 1
 
 Handle 0x003B, DMI type 24, 5 bytes
 Hardware Security
@@ -1047,7 +1055,7 @@ System Event Log
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0x000ECAD0
+	Access Address: 0x000EADB0
 	Status: Valid, Not Full
 	Change Token: 0x00000001
 	Header Format: Type 1

@@ -1,7 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-33 structures occupying 1811 bytes.
+33 structures occupying 1812 bytes.
 Table at 0x000E4800.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -9,7 +9,7 @@ BIOS Information
 	Vendor: Insyde
 	Version: F.2A
 	Release Date: 07/18/2016
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -208,15 +208,15 @@ Port Connector Information
 Handle 0x0016, DMI type 22, 26 bytes
 Portable Battery
 	Location: Primary
-	Manufacturer: CQ42
+	Manufacturer: 13-42
 	Name: MU06047
 	Chemistry: Lithium Ion
-	Design Capacity: 45360 mWh
+	Design Capacity: 47520 mWh
 	Design Voltage: 10800 mV
 	SBDS Version: 3.1
-	Maximum Error: 2%
+	Maximum Error: 12%
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 2016-10-26
+	SBDS Manufacture Date: 2020-08-10
 	OEM-specific Information: 0x0000FFFF
 
 Handle 0x0018, DMI type 41, 11 bytes
@@ -266,7 +266,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(top)
@@ -274,12 +274,12 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 1600 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5273DH0-CK0  
-	Rank: 2
-	Configured Clock Speed: 800 MT/s
+	Part Number: HMT325S6CFR8C-PB  
+	Rank: 1
+	Configured Memory Speed: 800 MT/s
 
 Handle 0x0020, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -296,7 +296,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(under)
@@ -304,12 +304,12 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 1600 MT/s
-	Manufacturer: Hynix
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT325S6CFR8C-PB  
-	Rank: 1
-	Configured Clock Speed: 800 MT/s
+	Part Number: M471B5273DH0-CK0  
+	Rank: 2
+	Configured Memory Speed: 800 MT/s
 
 Handle 0x0023, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -401,8 +401,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst

@@ -1,6 +1,7 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-23 structures occupying 1637 bytes.
+24 structures occupying 1683 bytes.
 Table at 0x000EBE90.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -10,7 +11,7 @@ BIOS Information
 	Release Date: 08/14/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 6144 kB
+	ROM Size: 6 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -126,9 +127,9 @@ On Board Device 11 Information
 
 Handle 0x0005, DMI type 11, 5 bytes
 OEM Strings
-	String 1: n-zVgBf6Zc5Y2
-	String 2: UbBJ5XplcU8vt
-	String 3: BEgC7j7WISdV6
+	String 1: q-i+4g5kpXuLT
+	String 2: yKoo4jSXfnum5
+	String 3: xy6qPernLSk29
 	String 4: 90NB0647-M02940
 	String 5:  
 	String 6:  
@@ -139,7 +140,7 @@ OEM Strings
 
 Handle 0x0006, DMI type 12, 5 bytes
 System Configuration Options
-	Option 1: DSN:      AJ0190F1H39MPL            
+	Option 1: DSN:          6 61P9I0TU            
 	Option 2: DSN:E854B295970F                    
 	Option 3: DSN:F079592B458E                    
 	Option 4: SMI:00B2CA
@@ -242,8 +243,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -267,20 +268,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M471B5173DB0-YK0  
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000E, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -288,7 +289,7 @@ Memory Device Mapped Address
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x000D
-	Memory Array Mapped Address Handle: 0x0012
+	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
@@ -312,30 +313,41 @@ Memory Device
 	Asset Tag: --
 	Part Number: [Empty]
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0010, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000C
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 8 bits
+	Data Width: 8 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: 0420
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: F3-1600C11-4GSL   
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0011, DMI type 17, 34 bytes
+Handle 0x0011, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0010
+	Memory Array Mapped Address Handle: 0x0013
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0012, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000C
 	Error Information Handle: Not Provided
@@ -354,36 +366,36 @@ Memory Device
 	Asset Tag: --
 	Part Number: [Empty]
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
-Handle 0x0012, DMI type 19, 31 bytes
+Handle 0x0013, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x000C
 	Partition Width: 4
 
-Handle 0x0018, DMI type 136, 6 bytes
+Handle 0x0019, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 18 00 00 00
+		88 06 19 00 00 00
 
-Handle 0x0019, DMI type 131, 64 bytes
+Handle 0x001A, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 19 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 1A 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 43 9C 00 00 00 00 01 20 00 00 05 00 09 00
 		C2 06 0F 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x001A, DMI type 13, 22 bytes
+Handle 0x001B, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x001B, DMI type 127, 4 bytes
+Handle 0x001C, DMI type 127, 4 bytes
 End Of Table
 

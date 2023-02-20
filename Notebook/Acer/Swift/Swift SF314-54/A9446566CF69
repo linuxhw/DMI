@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0x8A091000.
@@ -6,11 +6,11 @@ Table at 0x8A091000.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Insyde Corp.
-	Version: V1.17
-	Release Date: 04/16/2021
+	Version: V1.18
+	Release Date: 10/08/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -31,14 +31,14 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.17
+	BIOS Revision: 1.18
 	Firmware Revision: 1.9
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Acer
 	Product Name: Swift SF314-54
-	Version: V1.17
+	Version: V1.18
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -49,7 +49,7 @@ Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: KBL
 	Product Name: Strongbow_KL
-	Version: V1.17
+	Version: V1.18
 	Serial Number: --
 	Asset Tag: --
 	97946E993916094B22613E03B8339091
@@ -65,7 +65,7 @@ Chassis Information
 	Manufacturer: Acer
 	Type: Notebook
 	Lock: Not Present
-	Version: V1.17
+	Version: V1.18
 	Serial Number: --
 	Asset Tag: --
 	380AD15AAB729CF25C4397C21C466ACE
@@ -161,8 +161,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -177,8 +177,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -259,7 +259,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -283,7 +283,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -369,7 +369,7 @@ OEM-specific Type
 Handle 0x0018, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 18 00 01 03 01 45 02 00 90 06 01 10 80 20
+		DB 51 18 00 01 03 01 45 02 00 A0 06 01 10 80 20
 		00 00 00 00 40 08 00 01 01 00 00 4E 8B 48 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

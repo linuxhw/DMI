@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 70 structures occupying 2881 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 11/03/2011
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -37,7 +37,7 @@ System Information
 	Version:                       
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Unknown
+	Wake-up Type: Power Switch
 	SKU Number: S26361-Kxxx-Vyyy
 	Family:                 
 
@@ -48,7 +48,7 @@ Base Board Information
 	Version: S26361-D3061-A1            
 	Serial Number: --
 	Asset Tag: --
-	...
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:                       
@@ -64,7 +64,7 @@ Chassis Information
 	Version: C$PXW1
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -112,8 +112,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -448,8 +448,8 @@ Physical Memory Array
 Handle 0x002D, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 6 GB
 	Physical Array Handle: 0x002C
 	Partition Width: 1
 
@@ -472,7 +472,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Array1_PartNumber3
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x002F, DMI type 126, 35 bytes
 Inactive
@@ -483,7 +483,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM-1
@@ -496,7 +496,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 16JTF51264AZ-1G6K1
 	Rank: 2
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0031, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -526,7 +526,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Array1_PartNumber4
 	Rank: Unknown
-	Configured Clock Speed: 4888 MT/s
+	Configured Memory Speed: 4888 MT/s
 
 Handle 0x0033, DMI type 126, 35 bytes
 Inactive
@@ -537,23 +537,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM-2
 	Bank Locator: Channel B
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer2
+	Speed: 1067 MT/s
+	Manufacturer: Kingston        
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber2
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: 99U5595-003.A00LF 
+	Rank: 1
+	Configured Memory Speed: Unknown
 
-Handle 0x0035, DMI type 126, 35 bytes
-Inactive
+Handle 0x0035, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0034
+	Memory Array Mapped Address Handle: 0x002D
+	Partition Row Position: 1
 
 Handle 0x0036, DMI type 24, 5 bytes
 Hardware Security

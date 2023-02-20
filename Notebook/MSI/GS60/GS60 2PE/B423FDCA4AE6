@@ -1,8 +1,8 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-76 structures occupying 2818 bytes.
-Table at 0xCBD64018.
+75 structures occupying 2765 bytes.
+Table at 0x7DED2018.
 
 Handle 0x0000, DMI type 11, 5 bytes
 OEM Strings
@@ -15,8 +15,8 @@ OEM Strings
 Handle 0x0001, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: E16H2IMS.111
-	Release Date: 01/29/2015
+	Version: E16H2IMS.103
+	Release Date: 03/21/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 3 MB
@@ -45,7 +45,7 @@ BIOS Information
 Handle 0x0002, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Micro-Star International Co., Ltd.
-	Product Name: GS60 2PE
+	Product Name: GS60 2PE Ghost Pro
 	Version: REV:1.0
 	Serial Number: --
 	UUID: --
@@ -71,7 +71,7 @@ Base Board Information
 Handle 0x0004, DMI type 3, 25 bytes
 Chassis Information
 	Manufacturer: To Be Filled By O.E.M.
-	Type: Notebook
+	Type: Desktop
 	Lock: Not Present
 	Version: To Be Filled By O.E.M.
 	Serial Number: --
@@ -717,7 +717,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -728,8 +728,8 @@ Memory Device
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5173DB0-YK0  
-	Rank: 1
+	Part Number: M471B1G73QH0-YK0  
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.35 V
 	Maximum Voltage: 1.5 V
@@ -738,8 +738,8 @@ Memory Device
 Handle 0x0044, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0043
 	Memory Array Mapped Address Handle: 0x0047
 	Partition Row Position: Unknown
@@ -760,10 +760,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 0420
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: AM1L16BC8R2-B1QS  
+	Part Number: M471B1G73QH0-YK0  
 	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.35 V
@@ -772,8 +772,8 @@ Memory Device
 
 Handle 0x0046, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x002FFFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x0045
 	Memory Array Mapped Address Handle: 0x0047
@@ -784,31 +784,23 @@ Memory Device Mapped Address
 Handle 0x0047, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 12 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0042
 	Partition Width: 2
 
 Handle 0x004A, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 4A 00 00 00
+		88 06 4A 00 5A 5A
 
-Handle 0x004B, DMI type 131, 64 bytes
-OEM-specific Type
-	Header and Data:
-		83 40 4B 00 31 00 00 00 00 00 00 00 00 00 00 00
-		F8 00 4B 8C 00 00 00 00 01 00 00 00 00 00 09 00
-		CA 05 1E 00 00 00 00 00 C8 00 FF FF 00 00 00 00
-		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
-
-Handle 0x004C, DMI type 13, 22 bytes
+Handle 0x004B, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x004F, DMI type 127, 4 bytes
+Handle 0x004E, DMI type 127, 4 bytes
 End Of Table
 

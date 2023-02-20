@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x000EAD90.
@@ -305,7 +305,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: A1_DIMM0
@@ -358,27 +358,6 @@ Memory Device
 	Bank Locator: A1_BANK1
 	Type: Unknown
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer1
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Array1_PartNumber1
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
-	Firmware Version: v1.0
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x0029, DMI type 32, 20 bytes
 System Boot Information
@@ -390,8 +369,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 541147984 kB
-	Maximum Size: 544238945 kB
+	Installed Size: 528464 MB
+	Maximum Size: 531483 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -406,8 +385,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 86524030 MB
-	Maximum Size: 3440766 MB
+	Installed Size: 84496 GB
+	Maximum Size: 3360 GB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -580,6 +559,8 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:00:13.0
+	Data Bus Width: 10
+	Peer Devices: 0
 
 Handle 0x003D, DMI type 9, 19 bytes
 System Slot Information
@@ -593,6 +574,8 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:00:14.0
+	Data Bus Width: 9
+	Peer Devices: 0
 
 Handle 0x003E, DMI type 13, 22 bytes
 BIOS Language Information

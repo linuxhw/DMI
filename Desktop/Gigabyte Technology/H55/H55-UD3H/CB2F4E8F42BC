@@ -1,7 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
-40 structures occupying 1222 bytes.
+40 structures occupying 1218 bytes.
 Table at 0x000F0100.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 08/20/2010
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -42,7 +42,7 @@ System Information
 	Product Name: H55-UD3H
 	Version:  
 	Serial Number: --
-	UUID: --
+	AA4DABB12F8B174B3A7D0DA6D9C8A7B3
 	Wake-up Type: Power Switch
 	SKU Number:  
 	Family:  
@@ -54,14 +54,14 @@ Base Board Information
 	Version:  
 	Serial Number: --
 
-Handle 0x0003, DMI type 3, 17 bytes
+807075653E24ECB98B63F18E00309403
 Chassis Information
 	Manufacturer: Gigabyte Technology Co., Ltd.
 	Type: Desktop
 	Lock: Not Present
 	Version:  
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Boot-up State: Unknown
 	Power Supply State: Unknown
 	Thermal State: Unknown
@@ -75,18 +75,18 @@ Processor Information
 	Family: Other
 	Manufacturer: Intel
 	ID: E5 06 01 00 FF FB EB BF
-	Version: Intel(R) Core(TM) i5 CPU
-	Voltage: 1.0 V
-	External Clock: 140 MHz
+	Version: Intel(R) Xeon(R) CPU
+	Voltage: 0.7 V
+	External Clock: 133 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 3080 MHz
+	Current Speed: 3200 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket 478
 	L1 Cache Handle: 0x000A
 	L2 Cache Handle: 0x000B
 	L3 Cache Handle: Not Provided
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Part Number:  
 
 Handle 0x0005, DMI type 5, 24 bytes
@@ -136,9 +136,9 @@ Memory Module Information
 	Socket Designation: A2
 	Bank Connections: 3
 	Current Speed: Unknown
-	Type: Unknown
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Type: Other
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
@@ -146,9 +146,9 @@ Memory Module Information
 	Socket Designation: A3
 	Bank Connections: 4
 	Current Speed: Unknown
-	Type: Unknown
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Type: Other
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 7, 19 bytes
@@ -173,8 +173,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 2048 kB
+	Installed Size: 8 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -339,17 +339,17 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 256 bits
 	Data Width: 4 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
 	Bank Locator: Bank0/1
 	Type: Unknown
 	Type Detail: None
-	Speed: 1400 MT/s
+	Speed: 1600 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Part Number:  
 
 Handle 0x001D, DMI type 17, 27 bytes
@@ -358,62 +358,62 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 256 bits
 	Data Width: 4 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1
 	Bank Locator: Bank2/3
 	Type: Unknown
 	Type Detail: None
-	Speed: 1400 MT/s
+	Speed: 1600 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Part Number:  
 
 Handle 0x001E, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x001B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 2304 bits
+	Data Width: 2052 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A2
 	Bank Locator: Bank4/5
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
+	Speed: 1600 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Part Number:  
 
 Handle 0x001F, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x001B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 2304 bits
+	Data Width: 2052 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A3
 	Bank Locator: Bank6/7
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
+	Speed: 1600 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Part Number:  
 
 Handle 0x0020, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 24 GB
 	Physical Array Handle: 0x001B
 	Partition Width: 1
 
@@ -437,18 +437,18 @@ Memory Device Mapped Address
 
 Handle 0x0023, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: 1
 
 Handle 0x0024, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x001F
 	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: 1

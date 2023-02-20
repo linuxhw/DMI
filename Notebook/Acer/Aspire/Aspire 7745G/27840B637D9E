@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 42 structures occupying 1755 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 08/04/2011
 	Address: 0xE38D0
 	Runtime Size: 116528 bytes
-	ROM Size: 1 MB
+	ROM Size: 1024 kB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -149,7 +149,7 @@ Cache Information
 	Operational Mode: Write Through
 	Location: Internal
 	Installed Size: 256 kB
-	Maximum Size: 4 MB
+	Maximum Size: 4096 kB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -166,8 +166,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6 MB
-	Maximum Size: 8 MB
+	Installed Size: 6144 kB
+	Maximum Size: 8192 kB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -267,7 +267,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: 1
 	Locator: M1
@@ -287,7 +287,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: 1
 	Locator: M2
@@ -424,7 +424,7 @@ Hardware Security
 	Front Panel Reset Status: Unknown
 
 Handle 0x001D, DMI type 25, 9 bytes
-System Power Controls
+	System Power Controls
 	Next Scheduled Power-on: 12-31 23:59:59
 
 Handle 0x001E, DMI type 26, 20 bytes

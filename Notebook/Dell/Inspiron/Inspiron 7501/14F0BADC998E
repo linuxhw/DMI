@@ -1,8 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
 75 structures occupying 5518 bytes.
-Table at 0x64FE5000.
+Table at 0x5CFE5000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -168,8 +168,8 @@ OEM-specific Type
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.10.0
-	Release Date: 09/24/2021
+	Version: 1.18.0
+	Release Date: 09/07/2022
 	ROM Size: 24 MB
 	Characteristics:
 		PCI is supported
@@ -190,7 +190,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.10
+	BIOS Revision: 1.18
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -360,6 +360,7 @@ System Slot Information
 	Bus Address: 0000:00:1c.0
 	Data Bus Width: 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0901, DMI type 9, 24 bytes
 System Slot Information
@@ -376,6 +377,7 @@ System Slot Information
 	Bus Address: 0000:00:1c.1
 	Data Bus Width: 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0902, DMI type 9, 24 bytes
 System Slot Information
@@ -392,6 +394,7 @@ System Slot Information
 	Bus Address: 0000:00:1c.2
 	Data Bus Width: 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0903, DMI type 9, 24 bytes
 System Slot Information
@@ -408,6 +411,7 @@ System Slot Information
 	Bus Address: 0000:00:1c.3
 	Data Bus Width: 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0904, DMI type 9, 24 bytes
 System Slot Information
@@ -424,6 +428,7 @@ System Slot Information
 	Bus Address: 0000:00:1c.4
 	Data Bus Width: 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0905, DMI type 9, 24 bytes
 System Slot Information
@@ -440,6 +445,7 @@ System Slot Information
 	Bus Address: 0000:00:1c.5
 	Data Bus Width: 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0906, DMI type 9, 24 bytes
 System Slot Information
@@ -456,6 +462,7 @@ System Slot Information
 	Bus Address: 0000:00:1c.6
 	Data Bus Width: 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0B00, DMI type 11, 5 bytes
 OEM Strings
@@ -604,7 +611,7 @@ Portable Battery
 	Design Capacity: 55990 mWh
 	Design Voltage: 11400 mV
 	SBDS Version: 1.0
-	Maximum Error: 14%
+	Maximum Error: 10%
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000801
 
@@ -770,7 +777,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 00 83 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 8D 06 00 00 00 00 01 00 00 00 01 00 0E 00
-		71 06 35 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		C6 07 41 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x8800, DMI type 136, 8 bytes
@@ -798,7 +805,7 @@ OEM-specific Type
 Handle 0xCB00, DMI type 203, 106 bytes
 OEM-specific Type
 	Header and Data:
-		CB 6A 00 CB 01 04 01 45 02 00 A0 06 01 10 80 20
+		CB 6A 00 CB 01 04 01 45 02 00 A0 06 01 10 86 20
 		00 00 00 00 40 00 00 01 1F 00 00 C9 03 C0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -821,8 +828,8 @@ OEM-specific Type
 Handle 0xCD01, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
-		CD 1A 01 CD 03 01 00 09 00 3B 30 00 02 00 00 00
-		00 EA 00 03 00 FF FF FF FF FF
+		CD 1A 01 CD 03 01 00 09 00 9E 10 00 02 00 00 00
+		00 F0 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -831,8 +838,8 @@ OEM-specific Type
 Handle 0xCD02, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
-		CD 1A 02 CD 03 01 00 09 00 3B 30 00 02 00 00 00
-		00 00 00 03 04 0E 01 35 71 06
+		CD 1A 02 CD 03 01 00 09 00 9E 10 00 02 00 00 00
+		00 00 00 03 04 0E 01 41 C6 07
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -842,7 +849,7 @@ OEM-specific Type
 Handle 0xCD03, DMI type 205, 54 bytes
 OEM-specific Type
 	Header and Data:
-		CD 36 03 CD 07 01 00 09 00 3B 30 00 02 03 FF FF
+		CD 36 03 CD 07 01 00 09 00 9E 10 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
 		00 06 00 02 0A 00 00 00 07 00 1A FF FF FF FF 08
 		00 00 FF FF FF FF
@@ -859,8 +866,8 @@ OEM-specific Type
 Handle 0xCD04, DMI type 205, 54 bytes
 OEM-specific Type
 	Header and Data:
-		CD 36 04 CD 07 01 00 09 00 3B 30 00 02 00 00 00
-		00 4A 00 03 00 09 00 3B 30 00 04 05 FF FF FF FF
+		CD 36 04 CD 07 01 00 09 00 9E 10 00 02 00 00 00
+		00 55 00 03 00 09 00 9E 10 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 02 00 07 00 00 00 00 02 00 08
 		00 FF FF FF FF FF
 	Strings:
@@ -977,7 +984,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 21 11 16 19 47 01 00 00
+		DE 10 00 DE 01 04 00 00 22 10 21 19 38 01 00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

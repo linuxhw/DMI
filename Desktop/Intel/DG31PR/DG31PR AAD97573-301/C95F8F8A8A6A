@@ -70,7 +70,7 @@ Chassis Information
 	Version:                                  
 	Serial Number: --
 	Asset Tag: --
-	...
+	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -116,11 +116,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Pentium(R)  CPU       E6300  @ 2.80GHz
+	Version: Intel(R) Core(TM)2 CPU         E8500  @ 3.16GHz
 	Voltage: 5.0 V 3.3 V
-	External Clock: 1066 MHz
+	External Clock: 1333 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 2793 MHz
+	Current Speed: 3163 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -152,15 +152,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 6144 kB
+	Maximum Size: 6144 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
 	Speed: Unknown
 	Error Correction Type: Single-bit ECC
 	System Type: Unified
-	Associativity: 8-way Set-associative
+	Associativity: <OUT OF SPEC>
 
 Handle 0x0007, DMI type 126, 19 bytes
 Inactive
@@ -384,8 +384,8 @@ Physical Memory Array
 Handle 0x0023, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0022
 	Partition Width: 1
 
@@ -402,7 +402,7 @@ Memory Device
 	Bank Locator: CHAN A DIMM 0
 	Type: DDR
 	Type Detail: Synchronous
-	Speed: 667 MT/s
+	Speed: 800 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
@@ -423,14 +423,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: J6H2
 	Bank Locator: CHAN A DIMM 1
 	Type: DDR
 	Type Detail: Synchronous
-	Speed: 667 MT/s
+	Speed: 800 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
@@ -439,8 +439,8 @@ Memory Device
 Handle 0x0027, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00080000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0026
 	Memory Array Mapped Address Handle: 0x0023
 	Partition Row Position: 1

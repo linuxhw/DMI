@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 46 structures occupying 2199 bytes.
@@ -144,7 +144,7 @@ Handle 0x0006, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A0
 	Bank Connections: 1
-	Current Speed: 32 ns
+	Current Speed: 155 ns
 	Type: Other Unknown EDO
 	Installed Size: 2048 MB (Double-bank Connection)
 	Enabled Size: 2048 MB (Double-bank Connection)
@@ -154,7 +154,7 @@ Handle 0x0007, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A1
 	Bank Connections: 2
-	Current Speed: 32 ns
+	Current Speed: 155 ns
 	Type: Other Unknown EDO
 	Installed Size: 2048 MB (Double-bank Connection)
 	Enabled Size: 2048 MB (Double-bank Connection)
@@ -364,7 +364,7 @@ Handle 0x001D, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 7
 	Characteristics:
@@ -377,7 +377,7 @@ Handle 0x001E, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 6
 	Characteristics:
@@ -437,7 +437,7 @@ Memory Device
 	Bank Locator: Bank0/1
 	Type: Unknown
 	Type Detail: None
-	Speed: 800 MT/s
+	Speed: 667 MT/s
 	Manufacturer:  
 	Serial Number: --
 	271882FD79060B21C43F805A2DE81148  
@@ -456,7 +456,7 @@ Memory Device
 	Bank Locator: Bank2/3
 	Type: Unknown
 	Type Detail: None
-	Speed: 800 MT/s
+	Speed: 667 MT/s
 	Manufacturer:  
 	Serial Number: --
 	271882FD79060B21C43F805A2DE81148  
@@ -495,18 +495,18 @@ System Boot Information
 Handle 0x0029, DMI type 188, 244 bytes
 OEM-specific Type
 	Header and Data:
-		BC F4 29 00 00 00 00 D8 00 00 00 00 00 00 00 28
+		BC F4 29 00 00 00 00 D0 00 00 00 00 00 00 00 30
 		01 00 00 00 01 06 76 00 00 00 00 00 03 00 00 00
-		00 00 27 01 00 00 00 00 01 00 00 00 00 00 00 00
+		00 00 2F 01 00 00 00 00 01 00 00 00 00 00 00 00
 		02 00 00 00 00 00 00 00 03 00 00 00 00 00 00 00
 		04 00 00 00 00 00 00 00 05 00 00 00 00 00 00 00
-		06 00 00 00 00 00 00 00 07 00 00 00 01 28 00 D8
+		06 00 00 00 00 00 00 00 07 00 00 00 01 30 00 D0
 		40 00 10 0A 00 00 00 00 00 00 03 00 EF 02 00 5D
 		01 00 00 00 01 02 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		E0 3D F8 00 00 00 00 00 00 00 00 00 00 00 00 00
 		46 00 00 00 00 00 00 00 05 00 00 00 00 00 00 00
-		24 F2 7C 5D 20 13 22 00 10 0C 01 00 6B 00 10 77
+		24 C2 68 5D 20 13 22 00 10 0C 01 00 6A 00 00 67
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -533,11 +533,11 @@ OEM-specific Type
 Handle 0x002B, DMI type 192, 244 bytes
 OEM-specific Type
 	Header and Data:
-		C0 F4 2B 00 19 19 1A 1A 1A 19 1B 1A 19 00 00 00
-		1A 1A 19 19 1B 19 19 1A 1A 00 00 00 2E 00 00 00
-		19 1A 19 19 19 19 18 19 19 19 1A 1A 1A 19 1A 1A
-		19 19 31 00 00 00 22 32 11 20 20 25 20 00 22 32
-		11 20 20 25 20 00 00 00 00 00 00 00 00 00 00 00
+		C0 F4 2B 00 18 18 18 19 18 18 18 18 18 00 00 00
+		19 18 18 17 19 19 19 19 19 00 00 00 31 00 00 00
+		18 18 18 18 18 18 17 17 18 19 19 19 19 17 19 1B
+		18 19 33 00 00 00 22 12 11 20 20 22 20 00 22 12
+		11 20 20 22 20 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

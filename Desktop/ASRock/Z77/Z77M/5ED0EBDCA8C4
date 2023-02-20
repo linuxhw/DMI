@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 22 structures occupying 1283 bytes.
@@ -7,11 +7,11 @@ Table at 0x000EE870.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: P1.10
-	Release Date: 06/01/2012
+	Version: P1.80
+	Release Date: 03/13/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -121,7 +121,7 @@ Handle 0x0007, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE2
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 18
 	Characteristics:
@@ -144,8 +144,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -176,8 +176,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -233,7 +233,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz
-	Voltage: 2.9 V
+	Voltage: 5.0 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
 	Current Speed: 3400 MHz
@@ -257,7 +257,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -270,7 +270,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: QUM3U-4G1600K11
 	Rank: 2
-	Configured Clock Speed: 2133 MT/s
+	Configured Memory Speed: 2133 MT/s
 
 Handle 0x0010, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -289,7 +289,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -302,7 +302,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: QUM3U-4G1600K11
 	Rank: 2
-	Configured Clock Speed: 2133 MT/s
+	Configured Memory Speed: 2133 MT/s
 
 Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -327,8 +327,8 @@ Handle 0x0016, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
 		83 40 16 00 31 00 00 00 00 00 00 00 00 00 00 00
-		F8 00 44 1E 00 00 00 00 01 00 00 00 00 00 08 00
-		82 05 02 00 00 00 00 00 C8 00 FF FF 00 00 00 00
+		F8 00 44 1E 00 00 00 00 01 00 00 00 01 00 08 00
+		E0 04 00 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0017, DMI type 127, 4 bytes

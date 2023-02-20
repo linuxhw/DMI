@@ -2,13 +2,13 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 63 structures occupying 2287 bytes.
-Table at 0x0009F000.
+Table at 0x0009F400.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 2206   
-	Release Date: 07/22/2010
+	Version: 2302   
+	Release Date: 02/28/2011
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 1 MB
@@ -560,8 +560,8 @@ Physical Memory Array
 Handle 0x0034, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0016FFFFFFF
-	Range Size: 5888 MB
+	Ending Address: 0x0022FFFFFFF
+	Range Size: 8960 MB
 	Physical Array Handle: 0x0033
 	Partition Width: 1
 
@@ -569,23 +569,29 @@ Handle 0x0035, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0033
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
+	Type: Other
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer0
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum0
 
-Handle 0x0036, DMI type 126, 19 bytes
-Inactive
+Handle 0x0036, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0035
+	Memory Array Mapped Address Handle: 0x0034
+	Partition Row Position: 1
 
 Handle 0x0037, DMI type 17, 27 bytes
 Memory Device
@@ -593,7 +599,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -608,9 +614,9 @@ Memory Device
 
 Handle 0x0038, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0037
 	Memory Array Mapped Address Handle: 0x0034
 	Partition Row Position: 1
@@ -619,57 +625,45 @@ Handle 0x0039, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0033
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
-	Type: Other
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
 	Manufacturer: Manufacturer2
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum2
 
-Handle 0x003A, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x0039
-	Memory Array Mapped Address Handle: 0x0034
-	Partition Row Position: 1
+Handle 0x003A, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x003B, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0033
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
-	Type: Other
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
 	Manufacturer: Manufacturer3
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum3
 
-Handle 0x003C, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x000C0000000
-	Ending Address: 0x0013FFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x003B
-	Memory Array Mapped Address Handle: 0x0034
-	Partition Row Position: 1
+Handle 0x003C, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x003D, DMI type 32, 20 bytes
 System Boot Information

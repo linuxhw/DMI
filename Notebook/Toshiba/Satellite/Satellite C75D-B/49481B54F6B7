@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-25 structures occupying 1383 bytes.
+25 structures occupying 1375 bytes.
 Table at 0x000E5630.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -165,8 +165,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: 1 ns
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -175,8 +175,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: 1 ns
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0008, DMI type 7, 19 bytes
@@ -214,16 +214,16 @@ Cache Information
 Handle 0x000A, DMI type 11, 5 bytes
 OEM Strings
 	String 1: PSCLEU-003002,TI106936Y0D,13AT2
-	String 2: ypmF1jW0KsGOh
-	String 3: tLOId0xWAhOk5
-	String 4: zBo5XbKsRVoeR
+	String 2: cqcFgysF8JbHO
+	String 3: 2yCql3nsIjD9Z
+	String 4: MvtMWvciVpqF8
 	String 5: A1B1C1D2E2Q2T1V12B
 
 Handle 0x000B, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: NVR:00707902
 	Option 2: DSN: 44MUSBR2S          
-	Option 3: DSN:M471B5173DB0-YK0  F166CD40 
+	Option 3: DSN:CT102464BF160B.C1637C05D84 
 	Option 4: DSN:181D6410
 	Option 5: String5 for Type12 Equipment Manufacturer
 	Option 6: SMI:00B0C202                             
@@ -251,7 +251,7 @@ Memory Device
 	Error Information Handle: 0x0010
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -259,12 +259,12 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 1600 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5173DB0-YK0  
-	Rank: 1
-	Configured Memory Speed: 800 MT/s
+	Part Number: CT102464BF160B.C16
+	Rank: 2
+	Configured Memory Speed: 667 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -275,7 +275,7 @@ Memory Device
 	Error Information Handle: 0x0011
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 1
@@ -286,9 +286,9 @@ Memory Device
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5173DB0-YK0  
-	Rank: 1
-	Configured Memory Speed: 800 MT/s
+	Part Number: M471B1G73DB0-YK0  
+	Rank: 2
+	Configured Memory Speed: 667 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -326,16 +326,16 @@ Handle 0x0012, DMI type 18, 23 bytes
 Handle 0x0013, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x000D
 	Partition Width: 255
 
 Handle 0x0014, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x000E
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown
@@ -345,8 +345,8 @@ Memory Device Mapped Address
 Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x000F
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown

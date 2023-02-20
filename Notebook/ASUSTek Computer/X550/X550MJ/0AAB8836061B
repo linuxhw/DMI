@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 19 structures occupying 1172 bytes.
@@ -7,11 +7,11 @@ Table at 0x000EBDF0.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: X550MJ.301
-	Release Date: 11/03/2015
+	Version: X550MJ.302
+	Release Date: 04/19/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -130,7 +130,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM0
@@ -143,9 +143,9 @@ Memory Device
 	Asset Tag: --
 	Part Number: CMSA8GX3M1A1600C11
 	Rank: 2
-	Configured Clock Speed: 1333 MT/s
-	Minimum Voltage: 22.424 V
-	Maximum Voltage: 38.826 V
+	Configured Memory Speed: 1333 MT/s
+	Minimum Voltage: 0.664 V
+	Maximum Voltage: 38.827 V
 	Configured Voltage: Unknown
 
 Handle 0x000D, DMI type 20, 35 bytes
@@ -178,7 +178,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Array1_PartNumber1
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 	Minimum Voltage: 39.373 V
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -212,8 +212,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown

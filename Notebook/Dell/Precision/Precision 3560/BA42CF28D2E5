@@ -1,8 +1,8 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
 71 structures occupying 5418 bytes.
-Table at 0x5FD06000.
+Table at 0x5FD05000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -188,7 +188,7 @@ System Information
 	Version: Not Specified
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: Other
 	SKU Number: 0A22
 	Family: Precision
 
@@ -324,8 +324,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 5120 kB
-	Maximum Size: 5120 kB
+	Installed Size: 5 MB
+	Maximum Size: 5 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -340,8 +340,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12288 kB
-	Maximum Size: 12288 kB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -363,6 +363,9 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.0
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0901, DMI type 9, 24 bytes
 System Slot Information
@@ -377,6 +380,9 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.5
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0902, DMI type 9, 24 bytes
 System Slot Information
@@ -391,6 +397,9 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:14.3
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0B00, DMI type 11, 5 bytes
 OEM Strings
@@ -446,7 +455,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 1
@@ -481,7 +490,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 2
@@ -534,12 +543,12 @@ Portable Battery
 	Design Capacity: 62360 mWh
 	Design Voltage: 15200 mV
 	SBDS Version: 1.0
-	Maximum Error: 38%
+	Maximum Error: 70%
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000801
 
 Handle 0x1900, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x1B00, DMI type 27, 15 bytes
@@ -687,8 +696,10 @@ Onboard Device
 Handle 0x2B00, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: STM
-	Specification Version: 2.0	Firmware Revision: 1.258
-	Description: TPM 2.0, ManufacturerID: STM , Firmware Version: 0x00010102.0x0	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 1.258
+	Description: TPM 2.0, ManufacturerID: STM , Firmware Version: 0x00010102.0x0
+	Characteristics:
 		TPM Device characteristics not supported
 	OEM-specific Information: 0x00000000
 
@@ -731,7 +742,7 @@ OEM-specific Type
 Handle 0xCB00, DMI type 203, 106 bytes
 OEM-specific Type
 	Header and Data:
-		CB 6A 00 CB 01 04 01 45 02 00 90 06 81 10 89 30
+		CB 6A 00 CB 01 04 01 45 02 00 94 06 81 85 39 30
 		00 00 00 00 40 00 00 03 1F 04 00 C9 03 E0 C7 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

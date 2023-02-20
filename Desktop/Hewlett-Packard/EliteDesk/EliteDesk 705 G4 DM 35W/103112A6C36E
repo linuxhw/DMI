@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.0 present.
-Table at 0x4A051000.
+Table at 0x49F96000.
 
 Handle 0x0001, DMI type 16, 23 bytes
 Physical Memory Array
@@ -138,8 +138,8 @@ TPM Device
 Handle 0x000E, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: Q26 Ver. 02.12.00
-	Release Date: 05/06/2020
+	Version: Q26 Ver. 02.16.00
+	Release Date: 04/15/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -161,14 +161,14 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 12.0
-	Firmware Revision: 7.208
+	BIOS Revision: 16.0
+	Firmware Revision: 7.209
 
 Handle 0x000F, DMI type 1, 27 bytes
 System Information
 	Manufacturer: HP
 	Product Name: HP EliteDesk 705 G4 DM 35W (TAA)
-	Version:  
+	Version: DBXEnabled
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -179,7 +179,7 @@ Handle 0x0010, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 83E9
-	Version: KBC Version 07.D0.00
+	Version: KBC Version 07.D1.00
 	Serial Number: --
 	Asset Tag: --
 	97946E993916094B22613E03B8339091
@@ -686,13 +686,55 @@ OEM Strings
 	String 4: Buff=2
 	String 5: HRDWFEATS=;
 
-Handle 0x0012, DMI type 10, 6 bytes
+Handle 0x0012, DMI type 35, 11 bytes
+Management Device Component
+	Description: Not Specified
+	Management Device Handle: 0xFFFF
+	Component Handle: 0x0015
+
+Handle 0x0041, DMI type 255, 14 bytes
+OEM-specific Type
+	Header and Data:
+		FF 0E 41 00 15 00 01 00 01 02 88 FF 00 02
+
+Handle 0x0042, DMI type 26, 22 bytes
+Voltage Probe
+	Description: Not Specified
+	Location: Motherboard
+	Status: OK
+	Maximum Value: Unknown
+	Minimum Value: Unknown
+	Resolution: Unknown
+	Tolerance: Unknown
+	Accuracy: Unknown
+	OEM-specific Information: 0x00000000
+	Nominal Value: Unknown
+
+Handle 0x0043, DMI type 35, 11 bytes
+Management Device Component
+	Description: Not Specified
+	Management Device Handle: 0xFFFF
+	Component Handle: 0x0042
+
+Handle 0x0044, DMI type 255, 14 bytes
+OEM-specific Type
+	Header and Data:
+		FF 0E 44 00 42 00 01 00 01 01 33 FF 00 00
+
+Handle 0x0045, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
 	Description: 1024 MB
 
-Handle 0x0041, DMI type 39, 22 bytes
+Handle 0x0046, DMI type 160, 7 bytes
+OEM-specific Type
+	Header and Data:
+		A0 07 46 00 79 00 00
+	Strings:
+		"ptal
+
+Handle 0x0047, DMI type 39, 22 bytes
 System Power Supply
 	Location:  
 	Name:  

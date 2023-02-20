@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
 Table at 0x98903000.
@@ -52,8 +52,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -68,8 +68,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -157,8 +157,10 @@ Handle 0x000B, DMI type 18, 23 bytes
 Handle 0x000F, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: IFX
-	Specification Version: 2.0	Firmware Revision: 7.85
-	Description: SLB9670	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 7.85
+	Description: SLB9670
+	Characteristics:
 		Family configurable via firmware update
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
@@ -357,7 +359,7 @@ Memory Device
 	Error Information Handle: 0x0007
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(left)
@@ -381,7 +383,7 @@ Memory Device
 	Error Information Handle: 0x000B
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(right)
@@ -506,6 +508,7 @@ OEM-specific Type
 	Header and Data:
 		A0 07 28 00 79 00 00
 	Strings:
+		.ptal
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

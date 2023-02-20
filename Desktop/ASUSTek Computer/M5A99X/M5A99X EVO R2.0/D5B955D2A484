@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 60 structures occupying 2484 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 04/03/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -113,8 +113,8 @@ Processor Information
 	Version: AMD FX(tm)-8120 Eight-Core Processor           
 	Voltage: 1.4 V
 	External Clock: 200 MHz
-	Max Speed: 4200 MHz
-	Current Speed: 4200 MHz
+	Max Speed: 4000 MHz
+	Current Speed: 4000 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM3
 	L1 Cache Handle: 0x0005
@@ -151,8 +151,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -167,8 +167,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -462,7 +462,7 @@ Handle 0x0028, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE16_3
 	Type: x16 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 5
 	Characteristics:
@@ -511,7 +511,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
@@ -524,7 +524,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: R538G1601U2SL-U   
 	Rank: 2
-	Configured Clock Speed: 800 MT/s
+	Configured Memory Speed: 800 MT/s
 
 Handle 0x002F, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -543,7 +543,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -556,7 +556,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 9905403-559.A00LF 
 	Rank: 2
-	Configured Clock Speed: 800 MT/s
+	Configured Memory Speed: 800 MT/s
 
 Handle 0x0031, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -575,7 +575,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -588,7 +588,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: R538G1601U2S      
 	Rank: 2
-	Configured Clock Speed: 800 MT/s
+	Configured Memory Speed: 800 MT/s
 
 Handle 0x0033, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -607,7 +607,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
@@ -620,7 +620,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: KHX1600C10D3/8GX  
 	Rank: 2
-	Configured Clock Speed: 800 MT/s
+	Configured Memory Speed: 800 MT/s
 
 Handle 0x0035, DMI type 20, 35 bytes
 Memory Device Mapped Address

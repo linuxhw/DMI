@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 30 structures occupying 974 bytes.
 Table at 0x000F0100.
@@ -43,7 +44,7 @@ System Information
 	Product Name: GA-73PVM-S2
 	Version:  
 	Serial Number: --
-	UUID: --
+	CD367B868FD21F19FE634D5FE26369D9
 	Wake-up Type: Power Switch
 	SKU Number:  
 	Family:  
@@ -55,14 +56,14 @@ Base Board Information
 	Version: x.x
 	Serial Number: --
 
-Handle 0x0003, DMI type 3, 17 bytes
+807075653E24ECB98B63F18E00309403
 Chassis Information
 	Manufacturer: Gigabyte Technology Co., Ltd.
 	Type: Desktop
 	Lock: Not Present
 	Version:  
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Boot-up State: Unknown
 	Power Supply State: Unknown
 	Thermal State: Unknown
@@ -117,7 +118,7 @@ Processor Information
 	L2 Cache Handle: 0x0009
 	L3 Cache Handle: Not Provided
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Part Number:  
 
 Handle 0x0005, DMI type 5, 20 bytes
@@ -158,8 +159,8 @@ Memory Module Information
 	Bank Connections: 2
 	Current Speed: 10 ns
 	Type: Other
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0008, DMI type 7, 19 bytes
@@ -184,8 +185,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 1024 kB
+	Installed Size: 2 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -316,17 +317,17 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 3584 bits
 	Data Width: 3584 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
 	Bank Locator: Bank0/1
 	Type: Unknown
 	Type Detail: None
-	Speed: 800 MHz
+	Speed: 800 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Part Number:  
 
 Handle 0x0018, DMI type 17, 27 bytes
@@ -335,24 +336,24 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 2048 bits
 	Data Width: 2048 bits
-	Size: No Module Installed
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1
 	Bank Locator: Bank2/3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
+	Speed: 800 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Part Number:  
 
 Handle 0x0019, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0016
 	Partition Width: 1
 
@@ -367,9 +368,9 @@ Memory Device Mapped Address
 
 Handle 0x001B, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0018
 	Memory Array Mapped Address Handle: 0x0019
 	Partition Row Position: 1

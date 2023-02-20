@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0xBAE56000.
+Table at 0xBAE35000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: F5
-	Release Date: 07/27/2021
+	Version: F7
+	Release Date: 09/07/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -47,7 +47,7 @@ Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: Gigabyte Technology Co., Ltd.
 	Product Name: TRX40 AORUS MASTER
-	Version: x.x
+	Version: Default string
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -114,7 +114,7 @@ Handle 0x000A, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
-	Error Correction Type: None
+	Error Correction Type: Multi-bit ECC
 	Maximum Capacity: 512 GB
 	Error Information Handle: 0x0009
 	Number Of Devices: 8
@@ -130,8 +130,8 @@ Memory Array Mapped Address
 Handle 0x000C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0083FFFFFFF
-	Range Size: 29 GB
+	Ending Address: 0x0203FFFFFFF
+	Range Size: 125 GB
 	Physical Array Handle: 0x000A
 	Partition Width: 4
 
@@ -262,27 +262,6 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
-	Firmware Version: Unknown
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x0013, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -298,9 +277,9 @@ Handle 0x0014, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x000A
 	Error Information Handle: 0x0013
-	Total Width: 64 bits
+	Total Width: 128 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -311,8 +290,8 @@ Memory Device
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX3200C16D4/8GX    
-	Rank: 1
+	Part Number: 9965745-039.A00G    
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -325,15 +304,15 @@ Memory Device
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
 	Physical Device Handle: 0x0014
 	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: Unknown
@@ -363,27 +342,6 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
-	Firmware Version: Unknown
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x0018, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -399,9 +357,9 @@ Handle 0x0019, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x000A
 	Error Information Handle: 0x0018
-	Total Width: 64 bits
+	Total Width: 128 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -412,8 +370,8 @@ Memory Device
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX3200C16D4/8GX    
-	Rank: 1
+	Part Number: 9965745-039.A00G    
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -426,15 +384,15 @@ Memory Device
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x001A, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
 	Physical Device Handle: 0x0019
 	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: Unknown
@@ -464,27 +422,6 @@ Memory Device
 	Bank Locator: P0 CHANNEL C
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
-	Firmware Version: Unknown
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x001D, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -500,9 +437,9 @@ Handle 0x001E, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x000A
 	Error Information Handle: 0x001D
-	Total Width: 64 bits
+	Total Width: 128 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -513,8 +450,8 @@ Memory Device
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX3200C16D4/8GX    
-	Rank: 1
+	Part Number: 9965745-039.A00G    
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -527,15 +464,15 @@ Memory Device
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x001F, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
 	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: Unknown
@@ -565,27 +502,6 @@ Memory Device
 	Bank Locator: P0 CHANNEL D
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
-	Firmware Version: Unknown
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x0022, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -601,9 +517,9 @@ Handle 0x0023, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x000A
 	Error Information Handle: 0x0022
-	Total Width: 64 bits
+	Total Width: 128 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -614,8 +530,8 @@ Memory Device
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX3200C16D4/8GX    
-	Rank: 1
+	Part Number: 9965745-039.A00G    
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -628,15 +544,15 @@ Memory Device
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0024, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
 	Physical Device Handle: 0x0023
 	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: Unknown
@@ -837,19 +753,6 @@ Port Connector Information
 
 Handle 0x003D, DMI type 9, 17 bytes
 System Slot Information
-	Designation: PCIE1
-	Type: x8 PCI Express x8
-	Current Usage: In Use
-	Length: Short
-	ID: 1
-	Characteristics:
-		3.3 V is provided
-		Opening is shared
-		PME signal is supported
-	Bus Address: 0000:40:01.3
-
-Handle 0x003E, DMI type 9, 17 bytes
-System Slot Information
 	Designation: PCIE3
 	Type: x16 PCI Express x16
 	Current Usage: Available
@@ -861,7 +764,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:40:03.1
 
-Handle 0x003F, DMI type 9, 17 bytes
+Handle 0x003E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE4
 	Type: x1 PCI Express x1
@@ -874,7 +777,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:42:05.0
 
-Handle 0x0040, DMI type 9, 17 bytes
+Handle 0x003F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE5
 	Type: x8 PCI Express x8
@@ -887,31 +790,31 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:01.3
 
-Handle 0x0041, DMI type 41, 11 bytes
+Handle 0x0040, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard LAN RTL8125
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 2
-	Bus Address: 0000:45:00.0
+	Bus Address: 0000:46:00.0
 
-Handle 0x0042, DMI type 41, 11 bytes
+Handle 0x0041, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: X570/590 SATA0
 	Type: SATA Controller
 	Status: Enabled
 	Type Instance: 5
-	Bus Address: 0000:47:00.0
+	Bus Address: 0000:48:00.0
 
-Handle 0x0043, DMI type 41, 11 bytes
+Handle 0x0042, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: X570/590 SATA1
 	Type: SATA Controller
 	Status: Enabled
 	Type Instance: 6
-	Bus Address: 0000:48:00.0
+	Bus Address: 0000:49:00.0
 
-Handle 0x0044, DMI type 13, 22 bytes
+Handle 0x0043, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 15
@@ -932,6 +835,6 @@ BIOS Language Information
 		pl|PL|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0045, DMI type 127, 4 bytes
+Handle 0x0044, DMI type 127, 4 bytes
 End Of Table
 

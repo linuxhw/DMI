@@ -1,6 +1,7 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-73 structures occupying 3072 bytes.
+75 structures occupying 3158 bytes.
 Table at 0x000E6BA0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -10,7 +11,7 @@ BIOS Information
 	Release Date: 11/12/2013
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -124,7 +125,7 @@ Processor Information
 	Max Speed: 1400 MHz
 	Current Speed: 1400 MHz
 	Status: Populated, Enabled
-	Upgrade: <OUT OF SPEC>
+	Upgrade: Socket BGA1168
 	L1 Cache Handle: 0x0009
 	L2 Cache Handle: 0x000A
 	L3 Cache Handle: 0x000B
@@ -167,8 +168,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -235,8 +236,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -477,50 +478,50 @@ Physical Memory Array
 	Use: System Memory
 	Error Correction Type: None
 	Maximum Capacity: 16 GB
-	Error Information Handle: 0x0027
+	Error Information Handle: 0x0028
 	Number Of Devices: 2
 
 Handle 0x0024, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0023
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Error Information Handle: 0x0026
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: JDIMM1
 	Bank Locator: Not Specified
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Empty
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Empty
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: HMT425S6AFR6A-PB  
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0025, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0023
-	Error Information Handle: 0x0026
+	Error Information Handle: 0x0027
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: JDIMM2
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Micron Technology
 	Serial Number: --
 	Asset Tag: --
 	Part Number: 4KTF25664HZ-1G6E1 
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0026, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -542,32 +543,53 @@ Handle 0x0027, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0028, DMI type 19, 31 bytes
+Handle 0x0028, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0029, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0023
 	Partition Width: 2
 
-Handle 0x0029, DMI type 20, 35 bytes
+Handle 0x002A, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0024
+	Memory Array Mapped Address Handle: 0x0029
+	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x002B, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x0007FFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0025
-	Memory Array Mapped Address Handle: 0x0028
+	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: 1
 	Interleave Position: 2
 	Interleaved Data Depth: 1
 
-Handle 0x002A, DMI type 21, 7 bytes
+Handle 0x002C, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Touch Pad
 	Interface: Bus Mouse
 	Buttons: 2
 
-Handle 0x002B, DMI type 22, 26 bytes
+Handle 0x002D, DMI type 22, 26 bytes
 Portable Battery
 	Location: Sys. Battery Bay
 	Manufacturer: Not Specified
@@ -581,14 +603,14 @@ Portable Battery
 	SBDS Manufacture Date: 2009-01-01
 	OEM-specific Information: 0x0000FFFF
 
-Handle 0x002C, DMI type 24, 5 bytes
+Handle 0x002E, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
 
-Handle 0x002D, DMI type 26, 22 bytes
+Handle 0x002F, DMI type 26, 22 bytes
 Voltage Probe
 	Description: Voltage Probe
 	Location: Processor
@@ -601,15 +623,15 @@ Voltage Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x002E, DMI type 27, 14 bytes
+Handle 0x0030, DMI type 27, 14 bytes
 Cooling Device
-	Temperature Probe Handle: 0x002F
+	Temperature Probe Handle: 0x0031
 	Type: Fan
 	Status: OK
 	OEM-specific Information: 0x00000000
 	Nominal Speed: 0 rpm
 
-Handle 0x002F, DMI type 28, 22 bytes
+Handle 0x0031, DMI type 28, 22 bytes
 Temperature Probe
 	Description: Temperature Probe
 	Location: Processor
@@ -622,7 +644,7 @@ Temperature Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: 2594.0 deg C
 
-Handle 0x0030, DMI type 29, 24 bytes
+Handle 0x0032, DMI type 29, 24 bytes
 Electrical Current Probe
 	Description: Electrical Current Probe
 	Location: Processor
@@ -635,11 +657,11 @@ Electrical Current Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: 0.000 A
 
-Handle 0x0031, DMI type 32, 20 bytes
+Handle 0x0033, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0032, DMI type 38, 18 bytes
+Handle 0x0034, DMI type 38, 18 bytes
 IPMI Device Information
 	Interface Type: Unknown
 	Specification Version: 2.0
@@ -648,7 +670,7 @@ IPMI Device Information
 	Base Address: 0x0000000000000000 (Memory-mapped)
 	Register Spacing: <OUT OF SPEC>
 
-Handle 0x0033, DMI type 40, 18 bytes
+Handle 0x0035, DMI type 40, 18 bytes
 Additional Information 1
 	Referenced Handle: 0x0017
 	Referenced Offset: 0x05
@@ -660,7 +682,7 @@ Additional Information 2
 	String: Compiler Version: VC 9.0
 	Value: 0x05dc
 
-Handle 0x0034, DMI type 41, 11 bytes
+Handle 0x0036, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Hanksville Gbe Lan Connection
 	Type: Ethernet
@@ -668,77 +690,77 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:00.1
 
-Handle 0x0035, DMI type 128, 8 bytes
+Handle 0x0037, DMI type 128, 8 bytes
 OEM-specific Type
 	Header and Data:
-		80 08 35 00 55 AA 55 AA
+		80 08 37 00 55 AA 55 AA
 	Strings:
 		Oem Test 1
 		Oem Test 2
 
-Handle 0x0036, DMI type 129, 8 bytes
+Handle 0x0038, DMI type 129, 8 bytes
 OEM-specific Type
 	Header and Data:
-		81 08 36 00 01 01 02 01
+		81 08 38 00 01 01 02 01
 	Strings:
 		Intel_ASF
 		Intel_ASF_001
 
-Handle 0x0037, DMI type 130, 20 bytes
+Handle 0x0039, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 37 00 24 41 4D 54 01 01 01 01 01 A5 1F 02
+		82 14 39 00 24 41 4D 54 01 01 01 01 01 A5 1F 02
 		00 00 00 00
 
-Handle 0x0038, DMI type 136, 6 bytes
+Handle 0x003A, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 38 00 FF FF
+		88 06 3A 00 FF FF
 
-Handle 0x0039, DMI type 176, 5 bytes
+Handle 0x003B, DMI type 176, 5 bytes
 OEM-specific Type
 	Header and Data:
-		B0 05 39 00 00
+		B0 05 3B 00 00
 
-Handle 0x003A, DMI type 177, 12 bytes
+Handle 0x003C, DMI type 177, 12 bytes
 OEM-specific Type
 	Header and Data:
-		B1 0C 3A 00 1A 00 00 00 00 00 00 00
+		B1 0C 3C 00 1A 00 00 00 00 00 00 00
 
-Handle 0x003B, DMI type 202, 29 bytes
+Handle 0x003D, DMI type 202, 29 bytes
 OEM-specific Type
 	Header and Data:
-		CA 1D 3B 00 B2 00 D4 03 00 00 00 20 00 00 80 00
+		CA 1D 3D 00 B2 00 D4 03 00 00 00 20 00 00 80 00
 		00 21 00 01 80 00 00 FF FF 00 00 00 00
 
-Handle 0x003C, DMI type 208, 10 bytes
+Handle 0x003E, DMI type 208, 10 bytes
 OEM-specific Type
 	Header and Data:
-		D0 0A 3C 00 02 06 FE 00 E9 05
+		D0 0A 3E 00 02 06 FE 00 E9 05
 
-Handle 0x003D, DMI type 210, 12 bytes
+Handle 0x003F, DMI type 210, 12 bytes
 OEM-specific Type
 	Header and Data:
-		D2 0C 3D 00 00 00 00 02 02 00 00 02
+		D2 0C 3F 00 00 00 00 02 02 00 00 02
 
-Handle 0x003E, DMI type 212, 17 bytes
+Handle 0x0040, DMI type 212, 17 bytes
 OEM-specific Type
 	Header and Data:
-		D4 11 3E 00 70 00 71 00 00 10 2D 00 00 00 00 00
+		D4 11 40 00 70 00 71 00 00 10 2D 00 00 00 00 00
 		00
 
-Handle 0x003F, DMI type 216, 9 bytes
+Handle 0x0041, DMI type 216, 9 bytes
 OEM-specific Type
 	Header and Data:
-		D8 09 3F 00 01 02 01 F0 03
+		D8 09 41 00 01 02 01 F0 03
 	Strings:
 		Intel Corp.
 		1264
 
-Handle 0x0040, DMI type 217, 8 bytes
+Handle 0x0042, DMI type 217, 8 bytes
 OEM-specific Type
 	Header and Data:
-		D9 08 40 00 01 02 02 02
+		D9 08 42 00 01 02 02 02
 	Strings:
 		Keyboard
 		Keyboard

@@ -1,8 +1,8 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-98 structures occupying 4767 bytes.
-Table at 0x000E0000.
+98 structures occupying 4762 bytes.
+Table at 0x000ECB60.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -131,8 +131,8 @@ OEM-specific Type
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: A23
-	Release Date: 10/08/2018
+	Version: A24
+	Release Date: 06/13/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 14 MB
@@ -158,7 +158,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 65.23
+	BIOS Revision: 65.24
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -648,7 +648,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM A
@@ -656,11 +656,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Samsung
+	Manufacturer: 1315
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5173QH0-YK0  
-	Rank: 1
+	Part Number: CT102464BF160B.C16
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x004A, DMI type 17, 34 bytes
@@ -669,7 +669,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM B
@@ -677,26 +677,26 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Micron
+	Manufacturer: 1315
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 8KTF51264HZ-1G6E1 
-	Rank: 1
+	Part Number: CT102464BF160B.C16
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x004C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0047
 	Partition Width: 2
 
 Handle 0x0049, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0048
 	Memory Array Mapped Address Handle: 0x004C
 	Partition Row Position: 1
@@ -705,9 +705,9 @@ Memory Device Mapped Address
 
 Handle 0x004B, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x004A
 	Memory Array Mapped Address Handle: 0x004C
 	Partition Row Position: 1
@@ -742,7 +742,7 @@ Hardware Security
 	Front Panel Reset Status: Disabled
 
 Handle 0x002D, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x1B00, DMI type 27, 15 bytes
@@ -1012,7 +1012,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 18 11 15 20 58 01 00 00
+		DE 10 00 DE 01 04 00 00 20 07 01 06 29 01 00 00
 
 Handle 0x0042, DMI type 255, 8 bytes
 OEM-specific Type

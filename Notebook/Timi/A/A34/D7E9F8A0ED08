@@ -1,8 +1,6 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0x679DD000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -115,7 +113,7 @@ Processor Information
 	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 4800 MHz
-	Current Speed: 2500 MHz
+	Current Speed: 3200 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0006
@@ -264,7 +262,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelA
@@ -299,7 +297,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelA
@@ -375,16 +373,18 @@ Portable Battery
 Handle 0x0014, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: INTC
-	Specification Version: 2.0	Firmware Revision: 600.7
-	Description: TPM Device	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 600.7
+	Description: TPM Device
+	Characteristics:
 		TPM Device characteristics not supported
 	OEM-specific Information: 0x00000000
 
 Handle 0x0015, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 15 00 01 04 01 45 02 00 90 06 01 10 89 20
-		00 00 00 00 40 00 00 00 00 00 00 06 00 60 40 02
+		DB 6A 15 00 01 04 01 45 02 00 A0 06 01 10 8B 20
+		00 00 00 04 40 00 00 00 00 00 00 06 00 60 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

@@ -1,17 +1,17 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-72 structures occupying 2856 bytes.
-Table at 0x000E96E0.
+73 structures occupying 2997 bytes.
+Table at 0x000E97A0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: F8
-	Release Date: 12/14/2012
+	Version: 10b
+	Release Date: 02/25/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -84,8 +84,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 64 kB
-	Maximum Size: 64 kB
+	Installed Size: 128 kB
+	Maximum Size: 128 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -100,8 +100,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 512 kB
-	Maximum Size: 512 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -116,15 +116,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
 	Speed: Unknown
 	Error Correction Type: Multi-bit ECC
 	System Type: Instruction
-	Associativity: 16-way Set-associative
+	Associativity: 48-way Set-associative
 
 Handle 0x0007, DMI type 16, 23 bytes
 Physical Memory Array
@@ -414,6 +414,10 @@ On Board Device Information
 Handle 0x0027, DMI type 11, 5 bytes
 OEM Strings
 	String 1: To Be Filled By O.E.M.
+	String 2: To Be Filled By O.E.M.
+	String 3: To Be Filled By O.E.M.
+	String 4: To Be Filled By O.E.M.
+	String 5: To Be Filled By O.E.M.
 
 Handle 0x0028, DMI type 12, 5 bytes
 System Configuration Options
@@ -646,7 +650,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -659,48 +663,48 @@ Memory Device
 	Asset Tag: --
 	Part Number: JM1333KLU-1G      
 	Rank: 1
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0041, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x0013FFFFFFF
 	Range Size: 1 GB
 	Physical Device Handle: 0x0040
-	Memory Array Mapped Address Handle: 0x0044
+	Memory Array Mapped Address Handle: 0x0045
 	Partition Row Position: Unknown
-	Interleave Position: 1
-	Interleaved Data Depth: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 2
 
 Handle 0x0042, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0007
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: 0000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: BKH400UD25608-1333
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0043, DMI type 4, 42 bytes
 Processor Information
-	Socket Designation: Intel(R) Celeron(R) CPU G1610 @ 2.60GHz
+	Socket Designation: Intel(R) Core(TM) i5-2500K CPU @ 3.30GHz
 	Type: Central Processor
 	Family: Core i7
 	Manufacturer: Intel
-	ID: A9 06 03 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 58, Stepping 9
+	ID: A7 06 02 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 42, Stepping 7
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -730,11 +734,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Celeron(R) CPU G1610 @ 2.60GHz
-	Voltage: 0.9 V
+	Version: Intel(R) Core(TM) i5-2500K CPU @ 3.30GHz
+	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 7000 MHz
-	Current Speed: 2600 MHz
+	Current Speed: 3400 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0004
@@ -743,28 +747,39 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Fill By OEM
-	Core Count: 2
+	Core Count: 4
 	Core Enabled: 1
 	Characteristics:
 		64-bit capable
 
-Handle 0x0044, DMI type 19, 31 bytes
+Handle 0x0044, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0042
+	Memory Array Mapped Address Handle: 0x0045
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 2
+
+Handle 0x0045, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0013FFFFFFF
+	Range Size: 5 GB
 	Physical Array Handle: 0x0007
 	Partition Width: 4
 
-Handle 0x0049, DMI type 131, 64 bytes
+Handle 0x004A, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 49 00 10 00 00 00 00 00 00 00 00 00 00 00
+		83 40 4A 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 5C 1C FF FF FF FF 01 00 00 00 01 00 08 00
-		E0 04 00 00 00 00 00 00 C8 00 FF FF 00 00 00 00
+		46 05 1E 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x004A, DMI type 13, 22 bytes
+Handle 0x004B, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 7
@@ -777,6 +792,6 @@ BIOS Language Information
 		zh|CT|unicode
 	Currently Installed Language: ru|RU|iso8859-5
 
-Handle 0x004F, DMI type 127, 4 bytes
+Handle 0x0050, DMI type 127, 4 bytes
 End Of Table
 

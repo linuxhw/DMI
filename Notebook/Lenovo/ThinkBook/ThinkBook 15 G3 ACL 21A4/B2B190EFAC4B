@@ -1,15 +1,13 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0xCA508000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: GQCN29WW(V1.15)
-	Release Date: 11/04/2021
+	Version: GQCN36WW(V1.22)
+	Release Date: 10/21/2022
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -33,8 +31,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.29
-	Firmware Revision: 1.29
+	BIOS Revision: 1.36
+	Firmware Revision: 1.35
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -158,8 +156,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -174,8 +172,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -429,34 +427,34 @@ Handle 0x0023, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x0022
 	Error Information Handle: 0x0026
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL A
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 3200 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
+	Part Number: JM3200HSG-8G        
+	Rank: 1
+	Configured Memory Speed: 3200 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Unknown
+	Module Manufacturer ID: Bank 2, Hex 0x4F
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: None
+	Volatile Size: 8 GB
 	Cache Size: None
 	Logical Size: None
 
@@ -466,7 +464,7 @@ Memory Device
 	Error Information Handle: 0x0027
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: DIMM 0
@@ -528,27 +526,40 @@ Handle 0x0027, DMI type 18, 23 bytes
 Handle 0x0028, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0022
-	Partition Width: 1
+	Partition Width: 2
 
 Handle 0x0029, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x0023
+	Memory Array Mapped Address Handle: 0x0028
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x002A, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0024
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
-Handle 0x002A, DMI type 21, 7 bytes
+Handle 0x002B, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Touch Pad
 	Interface: PS/2
 	Buttons: 4
 
-Handle 0x002B, DMI type 22, 26 bytes
+Handle 0x002C, DMI type 22, 26 bytes
 Portable Battery
 	Location: Fake
 	Manufacturer: -Virtual Battery 0-
@@ -562,14 +573,14 @@ Portable Battery
 	Maximum Error: Unknown
 	OEM-specific Information: 0x00000000
 
-Handle 0x002C, DMI type 24, 5 bytes
+Handle 0x002D, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
 
-Handle 0x002D, DMI type 26, 22 bytes
+Handle 0x002E, DMI type 26, 22 bytes
 Voltage Probe
 	Description: Voltage Probe Description
 	Location: Unknown
@@ -582,7 +593,7 @@ Voltage Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x002E, DMI type 27, 15 bytes
+Handle 0x002F, DMI type 27, 15 bytes
 Cooling Device
 	Type: Fan
 	Status: OK
@@ -590,11 +601,11 @@ Cooling Device
 	Nominal Speed: 8192 rpm
 	Description: Cooling Device Description
 
-Handle 0x002F, DMI type 32, 20 bytes
+Handle 0x0030, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0030, DMI type 40, 18 bytes
+Handle 0x0031, DMI type 40, 18 bytes
 Additional Information 1
 	Referenced Handle: 0x0018
 	Referenced Offset: 0x05
@@ -606,7 +617,7 @@ Additional Information 2
 	String: Compiler Version: VC 9.0
 	Value: 0x05dc
 
-Handle 0x0031, DMI type 41, 11 bytes
+Handle 0x0032, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Realtek RTL8111E Ethernet LOM
 	Type: Ethernet
@@ -614,7 +625,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:03:00.0
 
-Handle 0x0032, DMI type 41, 11 bytes
+Handle 0x0033, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Realtek ALC701
 	Type: Sound
@@ -622,25 +633,25 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 00ff:ff:1f.7
 
-Handle 0x0033, DMI type 133, 5 bytes
+Handle 0x0034, DMI type 133, 5 bytes
 OEM-specific Type
 	Header and Data:
-		85 05 33 00 01
+		85 05 34 00 01
 	Strings:
 		KHOIHGIUCCHHII
 
-Handle 0x0034, DMI type 200, 16 bytes
+Handle 0x0035, DMI type 200, 16 bytes
 OEM-specific Type
 	Header and Data:
-		C8 10 34 00 01 02 01 27 01 14 01 52 B0 C1 01 05
+		C8 10 35 00 01 02 01 27 01 14 01 52 B0 C1 01 05
 	Strings:
 		IdeaPad
 		21A4003ERA
 
-Handle 0x0035, DMI type 248, 20 bytes
+Handle 0x0036, DMI type 248, 20 bytes
 OEM-specific Type
 	Header and Data:
-		F8 14 35 00 AC AC AA 17 00 00 00 00 00 00 00 00
+		F8 14 36 00 AC AC AA 17 00 00 00 00 00 00 00 00
 		00 00 00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

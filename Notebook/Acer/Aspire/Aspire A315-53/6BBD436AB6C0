@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0x8A097000.
@@ -6,11 +6,11 @@ Table at 0x8A097000.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Insyde Corp.
-	Version: V1.20
-	Release Date: 06/04/2018
+	Version: V2.03
+	Release Date: 05/22/2019
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -31,14 +31,14 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.20
-	Firmware Revision: 1.14
+	BIOS Revision: 2.3
+	Firmware Revision: 1.18
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Acer
 	Product Name: Aspire A315-53
-	Version: V1.20
+	Version: V2.03
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -49,7 +49,7 @@ Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: KBL
 	Product Name: Metapod_KL
-	Version: V1.20
+	Version: V2.03
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -65,7 +65,7 @@ Chassis Information
 	Manufacturer: Acer
 	Type: Notebook
 	Lock: Not Present
-	Version: V1.20
+	Version: V2.03
 	Serial Number: --
 	Asset Tag: --
 	380AD15AAB729CF25C4397C21C466ACE
@@ -116,10 +116,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
-	Voltage: 0.9 V
+	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
-	Current Speed: 2800 MHz
+	Current Speed: 2700 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1356
 	L1 Cache Handle: 0x0005
@@ -161,8 +161,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -177,8 +177,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -240,7 +240,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -264,7 +264,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -293,8 +293,8 @@ Memory Array Mapped Address
 Handle 0x0011, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x3FFFFFFFFFF
+	Range Size: Invalid
 	Physical Device Handle: 0x000E
 	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: Unknown
@@ -304,8 +304,8 @@ Memory Device Mapped Address
 Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x3FFFFFFFFFF
+	Range Size: Invalid
 	Physical Device Handle: 0x000F
 	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: Unknown
@@ -350,7 +350,7 @@ OEM-specific Type
 Handle 0x0017, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 17 00 01 03 01 45 02 00 90 06 01 10 8B 20
+		DB 51 17 00 01 03 01 45 02 00 90 06 01 10 86 20
 		00 00 00 00 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -361,20 +361,22 @@ OEM-specific Type
 		MEI2
 		MEI3
 
-Handle 0x0018, DMI type 221, 26 bytes
+Handle 0x0018, DMI type 221, 33 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 18 00 03 01 00 02 02 00 00 00 02 00 00 00
-		00 84 00 03 00 00 05 00 00 00
+		DD 21 18 00 04 01 00 02 09 00 00 00 02 00 00 00
+		00 B4 00 03 00 00 05 00 00 00 04 00 FF FF FF FF
+		FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
-		TXT ACM version
+		TXT ACM Version
+		BIOS Guard Version
 
 Handle 0x0019, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 19 00 03 01 00 02 02 00 00 00 02 00 00 00
+		DD 1A 19 00 03 01 00 02 09 00 00 00 02 00 00 00
 		00 00 00 03 04 0B 08 32 84 0D
 	Strings:
 		Reference Code - ME 11.0
@@ -385,7 +387,7 @@ OEM-specific Type
 Handle 0x001A, DMI type 221, 75 bytes
 OEM-specific Type
 	Header and Data:
-		DD 4B 1A 00 0A 01 00 02 02 00 00 00 02 03 FF FF
+		DD 4B 1A 00 0A 01 00 02 09 00 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 21 00 05 00 FF FF FF 21
 		00 06 00 FF FF FF FF FF 07 00 3E 00 00 00 00 08
 		00 34 00 00 00 00 09 00 0B 00 00 00 00 0A 00 3E
@@ -406,8 +408,8 @@ OEM-specific Type
 Handle 0x001B, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 1B 00 07 01 00 02 02 00 00 00 02 00 02 02
-		01 00 00 03 00 02 02 00 00 00 04 05 FF FF FF FF
+		DD 36 1B 00 07 01 00 02 09 00 00 00 02 00 02 09
+		00 00 00 03 00 02 09 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 08 00 07 00 FF FF FF 08 00 08
 		00 FF FF FF FF FF
 	Strings:

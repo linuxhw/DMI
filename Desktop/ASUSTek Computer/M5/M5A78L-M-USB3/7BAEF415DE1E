@@ -7,8 +7,8 @@ Table at 0x0009F400.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 1103   
-	Release Date: 03/23/2012
+	Version: 2101   
+	Release Date: 12/02/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 2 MB
@@ -590,51 +590,51 @@ Handle 0x0036, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0032
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4 GB
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM1
-	Bank Locator: BANK1
-	Type: Other
-	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Manufacturer1
-	Serial Number: --
-	Asset Tag: --
-	Part Number: PartNum1
-
-Handle 0x0037, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0036
-	Memory Array Mapped Address Handle: 0x0033
-	Partition Row Position: 1
-
-Handle 0x0038, DMI type 17, 27 bytes
-Memory Device
-	Array Handle: 0x0032
-	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
-	Locator: DIMM2
-	Bank Locator: BANK2
+	Locator: DIMM1
+	Bank Locator: BANK1
 	Type: Unknown
 	Type Detail: None
 	Speed: Unknown
+	Manufacturer: Manufacturer1
+	Serial Number: --
+	Asset Tag: --
+	Part Number: PartNum1
+
+Handle 0x0037, DMI type 126, 19 bytes
+Inactive
+
+Handle 0x0038, DMI type 17, 27 bytes
+Memory Device
+	Array Handle: 0x0032
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM2
+	Bank Locator: BANK2
+	Type: Other
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
 	Manufacturer: Manufacturer2
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum2
 
-Handle 0x0039, DMI type 126, 19 bytes
-Inactive
+Handle 0x0039, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0038
+	Memory Array Mapped Address Handle: 0x0033
+	Partition Row Position: 1
 
 Handle 0x003A, DMI type 17, 27 bytes
 Memory Device

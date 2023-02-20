@@ -1,8 +1,8 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-60 structures occupying 2426 bytes.
-Table at 0xDCD3D000.
+60 structures occupying 2430 bytes.
+Table at 0xDCC0D000.
 
 Handle 0x0000, DMI type 4, 42 bytes
 Processor Information
@@ -140,7 +140,7 @@ Memory Device
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
-	Form Factor: Chip
+	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
@@ -433,14 +433,14 @@ OEM-specific Type
 
 Handle 0x002F, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 228 bytes
+	Area Length: 292 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x0000000E
+	Change Token: 0x00000012
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -488,35 +488,35 @@ OEM-specific Type
 		8C 13 34 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
 		53 20 00
 
-Handle 0x0035, DMI type 140, 19 bytes
+Handle 0x0035, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 35 00 4C 45 4E 4F 56 4F 0B 05 01 06 00 00
+		87 12 35 00 54 50 07 01 01 DF FF 03 00 00 B9 03
+		00 00
+
+Handle 0x0036, DMI type 140, 19 bytes
+OEM-specific Type
+	Header and Data:
+		8C 13 36 00 4C 45 4E 4F 56 4F 0B 05 01 06 00 00
 		00 00 00
 
-Handle 0x0036, DMI type 24, 5 bytes
+Handle 0x0037, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
-Handle 0x0037, DMI type 132, 7 bytes
+Handle 0x0038, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 37 00 01 D8 36
-
-Handle 0x0038, DMI type 135, 18 bytes
-OEM-specific Type
-	Header and Data:
-		87 12 38 00 54 50 07 01 01 DF 07 00 00 00 01 00
-		00 00
+		84 07 38 00 01 D8 36
 
 Handle 0x0039, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: GJET77WW (2.27 )
-	Release Date: 05/20/2014
+	Version: GJETA4WW (2.54 )
+	Release Date: 03/27/2020
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -532,13 +532,13 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.27
-	Firmware Revision: 1.9
+	BIOS Revision: 2.54
+	Firmware Revision: 1.14
 
 Handle 0x003A, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: GJHT25WW
-	Release Date: 11/07/2013
+	Version ID: GJHT30WW
+	Release Date: 08/28/2019
 
 Handle 0x003B, DMI type 140, 43 bytes
 OEM-specific Type

@@ -1,7 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-111 structures occupying 3928 bytes.
+111 structures occupying 3933 bytes.
 Table at 0x000EB5C0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 11/09/2012
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -154,8 +154,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -170,8 +170,8 @@ Cache Information
 	Configuration: Disabled, Not Socketed, Level 3
 	Operational Mode: Unknown
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -450,7 +450,7 @@ Handle 0x0028, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_2
 	Type: 32-bit PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 3
 	Characteristics:
@@ -966,7 +966,7 @@ Memory Device
 	Error Information Handle: 0x0063
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -1007,7 +1007,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
@@ -1015,11 +1015,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 8502
+	Manufacturer: 859B
 	Serial Number: --
 	Asset Tag: --
-	Part Number: PSD34G16002
-	Rank: 2
+	Part Number: CT51264BA160BJ.C8F
+	Rank: 1
 
 Handle 0x0063, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -1048,7 +1048,7 @@ Memory Device
 	Error Information Handle: 0x0068
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -1089,7 +1089,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
@@ -1097,10 +1097,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Elpida
+	Manufacturer: 859B
 	Serial Number: --
 	Asset Tag: --
-	Part Number: EBJ41UF8BDW0-GN-F 
+	Part Number: CT51264BA160B.C16F
 	Rank: 2
 
 Handle 0x0069, DMI type 18, 23 bytes

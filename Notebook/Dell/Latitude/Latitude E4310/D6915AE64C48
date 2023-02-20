@@ -1,8 +1,8 @@
 # dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-69 structures occupying 3723 bytes.
-Table at 0x000F2460.
+69 structures occupying 3729 bytes.
+Table at 0x000F2440.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -72,29 +72,30 @@ OEM-specific Type
 		02 00 00 41 01 41 01 01 00 40 01 40 01 00 00 D1
 		00 D1 00 01 00 D2 00 D2 00 00 00 F0 00 F0 00 01
 		00 ED 00 ED 00 00 00 EB 01 EB 01 01 00 EA 01 EA
-		01 00 00 75 01 75 01 02 00 76 01 76 01 01 00 5C
-		00 5C 00 01 00 5D 00 5D 00 00 00 2D 01 2D 01 01
-		00 2E 01 2E 01 00 00 4A 02 4A 02 01 00 0C 80 0C
-		80 00 00 04 A0 04 A0 01 00 40 00 40 00 01 00 41
-		00 41 00 00 00 B1 02 B1 02 01 00 B2 02 B2 02 00
-		00 8C 02 8C 02 01 00 8D 02 8D 02 00 00 59 02 59
-		02 01 00 5A 02 5A 02 00 00 01 F0 01 F0 55 00 03
-		F0 03 F0 03 00 06 F0 06 F0 7F 00 07 F0 07 F0 00
-		00 64 02 64 02 01 00 65 02 65 02 00 00 66 02 66
-		02 01 00 67 02 67 02 00 00 68 02 68 02 01 00 69
-		02 69 02 00 00 FF FF 00 00 00 00
+		01 00 00 75 01 75 01 02 00 76 01 76 01 01 00 25
+		03 25 03 01 00 5C 00 5C 00 01 00 5D 00 5D 00 00
+		00 2D 01 2D 01 01 00 2E 01 2E 01 00 00 4A 02 4A
+		02 01 00 0C 80 0C 80 00 00 04 A0 04 A0 01 00 40
+		00 40 00 01 00 41 00 41 00 00 00 B1 02 B1 02 01
+		00 B2 02 B2 02 00 00 8C 02 8C 02 01 00 8D 02 8D
+		02 00 00 59 02 59 02 01 00 5A 02 5A 02 00 00 01
+		F0 01 F0 55 00 03 F0 03 F0 03 00 06 F0 06 F0 7F
+		00 07 F0 07 F0 00 00 64 02 64 02 01 00 65 02 65
+		02 00 00 66 02 66 02 01 00 67 02 67 02 00 00 68
+		02 68 02 01 00 FF FF 00 00 00 00
 
-Handle 0xDA04, DMI type 218, 29 bytes
+Handle 0xDA04, DMI type 218, 35 bytes
 OEM-specific Type
 	Header and Data:
-		DA 1D 04 DA B2 00 37 1F 1F 32 40 6C 02 6C 02 01
-		00 6D 02 6D 02 00 00 FF FF 00 00 00 00
+		DA 23 04 DA B2 00 37 1F 1F 32 40 69 02 69 02 00
+		00 6C 02 6C 02 01 00 6D 02 6D 02 00 00 FF FF 00
+		00 00 00
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: A06
-	Release Date: 02/15/2011
+	Version: A14
+	Release Date: 12/05/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 1024 kB
@@ -332,7 +333,7 @@ System Slot Information
 	Type: x16 PCI Express x16
 	Current Usage: Available
 	Length: Long
-	ID: 0
+	ID: 1
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
@@ -345,7 +346,7 @@ System Slot Information
 	Type: x1 PCI Express
 	Current Usage: Available
 	Length: Short
-	ID: 1
+	ID: 2
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
@@ -358,7 +359,7 @@ System Slot Information
 	Type: x1 PCI Express
 	Current Usage: In Use
 	Length: Short
-	ID: 2
+	ID: 3
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
@@ -371,7 +372,7 @@ System Slot Information
 	Type: x1 PCI Express
 	Current Usage: In Use
 	Length: Short
-	ID: 3
+	ID: 4
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
@@ -384,7 +385,7 @@ System Slot Information
 	Type: x1 PCI Express
 	Current Usage: Available
 	Length: Short
-	ID: 4
+	ID: 5
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
@@ -446,7 +447,7 @@ Memory Device
 	Error Information Handle: 0x001D
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM_A
@@ -454,17 +455,17 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1067 MT/s
-	Manufacturer: 80CE
+	Manufacturer: 80AD
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5673EH1-CF8  
+	Part Number: HMT351S6BFR8C-H9  
 	Rank: Unknown
 
 Handle 0x001C, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x001B
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: 1
@@ -504,8 +505,8 @@ Memory Device
 Handle 0x001F, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0019
 	Partition Width: 4
 
@@ -669,7 +670,7 @@ OEM-specific Type
 		D8 09 00 D8 01 02 01 10 01
 	Strings:
 		Intel Corp.
-		2080v26
+		2120v28
 
 Handle 0xD900, DMI type 217, 8 bytes
 OEM-specific Type
@@ -750,8 +751,8 @@ Handle 0xDE03, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
 		83 40 03 DE 35 00 00 00 00 00 00 00 00 00 00 00
-		F8 00 0F 3B 00 00 00 00 0B E0 00 00 01 00 06 00
-		23 04 14 00 00 00 00 00 C8 00 EA 10 00 00 00 02
+		F8 00 0F 3B 00 00 00 00 0B E0 00 00 02 00 06 00
+		26 04 32 00 00 00 00 00 C8 00 EA 10 00 00 00 02
 		2C 42 00 00 36 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0xDE04, DMI type 127, 4 bytes

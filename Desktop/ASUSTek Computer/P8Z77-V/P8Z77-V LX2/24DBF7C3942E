@@ -1,17 +1,17 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 107 structures occupying 3889 bytes.
-Table at 0x000EB6C0.
+Table at 0x000EB980.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 0403
-	Release Date: 09/11/2012
+	Version: 2501
+	Release Date: 09/02/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -117,9 +117,9 @@ Processor Information
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-3770K CPU @ 3.50GHz
 	Voltage: 1.0 V
-	External Clock: 103 MHz
+	External Clock: 100 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 3623 MHz
+	Current Speed: 3523 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -140,8 +140,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 32 kB
-	Maximum Size: 32 kB
+	Installed Size: 256 kB
+	Maximum Size: 256 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -156,8 +156,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 256 kB
-	Maximum Size: 256 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -172,8 +172,8 @@ Cache Information
 	Configuration: Disabled, Not Socketed, Level 3
 	Operational Mode: Unknown
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -967,7 +967,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: [Empty]
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x005E, DMI type 16, 23 bytes
 Physical Memory Array
@@ -994,7 +994,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
@@ -1007,7 +1007,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 16JTF51264AZ-1G6M1
 	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0061, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -1049,7 +1049,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: [Empty]
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0064, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -1067,7 +1067,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
@@ -1080,7 +1080,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 16JTF51264AZ-1G6M1
 	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0066, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -1123,7 +1123,7 @@ BIOS Language Information
 		ja|JP|unicode
 		zh|TW|unicode
 		zh|CN|unicode
-	Currently Installed Language: en|US|iso8859-1
+	Currently Installed Language: fr|FR|iso8859-1
 
 Handle 0x006C, DMI type 127, 4 bytes
 End Of Table

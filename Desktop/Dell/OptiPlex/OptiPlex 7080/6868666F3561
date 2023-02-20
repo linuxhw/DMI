@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x000E0000.
@@ -119,7 +119,7 @@ System Event Log
 	Data Format 6: OEM-specific
 
 Handle 0x0007, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x0008, DMI type 32, 20 bytes
@@ -141,7 +141,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -176,7 +176,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -559,23 +559,23 @@ Handle 0x002F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT5_M.2
 	Type: x4 M.2 Socket 3
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:ff:00.0
+	Bus Address: 0000:ff:1f.7
 
 Handle 0x0030, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT6_M.2
 	Type: x4 M.2 Socket 3
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:ff:00.0
+	Bus Address: 0000:ff:1f.7
 
 Handle 0x0031, DMI type 9, 17 bytes
 System Slot Information
@@ -728,8 +728,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 20480 kB
-	Maximum Size: 20480 kB
+	Installed Size: 20 MB
+	Maximum Size: 20 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -802,8 +802,10 @@ Processor Information
 Handle 0x0040, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: NTC
-	Specification Version: 2.0	Firmware Revision: 7.2
-	Description: NUVOTON	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 7.2
+	Description: NUVOTON
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -1323,7 +1325,7 @@ Group Associations
 Handle 0xF04F, DMI type 235, 106 bytes
 OEM-specific Type
 	Header and Data:
-		EB 6A 4F F0 01 04 01 45 02 00 94 06 81 85 39 30
+		EB 6A 4F F0 01 04 01 45 02 00 95 06 81 85 39 30
 		00 00 00 00 40 00 00 03 1F 00 00 C9 0B C0 C7 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

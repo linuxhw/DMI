@@ -3,13 +3,13 @@ Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
 # SMBIOS implementations newer than version 3.1.1 are not
 # fully supported by this version of dmidecode.
-Table at 0xBDC23000.
+Table at 0xBDA24000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
-	Vendor: American Megatrends Inc.
-	Version: F60c
-	Release Date: 10/29/2020
+	Vendor: American Megatrends International, LLC.
+	Version: F63e
+	Release Date: 07/26/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -21,13 +21,16 @@ BIOS Information
 		Selectable boot is supported
 		BIOS ROM is socketed
 		EDD is supported
+		Japanese floppy for NEC 9800 1.2 MB is supported (int 13h)
+		Japanese floppy for Toshiba 1.2 MB is supported (int 13h)
+		5.25"/360 kB floppy services are supported (int 13h)
 		5.25"/1.2 MB floppy services are supported (int 13h)
 		3.5"/720 kB floppy services are supported (int 13h)
 		3.5"/2.88 MB floppy services are supported (int 13h)
 		Print screen service is supported (int 5h)
 		Serial services are supported (int 14h)
 		Printer services are supported (int 17h)
-		ACPI is supported
+		CGA/mono video services are supported (int 10h)
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
@@ -43,13 +46,13 @@ System Information
 	UUID: --
 	Wake-up Type: Power Switch
 	SKU Number: Default string
-	Family: Default string
+	Family: B450 MB
 
 Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: Gigabyte Technology Co., Ltd.
 	Product Name: B450M GAMING
-	Version: x.x
+	Version: Default string
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -250,7 +253,7 @@ Handle 0x0011, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0012, DMI type 17, 84 bytes
+Handle 0x0012, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x000B
 	Error Information Handle: 0x0011
@@ -284,7 +287,7 @@ Handle 0x0013, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0014, DMI type 17, 84 bytes
+Handle 0x0014, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x000B
 	Error Information Handle: 0x0013
@@ -329,7 +332,7 @@ Handle 0x0016, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0017, DMI type 17, 84 bytes
+Handle 0x0017, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x000B
 	Error Information Handle: 0x0016
@@ -363,7 +366,7 @@ Handle 0x0018, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0019, DMI type 17, 84 bytes
+Handle 0x0019, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x000B
 	Error Information Handle: 0x0018

@@ -1,8 +1,8 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-39 structures occupying 2020 bytes.
-Table at 0x000EB190.
+39 structures occupying 2012 bytes.
+Table at 0xDA5C5018.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 03/08/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -313,8 +313,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -394,7 +394,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -402,18 +402,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Kingston
+	Manufacturer: 017A
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 99U5469-046.A00LF 
-	Rank: 1
-	Configured Clock Speed: 1333 MT/s
+	Part Number: D22.15653H.001    
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0021, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0020
 	Memory Array Mapped Address Handle: 0x0024
 	Partition Row Position: Unknown
@@ -426,7 +426,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -434,18 +434,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Kingston
+	Manufacturer: 017A
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9905417-067.A00G  
-	Rank: 1
-	Configured Clock Speed: 1333 MT/s
+	Part Number: D22.15653H.001    
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0023, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0022
 	Memory Array Mapped Address Handle: 0x0024
 	Partition Row Position: Unknown
@@ -455,8 +455,8 @@ Memory Device Mapped Address
 Handle 0x0024, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x001E
 	Partition Width: 2
 

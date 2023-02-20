@@ -1,17 +1,17 @@
-# dmidecode 3.0
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 57 structures occupying 2174 bytes.
-Table at 0x000EB220.
+Table at 0x000EB260.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Acer      
-	Version: P01-A2                 
-	Release Date: 06/08/2011
+	Version: P01-B3L                
+	Release Date: 10/12/2012
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -67,7 +67,7 @@ Chassis Information
 	Lock: Not Present
 	Version:         
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148                       
 	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Safe
@@ -156,8 +156,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -172,8 +172,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -452,8 +452,8 @@ Handle 0x0027, DMI type 18, 23 bytes
 Handle 0x0028, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0026
 	Partition Width: 1
 
@@ -463,20 +463,20 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Unifosa      
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HU564403EP0200        
+	6920B9CA126B22838A8F231A6C64D29B        
 	Rank: 2
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x002A, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -503,20 +503,20 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Manufacturer2
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Undefined    
 	Serial Number: --
 	Asset Tag: --
-	Part Number:                       
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: CT51264BD160B.C16F    
+	Rank: 2
+	Configured Memory Speed: Unknown
 
 Handle 0x002D, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -528,8 +528,14 @@ Handle 0x002D, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x002E, DMI type 126, 35 bytes
-Inactive
+Handle 0x002E, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x002C
+	Memory Array Mapped Address Handle: 0x0028
+	Partition Row Position: 1
 
 Handle 0x002F, DMI type 24, 5 bytes
 Hardware Security

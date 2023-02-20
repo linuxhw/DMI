@@ -144,8 +144,8 @@ Memory Module Information
 	Bank Connections: 2 3
 	Current Speed: 43 ns
 	Type: DIMM SDRAM
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 4096 MB (Double-bank Connection)
+	Enabled Size: 4096 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 7, 19 bytes
@@ -357,7 +357,7 @@ System Slot Information
 Handle 0x0026, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Other
-	Status: Disabled
+	Status: Enabled
 	Description: IBM Embedded Security hardware
 
 Handle 0x0027, DMI type 11, 5 bytes
@@ -409,10 +409,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1334 MT/s
-	Manufacturer: 80AD            
+	Manufacturer: 830B            
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT351S6BFR8C-H9  
+	Part Number: NT4GC64B8HG0NS-CG 
 	Rank: Unknown
 
 Handle 0x002C, DMI type 17, 28 bytes
@@ -421,7 +421,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 2
@@ -432,7 +432,7 @@ Memory Device
 	Manufacturer: 80AD            
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT325S6CFR8C-H9  
+	Part Number: HMT351S6BFR8C-H9  
 	Rank: Unknown
 
 Handle 0x002D, DMI type 18, 23 bytes
@@ -448,8 +448,8 @@ Handle 0x002D, DMI type 18, 23 bytes
 Handle 0x002E, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x002A
 	Partition Width: 2
 
@@ -465,8 +465,8 @@ Memory Device Mapped Address
 Handle 0x0030, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x002C
 	Memory Array Mapped Address Handle: 0x002E
 	Partition Row Position: 1
@@ -546,7 +546,7 @@ OEM-specific Type
 Handle 0x003C, DMI type 134, 16 bytes
 OEM-specific Type
 	Header and Data:
-		86 10 3C 00 00 53 54 4D 20 01 01 00 00 00 01 02
+		86 10 3C 00 00 53 54 4D 20 01 01 00 00 03 01 02
 	Strings:
 		TPM INFO
 		System Reserved
@@ -588,8 +588,8 @@ OEM-specific Type
 Handle 0x0043, DMI type 140, 67 bytes
 OEM-specific Type
 	Header and Data:
-		8C 43 43 00 4C 45 4E 4F 56 4F 0B 00 01 DC 50 D8
-		2C E8 03 17 07 F1 E3 95 14 C6 D7 5E 92 01 00 00
+		8C 43 43 00 4C 45 4E 4F 56 4F 0B 00 01 49 D1 B2
+		DE BA 71 03 56 3C 1B D0 43 5B 5B 3D B1 01 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00
@@ -650,9 +650,9 @@ OEM-specific Type
 Handle 0x004C, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 4C 00 35 00 00 00 00 00 00 00 00 00 00 00
+		83 40 4C 00 3F 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 07 3B 00 00 00 00 09 41 6C 06 01 00 06 00
-		1C 04 0A 00 01 00 01 02 C8 00 EA 10 00 00 00 00
+		1C 04 0A 00 03 00 01 02 C8 00 EA 10 00 00 00 00
 		00 00 00 00 3E 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x004D, DMI type 127, 4 bytes

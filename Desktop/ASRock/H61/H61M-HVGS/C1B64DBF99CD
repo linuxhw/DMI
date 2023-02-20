@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 20 structures occupying 1192 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 09/01/2011
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -51,8 +51,8 @@ Base Board Information
 	Product Name: H61M-HVGS
 	Version:                       
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148                       
+	Features:
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:                       
@@ -116,8 +116,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -168,8 +168,8 @@ Physical Memory Array
 Handle 0x000C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x000B
 	Partition Width: 1
 
@@ -179,7 +179,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM0
@@ -192,7 +192,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: DBLT4GN568S       
 	Rank: 2
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x000E, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -209,23 +209,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM1
 	Bank Locator: A1_BANK1
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer1
+	Speed: 1067 MT/s
+	Manufacturer: Hynix Semiconduc
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber1
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: HMT451U6BFR8A-PB  
+	Rank: 1
+	Configured Memory Speed: Unknown
 
-Handle 0x0010, DMI type 126, 35 bytes
-Inactive
+Handle 0x0010, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x000F
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: 1
 
 Handle 0x0011, DMI type 32, 20 bytes
 System Boot Information

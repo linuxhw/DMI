@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
 Table at 0xC75FB000.
@@ -10,7 +10,7 @@ BIOS Information
 	Release Date: 01/10/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		APM is supported
@@ -570,20 +570,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 0
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
+	Speed: 2666 MT/s
 	Manufacturer: 0813
 	Serial Number: --
 	Asset Tag: --
 	Part Number: TYA4U2666D19082C    
 	Rank: 1
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -594,20 +594,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 2
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
+	Speed: 2666 MT/s
 	Manufacturer: 0813
 	Serial Number: --
 	Asset Tag: --
 	Part Number: TYA4U2666D19082C    
 	Rank: 1
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -672,10 +672,10 @@ Handle 0x003F, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: LGA1151
 	Type: Central Processor
-	Family: Core i3
+	Family: Core i5
 	Manufacturer: Intel(R) Corporation
-	ID: EB 06 09 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 158, Stepping 11
+	ID: ED 06 09 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 158, Stepping 13
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -705,11 +705,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz
+	Version: Intel(R) Core(TM) i5-9600KF CPU @ 3.70GHz
 	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
-	Current Speed: 3600 MHz
+	Current Speed: 3700 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA1151
 	L1 Cache Handle: 0x003C
@@ -718,9 +718,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
-	Core Count: 4
-	Core Enabled: 4
-	Thread Count: 4
+	Core Count: 6
+	Core Enabled: 6
+	Thread Count: 6
 	Characteristics:
 		64-bit capable
 		Multi-Core
@@ -759,7 +759,7 @@ OEM-specific Type
 Handle 0x0043, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 43 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 43 00 10 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 CA A2 00 00 00 00 01 00 00 00 08 00 0B 00
 		06 0E 41 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
@@ -783,7 +783,7 @@ Handle 0x0045, DMI type 221, 33 bytes
 OEM-specific Type
 	Header and Data:
 		DD 21 45 00 04 01 00 03 03 00 00 00 02 00 00 00
-		00 B4 00 03 00 00 05 00 00 00 04 00 FF FF FF FF
+		00 B8 00 03 00 00 05 00 00 00 04 00 FF FF FF FF
 		FF
 	Strings:
 		Reference Code - CPU
@@ -822,7 +822,7 @@ OEM-specific Type
 	Header and Data:
 		DD 36 48 00 07 01 00 03 03 00 00 00 02 00 03 05
 		00 00 00 03 00 03 03 00 00 00 04 05 FF FF FF FF
-		FF 06 00 FF FF FF 08 00 07 00 FF FF FF 08 00 08
+		FF 06 00 FF FF FF 0D 00 07 00 FF FF FF 0D 00 08
 		00 FF FF FF 02 03
 	Strings:
 		Reference Code - SA - System Agent
@@ -950,7 +950,7 @@ Group Associations
 Handle 0x0055, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 55 00 01 03 01 45 02 00 90 06 01 10 86 20
+		DB 51 55 00 01 03 01 45 02 00 90 06 03 10 86 20
 		00 00 00 04 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

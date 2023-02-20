@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 76 structures occupying 2930 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 08/06/2012
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -87,7 +87,7 @@ Handle 0x0004, DMI type 4, 40 bytes
 Processor Information
 	Socket Designation: LGA1366
 	Type: Central Processor
-	Family: Core i7
+	Family: Xeon
 	Manufacturer: Intel            
 	ID: C2 06 02 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 44, Stepping 2
@@ -120,11 +120,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i7 CPU X 980 @ 3.33GHz            
+	Version: Intel(R) Xeon(R) CPU X5690 @ 3.47GHz                
 	Voltage: 1.2 V
-	External Clock: 133 MHz
-	Max Speed: 3333 MHz
-	Current Speed: 3600 MHz
+	External Clock: 161 MHz
+	Max Speed: 3466 MHz
+	Current Speed: 4347 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -177,8 +177,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12288 kB
-	Maximum Size: 12288 kB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -216,41 +216,41 @@ Memory Controller Information
 Handle 0x0009, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM0
-	Bank Connections: 1
-	Current Speed: 1 ns
-	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Bank Connections: 0 0
+	Current Speed: Unknown
+	Type: Unknown
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM1
-	Bank Connections: 2
-	Current Speed: 1 ns
-	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Bank Connections: 0 0
+	Current Speed: Unknown
+	Type: Unknown
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x000B, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM2
-	Bank Connections: 0 0
-	Current Speed: Unknown
-	Type: Unknown
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Bank Connections: 3
+	Current Speed: 1 ns
+	Type: DIMM
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000C, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM3
-	Bank Connections: 0 0
-	Current Speed: Unknown
-	Type: Unknown
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Bank Connections: 4
+	Current Speed: 1 ns
+	Type: DIMM
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000D, DMI type 6, 12 bytes
@@ -259,8 +259,8 @@ Memory Module Information
 	Bank Connections: 5
 	Current Speed: 1 ns
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000E, DMI type 6, 12 bytes
@@ -269,8 +269,8 @@ Memory Module Information
 	Bank Connections: 6
 	Current Speed: 1 ns
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000F, DMI type 8, 9 bytes
@@ -679,7 +679,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
@@ -709,7 +709,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -739,14 +739,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
 	Type: Other
 	Type Detail: Other
-	Speed: Unknown
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer02
 	Serial Number: --
 	Asset Tag: --
@@ -769,14 +769,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
 	Type: Other
 	Type Detail: Other
-	Speed: Unknown
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer03
 	Serial Number: --
 	Asset Tag: --
@@ -799,14 +799,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4
 	Bank Locator: BANK4
 	Type: Other
 	Type Detail: Other
-	Speed: Unknown
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer04
 	Serial Number: --
 	Asset Tag: --
@@ -829,14 +829,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM5
 	Bank Locator: BANK5
 	Type: Other
 	Type Detail: Other
-	Speed: Unknown
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer05
 	Serial Number: --
 	Asset Tag: --

@@ -1,13 +1,13 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0x7FB74000.
+Table at 0x8FB73000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: P1.00
-	Release Date: 04/20/2020
+	Version: L1.31
+	Release Date: 04/01/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -88,13 +88,13 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:01:00.0
+	Bus Address: 0000:02:00.0
 
 Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot2
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 18
 	Characteristics:
@@ -124,7 +124,17 @@ Handle 0x0008, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0009, DMI type 16, 23 bytes
+Handle 0x0009, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: INTC
+	Specification Version: 2.0
+	Firmware Revision: 500.16
+	Description: INTEL
+	Characteristics:
+		Family configurable via platform software support
+	OEM-specific Information: 0x00000000
+
+Handle 0x000A, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -133,9 +143,9 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
-Handle 0x000A, DMI type 17, 84 bytes
+Handle 0x000B, DMI type 17, 84 bytes
 Memory Device
-	Array Handle: 0x0009
+	Array Handle: 0x000A
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -168,9 +178,9 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x000B, DMI type 17, 84 bytes
+Handle 0x000C, DMI type 17, 84 bytes
 Memory Device
-	Array Handle: 0x0009
+	Array Handle: 0x000A
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -203,50 +213,50 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x000C, DMI type 19, 31 bytes
+Handle 0x000D, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
-	Physical Array Handle: 0x0009
+	Physical Array Handle: 0x000A
 	Partition Width: 2
 
-Handle 0x000D, DMI type 20, 35 bytes
+Handle 0x000E, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x000A
-	Memory Array Mapped Address Handle: 0x000C
+	Physical Device Handle: 0x000B
+	Memory Array Mapped Address Handle: 0x000D
 	Partition Row Position: 1
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x000E, DMI type 20, 35 bytes
+Handle 0x000F, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00200000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x000B
-	Memory Array Mapped Address Handle: 0x000C
+	Physical Device Handle: 0x000C
+	Memory Array Mapped Address Handle: 0x000D
 	Partition Row Position: 1
 	Interleave Position: 2
 	Interleaved Data Depth: 1
 
-Handle 0x000F, DMI type 221, 26 bytes
+Handle 0x0010, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 0F 00 03 01 00 09 00 31 50 00 02 00 00 00
+		DD 1A 10 00 03 01 00 09 00 31 50 00 02 00 00 00
 		00 CC 00 03 00 01 0D 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
 		TXT ACM version
 
-Handle 0x0010, DMI type 221, 26 bytes
+Handle 0x0011, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 10 00 03 01 00 09 00 31 50 00 02 00 0A 00
+		DD 1A 11 00 03 01 00 09 00 31 50 00 02 00 0A 00
 		00 01 00 03 04 0E 05 0C 57 04
 	Strings:
 		Reference Code - ME
@@ -254,10 +264,10 @@ OEM-specific Type
 		ME Firmware Version
 		Consumer SKU
 
-Handle 0x0011, DMI type 221, 47 bytes
+Handle 0x0012, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 11 00 06 01 00 09 00 31 50 00 02 03 FF FF
+		DD 2F 12 00 06 01 00 09 00 31 50 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
 		00 06 00 FF FF FF FF FF 07 00 0B 00 00 00 00
 	Strings:
@@ -269,10 +279,10 @@ OEM-specific Type
 		OPROM - RST - RAID
 		CMLV PCH H Ax Hsio Version
 
-Handle 0x0012, DMI type 221, 54 bytes
+Handle 0x0013, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 12 00 07 01 00 09 00 31 50 00 02 00 00 00
+		DD 36 13 00 07 01 00 09 00 31 50 00 02 00 00 00
 		00 43 00 03 00 09 00 31 50 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 03 00 07 00 00 00 00 03 00 08
 		00 FF FF FF FF FF
@@ -286,14 +296,14 @@ OEM-specific Type
 		SA-CRID New Value
 		OPROM - VBIOS
 
-Handle 0x0013, DMI type 221, 12 bytes
+Handle 0x0014, DMI type 221, 12 bytes
 OEM-specific Type
 	Header and Data:
-		DD 0C 13 00 01 01 00 04 00 00 00 00
+		DD 0C 14 00 01 01 00 04 00 00 00 00
 	Strings:
 		FSP Binary Version
 
-Handle 0x0014, DMI type 7, 27 bytes
+Handle 0x0015, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -309,7 +319,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0015, DMI type 7, 27 bytes
+Handle 0x0016, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -325,7 +335,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 4-way Set-associative
 
-Handle 0x0016, DMI type 7, 27 bytes
+Handle 0x0017, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L3 Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -341,7 +351,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 12-way Set-associative
 
-Handle 0x0017, DMI type 4, 48 bytes
+Handle 0x0018, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: CPUSocket
 	Type: Central Processor
@@ -382,12 +392,12 @@ Processor Information
 	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
-	Current Speed: 3600 MHz
+	Current Speed: 3599 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
-	L1 Cache Handle: 0x0014
-	L2 Cache Handle: 0x0015
-	L3 Cache Handle: 0x0016
+	L1 Cache Handle: 0x0015
+	L2 Cache Handle: 0x0016
+	L3 Cache Handle: 0x0017
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
@@ -402,35 +412,27 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0018, DMI type 130, 20 bytes
+Handle 0x0019, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 18 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
+		82 14 19 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
 		C0 00 00 00
 
-Handle 0x0019, DMI type 131, 64 bytes
+Handle 0x001A, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 19 00 31 00 00 00 0A 00 00 00 00 00 01 00
+		83 40 1A 00 31 00 00 00 0A 00 00 00 00 00 01 00
 		F8 00 DA A3 00 00 00 00 01 00 00 00 05 00 0E 00
 		57 04 0C 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x001A, DMI type 41, 11 bytes
+Handle 0x001B, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
 	Type Instance: 1
 	Bus Address: 0000:00:00.0
-
-Handle 0x001B, DMI type 41, 11 bytes
-Onboard Device
-	Reference Designation: Onboard - Video
-	Type: Video
-	Status: Enabled
-	Type Instance: 1
-	Bus Address: 0000:00:02.0
 
 Handle 0x001C, DMI type 41, 11 bytes
 Onboard Device
@@ -502,8 +504,8 @@ OEM-specific Type
 		DD 59 24 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
-		09 00 07 11 0D 00 FF FF FF FF FF 0E 00 00 07 00
+		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
+		FF FF FF FF 0D 00 FF FF FF FF FF 0E 00 00 07 00
 		00 00 0F 00 00 02 00 0F 00
 	Strings:
 		Lan Phy Version
@@ -531,8 +533,8 @@ Group Associations
 Handle 0x0026, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 26 00 01 04 01 55 02 00 90 06 01 10 86 20
-		00 00 00 04 40 00 00 00 00 00 00 00 00 00 00 02
+		DB 6A 26 00 01 04 01 55 02 00 90 06 01 85 36 20
+		00 00 00 04 40 08 00 00 00 00 00 00 00 00 00 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

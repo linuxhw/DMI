@@ -1,14 +1,14 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-26 structures occupying 1225 bytes.
-Table at 0xBC420000.
+26 structures occupying 1216 bytes.
+Table at 0xBC514000.
 
 Handle 0x000B, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Hewlett-Packard
-	Version: 68SCE Ver. F.22
-	Release Date: 12/22/2011
+	Version: 68SCE Ver. F.67
+	Release Date: 02/13/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 2560 kB
@@ -30,8 +30,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
-	BIOS Revision: 15.34
-	Firmware Revision: 151.74
+	BIOS Revision: 15.103
+	Firmware Revision: 151.78
 
 Handle 0x000C, DMI type 1, 27 bytes
 System Information
@@ -48,7 +48,7 @@ Handle 0x000D, DMI type 2, 16 bytes
 Base Board Information
 	Manufacturer: Hewlett-Packard
 	Product Name: 161D
-	Version: KBC Version 97.4A
+	Version: KBC Version 97.4E
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -214,7 +214,7 @@ On Board Device Information
 Handle 0x0013, DMI type 11, 5 bytes
 OEM Strings
 	String 1: ABS 70/71 79 7A 7B 7C
-	String 2: CSM v01.52
+	String 2: CSM v01.53
 	String 3: HP_Mute_LED_0_0
 	String 4: www.hp.com
 	String 5: $OSTYPE
@@ -252,7 +252,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(top)
@@ -260,10 +260,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: 017A
+	Manufacturer: 04EF
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 78.B2GCZ.9K00C    
+	Part Number: TEAMGROUP-SD3-1600
 
 Handle 0x0008, DMI type 17, 27 bytes
 Memory Device
@@ -271,7 +271,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(under)
@@ -279,24 +279,24 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: 04EF
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT351S6CFR8C-PB  
+	Part Number: TEAMGROUP-SD3-1600
 
 Handle 0x000A, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0005
 	Partition Width: 2
 
 Handle 0x0007, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0006
 	Memory Array Mapped Address Handle: 0x000A
 	Partition Row Position: 1
@@ -305,13 +305,13 @@ Memory Device Mapped Address
 
 Handle 0x0009, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0008
 	Memory Array Mapped Address Handle: 0x000A
 	Partition Row Position: 1
-	Interleave Position: 1
+	Interleave Position: 2
 	Interleaved Data Depth: 1
 
 Handle 0x0015, DMI type 22, 26 bytes

@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 99 structures occupying 3928 bytes.
 Table at 0x000EBBA0.
@@ -10,7 +11,7 @@ BIOS Information
 	Release Date: 04/19/2012
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -170,8 +171,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -653,20 +654,20 @@ Memory Device
 	Error Information Handle: 0x0041
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M471B5273DH0-CH9  
 	Rank: 2
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0040, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -708,7 +709,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: [Empty]
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0043, DMI type 17, 34 bytes
 Memory Device
@@ -729,7 +730,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: [Empty]
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0044, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -760,7 +761,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: [Empty]
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0046, DMI type 21, 7 bytes
 Built-in Pointing Device

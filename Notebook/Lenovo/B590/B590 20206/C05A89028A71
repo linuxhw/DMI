@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 59 structures occupying 2457 bytes.
 Table at 0xCCE3D000.
@@ -121,8 +122,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -162,20 +163,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M471B5773EB0-CK0  
 	Rank: Unknown
-	Configured Clock Speed: 1600 MHz
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000E, DMI type 17, 34 bytes
 Memory Device
@@ -183,20 +184,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
 	Part Number: HMT325S6CFR8C-PB  
 	Rank: Unknown
-	Configured Clock Speed: 1600 MHz
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000F, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -213,7 +214,7 @@ BIOS Information
 	Release Date: 08/06/2015
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -436,7 +437,7 @@ Portable Battery
 	Location: Rear
 	Manufacturer: SONY
 	Name: 45N1047
-	Design Capacity: 47520 mWh
+	Design Capacity: 42770 mWh
 	Design Voltage: 10800 mV
 	SBDS Version: 01.08
 	Maximum Error: Unknown
@@ -482,12 +483,9 @@ Built-in Pointing Device
 	Buttons: 2
 
 Handle 0x0031, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 31 00 01 08 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: No
 
 Handle 0x0032, DMI type 133, 5 bytes
 OEM-specific Type
@@ -506,9 +504,8 @@ OEM-specific Type
 		00 00 00 06 01 FF 04 FF FF FF
 
 Handle 0x0034, DMI type 135, 10 bytes
-OEM-specific Type
-	Header and Data:
-		87 0A 34 00 54 50 07 03 01 04
+ThinkPad Device Presence Detection
+	Fingerprint Reader: No
 
 Handle 0x0035, DMI type 15, 81 bytes
 System Event Log
@@ -600,12 +597,9 @@ OEM-specific Type
 		00 00
 
 Handle 0x0039, DMI type 140, 15 bytes
-OEM-specific Type
-	Header and Data:
-		8C 0F 39 00 4C 45 4E 4F 56 4F 0B 07 01 01 02
-	Strings:
-		H9EC09WW
-		10/05/2011
+ThinkPad Embedded Controller Program
+	Version ID: H9EC09WW
+	Release Date: 10/05/2011
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

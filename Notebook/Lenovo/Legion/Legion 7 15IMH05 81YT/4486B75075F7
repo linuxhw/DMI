@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x6E2BF000.
@@ -10,7 +10,7 @@ BIOS Information
 	Release Date: 05/25/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 12 MB
+	ROM Size: 12288 kB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -334,8 +334,6 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.0
-	Data Bus Width: 8
-	Peer Devices: 0
 
 Handle 0x001A, DMI type 9, 19 bytes
 System Slot Information
@@ -348,8 +346,6 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.1
-	Data Bus Width: 8
-	Peer Devices: 0
 
 Handle 0x001B, DMI type 9, 19 bytes
 System Slot Information
@@ -362,8 +358,6 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.2
-	Data Bus Width: 8
-	Peer Devices: 0
 
 Handle 0x001C, DMI type 9, 19 bytes
 System Slot Information
@@ -376,8 +370,6 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.3
-	Data Bus Width: 8
-	Peer Devices: 0
 
 Handle 0x001D, DMI type 9, 19 bytes
 System Slot Information
@@ -390,8 +382,6 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.4
-	Data Bus Width: 10
-	Peer Devices: 0
 
 Handle 0x001E, DMI type 11, 5 bytes
 OEM Strings
@@ -464,7 +454,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 16384 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -499,7 +489,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 16384 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -663,10 +653,8 @@ Onboard Device
 Handle 0x0034, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: INTC
-	Specification Version: 2.0
-	Firmware Revision: 500.14
-	Description: TPM Device
-	Characteristics:
+	Specification Version: 2.0	Firmware Revision: 500.14
+	Description: TPM Device	Characteristics:
 		TPM Device characteristics not supported
 	OEM-specific Information: 0x00000000
 
@@ -723,7 +711,7 @@ OEM-specific Type
 Handle 0x003C, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 3C 00 01 04 01 45 02 00 A0 06 01 85 36 20
+		DB 6A 3C 00 01 04 01 45 02 00 90 06 01 85 36 20
 		00 00 00 00 48 00 00 00 00 00 00 00 00 40 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

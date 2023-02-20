@@ -1,8 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-29 structures occupying 1584 bytes.
-Table at 0xCCE7A018.
+28 structures occupying 1538 bytes.
+Table at 0x000EE880.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 04/12/2016
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8 MB
+	ROM Size: 8192 kB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -118,13 +118,14 @@ Handle 0x0007, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE2
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 18
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
+	Bus Address: ffff:01:00.0
 
 Handle 0x0008, DMI type 9, 17 bytes
 System Slot Information
@@ -255,8 +256,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1 MB
-	Maximum Size: 1 MB
+	Installed Size: 1024 kB
+	Maximum Size: 1024 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -271,8 +272,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6 MB
-	Maximum Size: 6 MB
+	Installed Size: 6144 kB
+	Maximum Size: 6144 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -317,28 +318,28 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: 0000
+	Speed: 1600 MT/s
+	Manufacturer: 0215
 	Serial Number: --
 	Asset Tag: --
-	Part Number:                   
+	Part Number: CMZ8GX3M2A1600C9  
 	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0014
-	Memory Array Mapped Address Handle: 0x001A
+	Memory Array Mapped Address Handle: 0x0019
 	Partition Row Position: 1
 	Interleave Position: 1
 	Interleaved Data Depth: 2
@@ -347,82 +348,71 @@ Handle 0x0016, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0012
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: 0215
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: [Empty]
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMZ8GX3M2A1600C9  
-	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Part Number: [Empty]
+	Rank: Unknown
+	Configured Memory Speed: Unknown
 
-Handle 0x0017, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0016
-	Memory Array Mapped Address Handle: 0x001A
-	Partition Row Position: 1
-	Interleave Position: 1
-	Interleaved Data Depth: 1
-
-Handle 0x0018, DMI type 17, 34 bytes
+Handle 0x0017, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0012
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 3
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: 0215
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CMZ8GX3M2A1600C9  
 	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0019, DMI type 20, 35 bytes
+Handle 0x0018, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00300000000
-	Ending Address: 0x003FFFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0018
-	Memory Array Mapped Address Handle: 0x001A
+	Physical Device Handle: 0x0017
+	Memory Array Mapped Address Handle: 0x0019
 	Partition Row Position: 1
 	Interleave Position: 2
 	Interleaved Data Depth: 2
 
-Handle 0x001A, DMI type 19, 31 bytes
+Handle 0x0019, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0012
 	Partition Width: 4
 
-Handle 0x001D, DMI type 131, 64 bytes
+Handle 0x001C, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 1D 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 1C 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 44 8C 00 00 00 00 01 00 00 00 01 00 09 00
 		F2 03 02 00 00 00 00 00 C8 00 3B 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x001F, DMI type 127, 4 bytes
+Handle 0x001E, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,9 +1,6 @@
-# dmidecode 2.12
-# SMBIOS entry point at 0xdcfe4000
-SMBIOS 3.2 present.
-# SMBIOS implementations newer than version 2.7 are not
-# fully supported by this version of dmidecode.
-47 structures occupying 2344 bytes.
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
+SMBIOS 3.2.0 present.
 Table at 0x000E8D60.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -13,7 +10,7 @@ BIOS Information
 	Release Date: 12/02/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 16384 kB
+	ROM Size: 16 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -146,8 +143,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -162,8 +159,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -176,16 +173,41 @@ Handle 0x000E, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: AM4
 	Type: Central Processor
-	Family: <OUT OF SPEC>
+	Family: Zen
 	Manufacturer: Advanced Micro Devices, Inc.
 	ID: 82 0F 80 00 FF FB 8B 17
+	Signature: Family 23, Model 8, Stepping 2
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
 	Version: AMD Ryzen 3 1200 Quad-Core Processor           
 	Voltage: 1.1 V
 	External Clock: 100 MHz
 	Max Speed: 3450 MHz
 	Current Speed: 3100 MHz
 	Status: Populated, Enabled
-	Upgrade: <OUT OF SPEC>
+	Upgrade: Socket AM4
 	L1 Cache Handle: 0x000B
 	L2 Cache Handle: 0x000C
 	L3 Cache Handle: 0x000D
@@ -232,10 +254,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: Unknown
 	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+	Memory Technology: Unknown
+	Memory Operating Mode Capability: Unknown
+	Firmware Version: Unknown
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0011, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -253,23 +286,34 @@ Memory Device
 	Error Information Handle: 0x0011
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: P0 CHANNEL A
-	Type: <OUT OF SPEC>
+	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2666 MHz
+	Speed: 2666 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: NMUD480E82-2666  
 	Rank: 1
-	Configured Clock Speed: 2666 MHz
-	Minimum voltage:  1.200 V
-	Maximum voltage:  1.200 V
-	Configured voltage:  1.200 V
+	Configured Memory Speed: 2666 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 10, Hex 0xAD
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 8 GB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0013, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -311,10 +355,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: Unknown
 	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+	Memory Technology: Unknown
+	Memory Operating Mode Capability: Unknown
+	Firmware Version: Unknown
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0016, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -332,23 +387,34 @@ Memory Device
 	Error Information Handle: 0x0016
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: P0 CHANNEL B
-	Type: <OUT OF SPEC>
+	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2666 MHz
+	Speed: 2666 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: NMUD480E82-2666  
 	Rank: 1
-	Configured Clock Speed: 2666 MHz
-	Minimum voltage:  1.200 V
-	Maximum voltage:  1.200 V
-	Configured voltage:  1.200 V
+	Configured Memory Speed: 2666 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 10, Hex 0xAD
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 8 GB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0018, DMI type 20, 35 bytes
 Memory Device Mapped Address

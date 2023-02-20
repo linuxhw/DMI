@@ -1,8 +1,6 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0x439DE000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -251,7 +249,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelA
@@ -286,7 +284,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelB
@@ -321,7 +319,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelC
@@ -356,7 +354,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelD
@@ -391,7 +389,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelA
@@ -426,7 +424,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelB
@@ -461,7 +459,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelC
@@ -496,7 +494,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelD
@@ -660,8 +658,8 @@ OEM-specific Type
 Handle 0x0023, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 23 00 01 04 01 45 02 00 A0 06 01 85 39 20
-		00 00 00 00 40 00 00 00 00 00 00 00 00 00 40 02
+		DB 6A 23 00 01 04 01 45 02 00 90 06 01 85 39 20
+		00 00 00 04 40 00 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -769,8 +767,6 @@ Handle 0x002A, DMI type 248, 11 bytes
 OEM-specific Type
 	Header and Data:
 		F8 0B 2A 00 00 02 6C 00 00 00 00
-	Strings:
-		?
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

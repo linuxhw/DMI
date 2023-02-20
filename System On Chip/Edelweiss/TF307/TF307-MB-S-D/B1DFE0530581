@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0xFE640000.
@@ -95,8 +95,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -111,8 +111,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: External
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -171,7 +171,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DDR4_CH0
@@ -206,7 +206,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DDR4_CH1
@@ -305,6 +305,8 @@ System Slot Information
 		3.3 V is provided
 		Hot-plug devices are supported
 	Bus Address: 0000:00:00.0
+	Data Bus Width: 4
+	Peer Devices: 0
 
 Handle 0x0902, DMI type 9, 19 bytes
 System Slot Information
@@ -317,6 +319,8 @@ System Slot Information
 		3.3 V is provided
 		Hot-plug devices are supported
 	Bus Address: 0000:02:00.0
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x0800, DMI type 8, 9 bytes
 Port Connector Information

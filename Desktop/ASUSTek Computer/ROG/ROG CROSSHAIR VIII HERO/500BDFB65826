@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
 Table at 0xCB7E5000.
@@ -6,8 +6,8 @@ Table at 0xCB7E5000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 4004
-	Release Date: 02/18/2022
+	Version: 4201
+	Release Date: 04/26/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -525,7 +525,7 @@ Handle 0x003A, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.77
+	Firmware Revision: 3.84
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -561,8 +561,8 @@ Memory Array Mapped Address
 Handle 0x003E, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0102FFFFFFF
-	Range Size: 62208 MB
+	Ending Address: 0x0202FFFFFFF
+	Range Size: 127744 MB
 	Physical Array Handle: 0x003C
 	Partition Width: 4
 
@@ -686,7 +686,7 @@ Memory Device
 	Error Information Handle: 0x0043
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A1
@@ -697,7 +697,7 @@ Memory Device
 	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMT64GX4M4E3200C16
+	Part Number: CMT128GX4M4C3200C16
 	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
@@ -711,15 +711,15 @@ Memory Device
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 16 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0045, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 64 GB
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
 	Physical Device Handle: 0x0044
 	Memory Array Mapped Address Handle: 0x003E
 	Partition Row Position: Unknown
@@ -742,7 +742,7 @@ Memory Device
 	Error Information Handle: 0x0046
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A2
@@ -753,7 +753,7 @@ Memory Device
 	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMT64GX4M4E3200C16
+	Part Number: CMT128GX4M4C3200C16
 	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
@@ -767,15 +767,15 @@ Memory Device
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 16 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0048, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 64 GB
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
 	Physical Device Handle: 0x0047
 	Memory Array Mapped Address Handle: 0x003E
 	Partition Row Position: Unknown
@@ -798,7 +798,7 @@ Memory Device
 	Error Information Handle: 0x0049
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B1
@@ -809,7 +809,7 @@ Memory Device
 	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMT64GX4M4E3200C16
+	Part Number: CMT128GX4M4C3200C16
 	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
@@ -823,15 +823,15 @@ Memory Device
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 16 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x004B, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 64 GB
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
 	Physical Device Handle: 0x004A
 	Memory Array Mapped Address Handle: 0x003E
 	Partition Row Position: Unknown
@@ -854,7 +854,7 @@ Memory Device
 	Error Information Handle: 0x004C
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B2
@@ -865,7 +865,7 @@ Memory Device
 	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMT64GX4M4E3200C16
+	Part Number: CMT128GX4M4C3200C16
 	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
@@ -879,15 +879,15 @@ Memory Device
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 16 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x004E, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 64 GB
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
 	Physical Device Handle: 0x004D
 	Memory Array Mapped Address Handle: 0x003E
 	Partition Row Position: Unknown

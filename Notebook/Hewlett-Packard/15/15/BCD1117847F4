@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 48 structures occupying 2358 bytes.
@@ -19,7 +19,7 @@ Memory Device
 	Error Information Handle: 0x0003
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(left)
@@ -32,7 +32,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: EBJ81UG8EFU0-GN-F 
 	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0004, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -51,7 +51,7 @@ Memory Device
 	Error Information Handle: 0x0007
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(right)
@@ -64,7 +64,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: M471B5673FH0-CH9  
 	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0008, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -92,7 +92,7 @@ BIOS Information
 	Release Date: 05/21/2014
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 6144 kB
+	ROM Size: 6 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -412,15 +412,15 @@ BIOS Language Information
 Handle 0x002D, DMI type 22, 26 bytes
 Portable Battery
 	Location: Primary
-	Manufacturer: 11-85
+	Manufacturer: 13-42
 	Manufacture Date: 01/01/2013
 	Serial Number: --
 	Name: OA04041
 	Chemistry: Lithium Ion
-	Design Capacity: 41440 mWh
-	Design Voltage: 14800 mV
-	SBDS Version: !
-	Maximum Error: 0%
+	Design Capacity: 42480 mWh
+	Design Voltage: 14400 mV
+	SBDS Version: 1
+	Maximum Error: 8%
 	OEM-specific Information: 0x00000000
 
 Handle 0x002E, DMI type 24, 5 bytes
@@ -573,8 +573,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown

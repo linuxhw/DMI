@@ -194,8 +194,8 @@ Memory Module Information
 	Bank Connections: 0 1
 	Current Speed: 129 ns
 	Type: Unknown EDO
-	Installed Size: 1024 MB (Double-bank Connection)
-	Enabled Size: 1024 MB (Double-bank Connection)
+	Installed Size: 512 MB (Double-bank Connection)
+	Enabled Size: 512 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0008, DMI type 6, 12 bytes
@@ -211,21 +211,21 @@ Memory Module Information
 Handle 0x0009, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A2
-	Bank Connections: None
+	Bank Connections: 4 5
 	Current Speed: 129 ns
 	Type: Unknown EDO
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 512 MB (Double-bank Connection)
+	Enabled Size: 512 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A3
-	Bank Connections: None
+	Bank Connections: 6 7
 	Current Speed: 129 ns
 	Type: Unknown EDO
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 1024 MB (Double-bank Connection)
+	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000B, DMI type 7, 19 bytes
@@ -430,7 +430,7 @@ Handle 0x001F, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI2
 	Type: 32-bit PCI
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 3
 	Characteristics:
@@ -461,14 +461,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 512 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
 	Bank Locator: Bank0/1
 	Type: DDR
 	Type Detail: Synchronous
-	Speed: 400 MT/s
+	Speed: 333 MT/s
 	Manufacturer: None
 	Serial Number: --
 	Asset Tag: --
@@ -487,7 +487,7 @@ Memory Device
 	Bank Locator: Bank2/3
 	Type: DDR
 	Type Detail: Synchronous
-	Speed: 400 MT/s
+	Speed: 333 MT/s
 	Manufacturer: None
 	Serial Number: --
 	Asset Tag: --
@@ -499,14 +499,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 512 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A2
 	Bank Locator: Bank4/5
 	Type: DDR
 	Type Detail: Synchronous
-	Speed: 400 MT/s
+	Speed: 333 MT/s
 	Manufacturer: None
 	Serial Number: --
 	Asset Tag: --
@@ -518,14 +518,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A3
 	Bank Locator: Bank6/7
 	Type: DDR
 	Type Detail: Synchronous
-	Speed: 400 MT/s
+	Speed: 333 MT/s
 	Manufacturer: None
 	Serial Number: --
 	Asset Tag: --
@@ -534,24 +534,24 @@ Memory Device
 Handle 0x0026, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 3 GB
 	Physical Array Handle: 0x0021
 	Partition Width: 1
 
 Handle 0x0027, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0001FFFFFFF
+	Range Size: 512 MB
 	Physical Device Handle: 0x0022
 	Memory Array Mapped Address Handle: 0x0026
 	Partition Row Position: 1
 
 Handle 0x0028, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x0007FFFFFFF
+	Starting Address: 0x00020000000
+	Ending Address: 0x0005FFFFFFF
 	Range Size: 1 GB
 	Physical Device Handle: 0x0023
 	Memory Array Mapped Address Handle: 0x0026
@@ -559,18 +559,18 @@ Memory Device Mapped Address
 
 Handle 0x0029, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00060000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 512 MB
 	Physical Device Handle: 0x0024
 	Memory Array Mapped Address Handle: 0x0026
 	Partition Row Position: 1
 
 Handle 0x002A, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0025
 	Memory Array Mapped Address Handle: 0x0026
 	Partition Row Position: 1

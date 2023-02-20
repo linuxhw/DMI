@@ -306,14 +306,14 @@ Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
 	Type: 32-bit PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 1
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:01.0
+	Bus Address: 0000:01:01.0
 
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
@@ -326,7 +326,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:02:15.0
+	Bus Address: 0000:03:15.0
 
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
@@ -339,7 +339,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:01:1c.6
+	Bus Address: 0000:02:1c.6
 
 Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
@@ -381,15 +381,15 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: Multi-bit ECC
-	Maximum Capacity: 5 GB
+	Maximum Capacity: 6 GB
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
 Handle 0x0028, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0013FFFFFFF
-	Range Size: 5 GB
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 6 GB
 	Physical Array Handle: 0x0027
 	Partition Width: 255
 
@@ -429,7 +429,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B1
@@ -447,8 +447,8 @@ Memory Device
 Handle 0x002C, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0013FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x002B
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: 1

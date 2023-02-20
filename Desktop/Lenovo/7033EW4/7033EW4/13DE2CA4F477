@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 103 structures occupying 3893 bytes.
@@ -153,8 +153,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -169,8 +169,8 @@ Cache Information
 	Configuration: Disabled, Not Socketed, Level 3
 	Operational Mode: Unknown
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -247,14 +247,14 @@ Handle 0x0010, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B2
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 1
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:01.0
+	Bus Address: 0000:01:01.0
 
 Handle 0x0011, DMI type 9, 17 bytes
 System Slot Information
@@ -267,7 +267,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:02:1c.3
+	Bus Address: 0000:03:1c.3
 
 Handle 0x0012, DMI type 9, 17 bytes
 System Slot Information
@@ -280,7 +280,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:03:1c.4
+	Bus Address: 0000:04:1c.4
 
 Handle 0x0013, DMI type 9, 17 bytes
 System Slot Information
@@ -293,7 +293,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:03:1c.5
+	Bus Address: 0000:04:1c.5
 
 Handle 0x0014, DMI type 10, 6 bytes
 On Board Device Information
@@ -369,7 +369,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM0
@@ -410,7 +410,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM1
@@ -451,7 +451,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM2
@@ -492,7 +492,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM3
@@ -1068,7 +1068,7 @@ OEM-specific Type
 Handle 0x0061, DMI type 134, 16 bytes
 OEM-specific Type
 	Header and Data:
-		86 10 61 00 00 4A 10 00 00 4E 00 00 00 02 01 02
+		86 10 61 00 00 4A 10 00 00 4E 00 00 00 03 01 02
 	Strings:
 		TPM INFO
 		System Reserved
@@ -1096,7 +1096,7 @@ OEM-specific Type
 Handle 0x0065, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 65 00 35 00 00 00 07 00 00 00 00 00 36 00
+		83 40 65 00 3F 00 00 00 07 00 00 00 00 00 36 00
 		F8 00 4E 1C FF FF FF FF 19 80 00 00 01 00 07 00
 		5F 04 14 00 00 00 00 00 C8 00 02 15 00 00 00 00
 		00 00 00 00 36 00 00 00 76 50 72 6F 00 00 00 00

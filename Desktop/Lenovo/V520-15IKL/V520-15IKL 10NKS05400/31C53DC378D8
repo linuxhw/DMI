@@ -1,16 +1,16 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0xDCE86000.
+Table at 0x9EE86000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: M16KT67A
-	Release Date: 03/25/2021
+	Version: M16KT68A
+	Release Date: 12/27/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 6144 kB
+	ROM Size: 6 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -31,7 +31,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 0.67
+	BIOS Revision: 0.68
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -343,7 +343,7 @@ On Board Device Information
 Handle 0x0022, DMI type 11, 5 bytes
 OEM Strings
 	String 1: LENOVO ThinkCentre Embedded Controller -[N/A]-
-	String 2: LENOVO ThinkCentre BIOS Boot Block Revision 1.67
+	String 2: LENOVO ThinkCentre BIOS Boot Block Revision 1.68
 	String 3: Lenovo Service Engine Not Supported
 	String 4: INVALID
 	String 5: INVALID
@@ -621,7 +621,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
@@ -634,7 +634,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: RMUA5120ME86H9F-2666
 	Rank: 1
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -645,7 +645,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
@@ -658,7 +658,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: CT4G4DFS8266.M8FF   
 	Rank: 1
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -678,9 +678,9 @@ System Event Log
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0xFFDC2000
+	Access Address: 0xFFDBF000
 	Status: Valid, Not Full
-	Change Token: 0x00000024
+	Change Token: 0x00000030
 	Header Format: Type 1
 	Supported Log Type Descriptors: 25
 	Descriptor 1: Single-bit ECC memory error
@@ -772,8 +772,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -890,7 +890,7 @@ Handle 0x004C, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 4C 00 03 01 00 01 04 00 00 00 02 00 00 00
-		00 DE 00 03 00 00 05 00 00 00
+		00 EC 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -976,12 +976,9 @@ OEM-specific Type
 		Platform Version
 
 Handle 0x0051, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 51 00 01 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 80 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: Available
 
 Handle 0x0052, DMI type 136, 6 bytes
 OEM-specific Type

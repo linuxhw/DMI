@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.1 present.
 Table at 0x7E320000.
@@ -360,20 +360,20 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2667 MT/s
-	Manufacturer: 8945
+	Speed: 3000 MT/s
+	Manufacturer: 8C26
 	Serial Number: --
 	Asset Tag: --
-	Part Number: GKE800SO102408-2666A
-	Rank: 1
-	Configured Memory Speed: 2667 MT/s
+	Part Number: TIMETEC-SD4-3200    
+	Rank: 2
+	Configured Memory Speed: 3000 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.2 V
@@ -384,20 +384,20 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2667 MT/s
-	Manufacturer: 8945
+	Speed: 3000 MT/s
+	Manufacturer: 8C26
 	Serial Number: --
 	Asset Tag: --
-	Part Number: GKE800SO102408-2666A
-	Rank: 1
-	Configured Memory Speed: 2667 MT/s
+	Part Number: TIMETEC-SD4-3200    
+	Rank: 2
+	Configured Memory Speed: 3000 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.2 V
@@ -405,16 +405,16 @@ Memory Device
 Handle 0x001F, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x001C
 	Partition Width: 2
 
 Handle 0x0020, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x001D
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: Unknown
@@ -424,8 +424,8 @@ Memory Device Mapped Address
 Handle 0x0021, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: Unknown
@@ -572,8 +572,8 @@ OEM-specific Type
 Handle 0x0031, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 31 00 01 04 01 45 02 00 90 06 01 10 83 20
-		00 00 00 00 40 00 00 00 00 00 00 00 00 40 40 02
+		DB 6A 31 00 01 04 01 45 02 00 A0 06 01 10 86 20
+		00 00 00 04 40 00 00 00 00 00 00 00 00 40 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

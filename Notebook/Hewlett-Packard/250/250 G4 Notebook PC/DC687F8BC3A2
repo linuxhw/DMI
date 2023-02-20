@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-68 structures occupying 3576 bytes.
+68 structures occupying 3572 bytes.
 Table at 0x6F5F9000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 05/17/2016
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 6144 kB
+	ROM Size: 6 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -194,8 +194,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -503,7 +503,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-slot 1(top)
@@ -527,7 +527,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-slot 2(under)
@@ -584,14 +584,14 @@ Built-in Pointing Device
 Handle 0x002F, DMI type 22, 26 bytes
 Portable Battery
 	Location: Primary
-	Manufacturer: 111-83-72
+	Manufacturer: 13142
 	Manufacture Date: 0
 	Serial Number: --
 	Name: HS04041
-	Design Capacity: 41440 mWh
-	Design Voltage: 14800 mV
-	SBDS Version: !
-	Maximum Error: 0%
+	Design Capacity: 32120 mWh
+	Design Voltage: 14600 mV
+	SBDS Version: 1
+	Maximum Error: 100%
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x000A070C
 
@@ -702,7 +702,7 @@ OEM-specific Type
 Handle 0x003B, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 3B 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 3B 00 10 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 48 9D 00 00 00 00 01 00 00 00 00 00 0B 00
 		88 04 00 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 FF 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
@@ -715,7 +715,7 @@ OEM-specific Type
 Handle 0x003D, DMI type 219, 81 bytes
 HP ProLiant Information
 	Power Features: 0x45010301
-	Omega Features: 0x06900002
+	Omega Features: 0x06900000
 	Misc. Features: 0x00000000
 		iCRU: No
 		UEFI: No

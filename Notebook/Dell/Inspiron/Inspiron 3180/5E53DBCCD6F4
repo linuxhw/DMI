@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
 Table at 0xE7265000.
@@ -10,7 +10,7 @@ BIOS Information
 	Release Date: 03/09/2018
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -72,7 +72,7 @@ Chassis Information
 	Version: 1.3.0
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -183,8 +183,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -438,7 +438,7 @@ Memory Device
 	Error Information Handle: 0x0023
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: 1
 	Locator: DIMM 0
@@ -451,7 +451,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: HMA851S6AFR6N-UH    
 	Rank: 1
-	Configured Clock Speed: 1200 MT/s
+	Configured Memory Speed: 1200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -514,7 +514,7 @@ Portable Battery
 	OEM-specific Information: 0x00000801
 
 Handle 0x0029, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x002A, DMI type 26, 22 bytes

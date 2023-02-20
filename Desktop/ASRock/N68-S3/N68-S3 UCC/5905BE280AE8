@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 22 structures occupying 1127 bytes.
 Table at 0x000FBDA0.
@@ -6,8 +7,8 @@ Table at 0x000FBDA0.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: P1.40
-	Release Date: 12/14/2010
+	Version: P1.60
+	Release Date: 09/19/2011
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 512 kB
@@ -53,7 +54,7 @@ Base Board Information
 	Product Name: N68-S3 UCC
 	Version:                       
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148                       
 	Features:
 		Board is a hosting board
 		Board is replaceable
@@ -83,10 +84,10 @@ Handle 0x0004, DMI type 4, 35 bytes
 Processor Information
 	Socket Designation: CPUSocket
 	Type: Central Processor
-	Family: Athlon II
+	Family: Phenom II
 	Manufacturer: AMD              
-	ID: 63 0F 10 00 FF FB 8B 17
-	Signature: Family 16, Model 6, Stepping 3
+	ID: 42 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 4, Stepping 2
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -111,11 +112,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Athlon(tm) II X2 250 Processor                  
+	Version: AMD Phenom(tm) II X3 720 Processor                  
 	Voltage: 1.5 V
 	External Clock: 200 MHz
-	Max Speed: 3000 MHz
-	Current Speed: 3000 MHz
+	Max Speed: 2800 MHz
+	Current Speed: 2800 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket 940
 	L1 Cache Handle: 0x0005
@@ -131,8 +132,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 256 kB
-	Maximum Size: 256 kB
+	Installed Size: 384 kB
+	Maximum Size: 384 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -147,8 +148,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 1536 kB
+	Maximum Size: 1536 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -182,21 +183,21 @@ Memory Controller Information
 Handle 0x0008, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM0
-	Bank Connections: 0 7
+	Bank Connections: 0 0
 	Current Speed: 160 ns
 	Type: ECC DIMM
-	Installed Size: 4096 MB (Double-bank Connection)
-	Enabled Size: 4096 MB (Double-bank Connection)
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM1
-	Bank Connections: 0 7
+	Bank Connections: 0 1
 	Current Speed: 162 ns
 	Type: ECC DIMM
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 4096 MB (Double-bank Connection)
+	Enabled Size: 4096 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 9, 13 bytes
@@ -270,14 +271,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 400 MHz
+	Speed: 667 MT/s
 	Manufacturer: Manufacturer0
 	Serial Number: --
 	Asset Tag: --
@@ -286,8 +287,8 @@ Memory Device
 Handle 0x0011, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0010
 	Memory Array Mapped Address Handle: 0x000F
 	Partition Row Position: 1
@@ -298,14 +299,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 400 MHz
+	Speed: 667 MT/s
 	Manufacturer: Manufacturer1
 	Serial Number: --
 	Asset Tag: --
@@ -313,9 +314,9 @@ Memory Device
 
 Handle 0x0013, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
+	Starting Address: 0x00080000000
 	Ending Address: 0x0017FFFFFFF
-	Range Size: 2 GB
+	Range Size: 4 GB
 	Physical Device Handle: 0x0012
 	Memory Array Mapped Address Handle: 0x000F
 	Partition Row Position: 1

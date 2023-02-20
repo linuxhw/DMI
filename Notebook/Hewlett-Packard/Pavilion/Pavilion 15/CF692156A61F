@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 36 structures occupying 1986 bytes.
@@ -19,7 +19,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(top)
@@ -32,7 +32,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: HMT451S6AFR8A-PB  
 	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0003, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -51,7 +51,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(under)
@@ -64,7 +64,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: HMT451S6AFR8A-PB  
 	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0006, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -311,7 +311,7 @@ Onboard Device
 Handle 0x001D, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 1D 00 11 00 00 00 00 00 00 00 00 00 00 00
+		83 40 1D 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 59 1E FF 00 00 00 01 20 00 00 01 00 08 00
 		46 05 1E 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 FF 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
@@ -455,8 +455,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown

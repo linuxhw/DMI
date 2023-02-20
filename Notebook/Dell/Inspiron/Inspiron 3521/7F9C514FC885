@@ -1,7 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-72 structures occupying 3119 bytes.
+72 structures occupying 3114 bytes.
 Table at 0xAAEBC000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -238,8 +238,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -487,7 +487,7 @@ Memory Device
 	Error Information Handle: 0x0026
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: JDIMM1
@@ -500,7 +500,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: HMT325S6EFR8C-PB  
 	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0025, DMI type 17, 34 bytes
 Memory Device
@@ -508,7 +508,7 @@ Memory Device
 	Error Information Handle: 0x0027
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: JDIMM2
@@ -521,7 +521,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: M471B5773DH0-YK0  
 	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0026, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -592,11 +592,11 @@ Built-in Pointing Device
 Handle 0x002D, DMI type 22, 26 bytes
 Portable Battery
 	Location: Sys. Battery Bay
-	Manufacturer: Simplo
-	Name: DELL FW1MN31P
+	Manufacturer:   
+	Name: DELL D555173
 	Chemistry: Lithium Ion
-	Design Capacity: 28000 mWh
-	Design Voltage: 14800 mV
+	Design Capacity: Unknown
+	Design Voltage: Unknown
 	SBDS Version: 1.0
 	Maximum Error: 100%
 	SBDS Serial Number: --

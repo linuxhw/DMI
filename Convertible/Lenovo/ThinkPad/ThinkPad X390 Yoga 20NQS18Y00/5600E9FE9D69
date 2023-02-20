@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
-Table at 0xADEAB000.
+Table at 0xADE3C000.
 
 Handle 0x0000, DMI type 222, 14 bytes
 OEM-specific Type
@@ -33,7 +33,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -57,7 +57,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -93,8 +93,8 @@ OEM-specific Type
 Handle 0x0007, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 07 00 03 01 00 07 00 5C 50 00 02 00 00 00
-		00 B8 00 03 00 01 05 00 00 00
+		DD 1A 07 00 03 01 00 07 00 68 40 00 02 00 00 00
+		00 EC 00 03 00 01 08 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -103,8 +103,8 @@ OEM-specific Type
 Handle 0x0008, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 08 00 03 01 00 07 00 5C 50 00 02 00 0C 00
-		00 0A 00 03 04 0C 00 23 93 05
+		DD 1A 08 00 03 01 00 07 00 68 40 00 02 00 0C 00
+		00 0A 00 03 04 0C 00 55 4D 07
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -114,7 +114,7 @@ OEM-specific Type
 Handle 0x0009, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 09 00 0B 01 00 07 00 5C 50 00 02 03 FF FF
+		DD 52 09 00 0B 01 00 07 00 68 40 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 30 00 05 00 FF FF FF 11
 		00 06 00 02 0A 00 00 00 07 00 02 00 00 00 00 08
 		00 09 00 00 00 00 09 00 0A 00 00 00 00 0A 00 07
@@ -137,8 +137,8 @@ OEM-specific Type
 Handle 0x000A, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 0A 00 07 01 00 07 00 5C 50 00 02 00 00 07
-		01 67 00 03 00 07 00 5C 50 00 04 05 FF FF FF FF
+		DD 36 0A 00 07 01 00 07 00 68 40 00 02 00 00 07
+		01 6E 00 03 00 07 00 68 40 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 0C 00 07 00 00 00 00 0C 00 08
 		00 00 00 00 03 00
 	Strings:
@@ -244,7 +244,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz
-	Voltage: 1.1 V
+	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 1800 MHz
 	Current Speed: 1600 MHz
@@ -275,8 +275,8 @@ OEM-specific Type
 Handle 0x0011, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: N2LET62W (1.62 )
-	Release Date: 06/14/2019
+	Version: N2LET89W (1.89 )
+	Release Date: 11/24/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -299,8 +299,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.62
-	Firmware Revision: 1.9
+	BIOS Revision: 1.89
+	Firmware Revision: 1.20
 
 Handle 0x0012, DMI type 1, 27 bytes
 System Information
@@ -434,34 +434,24 @@ Inactive
 
 Handle 0x0026, DMI type 9, 17 bytes
 System Slot Information
-	Designation: Media Card Slot
-	Type: Other
-	Current Usage: Available
-	Length: Other
-	Characteristics:
-		Hot-plug devices are supported
-	Bus Address: 0000:00:00.0
-
-Handle 0x0027, DMI type 9, 17 bytes
-System Slot Information
 	Designation: SimCard Slot
 	Type: Other
 	Current Usage: Available
 	Length: Other
 	Characteristics: None
-	Bus Address: 0000:00:00.0
+	Bus Address: 00ff:ff:1f.7
 
-Handle 0x0028, DMI type 12, 5 bytes
+Handle 0x0027, DMI type 12, 5 bytes
 System Configuration Options
 
-Handle 0x0029, DMI type 13, 22 bytes
+Handle 0x0028, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 1
 		en-US
 	Currently Installed Language: en-US
 
-Handle 0x002A, DMI type 22, 26 bytes
+Handle 0x0029, DMI type 22, 26 bytes
 Portable Battery
 	Location: Front
 	Manufacturer: LGC
@@ -475,54 +465,54 @@ Portable Battery
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000000
 
-Handle 0x002B, DMI type 140, 15 bytes
+Handle 0x002A, DMI type 140, 15 bytes
 OEM-specific Type
 	Header and Data:
-		8C 0F 2B 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
+		8C 0F 2A 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
 	Strings:
-		1.62 
-		1.61 
+		1.89 
+		1.89 
 
-Handle 0x002C, DMI type 133, 5 bytes
+Handle 0x002B, DMI type 133, 5 bytes
 OEM-specific Type
 	Header and Data:
-		85 05 2C 00 01
+		85 05 2B 00 01
 	Strings:
 		KHOIHGIUCCHHII
 
-Handle 0x002D, DMI type 135, 19 bytes
+Handle 0x002C, DMI type 135, 19 bytes
 OEM-specific Type
 	Header and Data:
-		87 13 2D 00 54 50 07 02 42 41 59 20 49 2F 4F 20
+		87 13 2C 00 54 50 07 02 42 41 59 20 49 2F 4F 20
 		04 00 00
 
-Handle 0x002E, DMI type 130, 20 bytes
+Handle 0x002D, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 2E 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
+		82 14 2D 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
 		C0 00 00 00
 
-Handle 0x002F, DMI type 131, 64 bytes
+Handle 0x002E, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 2F 00 31 00 00 00 0C 00 00 00 00 00 0A 00
+		83 40 2E 00 31 00 00 00 0C 00 00 00 00 00 0A 00
 		F8 00 84 9D 00 00 00 00 01 00 00 00 00 00 0C 00
-		93 05 23 00 00 00 00 00 FE 00 BE 15 00 00 00 00
+		4D 07 55 00 00 00 00 00 FE 00 BE 15 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0030, DMI type 24, 5 bytes
+Handle 0x002F, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
-Handle 0x0031, DMI type 132, 7 bytes
+Handle 0x0030, DMI type 132, 8 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 31 00 01 D8 36
+		84 08 30 00 02 D8 36 00
 
-Handle 0x0032, DMI type 18, 23 bytes
+Handle 0x0031, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -532,29 +522,29 @@ Handle 0x0032, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0033, DMI type 21, 7 bytes
+Handle 0x0032, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Track Point
 	Interface: PS/2
 	Buttons: 3
 
-Handle 0x0034, DMI type 21, 7 bytes
+Handle 0x0033, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Touch Pad
 	Interface: PS/2
 	Buttons: 2
 
-Handle 0x0035, DMI type 131, 22 bytes
+Handle 0x0034, DMI type 131, 22 bytes
 ThinkVantage Technologies
 	Version: 1
 	Diagnostics: No
 
-Handle 0x0036, DMI type 136, 6 bytes
+Handle 0x0035, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 36 00 5A 5A
+		88 06 35 00 5A 5A
 
-Handle 0x0037, DMI type 15, 31 bytes
+Handle 0x0036, DMI type 15, 31 bytes
 System Event Log
 	Area Length: 3970 bytes
 	Header Start Offset: 0x0000
@@ -575,34 +565,34 @@ System Event Log
 	Descriptor 4: Log area reset/cleared
 	Data Format 4: None
 
+Handle 0x0037, DMI type 140, 19 bytes
+OEM-specific Type
+	Header and Data:
+		8C 13 37 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
+		53 20 00
+
 Handle 0x0038, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 38 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
-		53 20 00
-
-Handle 0x0039, DMI type 140, 19 bytes
-OEM-specific Type
-	Header and Data:
-		8C 13 39 00 4C 45 4E 4F 56 4F 0B 05 01 07 00 00
+		8C 13 38 00 4C 45 4E 4F 56 4F 0B 05 01 07 00 00
 		00 00 00
 
-Handle 0x003A, DMI type 140, 23 bytes
+Handle 0x0039, DMI type 140, 23 bytes
 OEM-specific Type
 	Header and Data:
-		8C 17 3A 00 4C 45 4E 4F 56 4F 0B 06 01 CB 06 51
-		04 01 60 00 00 00 00
+		8C 17 39 00 4C 45 4E 4F 56 4F 0B 06 01 CB 06 51
+		44 03 60 00 00 00 00
 
-Handle 0x003B, DMI type 14, 8 bytes
+Handle 0x003A, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x003C, DMI type 219, 106 bytes
+Handle 0x003B, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 3C 00 01 04 01 45 02 00 90 06 01 85 36 20
+		DB 6A 3B 00 01 04 01 45 02 00 90 06 01 85 30 20
 		00 00 00 00 40 00 00 01 1F 00 00 C9 0A 40 C4 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -615,23 +605,23 @@ OEM-specific Type
 		MEI3
 		MEI4
 
-Handle 0x003D, DMI type 140, 15 bytes
+Handle 0x003C, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: N2LHT28W
-	Release Date: 06/13/2019
+	Version ID: N2LHT39W
+	Release Date: 01/13/2021
 
-Handle 0x003E, DMI type 140, 43 bytes
+Handle 0x003D, DMI type 140, 43 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2B 3E 00 4C 45 4E 4F 56 4F 0B 08 01 FF FF FF
+		8C 2B 3D 00 4C 45 4E 4F 56 4F 0B 08 01 FF FF FF
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF FF FF FF
 
-Handle 0x003F, DMI type 135, 18 bytes
+Handle 0x003E, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 3F 00 54 50 07 01 01 00 00 00 01 00 00 00
-		01 00
+		87 12 3E 00 54 50 07 01 01 00 02 00 0D 00 02 00
+		0D 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

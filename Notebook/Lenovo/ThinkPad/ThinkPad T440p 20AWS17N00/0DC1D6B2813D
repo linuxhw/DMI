@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 66 structures occupying 2696 bytes.
@@ -114,8 +114,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Asynchronous
 	Installed SRAM Type: Asynchronous
@@ -139,7 +139,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -160,7 +160,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -456,98 +456,14 @@ OEM-specific Type
 		00 01 04 04 00 00 00 00 00 00 01 05 02 00 00 00
 		00 00 00
 
-Handle 0x0035, DMI type 15, 33 bytes
-System Event Log
-	Area Length: 260 bytes
-	Header Start Offset: 0x0000
-	Header Length: 16 bytes
-	Data Start Offset: 0x0010
-	Access Method: General-purpose non-volatile data functions
-	Access Address: 0x00F0
-	Status: Valid, Not Full
-	Change Token: 0x00000010
-	Header Format: Type 1
-	Supported Log Type Descriptors: 5
-	Descriptor 1: Multi-bit ECC memory error
-	Data Format 1: Multiple-event handle
-	Descriptor 2: POST error
-	Data Format 2: POST results bitmap
-	Descriptor 3: PCI system error
-	Data Format 3: None
-	Descriptor 4: System reconfigured
-	Data Format 4: None
-	Descriptor 5: Log area reset/cleared
-	Data Format 5: None
-
-Handle 0x0036, DMI type 140, 85 bytes
-OEM-specific Type
-	Header and Data:
-		8C 55 36 00 4C 45 4E 4F 56 4F 0B 00 01 53 55 A4
-		6B 94 A9 EB D6 68 32 A1 D3 9C 24 8A 21 01 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 07 00 00 00 7E 02 00 F0 7E 02 00 F0 7E
-		02 00 F0 00 F0
-
-Handle 0x0037, DMI type 140, 47 bytes
-OEM-specific Type
-	Header and Data:
-		8C 2F 37 00 4C 45 4E 4F 56 4F 0B 01 01 28 00 EB
-		73 DA 5F 93 4D E6 65 93 F0 9E F2 EE F1 5B 99 00
-		00 00 00 10 00 10 00 10 01 D0 00 20 01 00 01
-
-Handle 0x0038, DMI type 140, 63 bytes
-OEM-specific Type
-	Header and Data:
-		8C 3F 38 00 4C 45 4E 4F 56 4F 0B 02 01 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-
-Handle 0x0039, DMI type 140, 17 bytes
-OEM-specific Type
-	Header and Data:
-		8C 11 39 00 4C 45 4E 4F 56 4F 0B 03 01 00 00 00
-		00
-
-Handle 0x003A, DMI type 140, 19 bytes
-OEM-specific Type
-	Header and Data:
-		8C 13 3A 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
-		53 20 00
-
-Handle 0x003B, DMI type 140, 19 bytes
-OEM-specific Type
-	Header and Data:
-		8C 13 3B 00 4C 45 4E 4F 56 4F 0B 05 01 06 00 00
-		00 00 00
-
-Handle 0x003C, DMI type 24, 5 bytes
-Hardware Security
-	Power-On Password Status: Disabled
-	Keyboard Password Status: Not Implemented
-	Administrator Password Status: Disabled
-	Front Panel Reset Status: Not Implemented
-
-Handle 0x003D, DMI type 132, 7 bytes
-OEM-specific Type
-	Header and Data:
-		84 07 3D 00 01 D8 36
-
-Handle 0x003E, DMI type 135, 18 bytes
-OEM-specific Type
-	Header and Data:
-		87 12 3E 00 54 50 07 01 01 E0 01 00 00 00 01 00
-		00 00
-
-Handle 0x003F, DMI type 0, 24 bytes
+Handle 0x0035, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
 	Version: GLET68WW (2.22 )
 	Release Date: 03/24/2014
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 12288 kB
+	ROM Size: 12 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -562,6 +478,90 @@ BIOS Information
 		UEFI is supported
 	BIOS Revision: 2.22
 	Firmware Revision: 1.8
+
+Handle 0x0036, DMI type 15, 33 bytes
+System Event Log
+	Area Length: 308 bytes
+	Header Start Offset: 0x0000
+	Header Length: 16 bytes
+	Data Start Offset: 0x0010
+	Access Method: General-purpose non-volatile data functions
+	Access Address: 0x00F0
+	Status: Valid, Not Full
+	Change Token: 0x00000013
+	Header Format: Type 1
+	Supported Log Type Descriptors: 5
+	Descriptor 1: Multi-bit ECC memory error
+	Data Format 1: Multiple-event handle
+	Descriptor 2: POST error
+	Data Format 2: POST results bitmap
+	Descriptor 3: PCI system error
+	Data Format 3: None
+	Descriptor 4: System reconfigured
+	Data Format 4: None
+	Descriptor 5: Log area reset/cleared
+	Data Format 5: None
+
+Handle 0x0037, DMI type 140, 85 bytes
+OEM-specific Type
+	Header and Data:
+		8C 55 37 00 4C 45 4E 4F 56 4F 0B 00 01 53 55 A4
+		6B 94 A9 EB D6 68 32 A1 D3 9C 24 8A 21 01 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 07 00 00 00 04 05 06 07 08 09 0A 0B 0C
+		0D 0E 0F 52 53
+
+Handle 0x0038, DMI type 140, 47 bytes
+OEM-specific Type
+	Header and Data:
+		8C 2F 38 00 4C 45 4E 4F 56 4F 0B 01 01 28 00 EB
+		73 DA 5F 93 4D E6 65 93 F0 9E F2 EE F1 5B 99 00
+		00 00 00 10 00 10 00 10 01 D0 00 20 01 00 01
+
+Handle 0x0039, DMI type 140, 63 bytes
+OEM-specific Type
+	Header and Data:
+		8C 3F 39 00 4C 45 4E 4F 56 4F 0B 02 01 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+Handle 0x003A, DMI type 140, 17 bytes
+OEM-specific Type
+	Header and Data:
+		8C 11 3A 00 4C 45 4E 4F 56 4F 0B 03 01 00 00 00
+		00
+
+Handle 0x003B, DMI type 140, 19 bytes
+OEM-specific Type
+	Header and Data:
+		8C 13 3B 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
+		53 20 00
+
+Handle 0x003C, DMI type 140, 19 bytes
+OEM-specific Type
+	Header and Data:
+		8C 13 3C 00 4C 45 4E 4F 56 4F 0B 05 01 06 00 00
+		00 00 00
+
+Handle 0x003D, DMI type 24, 5 bytes
+Hardware Security
+	Power-On Password Status: Disabled
+	Keyboard Password Status: Not Implemented
+	Administrator Password Status: Disabled
+	Front Panel Reset Status: Not Implemented
+
+Handle 0x003E, DMI type 132, 7 bytes
+OEM-specific Type
+	Header and Data:
+		84 07 3E 00 01 D8 36
+
+Handle 0x003F, DMI type 135, 18 bytes
+OEM-specific Type
+	Header and Data:
+		87 12 3F 00 54 50 07 01 01 E0 01 00 00 00 01 00
+		00 00
 
 Handle 0x0040, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program

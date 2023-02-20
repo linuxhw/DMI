@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-80 structures occupying 2333 bytes.
+82 structures occupying 2398 bytes.
 Table at 0x000E9FF0.
 
 Handle 0x0001, DMI type 0, 24 bytes
@@ -575,21 +575,21 @@ Handle 0x003C, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0038
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: 2
 	Locator: XMM3
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
+	Speed: 1333 MT/s
+	Manufacturer: JEDEC ID:80 AD
 	Serial Number: --
 	Asset Tag: --
-	Part Number:  
-	Rank: Unknown
+	Part Number: HMT325U6EFR8C-PB
+	Rank: 1
 
 Handle 0x003D, DMI type 17, 28 bytes
 Memory Device
@@ -607,7 +607,7 @@ Memory Device
 	Speed: Unknown
 	Manufacturer: JEDEC ID:
 	Serial Number: --
-	Asset Tag: --
+	3D153A129FECFD993684B5FCC9BF367A
 	Part Number:  
 	Rank: Unknown
 
@@ -634,10 +634,18 @@ Memory Device
 Handle 0x0040, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BEFFFFFF
-	Range Size: 3056 MB
+	Ending Address: 0x000DFFFFFFF
+	Range Size: 3584 MB
 	Physical Array Handle: 0x0038
 	Partition Width: 1
+
+Handle 0x0041, DMI type 19, 15 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x0015BFFFFFF
+	Range Size: 1472 MB
+	Physical Array Handle: 0x0038
+	Partition Width: 2
 
 Handle 0x0042, DMI type 19, 15 bytes
 Memory Array Mapped Address
@@ -650,16 +658,29 @@ Memory Array Mapped Address
 Handle 0x0043, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x003A
 	Memory Array Mapped Address Handle: 0x0040
 	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 2
 
-Handle 0x0044, DMI type 20, 19 bytes
+Handle 0x0045, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000BFFFFFFF
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x003C
+	Memory Array Mapped Address Handle: 0x0040
+	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x0048, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x0013FFFFFFF
 	Range Size: 1 GB
 	Physical Device Handle: 0x003B
 	Memory Array Mapped Address Handle: 0x0040
@@ -805,7 +826,7 @@ OEM-specific Type
 Handle 0x005F, DMI type 208, 5 bytes
 OEM-specific Type
 	Header and Data:
-		D0 05 5F 00 00
+		D0 05 5F 00 04
 
 Handle 0x0060, DMI type 127, 4 bytes
 End Of Table

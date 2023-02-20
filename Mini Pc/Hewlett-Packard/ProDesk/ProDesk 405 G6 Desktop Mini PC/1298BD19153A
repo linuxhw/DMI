@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0x83D4E000.
+Table at 0x83D4D000.
 
 Handle 0x0001, DMI type 16, 23 bytes
 Physical Memory Array
@@ -15,8 +15,8 @@ Physical Memory Array
 Handle 0x0002, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x009FFFFFFFF
-	Range Size: 40 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Array Handle: 0x0001
 	Partition Width: 2
 
@@ -42,8 +42,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -58,8 +58,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -127,8 +127,10 @@ Processor Information
 Handle 0x000D, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: IFX
-	Specification Version: 2.0	Firmware Revision: 7.85
-	Description: SLB9670	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 7.85
+	Description: SLB9670
+	Characteristics:
 		Family configurable via firmware update
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
@@ -136,8 +138,8 @@ TPM Device
 Handle 0x000E, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: S27 Ver. 02.02.00
-	Release Date: 12/28/2020
+	Version: S27 Ver. 02.09.01
+	Release Date: 08/04/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -159,8 +161,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.0
-	Firmware Revision: 9.148
+	BIOS Revision: 9.1
+	Firmware Revision: 9.162
 
 Handle 0x000F, DMI type 1, 27 bytes
 System Information
@@ -173,21 +175,7 @@ System Information
 	SKU Number: 23H62EA#BCM
 	Family: 103C_53307F HP ProDesk
 
-Handle 0x0010, DMI type 2, 17 bytes
-Base Board Information
-	Manufacturer: HP
-	Product Name: 872E
-	Version: KBC Version 09.94.00
-	Serial Number: --
-	Asset Tag: --
-	97946E993916094B22613E03B8339091
-		Board is a hosting board
-	Location In Chassis:  
-	Chassis Handle: 0x0000
-	Type: Motherboard
-	Contained Object Handles: 0
-
-Handle 0x0011, DMI type 3, 24 bytes
+Handle 0x0010, DMI type 3, 24 bytes
 Chassis Information
 	Manufacturer: HP
 	Type: Mini PC
@@ -205,7 +193,7 @@ Chassis Information
 	Contained Elements: 0
 	SKU Number: Not Specified
 
-Handle 0x0013, DMI type 13, 22 bytes
+Handle 0x0012, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 15
@@ -225,6 +213,20 @@ BIOS Language Information
 		zhTW
 		ruRU
 	Currently Installed Language: enUS
+
+Handle 0x0013, DMI type 2, 17 bytes
+Base Board Information
+	Manufacturer: HP
+	Product Name: 872E
+	Version: KBC Version 09.A2.00
+	Serial Number: --
+	Asset Tag: --
+	97946E993916094B22613E03B8339091
+		Board is a hosting board
+	Location In Chassis:  
+	Chassis Handle: 0x0010
+	Type: Motherboard
+	Contained Object Handles: 0
 
 Handle 0x0014, DMI type 207, 9 bytes
 OEM-specific Type
@@ -437,7 +439,7 @@ Onboard Device
 	Type: Video
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:09:00.0
+	Bus Address: 0000:05:00.0
 
 Handle 0x0007, DMI type 41, 11 bytes
 Onboard Device
@@ -445,13 +447,13 @@ Onboard Device
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:08:00.1
+	Bus Address: 0000:03:00.1
 
 Handle 0x0009, DMI type 9, 24 bytes
 System Slot Information
 	Designation: M.2 SSD
 	Type: x4 PCI Express 3 x4
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Other
 	ID: 1
 	Characteristics:
@@ -459,6 +461,8 @@ System Slot Information
 		PME signal is supported
 		SMBus signal is supported
 	Bus Address: 0000:00:02.2
+	Data Bus Width: 77
+	Peer Devices: 46
 
 Handle 0x000A, DMI type 9, 24 bytes
 System Slot Information
@@ -472,6 +476,8 @@ System Slot Information
 		PME signal is supported
 		SMBus signal is supported
 	Bus Address: 0000:02:08.0
+	Data Bus Width: 255
+	Peer Devices: 255
 
 Handle 0x000C, DMI type 17, 84 bytes
 Memory Device
@@ -514,7 +520,7 @@ Memory Device
 	Error Information Handle: 0x000A
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 32 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM3
@@ -522,24 +528,24 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 3200 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Unknown - [0x9B85]
 	Serial Number: --
 	Asset Tag: --
-	9D8AD3861E4315E805856E556A608C53    
-	Rank: 1
+	Part Number: CT32G4SFD832A.C16FE
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: M471A1K43DB1-CWE    
-	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Firmware Version: CT32G4SFD832A.C16FE
+	Module Manufacturer ID: Bank 6, Hex 0x9B
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
@@ -555,8 +561,8 @@ Memory Device Mapped Address
 Handle 0x002D, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x007FFF00000
-	Ending Address: 0x009FFEFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x00FFFDFFFFF
+	Range Size: 32767 MB
 	Physical Device Handle: 0x0008
 	Memory Array Mapped Address Handle: 0x0002
 	Partition Row Position: 1
@@ -581,7 +587,7 @@ OEM Strings
 	String 4: Buff=2
 	String 5: HRDWFEATS=;
 
-Handle 0x0012, DMI type 10, 6 bytes
+Handle 0x0011, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled

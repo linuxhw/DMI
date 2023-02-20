@@ -1,13 +1,13 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0xCBA02000.
+Table at 0xCB9F1000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 2423
-	Release Date: 08/09/2021
+	Version: 2604
+	Release Date: 02/25/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -445,7 +445,7 @@ Handle 0x0030, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.58
+	Firmware Revision: 3.77
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -649,69 +649,13 @@ Handle 0x003C, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x0032
 	Error Information Handle: 0x003B
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 16 GB
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM_A2
-	Bank Locator: BANK 1
-	Type: DDR4
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3333 MT/s
-	Manufacturer: SK Hynix
-	Serial Number: --
-	Asset Tag: --
-	Part Number: HMA82GU6CJR8N-XN    
-	Rank: 2
-	Configured Memory Speed: 3333 MT/s
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
-	Memory Technology: DRAM
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 1, Hex 0xAD
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: 16 GB
-	Cache Size: None
-	Logical Size: None
-
-Handle 0x003D, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
-	Physical Device Handle: 0x003C
-	Memory Array Mapped Address Handle: 0x0034
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
-
-Handle 0x003E, DMI type 18, 23 bytes
-32-bit Memory Error Information
-	Type: OK
-	Granularity: Unknown
-	Operation: Unknown
-	Vendor Syndrome: Unknown
-	Memory Array Address: Unknown
-	Device Address: Unknown
-	Resolution: Unknown
-
-Handle 0x003F, DMI type 17, 92 bytes
-Memory Device
-	Array Handle: 0x0032
-	Error Information Handle: 0x003E
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
 	Form Factor: Unknown
 	Set: None
-	Locator: DIMM_B1
-	Bank Locator: BANK 2
+	Locator: DIMM_A2
+	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: Unknown
 	Speed: Unknown
@@ -736,6 +680,62 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
+Handle 0x003D, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x003E, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0032
+	Error Information Handle: 0x003D
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 16 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_B1
+	Bank Locator: BANK 2
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 3200 MT/s
+	Manufacturer: A-DATA
+	Serial Number: --
+	Asset Tag: --
+	Part Number:                     
+	Rank: 2
+	Configured Memory Speed: 3200 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 5, Hex 0xCB
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 16 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x003F, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x003E
+	Memory Array Mapped Address Handle: 0x0034
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
 Handle 0x0040, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
@@ -759,13 +759,13 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3333 MT/s
+	Speed: 3200 MT/s
 	Manufacturer: SK Hynix
 	Serial Number: --
 	Asset Tag: --
 	Part Number: HMA82GU6CJR8N-XN    
 	Rank: 2
-	Configured Memory Speed: 3333 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V

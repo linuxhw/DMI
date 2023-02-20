@@ -1,13 +1,13 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
-Table at 0x5D620000.
+Table at 0x9D875000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: AMI
-	Version: F.31
-	Release Date: 11/28/2018
+	Version: F.48
+	Release Date: 11/26/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -32,8 +32,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.31
-	Firmware Revision: 92.46
+	BIOS Revision: 15.48
+	Firmware Revision: 92.48
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -50,7 +50,7 @@ Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 8497
-	Version: 92.46
+	Version: 92.48
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -177,8 +177,10 @@ Management Device Component
 Handle 0x000E, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: 
-	Specification Version: 2.0	Firmware Revision: 3.23
-	Description: AMD	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 3.23
+	Description: AMD
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -231,8 +233,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -247,8 +249,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -329,7 +331,7 @@ Memory Device
 	Error Information Handle: 0x0016
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom - Slot 1 (left)
@@ -372,7 +374,7 @@ Memory Device
 	Error Information Handle: 0x0019
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom - Slot 2 (right)
@@ -549,7 +551,7 @@ Onboard Device
 	Type: Sound
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:03:00.6
+	Bus Address: 0000:04:00.6
 
 Handle 0x002E, DMI type 8, 9 bytes
 Port Connector Information
@@ -565,7 +567,7 @@ Onboard Device
 	Type: Other
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:02:00.0
+	Bus Address: 0000:03:00.0
 
 Handle 0x0032, DMI type 41, 11 bytes
 Onboard Device
@@ -573,7 +575,7 @@ Onboard Device
 	Type: Other
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:01:00.0
+	Bus Address: 0000:02:00.0
 
 Handle 0x0033, DMI type 8, 9 bytes
 Port Connector Information

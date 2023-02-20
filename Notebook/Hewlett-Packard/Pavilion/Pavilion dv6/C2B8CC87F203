@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 33 structures occupying 1612 bytes.
@@ -7,8 +7,8 @@ Table at 0x000E67B0.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Hewlett-Packard
-	Version: F.1C
-	Release Date: 01/23/2013
+	Version: F.1B
+	Release Date: 10/23/2012
 	ROM Size: 2560 kB
 	Characteristics:
 		PCI is supported
@@ -30,7 +30,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.28
+	BIOS Revision: 15.27
 	Firmware Revision: 16.90
 
 Handle 0x0001, DMI type 1, 27 bytes
@@ -225,7 +225,7 @@ Onboard Device
 Handle 0x0010, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 10 00 31 00 00 00 07 00 00 00 00 00 35 00
+		83 40 10 00 11 00 00 00 07 00 00 00 00 00 35 00
 		F8 00 49 1C FF FF FF FF 19 20 00 00 01 00 07 00
 		1D 04 03 00 80 00 C0 9C C8 00 FF FF 00 00 00 00
 		00 FF 00 00 F6 00 00 00 76 50 72 6F 00 00 00 00
@@ -245,7 +245,7 @@ Memory Device
 	Error Information Handle: 0x0013
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(top)
@@ -256,9 +256,9 @@ Memory Device
 	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT451S6BMR8C-H9  
+	Part Number: HMT351S6BFR8C-H9  
 	Rank: Unknown
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0013, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -287,7 +287,7 @@ Memory Device
 	Error Information Handle: 0x0016
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(under)
@@ -298,9 +298,9 @@ Memory Device
 	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT351S6BFR8C-H9  
+	Part Number: HMT451S6BMR8C-H9  
 	Rank: Unknown
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0016, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -459,8 +459,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous

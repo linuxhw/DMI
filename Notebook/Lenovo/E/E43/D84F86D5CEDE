@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 24 structures occupying 1102 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 07/29/2010
 	Address: 0xE47A0
 	Runtime Size: 112736 bytes
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -58,7 +58,7 @@ Chassis Information
 	Lock: Not Present
 	Version: Rev 1.0                 
 	Serial Number: --
-	Asset Tag: --
+	39179587C0D27A007528D8BCC17DF6D5                    
 	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Safe
@@ -145,8 +145,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -212,14 +212,14 @@ OEM Strings
 
 Handle 0x000D, DMI type 15, 29 bytes
 System Event Log
-	Area Length: 144 bytes
+	Area Length: 192 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x0000
 	Status: Valid, Not Full
-	Change Token: 0x000000FD
+	Change Token: 0x00000000
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -241,17 +241,17 @@ Physical Memory Array
 Handle 0x000F, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x000E
-	Error Information Handle: 0xFFA5
+	Error Information Handle: 0xFF3E
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: DIMM 1
 	Bank Locator: Bank 0, 1
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MT/s
+	Speed: 400 MT/s
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
@@ -260,17 +260,17 @@ Memory Device
 Handle 0x0010, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x000E
-	Error Information Handle: 0xFFB1
+	Error Information Handle: 0xFF1F
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: DIMM 2
 	Bank Locator: Bank 2, 3
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MT/s
+	Speed: 400 MT/s
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
@@ -279,16 +279,16 @@ Memory Device
 Handle 0x0011, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x000E
 	Partition Width: 2
 
 Handle 0x0012, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x000F
 	Memory Array Mapped Address Handle: 0x0011
 	Partition Row Position: 1
@@ -296,9 +296,9 @@ Memory Device Mapped Address
 
 Handle 0x0013, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 1 GB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0010
 	Memory Array Mapped Address Handle: 0x0011
 	Partition Row Position: 1

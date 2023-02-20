@@ -1,10 +1,10 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-67 structures occupying 3174 bytes.
+67 structures occupying 3191 bytes.
 Table at 0x000EF1C0.
 
-Wrong DMI structures length: 3174 bytes announced, only 2622 bytes available.
+Wrong DMI structures length: 3191 bytes announced, only 2639 bytes available.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
@@ -129,45 +129,15 @@ Handle 0x0005, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: 1366-pin LGA
 	Type: Central Processor
-	Family: Xeon
+	Family: Unknown
 	Manufacturer: Intel
-	ID: C2 06 02 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 44, Stepping 2
-	Flags:
-		FPU (Floating-point unit on-chip)
-		VME (Virtual mode extension)
-		DE (Debugging extension)
-		PSE (Page size extension)
-		TSC (Time stamp counter)
-		MSR (Model specific registers)
-		PAE (Physical address extension)
-		MCE (Machine check exception)
-		CX8 (CMPXCHG8 instruction supported)
-		APIC (On-chip APIC hardware supported)
-		SEP (Fast system call)
-		MTRR (Memory type range registers)
-		PGE (Page global enable)
-		MCA (Machine check architecture)
-		CMOV (Conditional move instruction supported)
-		PAT (Page attribute table)
-		PSE-36 (36-bit page size extension)
-		CLFSH (CLFLUSH instruction supported)
-		DS (Debug store)
-		ACPI (ACPI supported)
-		MMX (MMX technology supported)
-		FXSR (FXSAVE and FXSTOR instructions supported)
-		SSE (Streaming SIMD extensions)
-		SSE2 (Streaming SIMD extensions 2)
-		SS (Self-snoop)
-		HTT (Multi-threading)
-		TM (Thermal monitor supported)
-		PBE (Pending break enabled)
-	Version: Intel(R) Xeon(R) CPU           X5675  @ 3.07GHz
+	ID: 00 00 00 00 00 00 00 00
+	Version: 0000000000000000000000000000000000000000000000000000000000000000
 	Voltage: 1.4 V
 	External Clock: 133 MHz
 	Max Speed: 3330 MHz
-	Current Speed: 3060 MHz
-	Status: Populated, Enabled
+	Current Speed: Unknown
+	Status: Unpopulated
 	Upgrade: Socket LGA1366
 	L1 Cache Handle: 0x0009
 	L2 Cache Handle: 0x000A
@@ -175,9 +145,6 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
-	Core Count: 6
-	Core Enabled: 6
-	Thread Count: 12
 	Characteristics: None
 
 Handle 0x0006, DMI type 7, 19 bytes
@@ -416,14 +383,14 @@ BIOS Language Information
 
 Handle 0x001A, DMI type 15, 29 bytes
 System Event Log
-	Area Length: 160 bytes
+	Area Length: 224 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x0000
 	Status: Valid, Not Full
-	Change Token: 0x00000004
+	Change Token: 0x00000008
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error

@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-75 structures occupying 2851 bytes.
+75 structures occupying 2868 bytes.
 Table at 0x000EB4F0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -685,7 +685,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Celeron(R) CPU 847 @ 1.10GHz
-	Voltage: 5.6 V
+	Voltage: 6.1 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
 	Current Speed: 1100 MHz
@@ -709,7 +709,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -717,18 +717,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: 8001
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: R332G1339U1S-UO
+	Part Number: 99U5471-012.A00LF 
 	Rank: 2
 	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0042, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0041
 	Memory Array Mapped Address Handle: 0x0047
 	Partition Row Position: Unknown
@@ -770,17 +770,17 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: 8001
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: R334G1339U1S
-	Rank: 1
+	Part Number: 99U5471-012.A00LF 
+	Rank: 2
 	Configured Clock Speed: 1333 MT/s
 
 Handle 0x0045, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x0017FFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0044
 	Memory Array Mapped Address Handle: 0x0047
@@ -812,8 +812,8 @@ Memory Device
 Handle 0x0047, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x003F
 	Partition Width: 4
 

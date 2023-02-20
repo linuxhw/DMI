@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 78 structures occupying 2870 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 04/20/2010
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		PC Card (PCMCIA) is supported
@@ -190,8 +190,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 8192 kB
+	Installed Size: 4 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -380,7 +380,7 @@ System Event Log
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x0000
 	Status: Valid, Not Full
-	Change Token: 0x00000001
+	Change Token: 0x00000002
 	Header Format: Type 1
 	Supported Log Type Descriptors: 1
 	Descriptor 1: POST error
@@ -401,7 +401,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 1
@@ -421,7 +421,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 2
@@ -588,8 +588,8 @@ OEM-specific Type
 Handle 0x0043, DMI type 140, 67 bytes
 OEM-specific Type
 	Header and Data:
-		8C 43 43 00 4C 45 4E 4F 56 4F 0B 00 01 BD BE 3B
-		BB 87 45 83 B7 E5 2B 77 0F 66 D7 31 FF 01 00 00
+		8C 43 43 00 4C 45 4E 4F 56 4F 0B 00 01 4E C4 92
+		55 C4 19 D8 7C 29 2C 13 06 91 46 7F 0D 01 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00

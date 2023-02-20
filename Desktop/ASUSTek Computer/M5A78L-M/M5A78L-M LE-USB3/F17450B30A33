@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 48 structures occupying 1851 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 03/04/2017
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -156,8 +156,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -172,8 +172,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -366,7 +366,7 @@ Handle 0x001E, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIE16X
 	Type: 32-bit PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 2
 	Characteristics:
@@ -461,8 +461,8 @@ Physical Memory Array
 Handle 0x0028, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0042EFFFFFF
-	Range Size: 17136 MB
+	Ending Address: 0x0022EFFFFFF
+	Range Size: 8944 MB
 	Physical Array Handle: 0x0027
 	Partition Width: 1
 
@@ -472,14 +472,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A1
 	Bank Locator: BANK0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer0
 	Serial Number: --
 	Asset Tag: --
@@ -500,14 +500,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B1
 	Bank Locator: BANK1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer1
 	Serial Number: --
 	Asset Tag: --
@@ -516,8 +516,8 @@ Memory Device
 Handle 0x002C, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x002B
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: 1

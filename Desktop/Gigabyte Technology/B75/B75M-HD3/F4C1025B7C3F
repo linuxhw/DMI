@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-73 structures occupying 2872 bytes.
+73 structures occupying 2898 bytes.
 Table at 0x000E9750.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 04/17/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8 MB
+	ROM Size: 8192 kB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -100,8 +100,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 1 MB
-	Maximum Size: 1 MB
+	Installed Size: 1024 kB
+	Maximum Size: 1024 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -116,8 +116,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6 MB
-	Maximum Size: 6 MB
+	Installed Size: 6144 kB
+	Maximum Size: 6144 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -646,26 +646,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Micron
+	Speed: 1600 MT/s
+	Manufacturer: 04EF
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ITC
-	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Part Number: TEAMGROUP-UD3-1600
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0041, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0040
 	Memory Array Mapped Address Handle: 0x0045
 	Partition Row Position: Unknown
@@ -678,20 +678,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Micron
+	Speed: 1600 MT/s
+	Manufacturer: 04EF
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ITC
-	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Part Number: TEAMGROUP-UD3-1600
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0043, DMI type 4, 42 bytes
 Processor Information
@@ -751,8 +751,8 @@ Processor Information
 Handle 0x0044, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0042
 	Memory Array Mapped Address Handle: 0x0045
 	Partition Row Position: Unknown
@@ -762,8 +762,8 @@ Memory Device Mapped Address
 Handle 0x0045, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0007
 	Partition Width: 4
 

@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0xBDB56000.
@@ -895,16 +895,16 @@ Handle 0x0060, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
-	Error Correction Type: Multi-bit ECC
-	Maximum Capacity: 256 GB
+	Error Correction Type: None
+	Maximum Capacity: 512 GB
 	Error Information Handle: Not Provided
-	Number Of Devices: 4
+	Number Of Devices: 8
 
 Handle 0x0061, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 64 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0060
 	Partition Width: 4
 
@@ -914,18 +914,18 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 72 bits
-	Size: 16 GB
-	Form Factor: RIMM
+	Size: 8 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A1
 	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M393A2G40DB0-CPB   
+	Part Number: CMK32GX4M4A2800C16 
 	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
@@ -935,8 +935,8 @@ Memory Device
 Handle 0x0063, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0062
 	Memory Array Mapped Address Handle: 0x0061
 	Partition Row Position: 1
@@ -945,67 +945,62 @@ Handle 0x0064, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0060
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 72 bits
-	Size: 16 GB
-	Form Factor: RIMM
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A2
 	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2133 MT/s
-	Manufacturer: Samsung
-	Serial Number: --
-	Asset Tag: --
-	Part Number: M393A2G40DB0-CPB   
-	Rank: 2
-	Configured Memory Speed: 2133 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
-Handle 0x0065, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x0064
-	Memory Array Mapped Address Handle: 0x0061
-	Partition Row Position: 1
-
-Handle 0x0066, DMI type 17, 40 bytes
+Handle 0x0065, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0060
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 72 bits
-	Size: 16 GB
-	Form Factor: RIMM
+	Size: 8 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B1
 	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M393A2G40DB0-CPB   
+	Part Number: CMK32GX4M4A2800C16 
 	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x0067, DMI type 20, 35 bytes
+Handle 0x0066, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00800000000
-	Ending Address: 0x00BFFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x0066
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0065
 	Memory Array Mapped Address Handle: 0x0061
 	Partition Row Position: 1
+
+Handle 0x0067, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0060
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_B2
+	Bank Locator: NODE 1
+	Type: DDR4
+	Type Detail: Synchronous
 
 Handle 0x0068, DMI type 17, 40 bytes
 Memory Device
@@ -1013,18 +1008,18 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 72 bits
-	Size: 16 GB
-	Form Factor: RIMM
+	Size: 8 GB
+	Form Factor: DIMM
 	Set: None
-	Locator: DIMM_B2
+	Locator: DIMM_C1
 	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M393A2G40DB0-CPB   
+	Part Number: CMK32GX4M4A2800C16 
 	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
@@ -1033,170 +1028,82 @@ Memory Device
 
 Handle 0x0069, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00C00000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 16 GB
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0068
 	Memory Array Mapped Address Handle: 0x0061
 	Partition Row Position: 1
 
-Handle 0x006A, DMI type 16, 23 bytes
-Physical Memory Array
-	Location: System Board Or Motherboard
-	Use: System Memory
-	Error Correction Type: Multi-bit ECC
-	Maximum Capacity: 256 GB
-	Error Information Handle: Not Provided
-	Number Of Devices: 4
-
-Handle 0x006B, DMI type 19, 31 bytes
-Memory Array Mapped Address
-	Starting Address: 0x01000000000
-	Ending Address: 0x01FFFFFFFFF
-	Range Size: 64 GB
-	Physical Array Handle: 0x006A
-	Partition Width: 4
-
-Handle 0x006C, DMI type 17, 40 bytes
+Handle 0x006A, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x006A
+	Array Handle: 0x0060
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 72 bits
-	Size: 16 GB
-	Form Factor: RIMM
-	Set: None
-	Locator: DIMM_C1
-	Bank Locator: NODE 2
-	Type: DDR4
-	Type Detail: Synchronous
-	Speed: 2133 MT/s
-	Manufacturer: Samsung
-	Serial Number: --
-	Asset Tag: --
-	Part Number: M393A2G40DB0-CPB   
-	Rank: 2
-	Configured Memory Speed: 2133 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-
-Handle 0x006D, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x01000000000
-	Ending Address: 0x013FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x006C
-	Memory Array Mapped Address Handle: 0x006B
-	Partition Row Position: 1
-
-Handle 0x006E, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x006A
-	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 72 bits
-	Size: 16 GB
-	Form Factor: RIMM
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_C2
-	Bank Locator: NODE 2
+	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2133 MT/s
-	Manufacturer: Samsung
-	Serial Number: --
-	Asset Tag: --
-	Part Number: M393A2G40DB0-CPB   
-	Rank: 2
-	Configured Memory Speed: 2133 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
-Handle 0x006F, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x01400000000
-	Ending Address: 0x017FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x006E
-	Memory Array Mapped Address Handle: 0x006B
-	Partition Row Position: 1
-
-Handle 0x0070, DMI type 17, 40 bytes
+Handle 0x006B, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x006A
+	Array Handle: 0x0060
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 72 bits
-	Size: 16 GB
-	Form Factor: RIMM
+	Size: 8 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_D1
-	Bank Locator: NODE 2
+	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M393A2G40DB0-CPB   
+	Part Number: CMK32GX4M4A2800C16 
 	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x0071, DMI type 20, 35 bytes
+Handle 0x006C, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x01800000000
-	Ending Address: 0x01BFFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x0070
-	Memory Array Mapped Address Handle: 0x006B
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x006B
+	Memory Array Mapped Address Handle: 0x0061
 	Partition Row Position: 1
 
-Handle 0x0072, DMI type 17, 40 bytes
+Handle 0x006D, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x006A
+	Array Handle: 0x0060
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 72 bits
-	Size: 16 GB
-	Form Factor: RIMM
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_D2
-	Bank Locator: NODE 2
+	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2133 MT/s
-	Manufacturer: Samsung
-	Serial Number: --
-	Asset Tag: --
-	Part Number: M393A2G40DB0-CPB   
-	Rank: 2
-	Configured Memory Speed: 2133 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
-Handle 0x0073, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x01C00000000
-	Ending Address: 0x01FFFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x0072
-	Memory Array Mapped Address Handle: 0x006B
-	Partition Row Position: 1
-
-Handle 0x0074, DMI type 7, 19 bytes
+Handle 0x006E, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L1
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 896 kB
-	Maximum Size: 896 kB
+	Installed Size: 384 kB
+	Maximum Size: 384 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -1205,14 +1112,14 @@ Cache Information
 	System Type: Other
 	Associativity: 8-way Set-associative
 
-Handle 0x0075, DMI type 7, 19 bytes
+Handle 0x006F, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L2
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3584 kB
-	Maximum Size: 3584 kB
+	Installed Size: 1536 kB
+	Maximum Size: 1536 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -1221,14 +1128,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0076, DMI type 7, 19 bytes
+Handle 0x0070, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L3
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 35 MB
-	Maximum Size: 35 MB
+	Installed Size: 15 MB
+	Maximum Size: 15 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -1237,7 +1144,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 20-way Set-associative
 
-Handle 0x0077, DMI type 4, 42 bytes
+Handle 0x0071, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: SOCKET 2011
 	Type: Central Processor
@@ -1274,22 +1181,22 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Xeon(R) CPU E5-2697 v3 @ 2.60GHz
+	Version: Intel(R) Core(TM) i7-5820K CPU @ 3.30GHz
 	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 2600 MHz
+	Current Speed: 3300 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA2011-3
-	L1 Cache Handle: 0x0074
-	L2 Cache Handle: 0x0075
-	L3 Cache Handle: 0x0076
+	L1 Cache Handle: 0x006E
+	L2 Cache Handle: 0x006F
+	L3 Cache Handle: 0x0070
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
-	Core Count: 14
-	Core Enabled: 14
-	Thread Count: 28
+	Core Count: 6
+	Core Enabled: 6
+	Thread Count: 12
 	Characteristics:
 		64-bit capable
 		Multi-Core
@@ -1298,21 +1205,21 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0078, DMI type 130, 20 bytes
+Handle 0x0072, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 78 00 24 41 4D 54 00 00 00 00 00 A5 2F 02
+		82 14 72 00 24 41 4D 54 00 00 00 00 00 A5 2F 02
 		00 00 00 00
 
-Handle 0x0079, DMI type 131, 64 bytes
+Handle 0x0073, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 79 00 35 00 00 00 00 00 00 00 00 00 00 00
+		83 40 73 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 47 8D 00 00 00 00 01 00 00 00 01 00 09 00
 		EA 03 25 00 00 00 00 00 C8 00 A1 15 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x007A, DMI type 13, 22 bytes
+Handle 0x0074, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 3
@@ -1321,6 +1228,6 @@ BIOS Language Information
 		zh|CN|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x007B, DMI type 127, 4 bytes
+Handle 0x0075, DMI type 127, 4 bytes
 End Of Table
 

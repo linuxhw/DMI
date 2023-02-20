@@ -1,4 +1,4 @@
-# dmidecode 3.0
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 67 structures occupying 3174 bytes.
@@ -7,11 +7,11 @@ Table at 0x000EF1C0.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: 61KT48AUS
-	Release Date: 05/19/2011
+	Version: 61KT50AUS
+	Release Date: 01/14/2014
 	Address: 0xE1090
 	Runtime Size: 126832 bytes
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -25,7 +25,7 @@ BIOS Information
 		Smart battery is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
-	BIOS Revision: 1.48
+	BIOS Revision: 1.50
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -203,8 +203,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 1024 kB
+	Installed Size: 2 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -221,8 +221,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12288 kB
-	Maximum Size: 12288 kB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -257,8 +257,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 1024 kB
+	Installed Size: 2 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -275,8 +275,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12288 kB
-	Maximum Size: 12288 kB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -399,7 +399,7 @@ On Board Device Information
 
 Handle 0x0017, DMI type 11, 5 bytes
 OEM Strings
-	String 1: BB:6148A
+	String 1: BB:6150A
 
 Handle 0x0018, DMI type 12, 5 bytes
 System Configuration Options
@@ -447,14 +447,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU1_DIMM1
 	Bank Locator: DIMM 00
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MHz
+	Speed: 1066 MT/s
 	Manufacturer: 00EC
 	Serial Number: --
 	Asset Tag: --
@@ -474,7 +474,7 @@ Memory Device
 	Bank Locator: DIMM 01
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MHz
+	Speed: 1066 MT/s
 	Manufacturer: Null
 	Serial Number: --
 	Asset Tag: --
@@ -487,14 +487,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU1_DIMM2
 	Bank Locator: DIMM 10
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MHz
+	Speed: 1066 MT/s
 	Manufacturer: 00EC
 	Serial Number: --
 	Asset Tag: --
@@ -514,7 +514,7 @@ Memory Device
 	Bank Locator: DIMM 11
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MHz
+	Speed: 1066 MT/s
 	Manufacturer: Null
 	Serial Number: --
 	Asset Tag: --
@@ -527,14 +527,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU1_DIMM3
 	Bank Locator: DIMM 20
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MHz
+	Speed: 1066 MT/s
 	Manufacturer: 00EC
 	Serial Number: --
 	Asset Tag: --
@@ -554,7 +554,7 @@ Memory Device
 	Bank Locator: DIMM 21
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MHz
+	Speed: 1066 MT/s
 	Manufacturer: Null
 	Serial Number: --
 	Asset Tag: --
@@ -567,14 +567,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU2_DIMM1
 	Bank Locator: DIMM 30
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MHz
+	Speed: 1066 MT/s
 	Manufacturer: 00EC
 	Serial Number: --
 	Asset Tag: --
@@ -594,7 +594,7 @@ Memory Device
 	Bank Locator: DIMM 31
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MHz
+	Speed: 1066 MT/s
 	Manufacturer: Null
 	Serial Number: --
 	Asset Tag: --
@@ -607,14 +607,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU2_DIMM2
 	Bank Locator: DIMM 40
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MHz
+	Speed: 1066 MT/s
 	Manufacturer: 00EC
 	Serial Number: --
 	Asset Tag: --
@@ -634,7 +634,7 @@ Memory Device
 	Bank Locator: DIMM 41
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MHz
+	Speed: 1066 MT/s
 	Manufacturer: Null
 	Serial Number: --
 	Asset Tag: --
@@ -647,14 +647,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU2_DIMM3
 	Bank Locator: DIMM 50
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MHz
+	Speed: 1066 MT/s
 	Manufacturer: 00EC
 	Serial Number: --
 	Asset Tag: --
@@ -674,7 +674,7 @@ Memory Device
 	Bank Locator: DIMM 51
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MHz
+	Speed: 1066 MT/s
 	Manufacturer: Null
 	Serial Number: --
 	Asset Tag: --
@@ -840,7 +840,7 @@ Hardware Security
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x0037, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: 12-31 23:59:59
 
 Handle 0x0038, DMI type 26, 20 bytes
@@ -912,12 +912,9 @@ Handle 0x0040, DMI type 126, 6 bytes
 Inactive
 
 Handle 0x0041, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 41 00 01 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 80 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: Available
 
 Handle 0x0042, DMI type 127, 4 bytes
 End Of Table

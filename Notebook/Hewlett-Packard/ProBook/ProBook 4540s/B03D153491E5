@@ -1,17 +1,17 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-31 structures occupying 1485 bytes.
-Table at 0xA9B4F000.
+32 structures occupying 1555 bytes.
+Table at 0xA9C22000.
 
-Handle 0x000B, DMI type 0, 24 bytes
+Handle 0x000C, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Hewlett-Packard
 	Version: 68IRR Ver. F.68
 	Release Date: 04/11/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 5120 kB
+	ROM Size: 5 MB
 	Characteristics:
 		PCI is supported
 		PC Card (PCMCIA) is supported
@@ -34,7 +34,7 @@ BIOS Information
 	BIOS Revision: 15.104
 	Firmware Revision: 88.33
 
-Handle 0x000C, DMI type 1, 27 bytes
+Handle 0x000D, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Hewlett-Packard
 	Product Name: HP ProBook 4540s
@@ -45,7 +45,7 @@ System Information
 	SKU Number: E1Z20UT#ABA
 	Family: 103C_5336AN G=N L=BUS B=HP S=PRO
 
-Handle 0x000D, DMI type 2, 16 bytes
+Handle 0x000E, DMI type 2, 16 bytes
 Base Board Information
 	Manufacturer: Hewlett-Packard
 	Product Name: 17F6
@@ -56,11 +56,11 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:  
-	Chassis Handle: 0x000E
+	Chassis Handle: 0x000F
 	Type: Unknown
 	Contained Object Handles: 0
 
-Handle 0x000E, DMI type 3, 17 bytes
+Handle 0x000F, DMI type 3, 17 bytes
 Chassis Information
 	Manufacturer: Hewlett-Packard
 	Type: Notebook
@@ -184,8 +184,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -194,7 +194,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 12-way Set-associative
 
-Handle 0x0013, DMI type 8, 9 bytes
+Handle 0x0014, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port0
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -202,7 +202,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x0014, DMI type 8, 9 bytes
+Handle 0x0015, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port5
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -210,7 +210,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x0015, DMI type 8, 9 bytes
+Handle 0x0016, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port4
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -218,7 +218,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x0016, DMI type 8, 9 bytes
+Handle 0x0017, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port3
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -226,7 +226,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x0017, DMI type 8, 9 bytes
+Handle 0x0018, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port2
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -234,7 +234,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x0018, DMI type 8, 9 bytes
+Handle 0x0019, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port1
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -242,7 +242,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x001A, DMI type 9, 13 bytes
+Handle 0x001B, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI SLOT1
 	Type: 32-bit PCI
@@ -254,20 +254,20 @@ System Slot Information
 		PME signal is supported
 		SMBus signal is supported
 
-Handle 0x0010, DMI type 10, 6 bytes
+Handle 0x0011, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
 	Description: 64
 
-Handle 0x0019, DMI type 11, 5 bytes
+Handle 0x001A, DMI type 11, 5 bytes
 OEM Strings
 	String 1: ABS 70/71 79 7A 7B 7C
 	String 2: CSM v01.55
 	String 3: HP_Mute_LED_0_0
 	String 4: www.hp.com
 
-Handle 0x001D, DMI type 13, 22 bytes
+Handle 0x001E, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 14
@@ -300,30 +300,30 @@ Handle 0x0006, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0005
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(top)
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1867 MT/s
+	Manufacturer: 029E
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
+	Part Number: CMSX16GX3M2B1866C1
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
-Handle 0x0007, DMI type 17, 34 bytes
+Handle 0x0008, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0005
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(under)
@@ -336,28 +336,39 @@ Memory Device
 	Asset Tag: --
 	Part Number: CMSX16GX3M2B1866C1
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
-Handle 0x0009, DMI type 19, 31 bytes
+Handle 0x000A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0005
 	Partition Width: 2
 
-Handle 0x0008, DMI type 20, 35 bytes
+Handle 0x0007, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0007
-	Memory Array Mapped Address Handle: 0x0009
+	Physical Device Handle: 0x0006
+	Memory Array Mapped Address Handle: 0x000A
 	Partition Row Position: 1
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x001B, DMI type 22, 26 bytes
+Handle 0x0009, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0008
+	Memory Array Mapped Address Handle: 0x000A
+	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 1
+
+Handle 0x001C, DMI type 22, 26 bytes
 Portable Battery
 	Location: Primary
 	Manufacturer: SANYO
@@ -371,11 +382,11 @@ Portable Battery
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
-Handle 0x000F, DMI type 32, 20 bytes
+Handle 0x0010, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0011, DMI type 41, 11 bytes
+Handle 0x0012, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: 64
 	Type: Video
@@ -383,7 +394,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 
-Handle 0x0012, DMI type 41, 11 bytes
+Handle 0x0013, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: WLAN
 	Type: Ethernet
@@ -391,18 +402,18 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:04:00.0
 
-Handle 0x000A, DMI type 131, 64 bytes
+Handle 0x000B, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 0A 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 0B 00 10 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 59 1E FF FF FF FF 01 00 00 00 01 00 08 00
 		46 05 1E 00 00 00 00 00 E5 24 FF FF 00 00 00 00
-		54 01 00 00 20 00 00 00 76 50 72 6F 00 00 00 00
+		54 01 00 00 00 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x001C, DMI type 137, 12 bytes
+Handle 0x001D, DMI type 137, 12 bytes
 OEM-specific Type
 	Header and Data:
-		89 0C 1C 00 01 00 F0 03 F0 FF 00 00
+		89 0C 1D 00 01 00 F0 03 F0 FF 00 00
 
 Handle 0xFFFD, DMI type 127, 4 bytes
 End Of Table

@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0xBDE2F000.
+Table at 0xBDE20000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: P2.20
-	Release Date: 08/02/2021
+	Version: P2.50
+	Release Date: 10/19/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -40,7 +40,7 @@ BIOS Information
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: To Be Filled By O.E.M.
-	Product Name: To Be Filled By O.E.M.
+	Product Name: B550M Steel Legend
 	Version: To Be Filled By O.E.M.
 	Serial Number: --
 	UUID: --
@@ -183,7 +183,7 @@ Handle 0x000E, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.58
+	Firmware Revision: 3.84
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -214,15 +214,15 @@ Memory Array Mapped Address
 	Ending Address: 0x000BFFFFFFF
 	Range Size: 3 GB
 	Physical Array Handle: 0x0010
-	Partition Width: 2
+	Partition Width: 4
 
 Handle 0x0012, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0083FFFFFFF
-	Range Size: 29 GB
+	Ending Address: 0x00C3FFFFFFF
+	Range Size: 45 GB
 	Physical Array Handle: 0x0010
-	Partition Width: 2
+	Partition Width: 4
 
 Handle 0x0013, DMI type 7, 27 bytes
 Cache Information
@@ -342,67 +342,22 @@ Handle 0x0018, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x0010
 	Error Information Handle: 0x0017
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
-	Set: None
-	Locator: DIMM 0
-	Bank Locator: P0 CHANNEL A
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
-	Firmware Version: Unknown
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
-
-Handle 0x0019, DMI type 18, 23 bytes
-32-bit Memory Error Information
-	Type: OK
-	Granularity: Unknown
-	Operation: Unknown
-	Vendor Syndrome: Unknown
-	Memory Array Address: Unknown
-	Device Address: Unknown
-	Resolution: Unknown
-
-Handle 0x001A, DMI type 17, 92 bytes
-Memory Device
-	Array Handle: 0x0010
-	Error Information Handle: 0x0019
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: DIMM 1
+	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 4000 MT/s
+	Speed: 3666 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: BL16G36C16U4RL.M8FB1
 	Rank: 1
-	Configured Memory Speed: 4000 MT/s
+	Configured Memory Speed: 3666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -418,18 +373,18 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x001B, DMI type 20, 35 bytes
+Handle 0x0019, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
-	Physical Device Handle: 0x001A
+	Ending Address: 0x00BFFFFFFFF
+	Range Size: 48 GB
+	Physical Device Handle: 0x0018
 	Memory Array Mapped Address Handle: 0x0012
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x001C, DMI type 18, 23 bytes
+Handle 0x001A, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -439,42 +394,53 @@ Handle 0x001C, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x001D, DMI type 17, 92 bytes
+Handle 0x001B, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x0010
-	Error Information Handle: 0x001C
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Error Information Handle: 0x001A
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: DIMM
 	Set: None
-	Locator: DIMM 0
-	Bank Locator: P0 CHANNEL B
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
+	Locator: DIMM 1
+	Bank Locator: P0 CHANNEL A
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 3666 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
+	Part Number: CMK16GX4M2D3600C18  
+	Rank: 1
+	Configured Memory Speed: 3666 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Unknown
+	Module Manufacturer ID: Bank 3, Hex 0x9E
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: None
+	Volatile Size: 8 GB
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x001E, DMI type 18, 23 bytes
+Handle 0x001C, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x00BFFFFFFFF
+	Range Size: 48 GB
+	Physical Device Handle: 0x001B
+	Memory Array Mapped Address Handle: 0x0012
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x001D, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -484,26 +450,26 @@ Handle 0x001E, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x001F, DMI type 17, 92 bytes
+Handle 0x001E, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x0010
-	Error Information Handle: 0x001E
+	Error Information Handle: 0x001D
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: DIMM 1
+	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 4000 MT/s
+	Speed: 3666 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: BL16G36C16U4RL.M8FB1
 	Rank: 1
-	Configured Memory Speed: 4000 MT/s
+	Configured Memory Speed: 3666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -519,17 +485,73 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0020, DMI type 20, 35 bytes
+Handle 0x001F, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
-	Physical Device Handle: 0x001F
+	Ending Address: 0x00BFFFFFFFF
+	Range Size: 48 GB
+	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x0012
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0021, DMI type 127, 4 bytes
+Handle 0x0020, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0021, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0010
+	Error Information Handle: 0x0020
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM 1
+	Bank Locator: P0 CHANNEL B
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 3666 MT/s
+	Manufacturer: Unknown
+	Serial Number: --
+	Asset Tag: --
+	Part Number: CMK16GX4M2D3600C18  
+	Rank: 1
+	Configured Memory Speed: 3666 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 3, Hex 0x9E
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 8 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0022, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x00BFFFFFFFF
+	Range Size: 48 GB
+	Physical Device Handle: 0x0021
+	Memory Array Mapped Address Handle: 0x0012
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0023, DMI type 127, 4 bytes
 End Of Table
 

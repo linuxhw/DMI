@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 60 structures occupying 2459 bytes.
@@ -122,8 +122,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -155,7 +155,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -168,7 +168,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: CMSX8GX3M2A1600C9 
 	Rank: Unknown
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000D, DMI type 17, 34 bytes
 Memory Device
@@ -176,7 +176,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -189,7 +189,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: CMSX8GX3M2A1600C9 
 	Rank: Unknown
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000E, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -206,7 +206,7 @@ BIOS Information
 	Release Date: 04/15/2014
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 12288 kB
+	ROM Size: 12 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -475,12 +475,9 @@ Built-in Pointing Device
 	Buttons: 2
 
 Handle 0x0030, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 30 00 01 08 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: No
 
 Handle 0x0031, DMI type 130, 20 bytes
 OEM-specific Type
@@ -513,9 +510,8 @@ OEM-specific Type
 		KHOIHGIUCCHHII
 
 Handle 0x0035, DMI type 135, 10 bytes
-OEM-specific Type
-	Header and Data:
-		87 0A 35 00 54 50 07 03 01 04
+ThinkPad Device Presence Detection
+	Fingerprint Reader: No
 
 Handle 0x0036, DMI type 15, 81 bytes
 System Event Log
@@ -607,12 +603,9 @@ OEM-specific Type
 		00 00
 
 Handle 0x003A, DMI type 140, 15 bytes
-OEM-specific Type
-	Header and Data:
-		8C 0F 3A 00 4C 45 4E 4F 56 4F 0B 07 01 01 02
-	Strings:
-		H1EC34WW
-		10/05/2011
+ThinkPad Embedded Controller Program
+	Version ID: H1EC34WW
+	Release Date: 10/05/2011
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

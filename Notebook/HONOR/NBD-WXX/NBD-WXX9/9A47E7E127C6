@@ -1,15 +1,13 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0x739DF000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HONOR
-	Version: 3.08
-	Release Date: 09/11/2021
+	Version: 3.09
+	Release Date: 11/04/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 8 MB
@@ -27,8 +25,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 3.8
-	Firmware Revision: 3.8
+	BIOS Revision: 3.9
+	Firmware Revision: 3.9
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -37,7 +35,7 @@ System Information
 	Version: M1020
 	Serial Number: --
 	UUID: --
-	Wake-up Type: APM Timer
+	Wake-up Type: Power Switch
 	SKU Number: C171
 	Family: MagicBook
 
@@ -210,6 +208,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.3
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x000A, DMI type 9, 19 bytes
 System Slot Information
@@ -222,6 +222,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.4
+	Data Bus Width: 10
+	Peer Devices: 0
 
 Handle 0x000B, DMI type 11, 5 bytes
 OEM Strings
@@ -270,7 +272,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelA
@@ -410,7 +412,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelA
@@ -591,21 +593,23 @@ Portable Battery
 	Design Capacity: 0 mWh
 	Design Voltage: 7640 mV
 	SBDS Version: Not Specified
-	Maximum Error: 1%
+	Maximum Error: 8%
 	OEM-specific Information: 0x00000003
 
 Handle 0x001C, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: INTC
-	Specification Version: 2.0	Firmware Revision: 600.7
-	Description: TPM Device	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 600.7
+	Description: TPM Device
+	Characteristics:
 		TPM Device characteristics not supported
 	OEM-specific Information: 0x00000000
 
 Handle 0x001D, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 1D 00 01 04 01 45 02 00 A0 06 01 85 39 20
+		DB 6A 1D 00 01 04 01 45 02 00 90 06 01 85 30 20
 		00 00 00 00 40 00 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -690,7 +694,7 @@ OEM-specific Type
 		DD 59 23 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 03 08 00 00 00 0C 00 00
+		00 FF FF FF FF FF 0B 00 03 09 00 00 00 0C 00 00
 		17 00 45 10 0D 00 FF FF FF FF FF 0E 00 00 07 03
 		00 00 0F 00 00 02 00 0F 00
 	Strings:

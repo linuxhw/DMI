@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 26 structures occupying 1613 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 05/31/2016
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -52,7 +52,7 @@ Base Board Information
 	Version:                       
 	Serial Number: --
 	Asset Tag: --
-	...
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:                       
@@ -151,8 +151,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -167,8 +167,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -256,8 +256,8 @@ Physical Memory Array
 Handle 0x000F, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0063F0003FF
-	Range Size: 25584 MB
+	Ending Address: 0x0083F0003FF
+	Range Size: 33776 MB
 	Physical Array Handle: 0x000E
 	Partition Width: 255
 
@@ -267,7 +267,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM0
@@ -280,7 +280,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: R538G1601U2S-UO   
 	Rank: 2
-	Configured Clock Speed: 800 MT/s
+	Configured Memory Speed: 800 MT/s
 
 Handle 0x0011, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -297,7 +297,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM1
@@ -310,7 +310,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: R538G1601U2S      
 	Rank: 2
-	Configured Clock Speed: 800 MT/s
+	Configured Memory Speed: 800 MT/s
 
 Handle 0x0013, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -327,7 +327,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM2
@@ -340,7 +340,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: R538G1601U2S-UO   
 	Rank: 2
-	Configured Clock Speed: 800 MT/s
+	Configured Memory Speed: 800 MT/s
 
 Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -357,7 +357,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM3
@@ -370,7 +370,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: R538G1601U2S      
 	Rank: 2
-	Configured Clock Speed: 800 MT/s
+	Configured Memory Speed: 800 MT/s
 
 Handle 0x0017, DMI type 20, 35 bytes
 Memory Device Mapped Address

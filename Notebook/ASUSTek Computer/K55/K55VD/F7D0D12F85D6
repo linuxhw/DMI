@@ -1,6 +1,7 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-22 structures occupying 1642 bytes.
+23 structures occupying 1688 bytes.
 Table at 0x000EBA70.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -10,7 +11,7 @@ BIOS Information
 	Release Date: 11/09/2012
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 6144 kB
+	ROM Size: 6 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -126,9 +127,9 @@ On Board Device 11 Information
 
 Handle 0x0005, DMI type 11, 5 bytes
 OEM Strings
-	String 1: 5tJEbD8-r+OhL
-	String 2: PuH2tP0XNR5eg
-	String 3: Cb4Ngyer6HaGg
+	String 1: flN4pHoTNfbeD
+	String 2: 4c8zWv2PsHX+s
+	String 3: jP6PAxrJHWOs3
 	String 4: 90N8DC59415G4B00139Y
 	String 5:  
 	String 6:  
@@ -186,8 +187,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -243,7 +244,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Pentium(R) CPU 2020M @ 2.40GHz
-	Voltage: 10.2 V
+	Voltage: 11.7 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
 	Current Speed: 2400 MHz
@@ -267,20 +268,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: 0443
 	Serial Number: --
 	Asset Tag: --
 	Part Number: RMT3160ED58E9W1600
 	Rank: 2
-	Configured Clock Speed: 1600 MHz
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000E, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -288,10 +289,10 @@ Memory Device Mapped Address
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x000D
-	Memory Array Mapped Address Handle: 0x0012
+	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown
 	Interleave Position: 1
-	Interleaved Data Depth: 1
+	Interleaved Data Depth: 2
 
 Handle 0x000F, DMI type 17, 34 bytes
 Memory Device
@@ -312,30 +313,41 @@ Memory Device
 	Asset Tag: --
 	Part Number: [Empty]
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0010, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: 04CB
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: AM1L16BC2P1-B1FS  
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0011, DMI type 17, 34 bytes
+Handle 0x0011, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0010
+	Memory Array Mapped Address Handle: 0x0013
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x0012, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000B
 	Error Information Handle: Not Provided
@@ -354,31 +366,31 @@ Memory Device
 	Asset Tag: --
 	Part Number: [Empty]
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
-Handle 0x0012, DMI type 19, 31 bytes
+Handle 0x0013, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 6 GB
 	Physical Array Handle: 0x000B
 	Partition Width: 4
 
-Handle 0x0017, DMI type 131, 64 bytes
+Handle 0x0018, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 17 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 18 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 59 1E 00 00 00 00 01 20 00 00 01 00 08 00
 		E0 04 00 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0018, DMI type 13, 22 bytes
+Handle 0x0019, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0019, DMI type 127, 4 bytes
+Handle 0x001A, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0xBDA29000.
+Table at 0xBDA27000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: F14d
-	Release Date: 10/01/2021
+	Version: F15e
+	Release Date: 07/20/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -29,7 +29,6 @@ BIOS Information
 		Serial services are supported (int 14h)
 		Printer services are supported (int 17h)
 		CGA/mono video services are supported (int 10h)
-		ACPI is supported
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
@@ -107,7 +106,7 @@ Handle 0x0009, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.71
+	Firmware Revision: 3.84
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -186,8 +185,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 32 MB
-	Maximum Size: 32 MB
+	Installed Size: 96 MB
+	Maximum Size: 96 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -202,8 +201,8 @@ Processor Information
 	Type: Central Processor
 	Family: Zen
 	Manufacturer: Advanced Micro Devices, Inc.
-	ID: 10 0F A2 00 FF FB 8B 17
-	Signature: Family 25, Model 33, Stepping 0
+	ID: 12 0F A2 00 FF FB 8B 17
+	Signature: Family 25, Model 33, Stepping 2
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -228,11 +227,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Ryzen 7 5800X 8-Core Processor             
+	Version: AMD Ryzen 7 5800X3D 8-Core Processor           
 	Voltage: 1.1 V
 	External Clock: 100 MHz
-	Max Speed: 4850 MHz
-	Current Speed: 3800 MHz
+	Max Speed: 3400 MHz
+	Current Speed: 3400 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
 	L1 Cache Handle: 0x000E
@@ -670,7 +669,7 @@ Onboard Device
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:09:00.0
+	Bus Address: 0000:05:00.0
 
 Handle 0x0035, DMI type 41, 11 bytes
 Onboard Device
@@ -678,7 +677,7 @@ Onboard Device
 	Type: Sound
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:10:00.4
+	Bus Address: 0000:0b:00.4
 
 Handle 0x0036, DMI type 13, 22 bytes
 BIOS Language Information

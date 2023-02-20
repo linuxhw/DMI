@@ -1,8 +1,8 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-23 structures occupying 1497 bytes.
-Table at 0x9AEBC000.
+24 structures occupying 1553 bytes.
+Table at 0x000E6DF0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 10/08/2013
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 6144 kB
+	ROM Size: 6 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -194,8 +194,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -244,22 +244,22 @@ Handle 0x000E, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000D
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Empty
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Empty
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: KHX1600C9S3L/8G   
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000F, DMI type 17, 34 bytes
 Memory Device
@@ -267,7 +267,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM1
@@ -285,12 +285,23 @@ Memory Device
 Handle 0x0010, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x000D
 	Partition Width: 2
 
 Handle 0x0011, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x000E
+	Memory Array Mapped Address Handle: 0x0010
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
@@ -301,7 +312,7 @@ Memory Device Mapped Address
 	Interleave Position: 2
 	Interleaved Data Depth: 1
 
-Handle 0x0012, DMI type 170, 82 bytes
+Handle 0x0013, DMI type 170, 82 bytes
 Acer Hotkey Function
 	Function bitmap for Communication Button: 0x0801
 		WiFi: Yes
@@ -314,24 +325,24 @@ Acer Hotkey Function
 	Function bitmap for Others Button: 0x0006
 	Communication Function Key Number: 3
 
-Handle 0x0013, DMI type 171, 39 bytes
+Handle 0x0014, DMI type 171, 39 bytes
 OEM-specific Type
 	Header and Data:
-		AB 27 13 00 01 86 80 66 01 01 DE 10 92 12 02 E4
+		AB 27 14 00 01 86 80 66 01 01 DE 10 92 12 02 E4
 		14 B3 16 04 CF 1B 54 2C 05 86 80 20 1E 07 8C 16
 		36 00 08 89 04 5E E0
 
-Handle 0x0014, DMI type 172, 21 bytes
+Handle 0x0015, DMI type 172, 21 bytes
 OEM-specific Type
 	Header and Data:
-		AC 15 14 00 02 13 01 FF 00 02 03 00 03 FF 00 04
+		AC 15 15 00 02 13 01 FF 00 02 03 00 03 FF 00 04
 		03 00 05 0F 00
 
-Handle 0x0015, DMI type 173, 9 bytes
+Handle 0x0016, DMI type 173, 9 bytes
 OEM-specific Type
 	Header and Data:
-		AD 09 15 00 00 00 00 00 00
+		AD 09 16 00 00 00 00 00 00
 
-Handle 0x0016, DMI type 127, 4 bytes
+Handle 0x0017, DMI type 127, 4 bytes
 End Of Table
 

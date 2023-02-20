@@ -1,8 +1,8 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-65 structures occupying 3002 bytes.
-Table at 0x000FAC10.
+65 structures occupying 2923 bytes.
+Table at 0xBCC3A000.
 
 Handle 0x0000, DMI type 4, 42 bytes
 Processor Information
@@ -216,41 +216,6 @@ OEM-specific Type
 		F8 00 43 9C 00 00 00 00 01 20 00 00 05 00 09 00
 		BC 06 0E 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 20 00 00 00 76 50 72 6F 00 00 00 00
-
-Handle 0x000D, DMI type 0, 24 bytes
-BIOS Information
-	Vendor: Dell Inc.         
-	Version: A10
-	Release Date: 07/18/2014
-	Address: 0xE0000
-	Runtime Size: 128 kB
-	ROM Size: 6656 kB
-	Characteristics:
-		PCI is supported
-		PNP is supported
-		BIOS is upgradeable
-		BIOS shadowing is allowed
-		ESCD support is available
-		Boot from CD is supported
-		Selectable boot is supported
-		EDD is supported
-		5.25"/360 kB floppy services are supported (int 13h)
-		5.25"/1.2 MB floppy services are supported (int 13h)
-		3.5"/720 kB floppy services are supported (int 13h)
-		Print screen service is supported (int 5h)
-		8042 keyboard services are supported (int 9h)
-		Serial services are supported (int 14h)
-		Printer services are supported (int 17h)
-		CGA/mono video services are supported (int 10h)
-		ACPI is supported
-		USB legacy is supported
-		LS-120 boot is supported
-		Smart battery is supported
-		BIOS boot specification is supported
-		Function key-initiated network boot is supported
-		Targeted content distribution is supported
-	BIOS Revision: 1.0
-	Firmware Revision: 1.0
 
 Handle 0x000E, DMI type 1, 27 bytes
 System Information
@@ -530,20 +495,6 @@ BIOS Language Information
 		ru-RU
 	Currently Installed Language: en-US
 
-Handle 0x002C, DMI type 22, 26 bytes
-Portable Battery
-	Location: Rear
-	Manufacturer: LGC-LGR3.9
-	Manufacture Date: 2008
-	Serial Number: --
-	Name: DELL G4YJM4A
-	Design Capacity: 57720 mWh
-	Design Voltage: 14800 mV
-	SBDS Version: V1.0
-	Maximum Error: Unknown
-	SBDS Chemistry: LION
-	OEM-specific Information: 0x00000000
-
 Handle 0x002D, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
@@ -591,14 +542,14 @@ Cooling Device
 
 Handle 0x0033, DMI type 15, 81 bytes
 System Event Log
-	Area Length: 251 bytes
+	Area Length: 139 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x0000000F
+	Change Token: 0x00000008
 	Header Format: Type 1
 	Supported Log Type Descriptors: 29
 	Descriptor 1: Single-bit ECC memory error
@@ -688,9 +639,6 @@ Handle 0x0038, DMI type 216, 9 bytes
 OEM-specific Type
 	Header and Data:
 		D8 09 38 00 01 02 01 F0 03
-	Strings:
-		Intel
-		 217
 
 Handle 0x0039, DMI type 217, 8 bytes
 OEM-specific Type
@@ -774,6 +722,35 @@ OEM Strings
 	String 4: 13[P24E]
 	String 5: 14[3]
 	String 6: 15[11]
+
+Handle 0x003E, DMI type 126, 4 bytes
+Inactive
+
+Handle 0x003F, DMI type 0, 24 bytes
+BIOS Information
+	Vendor: Dell Inc.         
+	Version: A10
+	Release Date: 07/18/2014
+	Address: 0xE0000
+	Runtime Size: 128 kB
+	ROM Size: 6656 kB
+	Characteristics:
+		PCI is supported
+		PNP is supported
+		BIOS is upgradeable
+		BIOS shadowing is allowed
+		ESCD support is available
+		Boot from CD is supported
+		Selectable boot is supported
+		ACPI is supported
+		USB legacy is supported
+		LS-120 boot is supported
+		Smart battery is supported
+		BIOS boot specification is supported
+		Function key-initiated network boot is supported
+		Targeted content distribution is supported
+	BIOS Revision: 1.0
+	Firmware Revision: 1.0
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

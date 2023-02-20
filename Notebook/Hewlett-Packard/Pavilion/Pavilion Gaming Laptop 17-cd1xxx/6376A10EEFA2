@@ -1,13 +1,13 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0x6A65C000.
+Table at 0x5AD49000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Insyde
-	Version: F.22
-	Release Date: 06/16/2021
+	Version: F.43
+	Release Date: 12/16/2022
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 12800 kB
@@ -31,8 +31,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.22
-	Firmware Revision: 3.34
+	BIOS Revision: 15.43
+	Firmware Revision: 3.50
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -49,7 +49,7 @@ Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 8744
-	Version: 03.34
+	Version: 03.50
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -350,6 +350,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.0
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001C, DMI type 9, 19 bytes
 System Slot Information
@@ -362,6 +364,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.1
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001D, DMI type 9, 19 bytes
 System Slot Information
@@ -374,6 +378,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.2
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001E, DMI type 9, 19 bytes
 System Slot Information
@@ -386,6 +392,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.3
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001F, DMI type 9, 19 bytes
 System Slot Information
@@ -398,6 +406,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.4
+	Data Bus Width: 10
+	Peer Devices: 0
 
 Handle 0x0020, DMI type 11, 5 bytes
 OEM Strings
@@ -481,7 +491,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1 (left)
@@ -516,7 +526,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2 (right)
@@ -731,7 +741,7 @@ OEM-specific Type
 Handle 0x003D, DMI type 219, 106 bytes
 HP ProLiant Information
 	Power Features: 0x45010401
-	Omega Features: 0x06a00002
+	Omega Features: 0x06900002
 	Misc. Features: 0x00000000
 		iCRU: No
 		UEFI: No
@@ -739,7 +749,7 @@ HP ProLiant Information
 Handle 0x003E, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 1: PCI device 01:00.3, MAC address 00:09:00:2C:10:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:E0:00:03
+	NIC 2: PCI device 00:00.2, MAC address 00:00:00:F0:00:03
 
 Handle 0x003F, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
@@ -777,7 +787,7 @@ HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 5: Not Installed
 	NIC 6: Disabled
 	NIC 7: Not Installed
-	NIC 8: PCI device 0c:00.0, MAC address 00:00:09:00:05:11
+	NIC 8: PCI device 0c:00.0, MAC address 00:00:09:00:13:11
 	NIC 9: PCI device 00:01.5, MAC address FF:FF:FF:FF:FF:0E
 	NIC 10: Disabled
 

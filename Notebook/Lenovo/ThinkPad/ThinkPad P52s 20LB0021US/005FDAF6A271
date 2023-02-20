@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0x5F09C000.
@@ -51,7 +51,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Not Specified
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -62,7 +62,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -75,7 +75,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 16ATF2G64HZ-2G6E1   
 	Rank: 2
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -110,8 +110,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -126,8 +126,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -174,7 +174,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
-	Voltage: 1.1 V
+	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 2000 MHz
 	Current Speed: 1800 MHz
@@ -200,8 +200,8 @@ Processor Information
 Handle 0x000B, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: N27ET42W (1.28 )
-	Release Date: 05/13/2021
+	Version: N27ET47W (1.33 )
+	Release Date: 07/18/2022
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -224,7 +224,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.28
+	BIOS Revision: 1.33
 	Firmware Revision: 1.9
 
 Handle 0x000C, DMI type 1, 27 bytes
@@ -440,16 +440,16 @@ OEM-specific Type
 Handle 0x0029, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 29 00 31 00 00 00 0B 00 00 00 00 00 0A 00
+		83 40 29 00 31 00 00 00 0B 00 00 00 00 00 0C 00
 		F8 00 4E 9D 00 00 00 00 01 00 00 00 08 00 0B 00
-		45 0F 56 00 00 00 00 00 FE 00 D8 15 00 00 00 00
+		7E 10 5C 00 00 00 00 00 FE 00 D8 15 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x002A, DMI type 221, 33 bytes
 OEM-specific Type
 	Header and Data:
 		DD 21 2A 00 04 01 00 03 07 03 00 00 02 00 00 00
-		00 EA 00 03 00 00 05 00 00 00 04 00 02 00 00 63
+		00 F0 00 03 00 00 05 00 00 00 04 00 02 00 00 63
 		0E
 	Strings:
 		Reference Code - CPU
@@ -461,7 +461,7 @@ Handle 0x002B, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 2B 00 03 01 00 03 07 03 00 00 02 00 0B 00
-		00 0A 00 03 04 0B 08 56 45 0F
+		00 0C 00 03 04 0B 08 5C 7E 10
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
@@ -562,12 +562,9 @@ Built-in Pointing Device
 	Buttons: 2
 
 Handle 0x0034, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 34 00 01 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: No
 
 Handle 0x0035, DMI type 136, 6 bytes
 OEM-specific Type
@@ -601,7 +598,7 @@ Group Associations
 Handle 0x003A, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 3A 00 01 03 01 45 02 00 A0 06 01 00 66 20
+		DB 51 3A 00 01 03 01 45 02 00 A0 06 01 00 60 20
 		00 00 00 04 40 08 00 01 1F 00 00 C9 0A 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -619,12 +616,9 @@ OEM-specific Type
 		00 00
 
 Handle 0x003C, DMI type 140, 15 bytes
-OEM-specific Type
-	Header and Data:
-		8C 0F 3C 00 4C 45 4E 4F 56 4F 0B 07 01 01 02
-	Strings:
-		N27HT20W
-		04/29/2019
+ThinkPad Embedded Controller Program
+	Version ID: N27HT20W
+	Release Date: 04/29/2019
 
 Handle 0x003D, DMI type 140, 43 bytes
 OEM-specific Type

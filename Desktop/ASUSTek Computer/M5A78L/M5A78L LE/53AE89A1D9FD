@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 58 structures occupying 2128 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 08/20/2012
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -156,8 +156,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -529,8 +529,8 @@ Physical Memory Array
 Handle 0x002F, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0022FFFFFFF
-	Range Size: 8960 MB
+	Ending Address: 0x0031FFFFFFF
+	Range Size: 12800 MB
 	Physical Array Handle: 0x002E
 	Partition Width: 1
 
@@ -540,7 +540,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
@@ -566,51 +566,51 @@ Handle 0x0032, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x002E
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
+	Type: Other
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer1
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum1
 
-Handle 0x0033, DMI type 126, 19 bytes
-Inactive
+Handle 0x0033, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0032
+	Memory Array Mapped Address Handle: 0x002F
+	Partition Row Position: 1
 
 Handle 0x0034, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x002E
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4096 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
-	Type: Other
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
 	Manufacturer: Manufacturer2
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum2
 
-Handle 0x0035, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0034
-	Memory Array Mapped Address Handle: 0x002F
-	Partition Row Position: 1
+Handle 0x0035, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x0036, DMI type 17, 27 bytes
 Memory Device

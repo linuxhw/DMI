@@ -1,8 +1,6 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0x31B9B000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -12,7 +10,7 @@ BIOS Information
 	Release Date: 01/15/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 11264 kB
+	ROM Size: 11 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -118,7 +116,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
-	Voltage: 0.8 V
+	Voltage: 0.7 V
 	External Clock: 100 MHz
 	Max Speed: 4700 MHz
 	Current Speed: 2800 MHz
@@ -296,6 +294,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.0
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x0014, DMI type 11, 5 bytes
 OEM Strings
@@ -384,7 +384,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-slot 2(right)
@@ -419,7 +419,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-slot 2(right)
@@ -591,8 +591,10 @@ Onboard Device
 Handle 0x002A, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: INTC
-	Specification Version: 2.0	Firmware Revision: 600.7
-	Description: TPM Device	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 600.7
+	Description: TPM Device
+	Characteristics:
 		TPM Device characteristics not supported
 	OEM-specific Information: 0x00000000
 

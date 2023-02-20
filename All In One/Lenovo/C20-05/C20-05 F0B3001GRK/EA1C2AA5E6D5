@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 54 structures occupying 2055 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 05/11/2016
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -53,7 +53,7 @@ Base Board Information
 	Version: 31900059 STD 2623038457133
 	Serial Number: --
 	Asset Tag: --
-	Features:
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: To be filled by O.E.M.
@@ -69,7 +69,7 @@ Chassis Information
 	Version: None
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -456,7 +456,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -469,7 +469,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: EBJ41UF8BCS0-DJ-F 
 	Rank: 2
-	Configured Clock Speed: 667 MT/s
+	Configured Memory Speed: 667 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -480,7 +480,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 1
@@ -493,7 +493,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: HMT451S6BFR8A-PB  
 	Rank: 1
-	Configured Clock Speed: 667 MT/s
+	Configured Memory Speed: 667 MT/s
 	Minimum Voltage: 1.35 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -542,8 +542,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -591,8 +591,8 @@ Processor Information
 Handle 0x0043, DMI type 140, 49 bytes
 OEM-specific Type
 	Header and Data:
-		8C 31 43 00 4C 45 4E 4F 56 4F 0B 00 01 1C 5F D9
-		28 83 74 90 D8 DA B3 32 54 51 A2 81 D7 11 00 3B
+		8C 31 43 00 4C 45 4E 4F 56 4F 0B 00 01 01 0F 74
+		6F CA 1C 3F 24 E2 14 CC 85 61 17 93 65 11 00 3B
 		B9 41 53 25 17 B9 42 BF 18 26 07 09 B7 E4 06 11
 		00
 

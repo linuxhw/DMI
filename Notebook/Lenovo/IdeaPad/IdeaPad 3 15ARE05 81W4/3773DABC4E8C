@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0x000EC8C0.
+Table at 0xC9651000.
 
 Handle 0x0000, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -25,8 +25,8 @@ Physical Memory Array
 Handle 0x0002, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 20 GB
 	Physical Array Handle: 0x0001
 	Partition Width: 2
 
@@ -150,18 +150,18 @@ Memory Device
 	Error Information Handle: 0x0007
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
-	Form Factor: Row Of Chips
+	Size: 16 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 3200 MT/s
-	Manufacturer: Micron Technology
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 4ATF51264HZ-3G2J1   
+	Part Number: CT16G4SFRA32A.M8FF
 	Rank: 1
 	Configured Memory Speed: 2667 MT/s
 	Minimum Voltage: 1.2 V
@@ -170,20 +170,20 @@ Memory Device
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Manufacturer ID: Bank 6, Hex 0x9B
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 4 GB
+	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0009, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 20 GB
 	Physical Device Handle: 0x0008
 	Memory Array Mapped Address Handle: 0x0002
 	Partition Row Position: Unknown
@@ -207,7 +207,7 @@ Memory Device
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 4 GB
-	Form Factor: SODIMM
+	Form Factor: Row Of Chips
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL B
@@ -524,8 +524,8 @@ OEM Strings
 Handle 0x000D, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: DZCN37WW
-	Release Date: 12/21/2020
+	Version: DZCN43WW
+	Release Date: 04/28/2022
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -547,8 +547,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.37
-	Firmware Revision: 1.37
+	BIOS Revision: 1.43
+	Firmware Revision: 1.43
 
 Handle 0x000E, DMI type 1, 27 bytes
 System Information
@@ -604,14 +604,14 @@ OEM-specific Type
 
 Handle 0x0033, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 3970 bytes
+	Area Length: 1906 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
-	Status: Valid, Full
-	Change Token: 0x000000F7
+	Status: Valid, Not Full
+	Change Token: 0x00000076
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error

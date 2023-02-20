@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0xD2E08000.
@@ -634,18 +634,18 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
-	Manufacturer: SK Hynix
+	Speed: 2667 MT/s
+	Manufacturer: 0443
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA851S6AFR6N-UH    
+	Part Number: RMSA3260ME78HAF-2666
 	Rank: 1
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
@@ -658,18 +658,18 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
+	Speed: 2667 MT/s
 	Manufacturer: SK Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA851S6AFR6N-UH    
+	Part Number: HMA81GS6CJR8N-VK    
 	Rank: 1
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
@@ -679,8 +679,8 @@ Memory Device
 Handle 0x0041, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x003E
 	Partition Width: 2
 
@@ -693,7 +693,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFB9F000
 	Status: Valid, Not Full
-	Change Token: 0x00000004
+	Change Token: 0x00000006
 	Header Format: Type 1
 	Supported Log Type Descriptors: 25
 	Descriptor 1: Single-bit ECC memory error
@@ -865,8 +865,8 @@ OEM-specific Type
 Handle 0x004B, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x003F
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: Unknown
@@ -875,9 +875,9 @@ Memory Device Mapped Address
 
 Handle 0x004C, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0040
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: Unknown

@@ -1,14 +1,14 @@
-# dmidecode 3.3
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-59 structures occupying 2465 bytes.
-Table at 0x000E6CF0.
+60 structures occupying 2483 bytes.
+Table at 0x000E6910.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 5.JR
-	Release Date: 07/01/2020
+	Version: 5.G0
+	Release Date: 12/21/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -32,7 +32,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 5.14
+	BIOS Revision: 5.13
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -196,7 +196,7 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 128 GB
+	Maximum Capacity: 256 GB
 	Error Information Handle: 0x000E
 	Number Of Devices: 4
 
@@ -230,8 +230,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2 MB
-	Maximum Size: 2 MB
+	Installed Size: 2048 kB
+	Maximum Size: 2048 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -246,8 +246,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8 MB
-	Maximum Size: 8 MB
+	Installed Size: 8192 kB
+	Maximum Size: 8192 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -341,7 +341,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Unknown
 	Rank: Unknown
-	Configured Memory Speed: 2667 MT/s
+	Configured Clock Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -362,7 +362,7 @@ Memory Device
 	Error Information Handle: 0x0017
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -375,7 +375,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: KHX2666C16/8G       
 	Rank: 1
-	Configured Memory Speed: 2667 MT/s
+	Configured Clock Speed: 1333 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -420,7 +420,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Unknown
 	Rank: Unknown
-	Configured Memory Speed: 2667 MT/s
+	Configured Clock Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -441,7 +441,7 @@ Memory Device
 	Error Information Handle: 0x001C
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -454,7 +454,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: KHX2666C16/8G       
 	Rank: 1
-	Configured Memory Speed: 2667 MT/s
+	Configured Clock Speed: 1333 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -696,34 +696,42 @@ System Slot Information
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:20:01.0
+	Bus Address: 0000:16:01.0
 
 Handle 0x0038, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Broadcom 5762
 	Type: Ethernet
-	Status: Disabled
+	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:03:00.0
+	Bus Address: 0000:16:00.0
 
-Handle 0x0039, DMI type 143, 16 bytes
+Handle 0x0039, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Realtek ALC898
+	Type: Sound
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:28:00.3
+
+Handle 0x003A, DMI type 143, 16 bytes
 OEM-specific Type
 	Header and Data:
-		8F 10 39 00 00 01 02 03 04 05 06 07 08 09 0A 0B
+		8F 10 3A 00 00 01 02 03 04 05 06 07 08 09 0A 0B
 	Strings:
 		VBIOS-0000
 		RAID-14.8.0.1042
 		PXEL1-v2.1.1.5
 		AMI-AptioV
-		GSES-5/5
+		GSES-5/1
 		RavenPI-RAVEN_PI_VERSION
-		Matisse-LITE
+		N/A
 		N/A
 		N/A
 		N/A
 		N/A
 		N/A
 
-Handle 0x003A, DMI type 127, 4 bytes
+Handle 0x003B, DMI type 127, 4 bytes
 End Of Table
 

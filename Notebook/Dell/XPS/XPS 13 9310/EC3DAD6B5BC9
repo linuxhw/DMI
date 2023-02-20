@@ -1,8 +1,8 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
-96 structures occupying 6959 bytes.
-Table at 0x5ECA4000.
+96 structures occupying 6953 bytes.
+Table at 0x5E8A4000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -129,26 +129,26 @@ OEM-specific Type
 	Header and Data:
 		DA FB 06 DA B2 00 05 FF 1F B6 50 EC 04 EC 04 01
 		00 ED 04 ED 04 00 00 00 05 00 05 FF FF 12 05 12
-		05 00 00 13 05 13 05 01 00 14 05 14 05 02 00 15
-		05 15 05 01 00 1A 05 1A 05 01 00 1B 05 1B 05 00
-		00 1C 05 1C 05 01 00 1D 05 1D 05 00 00 30 05 30
-		05 01 00 31 05 31 05 00 00 47 05 47 05 00 00 48
-		05 48 05 01 00 4E 05 4E 05 01 00 4F 05 4F 05 00
-		00 58 05 58 05 01 00 59 05 59 05 00 00 5A 05 5A
-		05 01 00 5B 05 5B 05 00 00 5C 05 5C 05 01 00 5D
-		05 5D 05 00 00 5E 05 5E 05 01 00 5F 05 5F 05 00
-		00 60 05 60 05 FF FF 65 05 65 05 FF FF 7E 05 7E
-		05 01 00 7F 05 7F 05 00 00 4A 40 4A 40 01 00 4B
-		40 4B 40 00 00 4C 40 4C 40 FF FF 4F 40 4F 40 01
-		00 50 40 50 40 00 00 0C 80 0C 80 00 00 0D 80 0D
-		80 00 00 0F 80 0F 80 FF FF 12 80 12 80 FF FF 13
-		80 13 80 00 00 FF FF FF FF 00 00
+		05 00 00 13 05 13 05 01 00 14 05 14 05 02 00 1A
+		05 1A 05 01 00 1B 05 1B 05 00 00 1C 05 1C 05 01
+		00 1D 05 1D 05 00 00 30 05 30 05 01 00 31 05 31
+		05 00 00 47 05 47 05 00 00 48 05 48 05 01 00 4E
+		05 4E 05 01 00 4F 05 4F 05 00 00 58 05 58 05 01
+		00 59 05 59 05 00 00 5A 05 5A 05 01 00 5B 05 5B
+		05 00 00 5C 05 5C 05 01 00 5D 05 5D 05 00 00 5E
+		05 5E 05 01 00 5F 05 5F 05 00 00 60 05 60 05 FF
+		FF 65 05 65 05 FF FF 7E 05 7E 05 01 00 7F 05 7F
+		05 00 00 4A 40 4A 40 01 00 4B 40 4B 40 00 00 4C
+		40 4C 40 FF FF 4F 40 4F 40 01 00 50 40 50 40 00
+		00 0C 80 0C 80 00 00 0D 80 0D 80 00 00 0F 80 0F
+		80 FF FF 12 80 12 80 FF FF 13 80 13 80 00 00 14
+		80 14 80 00 00 FF FF FF FF 00 00
 
-Handle 0xDA07, DMI type 218, 29 bytes
+Handle 0xDA07, DMI type 218, 23 bytes
 OEM-specific Type
 	Header and Data:
-		DA 1D 07 DA B2 00 05 FF 1F B6 50 14 80 14 80 00
-		00 04 A0 04 A0 01 00 FF FF FF FF 00 00
+		DA 17 07 DA B2 00 05 FF 1F B6 50 04 A0 04 A0 01
+		00 FF FF FF FF 00 00
 
 Handle 0xDA08, DMI type 218, 209 bytes
 OEM-specific Type
@@ -171,8 +171,8 @@ OEM-specific Type
 Handle 0x0001, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 3.1.0
-	Release Date: 07/22/2021
+	Version: 3.7.0
+	Release Date: 05/09/2022
 	ROM Size: 32 MB
 	Characteristics:
 		PCI is supported
@@ -193,7 +193,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 3.1
+	BIOS Revision: 3.7
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -202,7 +202,7 @@ System Information
 	Version: Not Specified
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Other
+	Wake-up Type: Power Switch
 	SKU Number: 0991
 	Family: XPS
 
@@ -217,7 +217,7 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Not Specified
-	Chassis Handle: 0x0000
+	Chassis Handle: 0x0300
 	Type: Motherboard
 	Contained Object Handles: 0
 
@@ -280,7 +280,7 @@ Processor Information
 	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 3000 MHz
-	Current Speed: 4300 MHz
+	Current Speed: 3000 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0701
@@ -1056,7 +1056,7 @@ Onboard Device
 	Type: Other
 	Status: Disabled
 	Type Instance: 0
-	Bus Address: 5e09:00:00.0
+	Bus Address: 5dc8:00:00.0
 
 Handle 0x2903, DMI type 41, 11 bytes
 Onboard Device
@@ -1085,9 +1085,9 @@ OEM-specific Type
 Handle 0x8300, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 00 83 35 00 00 00 0F 00 00 00 00 00 03 00
+		83 40 00 83 35 00 00 00 0F 00 00 00 00 00 04 00
 		F8 00 82 A0 00 00 00 00 01 00 00 00 00 00 0F 00
-		F0 06 1E 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		6E 08 29 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x8800, DMI type 136, 8 bytes
@@ -1115,7 +1115,7 @@ OEM-specific Type
 Handle 0xCB00, DMI type 203, 106 bytes
 OEM-specific Type
 	Header and Data:
-		CB 6A 00 CB 01 04 01 45 02 00 90 06 01 85 39 20
+		CB 6A 00 CB 01 04 01 45 02 00 A0 06 01 85 30 20
 		00 00 00 00 40 00 00 03 1F 04 00 C9 03 E0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -1139,7 +1139,7 @@ Handle 0xCD01, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 01 CD 03 01 00 0A 00 4E 11 00 02 00 00 00
-		00 86 00 03 00 01 0E 12 00 00
+		00 A4 00 03 00 01 0E 27 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -1149,7 +1149,7 @@ Handle 0xCD02, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 02 CD 03 01 00 0A 00 4E 11 00 02 00 0F 00
-		00 03 00 03 04 0F 00 1E F0 06
+		00 04 00 03 04 0F 00 29 6E 08
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -1177,8 +1177,8 @@ OEM-specific Type
 		CD 52 04 CD 0B 01 00 0A 00 4E 11 00 02 00 02 00
 		02 00 00 03 00 0A 00 4E 11 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 01 00 07 00 00 00 00 01 00 08
-		00 FF FF FF FF FF 09 00 11 01 04 00 00 0A 00 00
-		00 00 F8 00 0B 00 29 00 00 00 00 0C 00 FF FF FF
+		00 FF FF FF FF FF 09 00 11 01 07 00 00 0A 00 00
+		00 00 FA 00 0B 00 2E 01 00 00 00 0C 00 FF FF FF
 		FF FF
 	Strings:
 		Reference Code - SA - System Agent
@@ -1302,7 +1302,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 21 10 18 20 12 01 00 00
+		DE 10 00 DE 01 04 00 00 22 06 15 18 07 01 00 00
 
 Handle 0xF800, DMI type 248, 9 bytes
 OEM-specific Type

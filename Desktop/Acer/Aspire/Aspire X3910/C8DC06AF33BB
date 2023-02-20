@@ -1,14 +1,14 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-58 structures occupying 2406 bytes.
-Table at 0x000FD380.
+58 structures occupying 2405 bytes.
+Table at 0x000FCDC0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: AMI
-	Version: P01-B2
-	Release Date: 03/24/2010
+	Version: P01-A2L
+	Release Date: 05/25/2009
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 1 MB
@@ -352,7 +352,7 @@ Port Connector Information
 Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE#
-	Type: x16 PCI Express x16
+	Type: x16 PCI Express
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -365,7 +365,7 @@ System Slot Information
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE#
-	Type: x1 PCI Express x1
+	Type: x1 PCI Express
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -379,7 +379,7 @@ Handle 0x0022, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
-	Description:  Intel(R) G45/G43 Express Chipset
+	Description:  Intel(R) G45/G43 Expree Chipset
 
 Handle 0x0023, DMI type 10, 6 bytes
 On Board Device Information
@@ -422,8 +422,8 @@ Physical Memory Array
 Handle 0x0029, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0028
 	Partition Width: 4
 
@@ -438,10 +438,10 @@ Memory Device
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
-	Type: DDR3
+	Type: Other
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Samsung       
+	Manufacturer: Kingston      
 	Serial Number: --
 	Asset Tag: --
 	4776D9C5F6FCD6E78ABCA33413CFBF20                       
@@ -461,24 +461,31 @@ Handle 0x002C, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0028
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: Unknown
+	Size: 2 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: Other
-	Speed: Unknown
-	Manufacturer: Manufacturer01
+	Type: Other
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Kingston      
 	Serial Number: --
 	Asset Tag: --
 	4776D9C5F6FCD6E78ABCA33413CFBF20                       
 	Rank: Unknown
 
-Handle 0x002D, DMI type 126, 19 bytes
-Inactive
+Handle 0x002D, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x002C
+	Memory Array Mapped Address Handle: 0x0029
+	Partition Row Position: 1
+	Interleaved Data Depth: 1
 
 Handle 0x002E, DMI type 17, 28 bytes
 Memory Device
@@ -486,15 +493,15 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
-	Type: DDR3
+	Type: Other
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Samsung       
+	Manufacturer: Kingston      
 	Serial Number: --
 	Asset Tag: --
 	4776D9C5F6FCD6E78ABCA33413CFBF20                       
@@ -502,9 +509,9 @@ Memory Device
 
 Handle 0x002F, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 1 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x002E
 	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: 1
@@ -514,24 +521,31 @@ Handle 0x0030, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0028
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: Unknown
+	Size: 2 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
-	Type: Unknown
-	Type Detail: Other
-	Speed: Unknown
+	Type: Other
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer03
 	Serial Number: --
 	Asset Tag: --
 	4776D9C5F6FCD6E78ABCA33413CFBF20                       
 	Rank: Unknown
 
-Handle 0x0031, DMI type 126, 19 bytes
-Inactive
+Handle 0x0031, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00180000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0030
+	Memory Array Mapped Address Handle: 0x0029
+	Partition Row Position: 1
+	Interleaved Data Depth: 1
 
 Handle 0x0032, DMI type 24, 5 bytes
 Hardware Security
@@ -546,7 +560,7 @@ System Boot Information
 
 Handle 0x0034, DMI type 41, 11 bytes
 Onboard Device
-	Reference Designation:  Intel(R) G45/G43 Express Chipset
+	Reference Designation:  Intel(R) G45/G43 Expree Chipset
 	Type: Video
 	Status: Enabled
 	Type Instance: 0

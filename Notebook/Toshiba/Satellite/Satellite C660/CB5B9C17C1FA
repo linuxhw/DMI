@@ -1,8 +1,8 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-52 structures occupying 2665 bytes.
-Table at 0xCAD21018.
+53 structures occupying 2699 bytes.
+Table at 0xCAD22018.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -219,9 +219,9 @@ On Board Device Information
 Handle 0x000C, DMI type 11, 5 bytes
 OEM Strings
 	String 1: PSC1LE-04T006S4,SSC1L04T006S4
-	String 2: BWIaw92Q8Lrhs
-	String 3: kq5N8RhBHidLg
-	String 4: 5hLxPfNnhghHx
+	String 2: 8WMhcqMD-1vPv
+	String 3: gE6NY0+OzjrqC
+	String 4: Qbms9c8EbiY7F
 
 Handle 0x000D, DMI type 12, 5 bytes
 System Configuration Options
@@ -292,23 +292,23 @@ Handle 0x0014, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x000E
 	Error Information Handle: 0x0015
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
+	Part Number: 99U5428-046.A00LF 
 	Rank: Unknown
 
-Handle 0x0016, DMI type 17, 28 bytes
+Handle 0x0017, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x000E
 	Error Information Handle: No Error
@@ -378,7 +378,7 @@ Handle 0x001B, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0017, DMI type 19, 15 bytes
+Handle 0x0019, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
@@ -392,10 +392,21 @@ Memory Device Mapped Address
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0010
-	Memory Array Mapped Address Handle: 0x0017
+	Memory Array Mapped Address Handle: 0x0019
 	Partition Row Position: Unknown
 	Interleave Position: 1
-	Interleaved Data Depth: 1
+	Interleaved Data Depth: 2
+
+Handle 0x0016, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0014
+	Memory Array Mapped Address Handle: 0x0019
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 2
 
 Handle 0x001D, DMI type 22, 26 bytes
 Portable Battery

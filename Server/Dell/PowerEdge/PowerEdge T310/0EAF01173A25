@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 66 structures occupying 3205 bytes.
@@ -16,7 +16,7 @@ BIOS Information
 	Release Date: 06/11/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -113,11 +113,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Xeon(R) CPU           X3430  @ 2.40GHz
+	Version: Intel(R) Xeon(R) CPU           X3470  @ 2.93GHz
 	Voltage: 1.2 V
 	External Clock: 4800 MHz
 	Max Speed: 3600 MHz
-	Current Speed: 2400 MHz
+	Current Speed: 2933 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA1366
 	L1 Cache Handle: 0x0700
@@ -128,7 +128,7 @@ Processor Information
 	Part Number: Not Specified
 	Core Count: 4
 	Core Enabled: 4
-	Thread Count: 4
+	Thread Count: 8
 	Characteristics:
 		64-bit capable
 
@@ -154,8 +154,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 2048 kB
+	Installed Size: 1 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -170,8 +170,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -438,7 +438,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: DIMM_A1 
@@ -458,7 +458,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: DIMM_A2 
@@ -485,12 +485,6 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer:             
-	Serial Number: --
-	271882FD79060B21C43F805A2DE81148         
-	Part Number:                   
-	Rank: Unknown
 
 Handle 0x1103, DMI type 17, 28 bytes
 Memory Device
@@ -505,12 +499,6 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer:             
-	Serial Number: --
-	271882FD79060B21C43F805A2DE81148         
-	Part Number:                   
-	Rank: Unknown
 
 Handle 0x1104, DMI type 17, 28 bytes
 Memory Device
@@ -525,12 +513,6 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer:             
-	Serial Number: --
-	271882FD79060B21C43F805A2DE81148         
-	Part Number:                   
-	Rank: Unknown
 
 Handle 0x1105, DMI type 17, 28 bytes
 Memory Device
@@ -545,12 +527,6 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer:             
-	Serial Number: --
-	271882FD79060B21C43F805A2DE81148         
-	Part Number:                   
-	Rank: Unknown
 
 Handle 0x1300, DMI type 19, 15 bytes
 Memory Array Mapped Address
@@ -671,8 +647,8 @@ OEM-specific Type
 Handle 0xD403, DMI type 212, 97 bytes
 OEM-specific Type
 	Header and Data:
-		D4 61 03 D4 72 00 73 00 00 40 5D 5E 00 00 46 FE
-		00 00 00 46 FE 01 40 01 47 EF 10 41 01 47 EF 00
+		D4 61 03 D4 72 00 73 00 00 40 5D 5E D1 00 46 FE
+		00 D2 00 46 FE 01 40 01 47 EF 10 41 01 47 EF 00
 		EB 01 47 FD 00 EA 01 47 FD 02 33 02 47 F3 04 32
 		02 47 F3 08 31 02 47 F3 00 6E 02 47 F3 00 4B 02
 		47 DF 00 4C 02 47 DF 20 44 01 4E CF 00 45 01 4E

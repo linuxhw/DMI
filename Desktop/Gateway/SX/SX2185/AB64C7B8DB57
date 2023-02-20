@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 25 structures occupying 1295 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 06/27/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		APM is supported
@@ -182,8 +182,8 @@ Physical Memory Array
 Handle 0x0015, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 6 GB
 	Physical Array Handle: 0x0014
 	Partition Width: 255
 
@@ -193,20 +193,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: BANK 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Elpida         
+	Speed: 1333 MT/s
+	Manufacturer: Samsung        
 	Serial Number: --
 	Asset Tag: --
-	12C60C65EB2C688AA962BCEFD13F274E     
-	Rank: 2
-	Configured Memory Speed: 1600 MT/s
+	1A0802AFB588AFDA1A99DC8F8EF1A749      
+	Rank: 1
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0017, DMI type 17, 34 bytes
 Memory Device
@@ -214,7 +214,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 2
@@ -232,8 +232,8 @@ Memory Device
 Handle 0x0018, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0016
 	Memory Array Mapped Address Handle: 0x0015
 	Partition Row Position: Unknown
@@ -242,8 +242,8 @@ Memory Device Mapped Address
 
 Handle 0x0019, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x0017FFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0017
 	Memory Array Mapped Address Handle: 0x0015
@@ -273,8 +273,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
