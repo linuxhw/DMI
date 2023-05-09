@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 91 structures occupying 3623 bytes.
@@ -52,8 +52,8 @@ Base Board Information
 	Product Name: SHARKBAY
 	Version: SDK0E50510 WIN
 	Serial Number: --
-	271882FD79060B21C43F805A2DE81148                          
-	Features:
+	Asset Tag: --
+	...
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: To be filled by O.E.M.
@@ -69,7 +69,7 @@ Chassis Information
 	Version: To Be Filled By O.E.M.
 	Serial Number: --
 	Asset Tag: --
-	380AD15AAB729CF25C4397C21C466ACE
+	...
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -657,8 +657,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1 MB
-	Maximum Size: 1 MB
+	Installed Size: 1024 kB
+	Maximum Size: 1024 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -689,8 +689,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8 MB
-	Maximum Size: 8 MB
+	Installed Size: 8192 kB
+	Maximum Size: 8192 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -714,7 +714,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -727,7 +727,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: DDR3 1600 8G      
 	Rank: 2
-	Configured Memory Speed: 1600 MT/s
+	Configured Clock Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -739,7 +739,7 @@ System Event Log
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0xFFC6E000
+	Access Address: 0x000EF2A0
 	Status: Valid, Not Full
 	Change Token: 0x00000001
 	Header Format: Type 1
@@ -812,7 +812,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
@@ -825,7 +825,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: DDR3 1600 8G      
 	Rank: 2
-	Configured Memory Speed: 1600 MT/s
+	Configured Clock Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -847,7 +847,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -860,7 +860,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: DDR3 1600 8G      
 	Rank: 2
-	Configured Memory Speed: 1600 MT/s
+	Configured Clock Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -882,7 +882,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
@@ -895,7 +895,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: DDR3 1600 8G      
 	Rank: 2
-	Configured Memory Speed: 1600 MT/s
+	Configured Clock Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -920,9 +920,12 @@ Memory Array Mapped Address
 	Partition Width: 4
 
 Handle 0x004F, DMI type 131, 22 bytes
-ThinkVantage Technologies
-	Version: 1
-	Diagnostics: Available
+OEM-specific Type
+	Header and Data:
+		83 16 4F 00 01 03 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 80 01
+	Strings:
+		TVT-Enablement
 
 Handle 0x0050, DMI type 136, 6 bytes
 OEM-specific Type

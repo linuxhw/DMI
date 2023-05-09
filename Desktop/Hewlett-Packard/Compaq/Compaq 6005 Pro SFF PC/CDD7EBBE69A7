@@ -1,7 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-80 structures occupying 2261 bytes.
+82 structures occupying 2358 bytes.
 Table at 0x000ECAC0.
 
 Handle 0x0001, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 08/02/2011
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -146,8 +146,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Burst
 	Installed SRAM Type: Pipeline Burst
@@ -553,41 +553,41 @@ Handle 0x003B, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0039
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: XMM1
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
+	Speed: 1333 MT/s
+	Manufacturer: JEDEC ID:80 2C
 	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
-	Part Number:  
-	Rank: Unknown
+	Asset Tag: --
+	Part Number: 8JTF25664AZ-1G4M1
+	Rank: 1
 
 Handle 0x003C, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0039
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: XMM2
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
+	Speed: 1333 MT/s
+	Manufacturer: JEDEC ID:80 2C
 	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
-	Part Number:  
-	Rank: Unknown
+	Asset Tag: --
+	Part Number: 8JTF25664AZ-1G4M1
+	Rank: 1
 
 Handle 0x003D, DMI type 17, 28 bytes
 Memory Device
@@ -595,7 +595,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 2
 	Locator: XMM3
@@ -603,11 +603,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: JEDEC ID:80 2C
+	Manufacturer: JEDEC ID:02 FE
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 8JTF25664AZ-1G4M1
-	Rank: 1
+	Part Number: EBJ21UE8BDF0-DJ-F
+	Rank: 2
 
 Handle 0x003E, DMI type 17, 28 bytes
 Memory Device
@@ -615,7 +615,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 2
 	Locator: XMM4
@@ -623,11 +623,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: JEDEC ID:80 2C
+	Manufacturer: JEDEC ID:80 AD
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 8JTF25664AZ-1G4M1
-	Rank: 1
+	Part Number: HMT125U6TFR8C-H9
+	Rank: 2
 
 Handle 0x0040, DMI type 17, 28 bytes
 Memory Device
@@ -635,7 +635,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 2 bits
 	Data Width: 2 bits
-	Size: 1024 kB
+	Size: 1 MB
 	Form Factor: Chip
 	Set: None
 	Locator: SYSTEM ROM
@@ -660,8 +660,8 @@ Memory Array Mapped Address
 Handle 0x0042, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0011FFFFFFF
-	Range Size: 512 MB
+	Ending Address: 0x0021FFFFFFF
+	Range Size: 4608 MB
 	Physical Array Handle: 0x0039
 	Partition Width: 2
 
@@ -673,10 +673,28 @@ Memory Array Mapped Address
 	Physical Array Handle: 0x003A
 	Partition Width: 1
 
-Handle 0x0046, DMI type 20, 19 bytes
+Handle 0x0044, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x003B
+	Memory Array Mapped Address Handle: 0x0041
+	Partition Row Position: 1
+
+Handle 0x0045, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x003C
+	Memory Array Mapped Address Handle: 0x0041
+	Partition Row Position: 1
+
+Handle 0x0046, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x0017FFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x003D
 	Memory Array Mapped Address Handle: 0x0041
@@ -684,8 +702,8 @@ Memory Device Mapped Address
 
 Handle 0x0047, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00180000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x003E
 	Memory Array Mapped Address Handle: 0x0041

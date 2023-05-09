@@ -1,8 +1,8 @@
 # dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.4 present.
-52 structures occupying 3183 bytes.
-Table at 0x5E091000.
+52 structures occupying 3169 bytes.
+Table at 0x5E09B000.
 
 Handle 0x0000, DMI type 43, 31 bytes
 TPM Device
@@ -15,11 +15,28 @@ TPM Device
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
-Handle 0x0001, DMI type 0, 26 bytes
+Handle 0x0001, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 64 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 2
+
+Handle 0x0012, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
+	Physical Array Handle: 0x0001
+	Partition Width: 1
+
+Handle 0x0013, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: U86 Ver. 01.03.02
-	Release Date: 05/24/2022
+	Version: U86 Ver. 01.06.20
+	Release Date: 03/24/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -42,10 +59,10 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 3.2
-	Firmware Revision: 33.4
+	BIOS Revision: 6.20
+	Firmware Revision: 33.94
 
-Handle 0x0002, DMI type 1, 27 bytes
+Handle 0x0014, DMI type 1, 27 bytes
 System Information
 	Manufacturer: HP
 	Product Name: HP EliteBook 650 15.6 inch G9 Notebook PC
@@ -56,21 +73,7 @@ System Information
 	SKU Number: 6F2L5EA#AKD
 	Family: 103C_5336AN HP EliteBook
 
-Handle 0x0003, DMI type 2, 17 bytes
-Base Board Information
-	Manufacturer: HP
-	Product Name: 8AA9
-	Version: KBC Version 21.04.00
-	Serial Number: --
-	Asset Tag: --
-	97946E993916094B22613E03B8339091
-		Board is a hosting board
-	Location In Chassis:  
-	Chassis Handle: 0x0000
-	Type: Motherboard
-	Contained Object Handles: 0
-
-Handle 0x0004, DMI type 3, 24 bytes
+Handle 0x0015, DMI type 3, 24 bytes
 Chassis Information
 	Manufacturer: HP
 	Type: Notebook
@@ -88,7 +91,7 @@ Chassis Information
 	Contained Elements: 0
 	SKU Number: Not Specified
 
-Handle 0x0006, DMI type 13, 22 bytes
+Handle 0x0017, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 15
@@ -109,22 +112,19 @@ BIOS Language Information
 		ruRU
 	Currently Installed Language: enUS
 
-Handle 0x0007, DMI type 16, 23 bytes
-Physical Memory Array
-	Location: System Board Or Motherboard
-	Use: System Memory
-	Error Correction Type: None
-	Maximum Capacity: 64 GB
-	Error Information Handle: Not Provided
-	Number Of Devices: 2
-
-Handle 0x0018, DMI type 19, 31 bytes
-Memory Array Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
-	Physical Array Handle: 0x0007
-	Partition Width: 1
+Handle 0x0018, DMI type 2, 17 bytes
+Base Board Information
+	Manufacturer: HP
+	Product Name: 8AA9
+	Version: KBC Version 21.5E.00
+	Serial Number: --
+	Asset Tag: --
+	97946E993916094B22613E03B8339091
+		Board is a hosting board
+	Location In Chassis:  
+	Chassis Handle: 0x0015
+	Type: Motherboard
+	Contained Object Handles: 0
 
 Handle 0x0019, DMI type 221, 12 bytes
 OEM-specific Type
@@ -136,8 +136,8 @@ OEM-specific Type
 Handle 0x001A, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 1A 00 03 01 00 0C 00 65 70 00 02 00 00 00
-		04 1E 00 03 00 01 12 07 00 00
+		DD 1A 1A 00 03 01 00 0C 00 75 10 00 02 00 00 00
+		04 24 00 03 00 01 12 0C 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -146,8 +146,8 @@ OEM-specific Type
 Handle 0x001B, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 1B 00 03 01 00 0C 00 65 70 00 02 00 00 00
-		00 00 00 03 04 10 00 0F C7 06
+		DD 1A 1B 00 03 01 00 0C 00 75 10 00 02 00 00 00
+		00 00 00 03 04 10 01 19 C7 07
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -157,7 +157,7 @@ OEM-specific Type
 Handle 0x001C, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 1C 00 06 01 00 0C 00 65 70 00 02 03 FF FF
+		DD 2F 1C 00 06 01 00 0C 00 75 10 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 01 00 05 00 FF FF FF 01
 		00 06 00 FF FF FF FF FF 07 00 04 00 00 00 00
 	Strings:
@@ -172,11 +172,11 @@ OEM-specific Type
 Handle 0x001D, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 1D 00 0B 01 00 0C 00 65 70 00 02 00 00 00
-		03 60 00 03 00 0C 00 65 70 00 04 05 FF FF FF FF
+		DD 52 1D 00 0B 01 00 0C 00 75 10 00 02 00 00 00
+		04 3C 00 03 00 0C 00 75 10 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 04 00 07 00 00 00 00 04 00 08
-		00 FF FF FF FF FF 09 00 00 00 00 7F 00 0A 00 00
-		00 00 10 00 0B 00 10 01 00 00 00 0C 00 FF FF FF
+		00 FF FF FF FF FF 09 00 24 00 06 00 00 0A 00 00
+		00 00 16 20 0B 00 12 03 00 00 00 0C 00 FF FF FF
 		FF FF
 	Strings:
 		Reference Code - SA - System Agent
@@ -320,7 +320,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 12-way Set-associative
 
-Handle 0x0026, DMI type 4, 48 bytes
+Handle 0x0026, DMI type 4, 50 bytes
 Processor Information
 	Socket Designation: U3E1
 	Type: Central Processor
@@ -469,7 +469,7 @@ Port Connector Information
 	External Connector Type: Other
 	Port Type: Other
 
-Handle 0x0032, DMI type 9, 28 bytes
+Handle 0x0032, DMI type 9, 24 bytes
 System Slot Information
 	Designation: M.2 WWAN
 	Type: x1 PCI Express 3 x1
@@ -483,7 +483,7 @@ System Slot Information
 	Data Bus Width: 77
 	Peer Devices: 46
 
-Handle 0x0033, DMI type 9, 28 bytes
+Handle 0x0033, DMI type 9, 24 bytes
 System Slot Information
 	Designation: M.2 WLAN/BT
 	Type: x1 PCI Express 3 x1
@@ -497,7 +497,7 @@ System Slot Information
 	Data Bus Width: 77
 	Peer Devices: 46
 
-Handle 0x0034, DMI type 9, 28 bytes
+Handle 0x0034, DMI type 9, 24 bytes
 System Slot Information
 	Designation: M.2 SSD1
 	Type: x4 PCI Express 3 x4
@@ -510,7 +510,7 @@ System Slot Information
 	Data Bus Width: 77
 	Peer Devices: 46
 
-Handle 0x0035, DMI type 9, 28 bytes
+Handle 0x0035, DMI type 9, 24 bytes
 System Slot Information
 	Designation: M.2 SSD2
 	Type: x4 PCI Express 3 x4
@@ -551,13 +551,13 @@ Handle 0x003A, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
 		83 40 3A 00 35 00 00 00 00 00 00 00 00 00 00 00
-		F8 00 82 51 00 00 00 00 21 20 00 00 00 00 10 00
-		C7 06 0F 00 00 00 00 00 FE 00 1F 1A 00 00 00 00
+		F8 00 82 51 00 00 00 00 21 20 00 00 01 00 10 00
+		C7 07 19 00 00 00 00 00 FE 00 1F 1A 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0039, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x0007
+	Array Handle: 0x0001
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -571,7 +571,7 @@ Memory Device
 
 Handle 0x003B, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x0007
+	Array Handle: 0x0001
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -604,17 +604,17 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0008, DMI type 20, 35 bytes
+Handle 0x0002, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
 	Physical Device Handle: 0x003B
-	Memory Array Mapped Address Handle: 0x0018
+	Memory Array Mapped Address Handle: 0x0012
 	Partition Row Position: 1
 	Interleave Position: 1
 
-Handle 0x0009, DMI type 22, 26 bytes
+Handle 0x0003, DMI type 22, 26 bytes
 Portable Battery
 	Location: Primary
 	Manufacturer: 313-17-37-A
@@ -628,18 +628,18 @@ Portable Battery
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
-Handle 0x000A, DMI type 24, 5 bytes
+Handle 0x0004, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
 
-Handle 0x000B, DMI type 32, 11 bytes
+Handle 0x0005, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x000C, DMI type 11, 5 bytes
+Handle 0x0006, DMI type 11, 5 bytes
 OEM Strings
 	String 1: FBYTE#476J6S6b7B7H7M7Q7W7m7saBaEapaqauawbhcAdpdqfAfPgSguhKjhk8mEmGn7nVpTpppqqjqz.gQ;
 	String 2: BUILDID#22WWRTCT601#SAKD#DAKD;
@@ -648,22 +648,22 @@ OEM Strings
 	String 5: MEFWRec
 	String 6: HRDWFEATS=VMCSSHAD:1;VTX:1;VTD:1;SGX:0;PROGKEY:1;NONHPBATDET:1;
 
-Handle 0x0005, DMI type 10, 6 bytes
+Handle 0x0007, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
 	Description: 64 MB
 
-Handle 0x000D, DMI type 14, 8 bytes
+Handle 0x0008, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x000E, DMI type 219, 106 bytes
+Handle 0x0009, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 0E 00 01 04 01 45 02 00 90 06 01 10 89 20
+		DB 6A 09 00 01 04 01 45 02 00 90 06 01 10 80 20
 		00 00 00 00 40 00 00 03 1F 04 02 CF 03 60 C4 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

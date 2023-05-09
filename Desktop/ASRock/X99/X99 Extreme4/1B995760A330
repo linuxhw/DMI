@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-32 structures occupying 1974 bytes.
+34 structures occupying 2021 bytes.
 Table at 0x5CE0C000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -90,7 +90,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:03:00.0
+	Bus Address: 0000:02:00.0
 
 Handle 0x0009, DMI type 9, 17 bytes
 System Slot Information
@@ -129,7 +129,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:07:00.2
+	Bus Address: 0000:06:00.2
 
 Handle 0x000C, DMI type 9, 17 bytes
 System Slot Information
@@ -142,7 +142,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:02:00.0
+	Bus Address: 0000:01:00.0
 
 Handle 0x000D, DMI type 11, 5 bytes
 OEM Strings
@@ -156,18 +156,18 @@ Handle 0x000F, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
-	Error Correction Type: None
-	Maximum Capacity: 512 GB
+	Error Correction Type: Multi-bit ECC
+	Maximum Capacity: 256 GB
 	Error Information Handle: Not Provided
-	Number Of Devices: 8
+	Number Of Devices: 4
 
 Handle 0x0010, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x000F
-	Partition Width: 4
+	Partition Width: 2
 
 Handle 0x0011, DMI type 17, 40 bytes
 Memory Device
@@ -175,19 +175,19 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 72 bits
-	Size: 4 GB
-	Form Factor: DIMM
+	Size: 16 GB
+	Form Factor: RIMM
 	Set: None
 	Locator: DIMM_A1
 	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: Undefined
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT4G4DFS8213.C8FAR 
-	Rank: 1
+	Part Number: 36ASF2G72PZ-2G1A2  
+	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -196,8 +196,8 @@ Memory Device
 Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0011
 	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: 1
@@ -209,22 +209,12 @@ Memory Device
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
-	Form Factor: DIMM
+	Form Factor: RIMM
 	Set: None
 	Locator: DIMM_A2
 	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: NO DIMM
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x0014, DMI type 17, 40 bytes
 Memory Device
@@ -232,19 +222,19 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 72 bits
-	Size: 4 GB
-	Form Factor: DIMM
+	Size: 16 GB
+	Form Factor: RIMM
 	Set: None
 	Locator: DIMM_B1
 	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: Undefined
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT4G4DFS8213.C8FAR 
-	Rank: 1
+	Part Number: 36ASF2G72PZ-2G1A2  
+	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -252,9 +242,9 @@ Memory Device
 
 Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00400000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0014
 	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: 1
@@ -266,145 +256,132 @@ Memory Device
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
-	Form Factor: DIMM
+	Form Factor: RIMM
 	Set: None
 	Locator: DIMM_B2
 	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: NO DIMM
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
-Handle 0x0017, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x000F
+Handle 0x0017, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: Multi-bit ECC
+	Maximum Capacity: 256 GB
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 72 bits
-	Size: 4 GB
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM_C1
-	Bank Locator: NODE 1
-	Type: DDR4
-	Type Detail: Synchronous
-	Speed: 2133 MT/s
-	Manufacturer: Undefined
-	Serial Number: --
-	Asset Tag: --
-	Part Number: CT4G4DFS8213.C8FAR 
-	Rank: 1
-	Configured Memory Speed: 2133 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
+	Number Of Devices: 4
 
-Handle 0x0018, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0017
-	Memory Array Mapped Address Handle: 0x0010
-	Partition Row Position: 1
+Handle 0x0018, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00800000000
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 32 GB
+	Physical Array Handle: 0x0017
+	Partition Width: 2
 
 Handle 0x0019, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x000F
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM_C2
-	Bank Locator: NODE 1
-	Type: DDR4
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: NO DIMM
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-
-Handle 0x001A, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x000F
+	Array Handle: 0x0017
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 72 bits
-	Size: 4 GB
-	Form Factor: DIMM
+	Size: 16 GB
+	Form Factor: RIMM
 	Set: None
-	Locator: DIMM_D1
-	Bank Locator: NODE 1
+	Locator: DIMM_C1
+	Bank Locator: NODE 2
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: Undefined
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT4G4DFS8213.C8FAR 
-	Rank: 1
+	Part Number: 36ASF2G72PZ-2G1A2  
+	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x001B, DMI type 20, 35 bytes
+Handle 0x001A, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00300000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x001A
-	Memory Array Mapped Address Handle: 0x0010
+	Starting Address: 0x00800000000
+	Ending Address: 0x00BFFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x0019
+	Memory Array Mapped Address Handle: 0x0018
 	Partition Row Position: 1
 
-Handle 0x001C, DMI type 17, 40 bytes
+Handle 0x001B, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x000F
+	Array Handle: 0x0017
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
-	Form Factor: DIMM
+	Form Factor: RIMM
 	Set: None
-	Locator: DIMM_D2
-	Bank Locator: NODE 1
+	Locator: DIMM_C2
+	Bank Locator: NODE 2
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: NO DIMM
+
+Handle 0x001C, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0017
+	Error Information Handle: Not Provided
+	Total Width: 72 bits
+	Data Width: 72 bits
+	Size: 16 GB
+	Form Factor: RIMM
+	Set: None
+	Locator: DIMM_D1
+	Bank Locator: NODE 2
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2133 MT/s
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: 36ASF2G72PZ-2G1A2  
+	Rank: 2
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x001D, DMI type 7, 19 bytes
+Handle 0x001D, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00C00000000
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x001C
+	Memory Array Mapped Address Handle: 0x0018
+	Partition Row Position: 1
+
+Handle 0x001E, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0017
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: RIMM
+	Set: None
+	Locator: DIMM_D2
+	Bank Locator: NODE 2
+	Type: DDR4
+	Type Detail: Synchronous
+
+Handle 0x001F, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L1
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 384 kB
-	Maximum Size: 384 kB
+	Installed Size: 896 kB
+	Maximum Size: 896 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -413,14 +390,14 @@ Cache Information
 	System Type: Other
 	Associativity: 8-way Set-associative
 
-Handle 0x001E, DMI type 7, 19 bytes
+Handle 0x0020, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L2
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1536 kB
-	Maximum Size: 1536 kB
+	Installed Size: 3584 kB
+	Maximum Size: 3584 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -429,14 +406,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x001F, DMI type 7, 19 bytes
+Handle 0x0021, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L3
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 15 MB
-	Maximum Size: 15 MB
+	Installed Size: 35 MB
+	Maximum Size: 35 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -445,7 +422,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 20-way Set-associative
 
-Handle 0x0020, DMI type 4, 42 bytes
+Handle 0x0022, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPUSocket
 	Type: Central Processor
@@ -482,22 +459,22 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i7-5820K CPU @ 3.30GHz
+	Version: Intel(R) Xeon(R) CPU E5-2697 v3 @ 2.60GHz
 	Voltage: 0.0 V
 	External Clock: 100 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 3300 MHz
+	Current Speed: 2600 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA2011-3
-	L1 Cache Handle: 0x001D
-	L2 Cache Handle: 0x001E
-	L3 Cache Handle: 0x001F
+	L1 Cache Handle: 0x001F
+	L2 Cache Handle: 0x0020
+	L3 Cache Handle: 0x0021
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
-	Core Count: 6
-	Core Enabled: 6
-	Thread Count: 12
+	Core Count: 14
+	Core Enabled: 14
+	Thread Count: 28
 	Characteristics:
 		64-bit capable
 		Multi-Core
@@ -506,20 +483,20 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0021, DMI type 130, 20 bytes
+Handle 0x0023, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 21 00 24 41 4D 54 00 00 00 00 00 A5 2F 02
+		82 14 23 00 24 41 4D 54 00 00 00 00 00 A5 2F 02
 		00 00 00 00
 
-Handle 0x0022, DMI type 131, 64 bytes
+Handle 0x0024, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 22 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 24 00 35 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 47 8D 00 00 00 00 01 00 00 00 01 00 09 00
 		EA 03 25 00 00 00 00 00 C8 00 A1 15 00 00 00 00
 		00 00 00 00 20 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0023, DMI type 127, 4 bytes
+Handle 0x0025, DMI type 127, 4 bytes
 End Of Table
 

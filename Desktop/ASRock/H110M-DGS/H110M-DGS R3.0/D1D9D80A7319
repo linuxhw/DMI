@@ -2,7 +2,7 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 23 structures occupying 1329 bytes.
-Table at 0x77EED000.
+Table at 0x87EED000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -228,37 +228,13 @@ Handle 0x000F, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x000E
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8 GB
-	Form Factor: DIMM
-	Set: None
-	Locator: ChannelA-DIMM0
-	Bank Locator: BANK 0
-	Type: DDR4
-	Type Detail: Synchronous
-	Speed: 2400 MT/s
-	Manufacturer: 0922
-	Serial Number: --
-	Asset Tag: --
-	Part Number:                     
-	Rank: 1
-	Configured Memory Speed: 2400 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: 1.2 V
-
-Handle 0x0010, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x000E
-	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
-	Locator: ChannelB-DIMM0
-	Bank Locator: BANK 2
+	Locator: ChannelA-DIMM0
+	Bank Locator: BANK 0
 	Type: Unknown
 	Type Detail: None
 	Speed: Unknown
@@ -271,6 +247,30 @@ Memory Device
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
+
+Handle 0x0010, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x000E
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelB-DIMM0
+	Bank Locator: BANK 2
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2400 MT/s
+	Manufacturer: 0922
+	Serial Number: --
+	Asset Tag: --
+	Part Number:                     
+	Rank: 1
+	Configured Memory Speed: 2400 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 1.2 V
 
 Handle 0x0011, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -305,7 +305,7 @@ Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x000F
+	Physical Device Handle: 0x0010
 	Memory Array Mapped Address Handle: 0x0011
 	Partition Row Position: 1
 	Interleave Position: 1

@@ -1,8 +1,6 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.4.0 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0x90095000.
 
 Handle 0x0000, DMI type 134, 13 bytes
@@ -25,12 +23,12 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelA
 	Bank Locator: BANK 0
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: Samsung
@@ -60,12 +58,12 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelB
 	Bank Locator: BANK 1
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: Samsung
@@ -95,12 +93,12 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelC
 	Bank Locator: BANK 2
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: Samsung
@@ -130,12 +128,12 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelD
 	Bank Locator: BANK 3
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: Samsung
@@ -165,12 +163,12 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelA
 	Bank Locator: BANK 0
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: Samsung
@@ -200,12 +198,12 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelB
 	Bank Locator: BANK 1
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: Samsung
@@ -235,12 +233,12 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelC
 	Bank Locator: BANK 2
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: Samsung
@@ -270,12 +268,12 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelD
 	Bank Locator: BANK 3
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: Samsung
@@ -310,8 +308,10 @@ Memory Array Mapped Address
 Handle 0x000B, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: STM
-	Specification Version: 2.0	Firmware Revision: 1.512
-	Description: TPM 2.0, ManufacturerID: STM , Firmware Version: 0x00010200.0x0	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 1.512
+	Description: TPM 2.0, ManufacturerID: STM , Firmware Version: 0x00010200.0x0
+	Characteristics:
 		TPM Device characteristics not supported
 	OEM-specific Information: 0x00000000
 
@@ -426,8 +426,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 5120 kB
-	Maximum Size: 5120 kB
+	Installed Size: 5 MB
+	Maximum Size: 5 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -442,8 +442,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 18432 kB
-	Maximum Size: 18432 kB
+	Installed Size: 18 MB
+	Maximum Size: 18 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -490,8 +490,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -506,8 +506,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 18432 kB
-	Maximum Size: 18432 kB
+	Installed Size: 18 MB
+	Maximum Size: 18 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -875,14 +875,14 @@ OEM-specific Type
 
 Handle 0x0043, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 18 bytes
+	Area Length: 34 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000000
+	Change Token: 0x00000001
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -915,8 +915,8 @@ OEM-specific Type
 Handle 0x0047, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 47 00 54 48 4E 4B 00 00 00 00 00 00 4E 34
-		12 00
+		8D 12 47 00 54 48 4E 4B 00 00 00 00 00 00 A9 06
+		00 00
 
 Handle 0x0048, DMI type 141, 18 bytes
 OEM-specific Type
@@ -927,20 +927,20 @@ OEM-specific Type
 Handle 0x0049, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 49 00 54 48 4E 4B 00 00 30 00 00 00 00 00
+		8D 12 49 00 54 48 4E 4B 00 00 30 00 00 00 02 00
 		00 00
 
 Handle 0x004A, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 4A 00 54 48 4E 4B 00 00 40 00 00 00 00 00
+		8D 12 4A 00 54 48 4E 4B 00 00 40 00 00 00 05 00
 		00 00
 
 Handle 0x004B, DMI type 141, 30 bytes
 OEM-specific Type
 	Header and Data:
-		8D 1E 4B 00 54 48 4E 4B 00 00 50 00 00 00 74 89
-		2E 00 00 00 00 00 B5 EA 0D 00 00 00 00 00
+		8D 1E 4B 00 54 48 4E 4B 00 00 50 00 00 00 23 BC
+		36 00 00 00 00 00 C3 86 3F 00 00 00 00 00
 
 Handle 0x004C, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program

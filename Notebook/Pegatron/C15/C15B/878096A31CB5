@@ -1,19 +1,17 @@
-# dmidecode 2.12
-# SMBIOS entry point at 0x000f04c0
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-# SMBIOS implementations newer than version 2.7 are not
-# fully supported by this version of dmidecode.
-53 structures occupying 2392 bytes.
+53 structures occupying 2400 bytes.
 Table at 0x000EC490.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: C15B.610
-	Release Date: 12/05/2013
+	Version: C15B.616
+	Release Date: 03/18/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -64,7 +62,7 @@ Base Board Information
 
 Handle 0x0003, DMI type 3, 25 bytes
 Chassis Information
-	Manufacturer: PEGATRON Computer Inc.
+	Manufacturer: To Be Filled By O.E.M.
 	Type: Desktop
 	Lock: Not Present
 	Version: To Be Filled By O.E.M.
@@ -412,64 +410,7 @@ Handle 0x0028, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0029, DMI type 7, 19 bytes
-Cache Information
-	Socket Designation: CPU Internal L1
-	Configuration: Enabled, Not Socketed, Level 1
-	Operational Mode: Write Back
-	Location: Internal
-	Installed Size: 128 kB
-	Maximum Size: 128 kB
-	Supported SRAM Types:
-		Unknown
-	Installed SRAM Type: Unknown
-	Speed: Unknown
-	Error Correction Type: Single-bit ECC
-	System Type: Other
-	Associativity: 8-way Set-associative
-
-Handle 0x002A, DMI type 7, 19 bytes
-Cache Information
-	Socket Designation: CPU Internal L2
-	Configuration: Enabled, Not Socketed, Level 2
-	Operational Mode: Write Back
-	Location: Internal
-	Installed Size: 512 kB
-	Maximum Size: 512 kB
-	Supported SRAM Types:
-		Unknown
-	Installed SRAM Type: Unknown
-	Speed: Unknown
-	Error Correction Type: Single-bit ECC
-	System Type: Unified
-	Associativity: 8-way Set-associative
-
-Handle 0x002B, DMI type 7, 19 bytes
-Cache Information
-	Socket Designation: CPU Internal L3
-	Configuration: Enabled, Not Socketed, Level 3
-	Operational Mode: Write Back
-	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
-	Supported SRAM Types:
-		Unknown
-	Installed SRAM Type: Unknown
-	Speed: Unknown
-	Error Correction Type: Single-bit ECC
-	System Type: Unified
-	Associativity: 12-way Set-associative
-
-Handle 0x002C, DMI type 16, 23 bytes
-Physical Memory Array
-	Location: System Board Or Motherboard
-	Use: System Memory
-	Error Correction Type: None
-	Maximum Capacity: 32 GB
-	Error Information Handle: Not Provided
-	Number Of Devices: 4
-
-Handle 0x002D, DMI type 4, 42 bytes
+Handle 0x0029, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: SOCKET 0
 	Type: Central Processor
@@ -513,9 +454,9 @@ Processor Information
 	Current Speed: 2500 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket rPGA988B
-	L1 Cache Handle: 0x0029
+	L1 Cache Handle: 0x002B
 	L2 Cache Handle: 0x002A
-	L3 Cache Handle: 0x002B
+	L3 Cache Handle: 0x002C
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Fill By OEM
@@ -525,29 +466,86 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
+Handle 0x002A, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: CPU Internal L2
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 512 kB
+	Maximum Size: 512 kB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x002B, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: CPU Internal L1
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 128 kB
+	Maximum Size: 128 kB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Other
+	Associativity: 8-way Set-associative
+
+Handle 0x002C, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: CPU Internal L3
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: 12-way Set-associative
+
+Handle 0x002D, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 32 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 4
+
 Handle 0x002E, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x002C
+	Array Handle: 0x002D
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: 1311
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M2S4G64CB8HG4N-DI 
 	Rank: 2
-	Configured Clock Speed: 1600 MHz
-	Minimum voltage:  1.500 V
-	Maximum voltage:  1.500 V
-	Configured voltage:  1.500 V
+	Configured Memory Speed: 1600 MT/s
+	Minimum Voltage: 1.5 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: 1.5 V
 
 Handle 0x002F, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -565,29 +563,29 @@ Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Array Handle: 0x002C
+	Physical Array Handle: 0x002D
 	Partition Width: 4
 
-Handle 0x0036, DMI type 136, 6 bytes
+Handle 0x0033, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 36 00 00 00
+		88 06 33 00 00 00
 
-Handle 0x0037, DMI type 131, 64 bytes
+Handle 0x0034, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 37 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 34 00 10 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 49 8C 00 00 00 00 01 20 00 00 00 00 09 00
 		A7 05 14 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0038, DMI type 13, 22 bytes
+Handle 0x0035, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0039, DMI type 127, 4 bytes
+Handle 0x0036, DMI type 127, 4 bytes
 End Of Table
 

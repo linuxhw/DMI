@@ -2,7 +2,7 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 64 structures occupying 3148 bytes.
-Table at 0xB7057000.
+Table at 0xB7059000.
 
 Handle 0x0000, DMI type 222, 16 bytes
 OEM-specific Type
@@ -212,8 +212,8 @@ Memory Array Mapped Address
 Handle 0x000B, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: R06ET69W (1.43 )
-	Release Date: 01/08/2020
+	Version: R06ET71W (1.45 )
+	Release Date: 02/21/2022
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -236,7 +236,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.43
+	BIOS Revision: 1.45
 	Firmware Revision: 1.11
 
 Handle 0x000C, DMI type 1, 27 bytes
@@ -254,7 +254,7 @@ Handle 0x000D, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: LENOVO
 	Product Name: 20FMS49100
-	Version: 0B98417 WIN
+	Version: Not Defined
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -471,7 +471,7 @@ Handle 0x002B, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 2B 00 03 01 00 02 01 00 00 00 02 00 00 00
-		00 D6 00 03 00 00 05 00 00 00
+		00 EC 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -493,7 +493,7 @@ OEM-specific Type
 	Header and Data:
 		DD 44 2D 00 09 01 00 02 01 00 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 21 00 05 00 FF FF FF 21
-		00 06 00 02 0A 00 00 00 07 00 3E 00 00 00 00 08
+		00 06 00 FF FF FF FF FF 07 00 3E 00 00 00 00 08
 		00 34 00 00 00 00 09 00 3E 00 00 00 00 0A 00 34
 		00 00 00 00
 	Strings:
@@ -514,7 +514,7 @@ OEM-specific Type
 		DD 36 2E 00 07 01 00 02 01 00 00 00 02 00 02 01
 		00 00 00 03 00 02 01 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 08 00 07 00 FF FF FF 08 00 08
-		00 FF FF FF FF FF
+		00 FF FF FF 00 04
 	Strings:
 		Reference Code - SA - System Agent
 		Reference Code - MRC
@@ -548,7 +548,7 @@ System Event Log
 
 Handle 0x0030, DMI type 24, 5 bytes
 Hardware Security
-	Power-On Password Status: Disabled
+	Power-On Password Status: Enabled
 	Keyboard Password Status: Not Implemented
 	Administrator Password Status: Enabled
 	Front Panel Reset Status: Not Implemented

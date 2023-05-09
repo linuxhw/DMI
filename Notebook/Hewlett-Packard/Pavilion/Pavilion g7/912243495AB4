@@ -7,8 +7,8 @@ Table at 0x000E4410.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Insyde
-	Version: F.53
-	Release Date: 10/24/2012
+	Version: F.6A
+	Release Date: 05/13/2013
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 2 MB
@@ -32,8 +32,8 @@ BIOS Information
 		USB legacy is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.83
-	Firmware Revision: 33.58
+	BIOS Revision: 15.106
+	Firmware Revision: 33.70
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -50,7 +50,7 @@ Handle 0x0002, DMI type 2, 16 bytes
 Base Board Information
 	Manufacturer: Hewlett-Packard
 	Product Name: 3568
-	Version: 21.3A
+	Version: 21.46
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -83,7 +83,7 @@ Handle 0x0004, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI Express Slot 1
 	Type: x16 PCI Express x16
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 1
 	Characteristics:
@@ -123,11 +123,25 @@ OEM Strings
 	String 3: ABS 70/71 78 79 7A 7B
 	String 4: CNB1 0690130000204610000620100
 
-Handle 0x0008, DMI type 32, 20 bytes
+Handle 0x0008, DMI type 22, 26 bytes
+Portable Battery
+	Location: Primary
+	Manufacturer: GW
+	Name: MU06047
+	Chemistry: Lithium Ion
+	Design Capacity: 47520 mWh
+	Design Voltage: 10800 mV
+	SBDS Version: 3.1
+	Maximum Error: 8%
+	SBDS Serial Number: --
+	SBDS Manufacture Date: 2022-11-18
+	OEM-specific Information: 0x0000FFFF
+
+Handle 0x0009, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0009, DMI type 41, 11 bytes
+Handle 0x000A, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: AMD Radeon(TM) HD 6380G
 	Type: Video
@@ -135,7 +149,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:01.0
 
-Handle 0x000A, DMI type 16, 23 bytes
+Handle 0x000B, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -144,9 +158,9 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
-Handle 0x000B, DMI type 17, 34 bytes
+Handle 0x000C, DMI type 17, 34 bytes
 Memory Device
-	Array Handle: 0x000A
+	Array Handle: 0x000B
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -165,9 +179,9 @@ Memory Device
 	Rank: 8
 	Configured Memory Speed: Unknown
 
-Handle 0x000C, DMI type 17, 34 bytes
+Handle 0x000D, DMI type 17, 34 bytes
 Memory Device
-	Array Handle: 0x000A
+	Array Handle: 0x000B
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -186,24 +200,24 @@ Memory Device
 	Rank: 2
 	Configured Memory Speed: 667 MT/s
 
-Handle 0x000D, DMI type 20, 35 bytes
+Handle 0x000E, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x000C
-	Memory Array Mapped Address Handle: 0x000E
+	Physical Device Handle: 0x000D
+	Memory Array Mapped Address Handle: 0x000F
 	Partition Row Position: 1
 
-Handle 0x000E, DMI type 19, 31 bytes
+Handle 0x000F, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Array Handle: 0x000A
+	Physical Array Handle: 0x000B
 	Partition Width: 2
 
-Handle 0x000F, DMI type 4, 42 bytes
+Handle 0x0010, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: Socket FS1
 	Type: Central Processor
@@ -242,9 +256,9 @@ Processor Information
 	Current Speed: 1800 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket FS1
-	L1 Cache Handle: 0x0010
-	L2 Cache Handle: 0x0011
-	L3 Cache Handle: 0x0012
+	L1 Cache Handle: 0x0011
+	L2 Cache Handle: 0x0012
+	L3 Cache Handle: 0x0013
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
@@ -254,7 +268,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0010, DMI type 7, 19 bytes
+Handle 0x0011, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -270,7 +284,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 2-way Set-associative
 
-Handle 0x0011, DMI type 7, 19 bytes
+Handle 0x0012, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -286,7 +300,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0012, DMI type 7, 19 bytes
+Handle 0x0013, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L3 Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -302,21 +316,13 @@ Cache Information
 	System Type: Unified
 	Associativity: Other
 
-Handle 0x0013, DMI type 41, 11 bytes
-Onboard Device
-	Reference Designation: Realtek RTL8188CE 802.11b/g/n WiFi Adapter
-	Type: Other
-	Status: Enabled
-	Type Instance: 1
-	Bus Address: 0000:01:00.0
-
 Handle 0x0014, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Realtek PCIe FE Family Controller
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:02:00.0
+	Bus Address: 0000:01:00.0
 
 Handle 0x0015, DMI type 127, 4 bytes
 End Of Table

@@ -1,7 +1,7 @@
 # dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.0 present.
-Table at 0xA1762000.
+Table at 0x97762000.
 
 Handle 0x0000, DMI type 43, 31 bytes
 TPM Device
@@ -17,8 +17,8 @@ TPM Device
 Handle 0x0001, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: Q85 Ver. 01.21.01
-	Release Date: 08/02/2022
+	Version: Q85 Ver. 01.23.00
+	Release Date: 11/29/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -41,7 +41,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 21.1
+	BIOS Revision: 23.0
 	Firmware Revision: 2.65
 
 Handle 0x0002, DMI type 1, 27 bytes
@@ -295,7 +295,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 17 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 4E 9D 00 00 00 00 01 00 00 00 08 00 0B 00
-		7E 10 5C 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		E3 10 5D 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0018, DMI type 17, 40 bytes
@@ -376,12 +376,12 @@ OEM Strings
 	String 2: BUILDID#17WWR4BT601#SACJ#DACJ;
 	String 3: EDK2_1
 	String 4: Buff=2
-	String 5: HRDWFEATS=VTX:1;VTD:1;SGX:0;
+	String 5: HRDWFEATS=VTX:1;VTD:1;SGX:1;
 
 Handle 0x0005, DMI type 221, 33 bytes
 OEM-specific Type
 	Header and Data:
-		DD 21 05 00 04 01 00 03 08 04 00 00 02 00 00 00
+		DD 21 05 00 04 01 00 03 08 05 00 00 02 00 00 00
 		00 F0 00 03 00 00 05 00 00 00 04 00 FF FF FF FF
 		FF
 	Strings:
@@ -393,8 +393,8 @@ OEM-specific Type
 Handle 0x001B, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 1B 00 03 01 00 03 08 04 00 00 02 00 00 00
-		00 00 00 03 04 0B 08 5C 7E 10
+		DD 1A 1B 00 03 01 00 03 08 05 00 00 02 00 00 00
+		00 00 00 03 04 0B 08 5D E3 10
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
@@ -404,7 +404,7 @@ OEM-specific Type
 Handle 0x001C, DMI type 221, 75 bytes
 OEM-specific Type
 	Header and Data:
-		DD 4B 1C 00 0A 01 00 03 08 04 00 00 02 03 FF FF
+		DD 4B 1C 00 0A 01 00 03 08 05 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 21 00 05 00 FF FF FF 21
 		00 06 00 02 0A 00 00 00 07 00 3E 00 00 00 00 08
 		00 34 00 00 00 00 09 00 0B 00 00 00 00 0A 00 3E
@@ -425,8 +425,8 @@ OEM-specific Type
 Handle 0x001D, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 1D 00 07 01 00 03 08 04 00 00 02 00 03 08
-		04 00 00 03 00 03 08 04 00 00 04 05 FF FF FF FF
+		DD 36 1D 00 07 01 00 03 08 05 00 00 02 00 03 08
+		05 00 00 03 00 03 08 05 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 02 00 07 00 FF FF FF 02 00 08
 		00 FF FF FF FF FF
 	Strings:
@@ -454,7 +454,7 @@ Group Associations
 Handle 0x0020, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 20 00 01 03 01 45 02 00 A0 06 03 10 86 20
+		DB 51 20 00 01 03 01 45 02 00 A0 06 03 10 80 20
 		00 00 00 00 40 08 00 00 00 00 00 04 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

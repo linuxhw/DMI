@@ -3,13 +3,13 @@ Getting SMBIOS data from sysfs.
 SMBIOS 3.4 present.
 # SMBIOS implementations newer than version 3.3.0 are not
 # fully supported by this version of dmidecode.
-99 structures occupying 5781 bytes.
-Table at 0x5D133000.
+100 structures occupying 5860 bytes.
+Table at 0x5D135000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
 	Header and Data:
-		DA FB 00 DA B2 00 7C EF 1E B6 10 05 00 05 00 03
+		DA FB 00 DA B2 00 7C FF 1E B6 10 05 00 05 00 03
 		00 06 00 06 00 05 00 0F 00 0F 00 00 00 11 00 11
 		00 02 00 12 00 12 00 04 00 22 00 22 00 01 00 23
 		00 23 00 00 00 28 00 28 00 00 00 29 00 29 00 01
@@ -29,7 +29,7 @@ OEM-specific Type
 Handle 0xDA01, DMI type 218, 251 bytes
 OEM-specific Type
 	Header and Data:
-		DA FB 01 DA B2 00 7C EF 1E B6 10 18 01 18 01 01
+		DA FB 01 DA B2 00 7C FF 1E B6 10 18 01 18 01 01
 		00 19 01 19 01 00 00 1A 01 1A 01 01 00 1B 01 1B
 		01 00 00 1C 01 1C 01 01 00 1D 01 1D 01 00 00 1E
 		01 1E 01 01 00 27 01 27 01 03 00 2B 01 2B 01 01
@@ -49,7 +49,7 @@ OEM-specific Type
 Handle 0xDA02, DMI type 218, 251 bytes
 OEM-specific Type
 	Header and Data:
-		DA FB 02 DA B2 00 7C EF 1E B6 10 A5 01 A5 01 00
+		DA FB 02 DA B2 00 7C FF 1E B6 10 A5 01 A5 01 00
 		00 A6 01 A6 01 01 00 A7 01 A7 01 00 00 A8 01 A8
 		01 01 00 DE 01 DE 01 00 00 DF 01 DF 01 01 00 E0
 		01 E0 01 05 00 EA 01 EA 01 00 00 EB 01 EB 01 01
@@ -69,7 +69,7 @@ OEM-specific Type
 Handle 0xDA03, DMI type 218, 251 bytes
 OEM-specific Type
 	Header and Data:
-		DA FB 03 DA B2 00 7C EF 1E B6 10 0F 03 0F 03 02
+		DA FB 03 DA B2 00 7C FF 1E B6 10 0F 03 0F 03 02
 		00 12 03 12 03 03 00 13 03 13 03 01 00 14 03 14
 		03 00 00 15 03 15 03 01 00 16 03 16 03 00 00 17
 		03 17 03 01 00 18 03 18 03 00 00 19 03 19 03 01
@@ -89,7 +89,7 @@ OEM-specific Type
 Handle 0xDA04, DMI type 218, 251 bytes
 OEM-specific Type
 	Header and Data:
-		DA FB 04 DA B2 00 7C EF 1E B6 10 E5 03 E5 03 01
+		DA FB 04 DA B2 00 7C FF 1E B6 10 E5 03 E5 03 01
 		00 E6 03 E6 03 00 00 E7 03 E7 03 01 00 E8 03 E8
 		03 00 00 E9 03 E9 03 01 00 F6 03 F6 03 01 00 F7
 		03 F7 03 00 00 FE 03 FE 03 01 00 FF 03 FF 03 00
@@ -109,7 +109,7 @@ OEM-specific Type
 Handle 0xDA05, DMI type 218, 251 bytes
 OEM-specific Type
 	Header and Data:
-		DA FB 05 DA B2 00 7C EF 1E B6 10 88 04 88 04 00
+		DA FB 05 DA B2 00 7C FF 1E B6 10 88 04 88 04 00
 		00 98 04 98 04 FF FF 9C 04 9C 04 01 00 9D 04 9D
 		04 00 00 9E 04 9E 04 01 00 9F 04 9F 04 00 00 DC
 		04 DC 04 FF FF DD 04 DD 04 FF FF E6 04 E6 04 01
@@ -129,7 +129,7 @@ OEM-specific Type
 Handle 0xDA06, DMI type 218, 59 bytes
 OEM-specific Type
 	Header and Data:
-		DA 3B 06 DA B2 00 7C EF 1E B6 10 02 80 02 80 02
+		DA 3B 06 DA B2 00 7C FF 1E B6 10 02 80 02 80 02
 		00 03 80 03 80 03 00 0E 80 0E 80 01 00 0F 80 0F
 		80 FF FF 12 80 12 80 FF FF 13 80 13 80 00 00 14
 		80 14 80 00 00 FF FF FF FF 00 00
@@ -137,7 +137,7 @@ OEM-specific Type
 Handle 0xDA07, DMI type 218, 77 bytes
 OEM-specific Type
 	Header and Data:
-		DA 4D 07 DA B2 00 7C EF 1E B6 10 00 F1 00 F1 01
+		DA 4D 07 DA B2 00 7C FF 1E B6 10 00 F1 00 F1 01
 		00 02 F1 02 F1 01 00 10 F1 10 F1 01 00 12 F1 12
 		F1 01 00 40 F1 40 F1 01 00 42 F1 42 F1 01 00 60
 		F1 60 F1 01 00 62 F1 62 F1 01 00 00 F6 00 F6 01
@@ -146,8 +146,8 @@ OEM-specific Type
 Handle 0x0001, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.0.33
-	Release Date: 03/17/2022
+	Version: 1.9.1
+	Release Date: 01/19/2023
 	ROM Size: 48 MB
 	Characteristics:
 		PCI is supported
@@ -167,7 +167,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.0
+	BIOS Revision: 1.9
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -178,7 +178,7 @@ System Information
 	UUID: --
 	Wake-up Type: Power Switch
 	SKU Number: 0AD3
-	Family: OptiPlex
+	Family: Inspiron
 
 Handle 0x0200, DMI type 2, 17 bytes
 Base Board Information
@@ -613,7 +613,7 @@ Port Connector Information
 Handle 0x0900, DMI type 9, 28 bytes
 System Slot Information
 	Designation: SLOT2
-	Type: x1 PCI Express
+	Type: x1 PCI Express 3 x1
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -629,7 +629,7 @@ System Slot Information
 Handle 0x0901, DMI type 9, 28 bytes
 System Slot Information
 	Designation: SLOT3
-	Type: x16 PCI Express 3
+	Type: x16 PCI Express 3 x16
 	Current Usage: Available
 	Length: Long
 	ID: 2
@@ -653,7 +653,7 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 		SMBus signal is supported
-	Bus Address: 0000:ff:1f.7
+	Bus Address: 0000:01:00.0
 	Data Bus Width: 0
 	Peer Devices: 0
 
@@ -760,44 +760,44 @@ Handle 0x1101, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x1000
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 16 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
-	Bank Locator:  
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Bank Locator: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 3200 MT/s
+	Manufacturer: 80CE000080CE
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: M378A2G43AB3-CWE    
+	Rank: 1
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: None
+	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x1300, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x1000
-	Partition Width: 1
+	Partition Width: 2
 
 Handle 0x1400, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -805,6 +805,17 @@ Memory Device Mapped Address
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
 	Physical Device Handle: 0x1100
+	Memory Array Mapped Address Handle: 0x1300
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x1401, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00400000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x1101
 	Memory Array Mapped Address Handle: 0x1300
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
@@ -952,7 +963,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 00 83 35 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 86 7A 00 00 00 00 21 20 00 00 00 00 10 00
-		45 06 0F 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		C7 06 0F 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x8500, DMI type 133, 44 bytes
@@ -982,7 +993,7 @@ OEM-specific Type
 Handle 0xCB00, DMI type 203, 106 bytes
 OEM-specific Type
 	Header and Data:
-		CB 6A 00 CB 01 04 01 45 02 00 90 06 01 10 82 20
+		CB 6A 00 CB 01 04 01 45 02 00 90 06 01 10 89 20
 		00 00 00 00 40 00 00 03 1F 04 00 CB 03 E0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -1012,8 +1023,8 @@ OEM-specific Type
 Handle 0xCD02, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
-		CD 1A 02 CD 03 01 00 0C 00 5D 30 00 02 00 00 00
-		00 15 00 03 00 01 12 05 00 00
+		CD 1A 02 CD 03 01 00 0C 00 65 70 00 02 00 00 00
+		00 26 00 03 00 01 12 0C 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -1022,8 +1033,8 @@ OEM-specific Type
 Handle 0xCD03, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
-		CD 1A 03 CD 03 01 00 0C 00 5D 30 00 02 00 00 00
-		00 00 00 03 04 10 00 0F 45 06
+		CD 1A 03 CD 03 01 00 0C 00 65 70 00 02 00 00 00
+		00 00 00 03 04 10 00 0F C7 06
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -1033,7 +1044,7 @@ OEM-specific Type
 Handle 0xCD04, DMI type 205, 47 bytes
 OEM-specific Type
 	Header and Data:
-		CD 2F 04 CD 06 01 00 0C 00 5D 30 00 02 03 FF FF
+		CD 2F 04 CD 06 01 00 0C 00 65 70 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 11 00 05 00 FF FF FF 11
 		00 06 00 02 46 00 00 00 07 00 04 00 00 00 00
 	Strings:
@@ -1048,8 +1059,8 @@ OEM-specific Type
 Handle 0xCD05, DMI type 205, 82 bytes
 OEM-specific Type
 	Header and Data:
-		CD 52 05 CD 0B 01 00 0C 00 5D 30 00 02 00 00 00
-		02 E8 00 03 00 0C 00 5D 30 00 04 05 FF FF FF FF
+		CD 52 05 CD 0B 01 00 0C 00 65 70 00 02 00 00 00
+		03 80 00 03 00 0C 00 65 70 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 02 00 07 00 00 00 00 02 00 08
 		00 FF FF FF FF FF 09 00 FF FF FF FF FF 0A 00 FF
 		FF FF FF FF 0B 00 FF FF FF FF FF 0C 00 FF FF FF
@@ -1074,8 +1085,8 @@ OEM-specific Type
 		CD 52 06 CD 0B 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 FF FF FF FF FF 0A
-		00 FF FF FF FF 00 0B 00 FF FF 00 00 00 0C 00 00
-		17 00 69 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
+		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
+		17 00 73 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
 		00 00
 	Strings:
 		Lan Phy Version
@@ -1147,7 +1158,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 22 04 26 15 24 01 00 00
+		DE 10 00 DE 01 04 00 00 23 02 23 16 09 01 00 00
 
 Handle 0x0000, DMI type 255, 6 bytes
 OEM-specific Type

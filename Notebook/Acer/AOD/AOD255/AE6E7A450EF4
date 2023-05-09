@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-36 structures occupying 1658 bytes.
+36 structures occupying 1662 bytes.
 Table at 0x000E80B0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -226,7 +226,7 @@ Memory Device
 	Error Information Handle: 0x0017
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1 GB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -234,10 +234,10 @@ Memory Device
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 667 MT/s
-	Manufacturer: Kinston
+	Manufacturer: AD00000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 414352313238583634443253383030433620
+	Part Number: 48594D503132355336344350382D53362020
 	Rank: Unknown
 
 Handle 0x0017, DMI type 18, 23 bytes
@@ -256,15 +256,15 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: 1 ns
 	Type: Unknown DIMM
-	Installed Size: 1024 MB (Single-bank Connection)
-	Enabled Size: 1024 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0019, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0016
 	Memory Array Mapped Address Handle: 0x001B
 	Partition Row Position: 1
@@ -282,8 +282,8 @@ Handle 0x001A, DMI type 18, 23 bytes
 Handle 0x001B, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Array Handle: 0x0015
 	Partition Width: 0
 
@@ -413,12 +413,11 @@ OEM-specific Type
 	Header and Data:
 		AC 06 21 00 01 00
 
-Handle 0x0022, DMI type 171, 34 bytes
+Handle 0x0022, DMI type 171, 29 bytes
 OEM-specific Type
 	Header and Data:
-		AB 22 22 00 01 86 80 11 A0 02 69 19 60 20 04 02
-		04 65 96 05 86 80 D8 27 07 E4 14 27 47 03 F2 0C
-		50 62
+		AB 1D 22 00 01 86 80 11 A0 02 69 19 60 20 04 02
+		04 65 96 05 86 80 D8 27 07 E4 14 27 47
 
 Handle 0x0023, DMI type 127, 4 bytes
 End Of Table

@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-47 structures occupying 1920 bytes.
+47 structures occupying 1917 bytes.
 Table at 0xBE569000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 03/13/2017
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 4 MB
+	ROM Size: 4096 kB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -145,8 +145,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1 MB
-	Maximum Size: 1 MB
+	Installed Size: 1024 kB
+	Maximum Size: 1024 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -354,7 +354,7 @@ BIOS Language Information
 
 Handle 0x002A, DMI type 15, 81 bytes
 System Event Log
-	Area Length: 34 bytes
+	Area Length: 43 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
@@ -438,7 +438,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: 1
 	Locator: DIMM 0
@@ -459,20 +459,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: 2
 	Locator: DIMM 1
 	Bank Locator: CHANNEL A
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Samsung
+	Speed: 1066 MT/s
+	Manufacturer: Elpida
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5773DH0-CK0  
+	Part Number: EBJ21UE8BDS0-AE-F 
 	Rank: Unknown
-	Configured Memory Speed: 1600 MT/s
+	Configured Memory Speed: 1066 MT/s
 
 Handle 0x0024, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -507,14 +507,14 @@ Memory Device Mapped Address
 Handle 0x001C, DMI type 22, 26 bytes
 Portable Battery
 	Location: Rear
-	Manufacturer: SANYO
-	Name: 45N1057
-	Design Capacity: 44000 mWh
+	Manufacturer: LGC
+	Name: 45N1063
+	Design Capacity: 57720 mWh
 	Design Voltage: 11100 mV
 	SBDS Version: 03.01
 	Maximum Error: Unknown
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 2020-10-31
+	SBDS Manufacture Date: 2014-04-12
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 

@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 60 structures occupying 2496 bytes.
@@ -7,7 +7,7 @@ Table at 0xDABF5000.
 Handle 0x0000, DMI type 134, 16 bytes
 OEM-specific Type
 	Header and Data:
-		86 10 00 00 00 53 54 4D 20 01 01 00 00 00 01 02
+		86 10 00 00 00 53 54 4D 20 01 01 00 00 03 01 02
 	Strings:
 		TPM INFO
 		System Reserved
@@ -50,7 +50,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz
-	Voltage: 0.8 V
+	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 2500 MHz
 	Current Speed: 2500 MHz
@@ -143,7 +143,7 @@ OEM-specific Type
 Handle 0x0007, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 07 00 10 00 00 00 00 00 00 00 00 00 00 00
+		83 40 07 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 59 1E FF FF FF FF 01 20 00 00 01 00 08 00
 		E0 04 00 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 60 00 00 00 76 50 72 6F 00 00 00 00
@@ -440,7 +440,7 @@ Inactive
 Handle 0x002C, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Other
-	Status: Disabled
+	Status: Enabled
 	Description: IBM Embedded Security hardware
 
 Handle 0x002D, DMI type 12, 5 bytes
@@ -466,7 +466,7 @@ Portable Battery
 	Name: 45N1011
 	Design Capacity: 93600 mWh
 	Design Voltage: 11100 mV
-	SBDS Version: 01.08
+	SBDS Version: 01.00
 	Maximum Error: Unknown
 	SBDS Serial Number: --
 	SBDS Manufacture Date: 2013-10-29

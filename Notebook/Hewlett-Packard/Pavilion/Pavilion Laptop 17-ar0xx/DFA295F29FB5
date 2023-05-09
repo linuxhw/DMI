@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x000EA590.
+Table at 0xDDD53000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -197,7 +197,7 @@ Memory Array Mapped Address
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
 	Physical Array Handle: 0x0011
-	Partition Width: 2
+	Partition Width: 1
 
 Handle 0x0013, DMI type 17, 40 bytes
 Memory Device
@@ -205,7 +205,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1 (left)
@@ -213,10 +213,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2400 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471A5244BB0-CRC    
+	Part Number: HMA81GS6AFR8N-UH    
 	Rank: 1
 	Configured Memory Speed: 1866 MT/s
 	Minimum Voltage: 1.2 V
@@ -227,31 +227,21 @@ Handle 0x0014, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0011
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4 GB
-	Form Factor: SODIMM
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
 	Set: None
 	Locator: Bottom-Slot 2 (right)
 	Bank Locator: CHANNEL B
 	Type: DDR4
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
-	Manufacturer: Samsung
-	Serial Number: --
-	Asset Tag: --
-	Part Number: M471A5244BB0-CRC    
-	Rank: 1
-	Configured Memory Speed: 1866 MT/s
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
+	Type Detail: None
 
 Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0013
 	Memory Array Mapped Address Handle: 0x0012
 	Partition Row Position: 1

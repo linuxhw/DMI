@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0x9BD5C000.
+Table at 0x99D5C000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 1007
-	Release Date: 07/13/2021
+	Version: 1701
+	Release Date: 12/12/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -33,7 +33,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 10.7
+	BIOS Revision: 17.1
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -432,14 +432,14 @@ Handle 0x002F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_2
 	Type: x4 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 1
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:01.1
+	Bus Address: 0000:02:01.1
 
 Handle 0x0030, DMI type 9, 17 bytes
 System Slot Information
@@ -452,7 +452,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:06:1c.4
+	Bus Address: 0000:07:1c.4
 
 Handle 0x0031, DMI type 9, 17 bytes
 System Slot Information
@@ -945,8 +945,8 @@ Memory Device Mapped Address
 Handle 0x005C, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 5C 00 03 01 00 0B 01 37 50 00 02 00 00 00
-		00 40 00 03 00 FF FF FF FF FF
+		DD 1A 5C 00 03 01 00 0B 01 37 40 00 02 00 00 00
+		00 54 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -955,8 +955,8 @@ OEM-specific Type
 Handle 0x005D, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 5D 00 03 01 00 0B 01 37 50 00 02 00 0F 00
-		00 02 00 03 04 0F 00 14 BA 05
+		DD 1A 5D 00 03 01 00 0B 01 37 40 00 02 00 0F 00
+		00 02 00 03 04 0F 00 2A BB 08
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -966,7 +966,7 @@ OEM-specific Type
 Handle 0x005E, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 5E 00 06 01 00 0B 01 37 50 00 02 03 FF FF
+		DD 2F 5E 00 06 01 00 0B 01 37 40 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 11 00 05 00 FF FF FF 11
 		00 06 00 FF FF FF FF FF 07 00 04 00 00 00 00
 	Strings:
@@ -981,8 +981,8 @@ OEM-specific Type
 Handle 0x005F, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 5F 00 0B 01 00 0B 01 37 50 00 02 00 00 04
-		61 72 00 03 00 0B 01 37 50 00 04 05 FF FF FF FF
+		DD 52 5F 00 0B 01 00 0B 01 37 40 00 02 00 00 04
+		61 80 00 03 00 0B 01 37 40 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 01 00 07 00 00 00 00 01 00 08
 		00 FF FF FF FF FF 09 00 FF FF FF FF FF 0A 00 FF
 		FF FF FF FF 0B 00 FF FF FF FF FF 0C 00 01 01 01
@@ -1110,12 +1110,12 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: 11th Gen Intel(R) Core(TM) i7-11700K @ 3.60GHz
-	Voltage: 0.9 V
+	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 12000 MHz
 	Current Speed: 3564 MHz
 	Status: Populated, Enabled
-	Upgrade: <OUT OF SPEC>
+	Upgrade: Socket LGA1200
 	L1 Cache Handle: 0x0062
 	L2 Cache Handle: 0x0063
 	L3 Cache Handle: 0x0064
@@ -1138,7 +1138,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 66 00 14 00 00 00 0F 00 00 00 00 00 02 00
 		F8 00 85 43 00 00 00 00 01 00 00 00 00 00 0F 00
-		BA 05 14 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		BB 08 2A 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0067, DMI type 41, 11 bytes
@@ -1215,13 +1215,21 @@ Onboard Device
 
 Handle 0x0070, DMI type 41, 11 bytes
 Onboard Device
+	Reference Designation: Onboard - Sound
+	Type: Sound
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:00:1f.3
+
+Handle 0x0071, DMI type 41, 11 bytes
+Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
 	Type Instance: 9
 	Bus Address: 0000:00:1f.4
 
-Handle 0x0071, DMI type 41, 11 bytes
+Handle 0x0072, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1229,10 +1237,10 @@ Onboard Device
 	Type Instance: 10
 	Bus Address: 0000:00:1f.5
 
-Handle 0x0072, DMI type 221, 82 bytes
+Handle 0x0073, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 72 00 0B 01 00 FF FF FF FF FF 02 00 FF FF
+		DD 52 73 00 0B 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
 		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
@@ -1254,11 +1262,11 @@ OEM-specific Type
 		Royal Park Version
 		Platform Version
 
-Handle 0x0073, DMI type 32, 11 bytes
+Handle 0x0074, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0074, DMI type 13, 22 bytes
+Handle 0x0075, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 9
@@ -1273,21 +1281,21 @@ BIOS Language Information
 		ko|KR|unicode
 	Currently Installed Language: de|DE|iso8859-1
 
-Handle 0x0075, DMI type 136, 8 bytes
+Handle 0x0076, DMI type 136, 8 bytes
 OEM-specific Type
 	Header and Data:
-		88 08 75 00 00 00 00 00
+		88 08 76 00 00 00 00 00
 
-Handle 0x0076, DMI type 14, 8 bytes
+Handle 0x0077, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x0077, DMI type 219, 106 bytes
+Handle 0x0078, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 77 00 01 04 01 45 02 00 90 06 01 85 39 20
+		DB 6A 78 00 01 04 01 45 02 00 90 06 01 85 39 20
 		00 00 00 04 40 00 00 00 00 00 00 00 00 20 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -1300,12 +1308,12 @@ OEM-specific Type
 		MEI3
 		MEI4
 
-Handle 0x0078, DMI type 136, 6 bytes
+Handle 0x0079, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 78 00 00 00
+		88 06 79 00 00 00
 
-Handle 0x0079, DMI type 14, 23 bytes
+Handle 0x007A, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 6
@@ -1314,8 +1322,8 @@ Group Associations
 		0x005E (OEM-specific)
 		0x005F (OEM-specific)
 		0x0060 (OEM-specific)
-		0x0072 (OEM-specific)
+		0x0073 (OEM-specific)
 
-Handle 0x007A, DMI type 127, 4 bytes
+Handle 0x007B, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0 present.
 33 structures occupying 1354 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 09/06/2018
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 4 MB
+	ROM Size: 4096 kB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -166,8 +166,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1 MB
-	Maximum Size: 1 MB
+	Installed Size: 1024 kB
+	Maximum Size: 1024 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -178,14 +178,14 @@ Cache Information
 
 Handle 0x0008, DMI type 11, 5 bytes
 OEM Strings
-	String 1: h9VDAtK-ui85w
-	String 2: UTODq+Myo0BSv
-	String 3: q-hqi9vVVH91H
+	String 1: OKHw1+Ymk25Ma
+	String 2: j1CgYWP2r-i7t
+	String 3: 3MdORrAb2VjXa
 
 Handle 0x0009, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: SMI:00B2C601
-	Option 2: TIM:202212261815
+	Option 2: TIM:202304020343
 	Option 3: HDD:                    
 	Option 4: MEM:                  00000000
 
@@ -206,7 +206,7 @@ System Event Log
 	Access Method: OEM-specific
 	Access Address: Unknown
 	Status: Valid, Not Full
-	Change Token: 0x00000008
+	Change Token: 0x0000000B
 	Header Format: Type 1
 	Supported Log Type Descriptors: 14
 	Descriptor 1: POST memory resize
@@ -253,7 +253,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 32 bits
 	Data Width: 32 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-Onboard0
@@ -277,7 +277,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 32 bits
 	Data Width: 32 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-Onboard0

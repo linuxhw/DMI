@@ -209,37 +209,13 @@ Handle 0x000C, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x000B
 	Error Information Handle: 0x000F
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4 GB
-	Form Factor: SODIMM
-	Set: None
-	Locator: DIMM 0
-	Bank Locator: P0 CHANNEL A
-	Type: DDR4
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2667 MT/s
-	Manufacturer: Hynix
-	Serial Number: --
-	Asset Tag: --
-	Part Number: HMA851S6JJR6N-VK    
-	Rank: 1
-	Configured Memory Speed: 2400 MT/s
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
-
-Handle 0x000D, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x000B
-	Error Information Handle: 0x0010
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
 	Form Factor: Unknown
 	Set: None
 	Locator: DIMM 0
-	Bank Locator: P0 CHANNEL B
+	Bank Locator: P0 CHANNEL A
 	Type: Unknown
 	Type Detail: Unknown
 	Speed: Unknown
@@ -252,6 +228,30 @@ Memory Device
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
+
+Handle 0x000D, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x000B
+	Error Information Handle: 0x0010
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: SODIMM
+	Set: None
+	Locator: DIMM 0
+	Bank Locator: P0 CHANNEL B
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 2667 MT/s
+	Manufacturer: Hynix
+	Serial Number: --
+	Asset Tag: --
+	Part Number: HMA851S6JJR6N-VK    
+	Rank: 1
+	Configured Memory Speed: 2400 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
 
 Handle 0x000E, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -296,7 +296,7 @@ Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x000C
+	Physical Device Handle: 0x000D
 	Memory Array Mapped Address Handle: 0x0011
 	Partition Row Position: Unknown
 

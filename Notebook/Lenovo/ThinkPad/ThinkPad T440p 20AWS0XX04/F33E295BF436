@@ -2,7 +2,7 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 67 structures occupying 2739 bytes.
-Table at 0xBCC0D000.
+Table at 0xDCC0D000.
 
 Handle 0x0000, DMI type 4, 42 bytes
 Processor Information
@@ -42,7 +42,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-4300M CPU @ 2.60GHz
-	Voltage: 0.9 V
+	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 2600 MHz
 	Current Speed: 2600 MHz
@@ -365,7 +365,7 @@ System Slot Information
 Handle 0x0027, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Other
-	Status: Enabled
+	Status: Disabled
 	Description: IBM Embedded Security hardware
 
 Handle 0x0028, DMI type 12, 5 bytes
@@ -427,7 +427,7 @@ OEM-specific Type
 Handle 0x0030, DMI type 134, 16 bytes
 OEM-specific Type
 	Header and Data:
-		86 10 30 00 00 53 54 4D 20 01 01 00 00 03 01 02
+		86 10 30 00 00 53 54 4D 20 01 01 00 00 00 01 02
 	Strings:
 		TPM INFO
 		System Reserved
@@ -441,7 +441,7 @@ OEM-specific Type
 Handle 0x0032, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 32 00 14 00 00 00 09 00 00 00 00 00 1C 00
+		83 40 32 00 35 00 00 00 09 00 00 00 00 00 1C 00
 		F8 00 4F 8C 00 00 00 00 21 20 00 00 01 00 09 00
 		B8 0B 2D 00 00 00 00 00 C8 00 3A 15 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
@@ -488,14 +488,14 @@ BIOS Information
 
 Handle 0x0036, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 1762 bytes
+	Area Length: 1986 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x0000006D
+	Change Token: 0x0000007B
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -511,8 +511,8 @@ Handle 0x0037, DMI type 140, 85 bytes
 OEM-specific Type
 	Header and Data:
 		8C 55 37 00 4C 45 4E 4F 56 4F 0B 00 01 8B F6 8F
-		D7 50 4F D5 70 C0 87 36 78 2B 51 C7 95 01 00 23
-		EF B9 99 C2 6B 26 EC E7 75 D4 C9 2A 07 FA B3 01
+		D7 50 4F D5 70 C0 87 36 78 2B 51 C7 95 01 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 7E 02 00 F0 7E 02 00 F0 7E
 		02 00 F0 00 F0
@@ -572,7 +572,7 @@ Hardware Security
 Handle 0x0040, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 40 00 01 C0 36
+		84 07 40 00 01 D8 36
 
 Handle 0x0041, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program

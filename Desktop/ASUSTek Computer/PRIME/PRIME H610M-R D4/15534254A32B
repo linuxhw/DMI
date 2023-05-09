@@ -275,14 +275,14 @@ Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16(G4)
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 0
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:01.0
+	Bus Address: 0000:01:01.0
 
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
@@ -295,7 +295,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:01:1c.0
+	Bus Address: 0000:02:1c.0
 
 Handle 0x001E, DMI type 10, 6 bytes
 On Board Device Information
@@ -904,21 +904,13 @@ Onboard Device
 
 Handle 0x004D, DMI type 41, 11 bytes
 Onboard Device
-	Reference Designation: Onboard - Video
-	Type: Video
-	Status: Enabled
-	Type Instance: 1
-	Bus Address: 0000:00:02.0
-
-Handle 0x004E, DMI type 41, 11 bytes
-Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
 	Type Instance: 2
 	Bus Address: 0000:00:0a.0
 
-Handle 0x004F, DMI type 41, 11 bytes
+Handle 0x004E, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -926,7 +918,7 @@ Onboard Device
 	Type Instance: 3
 	Bus Address: 0000:00:0e.0
 
-Handle 0x0050, DMI type 41, 11 bytes
+Handle 0x004F, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -934,7 +926,7 @@ Onboard Device
 	Type Instance: 4
 	Bus Address: 0000:00:14.0
 
-Handle 0x0051, DMI type 41, 11 bytes
+Handle 0x0050, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -942,7 +934,7 @@ Onboard Device
 	Type Instance: 5
 	Bus Address: 0000:00:14.2
 
-Handle 0x0052, DMI type 41, 11 bytes
+Handle 0x0051, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -950,7 +942,7 @@ Onboard Device
 	Type Instance: 6
 	Bus Address: 0000:00:15.0
 
-Handle 0x0053, DMI type 41, 11 bytes
+Handle 0x0052, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -958,7 +950,7 @@ Onboard Device
 	Type Instance: 7
 	Bus Address: 0000:00:16.0
 
-Handle 0x0054, DMI type 41, 11 bytes
+Handle 0x0053, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - SATA
 	Type: SATA Controller
@@ -966,7 +958,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:17.0
 
-Handle 0x0055, DMI type 41, 11 bytes
+Handle 0x0054, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -974,7 +966,7 @@ Onboard Device
 	Type Instance: 8
 	Bus Address: 0000:00:1f.0
 
-Handle 0x0056, DMI type 41, 11 bytes
+Handle 0x0055, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Sound
 	Type: Sound
@@ -982,7 +974,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:1f.3
 
-Handle 0x0057, DMI type 41, 11 bytes
+Handle 0x0056, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -990,7 +982,7 @@ Onboard Device
 	Type Instance: 9
 	Bus Address: 0000:00:1f.4
 
-Handle 0x0058, DMI type 41, 11 bytes
+Handle 0x0057, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -998,14 +990,14 @@ Onboard Device
 	Type Instance: 10
 	Bus Address: 0000:00:1f.5
 
-Handle 0x0059, DMI type 221, 82 bytes
+Handle 0x0058, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 59 00 0B 01 00 FF FF FF FF FF 02 00 FF FF
+		DD 52 58 00 0B 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 FF FF FF FF FF 0A
-		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
-		17 00 73 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
+		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
+		FF FF FF FF 0D 00 FF FF FF FF FF 0E 00 00 07 00
 		00 00
 	Strings:
 		Lan Phy Version
@@ -1023,11 +1015,11 @@ OEM-specific Type
 		Royal Park Version
 		Platform Version
 
-Handle 0x005A, DMI type 32, 11 bytes
+Handle 0x0059, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x005B, DMI type 13, 22 bytes
+Handle 0x005A, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 9
@@ -1042,28 +1034,28 @@ BIOS Language Information
 		ko|KR|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x005C, DMI type 133, 44 bytes
+Handle 0x005B, DMI type 133, 44 bytes
 OEM-specific Type
 	Header and Data:
-		85 2C 5C 00 F9 B4 95 78 4D 92 0A 41 96 39 12 38
+		85 2C 5B 00 F9 B4 95 78 4D 92 0A 41 96 39 12 38
 		62 B2 8A 63 00 86 80 08 16 12 20 26 12 86 80 01
 		00 00 00 61 72 57 18 03 00 00 00 00
 
-Handle 0x005D, DMI type 136, 8 bytes
+Handle 0x005C, DMI type 136, 8 bytes
 OEM-specific Type
 	Header and Data:
-		88 08 5D 00 00 00 00 00
+		88 08 5C 00 00 00 00 00
 
-Handle 0x005E, DMI type 14, 8 bytes
+Handle 0x005D, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x005F, DMI type 219, 106 bytes
+Handle 0x005E, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 5F 00 01 04 01 45 02 00 90 06 01 85 30 20
+		DB 6A 5E 00 01 04 01 45 02 00 90 06 01 85 30 20
 		00 00 00 00 40 00 00 00 00 00 00 02 00 20 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -1076,12 +1068,12 @@ OEM-specific Type
 		MEI3
 		MEI4
 
-Handle 0x0060, DMI type 136, 6 bytes
+Handle 0x005F, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 60 00 00 00
+		88 06 5F 00 00 00
 
-Handle 0x0061, DMI type 14, 23 bytes
+Handle 0x0060, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 6
@@ -1090,8 +1082,8 @@ Group Associations
 		0x0042 (OEM-specific)
 		0x0043 (OEM-specific)
 		0x0044 (OEM-specific)
-		0x0059 (OEM-specific)
+		0x0058 (OEM-specific)
 
-Handle 0x0062, DMI type 127, 4 bytes
+Handle 0x0061, DMI type 127, 4 bytes
 End Of Table
 

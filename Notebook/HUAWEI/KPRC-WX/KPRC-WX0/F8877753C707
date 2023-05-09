@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.11.1 present.
-# SMBIOS implementations newer than version 3.2.0 are not
+# SMBIOS implementations newer than version 3.5.0 are not
 # fully supported by this version of dmidecode.
 Table at 0xAE5DD000.
 
@@ -12,7 +12,7 @@ BIOS Information
 	Release Date: 08/15/2019
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -152,8 +152,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -168,8 +168,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -232,7 +232,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: DIMM 0
@@ -256,7 +256,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: DIMM 0
@@ -351,14 +351,16 @@ Portable Battery
 	Design Capacity: 0 mWh
 	Design Voltage: 7600 mV
 	SBDS Version: Not Specified
-	Maximum Error: 1%
+	Maximum Error: 2%
 	OEM-specific Information: 0x00000002
 
 Handle 0x0017, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
-	Specification Version: 2.0	Firmware Revision: 3.34
-	Description: TPM Device	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 3.34
+	Description: TPM Device
+	Characteristics:
 		TPM Device characteristics not supported
 	OEM-specific Information: 0x00000000
 

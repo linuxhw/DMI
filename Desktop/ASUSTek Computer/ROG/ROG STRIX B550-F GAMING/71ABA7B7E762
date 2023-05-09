@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0xCBA02000.
+Table at 0xCB7EC000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 2404
-	Release Date: 06/21/2021
+	Version: 3002
+	Release Date: 02/23/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -437,7 +437,7 @@ Handle 0x002F, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.58
+	Firmware Revision: 3.87
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -484,8 +484,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 384 kB
-	Maximum Size: 384 kB
+	Installed Size: 512 kB
+	Maximum Size: 512 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -500,8 +500,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3 MB
-	Maximum Size: 3 MB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -516,8 +516,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 32 MB
-	Maximum Size: 32 MB
+	Installed Size: 96 MB
+	Maximum Size: 96 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -532,8 +532,8 @@ Processor Information
 	Type: Central Processor
 	Family: Zen
 	Manufacturer: Advanced Micro Devices, Inc.
-	ID: 10 0F A2 00 FF FB 8B 17
-	Signature: Family 25, Model 33, Stepping 0
+	ID: 12 0F A2 00 FF FB 8B 17
+	Signature: Family 25, Model 33, Stepping 2
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -558,11 +558,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Ryzen 5 5600X 6-Core Processor             
+	Version: AMD Ryzen 7 5800X3D 8-Core Processor           
 	Voltage: 1.1 V
 	External Clock: 100 MHz
-	Max Speed: 4650 MHz
-	Current Speed: 3700 MHz
+	Max Speed: 3400 MHz
+	Current Speed: 3400 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
 	L1 Cache Handle: 0x0034
@@ -571,9 +571,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Unknown
-	Core Count: 12
-	Core Enabled: 6
-	Thread Count: 24
+	Core Count: 8
+	Core Enabled: 8
+	Thread Count: 16
 	Characteristics:
 		64-bit capable
 		Multi-Core
@@ -605,13 +605,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2666 MT/s
+	Speed: 3933 MT/s
 	Manufacturer: A-DATA
 	Serial Number: --
 	Asset Tag: --
 	Part Number: DDR4 4133           
 	Rank: 1
-	Configured Memory Speed: 2666 MT/s
+	Configured Memory Speed: 3933 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -661,13 +661,13 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2666 MT/s
+	Speed: 3933 MT/s
 	Manufacturer: A-DATA
 	Serial Number: --
 	Asset Tag: --
 	Part Number: DDR4 4133           
 	Rank: 1
-	Configured Memory Speed: 2666 MT/s
+	Configured Memory Speed: 3933 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -717,13 +717,13 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2666 MT/s
+	Speed: 3933 MT/s
 	Manufacturer: A-DATA
 	Serial Number: --
 	Asset Tag: --
 	Part Number: DDR4 4133           
 	Rank: 1
-	Configured Memory Speed: 2666 MT/s
+	Configured Memory Speed: 3933 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -773,13 +773,13 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2666 MT/s
+	Speed: 3933 MT/s
 	Manufacturer: A-DATA
 	Serial Number: --
 	Asset Tag: --
 	Part Number: DDR4 4133           
 	Rank: 1
-	Configured Memory Speed: 2666 MT/s
+	Configured Memory Speed: 3933 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V

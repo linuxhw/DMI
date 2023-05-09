@@ -1,5 +1,5 @@
-# dmidecode 2.12
-# SMBIOS entry point at 0x9aebef98
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 27 structures occupying 1842 bytes.
 Table at 0x9AEBC000.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 09/02/2014
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -122,7 +122,7 @@ Processor Information
 	Max Speed: 2400 MHz
 	Current Speed: 2300 MHz
 	Status: Populated, Enabled
-	Upgrade: <OUT OF SPEC>
+	Upgrade: Socket BGA1168
 	L1 Cache Handle: 0x0006
 	L2 Cache Handle: 0x0007
 	L3 Cache Handle: 0x0008
@@ -194,8 +194,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -249,20 +249,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ACR16D3LS1NGG/4G  
+	Part Number: 99U5428-082.A00LF 
 	Rank: 2
-	Configured Clock Speed: 1600 MHz
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000F, DMI type 17, 34 bytes
 Memory Device
@@ -270,34 +270,34 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ACR16D3LS1NGG/4G  
+	Part Number: 99U5428-082.A00LF 
 	Rank: 2
-	Configured Clock Speed: 1600 MHz
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0010, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x000D
 	Partition Width: 2
 
 Handle 0x0011, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x000E
 	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: Unknown
@@ -307,8 +307,8 @@ Memory Device Mapped Address
 Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x000F
 	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: Unknown
@@ -323,15 +323,17 @@ Hardware Security
 	Front Panel Reset Status: Disabled
 
 Handle 0x0014, DMI type 170, 98 bytes
-OEM-specific Type
-	Header and Data:
-		AA 62 14 00 01 08 00 00 7F 00 0F 00 06 00 03 02
-		01 08 21 02 00 00 23 02 00 00 25 02 00 00 41 02
-		04 00 42 02 20 00 43 02 40 00 44 02 08 00 45 02
-		10 00 48 02 01 00 49 02 02 00 61 02 08 00 62 02
-		01 00 63 02 02 00 64 02 04 00 81 02 04 00 83 02
-		02 00 85 02 00 00 86 02 00 00 87 02 00 00 88 02
-		00 04
+Acer Hotkey Function
+	Function bitmap for Communication Button: 0x0801
+		WiFi: Yes
+		3G: No
+		WiMAX: No
+		Bluetooth: Yes
+	Function bitmap for Application Button: 0x0000
+	Function bitmap for Media Button: 0x007f
+	Function bitmap for Display Button: 0x000f
+	Function bitmap for Others Button: 0x0006
+	Communication Function Key Number: 3
 
 Handle 0x0015, DMI type 171, 49 bytes
 OEM-specific Type

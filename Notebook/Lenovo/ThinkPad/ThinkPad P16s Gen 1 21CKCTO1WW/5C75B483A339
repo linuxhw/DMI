@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
 Table at 0x7367B000.
@@ -160,7 +160,7 @@ Memory Device
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL A
-	Type: LPDDR5
+	Type: <OUT OF SPEC>
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 6400 MT/s
 	Manufacturer: Micron Technology
@@ -216,7 +216,7 @@ Memory Device
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL B
-	Type: LPDDR5
+	Type: <OUT OF SPEC>
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 6400 MT/s
 	Manufacturer: Micron Technology
@@ -272,7 +272,7 @@ Memory Device
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL C
-	Type: LPDDR5
+	Type: <OUT OF SPEC>
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 6400 MT/s
 	Manufacturer: Micron Technology
@@ -328,7 +328,7 @@ Memory Device
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL D
-	Type: LPDDR5
+	Type: <OUT OF SPEC>
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 6400 MT/s
 	Manufacturer: Micron Technology
@@ -366,8 +366,8 @@ Memory Device Mapped Address
 Handle 0x0014, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: R23ET62W (1.32 )
-	Release Date: 11/11/2022
+	Version: R23ET65W (1.35 )
+	Release Date: 03/21/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -390,8 +390,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.32
-	Firmware Revision: 1.24
+	BIOS Revision: 1.35
+	Firmware Revision: 1.25
 
 Handle 0x0015, DMI type 1, 27 bytes
 System Information
@@ -585,8 +585,8 @@ OEM-specific Type
 	Header and Data:
 		8C 0F 30 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
 	Strings:
-		1.32 
-		1.29 
+		1.35 
+		1.34 
 
 Handle 0x0031, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -634,14 +634,14 @@ OEM-specific Type
 
 Handle 0x0038, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 82 bytes
+	Area Length: 34 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000004
+	Change Token: 0x00000001
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -656,32 +656,32 @@ System Event Log
 Handle 0x0039, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 39 00 54 48 4E 4B 00 00 00 00 00 00 CD 00
+		8D 12 39 00 54 48 4E 4B 00 00 00 00 00 00 1F 02
 		00 00
 
 Handle 0x003A, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3A 00 54 48 4E 4B 00 00 10 00 00 00 22 00
+		8D 12 3A 00 54 48 4E 4B 00 00 10 00 00 00 5C 00
 		00 00
 
 Handle 0x003B, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3B 00 54 48 4E 4B 00 00 30 00 00 00 11 00
+		8D 12 3B 00 54 48 4E 4B 00 00 30 00 00 00 49 00
 		00 00
 
 Handle 0x003C, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3C 00 54 48 4E 4B 00 00 40 00 00 00 02 00
+		8D 12 3C 00 54 48 4E 4B 00 00 40 00 00 00 03 00
 		00 00
 
 Handle 0x003D, DMI type 141, 30 bytes
 OEM-specific Type
 	Header and Data:
-		8D 1E 3D 00 54 48 4E 4B 00 00 50 00 00 00 B6 76
-		9A 00 00 00 00 00 33 E1 9E 00 00 00 00 00
+		8D 1E 3D 00 54 48 4E 4B 00 00 50 00 00 00 45 50
+		26 01 00 00 00 00 FF 0D DC 01 00 00 00 00
 
 Handle 0x003E, DMI type 140, 19 bytes
 OEM-specific Type
@@ -692,13 +692,13 @@ OEM-specific Type
 Handle 0x003F, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 3F 00 4C 45 4E 4F 56 4F 0B 05 01 02 00 00
+		8C 13 3F 00 4C 45 4E 4F 56 4F 0B 05 01 06 00 00
 		00 00 00
 
 Handle 0x0040, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: R23HT58W
-	Release Date: 11/10/20
+	Version ID: R23HT59W
+	Release Date: 12/16/20
 
 Handle 0x0041, DMI type 140, 43 bytes
 OEM-specific Type

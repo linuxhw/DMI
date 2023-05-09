@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-60 structures occupying 2538 bytes.
+62 structures occupying 2618 bytes.
 Table at 0x000E6E80.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -164,8 +164,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -469,17 +469,17 @@ System Slot Information
 Handle 0x0024, DMI type 11, 5 bytes
 OEM Strings
 	String 1: PSKCAR-03J00GRU,H00000EN
-	String 2: w04A7oqTQbd4y
-	String 3: fUw17eXha+ppI
-	String 4: zwiFRM+t1JCUC
+	String 2: w6qQKVtG56J4s
+	String 3: zVrkQ-RklAM0g
+	String 4: 6TtkSRgsnYfLX
 	String 5:                                 
 
 Handle 0x0025, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: NVR:00707902                   
-	Option 2: DSN: 5246FBLQS                 
-	Option 3: DSN:HMT351S6BFR8C-PB  2BAACEB0 
-	Option 4: DSN:FFFF3SZMC2WR               
+	Option 2: DSN: WD-WX41E44MPX54           
+	Option 3: DSN:M471B5173QH0-YK0  1854E833 
+	Option 4: DSN:                           
 
 Handle 0x0026, DMI type 13, 22 bytes
 BIOS Language Information
@@ -515,34 +515,34 @@ Physical Memory Array
 	Use: System Memory
 	Error Correction Type: None
 	Maximum Capacity: 16 GB
-	Error Information Handle: 0x002C
+	Error Information Handle: 0x002D
 	Number Of Devices: 2
 
 Handle 0x0029, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0028
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Error Information Handle: 0x002B
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Empty
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Empty
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: M471B5173QH0-YK0  
+	Rank: 1
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x002A, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0028
-	Error Information Handle: 0x002B
+	Error Information Handle: 0x002C
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 4 GB
@@ -580,32 +580,53 @@ Handle 0x002C, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x002D, DMI type 19, 31 bytes
+Handle 0x002D, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x002E, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0028
 	Partition Width: 2
 
-Handle 0x002E, DMI type 20, 35 bytes
+Handle 0x002F, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0029
+	Memory Array Mapped Address Handle: 0x002E
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x0030, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x002A
-	Memory Array Mapped Address Handle: 0x002D
+	Memory Array Mapped Address Handle: 0x002E
 	Partition Row Position: Unknown
 	Interleave Position: 2
 	Interleaved Data Depth: 1
 
-Handle 0x002F, DMI type 21, 7 bytes
+Handle 0x0031, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Touch Pad
 	Interface: PS/2
 	Buttons: 4
 
-Handle 0x0030, DMI type 22, 26 bytes
+Handle 0x0032, DMI type 22, 26 bytes
 Portable Battery
 	Location: Fake
 	Manufacturer: -Virtual Battery 0-
@@ -619,7 +640,7 @@ Portable Battery
 	Maximum Error: Unknown
 	OEM-specific Information: 0x00000000
 
-Handle 0x0031, DMI type 26, 22 bytes
+Handle 0x0033, DMI type 26, 22 bytes
 Voltage Probe
 	Description: Voltage Probe Description.
 	Location: Unknown
@@ -632,7 +653,7 @@ Voltage Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x0032, DMI type 27, 15 bytes
+Handle 0x0034, DMI type 27, 15 bytes
 Cooling Device
 	Type: Fan
 	Status: OK
@@ -640,11 +661,11 @@ Cooling Device
 	Nominal Speed: 2000 rpm
 	Description: Cooling Device Description.
 
-Handle 0x0033, DMI type 32, 20 bytes
+Handle 0x0035, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0034, DMI type 39, 22 bytes
+Handle 0x0036, DMI type 39, 22 bytes
 System Power Supply
 	Location: OEM_Define0
 	Name: OEM_Define1
@@ -659,9 +680,9 @@ System Power Supply
 	Input Voltage Range Switching: Auto-switch
 	Plugged: No
 	Hot Replaceable: No
-	Cooling Device Handle: 0x0032
+	Cooling Device Handle: 0x0034
 
-Handle 0x0035, DMI type 40, 18 bytes
+Handle 0x0037, DMI type 40, 18 bytes
 Additional Information 1
 	Referenced Handle: 0x001c
 	Referenced Offset: 0x05
@@ -673,7 +694,7 @@ Additional Information 2
 	String: Compiler Version: VC 9.0
 	Value: 0x05dc
 
-Handle 0x0036, DMI type 41, 11 bytes
+Handle 0x0038, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Hanksville Gbe Lan Connection
 	Type: Ethernet
@@ -681,33 +702,33 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:00.1
 
-Handle 0x0037, DMI type 128, 8 bytes
+Handle 0x0039, DMI type 128, 8 bytes
 OEM-specific Type
 	Header and Data:
-		80 08 37 00 55 AA 55 AA
+		80 08 39 00 55 AA 55 AA
 	Strings:
 		Oem Test 1
 		Oem Test 2
 
-Handle 0x0038, DMI type 129, 8 bytes
+Handle 0x003A, DMI type 129, 8 bytes
 OEM-specific Type
 	Header and Data:
-		81 08 38 00 01 01 02 01
+		81 08 3A 00 01 01 02 01
 	Strings:
 		Intel_ASF
 		Intel_ASF_001
 
-Handle 0x0039, DMI type 130, 20 bytes
+Handle 0x003B, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 39 00 24 41 4D 54 01 01 01 01 01 A5 1F 02
+		82 14 3B 00 24 41 4D 54 01 01 01 01 01 A5 1F 02
 		00 00 00 00
 
-Handle 0x003A, DMI type 136, 6 bytes
+Handle 0x003C, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 3A 00 FF FF
+		88 06 3C 00 FF FF
 
-Handle 0x003B, DMI type 127, 4 bytes
+Handle 0x003D, DMI type 127, 4 bytes
 End Of Table
 

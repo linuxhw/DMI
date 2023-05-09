@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-42 structures occupying 2021 bytes.
+42 structures occupying 2000 bytes.
 Table at 0xAAEBC000.
 
 Handle 0x0000, DMI type 16, 23 bytes
@@ -19,7 +19,7 @@ Memory Device
 	Error Information Handle: 0x0003
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(under)
@@ -61,7 +61,7 @@ Memory Device
 	Error Information Handle: 0x0007
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(top)
@@ -374,15 +374,15 @@ BIOS Language Information
 Handle 0x0025, DMI type 22, 26 bytes
 Portable Battery
 	Location: Primary
-	Manufacturer: 11-85
-	Name: OA04041
+	Manufacturer: Not Specified
+	Name: Not Specified
 	Chemistry: Lithium Ion
 	Design Capacity: 41440 mWh
 	Design Voltage: 14800 mV
 	SBDS Version: v1.1
 	Maximum Error: 0%
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 2014-09-18
+	SBDS Manufacture Date: 1980-00-00
 	OEM-specific Information: 0x00000000
 
 Handle 0x0029, DMI type 32, 20 bytes
@@ -451,10 +451,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz
-	Voltage: 0.8 V
+	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 2400 MHz
-	Current Speed: 1200 MHz
+	Current Speed: 2400 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket rPGA988B
 	L1 Cache Handle: 0x0035
@@ -528,8 +528,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown

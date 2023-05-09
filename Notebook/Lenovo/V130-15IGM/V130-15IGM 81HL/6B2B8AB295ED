@@ -92,7 +92,7 @@ Processor Information
 	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 1100 MHz
-	Current Speed: 700 MHz
+	Current Speed: 400 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0001
@@ -151,37 +151,6 @@ Memory Array Mapped Address
 	Range Size: 4 GB
 	Physical Array Handle: 0x0004
 	Partition Width: 4
-
-Handle 0x0007, DMI type 0, 24 bytes
-BIOS Information
-	Vendor: LENOVO
-	Version: 6VCN25WW
-	Release Date: 06/14/2018
-	Address: 0xE0000
-	Runtime Size: 128 kB
-	ROM Size: 8960 kB
-	Characteristics:
-		PCI is supported
-		BIOS is upgradeable
-		BIOS shadowing is allowed
-		Boot from CD is supported
-		Selectable boot is supported
-		EDD is supported
-		Print screen service is supported (int 5h)
-		8042 keyboard services are supported (int 9h)
-		Serial services are supported (int 14h)
-		Printer services are supported (int 17h)
-		CGA/mono video services are supported (int 10h)
-		NEC PC-98
-		ACPI is supported
-		USB legacy is supported
-		LS-120 boot is supported
-		ATAPI Zip drive boot is supported
-		BIOS boot specification is supported
-		Function key-initiated network boot is supported
-		Targeted content distribution is supported
-	BIOS Revision: 1.25
-	Firmware Revision: 1.15
 
 Handle 0x0009, DMI type 2, 15 bytes
 Base Board Information
@@ -440,14 +409,14 @@ System Information
 
 Handle 0x0027, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 3490 bytes
+	Area Length: 3970 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
-	Status: Valid, Not Full
-	Change Token: 0x000000D9
+	Status: Valid, Full
+	Change Token: 0x000000F7
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -499,7 +468,7 @@ OEM-specific Type
 		Secure Boot
 		0
 		Boot Mode
-		0
+		1
 		Speed Step
 		1
 		CPU Turbo
@@ -532,6 +501,36 @@ Hardware Security
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
 
-Handle 0xFEFF, DMI type 127, 4 bytes
-End Of Table
+Handle 0x0007, DMI type 0, 24 bytes
+BIOS Information
+	Vendor: LENOVO
+	Version: 6VCN25WW X64
+	Release Date: 06/14/2018
+	Address: 0xE0000
+	Runtime Size: 128 kB
+	ROM Size: 8960 kB
+	Characteristics:
+		PCI is supported
+		BIOS is upgradeable
+		BIOS shadowing is allowed
+		Boot from CD is supported
+		Selectable boot is supported
+		EDD is supported
+		3.5"/720 kB floppy services are supported (int 13h)
+		3.5"/2.88 MB floppy services are supported (int 13h)
+		Print screen service is supported (int 5h)
+		8042 keyboard services are supported (int 9h)
+		Serial services are supported (int 14h)
+		Printer services are supported (int 17h)
+		CGA/mono video services are supported (int 10h)
+		NEC PC-98
+		ACPI is supported
+		USB legacy is supported
+		LS-120 boot is supported
+		ATAPI Zip drive boot is supported
+		BIOS boot specification is supported
+		Function key-initiated network boot is supported
+		Targeted content distribution is supported
+	BIOS Revision: 1.25
+	Firmware Revision: 1.15
 

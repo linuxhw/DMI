@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0x6B7BD000.
+Table at 0x000E8120.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
@@ -363,7 +363,7 @@ Handle 0x0027, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Enabled
-	Administrator Password Status: Disabled
+	Administrator Password Status: Enabled
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x0028, DMI type 32, 20 bytes
@@ -387,9 +387,9 @@ System Event Log
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0x6B583018
+	Access Address: 0x7B583018
 	Status: Valid, Not Full
-	Change Token: 0x00000008
+	Change Token: 0x0000004B
 	Header Format: Type 1
 	Supported Log Type Descriptors: 25
 	Descriptor 1: Single-bit ECC memory error
@@ -449,8 +449,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 620235 MB
-	Maximum Size: 312516 MB
+	Installed Size: 0 kB
+	Maximum Size: 0 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -465,8 +465,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 0 kB
-	Maximum Size: 0 kB
+	Installed Size: 69125 GB
+	Maximum Size: 1254 GB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -542,9 +542,9 @@ Handle 0x0036, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - RTK Ethernet
 	Type: Ethernet
-	Status: Disabled
+	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:ff:00.0
+	Bus Address: 0000:02:00.0
 
 Handle 0x0037, DMI type 41, 11 bytes
 Onboard Device

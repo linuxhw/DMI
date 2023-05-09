@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-66 structures occupying 2600 bytes.
+59 structures occupying 2293 bytes.
 Table at 0xBAE9D000.
 
 Handle 0x0004, DMI type 134, 16 bytes
@@ -50,7 +50,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-3520M CPU @ 2.90GHz
-	Voltage: 1.0 V
+	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 2900 MHz
 	Current Speed: 2900 MHz
@@ -431,11 +431,11 @@ Portable Battery
 	Name: 45N1087
 	Design Capacity: 48840 mWh
 	Design Voltage: 14800 mV
-	SBDS Version: 00.00
+	SBDS Version: 03.01
 	Maximum Error: Unknown
 	SBDS Serial Number: --
 	SBDS Manufacture Date: 2012-06-01
-	SBDS Chemistry: <BAD INDEX>
+	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000000
 
 Handle 0x002D, DMI type 126, 26 bytes
@@ -473,37 +473,23 @@ OEM-specific Type
 	Header and Data:
 		88 06 32 00 5A 5A
 
-Handle 0x0033, DMI type 130, 20 bytes
+Handle 0x0033, DMI type 135, 74 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 33 00 24 41 4D 54 00 00 00 00 01 A5 FF 04
-		00 00 00 00
-
-Handle 0x0034, DMI type 131, 64 bytes
-OEM-specific Type
-	Header and Data:
-		83 40 34 00 35 00 00 00 08 00 00 00 00 00 41 00
-		F8 00 57 1E FF FF FF FF 21 20 00 00 00 00 08 00
-		93 05 03 00 00 00 00 00 C8 00 FF FF 00 00 00 00
-		00 00 00 00 62 00 00 00 76 50 72 6F 00 00 00 00
-
-Handle 0x0035, DMI type 135, 74 bytes
-OEM-specific Type
-	Header and Data:
-		87 4A 35 00 54 50 07 02 42 41 59 20 49 2F 4F 20
+		87 4A 33 00 54 50 07 02 42 41 59 20 49 2F 4F 20
 		03 00 06 FF 00 00 00 00 00 00 00 FF 00 00 00 00
 		00 00 00 FF 00 00 00 00 00 00 00 FF 00 00 00 00
 		00 00 00 FF 00 00 00 00 00 00 00 FF 00 00 00 00
 		00 00 00 06 00 02 04 FF FF FF
 
-Handle 0x0036, DMI type 133, 5 bytes
+Handle 0x0034, DMI type 133, 5 bytes
 OEM-specific Type
 	Header and Data:
-		85 05 36 00 01
+		85 05 34 00 01
 	Strings:
 		KHOIHGIUCCHHII
 
-Handle 0x0037, DMI type 15, 81 bytes
+Handle 0x0035, DMI type 15, 81 bytes
 System Event Log
 	Area Length: 66 bytes
 	Header Start Offset: 0x0000
@@ -574,64 +560,28 @@ System Event Log
 	Descriptor 29: OEM-specific
 	Data Format 29: None
 
-Handle 0x0038, DMI type 140, 67 bytes
+Handle 0x0036, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 43 38 00 4C 45 4E 4F 56 4F 0B 00 01 59 54 C6
-		DF 79 CC 67 20 BC 3E FC 14 8F F8 99 0E 01 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		8C 13 36 00 4C 45 4E 4F 56 4F 0B 05 01 06 00 00
 		00 00 00
 
-Handle 0x0039, DMI type 140, 47 bytes
-OEM-specific Type
-	Header and Data:
-		8C 2F 39 00 4C 45 4E 4F 56 4F 0B 01 01 29 00 D1
-		D5 36 BF 96 A8 73 02 45 C1 81 80 F2 5F E3 E2 00
-		00 00 00 10 00 10 00 10 01 D0 00 20 01 00 01
-
-Handle 0x003A, DMI type 140, 63 bytes
-OEM-specific Type
-	Header and Data:
-		8C 3F 3A 00 4C 45 4E 4F 56 4F 0B 02 01 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-
-Handle 0x003B, DMI type 140, 17 bytes
-OEM-specific Type
-	Header and Data:
-		8C 11 3B 00 4C 45 4E 4F 56 4F 0B 03 01 00 00 00
-		00
-
-Handle 0x003C, DMI type 140, 19 bytes
-OEM-specific Type
-	Header and Data:
-		8C 13 3C 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
-		53 20 00
-
-Handle 0x003D, DMI type 140, 19 bytes
-OEM-specific Type
-	Header and Data:
-		8C 13 3D 00 4C 45 4E 4F 56 4F 0B 05 01 06 00 00
-		00 00 00
-
-Handle 0x003E, DMI type 24, 5 bytes
+Handle 0x0037, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
-Handle 0x003F, DMI type 132, 7 bytes
+Handle 0x0038, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 3F 00 01 D8 36
+		84 07 38 00 01 DB 36
 
-Handle 0x0040, DMI type 135, 18 bytes
+Handle 0x0039, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 40 00 54 50 07 01 01 D2 07 00 00 00 03 00
+		87 12 39 00 54 50 07 01 01 D2 07 00 00 00 03 00
 		00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

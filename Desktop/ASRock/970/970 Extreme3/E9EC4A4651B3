@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 27 structures occupying 1507 bytes.
@@ -82,8 +82,8 @@ Processor Information
 	Version: AMD FX(tm)-6350 Six-Core Processor             
 	Voltage: 1.5 V
 	External Clock: 200 MHz
-	Max Speed: 4500 MHz
-	Current Speed: 4500 MHz
+	Max Speed: 4300 MHz
+	Current Speed: 4300 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM3
 	L1 Cache Handle: 0x0005
@@ -238,8 +238,8 @@ Physical Memory Array
 Handle 0x0010, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x002BF0003FF
-	Range Size: 11248 MB
+	Ending Address: 0x0029F0003FF
+	Range Size: 10736 MB
 	Physical Array Handle: 0x000F
 	Partition Width: 255
 
@@ -247,30 +247,18 @@ Handle 0x0011, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x000F
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
+	Total Width: Unknown
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM0
 	Bank Locator: A1_BANK0
-	Type: DDR3
+	Type: Unknown
 	Type Detail: Synchronous
-	Speed: 667 MT/s
-	Manufacturer: Kingston        
-	Serial Number: --
-	Asset Tag: --
-	Part Number: 99U5403-067.A00LF 
-	Rank: 2
 
-Handle 0x0012, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0011
-	Memory Array Mapped Address Handle: 0x0010
-	Partition Row Position: 1
+Handle 0x0012, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x0013, DMI type 17, 28 bytes
 Memory Device
@@ -294,8 +282,8 @@ Memory Device
 
 Handle 0x0014, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0013
 	Memory Array Mapped Address Handle: 0x0010
@@ -323,8 +311,8 @@ Memory Device
 
 Handle 0x0016, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x0027FFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x0017FFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0015
 	Memory Array Mapped Address Handle: 0x0010
@@ -334,24 +322,30 @@ Handle 0x0017, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x000F
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM3
 	Bank Locator: A1_BANK3
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer3
+	Speed: 667 MT/s
+	Manufacturer: Kingston        
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber3
-	Rank: Unknown
+	Part Number: 99U5403-067.A00LF 
+	Rank: 2
 
-Handle 0x0018, DMI type 126, 19 bytes
-Inactive
+Handle 0x0018, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00180000000
+	Ending Address: 0x0027FFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0017
+	Memory Array Mapped Address Handle: 0x0010
+	Partition Row Position: 1
 
 Handle 0x0019, DMI type 32, 20 bytes
 System Boot Information

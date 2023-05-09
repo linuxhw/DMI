@@ -1,17 +1,17 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-56 structures occupying 2227 bytes.
-Table at 0xDD9A9018.
+56 structures occupying 2223 bytes.
+Table at 0xDD9A4018.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: IRKT58AUS
-	Release Date: 05/13/2016
+	Version: IRKT60AUS
+	Release Date: 12/14/2016
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -32,7 +32,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.58
+	BIOS Revision: 1.60
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -48,11 +48,11 @@ System Information
 Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: LENOVO
-	Product Name: Bantry CRB
+	Product Name: 0x36A017AA
 	Version: SDK0J40709 WIN
 	Serial Number: --
 	Asset Tag: --
-	...
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: To be filled by O.E.M.
@@ -68,7 +68,7 @@ Chassis Information
 	Version: To Be Filled By O.E.M.
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -343,7 +343,7 @@ On Board Device 4 Information
 Handle 0x0021, DMI type 11, 5 bytes
 OEM Strings
 	String 1: LENOVO ThinkCentre Embedded Controller -[N/A]-
-	String 2: LENOVO ThinkCentre BIOS Boot Block Revision 1.58
+	String 2: LENOVO ThinkCentre BIOS Boot Block Revision 1.60
 	String 3: Lenovo Service Engine Not Supported
 
 Handle 0x0022, DMI type 12, 5 bytes
@@ -372,8 +372,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -424,7 +424,7 @@ System Event Log
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0xFFA6C000
+	Access Address: 0xFFA6D000
 	Status: Valid, Not Full
 	Change Token: 0x00000001
 	Header Format: Type 1
@@ -503,7 +503,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 3
@@ -516,7 +516,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: HMT41GU6BFR8C-PB  
 	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -527,7 +527,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -540,7 +540,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: HMT451U6BFR8C-PB  
 	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -637,12 +637,9 @@ Processor Information
 		64-bit capable
 
 Handle 0x003F, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 3F 00 01 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 80 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: Available
 
 Handle 0x0040, DMI type 133, 5 bytes
 OEM-specific Type
@@ -659,6 +656,6 @@ BIOS Language Information
 		zh|CN|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0043, DMI type 127, 4 bytes
+Handle 0x0044, DMI type 127, 4 bytes
 End Of Table
 

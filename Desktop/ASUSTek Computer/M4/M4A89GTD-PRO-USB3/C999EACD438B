@@ -93,7 +93,7 @@ Processor Information
 	Voltage: 1.5 V
 	External Clock: 200 MHz
 	Max Speed: 3600 MHz
-	Current Speed: 3200 MHz
+	Current Speed: 3307 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -455,14 +455,13 @@ Handle 0x002D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
 	Type: 32-bit PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 3
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:01:05.0
 
 Handle 0x002E, DMI type 9, 17 bytes
 System Slot Information
@@ -493,38 +492,39 @@ Handle 0x0030, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_2
 	Type: 32-bit PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 2
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
+	Bus Address: ffff:01:00.0
 
 Handle 0x0031, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI1
 	Type: 32-bit PCI
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 5
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:04:05.0
 
 Handle 0x0032, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI2
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 6
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
+	Bus Address: ffff:04:06.0
 
 Handle 0x0033, DMI type 11, 5 bytes
 OEM Strings
@@ -582,8 +582,8 @@ Physical Memory Array
 Handle 0x0037, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0022FFFFFFF
-	Range Size: 8960 MB
+	Ending Address: 0x0042FFFFFFF
+	Range Size: 17152 MB
 	Physical Array Handle: 0x0036
 	Partition Width: 1
 
@@ -637,20 +637,20 @@ Handle 0x003C, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0036
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: Other
+	Size: 4 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Manufacturer02
+	Type: Other
+	Type Detail: Synchronous
+	Speed: 667 MT/s
+	Manufacturer: Kingston      
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ModulePartNumber02
+	Part Number: 99U5584-003.A00LF 
 	Rank: Unknown
 
 Handle 0x003D, DMI type 126, 19 bytes
@@ -660,20 +660,20 @@ Handle 0x003E, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0036
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: Other
+	Size: 4 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Manufacturer03
+	Type: Other
+	Type Detail: Synchronous
+	Speed: 667 MT/s
+	Manufacturer: Kingston      
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ModulePartNumber03
+	Part Number: 99U5584-003.A00LF 
 	Rank: Unknown
 
 Handle 0x003F, DMI type 126, 19 bytes

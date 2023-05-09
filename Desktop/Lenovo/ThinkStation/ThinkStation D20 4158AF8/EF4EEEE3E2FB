@@ -1,7 +1,7 @@
-# dmidecode 3.0
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-67 structures occupying 3191 bytes.
+67 structures occupying 3174 bytes.
 Table at 0x000EF1C0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 01/14/2014
 	Address: 0xE1090
 	Runtime Size: 126832 bytes
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -128,15 +128,45 @@ Handle 0x0005, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: 1366-pin LGA
 	Type: Central Processor
-	Family: Unknown
+	Family: Xeon
 	Manufacturer: Intel
-	ID: 00 00 00 00 00 00 00 00
-	Version: 0000000000000000000000000000000000000000000000000000000000000000
+	ID: C2 06 02 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 44, Stepping 2
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		DS (Debug store)
+		ACPI (ACPI supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		SS (Self-snoop)
+		HTT (Multi-threading)
+		TM (Thermal monitor supported)
+		PBE (Pending break enabled)
+	Version: Intel(R) Xeon(R) CPU           X5677  @ 3.47GHz
 	Voltage: 1.4 V
 	External Clock: 133 MHz
 	Max Speed: 3330 MHz
-	Current Speed: Unknown
-	Status: Unpopulated
+	Current Speed: 3460 MHz
+	Status: Populated, Enabled
 	Upgrade: Socket LGA1366
 	L1 Cache Handle: 0x0009
 	L2 Cache Handle: 0x000A
@@ -144,6 +174,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
+	Core Count: 4
+	Core Enabled: 4
+	Thread Count: 8
 	Characteristics: None
 
 Handle 0x0006, DMI type 7, 19 bytes
@@ -170,8 +203,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 1024 kB
+	Installed Size: 2 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -188,8 +221,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12288 kB
-	Maximum Size: 12288 kB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -224,8 +257,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 1024 kB
+	Installed Size: 2 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -242,8 +275,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12288 kB
-	Maximum Size: 12288 kB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -382,14 +415,14 @@ BIOS Language Information
 
 Handle 0x001A, DMI type 15, 29 bytes
 System Event Log
-	Area Length: 368 bytes
+	Area Length: 1024 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x0000
-	Status: Valid, Not Full
-	Change Token: 0x00000062
+	Status: Valid, Full
+	Change Token: 0x0000003D
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -414,14 +447,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU1_DIMM1
 	Bank Locator: DIMM 00
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: 00DA
 	Serial Number: --
 	Asset Tag: --
@@ -432,40 +465,40 @@ Handle 0x001D, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x001B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU1_DIMM4
 	Bank Locator: DIMM 01
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
-	Manufacturer: Null
+	Speed: 1333 MT/s
+	Manufacturer: 00DA
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Null             
+	Part Number: HMT151R7BFR4C-H9 
 	Rank: 1
 
 Handle 0x001E, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x001B
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 4096 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU1_DIMM2
 	Bank Locator: DIMM 10
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
-	Manufacturer: 00DA
+	Speed: 1333 MT/s
+	Manufacturer: Null
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT151R7BFR4C-H9 
+	Part Number: Null             
 	Rank: 1
 
 Handle 0x001F, DMI type 17, 28 bytes
@@ -481,7 +514,7 @@ Memory Device
 	Bank Locator: DIMM 11
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Null
 	Serial Number: --
 	Asset Tag: --
@@ -492,20 +525,20 @@ Handle 0x0020, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x001B
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 4096 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU1_DIMM3
 	Bank Locator: DIMM 20
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
-	Manufacturer: 00DA
+	Speed: 1333 MT/s
+	Manufacturer: Null
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT151R7BFR4C-H9 
+	Part Number: Null             
 	Rank: 1
 
 Handle 0x0021, DMI type 17, 28 bytes
@@ -521,7 +554,7 @@ Memory Device
 	Bank Locator: DIMM 21
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Null
 	Serial Number: --
 	Asset Tag: --
@@ -541,7 +574,7 @@ Memory Device
 	Bank Locator: DIMM 30
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Null
 	Serial Number: --
 	Asset Tag: --
@@ -561,7 +594,7 @@ Memory Device
 	Bank Locator: DIMM 31
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Null
 	Serial Number: --
 	Asset Tag: --
@@ -572,87 +605,87 @@ Handle 0x0024, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x001B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU2_DIMM2
 	Bank Locator: DIMM 40
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
-	Manufacturer: Null
+	Speed: 1333 MT/s
+	Manufacturer: 00DA
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Null             
+	Part Number: HMT151R7BFR4C-H9 
 	Rank: 1
 
 Handle 0x0025, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x001B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU2_DIMM5
 	Bank Locator: DIMM 41
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
-	Manufacturer: Null
+	Speed: 1333 MT/s
+	Manufacturer: 00DA
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Null             
+	Part Number: HMT151R7BFR4C-H9 
 	Rank: 1
 
 Handle 0x0026, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x001B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU2_DIMM3
 	Bank Locator: DIMM 50
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
-	Manufacturer: Null
+	Speed: 1333 MT/s
+	Manufacturer: 00DA
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Null             
+	Part Number: HMT151R7BFR4C-H9 
 	Rank: 1
 
 Handle 0x0027, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x001B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU2_DIMM6
 	Bank Locator: DIMM 51
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
-	Manufacturer: Null
+	Speed: 1333 MT/s
+	Manufacturer: 00DA
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Null             
+	Part Number: HMT151R7BFR4C-H9 
 	Rank: 1
 
 Handle 0x0028, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 12 GB
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 24 GB
 	Physical Array Handle: 0x001B
 	Partition Width: 2
 
@@ -669,9 +702,9 @@ Memory Device Mapped Address
 
 Handle 0x002A, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x000FFFFFC00
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 1 kB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x001D
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: 1
@@ -680,9 +713,9 @@ Memory Device Mapped Address
 
 Handle 0x002B, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
+	Starting Address: 0x001FFFFFC00
 	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Range Size: 1 kB
 	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: 1
@@ -702,9 +735,9 @@ Memory Device Mapped Address
 
 Handle 0x002D, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x001FFFFFC00
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 1 kB
 	Physical Device Handle: 0x0020
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: 1
@@ -713,8 +746,8 @@ Memory Device Mapped Address
 
 Handle 0x002E, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x002FFFFFC00
-	Ending Address: 0x002FFFFFFFF
+	Starting Address: 0x001FFFFFC00
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 1 kB
 	Physical Device Handle: 0x0021
 	Memory Array Mapped Address Handle: 0x0028
@@ -724,8 +757,8 @@ Memory Device Mapped Address
 
 Handle 0x002F, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x002FFFFFC00
-	Ending Address: 0x002FFFFFFFF
+	Starting Address: 0x001FFFFFC00
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 1 kB
 	Physical Device Handle: 0x0022
 	Memory Array Mapped Address Handle: 0x0028
@@ -735,8 +768,8 @@ Memory Device Mapped Address
 
 Handle 0x0030, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x002FFFFFC00
-	Ending Address: 0x002FFFFFFFF
+	Starting Address: 0x001FFFFFC00
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 1 kB
 	Physical Device Handle: 0x0023
 	Memory Array Mapped Address Handle: 0x0028
@@ -746,9 +779,9 @@ Memory Device Mapped Address
 
 Handle 0x0031, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x002FFFFFC00
+	Starting Address: 0x00200000000
 	Ending Address: 0x002FFFFFFFF
-	Range Size: 1 kB
+	Range Size: 4 GB
 	Physical Device Handle: 0x0024
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: 2
@@ -757,9 +790,9 @@ Memory Device Mapped Address
 
 Handle 0x0032, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x002FFFFFC00
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 1 kB
+	Starting Address: 0x00300000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0025
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: 2
@@ -768,9 +801,9 @@ Memory Device Mapped Address
 
 Handle 0x0033, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x002FFFFFC00
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 1 kB
+	Starting Address: 0x00400000000
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0026
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: 2
@@ -779,9 +812,9 @@ Memory Device Mapped Address
 
 Handle 0x0034, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x002FFFFFC00
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 1 kB
+	Starting Address: 0x00500000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0027
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: 2
@@ -807,7 +840,7 @@ Hardware Security
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x0037, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: 12-31 23:59:59
 
 Handle 0x0038, DMI type 26, 20 bytes
@@ -879,12 +912,9 @@ Handle 0x0040, DMI type 126, 6 bytes
 Inactive
 
 Handle 0x0041, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 41 00 01 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 80 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: Available
 
 Handle 0x0042, DMI type 127, 4 bytes
 End Of Table

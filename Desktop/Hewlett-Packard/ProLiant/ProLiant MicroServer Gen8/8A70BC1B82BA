@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 64 structures occupying 2245 bytes.
@@ -8,10 +8,10 @@ Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: HP
 	Version: J06
-	Release Date: 05/21/2018
+	Release Date: 04/04/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -34,7 +34,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
-	Firmware Revision: 2.70
+	Firmware Revision: 2.82
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -55,7 +55,7 @@ Chassis Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: Unknown
@@ -142,7 +142,7 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
+	Installed Size: 1 MB
 	Maximum Size: 1536 kB
 	Supported SRAM Types:
 		Burst
@@ -158,8 +158,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 12288 kB
+	Installed Size: 8 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Burst
 	Installed SRAM Type: Burst
@@ -287,7 +287,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: PROC  1 DIMM  1 
@@ -311,7 +311,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: PROC  1 DIMM  2 
@@ -365,7 +365,7 @@ System Power Supply
 	Name: Power Supply 1
 	Manufacturer: HP
 	Serial Number: --
-	Asset Tag: --
+	3D153A129FECFD993684B5FCC9BF367A
 	Model Part Number:                                 
 	Revision: Not Specified
 	Max Power Capacity: Unknown
@@ -396,15 +396,18 @@ OEM-specific Type
 	Header and Data:
 		C1 09 01 C1 01 01 02 03 04
 	Strings:
-		05/21/2018
+		04/04/2019
 		02/04/2012
 		        
 		          
 
 Handle 0xC200, DMI type 194, 5 bytes
-OEM-specific Type
-	Header and Data:
-		C2 05 00 C2 10
+HP ProLiant Super IO Enable/Disable Indicator
+	Serial Port A: Disabled
+	Serial Port B: Disabled
+	Parallel Port: Disabled
+	Floppy Disk Port: Disabled
+	Virtual Serial Port: Enabled
 
 Handle 0xC300, DMI type 195, 7 bytes
 OEM-specific Type
@@ -446,8 +449,8 @@ OEM-specific Type
 Handle 0xC700, DMI type 199, 64 bytes
 OEM-specific Type
 	Header and Data:
-		C7 40 00 C7 2E 00 00 00 18 20 10 04 A7 06 02 00
-		20 00 00 00 18 20 10 04 A9 06 03 00 10 00 00 00
+		C7 40 00 C7 2F 00 00 00 19 20 17 02 A7 06 02 00
+		21 00 00 00 19 20 13 02 A9 06 03 00 10 00 00 00
 		12 20 20 02 A8 06 03 00 02 00 00 00 11 20 31 08
 		A6 06 03 00 07 00 00 00 11 20 08 09 A4 06 03 00
 
@@ -462,47 +465,40 @@ OEM-specific Type
 		D7 06 00 D7 00 05
 
 Handle 0xD800, DMI type 216, 23 bytes
-OEM-specific Type
-	Header and Data:
-		D8 17 00 D8 01 00 01 02 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00
-	Strings:
-		System ROM
-		05/21/2018
+HP Version Indicator
+	Firmware Type: System ROM
+	Firmware Name String: System ROM
+	Firmware Version String: 04/04/2019
+	Version Data: No Version Data
 
 Handle 0xD801, DMI type 216, 23 bytes
-OEM-specific Type
-	Header and Data:
-		D8 17 01 D8 02 00 01 02 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00
-	Strings:
-		Redundant System ROM
-		05/21/2018
+HP Version Indicator
+	Firmware Type: Redundant System ROM
+	Firmware Name String: Redundant System ROM
+	Firmware Version String: 04/04/2019
+	Version Data: No Version Data
 
 Handle 0xD802, DMI type 216, 23 bytes
-OEM-specific Type
-	Header and Data:
-		D8 17 02 D8 03 00 01 02 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00
-	Strings:
-		System ROM Bootblock
-		02/04/2012
+HP Version Indicator
+	Firmware Type: System ROM Bootblock
+	Firmware Name String: System ROM Bootblock
+	Firmware Version String: 02/04/2012
+	Version Data: No Version Data
 
 Handle 0xD803, DMI type 216, 23 bytes
-OEM-specific Type
-	Header and Data:
-		D8 17 03 D8 08 00 01 00 01 00 06 00 00 00 00 00
-		00 00 00 00 00 00 00
-	Strings:
-		System Programmable Logic Device
+HP Version Indicator
+	Firmware Type: Hardware PAL/CPLD
+	Firmware Name String: System Programmable Logic Device
+	Firmware Version String: Not Specified
+	Version Data: R.0.6
 
 Handle 0xD804, DMI type 216, 23 bytes
-OEM-specific Type
-	Header and Data:
-		D8 17 04 D8 09 00 01 00 03 02 00 02 00 00 00 31
-		00 02 00 00 00 03 00
-	Strings:
-		Server Platform Services (SPS) Firmware
+HP Version Indicator
+	Firmware Type: SPS Firmware (ME Firmware)
+	Firmware Name String: Server Platform Services (SPS) Firmware
+	Firmware Version String: Not Specified
+	Version Data: Reserved
+	Unique ID: 0x0003
 
 Handle 0xDB00, DMI type 219, 32 bytes
 HP ProLiant Information
@@ -523,9 +519,8 @@ OEM-specific Type
 		DF 07 00 DF 66 46 70
 
 Handle 0xE000, DMI type 224, 5 bytes
-OEM-specific Type
-	Header and Data:
-		E0 05 00 E0 00
+HP Trusted Module (TPM or TCM) Status
+	Status: Not Present
 
 Handle 0xE200, DMI type 226, 21 bytes
 OEM-specific Type
@@ -582,12 +577,11 @@ OEM-specific Type
 		00 10 00 00
 
 Handle 0xE600, DMI type 230, 11 bytes
-OEM-specific Type
-	Header and Data:
-		E6 0B 00 E6 00 27 01 02 00 03 A0
-	Strings:
-		                
-		        
+HP Power Supply Information
+	Associated Handle: 0x2700
+	Manufacturer:                 
+	Revision:         
+	Access Method: Not Available
 
 Handle 0xE800, DMI type 232, 14 bytes
 OEM-specific Type

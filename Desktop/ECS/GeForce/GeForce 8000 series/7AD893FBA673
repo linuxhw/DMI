@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 52 structures occupying 2081 bytes.
@@ -465,8 +465,8 @@ Physical Memory Array
 Handle 0x0027, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x0013FFFFFFF
+	Range Size: 5 GB
 	Physical Array Handle: 0x0026
 	Partition Width: 1
 
@@ -487,7 +487,7 @@ Memory Device
 	Manufacturer: Kingston      
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 99U5316-010.A00LF 
+	Part Number:                   
 	Rank: Unknown
 
 Handle 0x0029, DMI type 20, 19 bytes
@@ -503,24 +503,30 @@ Handle 0x002A, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0026
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: Other
+	Total Width: 64 bits
+	Data Width: 72 bits
+	Size: 1 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Manufacturer01
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 333 MT/s
+	Manufacturer: Kingston      
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ModulePartNumber01
+	Part Number:                   
 	Rank: Unknown
 
-Handle 0x002B, DMI type 126, 19 bytes
-Inactive
+Handle 0x002B, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00040000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 1 GB
+	Physical Device Handle: 0x002A
+	Memory Array Mapped Address Handle: 0x0027
+	Partition Row Position: 1
 
 Handle 0x002C, DMI type 17, 28 bytes
 Memory Device
@@ -544,8 +550,8 @@ Memory Device
 
 Handle 0x002D, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x0007FFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x000BFFFFFFF
 	Range Size: 1 GB
 	Physical Device Handle: 0x002C
 	Memory Array Mapped Address Handle: 0x0027
@@ -573,8 +579,8 @@ Memory Device
 
 Handle 0x002F, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000BFFFFFFF
+	Starting Address: 0x000C0000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 1 GB
 	Physical Device Handle: 0x002E
 	Memory Array Mapped Address Handle: 0x0027

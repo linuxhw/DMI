@@ -1,14 +1,16 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1 present.
-39 structures occupying 2649 bytes.
-Table at 0x76B52000.
+39 structures occupying 2650 bytes.
+Table at 0x56B52000.
 
 Handle 0x0000, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: IFX
-	Specification Version: 2.0	Firmware Revision: 7.85
-	Description: SLB9670	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 7.85
+	Description: SLB9670
+	Characteristics:
 		Family configurable via firmware update
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
@@ -125,39 +127,72 @@ Memory Array Mapped Address
 	Partition Width: 2
 
 Handle 0x000D, DMI type 221, 26 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:07:00:6E:40:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:D6:00:03
+OEM-specific Type
+	Header and Data:
+		DD 1A 0D 00 03 01 00 07 00 6E 40 00 02 00 00 00
+		00 D6 00 03 00 01 05 00 00 00
+	Strings:
+		Reference Code - CPU
+		uCode Version
+		TXT ACM version
 
 Handle 0x000E, DMI type 221, 26 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:07:00:6E:40:00
-	NIC 2: PCI device 00:00.2, MAC address 0C:00:00:0A:00:03
+OEM-specific Type
+	Header and Data:
+		DD 1A 0E 00 03 01 00 07 00 6E 40 00 02 00 0C 00
+		00 0A 00 03 04 0C 00 44 46 06
+	Strings:
+		Reference Code - ME
+		MEBx version
+		ME Firmware Version
+		Corporate SKU
 
 Handle 0x000F, DMI type 221, 82 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:01.3, MAC address 00:07:00:6E:40:00
-	NIC 2: PCI device 03:00.2, MAC address FF:FF:FF:FF:FF:04
-	NIC 3: PCI device ff:00.0, MAC address FF:FF:10:00:05:00
-	NIC 4: Not Installed
-	NIC 5: Not Installed
-	NIC 6: Disabled
-	NIC 7: Disabled
-	NIC 8: PCI device 0a:00.0, MAC address 00:07:00:00:00:00
-	NIC 9: PCI device 00:01.3, MAC address 06:00:00:00:00:0C
+OEM-specific Type
+	Header and Data:
+		DD 52 0F 00 0B 01 00 07 00 6E 40 00 02 03 FF FF
+		FF FF FF 04 00 FF FF FF 10 00 05 00 FF FF FF 10
+		00 06 00 02 0A 00 00 00 07 00 02 00 00 00 00 08
+		00 09 00 00 00 00 09 00 0A 00 00 00 00 0A 00 07
+		00 00 00 00 0B 00 06 00 00 00 00 0C 00 07 00 00
+		00 00
+	Strings:
+		Reference Code - CNL PCH
+		PCH-CRID Status
+		Disabled
+		PCH-CRID Original Value
+		PCH-CRID New Value
+		OPROM - RST - RAID
+		CNL PCH H A0 Hsio Version
+		CNL PCH H Ax Hsio Version
+		CNL PCH H Bx Hsio Version
+		CNL PCH LP B0 Hsio Version
+		CNL PCH LP Bx Hsio Version
+		CNL PCH LP Dx Hsio Version
 
 Handle 0x0010, DMI type 221, 54 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.7, MAC address 00:07:00:6E:40:00
-	NIC 2: PCI device 00:00.2, MAC address 00:07:01:70:00:03
-	NIC 3: PCI device 07:00.0, MAC address 00:6E:40:00:04:05
-	NIC 4: Not Installed
-	NIC 5: Disabled
-	NIC 6: PCI device 0d:00.0, MAC address 00:08:00:FF:FF:FF
+OEM-specific Type
+	Header and Data:
+		DD 36 10 00 07 01 00 07 00 6E 40 00 02 00 00 07
+		01 70 00 03 00 07 00 6E 40 00 04 05 FF FF FF FF
+		FF 06 00 00 00 00 0D 00 07 00 00 00 00 0D 00 08
+		00 FF FF FF FF FF
+	Strings:
+		Reference Code - SA - System Agent
+		Reference Code - MRC
+		SA - PCIe Version
+		SA-CRID Status
+		Enabled 
+		SA-CRID Original Value
+		SA-CRID New Value
+		OPROM - VBIOS
 
 Handle 0x0011, DMI type 221, 12 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.1, MAC address 00:04:00:00:00:00
+OEM-specific Type
+	Header and Data:
+		DD 0C 11 00 01 01 00 04 00 00 00 00
+	Strings:
+		FSP Binary Version
 
 Handle 0x0012, DMI type 7, 27 bytes
 Cache Information
@@ -197,8 +232,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12288 kB
-	Maximum Size: 12288 kB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -346,7 +381,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Top-Slot 1(left)
@@ -370,7 +405,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Top-Slot 2(right)
@@ -401,16 +436,6 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x0008, DMI type 17, 40 bytes
 Memory Device
@@ -425,16 +450,6 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x000A, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -493,7 +508,7 @@ Handle 0x0005, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
-	Description: 32 MB
+	Description: 512 MB
 
 Handle 0x0024, DMI type 14, 8 bytes
 Group Associations
@@ -502,12 +517,20 @@ Group Associations
 		0x0000 (OEM-specific)
 
 Handle 0x0025, DMI type 219, 106 bytes
-HP ProLiant Information
-	Power Features: 0x45010401
-	Omega Features: 0x06900002
-	Misc. Features: 0x00000000
-		iCRU: No
-		UEFI: No
+OEM-specific Type
+	Header and Data:
+		DB 6A 25 00 01 04 01 45 02 00 90 06 81 10 89 30
+		00 00 00 00 48 00 00 00 00 00 00 06 00 40 40 02
+		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00
+	Strings:
+		MEI1
+		MEI2
+		MEI3
+		MEI4
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

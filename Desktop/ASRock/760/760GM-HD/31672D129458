@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 24 structures occupying 1243 bytes.
@@ -84,10 +84,10 @@ Handle 0x0004, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPUSocket
 	Type: Central Processor
-	Family: Athlon II
+	Family: Phenom II
 	Manufacturer: AMD              
-	ID: 63 0F 10 00 FF FB 8B 17
-	Signature: Family 16, Model 6, Stepping 3
+	ID: A0 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 10, Stepping 0
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -112,11 +112,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Athlon(tm) II X2 270 Processor                  
-	Voltage: 1.4 V
+	Version: AMD Phenom(tm) II X6 1055T Processor                
+	Voltage: 1.5 V
 	External Clock: 200 MHz
-	Max Speed: 3400 MHz
-	Current Speed: 3400 MHz
+	Max Speed: 2800 MHz
+	Current Speed: 2800 MHz
 	Status: Populated, Disabled By BIOS
 	Upgrade: Socket AM3
 	L1 Cache Handle: 0x0005
@@ -125,9 +125,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
-	Core Count: 2
-	Core Enabled: 2
-	Thread Count: 2
+	Core Count: 6
+	Core Enabled: 6
+	Thread Count: 6
 	Characteristics:
 		64-bit capable
 
@@ -137,8 +137,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 256 kB
-	Maximum Size: 256 kB
+	Installed Size: 768 kB
+	Maximum Size: 768 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -153,8 +153,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2 MB
-	Maximum Size: 2 MB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -169,15 +169,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 0 kB
-	Maximum Size: 0 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
 	Speed: 1 ns
 	Error Correction Type: Multi-bit ECC
 	System Type: Unified
-	Associativity: Other
+	Associativity: 48-way Set-associative
 
 Handle 0x0008, DMI type 5, 20 bytes
 Memory Controller Information
@@ -214,11 +214,11 @@ Memory Module Information
 Handle 0x000A, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM1
-	Bank Connections: 0
-	Current Speed: Unknown
-	Type: Other
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Bank Connections: 0 1
+	Current Speed: 163 ns
+	Type: ECC DIMM
+	Installed Size: 4096 MB (Double-bank Connection)
+	Enabled Size: 4096 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000B, DMI type 9, 17 bytes
@@ -309,24 +309,30 @@ Handle 0x0012, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x000E
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: Other
+	Size: 4 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Manufacturer01
+	Type: Other
+	Type Detail: Synchronous
+	Speed: 667 MT/s
+	Manufacturer: Kingston      
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ModulePartNumber01
+	Part Number: 99P5471-031.A00LF 
 	Rank: Unknown
 
-Handle 0x0013, DMI type 126, 19 bytes
-Inactive
+Handle 0x0013, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0012
+	Memory Array Mapped Address Handle: 0x000F
+	Partition Row Position: 1
 
 Handle 0x0014, DMI type 32, 20 bytes
 System Boot Information

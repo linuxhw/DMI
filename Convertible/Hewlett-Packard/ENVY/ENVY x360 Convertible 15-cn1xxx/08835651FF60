@@ -1,7 +1,7 @@
 # dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.1 present.
-Table at 0x88722000.
+Table at 0x88749000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
@@ -437,7 +437,7 @@ Handle 0x0023, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x0044 (OEM-specific)
+		0x0043 (OEM-specific)
 
 Handle 0x0024, DMI type 14, 8 bytes
 Group Associations
@@ -705,7 +705,7 @@ OEM-specific Type
 Handle 0x003D, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 3D 00 01 04 01 45 02 00 90 00 01 10 80 20
+		DB 6A 3D 00 01 04 01 45 02 00 90 00 01 10 82 20
 		00 00 00 04 40 00 00 00 00 00 00 00 00 80 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -786,37 +786,10 @@ OEM-specific Type
 	Strings:
 		FSP Binary Version
 
-Handle 0x0043, DMI type 221, 89 bytes
+Handle 0x0043, DMI type 222, 14 bytes
 OEM-specific Type
 	Header and Data:
-		DD 59 43 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
-		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
-		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 46 4C 00 00 00 0C 00 FF
-		FF FF FF FF 0D 0E 01 04 01 00 00 0F 00 00 07 03
-		00 00 10 00 00 02 00 0E 00
-	Strings:
-		Lan Phy Version
-		Sensor Firmware Version
-		Debug Mode Status
-		Disabled
-		Performance Mode Status
-		Disabled
-		Debug Use USB(Disabled:Serial)
-		Disabled
-		ICC Overclocking Version
-		UNDI Version
-		EC FW Version
-		GOP Version
-		Royal Park Version
-		BP1.4.3.0_RP03
-		Platform Version
-		Client Silicon Version
-
-Handle 0x0044, DMI type 222, 14 bytes
-OEM-specific Type
-	Header and Data:
-		DE 0E 44 00 01 99 00 03 10 01 20 02 30 03
+		DE 0E 43 00 01 99 00 03 10 01 20 02 30 03
 	Strings:
 		Memory Init Complete
 		End of DXE Phase

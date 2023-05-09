@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
 89 structures occupying 5894 bytes.
@@ -167,8 +167,8 @@ OEM-specific Type
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.19.0
-	Release Date: 08/09/2022
+	Version: 1.23.0
+	Release Date: 02/09/2023
 	ROM Size: 24 MB
 	Characteristics:
 		PCI is supported
@@ -189,7 +189,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.19
+	BIOS Revision: 1.23
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -318,8 +318,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -334,8 +334,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -475,6 +475,9 @@ System Slot Information
 		3.3 V is provided
 		PME signal is supported
 	Bus Address: 0000:00:1d.0
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0902, DMI type 9, 24 bytes
 System Slot Information
@@ -487,6 +490,9 @@ System Slot Information
 		3.3 V is provided
 		PME signal is supported
 	Bus Address: 0000:00:1b.4
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0903, DMI type 9, 24 bytes
 System Slot Information
@@ -499,6 +505,9 @@ System Slot Information
 		3.3 V is provided
 		PME signal is supported
 	Bus Address: 0000:00:14.3
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0B00, DMI type 11, 5 bytes
 OEM Strings
@@ -559,7 +568,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM A
@@ -594,7 +603,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM B
@@ -647,7 +656,7 @@ Portable Battery
 	Design Capacity: 51000 mWh
 	Design Voltage: 11400 mV
 	SBDS Version: 1.0
-	Maximum Error: 100%
+	Maximum Error: 2%
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000801
 
@@ -882,7 +891,7 @@ Handle 0xCD01, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 01 CD 03 01 00 09 00 9E 10 00 02 00 00 00
-		00 F0 00 03 00 01 02 00 00 00
+		00 F4 00 03 00 01 02 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -1043,7 +1052,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 22 09 25 13 56 01 00 00
+		DE 10 00 DE 01 04 00 00 23 03 19 07 52 01 00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

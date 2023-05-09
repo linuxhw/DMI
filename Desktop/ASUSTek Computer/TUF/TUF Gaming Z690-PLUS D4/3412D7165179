@@ -1,13 +1,13 @@
 # dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.4.0 present.
-Table at 0x77D1B000.
+Table at 0x77D19000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 1404
-	Release Date: 04/01/2022
+	Version: 2204
+	Release Date: 11/30/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 24 MB
@@ -33,7 +33,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 14.4
+	BIOS Revision: 22.4
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -845,8 +845,8 @@ OEM-specific Type
 Handle 0x0051, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 51 00 03 01 00 0C 00 65 70 00 02 00 00 00
-		00 1F 00 03 00 FF FF FF FF FF
+		DD 1A 51 00 03 01 00 0C 00 8B 10 00 02 00 00 00
+		00 26 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -855,8 +855,8 @@ OEM-specific Type
 Handle 0x0052, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 52 00 03 01 00 0C 00 65 70 00 02 00 00 00
-		00 00 00 03 04 10 00 0F C7 06
+		DD 1A 52 00 03 01 00 0C 00 8B 10 00 02 00 00 00
+		00 00 00 03 04 10 01 19 E4 07
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -866,7 +866,7 @@ OEM-specific Type
 Handle 0x0053, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 53 00 06 01 00 0C 00 65 70 00 02 03 FF FF
+		DD 2F 53 00 06 01 00 0C 00 8B 10 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 11 00 05 00 FF FF FF 11
 		00 06 00 02 46 00 00 00 07 00 04 00 00 00 00
 	Strings:
@@ -881,8 +881,8 @@ OEM-specific Type
 Handle 0x0054, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 54 00 0B 01 00 0C 00 65 70 00 02 00 00 00
-		03 80 00 03 00 0C 00 65 70 00 04 05 FF FF FF FF
+		DD 52 54 00 0B 01 00 0C 00 8B 10 00 02 00 00 00
+		04 59 00 03 00 0C 00 8B 10 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 05 00 07 00 00 00 00 05 00 08
 		00 FF FF FF FF FF 09 00 FF FF FF FF FF 0A 00 FF
 		FF FF FF FF 0B 00 FF FF FF FF FF 0C 00 FF FF FF
@@ -1030,8 +1030,8 @@ Handle 0x005A, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
 		83 40 5A 00 31 00 00 00 00 00 00 00 00 00 00 00
-		F8 00 84 7A 00 00 00 00 21 20 00 00 00 00 10 00
-		C7 06 0F 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		F8 00 84 7A 00 00 00 00 21 20 00 00 01 00 10 00
+		E4 07 19 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x005B, DMI type 41, 11 bytes
@@ -1163,47 +1163,28 @@ OEM-specific Type
 		Royal Park Version
 		Platform Version
 
-Handle 0x0069, DMI type 32, 11 bytes
-System Boot Information
-	Status: No errors detected
-
-Handle 0x006A, DMI type 13, 22 bytes
-BIOS Language Information
-	Language Description Format: Long
-	Installable Languages: 9
-		en|US|iso8859-1
-		fr|FR|iso8859-1
-		zh|TW|unicode
-		zh|CN|unicode
-		ja|JP|unicode
-		de|DE|iso8859-1
-		es|ES|iso8859-1
-		ru|RU|iso8859-5
-		ko|KR|unicode
-	Currently Installed Language: fr|FR|iso8859-1
-
-Handle 0x006B, DMI type 133, 44 bytes
+Handle 0x0069, DMI type 133, 44 bytes
 OEM-specific Type
 	Header and Data:
-		85 2C 6B 00 F9 B4 95 78 4D 92 0A 41 96 39 12 38
+		85 2C 69 00 F9 B4 95 78 4D 92 0A 41 96 39 12 38
 		62 B2 8A 63 00 86 80 08 16 12 20 26 12 86 80 01
 		00 00 00 61 72 57 18 03 00 00 00 00
 
-Handle 0x006C, DMI type 136, 8 bytes
+Handle 0x006A, DMI type 136, 8 bytes
 OEM-specific Type
 	Header and Data:
-		88 08 6C 00 00 00 00 00
+		88 08 6A 00 00 00 00 00
 
-Handle 0x006D, DMI type 14, 8 bytes
+Handle 0x006B, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x006E, DMI type 219, 106 bytes
+Handle 0x006C, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 6E 00 01 04 01 45 02 00 90 06 01 85 39 20
+		DB 6A 6C 00 01 04 01 45 02 00 90 06 01 85 30 20
 		00 00 00 00 40 00 00 00 00 00 00 02 00 20 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -1216,12 +1197,12 @@ OEM-specific Type
 		MEI3
 		MEI4
 
-Handle 0x006F, DMI type 136, 6 bytes
+Handle 0x006D, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 6F 00 00 00
+		88 06 6D 00 00 00
 
-Handle 0x0070, DMI type 14, 23 bytes
+Handle 0x006E, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 6
@@ -1232,6 +1213,21 @@ Group Associations
 		0x0054 (OEM-specific)
 		0x0068 (OEM-specific)
 
-Handle 0x0071, DMI type 127, 4 bytes
+Handle 0x006F, DMI type 13, 22 bytes
+BIOS Language Information
+	Language Description Format: Long
+	Installable Languages: 9
+		en|US|iso8859-1
+		fr|FR|iso8859-1
+		zh|TW|unicode
+		zh|CN|unicode
+		ja|JP|unicode
+		de|DE|iso8859-1
+		es|ES|iso8859-1
+		ru|RU|iso8859-5
+		ko|KR|unicode
+	Currently Installed Language: en|US|iso8859-1
+
+Handle 0x0070, DMI type 127, 4 bytes
 End Of Table
 

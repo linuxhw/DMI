@@ -1,15 +1,13 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0xCB707000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: GHCN26WW
-	Release Date: 09/08/2021
+	Version: GHCN29WW
+	Release Date: 01/09/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -33,8 +31,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.26
-	Firmware Revision: 1.26
+	BIOS Revision: 1.29
+	Firmware Revision: 1.29
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -158,8 +156,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -174,8 +172,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 16384 kB
-	Maximum Size: 16384 kB
+	Installed Size: 16 MB
+	Maximum Size: 16 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -431,7 +429,7 @@ Memory Device
 	Error Information Handle: 0x0026
 	Total Width: 32 bits
 	Data Width: 32 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: DIMM 0
@@ -443,7 +441,7 @@ Memory Device
 	Serial Number: --
 	Asset Tag: --
 	Part Number: H9HCNNNCPMMLXR-NEE  
-	Rank: 4
+	Rank: Unknown
 	Configured Memory Speed: 4266 MT/s
 	Minimum Voltage: 0.6 V
 	Maximum Voltage: 0.6 V
@@ -466,7 +464,7 @@ Memory Device
 	Error Information Handle: 0x0027
 	Total Width: 32 bits
 	Data Width: 32 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: DIMM 0
@@ -478,7 +476,7 @@ Memory Device
 	Serial Number: --
 	Asset Tag: --
 	Part Number: H9HCNNNCPMMLXR-NEE  
-	Rank: 4
+	Rank: Unknown
 	Configured Memory Speed: 4266 MT/s
 	Minimum Voltage: 0.6 V
 	Maximum Voltage: 0.6 V

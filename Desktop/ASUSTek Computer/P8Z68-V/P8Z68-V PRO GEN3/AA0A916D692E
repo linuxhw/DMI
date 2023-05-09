@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-109 structures occupying 3823 bytes.
+110 structures occupying 3843 bytes.
 Table at 0x000EB5C0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -959,22 +959,22 @@ Physical Memory Array
 Handle 0x005E, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x005F
-	Error Information Handle: 0x0063
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Error Information Handle: 0x0062
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
+	Part Number: 9905403-096.A01LF 
+	Rank: 2
 
 Handle 0x0061, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -986,13 +986,24 @@ Handle 0x0061, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0060, DMI type 17, 28 bytes
+Handle 0x0060, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x005E
+	Memory Array Mapped Address Handle: 0x006A
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 2
+
+Handle 0x0063, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x005F
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
@@ -1000,13 +1011,13 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Kingston
+	Manufacturer: 8502
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9905403-096.A01LF 
+	Part Number: 1600 CL9 Series
 	Rank: 2
 
-Handle 0x0063, DMI type 18, 23 bytes
+Handle 0x0062, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -1016,24 +1027,24 @@ Handle 0x0063, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0062, DMI type 20, 19 bytes
+Handle 0x0065, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x0060
-	Memory Array Mapped Address Handle: 0x006B
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0063
+	Memory Array Mapped Address Handle: 0x006A
 	Partition Row Position: Unknown
 	Interleave Position: 1
 	Interleaved Data Depth: 2
 
-Handle 0x0065, DMI type 17, 28 bytes
+Handle 0x0064, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x005F
-	Error Information Handle: 0x0064
+	Error Information Handle: 0x0067
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -1044,10 +1055,10 @@ Memory Device
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9905403-198.A00LF 
+	Part Number: 9905403-096.A01LF 
 	Rank: 2
 
-Handle 0x0064, DMI type 18, 23 bytes
+Handle 0x0067, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -1057,24 +1068,24 @@ Handle 0x0064, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0067, DMI type 20, 19 bytes
+Handle 0x0066, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
+	Starting Address: 0x00080000000
 	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0065
-	Memory Array Mapped Address Handle: 0x006B
+	Range Size: 2 GB
+	Physical Device Handle: 0x0064
+	Memory Array Mapped Address Handle: 0x006A
 	Partition Row Position: Unknown
-	Interleave Position: 1
-	Interleaved Data Depth: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 2
 
-Handle 0x0066, DMI type 17, 28 bytes
+Handle 0x0069, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x005F
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
@@ -1082,13 +1093,13 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Kingston
+	Manufacturer: 8502
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9905403-096.A01LF 
+	Part Number: 1600 CL9 Series
 	Rank: 2
 
-Handle 0x0069, DMI type 18, 23 bytes
+Handle 0x0068, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -1098,22 +1109,22 @@ Handle 0x0069, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0068, DMI type 20, 19 bytes
+Handle 0x006B, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00180000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x0066
-	Memory Array Mapped Address Handle: 0x006B
+	Starting Address: 0x00300000000
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0069
+	Memory Array Mapped Address Handle: 0x006A
 	Partition Row Position: Unknown
 	Interleave Position: 2
 	Interleaved Data Depth: 2
 
-Handle 0x006B, DMI type 19, 15 bytes
+Handle 0x006A, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 20 GB
 	Physical Array Handle: 0x005F
 	Partition Width: 4
 

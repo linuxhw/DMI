@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0xDC904000.
@@ -424,7 +424,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xDBD5E018
 	Status: Valid, Not Full
-	Change Token: 0x00000007
+	Change Token: 0x0000001D
 	Header Format: Type 1
 	Supported Log Type Descriptors: 25
 	Descriptor 1: Single-bit ECC memory error
@@ -500,8 +500,8 @@ Physical Memory Array
 Handle 0x002C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x002B
 	Partition Width: 2
 
@@ -625,18 +625,18 @@ Memory Device
 	Error Information Handle: 0x0031
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2667 MT/s
-	Manufacturer: Ramaxel Technology
+	Speed: 3200 MT/s
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: RMUA5120ME86H9F-2666
+	Part Number: CT8G4DFRA32A.M4FF
 	Rank: 1
 	Configured Memory Speed: 2667 MT/s
 	Minimum Voltage: 1.2 V
@@ -646,8 +646,8 @@ Memory Device
 Handle 0x0033, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0032
 	Memory Array Mapped Address Handle: 0x002C
 	Partition Row Position: Unknown
@@ -670,18 +670,18 @@ Memory Device
 	Error Information Handle: 0x0034
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2667 MT/s
-	Manufacturer: Ramaxel Technology
+	Speed: 3200 MT/s
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: RMUA5120ME86H9F-2666
+	Part Number: CT8G4DFRA32A.M4FF
 	Rank: 1
 	Configured Memory Speed: 2667 MT/s
 	Minimum Voltage: 1.2 V
@@ -691,8 +691,8 @@ Memory Device
 Handle 0x0036, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0035
 	Memory Array Mapped Address Handle: 0x002C
 	Partition Row Position: Unknown
@@ -854,13 +854,13 @@ Handle 0x004F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J10
 	Type: x8 PCI Express x16
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 48
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:00:1f.7
+	Bus Address: 0000:00:01.1
 
 Handle 0x0050, DMI type 9, 17 bytes
 System Slot Information
@@ -908,7 +908,7 @@ System Slot Information
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:01:00.2
+	Bus Address: 0000:02:00.2
 
 Handle 0x0054, DMI type 9, 17 bytes
 System Slot Information
@@ -920,7 +920,7 @@ System Slot Information
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:01:00.2
+	Bus Address: 0000:02:00.2
 
 Handle 0x0055, DMI type 9, 17 bytes
 System Slot Information
@@ -952,7 +952,7 @@ Onboard Device
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:02:00.0
+	Bus Address: 0000:03:00.0
 
 Handle 0x0058, DMI type 41, 11 bytes
 Onboard Device
@@ -960,7 +960,7 @@ Onboard Device
 	Type: Sound
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:0a:00.6
+	Bus Address: 0000:0b:00.6
 
 Handle 0x0059, DMI type 131, 22 bytes
 ThinkVantage Technologies

@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0x78EFD000.
@@ -18,7 +18,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -29,7 +29,7 @@ Memory Device
 	Manufacturer: 0x802C
 	Serial Number: --
 	Asset Tag: --
-	C7839C896CC6E2D6E19382DFA9DA630D
+	652333D94A2324E6AE9B6FDC969BC712
 	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
@@ -39,16 +39,16 @@ Memory Device
 Handle 0x0002, DMI type 130, 186 bytes
 OEM-specific Type
 	Header and Data:
-		82 BA 02 00 01 00 00 00 B0 00 91 20 F1 03 05 1A
-		05 0A 03 11 01 08 08 00 00 15 78 78 90 50 90 11
-		50 E0 90 06 3C 3C 01 90 00 00 00 31 C2 08 00 00
+		82 BA 02 00 01 00 00 00 B0 00 91 20 F1 03 05 19
+		05 0B 03 11 01 08 08 00 00 15 78 78 90 50 90 11
+		50 E0 90 06 3C 3C 01 90 00 00 00 21 C2 08 00 00
 		00 A8 00 88 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80
-		2C 00 00 00 00 00 00 00 93 41 4D 54 35 32 4C 31
-		47 33 32 44 34 50 47 2D 30 39 33 20 00 00 00 00
+		2C 00 00 00 00 00 00 00 82 3A 4D 54 35 32 4C 35
+		31 32 4D 33 32 44 32 50 46 2D 30 39 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00
 
@@ -58,7 +58,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -69,7 +69,7 @@ Memory Device
 	Manufacturer: 0x802C
 	Serial Number: --
 	Asset Tag: --
-	C7839C896CC6E2D6E19382DFA9DA630D
+	652333D94A2324E6AE9B6FDC969BC712
 	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
@@ -79,32 +79,32 @@ Memory Device
 Handle 0x0004, DMI type 130, 186 bytes
 OEM-specific Type
 	Header and Data:
-		82 BA 04 00 03 00 00 00 B0 00 91 20 F1 03 05 1A
-		05 0A 03 11 01 08 08 00 00 15 78 78 90 50 90 11
-		50 E0 90 06 3C 3C 01 90 00 00 00 31 C2 08 00 00
+		82 BA 04 00 03 00 00 00 B0 00 91 20 F1 03 05 19
+		05 0B 03 11 01 08 08 00 00 15 78 78 90 50 90 11
+		50 E0 90 06 3C 3C 01 90 00 00 00 21 C2 08 00 00
 		00 A8 00 88 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80
-		2C 00 00 00 00 00 00 00 93 41 4D 54 35 32 4C 31
-		47 33 32 44 34 50 47 2D 30 39 33 20 00 00 00 00
+		2C 00 00 00 00 00 00 00 82 3A 4D 54 35 32 4C 35
+		31 32 4D 33 32 44 32 50 46 2D 30 39 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00
 
 Handle 0x0005, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0000
 	Partition Width: 2
 
 Handle 0x0006, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Apple Inc.
-	Version: 499.40.2.0.0
-	Release Date: 08/22/2022
+	Version: 509.0.0.0.0
+	Release Date: 02/02/2023
 	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
@@ -212,7 +212,7 @@ Port Connector Information
 
 Handle 0x0010, DMI type 11, 5 bytes
 OEM Strings
-	String 1: Apple ROM Version.  BIOS ID:      MBP142.88Z.F000.B00.2208220659.  Model:        MBP142.  EFI Version:  499.40.2.0.0.  Built by:     root@ztkkg.  Date:         Mon Aug 22 06:59:10 2022.  Revision:     499.40.2 (B&I).  ROM Version:  F000_B00.  Build Type:   Official Build, RELEASE.  Compiler:     clang-1400.0.29.1.
+	String 1: Apple ROM Version.  BIOS ID:      MBP142.88Z.F000.B00.2302021932.  Model:        MBP142.  EFI Version:  509.0.0.0.0.  Built by:     root@hq8vz.  Date:         Thu Feb  2 19:32:43 2023.  Revision:     509 (B&I).  ROM Version:  F000_B00.  Build Type:   Official Build, RELEASE.  Compiler:     clang-1403.0.22.11.
 
 Handle 0x0011, DMI type 41, 11 bytes
 Onboard Device
@@ -356,11 +356,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i5-7287U CPU @ 3.30GHz
-	Voltage: 0.6 V
+	Version: Intel(R) Core(TM) i5-7267U CPU @ 3.10GHz
+	Voltage: 0.9 V
 	External Clock: 25 MHz
-	Max Speed: 3300 MHz
-	Current Speed: 400 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3000 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x001A
@@ -399,8 +399,8 @@ Group Associations
 Handle 0x001F, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 1F 00 01 03 01 45 02 10 90 06 00 10 84 10
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 40 02
+		DB 51 1F 00 01 03 01 45 02 00 90 06 01 10 86 10
+		00 00 00 00 40 00 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

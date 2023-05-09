@@ -1,8 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-73 structures occupying 2984 bytes.
-Table at 0x000F3F10.
+73 structures occupying 2997 bytes.
+Table at 0x000F3F00.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -576,9 +576,9 @@ Handle 0x002F, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x002E
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -586,19 +586,19 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M391B5773CH0-CH9  
+	Part Number: HMT451U6AFR8C-PB  
 	Rank: 1
 
 Handle 0x0031, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x002E
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -606,25 +606,25 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Micron
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9KSF25672AZ-1G6K1 
+	Part Number: HMT451U6AFR8C-PB  
 	Rank: 1
 
 Handle 0x0033, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x002E
 	Partition Width: 2
 
 Handle 0x0030, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x002F
 	Memory Array Mapped Address Handle: 0x0033
 	Partition Row Position: 1
@@ -633,9 +633,9 @@ Memory Device Mapped Address
 
 Handle 0x0032, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0031
 	Memory Array Mapped Address Handle: 0x0033
 	Partition Row Position: 1

@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-100 structures occupying 3983 bytes.
+100 structures occupying 3974 bytes.
 Table at 0x000EBC30.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -139,15 +139,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 607040 kB
-	Maximum Size: 607040 kB
+	Installed Size: 32 kB
+	Maximum Size: 32 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
 	Speed: Unknown
 	Error Correction Type: None
 	System Type: Unified
-	Associativity: <OUT OF SPEC>
+	Associativity: 8-way Set-associative
 
 Handle 0x0006, DMI type 7, 19 bytes
 Cache Information
@@ -654,7 +654,7 @@ Memory Device
 	Error Information Handle: 0x0041
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -662,18 +662,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: 830B
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT325S6BFR8C-H9  
-	Rank: 1
+	Part Number: NT4GC64B8HG0NS-CG 
+	Rank: 2
 	Configured Memory Speed: Unknown
 
 Handle 0x0040, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x003F
 	Memory Array Mapped Address Handle: 0x0061
 	Partition Row Position: Unknown
@@ -744,9 +744,9 @@ Handle 0x0044, DMI type 18, 23 bytes
 
 Handle 0x0045, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: Invalid
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0043
 	Memory Array Mapped Address Handle: 0x0061
 	Partition Row Position: Unknown
@@ -1027,8 +1027,8 @@ Memory Device
 Handle 0x0061, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x003D
 	Partition Width: 4
 

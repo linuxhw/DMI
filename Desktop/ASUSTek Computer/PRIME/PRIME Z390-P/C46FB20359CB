@@ -294,7 +294,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Network Port
 
-Handle 0x001F, DMI type 9, 160 bytes
+Handle 0x001F, DMI type 9, 115 bytes
 System Slot Information
 	Designation: <BAD INDEX>
 	Type: x1 PCI Express
@@ -307,11 +307,11 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:ff:01.0
 	Data Bus Width: 0
-	Peer Devices: 233
+	Peer Devices: 224
 
 Handle 0x0020, DMI type 9, 182 bytes
 System Slot Information
-	Designation: }
+	Designation: .
 	Type: x16 PCI Express
 	Current Usage: In Use
 	Length: Long
@@ -375,7 +375,7 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:ff:1c.7
-	Data Bus Width: 176
+	Data Bus Width: 80
 	Peer Devices: 0
 
 Handle 0x0025, DMI type 10, 6 bytes
@@ -683,13 +683,13 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2733 MT/s
+	Speed: 2400 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX3200C16D4/8GX    
 	Rank: 1
-	Configured Memory Speed: 2733 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -731,13 +731,13 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2733 MT/s
+	Speed: 2400 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX3200C16D4/8GX    
 	Rank: 1
-	Configured Memory Speed: 2733 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -776,7 +776,7 @@ OEM-specific Type
 	Header and Data:
 		DD 52 47 00 0B 01 00 07 00 4E 20 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 10 00 05 00 FF FF FF 10
-		00 06 00 FF FF FF FF FF 07 00 02 00 00 00 00 08
+		00 06 00 11 02 00 00 00 07 00 02 00 00 00 00 08
 		00 09 00 00 00 00 09 00 0A 00 00 00 00 0A 00 07
 		00 00 00 00 0B 00 06 00 00 00 00 0C 00 07 00 00
 		00 00
@@ -907,7 +907,7 @@ Processor Information
 	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
-	Current Speed: 2856 MHz
+	Current Speed: 2772 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA1151
 	L1 Cache Handle: 0x004A
@@ -1005,10 +1005,10 @@ Onboard Device
 
 Handle 0x0056, DMI type 41, 11 bytes
 Onboard Device
-	Reference Designation: Onboard - SATA
-	Type: SATA Controller
+	Reference Designation: Onboard - Other
+	Type: Other
 	Status: Enabled
-	Type Instance: 1
+	Type Instance: 5
 	Bus Address: 0000:00:17.0
 
 Handle 0x0057, DMI type 41, 11 bytes
@@ -1016,7 +1016,7 @@ Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
-	Type Instance: 5
+	Type Instance: 6
 	Bus Address: 0000:00:1f.0
 
 Handle 0x0058, DMI type 41, 11 bytes
@@ -1032,7 +1032,7 @@ Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
-	Type Instance: 6
+	Type Instance: 7
 	Bus Address: 0000:00:1f.4
 
 Handle 0x005A, DMI type 41, 11 bytes
@@ -1040,7 +1040,7 @@ Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
-	Type Instance: 7
+	Type Instance: 8
 	Bus Address: 0000:00:1f.5
 
 Handle 0x005B, DMI type 221, 89 bytes
@@ -1095,7 +1095,7 @@ Group Associations
 Handle 0x005F, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 5F 00 01 04 01 45 02 00 90 06 01 10 86 20
+		DB 6A 5F 00 01 04 01 45 02 00 90 06 01 10 80 20
 		00 00 00 04 48 00 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

@@ -1,8 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-77 structures occupying 3519 bytes.
-Table at 0x000EC380.
+78 structures occupying 3559 bytes.
+Table at 0x000E0000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -101,7 +101,7 @@ BIOS Information
 	Release Date: 05/27/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8 MB
+	ROM Size: 8192 kB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -248,8 +248,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1 MB
-	Maximum Size: 1 MB
+	Installed Size: 1024 kB
+	Maximum Size: 1024 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -264,8 +264,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6 MB
-	Maximum Size: 6 MB
+	Installed Size: 6144 kB
+	Maximum Size: 6144 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -539,7 +539,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -560,7 +560,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -613,7 +613,7 @@ Hardware Security
 	Front Panel Reset Status: Disabled
 
 Handle 0x0022, DMI type 25, 9 bytes
-System Power Controls
+	System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x0025, DMI type 26, 22 bytes
@@ -729,6 +729,14 @@ Onboard Device
 	Status: Enabled
 	Type Instance: 1
 	Bus Address: 0000:03:1c.2
+
+Handle 0x0030, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation:  Onboard SATA controller #1
+	Type: SATA Controller
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:00:1f.2
 
 Handle 0xDECD, DMI type 131, 64 bytes
 OEM-specific Type

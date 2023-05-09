@@ -218,7 +218,7 @@ On Board Device 4 Information
 Handle 0x000A, DMI type 11, 5 bytes
 OEM Strings
 	String 1: SSD1
-	String 2: 22FPF06JQH63        
+	String 2: DTMCXBSGX22GN0053   
 	String 3:  
 	String 4:  
 	String 5:  
@@ -236,15 +236,16 @@ Group Associations
 	Items: 1
 		0x0016 (OEM-specific)
 
-Handle 0x001C, DMI type 14, 20 bytes
+Handle 0x001D, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
-	Items: 5
+	Items: 6
 		0x0017 (OEM-specific)
 		0x0018 (OEM-specific)
 		0x0019 (OEM-specific)
 		0x001A (OEM-specific)
 		0x001B (OEM-specific)
+		0x001C (OEM-specific)
 
 Handle 0x000D, DMI type 16, 23 bytes
 Physical Memory Array
@@ -468,6 +469,32 @@ OEM-specific Type
 		DD 0C 1B 00 01 01 00 04 00 00 00 00
 	Strings:
 		FSP Binary Version
+
+Handle 0x001C, DMI type 221, 89 bytes
+OEM-specific Type
+	Header and Data:
+		DD 59 1C 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
+		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
+		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
+		00 FF FF FF FF FF 0B 00 01 09 00 00 00 0C 00 00
+		17 00 70 10 0D 00 FF FF FF FF FF 0E 00 00 07 03
+		00 00 0F 00 00 02 00 0F 00
+	Strings:
+		Lan Phy Version
+		Sensor Firmware Version
+		Debug Mode Status
+		Disabled
+		Performance Mode Status
+		Disabled
+		Debug Use USB(Disabled:Serial)
+		Disabled
+		ICC Overclocking Version
+		UNDI Version
+		EC FW Version
+		GOP Version
+		Royal Park Version
+		Platform Version
+		Client Silicon Version
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

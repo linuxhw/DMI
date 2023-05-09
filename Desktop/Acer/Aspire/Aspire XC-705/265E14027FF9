@@ -1,7 +1,7 @@
 # dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-42 structures occupying 1687 bytes.
+42 structures occupying 1683 bytes.
 Table at 0xD5ED5018.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -399,7 +399,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -407,11 +407,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Kingston
+	Manufacturer: 0913
 	Serial Number: --
 	Asset Tag: --
-	7C2FDB610258025253147296F9C42033      
-	Rank: 1
+	25E871B69E9B6A3489654F49E73192A0      
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
@@ -419,9 +419,9 @@ Memory Device
 
 Handle 0x0021, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0020
 	Memory Array Mapped Address Handle: 0x0024
 	Partition Row Position: Unknown
@@ -434,7 +434,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -442,21 +442,21 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 0467
+	Manufacturer: 0913
 	Serial Number: --
 	Asset Tag: --
-	B624A39B929AFA0D6E4FA94A1C1AD378    
+	25E871B69E9B6A3489654F49E73192A0      
 	Rank: 2
 	Configured Memory Speed: 1600 MT/s
-	Minimum Voltage: 1.35 V
+	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
 
 Handle 0x0023, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0022
 	Memory Array Mapped Address Handle: 0x0024
 	Partition Row Position: Unknown
@@ -466,8 +466,8 @@ Memory Device Mapped Address
 Handle 0x0024, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x001F
 	Partition Width: 2
 

@@ -204,21 +204,21 @@ Memory Controller Information
 Handle 0x0009, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM0
-	Bank Connections: 0 0
+	Bank Connections: 0 1
 	Current Speed: 161 ns
 	Type: ECC DIMM
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 4096 MB (Double-bank Connection)
+	Enabled Size: 4096 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM1
-	Bank Connections: 0 0
+	Bank Connections: 0 1
 	Current Speed: 163 ns
 	Type: ECC DIMM
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 4096 MB (Double-bank Connection)
+	Enabled Size: 4096 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000B, DMI type 9, 17 bytes
@@ -282,8 +282,8 @@ Physical Memory Array
 Handle 0x0010, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0011FFFFFFF
-	Range Size: 4608 MB
+	Ending Address: 0x0021FFFFFFF
+	Range Size: 8704 MB
 	Physical Array Handle: 0x000F
 	Partition Width: 1
 
@@ -293,25 +293,25 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 800 MT/s
+	Speed: 333 MT/s
 	Manufacturer: Manufacturer00
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 000000000000000000
+	Part Number: RMR5040ED58E9W1600
 	Rank: Unknown
 
 Handle 0x0012, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0011
 	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: 1
@@ -322,25 +322,25 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 800 MT/s
+	Speed: 333 MT/s
 	Manufacturer: Manufacturer01
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 000000000000000000
+	Part Number: RMR5040ED58E9W1600
 	Rank: Unknown
 
 Handle 0x0014, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0013
 	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: 1

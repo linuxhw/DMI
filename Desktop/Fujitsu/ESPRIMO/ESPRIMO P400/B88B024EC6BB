@@ -1,8 +1,8 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-93 structures occupying 3314 bytes.
-Table at 0xD9C58018.
+93 structures occupying 3315 bytes.
+Table at 0xDE458018.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -37,7 +37,7 @@ System Information
 	Version:                       
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: APM Timer
 	SKU Number: S26361-Kxxx-Vyyy
 	Family:                 
 
@@ -686,8 +686,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 512 kB
-	Maximum Size: 512 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -702,8 +702,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 128 kB
-	Maximum Size: 128 kB
+	Installed Size: 256 kB
+	Maximum Size: 256 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -718,15 +718,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3 MB
-	Maximum Size: 3 MB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
 	Speed: Unknown
 	Error Correction Type: Multi-bit ECC
 	System Type: Unified
-	Associativity: 12-way Set-associative
+	Associativity: 16-way Set-associative
 
 Handle 0x004E, DMI type 16, 23 bytes
 Physical Memory Array
@@ -741,7 +741,7 @@ Handle 0x004F, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: SOCKET 0
 	Type: Central Processor
-	Family: Pentium
+	Family: Core i7
 	Manufacturer: Intel(R) Corporation
 	ID: A7 06 02 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 42, Stepping 7
@@ -774,11 +774,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Pentium(R) CPU G640 @ 2.80GHz
-	Voltage: Unknown
+	Version: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz
+	Voltage: 2.9 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 2800 MHz
+	Current Speed: 3400 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
 	L1 Cache Handle: 0x004C
@@ -787,9 +787,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Fill By OEM
-	Core Count: 2
-	Core Enabled: 2
-	Thread Count: 2
+	Core Count: 4
+	Core Enabled: 4
+	Thread Count: 8
 	Characteristics:
 		64-bit capable
 
@@ -873,13 +873,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1067 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: 029E
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CML16GX3M2A1600C10
 	Rank: 2
-	Configured Memory Speed: 1067 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0052, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -923,13 +923,13 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1067 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: 029E
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CML16GX3M2A1600C10
 	Rank: 2
-	Configured Memory Speed: 1067 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0057, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -958,7 +958,7 @@ OEM-specific Type
 Handle 0x006B, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 6B 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 6B 00 35 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 5C 1C 00 00 00 00 01 00 00 00 01 00 08 00
 		E0 04 00 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00

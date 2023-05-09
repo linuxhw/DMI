@@ -1,6 +1,8 @@
-# dmidecode 3.4
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 3.4.0 present.
+# SMBIOS implementations newer than version 3.2.0 are not
+# fully supported by this version of dmidecode.
 Table at 0x65510000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -189,12 +191,12 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelA
 	Bank Locator: BANK 0
-	Type: LPDDR5
+	Type: <OUT OF SPEC>
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: Samsung
@@ -224,12 +226,12 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelB
 	Bank Locator: BANK 1
-	Type: LPDDR5
+	Type: <OUT OF SPEC>
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: Samsung
@@ -259,12 +261,12 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelC
 	Bank Locator: BANK 2
-	Type: LPDDR5
+	Type: <OUT OF SPEC>
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: Samsung
@@ -294,12 +296,12 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelD
 	Bank Locator: BANK 3
-	Type: LPDDR5
+	Type: <OUT OF SPEC>
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: Samsung
@@ -329,12 +331,12 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelA
 	Bank Locator: BANK 0
-	Type: LPDDR5
+	Type: <OUT OF SPEC>
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: Samsung
@@ -364,12 +366,12 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelB
 	Bank Locator: BANK 1
-	Type: LPDDR5
+	Type: <OUT OF SPEC>
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: Samsung
@@ -399,12 +401,12 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelC
 	Bank Locator: BANK 2
-	Type: LPDDR5
+	Type: <OUT OF SPEC>
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: Samsung
@@ -434,12 +436,12 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelD
 	Bank Locator: BANK 3
-	Type: LPDDR5
+	Type: <OUT OF SPEC>
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: Samsung
@@ -474,10 +476,8 @@ Memory Array Mapped Address
 Handle 0x001A, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: INTC
-	Specification Version: 2.0
-	Firmware Revision: 600.18
-	Description: INTEL
-	Characteristics:
+	Specification Version: 2.0	Firmware Revision: 600.18
+	Description: INTEL	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -680,8 +680,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 5 MB
-	Maximum Size: 5 MB
+	Installed Size: 5120 kB
+	Maximum Size: 5120 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -696,8 +696,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 18 MB
-	Maximum Size: 18 MB
+	Installed Size: 18432 kB
+	Maximum Size: 18432 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -744,8 +744,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4 MB
-	Maximum Size: 4 MB
+	Installed Size: 4096 kB
+	Maximum Size: 4096 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -760,8 +760,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 18 MB
-	Maximum Size: 18 MB
+	Installed Size: 18432 kB
+	Maximum Size: 18432 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -808,10 +808,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: 12th Gen Intel(R) Core(TM) i7-1260P
-	Voltage: 0.8 V
+	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 4700 MHz
-	Current Speed: 1881 MHz
+	Current Speed: 3762 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x002A
@@ -1390,7 +1390,7 @@ Group Associations
 Handle 0x0077, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 77 00 01 04 01 45 02 00 90 06 81 85 30 30
+		DB 6A 77 00 01 04 01 45 02 00 90 06 81 85 39 30
 		00 00 00 00 40 00 00 03 1F 04 00 CB 03 60 C4 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

@@ -1,7 +1,7 @@
 # dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
-67 structures occupying 1932 bytes.
+67 structures occupying 1992 bytes.
 Table at 0x000ED7D0.
 
 Handle 0x0001, DMI type 0, 24 bytes
@@ -63,7 +63,7 @@ Chassis Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	380AD15AAB729CF25C4397C21C466ACE
+	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: Unknown
@@ -498,19 +498,19 @@ Handle 0x0036, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0034
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: 1
 	Locator: XMM1
 	Bank Locator: Not Specified
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
+	Speed: 800 MT/s
+	Manufacturer: JEDEC ID:7F 7F 7F 7F CB 00 00 00
 	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
+	Asset Tag: --
 	Part Number:  
 
 Handle 0x0037, DMI type 17, 27 bytes
@@ -527,10 +527,10 @@ Memory Device
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 800 MT/s
-	Manufacturer: JEDEC ID:7F 7F 7F 7F CB 00 00 00
+	Manufacturer: JEDEC ID:7F 98 00 00 00 00 00 00
 	Serial Number: --
 	Asset Tag: --
-	Part Number:  
+	Part Number: ACR256X64D2U800C6L
 
 Handle 0x0038, DMI type 17, 27 bytes
 Memory Device
@@ -538,18 +538,18 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: 2
 	Locator: XMM3
 	Bank Locator: Not Specified
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 533 MT/s
-	Manufacturer: JEDEC ID:AD 00 00 00 00 00 00 00
+	Speed: 800 MT/s
+	Manufacturer: JEDEC ID:7F 98 00 00 00 00 00 00
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HYMP512U64BP8-C4
+	Part Number: ACR256X64D2U800C6L
 
 Handle 0x0039, DMI type 17, 27 bytes
 Memory Device
@@ -557,18 +557,18 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: 2
 	Locator: XMM4
 	Bank Locator: Not Specified
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 533 MT/s
-	Manufacturer: JEDEC ID:AD 00 00 00 00 00 00 00
+	Speed: 800 MT/s
+	Manufacturer: JEDEC ID:7F 98 00 00 00 00 00 00
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HYMP512U64BP8-C4
+	Part Number: ACR256X64D2U800C6L
 
 Handle 0x003B, DMI type 17, 27 bytes
 Memory Device
@@ -592,8 +592,8 @@ Memory Device
 Handle 0x003C, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0034
 	Partition Width: 4
 
@@ -608,16 +608,16 @@ Memory Array Mapped Address
 Handle 0x003E, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0036
 	Memory Array Mapped Address Handle: 0x003C
 	Partition Row Position: <OUT OF SPEC>
 
 Handle 0x003F, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0037
 	Memory Array Mapped Address Handle: 0x003C
@@ -625,18 +625,18 @@ Memory Device Mapped Address
 
 Handle 0x0040, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 1 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0038
 	Memory Array Mapped Address Handle: 0x003C
 	Partition Row Position: <OUT OF SPEC>
 
 Handle 0x0041, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x000C0000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 1 GB
+	Starting Address: 0x00180000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0039
 	Memory Array Mapped Address Handle: 0x003C
 	Partition Row Position: 1
@@ -667,7 +667,7 @@ OEM-specific Type
 Handle 0x0046, DMI type 208, 5 bytes
 OEM-specific Type
 	Header and Data:
-		D0 05 46 00 00
+		D0 05 46 00 01
 
 Handle 0x0047, DMI type 127, 4 bytes
 End Of Table

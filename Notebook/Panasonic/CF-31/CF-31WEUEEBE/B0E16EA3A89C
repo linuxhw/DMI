@@ -1,4 +1,4 @@
-# dmidecode 3.0
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 27 structures occupying 1483 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 07/25/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 16384 kB
+	ROM Size: 16 MB
 	Characteristics:
 		PCI is supported
 		PC Card (PCMCIA) is supported
@@ -72,7 +72,7 @@ Chassis Information
 	Asset Tag: --
 	Boot-up State: Safe
 	Power Supply State: Safe
-	Thermal State: Warning
+	Thermal State: Safe
 	Security Status: None
 	OEM Information: 0x00000000
 	Height: Unspecified
@@ -110,13 +110,13 @@ System Slot Information
 
 Handle 0x0006, DMI type 11, 5 bytes
 OEM Strings
-	String 1: 56CeZxahcA0EH
-	String 2: -LGMT3CY3NcB-
-	String 3: XiTTphSwW1BNL
+	String 1: 0LzM8g6nk8p-6
+	String 2: hhdrNFXdvOj9i
+	String 3: Zgs7C+oKzPi5H
 
 Handle 0x0007, DMI type 12, 5 bytes
 System Configuration Options
-	Option 1: DSN:ZDE0G4EJST500LM030-2E717D       
+	Option 1: DSN:WCK8FEQ5ST4000LM024-2AN17V      
 	Option 2: DSN:CT102464BF160B.C164896E71A      
 	Option 3: DSN:CF-VZSU71   02F309062012        
 	Option 4: SMI:00B2E6
@@ -127,7 +127,7 @@ Portable Battery
 	Manufacturer: Panasonic
 	Name: CF-VZSU71
 	Chemistry: Lithium Ion
-	Design Capacity: 68040 mWh
+	Design Capacity: 54430 mWh
 	Design Voltage: 10800 mV
 	SBDS Version: Not Specified
 	Maximum Error: 0%
@@ -184,8 +184,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -265,20 +265,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: 859B
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CT102464BF160B.C16
 	Rank: 2
-	Configured Clock Speed: 1333 MHz
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -297,20 +297,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: 859B
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CT102464BF160B.C16
 	Rank: 2
-	Configured Clock Speed: 1333 MHz
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0014, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -346,7 +346,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 8 bits
 	Data Width: 8 bits
-	Size: 16384 kB
+	Size: 16 MB
 	Form Factor: TSOP
 	Set: None
 	Locator: Flash ROM
@@ -359,7 +359,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Not Specified
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0018, DMI type 19, 31 bytes
 Memory Array Mapped Address

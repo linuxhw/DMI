@@ -114,7 +114,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM)2 Duo CPU     E6750  @ 2.66GHz
-	Voltage: 0.0 V
+	Voltage: 1.2 V
 	External Clock: 333 MHz
 	Max Speed: 4000 MHz
 	Current Speed: 2666 MHz
@@ -157,11 +157,11 @@ Memory Controller Information
 Handle 0x0006, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM1
-	Bank Connections: None
+	Bank Connections: 0 1
 	Current Speed: Unknown
-	Type: Unknown
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Type: DIMM
+	Installed Size: 1024 MB (Double-bank Connection)
+	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -440,16 +440,16 @@ Handle 0x0025, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0024
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator:  
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 667 MT/s
 	Manufacturer: AD00000000000000
 	Serial Number: --
 	Asset Tag: --
@@ -515,24 +515,24 @@ Memory Device
 Handle 0x0029, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0024
 	Partition Width: 1
 
 Handle 0x002A, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0025
 	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: 1
 
 Handle 0x002B, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
+	Starting Address: 0x00040000000
+	Ending Address: 0x0007FFFFFFF
 	Range Size: 1 GB
 	Physical Device Handle: 0x0026
 	Memory Array Mapped Address Handle: 0x0029
@@ -540,8 +540,8 @@ Memory Device Mapped Address
 
 Handle 0x002C, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x000BFFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0027
 	Memory Array Mapped Address Handle: 0x0029

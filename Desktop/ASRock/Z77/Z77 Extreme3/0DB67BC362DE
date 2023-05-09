@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-26 structures occupying 1521 bytes.
+28 structures occupying 1621 bytes.
 Table at 0x000EE650.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -89,7 +89,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:06:00.0
+	Bus Address: ffff:05:00.0
 
 Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
@@ -102,7 +102,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:06:01.0
+	Bus Address: ffff:05:01.0
 
 Handle 0x0006, DMI type 9, 17 bytes
 System Slot Information
@@ -133,27 +133,26 @@ Handle 0x0008, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE3
 	Type: x16 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 19
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:02:00.0
 
 Handle 0x0009, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE4
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 20
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:03:00.0
+	Bus Address: ffff:02:00.0
 
 Handle 0x000A, DMI type 11, 5 bytes
 OEM Strings
@@ -280,24 +279,35 @@ Handle 0x0011, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000F
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: KHX1866C10D3/8G   
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0012, DMI type 17, 34 bytes
+Handle 0x0012, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0011
+	Memory Array Mapped Address Handle: 0x0019
+	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 2
+
+Handle 0x0013, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000F
 	Error Information Handle: Not Provided
@@ -318,39 +328,50 @@ Memory Device
 	Rank: 1
 	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0013, DMI type 20, 35 bytes
+Handle 0x0014, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00400000000
+	Ending Address: 0x004FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0012
-	Memory Array Mapped Address Handle: 0x0017
+	Physical Device Handle: 0x0013
+	Memory Array Mapped Address Handle: 0x0019
 	Partition Row Position: 1
 	Interleave Position: 1
 	Interleaved Data Depth: 2
 
-Handle 0x0014, DMI type 17, 34 bytes
+Handle 0x0015, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000F
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: KHX1866C10D3/8G   
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0015, DMI type 17, 34 bytes
+Handle 0x0016, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0015
+	Memory Array Mapped Address Handle: 0x0019
+	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x0017, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000F
 	Error Information Handle: Not Provided
@@ -371,33 +392,33 @@ Memory Device
 	Rank: 1
 	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0016, DMI type 20, 35 bytes
+Handle 0x0018, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x00500000000
+	Ending Address: 0x005FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0015
-	Memory Array Mapped Address Handle: 0x0017
+	Physical Device Handle: 0x0017
+	Memory Array Mapped Address Handle: 0x0019
 	Partition Row Position: 1
 	Interleave Position: 2
 	Interleaved Data Depth: 2
 
-Handle 0x0017, DMI type 19, 31 bytes
+Handle 0x0019, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 24 GB
 	Physical Array Handle: 0x000F
 	Partition Width: 4
 
-Handle 0x001A, DMI type 131, 64 bytes
+Handle 0x001C, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 1A 00 35 00 00 00 00 00 00 00 00 00 00 00
+		83 40 1C 00 35 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 44 1E FF FF FF FF 01 00 00 00 01 00 08 00
 		E0 04 00 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 36 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x001B, DMI type 127, 4 bytes
+Handle 0x001D, DMI type 127, 4 bytes
 End Of Table
 

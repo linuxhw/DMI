@@ -1,14 +1,14 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-19 structures occupying 1128 bytes.
-Table at 0x000ECE20.
+18 structures occupying 1098 bytes.
+Table at 0x000EDA80.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: P2.60
-	Release Date: 01/12/2016
+	Version: P5.20
+	Release Date: 02/18/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8 MB
@@ -51,8 +51,8 @@ Base Board Information
 	Product Name: FM2A68M-DG3+
 	Version:                       
 	Serial Number: --
-	Asset Tag: --
-	97946E993916094B22613E03B8339091
+	271882FD79060B21C43F805A2DE81148                       
+	Features:
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:                       
@@ -62,10 +62,10 @@ Base Board Information
 
 Handle 0x0003, DMI type 3, 22 bytes
 Chassis Information
-	Manufacturer: To Be Filled By O.E.M.
+	Manufacturer: To be filled by O.E.M.
 	Type: Desktop
 	Lock: Not Present
-	Version: To Be Filled By O.E.M.
+	Version: To be filled by O.E.M.
 	Serial Number: --
 	Asset Tag: --
 	Boot-up State: Safe
@@ -118,7 +118,7 @@ System Slot Information
 
 Handle 0x0007, DMI type 11, 5 bytes
 OEM Strings
-	String 1: To Be Filled By O.E.M.
+	String 1: To be filled by O.E.M.
 
 Handle 0x0008, DMI type 7, 19 bytes
 Cache Information
@@ -171,7 +171,7 @@ Memory Array Mapped Address
 	Ending Address: 0x0017FFFFFFF
 	Range Size: 6 GB
 	Physical Array Handle: 0x0010
-	Partition Width: 255
+	Partition Width: 2
 
 Handle 0x0012, DMI type 17, 40 bytes
 Memory Device
@@ -230,16 +230,7 @@ Memory Device Mapped Address
 	Memory Array Mapped Address Handle: 0x0011
 	Partition Row Position: 1
 
-Handle 0x0015, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0013
-	Memory Array Mapped Address Handle: 0x0011
-	Partition Row Position: 1
-
-Handle 0x0018, DMI type 4, 42 bytes
+Handle 0x0017, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPUSocket
 	Type: Central Processor

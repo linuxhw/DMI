@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 25 structures occupying 1274 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 03/28/2012
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1 MB
+	ROM Size: 1024 kB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -255,7 +255,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:03:00.0
+	Bus Address: ffff:02:00.0
 
 Handle 0x000E, DMI type 9, 17 bytes
 System Slot Information
@@ -268,7 +268,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:02:00.0
+	Bus Address: ffff:01:00.0
 
 Handle 0x000F, DMI type 16, 15 bytes
 Physical Memory Array
@@ -282,8 +282,8 @@ Physical Memory Array
 Handle 0x0010, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0022FFFFFFF
-	Range Size: 8960 MB
+	Ending Address: 0x0021FFFFFFF
+	Range Size: 8704 MB
 	Physical Array Handle: 0x000F
 	Partition Width: 1
 
@@ -293,7 +293,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
@@ -322,7 +322,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1

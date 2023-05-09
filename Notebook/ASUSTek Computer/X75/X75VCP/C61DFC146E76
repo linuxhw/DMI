@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 22 structures occupying 1642 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 02/26/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 6144 kB
+	ROM Size: 6 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -127,9 +127,9 @@ On Board Device 11 Information
 
 Handle 0x0005, DMI type 11, 5 bytes
 OEM Strings
-	String 1: IM6RqVHrGIDJp
-	String 2: 7HXL0oI5S3i-G
-	String 3: Yh++gsXvZCWBr
+	String 1: bZIj2NbiUrGMt
+	String 2: 6EqFBvV7CT4c6
+	String 3: pU27eRDxStiID
 	String 4: 90NB0241-M00960
 	String 5:  
 	String 6:  
@@ -187,8 +187,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -244,7 +244,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Pentium(R) CPU 2020M @ 2.40GHz
-	Voltage:
+	Voltage: 5.0 V 3.3 V 2.9 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
 	Current Speed: 2400 MHz
@@ -268,7 +268,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -281,7 +281,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 8JTF51264HZ-1G6D 1
 	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000E, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -313,7 +313,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: [Empty]
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0010, DMI type 17, 34 bytes
 Memory Device
@@ -334,7 +334,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: [Empty]
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0011, DMI type 17, 34 bytes
 Memory Device
@@ -355,7 +355,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: [Empty]
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0012, DMI type 19, 31 bytes
 Memory Array Mapped Address

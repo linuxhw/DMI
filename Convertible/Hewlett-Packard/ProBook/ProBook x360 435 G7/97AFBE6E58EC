@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
-Table at 0xB75BB000.
+Table at 0xB7555000.
 
 Handle 0x0000, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -25,10 +25,10 @@ Physical Memory Array
 Handle 0x0002, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0001
-	Partition Width: 1
+	Partition Width: 2
 
 Handle 0x0003, DMI type 7, 27 bytes
 Cache Information
@@ -52,8 +52,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -68,8 +68,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -154,20 +154,22 @@ Handle 0x000B, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x000E, DMI type 43, 31 bytes
+Handle 0x000F, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: IFX
-	Specification Version: 2.0	Firmware Revision: 7.85
-	Description: SLB9670	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 7.85
+	Description: SLB9670
+	Characteristics:
 		Family configurable via firmware update
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
-Handle 0x000F, DMI type 0, 26 bytes
+Handle 0x0010, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: S80 Ver. 01.04.02
-	Release Date: 01/18/2021
+	Version: S80 Ver. 01.08.00
+	Release Date: 01/12/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -189,10 +191,10 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 4.2
-	Firmware Revision: 9.36
+	BIOS Revision: 8.0
+	Firmware Revision: 9.42
 
-Handle 0x0010, DMI type 1, 27 bytes
+Handle 0x0011, DMI type 1, 27 bytes
 System Information
 	Manufacturer: HP
 	Product Name: HP ProBook x360 435 G7
@@ -203,11 +205,11 @@ System Information
 	SKU Number: 1L3R4EA#ABD
 	Family: 103C_5336AN HP ProBook x360
 
-Handle 0x0011, DMI type 2, 17 bytes
+Handle 0x0012, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 8735
-	Version: KBC Version 09.24.00
+	Version: KBC Version 09.2A.00
 	Serial Number: --
 	Asset Tag: --
 	97946E993916094B22613E03B8339091
@@ -217,7 +219,7 @@ Base Board Information
 	Type: Motherboard
 	Contained Object Handles: 0
 
-Handle 0x0012, DMI type 3, 24 bytes
+Handle 0x0013, DMI type 3, 24 bytes
 Chassis Information
 	Manufacturer: HP
 	Type: Convertible
@@ -235,7 +237,7 @@ Chassis Information
 	Contained Elements: 0
 	SKU Number: Not Specified
 
-Handle 0x0014, DMI type 13, 22 bytes
+Handle 0x0015, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 15
@@ -254,9 +256,9 @@ BIOS Language Information
 		zhCN
 		zhTW
 		ruRU
-	Currently Installed Language: enUS
+	Currently Installed Language: deDE
 
-Handle 0x0015, DMI type 8, 9 bytes
+Handle 0x0016, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port0
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -264,7 +266,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x0016, DMI type 9, 17 bytes
+Handle 0x0017, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2 NVMe SSD
 	Type: 32-bit PCI Express 3 x4
@@ -277,7 +279,7 @@ System Slot Information
 		SMBus signal is supported
 	Bus Address: 0000:00:02.4
 
-Handle 0x0017, DMI type 9, 17 bytes
+Handle 0x0018, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2 WLAN/BT
 	Type: 32-bit PCI Express x1
@@ -290,7 +292,7 @@ System Slot Information
 		SMBus signal is supported
 	Bus Address: 0000:00:01.3
 
-Handle 0x0018, DMI type 41, 11 bytes
+Handle 0x0019, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard IGD
 	Type: Video
@@ -298,13 +300,13 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:04:00.0
 
-Handle 0x0019, DMI type 17, 40 bytes
+Handle 0x001A, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0001
 	Error Information Handle: 0x0007
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(left)
@@ -326,36 +328,46 @@ Handle 0x0008, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0001
 	Error Information Handle: 0x000B
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Other
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(right)
 	Bank Locator: ChannelB0
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Not Installed
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 3200 MT/s
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: <BAD INDEX>
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
+	7445167C72A300BAF783C0A4CE658270    
+	Rank: 1
+	Configured Memory Speed: 3200 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
 
 Handle 0x0009, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0019
+	Physical Device Handle: 0x001A
 	Memory Array Mapped Address Handle: 0x0002
 	Partition Row Position: 1
 
-Handle 0x000A, DMI type 22, 26 bytes
+Handle 0x000A, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0008
+	Memory Array Mapped Address Handle: 0x0002
+	Partition Row Position: 1
+	Interleave Position: 1
+
+Handle 0x000C, DMI type 22, 26 bytes
 Portable Battery
 	Location: Primary
 	Manufacturer: 333-17-40-A
@@ -369,18 +381,18 @@ Portable Battery
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
-Handle 0x000C, DMI type 24, 5 bytes
+Handle 0x000D, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
 
-Handle 0x000D, DMI type 32, 11 bytes
+Handle 0x000E, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0013, DMI type 11, 5 bytes
+Handle 0x0014, DMI type 11, 5 bytes
 OEM Strings
 	String 1: FBYTE#3X476J6S6b7B7J7M7R7W7maBapaqauawbVbhcAdUdpdqfPk8mE.t5;
 	String 2: BUILDID#20WWPMBT601#SABD#DABD;
@@ -388,7 +400,7 @@ OEM Strings
 	String 4: Buff=2
 	String 5: HRDWFEATS=;NONHPBATDET:1;
 
-Handle 0x001A, DMI type 10, 6 bytes
+Handle 0x001B, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled

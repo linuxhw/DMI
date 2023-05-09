@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x000E2410.
@@ -33,7 +33,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -41,10 +41,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2667 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471A1K43DB1-CTD    
+	Part Number: 8ATF2G64HZ-2G6E1    
 	Rank: 1
 	Configured Memory Speed: 2667 MT/s
 	Minimum Voltage: Unknown
@@ -53,20 +53,20 @@ Memory Device
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Not Specified
-	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Manufacturer ID: Bank 1, Hex 0x2C
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0004, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0002
 	Partition Width: 1
 
@@ -218,10 +218,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
-	Voltage: 0.8 V
+	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 2100 MHz
-	Current Speed: 1584 MHz
+	Current Speed: 2574 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1528
 	L1 Cache Handle: 0x000A
@@ -832,7 +832,7 @@ System Information
 	Version: Lenovo ThinkBook 13s-IML
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: Other
 	SKU Number: LENOVO_MT_20RR_BU_idea_FM_ThinkBook 13s-IML
 	Family: ThinkBook 13s-IML
 
@@ -924,7 +924,7 @@ Group Associations
 Handle 0x0057, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 57 00 01 04 01 45 02 00 A0 06 01 10 80 20
+		DB 6A 57 00 01 04 01 45 02 00 A0 06 01 10 86 20
 		00 00 00 00 40 00 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

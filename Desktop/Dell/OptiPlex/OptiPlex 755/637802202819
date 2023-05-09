@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 80 structures occupying 2866 bytes.
@@ -312,7 +312,7 @@ Handle 0x090A, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT1
 	Type: x1 Proprietary
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	Characteristics:
 		PME signal is supported
@@ -348,7 +348,7 @@ Handle 0x0904, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT4  
 	Type: x1 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 4
 	Characteristics:
@@ -370,7 +370,7 @@ Inactive
 Handle 0x0A00, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
-	Status: Enabled
+	Status: Disabled
 	Description: Intel Graphics Media Accelerator 950
 
 Handle 0x0A02, DMI type 10, 6 bytes
@@ -405,7 +405,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFF01000
 	Status: Valid, Not Full
-	Change Token: 0x00000019
+	Change Token: 0x0000001D
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -437,7 +437,7 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MT/s
+	Speed: 800 MT/s
 	Manufacturer: 7F98000000000000
 	Serial Number: --
 	Asset Tag: --
@@ -456,7 +456,7 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MT/s
+	Speed: 800 MT/s
 	Manufacturer: 7F7F7F7F7F9BFFFF
 	Serial Number: --
 	Asset Tag: --
@@ -475,7 +475,7 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MT/s
+	Speed: 800 MT/s
 	Manufacturer: 7F98000000000000
 	Serial Number: --
 	Asset Tag: --
@@ -487,24 +487,19 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_4
 	Bank Locator: Not Specified
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MT/s
-	Manufacturer: 7F7F7F7FCD000000
-	Serial Number: --
-	Asset Tag: --
-	Part Number: F2-6400CL5-2GBPQ  
 
 Handle 0x1300, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FDFFFFFF
-	Range Size: 8160 MB
+	Ending Address: 0x0017EFFFFFF
+	Range Size: 6128 MB
 	Physical Array Handle: 0x1000
 	Partition Width: 1
 
@@ -522,13 +517,11 @@ Memory Device Mapped Address
 Handle 0x1401, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x001FDFFFFFF
-	Range Size: 4064 MB
+	Ending Address: 0x0017EFFFFFF
+	Range Size: 2032 MB
 	Physical Device Handle: 0x1101
 	Memory Array Mapped Address Handle: 0x1300
 	Partition Row Position: 1
-	Interleave Position: 1
-	Interleaved Data Depth: 1
 
 Handle 0x1402, DMI type 20, 19 bytes
 Memory Device Mapped Address
@@ -541,25 +534,17 @@ Memory Device Mapped Address
 	Interleave Position: 2
 	Interleaved Data Depth: 1
 
-Handle 0x1403, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FDFFFFFF
-	Range Size: 4064 MB
-	Physical Device Handle: 0x1103
-	Memory Array Mapped Address Handle: 0x1300
-	Partition Row Position: 1
-	Interleave Position: 2
-	Interleaved Data Depth: 1
+Handle 0x1403, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x1410, DMI type 126, 19 bytes
 Inactive
 
 Handle 0x1800, DMI type 24, 5 bytes
 Hardware Security
-	Power-On Password Status: Enabled
+	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
-	Administrator Password Status: Enabled
+	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x1900, DMI type 25, 9 bytes
@@ -697,13 +682,8 @@ OEM-specific Type
 		02 66 EF 10 17 02 66 F7 00 18 02 66 F7 08 44 02
 		52 BF 40 45 02 52 BF 00 FF FF 00 00 00
 
-Handle 0xD800, DMI type 216, 9 bytes
-OEM-specific Type
-	Header and Data:
-		D8 09 00 D8 01 02 01 F0 03
-	Strings:
-		Intel(r)Q33/Q35/G33 PCI Accelerated SVGA BIO
-		 1459 with 848x480 resolution added
+Handle 0xD800, DMI type 126, 9 bytes
+Inactive
 
 Handle 0xDD00, DMI type 221, 19 bytes
 OEM-specific Type

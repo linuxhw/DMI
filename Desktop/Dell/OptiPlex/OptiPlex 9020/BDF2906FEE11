@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-76 structures occupying 3546 bytes.
+75 structures occupying 3509 bytes.
 Table at 0x000EC400.
 
 Handle 0xDA00, DMI type 218, 251 bytes
@@ -540,28 +540,28 @@ Handle 0x0041, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x003E
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: Not Specified
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Samsung
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: [Empty]
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M378B1G73EB0-YK0  
-	Rank: 2
-	Configured Memory Speed: 1600 MT/s
+	Part Number: [Empty]
+	Rank: Unknown
+	Configured Memory Speed: Unknown
 
-Handle 0x0043, DMI type 19, 31 bytes
+Handle 0x0042, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x003E
 	Partition Width: 2
 
@@ -571,18 +571,7 @@ Memory Device Mapped Address
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x003F
-	Memory Array Mapped Address Handle: 0x0043
-	Partition Row Position: 1
-	Interleave Position: 1
-	Interleaved Data Depth: 1
-
-Handle 0x0042, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x0041
-	Memory Array Mapped Address Handle: 0x0043
+	Memory Array Mapped Address Handle: 0x0042
 	Partition Row Position: 1
 	Interleave Position: 1
 	Interleaved Data Depth: 1
@@ -758,7 +747,7 @@ OEM-specific Type
 Handle 0xD200, DMI type 210, 12 bytes
 OEM-specific Type
 	Header and Data:
-		D2 0C 00 D2 F8 03 04 03 06 80 04 03
+		D2 0C 00 D2 00 00 00 03 06 80 04 03
 
 Handle 0xD800, DMI type 216, 9 bytes
 OEM-specific Type

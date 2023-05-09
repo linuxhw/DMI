@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 56 structures occupying 3035 bytes.
@@ -111,6 +111,191 @@ BIOS Information
 		UEFI is supported
 	BIOS Revision: 0.5
 	Firmware Revision: 0.5
+
+Handle 0x001F, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
+	Physical Array Handle: 0x0007
+	Partition Width: 2
+
+Handle 0x001D, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x001A
+	Memory Array Mapped Address Handle: 0x001F
+	Partition Row Position: 2
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x001C, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x0007
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
+	Set: None
+	Locator: DIMM2
+	Bank Locator:  
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M471B1G73DB0-YK0  
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
+
+Handle 0x001B, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x001A
+	Memory Array Mapped Address Handle: 0x001F
+	Partition Row Position: 2
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x001A, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x0007
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
+	Set: None
+	Locator: DIMM1
+	Bank Locator:  
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M471B1G73DB0-YK0  
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
+
+Handle 0x0007, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 16 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 2
+
+Handle 0x0006, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: CPU Internal L3
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: 12-way Set-associative
+
+Handle 0x0005, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: CPU Internal L2
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x0004, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: CPU Internal L1
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 256 kB
+	Maximum Size: 256 kB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Other
+	Associativity: 8-way Set-associative
+
+Handle 0x002F, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: SOCKET 0
+	Type: Central Processor
+	Family: Core i7
+	Manufacturer: Intel
+	ID: C3 06 03 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 60, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		DS (Debug store)
+		ACPI (ACPI supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		SS (Self-snoop)
+		HTT (Multi-threading)
+		TM (Thermal monitor supported)
+		PBE (Pending break enabled)
+	Version: Intel(R) Core(TM) i7-4702HQ CPU @ 2.20GHz
+	Voltage: 1.2 V
+	External Clock: 100 MHz
+	Max Speed: 3800 MHz
+	Current Speed: 2200 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket rPGA988B
+	L1 Cache Handle: 0x0004
+	L2 Cache Handle: 0x0005
+	L3 Cache Handle: 0x0006
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Fill By OEM
+	Core Count: 4
+	Core Enabled: 4
+	Thread Count: 8
+	Characteristics:
+		64-bit capable
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -345,191 +530,6 @@ Temperature Probe
 	Tolerance: 0.5 deg C
 	Accuracy: Unknown
 	OEM-specific Information: 0x00000000
-
-Handle 0x002F, DMI type 4, 42 bytes
-Processor Information
-	Socket Designation: SOCKET 0
-	Type: Central Processor
-	Family: Core i7
-	Manufacturer: Intel
-	ID: C3 06 03 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 60, Stepping 3
-	Flags:
-		FPU (Floating-point unit on-chip)
-		VME (Virtual mode extension)
-		DE (Debugging extension)
-		PSE (Page size extension)
-		TSC (Time stamp counter)
-		MSR (Model specific registers)
-		PAE (Physical address extension)
-		MCE (Machine check exception)
-		CX8 (CMPXCHG8 instruction supported)
-		APIC (On-chip APIC hardware supported)
-		SEP (Fast system call)
-		MTRR (Memory type range registers)
-		PGE (Page global enable)
-		MCA (Machine check architecture)
-		CMOV (Conditional move instruction supported)
-		PAT (Page attribute table)
-		PSE-36 (36-bit page size extension)
-		CLFSH (CLFLUSH instruction supported)
-		DS (Debug store)
-		ACPI (ACPI supported)
-		MMX (MMX technology supported)
-		FXSR (FXSAVE and FXSTOR instructions supported)
-		SSE (Streaming SIMD extensions)
-		SSE2 (Streaming SIMD extensions 2)
-		SS (Self-snoop)
-		HTT (Multi-threading)
-		TM (Thermal monitor supported)
-		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i7-4702HQ CPU @ 2.20GHz
-	Voltage: 1.2 V
-	External Clock: 100 MHz
-	Max Speed: 3800 MHz
-	Current Speed: 2200 MHz
-	Status: Populated, Enabled
-	Upgrade: Socket rPGA988B
-	L1 Cache Handle: 0x0004
-	L2 Cache Handle: 0x0005
-	L3 Cache Handle: 0x0006
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Fill By OEM
-	Core Count: 4
-	Core Enabled: 4
-	Thread Count: 8
-	Characteristics:
-		64-bit capable
-
-Handle 0x0004, DMI type 7, 19 bytes
-Cache Information
-	Socket Designation: CPU Internal L1
-	Configuration: Enabled, Not Socketed, Level 1
-	Operational Mode: Write Back
-	Location: Internal
-	Installed Size: 256 kB
-	Maximum Size: 256 kB
-	Supported SRAM Types:
-		Unknown
-	Installed SRAM Type: Unknown
-	Speed: Unknown
-	Error Correction Type: Single-bit ECC
-	System Type: Other
-	Associativity: 8-way Set-associative
-
-Handle 0x0005, DMI type 7, 19 bytes
-Cache Information
-	Socket Designation: CPU Internal L2
-	Configuration: Enabled, Not Socketed, Level 2
-	Operational Mode: Write Back
-	Location: Internal
-	Installed Size: 1 MB
-	Maximum Size: 1 MB
-	Supported SRAM Types:
-		Unknown
-	Installed SRAM Type: Unknown
-	Speed: Unknown
-	Error Correction Type: Single-bit ECC
-	System Type: Unified
-	Associativity: 8-way Set-associative
-
-Handle 0x0006, DMI type 7, 19 bytes
-Cache Information
-	Socket Designation: CPU Internal L3
-	Configuration: Enabled, Not Socketed, Level 3
-	Operational Mode: Write Back
-	Location: Internal
-	Installed Size: 6 MB
-	Maximum Size: 6 MB
-	Supported SRAM Types:
-		Unknown
-	Installed SRAM Type: Unknown
-	Speed: Unknown
-	Error Correction Type: Single-bit ECC
-	System Type: Unified
-	Associativity: 12-way Set-associative
-
-Handle 0x0007, DMI type 16, 23 bytes
-Physical Memory Array
-	Location: System Board Or Motherboard
-	Use: System Memory
-	Error Correction Type: None
-	Maximum Capacity: 16 GB
-	Error Information Handle: Not Provided
-	Number Of Devices: 2
-
-Handle 0x001A, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x0007
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8 GB
-	Form Factor: SODIMM
-	Set: None
-	Locator: DIMM1
-	Bank Locator:  
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Samsung
-	Serial Number: --
-	Asset Tag: --
-	Part Number: M471B1G73DB0-YK0  
-	Rank: 2
-	Configured Memory Speed: 1600 MT/s
-
-Handle 0x001B, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x001A
-	Memory Array Mapped Address Handle: 0x001F
-	Partition Row Position: 2
-	Interleave Position: 1
-	Interleaved Data Depth: 1
-
-Handle 0x001C, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x0007
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8 GB
-	Form Factor: SODIMM
-	Set: None
-	Locator: DIMM2
-	Bank Locator:  
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Samsung
-	Serial Number: --
-	Asset Tag: --
-	Part Number: M471B1G73DB0-YK0  
-	Rank: 2
-	Configured Memory Speed: 1600 MT/s
-
-Handle 0x001D, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x001C
-	Memory Array Mapped Address Handle: 0x001F
-	Partition Row Position: 2
-	Interleave Position: 1
-	Interleaved Data Depth: 1
-
-Handle 0x001F, DMI type 19, 31 bytes
-Memory Array Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
-	Physical Array Handle: 0x0007
-	Partition Width: 2
 
 Handle 0x003B, DMI type 13, 22 bytes
 BIOS Language Information

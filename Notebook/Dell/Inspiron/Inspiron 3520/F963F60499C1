@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 46 structures occupying 2274 bytes.
 Table at 0x000EBAE0.
@@ -34,11 +35,11 @@ OEM-specific Type
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: A10
-	Release Date: 11/04/2013
+	Version: A12
+	Release Date: 05/31/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		MCA is supported
 		PCI is supported
@@ -63,8 +64,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.0
-	Firmware Revision: 1.0
+	BIOS Revision: 1.2
+	Firmware Revision: 1.2
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -81,7 +82,7 @@ Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: Dell Inc.
 	Product Name: 0G8TPV
-	Version: A10
+	Version: A12
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -209,7 +210,7 @@ OEM Strings
 	String 7: 7[]
 	String 8: 8[]
 	String 9: 9[]
-	String 10: 10[A10]
+	String 10: 10[A12]
 	String 11: 11[]
 	String 12: 12[]
 	String 13: 13[P18F]
@@ -262,15 +263,12 @@ Temperature Probe
 	Accuracy: Unknown
 	OEM-specific Information: 0x00000000
 
-Handle 0xB000, DMI type 176, 10 bytes
-OEM-specific Type
-	Header and Data:
-		B0 0A 00 B0 00 00 00 00 55 05
-
-Handle 0xB100, DMI type 177, 12 bytes
-OEM-specific Type
-	Header and Data:
-		B1 0C 00 B1 1A 0E 00 00 00 00 00 00
+Handle 0x002F, DMI type 13, 22 bytes
+BIOS Language Information
+	Language Description Format: Long
+	Installable Languages: 1
+		en|US|iso8859-1
+	Currently Installed Language: en|US|iso8859-1
 
 Handle 0x002E, DMI type 131, 64 bytes
 OEM-specific Type
@@ -280,12 +278,15 @@ OEM-specific Type
 		E0 04 00 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x002F, DMI type 13, 22 bytes
-BIOS Language Information
-	Language Description Format: Long
-	Installable Languages: 1
-		en|US|iso8859-1
-	Currently Installed Language: en|US|iso8859-1
+Handle 0xB000, DMI type 176, 10 bytes
+OEM-specific Type
+	Header and Data:
+		B0 0A 00 B0 00 00 00 00 55 05
+
+Handle 0xB100, DMI type 177, 12 bytes
+OEM-specific Type
+	Header and Data:
+		B1 0C 00 B1 1A 0E 00 00 00 00 00 00
 
 Handle 0x001C, DMI type 208, 12 bytes
 OEM-specific Type
@@ -385,8 +386,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -433,7 +434,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i3-3110M CPU @ 2.40GHz
-	Voltage: 11.2 V
+	Voltage: 10.2 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
 	Current Speed: 2400 MHz
@@ -466,20 +467,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM_A
 	Bank Locator: DIMM_A
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M471B5273DH0-CK0  
 	Rank: 2
-	Configured Clock Speed: 1333 MHz
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x001A, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -498,20 +499,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM_B
 	Bank Locator: DIMM_B
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: 830B
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M2S4G64CB8HG5N-CG 
 	Rank: 2
-	Configured Clock Speed: 1333 MHz
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0024, DMI type 20, 35 bytes
 Memory Device Mapped Address

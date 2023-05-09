@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-70 structures occupying 2761 bytes.
+70 structures occupying 2794 bytes.
 Table at 0xBAE9C000.
 
 Handle 0x0000, DMI type 134, 16 bytes
@@ -153,22 +153,22 @@ Handle 0x0008, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0007
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: 859B
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
+	Part Number: CT102464BF1339.M16
 	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0009, DMI type 17, 34 bytes
 Memory Device
@@ -236,8 +236,8 @@ Memory Device
 Handle 0x000C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x004FFFFFFFF
-	Range Size: 20 GB
+	Ending Address: 0x006FFFFFFFF
+	Range Size: 28 GB
 	Physical Array Handle: 0x0007
 	Partition Width: 4
 
@@ -518,7 +518,7 @@ OEM-specific Type
 Handle 0x0036, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 36 00 35 00 00 00 08 00 00 00 00 00 45 00
+		83 40 36 00 3F 00 00 00 08 00 00 00 00 00 45 00
 		F8 00 55 1E FF FF FF FF 09 C0 00 00 01 00 08 00
 		BA 0B 48 00 00 00 00 00 C8 00 02 15 00 00 00 00
 		00 00 00 00 62 00 00 00 76 50 72 6F 00 00 00 00
@@ -541,14 +541,14 @@ OEM-specific Type
 
 Handle 0x0039, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 82 bytes
+	Area Length: 98 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000004
+	Change Token: 0x00000005
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -563,9 +563,9 @@ System Event Log
 Handle 0x003A, DMI type 140, 67 bytes
 OEM-specific Type
 	Header and Data:
-		8C 43 3A 00 4C 45 4E 4F 56 4F 0B 00 01 FA CE 95
-		AE 3C 4F 2D 47 E2 5E 05 5F 77 CC BE E9 01 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		8C 43 3A 00 4C 45 4E 4F 56 4F 0B 00 01 86 3C 32
+		B0 13 D6 FE 53 AE 2E 1F 79 75 C5 94 20 01 00 FA
+		CE 95 AE 3C 4F 2D 47 E2 5E 05 5F 77 CC BE E9 01
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00
 
@@ -612,7 +612,7 @@ Hardware Security
 Handle 0x0041, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 41 00 01 D8 36
+		84 07 41 00 01 C0 36
 
 Handle 0x0042, DMI type 135, 18 bytes
 OEM-specific Type

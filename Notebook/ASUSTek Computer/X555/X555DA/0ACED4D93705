@@ -1,8 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
-SMBIOS 3.0 present.
-22 structures occupying 1253 bytes.
-Table at 0x000EBF80.
+SMBIOS 3.0.0 present.
+Table at 0xDE4BB000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -139,15 +138,15 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 8 GB
+	Maximum Capacity: 12 GB
 	Error Information Handle: Not Provided
 	Number Of Devices: 4
 
 Handle 0x0012, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x0011
 	Partition Width: 255
 
@@ -205,7 +204,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -213,11 +212,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 1600 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: <BAD INDEX>
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT451S6BFR8A-PB  
-	Rank: 1
+	Part Number: TEAMGROUP-SD3-1600
+	Rank: 2
 	Configured Memory Speed: 1333 MT/s
 	Minimum Voltage: 1.25 V
 	Maximum Voltage: 1.35 V
@@ -268,8 +267,8 @@ Memory Device Mapped Address
 Handle 0x0019, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0015
 	Memory Array Mapped Address Handle: 0x0012
 	Partition Row Position: Unknown
@@ -278,8 +277,8 @@ Memory Device Mapped Address
 
 Handle 0x001A, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0016
 	Memory Array Mapped Address Handle: 0x0012

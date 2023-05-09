@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.3 present.
-44 structures occupying 1755 bytes.
+44 structures occupying 1752 bytes.
 Table at 0x000F0100.
 
 Handle 0x0000, DMI type 0, 20 bytes
@@ -142,8 +142,8 @@ Memory Module Information
 	Bank Connections: 1 2
 	Current Speed: 195 ns
 	Type: Other Unknown EDO
-	Installed Size: 1024 MB (Double-bank Connection)
-	Enabled Size: 1024 MB (Double-bank Connection)
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -152,8 +152,8 @@ Memory Module Information
 	Bank Connections: 3 4
 	Current Speed: 195 ns
 	Type: Other Unknown EDO
-	Installed Size: 1024 MB (Double-bank Connection)
-	Enabled Size: 1024 MB (Double-bank Connection)
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0008, DMI type 6, 12 bytes
@@ -172,8 +172,8 @@ Memory Module Information
 	Bank Connections: 7 8
 	Current Speed: 195 ns
 	Type: Other Unknown EDO
-	Installed Size: 2048 MB (Double-bank Connection)
-	Enabled Size: 2048 MB (Double-bank Connection)
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x000A, DMI type 7, 19 bytes
@@ -300,7 +300,7 @@ Handle 0x0015, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: PS/2 Mouse
 	Internal Connector Type: PS/2
-	External Reference Designator: No Detected
+	External Reference Designator: Detected
 	External Connector Type: PS/2
 	Port Type: Mouse Port
 
@@ -398,7 +398,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
@@ -417,7 +417,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1
@@ -455,7 +455,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: A3
@@ -479,25 +479,25 @@ Memory Array Mapped Address
 Handle 0x0023, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x0022
 	Partition Row Position: 1
 
 Handle 0x0024, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 1 GB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x001F
 	Memory Array Mapped Address Handle: 0x0022
 	Partition Row Position: 1
 
 Handle 0x0025, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x0017FFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0020
 	Memory Array Mapped Address Handle: 0x0022
@@ -505,9 +505,9 @@ Memory Device Mapped Address
 
 Handle 0x0026, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00000000000
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
 	Physical Device Handle: 0x0021
 	Memory Array Mapped Address Handle: 0x0022
 	Partition Row Position: 1
@@ -524,17 +524,17 @@ Unknown Type
 		00 00 02 00 00 00 00 00 00 00 03 00 00 00 00 00
 		00 00 04 00 00 00 00 00 00 00 05 00 00 00 00 00
 		00 00 06 00 00 00 00 00 00 00 07 00 00 00 01 40
-		00 C0 44 00 10 0A 00 00 00 00 00 00 FF 00 ED 02
-		00 0C 01 00 00 01 01 00 40 01 01 00 00 00 01 00
-		80 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 E0 3F 38 00 E0 3F 78 00 00 00 00 00 00 00
-		00 00 46 00 00 00 00 00 00 00 52 00 00 00 00 00
-		00 00 24 C2 6A 0C 20 03 13 01 30 0C 01 00 5B 80
-		10 77 88 88 FF FE 13 12 12 13 12 12 12 13 13 00
-		00 00 13 14 14 14 14 14 13 14 13 00 00 00 2A 2F
-		00 00 14 13 13 13 13 13 13 14 14 12 13 14 13 14
-		14 13 12 12 2A 2E 00 00 22 33 11 10 20 25 20 00
-		22 33 11 10 20 25 20 00 00 00 00 00 00 00 00
+		00 C0 44 00 10 0A 00 00 00 00 00 00 FF 00 FD 02
+		00 5D 01 00 00 00 01 00 40 00 01 00 80 00 01 00
+		C0 00 01 00 00 01 01 00 40 01 00 00 00 00 00 00
+		00 00 E0 3F 38 00 E0 3F 38 00 E0 3F 38 00 00 00
+		00 00 46 00 00 00 00 00 00 00 55 05 00 00 00 00
+		00 00 35 F3 7E 0C 20 03 23 09 10 04 01 00 5B 80
+		10 77 88 88 FF FE 13 13 13 14 13 12 13 13 13 00
+		00 00 14 14 14 14 14 14 13 13 14 00 00 00 2A 2E
+		2A 2E 14 14 14 14 15 14 14 14 14 12 13 13 12 14
+		14 13 13 12 2D 00 2D 00 22 33 11 10 20 25 20 00
+		22 32 11 20 20 25 20 00 00 00 00 00 00 00 00
 	Strings:
 		 
 

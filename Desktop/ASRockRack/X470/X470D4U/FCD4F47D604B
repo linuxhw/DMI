@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x000E6DA0.
@@ -6,8 +6,8 @@ Table at 0x000E6DA0.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: P3.30
-	Release Date: 11/04/2019
+	Version: P3.50
+	Release Date: 11/02/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -49,8 +49,8 @@ Base Board Information
 	Product Name: X470D4U
 	Version:                       
 	Serial Number: --
-	271882FD79060B21C43F805A2DE81148                       
-	Features:
+	Asset Tag: --
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:                       
@@ -61,7 +61,7 @@ Base Board Information
 Handle 0x0003, DMI type 3, 22 bytes
 Chassis Information
 	Manufacturer: To Be Filled By O.E.M.
-	Type: Desktop
+	Type: Unknown
 	Lock: Not Present
 	Version: To Be Filled By O.E.M.
 	Serial Number: --
@@ -188,7 +188,7 @@ Handle 0x000D, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x000E, DMI type 18, 23 bytes
+Handle 0x0012, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -198,32 +198,32 @@ Handle 0x000E, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x000F, DMI type 16, 23 bytes
+Handle 0x0013, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: Multi-bit ECC
 	Maximum Capacity: 128 GB
-	Error Information Handle: 0x000E
+	Error Information Handle: 0x0012
 	Number Of Devices: 4
 
-Handle 0x0010, DMI type 19, 31 bytes
+Handle 0x0014, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000EFFFFFFF
 	Range Size: 3840 MB
-	Physical Array Handle: 0x000F
-	Partition Width: 4
+	Physical Array Handle: 0x0013
+	Partition Width: 2
 
-Handle 0x0011, DMI type 19, 31 bytes
+Handle 0x0015, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
 	Ending Address: 0x0040FFFFFFF
 	Range Size: 12544 MB
-	Physical Array Handle: 0x000F
-	Partition Width: 4
+	Physical Array Handle: 0x0013
+	Partition Width: 2
 
-Handle 0x0012, DMI type 7, 27 bytes
+Handle 0x0016, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1 - Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -239,7 +239,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0013, DMI type 7, 27 bytes
+Handle 0x0017, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L2 - Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -255,7 +255,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0014, DMI type 7, 27 bytes
+Handle 0x0018, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L3 - Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -271,7 +271,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0015, DMI type 4, 48 bytes
+Handle 0x0019, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: CPU1
 	Type: Central Processor
@@ -304,15 +304,15 @@ Processor Information
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
 	Version: AMD Ryzen 5 3600 6-Core Processor              
-	Voltage: 1.3 V
+	Voltage: 1.1 V
 	External Clock: 100 MHz
 	Max Speed: 4200 MHz
 	Current Speed: 3600 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
-	L1 Cache Handle: 0x0012
-	L2 Cache Handle: 0x0013
-	L3 Cache Handle: 0x0014
+	L1 Cache Handle: 0x0016
+	L2 Cache Handle: 0x0017
+	L3 Cache Handle: 0x0018
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Unknown
@@ -327,7 +327,7 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0016, DMI type 18, 23 bytes
+Handle 0x001A, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -337,10 +337,10 @@ Handle 0x0016, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0017, DMI type 17, 84 bytes
+Handle 0x001B, DMI type 17, 84 bytes
 Memory Device
-	Array Handle: 0x000F
-	Error Information Handle: 0x0016
+	Array Handle: 0x0013
+	Error Information Handle: 0x001A
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
@@ -350,29 +350,8 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
-	Firmware Version: Unknown
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
-Handle 0x0018, DMI type 18, 23 bytes
+Handle 0x001C, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -382,10 +361,10 @@ Handle 0x0018, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0019, DMI type 17, 84 bytes
+Handle 0x001D, DMI type 17, 84 bytes
 Memory Device
-	Array Handle: 0x000F
-	Error Information Handle: 0x0018
+	Array Handle: 0x0013
+	Error Information Handle: 0x001C
 	Total Width: 128 bits
 	Data Width: 64 bits
 	Size: 8 GB
@@ -413,22 +392,22 @@ Memory Device
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 kB
+	Volatile Size: 8 GB
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x001A, DMI type 20, 35 bytes
+Handle 0x001E, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
-	Physical Device Handle: 0x0019
-	Memory Array Mapped Address Handle: 0x0011
+	Physical Device Handle: 0x001D
+	Memory Array Mapped Address Handle: 0x0015
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x001B, DMI type 18, 23 bytes
+Handle 0x001F, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -438,10 +417,10 @@ Handle 0x001B, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x001C, DMI type 17, 84 bytes
+Handle 0x0020, DMI type 17, 84 bytes
 Memory Device
-	Array Handle: 0x000F
-	Error Information Handle: 0x001B
+	Array Handle: 0x0013
+	Error Information Handle: 0x001F
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
@@ -451,29 +430,8 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
-	Firmware Version: Unknown
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
-Handle 0x001D, DMI type 18, 23 bytes
+Handle 0x0021, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -483,10 +441,10 @@ Handle 0x001D, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x001E, DMI type 17, 84 bytes
+Handle 0x0022, DMI type 17, 84 bytes
 Memory Device
-	Array Handle: 0x000F
-	Error Information Handle: 0x001D
+	Array Handle: 0x0013
+	Error Information Handle: 0x0021
 	Total Width: 128 bits
 	Data Width: 64 bits
 	Size: 8 GB
@@ -514,28 +472,28 @@ Memory Device
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 kB
+	Volatile Size: 8 GB
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x001F, DMI type 20, 35 bytes
+Handle 0x0023, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
-	Physical Device Handle: 0x001E
-	Memory Array Mapped Address Handle: 0x0011
+	Physical Device Handle: 0x0022
+	Memory Array Mapped Address Handle: 0x0015
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0020, DMI type 13, 22 bytes
+Handle 0x0024, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0021, DMI type 127, 4 bytes
+Handle 0x0025, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 28 structures occupying 1094 bytes.
 Table at 0x000DC010.
@@ -10,7 +11,7 @@ BIOS Information
 	Release Date: 11/15/2007
 	Address: 0xE5880
 	Runtime Size: 108416 bytes
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -104,7 +105,7 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 2
 	Operational Mode: Write Back
 	Location: External
-	Installed Size: 1024 kB
+	Installed Size: 1 MB
 	Maximum Size: 512 kB
 	Supported SRAM Types:
 		Burst
@@ -207,9 +208,9 @@ Handle 0x0011, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0010
 	Error Information Handle: No Error
-	Total Width: 32 bits
-	Data Width: 32 bits
-	Size: 2048 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: SODIMM
 	Set: 1
 	Locator: M1
@@ -226,9 +227,9 @@ Handle 0x0012, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0010
 	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 32 bits
+	Data Width: 32 bits
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: 1
 	Locator: M2
@@ -252,8 +253,8 @@ Memory Array Mapped Address
 Handle 0x0014, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
 	Physical Device Handle: 0x0011
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown
@@ -262,9 +263,9 @@ Memory Device Mapped Address
 
 Handle 0x0015, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x0007FFFFC00
+	Starting Address: 0x00000000000
 	Ending Address: 0x0007FFFFFFF
-	Range Size: 1 kB
+	Range Size: 2 GB
 	Physical Device Handle: 0x0012
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown

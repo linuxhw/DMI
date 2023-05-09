@@ -148,8 +148,8 @@ Memory Module Information
 	Bank Connections: 1
 	Current Speed: 64 ns
 	Type: Other Unknown EDO
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 4096 MB (Double-bank Connection)
+	Enabled Size: 4096 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -158,8 +158,8 @@ Memory Module Information
 	Bank Connections: 2
 	Current Speed: 64 ns
 	Type: Other Unknown EDO
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x0008, DMI type 6, 12 bytes
@@ -178,8 +178,8 @@ Memory Module Information
 	Bank Connections: 4
 	Current Speed: 64 ns
 	Type: Other Unknown EDO
-	Installed Size: 4096 MB (Double-bank Connection)
-	Enabled Size: 4096 MB (Double-bank Connection)
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 7, 19 bytes
@@ -394,7 +394,7 @@ Handle 0x0020, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI
 	Type: 32-bit PCI
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 6
 	Characteristics:
@@ -476,7 +476,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
@@ -495,7 +495,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: A1
@@ -557,8 +557,8 @@ Memory Array Mapped Address
 Handle 0x002C, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0027
 	Memory Array Mapped Address Handle: 0x002B
 	Partition Row Position: 1
@@ -566,8 +566,8 @@ Memory Device Mapped Address
 Handle 0x002D, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
 	Physical Device Handle: 0x0028
 	Memory Array Mapped Address Handle: 0x002B
 	Partition Row Position: 1

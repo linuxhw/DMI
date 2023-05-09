@@ -1,17 +1,17 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-16 structures occupying 712 bytes.
-Table at 0x000E6E60.
+17 structures occupying 733 bytes.
+Table at 0xAAEBC000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Insyde Corp.
-	Version: R0230DA
-	Release Date: 02/24/2015
+	Version: R0250DA
+	Release Date: 07/19/2016
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 3072 kB
+	ROM Size: 3 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -29,8 +29,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.30
-	Firmware Revision: 2.30
+	BIOS Revision: 2.50
+	Firmware Revision: 2.50
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -166,8 +166,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -199,7 +199,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: SODIMM1
@@ -211,21 +211,21 @@ Handle 0x000B, DMI type 17, 21 bytes
 Memory Device
 	Array Handle: 0x0009
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: SODIMM2
 	Bank Locator: Bank 1
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Unknown
 
 Handle 0x000C, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0009
 	Partition Width: 2
 
@@ -240,10 +240,21 @@ Memory Device Mapped Address
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x000E, DMI type 32, 20 bytes
+Handle 0x000E, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x000B
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x000F, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x000F, DMI type 127, 4 bytes
+Handle 0x0010, DMI type 127, 4 bytes
 End Of Table
 

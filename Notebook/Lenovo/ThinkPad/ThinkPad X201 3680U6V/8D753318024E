@@ -1,7 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-78 structures occupying 2863 bytes.
+78 structures occupying 2862 bytes.
 Table at 0x000E0010.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 10/11/2012
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		PC Card (PCMCIA) is supported
@@ -134,8 +134,8 @@ Memory Module Information
 	Bank Connections: 0 1
 	Current Speed: 43 ns
 	Type: DIMM SDRAM
-	Installed Size: 4096 MB (Double-bank Connection)
-	Enabled Size: 4096 MB (Double-bank Connection)
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
@@ -190,8 +190,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 8192 kB
+	Installed Size: 3 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -394,18 +394,18 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: Bank 0/1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1334 MT/s
-	Manufacturer: 80CE            
+	Speed: 1600 MT/s
+	Manufacturer: 02FE            
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5273CH0-CH9  
+	Part Number: EBJ20UF8BDU0-GN-F 
 	Rank: Unknown
 
 Handle 0x002C, DMI type 17, 28 bytes
@@ -414,18 +414,18 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 2
 	Bank Locator: Bank 2/3
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1334 MT/s
-	Manufacturer: 830B            
+	Speed: 1600 MT/s
+	Manufacturer: 02FE            
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M2S2G64CB88G5N-CG 
+	Part Number: EBJ20UF8BDU0-GN-F 
 	Rank: Unknown
 
 Handle 0x002D, DMI type 18, 23 bytes
@@ -441,24 +441,24 @@ Handle 0x002D, DMI type 18, 23 bytes
 Handle 0x002E, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x002A
 	Partition Width: 2
 
 Handle 0x002F, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x002B
 	Memory Array Mapped Address Handle: 0x002E
 	Partition Row Position: 1
 
 Handle 0x0030, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x0017FFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x002C
 	Memory Array Mapped Address Handle: 0x002E
@@ -476,14 +476,14 @@ Inactive
 Handle 0x0033, DMI type 22, 26 bytes
 Portable Battery
 	Location: Rear
-	Manufacturer: SANYO
-	Name: 45N1171
-	Design Capacity: 62640 mWh
+	Manufacturer: SONY
+	Name: 42T4649
+	Design Capacity: 71280 mWh
 	Design Voltage: 10800 mV
 	SBDS Version: 03.01
 	Maximum Error: Unknown
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 2014-04-17
+	SBDS Manufacture Date: 2020-04-17
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
@@ -512,12 +512,9 @@ OEM-specific Type
 		KEYPTRS 23h
 
 Handle 0x0038, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 38 00 01 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: No
 
 Handle 0x0039, DMI type 132, 7 bytes
 OEM-specific Type
@@ -570,9 +567,8 @@ OEM-specific Type
 		02 00 03 01 02 00 05 01 02 00 06 01 02 00
 
 Handle 0x0041, DMI type 135, 10 bytes
-OEM-specific Type
-	Header and Data:
-		87 0A 41 00 54 50 07 03 01 01
+ThinkPad Device Presence Detection
+	Fingerprint Reader: Present
 
 Handle 0x0042, DMI type 136, 6 bytes
 OEM-specific Type
@@ -582,8 +578,8 @@ OEM-specific Type
 Handle 0x0043, DMI type 140, 67 bytes
 OEM-specific Type
 	Header and Data:
-		8C 43 43 00 4C 45 4E 4F 56 4F 0B 00 01 82 3C F2
-		0C 83 2D 12 51 66 66 D4 36 A0 58 68 5C 01 00 00
+		8C 43 43 00 4C 45 4E 4F 56 4F 0B 00 01 A4 AD DD
+		44 02 C1 F9 65 49 05 6C EB C4 02 CF 13 01 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00
@@ -591,7 +587,7 @@ OEM-specific Type
 Handle 0x0044, DMI type 140, 47 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2F 44 00 4C 45 4E 4F 56 4F 0B 01 01 09 00 8E
+		8C 2F 44 00 4C 45 4E 4F 56 4F 0B 01 01 08 00 8E
 		FD 3D 3A D6 16 97 5F CF 2A 19 4D 9E 7A C3 55 00
 		00 00 00 10 00 10 00 10 01 D0 00 20 01 00 01
 
@@ -644,7 +640,7 @@ OEM-specific Type
 Handle 0x004C, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 4C 00 14 00 00 00 00 00 00 00 00 00 00 00
+		83 40 4C 00 35 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 07 3B 00 00 00 00 09 41 6C 06 01 00 06 00
 		1C 04 0A 00 01 00 01 02 C8 00 EA 10 00 00 00 00
 		00 00 00 00 3E 00 00 00 76 50 72 6F 00 00 00 00

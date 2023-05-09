@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-48 structures occupying 1840 bytes.
+48 structures occupying 1803 bytes.
 Table at 0x000EB460.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -355,15 +355,15 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 8 GB
+	Maximum Capacity: 16 GB
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
 Handle 0x002D, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x002C
 	Partition Width: 255
 
@@ -373,7 +373,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -381,11 +381,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 800 MT/s
-	Manufacturer: Kingston       
+	Manufacturer: <BAD INDEX>
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HP16D3LS1KFG/4G   
-	Rank: 1
+	Part Number: TIMETEC-SD3-1600
+	Rank: 2
 	Configured Memory Speed: 667 MT/s
 
 Handle 0x002F, DMI type 17, 34 bytes
@@ -394,7 +394,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 1
@@ -402,18 +402,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 800 MT/s
-	Manufacturer: Kingston       
+	Manufacturer: <BAD INDEX>
 	Serial Number: --
 	Asset Tag: --
-	Part Number: MSI16D3LS1KFG/4G  
-	Rank: 1
+	Part Number: TIMETEC-SD3-1600
+	Rank: 2
 	Configured Memory Speed: 667 MT/s
 
 Handle 0x0030, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x002E
 	Memory Array Mapped Address Handle: 0x002D
 	Partition Row Position: Unknown
@@ -422,9 +422,9 @@ Memory Device Mapped Address
 
 Handle 0x0031, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x002F
 	Memory Array Mapped Address Handle: 0x002D
 	Partition Row Position: Unknown

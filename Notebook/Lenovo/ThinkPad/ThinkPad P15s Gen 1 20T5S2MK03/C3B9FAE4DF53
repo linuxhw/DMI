@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x7CB9F000.
@@ -115,8 +115,8 @@ OEM-specific Type
 Handle 0x0007, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 07 00 03 01 00 09 00 3B 30 00 02 00 00 00
-		00 EA 00 03 00 01 08 00 00 00
+		DD 1A 07 00 03 01 00 09 00 A0 10 00 02 00 00 00
+		00 F0 00 03 00 01 08 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -125,8 +125,8 @@ OEM-specific Type
 Handle 0x0008, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 08 00 03 01 00 09 00 3B 30 00 02 00 0E 00
-		00 01 00 03 04 0E 00 30 45 06
+		DD 1A 08 00 03 01 00 09 00 A0 10 00 02 00 0E 00
+		00 04 00 03 04 0E 01 43 FE 07
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -136,7 +136,7 @@ OEM-specific Type
 Handle 0x0009, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 09 00 07 01 00 09 00 3B 30 00 02 03 FF FF
+		DD 36 09 00 07 01 00 09 00 A0 10 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
 		00 06 00 02 0A 00 00 00 07 00 17 FF FF FF FF 08
 		00 00 FF FF FF FF
@@ -153,8 +153,8 @@ OEM-specific Type
 Handle 0x000A, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 0A 00 07 01 00 09 00 3B 30 00 02 00 00 00
-		00 4A 00 03 00 09 00 3B 30 00 04 05 FF FF FF FF
+		DD 36 0A 00 07 01 00 09 00 A0 10 00 02 00 00 00
+		00 55 00 03 00 09 00 A0 10 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 0C 00 07 00 00 00 00 0C 00 08
 		00 FF FF FF FF FF
 	Strings:
@@ -291,8 +291,8 @@ OEM-specific Type
 Handle 0x0011, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: N2XET31W (1.21 )
-	Release Date: 06/17/2021
+	Version: N2XET38W (1.28 )
+	Release Date: 01/18/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -315,8 +315,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.21
-	Firmware Revision: 1.10
+	BIOS Revision: 1.28
+	Firmware Revision: 1.15
 
 Handle 0x0012, DMI type 1, 27 bytes
 System Information
@@ -489,8 +489,8 @@ OEM-specific Type
 	Header and Data:
 		8C 0F 2B 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
 	Strings:
-		1.21 
-		1.21 
+		1.28 
+		1.28 
 
 Handle 0x002C, DMI type 133, 5 bytes
 OEM-specific Type
@@ -514,9 +514,9 @@ OEM-specific Type
 Handle 0x002F, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 2F 00 3F 00 00 00 0E 00 00 00 00 00 01 00
-		F8 00 84 02 00 00 00 00 09 C0 00 00 00 00 0E 00
-		45 06 30 00 00 00 00 00 FE 00 4E 0D 00 00 00 00
+		83 40 2F 00 3F 00 00 00 0E 00 00 00 00 00 04 00
+		F8 00 84 02 00 00 00 00 09 C0 00 00 01 00 0E 00
+		FE 07 43 00 00 00 00 00 FE 00 4E 0D 00 00 00 00
 		00 00 00 00 E6 01 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0030, DMI type 24, 5 bytes
@@ -609,7 +609,7 @@ System Event Log
 Handle 0x003A, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3A 00 54 48 4E 4B 00 00 00 00 00 00 0B 00
+		8D 12 3A 00 54 48 4E 4B 00 00 00 00 00 00 2F 09
 		00 00
 
 Handle 0x003B, DMI type 141, 18 bytes
@@ -621,20 +621,20 @@ OEM-specific Type
 Handle 0x003C, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3C 00 54 48 4E 4B 00 00 30 00 00 00 29 00
+		8D 12 3C 00 54 48 4E 4B 00 00 30 00 00 00 F4 00
 		00 00
 
 Handle 0x003D, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3D 00 54 48 4E 4B 00 00 40 00 00 00 02 00
+		8D 12 3D 00 54 48 4E 4B 00 00 40 00 00 00 50 00
 		00 00
 
 Handle 0x003E, DMI type 141, 30 bytes
 OEM-specific Type
 	Header and Data:
-		8D 1E 3E 00 54 48 4E 4B 00 00 50 00 00 00 23 18
-		49 00 00 00 00 00 EF 7C 80 00 00 00 00 00
+		8D 1E 3E 00 54 48 4E 4B 00 00 50 00 00 00 A2 AD
+		30 04 00 00 00 00 82 BE 76 06 00 00 00 00
 
 Handle 0x003F, DMI type 140, 19 bytes
 OEM-specific Type
@@ -652,12 +652,12 @@ Handle 0x0041, DMI type 140, 23 bytes
 OEM-specific Type
 	Header and Data:
 		8C 17 41 00 4C 45 4E 4F 56 4F 0B 06 01 CB 06 51
-		F4 02 60 00 00 00 00
+		B4 03 60 00 00 00 00
 
 Handle 0x0042, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: N2XHT20W
-	Release Date: 04/23/2021
+	Version ID: N2XHT25W
+	Release Date: 08/04/2022
 
 Handle 0x0043, DMI type 140, 43 bytes
 OEM-specific Type

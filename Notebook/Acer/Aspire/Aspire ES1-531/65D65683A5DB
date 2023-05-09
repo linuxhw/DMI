@@ -1,17 +1,16 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
-SMBIOS 2.8 present.
-20 structures occupying 1189 bytes.
-Table at 0x75DCD000.
+SMBIOS 3.0.0 present.
+Table at 0x7664B000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Insyde Corp.
-	Version: V1.16
-	Release Date: 02/26/2016
+	Version: V1.22
+	Release Date: 11/30/2016
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -32,28 +31,28 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.6
-	Firmware Revision: 1.4
+	BIOS Revision: 1.22
+	Firmware Revision: 1.7
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Acer
 	Product Name: Aspire ES1-531
-	Version: V1.16
+	Version: V1.22
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
-	SKU Number: Aspire ES1-531_1012_1.16
+	SKU Number: Aspire ES1-531_1012_1.22
 	Family: BSW
 
 Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: Acer
 	Product Name: Aspire ES1-531
-	Version: V1.16
+	Version: V1.22
 	Serial Number: --
 	Asset Tag: --
-	Features:
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Type2 - Board Chassis Location
@@ -66,10 +65,10 @@ Chassis Information
 	Manufacturer: Acer
 	Type: Notebook
 	Lock: Not Present
-	Version: V1.16
+	Version: V1.22
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -79,7 +78,7 @@ Chassis Information
 	Contained Elements: 0
 	SKU Number: <BAD INDEX>
 
-Handle 0x0004, DMI type 4, 42 bytes
+Handle 0x0004, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: CHV
 	Type: Central Processor
@@ -177,8 +176,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -221,7 +220,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 8 bits
 	Data Width: 8 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -232,9 +231,9 @@ Memory Device
 	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT451S6BFR8A-PB  
+	Part Number: HMT41GS6BFR8A-PB  
 	Rank: Unknown
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: Unknown
@@ -242,16 +241,16 @@ Memory Device
 Handle 0x000D, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x000B
 	Partition Width: 2
 
 Handle 0x000E, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x000C
 	Memory Array Mapped Address Handle: 0x000D
 	Partition Row Position: Unknown

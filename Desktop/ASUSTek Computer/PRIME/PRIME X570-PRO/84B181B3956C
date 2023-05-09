@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0x000E6F40.
+Table at 0xCB7E6000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 3602
-	Release Date: 03/05/2021
+	Version: 4204
+	Release Date: 02/24/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -443,27 +443,27 @@ Management Device
 
 Handle 0x0032, DMI type 40, 50 bytes
 Additional Information 1
-	Referenced Handle: 0x00a1
+	Referenced Handle: 0x002d
 	Referenced Offset: 0x01
 	String: To Be Filled By O.E.M. 1
 	Value: 0x00000000
 Additional Information 2
-	Referenced Handle: 0x0011
+	Referenced Handle: 0x0001
 	Referenced Offset: 0x0f
 	String: Not Specified
 	Value: 0x0000001e
 Additional Information 3
-	Referenced Handle: 0x0072
+	Referenced Handle: 0x003b
 	Referenced Offset: 0x01
 	String: To Be Filled By O.E.M. 3
 	Value: 0x00000000
 Additional Information 4
-	Referenced Handle: 0x0011
+	Referenced Handle: 0x0001
 	Referenced Offset: 0x1a
 	String: PRODUCT_LINE
 	Value: 0x00000000
 Additional Information 5
-	Referenced Handle: 0x0011
+	Referenced Handle: 0x0001
 	Referenced Offset: 0x19
 	String: PRODUCT_SKU
 	Value: 0x00000000
@@ -485,7 +485,7 @@ Handle 0x0035, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.56
+	Firmware Revision: 3.77
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -521,8 +521,8 @@ Memory Array Mapped Address
 Handle 0x0039, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0102FFFFFFF
-	Range Size: 62208 MB
+	Ending Address: 0x0202FFFFFFF
+	Range Size: 127744 MB
 	Physical Array Handle: 0x0037
 	Partition Width: 4
 
@@ -610,7 +610,7 @@ Processor Information
 	Voltage: 1.1 V
 	External Clock: 100 MHz
 	Max Speed: 4950 MHz
-	Current Speed: 4300 MHz
+	Current Speed: 4000 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
 	L1 Cache Handle: 0x003A
@@ -646,40 +646,40 @@ Memory Device
 	Error Information Handle: 0x003E
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A1
 	Bank Locator: BANK 0
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
-	Manufacturer: Corsair
+	Speed: 3600 MT/s
+	Manufacturer: G-Skill
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMK32GX4M2E3200C16  
+	Part Number: F4-3600C18-32GTZN
 	Rank: 2
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 3600 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 3, Hex 0x9E
+	Module Manufacturer ID: Bank 5, Hex 0xCD
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 16 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0040, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 64 GB
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
 	Physical Device Handle: 0x003F
 	Memory Array Mapped Address Handle: 0x0039
 	Partition Row Position: Unknown
@@ -702,40 +702,40 @@ Memory Device
 	Error Information Handle: 0x0041
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A2
 	Bank Locator: BANK 1
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
-	Manufacturer: Patriot
+	Speed: 3600 MT/s
+	Manufacturer: G-Skill
 	Serial Number: --
 	Asset Tag: --
-	Part Number: PSD416G320081
-	Rank: 1
-	Configured Memory Speed: 3200 MT/s
+	Part Number: F4-3600C18-32GTZN
+	Rank: 2
+	Configured Memory Speed: 3600 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 6, Hex 0x02
+	Module Manufacturer ID: Bank 5, Hex 0xCD
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 16 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0043, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 64 GB
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
 	Physical Device Handle: 0x0042
 	Memory Array Mapped Address Handle: 0x0039
 	Partition Row Position: Unknown
@@ -758,40 +758,40 @@ Memory Device
 	Error Information Handle: 0x0044
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B1
 	Bank Locator: BANK 2
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
-	Manufacturer: Corsair
+	Speed: 3600 MT/s
+	Manufacturer: G-Skill
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMK32GX4M2E3200C16  
+	Part Number: F4-3600C18-32GTZN
 	Rank: 2
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 3600 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 3, Hex 0x9E
+	Module Manufacturer ID: Bank 5, Hex 0xCD
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 16 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0046, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 64 GB
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
 	Physical Device Handle: 0x0045
 	Memory Array Mapped Address Handle: 0x0039
 	Partition Row Position: Unknown
@@ -814,40 +814,40 @@ Memory Device
 	Error Information Handle: 0x0047
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B2
 	Bank Locator: BANK 3
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
-	Manufacturer: Patriot
+	Speed: 3600 MT/s
+	Manufacturer: G-Skill
 	Serial Number: --
 	Asset Tag: --
-	Part Number: PSD416G320081
-	Rank: 1
-	Configured Memory Speed: 3200 MT/s
+	Part Number: F4-3600C18-32GTZN
+	Rank: 2
+	Configured Memory Speed: 3600 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 6, Hex 0x02
+	Module Manufacturer ID: Bank 5, Hex 0xCD
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 16 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0049, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 64 GB
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
 	Physical Device Handle: 0x0048
 	Memory Array Mapped Address Handle: 0x0039
 	Partition Row Position: Unknown

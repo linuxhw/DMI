@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
-Table at 0x42F82000.
+Table at 0x28F82000.
 
 Handle 0x0000, DMI type 222, 14 bytes
 OEM-specific Type
@@ -43,7 +43,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -51,11 +51,11 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 3200 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471A1K43DB1-CWE    
-	Rank: 1
+	Part Number: 9905744-108.A00G    
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -78,16 +78,16 @@ Memory Device
 Handle 0x0006, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0003
 	Partition Width: 1
 
 Handle 0x0007, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 07 00 03 01 00 08 00 92 60 00 02 00 00 00
-		00 B2 00 03 00 01 08 00 00 00
+		DD 1A 07 00 03 01 00 08 00 A6 50 00 02 00 00 00
+		00 B8 00 03 00 01 08 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -96,7 +96,7 @@ OEM-specific Type
 Handle 0x0008, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 08 00 03 01 00 08 00 92 60 00 02 00 0D 00
+		DD 1A 08 00 03 01 00 08 00 A6 50 00 02 00 0D 00
 		00 04 00 03 04 0D 00 2E B6 06
 	Strings:
 		Reference Code - ME
@@ -107,7 +107,7 @@ OEM-specific Type
 Handle 0x0009, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 09 00 07 01 00 08 00 92 60 00 02 03 FF FF
+		DD 36 09 00 07 01 00 08 00 A6 50 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 30 00 05 00 FF FF FF 30
 		00 06 00 02 0A 00 00 00 07 00 1A FF FF FF FF 08
 		00 00 FF FF FF FF
@@ -124,8 +124,8 @@ OEM-specific Type
 Handle 0x000A, DMI type 221, 75 bytes
 OEM-specific Type
 	Header and Data:
-		DD 4B 0A 00 0A 01 00 08 00 92 60 00 02 00 00 00
-		04 6F 00 03 00 08 00 92 60 00 04 05 FF FF FF FF
+		DD 4B 0A 00 0A 01 00 08 00 A6 50 00 02 00 00 00
+		04 6F 00 03 00 08 00 A6 50 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 03 00 07 00 00 00 00 03 00 08
 		00 FF FF FF FF FF 09 00 04 13 00 00 00 0A 00 00
 		00 00 02 00 0B 00 00 00 00 00 00
@@ -251,10 +251,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz
-	Voltage: 0.7 V
+	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 1200 MHz
-	Current Speed: 1000 MHz
+	Current Speed: 3300 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x000D
@@ -830,8 +830,8 @@ OEM-specific Type
 Handle 0x0011, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: DJCN28WW
-	Release Date: 05/14/2022
+	Version: DJCN30WW
+	Release Date: 12/08/2022
 	ROM Size: 11 MB
 	Characteristics:
 		PCI is supported
@@ -852,7 +852,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.28
+	BIOS Revision: 1.30
 	Firmware Revision: 1.20
 
 Handle 0x0013, DMI type 2, 17 bytes
@@ -895,7 +895,7 @@ System Information
 	Version: Lenovo ThinkBook 14-IIL
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: Other
 	SKU Number: LENOVO_MT_20SL_BU_idea_FM_Thinkbook 14-IIL
 	Family: Thinkbook 14-IIL
 
@@ -946,7 +946,7 @@ Group Associations
 Handle 0x005A, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 5A 00 01 04 01 45 02 00 A0 06 01 85 30 20
+		DB 6A 5A 00 01 04 01 45 02 00 90 06 01 85 36 20
 		00 00 00 04 40 00 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

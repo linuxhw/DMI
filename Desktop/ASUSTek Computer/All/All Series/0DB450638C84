@@ -320,14 +320,14 @@ Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_1
 	Type: x1 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 2
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:00.0
+	Bus Address: 0000:03:00.0
 
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
@@ -346,14 +346,14 @@ Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_3
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 4
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:00.0
+	Bus Address: 0000:04:00.0
 
 Handle 0x0024, DMI type 10, 8 bytes
 On Board Device 1 Information
@@ -823,7 +823,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0052, DMI type 4, 42 bytes
+Handle 0x005C, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: SOCKET 1150
 	Type: Central Processor
@@ -849,20 +849,20 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0057, DMI type 136, 6 bytes
+Handle 0x0061, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 57 00 00 00
+		88 06 61 00 00 00
 
-Handle 0x0058, DMI type 131, 64 bytes
+Handle 0x0062, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 58 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 62 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 44 8C 00 00 00 00 01 00 00 00 00 00 09 00
 		BB 05 16 00 00 00 00 00 C8 00 3B 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0059, DMI type 13, 22 bytes
+Handle 0x0063, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 8
@@ -876,6 +876,6 @@ BIOS Language Information
 		zh|CN|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x005B, DMI type 127, 4 bytes
+Handle 0x0065, DMI type 127, 4 bytes
 End Of Table
 

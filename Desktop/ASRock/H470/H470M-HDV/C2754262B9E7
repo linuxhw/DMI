@@ -137,48 +137,13 @@ Handle 0x000A, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x0009
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8 GB
-	Form Factor: DIMM
-	Set: None
-	Locator: ChannelA-DIMM0
-	Bank Locator: BANK 0
-	Type: DDR4
-	Type Detail: Synchronous
-	Speed: 2667 MT/s
-	Manufacturer: 8001
-	Serial Number: --
-	Asset Tag: --
-	Part Number: R9S48G3206U2S       
-	Rank: 1
-	Configured Memory Speed: 2667 MT/s
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
-	Memory Technology: DRAM
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Bank 1, Hex 0x01
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: 8 GB
-	Cache Size: None
-	Logical Size: None
-
-Handle 0x000B, DMI type 17, 84 bytes
-Memory Device
-	Array Handle: 0x0009
-	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
-	Locator: ChannelB-DIMM0
-	Bank Locator: BANK 2
+	Locator: ChannelA-DIMM0
+	Bank Locator: BANK 0
 	Type: Unknown
 	Type Detail: None
 	Speed: Unknown
@@ -192,7 +157,7 @@ Memory Device
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: Volatile memory
+	Memory Operating Mode Capability: None
 	Firmware Version: Not Specified
 	Module Manufacturer ID: Unknown
 	Module Product ID: Unknown
@@ -200,6 +165,41 @@ Memory Device
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
 	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x000B, DMI type 17, 84 bytes
+Memory Device
+	Array Handle: 0x0009
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelB-DIMM0
+	Bank Locator: BANK 2
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2400 MT/s
+	Manufacturer: 8001
+	Serial Number: --
+	Asset Tag: --
+	Part Number: R9S48G3206U2S       
+	Rank: 1
+	Configured Memory Speed: 2400 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 1, Hex 0x01
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 8 GB
 	Cache Size: None
 	Logical Size: None
 
@@ -216,7 +216,7 @@ Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x000A
+	Physical Device Handle: 0x000B
 	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: 1
 
@@ -371,7 +371,7 @@ Processor Information
 	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
-	Current Speed: 3590 MHz
+	Current Speed: 3591 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0013

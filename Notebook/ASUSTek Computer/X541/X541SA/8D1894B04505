@@ -1,16 +1,16 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x7B191000.
+Table at 0x73195000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: X541SA.301
-	Release Date: 09/14/2016
+	Version: X541SA.307
+	Release Date: 04/19/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 6144 kB
+	ROM Size: 6 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -43,7 +43,7 @@ System Information
 	UUID: --
 	Wake-up Type: Power Switch
 	SKU Number: ASUS-NotebookSKU
-	Family: X
+	Family: VivoBook
 
 Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
@@ -120,7 +120,7 @@ Memory Array Mapped Address
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Array Handle: 0x000A
-	Partition Width: 2
+	Partition Width: 1
 
 Handle 0x000C, DMI type 17, 40 bytes
 Memory Device
@@ -128,15 +128,15 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM0
 	Bank Locator: A1_BANK0
 	Type: DDR3
-	Type Detail: Unknown
+	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: SK Hynix        
+	Manufacturer: SK Hynix
 	Serial Number: --
 	Asset Tag: --
 	Part Number: HMT451S6CFR6A-PB  
@@ -149,13 +149,11 @@ Memory Device
 Handle 0x000D, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
 	Physical Device Handle: 0x000C
 	Memory Array Mapped Address Handle: 0x000B
-	Partition Row Position: Unknown
-	Interleave Position: 1
-	Interleaved Data Depth: 2
+	Partition Row Position: 1
 
 Handle 0x000E, DMI type 17, 40 bytes
 Memory Device
@@ -168,8 +166,8 @@ Memory Device
 	Set: None
 	Locator: A1_DIMM1
 	Bank Locator: A1_BANK1
-	Type: Unknown
-	Type Detail: Unknown
+	Type: DDR2
+	Type Detail: Synchronous
 	Speed: Unknown
 	Manufacturer: A1_Manufacturer1
 	Serial Number: --
@@ -181,8 +179,16 @@ Memory Device
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x000F, DMI type 126, 35 bytes
-Inactive
+Handle 0x000F, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x000E
+	Memory Array Mapped Address Handle: 0x000B
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 2
 
 Handle 0x0010, DMI type 32, 20 bytes
 System Boot Information
@@ -210,8 +216,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown

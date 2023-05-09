@@ -1,8 +1,6 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-# SMBIOS implementations newer than version 3.1.1 are not
-# fully supported by this version of dmidecode.
 Table at 0x88E83000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -632,7 +630,6 @@ IPMI Device Information
 
 Handle 0x0035, DMI type 42, 12 bytes
 Management Controller Host Interface
-	Interface Type: KCS: Keyboard Controller Style
 
 Handle 0x0043, DMI type 15, 73 bytes
 System Event Log
@@ -642,8 +639,8 @@ System Event Log
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFF4FB000
-	Status: Valid, Not Full
-	Change Token: 0x00000010
+	Status: Valid, Full
+	Change Token: 0x00001112
 	Header Format: Type 1
 	Supported Log Type Descriptors: 25
 	Descriptor 1: Single-bit ECC memory error
@@ -738,8 +735,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -754,8 +751,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 32768 kB
-	Maximum Size: 32768 kB
+	Installed Size: 32 MB
+	Maximum Size: 32 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -770,8 +767,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 262144 kB
-	Maximum Size: 262144 kB
+	Installed Size: 256 MB
+	Maximum Size: 256 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -865,10 +862,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x004E, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -910,10 +918,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0051, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -955,10 +974,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0054, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1000,10 +1030,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0057, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1045,10 +1086,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x005A, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1090,10 +1142,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x005D, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1135,10 +1198,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0060, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1180,10 +1254,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0063, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1225,10 +1310,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0066, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1270,10 +1366,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0069, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1315,10 +1422,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x006C, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1360,10 +1478,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x006F, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1405,10 +1534,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0072, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1450,10 +1590,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0075, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1495,10 +1646,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0078, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1540,10 +1702,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x007B, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1562,8 +1735,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -1578,8 +1751,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 32768 kB
-	Maximum Size: 32768 kB
+	Installed Size: 32 MB
+	Maximum Size: 32 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -1594,8 +1767,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 262144 kB
-	Maximum Size: 262144 kB
+	Installed Size: 256 MB
+	Maximum Size: 256 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -1689,10 +1862,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0082, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1734,10 +1918,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0085, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1779,10 +1974,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0088, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1824,10 +2030,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x008B, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1869,10 +2086,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x008E, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1914,10 +2142,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0091, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -1959,10 +2198,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0094, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -2004,10 +2254,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0097, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -2049,10 +2310,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x009A, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -2094,10 +2366,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x009D, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -2139,10 +2422,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x00A0, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -2184,10 +2478,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x00A3, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -2229,10 +2534,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x00A6, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -2274,10 +2590,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x00A9, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -2319,10 +2646,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x00AC, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -2364,10 +2702,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 36ASF8G72PZ-3G2B2   
 	Rank: 2
-	Configured Clock Speed: 2933 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 kB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x00AF, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -2491,12 +2840,24 @@ OEM-specific Type
 
 Handle 0x00C1, DMI type 42, 129 bytes
 Management Controller Host Interface
-	Interface Type: <OUT OF SPEC>
+	Host Interface Type: Network
+	Device Type: USB
+	idVendor: 0x046b
+	idProduct: 0xffb0
+	Protocol ID: 04 (Redfish over IP)
+		Service UUID: --
+		Host IP Assignment Type: Static
+		Host IP Address Format: IPv4
+		IPv4 Address: 169.254.0.18
+		IPv4 Mask: 255.255.0.0
+		Redfish Service IP Discovery Type: Static
+		Redfish Service IP Address Format: IPv4
+		IPv4 Redfish Service Address: 169.254.0.17
+		IPv4 Redfish Service Mask: 255.255.0.0
+		Redfish Service Port: 443
+		Redfish Service Vlan: 0
+		Redfish Service Hostname: 
 
-Handle 0x00C2, DMI type 42, 129 bytes
-Management Controller Host Interface
-	Interface Type: <OUT OF SPEC>
-
-Handle 0x00C3, DMI type 127, 4 bytes
+Handle 0x00C2, DMI type 127, 4 bytes
 End Of Table
 

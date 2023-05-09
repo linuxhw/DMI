@@ -87,14 +87,39 @@ Handle 0x0004, DMI type 4, 40 bytes
 Processor Information
 	Socket Designation: AM3R2
 	Type: Central Processor
-	Family: Unknown
+	Family: Phenom II
 	Manufacturer: AMD              
-	ID: 20 0F 60 00 FF FB 8B 17
-	Version: AMD FX-8320E Eight-Core Processor                   
-	Voltage: 1.2 V
+	ID: 43 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 4, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Phenom(tm) II X4 965 Processor                  
+	Voltage: 1.4 V
 	External Clock: 200 MHz
-	Max Speed: 3200 MHz
-	Current Speed: 3200 MHz
+	Max Speed: 3400 MHz
+	Current Speed: 3400 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM3
 	L1 Cache Handle: 0x0005
@@ -103,9 +128,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
-	Core Count: 8
-	Core Enabled: 8
-	Thread Count: 8
+	Core Count: 4
+	Core Enabled: 4
+	Thread Count: 4
 	Characteristics:
 		64-bit capable
 
@@ -115,8 +140,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 384 kB
-	Maximum Size: 384 kB
+	Installed Size: 512 kB
+	Maximum Size: 512 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -131,8 +156,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8 MB
-	Maximum Size: 8 MB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -147,15 +172,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8 MB
-	Maximum Size: 8 MB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
 	Speed: 1 ns
 	Error Correction Type: Multi-bit ECC
 	System Type: Unified
-	Associativity: 64-way Set-associative
+	Associativity: 48-way Set-associative
 
 Handle 0x0008, DMI type 8, 9 bytes
 Port Connector Information
@@ -433,7 +458,7 @@ Handle 0x0029, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI1
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 12
 	Characteristics:
@@ -445,7 +470,7 @@ Handle 0x002A, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI2
 	Type: 32-bit PCI
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 13
 	Characteristics:
@@ -528,8 +553,8 @@ Physical Memory Array
 Handle 0x0033, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00436FFFFFF
-	Range Size: 17264 MB
+	Ending Address: 0x0082FFFFFFF
+	Range Size: 33536 MB
 	Physical Array Handle: 0x0032
 	Partition Width: 1
 
@@ -539,14 +564,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer0
 	Serial Number: --
 	Asset Tag: --
@@ -555,8 +580,8 @@ Memory Device
 Handle 0x0035, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0034
 	Memory Array Mapped Address Handle: 0x0033
 	Partition Row Position: 1
@@ -567,14 +592,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer1
 	Serial Number: --
 	Asset Tag: --
@@ -582,9 +607,9 @@ Memory Device
 
 Handle 0x0037, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0036
 	Memory Array Mapped Address Handle: 0x0033
 	Partition Row Position: 1
@@ -595,14 +620,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer2
 	Serial Number: --
 	Asset Tag: --
@@ -610,9 +635,9 @@ Memory Device
 
 Handle 0x0039, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0038
 	Memory Array Mapped Address Handle: 0x0033
 	Partition Row Position: 1
@@ -623,14 +648,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer3
 	Serial Number: --
 	Asset Tag: --
@@ -638,9 +663,9 @@ Memory Device
 
 Handle 0x003B, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00300000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x003A
 	Memory Array Mapped Address Handle: 0x0033
 	Partition Row Position: 1

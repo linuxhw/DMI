@@ -2,13 +2,13 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 64 structures occupying 2680 bytes.
-Table at 0xDDA04000.
+Table at 0xADA07000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: 1.50
-	Release Date: 01/14/2021
+	Version: 1.90
+	Release Date: 03/17/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -194,7 +194,7 @@ Handle 0x000F, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.51
+	Firmware Revision: 3.77
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -222,16 +222,16 @@ Physical Memory Array
 Handle 0x0012, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000DFFFFFFF
-	Range Size: 3584 MB
+	Ending Address: 0x000AFFFFFFF
+	Range Size: 2816 MB
 	Physical Array Handle: 0x0011
 	Partition Width: 2
 
 Handle 0x0013, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0081FFFFFFF
-	Range Size: 29184 MB
+	Ending Address: 0x0084FFFFFFF
+	Range Size: 29952 MB
 	Physical Array Handle: 0x0011
 	Partition Width: 2
 
@@ -362,13 +362,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: 3200 MT/s
+	Speed: 2133 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Unknown
 	Rank: Unknown
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -396,13 +396,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
+	Speed: 2133 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: F4-3200C16-16GVK
 	Rank: 2
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -441,13 +441,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: 3200 MT/s
+	Speed: 2133 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Unknown
 	Rank: Unknown
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -475,13 +475,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
+	Speed: 2133 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: F4-3200C16-16GVK
 	Rank: 2
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -653,37 +653,37 @@ Handle 0x0035, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J10
 	Type: x16 PCI Express x16
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 12
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:00:03.1
+	Bus Address: 0000:00:1f.7
 
 Handle 0x0036, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3700 M.2 Slot
 	Type: x1 PCI Express x1
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 14
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:00:1f.7
+	Bus Address: 0000:00:01.1
 
 Handle 0x0037, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3708 PCIE x4 slot from Promontory
 	Type: x4 PCI Express x4
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 128
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:00:1f.7
+	Bus Address: 0000:07:00.0
 
 Handle 0x0038, DMI type 9, 17 bytes
 System Slot Information
@@ -731,7 +731,7 @@ System Slot Information
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:03:09.0
+	Bus Address: 0000:07:09.0
 
 Handle 0x003C, DMI type 41, 11 bytes
 Onboard Device
@@ -747,7 +747,7 @@ Onboard Device
 	Type: Sound
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:2d:00.4
+	Bus Address: 0000:2c:00.4
 
 Handle 0x003E, DMI type 143, 16 bytes
 OEM-specific Type

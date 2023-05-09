@@ -1,6 +1,7 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-69 structures occupying 2419 bytes.
+70 structures occupying 2449 bytes.
 Table at 0x000EB710.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -10,7 +11,7 @@ BIOS Information
 	Release Date: 07/16/2010
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -157,8 +158,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -667,58 +668,69 @@ Handle 0x0027, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0025
 	Error Information Handle: 0x0029
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-
-Handle 0x0028, DMI type 17, 28 bytes
-Memory Device
-	Array Handle: 0x0025
-	Error Information Handle: No Error
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2048 MB
-	Form Factor: SODIMM
-	Set: None
-	Locator: DIMM2
-	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1067 MHz
+	Speed: 1067 MT/s
 	Manufacturer: 0000
 	Serial Number: --
 	Asset Tag: --
 	Part Number: GKH200SO12808-1066
 	Rank: Unknown
 
-Handle 0x002A, DMI type 20, 19 bytes
+Handle 0x0028, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x0007FFFFFFF
 	Range Size: 2 GB
-	Physical Device Handle: 0x0028
-	Memory Array Mapped Address Handle: 0x002B
+	Physical Device Handle: 0x0027
+	Memory Array Mapped Address Handle: 0x002D
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x002A, DMI type 17, 28 bytes
+Memory Device
+	Array Handle: 0x0025
+	Error Information Handle: No Error
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
+	Form Factor: SODIMM
+	Set: None
+	Locator: DIMM2
+	Bank Locator: BANK 2
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1067 MT/s
+	Manufacturer: 0000
+	Serial Number: --
+	Asset Tag: --
+	Part Number: GKH200SO12808-1066
+	Rank: Unknown
+
+Handle 0x002B, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x002A
+	Memory Array Mapped Address Handle: 0x002D
 	Partition Row Position: Unknown
 	Interleave Position: 2
 	Interleaved Data Depth: 1
 
-Handle 0x002B, DMI type 19, 15 bytes
+Handle 0x002D, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0025
 	Partition Width: 2
 

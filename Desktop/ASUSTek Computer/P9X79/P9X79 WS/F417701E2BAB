@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 115 structures occupying 5113 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 05/07/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		APM is supported
@@ -143,8 +143,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 12288 kB
-	Maximum Size: 12288 kB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -520,8 +520,8 @@ Physical Memory Array
 Handle 0x0032, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0031
 	Partition Width: 1
 
@@ -531,7 +531,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA_Dimm1
@@ -544,7 +544,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 99U5471-037.A00LF     
 	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0034, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -576,7 +576,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: ChannelA_Dimm2_PartNum
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0036, DMI type 126, 35 bytes
 Inactive
@@ -587,7 +587,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB_Dimm1
@@ -600,7 +600,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 9905471-064.A00LF     
 	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0038, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -632,7 +632,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: ChannelB_Dimm2_PartNum
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x003A, DMI type 126, 35 bytes
 Inactive
@@ -641,25 +641,33 @@ Handle 0x003B, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0031
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelC_Dimm1
 	Bank Locator: ChannelC
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: ChannelC_Dimm1_Manufacturer
+	Speed: 1600 MT/s
+	Manufacturer: Kingston                   
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ChannelC_Dimm1_PartNum
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: 99U5471-037.A00LF     
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x003C, DMI type 126, 35 bytes
-Inactive
+Handle 0x003C, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x003B
+	Memory Array Mapped Address Handle: 0x0032
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x003D, DMI type 17, 34 bytes
 Memory Device
@@ -680,7 +688,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: ChannelC_Dimm2_PartNum
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x003E, DMI type 126, 35 bytes
 Inactive
@@ -689,25 +697,33 @@ Handle 0x003F, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0031
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelD_Dimm1
 	Bank Locator: ChannelD
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: ChannelD_Dimm1_Manufacturer
+	Speed: 1600 MT/s
+	Manufacturer: Kingston                   
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ChannelD_Dimm1_PartNum
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: 99U5471-037.A00LF     
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0040, DMI type 126, 35 bytes
-Inactive
+Handle 0x0040, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x003F
+	Memory Array Mapped Address Handle: 0x0032
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x0041, DMI type 17, 34 bytes
 Memory Device
@@ -728,7 +744,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: ChannelD_Dimm2_PartNum
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0042, DMI type 126, 35 bytes
 Inactive

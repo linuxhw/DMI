@@ -1,13 +1,13 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x8B1AC000.
+Table at 0x8B238000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 0906
-	Release Date: 03/22/2017
+	Version: 1301
+	Release Date: 03/14/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -674,7 +674,7 @@ Memory Device
 	Locator: ChannelA-DIMM2
 	Bank Locator: BANK 1
 	Type: DDR4
-	Type Detail: Synchronous
+	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2133 MT/s
 	Manufacturer: Corsair
 	Serial Number: --
@@ -712,7 +712,7 @@ Memory Device
 	Locator: ChannelB-DIMM2
 	Bank Locator: BANK 3
 	Type: DDR4
-	Type Detail: Synchronous
+	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2133 MT/s
 	Manufacturer: Corsair
 	Serial Number: --
@@ -818,10 +818,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz
-	Voltage: 1.1 V
+	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
-	Current Speed: 4200 MHz
+	Current Speed: 4500 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0048
@@ -873,15 +873,15 @@ Handle 0x004F, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
 		83 40 4F 00 31 00 00 00 00 00 00 00 00 00 00 00
-		F8 00 C5 A2 00 00 00 00 01 00 00 00 06 00 0B 00
-		66 04 00 00 00 00 00 00 FE 00 B8 15 00 00 00 00
+		F8 00 C5 A2 00 00 00 00 01 00 00 00 07 00 0B 00
+		CD 04 00 00 00 00 00 00 FE 00 B8 15 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0050, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 50 00 03 01 00 01 00 03 00 00 02 00 00 00
-		00 42 00 03 00 00 05 00 00 00
+		DD 1A 50 00 03 01 00 01 08 00 00 00 02 00 00 00
+		00 84 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -890,22 +890,22 @@ OEM-specific Type
 Handle 0x0051, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 51 00 03 01 00 01 00 03 00 00 02 00 00 00
-		00 00 00 03 04 0B 06 00 66 04
+		DD 1A 51 00 03 01 00 01 08 00 00 00 02 00 00 00
+		00 00 00 03 04 0B 07 00 CD 04
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
 		ME Firmware Version
 		Consumer SKU
 
-Handle 0x0052, DMI type 221, 68 bytes
+Handle 0x0052, DMI type 221, 75 bytes
 OEM-specific Type
 	Header and Data:
-		DD 44 52 00 09 01 00 01 00 03 00 00 02 03 FF FF
+		DD 4B 52 00 0A 01 00 01 08 00 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
 		00 06 00 FF FF FF FF FF 07 00 3E 00 00 00 00 08
-		00 34 00 00 00 00 09 00 3E 00 00 00 00 0A 00 34
-		00 00 00 00
+		00 34 00 00 00 00 09 00 0B 00 00 00 00 0A 00 3E
+		00 00 00 00 0B 00 34 00 00 00 00
 	Strings:
 		Reference Code - SKL PCH
 		PCH-CRID Status
@@ -917,14 +917,15 @@ OEM-specific Type
 		SKL PCH H Dx Hsio Version
 		KBL PCH H Ax Hsio Version
 		SKL PCH LP Bx Hsio Version
+		SKL PCH LP Cx Hsio Version
 
 Handle 0x0053, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 53 00 07 01 00 01 00 03 00 00 02 00 01 00
-		04 00 00 03 00 01 00 03 00 00 04 05 FF FF FF FF
+		DD 36 53 00 07 01 00 01 08 00 00 00 02 00 01 08
+		00 02 00 03 00 01 08 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 05 00 07 00 FF FF FF 05 00 08
-		00 FF FF FF 46 10
+		00 FF FF FF 02 03
 	Strings:
 		Reference Code - SA - System Agent
 		Reference Code - MRC
@@ -938,12 +939,12 @@ OEM-specific Type
 Handle 0x0054, DMI type 221, 103 bytes
 OEM-specific Type
 	Header and Data:
-		DD 67 54 00 0E 01 00 00 00 00 A6 00 02 00 FF FF
+		DD 67 54 00 0E 01 00 00 00 00 00 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
 		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
 		FF FF FF FF 0D 00 FF FF FF FF FF 0E 00 FF FF FF
-		FF FF 0F 00 FF FF FF FF FF 10 11 01 03 03 01 00
+		FF FF 0F 00 FF FF FF FF FF 10 11 01 03 04 01 01
 		12 00 00 07 03 00 00
 	Strings:
 		Lan Phy Version
@@ -962,7 +963,7 @@ OEM-specific Type
 		Base EC FW Version
 		EC-EC Protocol Version
 		Royal Park Version
-		BP1.3.3.0_RP01
+		BP1.3.4.1_RP01
 		Platform Version
 
 Handle 0x0055, DMI type 136, 6 bytes
@@ -980,30 +981,16 @@ Group Associations
 		0x0053 (OEM-specific)
 		0x0054 (OEM-specific)
 
-Handle 0x0057, DMI type 13, 22 bytes
-BIOS Language Information
-	Language Description Format: Long
-	Installable Languages: 8
-		en|US|iso8859-1
-		fr|FR|iso8859-1
-		zh|CN|unicode
-		<BAD INDEX>
-		<BAD INDEX>
-		<BAD INDEX>
-		<BAD INDEX>
-		<BAD INDEX>
-	Currently Installed Language: en|US|iso8859-1
-
-Handle 0x0058, DMI type 14, 8 bytes
+Handle 0x0057, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x0059, DMI type 219, 81 bytes
+Handle 0x0058, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 59 00 01 03 01 45 02 00 90 06 03 10 80 20
+		DB 51 58 00 01 03 01 45 02 00 90 06 03 10 86 20
 		00 00 00 00 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -1014,6 +1001,6 @@ OEM-specific Type
 		MEI2
 		MEI3
 
-Handle 0x005A, DMI type 127, 4 bytes
+Handle 0x0059, DMI type 127, 4 bytes
 End Of Table
 

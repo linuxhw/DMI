@@ -1,8 +1,8 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-83 structures occupying 3566 bytes.
-Table at 0x7CF64018.
+81 structures occupying 3511 bytes.
+Table at 0x7D236018.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -115,11 +115,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+	Version: Intel(R) Xeon(R) CPU E5-2637 0 @ 3.00GHz
 	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 2000 MHz
+	Current Speed: 3000 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA2011
 	L1 Cache Handle: 0x0005
@@ -128,9 +128,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
-	Core Count: 6
-	Core Enabled: 6
-	Thread Count: 12
+	Core Count: 2
+	Core Enabled: 2
+	Thread Count: 4
 	Characteristics:
 		64-bit capable
 		Multi-Core
@@ -145,8 +145,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 384 kB
-	Maximum Size: 384 kB
+	Installed Size: 128 kB
+	Maximum Size: 128 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -161,8 +161,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1536 kB
-	Maximum Size: 1536 kB
+	Installed Size: 512 kB
+	Maximum Size: 512 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -177,8 +177,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 15360 kB
-	Maximum Size: 15360 kB
+	Installed Size: 5120 kB
+	Maximum Size: 5120 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -224,11 +224,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+	Version: Intel(R) Xeon(R) CPU E5-2637 0 @ 3.00GHz
 	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 2000 MHz
+	Current Speed: 3000 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA2011
 	L1 Cache Handle: 0x0009
@@ -237,9 +237,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
-	Core Count: 6
-	Core Enabled: 6
-	Thread Count: 12
+	Core Count: 2
+	Core Enabled: 2
+	Thread Count: 4
 	Characteristics:
 		64-bit capable
 		Multi-Core
@@ -254,8 +254,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 384 kB
-	Maximum Size: 384 kB
+	Installed Size: 128 kB
+	Maximum Size: 128 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -270,8 +270,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1536 kB
-	Maximum Size: 1536 kB
+	Installed Size: 512 kB
+	Maximum Size: 512 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -286,8 +286,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 15360 kB
-	Maximum Size: 15360 kB
+	Installed Size: 5120 kB
+	Maximum Size: 5120 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -408,7 +408,7 @@ Handle 0x0018, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J23
 	Type: x4 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 4
 	Characteristics:
@@ -455,7 +455,7 @@ Handle 0x001D, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
-	Error Correction Type: None
+	Error Correction Type: Multi-bit ECC
 	Maximum Capacity: 128 GB
 	Error Information Handle: 0x001E
 	Number Of Devices: 4
@@ -473,8 +473,8 @@ Handle 0x001E, DMI type 18, 23 bytes
 Handle 0x001F, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 24 GB
 	Physical Array Handle: 0x001D
 	Partition Width: 4
 
@@ -482,28 +482,28 @@ Handle 0x0020, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x001D
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
+	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU0_Dimm0
 	Bank Locator: CPU0_Bank0
 	Type: DDR3
-	Type Detail: Unbuffered (Unregistered)
-	Speed: 1333 MT/s
-	Manufacturer: Hynix Semiconducto
+	Type Detail: Registered (Buffered)
+	Speed: 1600 MT/s
+	Manufacturer: Samsung           
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT451U6AFR8C
+	Part Number: M393B1G73QH0-
 	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0021, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0020
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: 1
@@ -538,28 +538,28 @@ Handle 0x0028, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x001D
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
+	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU0_Dimm4
 	Bank Locator: CPU0_Bank2
 	Type: DDR3
-	Type Detail: Unbuffered (Unregistered)
-	Speed: 1333 MT/s
-	Manufacturer: Hynix Semiconducto
+	Type Detail: Registered (Buffered)
+	Speed: 1600 MT/s
+	Manufacturer: Samsung           
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT451U6AFR8C
+	Part Number: M393B1G73QH0-
 	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0029, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0028
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: 1
@@ -570,31 +570,39 @@ Handle 0x002C, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x001D
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 8192 MB
 	Form Factor: DIMM
-	Set: None
+	Set: 1
 	Locator: CPU0_Dimm6
 	Bank Locator: CPU0_Bank3
-	Type: Unknown
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Dimm6_Manufacturer
+	Type: DDR3
+	Type Detail: Registered (Buffered)
+	Speed: 1600 MT/s
+	Manufacturer: Samsung           
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Dimm6_PartNum
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: M393B1G73QH0-
+	Rank: 2
+	Configured Clock Speed: 1600 MT/s
 
-Handle 0x002D, DMI type 126, 35 bytes
-Inactive
+Handle 0x002D, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x002C
+	Memory Array Mapped Address Handle: 0x001F
+	Partition Row Position: 1
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x0030, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
-	Error Correction Type: None
+	Error Correction Type: Multi-bit ECC
 	Maximum Capacity: 128 GB
 	Error Information Handle: 0x0031
 	Number Of Devices: 4
@@ -611,9 +619,9 @@ Handle 0x0031, DMI type 18, 23 bytes
 
 Handle 0x0032, DMI type 19, 31 bytes
 Memory Array Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00600000000
+	Ending Address: 0x00BFFFFFFFF
+	Range Size: 24 GB
 	Physical Array Handle: 0x0030
 	Partition Width: 4
 
@@ -621,28 +629,28 @@ Handle 0x0033, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0030
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
+	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU1_Dimm0
 	Bank Locator: CPU1_Bank0
 	Type: DDR3
-	Type Detail: Unbuffered (Unregistered)
-	Speed: 1333 MT/s
-	Manufacturer: Hynix Semiconducto
+	Type Detail: Registered (Buffered)
+	Speed: 1600 MT/s
+	Manufacturer: Samsung           
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT451U6AFR8C
+	Part Number: M393B1G73QH0-
 	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0034, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0033
 	Memory Array Mapped Address Handle: 0x0032
 	Partition Row Position: 2
@@ -653,52 +661,60 @@ Handle 0x0037, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0030
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 8192 MB
 	Form Factor: DIMM
-	Set: None
+	Set: 1
 	Locator: CPU1_Dimm2
 	Bank Locator: CPU1_Bank1
-	Type: Unknown
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Dimm2_Manufacturer
+	Type: DDR3
+	Type Detail: Registered (Buffered)
+	Speed: 1600 MT/s
+	Manufacturer: Samsung           
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Dimm2_PartNum
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: M393B1G73QH0-
+	Rank: 2
+	Configured Clock Speed: 1600 MT/s
 
-Handle 0x0038, DMI type 126, 35 bytes
-Inactive
+Handle 0x0038, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00800000000
+	Ending Address: 0x009FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0037
+	Memory Array Mapped Address Handle: 0x0032
+	Partition Row Position: 2
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x003B, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0030
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
+	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8192 MB
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU1_Dimm4
 	Bank Locator: CPU1_Bank2
 	Type: DDR3
-	Type Detail: Unbuffered (Unregistered)
-	Speed: 1333 MT/s
-	Manufacturer: Hynix Semiconducto
+	Type Detail: Registered (Buffered)
+	Speed: 1600 MT/s
+	Manufacturer: Samsung           
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT451U6AFR8C
+	Part Number: M393B1G73QH0-
 	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Configured Clock Speed: 1600 MT/s
 
 Handle 0x003C, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00300000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00A00000000
+	Ending Address: 0x00BFFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x003B
 	Memory Array Mapped Address Handle: 0x0032
 	Partition Row Position: 2
@@ -825,7 +841,7 @@ System Event Log
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0x000EF9A0
+	Access Address: 0xFFAC3000
 	Status: Valid, Not Full
 	Change Token: 0x00000001
 	Header Format: Type 1
@@ -938,7 +954,7 @@ OEM-specific Type
 Handle 0x0061, DMI type 140, 47 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2F 61 00 4C 45 4E 4F 56 4F 0B 01 01 09 00 27
+		8C 2F 61 00 4C 45 4E 4F 56 4F 0B 01 01 08 00 27
 		EC FC E4 06 72 8E 40 87 8D D9 94 92 8D 79 0F 00
 		00 00 00 10 00 10 00 10 01 D0 00 20 01 00 01
 
@@ -983,28 +999,14 @@ BIOS Language Information
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x006B, DMI type 129, 8 bytes
+Handle 0x006B, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		81 08 6B 00 01 01 02 01
-	Strings:
-		Intel_ASF
-		Intel_ASF_001
-
-Handle 0x006C, DMI type 130, 20 bytes
-OEM-specific Type
-	Header and Data:
-		82 14 6C 00 24 41 4D 54 01 01 01 01 01 A5 1B 02
-		00 00 00 00
-
-Handle 0x006D, DMI type 131, 64 bytes
-OEM-specific Type
-	Header and Data:
-		83 40 6D 00 35 00 00 00 07 00 00 00 00 00 3F 00
-		F8 00 41 1D FF FF FF FF 09 00 00 00 01 00 07 00
-		6E 04 15 00 00 00 00 00 C8 00 02 15 00 00 00 00
+		83 40 6B 00 35 00 00 00 07 00 00 00 00 00 3F 00
+		F8 00 41 1D FF FF FF FF 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 C8 00 02 15 00 00 00 00
 		00 00 00 00 36 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x006F, DMI type 127, 4 bytes
+Handle 0x006D, DMI type 127, 4 bytes
 End Of Table
 

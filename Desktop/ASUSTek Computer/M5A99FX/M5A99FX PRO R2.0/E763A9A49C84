@@ -1,4 +1,4 @@
-# dmidecode 3.0
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 56 structures occupying 2403 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 04/07/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -151,8 +151,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -167,8 +167,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -468,8 +468,8 @@ Physical Memory Array
 Handle 0x0029, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 20 GB
 	Physical Array Handle: 0x0028
 	Partition Width: 255
 
@@ -479,26 +479,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1333 MHz
-	Manufacturer: Corsair      
+	Speed: 800 MT/s
+	Manufacturer: Undefined    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMX6GX3M3A2000C9  
+	Part Number: R5S38G1601U2S     
 	Rank: 2
-	Configured Clock Speed: 667 MHz
+	Configured Memory Speed: 400 MT/s
 
 Handle 0x002B, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 20 GB
 	Physical Device Handle: 0x002A
 	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: Unknown
@@ -511,26 +511,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1333 MHz
+	Speed: 800 MT/s
 	Manufacturer: Corsair      
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CMX6GX3M3A2000C9  
 	Rank: 2
-	Configured Clock Speed: 667 MHz
+	Configured Memory Speed: 400 MT/s
 
 Handle 0x002D, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 20 GB
 	Physical Device Handle: 0x002C
 	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: Unknown
@@ -543,26 +543,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1333 MHz
-	Manufacturer: Corsair      
+	Speed: 800 MT/s
+	Manufacturer: Undefined    
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMX6GX3M3A2000C9  
+	Part Number: R5S38G1601U2S     
 	Rank: 2
-	Configured Clock Speed: 667 MHz
+	Configured Memory Speed: 400 MT/s
 
 Handle 0x002F, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 20 GB
 	Physical Device Handle: 0x002E
 	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: Unknown
@@ -573,25 +573,33 @@ Handle 0x0030, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0028
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
-	Type: Unknown
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Manufacturer3
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 800 MT/s
+	Manufacturer: Corsair      
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber3
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: CMX6GX3M3A2000C9  
+	Rank: 2
+	Configured Memory Speed: 400 MT/s
 
-Handle 0x0031, DMI type 126, 35 bytes
-Inactive
+Handle 0x0031, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 20 GB
+	Physical Device Handle: 0x0030
+	Memory Array Mapped Address Handle: 0x0029
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x0032, DMI type 32, 20 bytes
 System Boot Information
@@ -633,7 +641,7 @@ BIOS Language Information
 		ja|JP|unicode
 		zh|TW|unicode
 		zh|CN|unicode
-	Currently Installed Language: ru|RU|iso8859-5
+	Currently Installed Language: en|US|iso8859-1
 
 Handle 0x0038, DMI type 127, 4 bytes
 End Of Table

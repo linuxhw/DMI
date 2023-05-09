@@ -1,4 +1,4 @@
-# dmidecode 3.0
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 106 structures occupying 3927 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 08/01/2012
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -100,8 +100,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -116,8 +116,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -434,20 +434,20 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM0
 	Bank Locator: A1_BANK0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Kingston        
 	Serial Number: --
 	Asset Tag: --
 	Part Number: 99U5471-012.A00LF 
 	Rank: 2
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x002B, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -487,7 +487,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Array1_PartNumber1
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x002E, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -508,20 +508,20 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM2
 	Bank Locator: A1_BANK2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Kingston        
 	Serial Number: --
 	Asset Tag: --
 	Part Number: 99U5471-012.A00LF 
 	Rank: 2
-	Configured Clock Speed: 58785 MHz
+	Configured Memory Speed: 58785 MT/s
 
 Handle 0x0031, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -561,7 +561,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Array1_PartNumber3
 	Rank: Unknown
-	Configured Clock Speed: 66 MHz
+	Configured Memory Speed: 66 MT/s
 
 Handle 0x0034, DMI type 18, 23 bytes
 32-bit Memory Error Information

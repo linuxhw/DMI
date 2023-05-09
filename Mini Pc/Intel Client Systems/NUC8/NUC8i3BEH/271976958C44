@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.1 present.
 Table at 0x7AAA4000.
@@ -6,8 +6,8 @@ Table at 0x7AAA4000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Intel Corp.
-	Version: BECFL357.86A.0073.2019.0618.1409
-	Release Date: 06/18/2019
+	Version: BECFL357.86A.0085.2020.1007.1917
+	Release Date: 10/07/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -31,7 +31,7 @@ BIOS Information
 		Targeted content distribution is supported
 		UEFI is supported
 	BIOS Revision: 5.6
-	Firmware Revision: 3.20
+	Firmware Revision: 3.25
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -562,37 +562,13 @@ Handle 0x003C, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x003B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
-	Set: None
-	Locator: SODIMM1
-	Bank Locator: Memory Channel A
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-
-Handle 0x003D, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x003B
-	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
-	Locator: SODIMM2
-	Bank Locator: Memory Channel B
+	Locator: SODIMM1
+	Bank Locator: Memory Channel A
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2667 MT/s
@@ -605,6 +581,20 @@ Memory Device
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+
+Handle 0x003D, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x003B
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: SODIMM2
+	Bank Locator: Memory Channel B
+	Type: Unknown
+	Type Detail: None
 
 Handle 0x003E, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -627,8 +617,8 @@ TPM Device
 Handle 0x0040, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 40 00 03 01 00 07 00 48 40 00 02 00 00 00
-		00 B4 00 03 00 FF FF FF FF FF
+		DD 1A 40 00 03 01 00 07 00 51 41 00 02 00 00 00
+		00 D6 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -637,23 +627,23 @@ OEM-specific Type
 Handle 0x0041, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 41 00 03 01 00 07 00 48 40 00 02 00 00 00
-		00 00 00 03 04 0C 00 20 8D 05
+		DD 1A 41 00 03 01 00 07 00 51 41 00 02 00 00 00
+		00 00 00 03 04 0C 00 44 46 06
 	Strings:
 		Reference Code - ME
 		MEBx version
 		ME Firmware Version
 		Consumer SKU
 
-Handle 0x0042, DMI type 221, 89 bytes
+Handle 0x0042, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 59 42 00 0C 01 00 07 00 48 40 00 02 03 FF FF
+		DD 52 42 00 0B 01 00 07 00 51 41 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 30 00 05 00 FF FF FF 30
 		00 06 00 FF FF FF FF FF 07 00 02 00 00 00 00 08
-		00 09 00 00 00 00 09 00 0A 00 00 00 00 0A 00 13
-		00 00 00 00 0B 00 07 00 00 00 00 0C 00 06 00 00
-		00 00 0D 00 07 00 00 00 00
+		00 09 00 00 00 00 09 00 0A 00 00 00 00 0A 00 07
+		00 00 00 00 0B 00 06 00 00 00 00 0C 00 07 00 00
+		00 00
 	Strings:
 		Reference Code - CNL PCH
 		PCH-CRID Status
@@ -664,7 +654,6 @@ OEM-specific Type
 		CNL PCH H A0 Hsio Version
 		CNL PCH H Ax Hsio Version
 		CNL PCH H Bx Hsio Version
-		CNL PCH LP Ax Hsio Version
 		CNL PCH LP B0 Hsio Version
 		CNL PCH LP Bx Hsio Version
 		CNL PCH LP Dx Hsio Version
@@ -672,8 +661,8 @@ OEM-specific Type
 Handle 0x0043, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 43 00 07 01 00 07 00 48 40 00 02 00 00 07
-		01 59 00 03 00 07 00 48 40 00 04 05 FF FF FF FF
+		DD 36 43 00 07 01 00 07 00 51 41 00 02 00 00 07
+		01 5F 00 03 00 07 00 51 41 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 08 00 07 00 00 00 00 08 00 08
 		00 FF FF FF FF FF
 	Strings:
@@ -807,7 +796,7 @@ Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x003D
+	Physical Device Handle: 0x003C
 	Memory Array Mapped Address Handle: 0x003E
 	Partition Row Position: Unknown
 
@@ -816,7 +805,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 4A 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 84 9D 00 00 00 00 01 00 00 00 00 00 0C 00
-		8D 05 20 00 00 00 00 00 FE 00 BE 15 00 00 00 00
+		46 06 44 00 00 00 00 00 FE 00 BE 15 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x004B, DMI type 13, 22 bytes
@@ -832,8 +821,8 @@ OEM-specific Type
 		DD 59 4C 00 0C 01 00 00 00 00 A6 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 03 14 00 00 00 0C 00 00
-		09 00 84 10 0D 0E 01 04 03 00 00 0F 00 00 07 00
+		00 FF FF FF FF FF 0B 00 03 19 00 00 00 0C 00 00
+		09 00 98 10 0D 0E 01 04 03 00 00 0F 00 00 07 00
 		00 00 10 00 00 02 00 0E 00
 	Strings:
 		Lan Phy Version

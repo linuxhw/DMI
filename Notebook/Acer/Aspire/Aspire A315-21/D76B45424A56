@@ -1,8 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
-SMBIOS 3.0 present.
-27 structures occupying 1457 bytes.
-Table at 0x000E3980.
+SMBIOS 3.0.0 present.
+Table at 0xDF264000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -69,7 +68,7 @@ Chassis Information
 	Version: Chassis Version
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -154,8 +153,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -190,8 +189,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -239,7 +238,7 @@ Memory Device
 	Error Information Handle: 0x0010
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -247,12 +246,12 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 1200 MT/s
-	Manufacturer: Unknown ID:0x7A01
+	Manufacturer: Unknown ID:0x9B05
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 76.A302G.D330B      
+	Part Number: CB8GS2666.C8JT
 	Rank: 1
-	Configured Clock Speed: 800 MT/s
+	Configured Memory Speed: 800 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -263,7 +262,7 @@ Memory Device
 	Error Information Handle: 0x0011
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 1
@@ -276,7 +275,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 4ATF51264HZ-2G3A1
 	Rank: 1
-	Configured Clock Speed: 800 MT/s
+	Configured Memory Speed: 800 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -314,24 +313,24 @@ Handle 0x0012, DMI type 18, 23 bytes
 Handle 0x0013, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x000D
 	Partition Width: 255
 
 Handle 0x0014, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x000E
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown
 
 Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x000F
 	Memory Array Mapped Address Handle: 0x0013
@@ -353,7 +352,7 @@ Acer Hotkey Function
 Handle 0x0017, DMI type 171, 49 bytes
 OEM-specific Type
 	Header and Data:
-		AB 31 17 00 04 F2 04 E0 B5 08 CA 04 15 30 01 02
+		AB 31 17 00 04 F2 04 E0 B5 08 C2 0B 31 50 01 02
 		10 E4 98 02 EC 10 68 81 03 EC 10 87 52 05 22 10
 		7A 15 07 8C 16 42 00 0D 00 00 00 00 17 00 00 00
 		00

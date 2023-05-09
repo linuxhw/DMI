@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.0
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-75 structures occupying 3152 bytes.
+75 structures occupying 3147 bytes.
 Table at 0x9AEBC000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 08/30/2013
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 4 MB
+	ROM Size: 4096 kB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -237,8 +237,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4 MB
-	Maximum Size: 4 MB
+	Installed Size: 4096 kB
+	Maximum Size: 4096 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -488,20 +488,20 @@ Memory Device
 	Error Information Handle: 0x0026
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: JDIMM1
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
+	Speed: 1600 MHz
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M471B5173QH0-YK0  
 	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Configured Clock Speed: 1600 MHz
 
 Handle 0x0025, DMI type 17, 34 bytes
 Memory Device
@@ -509,20 +509,20 @@ Memory Device
 	Error Information Handle: 0x0027
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: JDIMM2
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
+	Speed: 1600 MHz
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M471B5173QH0-YK0  
 	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Configured Clock Speed: 1600 MHz
 
 Handle 0x0026, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -593,11 +593,11 @@ Built-in Pointing Device
 Handle 0x002D, DMI type 22, 26 bytes
 Portable Battery
 	Location: Sys. Battery Bay
-	Manufacturer: SDI
-	Name: DELL XRDW23A8
+	Manufacturer: Not Specified
+	Name: DELL D555173
 	Chemistry: Lithium Ion
-	Design Capacity: 28000 mWh
-	Design Voltage: 14800 mV
+	Design Capacity: Unknown
+	Design Voltage: Unknown
 	SBDS Version: 1.0
 	Maximum Error: 100%
 	SBDS Serial Number: --
