@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.1 present.
 Table at 0x8C979000.
@@ -273,7 +273,8 @@ Port Connector Information
 Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE16X
-	Type: x16 PCI Express 3 x16
+	Type: PCI Express 3 x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -286,20 +287,22 @@ System Slot Information
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2x80 Slot
-	Type: x1 M.2 Socket 2
-	Current Usage: Available
+	Type: M.2 Socket 2
+	Data Bus Width: 1x or x1
+	Current Usage: In Use
 	Length: Short
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:00.0
+	Bus Address: 0000:02:00.0
 
 Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2x30 Slot
-	Type: x1 M.2 Socket 1-SD
-	Current Usage: In Use
+	Type: M.2 Socket 1-SD
+	Data Bus Width: 1x or x1
+	Current Usage: Available
 	Length: Short
 	Characteristics:
 		3.3 V is provided
@@ -310,7 +313,8 @@ System Slot Information
 Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE1X
-	Type: x1 PCI Express 2 x1
+	Type: PCI Express 2 x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -520,25 +524,15 @@ Handle 0x0037, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0036
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8 GB
-	Form Factor: DIMM
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 3
-	Type: DDR4
-	Type Detail: Synchronous
-	Speed: 2666 MT/s
-	Manufacturer: SK Hynix
-	Serial Number: --
-	Asset Tag: --
-	91CDAF35F9B71F452D42BC6056AEC024      
-	Rank: 1
-	Configured Memory Speed: 2666 MT/s
-	Minimum Voltage: 1.14 V
-	Maximum Voltage: 1.26 V
-	Configured Voltage: 1.2 V
+	Type: Unknown
+	Type Detail: None
 
 Handle 0x0038, DMI type 17, 40 bytes
 Memory Device
@@ -546,7 +540,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
@@ -557,8 +551,8 @@ Memory Device
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9905713-030.A00G      
-	Rank: 1
+	42AE0A5B064B1B6CBDAC59BDCD2971FC      
+	Rank: 2
 	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.14 V
 	Maximum Voltage: 1.26 V
@@ -595,10 +589,10 @@ Memory Device
 Handle 0x003B, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0036
-	Partition Width: 2
+	Partition Width: 1
 
 Handle 0x003C, DMI type 43, 31 bytes
 TPM Device
@@ -795,40 +789,27 @@ Processor Information
 Handle 0x0047, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x0037
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0xFFFF
 	Memory Array Mapped Address Handle: 0x003B
 	Partition Row Position: Unknown
-	Interleave Position: 1
-	Interleaved Data Depth: 2
 
-Handle 0x0048, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x0038
-	Memory Array Mapped Address Handle: 0x003B
-	Partition Row Position: Unknown
-	Interleave Position: 2
-	Interleaved Data Depth: 2
-
-Handle 0x0049, DMI type 130, 20 bytes
+Handle 0x0048, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 49 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
+		82 14 48 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
 		C0 00 00 00
 
-Handle 0x004A, DMI type 131, 64 bytes
+Handle 0x0049, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 4A 00 35 00 00 00 0A 00 00 00 00 00 01 00
+		83 40 49 00 35 00 00 00 0A 00 00 00 00 00 01 00
 		F8 00 08 A3 00 00 00 00 01 00 00 00 00 00 0C 00
 		0F 06 40 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x004B, DMI type 13, 22 bytes
+Handle 0x004A, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 11
@@ -845,10 +826,10 @@ BIOS Language Information
 		<BAD INDEX>
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x004C, DMI type 221, 89 bytes
+Handle 0x004B, DMI type 221, 89 bytes
 OEM-specific Type
 	Header and Data:
-		DD 59 4C 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
+		DD 59 4B 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
 		00 FF FF FF FF FF 0B 00 AA BB 00 00 00 0C 00 00
@@ -872,23 +853,23 @@ OEM-specific Type
 		Platform Version
 		Client Silicon Version
 
-Handle 0x004D, DMI type 172, 18 bytes
+Handle 0x004C, DMI type 172, 18 bytes
 OEM-specific Type
 	Header and Data:
-		AC 12 4D 00 05 04 FF FF FF 02 01 00 FF FF FF 04
+		AC 12 4C 00 05 04 FF FF FF 02 01 00 FF FF FF 04
 		01 00
 
-Handle 0x004E, DMI type 248, 9 bytes
+Handle 0x004D, DMI type 248, 9 bytes
 OEM-specific Type
 	Header and Data:
-		F8 09 4E 00 00 02 6C 00 00
+		F8 09 4D 00 00 02 6C 00 00
 
-Handle 0x004F, DMI type 136, 6 bytes
+Handle 0x004E, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 4F 00 00 00
+		88 06 4E 00 00 00
 
-Handle 0x0050, DMI type 14, 23 bytes
+Handle 0x004F, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 6
@@ -897,18 +878,18 @@ Group Associations
 		0x0040 (OEM-specific)
 		0x0041 (OEM-specific)
 		0x0042 (OEM-specific)
-		0x004C (OEM-specific)
+		0x004B (OEM-specific)
 
-Handle 0x0051, DMI type 14, 8 bytes
+Handle 0x0050, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x0052, DMI type 219, 106 bytes
+Handle 0x0051, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 52 00 01 04 01 45 02 00 90 06 01 10 86 20
+		DB 6A 51 00 01 04 01 45 02 00 90 06 01 10 86 20
 		00 00 00 04 40 00 00 00 00 00 00 00 00 40 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -921,6 +902,6 @@ OEM-specific Type
 		MEI3
 		MEI4
 
-Handle 0x0053, DMI type 127, 4 bytes
+Handle 0x0052, DMI type 127, 4 bytes
 End Of Table
 

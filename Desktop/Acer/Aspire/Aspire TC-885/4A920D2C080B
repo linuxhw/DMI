@@ -1,8 +1,6 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.1 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0x8C979000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -12,7 +10,7 @@ BIOS Information
 	Release Date: 09/10/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 12288 kB
+	ROM Size: 12 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -524,7 +522,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
@@ -548,7 +546,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
@@ -625,8 +623,10 @@ Memory Array Mapped Address
 Handle 0x003C, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: CTNI
-	Specification Version: 2.0	Firmware Revision: 403.1
-	Description: INTEL	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 403.1
+	Description: INTEL
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -741,8 +741,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 9216 kB
-	Maximum Size: 9216 kB
+	Installed Size: 9 MB
+	Maximum Size: 9 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -870,8 +870,8 @@ OEM-specific Type
 		DD 59 4C 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 AA BB 00 00 00 0C 00 FF
-		FF FF FF FF 0D 0E 01 04 03 00 00 0F 00 00 07 00
+		00 FF FF FF FF FF 0B 00 AA BB 00 00 00 0C 00 00
+		09 00 84 10 0D 0E 01 04 03 00 00 0F 00 00 07 00
 		00 00 10 00 00 02 00 0E 00
 	Strings:
 		Lan Phy Version
@@ -927,7 +927,7 @@ Group Associations
 Handle 0x0052, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 52 00 01 04 01 45 02 00 90 06 01 10 86 20
+		DB 6A 52 00 01 04 01 45 02 00 90 06 01 10 80 20
 		00 00 00 00 40 00 00 00 00 00 00 00 00 40 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

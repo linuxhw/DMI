@@ -1,4 +1,4 @@
-# dmidecode 3.5
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 44 structures occupying 1958 bytes.
@@ -216,8 +216,8 @@ Memory Module Information
 	Bank Connections: 0 1
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: 2048 MB (Double-bank Connection)
-	Enabled Size: 2048 MB (Double-bank Connection)
+	Installed Size: 4096 MB (Double-bank Connection)
+	Enabled Size: 4096 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
@@ -304,8 +304,8 @@ Handle 0x0010, DMI type 18, 23 bytes
 Handle 0x0011, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x000F
 	Partition Width: 4
 
@@ -315,7 +315,7 @@ Memory Device
 	Error Information Handle: 0x0013
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
@@ -341,8 +341,8 @@ Handle 0x0013, DMI type 18, 23 bytes
 Handle 0x0014, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0012
 	Memory Array Mapped Address Handle: 0x0011
 	Partition Row Position: 1
@@ -413,8 +413,8 @@ Handle 0x0019, DMI type 18, 23 bytes
 
 Handle 0x001A, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x0017FFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0018
 	Memory Array Mapped Address Handle: 0x0011

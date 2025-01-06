@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0xA766E000.
@@ -78,7 +78,8 @@ Chassis Information
 Handle 0x0004, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE1
-	Type: x16 PCI Express 3 x16
+	Type: PCI Express 3 x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -91,7 +92,8 @@ System Slot Information
 Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE2
-	Type: x1 PCI Express 3 x1
+	Type: PCI Express 3 x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -104,7 +106,8 @@ System Slot Information
 Handle 0x0006, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE3
-	Type: x1 PCI Express 3 x1
+	Type: PCI Express 3 x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -117,20 +120,22 @@ System Slot Information
 Handle 0x0007, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE4
-	Type: x1 PCI Express 3 x1
-	Current Usage: In Use
+	Type: PCI Express 3 x1
+	Data Bus Width: 1x or x1
+	Current Usage: Available
 	Length: Short
 	ID: 3
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: f000:03:00.0
+	Bus Address: f000:00:00.0
 
 Handle 0x0008, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE5
-	Type: x4 PCI Express 3 x4
+	Type: PCI Express 3 x4
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -138,7 +143,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: f000:04:00.0
+	Bus Address: f000:03:00.0
 
 Handle 0x0009, DMI type 10, 12 bytes
 On Board Device 1 Information
@@ -151,7 +156,7 @@ On Board Device 2 Information
 	Description: Realtek(R) Gigabit Network Connection
 On Board Device 3 Information
 	Type: Sound
-	Status: Enabled
+	Status: Disabled
 	Description: Realtek High Definition Audio
 On Board Device 4 Information
 	Type: SATA Controller
@@ -194,7 +199,7 @@ Handle 0x000F, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Realtek High Definition Audio
 	Type: Sound
-	Status: Enabled
+	Status: Disabled
 	Type Instance: 1
 	Bus Address: f000:00:1f.3
 

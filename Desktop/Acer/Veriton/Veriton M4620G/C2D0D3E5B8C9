@@ -1,8 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-66 structures occupying 2707 bytes.
-Table at 0x000EBE20.
+64 structures occupying 2625 bytes.
+Table at 0x000EA100.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -408,7 +408,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -416,11 +416,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Kingston
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 99U5471-002.A00LF     
-	Rank: 2
+	E254A42287C02E1EFE99F4E0C3C2E492     
+	Rank: 1
 	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0027, DMI type 18, 23 bytes
@@ -436,10 +436,10 @@ Handle 0x0027, DMI type 18, 23 bytes
 Handle 0x0028, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0026
-	Memory Array Mapped Address Handle: 0x0032
+	Memory Array Mapped Address Handle: 0x0030
 	Partition Row Position: Unknown
 	Interleave Position: 2
 	Interleaved Data Depth: 2
@@ -450,7 +450,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -458,11 +458,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Kingston
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 99U5471-002.A01LF     
-	Rank: 2
+	E254A42287C02E1EFE99F4E0C3C2E492     
+	Rank: 1
 	Configured Memory Speed: 1333 MT/s
 
 Handle 0x002A, DMI type 18, 23 bytes
@@ -477,11 +477,11 @@ Handle 0x002A, DMI type 18, 23 bytes
 
 Handle 0x002B, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0029
-	Memory Array Mapped Address Handle: 0x0032
+	Memory Array Mapped Address Handle: 0x0030
 	Partition Row Position: Unknown
 	Interleave Position: 1
 	Interleaved Data Depth: 2
@@ -490,22 +490,15 @@ Handle 0x002C, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0007
 	Error Information Handle: No Error
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK 3
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Kingston
-	Serial Number: --
-	Asset Tag: --
-	Part Number: 99U5471-002.A01LF     
-	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Type: Unknown
+	Type Detail: None
 
 Handle 0x002D, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -517,39 +510,21 @@ Handle 0x002D, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x002E, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x002C
-	Memory Array Mapped Address Handle: 0x0032
-	Partition Row Position: Unknown
-	Interleave Position: 2
-	Interleaved Data Depth: 2
-
-Handle 0x002F, DMI type 17, 34 bytes
+Handle 0x002E, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0007
 	Error Information Handle: No Error
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4
 	Bank Locator: BANK 4
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Kingston
-	Serial Number: --
-	Asset Tag: --
-	Part Number: 99U5471-002.A01LF     
-	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Type: Unknown
+	Type Detail: None
 
-Handle 0x0030, DMI type 18, 23 bytes
+Handle 0x002F, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -559,18 +534,7 @@ Handle 0x0030, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0031, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00180000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x002F
-	Memory Array Mapped Address Handle: 0x0032
-	Partition Row Position: Unknown
-	Interleave Position: 1
-	Interleaved Data Depth: 2
-
-Handle 0x0032, DMI type 19, 31 bytes
+Handle 0x0030, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
@@ -667,7 +631,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Pentium(R) CPU G645T @ 2.50GHz
-	Voltage: 9.1 V
+	Voltage: 9.6 V
 	External Clock: 100 MHz
 	Max Speed: 2500 MHz
 	Current Speed: 2500 MHz
@@ -685,49 +649,49 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x004E, DMI type 129, 8 bytes
+Handle 0x004C, DMI type 129, 8 bytes
 OEM-specific Type
 	Header and Data:
-		81 08 4E 00 01 01 02 00
+		81 08 4C 00 01 01 02 00
 	Strings:
 		Intel_ASF
 		Intel_ASF_001
 
-Handle 0x004F, DMI type 130, 20 bytes
+Handle 0x004D, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 4F 00 24 41 4D 54 00 00 00 00 00 A5 2F 02
+		82 14 4D 00 24 41 4D 54 00 00 00 00 00 A5 2F 02
 		00 00 00 00
 
-Handle 0x0050, DMI type 131, 64 bytes
+Handle 0x004E, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 50 00 31 00 00 00 08 00 00 00 00 00 3D 00
+		83 40 4E 00 31 00 00 00 08 00 00 00 00 00 3D 00
 		F8 00 49 1E FF FF FF FF 21 00 00 00 00 00 08 00
 		A1 05 04 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0051, DMI type 129, 8 bytes
+Handle 0x004F, DMI type 129, 8 bytes
 OEM-specific Type
 	Header and Data:
-		81 08 51 00 01 01 02 01
+		81 08 4F 00 01 01 02 01
 	Strings:
 		Intel_ASF
 		Intel_ASF_001
 
-Handle 0x0052, DMI type 172, 18 bytes
+Handle 0x0050, DMI type 172, 18 bytes
 OEM-specific Type
 	Header and Data:
-		AC 12 52 00 02 09 FF FF FF 02 01 00 FF FF FF 04
+		AC 12 50 00 02 09 FF FF FF 02 01 00 FF FF FF 04
 		01 00
 
-Handle 0x0053, DMI type 13, 22 bytes
+Handle 0x0051, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0054, DMI type 127, 4 bytes
+Handle 0x0052, DMI type 127, 4 bytes
 End Of Table
 

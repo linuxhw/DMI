@@ -2,7 +2,7 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 64 structures occupying 2581 bytes.
-Table at 0x000EB280.
+Table at 0x000EB2C0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -354,14 +354,14 @@ Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE16X
 	Type: x16 PCI Express 2 x16
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 0
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:01:00.0
+	Bus Address: 0000:ff:1f.7
 
 Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
@@ -400,12 +400,12 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:03:1f.7
+	Bus Address: 0000:02:1f.7
 
 Handle 0x0021, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
-	Status: Disabled
+	Status: Enabled
 	Description: Onboard Intel Graphics
 
 Handle 0x0022, DMI type 10, 6 bytes
@@ -452,8 +452,8 @@ Handle 0x0027, DMI type 18, 23 bytes
 Handle 0x0028, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0026
 	Partition Width: 1
 
@@ -463,19 +463,19 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Nanya        
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Manufacturer1
 	Serial Number: --
 	Asset Tag: --
 	...
-	Rank: 1
+	Rank: Unknown
 	Configured Clock Speed: Unknown
 
 Handle 0x002A, DMI type 18, 23 bytes
@@ -488,14 +488,8 @@ Handle 0x002A, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x002B, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x0029
-	Memory Array Mapped Address Handle: 0x0028
-	Partition Row Position: 1
+Handle 0x002B, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x002C, DMI type 17, 34 bytes
 Memory Device
@@ -516,7 +510,7 @@ Memory Device
 	Asset Tag: --
 	...
 	Rank: 1
-	Configured Clock Speed: Unknown
+	Configured Clock Speed: 34560 MT/s
 
 Handle 0x002D, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -530,8 +524,8 @@ Handle 0x002D, DMI type 18, 23 bytes
 
 Handle 0x002E, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x002C
 	Memory Array Mapped Address Handle: 0x0028
@@ -543,19 +537,19 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Hynix Semicon
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Manufacturer3
 	Serial Number: --
 	Asset Tag: --
 	...
-	Rank: 1
+	Rank: Unknown
 	Configured Clock Speed: Unknown
 
 Handle 0x0030, DMI type 18, 23 bytes
@@ -568,14 +562,8 @@ Handle 0x0030, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0031, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x002F
-	Memory Array Mapped Address Handle: 0x0028
-	Partition Row Position: 1
+Handle 0x0031, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x0032, DMI type 17, 34 bytes
 Memory Device
@@ -583,19 +571,19 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4
 	Bank Locator: BANK4
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Manufacturer4
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Nanya        
 	Serial Number: --
 	Asset Tag: --
 	...
-	Rank: Unknown
+	Rank: 1
 	Configured Clock Speed: 345 MT/s
 
 Handle 0x0033, DMI type 18, 23 bytes
@@ -608,8 +596,14 @@ Handle 0x0033, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0034, DMI type 126, 35 bytes
-Inactive
+Handle 0x0034, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0032
+	Memory Array Mapped Address Handle: 0x0028
+	Partition Row Position: 1
 
 Handle 0x0035, DMI type 24, 5 bytes
 Hardware Security
@@ -626,7 +620,7 @@ Handle 0x0037, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation:  Onboard Intel Graphics
 	Type: Video
-	Status: Disabled
+	Status: Enabled
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 

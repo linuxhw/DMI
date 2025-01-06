@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 26 structures occupying 1262 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 04/06/2011
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -130,8 +130,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -218,8 +218,8 @@ Physical Memory Array
 Handle 0x000F, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x000E
 	Partition Width: 4
 
@@ -229,7 +229,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -257,27 +257,27 @@ Handle 0x0012, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x000E
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Manufacturer01
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 800 MT/s
+	Manufacturer: Hyundai       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ModulePartNumber01
+	Part Number: HMT325S6CFR8C-PB  
 	Rank: Unknown
 
 Handle 0x0013, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0012
 	Memory Array Mapped Address Handle: 0x000F
 	Partition Row Position: 1

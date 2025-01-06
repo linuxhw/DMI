@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.0 present.
-Table at 0x6FE7D000.
+Table at 0x000EBB60.
 
 Handle 0xDA00, DMI type 218, 245 bytes
 OEM-specific Type
@@ -502,7 +502,8 @@ Port Connector Information
 Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT1
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -515,7 +516,8 @@ System Slot Information
 Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT2
-	Type: x4 PCI Express
+	Type: PCI Express
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -528,7 +530,8 @@ System Slot Information
 Handle 0x0026, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT3
-	Type: x4 PCI Express
+	Type: PCI Express
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -541,7 +544,8 @@ System Slot Information
 Handle 0x0027, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT4
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 3
@@ -554,7 +558,8 @@ System Slot Information
 Handle 0x0028, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2 WIFI
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Other
 	ID: 4
@@ -567,7 +572,8 @@ System Slot Information
 Handle 0x0029, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2 SSD
-	Type: x4 PCI Express
+	Type: PCI Express
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Other
 	ID: 5
@@ -598,7 +604,7 @@ OEM Strings
 
 Handle 0x002B, DMI type 25, 9 bytes
 System Power Controls
-	Next Scheduled Power-on: *-* *:*:*
+	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x002C, DMI type 32, 20 bytes
 System Boot Information
@@ -697,17 +703,7 @@ Memory Array Mapped Address
 	Physical Array Handle: 0x002D
 	Partition Width: 2
 
-Handle 0x0033, DMI type 43, 31 bytes
-TPM Device
-	Vendor ID: CTNI
-	Specification Version: 2.0
-	Firmware Revision: 302.12
-	Description: INTEL
-	Characteristics:
-		Family configurable via platform software support
-	OEM-specific Information: 0x00000000
-
-Handle 0x0034, DMI type 7, 19 bytes
+Handle 0x0033, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -723,7 +719,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0035, DMI type 7, 19 bytes
+Handle 0x0034, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -739,7 +735,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 4-way Set-associative
 
-Handle 0x0036, DMI type 7, 19 bytes
+Handle 0x0035, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L3 Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -755,7 +751,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0037, DMI type 4, 48 bytes
+Handle 0x0036, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: U3E1
 	Type: Central Processor
@@ -799,9 +795,9 @@ Processor Information
 	Current Speed: 3200 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA1151
-	L1 Cache Handle: 0x0034
-	L2 Cache Handle: 0x0035
-	L3 Cache Handle: 0x0036
+	L1 Cache Handle: 0x0033
+	L2 Cache Handle: 0x0034
+	L3 Cache Handle: 0x0035
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
@@ -816,7 +812,7 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0038, DMI type 20, 35 bytes
+Handle 0x0037, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
@@ -827,7 +823,7 @@ Memory Device Mapped Address
 	Interleave Position: 1
 	Interleaved Data Depth: 2
 
-Handle 0x0039, DMI type 20, 35 bytes
+Handle 0x0038, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00200000000
 	Ending Address: 0x003FFFFFFFF
@@ -838,49 +834,49 @@ Memory Device Mapped Address
 	Interleave Position: 2
 	Interleaved Data Depth: 2
 
-Handle 0x003A, DMI type 130, 20 bytes
+Handle 0x0039, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 3A 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
+		82 14 39 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
 		C0 00 00 00
 
-Handle 0x003B, DMI type 131, 64 bytes
+Handle 0x003A, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 3B 00 35 00 00 00 00 00 00 00 00 00 00 00
+		83 40 3A 00 35 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 C9 A2 00 00 00 00 01 00 00 00 08 00 0B 00
 		25 0F 56 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x003C, DMI type 195, 32 bytes
+Handle 0x003B, DMI type 195, 32 bytes
 OEM-specific Type
 	Header and Data:
-		C3 20 3C 00 00 00 00 00 0B 00 00 00 0B 00 00 00
+		C3 20 3B 00 00 00 00 00 0B 00 00 00 0B 00 00 00
 		0B 0B 00 00 00 00 00 00 00 00 00 00 21 08 42 04
 
-Handle 0x003D, DMI type 208, 16 bytes
+Handle 0x003C, DMI type 208, 16 bytes
 OEM-specific Type
 	Header and Data:
-		D0 10 3D 00 02 05 FE 00 58 08 01 02 00 00 00 00
+		D0 10 3C 00 02 05 FE 00 58 08 01 02 00 00 00 00
 	Strings:
 		20150806
 		20150806
 
-Handle 0x003E, DMI type 212, 17 bytes
+Handle 0x003D, DMI type 212, 17 bytes
 OEM-specific Type
 	Header and Data:
-		D4 11 3E 00 70 00 71 00 01 50 57 48 FF FF 00 00
+		D4 11 3D 00 70 00 71 00 01 50 57 48 FF FF 00 00
 		00
 
-Handle 0x003F, DMI type 216, 9 bytes
+Handle 0x003E, DMI type 216, 9 bytes
 OEM-specific Type
 	Header and Data:
-		D8 09 3F 00 00 00 00 00 00
+		D8 09 3E 00 00 00 00 00 00
 
-Handle 0x0040, DMI type 220, 22 bytes
+Handle 0x003F, DMI type 220, 22 bytes
 OEM-specific Type
 	Header and Data:
-		DC 16 40 00 01 F0 00 00 02 F0 00 00 00 00 03 F0
+		DC 16 3F 00 01 F0 00 00 02 F0 00 00 00 00 03 F0
 		04 F0 00 00 00 00
 
 Handle 0xB000, DMI type 176, 5 bytes
@@ -905,8 +901,8 @@ Unknown Type
 		43 67 32 DD 0E 01 00 00 00 00 00 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF 00 0B 00 FF FF 00 00 00 0C 00 00
-		09 00 68 10 0D 00 02 00 00 A8 0F 0E 00 FF FF FF
+		00 FF FF FF FF 00 0B 00 FF FF 00 00 00 0C 00 FF
+		FF FF FF FF 0D 00 02 00 00 A8 0F 0E 00 FF FF FF
 		FF FF 0F 00 FF FF FF FF FF 10 11 01 03 04 01 01
 		12 00 00 07 03 00 00
 	Strings:
@@ -949,8 +945,8 @@ Group Associations
 Handle 0xDD36, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 36 DD 01 03 01 45 02 00 90 06 01 10 81 20
-		00 00 00 00 40 08 00 01 1F 00 00 C9 03 40 44 02
+		DB 51 36 DD 01 03 01 45 02 00 90 06 01 00 6B 20
+		00 00 00 04 40 08 00 01 1F 00 00 C9 03 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
