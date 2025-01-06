@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
 Table at 0x000E7C90.
@@ -366,7 +366,7 @@ System Event Log
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0x795E8018
+	Access Address: 0x755E8018
 	Status: Valid, Not Full
 	Change Token: 0x00000000
 	Header Format: Type 1
@@ -424,7 +424,7 @@ System Event Log
 
 Handle 0x002D, DMI type 7, 19 bytes
 Cache Information
-	Socket Designation: .U.">u..CPU Internal L1
+	Socket Designation: }.`N.I..CPU Internal L1
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
@@ -440,7 +440,7 @@ Cache Information
 
 Handle 0x002E, DMI type 7, 19 bytes
 Cache Information
-	Socket Designation: ._...I..CPU Internal L2
+	Socket Designation: ....a..`CPU Internal L2
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
@@ -689,7 +689,8 @@ BIOS Language Information
 Handle 0x004A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7H1
-	Type: x4 PCI Express 2 x4
+	Type: PCI Express 2 x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Short
 	ID: 0
@@ -702,7 +703,8 @@ System Slot Information
 Handle 0x004B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8H1
-	Type: x2 PCI Express 2 x2
+	Type: PCI Express 2 x2
+	Data Bus Width: 2x or x2
 	Current Usage: In Use
 	Length: Short
 	ID: 1

@@ -103,8 +103,8 @@ Memory Array Mapped Address
 Handle 0x0006, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Apple Inc.
-	Version: 429.140.8.0.0
-	Release Date: 06/13/2021
+	Version: 529.120.1.0.0
+	Release Date: 03/14/2024
 	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
@@ -212,7 +212,7 @@ Port Connector Information
 
 Handle 0x0010, DMI type 11, 5 bytes
 OEM Strings
-	String 1: Apple ROM Version.  BIOS ID:      IM183.88Z.F000.B00.2106131835.  Model:        IM183.  EFI Version:  429.140.8.0.0.  Built by:     root@bb-g8-pdb71.  Date:         Sun Jun 13 18:35:59 2021.  Revision:     429.140.8 (B&I).  ROM Version:  F000_B00.  Build Type:   Official Build, RELEASE.  Compiler:     clang-1205.0.19.59.6.
+	String 1: Apple ROM Version.  BIOS ID:      IM183.88Z.F000.B00.2403141829.  Model:        IM183.  EFI Version:  529.120.1.0.0.  Built by:     root@vhrgn.  Date:         Thu Mar 14 18:29:31 2024.  Revision:     529.120.1 (B&I).  ROM Version:  F000_B00.  Build Type:   Official Build, RELEASE.  Compiler:     clang-1500.3.9.1.
 
 Handle 0x0011, DMI type 41, 11 bytes
 Onboard Device
@@ -272,16 +272,6 @@ Handle 0x0018, DMI type 133, 12 bytes
 OEM-specific Type
 	Header and Data:
 		85 0C 18 00 00 00 00 00 00 00 00 00
-
-Handle 0x0019, DMI type 128, 96 bytes
-OEM-specific Type
-	Header and Data:
-		80 60 19 00 03 00 00 00 76 F5 0F FF 7F FF 1F FF
-		02 00 03 00 00 00 00 00 00 90 96 FF FF 3F AD FF
-		00 40 AD FF FF DF D0 FF 00 90 93 FF FF 8F 96 FF
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 0F 00 00 00 0F 00 00 00
 
 Handle 0x001A, DMI type 134, 20 bytes
 OEM-specific Type
@@ -397,6 +387,16 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
+Handle 0x0019, DMI type 128, 96 bytes
+OEM-specific Type
+	Header and Data:
+		80 60 19 00 03 00 00 00 76 F5 0B FF FF FF FF FF
+		02 00 03 00 00 00 00 00 00 90 96 FF FF 3F AD FF
+		00 40 AD FF FF DF D0 FF 00 90 93 FF FF 8F 96 FF
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 0F 00 00 00 FF FF FF FF
+
 Handle 0x001F, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
@@ -406,7 +406,7 @@ Group Associations
 Handle 0x0020, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 20 00 01 03 01 45 02 00 90 06 03 10 80 10
+		DB 51 20 00 01 03 01 45 02 00 90 06 01 10 80 10
 		00 00 00 00 40 00 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

@@ -1,8 +1,8 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-51 structures occupying 1931 bytes.
-Table at 0x000EC7B0.
+51 structures occupying 1915 bytes.
+Table at 0x9E052018.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 08/25/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		APM is supported
@@ -314,7 +314,7 @@ Handle 0x0026, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
-	Administrator Password Status: Enabled
+	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x0027, DMI type 32, 20 bytes
@@ -370,8 +370,8 @@ Physical Memory Array
 Handle 0x002E, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x002D
 	Partition Width: 255
 
@@ -381,21 +381,21 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: SODIMM 0
 	Bank Locator: BANK 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Hynix          
+	Speed: 1066 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	D8E8F375CC14996846DD952374B21F5A  
-	Rank: 1
-	Configured Memory Speed: 1600 MT/s
-	Minimum Voltage: 1.35 V
+	73284942B591A1CCA2DDC599A31224AF  
+	Rank: 2
+	Configured Memory Speed: 1066 MT/s
+	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
 
@@ -405,29 +405,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: SODIMM 1
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Hynix          
+	Speed: 1066 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	4CD3B96079DEABAFA6EA7EF5324FBC44  
-	Rank: 1
-	Configured Memory Speed: 1600 MT/s
-	Minimum Voltage: 1.35 V
+	73284942B591A1CCA2DDC599A31224AF  
+	Rank: 2
+	Configured Memory Speed: 1066 MT/s
+	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
 
 Handle 0x0031, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x002F
 	Memory Array Mapped Address Handle: 0x002E
 	Partition Row Position: Unknown
@@ -436,8 +436,8 @@ Memory Device Mapped Address
 
 Handle 0x0032, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x0017FFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0030
 	Memory Array Mapped Address Handle: 0x002E
@@ -467,8 +467,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst

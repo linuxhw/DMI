@@ -226,7 +226,7 @@ Handle 0x000B, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x001E (OEM-specific)
+		0x001D (OEM-specific)
 
 Handle 0x000C, DMI type 14, 8 bytes
 Group Associations
@@ -365,7 +365,7 @@ OEM-specific Type
 Handle 0x0018, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 18 00 01 03 01 45 02 00 A0 06 01 10 8B 20
+		DB 51 18 00 01 03 01 45 02 00 90 06 01 10 86 20
 		00 00 00 04 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -437,54 +437,26 @@ OEM-specific Type
 		SA-CRID New Value
 		OPROM - VBIOS
 
-Handle 0x001D, DMI type 221, 96 bytes
+Handle 0x001D, DMI type 222, 14 bytes
 OEM-specific Type
 	Header and Data:
-		DD 60 1D 00 0D 01 00 00 00 00 FF 00 02 00 FF FF
-		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
-		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 01 06 00 00 00 0C 00 00
-		09 00 68 10 0D 00 FF FF FF FF FF 0E 00 FF FF FF
-		FF FF 0F 10 01 03 04 01 00 11 00 00 07 03 00 00
-	Strings:
-		Lan Phy Version
-		Sensor Firmware Version
-		Debug Mode Status
-		Disabled
-		Performance Mode Status
-		Disabled
-		Debug Use USB(Disabled:Serial)
-		Disabled
-		ICC Overclocking Version
-		UNDI Version
-		EC FW Version
-		GOP Version
-		Base EC FW Version
-		EC-EC Protocol Version
-		Royal Park Version
-		BP1.3.4.0_RP01
-		Platform Version
-
-Handle 0x001E, DMI type 222, 14 bytes
-OEM-specific Type
-	Header and Data:
-		DE 0E 1E 00 01 99 00 03 10 01 20 02 30 03
+		DE 0E 1D 00 01 99 00 03 10 01 20 02 30 03
 	Strings:
 		Memory Init Complete
 		End of DXE Phase
 		BIOS Boot Complete
 
-Handle 0x001F, DMI type 248, 9 bytes
+Handle 0x001E, DMI type 248, 9 bytes
 OEM-specific Type
 	Header and Data:
-		F8 09 1F 00 00 02 6C 00 01
+		F8 09 1E 00 00 02 6C 00 01
 	Strings:
 		BDF
 
-Handle 0x0020, DMI type 249, 5 bytes
+Handle 0x001F, DMI type 249, 5 bytes
 OEM-specific Type
 	Header and Data:
-		F9 05 20 00 01
+		F9 05 1F 00 01
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

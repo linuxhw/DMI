@@ -348,8 +348,8 @@ Physical Memory Array
 Handle 0x0024, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0023
 	Partition Width: 255
 
@@ -357,18 +357,31 @@ Handle 0x0025, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0023
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM0
 	Bank Locator: A1_BANK0
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 800 MT/s
+	Manufacturer: Undefined       
+	Serial Number: --
+	Asset Tag: --
+	Part Number: DEXP4GD3SD16      
+	Rank: 1
+	Configured Memory Speed: Unknown
 
-Handle 0x0026, DMI type 126, 35 bytes
-Inactive
+Handle 0x0026, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0025
+	Memory Array Mapped Address Handle: 0x0024
+	Partition Row Position: 1
 
 Handle 0x0027, DMI type 17, 34 bytes
 Memory Device
@@ -410,8 +423,8 @@ Memory Device
 
 Handle 0x002A, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0029
 	Memory Array Mapped Address Handle: 0x0024
@@ -429,7 +442,7 @@ Memory Device
 	Locator: A1_DIMM3
 	Bank Locator: A1_BANK3
 	Type: Unknown
-	Type Detail: Synchronous
+	Type Detail: None
 
 Handle 0x002C, DMI type 126, 35 bytes
 Inactive
@@ -494,7 +507,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0037, DMI type 4, 42 bytes
+Handle 0x003B, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: P0
 	Type: Central Processor
@@ -545,13 +558,13 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0038, DMI type 13, 22 bytes
+Handle 0x003C, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0039, DMI type 127, 4 bytes
+Handle 0x003D, DMI type 127, 4 bytes
 End Of Table
 
