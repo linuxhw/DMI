@@ -1,8 +1,8 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0 present.
 55 structures occupying 2862 bytes.
-Table at 0xD3C79000.
+Table at 0xBBC78000.
 
 Handle 0x0000, DMI type 16, 23 bytes
 Physical Memory Array
@@ -24,8 +24,8 @@ Memory Array Mapped Address
 Handle 0x0004, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: P21 Ver. 02.46
-	Release Date: 03/28/2023
+	Version: P21 Ver. 02.49
+	Release Date: 12/08/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 0 MB
@@ -47,7 +47,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.46
+	BIOS Revision: 2.49
 	Firmware Revision: 6.41
 
 Handle 0x0005, DMI type 1, 27 bytes
@@ -429,7 +429,8 @@ Port Connector Information
 Handle 0x0027, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot5 / M2 WLAN/BT
-	Type: x1 PCI Express 3 x1
+	Type: PCI Express 3 x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Long
 	ID: 5
@@ -442,7 +443,8 @@ System Slot Information
 Handle 0x0028, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot6 / M2 SSD
-	Type: x4 PCI Express 3 x4
+	Type: PCI Express 3 x4
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Long
 	ID: 6
@@ -565,8 +567,8 @@ System Boot Information
 Handle 0x0030, DMI type 221, 33 bytes
 OEM-specific Type
 	Header and Data:
-		DD 21 30 00 04 01 00 03 08 07 00 00 02 00 00 00
-		00 F2 00 03 00 00 05 00 00 00 04 00 FF FF FF FF
+		DD 21 30 00 04 01 00 03 08 08 00 00 02 00 00 00
+		00 F8 00 03 00 00 05 00 00 00 04 00 FF FF FF FF
 		FF
 	Strings:
 		Reference Code - CPU
@@ -577,7 +579,7 @@ OEM-specific Type
 Handle 0x0031, DMI type 221, 75 bytes
 OEM-specific Type
 	Header and Data:
-		DD 4B 31 00 0A 01 00 03 08 07 00 00 02 03 FF FF
+		DD 4B 31 00 0A 01 00 03 08 08 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
 		00 06 00 FF FF FF FF FF 07 00 3E 00 00 00 00 08
 		00 34 00 00 00 00 09 00 0B 00 00 00 00 0A 00 3E
@@ -598,8 +600,8 @@ OEM-specific Type
 Handle 0x0032, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 32 00 07 01 00 03 08 07 00 00 02 00 03 08
-		07 00 00 03 00 03 08 07 00 00 04 05 FF FF FF FF
+		DD 36 32 00 07 01 00 03 08 08 00 00 02 00 03 08
+		08 00 00 03 00 03 08 08 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 05 00 07 00 FF FF FF 05 00 08
 		00 FF FF FF 04 02
 	Strings:
@@ -616,7 +618,7 @@ Handle 0x0033, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
-	Description: 128 MB
+	Description: 512 MB
 
 Handle 0x0034, DMI type 14, 8 bytes
 Group Associations
@@ -627,7 +629,7 @@ Group Associations
 Handle 0x0035, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 35 00 01 03 01 04 20 03 80 06 01 84 36 30
+		DB 51 35 00 01 03 01 04 20 03 80 06 01 84 30 30
 		00 00 00 00 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

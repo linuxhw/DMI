@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
 Table at 0xCD01A000.
@@ -6,8 +6,8 @@ Table at 0xCD01A000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: GTR_V1.24_bLink_P4C5M43
-	Release Date: 06/08/2022
+	Version: GTR_V1.25_0Ke_P4C5M43
+	Release Date: 09/16/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 0 MB
@@ -149,8 +149,8 @@ Physical Memory Array
 Handle 0x0014, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 64 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0013
 	Partition Width: 2
 
@@ -274,7 +274,7 @@ Memory Device
 	Error Information Handle: 0x0019
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 32 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -282,10 +282,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 3200 MT/s
-	Manufacturer: A-DATA Technology
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number:                     
+	Part Number: 16GU2X08QJLL42-12-K
 	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
@@ -294,20 +294,20 @@ Memory Device
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 5, Hex 0xCB
+	Module Manufacturer ID: Bank 2, Hex 0xBA
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 32 GB
+	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x001B, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 64 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Device Handle: 0x001A
 	Memory Array Mapped Address Handle: 0x0014
 	Partition Row Position: Unknown
@@ -330,7 +330,7 @@ Memory Device
 	Error Information Handle: 0x001C
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 32 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -338,10 +338,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 3200 MT/s
-	Manufacturer: A-DATA Technology
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number:                     
+	Part Number: 16GU2X08QJLL42-12-K
 	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
@@ -350,20 +350,20 @@ Memory Device
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 5, Hex 0xCB
+	Module Manufacturer ID: Bank 2, Hex 0xBA
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 32 GB
+	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x001E, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 64 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Device Handle: 0x001D
 	Memory Array Mapped Address Handle: 0x0014
 	Partition Row Position: Unknown
@@ -485,7 +485,8 @@ Port Connector Information
 Handle 0x002D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3604
-	Type: x8 PCI Express x8
+	Type: PCI Express x8
+	Data Bus Width: 8x or x8
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -498,7 +499,8 @@ System Slot Information
 Handle 0x002E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3711
-	Type: x1 M.2 Socket 1-SD
+	Type: M.2 Socket 1-SD
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	Characteristics:
@@ -510,7 +512,8 @@ System Slot Information
 Handle 0x002F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3704
-	Type: x2 M.2 Socket 3
+	Type: M.2 Socket 3
+	Data Bus Width: 2x or x2
 	Current Usage: Available
 	Length: Short
 	Characteristics:
@@ -522,7 +525,8 @@ System Slot Information
 Handle 0x0030, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3709
-	Type: x1 M.2 Socket 1-SD
+	Type: M.2 Socket 1-SD
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	Characteristics:

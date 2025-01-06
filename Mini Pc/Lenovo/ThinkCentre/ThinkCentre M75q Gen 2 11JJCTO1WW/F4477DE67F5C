@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0xCC9D2000.
@@ -553,22 +553,17 @@ OEM-specific Type
 		8C 13 30 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
 		53 20 00
 
-Handle 0x0031, DMI type 140, 15 bytes
-ThinkPad Embedded Controller Program
-	Version ID: M3CCT14A
-	Release Date: 11/08/2021
-
-Handle 0x0032, DMI type 253, 8 bytes
+Handle 0x0031, DMI type 253, 8 bytes
 OEM-specific Type
 	Header and Data:
-		FD 08 32 00 00 00 00 00
+		FD 08 31 00 00 00 00 00
 
-Handle 0x0033, DMI type 254, 14 bytes
+Handle 0x0032, DMI type 254, 14 bytes
 OEM-specific Type
 	Header and Data:
-		FE 0E 33 00 00 00 01 00 C8 50 C8 54 C8 55
+		FE 0E 32 00 00 00 01 00 C8 50 C8 54 C8 55
 
-Handle 0x0034, DMI type 8, 9 bytes
+Handle 0x0033, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1500
 	Internal Connector Type: None
@@ -576,7 +571,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0035, DMI type 8, 9 bytes
+Handle 0x0034, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1501
 	Internal Connector Type: None
@@ -584,7 +579,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0036, DMI type 8, 9 bytes
+Handle 0x0035, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1502
 	Internal Connector Type: None
@@ -592,7 +587,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0037, DMI type 8, 9 bytes
+Handle 0x0036, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1506
 	Internal Connector Type: None
@@ -600,9 +595,17 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0038, DMI type 8, 9 bytes
+Handle 0x0037, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1507
+	Internal Connector Type: None
+	External Reference Designator: USB 3.2
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0038, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J1301
 	Internal Connector Type: None
 	External Reference Designator: USB 3.2
 	External Connector Type: Access Bus (USB)
@@ -612,19 +615,11 @@ Handle 0x0039, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1301
 	Internal Connector Type: None
-	External Reference Designator: USB 3.2
-	External Connector Type: Access Bus (USB)
-	Port Type: USB
-
-Handle 0x003A, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J1301
-	Internal Connector Type: None
 	External Reference Designator: Network
 	External Connector Type: RJ-45
 	Port Type: Network Port
 
-Handle 0x003B, DMI type 8, 9 bytes
+Handle 0x003A, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1704
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -632,7 +627,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x003C, DMI type 8, 9 bytes
+Handle 0x003B, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1705
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -640,7 +635,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x003D, DMI type 8, 9 bytes
+Handle 0x003C, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1700
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -648,7 +643,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x003E, DMI type 8, 9 bytes
+Handle 0x003D, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1702
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -656,7 +651,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x003F, DMI type 8, 9 bytes
+Handle 0x003E, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1703
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -664,7 +659,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x0040, DMI type 8, 9 bytes
+Handle 0x003F, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1706
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -672,7 +667,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x0041, DMI type 8, 9 bytes
+Handle 0x0040, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1100
 	Internal Connector Type: None
@@ -680,7 +675,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Video Port
 
-Handle 0x0042, DMI type 8, 9 bytes
+Handle 0x0041, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1101
 	Internal Connector Type: None
@@ -688,7 +683,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Video Port
 
-Handle 0x0043, DMI type 8, 9 bytes
+Handle 0x0042, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1102
 	Internal Connector Type: None
@@ -696,7 +691,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Video Port
 
-Handle 0x0044, DMI type 8, 9 bytes
+Handle 0x0043, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J2100
 	Internal Connector Type: None
@@ -704,7 +699,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x0045, DMI type 8, 9 bytes
+Handle 0x0044, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J2101
 	Internal Connector Type: None
@@ -712,7 +707,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x0046, DMI type 8, 9 bytes
+Handle 0x0045, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J2102
 	Internal Connector Type: None
@@ -720,7 +715,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x0047, DMI type 9, 17 bytes
+Handle 0x0046, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J10
 	Type: x16 PCI Express x16
@@ -732,7 +727,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x0048, DMI type 9, 17 bytes
+Handle 0x0047, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3700 M.2 Slot
 	Type: x1 PCI Express x1
@@ -744,7 +739,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:02.2
 
-Handle 0x0049, DMI type 9, 17 bytes
+Handle 0x0048, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3708 PCIE x4 slot from Promontory
 	Type: x4 PCI Express x4
@@ -756,7 +751,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x004A, DMI type 9, 17 bytes
+Handle 0x0049, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3703 PCIE x1 slot from Promontory
 	Type: x1 PCI Express x1
@@ -768,7 +763,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x004B, DMI type 9, 17 bytes
+Handle 0x004A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3702 PCIE x1 slot from Promontory
 	Type: x1 PCI Express x1
@@ -780,7 +775,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x004C, DMI type 9, 17 bytes
+Handle 0x004B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3707 PCIE x4 slot from Promontory
 	Type: x4 PCI Express x4
@@ -792,7 +787,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x004D, DMI type 9, 17 bytes
+Handle 0x004C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3701 M.2 WLAN/BT slot from Promontory
 	Type: x1 PCI Express x1
@@ -804,12 +799,12 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x004E, DMI type 131, 22 bytes
+Handle 0x004D, DMI type 131, 22 bytes
 ThinkVantage Technologies
 	Version: 1
 	Diagnostics: Available
 
-Handle 0x004F, DMI type 15, 73 bytes
+Handle 0x004E, DMI type 15, 73 bytes
 System Event Log
 	Area Length: 4096 bytes
 	Header Start Offset: 0x0000
@@ -872,32 +867,32 @@ System Event Log
 	Descriptor 25: OEM-specific
 	Data Format 25: OEM-specific
 
+Handle 0x004F, DMI type 255, 14 bytes
+OEM-specific Type
+	Header and Data:
+		FF 0E 4F 00 0A 00 01 00 01 01 32 FF 00 00
+
 Handle 0x0050, DMI type 255, 14 bytes
 OEM-specific Type
 	Header and Data:
-		FF 0E 50 00 0A 00 01 00 01 01 32 FF 00 00
+		FF 0E 50 00 11 00 01 00 02 02 32 FF 00 00
 
 Handle 0x0051, DMI type 255, 14 bytes
 OEM-specific Type
 	Header and Data:
-		FF 0E 51 00 11 00 01 00 02 02 32 FF 00 00
+		FF 0E 51 00 15 00 01 00 03 03 32 FF 00 00
 
 Handle 0x0052, DMI type 255, 14 bytes
 OEM-specific Type
 	Header and Data:
-		FF 0E 52 00 15 00 01 00 03 03 32 FF 00 00
+		FF 0E 52 00 19 00 01 00 04 04 32 FF 00 00
 
 Handle 0x0053, DMI type 255, 14 bytes
 OEM-specific Type
 	Header and Data:
-		FF 0E 53 00 19 00 01 00 04 04 32 FF 00 00
+		FF 0E 53 00 0D 00 01 00 05 05 32 FF 00 00
 
-Handle 0x0054, DMI type 255, 14 bytes
-OEM-specific Type
-	Header and Data:
-		FF 0E 54 00 0D 00 01 00 05 05 32 FF 00 00
-
-Handle 0x0055, DMI type 13, 22 bytes
+Handle 0x0054, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 4
@@ -907,6 +902,6 @@ BIOS Language Information
 		zh|CN|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0056, DMI type 127, 4 bytes
+Handle 0x0055, DMI type 127, 4 bytes
 End Of Table
 

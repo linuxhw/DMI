@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
-Table at 0x7AE05000.
+Table at 0x7AE01000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Intel Corp.
-	Version: BNKBL357.86A.0085.2021.0901.1844
-	Release Date: 09/01/2021
+	Version: BNKBL357.86A.0093.2023.1030.1032
+	Release Date: 10/30/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8 MB
@@ -442,12 +442,12 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2133 MT/s
+	Speed: 2400 MT/s
 	Manufacturer: 859B
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT8G4SFD8213.C16FADP
-	Rank: 2
+	Part Number: CT8G4SFS824A.M8FE   
+	Rank: 1
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -466,11 +466,11 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2133 MT/s
-	Manufacturer: 059B
+	Speed: 2400 MT/s
+	Manufacturer: 859B
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT8G4SFS8213.C8FH1  
+	Part Number: CT8G4SFS824A.M8FE   
 	Rank: 1
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
@@ -637,21 +637,14 @@ OEM-specific Type
 	Header and Data:
 		83 40 34 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 4E 9D 00 00 00 00 01 00 00 00 08 00 0B 00
-		45 0F 56 00 00 00 00 00 FE 00 D8 15 00 00 00 00
+		8E 11 5E 00 00 00 00 00 FE 00 D8 15 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0035, DMI type 13, 22 bytes
-BIOS Language Information
-	Language Description Format: Long
-	Installable Languages: 1
-		en|US|iso8859-1
-	Currently Installed Language: en|US|iso8859-1
-
-Handle 0x0036, DMI type 221, 33 bytes
+Handle 0x0035, DMI type 221, 33 bytes
 OEM-specific Type
 	Header and Data:
-		DD 21 36 00 04 01 00 03 06 04 00 00 02 00 00 00
-		00 EA 00 03 00 00 05 00 00 00 04 00 FF FF FF FF
+		DD 21 35 00 04 01 00 03 08 08 00 00 02 00 00 00
+		00 F4 00 03 00 00 05 00 00 00 04 00 FF FF FF FF
 		FF
 	Strings:
 		Reference Code - CPU
@@ -659,21 +652,21 @@ OEM-specific Type
 		TXT ACM Version
 		BIOS Guard Version
 
-Handle 0x0037, DMI type 221, 26 bytes
+Handle 0x0036, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 37 00 03 01 00 03 06 04 00 00 02 00 00 00
-		00 00 00 03 04 0B 08 56 45 0F
+		DD 1A 36 00 03 01 00 03 08 08 00 00 02 00 00 00
+		00 00 00 03 04 0B 08 5E 8E 11
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
 		ME Firmware Version
 		Consumer SKU
 
-Handle 0x0038, DMI type 221, 75 bytes
+Handle 0x0037, DMI type 221, 75 bytes
 OEM-specific Type
 	Header and Data:
-		DD 4B 38 00 0A 01 00 03 06 04 00 00 02 03 FF FF
+		DD 4B 37 00 0A 01 00 03 08 08 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 21 00 05 00 FF FF FF 21
 		00 06 00 FF FF FF FF FF 07 00 3E 00 00 00 00 08
 		00 34 00 00 00 00 09 00 0B 00 00 00 00 0A 00 3E
@@ -691,11 +684,11 @@ OEM-specific Type
 		SKL PCH LP Bx Hsio Version
 		SKL PCH LP Cx Hsio Version
 
-Handle 0x0039, DMI type 221, 54 bytes
+Handle 0x0038, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 39 00 07 01 00 03 06 04 00 00 02 00 03 06
-		04 00 00 03 00 03 06 04 00 00 04 05 FF FF FF FF
+		DD 36 38 00 07 01 00 03 08 08 00 00 02 00 03 08
+		08 00 00 03 00 03 08 08 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 02 00 07 00 FF FF FF 02 00 08
 		00 FF FF FF 02 03
 	Strings:
@@ -708,7 +701,7 @@ OEM-specific Type
 		SA-CRID New Value
 		OPROM - VBIOS
 
-Handle 0x003A, DMI type 9, 17 bytes
+Handle 0x0039, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 1
 	Type: x4 PCI Express
@@ -720,7 +713,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1d.1
 
-Handle 0x003B, DMI type 9, 17 bytes
+Handle 0x003A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 2
 	Type: x1 PCI Express
@@ -732,7 +725,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1c.4
 
-Handle 0x003C, DMI type 9, 17 bytes
+Handle 0x003B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 3
 	Type: x1 PCI Express
@@ -744,13 +737,13 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1c.3
 
-Handle 0x003D, DMI type 221, 96 bytes
+Handle 0x003C, DMI type 221, 96 bytes
 OEM-specific Type
 	Header and Data:
-		DD 60 3D 00 0D 01 00 00 00 00 A6 00 02 00 FF FF
+		DD 60 3C 00 0D 01 00 00 00 00 A6 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 08 0F 00 00 00 0C 00 FF
+		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
 		FF FF FF FF 0D 00 FF FF FF FF FF 0E 00 FF FF FF
 		FF FF 0F 10 01 03 04 01 01 11 00 00 07 03 00 00
 	Strings:
@@ -772,22 +765,22 @@ OEM-specific Type
 		BP1.3.4.1_RP01
 		Platform Version
 
-Handle 0x003E, DMI type 136, 6 bytes
+Handle 0x003D, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 3E 00 00 00
+		88 06 3D 00 00 00
 
-Handle 0x003F, DMI type 14, 20 bytes
+Handle 0x003E, DMI type 14, 20 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 5
+		0x0035 (OEM-specific)
 		0x0036 (OEM-specific)
 		0x0037 (OEM-specific)
 		0x0038 (OEM-specific)
-		0x0039 (OEM-specific)
-		0x003D (OEM-specific)
+		0x003C (OEM-specific)
 
-Handle 0x0040, DMI type 41, 11 bytes
+Handle 0x003F, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -795,7 +788,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:00.0
 
-Handle 0x0041, DMI type 41, 11 bytes
+Handle 0x0040, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Video
 	Type: Video
@@ -803,7 +796,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 
-Handle 0x0042, DMI type 41, 11 bytes
+Handle 0x0041, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -811,7 +804,7 @@ Onboard Device
 	Type Instance: 2
 	Bus Address: 0000:00:08.0
 
-Handle 0x0043, DMI type 41, 11 bytes
+Handle 0x0042, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -819,7 +812,7 @@ Onboard Device
 	Type Instance: 3
 	Bus Address: 0000:00:14.0
 
-Handle 0x0044, DMI type 41, 11 bytes
+Handle 0x0043, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -827,7 +820,7 @@ Onboard Device
 	Type Instance: 4
 	Bus Address: 0000:00:14.2
 
-Handle 0x0045, DMI type 41, 11 bytes
+Handle 0x0044, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -835,7 +828,7 @@ Onboard Device
 	Type Instance: 5
 	Bus Address: 0000:00:16.0
 
-Handle 0x0046, DMI type 41, 11 bytes
+Handle 0x0045, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - SATA
 	Type: SATA Controller
@@ -843,7 +836,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:17.0
 
-Handle 0x0047, DMI type 41, 11 bytes
+Handle 0x0046, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -851,7 +844,7 @@ Onboard Device
 	Type Instance: 6
 	Bus Address: 0000:00:1f.0
 
-Handle 0x0048, DMI type 41, 11 bytes
+Handle 0x0047, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -859,7 +852,7 @@ Onboard Device
 	Type Instance: 7
 	Bus Address: 0000:00:1f.2
 
-Handle 0x0049, DMI type 41, 11 bytes
+Handle 0x0048, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Sound
 	Type: Sound
@@ -867,7 +860,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:1f.3
 
-Handle 0x004A, DMI type 41, 11 bytes
+Handle 0x0049, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -875,13 +868,21 @@ Onboard Device
 	Type Instance: 8
 	Bus Address: 0000:00:1f.4
 
-Handle 0x004B, DMI type 41, 11 bytes
+Handle 0x004A, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Ethernet
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 1
 	Bus Address: 0000:00:1f.6
+
+Handle 0x004B, DMI type 13, 22 bytes
+BIOS Language Information
+	Language Description Format: Long
+	Installable Languages: 2
+		en|US|iso8859-1
+		<BAD INDEX>
+	Currently Installed Language: en|US|iso8859-1
 
 Handle 0x004C, DMI type 14, 8 bytes
 Group Associations
@@ -892,7 +893,7 @@ Group Associations
 Handle 0x004D, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 4D 00 01 03 01 45 02 00 90 06 01 00 66 20
+		DB 51 4D 00 01 03 01 45 02 00 90 06 01 00 60 20
 		00 00 00 00 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.1 present.
 Table at 0x918B1000.
@@ -6,8 +6,8 @@ Table at 0x918B1000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: M1UKT69A
-	Release Date: 03/21/2022
+	Version: M1UKT73A
+	Release Date: 09/15/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 12 MB
@@ -31,7 +31,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.105
+	BIOS Revision: 1.115
 	Firmware Revision: 1.24
 
 Handle 0x0001, DMI type 1, 27 bytes
@@ -356,7 +356,7 @@ On Board Device 4 Information
 Handle 0x0022, DMI type 11, 5 bytes
 OEM Strings
 	String 1: LENOVO ThinkCentre Embedded Controller -[M1UCT18A-1.18]-
-	String 2: LENOVO ThinkCentre BIOS Boot Block Revision 1.69
+	String 2: LENOVO ThinkCentre BIOS Boot Block Revision 1.73
 	String 3: INVALID
 	String 4: INVALID
 	String 5: INVALID
@@ -667,9 +667,9 @@ System Event Log
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0x913B6018
+	Access Address: 0x913A2018
 	Status: Valid, Not Full
-	Change Token: 0x00000015
+	Change Token: 0x00000016
 	Header Format: Type 1
 	Supported Log Type Descriptors: 25
 	Descriptor 1: Single-bit ECC memory error
@@ -726,8 +726,8 @@ System Event Log
 Handle 0x0040, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 40 00 03 01 00 07 00 44 23 00 02 00 00 00
-		00 EC 00 03 00 01 01 00 00 00
+		DD 1A 40 00 03 01 00 07 00 77 00 00 02 00 00 00
+		00 F4 00 03 00 01 01 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -736,7 +736,7 @@ OEM-specific Type
 Handle 0x0041, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 41 00 03 01 00 07 00 44 23 00 02 00 0C 00
+		DD 1A 41 00 03 01 00 07 00 77 00 00 02 00 0C 00
 		00 0B 00 03 04 0C 00 47 91 06
 	Strings:
 		Reference Code - ME
@@ -747,7 +747,7 @@ OEM-specific Type
 Handle 0x0042, DMI type 221, 89 bytes
 OEM-specific Type
 	Header and Data:
-		DD 59 42 00 0C 01 00 07 00 44 23 00 02 03 FF FF
+		DD 59 42 00 0C 01 00 07 00 77 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 10 00 05 00 FF FF FF 10
 		00 06 00 FF FF FF FF FF 07 00 02 00 00 00 00 08
 		00 09 00 00 00 00 09 00 0A 00 00 00 00 0A 00 13
@@ -771,8 +771,8 @@ OEM-specific Type
 Handle 0x0043, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 43 00 07 01 00 07 00 44 23 00 02 00 00 07
-		01 57 00 03 00 07 00 44 23 00 04 05 FF FF FF FF
+		DD 36 43 00 07 01 00 07 00 77 00 00 02 00 00 07
+		01 57 00 03 00 07 00 77 00 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 07 00 07 00 00 00 00 07 00 08
 		00 FF FF FF FF FF
 	Strings:
@@ -1123,7 +1123,7 @@ Group Associations
 Handle 0x0065, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 65 00 01 04 01 45 02 00 90 06 81 10 89 30
+		DB 6A 65 00 01 04 01 45 02 00 90 00 81 10 82 30
 		00 00 00 00 40 00 00 00 00 00 00 04 00 00 C0 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

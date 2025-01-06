@@ -1,0 +1,413 @@
+# dmidecode 3.2
+Getting SMBIOS data from sysfs.
+SMBIOS 3.0.0 present.
+Table at 0xDD935000.
+
+Handle 0x0000, DMI type 0, 24 bytes
+BIOS Information
+	Vendor: American Megatrends Inc.
+	Version: ASB20008
+	Release Date: 07/19/2022
+	Address: 0xF0000
+	Runtime Size: 64 kB
+	ROM Size: 8192 kB
+	Characteristics:
+		PCI is supported
+		BIOS is upgradeable
+		BIOS shadowing is allowed
+		Boot from CD is supported
+		Selectable boot is supported
+		BIOS ROM is socketed
+		EDD is supported
+		5.25"/1.2 MB floppy services are supported (int 13h)
+		3.5"/720 kB floppy services are supported (int 13h)
+		3.5"/2.88 MB floppy services are supported (int 13h)
+		Print screen service is supported (int 5h)
+		Serial services are supported (int 14h)
+		Printer services are supported (int 17h)
+		ACPI is supported
+		USB legacy is supported
+		BIOS boot specification is supported
+		Targeted content distribution is supported
+		UEFI is supported
+	BIOS Revision: 0.8
+	Firmware Revision: 1.18
+
+Handle 0x0001, DMI type 1, 27 bytes
+System Information
+	Manufacturer: ATOPNUC
+	Product Name: ATOPNUC MA90
+	Version: V1.0
+	Serial Number: --
+	UUID: --
+	Wake-up Type: Power Switch
+	SKU Number: Default SKU
+	Family: Series 20
+
+Handle 0x0002, DMI type 2, 15 bytes
+Base Board Information
+	Manufacturer: ATOPNUC
+	Product Name: ATOPNUC MA90
+	Version: Version 1.0
+	Serial Number: --
+	Asset Tag: --
+	Features:
+		Board is a hosting board
+		Board is replaceable
+	Location In Chassis: Default string
+	Chassis Handle: 0x0003
+	Type: Motherboard
+	Contained Object Handles: 0
+
+Handle 0x0003, DMI type 3, 22 bytes
+Chassis Information
+	Manufacturer: Default string
+	Type: Mini PC
+	Lock: Not Present
+	Version: Default string
+	Serial Number: --
+	Asset Tag: --
+	Boot-up State: Safe
+	Power Supply State: Safe
+	Thermal State: Safe
+	Security Status: None
+	OEM Information: 0x00000000
+	Height: Unspecified
+	Number Of Power Cords: 1
+	Contained Elements: 0
+	SKU Number: Default string
+
+Handle 0x0004, DMI type 10, 6 bytes
+On Board Device Information
+	Type: Video
+	Status: Enabled
+	Description:    To Be Filled By O.E.M.
+
+Handle 0x0005, DMI type 11, 5 bytes
+OEM Strings
+	String 1: Default string
+
+Handle 0x0006, DMI type 12, 5 bytes
+System Configuration Options
+	Option 1: Default string
+
+Handle 0x0007, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L1 CACHE
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 160 kB
+	Maximum Size: 160 kB
+	Supported SRAM Types:
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 2-way Set-associative
+
+Handle 0x0008, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L2 CACHE
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 1024 kB
+	Maximum Size: 1024 kB
+	Supported SRAM Types:
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 16-way Set-associative
+
+Handle 0x000B, DMI type 32, 20 bytes
+System Boot Information
+	Status: No errors detected
+
+Handle 0x000C, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 32 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 2
+
+Handle 0x000D, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Array Handle: 0x000C
+	Partition Width: 1
+
+Handle 0x000E, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x000C
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: DIMM 0
+	Bank Locator: CHANNEL A
+	Type: DDR4
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: A1_Manufacturer0
+	Serial Number: --
+	Asset Tag: --
+	Part Number: A1_PartNum0
+	Rank: Unknown
+	Configured Memory Speed: Unknown
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+
+Handle 0x000F, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x000C
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8192 MB
+	Form Factor: SODIMM
+	Set: None
+	Locator: DIMM 1
+	Bank Locator: CHANNEL A
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 2400 MT/s
+	Manufacturer: <BAD INDEX>
+	Serial Number: --
+	Asset Tag: --
+	Part Number: WPBH26D408SWA-8G
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+
+Handle 0x0010, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x000F
+	Memory Array Mapped Address Handle: 0x000D
+	Partition Row Position: Unknown
+
+Handle 0x0011, DMI type 13, 22 bytes
+BIOS Language Information
+	Language Description Format: Long
+	Installable Languages: 1
+		en|US|iso8859-1
+	Currently Installed Language: en|US|iso8859-1
+
+Handle 0x0012, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J1500
+	Internal Connector Type: None
+	External Reference Designator: USB
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0013, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J1501
+	Internal Connector Type: None
+	External Reference Designator: USB
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0014, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J1502
+	Internal Connector Type: None
+	External Reference Designator: USB
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0015, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J1504
+	Internal Connector Type: None
+	External Reference Designator: USB
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0016, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: U1300
+	Internal Connector Type: None
+	External Reference Designator: Network
+	External Connector Type: RJ-45
+	Port Type: Network Port
+
+Handle 0x0017, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J1703
+	Internal Connector Type: None
+	External Reference Designator: SATA HDD
+	External Connector Type: None
+	Port Type: SATA
+
+Handle 0x0018, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J1705
+	Internal Connector Type: None
+	External Reference Designator: SATA ODD
+	External Connector Type: None
+	Port Type: SATA
+
+Handle 0x0019, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J1100
+	Internal Connector Type: None
+	External Reference Designator: Dp0
+	External Connector Type: None
+	Port Type: Video Port
+
+Handle 0x001A, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J1101
+	Internal Connector Type: None
+	External Reference Designator: Dp1
+	External Connector Type: None
+	Port Type: Video Port
+
+Handle 0x001B, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J1102
+	Internal Connector Type: None
+	External Reference Designator: Dp2
+	External Connector Type: None
+	Port Type: Video Port
+
+Handle 0x001C, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J2015
+	Internal Connector Type: None
+	External Reference Designator: Microphone In
+	External Connector Type: Mini Jack (headphones)
+	Port Type: Audio Port
+
+Handle 0x001D, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J2102
+	Internal Connector Type: None
+	External Reference Designator: Head Phone
+	External Connector Type: Mini Jack (headphones)
+	Port Type: Audio Port
+
+Handle 0x001E, DMI type 9, 17 bytes
+System Slot Information
+	Designation: J3601
+	Type: x4 PCI Express x8
+	Current Usage: Available
+	Length: Short
+	ID: 0
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 0000:00:02.1
+
+Handle 0x001F, DMI type 9, 17 bytes
+System Slot Information
+	Designation: J3700
+	Type: x1 PCI Express x1
+	Current Usage: In Use
+	Length: Short
+	ID: 1
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 0000:00:02.2
+
+Handle 0x0020, DMI type 9, 17 bytes
+System Slot Information
+	Designation: J3600
+	Type: x1 PCI Express x1
+	Current Usage: Available
+	Length: Short
+	ID: 2
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 0000:00:02.3
+
+Handle 0x0021, DMI type 9, 17 bytes
+System Slot Information
+	Designation: J3713
+	Type: x1 PCI Express x1
+	Current Usage: Available
+	Length: Short
+	ID: 4
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 0000:02:02.5
+
+Handle 0x0022, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard LAN BroadCom
+	Type: Ethernet
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:02:00.0
+
+Handle 0x0023, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Audio Codec ALC288
+	Type: Sound
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:00:09.2
+
+Handle 0x0026, DMI type 4, 48 bytes
+Processor Information
+	Socket Designation: P0
+	Type: Central Processor
+	Family: A-Series
+	Manufacturer: AuthenticAMD
+	ID: FF FB 8B 17 00 0F 67 00
+	Signature: Family 11, Model 15, Stepping 15
+	Flags:
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		PSN (Processor serial number present and enabled)
+		DS (Debug store)
+		ACPI (ACPI supported)
+	Version: AMD A9-9400 RADEON R5, 5 COMPUTE CORES 2C+3G   
+	Voltage: 1.1 V
+	External Clock: 100 MHz
+	Max Speed: 2400 MHz
+	Current Speed: 2400 MHz
+	Status: Populated, Enabled
+	Upgrade: None
+	L1 Cache Handle: 0x0007
+	L2 Cache Handle: 0x0008
+	L3 Cache Handle: Not Provided
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Not Specified
+	Core Count: 2
+	Core Enabled: 2
+	Thread Count: 2
+	Characteristics:
+		64-bit capable
+
+Handle 0x0027, DMI type 127, 4 bytes
+End Of Table
+
