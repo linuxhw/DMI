@@ -1,4 +1,4 @@
-# dmidecode 3.5
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 77 structures occupying 3086 bytes.
@@ -404,7 +404,8 @@ Port Connector Information
 Handle 0x0901, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT1  
-	Type: x4 PCI Express
+	Type: PCI Express
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -415,7 +416,8 @@ System Slot Information
 Handle 0x0902, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT2  
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 2
@@ -426,7 +428,8 @@ System Slot Information
 Handle 0x0903, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT3  
-	Type: x4 PCI Express
+	Type: PCI Express
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Long
 	ID: 3
@@ -437,7 +440,8 @@ System Slot Information
 Handle 0x0904, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT4  
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 4
@@ -448,7 +452,8 @@ System Slot Information
 Handle 0x0905, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT5  
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 5
@@ -460,7 +465,8 @@ System Slot Information
 Handle 0x0906, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT6  
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 6
@@ -507,7 +513,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFE01000
 	Status: Valid, Full
-	Change Token: 0x00000141
+	Change Token: 0x00000557
 	Header Format: Type 1
 	Supported Log Type Descriptors: 5
 	Descriptor 1: POST error

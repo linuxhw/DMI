@@ -1,5 +1,5 @@
-# dmidecode 2.12
-# SMBIOS entry point at 0x000f04c0
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 58 structures occupying 2448 bytes.
 Table at 0xBEEC6018.
@@ -85,6 +85,31 @@ Processor Information
 	Family: FX
 	Manufacturer: AMD              
 	ID: 20 0F 60 00 FF FB 8B 17
+	Signature: Family 21, Model 2, Stepping 0
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
 	Version: AMD FX(tm)-6300 Six-Core Processor             
 	Voltage: 1.2 V
 	External Clock: 200 MHz
@@ -486,8 +511,8 @@ Physical Memory Array
 Handle 0x002D, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0013F0003FF
-	Range Size: 5104 MB
+	Ending Address: 0x0023F0003FF
+	Range Size: 9200 MB
 	Physical Array Handle: 0x002C
 	Partition Width: 255
 
@@ -519,25 +544,33 @@ Handle 0x0030, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002C
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: Node0_Dimm1
 	Bank Locator: Node0_Bank0
-	Type: Unknown
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Dimm1_Manufacturer
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 800 MT/s
+	Manufacturer: Kingston          
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Dimm1_PartNum
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: KHX1600C9D3/2
+	Rank: 1
+	Configured Clock Speed: 800 MT/s
 
-Handle 0x0031, DMI type 126, 35 bytes
-Inactive
+Handle 0x0031, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0030
+	Memory Array Mapped Address Handle: 0x002D
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x0032, DMI type 17, 34 bytes
 Memory Device
@@ -545,26 +578,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: Node0_Dimm2
 	Bank Locator: Node0_Bank0
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 800 MHz
-	Manufacturer: Kingston          
+	Speed: 667 MT/s
+	Manufacturer: Corsair           
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX1600C9D3/2
+	Part Number: CMX4GX3M1A160
 	Rank: 1
-	Configured Clock Speed: 800 MHz
+	Configured Clock Speed: 800 MT/s
 
 Handle 0x0033, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0032
 	Memory Array Mapped Address Handle: 0x002D
 	Partition Row Position: Unknown
@@ -584,19 +617,19 @@ Memory Device
 	Bank Locator: Node0_Bank0
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 800 MHz
+	Speed: 800 MT/s
 	Manufacturer: Kingston          
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX1600C9D3/2
 	Rank: 1
-	Configured Clock Speed: 800 MHz
+	Configured Clock Speed: 800 MT/s
 
 Handle 0x0035, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0034
 	Memory Array Mapped Address Handle: 0x002D
 	Partition Row Position: Unknown

@@ -1,7 +1,7 @@
 # dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0xCBDF9000.
+Table at 0xBDE09000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -588,39 +588,39 @@ Handle 0x003C, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x003A
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
-	Set: None
-	Locator: DIMM CHA1
-	Bank Locator: BANK 1
-	Type: Unknown
-	Type Detail: None
-
-Handle 0x003D, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x003A
-	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: DIMM CHB4
-	Bank Locator: BANK 2
+	Locator: DIMM CHA1
+	Bank Locator: BANK 1
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: Samsung
+	Manufacturer: SK Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M378A1K43CB2-CRC    
+	Part Number: HMA81GU6CJR8N-VK    
 	Rank: 1
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
+
+Handle 0x003D, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x003A
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: DIMM CHB4
+	Bank Locator: BANK 2
+	Type: Unknown
+	Type Detail: None
 
 Handle 0x003E, DMI type 17, 40 bytes
 Memory Device
@@ -636,10 +636,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: SK Hynix
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA81GU6AFR8N-UH    
+	Part Number: M378A1K43CB2-CRC    
 	Rank: 1
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
@@ -657,7 +657,7 @@ Memory Array Mapped Address
 Handle 0x0040, DMI type 176, 36 bytes
 OEM-specific Type
 	Header and Data:
-		B0 24 40 00 00 00 32 34 00 09 00 00 04 31 FF FF
+		B0 24 40 00 00 00 32 34 00 09 00 00 00 31 FF FF
 		ED EA 77 93 D2 9B 4F 40 B8 C3 72 70 B4 9E 2B AD
 		03 00 03 00
 
@@ -713,7 +713,7 @@ System Information
 	Version:                       
 	Serial Number: --
 	UUID: --
-	Wake-up Type: AC Power Restored
+	Wake-up Type: Other
 	SKU Number: S26361-Kxxx-Vyyy
 	Family: ESPRIMO-FTS
 
@@ -751,7 +751,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFF860000
 	Status: Valid, Not Full
-	Change Token: 0x00000001
+	Change Token: 0x00000007
 	Header Format: Type 1
 	Supported Log Type Descriptors: 27
 	Descriptor 1: Single-bit ECC memory error
@@ -818,7 +818,7 @@ OEM-specific Type
 Handle 0x004F, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 4F 00 35 00 00 00 0B 00 00 00 00 00 0A 00
+		83 40 4F 00 14 00 00 00 0B 00 00 00 00 00 0A 00
 		F8 00 46 A1 00 00 00 00 09 C0 00 00 08 00 0B 00
 		05 0F 55 00 00 00 00 00 FE 00 B7 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
@@ -870,7 +870,7 @@ OEM-specific Type
 		DD 36 53 00 07 01 00 02 01 00 00 00 02 00 02 01
 		00 00 00 03 00 02 01 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 07 00 07 00 FF FF FF 07 00 08
-		00 FF FF FF 40 10
+		00 FF FF FF FF FF
 	Strings:
 		Reference Code - SA - System Agent
 		Reference Code - MRC
@@ -887,8 +887,8 @@ OEM-specific Type
 		DD 60 54 00 0D 01 00 00 00 00 A6 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
-		FF FF FF FF 0D 00 FF FF FF FF FF 0E 00 FF FF FF
+		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
+		09 00 66 10 0D 00 FF FF FF FF FF 0E 00 FF FF FF
 		FF FF 0F 00 FF FF FF FF FF 10 11 01 02 02 01 01
 	Strings:
 		Lan Phy Version
@@ -936,7 +936,7 @@ Group Associations
 Handle 0x0058, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 58 00 01 03 01 45 02 00 90 06 83 10 80 30
+		DB 51 58 00 01 03 01 45 02 00 94 06 81 10 89 30
 		00 00 00 00 40 68 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

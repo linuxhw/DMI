@@ -87,14 +87,44 @@ Handle 0x0004, DMI type 4, 40 bytes
 Processor Information
 	Socket Designation: CPU 1
 	Type: Central Processor
-	Family: Other
+	Family: Core 2 Duo
 	Manufacturer: Intel            
-	ID: 7A 06 01 00 FF FB EB BF
-	Version: Pentium(R) Dual-Core  CPU      E6500  @ 2.93GHz     
-	Voltage: 1.3 V
+	ID: 76 06 01 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 23, Stepping 6
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		DS (Debug store)
+		ACPI (ACPI supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		SS (Self-snoop)
+		HTT (Multi-threading)
+		TM (Thermal monitor supported)
+		PBE (Pending break enabled)
+	Version: Intel(R) Core(TM)2 Duo CPU     E7300  @ 2.66GHz     
+	Voltage: 1.2 V
 	External Clock: 267 MHz
-	Max Speed: 2933 MHz
-	Current Speed: 2933 MHz
+	Max Speed: 2666 MHz
+	Current Speed: 2666 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -131,15 +161,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2 MB
-	Maximum Size: 2 MB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
 	Speed: Unknown
 	Error Correction Type: Single-bit ECC
 	System Type: Unified
-	Associativity: 8-way Set-associative
+	Associativity: Other
 
 Handle 0x0007, DMI type 7, 19 bytes
 Cache Information
@@ -194,8 +224,8 @@ Memory Module Information
 	Bank Connections: 4 5
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000B, DMI type 13, 22 bytes
@@ -242,8 +272,8 @@ Physical Memory Array
 Handle 0x000E, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x000D
 	Partition Width: 4
 
@@ -280,15 +310,15 @@ Handle 0x0011, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x000D
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: Unknown
+	Type: SDRAM
+	Type Detail: Synchronous
 	Speed: Unknown
 	Manufacturer: Manufacturer1
 	Serial Number: --
@@ -297,9 +327,9 @@ Memory Device
 
 Handle 0x0012, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0011
 	Memory Array Mapped Address Handle: 0x000E
 	Partition Row Position: 1

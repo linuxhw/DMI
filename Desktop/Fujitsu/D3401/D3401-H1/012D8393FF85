@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0xCBE08000.
@@ -36,7 +36,7 @@ System Information
 	Version:                       
 	Serial Number: --
 	3364B4F6D3C986210C2AE92800CF8530
-	Wake-up Type: APM Timer
+	Wake-up Type: Other
 	SKU Number: S26361-Kxxx-Vyyy
 	Family: ESPRIMO-FTS
 
@@ -490,8 +490,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -506,8 +506,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -592,7 +592,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM CHA3
@@ -616,7 +616,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM CHA1
@@ -640,7 +640,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM CHB4
@@ -664,7 +664,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM CHB2
@@ -738,7 +738,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFF860000
 	Status: Valid, Not Full
-	Change Token: 0x00000083
+	Change Token: 0x000000DB
 	Header Format: Type 1
 	Supported Log Type Descriptors: 27
 	Descriptor 1: Single-bit ECC memory error

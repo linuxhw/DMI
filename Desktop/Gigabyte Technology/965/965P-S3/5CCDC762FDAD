@@ -1,14 +1,14 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
-39 structures occupying 1196 bytes.
+39 structures occupying 1192 bytes.
 Table at 0x000F0100.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Award Software International, Inc.
-	Version: F8
-	Release Date: 01/11/2007
+	Version: F14
+	Release Date: 06/25/2009
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 1 MB
@@ -52,7 +52,7 @@ Handle 0x0002, DMI type 2, 8 bytes
 Base Board Information
 	Manufacturer: Gigabyte Technology Co., Ltd.
 	Product Name: 965P-S3
-	Version: x.x
+	Version:  
 	Serial Number: --
 
 807075653E24ECB98B63F18E00309403
@@ -148,8 +148,8 @@ Memory Module Information
 	Bank Connections: 1
 	Current Speed: Unknown
 	Type: Other
-	Installed Size: 1024 MB (Double-bank Connection)
-	Enabled Size: 1024 MB (Double-bank Connection)
+	Installed Size: 1024 MB (Single-bank Connection)
+	Enabled Size: 1024 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -158,8 +158,8 @@ Memory Module Information
 	Bank Connections: 2
 	Current Speed: Unknown
 	Type: Other
-	Installed Size: 1024 MB (Double-bank Connection)
-	Enabled Size: 1024 MB (Double-bank Connection)
+	Installed Size: 1024 MB (Single-bank Connection)
+	Enabled Size: 1024 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0008, DMI type 6, 12 bytes
@@ -168,8 +168,8 @@ Memory Module Information
 	Bank Connections: 3
 	Current Speed: Unknown
 	Type: Other
-	Installed Size: 1024 MB (Double-bank Connection)
-	Enabled Size: 1024 MB (Double-bank Connection)
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
@@ -177,9 +177,9 @@ Memory Module Information
 	Socket Designation: A3
 	Bank Connections: 4
 	Current Speed: Unknown
-	Type: Unknown
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Type: Other
+	Installed Size: 512 MB (Single-bank Connection)
+	Enabled Size: 512 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 7, 19 bytes
@@ -274,7 +274,7 @@ Handle 0x0013, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: PS/2 Mouse
 	Internal Connector Type: PS/2
-	External Reference Designator: No Detected
+	External Reference Designator: Detected
 	External Connector Type: PS/2
 	Port Type: Mouse Port
 
@@ -408,7 +408,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A2
@@ -425,16 +425,16 @@ Handle 0x001F, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x001B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 512 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A3
 	Bank Locator: Bank6/7
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
+	Speed: 667 MT/s
 	Manufacturer:  
 	Serial Number: --
 	271882FD79060B21C43F805A2DE81148  
@@ -443,8 +443,8 @@ Memory Device
 Handle 0x0020, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x0011FFFFFFF
+	Range Size: 4608 MB
 	Physical Array Handle: 0x001B
 	Partition Width: 1
 
@@ -469,17 +469,17 @@ Memory Device Mapped Address
 Handle 0x0023, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00080000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: 1
 
 Handle 0x0024, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Starting Address: 0x00100000000
+	Ending Address: 0x0011FFFFFFF
+	Range Size: 512 MB
 	Physical Device Handle: 0x001F
 	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: 1

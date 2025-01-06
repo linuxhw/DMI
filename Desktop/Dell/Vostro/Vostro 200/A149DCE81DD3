@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 50 structures occupying 1512 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 09/20/2008
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 2 MB
+	ROM Size: 2048 kB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -216,8 +216,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: External
-	Installed Size: 6 MB
-	Maximum Size: 6 MB
+	Installed Size: 6144 kB
+	Maximum Size: 6144 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -396,7 +396,7 @@ Handle 0x0020, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI3
 	Type: x16 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 3
 	Characteristics:
@@ -442,7 +442,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -461,7 +461,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -480,29 +480,10 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
-	Bank Locator:  
-	Type: DDR2
-	Type Detail: Synchronous
-	Speed: 800 MT/s
-	Manufacturer: CE00000000000000
-	Serial Number: --
-	Asset Tag: --
-	Part Number: M3 78T5663QZ3-CF7 
-
-Handle 0x0028, DMI type 17, 27 bytes
-Memory Device
-	Array Handle: 0x0024
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2 GB
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM4
 	Bank Locator:  
 	Type: DDR2
 	Type Detail: Synchronous
@@ -511,6 +492,25 @@ Memory Device
 	Serial Number: --
 	Asset Tag: --
 	Part Number: NT2GT64U8HD0BY-AD 
+
+Handle 0x0028, DMI type 17, 27 bytes
+Memory Device
+	Array Handle: 0x0024
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM4
+	Bank Locator:  
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 800 MT/s
+	Manufacturer: CE00000000000000
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M3 78T5663QZ3-CF7 
 
 Handle 0x0029, DMI type 19, 15 bytes
 Memory Array Mapped Address

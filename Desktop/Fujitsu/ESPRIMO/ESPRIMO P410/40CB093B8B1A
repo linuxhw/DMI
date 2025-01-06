@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 93 structures occupying 3333 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 10/02/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -37,7 +37,7 @@ System Information
 	Version:                       
 	Serial Number: --
 	UUID: --
-	Wake-up Type: APM Timer
+	Wake-up Type: Power Switch
 	SKU Number: S26361-Kxxx-Vyyy
 	Family:                 
 
@@ -48,7 +48,7 @@ Base Board Information
 	Version: S26361-D3120-A1            
 	Serial Number: --
 	Asset Tag: --
-	...
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:                       
@@ -64,7 +64,7 @@ Chassis Information
 	Version: C$WH01
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -718,8 +718,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -775,7 +775,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz
-	Voltage: 5.0 V 2.9 V
+	Voltage: 2.9 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
 	Current Speed: 3300 MHz
@@ -866,7 +866,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1A
@@ -879,7 +879,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: HMT351U6CFR8C-H9  
 	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0052, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -916,7 +916,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1B
@@ -929,7 +929,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: HMT351U6CFR8C-H9  
 	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0057, DMI type 20, 35 bytes
 Memory Device Mapped Address

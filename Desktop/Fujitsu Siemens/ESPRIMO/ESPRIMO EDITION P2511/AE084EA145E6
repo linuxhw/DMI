@@ -401,14 +401,14 @@ BIOS Language Information
 
 Handle 0x0023, DMI type 15, 29 bytes
 System Event Log
-	Area Length: 48 bytes
+	Area Length: 128 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0xFFFF5027
+	Access Address: 0xFFFF5287
 	Status: Valid, Not Full
-	Change Token: 0x0000001E
+	Change Token: 0x00000023
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -433,7 +433,7 @@ Memory Device
 	Error Information Handle: 0xFF01
 	Total Width: 40968 bits
 	Data Width: 41024 bits
-	Size: 2048 MB
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: Slot-1
@@ -452,7 +452,7 @@ Memory Device
 	Error Information Handle: 0xFF01
 	Total Width: 41992 bits
 	Data Width: 42048 bits
-	Size: 1024 MB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: Slot-2
@@ -476,8 +476,8 @@ Memory Array Mapped Address
 Handle 0x0028, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0025
 	Memory Array Mapped Address Handle: 0x0027
 	Partition Row Position: Unknown
@@ -486,9 +486,9 @@ Memory Device Mapped Address
 
 Handle 0x0029, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
+	Starting Address: 0x00040000000
 	Ending Address: 0x000BFFFFFFF
-	Range Size: 1 GB
+	Range Size: 2 GB
 	Physical Device Handle: 0x0026
 	Memory Array Mapped Address Handle: 0x0027
 	Partition Row Position: Unknown
@@ -558,7 +558,7 @@ OEM-specific Type
 Handle 0x0034, DMI type 186, 15 bytes
 OEM-specific Type
 	Header and Data:
-		BA 0F 34 00 0D AF 98 01 01 01 01 01 10 0F 2F
+		BA 0F 34 00 00 00 00 00 00 00 00 00 00 00 00
 
 Handle 0x0035, DMI type 188, 8 bytes
 OEM-specific Type

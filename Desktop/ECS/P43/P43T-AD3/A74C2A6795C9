@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 44 structures occupying 1964 bytes.
@@ -87,14 +87,44 @@ Handle 0x0004, DMI type 4, 40 bytes
 Processor Information
 	Socket Designation: CPU 1
 	Type: Central Processor
-	Family: Other
+	Family: Core 2 Quad
 	Manufacturer: Intel            
-	ID: 76 06 01 00 FF FB EB BF
-	Version: Pentium(R) Dual-Core  CPU      E5200  @ 2.50GHz     
-	Voltage: 1.1 V
-	External Clock: 200 MHz
-	Max Speed: 2500 MHz
-	Current Speed: 2500 MHz
+	ID: 7A 06 01 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 23, Stepping 10
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		DS (Debug store)
+		ACPI (ACPI supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		SS (Self-snoop)
+		HTT (Multi-threading)
+		TM (Thermal monitor supported)
+		PBE (Pending break enabled)
+	Version: Intel(R) Core(TM)2 Quad CPU    Q8400  @ 2.66GHz     
+	Voltage: 1.3 V
+	External Clock: 333 MHz
+	Max Speed: 2666 MHz
+	Current Speed: 2666 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -103,9 +133,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
-	Core Count: 2
-	Core Enabled: 2
-	Thread Count: 2
+	Core Count: 4
+	Core Enabled: 4
+	Thread Count: 4
 	Characteristics:
 		64-bit capable
 
@@ -115,8 +145,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 64 kB
-	Maximum Size: 64 kB
+	Installed Size: 128 kB
+	Maximum Size: 128 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -131,8 +161,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2 MB
-	Maximum Size: 2 MB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -292,7 +322,7 @@ Memory Device
 	Bank Locator: BANK0
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 800 MT/s
+	Speed: Unknown
 	Manufacturer: Manufacturer00
 	Serial Number: --
 	Asset Tag: --
@@ -331,7 +361,7 @@ Memory Device
 	Bank Locator: BANK1
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 800 MT/s
+	Speed: Unknown
 	Manufacturer: Manufacturer01
 	Serial Number: --
 	Asset Tag: --
@@ -370,7 +400,7 @@ Memory Device
 	Bank Locator: BANK2
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 800 MT/s
+	Speed: Unknown
 	Manufacturer: Manufacturer02
 	Serial Number: --
 	Asset Tag: --
@@ -409,7 +439,7 @@ Memory Device
 	Bank Locator: BANK3
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 800 MT/s
+	Speed: Unknown
 	Manufacturer: Manufacturer03
 	Serial Number: --
 	Asset Tag: --

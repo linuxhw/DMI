@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 58 structures occupying 2560 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 10/07/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -151,8 +151,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -167,8 +167,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -533,13 +533,6 @@ Memory Device
 	Bank Locator: Node0_Bank0
 	Type: Unknown
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Dimm0_Manufacturer
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Dimm0_PartNum
-	Rank: Unknown
-	Configured Clock Speed: Unknown
 
 Handle 0x002F, DMI type 126, 35 bytes
 Inactive
@@ -550,7 +543,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: Node0_Dimm1
@@ -563,7 +556,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: CMZ8GX3M2A186
 	Rank: 1
-	Configured Clock Speed: 933 MT/s
+	Configured Memory Speed: 933 MT/s
 
 Handle 0x0031, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -589,13 +582,6 @@ Memory Device
 	Bank Locator: Node0_Bank0
 	Type: Unknown
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Dimm2_Manufacturer
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Dimm2_PartNum
-	Rank: Unknown
-	Configured Clock Speed: Unknown
 
 Handle 0x0033, DMI type 126, 35 bytes
 Inactive
@@ -606,7 +592,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: Node0_Dimm3
@@ -619,7 +605,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: CMZ8GX3M2A186
 	Rank: 1
-	Configured Clock Speed: 933 MT/s
+	Configured Memory Speed: 933 MT/s
 
 Handle 0x0035, DMI type 20, 35 bytes
 Memory Device Mapped Address
