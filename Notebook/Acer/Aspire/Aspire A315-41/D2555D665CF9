@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
 Table at 0x8C4E4000.
@@ -219,7 +219,7 @@ Memory Device
 	Error Information Handle: 0x000F
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -227,11 +227,11 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2400 MT/s
-	Manufacturer: Kingston
+	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9905700-011.A00G    
-	Rank: 1
+	Part Number: Unknown
+	Rank: 2
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -243,7 +243,7 @@ Memory Device
 	Error Information Handle: 0x0010
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -251,11 +251,11 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2400 MT/s
-	Manufacturer: Unknown
+	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: J641GU42J7240N3
-	Rank: 1
+	Part Number: Unknown
+	Rank: 2
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -294,16 +294,16 @@ Handle 0x0010, DMI type 18, 23 bytes
 Handle 0x0011, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x000B
 	Partition Width: 2
 
 Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Device Handle: 0x000C
 	Memory Array Mapped Address Handle: 0x0011
 	Partition Row Position: Unknown
@@ -313,8 +313,8 @@ Memory Device Mapped Address
 Handle 0x0013, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Device Handle: 0x000D
 	Memory Array Mapped Address Handle: 0x0011
 	Partition Row Position: Unknown

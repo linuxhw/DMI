@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0x79F97000.
@@ -6,8 +6,8 @@ Table at 0x79F97000.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Insyde Corp.
-	Version: V1.21
-	Release Date: 11/02/2018
+	Version: V1.13
+	Release Date: 12/26/2017
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 8 MB
@@ -31,14 +31,14 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.21
+	BIOS Revision: 1.13
 	Firmware Revision: 1.16
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Acer
 	Product Name: Aspire A715-71G
-	Version: V1.21
+	Version: V1.13
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -49,7 +49,7 @@ Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: KBL
 	Product Name: Charmeleon_KLS
-	Version: V1.21
+	Version: V1.13
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -65,7 +65,7 @@ Chassis Information
 	Manufacturer: Acer
 	Type: Notebook
 	Lock: Not Present
-	Version: V1.21
+	Version: V1.13
 	Serial Number: --
 	Asset Tag: --
 	380AD15AAB729CF25C4397C21C466ACE
@@ -116,7 +116,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz
-	Voltage: 0.9 V
+	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
 	Current Speed: 3100 MHz
@@ -239,7 +239,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -250,11 +250,11 @@ Memory Device
 	Manufacturer: SK Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA851S6AFR6N-UH    
+	Part Number: HMA425S6BJR6N-UH    
 	Rank: 1
 	Configured Memory Speed: 2400 MT/s
-	Minimum Voltage: 1.35 V
-	Maximum Voltage: 1.5 V
+	Minimum Voltage: 1.25 V
+	Maximum Voltage: 1.25 V
 	Configured Voltage: 1.2 V
 
 Handle 0x000F, DMI type 17, 40 bytes
@@ -263,7 +263,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -274,7 +274,7 @@ Memory Device
 	Manufacturer: SK Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA425S6BJR6N-UH    
+	Part Number: HMA851S6AFR6N-UH    
 	Rank: 1
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.25 V
@@ -292,8 +292,8 @@ Memory Array Mapped Address
 Handle 0x0011, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x000E
 	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: Unknown
@@ -303,8 +303,8 @@ Memory Device Mapped Address
 Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x000F
 	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: Unknown
@@ -364,7 +364,7 @@ Handle 0x0018, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 18 00 03 01 00 01 05 00 00 00 02 00 00 00
-		00 9A 00 03 00 00 05 00 00 00
+		00 5E 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version

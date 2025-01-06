@@ -1,15 +1,13 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0x429DB000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Insyde Corp.
-	Version: V1.20
-	Release Date: 11/03/2021
+	Version: V1.34
+	Release Date: 04/21/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 4096 MB
@@ -33,14 +31,14 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.20
-	Firmware Revision: 1.20
+	BIOS Revision: 1.34
+	Firmware Revision: 1.34
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Acer
 	Product Name: Aspire A315-58
-	Version: V1.20
+	Version: V1.34
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -51,7 +49,7 @@ Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: TGL
 	Product Name: Camellia_TL
-	Version: V1.20
+	Version: V1.34
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -67,7 +65,7 @@ Chassis Information
 	Manufacturer: Acer
 	Type: Notebook
 	Lock: Not Present
-	Version: V1.20
+	Version: V1.34
 	Serial Number: --
 	Asset Tag: --
 	380AD15AAB729CF25C4397C21C466ACE
@@ -121,7 +119,7 @@ Processor Information
 	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 4100 MHz
-	Current Speed: 3000 MHz
+	Current Speed: 4100 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0006
@@ -235,18 +233,18 @@ Handle 0x000C, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
-		0x0017 (OEM-specific)
+		0x0018 (OEM-specific)
 
-Handle 0x001F, DMI type 14, 23 bytes
+Handle 0x0020, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 6
-		0x0018 (OEM-specific)
 		0x0019 (OEM-specific)
 		0x001A (OEM-specific)
 		0x001B (OEM-specific)
 		0x001C (OEM-specific)
 		0x001D (OEM-specific)
+		0x001E (OEM-specific)
 
 Handle 0x000D, DMI type 16, 23 bytes
 Physical Memory Array
@@ -261,34 +259,34 @@ Handle 0x000E, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x000D
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: Controller0-ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2667 MT/s
+	Manufacturer: Crucial Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: CB8GS2666.C8RT      
+	Rank: 1
+	Configured Memory Speed: 2667 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: None
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
+	Module Manufacturer ID: Bank 6, Hex 0x9B
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: None
+	Volatile Size: 8 GB
 	Cache Size: None
 	Logical Size: None
 
@@ -298,7 +296,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Controller1-ChannelA
@@ -330,12 +328,23 @@ Memory Device
 Handle 0x0010, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x000D
-	Partition Width: 1
+	Partition Width: 2
 
 Handle 0x0011, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x000E
+	Memory Array Mapped Address Handle: 0x0010
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
@@ -346,23 +355,23 @@ Memory Device Mapped Address
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x0012, DMI type 131, 64 bytes
+Handle 0x0013, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 12 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 13 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 82 A0 00 00 00 00 01 00 00 00 00 00 0F 00
 		F0 06 1E 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0013, DMI type 131, 64 bytes
+Handle 0x0014, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 13 00 00 00 00 00 00 00 00 00 00 00 00 00
+		83 40 14 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0014, DMI type 170, 78 bytes
+Handle 0x0015, DMI type 170, 78 bytes
 Acer Hotkey Function
 	Function bitmap for Communication Button: 0x0801
 		WiFi: Yes
@@ -375,25 +384,25 @@ Acer Hotkey Function
 	Function bitmap for Others Button: 0x0006
 	Communication Function Key Number: 3
 
-Handle 0x0015, DMI type 171, 54 bytes
+Handle 0x0016, DMI type 171, 54 bytes
 OEM-specific Type
 	Header and Data:
-		AB 36 15 00 04 08 04 61 A0 08 87 80 AA 0A 15 00
+		AB 36 16 00 04 08 04 61 A0 08 87 80 AA 0A 15 00
 		00 00 00 01 86 80 78 9A 02 EC 10 68 81 05 86 80
 		C8 A0 19 86 80 F0 A0 11 00 00 00 00 0D 00 00 00
 		00 16 00 00 00 00
 
-Handle 0x0016, DMI type 172, 42 bytes
+Handle 0x0017, DMI type 172, 42 bytes
 OEM-specific Type
 	Header and Data:
-		AC 2A 16 00 02 54 01 FF 00 02 03 00 03 FF 00 04
+		AC 2A 17 00 02 54 01 FF 00 02 03 00 03 FF 00 04
 		01 00 05 0F 00 06 FF 00 07 FF 00 0D FF 00 0E 01
 		00 0F FF 00 10 FF 00 11 FF 00
 
-Handle 0x0017, DMI type 219, 106 bytes
+Handle 0x0018, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 17 00 01 04 01 45 02 00 A0 06 01 10 89 20
+		DB 6A 18 00 01 04 01 45 02 00 90 06 01 10 89 20
 		00 00 00 00 40 00 00 00 00 00 00 00 00 20 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -406,20 +415,20 @@ OEM-specific Type
 		MEI3
 		MEI4
 
-Handle 0x0018, DMI type 221, 26 bytes
+Handle 0x0019, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 18 00 03 01 00 0A 00 54 31 00 02 00 00 00
+		DD 1A 19 00 03 01 00 0A 00 54 31 00 02 00 00 00
 		00 8A 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
 		TXT ACM version
 
-Handle 0x0019, DMI type 221, 26 bytes
+Handle 0x001A, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 19 00 03 01 00 0A 00 54 31 00 02 00 00 00
+		DD 1A 1A 00 03 01 00 0A 00 54 31 00 02 00 00 00
 		00 00 00 03 04 0F 00 1E F0 06
 	Strings:
 		Reference Code - ME
@@ -427,10 +436,10 @@ OEM-specific Type
 		ME Firmware Version
 		Consumer SKU
 
-Handle 0x001A, DMI type 221, 47 bytes
+Handle 0x001B, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 1A 00 06 01 00 0A 00 54 31 00 02 03 FF FF
+		DD 2F 1B 00 06 01 00 0A 00 54 31 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 20 00 05 00 FF FF FF 20
 		00 06 00 02 46 00 00 00 07 00 04 00 00 00 00
 	Strings:
@@ -442,10 +451,10 @@ OEM-specific Type
 		OPROM - RST - RAID
 		PCH Hsio Version
 
-Handle 0x001B, DMI type 221, 82 bytes
+Handle 0x001C, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 1B 00 0B 01 00 0A 00 54 31 00 02 00 02 00
+		DD 52 1C 00 0B 01 00 0A 00 54 31 00 02 00 02 00
 		02 06 00 03 00 0A 00 54 31 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 01 00 07 00 00 00 00 01 00 08
 		00 FF FF FF FF FF 09 00 11 01 05 00 00 0A 00 00
@@ -465,20 +474,20 @@ OEM-specific Type
 		Thunderbolt(TM) FW Version
 		System Agent Manageability Engine FW Version
 
-Handle 0x001C, DMI type 221, 12 bytes
+Handle 0x001D, DMI type 221, 12 bytes
 OEM-specific Type
 	Header and Data:
-		DD 0C 1C 00 01 01 00 04 00 00 00 00
+		DD 0C 1D 00 01 01 00 04 00 00 00 00
 	Strings:
 		FSP Binary Version
 
-Handle 0x001D, DMI type 221, 89 bytes
+Handle 0x001E, DMI type 221, 89 bytes
 OEM-specific Type
 	Header and Data:
-		DD 59 1D 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
+		DD 59 1E 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 01 14 00 00 00 0C 00 00
+		00 FF FF FF FF FF 0B 00 01 22 00 00 00 0C 00 00
 		17 00 64 10 0D 00 FF FF FF FF FF 0E 00 00 07 03
 		00 00 0F 00 00 02 00 0F 00
 	Strings:
@@ -498,10 +507,10 @@ OEM-specific Type
 		Platform Version
 		Client Silicon Version
 
-Handle 0x001E, DMI type 248, 11 bytes
+Handle 0x001F, DMI type 248, 11 bytes
 OEM-specific Type
 	Header and Data:
-		F8 0B 1E 00 00 02 6C 00 00 00 00
+		F8 0B 1F 00 00 02 6C 00 00 00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

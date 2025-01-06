@@ -1,7 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-52 structures occupying 2440 bytes.
+52 structures occupying 2445 bytes.
 Table at 0x000E6550.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -324,7 +324,7 @@ Memory Device
 	Error Information Handle: 0x001E
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -337,7 +337,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: PSD34G13332S
 	Rank: Unknown
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x001D, DMI type 6, 12 bytes
 Memory Module Information
@@ -383,13 +383,6 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Clock Speed: Unknown
 
 Handle 0x0021, DMI type 6, 12 bytes
 Memory Module Information
@@ -407,7 +400,7 @@ Memory Device
 	Error Information Handle: 0x0024
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -420,7 +413,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: NT4GC64B8HB0NS-CG 
 	Rank: Unknown
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0023, DMI type 6, 12 bytes
 Memory Module Information
@@ -466,13 +459,6 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Clock Speed: Unknown
 
 Handle 0x0027, DMI type 6, 12 bytes
 Memory Module Information
@@ -535,12 +521,12 @@ Acer Hotkey Function
 	Function bitmap for Others Button: 0x0006
 	Communication Function Key Number: 3
 
-Handle 0x002C, DMI type 171, 39 bytes
+Handle 0x002C, DMI type 171, 44 bytes
 OEM-specific Type
 	Header and Data:
-		AB 27 2C 00 01 86 80 16 01 01 DE 10 F4 0D 02 E4
-		14 B5 16 05 86 80 20 1C 07 8C 16 2E 00 04 4E 06
-		18 C2 08 89 04 2C E0
+		AB 2C 2C 00 01 86 80 16 01 01 DE 10 F4 0D 02 E4
+		14 B5 16 05 86 80 20 1C 07 8C 16 2E 00 03 87 80
+		24 00 04 4E 06 18 C2 08 89 04 2C E0
 
 Handle 0x002D, DMI type 172, 6 bytes
 OEM-specific Type
@@ -657,8 +643,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
