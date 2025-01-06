@@ -1,13 +1,13 @@
 # dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0xCB9F0000.
+Table at 0xCB9EC000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 2803
-	Release Date: 04/28/2022
+	Version: 3405
+	Release Date: 12/13/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -397,7 +397,7 @@ Handle 0x002A, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.84
+	Firmware Revision: 3.92
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -433,8 +433,8 @@ Memory Array Mapped Address
 Handle 0x002E, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0082FFFFFFF
-	Range Size: 29440 MB
+	Ending Address: 0x0102FFFFFFF
+	Range Size: 62208 MB
 	Physical Array Handle: 0x002C
 	Partition Width: 2
 
@@ -522,7 +522,7 @@ Processor Information
 	Voltage: 1.1 V
 	External Clock: 100 MHz
 	Max Speed: 4650 MHz
-	Current Speed: 3700 MHz
+	Current Speed: 4200 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
 	L1 Cache Handle: 0x002F
@@ -556,49 +556,17 @@ Handle 0x0034, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x002C
 	Error Information Handle: 0x0033
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 16 GB
-	Form Factor: DIMM
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
 	Set: None
 	Locator: DIMM_A1
 	Bank Locator: BANK 0
-	Type: DDR4
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
-	Manufacturer: Kingston
-	Serial Number: --
-	Asset Tag: --
-	Part Number: KF3200C16D4/16GX    
-	Rank: 2
-	Configured Memory Speed: 2400 MT/s
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
-	Memory Technology: DRAM
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 2, Hex 0x98
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: 16 GB
-	Cache Size: None
-	Logical Size: None
+	Type: Unknown
+	Type Detail: Unknown
 
-Handle 0x0035, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
-	Physical Device Handle: 0x0034
-	Memory Array Mapped Address Handle: 0x002E
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
-
-Handle 0x0036, DMI type 18, 23 bytes
+Handle 0x0035, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -608,26 +576,26 @@ Handle 0x0036, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0037, DMI type 17, 92 bytes
+Handle 0x0036, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x002C
-	Error Information Handle: 0x0036
+	Error Information Handle: 0x0035
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A2
 	Bank Locator: BANK 1
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
+	Speed: 3200 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KF3200C16D4/16GX    
+	Part Number: KF3200C16D4/32GX    
 	Rank: 2
-	Configured Memory Speed: 2400 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -639,22 +607,22 @@ Memory Device
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 16 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0038, DMI type 20, 35 bytes
+Handle 0x0037, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
-	Physical Device Handle: 0x0037
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0036
 	Memory Array Mapped Address Handle: 0x002E
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0039, DMI type 18, 23 bytes
+Handle 0x0038, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -664,10 +632,10 @@ Handle 0x0039, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x003A, DMI type 17, 92 bytes
+Handle 0x0039, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x002C
-	Error Information Handle: 0x0039
+	Error Information Handle: 0x0038
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
@@ -678,7 +646,7 @@ Memory Device
 	Type: Unknown
 	Type Detail: Unknown
 
-Handle 0x003B, DMI type 18, 23 bytes
+Handle 0x003A, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -688,19 +656,51 @@ Handle 0x003B, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x003C, DMI type 17, 92 bytes
+Handle 0x003B, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x002C
-	Error Information Handle: 0x003B
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Error Information Handle: 0x003A
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B2
 	Bank Locator: BANK 3
-	Type: Unknown
-	Type Detail: Unknown
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 3200 MT/s
+	Manufacturer: Kingston
+	Serial Number: --
+	Asset Tag: --
+	Part Number: KF3200C16D4/32GX    
+	Rank: 2
+	Configured Memory Speed: 3200 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 2, Hex 0x98
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 32 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x003C, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x003B
+	Memory Array Mapped Address Handle: 0x002E
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x003D, DMI type 13, 22 bytes
 BIOS Language Information
@@ -745,13 +745,13 @@ Handle 0x0040, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_2
 	Type: x1 PCI Express x1
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 2
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:00:1f.7
+	Bus Address: 0000:03:03.0
 
 Handle 0x0041, DMI type 127, 4 bytes
 End Of Table

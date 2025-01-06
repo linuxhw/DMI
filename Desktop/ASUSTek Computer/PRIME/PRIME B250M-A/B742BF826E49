@@ -1,13 +1,13 @@
 # dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0xC79FD000.
+Table at 0xC7A8D000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 0316
-	Release Date: 11/08/2016
+	Version: 1205
+	Release Date: 05/11/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -648,25 +648,15 @@ Handle 0x0043, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0042
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8 GB
-	Form Factor: DIMM
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 0
-	Type: DDR4
-	Type Detail: Synchronous
-	Speed: 2667 MT/s
-	Manufacturer: Kingston
-	Serial Number: --
-	Asset Tag: --
-	Part Number: KHX2666C16/8G       
-	Rank: 1
-	Configured Memory Speed: 2133 MT/s
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
+	Type: Unknown
+	Type Detail: None
 
 Handle 0x0044, DMI type 17, 40 bytes
 Memory Device
@@ -680,7 +670,7 @@ Memory Device
 	Locator: ChannelA-DIMM2
 	Bank Locator: BANK 1
 	Type: DDR4
-	Type Detail: Synchronous
+	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2133 MT/s
 	Manufacturer: SK Hynix
 	Serial Number: --
@@ -688,8 +678,8 @@ Memory Device
 	Part Number: HMA41GU6AFR8N-TF    
 	Rank: 2
 	Configured Memory Speed: 2133 MT/s
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
 
 Handle 0x0045, DMI type 17, 40 bytes
@@ -723,10 +713,10 @@ Memory Device
 Handle 0x0047, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0042
-	Partition Width: 2
+	Partition Width: 1
 
 Handle 0x0048, DMI type 7, 19 bytes
 Cache Information
@@ -841,58 +831,49 @@ Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0043
-	Memory Array Mapped Address Handle: 0x0047
-	Partition Row Position: Unknown
-
-Handle 0x004D, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
 	Physical Device Handle: 0x0044
 	Memory Array Mapped Address Handle: 0x0047
 	Partition Row Position: Unknown
 
-Handle 0x004E, DMI type 130, 20 bytes
+Handle 0x004D, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 4E 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
+		82 14 4D 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
 		C0 00 00 00
 
-Handle 0x004F, DMI type 131, 64 bytes
+Handle 0x004E, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 4F 00 14 00 00 00 00 00 00 00 00 00 00 00
-		F8 00 C8 A2 00 00 00 00 01 00 00 00 06 00 0B 00
-		66 04 00 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		83 40 4E 00 14 00 00 00 00 00 00 00 00 00 00 00
+		F8 00 C8 A2 00 00 00 00 01 00 00 00 08 00 0B 00
+		8E 0D 32 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0050, DMI type 221, 26 bytes
+Handle 0x004F, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 50 00 03 01 00 01 00 05 00 00 02 00 00 00
-		00 42 00 03 00 00 05 00 00 00
+		DD 1A 4F 00 03 01 00 01 08 00 00 00 02 00 00 00
+		00 84 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
 		TXT ACM version
 
-Handle 0x0051, DMI type 221, 26 bytes
+Handle 0x0050, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 51 00 03 01 00 01 00 05 00 00 02 00 00 00
-		00 00 00 03 04 0B 06 00 66 04
+		DD 1A 50 00 03 01 00 01 08 00 00 00 02 00 00 00
+		00 00 00 03 04 0B 08 32 8E 0D
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
 		ME Firmware Version
 		Consumer SKU
 
-Handle 0x0052, DMI type 221, 61 bytes
+Handle 0x0051, DMI type 221, 61 bytes
 OEM-specific Type
 	Header and Data:
-		DD 3D 52 00 08 01 00 01 00 05 00 00 02 03 FF FF
+		DD 3D 51 00 08 01 00 01 08 00 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
 		00 06 00 FF FF FF FF FF 07 00 3E 00 00 00 00 08
 		00 34 00 00 00 00 09 00 0B 00 00 00 00
@@ -907,11 +888,11 @@ OEM-specific Type
 		SKL PCH H Dx Hsio Version
 		KBL PCH H Ax Hsio Version
 
-Handle 0x0053, DMI type 221, 54 bytes
+Handle 0x0052, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 53 00 07 01 00 01 00 05 00 00 02 00 01 00
-		05 03 00 03 00 01 00 05 00 00 04 05 FF FF FF FF
+		DD 36 52 00 07 01 00 01 08 00 00 00 02 00 01 08
+		00 02 00 03 00 01 08 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 05 00 07 00 FF FF FF 05 00 08
 		00 FF FF FF 02 03
 	Strings:
@@ -924,15 +905,15 @@ OEM-specific Type
 		SA-CRID New Value
 		OPROM - VBIOS
 
-Handle 0x0054, DMI type 221, 103 bytes
+Handle 0x0053, DMI type 221, 103 bytes
 OEM-specific Type
 	Header and Data:
-		DD 67 54 00 0E 01 00 00 00 00 00 00 02 00 FF FF
+		DD 67 53 00 0E 01 00 00 00 00 00 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
 		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
 		FF FF FF FF 0D 00 02 00 00 00 00 0E 00 FF FF FF
-		FF FF 0F 00 FF FF FF FF FF 10 11 01 03 03 01 00
+		FF FF 0F 00 FF FF FF FF FF 10 11 01 03 04 01 01
 		12 00 00 07 03 00 00
 	Strings:
 		Lan Phy Version
@@ -951,48 +932,34 @@ OEM-specific Type
 		Base EC FW Version
 		EC-EC Protocol Version
 		Royal Park Version
-		BP1.3.3.0_RP01
+		BP1.3.4.1_RP01
 		Platform Version
 
-Handle 0x0055, DMI type 136, 6 bytes
+Handle 0x0054, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 55 00 00 00
+		88 06 54 00 00 00
 
-Handle 0x0056, DMI type 14, 20 bytes
+Handle 0x0055, DMI type 14, 20 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 5
+		0x004F (OEM-specific)
 		0x0050 (OEM-specific)
 		0x0051 (OEM-specific)
 		0x0052 (OEM-specific)
 		0x0053 (OEM-specific)
-		0x0054 (OEM-specific)
 
-Handle 0x0057, DMI type 13, 22 bytes
-BIOS Language Information
-	Language Description Format: Long
-	Installable Languages: 8
-		en|US|iso8859-1
-		fr|FR|iso8859-1
-		zh|CN|unicode
-		<BAD INDEX>
-		<BAD INDEX>
-		<BAD INDEX>
-		<BAD INDEX>
-		<BAD INDEX>
-	Currently Installed Language: en|US|iso8859-1
-
-Handle 0x0058, DMI type 14, 8 bytes
+Handle 0x0056, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x0059, DMI type 219, 81 bytes
+Handle 0x0057, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 59 00 01 03 01 45 02 00 90 06 03 10 86 20
+		DB 51 57 00 01 03 01 45 02 00 90 06 03 10 86 20
 		00 00 00 00 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -1003,6 +970,6 @@ OEM-specific Type
 		MEI2
 		MEI3
 
-Handle 0x005A, DMI type 127, 4 bytes
+Handle 0x0058, DMI type 127, 4 bytes
 End Of Table
 

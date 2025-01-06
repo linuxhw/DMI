@@ -1,4 +1,4 @@
-# dmidecode 3.5
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
 Table at 0x000E6B60.
@@ -338,7 +338,7 @@ Memory Array Mapped Address
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
 	Physical Array Handle: 0x0023
-	Partition Width: 1
+	Partition Width: 2
 
 Handle 0x0025, DMI type 7, 19 bytes
 Cache Information
@@ -460,20 +460,20 @@ Memory Device
 	Error Information Handle: 0x0029
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A1
 	Bank Locator: BANK 0
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
-	Manufacturer: A-DATA
+	Speed: 3000 MT/s
+	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
-	Part Number: DDR4 3200           
+	Part Number: CMK16GX4M2D3000C16  
 	Rank: 1
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 3000 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -486,6 +486,8 @@ Memory Device Mapped Address
 	Physical Device Handle: 0x002A
 	Memory Array Mapped Address Handle: 0x0024
 	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x002C, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -501,17 +503,38 @@ Handle 0x002D, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0023
 	Error Information Handle: 0x002C
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B1
 	Bank Locator: BANK 1
-	Type: Unknown
-	Type Detail: Unknown
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 3000 MT/s
+	Manufacturer: Corsair
+	Serial Number: --
+	Asset Tag: --
+	Part Number: CMK16GX4M2D3000C16  
+	Rank: 1
+	Configured Memory Speed: 3000 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
 
-Handle 0x002E, DMI type 13, 22 bytes
+Handle 0x002E, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x002D
+	Memory Array Mapped Address Handle: 0x0024
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x002F, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 9
@@ -526,10 +549,11 @@ BIOS Language Information
 		<BAD INDEX>
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x002F, DMI type 9, 17 bytes
+Handle 0x0030, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
-	Type: x8 PCI Express
+	Type: PCI Express
+	Data Bus Width: 8x or x8
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -539,10 +563,11 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:01.1
 
-Handle 0x0030, DMI type 9, 17 bytes
+Handle 0x0031, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -552,19 +577,20 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x0031, DMI type 9, 17 bytes
+Handle 0x0032, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_2
-	Type: x1 PCI Express
-	Current Usage: In Use
+	Type: PCI Express
+	Data Bus Width: 1x or x1
+	Current Usage: Available
 	Length: Short
 	ID: 2
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:03:07.0
+	Bus Address: 0000:00:1f.7
 
-Handle 0x0032, DMI type 127, 4 bytes
+Handle 0x0033, DMI type 127, 4 bytes
 End Of Table
 

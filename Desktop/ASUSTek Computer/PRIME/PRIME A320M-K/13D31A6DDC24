@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
 Table at 0x000E6F40.
@@ -6,8 +6,8 @@ Table at 0x000E6F40.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 5862
-	Release Date: 10/21/2021
+	Version: 6210
+	Release Date: 09/04/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -322,7 +322,7 @@ Handle 0x0023, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.7
+	Firmware Revision: 3.8
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -350,10 +350,10 @@ Physical Memory Array
 Handle 0x0026, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 12 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0025
-	Partition Width: 2
+	Partition Width: 1
 
 Handle 0x0027, DMI type 7, 27 bytes
 Cache Information
@@ -475,7 +475,7 @@ Memory Device
 	Error Information Handle: 0x002B
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A1
@@ -483,63 +483,7 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2400 MT/s
-	Manufacturer: GEIL
-	Serial Number: --
-	Asset Tag: --
-	Part Number: CL17-17-17 D4-2400  
-	Rank: 1
-	Configured Memory Speed: 2400 MT/s
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
-	Memory Technology: DRAM
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 4, Hex 0x13
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: 8 GB
-	Cache Size: None
-	Logical Size: None
-
-Handle 0x002D, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 12 GB
-	Physical Device Handle: 0x002C
-	Memory Array Mapped Address Handle: 0x0026
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
-
-Handle 0x002E, DMI type 18, 23 bytes
-32-bit Memory Error Information
-	Type: OK
-	Granularity: Unknown
-	Operation: Unknown
-	Vendor Syndrome: Unknown
-	Memory Array Address: Unknown
-	Device Address: Unknown
-	Resolution: Unknown
-
-Handle 0x002F, DMI type 17, 92 bytes
-Memory Device
-	Array Handle: 0x0025
-	Error Information Handle: 0x002E
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4 GB
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM_B1
-	Bank Locator: BANK 1
-	Type: DDR4
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
-	Manufacturer: CRUCIAL
+	Manufacturer: Crucial Technology
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CT4G4DFS824A.C8FF
@@ -560,18 +504,40 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0030, DMI type 20, 35 bytes
+Handle 0x002D, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x002F
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x002C
 	Memory Array Mapped Address Handle: 0x0026
 	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
 
-Handle 0x0031, DMI type 13, 22 bytes
+Handle 0x002E, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x002F, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0025
+	Error Information Handle: 0x002E
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: DIMM_B1
+	Bank Locator: BANK 1
+	Type: Unknown
+	Type Detail: Unknown
+
+Handle 0x0030, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 9
@@ -586,7 +552,7 @@ BIOS Language Information
 		ko|KR|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0032, DMI type 9, 17 bytes
+Handle 0x0031, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
 	Type: x16 PCI Express
@@ -599,7 +565,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:03.1
 
-Handle 0x0033, DMI type 9, 17 bytes
+Handle 0x0032, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_1
 	Type: x1 PCI Express
@@ -612,7 +578,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x0034, DMI type 9, 17 bytes
+Handle 0x0033, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_2
 	Type: x1 PCI Express
@@ -625,6 +591,6 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x0035, DMI type 127, 4 bytes
+Handle 0x0034, DMI type 127, 4 bytes
 End Of Table
 

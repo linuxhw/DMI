@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 108 structures occupying 3808 bytes.
@@ -407,7 +407,8 @@ Port Connector Information
 Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_1
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -420,8 +421,9 @@ System Slot Information
 Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
-	Type: 32-bit PCI Express
-	Current Usage: In Use
+	Type: PCI Express
+	Data Bus Width: 32 bit
+	Current Usage: Available
 	Length: Short
 	ID: 2
 	Characteristics:
@@ -433,7 +435,8 @@ System Slot Information
 Handle 0x0026, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_2
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -446,7 +449,8 @@ System Slot Information
 Handle 0x0027, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI1
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 4
@@ -459,7 +463,8 @@ System Slot Information
 Handle 0x0028, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_2
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 5
@@ -472,7 +477,8 @@ System Slot Information
 Handle 0x0029, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI2
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 6
@@ -485,7 +491,8 @@ System Slot Information
 Handle 0x002A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_3
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 7
@@ -1052,12 +1059,6 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
 
 Handle 0x0067, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -1082,12 +1083,6 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
 
 Handle 0x0069, DMI type 18, 23 bytes
 32-bit Memory Error Information

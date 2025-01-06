@@ -1,13 +1,13 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0xCB9F1000.
+Table at 0xCB7ED000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 2803
-	Release Date: 04/27/2022
+	Version: 3607
+	Release Date: 03/22/2024
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -340,7 +340,7 @@ Port Connector Information
 	Internal Connector Type: Other
 	External Reference Designator: Not Specified
 	External Connector Type: None
-	Port Type: <OUT OF SPEC>
+	Port Type: Thunderbolt
 
 Handle 0x0025, DMI type 8, 9 bytes
 Port Connector Information
@@ -445,7 +445,7 @@ Handle 0x0030, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.84
+	Firmware Revision: 3.92
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -832,7 +832,8 @@ BIOS Language Information
 Handle 0x0046, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -844,7 +845,8 @@ System Slot Information
 Handle 0x0047, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_2
-	Type: x4 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -856,7 +858,8 @@ System Slot Information
 Handle 0x0048, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -868,7 +871,8 @@ System Slot Information
 Handle 0x0049, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_2
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 3
@@ -880,7 +884,8 @@ System Slot Information
 Handle 0x004A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_3
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 4

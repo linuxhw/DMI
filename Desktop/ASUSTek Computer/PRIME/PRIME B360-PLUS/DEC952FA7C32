@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.1 present.
 Table at 0x869A6000.
@@ -289,7 +289,8 @@ Port Connector Information
 Handle 0x001E, DMI type 9, 19 bytes
 System Slot Information
 	Designation: PCIEX1_1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 0
@@ -298,13 +299,14 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:ff:00.6
-	Data Bus Width: 1
+	Data Bus Width (Base): 1
 	Peer Devices: 0
 
 Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -317,7 +319,8 @@ System Slot Information
 Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -330,7 +333,8 @@ System Slot Information
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_2
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 3
@@ -1034,7 +1038,7 @@ Group Associations
 Handle 0x005B, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 5B 00 01 04 01 45 02 00 90 06 01 10 86 20
+		DB 6A 5B 00 01 04 01 45 02 00 90 06 01 85 36 20
 		00 00 00 00 48 00 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
