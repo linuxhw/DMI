@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
 Table at 0x439DC000.
@@ -342,7 +342,8 @@ Port Connector Information
 Handle 0x001A, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J6C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 1
@@ -350,13 +351,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.0
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x001B, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J6D2
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 2
@@ -364,13 +366,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.1
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x001C, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J7C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 3
@@ -378,13 +381,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.2
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x001D, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J7D1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 4
@@ -392,13 +396,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.3
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x001E, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J8C1
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Other
 	ID: 5
@@ -406,7 +411,7 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.4
-	Data Bus Width: 10
+	Data Bus Width (Base): 10
 	Peer Devices: 0
 
 Handle 0x001F, DMI type 11, 5 bytes
@@ -733,7 +738,7 @@ OEM-specific Type
 Handle 0x003A, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 3A 00 01 04 01 45 02 00 A0 06 01 10 80 20
+		DB 6A 3A 00 01 04 01 45 02 00 90 06 01 10 89 20
 		00 00 00 00 40 00 00 00 00 00 00 00 00 A0 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

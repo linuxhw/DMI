@@ -1,8 +1,8 @@
 # dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-37 structures occupying 1472 bytes.
-Table at 0x000EA9B0.
+42 structures occupying 1709 bytes.
+Table at 0x000EA8C0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -177,9 +177,9 @@ System Slot Information
 Handle 0x000C, DMI type 11, 5 bytes
 OEM Strings
 	String 1: PSK1JE-0DR00HIT,R13800IT
-	String 2: h-x8DKpttbl0X
-	String 3: PUtoYZL4ghLnS
-	String 4: zSmtrqHgQY+4y
+	String 2: bf12u-Jz2SN9T
+	String 3: RoKxW5lVgzmzj
+	String 4: 4x9TnS4Wz1enl
 	String 5:                                 
 
 Handle 0x000D, DMI type 12, 5 bytes
@@ -430,6 +430,126 @@ Memory Controller Information
 	Enabled Error Correcting Capabilities:
 		None
 
-Handle 0x0024, DMI type 127, 4 bytes
+Handle 0x0024, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU
+	Type: Central Processor
+	Family: Core i3
+	Manufacturer: Intel(R) Corporation
+	ID: 55 06 02 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 37, Stepping 5
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		DS (Debug store)
+		ACPI (ACPI supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		SS (Self-snoop)
+		HTT (Multi-threading)
+		TM (Thermal monitor supported)
+		PBE (Pending break enabled)
+	Version: Intel(R) Core(TM) i3 CPU       M 370  @ 2.40GHz
+	Voltage: 0.0 V
+	External Clock: 1066 MHz
+	Max Speed: 2400 MHz
+	Current Speed: 2395 MHz
+	Status: Populated, Enabled
+	Upgrade: ZIF Socket
+	L1 Cache Handle: 0x0028
+	L2 Cache Handle: 0x0027
+	L3 Cache Handle: 0x0025
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Not Specified
+	Core Count: 2
+	Core Enabled: 2
+	Thread Count: 4
+	Characteristics:
+		64-bit capable
+
+Handle 0x0025, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L3 Cache
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Write Through
+	Location: Internal
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: 12-way Set-associative
+
+Handle 0x0026, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L1 Cache
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Through
+	Location: Internal
+	Installed Size: 32 kB
+	Maximum Size: 32 kB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Data
+	Associativity: 8-way Set-associative
+
+Handle 0x0027, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L2 Cache
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Write Through
+	Location: Internal
+	Installed Size: 256 kB
+	Maximum Size: 256 kB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x0028, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L1 Cache
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Through
+	Location: Internal
+	Installed Size: 32 kB
+	Maximum Size: 32 kB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Instruction
+	Associativity: 4-way Set-associative
+
+Handle 0x0029, DMI type 127, 4 bytes
 End Of Table
 

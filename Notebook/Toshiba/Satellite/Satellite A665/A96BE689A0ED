@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-26 structures occupying 1223 bytes.
+26 structures occupying 1220 bytes.
 Table at 0x9B712000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -85,8 +85,8 @@ System Boot Information
 Handle 0x0005, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: SMI:00B2C102
-	Option 2: DSN:      S0NRNEAB618102
-	Option 3: DSN:TSB1066D3S7DR8/2G FE93B2E4
+	Option 2: DSN:     WD-WXE908AP6584
+	Option 3: DSN:HMT351S6BFR8C-H9  F16AD067
 	Option 4: DSN:8605
 	Option 5: TIM:            
 
@@ -99,9 +99,9 @@ On Board Device Information
 Handle 0x0007, DMI type 11, 5 bytes
 OEM Strings
 	String 1: PSAW0U-01100G,TI105835W0O,13L61
-	String 2: sMeRVXDh+GJyg
-	String 3: yj5eHEbHKD1SQ
-	String 4: FTfGCicoOwzZg
+	String 2: FaJtUCwGpDA2B
+	String 3: 2tsUji+l1eoAW
+	String 4: wT3a19n4lKW7F
 
 Handle 0x0008, DMI type 8, 9 bytes
 Port Connector Information
@@ -201,7 +201,7 @@ Processor Information
 	Voltage: 1.2 V
 	External Clock: 133 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 2272 MHz
+	Current Speed: 2265 MHz
 	Status: Populated, Enabled
 	Upgrade: ZIF Socket
 	L1 Cache Handle: 0x000F
@@ -279,8 +279,8 @@ Memory Module Information
 	Bank Connections: 0 0
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0013, DMI type 17, 28 bytes
@@ -289,7 +289,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -297,17 +297,17 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1067 MT/s
-	Manufacturer: Kinston
+	Manufacturer: 80AD
 	Serial Number: --
 	Asset Tag: --
-	Part Number: TSB1066D3S7DR8/2G 
+	Part Number: HMT351S6BFR8C-H9  
 	Rank: Unknown
 
 Handle 0x0014, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0013
 	Memory Array Mapped Address Handle: 0x0018
 	Partition Row Position: Unknown
@@ -320,8 +320,8 @@ Memory Module Information
 	Bank Connections: 0 0
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0016, DMI type 17, 28 bytes
@@ -330,7 +330,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM2
@@ -341,14 +341,14 @@ Memory Device
 	Manufacturer: 80AD
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT125S6BFR8C-G7  
+	Part Number: HMT351S6CFR8A-PB  
 	Rank: Unknown
 
 Handle 0x0017, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0016
 	Memory Array Mapped Address Handle: 0x0018
 	Partition Row Position: Unknown
@@ -358,8 +358,8 @@ Memory Device Mapped Address
 Handle 0x0018, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0011
 	Partition Width: 2
 

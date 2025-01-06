@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-43 structures occupying 1528 bytes.
+43 structures occupying 1525 bytes.
 Table at 0xCCBFF000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 04/18/2018
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -352,7 +352,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz
-	Voltage: 0.8 V
+	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 2500 MHz
 	Current Speed: 2500 MHz
@@ -424,8 +424,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Asynchronous
 	Installed SRAM Type: Asynchronous
@@ -449,7 +449,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 8 bits
 	Data Width: 8 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
@@ -457,16 +457,16 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Samsung
+	Manufacturer: 1315
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5173DB0-YK0  
+	Part Number: CT102464BF160B.C16
 
 Handle 0x0026, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0025
 	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: Unknown
@@ -479,7 +479,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 8 bits
 	Data Width: 8 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -494,8 +494,8 @@ Memory Device
 
 Handle 0x0028, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0027
 	Memory Array Mapped Address Handle: 0x0029
@@ -506,8 +506,8 @@ Memory Device Mapped Address
 Handle 0x0029, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x0024
 	Partition Width: 2
 

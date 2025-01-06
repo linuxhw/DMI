@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3 present.
-60 structures occupying 4449 bytes.
+61 structures occupying 4775 bytes.
 Table at 0x400B0000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -303,15 +303,16 @@ Group Associations
 	Items: 1
 		0x0034 (OEM-specific)
 
-Handle 0x003A, DMI type 14, 20 bytes
+Handle 0x003B, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
-	Items: 5
+	Items: 6
 		0x0035 (OEM-specific)
 		0x0036 (OEM-specific)
 		0x0037 (OEM-specific)
 		0x0038 (OEM-specific)
 		0x0039 (OEM-specific)
+		0x003A (OEM-specific)
 
 Handle 0x0011, DMI type 15, 29 bytes
 System Event Log
@@ -352,7 +353,7 @@ Memory Device
 	Set: None
 	Locator: Controller0-ChannelA
 	Bank Locator: BANK 0
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: SK Hynix
@@ -387,7 +388,7 @@ Memory Device
 	Set: None
 	Locator: Controller0-ChannelB
 	Bank Locator: BANK 1
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: SK Hynix
@@ -422,7 +423,7 @@ Memory Device
 	Set: None
 	Locator: Controller0-ChannelC
 	Bank Locator: BANK 2
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: SK Hynix
@@ -457,7 +458,7 @@ Memory Device
 	Set: None
 	Locator: Controller0-ChannelD
 	Bank Locator: BANK 3
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: SK Hynix
@@ -492,7 +493,7 @@ Memory Device
 	Set: None
 	Locator: Controller1-ChannelA
 	Bank Locator: BANK 0
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: SK Hynix
@@ -527,7 +528,7 @@ Memory Device
 	Set: None
 	Locator: Controller1-ChannelB
 	Bank Locator: BANK 1
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: SK Hynix
@@ -562,7 +563,7 @@ Memory Device
 	Set: None
 	Locator: Controller1-ChannelC
 	Bank Locator: BANK 2
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: SK Hynix
@@ -597,7 +598,7 @@ Memory Device
 	Set: None
 	Locator: Controller1-ChannelD
 	Bank Locator: BANK 3
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: SK Hynix
@@ -741,7 +742,7 @@ Handle 0x0026, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
-	Administrator Password Status: Disabled
+	Administrator Password Status: Enabled
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x0027, DMI type 26, 24 bytes
@@ -867,7 +868,7 @@ OEM-specific Type
 Handle 0x0034, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 34 00 01 04 01 45 02 00 A0 06 01 10 80 20
+		DB 6A 34 00 01 04 01 45 02 00 A0 06 01 10 89 20
 		00 00 00 00 40 00 00 00 00 00 00 00 00 60 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -945,6 +946,31 @@ OEM-specific Type
 		PHY Build Version
 		Thunderbolt(TM) FW Version
 		System Agent Manageability Engine FW Version
+
+Handle 0x003A, DMI type 221, 82 bytes
+OEM-specific Type
+	Header and Data:
+		DD 52 3A 00 0B 01 00 FF FF FF FF FF 02 00 FF FF
+		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
+		FF 07 08 FF FF FF FF FF 09 00 FF FF FF FF FF 0A
+		00 FF FF FF FF FF 0B 00 01 17 00 00 00 0C 00 00
+		21 00 54 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
+		00 00
+	Strings:
+		Lan Phy Version
+		Sensor Firmware Version
+		Debug Mode Status
+		Disabled
+		Performance Mode Status
+		Disabled
+		Debug Use USB(Disabled:Serial)
+		Disabled
+		ICC Overclocking Version
+		UNDI Version
+		EC FW Version
+		GOP Version
+		Royal Park Version
+		Platform Version
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

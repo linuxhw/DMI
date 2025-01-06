@@ -1,8 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 47 structures occupying 2052 bytes.
-Table at 0x000EB7C0.
+Table at 0x000EA890.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -403,17 +403,17 @@ On Board Device Information
 Handle 0x0024, DMI type 11, 5 bytes
 OEM Strings
 	String 1: PSC4AE-01S00LGR,R16339WE
-	String 2: SBrUnsHlpUMcz
-	String 3: ZrLcGxnKQY2ww
-	String 4: LA14WUPys1KGl
+	String 2: 9qQKBgGq4irNF
+	String 3: EYHkmDKDvjEYZ
+	String 4: 5o3AkPYHPutpY
 	String 5:              
 
 Handle 0x0025, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: SMI:00B2CA02
-	Option 2: DSN:510119049444                    
-	Option 3: DSN:M471B1G73EB0-YK0  17194213      
-	Option 4: DSN:LGCNS2P3SZMP4WR5B98F63E         
+	Option 2: DSN:                                
+	Option 3: DSN:                                
+	Option 4: DSN:                                
 
 Handle 0x0026, DMI type 16, 23 bytes
 Physical Memory Array
@@ -427,8 +427,8 @@ Physical Memory Array
 Handle 0x0027, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 12 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0026
 	Partition Width: 255
 
@@ -466,37 +466,24 @@ Handle 0x002A, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0026
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
+	Total Width: Unknown
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM1
 	Bank Locator: A1_BANK1
-	Type: DDR3
+	Type: Unknown
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Samsung         
-	Serial Number: --
-	Asset Tag: --
-	Part Number: M471B5273CH0-CH9  
-	Rank: 2
-	Configured Memory Speed: Unknown
 
-Handle 0x002B, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x002A
-	Memory Array Mapped Address Handle: 0x0027
-	Partition Row Position: 1
+Handle 0x002B, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x002C, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0034, DMI type 13, 22 bytes
+Handle 0x0032, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 3
@@ -505,6 +492,6 @@ BIOS Language Information
 		fr|FR|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0035, DMI type 127, 4 bytes
+Handle 0x0033, DMI type 127, 4 bytes
 End Of Table
 

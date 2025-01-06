@@ -1,8 +1,6 @@
-# dmidecode 3.2
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0x439DD000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -12,7 +10,7 @@ BIOS Information
 	Release Date: 07/15/2022
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -344,7 +342,8 @@ Port Connector Information
 Handle 0x001A, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J6C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 1
@@ -352,11 +351,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.0
+	Data Bus Width (Base): 8
+	Peer Devices: 0
 
 Handle 0x001B, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J6D2
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 2
@@ -364,11 +366,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.1
+	Data Bus Width (Base): 8
+	Peer Devices: 0
 
 Handle 0x001C, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J7C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 3
@@ -376,11 +381,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.2
+	Data Bus Width (Base): 8
+	Peer Devices: 0
 
 Handle 0x001D, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J7D1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 4
@@ -388,11 +396,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.3
+	Data Bus Width (Base): 8
+	Peer Devices: 0
 
 Handle 0x001E, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J8C1
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Other
 	ID: 5
@@ -400,6 +411,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.4
+	Data Bus Width (Base): 10
+	Peer Devices: 0
 
 Handle 0x001F, DMI type 11, 5 bytes
 OEM Strings
@@ -481,7 +494,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller0-ChannelA
@@ -516,7 +529,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Controller1-ChannelA
@@ -599,7 +612,7 @@ Handle 0x002C, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
-	Administrator Password Status: Disabled
+	Administrator Password Status: Enabled
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x002D, DMI type 26, 24 bytes
@@ -680,8 +693,10 @@ Onboard Device
 Handle 0x0034, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: INTC
-	Specification Version: 2.0	Firmware Revision: 600.7
-	Description: TPM Device	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 600.7
+	Description: TPM Device
+	Characteristics:
 		TPM Device characteristics not supported
 	OEM-specific Information: 0x00000000
 
@@ -723,7 +738,7 @@ OEM-specific Type
 Handle 0x003A, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 3A 00 01 04 01 45 02 00 A0 06 01 85 39 20
+		DB 6A 3A 00 01 04 01 45 02 00 90 06 01 10 89 20
 		00 00 00 00 40 00 00 00 00 00 00 00 00 A0 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

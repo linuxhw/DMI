@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 54 structures occupying 2467 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 05/13/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 3072 kB
+	ROM Size: 3 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -447,8 +447,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -504,7 +504,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i3-3120M CPU @ 2.50GHz
-	Voltage: 10.2 V
+	Voltage: 12.2 V
 	External Clock: 100 MHz
 	Max Speed: 14336 MHz
 	Current Speed: 2500 MHz
@@ -528,26 +528,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: 0443
+	Speed: 1600 MT/s
+	Manufacturer: 0B2C
 	Serial Number: --
 	Asset Tag: --
-	Part Number: RMT3150ED58E8W1600
-	Rank: 1
-	Configured Clock Speed: 1333 MT/s
+	Part Number: HKED3082BAB2H3HA1 
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x002F, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x002E
 	Memory Array Mapped Address Handle: 0x0032
 	Partition Row Position: Unknown
@@ -560,25 +560,25 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: 0443
 	Serial Number: --
 	Asset Tag: --
-	Part Number: RMT3010EC58E8F1333
+	Part Number: RMT3150ED58E8W1600
 	Rank: 1
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0031, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x0027FFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0030
 	Memory Array Mapped Address Handle: 0x0032
@@ -589,8 +589,8 @@ Memory Device Mapped Address
 Handle 0x0032, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0027FFFFFFF
+	Range Size: 10 GB
 	Physical Array Handle: 0x002C
 	Partition Width: 4
 

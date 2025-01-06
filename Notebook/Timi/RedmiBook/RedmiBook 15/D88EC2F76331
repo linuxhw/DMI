@@ -119,7 +119,7 @@ Processor Information
 	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 4100 MHz
-	Current Speed: 3000 MHz
+	Current Speed: 4100 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0006
@@ -444,16 +444,15 @@ Group Associations
 	Items: 1
 		0x0039 (OEM-specific)
 
-Handle 0x0040, DMI type 14, 23 bytes
+Handle 0x003F, DMI type 14, 20 bytes
 Group Associations
 	Name: Firmware Version Info
-	Items: 6
+	Items: 5
 		0x003A (OEM-specific)
 		0x003B (OEM-specific)
 		0x003C (OEM-specific)
 		0x003D (OEM-specific)
 		0x003E (OEM-specific)
-		0x003F (OEM-specific)
 
 Handle 0x0023, DMI type 15, 29 bytes
 System Event Log
@@ -575,7 +574,7 @@ Handle 0x002B, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
-	Administrator Password Status: Disabled
+	Administrator Password Status: Enabled
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x002C, DMI type 26, 24 bytes
@@ -779,32 +778,6 @@ OEM-specific Type
 		DD 0C 3E 00 01 01 00 04 00 00 00 00
 	Strings:
 		FSP Binary Version
-
-Handle 0x003F, DMI type 221, 89 bytes
-OEM-specific Type
-	Header and Data:
-		DD 59 3F 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
-		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
-		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 01 07 00 00 00 0C 00 00
-		17 00 55 10 0D 00 FF FF FF FF FF 0E 00 00 07 03
-		00 00 0F 00 00 02 00 0F 00
-	Strings:
-		Lan Phy Version
-		Sensor Firmware Version
-		Debug Mode Status
-		Disabled
-		Performance Mode Status
-		Disabled
-		Debug Use USB(Disabled:Serial)
-		Disabled
-		ICC Overclocking Version
-		UNDI Version
-		EC FW Version
-		GOP Version
-		Royal Park Version
-		Platform Version
-		Client Silicon Version
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

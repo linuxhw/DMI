@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 24 structures occupying 1226 bytes.
@@ -80,16 +80,16 @@ Chassis Information
 Handle 0x0004, DMI type 11, 5 bytes
 OEM Strings
 	String 1: PSC34U-00JLM4,TI106254W0C,43GT0
-	String 2: 8szB39xN+y010
-	String 3: AhuK2DPowjQff
-	String 4: EaoBiWOPQDU3u
+	String 2: phcSSMPUxg82k
+	String 3: zMC7Ka82FO-tb
+	String 4: WFvuRu+fTW+5U
 	String 5:                                 
 
 Handle 0x0005, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: NVR:00707902
-	Option 2: DSN: WD-WXJ1A80C1324    
-	Option 3: DSN:M471B5773CHS-CH9  9602B9C5 
+	Option 2: DSN: WD-WX90A69Z2871    
+	Option 3: DSN:99U5469-045.A00LF 623DEA00 
 	Option 4: DSN:340F2337
 
 Handle 0x0006, DMI type 21, 7 bytes
@@ -117,7 +117,7 @@ Memory Device
 	Error Information Handle: 0x000A
 	Total Width: 64 bits
 	Data Width: 8 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -125,10 +125,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1066 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Kinston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5773CHS-CH9  
+	Part Number: 99U5469-045.A00LF 
 	Rank: 1
 	Configured Memory Speed: 1066 MT/s
 
@@ -148,15 +148,15 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: Unknown FPM DIMM
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000C, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0009
 	Memory Array Mapped Address Handle: 0x0012
 	Partition Row Position: 1
@@ -175,10 +175,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1066 MT/s
-	Manufacturer: Kinston
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 99U5469-045.A00LF 
+	Part Number: M471B5173DB0-YK0  
 	Rank: 1
 	Configured Memory Speed: 1066 MT/s
 
@@ -204,8 +204,8 @@ Memory Module Information
 
 Handle 0x0010, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x0017FFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x000D
 	Memory Array Mapped Address Handle: 0x0012
@@ -224,8 +224,8 @@ Handle 0x0011, DMI type 18, 23 bytes
 Handle 0x0012, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0008
 	Partition Width: 2
 

@@ -1,8 +1,8 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-41 structures occupying 1669 bytes.
-Table at 0x000EA8E0.
+42 structures occupying 1709 bytes.
+Table at 0x000EA8C0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -177,9 +177,9 @@ System Slot Information
 Handle 0x000C, DMI type 11, 5 bytes
 OEM Strings
 	String 1: PSK1EE-01D01DHU,R12512HU
-	String 2: E4fUdKtev5eqt
-	String 3: pztVHQvq+10OX
-	String 4: cWwKFRCHo3N7B
+	String 2: VO2buTGlHXqwy
+	String 3: cyFMA+pHOoFTT
+	String 4: EIt2yWwv-tXjD
 	String 5:                                 
 
 Handle 0x000D, DMI type 12, 5 bytes
@@ -335,7 +335,7 @@ Memory Device Mapped Address
 	Ending Address: 0x0007FFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0019
-	Memory Array Mapped Address Handle: 0x0021
+	Memory Array Mapped Address Handle: 0x0022
 	Partition Row Position: Unknown
 	Interleave Position: 1
 	Interleaved Data Depth: 1
@@ -343,11 +343,11 @@ Memory Device Mapped Address
 Handle 0x001D, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0018
-	Error Information Handle: Not Provided
-	Total Width: 8 bits
-	Data Width: 8 bits
-	Size: No Module Installed
-	Form Factor: DIMM
+	Error Information Handle: 0x001F
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
+	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK 2
@@ -357,7 +357,7 @@ Memory Device
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
+	Part Number: M471B5673FH0-CF8  
 	Rank: Unknown
 
 Handle 0x001E, DMI type 6, 12 bytes
@@ -366,8 +366,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x001F, DMI type 18, 23 bytes
@@ -380,7 +380,18 @@ Handle 0x001F, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0020, DMI type 18, 23 bytes
+Handle 0x0020, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x001D
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 1
+
+Handle 0x0021, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -390,15 +401,15 @@ Handle 0x0020, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0021, DMI type 19, 15 bytes
+Handle 0x0022, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0018
 	Partition Width: 2
 
-Handle 0x0022, DMI type 5, 20 bytes
+Handle 0x0023, DMI type 5, 20 bytes
 Memory Controller Information
 	Error Detecting Method: None
 	Error Correcting Capabilities:
@@ -419,7 +430,7 @@ Memory Controller Information
 	Enabled Error Correcting Capabilities:
 		None
 
-Handle 0x0023, DMI type 4, 42 bytes
+Handle 0x0024, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPU
 	Type: Central Processor
@@ -460,12 +471,12 @@ Processor Information
 	Voltage: 0.0 V
 	External Clock: 1066 MHz
 	Max Speed: 2133 MHz
-	Current Speed: 2126 MHz
+	Current Speed: 2125 MHz
 	Status: Populated, Enabled
 	Upgrade: ZIF Socket
-	L1 Cache Handle: 0x0027
-	L2 Cache Handle: 0x0026
-	L3 Cache Handle: 0x0024
+	L1 Cache Handle: 0x0028
+	L2 Cache Handle: 0x0027
+	L3 Cache Handle: 0x0025
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
@@ -475,7 +486,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0024, DMI type 7, 19 bytes
+Handle 0x0025, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L3 Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -491,7 +502,7 @@ Cache Information
 	System Type: Unified
 	Associativity: Other
 
-Handle 0x0025, DMI type 7, 19 bytes
+Handle 0x0026, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -507,7 +518,7 @@ Cache Information
 	System Type: Data
 	Associativity: 8-way Set-associative
 
-Handle 0x0026, DMI type 7, 19 bytes
+Handle 0x0027, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -523,7 +534,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0027, DMI type 7, 19 bytes
+Handle 0x0028, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -539,6 +550,6 @@ Cache Information
 	System Type: Instruction
 	Associativity: 4-way Set-associative
 
-Handle 0x0028, DMI type 127, 4 bytes
+Handle 0x0029, DMI type 127, 4 bytes
 End Of Table
 

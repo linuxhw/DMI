@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-62 structures occupying 2620 bytes.
+62 structures occupying 2621 bytes.
 Table at 0x000E6E80.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -166,8 +166,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -471,16 +471,16 @@ System Slot Information
 Handle 0x0024, DMI type 11, 5 bytes
 OEM Strings
 	String 1: PSC8CR-00G001RU,H00000EN
-	String 2: PEri1fFTtA2Nw
-	String 3: PWhRo+TK0t4zr
-	String 4: RtNcwxyS9Bgbb
+	String 2: 4rThpU2o64Hjw
+	String 3: 6BEpr1LaeKhvw
+	String 4: 7-WGUgR2Q-n1q
 	String 5:                                 
 
 Handle 0x0025, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: NVR:00707902                   
 	Option 2: DSN: X6LKC0GCT                 
-	Option 3: DSN:HMT125S6TFR8C-G7  0873D427 
+	Option 3: DSN:9905625-004.A03LF C7096164 
 	Option 4: DSN:03073SZMC4WR               
 
 Handle 0x0026, DMI type 13, 22 bytes
@@ -526,18 +526,18 @@ Memory Device
 	Error Information Handle: 0x002B
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MT/s
-	Manufacturer: Unknown
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT125S6TFR8C-G7  
+	Part Number: 9905625-004.A03LF 
 	Rank: 2
 	Configured Memory Speed: 1067 MT/s
 
@@ -595,16 +595,16 @@ Handle 0x002D, DMI type 18, 23 bytes
 Handle 0x002E, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 6 GB
 	Physical Array Handle: 0x0028
 	Partition Width: 2
 
 Handle 0x002F, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0029
 	Memory Array Mapped Address Handle: 0x002E
 	Partition Row Position: Unknown

@@ -199,7 +199,21 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x000C, DMI type 0, 26 bytes
+Handle 0x000C, DMI type 130, 20 bytes
+OEM-specific Type
+	Header and Data:
+		82 14 0C 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
+		C0 00 00 00
+
+Handle 0x000D, DMI type 131, 64 bytes
+OEM-specific Type
+	Header and Data:
+		83 40 0D 00 31 00 00 00 0B 00 00 00 00 00 0A 00
+		F8 00 4E 9D 00 00 00 00 01 00 00 00 08 00 0B 00
+		B6 0D 37 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
+
+Handle 0x0012, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: TOSHIBA
 	Version: Version 2.30  
@@ -225,7 +239,7 @@ BIOS Information
 	BIOS Revision: 2.30
 	Firmware Revision: 1.40
 
-Handle 0x0010, DMI type 8, 9 bytes
+Handle 0x0016, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator:  
 	Internal Connector Type: None
@@ -233,7 +247,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0011, DMI type 8, 9 bytes
+Handle 0x0017, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator:  
 	Internal Connector Type: None
@@ -241,7 +255,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Other
 
-Handle 0x0012, DMI type 8, 9 bytes
+Handle 0x0018, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator:  
 	Internal Connector Type: None
@@ -249,7 +263,7 @@ Port Connector Information
 	External Connector Type: Other
 	Port Type: Other
 
-Handle 0x0013, DMI type 9, 17 bytes
+Handle 0x0019, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SD CARD
 	Type: Other
@@ -260,7 +274,7 @@ System Slot Information
 		Hot-plug devices are supported
 	Bus Address: 0000:82:00.0
 
-Handle 0x0014, DMI type 10, 14 bytes
+Handle 0x001A, DMI type 10, 14 bytes
 On Board Device 1 Information
 	Type: Other
 	Status: Enabled
@@ -282,7 +296,7 @@ On Board Device 5 Information
 	Status: Enabled
 	Description: BLUETOOTH
 
-Handle 0x0017, DMI type 13, 22 bytes
+Handle 0x001D, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 2
@@ -290,7 +304,7 @@ BIOS Language Information
 		frCA
 	Currently Installed Language: enUS
 
-Handle 0x0018, DMI type 15, 25 bytes
+Handle 0x001E, DMI type 15, 25 bytes
 System Event Log
 	Area Length: 124 bytes
 	Header Start Offset: 0x0000
@@ -302,7 +316,7 @@ System Event Log
 	Header Format: No Header
 	Supported Log Type Descriptors: 0
 
-Handle 0x0019, DMI type 18, 23 bytes
+Handle 0x001F, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -312,13 +326,13 @@ Handle 0x0019, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x001A, DMI type 21, 7 bytes
+Handle 0x0020, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Other
 	Interface: PS/2
 	Buttons: 2
 
-Handle 0x001B, DMI type 22, 26 bytes
+Handle 0x0021, DMI type 22, 26 bytes
 Portable Battery
 	Location: 1st Battery
 	Manufacturer: TOSHIBA
@@ -332,14 +346,14 @@ Portable Battery
 	SBDS Chemistry: Not Specified
 	OEM-specific Information: 0x00000000
 
-Handle 0x001C, DMI type 24, 5 bytes
+Handle 0x0022, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
 
-Handle 0x001D, DMI type 27, 15 bytes
+Handle 0x0023, DMI type 27, 15 bytes
 Cooling Device
 	Type: Chip Fan
 	Status: OK
@@ -348,7 +362,7 @@ Cooling Device
 	Nominal Speed: Unknown Or Non-rotating
 	Description: Not Specified
 
-Handle 0x001E, DMI type 27, 15 bytes
+Handle 0x0024, DMI type 27, 15 bytes
 Cooling Device
 	Type: Heat Pipe
 	Status: OK
@@ -357,11 +371,11 @@ Cooling Device
 	Nominal Speed: Unknown Or Non-rotating
 	Description: Not Specified
 
-Handle 0x001F, DMI type 32, 11 bytes
+Handle 0x0025, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0020, DMI type 39, 22 bytes
+Handle 0x0026, DMI type 39, 22 bytes
 System Power Supply
 	Location: Not Specified
 	Name: Not Specified
@@ -378,34 +392,20 @@ System Power Supply
 	Hot Replaceable: No
 	Cooling Device Handle: 0x0000
 
-Handle 0x0021, DMI type 129, 8 bytes
+Handle 0x0027, DMI type 129, 8 bytes
 OEM-specific Type
 	Header and Data:
-		81 08 21 00 01 01 02 01
+		81 08 27 00 01 01 02 01
 	Strings:
 		Intel_ASF
 		Intel ASF_001
 
-Handle 0x0022, DMI type 136, 6 bytes
+Handle 0x0028, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 22 00 00 00
+		88 06 28 00 00 00
 
-Handle 0x0023, DMI type 130, 20 bytes
-OEM-specific Type
-	Header and Data:
-		82 14 23 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
-		C0 00 00 00
-
-Handle 0x0024, DMI type 131, 64 bytes
-OEM-specific Type
-	Header and Data:
-		83 40 24 00 31 00 00 00 0B 00 00 00 00 00 0A 00
-		F8 00 4E 9D 00 00 00 00 01 00 00 00 08 00 0B 00
-		B6 0D 37 00 00 00 00 00 FE 00 FF FF 00 00 00 00
-		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
-
-Handle 0x000D, DMI type 1, 27 bytes
+Handle 0x0013, DMI type 1, 27 bytes
 System Information
 	Manufacturer: TOSHIBA
 	Product Name: PORTEGE X30-E
@@ -416,7 +416,7 @@ System Information
 	SKU Number: PT282E
 	Family: PORTEGE
 
-Handle 0x000E, DMI type 2, 17 bytes
+Handle 0x0014, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: TOSHIBA
 	Product Name: 20 PCBA 3
@@ -430,7 +430,7 @@ Base Board Information
 	Type: Motherboard
 	Contained Object Handles: 0
 
-Handle 0x000F, DMI type 3, 24 bytes
+Handle 0x0015, DMI type 3, 24 bytes
 Chassis Information
 	Manufacturer: TOSHIBA
 	Type: Notebook
@@ -448,11 +448,11 @@ Chassis Information
 	Contained Elements: 0
 	SKU Number: Not Specified
 
-Handle 0x0015, DMI type 11, 5 bytes
+Handle 0x001B, DMI type 11, 5 bytes
 OEM Strings
 	String 1: PT282E-063028CE,PT282E-063028111/R20013CEZ00#B
 
-Handle 0x0016, DMI type 12, 5 bytes
+Handle 0x001C, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: GSW:1000000000
 
