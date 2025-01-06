@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 30 structures occupying 946 bytes.
@@ -227,7 +227,7 @@ Memory Device
 	Bank Locator: DIMM1
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MT/s
+	Speed: 800 MT/s
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
@@ -237,16 +237,16 @@ Handle 0x0010, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x000E
 	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 128 bits
+	Data Width: 64 bits
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 2
 	Locator: S2
 	Bank Locator: DIMM2
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: Unknown
+	Speed: 800 MT/s
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
@@ -265,8 +265,8 @@ Handle 0x0011, DMI type 18, 23 bytes
 Handle 0x0012, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x000E
 	Partition Width: 2
 

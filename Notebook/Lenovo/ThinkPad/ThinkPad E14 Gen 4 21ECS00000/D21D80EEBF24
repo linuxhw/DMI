@@ -25,8 +25,8 @@ Physical Memory Array
 Handle 0x0002, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x009FFFFFFFF
+	Range Size: 40 GB
 	Physical Array Handle: 0x0001
 	Partition Width: 2
 
@@ -150,7 +150,7 @@ Memory Device
 	Error Information Handle: 0x0007
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 32 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -158,11 +158,11 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 3200 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471A1G44BB0-CWE    
-	Rank: 1
+	Part Number: 9905744-111.A00G    
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -170,20 +170,20 @@ Memory Device
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Manufacturer ID: Bank 2, Hex 0x98
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0009, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x009FFFFFFFF
+	Range Size: 40 GB
 	Physical Device Handle: 0x0008
 	Memory Array Mapped Address Handle: 0x0002
 	Partition Row Position: Unknown
@@ -527,7 +527,7 @@ System Event Log
 Handle 0x0031, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 31 00 54 48 4E 4B 00 00 00 00 00 00 02 00
+		8D 12 31 00 54 48 4E 4B 00 00 00 00 00 00 00 00
 		00 00
 
 Handle 0x0032, DMI type 141, 18 bytes
@@ -545,14 +545,14 @@ OEM-specific Type
 Handle 0x0034, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 34 00 54 48 4E 4B 00 00 40 00 00 00 2A 00
+		8D 12 34 00 54 48 4E 4B 00 00 40 00 00 00 5D 00
 		00 00
 
 Handle 0x0035, DMI type 141, 30 bytes
 OEM-specific Type
 	Header and Data:
-		8D 1E 35 00 54 48 4E 4B 00 00 50 00 00 00 56 41
-		A6 01 00 00 00 00 A5 64 BC 01 00 00 00 00
+		8D 1E 35 00 54 48 4E 4B 00 00 50 00 00 00 74 63
+		F6 01 00 00 00 00 78 15 A0 02 00 00 00 00
 
 Handle 0x0036, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
@@ -563,9 +563,9 @@ Handle 0x0037, DMI type 141, 56 bytes
 OEM-specific Type
 	Header and Data:
 		8D 38 37 00 54 48 4E 4B 00 00 60 00 00 00 FF 00
-		23 20 03 22 13 48 30 00 23 20 03 22 10 35 58 00
-		23 20 03 22 10 12 32 00 23 20 03 22 09 52 15 00
-		23 20 03 22 09 50 30 00
+		23 20 08 13 12 33 28 00 23 20 08 13 12 05 42 00
+		23 20 08 13 11 57 19 00 23 20 08 13 11 46 25 00
+		23 20 08 13 11 42 11 00
 
 Handle 0x0038, DMI type 135, 18 bytes
 OEM-specific Type

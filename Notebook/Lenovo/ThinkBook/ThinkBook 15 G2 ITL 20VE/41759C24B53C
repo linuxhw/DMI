@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
 Table at 0x439DC000.
@@ -6,8 +6,8 @@ Table at 0x439DC000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: F8CN47WW(V2.10)
-	Release Date: 03/27/2022
+	Version: F8CN54WW(V2.17)
+	Release Date: 03/17/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -31,8 +31,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.47
-	Firmware Revision: 2.47
+	BIOS Revision: 2.54
+	Firmware Revision: 2.54
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -119,7 +119,7 @@ Processor Information
 	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 4700 MHz
-	Current Speed: 4100 MHz
+	Current Speed: 2800 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0006
@@ -411,7 +411,8 @@ System Slot Information
 
 Handle 0x001F, DMI type 11, 5 bytes
 OEM Strings
-	String 1: Modern Preload
+	String 1: Country - 
+	String 2: Modern Preload
 
 Handle 0x0020, DMI type 12, 5 bytes
 System Configuration Options
@@ -439,16 +440,15 @@ Group Associations
 	Items: 1
 		0x003C (OEM-specific)
 
-Handle 0x0044, DMI type 14, 23 bytes
+Handle 0x0043, DMI type 14, 20 bytes
 Group Associations
 	Name: Firmware Version Info
-	Items: 6
+	Items: 5
 		0x003D (OEM-specific)
 		0x003E (OEM-specific)
 		0x003F (OEM-specific)
 		0x0040 (OEM-specific)
 		0x0041 (OEM-specific)
-		0x0042 (OEM-specific)
 
 Handle 0x0023, DMI type 15, 29 bytes
 System Event Log
@@ -743,7 +743,7 @@ OEM-specific Type
 Handle 0x003C, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 3C 00 01 04 01 45 02 00 90 06 01 10 80 20
+		DB 6A 3C 00 01 04 01 45 02 00 90 06 01 10 89 20
 		00 00 00 00 40 00 00 00 00 00 00 00 00 60 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -760,7 +760,7 @@ Handle 0x003D, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 3D 00 03 01 00 0A 00 3B 20 00 02 00 00 00
-		00 9A 00 03 00 FF FF FF FF FF
+		00 A4 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -822,36 +822,10 @@ OEM-specific Type
 	Strings:
 		FSP Binary Version
 
-Handle 0x0042, DMI type 221, 89 bytes
+Handle 0x0042, DMI type 248, 18 bytes
 OEM-specific Type
 	Header and Data:
-		DD 59 42 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
-		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
-		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 02 2F 00 00 00 0C 00 00
-		17 00 45 10 0D 00 FF FF FF FF FF 0E 00 00 07 03
-		00 00 0F 00 00 02 00 0F 00
-	Strings:
-		Lan Phy Version
-		Sensor Firmware Version
-		Debug Mode Status
-		Disabled
-		Performance Mode Status
-		Disabled
-		Debug Use USB(Disabled:Serial)
-		Disabled
-		ICC Overclocking Version
-		UNDI Version
-		EC FW Version
-		GOP Version
-		Royal Park Version
-		Platform Version
-		Client Silicon Version
-
-Handle 0x0043, DMI type 248, 18 bytes
-OEM-specific Type
-	Header and Data:
-		F8 12 43 00 AC AC AA 17 00 00 0B 00 00 00 00 00
+		F8 12 42 00 AC AC AA 17 00 00 0B 00 00 00 00 00
 		00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

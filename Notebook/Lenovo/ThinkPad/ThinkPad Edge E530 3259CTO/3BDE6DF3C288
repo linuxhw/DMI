@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-65 structures occupying 2591 bytes.
+65 structures occupying 2563 bytes.
 Table at 0x9AE9D000.
 
 Handle 0x0004, DMI type 134, 16 bytes
@@ -122,8 +122,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -155,7 +155,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -163,10 +163,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: 89C2
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT351S6CFR8C-PB  
+	Part Number: Not Specified
 	Rank: Unknown
 	Configured Memory Speed: 1600 MT/s
 
@@ -176,7 +176,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -194,8 +194,8 @@ Memory Device
 Handle 0x000E, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x000B
 	Partition Width: 2
 
@@ -211,7 +211,7 @@ BIOS Information
 	Release Date: 08/02/2013
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -428,13 +428,13 @@ Handle 0x002C, DMI type 22, 26 bytes
 Portable Battery
 	Location: Rear
 	Manufacturer: LGC
-	Name: 45N1055
-	Design Capacity: 52840 mWh
-	Design Voltage: 11100 mV
+	Name: 45N1049
+	Design Capacity: 40400 mWh
+	Design Voltage: 10800 mV
 	SBDS Version: 03.01
 	Maximum Error: Unknown
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 2012-03-15
+	SBDS Manufacture Date: 2012-10-31
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
@@ -577,9 +577,9 @@ System Event Log
 Handle 0x0038, DMI type 140, 67 bytes
 OEM-specific Type
 	Header and Data:
-		8C 43 38 00 4C 45 4E 4F 56 4F 0B 00 01 FF ED 97
-		16 D7 A0 BB B2 17 8D A1 6F 60 C9 CC 85 01 00 F5
-		F0 76 EF 84 6E 6F 1D 65 AE 0F E5 20 13 CF 89 01
+		8C 43 38 00 4C 45 4E 4F 56 4F 0B 00 01 48 53 EC
+		37 D5 D8 D9 BB B6 BC 0A A1 F7 4C 78 31 01 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00
 
@@ -620,7 +620,7 @@ Hardware Security
 Handle 0x003E, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 3E 00 01 C0 36
+		84 07 3E 00 01 D8 36
 
 Handle 0x003F, DMI type 135, 18 bytes
 OEM-specific Type

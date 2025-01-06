@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x8CC69000.
@@ -33,7 +33,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -81,7 +81,7 @@ Handle 0x0006, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 06 00 03 01 00 09 00 14 30 00 02 00 00 00
-		00 DE 00 03 00 01 05 00 00 00
+		00 F0 00 03 00 01 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -103,8 +103,8 @@ OEM-specific Type
 	Header and Data:
 		DD 36 08 00 07 01 00 09 00 14 30 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
-		00 06 00 02 0A 00 00 00 07 00 00 FF FF FF FF 08
-		00 02 FF FF FF FF
+		00 06 00 02 0A 00 00 00 07 00 06 FF FF FF FF 08
+		00 09 FF FF FF FF
 	Strings:
 		Reference Code - CML PCH
 		PCH-CRID Status
@@ -161,8 +161,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -177,8 +177,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -256,8 +256,8 @@ OEM-specific Type
 Handle 0x0010, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: R16ET29W (1.15 )
-	Release Date: 12/03/2020
+	Version: R16ET37W (1.23 )
+	Release Date: 12/06/2022
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -280,8 +280,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.15
-	Firmware Revision: 1.11
+	BIOS Revision: 1.23
+	Firmware Revision: 1.13
 
 Handle 0x0011, DMI type 1, 27 bytes
 System Information
@@ -530,14 +530,14 @@ OEM-specific Type
 
 Handle 0x0037, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 2002 bytes
+	Area Length: 3970 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
-	Status: Valid, Not Full
-	Change Token: 0x0000007C
+	Status: Valid, Full
+	Change Token: 0x000000F7
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -551,8 +551,8 @@ System Event Log
 
 Handle 0x0038, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: R16HT25W
-	Release Date: 09/11/2020
+	Version ID: R16HT27W
+	Release Date: 06/30/2021
 
 Handle 0x0039, DMI type 14, 8 bytes
 Group Associations
@@ -563,7 +563,7 @@ Group Associations
 Handle 0x003A, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 3A 00 01 04 01 45 02 00 90 06 01 85 36 20
+		DB 6A 3A 00 01 04 01 45 02 00 A0 06 01 85 30 20
 		00 00 00 00 40 00 00 01 1F 00 00 C9 02 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0xBF905000.
@@ -448,7 +448,8 @@ Port Connector Information
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-E x1 (J3600)
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -462,7 +463,8 @@ System Slot Information
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-E x8 (J3605)
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -476,7 +478,8 @@ System Slot Information
 Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2 PCI-E Connector (J3700)
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -490,7 +493,8 @@ System Slot Information
 Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2 WWAN Connector (J3702)
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 4
@@ -504,7 +508,8 @@ System Slot Information
 Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2 WLAN/BT Connector (J3703)
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 5
@@ -518,7 +523,8 @@ System Slot Information
 Handle 0x0026, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE SD_Card (J4000)
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 6
@@ -682,15 +688,15 @@ OEM-specific Type
 Handle 0x003B, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3B 00 54 48 4E 4B 00 00 40 00 00 00 06 00
+		8D 12 3B 00 54 48 4E 4B 00 00 40 00 00 00 48 00
 		00 00
 
 Handle 0x003C, DMI type 141, 46 bytes
 OEM-specific Type
 	Header and Data:
-		8D 2E 3C 00 54 48 4E 4B 00 00 50 00 00 00 7A 49
-		C9 00 00 00 00 00 EE DA 7E 01 00 00 00 00 17 22
-		90 00 00 00 00 00 FA 6E 8D 01 00 00 00 00
+		8D 2E 3C 00 54 48 4E 4B 00 00 50 00 00 00 48 B9
+		7D 11 00 00 00 00 67 3A F5 19 00 00 00 00 69 39
+		70 11 00 00 00 00 94 0D 1C 1E 00 00 00 00
 
 Handle 0x003D, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program

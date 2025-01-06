@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0xBF905000.
@@ -25,8 +25,8 @@ Physical Memory Array
 Handle 0x0002, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x009FFFFFFFF
+	Range Size: 40 GB
 	Physical Array Handle: 0x0001
 	Partition Width: 2
 
@@ -150,7 +150,7 @@ Memory Device
 	Error Information Handle: 0x0007
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 32 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -158,11 +158,11 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 3200 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471A1K43DB1-CWE    
-	Rank: 1
+	Part Number: F4-3200C22-32GRS
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -170,20 +170,20 @@ Memory Device
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Manufacturer ID: Bank 5, Hex 0xCD
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0009, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x009FFFFFFFF
+	Range Size: 40 GB
 	Physical Device Handle: 0x0008
 	Memory Array Mapped Address Handle: 0x0002
 	Partition Row Position: Unknown
@@ -254,8 +254,8 @@ OEM-specific Type
 Handle 0x000E, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: R1AET42W (1.18 )
-	Release Date: 03/03/2022
+	Version: R1AET48W (1.24 )
+	Release Date: 11/28/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -278,8 +278,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.18
-	Firmware Revision: 1.18
+	BIOS Revision: 1.24
+	Firmware Revision: 1.24
 
 Handle 0x000F, DMI type 1, 27 bytes
 System Information
@@ -587,8 +587,8 @@ OEM-specific Type
 	Header and Data:
 		8C 0F 2E 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
 	Strings:
-		1.18 
-		1.18 
+		1.24 
+		1.24 
 
 Handle 0x002F, DMI type 135, 19 bytes
 OEM-specific Type
@@ -682,20 +682,20 @@ OEM-specific Type
 Handle 0x003B, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3B 00 54 48 4E 4B 00 00 40 00 00 00 8A 00
+		8D 12 3B 00 54 48 4E 4B 00 00 40 00 00 00 36 01
 		00 00
 
 Handle 0x003C, DMI type 141, 46 bytes
 OEM-specific Type
 	Header and Data:
-		8D 2E 3C 00 54 48 4E 4B 00 00 50 00 00 00 99 D1
-		AA 0E 00 00 00 00 05 A0 D1 0F 00 00 00 00 3F ED
-		F8 0D 00 00 00 00 84 66 E1 0F 00 00 00 00
+		8D 2E 3C 00 54 48 4E 4B 00 00 50 00 00 00 FE F9
+		4A 16 00 00 00 00 26 46 D1 25 00 00 00 00 7F CD
+		40 19 00 00 00 00 96 85 42 28 00 00 00 00
 
 Handle 0x003D, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: R1AHT42W
-	Release Date: 03/03/2022
+	Version ID: R1AHT48W
+	Release Date: 11/28/2023
 
 Handle 0x003E, DMI type 135, 18 bytes
 OEM-specific Type

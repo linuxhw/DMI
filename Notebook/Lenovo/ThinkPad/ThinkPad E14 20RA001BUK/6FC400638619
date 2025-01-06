@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x8CC6A000.
@@ -73,7 +73,7 @@ Memory Array Mapped Address
 Handle 0x0005, DMI type 221, 12 bytes
 OEM-specific Type
 	Header and Data:
-		DD 0C 05 00 01 01 00 02 00 00 8C 11
+		DD 0C 05 00 01 01 00 02 00 00 87 01
 	Strings:
 		BIOS Guard
 
@@ -81,7 +81,7 @@ Handle 0x0006, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 06 00 03 01 00 09 00 14 30 00 02 00 00 00
-		00 D6 00 03 00 01 05 00 00 00
+		00 FA 00 03 00 01 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -91,7 +91,7 @@ Handle 0x0007, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 07 00 03 01 00 09 00 14 30 00 02 00 0D 00
-		00 04 00 03 04 0E 00 21 65 04
+		00 04 00 03 04 0E 01 43 FE 07
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -103,8 +103,8 @@ OEM-specific Type
 	Header and Data:
 		DD 36 08 00 07 01 00 09 00 14 30 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
-		00 06 00 02 0A 00 00 00 07 00 06 FF FF FF FF 08
-		00 09 FF FF FF FF
+		00 06 00 02 0A 00 00 00 07 00 B0 FF FF FF FF 08
+		00 00 FF FF FF FF
 	Strings:
 		Reference Code - CML PCH
 		PCH-CRID Status
@@ -256,8 +256,8 @@ OEM-specific Type
 Handle 0x0010, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: R16ET26W (1.12 )
-	Release Date: 06/08/2020
+	Version: R16ET42W (1.28 )
+	Release Date: 08/09/2024
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -280,8 +280,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.12
-	Firmware Revision: 1.9
+	BIOS Revision: 1.28
+	Firmware Revision: 1.13
 
 Handle 0x0011, DMI type 1, 27 bytes
 System Information
@@ -423,6 +423,7 @@ Handle 0x0027, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SimCard Slot
 	Type: Other
+	Data Bus Width: Other
 	Current Usage: Available
 	Length: Other
 	Characteristics: None
@@ -480,8 +481,8 @@ Handle 0x002F, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
 		83 40 2F 00 31 00 00 00 0D 00 00 00 00 00 04 00
-		F8 00 84 02 00 00 00 00 01 00 00 00 00 00 0E 00
-		65 04 21 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		F8 00 84 02 00 00 00 00 01 00 00 00 01 00 0E 00
+		FE 07 43 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0030, DMI type 24, 5 bytes
@@ -530,14 +531,14 @@ OEM-specific Type
 
 Handle 0x0037, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 1170 bytes
+	Area Length: 1186 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000048
+	Change Token: 0x00000049
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -551,8 +552,8 @@ System Event Log
 
 Handle 0x0038, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: R16HT23W
-	Release Date: 07/08/2020
+	Version ID: R16HT27W
+	Release Date: 06/30/2021
 
 Handle 0x0039, DMI type 14, 8 bytes
 Group Associations
@@ -563,7 +564,7 @@ Group Associations
 Handle 0x003A, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 3A 00 01 04 01 45 02 00 90 06 01 10 86 20
+		DB 6A 3A 00 01 04 01 45 02 00 90 06 01 85 36 20
 		00 00 00 00 40 00 00 01 1F 00 00 C9 02 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -579,8 +580,8 @@ OEM-specific Type
 Handle 0x003B, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 3B 00 54 50 07 01 01 00 00 00 00 00 00 00
-		00 00
+		87 12 3B 00 54 50 07 01 01 00 00 00 02 00 00 00
+		02 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

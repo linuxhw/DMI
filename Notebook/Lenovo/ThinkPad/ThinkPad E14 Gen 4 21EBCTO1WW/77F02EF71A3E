@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
 Table at 0xC7E4D000.
@@ -254,8 +254,8 @@ OEM-specific Type
 Handle 0x000E, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: R20ET32W (1.12 )
-	Release Date: 10/07/2022
+	Version: R20ET35W (1.15 )
+	Release Date: 01/21/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -278,8 +278,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.12
-	Firmware Revision: 1.12
+	BIOS Revision: 1.15
+	Firmware Revision: 1.15
 
 Handle 0x000F, DMI type 1, 27 bytes
 System Information
@@ -450,8 +450,8 @@ OEM-specific Type
 	Header and Data:
 		8C 0F 27 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
 	Strings:
-		1.12 
-		1.12 
+		1.15 
+		1.15 
 
 Handle 0x0028, DMI type 135, 19 bytes
 OEM-specific Type
@@ -501,18 +501,18 @@ Hardware Security
 Handle 0x002F, DMI type 132, 8 bytes
 OEM-specific Type
 	Header and Data:
-		84 08 2F 00 02 D8 36 00
+		84 08 2F 00 02 C0 36 00
 
 Handle 0x0030, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 50 bytes
+	Area Length: 66 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000002
+	Change Token: 0x00000003
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -527,7 +527,7 @@ System Event Log
 Handle 0x0031, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 31 00 54 48 4E 4B 00 00 00 00 00 00 00 00
+		8D 12 31 00 54 48 4E 4B 00 00 00 00 00 00 02 00
 		00 00
 
 Handle 0x0032, DMI type 141, 18 bytes
@@ -545,27 +545,28 @@ OEM-specific Type
 Handle 0x0034, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 34 00 54 48 4E 4B 00 00 40 00 00 00 05 00
+		8D 12 34 00 54 48 4E 4B 00 00 40 00 00 00 CD 00
 		00 00
 
-Handle 0x0035, DMI type 141, 30 bytes
+Handle 0x0035, DMI type 141, 46 bytes
 OEM-specific Type
 	Header and Data:
-		8D 1E 35 00 54 48 4E 4B 00 00 50 00 00 00 ED DD
-		36 00 00 00 00 00 CE 36 34 00 00 00 00 00
+		8D 2E 35 00 54 48 4E 4B 00 00 50 00 00 00 A8 32
+		C1 01 00 00 00 00 05 27 D4 02 00 00 00 00 C8 EB
+		3B 09 00 00 00 00 25 FB 53 09 00 00 00 00
 
 Handle 0x0036, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: R20HT32W
-	Release Date: 11/06/20
+	Version ID: R20HT35W
+	Release Date: 01/18/20
 
 Handle 0x0037, DMI type 141, 56 bytes
 OEM-specific Type
 	Header and Data:
-		8D 38 37 00 54 48 4E 4B 00 00 60 00 00 00 47 00
-		23 20 02 05 12 10 37 00 23 20 02 04 23 38 46 00
-		23 20 02 04 19 41 18 00 23 20 02 04 19 11 35 00
-		23 20 02 04 19 01 46 00
+		8D 38 37 00 54 48 4E 4B 00 00 60 00 00 00 FF 00
+		23 20 03 13 21 47 41 00 23 20 03 13 21 44 33 00
+		23 20 03 13 21 39 23 00 23 20 03 13 21 34 23 00
+		23 20 03 13 21 33 50 00
 
 Handle 0x0038, DMI type 135, 18 bytes
 OEM-specific Type
