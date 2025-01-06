@@ -1,15 +1,13 @@
-# dmidecode 3.2
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0x000E8D60.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: F13
-	Release Date: 07/08/2021
+	Version: F15d
+	Release Date: 07/20/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -31,7 +29,6 @@ BIOS Information
 		Serial services are supported (int 14h)
 		Printer services are supported (int 17h)
 		CGA/mono video services are supported (int 10h)
-		ACPI is supported
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
@@ -53,7 +50,7 @@ Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: Gigabyte Technology Co., Ltd.
 	Product Name: B550 AORUS PRO AC
-	Version: x.x
+	Version: Default string
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -105,7 +102,17 @@ Unknown Type
 	Header and Data:
 		2C 09 08 00 FF FF 01 01 00
 
-Handle 0x0009, DMI type 18, 23 bytes
+Handle 0x0009, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: AMD
+	Specification Version: 2.0
+	Firmware Revision: 3.84
+	Description: AMD
+	Characteristics:
+		Family configurable via platform software support
+	OEM-specific Information: 0x00000000
+
+Handle 0x000A, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -115,55 +122,39 @@ Handle 0x0009, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x000A, DMI type 16, 23 bytes
+Handle 0x000B, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
 	Maximum Capacity: 128 GB
-	Error Information Handle: 0x0009
+	Error Information Handle: 0x000A
 	Number Of Devices: 4
 
-Handle 0x000B, DMI type 19, 31 bytes
+Handle 0x000C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000BFFFFFFF
 	Range Size: 3 GB
-	Physical Array Handle: 0x000A
+	Physical Array Handle: 0x000B
 	Partition Width: 4
 
-Handle 0x000C, DMI type 19, 31 bytes
+Handle 0x000D, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
 	Ending Address: 0x0103FFFFFFF
 	Range Size: 61 GB
-	Physical Array Handle: 0x000A
+	Physical Array Handle: 0x000B
 	Partition Width: 4
 
-Handle 0x000D, DMI type 7, 27 bytes
+Handle 0x000E, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1 - Cache
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
-	Supported SRAM Types:
-		Pipeline Burst
-	Installed SRAM Type: Pipeline Burst
-	Speed: 1 ns
-	Error Correction Type: Multi-bit ECC
-	System Type: Unified
-	Associativity: 8-way Set-associative
-
-Handle 0x000E, DMI type 7, 27 bytes
-Cache Information
-	Socket Designation: L2 - Cache
-	Configuration: Enabled, Not Socketed, Level 2
-	Operational Mode: Write Back
-	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -174,12 +165,28 @@ Cache Information
 
 Handle 0x000F, DMI type 7, 27 bytes
 Cache Information
+	Socket Designation: L2 - Cache
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
+	Supported SRAM Types:
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x0010, DMI type 7, 27 bytes
+Cache Information
 	Socket Designation: L3 - Cache
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 65536 kB
-	Maximum Size: 65536 kB
+	Installed Size: 64 MB
+	Maximum Size: 64 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -188,7 +195,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0010, DMI type 4, 48 bytes
+Handle 0x0011, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: AM4
 	Type: Central Processor
@@ -227,9 +234,9 @@ Processor Information
 	Current Speed: 3400 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
-	L1 Cache Handle: 0x000D
-	L2 Cache Handle: 0x000E
-	L3 Cache Handle: 0x000F
+	L1 Cache Handle: 0x000E
+	L2 Cache Handle: 0x000F
+	L3 Cache Handle: 0x0010
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Unknown
@@ -244,7 +251,7 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0011, DMI type 18, 23 bytes
+Handle 0x0012, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -254,26 +261,26 @@ Handle 0x0011, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0012, DMI type 17, 92 bytes
+Handle 0x0013, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x000A
-	Error Information Handle: 0x0011
+	Array Handle: 0x000B
+	Error Information Handle: 0x0012
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
+	Speed: 2400 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX3200C16D4/16GX   
 	Rank: 2
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -289,18 +296,18 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0013, DMI type 20, 35 bytes
+Handle 0x0014, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x00FFFFFFFFF
 	Range Size: 64 GB
-	Physical Device Handle: 0x0012
-	Memory Array Mapped Address Handle: 0x000C
+	Physical Device Handle: 0x0013
+	Memory Array Mapped Address Handle: 0x000D
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0014, DMI type 18, 23 bytes
+Handle 0x0015, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -310,26 +317,26 @@ Handle 0x0014, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0015, DMI type 17, 92 bytes
+Handle 0x0016, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x000A
-	Error Information Handle: 0x0014
+	Array Handle: 0x000B
+	Error Information Handle: 0x0015
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
+	Speed: 2400 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX3200C16D4/16GX   
 	Rank: 2
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -345,18 +352,18 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0016, DMI type 20, 35 bytes
+Handle 0x0017, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x00FFFFFFFFF
 	Range Size: 64 GB
-	Physical Device Handle: 0x0015
-	Memory Array Mapped Address Handle: 0x000C
+	Physical Device Handle: 0x0016
+	Memory Array Mapped Address Handle: 0x000D
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0017, DMI type 18, 23 bytes
+Handle 0x0018, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -366,26 +373,26 @@ Handle 0x0017, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0018, DMI type 17, 92 bytes
+Handle 0x0019, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x000A
-	Error Information Handle: 0x0017
+	Array Handle: 0x000B
+	Error Information Handle: 0x0018
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
+	Speed: 2400 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX3200C16D4/16GX   
 	Rank: 2
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -401,18 +408,18 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0019, DMI type 20, 35 bytes
+Handle 0x001A, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x00FFFFFFFFF
 	Range Size: 64 GB
-	Physical Device Handle: 0x0018
-	Memory Array Mapped Address Handle: 0x000C
+	Physical Device Handle: 0x0019
+	Memory Array Mapped Address Handle: 0x000D
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x001A, DMI type 18, 23 bytes
+Handle 0x001B, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -422,26 +429,26 @@ Handle 0x001A, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x001B, DMI type 17, 92 bytes
+Handle 0x001C, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x000A
-	Error Information Handle: 0x001A
+	Array Handle: 0x000B
+	Error Information Handle: 0x001B
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
+	Speed: 2400 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX3200C16D4/16GX   
 	Rank: 2
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -457,18 +464,18 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x001C, DMI type 20, 35 bytes
+Handle 0x001D, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x00FFFFFFFFF
 	Range Size: 64 GB
-	Physical Device Handle: 0x001B
-	Memory Array Mapped Address Handle: 0x000C
+	Physical Device Handle: 0x001C
+	Memory Array Mapped Address Handle: 0x000D
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x001D, DMI type 8, 9 bytes
+Handle 0x001E, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1500
 	Internal Connector Type: None
@@ -476,7 +483,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x001E, DMI type 8, 9 bytes
+Handle 0x001F, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1501
 	Internal Connector Type: None
@@ -484,7 +491,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x001F, DMI type 8, 9 bytes
+Handle 0x0020, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1502
 	Internal Connector Type: None
@@ -492,7 +499,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0020, DMI type 8, 9 bytes
+Handle 0x0021, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1506
 	Internal Connector Type: None
@@ -500,17 +507,9 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0021, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J1507
-	Internal Connector Type: None
-	External Reference Designator: USB 3.2
-	External Connector Type: Access Bus (USB)
-	Port Type: USB
-
 Handle 0x0022, DMI type 8, 9 bytes
 Port Connector Information
-	Internal Reference Designator: J1301
+	Internal Reference Designator: J1507
 	Internal Connector Type: None
 	External Reference Designator: USB 3.2
 	External Connector Type: Access Bus (USB)
@@ -520,11 +519,19 @@ Handle 0x0023, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1301
 	Internal Connector Type: None
+	External Reference Designator: USB 3.2
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0024, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J1301
+	Internal Connector Type: None
 	External Reference Designator: Network
 	External Connector Type: RJ-45
 	Port Type: Network Port
 
-Handle 0x0024, DMI type 8, 9 bytes
+Handle 0x0025, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1704
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -532,7 +539,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x0025, DMI type 8, 9 bytes
+Handle 0x0026, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1705
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -540,7 +547,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x0026, DMI type 8, 9 bytes
+Handle 0x0027, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1700
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -548,7 +555,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x0027, DMI type 8, 9 bytes
+Handle 0x0028, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1702
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -556,7 +563,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x0028, DMI type 8, 9 bytes
+Handle 0x0029, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1703
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -564,7 +571,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x0029, DMI type 8, 9 bytes
+Handle 0x002A, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1706
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -572,7 +579,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x002A, DMI type 8, 9 bytes
+Handle 0x002B, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1100
 	Internal Connector Type: None
@@ -580,7 +587,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Video Port
 
-Handle 0x002B, DMI type 8, 9 bytes
+Handle 0x002C, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1101
 	Internal Connector Type: None
@@ -588,7 +595,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Video Port
 
-Handle 0x002C, DMI type 8, 9 bytes
+Handle 0x002D, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1102
 	Internal Connector Type: None
@@ -596,7 +603,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Video Port
 
-Handle 0x002D, DMI type 8, 9 bytes
+Handle 0x002E, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J2100
 	Internal Connector Type: None
@@ -604,7 +611,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x002E, DMI type 8, 9 bytes
+Handle 0x002F, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J2101
 	Internal Connector Type: None
@@ -612,7 +619,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x002F, DMI type 8, 9 bytes
+Handle 0x0030, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J2102
 	Internal Connector Type: None
@@ -620,10 +627,11 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x0030, DMI type 9, 17 bytes
+Handle 0x0031, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J10
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Short
 	ID: 12
@@ -632,10 +640,11 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:03.1
 
-Handle 0x0031, DMI type 9, 17 bytes
+Handle 0x0032, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3700 M.2 Slot
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 14
@@ -644,10 +653,11 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:01.1
 
-Handle 0x0032, DMI type 9, 17 bytes
+Handle 0x0033, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3708 PCIE x4 slot from Promontory
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Short
 	ID: 128
@@ -656,7 +666,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:03:00.0
 
-Handle 0x0033, DMI type 41, 11 bytes
+Handle 0x0034, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: RTL8111E Giga LAN
 	Type: Ethernet
@@ -664,7 +674,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:05:00.0
 
-Handle 0x0034, DMI type 41, 11 bytes
+Handle 0x0035, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Realtek ALC1220
 	Type: Sound
@@ -672,7 +682,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:09:00.4
 
-Handle 0x0035, DMI type 13, 22 bytes
+Handle 0x0036, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 15
@@ -691,8 +701,8 @@ BIOS Language Information
 		id|ID|iso8859-1
 		tr|TR|iso8859-1
 		pl|PL|iso8859-1
-	Currently Installed Language: ru|RU|iso8859-5
+	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0036, DMI type 127, 4 bytes
+Handle 0x0037, DMI type 127, 4 bytes
 End Of Table
 

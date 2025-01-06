@@ -1,7 +1,7 @@
 # dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-75 structures occupying 3101 bytes.
+76 structures occupying 3138 bytes.
 Table at 0x000EB450.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -646,45 +646,52 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 3
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Hynix/Hyundai
+	Speed: 1600 MT/s
+	Manufacturer: 0000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: DMT351E6CFR8C-H9  
+	Part Number:                   
 	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0041, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x004FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0040
-	Memory Array Mapped Address Handle: 0x0048
+	Memory Array Mapped Address Handle: 0x0049
 	Partition Row Position: Unknown
-	Interleave Position: 1
-	Interleaved Data Depth: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 2
 
 Handle 0x0042, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0007
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 1
-	Type: Unknown
-	Type Detail: None
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: 0000
+	Serial Number: --
+	Asset Tag: --
+	Part Number:                   
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0043, DMI type 4, 42 bytes
 Processor Information
@@ -741,7 +748,18 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0044, DMI type 17, 34 bytes
+Handle 0x0044, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0042
+	Memory Array Mapped Address Handle: 0x0049
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 2
+
+Handle 0x0045, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0007
 	Error Information Handle: Not Provided
@@ -754,26 +772,26 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: Transcend
 	Serial Number: --
 	Asset Tag: --
 	Part Number: TS1GLK64W6H       
 	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0045, DMI type 20, 35 bytes
+Handle 0x0046, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00200000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0044
-	Memory Array Mapped Address Handle: 0x0048
+	Physical Device Handle: 0x0045
+	Memory Array Mapped Address Handle: 0x0049
 	Partition Row Position: Unknown
 	Interleave Position: 2
 	Interleaved Data Depth: 2
 
-Handle 0x0046, DMI type 17, 34 bytes
+Handle 0x0047, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0007
 	Error Information Handle: Not Provided
@@ -786,34 +804,34 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: Transcend
 	Serial Number: --
 	Asset Tag: --
 	Part Number: TS1GLK64W6H       
 	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0047, DMI type 20, 35 bytes
+Handle 0x0048, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0046
-	Memory Array Mapped Address Handle: 0x0048
+	Physical Device Handle: 0x0047
+	Memory Array Mapped Address Handle: 0x0049
 	Partition Row Position: Unknown
 	Interleave Position: 1
 	Interleaved Data Depth: 2
 
-Handle 0x0048, DMI type 19, 31 bytes
+Handle 0x0049, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x004FFFFFFFF
-	Range Size: 20 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0007
 	Partition Width: 4
 
-Handle 0x004D, DMI type 13, 22 bytes
+Handle 0x004E, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 7
@@ -826,6 +844,6 @@ BIOS Language Information
 		zh|CT|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0052, DMI type 127, 4 bytes
+Handle 0x0053, DMI type 127, 4 bytes
 End Of Table
 

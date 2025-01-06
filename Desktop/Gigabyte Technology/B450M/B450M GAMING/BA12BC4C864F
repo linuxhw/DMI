@@ -1,9 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-# SMBIOS implementations newer than version 3.1.1 are not
-# fully supported by this version of dmidecode.
-Table at 0xBDA24000.
+Table at 0xBCA23000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
@@ -107,8 +105,10 @@ Unknown Type
 Handle 0x0009, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
-	Specification Version: 2.0	Firmware Revision: 3.1
-	Description: AMD	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 3.84
+	Description: AMD
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -145,8 +145,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 384 kB
-	Maximum Size: 384 kB
+	Installed Size: 512 kB
+	Maximum Size: 512 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -161,8 +161,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -177,8 +177,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 16 MB
+	Maximum Size: 16 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -193,8 +193,8 @@ Processor Information
 	Type: Central Processor
 	Family: Zen
 	Manufacturer: Advanced Micro Devices, Inc.
-	ID: 81 0F 81 00 FF FB 8B 17
-	Signature: Family 23, Model 24, Stepping 1
+	ID: 00 0F A5 00 FF FB 8B 17
+	Signature: Family 25, Model 80, Stepping 0
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -219,11 +219,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Ryzen 5 3400G with Radeon Vega Graphics    
-	Voltage: 1.5 V
+	Version: AMD Ryzen 7 5700G with Radeon Graphics         
+	Voltage: 1.4 V
 	External Clock: 100 MHz
-	Max Speed: 4200 MHz
-	Current Speed: 3700 MHz
+	Max Speed: 4650 MHz
+	Current Speed: 3800 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
 	L1 Cache Handle: 0x000D
@@ -232,9 +232,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Unknown
-	Core Count: 4
-	Core Enabled: 4
-	Thread Count: 8
+	Core Count: 8
+	Core Enabled: 8
+	Thread Count: 16
 	Characteristics:
 		64-bit capable
 		Multi-Core
@@ -272,10 +272,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: Unknown
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
+	Memory Technology: Unknown
+	Memory Operating Mode Capability: Unknown
+	Firmware Version: Unknown
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0013, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -293,7 +304,7 @@ Memory Device
 	Error Information Handle: 0x0013
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -306,10 +317,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: F4-3200C16-8GIS
 	Rank: 1
-	Configured Clock Speed: 3200 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 5, Hex 0xCD
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 8 GB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -351,10 +373,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: Unknown
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
+	Memory Technology: Unknown
+	Memory Operating Mode Capability: Unknown
+	Firmware Version: Unknown
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0018, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -372,7 +405,7 @@ Memory Device
 	Error Information Handle: 0x0018
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -385,10 +418,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: F4-3200C16-8GIS
 	Rank: 1
-	Configured Clock Speed: 3200 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 5, Hex 0xCD
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 8 GB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x001A, DMI type 20, 35 bytes
 Memory Device Mapped Address

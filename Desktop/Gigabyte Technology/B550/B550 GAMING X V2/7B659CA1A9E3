@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
 Table at 0x000E8D60.
@@ -6,8 +6,8 @@ Table at 0x000E8D60.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: F14
-	Release Date: 01/04/2022
+	Version: F17b
+	Release Date: 08/09/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -29,7 +29,6 @@ BIOS Information
 		Serial services are supported (int 14h)
 		Printer services are supported (int 17h)
 		CGA/mono video services are supported (int 10h)
-		ACPI is supported
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
@@ -43,7 +42,7 @@ System Information
 	Version: Default string
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: Other
 	SKU Number: Default string
 	Family: B550 MB
 
@@ -107,7 +106,7 @@ Handle 0x0009, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.76
+	Firmware Revision: 3.90
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -275,27 +274,6 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
-	Firmware Version: Unknown
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x0014, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -376,27 +354,6 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
-	Firmware Version: Unknown
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x0019, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -648,7 +605,7 @@ Onboard Device
 	Type: Sound
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:09:00.4
+	Bus Address: 0000:08:00.4
 
 Handle 0x0033, DMI type 13, 22 bytes
 BIOS Language Information

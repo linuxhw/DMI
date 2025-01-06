@@ -1,13 +1,13 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0xBDA24000.
+Table at 0xBDC22000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: F16d
-	Release Date: 07/20/2022
+	Version: F18
+	Release Date: 03/22/2024
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -106,7 +106,7 @@ Handle 0x0009, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.84
+	Firmware Revision: 3.92
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -566,7 +566,8 @@ Port Connector Information
 Handle 0x002F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J10
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Short
 	ID: 12
@@ -578,7 +579,8 @@ System Slot Information
 Handle 0x0030, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3700 M.2 Slot
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 14
@@ -590,7 +592,8 @@ System Slot Information
 Handle 0x0031, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3708 PCIE x4 slot from Promontory
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Short
 	ID: 128
@@ -634,7 +637,7 @@ BIOS Language Information
 		id|ID|iso8859-1
 		tr|TR|iso8859-1
 		pl|PL|iso8859-1
-	Currently Installed Language: en|US|iso8859-1
+	Currently Installed Language: it|IT|iso8859-1
 
 Handle 0x0035, DMI type 127, 4 bytes
 End Of Table

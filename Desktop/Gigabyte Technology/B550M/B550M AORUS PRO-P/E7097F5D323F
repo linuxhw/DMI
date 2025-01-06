@@ -1,13 +1,13 @@
-# dmidecode 3.5
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0xBDA29000.
+Table at 0xBDBF0000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: F14
-	Release Date: 01/04/2022
+	Version: F19d
+	Release Date: 09/02/2024
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -29,7 +29,6 @@ BIOS Information
 		Serial services are supported (int 14h)
 		Printer services are supported (int 17h)
 		CGA/mono video services are supported (int 10h)
-		ACPI is supported
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
@@ -107,7 +106,7 @@ Handle 0x0009, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.76
+	Firmware Revision: 3.92
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -154,8 +153,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 384 kB
-	Maximum Size: 384 kB
+	Installed Size: 512 kB
+	Maximum Size: 512 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -170,8 +169,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3 MB
-	Maximum Size: 3 MB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -228,11 +227,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Ryzen 5 5600X 6-Core Processor             
+	Version: AMD Ryzen 7 5700X 8-Core Processor             
 	Voltage: 1.1 V
 	External Clock: 100 MHz
 	Max Speed: 4650 MHz
-	Current Speed: 3700 MHz
+	Current Speed: 3400 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
 	L1 Cache Handle: 0x000E
@@ -241,9 +240,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Unknown
-	Core Count: 6
-	Core Enabled: 6
-	Thread Count: 12
+	Core Count: 8
+	Core Enabled: 8
+	Thread Count: 16
 	Characteristics:
 		64-bit capable
 		Multi-Core
@@ -567,7 +566,8 @@ Port Connector Information
 Handle 0x002F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J10
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Short
 	ID: 12
@@ -579,7 +579,8 @@ System Slot Information
 Handle 0x0030, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3700 M.2 Slot
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 14
@@ -591,7 +592,8 @@ System Slot Information
 Handle 0x0031, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3708 PCIE x4 slot from Promontory
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Short
 	ID: 128
@@ -606,7 +608,7 @@ Onboard Device
 	Type: Sound
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:0b:00.4
+	Bus Address: 0000:09:00.4
 
 Handle 0x0033, DMI type 13, 22 bytes
 BIOS Language Information

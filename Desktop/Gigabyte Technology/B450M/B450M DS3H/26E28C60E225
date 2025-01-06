@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0x000E8D60.
+Table at 0xBDA22000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
@@ -274,20 +274,20 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
-	Manufacturer: Unknown
+	Speed: 3600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT8G4DFS824A.M8FD
+	Part Number: KF3600C17D4/8GX     
 	Rank: 1
-	Configured Memory Speed: 2400 MT/s
+	Configured Memory Speed: 3600 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 6, Hex 0x9B
+	Module Manufacturer ID: Bank 2, Hex 0x98
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
@@ -321,49 +321,17 @@ Handle 0x0016, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x000B
 	Error Information Handle: 0x0015
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8 GB
-	Form Factor: DIMM
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: P0 CHANNEL A
-	Type: DDR4
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: CT8G4DFS824A.M8FE
-	Rank: 1
-	Configured Memory Speed: 2400 MT/s
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
-	Memory Technology: DRAM
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 6, Hex 0x9B
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: 8 GB
-	Cache Size: None
-	Logical Size: None
+	Type: Unknown
+	Type Detail: Unknown
 
-Handle 0x0017, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x0016
-	Memory Array Mapped Address Handle: 0x000D
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
-
-Handle 0x0018, DMI type 18, 23 bytes
+Handle 0x0017, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -373,19 +341,51 @@ Handle 0x0018, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0019, DMI type 17, 92 bytes
+Handle 0x0018, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x000B
-	Error Information Handle: 0x0018
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Error Information Handle: 0x0017
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL B
-	Type: Unknown
-	Type Detail: Unknown
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 3600 MT/s
+	Manufacturer: Kingston
+	Serial Number: --
+	Asset Tag: --
+	Part Number: KF3600C17D4/8GX     
+	Rank: 1
+	Configured Memory Speed: 3600 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 2, Hex 0x98
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 8 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0019, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x0018
+	Memory Array Mapped Address Handle: 0x000D
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x001A, DMI type 18, 23 bytes
 32-bit Memory Error Information

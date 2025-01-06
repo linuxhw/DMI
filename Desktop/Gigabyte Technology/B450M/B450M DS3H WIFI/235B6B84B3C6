@@ -1,13 +1,13 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0xBDC27000.
+Table at 0xBC822000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: F63d
-	Release Date: 10/13/2021
+	Version: F65d
+	Release Date: 06/01/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -29,7 +29,6 @@ BIOS Information
 		Serial services are supported (int 14h)
 		Printer services are supported (int 17h)
 		CGA/mono video services are supported (int 10h)
-		ACPI is supported
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
@@ -107,7 +106,7 @@ Handle 0x0009, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.45
+	Firmware Revision: 3.87
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -146,8 +145,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 384 kB
-	Maximum Size: 384 kB
+	Installed Size: 256 kB
+	Maximum Size: 256 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -194,8 +193,8 @@ Processor Information
 	Type: Central Processor
 	Family: Zen
 	Manufacturer: Advanced Micro Devices, Inc.
-	ID: 81 0F 81 00 FF FB 8B 17
-	Signature: Family 23, Model 24, Stepping 1
+	ID: 01 0F 86 00 FF FB 8B 17
+	Signature: Family 23, Model 96, Stepping 1
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -220,11 +219,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Ryzen 5 3400G with Radeon Vega Graphics    
-	Voltage: 1.5 V
+	Version: AMD Ryzen 3 PRO 4350G with Radeon Graphics
+	Voltage: 1.2 V
 	External Clock: 100 MHz
-	Max Speed: 4200 MHz
-	Current Speed: 3700 MHz
+	Max Speed: 4100 MHz
+	Current Speed: 3800 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
 	L1 Cache Handle: 0x000D

@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
 Table at 0x8EC3E000.
@@ -575,20 +575,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2400 MT/s
-	Manufacturer: 859B
+	Speed: 2666 MT/s
+	Manufacturer: 029E
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT4G4DFS824A.M8FB   
-	Rank: 1
-	Configured Memory Speed: 2400 MT/s
+	Part Number: CMV16GX4M1A2666C18  
+	Rank: 2
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -613,20 +613,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2400 MT/s
-	Manufacturer: 859B
+	Speed: 2666 MT/s
+	Manufacturer: 029E
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT4G4DFS824A.M8FB   
-	Rank: 1
-	Configured Memory Speed: 2400 MT/s
+	Part Number: CMV16GX4M1A2666C18  
+	Rank: 2
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -648,8 +648,8 @@ Memory Device
 Handle 0x003F, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x003A
 	Partition Width: 2
 
@@ -826,8 +826,8 @@ Processor Information
 Handle 0x0048, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x003B
 	Memory Array Mapped Address Handle: 0x003F
 	Partition Row Position: Unknown
@@ -836,9 +836,9 @@ Memory Device Mapped Address
 
 Handle 0x0049, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00400000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x003D
 	Memory Array Mapped Address Handle: 0x003F
 	Partition Row Position: Unknown

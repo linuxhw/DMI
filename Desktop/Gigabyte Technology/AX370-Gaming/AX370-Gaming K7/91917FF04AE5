@@ -1,13 +1,13 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
-SMBIOS 3.0.0 present.
-Table at 0x000EB3B0.
+SMBIOS 3.2.1 present.
+Table at 0x000E8980.
 
-Handle 0x0000, DMI type 0, 24 bytes
+Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: F4
-	Release Date: 06/16/2017
+	Version: F25
+	Release Date: 01/16/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -30,7 +30,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 5.12
+	BIOS Revision: 5.13
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -270,8 +270,21 @@ Port Connector Information
 
 Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
-	Designation: Slot1
-	Type: x1 PCI Express 3 x1
+	Designation: J6B2
+	Type: x16 PCI Express
+	Current Usage: In Use
+	Length: Long
+	ID: 0
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 0000:00:01.0
+
+Handle 0x001D, DMI type 9, 17 bytes
+System Slot Information
+	Designation: J6B1
+	Type: x1 PCI Express
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -279,12 +292,12 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:1c:00.3
+	Bus Address: 0000:00:1c.3
 
-Handle 0x001D, DMI type 9, 17 bytes
+Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
-	Designation: Slot2
-	Type: x8 PCI Express 3 x8
+	Designation: J6D1
+	Type: x1 PCI Express
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -292,20 +305,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:01:00.0
-
-Handle 0x001E, DMI type 9, 17 bytes
-System Slot Information
-	Designation: Slot3
-	Type: x1 PCI Express 3 x1
-	Current Usage: In Use
-	Length: Short
-	ID: 3
-	Characteristics:
-		3.3 V is provided
-		Opening is shared
-		PME signal is supported
-	Bus Address: 0000:1c:00.0
+	Bus Address: 0000:00:1c.4
 
 Handle 0x001F, DMI type 10, 6 bytes
 On Board Device Information
@@ -364,19 +364,19 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 64 GB
+	Maximum Capacity: 256 GB
 	Error Information Handle: 0x0026
 	Number Of Devices: 4
 
 Handle 0x0028, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Array Handle: 0x0027
 	Partition Width: 4
 
-Handle 0x0029, DMI type 7, 19 bytes
+Handle 0x0029, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1 - Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -392,7 +392,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x002A, DMI type 7, 19 bytes
+Handle 0x002A, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L2 - Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -408,7 +408,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x002B, DMI type 7, 19 bytes
+Handle 0x002B, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L3 - Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -496,18 +496,18 @@ Memory Device
 	Error Information Handle: 0x002D
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
-	Bank Locator: CHANNEL A
+	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2133 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMK16GX4M2B3200C16  
+	Part Number: CMK32GX4M2E3200C16
 	Rank: 1
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
@@ -517,8 +517,8 @@ Memory Device
 Handle 0x002F, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Device Handle: 0x002E
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: Unknown
@@ -541,18 +541,18 @@ Memory Device
 	Error Information Handle: 0x0030
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
-	Bank Locator: CHANNEL A
+	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2133 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMK16GX4M2B3200C16  
+	Part Number: CMK32GX4M2E3200C16
 	Rank: 1
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
@@ -562,8 +562,8 @@ Memory Device
 Handle 0x0032, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Device Handle: 0x0031
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: Unknown
@@ -586,18 +586,18 @@ Memory Device
 	Error Information Handle: 0x0033
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
-	Bank Locator: CHANNEL B
+	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2133 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMK16GX4M2B3200C16  
+	Part Number: CMK32GX4M2E3200C16
 	Rank: 1
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
@@ -607,8 +607,8 @@ Memory Device
 Handle 0x0035, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Device Handle: 0x0034
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: Unknown
@@ -631,18 +631,18 @@ Memory Device
 	Error Information Handle: 0x0036
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
-	Bank Locator: CHANNEL B
+	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2133 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMK16GX4M2B3200C16  
+	Part Number: CMK32GX4M2E3200C16
 	Rank: 1
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
@@ -652,8 +652,8 @@ Memory Device
 Handle 0x0038, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Device Handle: 0x0037
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: Unknown
@@ -665,7 +665,7 @@ BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 15
 		en|US|iso8859-1
-		zh|CN|unicode
+		zh|TW|unicode
 		zh|CN|unicode
 		ru|RU|iso8859-5
 		de|DE|iso8859-1
@@ -675,11 +675,11 @@ BIOS Language Information
 		fr|FR|iso8859-1
 		it|IT|iso8859-1
 		pt|PT|iso8859-1
-		vi|VI|iso8859-1
-		id|ID|iso8859-1
-		tr|TR|iso8859-1
-		pl|PL|iso8859-1
-	Currently Installed Language: Not Specified
+		<BAD INDEX>
+		<BAD INDEX>
+		<BAD INDEX>
+		<BAD INDEX>
+	Currently Installed Language: de|DE|iso8859-1
 
 Handle 0x003A, DMI type 127, 4 bytes
 End Of Table
