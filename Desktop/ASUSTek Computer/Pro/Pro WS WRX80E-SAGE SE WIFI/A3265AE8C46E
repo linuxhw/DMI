@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
 Table at 0xBAFA1000.
@@ -792,18 +792,18 @@ Memory Device
 	Error Information Handle: 0x004E
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 32 GB
+	Size: 64 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Registered (Buffered)
-	Speed: 2133 MT/s
-	Manufacturer: Samsung
+	Speed: 2667 MT/s
+	Manufacturer: Micron Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M386A4G40DM0-CPB    
+	Part Number: 72ASS8G72LZ-2G6D2   
 	Rank: 4
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
@@ -812,20 +812,20 @@ Memory Device
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Manufacturer ID: Bank 1, Hex 0x2C
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 32 GB
+	Volatile Size: 64 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0050, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x03FFFFFFFFF
-	Range Size: 256 GB
+	Ending Address: 0x047FFFFFFFF
+	Range Size: 288 GB
 	Physical Device Handle: 0x004F
 	Memory Array Mapped Address Handle: 0x004D
 	Partition Row Position: Unknown
@@ -848,67 +848,11 @@ Memory Device
 	Error Information Handle: 0x0051
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 64 GB
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM 0
-	Bank Locator: P0 CHANNEL B
-	Type: DDR4
-	Type Detail: Synchronous Registered (Buffered)
-	Speed: 2667 MT/s
-	Manufacturer: Micron Technology
-	Serial Number: --
-	Asset Tag: --
-	Part Number: 72ASS8G72LZ-2G6D2   
-	Rank: 4
-	Configured Memory Speed: 2133 MT/s
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
-	Memory Technology: DRAM
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 1, Hex 0x2C
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: 64 GB
-	Cache Size: None
-	Logical Size: None
-
-Handle 0x0053, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x047FFFFFFFF
-	Range Size: 288 GB
-	Physical Device Handle: 0x0052
-	Memory Array Mapped Address Handle: 0x004D
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
-
-Handle 0x0054, DMI type 18, 23 bytes
-32-bit Memory Error Information
-	Type: OK
-	Granularity: Unknown
-	Operation: Unknown
-	Vendor Syndrome: Unknown
-	Memory Array Address: Unknown
-	Device Address: Unknown
-	Resolution: Unknown
-
-Handle 0x0055, DMI type 17, 92 bytes
-Memory Device
-	Array Handle: 0x004B
-	Error Information Handle: 0x0054
-	Total Width: 72 bits
-	Data Width: 64 bits
 	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
-	Bank Locator: P0 CHANNEL C
+	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Registered (Buffered)
 	Speed: 2133 MT/s
@@ -933,18 +877,18 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0056, DMI type 20, 35 bytes
+Handle 0x0053, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x03FFFFFFFFF
 	Range Size: 256 GB
-	Physical Device Handle: 0x0055
+	Physical Device Handle: 0x0052
 	Memory Array Mapped Address Handle: 0x004D
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0057, DMI type 18, 23 bytes
+Handle 0x0054, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -954,17 +898,17 @@ Handle 0x0057, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0058, DMI type 17, 92 bytes
+Handle 0x0055, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x004B
-	Error Information Handle: 0x0057
+	Error Information Handle: 0x0054
 	Total Width: 72 bits
 	Data Width: 64 bits
 	Size: 64 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
-	Bank Locator: P0 CHANNEL D
+	Bank Locator: P0 CHANNEL C
 	Type: DDR4
 	Type Detail: Synchronous Registered (Buffered)
 	Speed: 2667 MT/s
@@ -989,11 +933,67 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0059, DMI type 20, 35 bytes
+Handle 0x0056, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x04FFFFFFFFF
 	Range Size: 320 GB
+	Physical Device Handle: 0x0055
+	Memory Array Mapped Address Handle: 0x004D
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0057, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0058, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x004B
+	Error Information Handle: 0x0057
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM 0
+	Bank Locator: P0 CHANNEL D
+	Type: DDR4
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 2133 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M386A4G40DM0-CPB    
+	Rank: 4
+	Configured Memory Speed: 2133 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 32 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0059, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x03FFFFFFFFF
+	Range Size: 256 GB
 	Physical Device Handle: 0x0058
 	Memory Array Mapped Address Handle: 0x004D
 	Partition Row Position: Unknown

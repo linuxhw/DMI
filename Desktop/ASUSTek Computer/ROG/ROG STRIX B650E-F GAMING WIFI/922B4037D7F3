@@ -1,15 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.5.0 present.
-# SMBIOS implementations newer than version 3.3.0 are not
-# fully supported by this version of dmidecode.
-Table at 0x79CAD000.
+Table at 0x796A4000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 0821
-	Release Date: 11/15/2022
+	Version: 1413
+	Release Date: 04/26/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -36,7 +34,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 8.21
+	BIOS Revision: 14.13
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -153,7 +151,7 @@ Handle 0x000B, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 6.24
+	Firmware Revision: 6.29
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -313,27 +311,6 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
-	Firmware Version: Unknown
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x0015, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -356,7 +333,7 @@ Memory Device
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: P0 CHANNEL A
-	Type: <OUT OF SPEC>
+	Type: DDR5
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 4800 MT/s
 	Manufacturer: Kingston
@@ -414,27 +391,6 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
-	Firmware Version: Unknown
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x001A, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -457,7 +413,7 @@ Memory Device
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: P0 CHANNEL B
-	Type: <OUT OF SPEC>
+	Type: DDR5
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 4800 MT/s
 	Manufacturer: Kingston
@@ -502,13 +458,13 @@ Additional Information 1
 Handle 0x001E, DMI type 60, 165 bytes
 Unknown Type
 	Header and Data:
-		3C A5 1E 00 01 9F CC AA E9 B8 4F 8D 6E 1B 1F E6
-		09 11 68 A4 D3 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		3C A5 1E 00 06 9F CC AA E9 B8 4F 8D 6E 1B 1F E6
+		09 11 68 A4 D3 B3 F5 88 E3 9D B1 96 E2 F2 21 5A
+		C8 DB B3 EC FD D0 7E 7F 6B 6A 10 31 30 5B DD 27
+		A8 E5 05 4C C8 46 EA 61 F7 CF A7 79 76 EA 2D AC
+		16 09 41 3A E1 DF D5 D6 CC C9 23 FF 88 15 8E 29
+		62 6D 1D 5B 98 12 B0 D0 85 18 51 BC 6D 06 D6 D9
+		3D 7A E5 84 39 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -797,9 +753,10 @@ Port Connector Information
 Handle 0x0042, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
-	Type: x16 <OUT OF SPEC>
+	Type: x16 PCI Express 5 x16
 	Current Usage: Available
 	Length: Long
+	ID: 0
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported

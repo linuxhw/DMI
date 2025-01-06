@@ -1,4 +1,4 @@
-# dmidecode 3.5
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x8EB9E000.
@@ -343,7 +343,8 @@ Port Connector Information
 Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 0
@@ -356,7 +357,8 @@ System Slot Information
 Handle 0x0026, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 1
@@ -369,7 +371,8 @@ System Slot Information
 Handle 0x0027, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -382,7 +385,8 @@ System Slot Information
 Handle 0x0028, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_2
-	Type: x8 PCI Express
+	Type: PCI Express
+	Data Bus Width: 8x or x8
 	Current Usage: Available
 	Length: Long
 	ID: 3
@@ -395,7 +399,8 @@ System Slot Information
 Handle 0x0029, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_3
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 4
@@ -408,7 +413,8 @@ System Slot Information
 Handle 0x002A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_3
-	Type: x8 PCI Express
+	Type: PCI Express
+	Data Bus Width: 8x or x8
 	Current Usage: Available
 	Length: Long
 	ID: 5
@@ -977,7 +983,7 @@ Processor Information
 	Voltage: 1.1 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
-	Current Speed: 3762 MHz
+	Current Speed: 3800 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0053
@@ -1128,7 +1134,7 @@ Group Associations
 Handle 0x0065, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 65 00 01 04 01 45 02 00 90 06 01 85 36 20
+		DB 6A 65 00 01 04 01 45 02 00 90 06 01 85 30 20
 		00 00 00 00 48 00 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

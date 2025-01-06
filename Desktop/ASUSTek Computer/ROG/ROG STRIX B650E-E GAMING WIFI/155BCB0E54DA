@@ -1,13 +1,13 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.5.0 present.
-Table at 0x79CAD000.
+Table at 0x794B5000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 0821
-	Release Date: 11/15/2022
+	Version: 2413
+	Release Date: 02/02/2024
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -34,7 +34,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 8.21
+	BIOS Revision: 24.13
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -147,7 +147,17 @@ Unknown Type
 	Header and Data:
 		2C 09 0A 00 FF FF 01 01 00
 
-Handle 0x000B, DMI type 7, 27 bytes
+Handle 0x000B, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: AMD
+	Specification Version: 2.0
+	Firmware Revision: 6.31
+	Description: AMD
+	Characteristics:
+		Family configurable via platform software support
+	OEM-specific Information: 0x00000000
+
+Handle 0x000C, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1 - Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -163,7 +173,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x000C, DMI type 7, 27 bytes
+Handle 0x000D, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L2 - Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -179,7 +189,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x000D, DMI type 7, 27 bytes
+Handle 0x000E, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L3 - Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -195,7 +205,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x000E, DMI type 4, 48 bytes
+Handle 0x000F, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: AM5
 	Type: Central Processor
@@ -233,10 +243,10 @@ Processor Information
 	Max Speed: 5550 MHz
 	Current Speed: 4500 MHz
 	Status: Populated, Enabled
-	Upgrade: Other
-	L1 Cache Handle: 0x000B
-	L2 Cache Handle: 0x000C
-	L3 Cache Handle: 0x000D
+	Upgrade: Socket AM5
+	L1 Cache Handle: 0x000C
+	L2 Cache Handle: 0x000D
+	L3 Cache Handle: 0x000E
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Unknown
@@ -251,7 +261,12 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x000F, DMI type 18, 23 bytes
+Handle 0x0010, DMI type 44, 9 bytes
+Unknown Type
+	Header and Data:
+		2C 09 10 00 0F 00 01 02 00
+
+Handle 0x0011, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -261,46 +276,22 @@ Handle 0x000F, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0010, DMI type 16, 23 bytes
+Handle 0x0012, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
 	Maximum Capacity: 128 GB
-	Error Information Handle: 0x000F
+	Error Information Handle: 0x0011
 	Number Of Devices: 4
 
-Handle 0x0011, DMI type 19, 31 bytes
+Handle 0x0013, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
-	Physical Array Handle: 0x0010
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
+	Physical Array Handle: 0x0012
 	Partition Width: 2
-
-Handle 0x0012, DMI type 18, 23 bytes
-32-bit Memory Error Information
-	Type: OK
-	Granularity: Unknown
-	Operation: Unknown
-	Vendor Syndrome: Unknown
-	Memory Array Address: Unknown
-	Device Address: Unknown
-	Resolution: Unknown
-
-Handle 0x0013, DMI type 17, 92 bytes
-Memory Device
-	Array Handle: 0x0010
-	Error Information Handle: 0x0012
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
-	Set: None
-	Locator: DIMM 0
-	Bank Locator: P0 CHANNEL A
-	Type: Unknown
-	Type Detail: Unknown
 
 Handle 0x0014, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -314,51 +305,19 @@ Handle 0x0014, DMI type 18, 23 bytes
 
 Handle 0x0015, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x0010
+	Array Handle: 0x0012
 	Error Information Handle: 0x0014
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 16 GB
-	Form Factor: DIMM
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
 	Set: None
-	Locator: DIMM 1
+	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL A
-	Type: DDR5
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 4800 MT/s
-	Manufacturer: Samsung
-	Serial Number: --
-	Asset Tag: --
-	Part Number: M323R2GA3BB0-CQKOL  
-	Rank: 1
-	Configured Memory Speed: 6000 MT/s
-	Minimum Voltage: 1.1 V
-	Maximum Voltage: 1.1 V
-	Configured Voltage: 1.1 V
-	Memory Technology: DRAM
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 1, Hex 0xCE
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: 16 GB
-	Cache Size: None
-	Logical Size: None
+	Type: Unknown
+	Type Detail: Unknown
 
-Handle 0x0016, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x0015
-	Memory Array Mapped Address Handle: 0x0011
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
-
-Handle 0x0017, DMI type 18, 23 bytes
+Handle 0x0016, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -368,19 +327,51 @@ Handle 0x0017, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0018, DMI type 17, 92 bytes
+Handle 0x0017, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x0010
-	Error Information Handle: 0x0017
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Array Handle: 0x0012
+	Error Information Handle: 0x0016
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
 	Set: None
-	Locator: DIMM 0
-	Bank Locator: P0 CHANNEL B
-	Type: Unknown
-	Type Detail: Unknown
+	Locator: DIMM 1
+	Bank Locator: P0 CHANNEL A
+	Type: DDR5
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 4800 MT/s
+	Manufacturer: Kingbank Technology
+	Serial Number: --
+	Asset Tag: --
+	Part Number:                              
+	Rank: 2
+	Configured Memory Speed: 6200 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 12, Hex 0x92
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 32 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0018, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x0017
+	Memory Array Mapped Address Handle: 0x0013
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x0019, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -394,11 +385,35 @@ Handle 0x0019, DMI type 18, 23 bytes
 
 Handle 0x001A, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x0010
+	Array Handle: 0x0012
 	Error Information Handle: 0x0019
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: DIMM 0
+	Bank Locator: P0 CHANNEL B
+	Type: Unknown
+	Type Detail: Unknown
+
+Handle 0x001B, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x001C, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0012
+	Error Information Handle: 0x001B
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -406,61 +421,61 @@ Memory Device
 	Type: DDR5
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 4800 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Kingbank Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M323R2GA3BB0-CQKOL  
-	Rank: 1
-	Configured Memory Speed: 6000 MT/s
+	Part Number:                              
+	Rank: 2
+	Configured Memory Speed: 6200 MT/s
 	Minimum Voltage: 1.1 V
 	Maximum Voltage: 1.1 V
 	Configured Voltage: 1.1 V
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Manufacturer ID: Bank 12, Hex 0x92
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 16 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x001B, DMI type 20, 35 bytes
+Handle 0x001D, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x001A
-	Memory Array Mapped Address Handle: 0x0011
+	Starting Address: 0x00800000000
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x001C
+	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x001C, DMI type 40, 14 bytes
+Handle 0x001E, DMI type 40, 14 bytes
 Additional Information 1
 	Referenced Handle: 0x0000
-	Referenced Offset: 0x00
-	String: AGESA!V9
+	Referenced Offset: 0x05
+	String: AGESA!V9 ComboAM5PI 1.1.0.2b
 	Value: 0x00000000
 
-Handle 0x001D, DMI type 60, 165 bytes
+Handle 0x001F, DMI type 60, 165 bytes
 Unknown Type
 	Header and Data:
-		3C A5 1D 00 01 F8 E1 C2 C7 DE 48 49 31 AB F9 76
-		BA 15 1E 4F 31 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		3C A5 1F 00 05 F8 34 95 13 51 03 05 7F 0E 06 CA
+		CB AC 57 4F 61 60 32 BA 8B 33 93 57 4C 0B 46 BE
+		8F 8F 00 A4 3D A7 CE 64 A1 B5 4E 3C 9F 8B 18 85
+		2A 94 CE 11 C1 FA 2F FD 0C 07 3F 1B 74 23 B6 46
+		B3 30 77 7E CA D7 86 B7 0F E0 0B 92 81 D7 86 98
+		46 6D 24 75 AB 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00
 
-Handle 0x001E, DMI type 8, 9 bytes
+Handle 0x0020, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: U32G2_C2
 	Internal Connector Type: None
@@ -468,7 +483,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x001F, DMI type 8, 9 bytes
+Handle 0x0021, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: U32G2X2_C6
 	Internal Connector Type: None
@@ -476,7 +491,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0020, DMI type 8, 9 bytes
+Handle 0x0022, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: U32G2_E123
 	Internal Connector Type: None
@@ -484,7 +499,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0021, DMI type 8, 9 bytes
+Handle 0x0023, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: U2_1617U3G2_3E4
 	Internal Connector Type: None
@@ -492,7 +507,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0022, DMI type 8, 9 bytes
+Handle 0x0024, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: USB_5_15
 	Internal Connector Type: None
@@ -500,7 +515,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0023, DMI type 8, 9 bytes
+Handle 0x0025, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: U32G2_11
 	Internal Connector Type: None
@@ -508,7 +523,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0024, DMI type 8, 9 bytes
+Handle 0x0026, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: LAN
 	Internal Connector Type: None
@@ -516,7 +531,7 @@ Port Connector Information
 	External Connector Type: RJ-45
 	Port Type: Network Port
 
-Handle 0x0025, DMI type 8, 9 bytes
+Handle 0x0027, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: HDMI
 	Internal Connector Type: None
@@ -524,7 +539,7 @@ Port Connector Information
 	External Connector Type: Other
 	Port Type: Video Port
 
-Handle 0x0026, DMI type 8, 9 bytes
+Handle 0x0028, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: DP
 	Internal Connector Type: None
@@ -532,7 +547,7 @@ Port Connector Information
 	External Connector Type: Other
 	Port Type: Video Port
 
-Handle 0x0027, DMI type 8, 9 bytes
+Handle 0x0029, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: AUDIO
 	Internal Connector Type: None
@@ -540,7 +555,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x0028, DMI type 8, 9 bytes
+Handle 0x002A, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: SATA6G_E1
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -548,7 +563,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x0029, DMI type 8, 9 bytes
+Handle 0x002B, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: SATA6G_E2
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -556,7 +571,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x002A, DMI type 8, 9 bytes
+Handle 0x002C, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: SATA6G_E3
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -564,7 +579,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x002B, DMI type 8, 9 bytes
+Handle 0x002D, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: SATA6G_E4
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -572,7 +587,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x002C, DMI type 8, 9 bytes
+Handle 0x002E, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: U32G2_C10
 	Internal Connector Type: Access Bus (USB)
@@ -580,7 +595,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: USB
 
-Handle 0x002D, DMI type 8, 9 bytes
+Handle 0x002F, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: U32G1_89
 	Internal Connector Type: Access Bus (USB)
@@ -588,7 +603,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: USB
 
-Handle 0x002E, DMI type 8, 9 bytes
+Handle 0x0030, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: USB_E12
 	Internal Connector Type: Access Bus (USB)
@@ -596,7 +611,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: USB
 
-Handle 0x002F, DMI type 8, 9 bytes
+Handle 0x0031, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: USB_E34
 	Internal Connector Type: Access Bus (USB)
@@ -604,7 +619,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: USB
 
-Handle 0x0030, DMI type 8, 9 bytes
+Handle 0x0032, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: AAFP
 	Internal Connector Type: Mini Jack (headphones)
@@ -612,7 +627,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Audio Port
 
-Handle 0x0031, DMI type 8, 9 bytes
+Handle 0x0033, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: CPU_FAN
 	Internal Connector Type: Other
@@ -620,7 +635,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0032, DMI type 8, 9 bytes
+Handle 0x0034, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: CPU_OPT
 	Internal Connector Type: Other
@@ -628,7 +643,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0033, DMI type 8, 9 bytes
+Handle 0x0035, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: CHA_FAN1
 	Internal Connector Type: Other
@@ -636,7 +651,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0034, DMI type 8, 9 bytes
+Handle 0x0036, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: CHA_FAN2
 	Internal Connector Type: Other
@@ -644,7 +659,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0035, DMI type 8, 9 bytes
+Handle 0x0037, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: CHA_FAN3
 	Internal Connector Type: Other
@@ -652,7 +667,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0036, DMI type 8, 9 bytes
+Handle 0x0038, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: CHA_FAN4
 	Internal Connector Type: Other
@@ -660,7 +675,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0037, DMI type 8, 9 bytes
+Handle 0x0039, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: CHA_FAN5
 	Internal Connector Type: Other
@@ -668,7 +683,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0038, DMI type 8, 9 bytes
+Handle 0x003A, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: AIO_PUMP
 	Internal Connector Type: Other
@@ -676,7 +691,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0039, DMI type 8, 9 bytes
+Handle 0x003B, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: T_SENSOR
 	Internal Connector Type: Other
@@ -684,7 +699,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x003A, DMI type 8, 9 bytes
+Handle 0x003C, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: RGB_HEADER
 	Internal Connector Type: Other
@@ -692,7 +707,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x003B, DMI type 8, 9 bytes
+Handle 0x003D, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: ADD_GEN2_1
 	Internal Connector Type: Other
@@ -700,7 +715,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x003C, DMI type 8, 9 bytes
+Handle 0x003E, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: ADD_GEN2_2
 	Internal Connector Type: Other
@@ -708,7 +723,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x003D, DMI type 8, 9 bytes
+Handle 0x003F, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: ADD_GEN2_3
 	Internal Connector Type: Other
@@ -716,18 +731,19 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x003E, DMI type 8, 9 bytes
+Handle 0x0040, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: TB_HEADER
 	Internal Connector Type: Other
 	External Reference Designator: Not Specified
 	External Connector Type: None
-	Port Type: <OUT OF SPEC>
+	Port Type: Thunderbolt
 
-Handle 0x003F, DMI type 9, 17 bytes
+Handle 0x0041, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
-	Type: x16 PCI Express 5 x16
+	Type: PCI Express 5 x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -736,10 +752,11 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:01.1
 
-Handle 0x0040, DMI type 9, 17 bytes
+Handle 0x0042, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_2
-	Type: x4 PCI Express 5 x4
+	Type: PCI Express 5 x16
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -748,22 +765,24 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x0041, DMI type 9, 17 bytes
+Handle 0x0043, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_3
-	Type: x4 PCI Express 5 x4
+	Type: PCI Express 4 x16
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Long
 	ID: 2
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:03:00.0
+	Bus Address: 0000:04:00.0
 
-Handle 0x0042, DMI type 9, 17 bytes
+Handle 0x0044, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2_1(SOCKET3)
-	Type: x4 M.2 Socket 3
+	Type: M.2 Socket 3
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Long
 	Characteristics:
@@ -771,10 +790,11 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:02.2
 
-Handle 0x0043, DMI type 9, 17 bytes
+Handle 0x0045, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2_2(SOCKET3)
-	Type: x4 M.2 Socket 3
+	Type: M.2 Socket 3
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Long
 	Characteristics:
@@ -782,10 +802,11 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:01.2
 
-Handle 0x0044, DMI type 9, 17 bytes
+Handle 0x0046, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2_3(SOCKET3)
-	Type: x4 M.2 Socket 3
+	Type: M.2 Socket 3
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Long
 	Characteristics:
@@ -793,10 +814,11 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x0045, DMI type 9, 17 bytes
+Handle 0x0047, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2_4(SOCKET3)
-	Type: x4 M.2 Socket 3
+	Type: M.2 Socket 3
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Long
 	Characteristics:
@@ -804,26 +826,27 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:04:08.0
 
-Handle 0x0046, DMI type 9, 17 bytes
+Handle 0x0048, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2(WIFI)
-	Type: x1 M.2 Socket 1-SD
-	Current Usage: Available
+	Type: M.2 Socket 1-SD
+	Data Bus Width: 1x or x1
+	Current Usage: In Use
 	Length: Short
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:00:1f.7
+	Bus Address: 0000:04:05.0
 
-Handle 0x0047, DMI type 41, 11 bytes
+Handle 0x0049, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Intel I225-V LAN
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:67:00.0
+	Bus Address: 0000:06:00.0
 
-Handle 0x0048, DMI type 13, 22 bytes
+Handle 0x004A, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 9
@@ -838,6 +861,6 @@ BIOS Language Information
 		ko|KR|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0049, DMI type 127, 4 bytes
+Handle 0x004B, DMI type 127, 4 bytes
 End Of Table
 

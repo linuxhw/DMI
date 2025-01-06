@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0xCB7F7000.
+Table at 0xCB7E1000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 3204
-	Release Date: 01/25/2021
+	Version: 4702
+	Release Date: 10/20/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -486,7 +486,7 @@ Additional Information 1
 	Referenced Handle: 0x0032
 	Referenced Offset: 0x01
 	String: ROG
-	Value: 0x00000002
+	Value: 0x00000003
 Additional Information 2
 	Referenced Handle: 0x0001
 	Referenced Offset: 0x0f
@@ -525,7 +525,7 @@ Handle 0x003A, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.51
+	Firmware Revision: 3.92
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -912,7 +912,8 @@ BIOS Language Information
 Handle 0x0050, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -925,7 +926,8 @@ System Slot Information
 Handle 0x0051, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_2
-	Type: x8 PCI Express
+	Type: PCI Express
+	Data Bus Width: 8x or x8
 	Current Usage: In Use
 	Length: Long
 	ID: 1
@@ -938,7 +940,8 @@ System Slot Information
 Handle 0x0052, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -951,7 +954,8 @@ System Slot Information
 Handle 0x0053, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_3
-	Type: x4 PCI Express
+	Type: PCI Express
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Short
 	ID: 3

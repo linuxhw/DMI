@@ -1,13 +1,13 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
-SMBIOS 3.1.1 present.
-Table at 0x8F298000.
+SMBIOS 3.2.1 present.
+Table at 0x8F29F000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 2013
-	Release Date: 02/19/2019
+	Version: 2820
+	Release Date: 01/06/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -278,7 +278,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x001D, DMI type 9, 17 bytes
+Handle 0x001D, DMI type 9, 19 bytes
 System Slot Information
 	Designation: PCIEX16_1
 	Type: x16 PCI Express
@@ -290,8 +290,10 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:01:1c.3
+	Data Bus Width: 93
+	Peer Devices: 0
 
-Handle 0x001E, DMI type 9, 17 bytes
+Handle 0x001E, DMI type 9, 19 bytes
 System Slot Information
 	Designation: PCIEX1_1
 	Type: x1 PCI Express
@@ -303,8 +305,10 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:ff:1c.4
+	Data Bus Width: 19
+	Peer Devices: 0
 
-Handle 0x001F, DMI type 9, 17 bytes
+Handle 0x001F, DMI type 9, 19 bytes
 System Slot Information
 	Designation: PCIEX1_2
 	Type: x1 PCI Express
@@ -316,8 +320,10 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:ff:1c.6
+	Data Bus Width: 16
+	Peer Devices: 0
 
-Handle 0x0020, DMI type 9, 17 bytes
+Handle 0x0020, DMI type 9, 19 bytes
 System Slot Information
 	Designation: PCIEX16_2
 	Type: x16 PCI Express
@@ -329,6 +335,8 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:ff:1c.5
+	Data Bus Width: 141
+	Peer Devices: 0
 
 Handle 0x0021, DMI type 10, 6 bytes
 On Board Device Information
@@ -635,13 +643,13 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 3600 MT/s
+	Speed: 2400 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX3600C17D4/8GX    
 	Rank: 1
-	Configured Memory Speed: 3600 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -683,13 +691,13 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 3600 MT/s
+	Speed: 2400 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX3600C17D4/8GX    
 	Rank: 1
-	Configured Memory Speed: 3600 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -705,8 +713,8 @@ Memory Array Mapped Address
 Handle 0x0041, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 41 00 03 01 00 07 00 31 34 00 02 00 00 00
-		00 A0 00 03 00 FF FF FF FF FF
+		DD 1A 41 00 03 01 00 07 00 4E 20 00 02 00 00 00
+		00 D6 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -715,7 +723,7 @@ OEM-specific Type
 Handle 0x0042, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 42 00 03 01 00 07 00 31 34 00 02 00 00 00
+		DD 1A 42 00 03 01 00 07 00 4E 20 00 02 00 00 00
 		00 00 00 03 04 0C 00 06 60 04
 	Strings:
 		Reference Code - ME
@@ -723,15 +731,15 @@ OEM-specific Type
 		ME Firmware Version
 		Consumer SKU
 
-Handle 0x0043, DMI type 221, 89 bytes
+Handle 0x0043, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 59 43 00 0C 01 00 07 00 31 34 00 02 03 FF FF
+		DD 52 43 00 0B 01 00 07 00 4E 20 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 10 00 05 00 FF FF FF 10
 		00 06 00 FF FF FF FF FF 07 00 02 00 00 00 00 08
-		00 09 00 00 00 00 09 00 08 00 00 00 00 0A 00 13
-		00 00 00 00 0B 00 07 00 00 00 00 0C 00 06 00 00
-		00 00 0D 00 05 00 00 00 00
+		00 09 00 00 00 00 09 00 0A 00 00 00 00 0A 00 07
+		00 00 00 00 0B 00 06 00 00 00 00 0C 00 07 00 00
+		00 00
 	Strings:
 		Reference Code - CNL PCH
 		PCH-CRID Status
@@ -742,7 +750,6 @@ OEM-specific Type
 		CNL PCH H A0 Hsio Version
 		CNL PCH H Ax Hsio Version
 		CNL PCH H Bx Hsio Version
-		CNL PCH LP Ax Hsio Version
 		CNL PCH LP B0 Hsio Version
 		CNL PCH LP Bx Hsio Version
 		CNL PCH LP Dx Hsio Version
@@ -750,8 +757,8 @@ OEM-specific Type
 Handle 0x0044, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 44 00 07 01 00 07 00 31 34 00 02 00 00 07
-		01 5F 00 03 00 07 00 31 34 00 04 05 FF FF FF FF
+		DD 36 44 00 07 01 00 07 00 4E 20 00 02 00 00 07
+		01 5F 00 03 00 07 00 4E 20 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 0A 00 07 00 00 00 00 0A 00 08
 		00 FF FF FF FF FF
 	Strings:
@@ -771,7 +778,7 @@ OEM-specific Type
 	Strings:
 		FSP Binary Version
 
-Handle 0x0046, DMI type 7, 19 bytes
+Handle 0x0046, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -787,7 +794,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0047, DMI type 7, 19 bytes
+Handle 0x0047, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -803,7 +810,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 4-way Set-associative
 
-Handle 0x0048, DMI type 7, 19 bytes
+Handle 0x0048, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L3 Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -1011,8 +1018,8 @@ OEM-specific Type
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
 		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
-		FF FF FF FF 0D 0E 01 04 01 00 00 0F 00 00 07 00
-		00 00 10 00 00 02 00 0D 00
+		FF FF FF FF 0D 0E 01 04 03 00 00 0F 00 00 07 00
+		00 00 10 00 00 02 00 0E 00
 	Strings:
 		Lan Phy Version
 		Sensor Firmware Version
@@ -1027,7 +1034,7 @@ OEM-specific Type
 		EC FW Version
 		GOP Version
 		Royal Park Version
-		BP1.4.1.0_RP09
+		BP1.4.3.0_RP03
 		Platform Version
 		Client Silicon Version
 

@@ -3,13 +3,13 @@ Getting SMBIOS data from sysfs.
 SMBIOS 3.4.0 present.
 # SMBIOS implementations newer than version 3.3.0 are not
 # fully supported by this version of dmidecode.
-Table at 0x59D19000.
+Table at 0x47D2A000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 2305
-	Release Date: 03/10/2023
+	Version: 2703
+	Release Date: 08/11/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -35,7 +35,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 23.5
+	BIOS Revision: 27.3
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -446,7 +446,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:71:1d.0
+	Bus Address: 0000:72:1d.0
 
 Handle 0x0030, DMI type 10, 6 bytes
 On Board Device Information
@@ -769,13 +769,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: <OUT OF SPEC>
 	Type Detail: Synchronous
-	Speed: 5600 MT/s
+	Speed: 4800 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KF556C40-16         
 	Rank: 1
-	Configured Memory Speed: 5600 MT/s
+	Configured Memory Speed: 4800 MT/s
 	Minimum Voltage: 1.1 V
 	Maximum Voltage: 1.25 V
 	Configured Voltage: 1.1 V
@@ -839,13 +839,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: <OUT OF SPEC>
 	Type Detail: Synchronous
-	Speed: 5600 MT/s
+	Speed: 4800 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KF556C40-16         
 	Rank: 1
-	Configured Memory Speed: 5600 MT/s
+	Configured Memory Speed: 4800 MT/s
 	Minimum Voltage: 1.1 V
 	Maximum Voltage: 1.25 V
 	Configured Voltage: 1.1 V
@@ -911,8 +911,8 @@ OEM-specific Type
 Handle 0x0055, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 55 00 03 01 00 0C 00 8B 10 00 02 00 00 00
-		00 26 00 03 00 FF FF FF FF FF
+		DD 1A 55 00 03 01 00 0C 00 A7 50 00 02 00 00 00
+		00 2C 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -921,8 +921,8 @@ OEM-specific Type
 Handle 0x0056, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 56 00 03 01 00 0C 00 8B 10 00 02 00 00 00
-		00 00 00 03 04 10 01 19 E4 07
+		DD 1A 56 00 03 01 00 0C 00 A7 50 00 02 00 00 00
+		00 00 00 03 04 10 01 1B 80 08
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -932,7 +932,7 @@ OEM-specific Type
 Handle 0x0057, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 57 00 06 01 00 0C 00 8B 10 00 02 03 FF FF
+		DD 2F 57 00 06 01 00 0C 00 A7 50 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 11 00 05 00 FF FF FF 11
 		00 06 00 02 46 00 00 00 07 00 04 00 00 00 00
 	Strings:
@@ -947,8 +947,8 @@ OEM-specific Type
 Handle 0x0058, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 58 00 0B 01 00 0C 00 8B 10 00 02 00 00 00
-		04 59 00 03 00 0C 00 8B 10 00 04 05 FF FF FF FF
+		DD 52 58 00 0B 01 00 0C 00 A7 50 00 02 00 00 00
+		04 93 00 03 00 0C 00 A7 50 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 02 00 07 00 00 00 00 02 00 08
 		00 FF FF FF FF FF 09 00 FF FF FF FF FF 0A 00 FF
 		FF FF FF FF 0B 00 FF FF FF FF FF 0C 00 FF FF FF
@@ -1133,12 +1133,12 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: 12th Gen Intel(R) Core(TM) i7-12700K
-	Voltage: 1.4 V
+	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 8500 MHz
-	Current Speed: 5100 MHz
+	Current Speed: 4700 MHz
 	Status: Populated, Enabled
-	Upgrade: Other
+	Upgrade: <OUT OF SPEC>
 	L1 Cache Handle: 0x005E
 	L2 Cache Handle: 0x005F
 	L3 Cache Handle: 0x0060
@@ -1159,13 +1159,13 @@ Processor Information
 Handle 0x0062, DMI type 60, 165 bytes
 Unknown Type
 	Header and Data:
-		3C A5 62 00 01 A0 86 A5 2B D2 7D B7 B1 3C D2 A4
-		1D 92 96 33 5C 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		3C A5 62 00 06 A0 86 A5 2B D2 7D B7 B1 3C D2 A4
+		1D 92 96 33 5C 21 A2 4A 33 1D FB 85 B3 49 67 B3
+		DF AC A4 C1 D2 2B 00 79 BB DD 14 F9 3D 6D 28 4F
+		D4 1C ED 52 EB 6D 98 D2 FF 7A 9D 02 72 C3 DF CE
+		A0 B4 B6 DF 80 2D 29 96 93 40 D2 A8 FC 27 DB 93
+		37 4B 91 FC 35 6B BA 11 C7 91 2D E8 9C 36 89 E5
+		7E 71 95 99 9C 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -1176,7 +1176,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 63 00 35 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 84 7A 00 00 00 00 21 20 00 00 01 00 10 00
-		E4 07 19 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		80 08 1B 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0064, DMI type 41, 11 bytes
@@ -1379,7 +1379,7 @@ BIOS Language Information
 		es|ES|iso8859-1
 		ru|RU|iso8859-5
 		ko|KR|unicode
-	Currently Installed Language: ru|RU|iso8859-5
+	Currently Installed Language: en|US|iso8859-1
 
 Handle 0x007A, DMI type 127, 4 bytes
 End Of Table

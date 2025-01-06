@@ -1,13 +1,13 @@
-# dmidecode 3.2
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0x000E6CC0.
+Table at 0xBD7F3000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 3103
-	Release Date: 06/17/2020
+	Version: 5404
+	Release Date: 03/18/2024
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -32,7 +32,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 5.13
+	BIOS Revision: 5.17
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -308,7 +308,7 @@ Handle 0x0021, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
-	Error Correction Type: Multi-bit ECC
+	Error Correction Type: None
 	Maximum Capacity: 128 GB
 	Error Information Handle: 0x0020
 	Number Of Devices: 2
@@ -316,16 +316,16 @@ Physical Memory Array
 Handle 0x0022, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000DFFFFFFF
-	Range Size: 3584 MB
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 3 GB
 	Physical Array Handle: 0x0021
 	Partition Width: 2
 
 Handle 0x0023, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0081FFFFFFF
-	Range Size: 29184 MB
+	Ending Address: 0x0083FFFFFFF
+	Range Size: 29 GB
 	Physical Array Handle: 0x0021
 	Partition Width: 2
 
@@ -351,8 +351,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -367,8 +367,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 32768 kB
-	Maximum Size: 32768 kB
+	Installed Size: 32 MB
+	Maximum Size: 32 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -383,8 +383,8 @@ Processor Information
 	Type: Central Processor
 	Family: Zen
 	Manufacturer: Advanced Micro Devices, Inc.
-	ID: 10 0F 87 00 FF FB 8B 17
-	Signature: Family 23, Model 113, Stepping 0
+	ID: 12 0F A2 00 FF FB 8B 17
+	Signature: Family 25, Model 33, Stepping 2
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -409,11 +409,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Ryzen 7 3700X 8-Core Processor             
+	Version: AMD Ryzen 7 5700X 8-Core Processor             
 	Voltage: 1.1 V
 	External Clock: 100 MHz
-	Max Speed: 4400 MHz
-	Current Speed: 3600 MHz
+	Max Speed: 4650 MHz
+	Current Speed: 3400 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
 	L1 Cache Handle: 0x0024
@@ -447,29 +447,29 @@ Handle 0x0029, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x0021
 	Error Information Handle: 0x0028
-	Total Width: 128 bits
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A1
 	Bank Locator: BANK 0
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2666 MT/s
-	Manufacturer: Micron
+	Speed: 3200 MT/s
+	Manufacturer: Crucial Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 18ASF2G72AZ-2G6D1   
+	Part Number: BLS16G4D32AESB.M16FE
 	Rank: 2
-	Configured Memory Speed: 2666 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Manufacturer ID: Bank 6, Hex 0x9B
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
@@ -503,29 +503,29 @@ Handle 0x002C, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x0021
 	Error Information Handle: 0x002B
-	Total Width: 128 bits
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B1
 	Bank Locator: BANK 1
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2666 MT/s
-	Manufacturer: Micron
+	Speed: 3200 MT/s
+	Manufacturer: Crucial Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 18ASF2G72AZ-2G6D1   
+	Part Number: BLS16G4D32AESB.M16FE
 	Rank: 2
-	Configured Memory Speed: 2666 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Manufacturer ID: Bank 6, Hex 0x9B
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
@@ -552,18 +552,19 @@ BIOS Language Information
 		en|US|iso8859-1
 		fr|FR|iso8859-1
 		zh|TW|unicode
+		zh|CN|unicode
 		ja|JP|unicode
 		de|DE|iso8859-1
 		es|ES|iso8859-1
 		ru|RU|iso8859-5
 		ko|KR|unicode
-		<BAD INDEX>
 	Currently Installed Language: de|DE|iso8859-1
 
 Handle 0x002F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0

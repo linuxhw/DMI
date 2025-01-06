@@ -1,13 +1,13 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
-SMBIOS 3.2.0 present.
-Table at 0xDA310000.
+SMBIOS 3.3.0 present.
+Table at 0xCB9F9000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 1407
-	Release Date: 04/02/2020
+	Version: 3603
+	Release Date: 03/20/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -32,7 +32,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 5.14
+	BIOS Revision: 5.17
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -418,17 +418,17 @@ OEM Strings
 	String 2: Default string
 	String 3: MIAMI
 	String 4: Default string
-	String 5: FFFFFFFFFFFFF
-	String 6: FFFFFFFFFFFFF
-	String 7: FFFFFFFFFFFFF
+	String 5: Default string
+	String 6: Default string
+	String 7: Default string
 	String 8: Default string
 
 Handle 0x002F, DMI type 12, 5 bytes
 System Configuration Options
-	Option 1: SMI:00B29C05
-	Option 2: DSN:                               .
-	Option 3: DSN:                               .
-	Option 4: DSN:                               .
+	Option 1: Default string
+	Option 2: Default string
+	Option 3: Default string
+	Option 4: Default string
 
 Handle 0x0030, DMI type 32, 20 bytes
 System Boot Information
@@ -453,7 +453,7 @@ Additional Information 2
 	String: Not Specified
 	Value: 0x0000001e
 Additional Information 3
-	Referenced Handle: 0x0039
+	Referenced Handle: 0x003a
 	Referenced Offset: 0x01
 	String: To Be Filled By O.E.M. 3
 	Value: 0x00000000
@@ -476,7 +476,12 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 
-Handle 0x0034, DMI type 18, 23 bytes
+Handle 0x0034, DMI type 44, 9 bytes
+Unknown Type
+	Header and Data:
+		2C 09 34 00 FF FF 01 01 00
+
+Handle 0x0035, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -486,32 +491,32 @@ Handle 0x0034, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0035, DMI type 16, 23 bytes
+Handle 0x0036, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
 	Maximum Capacity: 128 GB
-	Error Information Handle: 0x0034
+	Error Information Handle: 0x0035
 	Number Of Devices: 4
-
-Handle 0x0036, DMI type 19, 31 bytes
-Memory Array Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000DFFFFFFF
-	Range Size: 3584 MB
-	Physical Array Handle: 0x0035
-	Partition Width: 4
 
 Handle 0x0037, DMI type 19, 31 bytes
 Memory Array Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x0101FFFFFFF
-	Range Size: 61952 MB
-	Physical Array Handle: 0x0035
+	Starting Address: 0x00000000000
+	Ending Address: 0x000CFFFFFFF
+	Range Size: 3328 MB
+	Physical Array Handle: 0x0036
 	Partition Width: 4
 
-Handle 0x0038, DMI type 7, 27 bytes
+Handle 0x0038, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x0102FFFFFFF
+	Range Size: 62208 MB
+	Physical Array Handle: 0x0036
+	Partition Width: 4
+
+Handle 0x0039, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1 - Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -527,14 +532,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0039, DMI type 7, 27 bytes
+Handle 0x003A, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L2 - Cache
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -543,14 +548,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x003A, DMI type 7, 27 bytes
+Handle 0x003B, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L3 - Cache
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 65536 kB
-	Maximum Size: 65536 kB
+	Installed Size: 64 MB
+	Maximum Size: 64 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -559,7 +564,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x003B, DMI type 4, 48 bytes
+Handle 0x003C, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: AM4
 	Type: Central Processor
@@ -598,9 +603,9 @@ Processor Information
 	Current Speed: 3800 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
-	L1 Cache Handle: 0x0038
-	L2 Cache Handle: 0x0039
-	L3 Cache Handle: 0x003A
+	L1 Cache Handle: 0x0039
+	L2 Cache Handle: 0x003A
+	L3 Cache Handle: 0x003B
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Unknown
@@ -615,7 +620,7 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x003C, DMI type 18, 23 bytes
+Handle 0x003D, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -625,33 +630,33 @@ Handle 0x003C, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x003D, DMI type 17, 84 bytes
+Handle 0x003E, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x0035
-	Error Information Handle: 0x003C
+	Array Handle: 0x0036
+	Error Information Handle: 0x003D
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A1
 	Bank Locator: BANK 0
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3600 MT/s
-	Manufacturer: G-Skill
+	Speed: 3200 MT/s
+	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F4-3600C16-16GTZNC
-	Rank: 2
-	Configured Memory Speed: 3600 MT/s
+	Part Number: CMW64GX4M4D3600C18
+	Rank: 1
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 5, Hex 0xCD
+	Module Manufacturer ID: Bank 3, Hex 0x9E
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
@@ -660,18 +665,18 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x003E, DMI type 20, 35 bytes
+Handle 0x003F, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x00FFFFFFFFF
 	Range Size: 64 GB
-	Physical Device Handle: 0x003D
-	Memory Array Mapped Address Handle: 0x0037
+	Physical Device Handle: 0x003E
+	Memory Array Mapped Address Handle: 0x0038
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x003F, DMI type 18, 23 bytes
+Handle 0x0040, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -681,33 +686,33 @@ Handle 0x003F, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0040, DMI type 17, 84 bytes
+Handle 0x0041, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x0035
-	Error Information Handle: 0x003F
+	Array Handle: 0x0036
+	Error Information Handle: 0x0040
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A2
 	Bank Locator: BANK 1
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3600 MT/s
-	Manufacturer: G-Skill
+	Speed: 3200 MT/s
+	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F4-3600C16-16GTZNC
-	Rank: 2
-	Configured Memory Speed: 3600 MT/s
+	Part Number: CMW64GX4M4D3600C18
+	Rank: 1
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 5, Hex 0xCD
+	Module Manufacturer ID: Bank 3, Hex 0x9E
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
@@ -716,18 +721,18 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0041, DMI type 20, 35 bytes
+Handle 0x0042, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x00FFFFFFFFF
 	Range Size: 64 GB
-	Physical Device Handle: 0x0040
-	Memory Array Mapped Address Handle: 0x0037
+	Physical Device Handle: 0x0041
+	Memory Array Mapped Address Handle: 0x0038
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0042, DMI type 18, 23 bytes
+Handle 0x0043, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -737,33 +742,33 @@ Handle 0x0042, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0043, DMI type 17, 84 bytes
+Handle 0x0044, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x0035
-	Error Information Handle: 0x0042
+	Array Handle: 0x0036
+	Error Information Handle: 0x0043
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B1
 	Bank Locator: BANK 2
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3600 MT/s
-	Manufacturer: G-Skill
+	Speed: 3200 MT/s
+	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F4-3600C16-16GTZNC
-	Rank: 2
-	Configured Memory Speed: 3600 MT/s
+	Part Number: CMW64GX4M4D3600C18
+	Rank: 1
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 5, Hex 0xCD
+	Module Manufacturer ID: Bank 3, Hex 0x9E
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
@@ -772,18 +777,18 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0044, DMI type 20, 35 bytes
+Handle 0x0045, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x00FFFFFFFFF
 	Range Size: 64 GB
-	Physical Device Handle: 0x0043
-	Memory Array Mapped Address Handle: 0x0037
+	Physical Device Handle: 0x0044
+	Memory Array Mapped Address Handle: 0x0038
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0045, DMI type 18, 23 bytes
+Handle 0x0046, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -793,33 +798,33 @@ Handle 0x0045, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0046, DMI type 17, 84 bytes
+Handle 0x0047, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x0035
-	Error Information Handle: 0x0045
+	Array Handle: 0x0036
+	Error Information Handle: 0x0046
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B2
 	Bank Locator: BANK 3
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3600 MT/s
-	Manufacturer: G-Skill
+	Speed: 3200 MT/s
+	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F4-3600C16-16GTZNC
-	Rank: 2
-	Configured Memory Speed: 3600 MT/s
+	Part Number: CMW64GX4M4D3600C18
+	Rank: 1
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 5, Hex 0xCD
+	Module Manufacturer ID: Bank 3, Hex 0x9E
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
@@ -828,18 +833,18 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0047, DMI type 20, 35 bytes
+Handle 0x0048, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x00FFFFFFFFF
 	Range Size: 64 GB
-	Physical Device Handle: 0x0046
-	Memory Array Mapped Address Handle: 0x0037
+	Physical Device Handle: 0x0047
+	Memory Array Mapped Address Handle: 0x0038
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0048, DMI type 13, 22 bytes
+Handle 0x0049, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 9
@@ -854,84 +859,78 @@ BIOS Language Information
 		ko|KR|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0049, DMI type 9, 17 bytes
+Handle 0x004A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
-	Type: x16 PCI Express
+	Type: x16 PCI Express x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
 	Characteristics:
 		3.3 V is provided
-		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:00:03.1
 
-Handle 0x004A, DMI type 9, 17 bytes
+Handle 0x004B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_2
-	Type: x8 PCI Express
+	Type: x8 PCI Express x8
 	Current Usage: Available
 	Length: Long
 	ID: 1
 	Characteristics:
 		3.3 V is provided
-		Opening is shared
-		PME signal is supported
-	Bus Address: 0000:00:1f.7
-
-Handle 0x004B, DMI type 9, 17 bytes
-System Slot Information
-	Designation: PCIEX16_3
-	Type: x4 PCI Express
-	Current Usage: Available
-	Length: Long
-	ID: 2
-	Characteristics:
-		3.3 V is provided
-		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
 Handle 0x004C, DMI type 9, 17 bytes
 System Slot Information
-	Designation: PCIEX1_1
-	Type: x1 PCI Express
+	Designation: PCIEX16_3
+	Type: x4 PCI Express x4
 	Current Usage: Available
-	Length: Short
-	ID: 3
+	Length: Long
+	ID: 2
 	Characteristics:
 		3.3 V is provided
-		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
 Handle 0x004D, DMI type 9, 17 bytes
 System Slot Information
-	Designation: PCIEX1_2
-	Type: x1 PCI Express
+	Designation: PCIEX1_1
+	Type: x1 PCI Express x1
 	Current Usage: Available
 	Length: Short
-	ID: 4
+	ID: 3
 	Characteristics:
 		3.3 V is provided
-		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
 Handle 0x004E, DMI type 9, 17 bytes
 System Slot Information
+	Designation: PCIEX1_2
+	Type: x1 PCI Express x1
+	Current Usage: Available
+	Length: Short
+	ID: 4
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+	Bus Address: 0000:00:1f.7
+
+Handle 0x004F, DMI type 9, 17 bytes
+System Slot Information
 	Designation: PCIEX1_3
-	Type: x1 PCI Express
+	Type: x1 PCI Express x1
 	Current Usage: Available
 	Length: Short
 	ID: 5
 	Characteristics:
 		3.3 V is provided
-		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x004F, DMI type 127, 4 bytes
+Handle 0x0050, DMI type 127, 4 bytes
 End Of Table
 
