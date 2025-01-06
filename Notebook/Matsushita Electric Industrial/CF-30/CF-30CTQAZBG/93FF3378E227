@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 44 structures occupying 1641 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 12/08/2006
 	Address: 0xE55A0
 	Runtime Size: 109152 bytes
-	ROM Size: 1 MB
+	ROM Size: 1024 kB
 	Characteristics:
 		PCI is supported
 		PC Card (PCMCIA) is supported
@@ -43,7 +43,7 @@ System Information
 	Version: 001
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Other
+	Wake-up Type: Power Switch
 	SKU Number: CF-30CTQAZBG
 	Family: CF30-1
 
@@ -139,8 +139,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2 MB
-	Maximum Size: 2 MB
+	Installed Size: 2048 kB
+	Maximum Size: 2048 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -309,7 +309,7 @@ OEM Strings
 
 Handle 0x0019, DMI type 12, 5 bytes
 System Configuration Options
-	Option 1: DSN:CVPO131300BN160AGNINTELSSDSA2M16
+	Option 1: DSN:MATSHITADVD-RAMUJ-841S          
 	Option 2: DSN:9905295-037.A00LF F58C1EA2      
 	Option 3: DSN:CF-VZSU46   01B412112006        
 	Option 4: SMI:00B2C1
@@ -346,7 +346,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: 1
 	Locator: DIMM 1
@@ -365,7 +365,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: 1
 	Locator: DIMM 2
@@ -384,7 +384,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 8 bits
 	Data Width: 8 bits
-	Size: 1 MB
+	Size: 1024 kB
 	Form Factor: TSOP
 	Set: None
 	Locator: Flash ROM
@@ -488,7 +488,7 @@ Handle 0x0029, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
-	Administrator Password Status: Enabled
+	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x002A, DMI type 32, 11 bytes
