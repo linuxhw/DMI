@@ -1,4 +1,4 @@
-# dmidecode 3.5
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 21 structures occupying 953 bytes.
@@ -79,12 +79,12 @@ Processor Information
 	Type: Central Processor
 	Family: Other
 	Manufacturer: Intel(R) Corporation
-	ID: 7A 06 01 00 FF FB EB BF
-	Version: Intel(R) Core(TM)2 Duo CPU     T6570  @ 2.10GHz
+	ID: 76 06 01 00 FF FB EB BF
+	Version: Intel(R) Core(TM)2 Duo CPU     P9500  @ 2.53GHz
 	Voltage: 1.6 V
-	External Clock: 200 MHz
-	Max Speed: 2100 MHz
-	Current Speed: 1300 MHz
+	External Clock: 266 MHz
+	Max Speed: 2533 MHz
+	Current Speed: 1733 MHz
 	Status: Populated, Enabled
 	Upgrade: ZIF Socket
 	L1 Cache Handle: 0x0003
@@ -100,15 +100,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2 MB
-	Maximum Size: 2 MB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Asynchronous
 	Installed SRAM Type: Asynchronous
 	Speed: Unknown
 	Error Correction Type: Single-bit ECC
 	System Type: Unified
-	Associativity: 8-way Set-associative
+	Associativity: 24-way Set-associative
 
 Handle 0x0003, DMI type 7, 19 bytes
 Cache Information
@@ -145,7 +145,8 @@ Cache Information
 Handle 0x0011, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI SLOT1
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -188,7 +189,7 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 800 MT/s
+	Speed: 1067 MT/s
 	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
@@ -207,7 +208,7 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 800 MT/s
+	Speed: 1067 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --

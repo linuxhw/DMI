@@ -1,7 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-62 structures occupying 2976 bytes.
+62 structures occupying 3000 bytes.
 Table at 0x000E6DA0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 10/11/2013
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 3072 kB
+	ROM Size: 3 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -193,8 +193,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -494,20 +494,20 @@ Memory Device
 	Error Information Handle: 0x002B
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(top)
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Hynix
+	Speed: 1333 MT/s
+	Manufacturer: Micron Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT325S6EFR8A-PB  
-	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Part Number: 16JSF51264HZ-1G4D1
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x002A, DMI type 17, 34 bytes
 Memory Device
@@ -515,20 +515,20 @@ Memory Device
 	Error Information Handle: 0x002C
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(under)
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Hynix
+	Speed: 1333 MT/s
+	Manufacturer: A-DATA Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT325S6CFR8A-PB  
-	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Part Number: AM1U16BC4P2-B19H  
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x002B, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -563,16 +563,16 @@ Handle 0x002D, DMI type 18, 23 bytes
 Handle 0x002E, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0028
 	Partition Width: 2
 
 Handle 0x002F, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0029
 	Memory Array Mapped Address Handle: 0x002E
 	Partition Row Position: 1
@@ -582,8 +582,8 @@ Memory Device Mapped Address
 Handle 0x0030, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x002A
 	Memory Array Mapped Address Handle: 0x002E
 	Partition Row Position: 1
@@ -712,7 +712,7 @@ OEM-specific Type
 Handle 0x003E, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 3E 00 11 00 00 00 00 00 00 00 00 00 00 00
+		83 40 3E 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 5E 1E FF FF FF FF 01 20 00 00 01 00 08 00
 		38 05 14 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 FF 00 00 66 00 00 00 76 50 72 6F 00 00 00 00

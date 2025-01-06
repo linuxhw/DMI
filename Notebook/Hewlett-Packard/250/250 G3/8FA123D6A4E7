@@ -1,7 +1,7 @@
-# dmidecode 2.12
-# SMBIOS entry point at 0x79025000
+# dmidecode 3.5
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-40 structures occupying 1795 bytes.
+41 structures occupying 1906 bytes.
 Table at 0x79024000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -117,7 +117,7 @@ Processor Information
 	Voltage: 0.8 V
 	External Clock: 83 MHz
 	Max Speed: 2573 MHz
-	Current Speed: 2178 MHz
+	Current Speed: 2175 MHz
 	Status: Populated, Enabled
 	Upgrade: None
 	L1 Cache Handle: 0x0006
@@ -174,8 +174,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -426,20 +426,20 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M471B5173QH0-YK0  
 	Rank: Unknown
-	Configured Clock Speed: 1333 MHz
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0023, DMI type 19, 15 bytes
 Memory Array Mapped Address
@@ -458,11 +458,25 @@ Memory Device Mapped Address
 	Memory Array Mapped Address Handle: 0x0023
 	Partition Row Position: 1
 
-Handle 0x0025, DMI type 32, 11 bytes
+Handle 0x0025, DMI type 22, 26 bytes
+Portable Battery
+	Location: Primary
+	Manufacturer: 13-42              
+	Manufacture Date: 01/01/2013         
+	Serial Number: --
+	Name: OA03031
+	Design Capacity: 30991 mWh
+	Design Voltage: 11100 mV
+	SBDS Version: 1 
+	Maximum Error: 1%
+	SBDS Chemistry: LION
+	OEM-specific Information: 0x000B050D
+
+Handle 0x0026, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0026, DMI type 41, 11 bytes
+Handle 0x0027, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: IGD
 	Type: Video

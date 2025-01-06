@@ -1,15 +1,15 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.10.1 present.
-# SMBIOS implementations newer than version 3.3.0 are not
+# SMBIOS implementations newer than version 3.5.0 are not
 # fully supported by this version of dmidecode.
 Table at 0x8C4EA000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HUAWEI
-	Version: 1.22
-	Release Date: 02/26/2019
+	Version: 1.24
+	Release Date: 04/11/2022
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 8 MB
@@ -27,8 +27,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.22
-	Firmware Revision: 1.22
+	BIOS Revision: 1.24
+	Firmware Revision: 1.24
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -190,14 +190,26 @@ System Slot Information
 		Hot-plug devices are supported
 	Bus Address: 0000:01:00.0
 
-Handle 0x0009, DMI type 11, 5 bytes
+Handle 0x0009, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI-2
+	Type: x4 PCI Express 3 x4
+	Current Usage: In Use
+	Length: Other
+	ID: 2
+	Characteristics:
+		PME signal is supported
+		Hot-plug devices are supported
+	Bus Address: 0000:02:00.0
+
+Handle 0x000A, DMI type 11, 5 bytes
 OEM Strings
 	String 1: $HUA001IT10000
 	String 2: OemString2
 	String 3: OemString3
 	String 4: OemString4
 
-Handle 0x000A, DMI type 13, 22 bytes
+Handle 0x000B, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 2
@@ -205,7 +217,7 @@ BIOS Language Information
 		en|US|iso8859-1,0
 	Currently Installed Language: en|US|iso8859-1,0
 
-Handle 0x000B, DMI type 16, 23 bytes
+Handle 0x000C, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -214,9 +226,9 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
-Handle 0x000C, DMI type 17, 40 bytes
+Handle 0x000D, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x000B
+	Array Handle: 0x000C
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -238,9 +250,9 @@ Memory Device
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x000D, DMI type 17, 40 bytes
+Handle 0x000E, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x000B
+	Array Handle: 0x000C
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -262,16 +274,6 @@ Memory Device
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x000E, DMI type 18, 23 bytes
-32-bit Memory Error Information
-	Type: OK
-	Granularity: Unknown
-	Operation: Unknown
-	Vendor Syndrome: Unknown
-	Memory Array Address: Unknown
-	Device Address: Unknown
-	Resolution: Unknown
-
 Handle 0x000F, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
@@ -292,24 +294,23 @@ Handle 0x0010, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0011, DMI type 19, 31 bytes
+Handle 0x0011, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0012, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Array Handle: 0x000B
+	Physical Array Handle: 0x000C
 	Partition Width: 2
-
-Handle 0x0012, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x000C
-	Memory Array Mapped Address Handle: 0x0011
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
 
 Handle 0x0013, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -317,18 +318,29 @@ Memory Device Mapped Address
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x000D
-	Memory Array Mapped Address Handle: 0x0011
+	Memory Array Mapped Address Handle: 0x0012
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0014, DMI type 21, 7 bytes
+Handle 0x0014, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x000E
+	Memory Array Mapped Address Handle: 0x0012
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0015, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Touch Pad
 	Interface: Other
 	Buttons: 2
 
-Handle 0x0015, DMI type 22, 26 bytes
+Handle 0x0016, DMI type 22, 26 bytes
 Portable Battery
 	Location: Rear cover inside
 	Manufacturer: DYNAPACK

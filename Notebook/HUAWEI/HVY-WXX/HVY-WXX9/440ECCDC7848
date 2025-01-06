@@ -1,8 +1,6 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-# SMBIOS implementations newer than version 3.1.1 are not
-# fully supported by this version of dmidecode.
 Table at 0xCB70A000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -152,8 +150,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -168,8 +166,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -189,6 +187,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.0
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x0009, DMI type 9, 19 bytes
 System Slot Information
@@ -201,6 +201,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.1
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x000A, DMI type 9, 19 bytes
 System Slot Information
@@ -213,6 +215,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.2
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x000B, DMI type 9, 19 bytes
 System Slot Information
@@ -225,6 +229,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.3
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x000C, DMI type 9, 19 bytes
 System Slot Information
@@ -237,6 +243,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.4
+	Data Bus Width: 10
+	Peer Devices: 0
 
 Handle 0x000D, DMI type 9, 17 bytes
 System Slot Information
@@ -293,7 +301,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: DIMM 0
@@ -306,10 +314,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 4ATF1G64HZ-3G2E1    
 	Rank: 1
-	Configured Clock Speed: 3200 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 8 GB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0013, DMI type 17, 84 bytes
 Memory Device
@@ -317,7 +336,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: DIMM 0
@@ -330,10 +349,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: 4ATF1G64HZ-3G2E1    
 	Rank: 1
-	Configured Clock Speed: 3200 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 8 GB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0014, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -382,7 +412,7 @@ Portable Battery
 	Design Capacity: 0 mWh
 	Design Voltage: 15280 mV
 	SBDS Version: Not Specified
-	Maximum Error: 2%
+	Maximum Error: 1%
 	OEM-specific Information: 0x00000042
 
 Handle 0xFEFF, DMI type 127, 4 bytes

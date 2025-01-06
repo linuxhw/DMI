@@ -6,8 +6,8 @@ Table at 0xCB70A000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HUAWEI
-	Version: 1.06
-	Release Date: 10/12/2020
+	Version: 1.09
+	Release Date: 05/18/2022
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 0 MB
@@ -25,8 +25,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.6
-	Firmware Revision: 1.6
+	BIOS Revision: 1.9
+	Firmware Revision: 1.9
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -371,8 +371,18 @@ Portable Battery
 	Design Capacity: 0 mWh
 	Design Voltage: 7640 mV
 	SBDS Version: Not Specified
-	Maximum Error: 5%
+	Maximum Error: 1%
 	OEM-specific Information: 0x00000048
+
+Handle 0x0017, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: AMD
+	Specification Version: 2.0
+	Firmware Revision: 3.42
+	Description: TPM Device
+	Characteristics:
+		TPM Device characteristics not supported
+	OEM-specific Information: 0x00000000
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table
