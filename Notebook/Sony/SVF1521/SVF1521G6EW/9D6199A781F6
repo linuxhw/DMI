@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-16 structures occupying 711 bytes.
+17 structures occupying 732 bytes.
 Table at 0x9AEBC000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -199,7 +199,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: SODIMM1
@@ -211,39 +211,50 @@ Handle 0x000B, DMI type 17, 21 bytes
 Memory Device
 	Array Handle: 0x0009
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: SODIMM2
 	Bank Locator: Bank 1
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Unknown
 
 Handle 0x000C, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0009
 	Partition Width: 2
 
 Handle 0x000D, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x000A
 	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x000E, DMI type 32, 20 bytes
+Handle 0x000E, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x000B
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x000F, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x000F, DMI type 127, 4 bytes
+Handle 0x0010, DMI type 127, 4 bytes
 End Of Table
 

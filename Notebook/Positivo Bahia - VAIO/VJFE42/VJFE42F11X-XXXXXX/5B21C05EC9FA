@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x8FA31000.
@@ -672,7 +672,7 @@ OEM-specific Type
 	Header and Data:
 		DD 36 42 00 07 01 00 09 00 15 50 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
-		00 06 00 11 08 00 00 00 07 00 15 FF FF FF FF 08
+		00 06 00 FF FF FF FF FF 07 00 15 FF FF FF FF 08
 		00 00 FF FF FF FF
 	Strings:
 		Reference Code - CML PCH
@@ -944,10 +944,10 @@ Onboard Device
 
 Handle 0x0059, DMI type 41, 11 bytes
 Onboard Device
-	Reference Designation: Onboard - Other
-	Type: Other
+	Reference Designation: Onboard - SATA
+	Type: SATA Controller
 	Status: Enabled
-	Type Instance: 12
+	Type Instance: 1
 	Bus Address: 0000:00:17.0
 
 Handle 0x005A, DMI type 41, 11 bytes
@@ -955,7 +955,7 @@ Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
-	Type Instance: 13
+	Type Instance: 12
 	Bus Address: 0000:00:19.0
 
 Handle 0x005B, DMI type 41, 11 bytes
@@ -963,7 +963,7 @@ Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
-	Type Instance: 14
+	Type Instance: 13
 	Bus Address: 0000:00:1a.0
 
 Handle 0x005C, DMI type 41, 11 bytes
@@ -971,7 +971,7 @@ Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
-	Type Instance: 15
+	Type Instance: 14
 	Bus Address: 0000:00:1e.0
 
 Handle 0x005D, DMI type 41, 11 bytes
@@ -979,7 +979,7 @@ Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
-	Type Instance: 16
+	Type Instance: 15
 	Bus Address: 0000:00:1e.3
 
 Handle 0x005E, DMI type 41, 11 bytes
@@ -987,7 +987,7 @@ Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
-	Type Instance: 17
+	Type Instance: 16
 	Bus Address: 0000:00:1f.0
 
 Handle 0x005F, DMI type 41, 11 bytes
@@ -1003,7 +1003,7 @@ Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
-	Type Instance: 18
+	Type Instance: 17
 	Bus Address: 0000:00:1f.4
 
 Handle 0x0061, DMI type 41, 11 bytes
@@ -1011,7 +1011,7 @@ Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
-	Type Instance: 19
+	Type Instance: 18
 	Bus Address: 0000:00:1f.5
 
 Handle 0x0062, DMI type 221, 89 bytes
@@ -1066,7 +1066,7 @@ Group Associations
 Handle 0x0066, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 66 00 01 04 01 55 02 00 90 06 01 10 86 20
+		DB 6A 66 00 01 04 01 55 02 00 90 06 01 85 36 20
 		00 00 00 00 48 00 00 00 00 00 00 06 00 00 00 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

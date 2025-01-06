@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 49 structures occupying 2244 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 11/27/2012
 	Address: 0xE2430
 	Runtime Size: 121808 bytes
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -153,7 +153,7 @@ Cache Information
 	Operational Mode: Write Through
 	Location: Internal
 	Installed Size: 256 kB
-	Maximum Size: 1024 kB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -170,8 +170,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 8192 kB
+	Installed Size: 3 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -357,7 +357,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: 1
 	Locator: M1
@@ -377,7 +377,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: 1
 	Locator: M2
@@ -404,12 +404,6 @@ Memory Device
 	Bank Locator: Bank 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer:                 
-	Serial Number: --
-	271882FD79060B21C43F805A2DE81148     
-	Part Number:                   
-	Rank: Unknown
 
 Handle 0x001C, DMI type 17, 28 bytes
 Memory Device
@@ -424,12 +418,6 @@ Memory Device
 	Bank Locator: Bank 3
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer:                 
-	Serial Number: --
-	271882FD79060B21C43F805A2DE81148     
-	Part Number:                   
-	Rank: Unknown
 
 Handle 0x001D, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -514,7 +502,7 @@ Hardware Security
 	Front Panel Reset Status: Unknown
 
 Handle 0x0025, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: 12-31 23:59:59
 
 Handle 0x0026, DMI type 26, 20 bytes

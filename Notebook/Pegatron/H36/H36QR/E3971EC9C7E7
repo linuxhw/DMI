@@ -1,8 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 70 structures occupying 2449 bytes.
-Table at 0x000EB710.
+Table at 0x000E99F0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -354,7 +354,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:04:1c.2
+	Bus Address: 0000:ff:1c.2
 
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
@@ -393,7 +393,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:06:1c.5
+	Bus Address: 0000:04:1c.5
 
 Handle 0x0020, DMI type 10, 6 bytes
 On Board Device Information
@@ -701,7 +701,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM2
@@ -709,17 +709,17 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1067 MT/s
-	Manufacturer: 0000
+	Manufacturer: 80CE
 	Serial Number: --
 	Asset Tag: --
-	Part Number: GKH200SO12808-1066
+	Part Number: M471B5273DH0-CH9  
 	Rank: Unknown
 
 Handle 0x002B, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x002A
 	Memory Array Mapped Address Handle: 0x002D
 	Partition Row Position: Unknown
@@ -729,8 +729,8 @@ Memory Device Mapped Address
 Handle 0x002D, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Array Handle: 0x0025
 	Partition Width: 2
 

@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-62 structures occupying 2459 bytes.
+63 structures occupying 2516 bytes.
 Table at 0x000E0850.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -270,7 +270,8 @@ Port Connector Information
 Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PEG Gen1/Gen2 X16
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -283,7 +284,8 @@ System Slot Information
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 1 X1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -296,7 +298,8 @@ System Slot Information
 Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 2 X1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -309,7 +312,8 @@ System Slot Information
 Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 3 X1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -322,7 +326,8 @@ System Slot Information
 Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 4 X1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -335,7 +340,8 @@ System Slot Information
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 5 X1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 5
@@ -567,23 +573,34 @@ Handle 0x0034, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0033
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
+	Part Number: M471B5273EB0-CK0  
 	Rank: Unknown
 
-Handle 0x0035, DMI type 17, 28 bytes
+Handle 0x0035, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0034
+	Memory Array Mapped Address Handle: 0x003A
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 2
+
+Handle 0x0036, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0033
 	Error Information Handle: Not Provided
@@ -596,14 +613,8 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
 
-Handle 0x0036, DMI type 17, 28 bytes
+Handle 0x0037, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0033
 	Error Information Handle: Not Provided
@@ -623,18 +634,18 @@ Memory Device
 	Part Number: AD73I1C1674EV     
 	Rank: Unknown
 
-Handle 0x0037, DMI type 20, 19 bytes
+Handle 0x0038, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0036
-	Memory Array Mapped Address Handle: 0x0039
+	Physical Device Handle: 0x0037
+	Memory Array Mapped Address Handle: 0x003A
 	Partition Row Position: Unknown
-	Interleave Position: 1
-	Interleaved Data Depth: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 2
 
-Handle 0x0038, DMI type 17, 28 bytes
+Handle 0x0039, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0033
 	Error Information Handle: Not Provided
@@ -647,38 +658,32 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
 
-Handle 0x0039, DMI type 19, 15 bytes
+Handle 0x003A, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0033
 	Partition Width: 4
 
-Handle 0x003A, DMI type 129, 8 bytes
+Handle 0x003B, DMI type 129, 8 bytes
 OEM-specific Type
 	Header and Data:
-		81 08 3A 00 01 01 02 01
+		81 08 3B 00 01 01 02 01
 	Strings:
 		Intel_ASF
 		Intel_ASF_001
 
-Handle 0x003B, DMI type 131, 64 bytes
+Handle 0x003C, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 3B 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 3C 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 49 1C FF FF FF FF 09 C0 00 00 01 00 07 00
 		40 04 0D 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 36 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x003C, DMI type 15, 29 bytes
+Handle 0x003D, DMI type 15, 29 bytes
 System Event Log
 	Area Length: 50 bytes
 	Header Start Offset: 0x0000
@@ -697,6 +702,6 @@ System Event Log
 	Descriptor 3: Multi-bit ECC memory error
 	Data Format 3: Multiple-event
 
-Handle 0x003D, DMI type 127, 4 bytes
+Handle 0x003E, DMI type 127, 4 bytes
 End Of Table
 

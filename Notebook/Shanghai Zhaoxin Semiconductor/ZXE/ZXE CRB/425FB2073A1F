@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1 present.
-38 structures occupying 1353 bytes.
+38 structures occupying 1339 bytes.
 Table at 0x9648A000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -225,8 +225,8 @@ Physical Memory Array
 Handle 0x0017, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x005FFFFFFFF
-	Range Size: 24 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0016
 	Partition Width: 2
 
@@ -271,18 +271,18 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: Unknown
 	Locator: DIMM 1
 	Bank Locator: CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2666 MT/s
-	Manufacturer: Shenzhen WODPOSIT Technology Co
+	Speed: 3200 MT/s
+	Manufacturer: Kingbank Technology Co Ltd
 	Serial Number: --
 	Asset Tag: --
-	443C6C47053DD808B21670E3AC3A0F16  
+	4776D9C5F6FCD6E78ABCA33413CFBF20          
 	Rank: Unknown
 	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
@@ -292,8 +292,8 @@ Memory Device
 Handle 0x001B, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00400000000
-	Ending Address: 0x005FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x001A
 	Memory Array Mapped Address Handle: 0x0017
 	Partition Row Position: Unknown
@@ -367,7 +367,8 @@ Cache Information
 Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J52
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 4
@@ -380,7 +381,8 @@ System Slot Information
 Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J66
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Other
 	ID: 5
@@ -393,7 +395,8 @@ System Slot Information
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J56
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 6
@@ -406,7 +409,8 @@ System Slot Information
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J67
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Other
 	ID: 0

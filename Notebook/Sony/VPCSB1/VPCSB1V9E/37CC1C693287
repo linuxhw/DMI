@@ -1,8 +1,8 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-21 structures occupying 863 bytes.
-Table at 0x000E6090.
+22 structures occupying 884 bytes.
+Table at 0x000E6070.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -106,10 +106,10 @@ OEM-specific Type
 Handle 0x000A, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 0A 00 31 00 00 00 07 00 00 00 00 00 34 00
+		83 40 0A 00 11 00 00 00 07 00 00 00 00 00 34 00
 		F8 00 49 1C FF FF FF FF 19 00 00 00 00 00 07 00
-		AD 04 04 00 80 00 C2 9A C8 00 FF FF 00 00 00 05
-		83 00 00 00 76 00 00 00 76 50 72 6F 00 00 00 00
+		AD 04 04 00 80 00 C2 9A C8 00 FF FF 00 00 00 00
+		00 FF 00 00 76 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x000B, DMI type 16, 15 bytes
 Physical Memory Array
@@ -140,7 +140,7 @@ Memory Device Mapped Address
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x000C
-	Memory Array Mapped Address Handle: 0x000F
+	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
@@ -149,25 +149,36 @@ Handle 0x000E, DMI type 17, 21 bytes
 Memory Device
 	Array Handle: 0x000B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: SODIMM2
 	Bank Locator: Bank 1
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Unknown
 
-Handle 0x000F, DMI type 19, 15 bytes
+Handle 0x000F, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x0027FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x000E
+	Memory Array Mapped Address Handle: 0x0010
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0010, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 6 GB
 	Physical Array Handle: 0x000B
 	Partition Width: 2
 
-Handle 0x0010, DMI type 4, 40 bytes
+Handle 0x0011, DMI type 4, 40 bytes
 Processor Information
 	Socket Designation: N/A
 	Type: Central Processor
@@ -211,9 +222,9 @@ Processor Information
 	Current Speed: 2300 MHz
 	Status: Populated, Enabled
 	Upgrade: None
-	L1 Cache Handle: 0x0011
-	L2 Cache Handle: 0x0012
-	L3 Cache Handle: 0x0013
+	L1 Cache Handle: 0x0012
+	L2 Cache Handle: 0x0013
+	L3 Cache Handle: 0x0014
 	Serial Number: --
 	Asset Tag: --
 	Part Number: N/A
@@ -223,7 +234,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0011, DMI type 7, 19 bytes
+Handle 0x0012, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -239,7 +250,7 @@ Cache Information
 	System Type: Unknown
 	Associativity: Unknown
 
-Handle 0x0012, DMI type 7, 19 bytes
+Handle 0x0013, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -255,7 +266,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0013, DMI type 7, 19 bytes
+Handle 0x0014, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L3 Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -271,6 +282,6 @@ Cache Information
 	System Type: Unified
 	Associativity: 12-way Set-associative
 
-Handle 0x0014, DMI type 127, 4 bytes
+Handle 0x0015, DMI type 127, 4 bytes
 End Of Table
 
