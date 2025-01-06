@@ -1,13 +1,13 @@
-# dmidecode 3.2
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0x9E7AC000.
+Table at 0x7E7B0000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 1.40
-	Release Date: 04/06/2021
+	Version: 1.70
+	Release Date: 08/21/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -26,7 +26,6 @@ BIOS Information
 		8042 keyboard services are supported (int 9h)
 		Serial services are supported (int 14h)
 		Printer services are supported (int 17h)
-		ACPI is supported
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
@@ -256,7 +255,8 @@ Port Connector Information
 Handle 0x001A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B2
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -269,7 +269,8 @@ System Slot Information
 Handle 0x001B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -282,7 +283,8 @@ System Slot Information
 Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -295,7 +297,8 @@ System Slot Information
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 3
@@ -308,7 +311,8 @@ System Slot Information
 Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -321,7 +325,8 @@ System Slot Information
 Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8D1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 5
@@ -334,7 +339,8 @@ System Slot Information
 Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B3
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: In Use
 	Length: Short
 	ID: 6
@@ -597,27 +603,6 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: None
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x003C, DMI type 17, 84 bytes
 Memory Device
@@ -667,27 +652,6 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x003E, DMI type 17, 84 bytes
 Memory Device
@@ -757,8 +721,8 @@ Memory Device Mapped Address
 Handle 0x0042, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 42 00 03 01 00 09 00 3F 20 00 02 00 00 00
-		00 E0 00 03 00 01 0D 15 00 00
+		DD 1A 42 00 03 01 00 09 00 C0 20 00 02 00 00 00
+		00 F8 00 03 00 01 0D 22 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -767,8 +731,8 @@ OEM-specific Type
 Handle 0x0043, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 43 00 03 01 00 09 00 3F 20 00 02 00 00 00
-		00 00 00 03 04 0E 05 19 CD 04
+		DD 1A 43 00 03 01 00 09 00 C0 20 00 02 00 00 00
+		00 00 00 03 04 0E 05 32 09 08
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -778,7 +742,7 @@ OEM-specific Type
 Handle 0x0044, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 44 00 06 01 00 09 00 3F 20 00 02 03 FF FF
+		DD 2F 44 00 06 01 00 09 00 C0 20 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
 		00 06 00 FF FF FF FF FF 07 00 0B 00 00 00 00
 	Strings:
@@ -793,8 +757,8 @@ OEM-specific Type
 Handle 0x0045, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 45 00 07 01 00 09 00 3F 20 00 02 00 00 00
-		00 4B 00 03 00 09 00 3F 20 00 04 05 FF FF FF FF
+		DD 36 45 00 07 01 00 09 00 C0 20 00 02 00 00 00
+		00 55 00 03 00 09 00 C0 20 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 03 00 07 00 00 00 00 03 00 08
 		00 FF FF FF FF FF
 	Strings:
@@ -928,8 +892,8 @@ OEM-specific Type
 	Header and Data:
 		83 40 4B 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 C8 A3 00 00 00 00 01 00 00 00 05 00 0E 00
-		CD 04 19 00 00 00 00 00 FE 00 FF FF 00 00 00 00
-		00 00 00 00 E2 01 00 00 76 50 72 6F 00 00 00 00
+		09 08 32 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x004C, DMI type 41, 11 bytes
 Onboard Device
@@ -1042,7 +1006,7 @@ OEM-specific Type
 	Header and Data:
 		8F 10 57 00 00 01 02 03 04 05 06 07 08 09 0A 0B
 	Strings:
-		MEFW-14.5.25.1229
+		MEFW-14.5.50.2057
 		GOP1-[N/A]     
 		RAID-17.8
 		PXEU1-v2.052
@@ -1065,7 +1029,7 @@ Handle 0x0059, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
 		DB 6A 59 00 01 04 01 55 02 00 90 06 01 10 86 20
-		00 00 00 00 48 08 00 00 00 00 00 06 00 00 00 02
+		00 00 00 00 40 08 00 00 00 00 00 06 00 00 00 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

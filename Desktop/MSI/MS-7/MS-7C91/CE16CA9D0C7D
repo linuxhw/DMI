@@ -1,14 +1,14 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 63 structures occupying 2640 bytes.
-Table at 0xCDA07000.
+Table at 0xCDA06000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: A.90
-	Release Date: 03/17/2022
+	Version: A.C0
+	Release Date: 03/06/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -31,7 +31,6 @@ BIOS Information
 		Serial services are supported (int 14h)
 		Printer services are supported (int 17h)
 		CGA/mono video services are supported (int 10h)
-		ACPI is supported
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
@@ -194,7 +193,7 @@ Handle 0x000F, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.77
+	Firmware Revision: 3.87
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -241,8 +240,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 384 kB
-	Maximum Size: 384 kB
+	Installed Size: 768 kB
+	Maximum Size: 768 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -257,8 +256,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3 MB
-	Maximum Size: 3 MB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -273,8 +272,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 32 MB
-	Maximum Size: 32 MB
+	Installed Size: 64 MB
+	Maximum Size: 64 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -289,8 +288,8 @@ Processor Information
 	Type: Central Processor
 	Family: Zen
 	Manufacturer: Advanced Micro Devices, Inc.
-	ID: 10 0F 87 00 FF FB 8B 17
-	Signature: Family 23, Model 113, Stepping 0
+	ID: 12 0F A2 00 FF FB 8B 17
+	Signature: Family 25, Model 33, Stepping 2
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -315,11 +314,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD Ryzen 5 3600X 6-Core Processor             
+	Version: AMD Ryzen 9 5900X 12-Core Processor            
 	Voltage: 1.1 V
 	External Clock: 100 MHz
-	Max Speed: 4400 MHz
-	Current Speed: 3800 MHz
+	Max Speed: 4950 MHz
+	Current Speed: 3700 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
 	L1 Cache Handle: 0x0014
@@ -328,9 +327,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Unknown
-	Core Count: 6
-	Core Enabled: 6
-	Thread Count: 12
+	Core Count: 12
+	Core Enabled: 12
+	Thread Count: 24
 	Characteristics:
 		64-bit capable
 		Multi-Core
@@ -657,13 +656,13 @@ Handle 0x0037, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3708 PCIE x4 slot from Promontory
 	Type: x4 PCI Express x4
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 128
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:00:1f.7
+	Bus Address: 0000:03:00.0
 
 Handle 0x0038, DMI type 9, 17 bytes
 System Slot Information
@@ -687,7 +686,7 @@ System Slot Information
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:06:07.0
+	Bus Address: 0000:03:07.0
 
 Handle 0x003A, DMI type 9, 17 bytes
 System Slot Information
@@ -711,7 +710,7 @@ System Slot Information
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:06:09.0
+	Bus Address: 0000:03:09.0
 
 Handle 0x003C, DMI type 41, 11 bytes
 Onboard Device

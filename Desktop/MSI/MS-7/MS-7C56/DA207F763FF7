@@ -1,14 +1,14 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 62 structures occupying 2612 bytes.
-Table at 0xCDC04000.
+Table at 0xCDC08000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: 1.50
-	Release Date: 01/14/2021
+	Version: 1.C0
+	Release Date: 03/13/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -31,7 +31,6 @@ BIOS Information
 		Serial services are supported (int 14h)
 		Printer services are supported (int 17h)
 		CGA/mono video services are supported (int 10h)
-		ACPI is supported
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
@@ -354,16 +353,6 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: 3200 MT/s
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: 3200 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x0019, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -388,13 +377,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
+	Speed: 2933 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: F4-3200C16-8GVKB
 	Rank: 1
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 2933 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -433,16 +422,6 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: 3200 MT/s
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: 3200 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x001E, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -467,13 +446,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
+	Speed: 2933 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: F4-3200C16-8GVKB
 	Rank: 1
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 2933 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -657,25 +636,25 @@ Handle 0x0035, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3700 M.2 Slot
 	Type: x1 PCI Express x1
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 9
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:00:1f.7
+	Bus Address: 0000:00:01.1
 
 Handle 0x0036, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3708 PCIE x4 slot from Promontory
 	Type: x4 PCI Express x4
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 128
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:00:1f.7
+	Bus Address: 0000:20:00.0
 
 Handle 0x0037, DMI type 9, 17 bytes
 System Slot Information
@@ -693,13 +672,13 @@ Handle 0x0038, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3702 PCIE x1 slot from Promontory
 	Type: x1 PCI Express x1
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 135
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:00:1f.7
+	Bus Address: 0000:20:07.0
 
 Handle 0x0039, DMI type 9, 17 bytes
 System Slot Information

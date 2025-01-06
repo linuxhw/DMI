@@ -1,14 +1,14 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-63 structures occupying 2627 bytes.
-Table at 0xCCA08000.
+62 structures occupying 2584 bytes.
+Table at 0xDC9FD000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: 2.D0
-	Release Date: 12/12/2022
+	Version: 2.I0
+	Release Date: 10/10/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -31,7 +31,6 @@ BIOS Information
 		Serial services are supported (int 14h)
 		Printer services are supported (int 17h)
 		CGA/mono video services are supported (int 10h)
-		ACPI is supported
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
@@ -194,7 +193,7 @@ Handle 0x000F, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.84
+	Firmware Revision: 3.92
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -222,10 +221,10 @@ Physical Memory Array
 Handle 0x0012, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0011
-	Partition Width: 2
+	Partition Width: 1
 
 Handle 0x0013, DMI type 7, 19 bytes
 Cache Information
@@ -354,16 +353,6 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: 3200 MT/s
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: 3200 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x0019, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -402,13 +391,11 @@ Memory Device
 Handle 0x001B, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x001A
 	Memory Array Mapped Address Handle: 0x0012
 	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
 
 Handle 0x001C, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -433,16 +420,6 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: 3200 MT/s
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: 3200 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x001E, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -458,38 +435,17 @@ Handle 0x001F, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0011
 	Error Information Handle: 0x001E
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8 GB
-	Form Factor: DIMM
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: P0 CHANNEL B
-	Type: DDR4
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: PSD48G320081
-	Rank: 1
-	Configured Memory Speed: 3200 MT/s
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
+	Type: Unknown
+	Type Detail: Unknown
 
-Handle 0x0020, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x001F
-	Memory Array Mapped Address Handle: 0x0012
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
-
-Handle 0x0021, DMI type 8, 9 bytes
+Handle 0x0020, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1500
 	Internal Connector Type: None
@@ -497,7 +453,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0022, DMI type 8, 9 bytes
+Handle 0x0021, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1501
 	Internal Connector Type: None
@@ -505,7 +461,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0023, DMI type 8, 9 bytes
+Handle 0x0022, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1502
 	Internal Connector Type: None
@@ -513,7 +469,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0024, DMI type 8, 9 bytes
+Handle 0x0023, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1506
 	Internal Connector Type: None
@@ -521,9 +477,17 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0025, DMI type 8, 9 bytes
+Handle 0x0024, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1507
+	Internal Connector Type: None
+	External Reference Designator: USB 3.2
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0025, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J1301
 	Internal Connector Type: None
 	External Reference Designator: USB 3.2
 	External Connector Type: Access Bus (USB)
@@ -533,19 +497,11 @@ Handle 0x0026, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1301
 	Internal Connector Type: None
-	External Reference Designator: USB 3.2
-	External Connector Type: Access Bus (USB)
-	Port Type: USB
-
-Handle 0x0027, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J1301
-	Internal Connector Type: None
 	External Reference Designator: Network
 	External Connector Type: RJ-45
 	Port Type: Network Port
 
-Handle 0x0028, DMI type 8, 9 bytes
+Handle 0x0027, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1704
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -553,7 +509,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x0029, DMI type 8, 9 bytes
+Handle 0x0028, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1705
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -561,7 +517,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x002A, DMI type 8, 9 bytes
+Handle 0x0029, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1700
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -569,7 +525,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x002B, DMI type 8, 9 bytes
+Handle 0x002A, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1702
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -577,7 +533,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x002C, DMI type 8, 9 bytes
+Handle 0x002B, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1703
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -585,7 +541,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x002D, DMI type 8, 9 bytes
+Handle 0x002C, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1706
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -593,7 +549,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x002E, DMI type 8, 9 bytes
+Handle 0x002D, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1100
 	Internal Connector Type: None
@@ -601,7 +557,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Video Port
 
-Handle 0x002F, DMI type 8, 9 bytes
+Handle 0x002E, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1101
 	Internal Connector Type: None
@@ -609,7 +565,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Video Port
 
-Handle 0x0030, DMI type 8, 9 bytes
+Handle 0x002F, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1102
 	Internal Connector Type: None
@@ -617,7 +573,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Video Port
 
-Handle 0x0031, DMI type 8, 9 bytes
+Handle 0x0030, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J2100
 	Internal Connector Type: None
@@ -625,7 +581,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x0032, DMI type 8, 9 bytes
+Handle 0x0031, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J2101
 	Internal Connector Type: None
@@ -633,7 +589,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x0033, DMI type 8, 9 bytes
+Handle 0x0032, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J2102
 	Internal Connector Type: None
@@ -641,7 +597,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x0034, DMI type 9, 17 bytes
+Handle 0x0033, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J10
 	Type: x16 PCI Express x16
@@ -653,7 +609,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x0035, DMI type 9, 17 bytes
+Handle 0x0034, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3700 M.2 Slot
 	Type: x1 PCI Express x1
@@ -665,19 +621,19 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x0036, DMI type 9, 17 bytes
+Handle 0x0035, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3708 PCIE x4 slot from Promontory
 	Type: x4 PCI Express x4
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 128
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:20:00.0
+	Bus Address: 0000:00:1f.7
 
-Handle 0x0037, DMI type 9, 17 bytes
+Handle 0x0036, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3703 PCIE x1 slot from Promontory
 	Type: x1 PCI Express x1
@@ -689,7 +645,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x0038, DMI type 9, 17 bytes
+Handle 0x0037, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3702 PCIE x1 slot from Promontory
 	Type: x1 PCI Express x1
@@ -701,7 +657,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x0039, DMI type 9, 17 bytes
+Handle 0x0038, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3707 PCIE x4 slot from Promontory
 	Type: x4 PCI Express x4
@@ -713,7 +669,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x003A, DMI type 9, 17 bytes
+Handle 0x0039, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3701 M.2 WLAN/BT slot from Promontory
 	Type: x1 PCI Express x1
@@ -725,7 +681,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:20:09.0
 
-Handle 0x003B, DMI type 41, 11 bytes
+Handle 0x003A, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: RTL8111E Giga LAN
 	Type: Ethernet
@@ -733,7 +689,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:29:00.0
 
-Handle 0x003C, DMI type 41, 11 bytes
+Handle 0x003B, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Realtek ALC1220
 	Type: Sound
@@ -741,10 +697,10 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:30:00.6
 
-Handle 0x003D, DMI type 143, 16 bytes
+Handle 0x003C, DMI type 143, 16 bytes
 OEM-specific Type
 	Header and Data:
-		8F 10 3D 00 00 01 02 03 04 05 06 07 08 09 0A 0B
+		8F 10 3C 00 00 01 02 03 04 05 06 07 08 09 0A 0B
 	Strings:
 		GOP1-[N/A]     
 		RAID-14.8.0.1042
@@ -759,6 +715,6 @@ OEM-specific Type
 		N/A
 		N/A
 
-Handle 0x003E, DMI type 127, 4 bytes
+Handle 0x003D, DMI type 127, 4 bytes
 End Of Table
 

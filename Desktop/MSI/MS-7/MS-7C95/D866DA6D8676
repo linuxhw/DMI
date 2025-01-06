@@ -1,14 +1,14 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-61 structures occupying 2582 bytes.
-Table at 0x000E6CF0.
+62 structures occupying 2615 bytes.
+Table at 0xDC9C7000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: 2.91
-	Release Date: 08/04/2021
+	Version: 2.L0
+	Release Date: 07/18/2024
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -31,7 +31,6 @@ BIOS Information
 		Serial services are supported (int 14h)
 		Printer services are supported (int 17h)
 		CGA/mono video services are supported (int 10h)
-		ACPI is supported
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
@@ -194,7 +193,7 @@ Handle 0x000F, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.58
+	Firmware Revision: 3.92
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -354,16 +353,6 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: 3600 MT/s
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: 3600 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x0019, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -388,13 +377,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3600 MT/s
+	Speed: 2400 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX3600C17D4/8GX    
 	Rank: 1
-	Configured Memory Speed: 3600 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -433,16 +422,6 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: 3600 MT/s
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: 3600 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x001E, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -467,13 +446,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3600 MT/s
+	Speed: 2400 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX3600C17D4/8GX    
 	Rank: 1
-	Configured Memory Speed: 3600 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -725,14 +704,22 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:1f.7
 
-Handle 0x003B, DMI type 143, 16 bytes
+Handle 0x003B, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Realtek ALC1220
+	Type: Sound
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:30:00.6
+
+Handle 0x003C, DMI type 143, 16 bytes
 OEM-specific Type
 	Header and Data:
-		8F 10 3B 00 00 01 02 03 04 05 06 07 08 09 0A 0B
+		8F 10 3C 00 00 01 02 03 04 05 06 07 08 09 0A 0B
 	Strings:
-		VBIOS-02C3
+		GOP1-[N/A]     
 		RAID-14.8.0.1042
-		PXEL1-v2.1.1.5
+		PXEU1-v1.1.0.4
 		AMI-AptioV
 		GSES-5/3
 		MsiFlash-18
@@ -743,6 +730,6 @@ OEM-specific Type
 		N/A
 		N/A
 
-Handle 0x003C, DMI type 127, 4 bytes
+Handle 0x003D, DMI type 127, 4 bytes
 End Of Table
 

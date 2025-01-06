@@ -1,14 +1,14 @@
-# dmidecode 3.5
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 62 structures occupying 2636 bytes.
-Table at 0xCDA06000.
+Table at 0xDD9C6000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: 1.50
-	Release Date: 03/08/2023
+	Version: 1.A0
+	Release Date: 07/18/2024
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -84,7 +84,8 @@ Chassis Information
 Handle 0x0004, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B2
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -97,7 +98,8 @@ System Slot Information
 Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -110,7 +112,8 @@ System Slot Information
 Handle 0x0006, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -123,7 +126,8 @@ System Slot Information
 Handle 0x0007, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 3
@@ -136,7 +140,8 @@ System Slot Information
 Handle 0x0008, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -149,7 +154,8 @@ System Slot Information
 Handle 0x0009, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8D1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 5
@@ -162,7 +168,8 @@ System Slot Information
 Handle 0x000A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B3
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: In Use
 	Length: Short
 	ID: 6
@@ -193,7 +200,7 @@ Handle 0x000F, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.87
+	Firmware Revision: 3.92
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -221,16 +228,16 @@ Physical Memory Array
 Handle 0x0012, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000CFFFFFFF
-	Range Size: 3328 MB
+	Ending Address: 0x000DFFFFFFF
+	Range Size: 3584 MB
 	Physical Array Handle: 0x0011
 	Partition Width: 4
 
 Handle 0x0013, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0082FFFFFFF
-	Range Size: 29440 MB
+	Ending Address: 0x0081FFFFFFF
+	Range Size: 29184 MB
 	Physical Array Handle: 0x0011
 	Partition Width: 4
 
@@ -649,7 +656,8 @@ Port Connector Information
 Handle 0x0034, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J10
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Short
 	ID: 12
@@ -661,7 +669,8 @@ System Slot Information
 Handle 0x0035, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3600 Pcie x8 slot
-	Type: x8 PCI Express x8
+	Type: PCI Express x8
+	Data Bus Width: 8x or x8
 	Current Usage: Available
 	Length: Short
 	ID: 13
@@ -673,7 +682,8 @@ System Slot Information
 Handle 0x0036, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3708 PCIE x4 slot from Bixby
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -685,7 +695,8 @@ System Slot Information
 Handle 0x0037, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3702 PCIE x1 slot from Bixby
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -697,7 +708,8 @@ System Slot Information
 Handle 0x0038, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3703 PCIE x1 slot from Bixby
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 4
@@ -709,7 +721,8 @@ System Slot Information
 Handle 0x0039, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3701 M.2 WLAN/BT slot from Bixby
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 5
@@ -721,7 +734,8 @@ System Slot Information
 Handle 0x003A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: U3700 M.2 Slot
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 14
