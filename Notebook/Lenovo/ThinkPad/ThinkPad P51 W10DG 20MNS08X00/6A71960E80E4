@@ -1,4 +1,4 @@
-# dmidecode 3.5
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0x6F05D000.
@@ -202,7 +202,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-6820HQ CPU @ 2.70GHz
-	Voltage: 1.2 V
+	Voltage: 0.7 V
 	External Clock: 100 MHz
 	Max Speed: 2700 MHz
 	Current Speed: 2700 MHz
@@ -228,8 +228,8 @@ Processor Information
 Handle 0x000D, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: N1UET86W (1.60 )
-	Release Date: 11/30/2022
+	Version: N1UET90W (1.64 )
+	Release Date: 03/12/2024
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -252,7 +252,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.60
+	BIOS Revision: 1.64
 	Firmware Revision: 1.10
 
 Handle 0x000E, DMI type 1, 27 bytes
@@ -389,6 +389,7 @@ Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Media Card Slot
 	Type: Other
+	Data Bus Width: Other
 	Current Usage: Available
 	Length: Other
 	Characteristics:
@@ -399,6 +400,7 @@ Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SmartCard Slot
 	Type: Other
+	Data Bus Width: Other
 	Current Usage: Available
 	Length: Other
 	Characteristics:
@@ -409,6 +411,7 @@ Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SimCard Slot
 	Type: Other
+	Data Bus Width: Other
 	Current Usage: Available
 	Length: Other
 	Characteristics: None
@@ -448,11 +451,15 @@ OEM-specific Type
 	Strings:
 		KHOIHGIUCCHHII
 
-Handle 0x002A, DMI type 135, 19 bytes
+Handle 0x002A, DMI type 135, 83 bytes
 OEM-specific Type
 	Header and Data:
-		87 13 2A 00 54 50 07 02 42 41 59 20 49 2F 4F 20
-		04 00 00
+		87 53 2A 00 54 50 07 02 42 41 59 20 49 2F 4F 20
+		04 00 01 01 40 00 17 00 06 00 00 00 00 01 00 04
+		00 00 00 00 00 00 01 01 FF 00 00 00 00 00 00 01
+		02 00 00 00 00 00 00 00 01 03 02 00 00 00 00 00
+		00 01 04 04 00 00 00 00 00 00 01 05 FF 00 00 00
+		00 00 00
 
 Handle 0x002B, DMI type 130, 20 bytes
 OEM-specific Type
@@ -465,14 +472,14 @@ OEM-specific Type
 	Header and Data:
 		83 40 2C 00 35 00 00 00 0B 00 00 00 00 00 0C 00
 		F8 00 54 A1 00 00 00 00 09 C0 00 00 08 00 0B 00
-		B6 0D 37 00 00 00 00 00 FE 00 E3 15 00 00 00 00
+		E3 10 5D 00 00 00 00 00 FE 00 E3 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x002D, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 2D 00 03 01 00 03 07 03 00 00 02 00 00 00
-		00 F0 00 03 00 00 05 00 00 00
+		00 F2 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -482,7 +489,7 @@ Handle 0x002E, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 2E 00 03 01 00 03 07 03 00 00 02 00 0B 00
-		00 0C 00 03 04 0B 08 37 B6 0D
+		00 0C 00 03 04 0B 08 5D E3 10
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
@@ -558,7 +565,7 @@ Hardware Security
 Handle 0x0033, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 33 00 01 1B 36
+		84 07 33 00 01 18 36
 
 Handle 0x0034, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -619,7 +626,7 @@ Group Associations
 Handle 0x003D, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 3D 00 01 03 01 45 02 00 A4 06 81 10 89 30
+		DB 51 3D 00 01 03 01 45 02 00 90 06 81 0A 80 30
 		00 00 00 04 40 A8 00 01 1F 00 00 C9 0A 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

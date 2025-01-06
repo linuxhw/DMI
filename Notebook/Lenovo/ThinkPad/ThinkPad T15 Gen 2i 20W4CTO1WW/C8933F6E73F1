@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x90CA4000.
@@ -115,8 +115,8 @@ OEM-specific Type
 Handle 0x0007, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 07 00 03 01 00 0A 00 71 31 00 02 00 00 00
-		00 A4 00 03 00 01 0E 19 00 00
+		DD 1A 07 00 03 01 00 0A 00 71 70 00 02 00 00 00
+		00 B6 00 03 00 01 0E 19 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -125,8 +125,8 @@ OEM-specific Type
 Handle 0x0008, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 08 00 03 01 00 0A 00 71 31 00 02 00 0F 00
-		00 04 00 03 04 0F 00 2A BB 08
+		DD 1A 08 00 03 01 00 0A 00 71 70 00 02 00 0F 00
+		00 04 00 03 04 0F 00 2F A9 09
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -136,7 +136,7 @@ OEM-specific Type
 Handle 0x0009, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 09 00 06 01 00 0A 00 71 31 00 02 03 FF FF
+		DD 2F 09 00 06 01 00 0A 00 71 70 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 20 00 05 00 FF FF FF 20
 		00 06 00 FF FF FF FF FF 07 00 04 00 00 00 00
 	Strings:
@@ -151,11 +151,11 @@ OEM-specific Type
 Handle 0x000A, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 0A 00 0B 01 00 0A 00 71 31 00 02 00 02 00
-		02 09 00 03 00 0A 00 71 31 00 04 05 FF FF FF FF
+		DD 52 0A 00 0B 01 00 0A 00 71 70 00 02 00 02 00
+		02 09 00 03 00 0A 00 71 70 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 01 00 07 00 00 00 00 01 00 08
-		00 FF FF FF FF FF 09 00 11 01 07 00 00 0A 00 00
-		00 00 FA 00 0B 00 2E 01 00 00 00 0C 00 FF FF FF
+		00 FF FF FF FF FF 09 00 11 01 08 00 00 0A 00 00
+		00 00 FB 00 0B 00 30 01 00 00 00 0C 00 FF FF FF
 		FF FF
 	Strings:
 		Reference Code - SA - System Agent
@@ -280,7 +280,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
-	Voltage: 0.8 V
+	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 2800 MHz
 	Current Speed: 2800 MHz
@@ -306,8 +306,8 @@ Processor Information
 Handle 0x0011, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: N34ET55W (1.55 )
-	Release Date: 02/14/2023
+	Version: N34ET60W (1.60 )
+	Release Date: 12/27/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -330,8 +330,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.55
-	Firmware Revision: 1.42
+	BIOS Revision: 1.60
+	Firmware Revision: 1.44
 
 Handle 0x0012, DMI type 1, 27 bytes
 System Information
@@ -461,7 +461,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 20 00 31 00 00 00 0F 00 00 00 00 00 04 00
 		F8 00 82 A0 00 00 00 00 01 00 00 00 00 00 0F 00
-		BB 08 2A 00 00 00 00 00 FE 00 FC 15 00 00 00 00
+		A9 09 2F 00 00 00 00 00 FE 00 FC 15 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0021, DMI type 140, 15 bytes
@@ -469,8 +469,8 @@ OEM-specific Type
 	Header and Data:
 		8C 0F 21 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
 	Strings:
-		1.55 
-		1.52 
+		1.60 
+		1.60 
 
 Handle 0x0022, DMI type 24, 5 bytes
 Hardware Security
@@ -561,8 +561,8 @@ System Event Log
 
 Handle 0x002C, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: N34HT42W
-	Release Date: 06/14/2022
+	Version ID: N34HT44W
+	Release Date: 10/11/2023
 
 Handle 0x002D, DMI type 140, 43 bytes
 OEM-specific Type
@@ -592,32 +592,32 @@ OEM-specific Type
 Handle 0x0031, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 31 00 54 48 4E 4B 00 00 00 00 00 00 92 1C
+		8D 12 31 00 54 48 4E 4B 00 00 00 00 00 00 09 2A
 		00 00
 
 Handle 0x0032, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 32 00 54 48 4E 4B 00 00 10 00 00 00 01 00
+		8D 12 32 00 54 48 4E 4B 00 00 10 00 00 00 03 00
 		00 00
 
 Handle 0x0033, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 33 00 54 48 4E 4B 00 00 30 00 00 00 76 00
+		8D 12 33 00 54 48 4E 4B 00 00 30 00 00 00 3A 01
 		00 00
 
 Handle 0x0034, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 34 00 54 48 4E 4B 00 00 40 00 00 00 15 00
+		8D 12 34 00 54 48 4E 4B 00 00 40 00 00 00 21 00
 		00 00
 
 Handle 0x0035, DMI type 141, 30 bytes
 OEM-specific Type
 	Header and Data:
-		8D 1E 35 00 54 48 4E 4B 00 00 50 00 00 00 94 3C
-		10 02 00 00 00 00 61 D7 5C 0D 00 00 00 00
+		8D 1E 35 00 54 48 4E 4B 00 00 50 00 00 00 6F 5D
+		55 05 00 00 00 00 33 02 98 1A 00 00 00 00
 
 Handle 0x0036, DMI type 141, 56 bytes
 OEM-specific Type
@@ -630,7 +630,7 @@ OEM-specific Type
 Handle 0x0037, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 37 00 54 50 07 01 01 00 3E 00 0C 00 00 00
+		87 12 37 00 54 50 07 01 01 00 3E 00 1C 00 00 00
 		0C 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

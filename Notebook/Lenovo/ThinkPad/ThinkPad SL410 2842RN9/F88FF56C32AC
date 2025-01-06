@@ -7,8 +7,8 @@ Table at 0x000E0010.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: 6JET94WW (1.52 )
-	Release Date: 06/19/2012
+	Version: 6JET93WW (1.51 )
+	Release Date: 03/26/2012
 	Address: 0xE4420
 	Runtime Size: 113632 bytes
 	ROM Size: 2 MB
@@ -23,7 +23,7 @@ BIOS Information
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
-	BIOS Revision: 1.82
+	BIOS Revision: 1.81
 	Firmware Revision: 1.31
 
 Handle 0x0001, DMI type 1, 27 bytes
@@ -359,7 +359,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: 1
 	Locator: DIMM 1
@@ -367,10 +367,10 @@ Memory Device
 	Type: Reserved
 	Type Detail: Synchronous
 	Speed: 800 MT/s
-	Manufacturer: 0198            
+	Manufacturer: 0080            
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ACR256X64D3S1333C9
+	Part Number: Ankowall          
 
 Handle 0x001C, DMI type 17, 27 bytes
 Memory Device
@@ -378,7 +378,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: 1
 	Locator: DIMM 2
@@ -386,10 +386,10 @@ Memory Device
 	Type: Reserved
 	Type Detail: Synchronous
 	Speed: 800 MT/s
-	Manufacturer: 80CE            
+	Manufacturer: 0080            
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5673FH0-CF8  
+	Part Number: Ankowall          
 
 Handle 0x001D, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -404,16 +404,16 @@ Handle 0x001D, DMI type 18, 23 bytes
 Handle 0x001E, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x001A
 	Partition Width: 2
 
 Handle 0x001F, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x001B
 	Memory Array Mapped Address Handle: 0x001E
 	Partition Row Position: Unknown
@@ -422,9 +422,9 @@ Memory Device Mapped Address
 
 Handle 0x0020, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x001C
 	Memory Array Mapped Address Handle: 0x001E
 	Partition Row Position: Unknown
@@ -490,7 +490,7 @@ OEM-specific Type
 	Strings:
 		152D
 		GCM  
-		BQ4F91  
+		BQ4F81  
 
 Handle 0x002B, DMI type 127, 4 bytes
 End Of Table

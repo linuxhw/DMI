@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0xBF705000.
+Table at 0xBF704000.
 
 Handle 0x0000, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -52,8 +52,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -68,8 +68,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -150,7 +150,7 @@ Memory Device
 	Error Information Handle: 0x0007
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -206,7 +206,7 @@ Memory Device
 	Error Information Handle: 0x000A
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -254,8 +254,8 @@ OEM-specific Type
 Handle 0x000E, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: R1BET56W(1.25 )
-	Release Date: 09/16/2020
+	Version: R1BET68W(1.37 )
+	Release Date: 12/23/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -278,8 +278,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.25
-	Firmware Revision: 1.25
+	BIOS Revision: 1.37
+	Firmware Revision: 1.37
 
 Handle 0x000F, DMI type 1, 27 bytes
 System Information
@@ -296,7 +296,7 @@ Handle 0x0010, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: LENOVO
 	Product Name: 20UES17D00
-	Version: Not Defined
+	Version: SDK0J40697 WIN
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -553,11 +553,7 @@ On Board Device Information
 	Status: Enabled
 	Description: ST TPM ST33TPMF12SPI
 
-Handle 0x002B, DMI type 11, 5 bytes
-OEM Strings
-	String 1: OEM default string
-
-Handle 0x002C, DMI type 13, 22 bytes
+Handle 0x002B, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 6
@@ -569,7 +565,7 @@ BIOS Language Information
 		zh-CHS
 	Currently Installed Language: en-US
 
-Handle 0x002D, DMI type 22, 26 bytes
+Handle 0x002C, DMI type 22, 26 bytes
 Portable Battery
 	Location: Front
 	Manufacturer: LGC
@@ -583,31 +579,31 @@ Portable Battery
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000000
 
-Handle 0x002E, DMI type 126, 26 bytes
+Handle 0x002D, DMI type 126, 26 bytes
 Inactive
 
-Handle 0x002F, DMI type 140, 15 bytes
+Handle 0x002E, DMI type 140, 15 bytes
 OEM-specific Type
 	Header and Data:
-		8C 0F 2F 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
+		8C 0F 2E 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
 	Strings:
-		1.25 
-		1.25 
+		1.37 
+		1.37 
 
-Handle 0x0030, DMI type 133, 5 bytes
+Handle 0x002F, DMI type 133, 5 bytes
 OEM-specific Type
 	Header and Data:
-		85 05 30 00 01
+		85 05 2F 00 01
 	Strings:
 		KHOIHGIUCCHHII
 
-Handle 0x0031, DMI type 135, 19 bytes
+Handle 0x0030, DMI type 135, 19 bytes
 OEM-specific Type
 	Header and Data:
-		87 13 31 00 54 50 07 02 42 41 59 20 49 2F 4F 20
+		87 13 30 00 54 50 07 02 42 41 59 20 49 2F 4F 20
 		04 00 00
 
-Handle 0x0032, DMI type 18, 23 bytes
+Handle 0x0031, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -617,41 +613,41 @@ Handle 0x0032, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0033, DMI type 21, 7 bytes
+Handle 0x0032, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Track Point
 	Interface: PS/2
 	Buttons: 3
 
-Handle 0x0034, DMI type 21, 7 bytes
+Handle 0x0033, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Touch Pad
 	Interface: PS/2
 	Buttons: 2
 
-Handle 0x0035, DMI type 131, 22 bytes
+Handle 0x0034, DMI type 131, 22 bytes
 ThinkVantage Technologies
 	Version: 1
 	Diagnostics: No
 
-Handle 0x0036, DMI type 136, 6 bytes
+Handle 0x0035, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 36 00 5A 5A
+		88 06 35 00 5A 5A
 
-Handle 0x0037, DMI type 24, 5 bytes
+Handle 0x0036, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
-Handle 0x0038, DMI type 132, 8 bytes
+Handle 0x0037, DMI type 132, 8 bytes
 OEM-specific Type
 	Header and Data:
-		84 08 38 00 02 D8 36 00
+		84 08 37 00 02 D8 36 00
 
-Handle 0x0039, DMI type 15, 31 bytes
+Handle 0x0038, DMI type 15, 31 bytes
 System Event Log
 	Area Length: 1154 bytes
 	Header Start Offset: 0x0000
@@ -672,29 +668,35 @@ System Event Log
 	Descriptor 4: Log area reset/cleared
 	Data Format 4: None
 
+Handle 0x0039, DMI type 141, 18 bytes
+OEM-specific Type
+	Header and Data:
+		8D 12 39 00 54 48 4E 4B 00 00 00 00 00 00 4C 69
+		50 00
+
 Handle 0x003A, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3A 00 54 48 4E 4B 00 00 00 00 00 00 80 00
-		01 00
+		8D 12 3A 00 54 48 4E 4B 00 00 10 00 00 00 00 00
+		00 00
 
 Handle 0x003B, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3B 00 54 48 4E 4B 00 00 10 00 00 00 B7 00
-		02 01
+		8D 12 3B 00 54 48 4E 4B 00 00 30 00 00 00 00 00
+		00 00
 
 Handle 0x003C, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3C 00 54 48 4E 4B 00 00 30 00 00 00 9C 20
-		EE 12
+		8D 12 3C 00 54 48 4E 4B 00 00 40 00 00 00 4A 00
+		00 00
 
-Handle 0x003D, DMI type 141, 18 bytes
+Handle 0x003D, DMI type 141, 30 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3D 00 54 48 4E 4B 00 00 40 00 00 00 13 00
-		00 00
+		8D 1E 3D 00 54 48 4E 4B 00 00 50 00 00 00 1D C9
+		9F 03 00 00 00 00 34 EF 20 0A 00 00 00 00
 
 Handle 0x003E, DMI type 140, 19 bytes
 OEM-specific Type
@@ -712,18 +714,18 @@ Handle 0x0040, DMI type 140, 23 bytes
 OEM-specific Type
 	Header and Data:
 		8C 17 40 00 4C 45 4E 4F 56 4F 0B 06 01 CB 06 51
-		74 01 60 00 00 00 00
+		44 03 60 00 00 00 00
 
 Handle 0x0041, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: R1BHT56W
-	Release Date: 09/14/2020
+	Version ID: R1BHT68W
+	Release Date: 12/22/2021
 
 Handle 0x0042, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 42 00 54 50 07 01 01 00 02 00 00 00 02 00
-		00 00
+		87 12 42 00 54 50 07 01 01 00 0E 00 01 00 0E 00
+		01 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

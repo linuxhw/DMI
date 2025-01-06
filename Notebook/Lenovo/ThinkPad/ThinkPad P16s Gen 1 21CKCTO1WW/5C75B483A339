@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0x7367B000.
+Table at 0x73712000.
 
 Handle 0x0000, DMI type 134, 13 bytes
 OEM-specific Type
@@ -160,7 +160,7 @@ Memory Device
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL A
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 6400 MT/s
 	Manufacturer: Micron Technology
@@ -216,7 +216,7 @@ Memory Device
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL B
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 6400 MT/s
 	Manufacturer: Micron Technology
@@ -272,7 +272,7 @@ Memory Device
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL C
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 6400 MT/s
 	Manufacturer: Micron Technology
@@ -328,7 +328,7 @@ Memory Device
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL D
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 6400 MT/s
 	Manufacturer: Micron Technology
@@ -366,8 +366,8 @@ Memory Device Mapped Address
 Handle 0x0014, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: R23ET65W (1.35 )
-	Release Date: 03/21/2023
+	Version: R23ET76W (1.52 )
+	Release Date: 04/22/2024
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -390,8 +390,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.35
-	Firmware Revision: 1.25
+	BIOS Revision: 1.52
+	Firmware Revision: 1.32
 
 Handle 0x0015, DMI type 1, 27 bytes
 System Information
@@ -585,8 +585,8 @@ OEM-specific Type
 	Header and Data:
 		8C 0F 30 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
 	Strings:
-		1.35 
-		1.34 
+		1.52 
+		1.49 
 
 Handle 0x0031, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -656,32 +656,32 @@ System Event Log
 Handle 0x0039, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 39 00 54 48 4E 4B 00 00 00 00 00 00 1F 02
+		8D 12 39 00 54 48 4E 4B 00 00 00 00 00 00 23 10
 		00 00
 
 Handle 0x003A, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3A 00 54 48 4E 4B 00 00 10 00 00 00 5C 00
+		8D 12 3A 00 54 48 4E 4B 00 00 10 00 00 00 97 01
 		00 00
 
 Handle 0x003B, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3B 00 54 48 4E 4B 00 00 30 00 00 00 49 00
+		8D 12 3B 00 54 48 4E 4B 00 00 30 00 00 00 4B 00
 		00 00
 
 Handle 0x003C, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3C 00 54 48 4E 4B 00 00 40 00 00 00 03 00
+		8D 12 3C 00 54 48 4E 4B 00 00 40 00 00 00 18 00
 		00 00
 
 Handle 0x003D, DMI type 141, 30 bytes
 OEM-specific Type
 	Header and Data:
-		8D 1E 3D 00 54 48 4E 4B 00 00 50 00 00 00 45 50
-		26 01 00 00 00 00 FF 0D DC 01 00 00 00 00
+		8D 1E 3D 00 54 48 4E 4B 00 00 50 00 00 00 14 FF
+		2D 05 00 00 00 00 1B 89 AE 08 00 00 00 00
 
 Handle 0x003E, DMI type 140, 19 bytes
 OEM-specific Type
@@ -692,13 +692,13 @@ OEM-specific Type
 Handle 0x003F, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 3F 00 4C 45 4E 4F 56 4F 0B 05 01 06 00 00
+		8C 13 3F 00 4C 45 4E 4F 56 4F 0B 05 01 02 00 00
 		00 00 00
 
 Handle 0x0040, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: R23HT59W
-	Release Date: 12/16/20
+	Version ID: R23HT66W
+	Release Date: 10/20/20
 
 Handle 0x0041, DMI type 140, 43 bytes
 OEM-specific Type
@@ -718,7 +718,7 @@ OEM-specific Type
 Handle 0x0043, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 43 00 54 50 07 01 01 00 06 00 00 00 06 00
+		87 12 43 00 54 50 07 01 01 00 16 00 00 00 16 00
 		00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

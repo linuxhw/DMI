@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x90CA4000.
@@ -23,7 +23,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Controller0-ChannelA
@@ -58,7 +58,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Controller1-ChannelA-DIMM0
@@ -98,8 +98,10 @@ Memory Array Mapped Address
 Handle 0x0005, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: NTC
-	Specification Version: 2.0	Firmware Revision: 7.2
-	Description: TPM 2.0, ManufacturerID: NTC , Firmware Version: 0x00070002.0x0	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 7.2
+	Description: TPM 2.0, ManufacturerID: NTC , Firmware Version: 0x00070002.0x0
+	Characteristics:
 		TPM Device characteristics not supported
 	OEM-specific Information: 0x00000000
 
@@ -113,8 +115,8 @@ OEM-specific Type
 Handle 0x0007, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 07 00 03 01 00 0A 00 71 31 00 02 00 00 00
-		00 A4 00 03 00 01 0E 19 00 00
+		DD 1A 07 00 03 01 00 0A 00 71 70 00 02 00 00 00
+		00 B4 00 03 00 01 0E 19 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -123,8 +125,8 @@ OEM-specific Type
 Handle 0x0008, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 08 00 03 01 00 0A 00 71 31 00 02 00 0F 00
-		00 04 00 03 04 0F 00 17 AA 06
+		DD 1A 08 00 03 01 00 0A 00 71 70 00 02 00 0F 00
+		00 04 00 03 04 0F 00 2F A9 09
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -134,7 +136,7 @@ OEM-specific Type
 Handle 0x0009, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 09 00 06 01 00 0A 00 71 31 00 02 03 FF FF
+		DD 2F 09 00 06 01 00 0A 00 71 70 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 20 00 05 00 FF FF FF 20
 		00 06 00 FF FF FF FF FF 07 00 04 00 00 00 00
 	Strings:
@@ -149,11 +151,11 @@ OEM-specific Type
 Handle 0x000A, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 0A 00 0B 01 00 0A 00 71 31 00 02 00 02 00
-		02 09 00 03 00 0A 00 71 31 00 04 05 FF FF FF FF
+		DD 52 0A 00 0B 01 00 0A 00 71 70 00 02 00 02 00
+		02 09 00 03 00 0A 00 71 70 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 01 00 07 00 00 00 00 01 00 08
-		00 FF FF FF FF FF 09 00 11 01 04 00 00 0A 00 00
-		00 00 F8 00 0B 00 2B 01 00 00 00 0C 00 FF FF FF
+		00 FF FF FF FF FF 09 00 11 01 08 00 00 0A 00 00
+		00 00 FB 00 0B 00 30 01 00 00 00 0C 00 FF FF FF
 		FF FF
 	Strings:
 		Reference Code - SA - System Agent
@@ -214,8 +216,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 5120 kB
-	Maximum Size: 5120 kB
+	Installed Size: 5 MB
+	Maximum Size: 5 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -230,8 +232,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -304,8 +306,8 @@ Processor Information
 Handle 0x0011, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: N34ET53W (1.53 )
-	Release Date: 08/31/2022
+	Version: N34ET59W (1.59 )
+	Release Date: 11/07/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -328,8 +330,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.53
-	Firmware Revision: 1.42
+	BIOS Revision: 1.59
+	Firmware Revision: 1.44
 
 Handle 0x0012, DMI type 1, 27 bytes
 System Information
@@ -459,7 +461,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 20 00 31 00 00 00 0F 00 00 00 00 00 04 00
 		F8 00 82 A0 00 00 00 00 01 00 00 00 00 00 0F 00
-		AA 06 17 00 00 00 00 00 FE 00 FC 15 00 00 00 00
+		A9 09 2F 00 00 00 00 00 FE 00 FC 15 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0021, DMI type 140, 15 bytes
@@ -467,8 +469,8 @@ OEM-specific Type
 	Header and Data:
 		8C 0F 21 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
 	Strings:
-		1.53 
-		1.53 
+		1.59 
+		1.58 
 
 Handle 0x0022, DMI type 24, 5 bytes
 Hardware Security
@@ -491,7 +493,7 @@ Group Associations
 Handle 0x0025, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 25 00 01 04 01 45 02 00 A0 06 01 85 30 20
+		DB 6A 25 00 01 04 01 45 02 00 90 06 01 85 39 20
 		00 00 00 00 40 00 00 03 1F 00 00 C9 03 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -559,8 +561,8 @@ System Event Log
 
 Handle 0x002C, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: N34HT42W
-	Release Date: 06/14/2022
+	Version ID: N34HT44W
+	Release Date: 10/11/2023
 
 Handle 0x002D, DMI type 140, 43 bytes
 OEM-specific Type
@@ -584,13 +586,13 @@ OEM-specific Type
 Handle 0x0030, DMI type 140, 23 bytes
 OEM-specific Type
 	Header and Data:
-		8C 17 30 00 4C 45 4E 4F 56 4F 0B 06 01 CB 06 00
-		00 00 00 00 00 00 00
+		8C 17 30 00 4C 45 4E 4F 56 4F 0B 06 01 CB 06 51
+		B4 03 60 00 00 00 00
 
 Handle 0x0031, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 31 00 54 48 4E 4B 00 00 00 00 00 00 17 04
+		8D 12 31 00 54 48 4E 4B 00 00 00 00 00 00 9E 09
 		00 00
 
 Handle 0x0032, DMI type 141, 18 bytes
@@ -602,20 +604,20 @@ OEM-specific Type
 Handle 0x0033, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 33 00 54 48 4E 4B 00 00 30 00 00 00 3C 01
+		8D 12 33 00 54 48 4E 4B 00 00 30 00 00 00 5D 02
 		00 00
 
 Handle 0x0034, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 34 00 54 48 4E 4B 00 00 40 00 00 00 31 00
+		8D 12 34 00 54 48 4E 4B 00 00 40 00 00 00 62 00
 		00 00
 
 Handle 0x0035, DMI type 141, 30 bytes
 OEM-specific Type
 	Header and Data:
-		8D 1E 35 00 54 48 4E 4B 00 00 50 00 00 00 1D CC
-		6C 06 00 00 00 00 62 34 A6 05 00 00 00 00
+		8D 1E 35 00 54 48 4E 4B 00 00 50 00 00 00 BA FE
+		46 0F 00 00 00 00 6F 78 5A 0B 00 00 00 00
 
 Handle 0x0036, DMI type 141, 56 bytes
 OEM-specific Type
@@ -628,7 +630,7 @@ OEM-specific Type
 Handle 0x0037, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 37 00 54 50 07 01 01 00 3E 00 0C 00 00 00
+		87 12 37 00 54 50 07 01 01 00 3E 00 1C 00 00 00
 		0C 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

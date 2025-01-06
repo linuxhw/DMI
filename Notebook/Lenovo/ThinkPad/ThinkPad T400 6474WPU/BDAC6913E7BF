@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 80 structures occupying 2833 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 10/17/2012
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		PC Card (PCMCIA) is supported
@@ -73,37 +73,7 @@ Processor Information
 	Type: Central Processor
 	Family: Other
 	Manufacturer: GenuineIntel
-	ID: 76 06 01 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 23, Stepping 6
-	Flags:
-		FPU (Floating-point unit on-chip)
-		VME (Virtual mode extension)
-		DE (Debugging extension)
-		PSE (Page size extension)
-		TSC (Time stamp counter)
-		MSR (Model specific registers)
-		PAE (Physical address extension)
-		MCE (Machine check exception)
-		CX8 (CMPXCHG8 instruction supported)
-		APIC (On-chip APIC hardware supported)
-		SEP (Fast system call)
-		MTRR (Memory type range registers)
-		PGE (Page global enable)
-		MCA (Machine check architecture)
-		CMOV (Conditional move instruction supported)
-		PAT (Page attribute table)
-		PSE-36 (36-bit page size extension)
-		CLFSH (CLFLUSH instruction supported)
-		DS (Debug store)
-		ACPI (ACPI supported)
-		MMX (MMX technology supported)
-		FXSR (FXSAVE and FXSTOR instructions supported)
-		SSE (Streaming SIMD extensions)
-		SSE2 (Streaming SIMD extensions 2)
-		SS (Self-snoop)
-		HTT (Multi-threading)
-		TM (Thermal monitor supported)
-		PBE (Pending break enabled)
+	ID: 76 06 01 00 FF FB EB AF
 	Version: Intel(R) Core(TM)2 Duo CPU     P8400  @ 2.26GHz
 	Voltage: 1.2 V
 	External Clock: 266 MHz
@@ -165,8 +135,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 64 kB
-	Maximum Size: 64 kB
+	Installed Size: 32 kB
+	Maximum Size: 32 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -181,8 +151,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 64 kB
-	Maximum Size: 64 kB
+	Installed Size: 32 kB
+	Maximum Size: 32 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -197,8 +167,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Burst
 	Installed SRAM Type: Burst
@@ -360,7 +330,7 @@ Inactive
 Handle 0x0027, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Other
-	Status: Enabled
+	Status: Disabled
 	Description: IBM Embedded Security hardware
 
 Handle 0x0028, DMI type 11, 5 bytes
@@ -404,7 +374,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 1
@@ -415,7 +385,7 @@ Memory Device
 	Manufacturer: 80CE            
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5673FH0-CH9  
+	Part Number: M471B5673FH0-CF8  
 
 Handle 0x002D, DMI type 17, 27 bytes
 Memory Device
@@ -423,7 +393,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 2
@@ -434,7 +404,7 @@ Memory Device
 	Manufacturer: 80CE            
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5673FH0-CF8  
+	Part Number: M471B5673FH0-CH9  
 
 Handle 0x002E, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -512,17 +482,14 @@ OEM-specific Type
 		KEYPTRS 23h
 
 Handle 0x0039, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 39 00 01 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: No
 
 Handle 0x003A, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 3A 00 02 DB 36
+		84 07 3A 00 02 D8 36
 
 Handle 0x003B, DMI type 126, 5 bytes
 Inactive
@@ -535,7 +502,7 @@ OEM-specific Type
 Handle 0x003D, DMI type 134, 16 bytes
 OEM-specific Type
 	Header and Data:
-		86 10 3D 00 00 49 4E 54 43 01 01 00 00 03 01 02
+		86 10 3D 00 00 49 4E 54 43 01 01 00 00 00 01 02
 	Strings:
 		TPM INFO
 		System Reserved
@@ -566,9 +533,8 @@ OEM-specific Type
 		02 00
 
 Handle 0x0042, DMI type 135, 10 bytes
-OEM-specific Type
-	Header and Data:
-		87 0A 42 00 54 50 07 03 01 0A
+ThinkPad Device Presence Detection
+	Fingerprint Reader: No
 
 Handle 0x0043, DMI type 136, 6 bytes
 OEM-specific Type
@@ -595,8 +561,8 @@ OEM-specific Type
 Handle 0x0047, DMI type 140, 67 bytes
 OEM-specific Type
 	Header and Data:
-		8C 43 47 00 4C 45 4E 4F 56 4F 0B 00 01 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		8C 43 47 00 4C 45 4E 4F 56 4F 0B 00 01 B2 7E 14
+		30 F7 D1 FE A1 80 BE D7 A1 5B 2D A4 24 01 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00
@@ -639,15 +605,15 @@ OEM-specific Type
 Handle 0x004D, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 4D 00 24 41 4D 54 01 01 01 01 01 A5 0B 02
+		82 14 4D 00 24 41 4D 54 01 00 00 00 00 00 00 00
 		00 00 00 00
 
 Handle 0x004E, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 4E 00 3C 00 00 00 00 00 40 2A 0A 00 00 00
+		83 40 4E 00 14 00 00 00 00 00 40 2A 00 00 00 00
 		F8 00 17 29 00 00 00 00 2D 00 00 00 00 00 04 00
-		73 04 08 00 03 00 01 15 C8 00 F5 10 00 00 00 00
+		73 04 08 00 01 00 01 15 C8 00 F5 10 00 00 00 00
 		00 00 00 00 07 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x004F, DMI type 127, 4 bytes

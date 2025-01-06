@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x5F038000.
+Table at 0x5F079000.
 
 Handle 0x0000, DMI type 222, 14 bytes
 OEM-specific Type
@@ -36,15 +36,25 @@ Handle 0x0004, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0003
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 16 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 2400 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M471A2K43CB1-CRC
+	Rank: 2
+	Configured Memory Speed: 2400 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 1.2 V
 
 Handle 0x0005, DMI type 17, 40 bytes
 Memory Device
@@ -64,25 +74,15 @@ Handle 0x0006, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0003
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 16 GB
-	Form Factor: SODIMM
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: DDR4
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
-	Manufacturer: Samsung
-	Serial Number: --
-	Asset Tag: --
-	Part Number: M471A2K43CB1-CRC    
-	Rank: 2
-	Configured Memory Speed: 2400 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: 1.2 V
+	Type: Unknown
+	Type Detail: None
 
 Handle 0x0007, DMI type 17, 40 bytes
 Memory Device
@@ -192,7 +192,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz
-	Voltage: 0.7 V
+	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 2900 MHz
 	Current Speed: 2900 MHz
@@ -218,8 +218,8 @@ Processor Information
 Handle 0x000D, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: N1UET85W (1.59 )
-	Release Date: 07/18/2022
+	Version: N1UET86W (1.60 )
+	Release Date: 11/30/2022
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -242,7 +242,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.59
+	BIOS Revision: 1.60
 	Firmware Revision: 1.10
 
 Handle 0x000E, DMI type 1, 27 bytes
@@ -379,6 +379,7 @@ Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Media Card Slot
 	Type: Other
+	Data Bus Width: Other
 	Current Usage: Available
 	Length: Other
 	Characteristics:
@@ -389,6 +390,7 @@ Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SmartCard Slot
 	Type: Other
+	Data Bus Width: Other
 	Current Usage: Available
 	Length: Other
 	Characteristics:
@@ -399,6 +401,7 @@ Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SimCard Slot
 	Type: Other
+	Data Bus Width: Other
 	Current Usage: Available
 	Length: Other
 	Characteristics: None
@@ -459,7 +462,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 2C 00 3F 00 00 00 0B 00 00 00 00 00 0C 00
 		F8 00 54 A1 00 00 00 00 09 C0 00 00 08 00 0B 00
-		93 0F 5A 00 00 00 00 00 FE 00 E3 15 00 00 00 00
+		E3 10 5D 00 00 00 00 00 FE 00 E3 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x002D, DMI type 221, 26 bytes
@@ -476,7 +479,7 @@ Handle 0x002E, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 2E 00 03 01 00 03 07 03 00 00 02 00 0B 00
-		00 0C 00 03 04 0B 08 5A 93 0F
+		00 0C 00 03 04 0B 08 5D E3 10
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
@@ -510,7 +513,7 @@ OEM-specific Type
 		DD 36 30 00 07 01 00 03 07 03 00 00 02 00 71 20
 		9B 54 00 03 00 03 07 03 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 05 00 07 00 FF FF FF 05 00 08
-		00 FF FF FF 04 02
+		00 FF FF FF FF FF
 	Strings:
 		Reference Code - SA - System Agent
 		Reference Code - MRC
@@ -523,14 +526,14 @@ OEM-specific Type
 
 Handle 0x0031, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 98 bytes
+	Area Length: 130 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000005
+	Change Token: 0x00000007
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -595,7 +598,7 @@ OEM-specific Type
 Handle 0x003A, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 3A 00 4C 45 4E 4F 56 4F 0B 05 01 07 00 00
+		8C 13 3A 00 4C 45 4E 4F 56 4F 0B 05 01 00 00 00
 		00 00 00
 
 Handle 0x003B, DMI type 140, 23 bytes
@@ -613,7 +616,7 @@ Group Associations
 Handle 0x003D, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 3D 00 01 03 01 45 02 00 A0 06 81 10 80 30
+		DB 51 3D 00 01 03 01 45 02 00 90 06 81 10 81 30
 		00 00 00 00 40 68 00 01 1F 00 00 C9 0A 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0x90CA4000.
+Table at 0x810A4000.
 
 Handle 0x0000, DMI type 134, 13 bytes
 OEM-specific Type
@@ -178,15 +178,15 @@ TPM Device
 Handle 0x0008, DMI type 221, 12 bytes
 OEM-specific Type
 	Header and Data:
-		DD 0C 08 00 01 01 00 02 00 00 4F 12
+		DD 0C 08 00 01 01 00 02 00 00 69 00
 	Strings:
 		BIOS Guard
 
 Handle 0x0009, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 09 00 03 01 00 0A 00 5B 31 00 02 00 00 00
-		00 3C 00 03 00 01 0E 19 00 00
+		DD 1A 09 00 03 01 00 0A 00 71 70 00 02 00 00 00
+		00 52 00 03 00 01 0E 19 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -195,8 +195,8 @@ OEM-specific Type
 Handle 0x000A, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 0A 00 03 01 00 0A 00 5B 31 00 02 00 0F 00
-		00 04 00 03 04 0F 00 23 9F 07
+		DD 1A 0A 00 03 01 00 0A 00 71 70 00 02 00 0F 00
+		00 04 00 03 04 0F 00 31 0D 0A
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -206,7 +206,7 @@ OEM-specific Type
 Handle 0x000B, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 0B 00 06 01 00 0A 00 5B 31 00 02 03 FF FF
+		DD 2F 0B 00 06 01 00 0A 00 71 70 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 11 00 05 00 FF FF FF 11
 		00 06 00 02 46 00 00 00 07 00 04 00 00 00 00
 	Strings:
@@ -221,11 +221,11 @@ OEM-specific Type
 Handle 0x000C, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 0C 00 0B 01 00 0A 00 5B 31 00 02 00 02 00
-		02 08 00 03 00 0A 00 5B 31 00 04 05 FF FF FF FF
+		DD 52 0C 00 0B 01 00 0A 00 71 70 00 02 00 02 00
+		02 09 00 03 00 0A 00 71 70 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 05 00 07 00 00 00 00 05 00 08
-		00 FF FF FF FF FF 09 00 18 01 0D 00 00 0A 00 00
-		00 00 98 00 0B 00 1A 01 00 00 00 0C 00 FF FF FF
+		00 FF FF FF FF FF 09 00 18 01 0F 00 00 0A 00 00
+		00 00 9A 00 0B 00 03 0B 00 00 00 0C 00 FF FF FF
 		FF FF
 	Strings:
 		Reference Code - SA - System Agent
@@ -376,8 +376,8 @@ Processor Information
 Handle 0x0013, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: N37ET39W (1.20 )
-	Release Date: 04/15/2022
+	Version: N37ET55W (1.36 )
+	Release Date: 07/09/2024
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -400,8 +400,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.20
-	Firmware Revision: 1.9
+	BIOS Revision: 1.36
+	Firmware Revision: 1.14
 
 Handle 0x0014, DMI type 1, 27 bytes
 System Information
@@ -425,7 +425,7 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Not Available
-	Chassis Handle: 0x0000
+	Chassis Handle: 0x0016
 	Type: Motherboard
 	Contained Object Handles: 0
 
@@ -531,7 +531,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 22 00 31 00 00 00 0F 00 00 00 00 00 04 00
 		F8 00 89 43 00 00 00 00 01 00 00 00 00 00 0F 00
-		9F 07 23 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		0D 0A 31 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0023, DMI type 140, 15 bytes
@@ -539,8 +539,8 @@ OEM-specific Type
 	Header and Data:
 		8C 0F 23 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
 	Strings:
-		1.20 
-		1.14 
+		1.36 
+		1.36 
 
 Handle 0x0024, DMI type 24, 5 bytes
 Hardware Security
@@ -610,14 +610,14 @@ OEM-specific Type
 
 Handle 0x002D, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 82 bytes
+	Area Length: 114 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000004
+	Change Token: 0x00000006
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -631,8 +631,8 @@ System Event Log
 
 Handle 0x002E, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: N37HT27W
-	Release Date: 11/11/2021
+	Version ID: N37HT32W
+	Release Date: 10/24/2023
 
 Handle 0x002F, DMI type 140, 43 bytes
 OEM-specific Type
@@ -656,13 +656,13 @@ OEM-specific Type
 Handle 0x0032, DMI type 140, 23 bytes
 OEM-specific Type
 	Header and Data:
-		8C 17 32 00 4C 45 4E 4F 56 4F 0B 06 01 CB 06 70
-		24 01 60 00 00 00 00
+		8C 17 32 00 4C 45 4E 4F 56 4F 0B 06 01 CB 06 51
+		B4 03 60 00 00 00 00
 
 Handle 0x0033, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 33 00 54 48 4E 4B 00 00 00 00 00 00 3E 01
+		8D 12 33 00 54 48 4E 4B 00 00 00 00 00 00 92 03
 		00 00
 
 Handle 0x0034, DMI type 141, 18 bytes
@@ -674,36 +674,34 @@ OEM-specific Type
 Handle 0x0035, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 35 00 54 48 4E 4B 00 00 30 00 00 00 01 00
+		8D 12 35 00 54 48 4E 4B 00 00 30 00 00 00 03 00
 		00 00
 
 Handle 0x0036, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 36 00 54 48 4E 4B 00 00 40 00 00 00 09 00
+		8D 12 36 00 54 48 4E 4B 00 00 40 00 00 00 19 00
 		00 00
 
-Handle 0x0037, DMI type 141, 62 bytes
+Handle 0x0037, DMI type 141, 30 bytes
 OEM-specific Type
 	Header and Data:
-		8D 3E 37 00 54 48 4E 4B 00 00 50 00 00 00 E6 C9
-		52 00 00 00 00 00 62 83 F0 00 00 00 00 00 E4 8A
-		35 02 00 00 00 00 BA C8 83 05 00 00 00 00 90 22
-		37 01 00 00 00 00 6C 8C 6D 02 00 00 00 00
+		8D 1E 37 00 54 48 4E 4B 00 00 50 00 00 00 12 0D
+		A6 01 00 00 00 00 EC 18 63 06 00 00 00 00
 
-Handle 0x0038, DMI type 141, 56 bytes
+Handle 0x0038, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 38 38 00 54 48 4E 4B 00 00 60 00 00 00 14 00
-		22 20 07 07 17 49 22 00 22 20 07 06 12 21 32 00
-		22 20 04 19 15 22 01 00 22 20 04 19 15 12 46 00
-		22 20 04 19 15 02 12 00
+		87 12 38 00 54 50 07 01 01 00 10 00 04 00 00 00
+		04 00
 
-Handle 0x0039, DMI type 135, 18 bytes
+Handle 0x0039, DMI type 141, 56 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 39 00 54 50 07 01 01 00 00 00 00 00 00 00
-		00 00
+		8D 38 39 00 54 48 4E 4B 00 00 60 00 00 00 7B 00
+		24 20 10 30 16 16 17 00 24 20 10 05 09 35 50 00
+		24 20 10 05 08 40 22 00 24 20 10 05 08 22 10 00
+		24 20 10 05 08 20 34 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

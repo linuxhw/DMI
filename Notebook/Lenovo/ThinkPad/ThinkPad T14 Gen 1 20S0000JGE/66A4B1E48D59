@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0x9CB9F000.
+Table at 0x8CB9F000.
 
 Handle 0x0000, DMI type 222, 14 bytes
 OEM-specific Type
@@ -66,49 +66,49 @@ Handle 0x0004, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x0002
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 3200 MT/s
+	Manufacturer: 04CD
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: F4-3200C22-32GRS    
+	Rank: 2
+	Configured Memory Speed: 2667 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
+	Module Manufacturer ID: Bank 5, Hex 0xCD
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: None
+	Volatile Size: 32767 MB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0005, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x009FFFFFFFF
+	Range Size: 40 GB
 	Physical Array Handle: 0x0002
-	Partition Width: 1
+	Partition Width: 2
 
 Handle 0x0006, DMI type 221, 12 bytes
 OEM-specific Type
 	Header and Data:
-		DD 0C 06 00 01 01 00 02 00 00 14 12
+		DD 0C 06 00 01 01 00 02 00 00 87 01
 	Strings:
 		BIOS Guard
 
@@ -116,7 +116,7 @@ Handle 0x0007, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 07 00 03 01 00 09 00 A0 10 00 02 00 00 00
-		00 F0 00 03 00 01 08 00 00 00
+		00 FA 00 03 00 01 08 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -126,7 +126,7 @@ Handle 0x0008, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 08 00 03 01 00 09 00 A0 10 00 02 00 0E 00
-		00 04 00 03 04 0E 01 43 FE 07
+		00 04 00 03 04 0E 01 46 B4 08
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -260,7 +260,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
-	Voltage: 0.8 V
+	Voltage: 0.6 V
 	External Clock: 100 MHz
 	Max Speed: 2100 MHz
 	Current Speed: 1600 MHz
@@ -291,8 +291,8 @@ OEM-specific Type
 Handle 0x0011, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: N2XET37W (1.27 )
-	Release Date: 10/13/2022
+	Version: N2XET41W (1.31 )
+	Release Date: 03/07/2024
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -315,8 +315,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.27
-	Firmware Revision: 1.15
+	BIOS Revision: 1.31
+	Firmware Revision: 1.16
 
 Handle 0x0012, DMI type 1, 27 bytes
 System Information
@@ -489,8 +489,8 @@ OEM-specific Type
 	Header and Data:
 		8C 0F 2B 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
 	Strings:
-		1.27 
-		1.26 
+		1.31 
+		1.31 
 
 Handle 0x002C, DMI type 133, 5 bytes
 OEM-specific Type
@@ -516,7 +516,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 2F 00 31 00 00 00 0E 00 00 00 00 00 04 00
 		F8 00 84 02 00 00 00 00 01 00 00 00 01 00 0E 00
-		FE 07 43 00 00 00 00 00 FE 00 4F 0D 00 00 00 00
+		B4 08 46 00 00 00 00 00 FE 00 4F 0D 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0030, DMI type 24, 5 bytes
@@ -540,7 +540,7 @@ Group Associations
 Handle 0x0033, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 33 00 01 04 01 45 02 00 90 06 01 85 36 20
+		DB 6A 33 00 01 04 01 45 02 00 90 06 01 85 3B 20
 		00 00 00 00 40 00 00 01 1F 00 00 C9 0B 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -609,7 +609,7 @@ System Event Log
 Handle 0x003A, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3A 00 54 48 4E 4B 00 00 00 00 00 00 26 E8
+		8D 12 3A 00 54 48 4E 4B 00 00 00 00 00 00 E6 E9
 		10 00
 
 Handle 0x003B, DMI type 141, 18 bytes
@@ -621,20 +621,20 @@ OEM-specific Type
 Handle 0x003C, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3C 00 54 48 4E 4B 00 00 30 00 00 00 A3 00
+		8D 12 3C 00 54 48 4E 4B 00 00 30 00 00 00 B2 00
 		00 00
 
 Handle 0x003D, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 3D 00 54 48 4E 4B 00 00 40 00 00 00 16 00
+		8D 12 3D 00 54 48 4E 4B 00 00 40 00 00 00 64 00
 		00 00
 
 Handle 0x003E, DMI type 141, 30 bytes
 OEM-specific Type
 	Header and Data:
-		8D 1E 3E 00 54 48 4E 4B 00 00 50 00 00 00 26 EC
-		1E 17 00 00 00 00 23 21 45 12 00 00 00 00
+		8D 1E 3E 00 54 48 4E 4B 00 00 50 00 00 00 E4 CF
+		F8 19 00 00 00 00 82 4C E4 13 00 00 00 00
 
 Handle 0x003F, DMI type 140, 19 bytes
 OEM-specific Type
@@ -656,8 +656,8 @@ OEM-specific Type
 
 Handle 0x0042, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: N2XHT25W
-	Release Date: 08/04/2022
+	Version ID: N2XHT26W
+	Release Date: 06/30/2023
 
 Handle 0x0043, DMI type 140, 43 bytes
 OEM-specific Type
@@ -669,15 +669,15 @@ OEM-specific Type
 Handle 0x0044, DMI type 141, 56 bytes
 OEM-specific Type
 	Header and Data:
-		8D 38 44 00 54 48 4E 4B 00 00 60 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00
+		8D 38 44 00 54 48 4E 4B 00 00 60 00 00 00 09 00
+		24 20 07 18 21 51 56 00 24 20 07 13 10 43 51 00
+		24 20 07 13 10 43 26 00 24 20 07 13 10 42 45 00
+		24 20 07 13 10 41 53 00
 
 Handle 0x0045, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 45 00 54 50 07 01 01 00 00 00 06 00 00 00
+		87 12 45 00 54 50 07 01 01 00 00 00 0E 00 00 00
 		06 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

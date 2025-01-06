@@ -1,8 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 67 structures occupying 3357 bytes.
-Table at 0x56FF6000.
+Table at 0x56FCF000.
 
 Handle 0x0000, DMI type 222, 16 bytes
 OEM-specific Type
@@ -265,8 +265,8 @@ Memory Array Mapped Address
 Handle 0x000E, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: N1EET90W (1.63 )
-	Release Date: 10/21/2020
+	Version: N1EET98W (1.71 )
+	Release Date: 12/06/2022
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -289,7 +289,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.63
+	BIOS Revision: 1.71
 	Firmware Revision: 1.18
 
 Handle 0x000F, DMI type 1, 27 bytes
@@ -478,22 +478,22 @@ Portable Battery
 Handle 0x0029, DMI type 126, 26 bytes
 Inactive
 
-Handle 0x002A, DMI type 135, 83 bytes
+Handle 0x002A, DMI type 133, 5 bytes
 OEM-specific Type
 	Header and Data:
-		87 53 2A 00 54 50 07 02 42 41 59 20 49 2F 4F 20
+		85 05 2A 00 01
+	Strings:
+		KHOIHGIUCCHHII
+
+Handle 0x002B, DMI type 135, 83 bytes
+OEM-specific Type
+	Header and Data:
+		87 53 2B 00 54 50 07 02 42 41 59 20 49 2F 4F 20
 		04 00 01 01 40 00 17 00 06 00 00 00 00 01 00 04
 		00 00 00 00 00 00 01 01 FF 00 00 00 00 00 00 01
 		02 00 00 00 00 00 00 00 01 03 02 00 00 00 00 00
 		00 01 04 04 00 00 00 00 00 00 01 05 FF 00 00 00
 		00 00 00
-
-Handle 0x002B, DMI type 133, 5 bytes
-OEM-specific Type
-	Header and Data:
-		85 05 2B 00 01
-	Strings:
-		KHOIHGIUCCHHII
 
 Handle 0x002C, DMI type 130, 20 bytes
 OEM-specific Type
@@ -504,7 +504,7 @@ OEM-specific Type
 Handle 0x002D, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 2D 00 35 00 00 00 0B 00 00 00 00 00 0A 00
+		83 40 2D 00 35 00 00 00 0B 00 00 00 00 00 0C 00
 		F8 00 50 A1 00 00 00 00 09 C0 00 00 08 00 0B 00
 		45 0F 56 00 00 00 00 00 FE 00 B7 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
@@ -513,7 +513,7 @@ Handle 0x002E, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 2E 00 03 01 00 02 01 00 00 00 02 00 00 00
-		00 E2 00 03 00 00 05 00 00 00
+		00 F0 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -523,7 +523,7 @@ Handle 0x002F, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 2F 00 03 01 00 02 01 00 00 00 02 00 0B 00
-		00 0A 00 03 04 0B 08 56 45 0F
+		00 0C 00 03 04 0B 08 56 45 0F
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
@@ -659,7 +659,7 @@ Group Associations
 Handle 0x003E, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 3E 00 01 03 01 45 02 00 90 06 81 10 80 30
+		DB 51 3E 00 01 03 01 45 02 00 90 06 81 10 89 30
 		00 00 00 00 40 68 00 01 1F 00 00 C9 0A 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
