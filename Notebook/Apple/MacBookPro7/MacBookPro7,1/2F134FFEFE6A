@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 45 structures occupying 2017 bytes.
@@ -11,36 +11,6 @@ Processor Information
 	Family: Other
 	Manufacturer: Intel(R) Corporation
 	ID: 7A 06 01 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 23, Stepping 10
-	Flags:
-		FPU (Floating-point unit on-chip)
-		VME (Virtual mode extension)
-		DE (Debugging extension)
-		PSE (Page size extension)
-		TSC (Time stamp counter)
-		MSR (Model specific registers)
-		PAE (Physical address extension)
-		MCE (Machine check exception)
-		CX8 (CMPXCHG8 instruction supported)
-		APIC (On-chip APIC hardware supported)
-		SEP (Fast system call)
-		MTRR (Memory type range registers)
-		PGE (Page global enable)
-		MCA (Machine check architecture)
-		CMOV (Conditional move instruction supported)
-		PAT (Page attribute table)
-		PSE-36 (36-bit page size extension)
-		CLFSH (CLFLUSH instruction supported)
-		DS (Debug store)
-		ACPI (ACPI supported)
-		MMX (MMX technology supported)
-		FXSR (FXSAVE and FXSTOR instructions supported)
-		SSE (Streaming SIMD extensions)
-		SSE2 (Streaming SIMD extensions 2)
-		SS (Self-snoop)
-		HTT (Multi-threading)
-		TM (Thermal monitor supported)
-		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM)2 Duo CPU     P8600  @ 2.40GHz
 	Voltage: 1.6 V
 	External Clock: 266 MHz
@@ -94,36 +64,6 @@ Processor Information
 	Family: Other
 	Manufacturer: Intel(R) Corporation
 	ID: 7A 06 01 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 23, Stepping 10
-	Flags:
-		FPU (Floating-point unit on-chip)
-		VME (Virtual mode extension)
-		DE (Debugging extension)
-		PSE (Page size extension)
-		TSC (Time stamp counter)
-		MSR (Model specific registers)
-		PAE (Physical address extension)
-		MCE (Machine check exception)
-		CX8 (CMPXCHG8 instruction supported)
-		APIC (On-chip APIC hardware supported)
-		SEP (Fast system call)
-		MTRR (Memory type range registers)
-		PGE (Page global enable)
-		MCA (Machine check architecture)
-		CMOV (Conditional move instruction supported)
-		PAT (Page attribute table)
-		PSE-36 (36-bit page size extension)
-		CLFSH (CLFLUSH instruction supported)
-		DS (Debug store)
-		ACPI (ACPI supported)
-		MMX (MMX technology supported)
-		FXSR (FXSAVE and FXSTOR instructions supported)
-		SSE (Streaming SIMD extensions)
-		SSE2 (Streaming SIMD extensions 2)
-		SS (Self-snoop)
-		HTT (Multi-threading)
-		TM (Thermal monitor supported)
-		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM)2 Duo CPU     P8600  @ 2.40GHz
 	Voltage: 1.6 V
 	External Clock: 266 MHz
@@ -182,8 +122,8 @@ Physical Memory Array
 Handle 0x0007, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x0027FFFFFFF
+	Range Size: 10 GB
 	Physical Array Handle: 0x0006
 	Partition Width: 2
 
@@ -226,9 +166,9 @@ Handle 0x000A, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0006
 	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: 65282 bits
-	Size: 4 GB
+	Total Width: 2 bits
+	Data Width: 65284 bits
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -236,26 +176,26 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1067 MT/s
-	Manufacturer: 0x80CE
+	Manufacturer: 0x80AD
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 0x4D34373142353237334348302D434B302020
+	Part Number: 0x484D54343147533642465238412D50422020
 
 Handle 0x000B, DMI type 130, 186 bytes
 OEM-specific Type
 	Header and Data:
-		82 BA 0B 00 0A 00 00 00 B0 00 92 10 0B 03 03 19
-		00 09 03 52 01 08 0A 00 FE 00 69 78 69 30 69 11
-		18 81 00 05 3C 3C 00 F0 83 01 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 0F 11 45 00 00 00 00 00 00 00
+		82 BA 0B 00 0A 00 00 00 B0 00 92 13 0B 03 04 21
+		02 09 03 52 01 08 0A 00 FE 00 69 78 69 30 69 11
+		18 81 20 08 3C 3C 00 F0 83 01 00 00 00 00 00 00
+		00 00 00 88 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 0F 11 65 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80
-		CE 03 12 36 E1 F4 E3 5A 3A 86 4D 34 37 31 42 35
-		32 37 33 43 48 30 2D 43 4B 30 20 20 00 00 80 CE
-		00 00 00 4B 30 4E 35 30 30 30 01 00 01 00 00 00
-		00 00 00 00 00 00 00 00 E1 06
+		AD 01 15 19 02 CE E1 AB 77 80 48 4D 54 34 31 47
+		53 36 42 46 52 38 41 2D 50 42 20 20 4E 30 80 AD
+		00 54 56 35 35 4E 30 30 35 30 32 30 36 00 01 11
+		11 00 00 00 00 22 00 00 43 C0
 
 Handle 0x000C, DMI type 20, 19 bytes
 Memory Device Mapped Address
@@ -282,8 +222,8 @@ Memory Device Mapped Address
 Handle 0x000E, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x0027FFFFFFF
+	Range Size: 6 GB
 	Physical Device Handle: 0x000A
 	Memory Array Mapped Address Handle: 0x0007
 	Partition Row Position: Unknown
@@ -464,7 +404,8 @@ Port Connector Information
 Handle 0x0021, DMI type 9, 13 bytes
 System Slot Information
 	Designation: AirPort
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 3

@@ -1,7 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-35 structures occupying 1559 bytes.
+35 structures occupying 1560 bytes.
 Table at 0x000E0840.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 02/21/2012
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -288,9 +288,9 @@ Processor Information
 		PBE (Pending break enabled)
 	Version: Intel(R) Atom(TM) CPU N2800   @ 1.86GHz
 	Voltage: 0.8 V
-	External Clock: 132 MHz
-	Max Speed: 1860 MHz
-	Current Speed: 1848 MHz
+	External Clock: 133 MHz
+	Max Speed: 1868 MHz
+	Current Speed: 1862 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x001A
@@ -372,7 +372,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM1
@@ -380,17 +380,17 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1066 MT/s
-	Manufacturer: Elpida
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: EBJ20UF8BCS0-DJ-  
+	Part Number: M471B5273DH0-CH9  
 	Rank: Unknown
 
 Handle 0x001F, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: Unknown
@@ -398,8 +398,8 @@ Memory Device Mapped Address
 Handle 0x0020, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x001C
 	Partition Width: 2
 

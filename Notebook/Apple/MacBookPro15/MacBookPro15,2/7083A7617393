@@ -1,6 +1,6 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
-SMBIOS 3.1.1 present.
+SMBIOS 3.3.0 present.
 Table at 0x88ECD000.
 
 Handle 0x0000, DMI type 16, 23 bytes
@@ -8,7 +8,7 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 8 GB
+	Maximum Capacity: 16 GB
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
@@ -18,7 +18,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -26,10 +26,10 @@ Memory Device
 	Type: LPDDR3
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: Samsung
+	Manufacturer: SK Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: K4E6E304EC-EGCG   
+	Part Number: H9CCNNNCLGALAR-NVD
 	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
@@ -53,7 +53,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -61,10 +61,10 @@ Memory Device
 	Type: LPDDR3
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: Samsung
+	Manufacturer: SK Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: K4E6E304EC-EGCG   
+	Part Number: H9CCNNNCLGALAR-NVD
 	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
@@ -85,16 +85,16 @@ Memory Device
 Handle 0x0003, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0000
 	Partition Width: 2
 
 Handle 0x0004, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Apple Inc.
-	Version: 1715.81.2.0.0 (iBridge: 19.16.10744.0.0,0)
-	Release Date: 01/06/2022
+	Version: 2020.61.1.0.0 (iBridge: 21.16.2057.0.0,0)
+	Release Date: 11/11/2023
 	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
@@ -234,7 +234,7 @@ System Slot Information
 
 Handle 0x0011, DMI type 11, 5 bytes
 OEM Strings
-	String 1: Apple ROM Version.  BIOS ID:      MBP152.88Z.F000.B00.2201062037.  Model:        MBP152.  EFI Version:  1715.81.2.0.0.  Built by:     root@bb-g9-pdb99.  Date:         Thu Jan  6 20:37:40 2022.  Revision:     1715.81.2 (B&I).  ROM Version:  F000_B00.  Build Type:   Official Build, RELEASE.  Compiler:     clang-1300.0.29.10.
+	String 1: Apple ROM Version.  BIOS ID:      MBP152.88Z.F000.B00.2311111812.  Model:        MBP152.  EFI Version:  2020.61.1.0.0.  Built by:     root@9d5k8.  Date:         Sat Nov 11 18:12:48 2023.  Revision:     2020.61.1 (B&I).  ROM Version:  F000_B00.  Build Type:   Official Build, RELEASE.  Compiler:     clang-1500.1.0.2.2.
 
 Handle 0x0012, DMI type 41, 11 bytes
 Onboard Device
@@ -288,7 +288,7 @@ System Boot Information
 Handle 0x0018, DMI type 131, 6 bytes
 OEM-specific Type
 	Header and Data:
-		83 06 18 00 09 06
+		83 06 18 00 09 07
 
 Handle 0x0019, DMI type 133, 12 bytes
 OEM-specific Type
@@ -299,7 +299,7 @@ Handle 0x001B, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 1B 00 03 01 00 07 00 50 40 00 02 00 00 00
-		00 EC 00 03 00 FF FF FF FF FF
+		00 F4 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -402,13 +402,13 @@ Cache Information
 	Speed: Unknown
 	Error Correction Type: Multi-bit ECC
 	System Type: Unified
-	Associativity: 12-way Set-associative
+	Associativity: 16-way Set-associative
 
 Handle 0x0022, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: U3E1
 	Type: Central Processor
-	Family: Core i5
+	Family: Core i7
 	Manufacturer: Intel(R) Corporation
 	ID: EA 06 08 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 142, Stepping 10
@@ -441,11 +441,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i5-8279U CPU @ 2.40GHz
-	Voltage: 0.7 V
+	Version: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
+	Voltage: 0.8 V
 	External Clock: 100 MHz
-	Max Speed: 2400 MHz
-	Current Speed: 2376 MHz
+	Max Speed: 2700 MHz
+	Current Speed: 2574 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1528
 	L1 Cache Handle: 0x001F
@@ -484,7 +484,7 @@ Group Associations
 Handle 0x0024, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 24 00 01 04 01 45 02 00 90 06 01 10 86 10
+		DB 6A 24 00 01 04 01 45 02 00 90 06 01 10 80 10
 		00 00 00 00 40 00 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

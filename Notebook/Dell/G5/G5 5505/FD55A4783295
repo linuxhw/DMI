@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0xCA705000.
+Table at 0xCA704000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.5.0
-	Release Date: 10/27/2020
+	Version: 1.20.0
+	Release Date: 02/06/2024
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 8 MB
@@ -40,7 +40,7 @@ Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Dell Inc.
 	Product Name: G5 5505
-	Version: 1.5.0
+	Version: 1.20.0
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -67,7 +67,7 @@ Chassis Information
 	Manufacturer: Dell Inc.
 	Type: Notebook
 	Lock: Not Present
-	Version: 1.5.0
+	Version: 1.20.0
 	Serial Number: --
 	Asset Tag: --
 	380AD15AAB729CF25C4397C21C466ACE
@@ -299,7 +299,8 @@ Port Connector Information
 Handle 0x0016, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J10
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -312,7 +313,8 @@ System Slot Information
 Handle 0x0017, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3600
-	Type: x8 PCI Express x8
+	Type: PCI Express x8
+	Data Bus Width: 8x or x8
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -325,7 +327,8 @@ System Slot Information
 Handle 0x0018, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3707
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -338,7 +341,8 @@ System Slot Information
 Handle 0x0019, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3700
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -351,7 +355,8 @@ System Slot Information
 Handle 0x001A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3702
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -364,7 +369,8 @@ System Slot Information
 Handle 0x001B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3703
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -377,7 +383,8 @@ System Slot Information
 Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3701
-	Type: x1 Other
+	Type: Other
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	Characteristics:
@@ -403,7 +410,7 @@ OEM Strings
 	String 7: 7[]
 	String 8: 8[]
 	String 9: 9[]
-	String 10: 10[1.5.0]
+	String 10: 10[1.20.0]
 	String 11: 11[]
 	String 12: 12[]
 	String 13: 13[P89F]

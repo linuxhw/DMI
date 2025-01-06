@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 62 structures occupying 2936 bytes.
@@ -15,7 +15,7 @@ Processor Information
 	Voltage: 0.0 V
 	External Clock: Unknown
 	Max Speed: 2700 MHz
-	Current Speed: 2724 MHz
+	Current Speed: 2722 MHz
 	Status: Populated, Enabled
 	Upgrade: ZIF Socket
 	L1 Cache Handle: 0x0002
@@ -100,7 +100,7 @@ Processor Information
 	Voltage: 0.0 V
 	External Clock: Unknown
 	Max Speed: 2700 MHz
-	Current Speed: 2718 MHz
+	Current Speed: 2727 MHz
 	Status: Populated, Enabled
 	Upgrade: ZIF Socket
 	L1 Cache Handle: 0x0007
@@ -185,7 +185,7 @@ Processor Information
 	Voltage: 0.0 V
 	External Clock: Unknown
 	Max Speed: 2700 MHz
-	Current Speed: 2740 MHz
+	Current Speed: 2721 MHz
 	Status: Populated, Enabled
 	Upgrade: ZIF Socket
 	L1 Cache Handle: 0x000C
@@ -270,7 +270,7 @@ Processor Information
 	Voltage: 0.0 V
 	External Clock: Unknown
 	Max Speed: 2700 MHz
-	Current Speed: 2730 MHz
+	Current Speed: 2569 MHz
 	Status: Populated, Enabled
 	Upgrade: ZIF Socket
 	L1 Cache Handle: 0x0011
@@ -356,18 +356,18 @@ Physical Memory Array
 Handle 0x0015, DMI type 130, 186 bytes
 OEM-specific Type
 	Header and Data:
-		82 BA 15 00 16 00 00 00 B0 00 92 10 0B 03 03 19
-		00 09 03 52 01 08 0C 00 3E 00 69 78 69 30 69 11
-		20 89 00 05 3C 3C 00 F0 83 01 00 00 00 00 00 00
+		82 BA 15 00 16 00 00 00 B0 00 92 12 0B 03 04 21
+		00 09 03 52 01 08 0A 00 FE 00 69 78 69 30 69 11
+		18 81 20 08 3C 3C 00 F0 83 01 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 0F 11 45 00 00 00 00 00 00 00
+		00 00 00 00 00 00 0F 11 65 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01
-		98 01 00 00 00 00 00 00 80 51 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 98
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80
+		AD 01 23 20 29 1D E6 B0 EA 6C 48 4D 54 34 31 47
+		53 36 42 46 52 38 43 2D 50 42 20 20 4E 30 80 AD
+		00 54 49 32 43 4E 30 34 37 36 4E 30 31 00 01 03
+		02 05 09 03 03 02 00 00 00 00
 
 Handle 0x0016, DMI type 17, 27 bytes
 Memory Device
@@ -375,34 +375,34 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: Unknown
 	Data Width: Unknown
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: 0x0198
+	Speed: 1600 MT/s
+	Manufacturer: 0x80AD
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 0x000000000000000000000000000000000000
+	Part Number: 0x484D54343147533642465238432D50422020
 
 Handle 0x0017, DMI type 130, 186 bytes
 OEM-specific Type
 	Header and Data:
-		82 BA 17 00 18 00 00 00 B0 00 92 11 0B 03 03 19
+		82 BA 17 00 18 00 00 00 B0 00 92 12 0B 03 04 21
 		00 09 03 52 01 08 0A 00 FE 00 69 78 69 30 69 11
-		18 81 00 05 3C 3C 00 F0 83 05 00 00 00 00 00 00
+		18 81 20 08 3C 3C 00 F0 83 01 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 0F 11 05 00 00 00 00 00 00 00
+		00 00 00 00 00 00 0F 11 65 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80
-		AD 01 12 30 1D 82 AB B9 22 C0 48 4D 54 33 35 31
-		53 36 43 46 52 38 43 2D 50 42 20 20 4E 30 80 AD
-		00 54 48 32 37 50 38 36 32 35 32 30 31 00 01 03
-		02 04 03 03 03 02 00 00 00 00
+		AD 01 23 20 29 1D E6 AF EA 6C 48 4D 54 34 31 47
+		53 36 42 46 52 38 43 2D 50 42 20 20 4E 30 80 AD
+		00 54 49 32 43 4E 30 34 37 36 4E 30 31 00 01 03
+		02 05 09 03 03 02 00 00 00 00
 
 Handle 0x0018, DMI type 17, 27 bytes
 Memory Device
@@ -410,24 +410,24 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: Unknown
 	Data Width: Unknown
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: 0x80AD
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 0x484D54333531533643465238432D50422020
+	Part Number: 0x484D54343147533642465238432D50422020
 
 Handle 0x0019, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0014
 	Partition Width: 0
 
@@ -615,7 +615,8 @@ Port Connector Information
 Handle 0x002D, DMI type 9, 13 bytes
 System Slot Information
 	Designation: AirPort
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 0
@@ -627,7 +628,8 @@ System Slot Information
 Handle 0x002E, DMI type 9, 13 bytes
 System Slot Information
 	Designation: ExpressCard
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -639,7 +641,8 @@ System Slot Information
 Handle 0x002F, DMI type 9, 13 bytes
 System Slot Information
 	Designation: Thunderbolt Slot 1
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 2
@@ -652,7 +655,8 @@ System Slot Information
 Handle 0x0030, DMI type 9, 13 bytes
 System Slot Information
 	Designation: Thunderbolt Slot 2
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 3
@@ -665,7 +669,8 @@ System Slot Information
 Handle 0x0031, DMI type 9, 13 bytes
 System Slot Information
 	Designation: Thunderbolt Slot 3
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 4
@@ -678,7 +683,8 @@ System Slot Information
 Handle 0x0032, DMI type 9, 13 bytes
 System Slot Information
 	Designation: Thunderbolt Slot 4
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 5

@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x79F05000.
@@ -305,7 +305,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM0
@@ -351,7 +351,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM1
@@ -404,27 +404,6 @@ Memory Device
 	Bank Locator: A1_BANK2
 	Type: Unknown
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer2
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Array1_PartNumber2
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
-	Firmware Version: v1.0
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x002B, DMI type 17, 84 bytes
 Memory Device
@@ -439,27 +418,6 @@ Memory Device
 	Bank Locator: A1_BANK3
 	Type: Unknown
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer3
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Array1_PartNumber3
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: Unknown
-	Memory Operating Mode Capability: Unknown
-	Firmware Version: v1.0
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x002D, DMI type 32, 20 bytes
 System Boot Information
@@ -468,8 +426,10 @@ System Boot Information
 Handle 0x002E, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: CTNI
-	Specification Version: 2.0	Firmware Revision: 403.0
-	Description: INTEL	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 403.0
+	Description: INTEL
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -479,8 +439,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 319226965 kB
-	Maximum Size: 50728496 kB
+	Installed Size: 2020 GB
+	Maximum Size: 76931 GB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -495,8 +455,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 86524030 MB
-	Maximum Size: 3440766 MB
+	Installed Size: 25579 GB
+	Maximum Size: 52409 GB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -812,6 +772,8 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:00:13.0
+	Data Bus Width: 10
+	Peer Devices: 0
 
 Handle 0x0055, DMI type 9, 19 bytes
 System Slot Information
@@ -825,6 +787,8 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:00:14.1
+	Data Bus Width: 9
+	Peer Devices: 0
 
 Handle 0x0056, DMI type 127, 4 bytes
 End Of Table

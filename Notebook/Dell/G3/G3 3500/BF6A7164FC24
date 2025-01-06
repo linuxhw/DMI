@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
 91 structures occupying 5932 bytes.
@@ -466,7 +466,8 @@ Port Connector Information
 Handle 0x0900, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 0
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -474,13 +475,15 @@ System Slot Information
 		3.3 V is provided
 		PME signal is supported
 	Bus Address: 0000:00:1d.0
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0901, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -488,13 +491,15 @@ System Slot Information
 		3.3 V is provided
 		PME signal is supported
 	Bus Address: 0000:00:1d.6
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0902, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 2
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Long
 	ID: 2
@@ -502,13 +507,15 @@ System Slot Information
 		3.3 V is provided
 		PME signal is supported
 	Bus Address: 0000:00:1b.4
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0903, DMI type 9, 24 bytes
 System Slot Information
 	Designation: CNVi: WiFi
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Long
 	ID: 3
@@ -516,8 +523,9 @@ System Slot Information
 		3.3 V is provided
 		PME signal is supported
 	Bus Address: 0000:00:14.3
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0B00, DMI type 11, 5 bytes
 OEM Strings
@@ -884,7 +892,7 @@ OEM-specific Type
 Handle 0xCB00, DMI type 203, 106 bytes
 OEM-specific Type
 	Header and Data:
-		CB 6A 00 CB 01 04 01 45 02 00 90 06 01 10 80 20
+		CB 6A 00 CB 01 04 01 45 02 00 90 06 01 10 86 20
 		00 00 00 00 40 00 00 01 1F 00 00 C9 03 C0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

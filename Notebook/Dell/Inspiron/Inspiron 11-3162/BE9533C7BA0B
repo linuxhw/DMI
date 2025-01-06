@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 49 structures occupying 2849 bytes.
@@ -139,7 +139,7 @@ Base Board Information
 	Version: A00
 	Serial Number: --
 	Asset Tag: --
-	...
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: To be filled by O.E.M.
@@ -155,7 +155,7 @@ Chassis Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -362,8 +362,8 @@ Physical Memory Array
 Handle 0x001B, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x001A
 	Partition Width: 2
 
@@ -373,7 +373,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM0
@@ -381,12 +381,12 @@ Memory Device
 	Type: DDR3
 	Type Detail: Unknown
 	Speed: 1600 MT/s
-	Manufacturer: 04CB00000000
+	Manufacturer: 800100008001
 	Serial Number: --
 	Asset Tag: --
-	Part Number: AM1L16BC4R1-B1GS  
-	Rank: 1
-	Configured Clock Speed: 1066 MT/s
+	Part Number: R538G1601S2SL     
+	Rank: 2
+	Configured Memory Speed: 1066 MT/s
 	Minimum Voltage: 1.35 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.35 V
@@ -394,8 +394,8 @@ Memory Device
 Handle 0x001D, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x001C
 	Memory Array Mapped Address Handle: 0x001B
 	Partition Row Position: 1
@@ -466,8 +466,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown

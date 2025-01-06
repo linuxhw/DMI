@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 45 structures occupying 1979 bytes.
@@ -158,7 +158,7 @@ Processor Information
 	Voltage: 3.3 V
 	External Clock: 166 MHz
 	Max Speed: 1500 MHz
-	Current Speed: 1125 MHz
+	Current Speed: 1500 MHz
 	Status: Populated, Enabled
 	Upgrade: None
 	L1 Cache Handle: 0x0700
@@ -292,11 +292,11 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR
 	Type Detail: Synchronous
-	Speed: 667 MT/s
-	Manufacturer: 7F7F7F7F7F9B0000
+	Speed: 800 MT/s
+	Manufacturer: AD00000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT25664AC667.K16F 
+	Part Number: HYMP125S64CP8-S6  
 
 Handle 0x1101, DMI type 17, 27 bytes
 Memory Device
@@ -311,11 +311,11 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR
 	Type Detail: Synchronous
-	Speed: 800 MT/s
-	Manufacturer: AD00000000000000
+	Speed: 667 MT/s
+	Manufacturer: 7F7F7F7F7F9B0000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HYMP125S64CP8-S6  
+	Part Number: CT25664AC667.K16F 
 
 Handle 0x1301, DMI type 19, 15 bytes
 Memory Array Mapped Address
@@ -362,14 +362,14 @@ Built-in Pointing Device
 Handle 0x1600, DMI type 22, 26 bytes
 Portable Battery
 	Location: Sys. Battery Bay
-	Manufacturer: PAN             
-	Name: DELL 00         
-	Design Capacity: 44000 mWh
+	Manufacturer: Panasonic       
+	Name: DELL MN12781    
+	Design Capacity: 51000 mWh
 	Design Voltage: 11100 mV
 	SBDS Version: 1.0
-	Maximum Error: 8%
+	Maximum Error: 2%
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 2012-11-23
+	SBDS Manufacture Date: 2008-01-16
 	SBDS Chemistry: LION            
 	OEM-specific Information: 0x00000001
 
@@ -393,7 +393,7 @@ Temperature Probe
 
 Handle 0x2000, DMI type 32, 11 bytes
 System Boot Information
-	Status: Firmware-detected hardware failure
+	Status: No errors detected
 
 Handle 0xB000, DMI type 176, 5 bytes
 OEM-specific Type
