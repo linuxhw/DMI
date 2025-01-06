@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 91 structures occupying 4056 bytes.
@@ -600,33 +600,12 @@ Handle 0x003F, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x003E
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM3
-	Bank Locator: Not Specified
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-
-Handle 0x0040, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x003E
-	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: DIMM1
+	Locator: DIMM3
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
@@ -637,6 +616,20 @@ Memory Device
 	Part Number: HMT451U6AFR8C-PB  
 	Rank: 1
 	Configured Memory Speed: 1600 MT/s
+
+Handle 0x0041, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM1
+	Bank Locator: Not Specified
+	Type: Unknown
+	Type Detail: None
 
 Handle 0x0042, DMI type 17, 34 bytes
 Memory Device
@@ -672,13 +665,6 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
 
 Handle 0x0045, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -688,12 +674,12 @@ Memory Array Mapped Address
 	Physical Array Handle: 0x003E
 	Partition Width: 4
 
-Handle 0x0041, DMI type 20, 19 bytes
+Handle 0x0040, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0040
+	Physical Device Handle: 0x003F
 	Memory Array Mapped Address Handle: 0x0045
 	Partition Row Position: 1
 	Interleave Position: 1
@@ -701,8 +687,8 @@ Memory Device Mapped Address
 
 Handle 0x0043, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0042
 	Memory Array Mapped Address Handle: 0x0045

@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-85 structures occupying 3829 bytes.
+87 structures occupying 3882 bytes.
 Table at 0x000EC350.
 
 Handle 0xDA00, DMI type 218, 251 bytes
@@ -526,7 +526,8 @@ Port Connector Information
 Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: X16
-	Type: x16 PCI Express 2
+	Type: PCI Express 2
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 1
@@ -539,7 +540,8 @@ System Slot Information
 Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: X1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -552,7 +554,8 @@ System Slot Information
 Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -565,7 +568,8 @@ System Slot Information
 Handle 0x0026, DMI type 9, 17 bytes
 System Slot Information
 	Designation: X4
-	Type: x4 PCI Express
+	Type: PCI Express
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Short
 	ID: 4
@@ -636,17 +640,24 @@ Handle 0x003E, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x003D
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: Not Specified
-	Type: Unknown
-	Type Detail: None
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: 0443
+	Serial Number: --
+	Asset Tag: --
+	Part Number: RMR5030EF68F9W1600
+	Rank: 1
+	Configured Memory Speed: 1333 MT/s
 
-Handle 0x003F, DMI type 17, 34 bytes
+Handle 0x0040, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x003D
 	Error Information Handle: Not Provided
@@ -659,29 +670,36 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: Nanya
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NT4GC64B88B1NF-DI 
-	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Part Number: NT4GC64B8HG0NF-CG 
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
-Handle 0x0041, DMI type 17, 34 bytes
+Handle 0x0042, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x003D
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4
 	Bank Locator: Not Specified
-	Type: Unknown
-	Type Detail: None
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Nanya
+	Serial Number: --
+	Asset Tag: --
+	Part Number: NT4GC64B8HG0NF-DI 
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
-Handle 0x0042, DMI type 17, 34 bytes
+Handle 0x0044, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x003D
 	Error Information Handle: Not Provided
@@ -694,29 +712,40 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Hynix/Hyundai
+	Speed: 1333 MT/s
+	Manufacturer: Nanya
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT451U6AFR8C-PB  
-	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Part Number: NT4GC64B8HG0NF-CG 
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
-Handle 0x0044, DMI type 19, 31 bytes
+Handle 0x0046, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x003D
 	Partition Width: 4
 
-Handle 0x0040, DMI type 20, 19 bytes
+Handle 0x003F, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x003F
-	Memory Array Mapped Address Handle: 0x0044
+	Physical Device Handle: 0x003E
+	Memory Array Mapped Address Handle: 0x0046
+	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 2
+
+Handle 0x0041, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0040
+	Memory Array Mapped Address Handle: 0x0046
 	Partition Row Position: 1
 	Interleave Position: 1
 	Interleaved Data Depth: 2
@@ -727,7 +756,18 @@ Memory Device Mapped Address
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0042
-	Memory Array Mapped Address Handle: 0x0044
+	Memory Array Mapped Address Handle: 0x0046
+	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x0045, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00300000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0044
+	Memory Array Mapped Address Handle: 0x0046
 	Partition Row Position: 1
 	Interleave Position: 2
 	Interleaved Data Depth: 2

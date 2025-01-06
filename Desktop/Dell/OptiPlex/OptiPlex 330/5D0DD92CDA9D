@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 73 structures occupying 2392 bytes.
@@ -27,7 +27,7 @@ BIOS Information
 	Release Date: 02/18/2011
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -58,7 +58,7 @@ System Information
 	Version: Not Specified
 	Serial Number: --
 	UUID: --
-	Wake-up Type: APM Timer
+	Wake-up Type: Power Switch
 	SKU Number: Not Specified
 	Family: Not Specified
 
@@ -77,7 +77,7 @@ Chassis Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -160,8 +160,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -398,7 +398,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFF01000
 	Status: Valid, Not Full
-	Change Token: 0x00000083
+	Change Token: 0x0000009C
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -423,7 +423,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_1
@@ -442,48 +442,33 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_2
 	Bank Locator: Not Specified
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 800 MT/s
-	Manufacturer: 7F7F7F7F3B000000
-	Serial Number: --
-	Asset Tag: --
-	Part Number: ARM Ltd:R00MM0M006
 
 Handle 0x1300, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Array Handle: 0x1000
 	Partition Width: 1
 
 Handle 0x1400, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x1100
 	Memory Array Mapped Address Handle: 0x1300
 	Partition Row Position: 1
-	Interleave Position: 1
-	Interleaved Data Depth: 1
 
-Handle 0x1401, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x1101
-	Memory Array Mapped Address Handle: 0x1300
-	Partition Row Position: 1
-	Interleave Position: 2
-	Interleaved Data Depth: 1
+Handle 0x1401, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x1410, DMI type 126, 19 bytes
 Inactive
@@ -496,7 +481,7 @@ Hardware Security
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x1900, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x1B10, DMI type 27, 12 bytes

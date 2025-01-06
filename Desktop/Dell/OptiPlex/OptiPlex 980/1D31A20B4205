@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 87 structures occupying 3380 bytes.
@@ -143,7 +143,7 @@ System Information
 	Version: Not Specified
 	Serial Number: --
 	UUID: --
-	Wake-up Type: APM Timer
+	Wake-up Type: Power Switch
 	SKU Number: Not Specified
 	Family: Not Specified
 
@@ -435,7 +435,8 @@ Port Connector Information
 Handle 0x090A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT1
-	Type: x1 Proprietary
+	Type: Proprietary
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Long
 	Characteristics:
@@ -448,7 +449,8 @@ Inactive
 Handle 0x0902, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT2  
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 2
@@ -520,7 +522,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFD01000
 	Status: Valid, Full
-	Change Token: 0x00000147
+	Change Token: 0x00000293
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error

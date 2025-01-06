@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.5
+Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 82 structures occupying 2993 bytes.
 Table at 0x000F0450.
@@ -98,7 +99,7 @@ BIOS Information
 	Release Date: 09/26/2008
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -129,7 +130,7 @@ System Information
 	Version: Not Specified
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: APM Timer
 	SKU Number: Not Specified
 	Family: Not Specified
 
@@ -148,7 +149,7 @@ Chassis Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -231,8 +232,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -457,8 +458,8 @@ System Event Log
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFE81000
-	Status: Valid, Not Full
-	Change Token: 0x00000085
+	Status: Valid, Full
+	Change Token: 0x00000104
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -483,14 +484,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_1
 	Bank Locator: Not Specified
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 800 MHz
+	Speed: 800 MT/s
 	Manufacturer: CE00000000000000
 	Serial Number: --
 	Asset Tag: --
@@ -502,14 +503,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_3
 	Bank Locator: Not Specified
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 800 MHz
+	Speed: 800 MT/s
 	Manufacturer: CE00000000000000
 	Serial Number: --
 	Asset Tag: --
@@ -521,14 +522,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_2
 	Bank Locator: Not Specified
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 800 MHz
+	Speed: 800 MT/s
 	Manufacturer: CE00000000000000
 	Serial Number: --
 	Asset Tag: --
@@ -540,14 +541,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_4
 	Bank Locator: Not Specified
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 800 MHz
+	Speed: 800 MT/s
 	Manufacturer: AD00000000000000
 	Serial Number: --
 	Asset Tag: --
@@ -616,7 +617,7 @@ Hardware Security
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x1900, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x1B10, DMI type 27, 12 bytes

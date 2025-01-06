@@ -468,7 +468,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFE01000
 	Status: Valid, Not Full
-	Change Token: 0x00000070
+	Change Token: 0x000003EA
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -512,7 +512,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_3
@@ -520,10 +520,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1066 MT/s
-	Manufacturer: FFFFFFFFFFFF    
+	Manufacturer: 80CE000080CE    
 	Serial Number: --
 	Asset Tag: --
-	Part Number:                   
+	Part Number: M378B5273DH0-CH9  
 
 Handle 0x1102, DMI type 17, 27 bytes
 Memory Device
@@ -566,30 +566,36 @@ Memory Device
 Handle 0x1300, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FDFFFFFF
-	Range Size: 4064 MB
+	Ending Address: 0x001FEFFFFFF
+	Range Size: 8176 MB
 	Physical Array Handle: 0x1000
 	Partition Width: 1
 
 Handle 0x1400, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FDFFFFFF
-	Range Size: 4064 MB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x1100
 	Memory Array Mapped Address Handle: 0x1300
 	Partition Row Position: 1
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x1401, DMI type 126, 19 bytes
-Inactive
+Handle 0x1401, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FEFFFFFF
+	Range Size: 4080 MB
+	Physical Device Handle: 0x1101
+	Memory Array Mapped Address Handle: 0x1300
+	Partition Row Position: 1
 
 Handle 0x1402, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FDFFFFFF
-	Range Size: 4064 MB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x1102
 	Memory Array Mapped Address Handle: 0x1300
 	Partition Row Position: 1
@@ -657,7 +663,7 @@ OEM-specific Type
 Handle 0x8300, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 00 83 14 00 00 00 00 00 10 2E 05 00 00 00
+		83 40 00 83 35 00 00 00 00 00 10 2E 07 00 00 00
 		F8 00 14 3A 00 00 00 00 0D 00 00 00 02 00 05 00
 		FF 03 0A 00 01 00 01 02 C8 00 DE 10 00 00 00 00
 		00 00 00 00 DF 00 00 00 76 50 72 6F 00 00 00 00

@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-73 structures occupying 3023 bytes.
+73 structures occupying 3021 bytes.
 Table at 0x000F4250.
 
 Handle 0xDA00, DMI type 218, 251 bytes
@@ -580,7 +580,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -588,11 +588,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Kingston
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: K1N7HK-ELC        
-	Rank: 1
+	Part Number: M378B5273DH0-CH9  
+	Rank: 2
 
 Handle 0x0031, DMI type 17, 28 bytes
 Memory Device
@@ -600,7 +600,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -608,25 +608,25 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Kingston
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: K1N7HK-ELC        
-	Rank: 1
+	Part Number: M378B5273DH0-CH9  
+	Rank: 2
 
 Handle 0x0033, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x002E
 	Partition Width: 2
 
 Handle 0x0030, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x002F
 	Memory Array Mapped Address Handle: 0x0033
 	Partition Row Position: 1
@@ -635,9 +635,9 @@ Memory Device Mapped Address
 
 Handle 0x0032, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0031
 	Memory Array Mapped Address Handle: 0x0033
 	Partition Row Position: 1

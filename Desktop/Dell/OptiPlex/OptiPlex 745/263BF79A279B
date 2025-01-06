@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.3 present.
 77 structures occupying 2787 bytes.
@@ -58,7 +58,7 @@ System Information
 	Version: Not Specified
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: APM Timer
 	SKU Number: Not Specified
 	Family: Not Specified
 
@@ -310,7 +310,8 @@ Port Connector Information
 Handle 0x090A, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT1
-	Type: x1 Proprietary
+	Type: Proprietary
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	Characteristics:
@@ -322,7 +323,8 @@ Inactive
 Handle 0x0902, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT2  
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 2
@@ -334,7 +336,8 @@ System Slot Information
 Handle 0x0903, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT3  
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 3
@@ -346,7 +349,8 @@ System Slot Information
 Handle 0x0904, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT4  
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 4
@@ -404,7 +408,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFF01000
 	Status: Valid, Not Full
-	Change Token: 0x00000028
+	Change Token: 0x00000029
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -493,11 +497,6 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR
 	Type Detail: Synchronous
-	Speed: 533 MT/s
-	Manufacturer: FFFFFFFFFFFFFFFF
-	Serial Number: --
-	Asset Tag: --
-	Part Number:                   
 
 Handle 0x1301, DMI type 19, 15 bytes
 Memory Array Mapped Address

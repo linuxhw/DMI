@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 75 structures occupying 2573 bytes.
@@ -93,7 +93,7 @@ BIOS Information
 	Release Date: 06/13/2012
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 2 MB
+	ROM Size: 2048 kB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -226,8 +226,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 3 MB
-	Maximum Size: 3 MB
+	Installed Size: 3072 kB
+	Maximum Size: 3072 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -453,7 +453,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFE01000
 	Status: Valid, Full
-	Change Token: 0x000000CB
+	Change Token: 0x000000CC
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -478,7 +478,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_1
@@ -497,7 +497,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_2
@@ -551,7 +551,7 @@ Hardware Security
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x1900, DMI type 25, 9 bytes
-System Power Controls
+	System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x1B10, DMI type 27, 12 bytes

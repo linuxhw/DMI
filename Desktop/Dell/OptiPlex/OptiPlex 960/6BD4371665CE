@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 82 structures occupying 3043 bytes.
@@ -102,7 +102,7 @@ BIOS Information
 	Release Date: 08/06/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -152,7 +152,7 @@ Chassis Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	...
+	F41CD6153DF9A03E5FB730CF14D557D5
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -235,8 +235,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -479,7 +479,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFE01000
 	Status: Valid, Full
-	Change Token: 0x000000F5
+	Change Token: 0x0000039D
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -504,7 +504,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_1
@@ -523,7 +523,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_3
@@ -531,10 +531,10 @@ Memory Device
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 667 MT/s
-	Manufacturer: 7F7F7F7F7F9BFFFF
+	Manufacturer: 7F7F7F7F7F020000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: RM25664AA800.16FG 
+	Part Number: PSD22G80026       
 
 Handle 0x1102, DMI type 17, 27 bytes
 Memory Device
@@ -542,7 +542,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_2
@@ -553,7 +553,7 @@ Memory Device
 	Manufacturer: 0000000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number:                   
+	Part Number: LEADMAX           
 
 Handle 0x1103, DMI type 17, 27 bytes
 Memory Device
@@ -561,7 +561,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_4
@@ -569,10 +569,10 @@ Memory Device
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 667 MT/s
-	Manufacturer: 0000000000000000
+	Manufacturer: 7F7F7F7F7F9BFFFF
 	Serial Number: --
 	Asset Tag: --
-	Part Number: LEADMAX           
+	Part Number: RM25664AA800.16FG 
 
 Handle 0x1300, DMI type 19, 15 bytes
 Memory Array Mapped Address
@@ -637,7 +637,7 @@ Hardware Security
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x1900, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x1B10, DMI type 27, 12 bytes
@@ -684,7 +684,7 @@ OEM-specific Type
 Handle 0x8300, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 00 83 14 00 00 00 00 00 10 2E 05 00 00 00
+		83 40 00 83 35 00 00 00 00 00 10 2E 05 00 00 00
 		F8 00 14 3A 00 00 00 00 0D 00 00 00 02 00 05 00
 		18 04 47 00 01 00 01 02 C8 00 DE 10 00 00 00 00
 		00 00 00 00 DF 00 00 00 76 50 72 6F 00 00 00 00

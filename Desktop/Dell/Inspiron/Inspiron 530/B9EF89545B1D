@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 50 structures occupying 1514 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 02/24/2009
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -114,7 +114,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Pentium(R) Dual-Core  CPU      E5200  @ 2.50GHz
-	Voltage: 0.0 V
+	Voltage: 1.2 V
 	External Clock: 200 MHz
 	Max Speed: 4000 MHz
 	Current Speed: 2500 MHz
@@ -216,8 +216,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: External
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -373,7 +373,8 @@ Port Connector Information
 Handle 0x001E, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI1
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -384,7 +385,8 @@ System Slot Information
 Handle 0x001F, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI2
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: In Use
 	Length: Long
 	ID: 2
@@ -395,7 +397,8 @@ System Slot Information
 Handle 0x0020, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI3
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 3
@@ -406,7 +409,8 @@ System Slot Information
 Handle 0x0021, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 6
@@ -442,7 +446,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -461,7 +465,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -480,7 +484,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
@@ -499,7 +503,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4

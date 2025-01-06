@@ -1,8 +1,8 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-72 structures occupying 2954 bytes.
-Table at 0x000F3F70.
+73 structures occupying 2987 bytes.
+Table at 0x000F3F50.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -89,7 +89,7 @@ BIOS Information
 	Release Date: 05/27/2012
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -248,8 +248,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -579,11 +579,31 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1067 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M378B5273CH0-CH9  
+	Rank: 2
+
+Handle 0x0031, DMI type 17, 28 bytes
+Memory Device
+	Array Handle: 0x002E
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelB-DIMM0
+	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1067 MT/s
@@ -593,31 +613,11 @@ Memory Device
 	Part Number: HMT351U6CFR8C-H9  
 	Rank: 2
 
-Handle 0x0031, DMI type 17, 28 bytes
-Memory Device
-	Array Handle: 0x002E
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: ChannelB-DIMM0
-	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-
-Handle 0x0032, DMI type 19, 15 bytes
+Handle 0x0033, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x002E
 	Partition Width: 2
 
@@ -627,8 +627,21 @@ Memory Device Mapped Address
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x002F
-	Memory Array Mapped Address Handle: 0x0032
+	Memory Array Mapped Address Handle: 0x0033
 	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x0032, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0031
+	Memory Array Mapped Address Handle: 0x0033
+	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 1
 
 Handle 0x0034, DMI type 24, 5 bytes
 Hardware Security
@@ -638,7 +651,7 @@ Hardware Security
 	Front Panel Reset Status: Disabled
 
 Handle 0x0035, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x1B00, DMI type 27, 12 bytes

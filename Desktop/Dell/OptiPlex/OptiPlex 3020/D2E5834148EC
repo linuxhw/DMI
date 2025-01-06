@@ -539,31 +539,10 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM1
-	Bank Locator: Not Specified
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Kingston
-	Serial Number: --
-	Asset Tag: --
-	Part Number: K531R8-HYA        
-	Rank: 1
-	Configured Memory Speed: 1333 MT/s
-
-Handle 0x003A, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x0037
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
 	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: DIMM2
+	Locator: DIMM1
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
@@ -573,6 +552,27 @@ Memory Device
 	Asset Tag: --
 	Part Number: 99U5471-002.A00LF 
 	Rank: 2
+	Configured Memory Speed: 1333 MT/s
+
+Handle 0x003A, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x0037
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM2
+	Bank Locator: Not Specified
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
+	Serial Number: --
+	Asset Tag: --
+	Part Number: K531R8-HYA        
+	Rank: 1
 	Configured Memory Speed: 1333 MT/s
 
 Handle 0x003C, DMI type 19, 31 bytes
@@ -586,8 +586,8 @@ Memory Array Mapped Address
 Handle 0x0039, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0038
 	Memory Array Mapped Address Handle: 0x003C
 	Partition Row Position: 1
@@ -596,9 +596,9 @@ Memory Device Mapped Address
 
 Handle 0x003B, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
+	Starting Address: 0x00080000000
 	Ending Address: 0x0017FFFFFFF
-	Range Size: 2 GB
+	Range Size: 4 GB
 	Physical Device Handle: 0x003A
 	Memory Array Mapped Address Handle: 0x003C
 	Partition Row Position: 1

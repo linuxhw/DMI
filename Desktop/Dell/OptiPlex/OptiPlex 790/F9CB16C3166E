@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-82 structures occupying 3400 bytes.
+82 structures occupying 3397 bytes.
 Table at 0x000F21B0.
 
 Handle 0xDA00, DMI type 218, 251 bytes
@@ -595,7 +595,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -603,10 +603,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Samsung
+	Manufacturer: 859B
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M378B5273CH0-CH9  
+	Part Number: CT102464BD160B.M16
 	Rank: 2
 
 Handle 0x0030, DMI type 17, 28 bytes
@@ -626,7 +626,7 @@ Memory Device
 	Manufacturer: 859B
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT102464BD160B.M16
+	Part Number: CT102464BA160B.C16
 	Rank: 2
 
 Handle 0x0032, DMI type 17, 28 bytes
@@ -646,7 +646,7 @@ Memory Device
 	Manufacturer: 859B
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT102464BA160B.C16
+	Part Number: CT102464BD160B.M16
 	Rank: 2
 
 Handle 0x003D, DMI type 17, 28 bytes
@@ -666,22 +666,22 @@ Memory Device
 	Manufacturer: 859B
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT102464BD160B.M16
+	Part Number: CT102464BA160B.C16
 	Rank: 2
 
 Handle 0x003F, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x006FFFFFFFF
-	Range Size: 28 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x002D
 	Partition Width: 4
 
 Handle 0x002F, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x002E
 	Memory Array Mapped Address Handle: 0x003F
 	Partition Row Position: 1
@@ -690,8 +690,8 @@ Memory Device Mapped Address
 
 Handle 0x0031, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00300000000
-	Ending Address: 0x004FFFFFFFF
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x0030
 	Memory Array Mapped Address Handle: 0x003F
@@ -701,8 +701,8 @@ Memory Device Mapped Address
 
 Handle 0x003E, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x002FFFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x0032
 	Memory Array Mapped Address Handle: 0x003F
@@ -712,8 +712,8 @@ Memory Device Mapped Address
 
 Handle 0x0040, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00500000000
-	Ending Address: 0x006FFFFFFFF
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x003D
 	Memory Array Mapped Address Handle: 0x003F

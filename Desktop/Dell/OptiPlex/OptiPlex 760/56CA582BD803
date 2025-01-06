@@ -1,19 +1,19 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
-82 structures occupying 3019 bytes.
+82 structures occupying 3001 bytes.
 Table at 0x000F0450.
 
-Handle 0xDA00, DMI type 218, 101 bytes
+Handle 0xDA00, DMI type 218, 107 bytes
 OEM-specific Type
 	Header and Data:
-		DA 65 00 DA B2 00 17 4B 0E 38 00 00 80 00 80 01
+		DA 6B 00 DA B2 00 17 4B 0E 38 00 00 80 00 80 01
 		00 02 80 02 80 01 00 00 A0 00 A0 01 00 58 00 58
 		00 01 00 59 00 59 00 01 00 75 01 75 01 01 00 76
-		01 76 01 01 00 05 80 05 80 01 00 D1 01 19 00 01
-		00 15 02 19 00 02 00 1B 00 19 00 03 00 19 00 19
-		00 00 00 4A 02 4A 02 01 00 0C 80 0C 80 01 00 FF
-		FF 00 00 00 00
+		01 76 01 01 00 25 03 25 03 01 00 05 80 05 80 01
+		00 D1 01 19 00 01 00 15 02 19 00 02 00 1B 00 19
+		00 03 00 19 00 19 00 00 00 4A 02 4A 02 01 00 0C
+		80 0C 80 01 00 FF FF 00 00 00 00
 
 Handle 0xDA01, DMI type 218, 35 bytes
 OEM-specific Type
@@ -35,24 +35,24 @@ OEM-specific Type
 		00 01 F0 01 F0 01 00 0D 00 0D 00 01 00 A6 00 A6
 		00 01 00 A7 00 A7 00 01 00 05 01 05 01 01 00 06
 		01 06 01 01 00 8C 00 8C 00 01 00 8D 00 8D 00 01
-		00 9B 00 9B 00 01 00 9C 00 9C 00 01 00 09 01 09
-		01 01 00 A1 00 A1 00 01 00 A2 00 A2 00 01 00 A3
-		00 A3 00 01 00 9F 00 9F 00 01 00 A0 00 A0 00 01
-		00 9D 00 9D 00 01 00 9E 00 9E 00 01 00 54 01 54
-		01 01 00 55 01 55 01 01 00 04 80 04 80 01 00 01
-		A0 01 A0 01 00 FF FF 00 00 00 00
+		00 09 01 09 01 01 00 A1 00 A1 00 01 00 A2 00 A2
+		00 01 00 A3 00 A3 00 01 00 9F 00 9F 00 01 00 A0
+		00 A0 00 01 00 9D 00 9D 00 01 00 9E 00 9E 00 01
+		00 54 01 54 01 01 00 55 01 55 01 01 00 04 80 04
+		80 01 00 01 A0 01 A0 01 00 93 00 93 00 01 00 94
+		00 94 00 01 00 FF FF 00 00 00 00
 
 Handle 0xDA05, DMI type 218, 191 bytes
 OEM-specific Type
 	Header and Data:
-		DA BF 05 DA B2 00 17 4B 0E 38 00 93 00 93 00 01
-		00 94 00 94 00 01 00 8A 00 8A 00 01 00 8B 00 8B
-		00 01 00 03 C0 03 C0 01 00 97 00 97 00 01 00 98
-		00 98 00 01 00 90 00 90 00 01 00 91 00 91 00 01
-		00 92 00 92 00 01 00 E2 00 E2 00 01 00 E3 00 E3
-		00 01 00 E4 00 E4 00 01 00 E5 00 E5 00 01 00 D1
-		00 D1 00 01 00 D2 00 D2 00 01 00 45 01 45 01 01
-		00 44 01 44 01 01 00 36 01 36 01 01 00 37 01 37
+		DA BF 05 DA B2 00 17 4B 0E 38 00 8A 00 8A 00 01
+		00 8B 00 8B 00 01 00 03 C0 03 C0 01 00 97 00 97
+		00 01 00 98 00 98 00 01 00 90 00 90 00 01 00 91
+		00 91 00 01 00 92 00 92 00 01 00 E2 00 E2 00 01
+		00 E3 00 E3 00 01 00 E4 00 E4 00 01 00 E5 00 E5
+		00 01 00 D1 00 D1 00 01 00 D2 00 D2 00 01 00 45
+		01 45 01 01 00 44 01 44 01 01 00 00 00 FA 02 01
+		00 00 00 F9 02 01 00 36 01 36 01 01 00 37 01 37
 		01 01 00 38 01 38 01 01 00 2B 01 2B 01 01 00 2C
 		01 2C 01 01 00 4E 01 4E 01 01 00 4F 01 4F 01 01
 		00 D4 01 D4 01 01 00 D5 01 D5 01 01 00 D2 01 D2
@@ -67,37 +67,36 @@ OEM-specific Type
 		01 1D 01 01 00 1E 01 1E 01 01 00 1F 01 1F 01 01
 		00 20 01 20 01 01 00 45 02 45 02 01 00 44 02 44
 		02 01 00 87 00 87 00 01 00 88 00 88 00 01 00 E8
-		01 E8 01 01 00 E9 01 E9 01 01 00 04 02 04 02 01
-		00 05 02 05 02 01 00 2D 00 2D 00 01 00 2E 00 2E
-		00 01 00 6E 00 6E 00 01 00 E0 01 E0 01 01 00 28
-		00 28 00 01 00 29 00 29 00 01 00 2A 00 2A 00 01
-		00 2B 00 2B 00 01 00 2C 00 2C 00 01 00 55 00 55
-		00 01 00 6D 00 6D 00 01 00 8E 00 8E 00 01 00 8F
-		00 8F 00 01 00 00 00 1C 00 01 00 00 00 1D 00 01
-		00 23 00 23 00 01 00 22 00 22 00 01 00 F5 00 F5
-		00 01 00 F6 00 F6 00 01 00 EB 00 EB 00 01 00 EA
-		00 EA 00 01 00 FF FF 00 00 00 00
+		01 E8 01 01 00 E9 01 E9 01 01 00 2D 00 2D 00 01
+		00 2E 00 2E 00 01 00 6E 00 6E 00 01 00 E0 01 E0
+		01 01 00 28 00 28 00 01 00 29 00 29 00 01 00 2A
+		00 2A 00 01 00 2B 00 2B 00 01 00 2C 00 2C 00 01
+		00 55 00 55 00 01 00 6D 00 6D 00 01 00 8E 00 8E
+		00 01 00 8F 00 8F 00 01 00 00 00 1C 00 01 00 00
+		00 1D 00 01 00 23 00 23 00 01 00 22 00 22 00 01
+		00 F5 00 F5 00 01 00 F6 00 F6 00 01 00 EB 00 EB
+		00 01 00 EA 00 EA 00 01 00 40 01 40 01 01 00 41
+		01 41 01 01 00 FF FF 00 00 00 00
 
-Handle 0xDA07, DMI type 218, 173 bytes
+Handle 0xDA07, DMI type 218, 149 bytes
 OEM-specific Type
 	Header and Data:
-		DA AD 07 DA B2 00 17 4B 0E 38 00 01 01 01 01 01
-		00 02 01 02 01 01 00 03 01 03 01 01 00 04 01 04
-		01 01 00 40 01 40 01 01 00 41 01 41 01 01 00 ED
-		00 ED 00 01 00 F0 00 F0 00 01 00 4A 01 4A 01 01
-		00 4B 01 4B 01 01 00 4C 01 4C 01 01 00 4D 01 4D
-		01 01 00 68 01 68 01 01 00 69 01 69 01 01 00 BD
-		00 BD 00 01 00 BE 00 BE 00 01 00 4C 02 4C 02 01
-		00 4B 02 4B 02 01 00 65 02 65 02 01 00 64 02 64
-		02 01 00 67 02 67 02 01 00 66 02 66 02 01 00 69
-		02 69 02 01 00 68 02 68 02 01 00 6D 02 6D 02 01
-		00 6C 02 6C 02 01 00 FF FF 00 00 00 00
+		DA 95 07 DA B2 00 17 4B 0E 38 00 ED 00 ED 00 01
+		00 F0 00 F0 00 01 00 4A 01 4A 01 01 00 4B 01 4B
+		01 01 00 4C 01 4C 01 01 00 4D 01 4D 01 01 00 68
+		01 68 01 01 00 69 01 69 01 01 00 BD 00 BD 00 01
+		00 BE 00 BE 00 01 00 4C 02 4C 02 01 00 4B 02 4B
+		02 01 00 65 02 65 02 01 00 64 02 64 02 01 00 67
+		02 67 02 01 00 66 02 66 02 01 00 69 02 69 02 01
+		00 68 02 68 02 01 00 6D 02 6D 02 01 00 6C 02 6C
+		02 01 00 E9 02 E9 02 01 00 E8 02 E8 02 01 00 FF
+		FF 00 00 00 00
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: A03
-	Release Date: 04/29/2009
+	Version: A16
+	Release Date: 08/06/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 4 MB
@@ -122,7 +121,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
-	BIOS Revision: 4.0
+	BIOS Revision: 16.0
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -384,7 +383,7 @@ Handle 0x090A, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT1
 	Type: x1 Proprietary
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	Characteristics:
 		PME signal is supported
@@ -460,7 +459,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFE81000
 	Status: Valid, Not Full
-	Change Token: 0x00000015
+	Change Token: 0x0000001A
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -485,7 +484,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_1
@@ -493,10 +492,10 @@ Memory Device
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 800 MT/s
-	Manufacturer: 7F7F7F0B00000000
+	Manufacturer: 7F98000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NT1GT64U88D0BY-AD 
+	Part Number: 99P5429-006.A00LF 
 
 Handle 0x1101, DMI type 17, 27 bytes
 Memory Device
@@ -504,7 +503,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_3
@@ -512,10 +511,10 @@ Memory Device
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 800 MT/s
-	Manufacturer: 7F7F7F0B00000000
+	Manufacturer: 7F98000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NT1GT64U88D0BY-AD 
+	Part Number: 99P5429-006.A00LF 
 
 Handle 0x1102, DMI type 17, 27 bytes
 Memory Device
@@ -523,7 +522,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_2
@@ -531,10 +530,10 @@ Memory Device
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 800 MT/s
-	Manufacturer: 7F7F7F0B00000000
+	Manufacturer: 7F98000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NT1GT64U88D0BY-AD 
+	Part Number: 99P5429-006.A00LF 
 
 Handle 0x1103, DMI type 17, 27 bytes
 Memory Device
@@ -542,7 +541,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_4
@@ -550,24 +549,24 @@ Memory Device
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 800 MT/s
-	Manufacturer: 7F7F7F0B00000000
+	Manufacturer: 7F98000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NT1GT64U88D0BY-AD 
+	Part Number: 99P5429-006.A00LF 
 
 Handle 0x1300, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FDFFFFFF
-	Range Size: 4064 MB
+	Ending Address: 0x001FDFFFFFF
+	Range Size: 8160 MB
 	Physical Array Handle: 0x1000
 	Partition Width: 1
 
 Handle 0x1400, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x1100
 	Memory Array Mapped Address Handle: 0x1300
 	Partition Row Position: 1
@@ -576,9 +575,9 @@ Memory Device Mapped Address
 
 Handle 0x1401, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FDFFFFFF
-	Range Size: 2016 MB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FDFFFFFF
+	Range Size: 4064 MB
 	Physical Device Handle: 0x1101
 	Memory Array Mapped Address Handle: 0x1300
 	Partition Row Position: 1
@@ -588,8 +587,8 @@ Memory Device Mapped Address
 Handle 0x1402, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x1102
 	Memory Array Mapped Address Handle: 0x1300
 	Partition Row Position: 1
@@ -598,9 +597,9 @@ Memory Device Mapped Address
 
 Handle 0x1403, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FDFFFFFF
-	Range Size: 2016 MB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FDFFFFFF
+	Range Size: 4064 MB
 	Physical Device Handle: 0x1103
 	Memory Array Mapped Address Handle: 0x1300
 	Partition Row Position: 1
@@ -669,9 +668,9 @@ Handle 0x8300, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
 		83 40 00 83 14 00 00 00 00 00 00 2E 05 00 00 00
-		F8 00 4E 24 00 00 00 00 0D 00 00 00 01 00 05 00
-		8F 04 00 00 01 00 01 02 C8 00 DE 10 00 00 00 00
-		00 00 00 00 DB 00 00 00 76 50 72 6F 00 00 00 00
+		F8 00 4E 24 00 00 00 00 0D 00 00 00 02 00 05 00
+		18 04 47 00 01 00 01 02 C8 00 DE 10 00 00 00 00
+		00 00 00 00 D9 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x8800, DMI type 136, 6 bytes
 OEM-specific Type
@@ -712,7 +711,7 @@ OEM-specific Type
 		D8 09 00 D8 01 02 01 F0 03
 	Strings:
 		Intel Corp.
-		 cha
+		VBIO
 
 Handle 0xDD00, DMI type 221, 19 bytes
 OEM-specific Type

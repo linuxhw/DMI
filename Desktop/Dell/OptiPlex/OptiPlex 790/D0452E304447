@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-82 structures occupying 3468 bytes.
+79 structures occupying 3347 bytes.
 Table at 0x000F24D0.
 
 Handle 0xDA00, DMI type 218, 251 bytes
@@ -597,7 +597,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -605,33 +605,13 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: 029E
-	Serial Number: --
-	Asset Tag: --
-	Part Number: CMV8GX3M1A1333C9  
-	Rank: 2
-
-Handle 0x0030, DMI type 17, 28 bytes
-Memory Device
-	Array Handle: 0x002D
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2 GB
-	Form Factor: DIMM
-	Set: None
-	Locator: ChannelA-DIMM1
-	Bank Locator: BANK 1
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M378B5773CH0-CH9  
 	Rank: 1
 
-Handle 0x0032, DMI type 17, 28 bytes
+Handle 0x0030, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x002D
 	Error Information Handle: Not Provided
@@ -640,8 +620,8 @@ Memory Device
 	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: ChannelB-DIMM0
-	Bank Locator: BANK 2
+	Locator: ChannelA-DIMM1
+	Bank Locator: BANK 1
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
@@ -651,7 +631,7 @@ Memory Device
 	Part Number: CMV8GX3M1A1333C9  
 	Rank: 2
 
-Handle 0x003D, DMI type 17, 28 bytes
+Handle 0x0032, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x002D
 	Error Information Handle: Not Provided
@@ -660,8 +640,8 @@ Memory Device
 	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: ChannelB-DIMM1
-	Bank Locator: BANK 3
+	Locator: ChannelB-DIMM0
+	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
@@ -670,6 +650,26 @@ Memory Device
 	Asset Tag: --
 	Part Number: M378B5773CH0-CH9  
 	Rank: 1
+
+Handle 0x003D, DMI type 17, 28 bytes
+Memory Device
+	Array Handle: 0x002D
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelB-DIMM1
+	Bank Locator: BANK 3
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: 029E
+	Serial Number: --
+	Asset Tag: --
+	Part Number: CMV8GX3M1A1333C9  
+	Rank: 2
 
 Handle 0x003F, DMI type 19, 15 bytes
 Memory Array Mapped Address
@@ -682,8 +682,8 @@ Memory Array Mapped Address
 Handle 0x002F, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x002E
 	Memory Array Mapped Address Handle: 0x003F
 	Partition Row Position: 1
@@ -692,9 +692,9 @@ Memory Device Mapped Address
 
 Handle 0x0031, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x0047FFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0030
 	Memory Array Mapped Address Handle: 0x003F
 	Partition Row Position: 1
@@ -703,9 +703,9 @@ Memory Device Mapped Address
 
 Handle 0x003E, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0032
 	Memory Array Mapped Address Handle: 0x003F
 	Partition Row Position: 1
@@ -714,9 +714,9 @@ Memory Device Mapped Address
 
 Handle 0x0040, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00480000000
+	Starting Address: 0x00300000000
 	Ending Address: 0x004FFFFFFFF
-	Range Size: 2 GB
+	Range Size: 8 GB
 	Physical Device Handle: 0x003D
 	Memory Array Mapped Address Handle: 0x003F
 	Partition Row Position: 1
@@ -848,30 +848,8 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 21 06 24 07 37 01 00 00
+		DE 10 00 DE 01 04 00 00 24 01 11 22 55 01 00 00
 
-Handle 0xDE01, DMI type 129, 8 bytes
-OEM-specific Type
-	Header and Data:
-		81 08 01 DE 01 01 02 01
-	Strings:
-		Intel_ASF
-		Intel_ASF_001
-
-Handle 0xDE02, DMI type 130, 20 bytes
-OEM-specific Type
-	Header and Data:
-		82 14 02 DE 24 41 4D 54 00 00 00 00 00 A5 2F 02
-		00 00 00 00
-
-Handle 0xDE03, DMI type 131, 64 bytes
-OEM-specific Type
-	Header and Data:
-		83 40 03 DE 35 00 00 00 07 00 00 00 00 00 3F 00
-		F8 00 4C 1C FF FF FF FF 11 20 00 00 01 00 07 00
-		C8 0C 5B 00 00 00 00 00 C8 00 02 15 00 00 00 02
-		FF FF 00 00 36 00 00 00 76 50 72 6F 00 00 00 00
-
-Handle 0xDE04, DMI type 127, 4 bytes
+Handle 0xDE01, DMI type 127, 4 bytes
 End Of Table
 

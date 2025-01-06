@@ -1,8 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-88 structures occupying 4003 bytes.
-Table at 0x000ECFC0.
+89 structures occupying 4043 bytes.
+Table at 0x000E0000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -522,7 +522,7 @@ Handle 0xDED2, DMI type 9, 17 bytes
 System Slot Information
 	Designation: X16 
 	Type: x16 PCI Express 3 x16
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 2
 	Characteristics:
@@ -856,6 +856,14 @@ Onboard Device
 	Status: Enabled
 	Type Instance: 1
 	Bus Address: 0000:03:1c.2
+
+Handle 0x0037, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation:  Onboard SATA controller #1
+	Type: SATA Controller
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:00:1f.2
 
 Handle 0xDEC8, DMI type 130, 20 bytes
 OEM-specific Type

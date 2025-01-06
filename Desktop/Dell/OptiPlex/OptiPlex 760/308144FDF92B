@@ -130,7 +130,7 @@ System Information
 	Version: Not Specified
 	Serial Number: --
 	UUID: --
-	Wake-up Type: APM Timer
+	Wake-up Type: Power Switch
 	SKU Number: Not Specified
 	Family: Not Specified
 
@@ -383,7 +383,7 @@ Handle 0x090A, DMI type 9, 13 bytes
 System Slot Information
 	Designation: SLOT1
 	Type: x1 Proprietary
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	Characteristics:
 		PME signal is supported
@@ -468,7 +468,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFE81000
 	Status: Valid, Full
-	Change Token: 0x000000E3
+	Change Token: 0x000002C0
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -673,9 +673,9 @@ OEM-specific Type
 Handle 0x8300, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 00 83 35 00 00 00 00 00 00 2E 05 00 00 00
+		83 40 00 83 14 00 00 00 00 00 00 2E 05 00 00 00
 		F8 00 4E 24 00 00 00 00 0D 00 00 00 02 00 05 00
-		18 04 47 00 03 00 01 02 C8 00 DE 10 00 00 00 00
+		18 04 47 00 01 00 01 02 C8 00 DE 10 00 00 00 00
 		00 00 00 00 D9 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x8800, DMI type 136, 6 bytes
@@ -740,7 +740,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE C1 0B 00 00 18 02 18 15 08 00 00 01
+		DE 10 00 DE C1 0B FF FF 00 00 00 00 00 00 00 01
 
 Handle 0x7F00, DMI type 127, 4 bytes
 End Of Table
