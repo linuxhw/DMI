@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 57 structures occupying 2845 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 06/07/2010
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -408,7 +408,8 @@ Port Connector Information
 Handle 0x0022, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 6
@@ -421,7 +422,8 @@ System Slot Information
 Handle 0x0023, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: In Use
 	Length: Long
 	ID: 7
@@ -434,7 +436,8 @@ System Slot Information
 Handle 0x0024, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 8
@@ -447,7 +450,8 @@ System Slot Information
 Handle 0x0025, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI Express x16
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: Unknown
 	Length: Other
 	ID: 0
@@ -506,7 +510,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A2
@@ -525,7 +529,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A3
@@ -627,14 +631,14 @@ OEM-specific Type
 	Header and Data:
 		C0 F4 34 00 06 40 00 00 22 32 11 20 E7 88 71 0E
 		F3 05 0C 00 00 00 36 00 22 32 11 20 00 00 00 00
-		1B 25 2D 32 00 00 00 00 3A 3F 43 46 00 36 00 00
-		36 00 2E 2E 2E 2E 0C 0A 0A 0C 2E 2E 2E 2E 0A 0E
-		0E 0A 00 0A B1 CB 1F 3D F3 05 0C 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 90 00 94 00 96 00
-		9C 00 A1 00 00 00 00 00 00 00 00 00 00 00 10 00
-		14 00 16 00 1C 00 00 00 00 00 00 00 00 00 00 00
-		A6 00 AE 00 B4 00 C0 00 00 00 00 00 00 00 00 00
-		06 00 0E 00 14 00 00 00 00 00 00 00 00 00 00 00
+		1C 27 2D 33 00 00 00 00 3C 3F 44 46 00 37 00 00
+		36 00 2E 2E 2E 2E 0C 0A 0A 0A 2E 2E 2E 2E 0A 0C
+		0C 0A 00 0A F2 CF 30 03 F3 05 0C 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00 92 00 98 00 99 00
+		9F 00 A3 00 00 00 00 00 00 00 00 00 00 00 12 00
+		18 00 19 00 1F 00 00 00 00 00 00 00 00 00 00 00
+		A6 00 AF 00 B8 00 C2 00 00 00 00 00 00 00 00 00
+		06 00 0F 00 18 00 02 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -647,14 +651,14 @@ OEM-specific Type
 	Header and Data:
 		C2 F4 35 00 06 40 00 00 22 32 11 20 E7 88 71 0E
 		F3 05 0C 00 00 00 36 00 22 32 11 20 00 00 00 00
-		1A 2C 33 35 00 00 00 00 42 47 4B 4E 00 3B 00 00
-		36 00 2E 2E 2E 2E 0E 0E 0C 0C 2E 2E 2E 2E 0E 0E
-		0E 0E 00 0C C0 94 C3 08 F3 05 0C 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 A1 00 A1 00 A4 00
-		A7 00 AF 00 00 00 00 00 00 00 00 00 00 00 01 00
-		01 00 04 00 07 00 00 00 00 00 00 00 00 00 00 00
-		B8 00 BE 00 CC 00 D5 00 00 00 00 00 00 00 00 00
-		18 00 1E 00 0C 00 15 00 00 00 00 00 00 00 00 00
+		19 2C 34 36 00 00 00 00 41 48 4B 4F 00 3B 00 00
+		36 00 2E 2E 2E 2E 0E 10 0C 0C 2E 2E 2E 2E 0E 0E
+		10 0E 00 0C C0 94 C3 08 F3 05 0C 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00 A0 00 A0 00 A7 00
+		AA 00 B2 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 07 00 0A 00 00 00 00 00 00 00 00 00 00 00
+		BA 00 BE 00 CE 00 D7 00 00 00 00 00 00 00 00 00
+		1A 00 1E 00 0E 00 17 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -666,11 +670,11 @@ Handle 0x0036, DMI type 196, 244 bytes
 OEM-specific Type
 	Header and Data:
 		C4 F4 36 00 06 40 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 0C 00 16 00 1D 00 21 00 6A 00 00 00
-		00 00 00 00 00 00 00 00 00 00 0C 00 16 00 00 00
-		00 00 00 00 00 00 2D 00 30 00 34 00 36 00 00 00
-		00 00 00 00 00 00 0D 00 10 00 14 00 16 00 0C 16
-		1D 21 2D 30 34 36 2A 00 00 00 7F 01 00 00 00 00
+		00 00 00 00 0D 00 17 00 1D 00 22 00 42 00 00 00
+		00 00 00 00 00 00 00 00 00 00 0D 00 17 00 00 00
+		00 00 00 00 00 00 2E 00 30 00 35 00 37 00 00 00
+		00 00 00 00 00 00 0E 00 10 00 15 00 17 00 0D 17
+		1D 22 2E 30 35 37 42 00 00 00 FA 01 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -686,11 +690,11 @@ Handle 0x0037, DMI type 198, 244 bytes
 OEM-specific Type
 	Header and Data:
 		C6 F4 37 00 06 40 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 0C 00 1E 00 24 00 26 00 26 00 00 00
+		00 00 00 00 0C 00 1E 00 25 00 27 00 1D 00 00 00
 		00 00 00 00 00 00 00 00 00 00 0C 00 1E 00 00 00
-		00 00 00 00 00 00 33 00 3A 00 3D 00 3F 00 00 00
-		00 00 00 00 00 00 13 00 1A 00 1D 00 1F 00 0C 1E
-		24 26 33 3A 3D 3F 26 00 00 00 FD 01 00 00 00 00
+		00 00 00 00 00 00 33 00 3A 00 3D 00 40 00 00 00
+		00 00 00 00 00 00 13 00 1A 00 1D 00 00 00 0C 1E
+		25 27 33 3A 3D 40 1D 00 00 00 F6 01 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 79 structures occupying 3270 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 08/18/2015
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -100,8 +100,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -116,15 +116,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
 	Speed: Unknown
 	Error Correction Type: Single-bit ECC
 	System Type: Unified
-	Associativity: 12-way Set-associative
+	Associativity: 16-way Set-associative
 
 Handle 0x0007, DMI type 16, 23 bytes
 Physical Memory Array
@@ -655,7 +655,7 @@ Handle 0x0041, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: SOCKET 0
 	Type: Central Processor
-	Family: Core i5
+	Family: Core i7
 	Manufacturer: Intel
 	ID: C3 06 03 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 60, Stepping 3
@@ -688,11 +688,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i5-4670 CPU @ 3.40GHz
+	Version: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
 	Voltage: 1.1 V
 	External Clock: 100 MHz
 	Max Speed: 7000 MHz
-	Current Speed: 3600 MHz
+	Current Speed: 3800 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0004
@@ -703,6 +703,7 @@ Processor Information
 	Part Number: Fill By OEM
 	Core Count: 4
 	Core Enabled: 1
+	Thread Count: 2
 	Characteristics:
 		64-bit capable
 
@@ -712,7 +713,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -744,7 +745,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
@@ -776,7 +777,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -808,7 +809,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1

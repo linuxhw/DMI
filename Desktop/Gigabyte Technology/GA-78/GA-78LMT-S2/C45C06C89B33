@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 46 structures occupying 2608 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 10/19/2012
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -46,7 +46,7 @@ System Information
 	Product Name: GA-78LMT-S2
 	Version:  
 	Serial Number: --
-	ACE1216901386EAD74FE027589C99AE9
+	92E7A376D1C703FF967547F57F1DB072
 	Wake-up Type: Power Switch
 	SKU Number:  
 	Family:  
@@ -199,8 +199,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -216,7 +216,7 @@ Cache Information
 	Operational Mode: Write Through
 	Location: Internal
 	Installed Size: 0 kB
-	Maximum Size: 1024 kB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -357,7 +357,7 @@ Handle 0x001C, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 6
 	Characteristics:
@@ -410,7 +410,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
@@ -486,7 +486,7 @@ OEM-specific Type
 		00 00 00 00 00 00 00 00 00 00 00 00 E0 3E F8 00
 		00 00 00 00 00 00 00 00 00 00 00 00 06 00 88 0D
 		48 00 12 18 07 00 00 00 C4 00 14 00 23 41 0F EB
-		44 A8 42 00 00 00 01 00 00 02 00 00 40 00 00 00
+		44 B8 42 00 00 00 01 00 00 02 00 00 40 00 00 00
 		5C 00 B0 4A 0C 09 48 1F 00 00 00 00 00 00 00 00
 		00 00 00 00
 
@@ -512,15 +512,15 @@ Handle 0x0029, DMI type 192, 244 bytes
 OEM-specific Type
 	Header and Data:
 		C0 F4 29 00 06 40 00 00 22 32 11 20 E7 88 71 0E
-		FC 0A 0D 00 00 00 00 00 22 32 11 20 21 24 2B 2D
-		01 04 0B 0D 3F 3D 43 42 1F 1D 03 02 36 01 00 00
-		00 00 0C 0A 0A 0E 0C 0A 0A 0E 0C 08 0C 0A 0C 08
-		0C 0A 0C 00 54 D4 41 03 FC 0A 0D 00 00 00 00 00
-		7F 00 7C 00 7F 00 7F 00 87 00 1F 00 1C 00 1F 00
-		1F 00 00 00 1F 00 1C 00 1F 00 1F 00 00 00 1F 00
-		1C 00 1F 00 1F 00 00 00 91 00 95 00 9E 00 A0 00
-		11 00 15 00 1E 00 00 00 11 00 15 00 1E 00 00 00
-		11 00 15 00 1E 00 00 00 00 00 00 00 00 00 00 00
+		FC 0A 0D 00 00 00 00 00 22 32 11 20 1F 24 2C 2E
+		1F 04 0C 0E 3F 3B 43 42 1F 1B 03 02 37 01 00 00
+		00 00 0C 0A 0A 0A 0C 0A 0A 0A 0C 0A 0C 0A 0C 0A
+		0C 0A 0A 00 54 D8 52 07 FC 0A 0D 00 00 00 00 00
+		7F 00 7D 00 7F 00 7E 00 87 00 1F 00 1D 00 1F 00
+		1E 00 00 00 1F 00 1D 00 1F 00 1E 00 00 00 1F 00
+		1D 00 1F 00 1E 00 00 00 92 00 93 00 9E 00 A0 00
+		12 00 13 00 1E 00 00 00 12 00 13 00 1E 00 00 00
+		12 00 13 00 1E 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -535,7 +535,7 @@ OEM-specific Type
 		00 00 04 00 00 00 00 00 33 33 33 00 0F 0F 0F 0F
 		0F 0F 0F 0F 0F 0F 0F 0F 0F 0F 0F 0F 0F 0F 00 00
 		00 00 1F 1F 1F 1F 1F 1F 1F 1F 1F 1F 1F 1F 1F 1F
-		1F 1F 1F 1F 3C 2C 03 3B 00 00 04 00 00 00 00 00
+		1F 1F 1F 1F 3D 2C 03 3B 00 00 04 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -551,12 +551,12 @@ OEM-specific Type
 Handle 0x002B, DMI type 196, 244 bytes
 OEM-specific Type
 	Header and Data:
-		C4 F4 2B 00 06 40 00 00 0F 00 12 00 1B 00 1F 00
-		17 00 00 00 0F 00 12 00 1B 00 1F 00 17 00 0F 00
-		12 00 1B 00 1F 00 17 00 00 00 0F 00 12 00 2E 00
-		2D 00 32 00 30 00 0E 00 0D 00 12 00 10 00 0E 00
-		0D 00 12 00 10 00 0E 00 0D 00 12 00 10 00 0F 12
-		1B 1F 2E 2D 32 30 17 00 00 00 95 01 00 00 00 00
+		C4 F4 2B 00 06 40 00 00 0E 00 12 00 1B 00 1E 00
+		5F 00 00 00 0E 00 12 00 1B 00 1E 00 1F 00 0E 00
+		12 00 1B 00 1E 00 1F 00 00 00 0E 00 12 00 2E 00
+		2C 00 32 00 30 00 0E 00 0C 00 12 00 10 00 0E 00
+		0C 00 12 00 10 00 0E 00 0C 00 12 00 10 00 0E 12
+		1B 1E 2E 2C 32 30 5F 00 00 00 30 01 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

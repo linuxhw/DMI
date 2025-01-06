@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
 Table at 0x3ED0B000.
@@ -6,8 +6,8 @@ Table at 0x3ED0B000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: F12
-	Release Date: 12/27/2021
+	Version: F16
+	Release Date: 06/07/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -39,7 +39,7 @@ Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Gigabyte Technology Co., Ltd.
 	Product Name: H510M S2H
-	Version: Not Specified
+	Version: Default string
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -590,8 +590,8 @@ Physical Memory Array
 Handle 0x003F, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x003C
 	Partition Width: 2
 
@@ -601,20 +601,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: Controller0-ChannelA
 	Bank Locator: BANK 0
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2666 MT/s
+	Speed: 2933 MT/s
 	Manufacturer: Crucial Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CB8GU2666.C8PT      
-	Rank: 1
-	Configured Memory Speed: 2666 MT/s
+	Part Number: CT16G4DFRA32A.M16FE 
+	Rank: 2
+	Configured Memory Speed: 2933 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -626,7 +626,7 @@ Memory Device
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
 
@@ -636,20 +636,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: Controller0-ChannelB
 	Bank Locator: BANK 1
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2666 MT/s
+	Speed: 2933 MT/s
 	Manufacturer: Crucial Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CB8GU2666.C8PT      
-	Rank: 1
-	Configured Memory Speed: 2666 MT/s
+	Part Number: CT16G4DFRA32A.M16FE 
+	Rank: 2
+	Configured Memory Speed: 2933 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -661,15 +661,15 @@ Memory Device
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0042, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0040
 	Memory Array Mapped Address Handle: 0x003F
 	Partition Row Position: Unknown
@@ -678,9 +678,9 @@ Memory Device Mapped Address
 
 Handle 0x0043, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00400000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0041
 	Memory Array Mapped Address Handle: 0x003F
 	Partition Row Position: Unknown
@@ -691,7 +691,7 @@ Handle 0x0044, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 44 00 03 01 00 0B 01 2D 20 00 02 00 00 00
-		00 EC 00 03 00 01 0E 10 00 00
+		00 F6 00 03 00 01 0E 10 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version

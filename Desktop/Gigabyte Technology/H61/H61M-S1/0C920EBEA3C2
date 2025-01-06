@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-73 structures occupying 2988 bytes.
+73 structures occupying 3008 bytes.
 Table at 0x000E97A0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -330,7 +330,8 @@ Port Connector Information
 Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B2
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -343,7 +344,8 @@ System Slot Information
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -356,7 +358,8 @@ System Slot Information
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D1
-	Type: x8 PCI Express
+	Type: PCI Express
+	Data Bus Width: 8x or x8
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -369,7 +372,8 @@ System Slot Information
 Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7B1
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Short
 	ID: 3
@@ -382,7 +386,8 @@ System Slot Information
 Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -395,7 +400,8 @@ System Slot Information
 Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B3
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: In Use
 	Length: Short
 	ID: 6
@@ -650,26 +656,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: 859B
+	Speed: 1333 MT/s
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT25664BA160B.C8F
-	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Part Number: HMT351U6CFR8C-H9  
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0041, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0040
 	Memory Array Mapped Address Handle: 0x0045
 	Partition Row Position: Unknown
@@ -682,20 +688,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: 859B
+	Speed: 1333 MT/s
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT25664BA160B.C8F
-	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Part Number: HMT351U6BFR8C-H9  
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0043, DMI type 4, 42 bytes
 Processor Information
@@ -755,8 +761,8 @@ Processor Information
 Handle 0x0044, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0042
 	Memory Array Mapped Address Handle: 0x0045
 	Partition Row Position: Unknown
@@ -766,15 +772,15 @@ Memory Device Mapped Address
 Handle 0x0045, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0007
 	Partition Width: 4
 
 Handle 0x004A, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 4A 00 35 00 00 00 00 00 00 00 00 00 00 00
+		83 40 4A 00 14 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 5C 1C FF FF FF FF 01 00 00 00 01 00 08 00
 		46 05 1E 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00

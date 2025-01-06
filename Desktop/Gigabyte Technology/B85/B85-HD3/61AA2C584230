@@ -1,14 +1,14 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-79 structures occupying 3243 bytes.
-Table at 0x000EC130.
+79 structures occupying 3018 bytes.
+Table at 0x000E9890.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: F11
-	Release Date: 08/12/2015
+	Version: F1.69NVMe
+	Release Date: 04/22/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8 MB
@@ -38,12 +38,12 @@ Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Gigabyte Technology Co., Ltd.
 	Product Name: B85-HD3
-	Version: To be filled by O.E.M.
+	Version:  
 	Serial Number: --
-	UUID: --
+	0E472A2441B1F0219D524D75877A13EB
 	Wake-up Type: Power Switch
-	SKU Number: To be filled by O.E.M.
-	Family: To be filled by O.E.M.
+	SKU Number:  
+	Family:  
 
 Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
@@ -51,11 +51,11 @@ Base Board Information
 	Product Name: B85-HD3
 	Version: x.x
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Features:
 		Board is a hosting board
 		Board is replaceable
-	Location In Chassis: To be filled by O.E.M.
+	Location In Chassis:  
 	Chassis Handle: 0x0003
 	Type: Motherboard
 	Contained Object Handles: 0
@@ -65,9 +65,9 @@ Chassis Information
 	Manufacturer: Gigabyte Technology Co., Ltd.
 	Type: Desktop
 	Lock: Not Present
-	Version: To Be Filled By O.E.M.
+	Version:  
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Safe
@@ -76,7 +76,7 @@ Chassis Information
 	Height: Unspecified
 	Number Of Power Cords: 1
 	Contained Elements: 0
-	SKU Number: To be filled by O.E.M.
+	SKU Number:  
 
 Handle 0x0004, DMI type 7, 19 bytes
 Cache Information
@@ -330,7 +330,8 @@ Port Connector Information
 Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B2
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -343,7 +344,8 @@ System Slot Information
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -356,7 +358,8 @@ System Slot Information
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D1
-	Type: x8 PCI Express
+	Type: PCI Express
+	Data Bus Width: 8x or x8
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -369,7 +372,8 @@ System Slot Information
 Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7B1
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Short
 	ID: 3
@@ -382,7 +386,8 @@ System Slot Information
 Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -395,7 +400,8 @@ System Slot Information
 Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B3
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: In Use
 	Length: Short
 	ID: 6

@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 52 structures occupying 2442 bytes.
@@ -370,13 +370,6 @@ Memory Device
 	Bank Locator: Node0_Bank0
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Dimm0_Manufacturer
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Dimm0_PartNum
-	Rank: Unknown
-	Configured Memory Speed: Unknown
 
 Handle 0x0026, DMI type 126, 35 bytes
 Inactive
@@ -385,25 +378,31 @@ Handle 0x0027, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0023
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: Node0_Dimm1
 	Bank Locator: Node0_Bank0
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: Unknown
-	Manufacturer: Dimm1_Manufacturer
+	Speed: 1600 MT/s
+	Manufacturer: Kingston          
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Dimm1_PartNum
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: 99P5474-013.A
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0028, DMI type 126, 35 bytes
-Inactive
+Handle 0x0028, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0027
+	Memory Array Mapped Address Handle: 0x0024
+	Partition Row Position: 1
 
 Handle 0x0029, DMI type 17, 34 bytes
 Memory Device
@@ -418,13 +417,6 @@ Memory Device
 	Bank Locator: Node0_Bank0
 	Type: Unknown
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Dimm2_Manufacturer
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Dimm2_PartNum
-	Rank: Unknown
-	Configured Memory Speed: Unknown
 
 Handle 0x002A, DMI type 126, 35 bytes
 Inactive
@@ -433,31 +425,18 @@ Handle 0x002B, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0023
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
+	Total Width: Unknown
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: Node0_Dimm3
 	Bank Locator: Node0_Bank0
-	Type: DDR3
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1600 MT/s
-	Manufacturer: Kingston          
-	Serial Number: --
-	Asset Tag: --
-	Part Number: 99P5474-013.A
-	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Type: Unknown
+	Type Detail: Synchronous
 
-Handle 0x002C, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x002B
-	Memory Array Mapped Address Handle: 0x0024
-	Partition Row Position: 1
+Handle 0x002C, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x002D, DMI type 32, 20 bytes
 System Boot Information

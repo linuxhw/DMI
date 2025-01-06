@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-71 structures occupying 2908 bytes.
+66 structures occupying 2613 bytes.
 Table at 0x000E97A0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -125,15 +125,6 @@ Cache Information
 	Error Correction Type: Multi-bit ECC
 	System Type: Instruction
 	Associativity: 48-way Set-associative
-
-Handle 0x0007, DMI type 16, 23 bytes
-Physical Memory Array
-	Location: System Board Or Motherboard
-	Use: System Memory
-	Error Correction Type: None
-	Maximum Capacity: 32 GB
-	Error Information Handle: Not Provided
-	Number Of Devices: 2
 
 Handle 0x0008, DMI type 8, 9 bytes
 Port Connector Information
@@ -644,59 +635,6 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:19.0
 
-Handle 0x0040, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x0007
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8 GB
-	Form Factor: SODIMM
-	Set: None
-	Locator: ChannelB-DIMM0
-	Bank Locator: BANK 2
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Hynix/Hyundai
-	Serial Number: --
-	Asset Tag: --
-	Part Number: MPPU8GB1333DDP  
-	Rank: 2
-	Configured Memory Speed: 1333 MT/s
-
-Handle 0x0041, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x0040
-	Memory Array Mapped Address Handle: 0x0044
-	Partition Row Position: Unknown
-	Interleave Position: 1
-	Interleaved Data Depth: 1
-
-Handle 0x0042, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x0007
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: ChannelA-DIMM0
-	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-
 Handle 0x0043, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: Intel(R) Core(TM) i5-3570 CPU @ 3.40GHz
@@ -752,15 +690,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0044, DMI type 19, 31 bytes
-Memory Array Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
-	Physical Array Handle: 0x0007
-	Partition Width: 4
-
-Handle 0x0049, DMI type 13, 22 bytes
+Handle 0x0044, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 7
@@ -773,6 +703,6 @@ BIOS Language Information
 		zh|CT|unicode
 	Currently Installed Language: ru|RU|iso8859-5
 
-Handle 0x004E, DMI type 127, 4 bytes
+Handle 0x0048, DMI type 127, 4 bytes
 End Of Table
 

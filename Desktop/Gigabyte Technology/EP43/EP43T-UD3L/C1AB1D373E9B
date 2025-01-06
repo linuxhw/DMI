@@ -1,7 +1,7 @@
-# dmidecode 3.0
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
-38 structures occupying 1194 bytes.
+38 structures occupying 1191 bytes.
 Table at 0x000F0100.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 09/28/2011
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -43,7 +43,7 @@ System Information
 	Product Name: EP43T-UD3L
 	Version:  
 	Serial Number: --
-	UUID: --
+	F88C4068849B521CBE77208202011EEA
 	Wake-up Type: Power Switch
 	SKU Number:  
 	Family:  
@@ -55,14 +55,14 @@ Base Board Information
 	Version: x.x
 	Serial Number: --
 
-Handle 0x0003, DMI type 3, 17 bytes
+807075653E24ECB98B63F18E00309403
 Chassis Information
 	Manufacturer: Gigabyte Technology Co., Ltd.
 	Type: Desktop
 	Lock: Not Present
 	Version:  
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Boot-up State: Unknown
 	Power Supply State: Unknown
 	Thermal State: Unknown
@@ -76,38 +76,8 @@ Processor Information
 	Family: Other
 	Manufacturer: Intel
 	ID: 7A 06 01 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 23, Stepping 10
-	Flags:
-		FPU (Floating-point unit on-chip)
-		VME (Virtual mode extension)
-		DE (Debugging extension)
-		PSE (Page size extension)
-		TSC (Time stamp counter)
-		MSR (Model specific registers)
-		PAE (Physical address extension)
-		MCE (Machine check exception)
-		CX8 (CMPXCHG8 instruction supported)
-		APIC (On-chip APIC hardware supported)
-		SEP (Fast system call)
-		MTRR (Memory type range registers)
-		PGE (Page global enable)
-		MCA (Machine check architecture)
-		CMOV (Conditional move instruction supported)
-		PAT (Page attribute table)
-		PSE-36 (36-bit page size extension)
-		CLFSH (CLFLUSH instruction supported)
-		DS (Debug store)
-		ACPI (ACPI supported)
-		MMX (MMX technology supported)
-		FXSR (FXSAVE and FXSTOR instructions supported)
-		SSE (Streaming SIMD extensions)
-		SSE2 (Streaming SIMD extensions 2)
-		SS (Self-snoop)
-		HTT (Multi-threading)
-		TM (Thermal monitor supported)
-		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM)2 Quad CPU Q9550 @
-	Voltage: 1.0 V
+	Voltage: 0.7 V
 	External Clock: 333 MHz
 	Max Speed: 4000 MHz
 	Current Speed: 2833 MHz
@@ -117,7 +87,7 @@ Processor Information
 	L2 Cache Handle: 0x000B
 	L3 Cache Handle: Not Provided
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Part Number:  
 
 Handle 0x0005, DMI type 5, 24 bytes
@@ -204,8 +174,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 2048 kB
+	Installed Size: 6 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -274,7 +244,7 @@ Handle 0x0013, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: PS/2 Mouse
 	Internal Connector Type: PS/2
-	External Reference Designator: No Detected
+	External Reference Designator: Detected
 	External Connector Type: PS/2
 	Port Type: Mouse Port
 
@@ -297,8 +267,9 @@ Port Connector Information
 Handle 0x0016, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI
-	Type: 32-bit PCI
-	Current Usage: In Use
+	Type: PCI
+	Data Bus Width: 32 bit
+	Current Usage: Available
 	Length: Long
 	ID: 0
 	Characteristics:
@@ -310,8 +281,9 @@ System Slot Information
 Handle 0x0017, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI
-	Type: 32-bit PCI
-	Current Usage: In Use
+	Type: PCI
+	Data Bus Width: 32 bit
+	Current Usage: Available
 	Length: Long
 	ID: 1
 	Characteristics:
@@ -344,17 +316,17 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 2304 bits
 	Data Width: 2252 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
 	Bank Locator: Bank0/1
 	Type: Unknown
 	Type Detail: None
-	Speed: 400 MHz
+	Speed: 400 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Part Number:  
 
 Handle 0x001B, DMI type 17, 27 bytes
@@ -363,17 +335,17 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 2304 bits
 	Data Width: 2252 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1
 	Bank Locator: Bank2/3
 	Type: Unknown
 	Type Detail: None
-	Speed: 400 MHz
+	Speed: 400 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Part Number:  
 
 Handle 0x001C, DMI type 17, 27 bytes
@@ -382,17 +354,17 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 2304 bits
 	Data Width: 2252 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A2
 	Bank Locator: Bank4/5
 	Type: Unknown
 	Type Detail: None
-	Speed: 400 MHz
+	Speed: 400 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Part Number:  
 
 Handle 0x001D, DMI type 17, 27 bytes
@@ -401,17 +373,17 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 2304 bits
 	Data Width: 2252 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A3
 	Bank Locator: Bank6/7
 	Type: Unknown
 	Type Detail: None
-	Speed: 400 MHz
+	Speed: 400 MT/s
 	Manufacturer:  
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Part Number:  
 
 Handle 0x001E, DMI type 19, 15 bytes

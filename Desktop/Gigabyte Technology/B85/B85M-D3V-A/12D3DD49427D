@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 77 structures occupying 3103 bytes.
@@ -330,7 +330,8 @@ Port Connector Information
 Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B2
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -343,7 +344,8 @@ System Slot Information
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -356,7 +358,8 @@ System Slot Information
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D1
-	Type: x8 PCI Express
+	Type: PCI Express
+	Data Bus Width: 8x or x8
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -369,7 +372,8 @@ System Slot Information
 Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7B1
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Short
 	ID: 3
@@ -382,7 +386,8 @@ System Slot Information
 Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -395,7 +400,8 @@ System Slot Information
 Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B3
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: In Use
 	Length: Short
 	ID: 6
@@ -713,7 +719,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -721,18 +727,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 0793
+	Manufacturer: 0420
 	Serial Number: --
 	Asset Tag: --
-	Part Number: GR1600D364L11S/4G 
-	Rank: 1
+	Part Number: F3-1600C11-8GNT   
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0043, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0042
 	Memory Array Mapped Address Handle: 0x0048
 	Partition Row Position: Unknown
@@ -759,7 +765,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -767,18 +773,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 1315
+	Manufacturer: 0420
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT51264BA160BJ.M8F
-	Rank: 1
+	Part Number: F3-1600C11-8GNT   
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0046, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0045
 	Memory Array Mapped Address Handle: 0x0048
 	Partition Row Position: Unknown
@@ -802,8 +808,8 @@ Memory Device
 Handle 0x0048, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0007
 	Partition Width: 4
 

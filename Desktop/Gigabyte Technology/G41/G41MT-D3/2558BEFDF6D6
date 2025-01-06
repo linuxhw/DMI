@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 38 structures occupying 1187 bytes.
@@ -76,36 +76,6 @@ Processor Information
 	Family: Other
 	Manufacturer: Intel
 	ID: FB 06 00 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 15, Stepping 11
-	Flags:
-		FPU (Floating-point unit on-chip)
-		VME (Virtual mode extension)
-		DE (Debugging extension)
-		PSE (Page size extension)
-		TSC (Time stamp counter)
-		MSR (Model specific registers)
-		PAE (Physical address extension)
-		MCE (Machine check exception)
-		CX8 (CMPXCHG8 instruction supported)
-		APIC (On-chip APIC hardware supported)
-		SEP (Fast system call)
-		MTRR (Memory type range registers)
-		PGE (Page global enable)
-		MCA (Machine check architecture)
-		CMOV (Conditional move instruction supported)
-		PAT (Page attribute table)
-		PSE-36 (36-bit page size extension)
-		CLFSH (CLFLUSH instruction supported)
-		DS (Debug store)
-		ACPI (ACPI supported)
-		MMX (MMX technology supported)
-		FXSR (FXSAVE and FXSTOR instructions supported)
-		SSE (Streaming SIMD extensions)
-		SSE2 (Streaming SIMD extensions 2)
-		SS (Self-snoop)
-		HTT (Multi-threading)
-		TM (Thermal monitor supported)
-		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM)2 Quad CPU
 	Voltage: 1.0 V
 	External Clock: 266 MHz
@@ -297,7 +267,8 @@ Port Connector Information
 Handle 0x0016, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 0
@@ -310,7 +281,8 @@ System Slot Information
 Handle 0x0017, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: In Use
 	Length: Long
 	ID: 1
