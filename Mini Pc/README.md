@@ -1,5 +1,5 @@
 Most popular CPU and RAM in Mini Pcs
-====================================
+------------------------------------
 
 See more info in the [README](https://github.com/linuxhw/DMI).
 
@@ -20,199 +20,248 @@ Report - link to DMI report.
 
 | MFG        | Name                             | GHz  | Count | Report |
 |------------|----------------------------------|------|-------|--------|
-| Intel      | Core i5-8259U                    | 2.30 | 62    | [21A3465BD54D](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEH/21A3465BD54D>) |
-| Intel      | 11th Gen Core i5-1135G7          | 2.40 | 55    | [2E2F0EA6AA4A](<Mini Pc/Intel Client Systems/NUC11/NUC11TNKi5/2E2F0EA6AA4A>) |
-| Intel      | Pentium Silver N6000             | 1.10 | 45    | [09653BE1DD03](<Mini Pc/Fanless Mini PC/Quieter/Quieter 3/09653BE1DD03>) |
-| Intel      | Celeron J4125                    | 2.00 | 43    | [E97F04B2B1C1](<Mini Pc/Fanless Mini PC/PCG35/PCG35 GLK/E97F04B2B1C1>) |
-| Intel      | Core i7-10710U                   | 1.10 | 42    | [A217958C2DD2](<Mini Pc/Intel Client Systems/NUC10/NUC10i7FNH/A217958C2DD2>) |
-| Intel      | Core i3-8109U                    | 3.00 | 39    | [271976958C44](<Mini Pc/Intel Client Systems/NUC8/NUC8i3BEH/271976958C44>) |
-| Intel      | Celeron J3455                    | 1.50 | 36    | [9A2A96A95ABF](<Mini Pc/Intel Client Systems/NUC6/NUC6CAYH/9A2A96A95ABF>) |
-| Intel      | Core i7-8559U                    | 2.70 | 33    | [156E47AE720D](<Mini Pc/Intel Client Systems/NUC8/NUC8i7BEH/156E47AE720D>) |
-| Intel      | Core i3-7100U                    | 2.40 | 31    | [E1E22FE45F6D](<Mini Pc/ZOTAC/ZBOX-CI527/ZBOX-CI527-CI547/E1E22FE45F6D>) |
-| Intel      | Core i5-3210M                    | 2.50 | 30    | [4FF3B8AF7593](<Mini Pc/Apple/Macmini6/Macmini6,1/4FF3B8AF7593>) |
-| Intel      | Atom Z3735F                      | 1.33 | 26    | [B082CEF670A3](<Mini Pc/MiPi PC/Mini/Mini PC/B082CEF670A3>) |
-| Intel      | Core i3-5010U                    | 2.10 | 24    | [707016B9D2C4](<Mini Pc/Wortmann AG/TERRA_PC/TERRA_PC/707016B9D2C4>) |
-| AMD        | Ryzen 9 5900HX with Radeon Gr... |      | 21    | [539DB5800CEE](<Mini Pc/AZW/GTR/GTR/539DB5800CEE>) |
-| Intel      | Core i5-7260U                    | 2.20 | 21    | [5A48D52A7EDA](<Mini Pc/Wortmann AG/TERRA_PC/TERRA_PC/5A48D52A7EDA>) |
-| Intel      | Celeron J1900                    | 1.99 | 21    | [E8C182707BA0](<Mini Pc/AMI/Aptio/Aptio CRB/E8C182707BA0>) |
-| Intel      | Core i3-10110U                   | 2.10 | 19    | [C5A82ADBCB5E](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN62S/C5A82ADBCB5E>) |
-| Intel      | Core i5-10210U                   | 1.60 | 19    | [F9FC40BCC314](<Mini Pc/Intel Client Systems/NUC10/NUC10i5FNH/F9FC40BCC314>) |
-| Intel      | 12th Gen Core i7-12700H          |      | 19    | [5A227E0116FB](<Mini Pc/Intel Client Systems/NUC12/NUC12WSHi7/5A227E0116FB>) |
-| Intel      | Core i7-8809G                    | 3.10 | 19    | [0FA94421095F](<Mini Pc/Intel Client Systems/NUC8/NUC8i7HVK/0FA94421095F>) |
-| Intel      | Core i5-4278U                    | 2.60 | 19    | [B57348B9F4E6](<Mini Pc/Apple/Macmini7/Macmini7,1/B57348B9F4E6>) |
-| Intel      | Core i7-6770HQ                   | 2.60 | 19    | [6215398CADD3](<Mini Pc/Intel/NUC6i7KYB/NUC6i7KYB H90766-405/6215398CADD3>) |
-| Intel      | Pentium N3700                    | 1.60 | 17    | [8F9E3FC61930](<Mini Pc/Intel/NUC5PPYB/NUC5PPYB H76558-107/8F9E3FC61930>) |
-| Intel      | Celeron N3350                    | 1.10 | 17    | [FFE86D67A763](<Mini Pc/Nuvision/NEBP/NEBP12/FFE86D67A763>) |
-| Intel      | Core i5-2415M                    | 2.30 | 16    | [1B734350C7E2](<Mini Pc/Apple/Macmini5/Macmini5,1/1B734350C7E2>) |
-| Intel      | Core i5-5250U                    | 1.60 | 16    | [2F7BB1D9A85D](<Mini Pc/Intel/NUC5i5RYB/NUC5i5RYB H40999-502/2F7BB1D9A85D>) |
-| Intel      | Celeron N3450                    | 1.10 | 16    | [B849F9AC9470](<Mini Pc/CSL-Computer/Narrow/Narrow Box Ultra HD Compact/B849F9AC9470>) |
-| AMD        | Embedded G-Series GX-420GI Ra... |      | 15    | [D14A501869D8](<Mini Pc/Hewlett-Packard/t630/t630 Thin Client/D14A501869D8>) |
-| Intel      | Core i5-4260U                    | 1.40 | 15    | [C4978D02A604](<Mini Pc/Apple/Macmini7/Macmini7,1/C4978D02A604>) |
-| Intel      | Celeron N3050                    | 1.60 | 15    | [955C879522E9](<Mini Pc/Intel/NUC5CPYB/NUC5CPYB H61145-407/955C879522E9>) |
-| AMD        | Ryzen 7 4800U with Radeon Gra... |      | 14    | [24AA08459D0E](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/24AA08459D0E>) |
-| AMD        | Ryzen 5 5600H with Radeon Gra... |      | 14    | [CDBA8041B3A5](<Mini Pc/AZW/SER/SER/CDBA8041B3A5>) |
-| Intel      | Celeron J4005                    | 2.00 | 14    | [3F30AC0E5D22](<Mini Pc/Intel Client Systems/NUC7/NUC7CJYH/3F30AC0E5D22>) |
-| Intel      | Pentium Silver J5005             | 1.50 | 14    | [E5C0E8061815](<Mini Pc/Intel/NUC7/NUC7PJYH/E5C0E8061815>) |
-| Intel      | Core i5-6500T                    | 2.50 | 14    | [31906DBA1358](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 600 G3 DM/31906DBA1358>) |
-| Intel      | Core i7-7567U                    | 3.50 | 12    | [E84BB2FD6439](<Mini Pc/Intel/NUC7/NUC7i7BNHX/E84BB2FD6439>) |
-| Intel      | Core i7-3720QM                   | 2.60 | 12    | [AA6745BB2E64](<Mini Pc/Apple/Macmini6/Macmini6,2/AA6745BB2E64>) |
-| Intel      | Celeron N3150                    | 1.60 | 12    | [CD64A1314266](<Mini Pc/MSI/MS-B/MS-B120/CD64A1314266>) |
-| Intel      | Core i3-6100U                    | 2.30 | 12    | [490ACB393881](<Mini Pc/Intel/NUC6i3SYB/NUC6i3SYB H81132-505/490ACB393881>) |
-| Intel      | Celeron N4020                    | 1.10 | 11    | [8C5A51876533](<Mini Pc/SK hynix/Mini/Mini PC/8C5A51876533>) |
-| Intel      | Core i5-6260U                    | 1.80 | 11    | [C6B76D6C0340](<Mini Pc/Intel/NUC6i5SYB/NUC6i5SYB H81131-503/C6B76D6C0340>) |
-| AMD        | G-T56N                           |      | 10    | [3EA0F94B1F39](<Mini Pc/Hewlett-Packard/t610/t610 WW Thin Client/3EA0F94B1F39>) |
-| AMD        | Ryzen 7 4700U with Radeon Gra... |      | 10    | [4EDEB05C441C](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/4EDEB05C441C>) |
-| Intel      | Core 2 Duo P8600                 | 2.40 | 10    | [0C9E87F65AA0](<Mini Pc/Apple/Macmini4/Macmini4,1/0C9E87F65AA0>) |
-| Intel      | Core i7-3615QM                   | 2.30 | 10    | [A8A176CDCCDC](<Mini Pc/Apple/Macmini6/Macmini6,2/A8A176CDCCDC>) |
-| AMD        | Ryzen 5 PRO 4650GE with Radeo... |      | 9     | [5D3851BCDC5D](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 405 G6 Desktop Mini PC/5D3851BCDC5D>) |
-| Intel      | Core i5-7500T                    | 2.70 | 9     | [E0ED541953C7](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M710q 10MR003UUS/E0ED541953C7>) |
-| Intel      | Core 2 Duo P8700                 | 2.53 | 9     | [B1D24220B517](<Mini Pc/Apple/Macmini3/Macmini3,1/B1D24220B517>) |
-| Intel      | Core i5-2520M                    | 2.50 | 9     | [6291C9908DA3](<Mini Pc/Apple/Macmini5/Macmini5,2/6291C9908DA3>) |
-| AMD        | Ryzen 5 5560U with Radeon Gra... |      | 8     | [B3B0A6501CEC](<Mini Pc/AZW/SER/SER/B3B0A6501CEC>) |
-| Intel      | Core i5-8400T                    | 1.70 | 8     | [5CFC5EAFB4A1](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M720q 10T7002CUS/5CFC5EAFB4A1>) |
-| Intel      | Core i7-8700B                    | 3.20 | 8     | [0577EEAC7900](<Mini Pc/Apple/Macmini8/Macmini8,1/0577EEAC7900>) |
-| Intel      | Celeron J1800                    | 2.41 | 8     | [EB2BCA05FD7C](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M53 10DD001BFR/EB2BCA05FD7C>) |
-| Intel      | Pentium J2900                    | 2.41 | 8     | [32B998916CDE](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M53 10DE001HUS/32B998916CDE>) |
-| Intel      | Core i7-5557U                    | 3.10 | 8     | [BE69D0456A98](<Mini Pc/Intel/NUC5i7RYB/NUC5i7RYB H73774-101/BE69D0456A98>) |
-| Intel      | Atom x5-Z8350                    | 1.44 | 8     | [AC1F30A762B7](<Mini Pc/Dell/Wyse/Wyse 3040 Thin Client/AC1F30A762B7>) |
+| Intel      | 11th Gen Core i5-1135G7          | 2.40 | 98    | [2B9572D6CEF1](<Mini Pc/Prime Computer/PrimeMini5/PrimeMini5 i7 11G/2B9572D6CEF1>) |
+| Intel      | Pentium Silver N6000             | 1.10 | 75    | [BC99F9CDC500](<Mini Pc/Intel Client Systems/NUC11/NUC11ATKPE/BC99F9CDC500>) |
+| Intel      | Core i5-8259U                    | 2.30 | 73    | [9C859B332473](<Mini Pc/ATComputers/ALZA/ALZA/9C859B332473>) |
+| Intel      | Celeron J4125                    | 2.00 | 58    | [30CC7CA82A03](<Mini Pc/BESSTAR Tech/GK/GK41/30CC7CA82A03>) |
+| Intel      | 12th Gen Core i7-12700H          |      | 51    | [B3F370149071](<Mini Pc/AZW/SEi12/SEi12 MAX/B3F370149071>) |
+| Intel      | Core i7-10710U                   | 1.10 | 51    | [01AA0F125F1B](<Mini Pc/Intel Client Systems/NUC10/NUC10i7FNK/01AA0F125F1B>) |
+| Intel      | Celeron J3455                    | 1.50 | 48    | [F5399D2B455A](<Mini Pc/Intel/NUC6/NUC6CAYH/F5399D2B455A>) |
+| AMD        | Ryzen 7 5800H with Radeon Gra... |      | 47    | [B61D3EFE4775](<Mini Pc/AZW/SER/SER/B61D3EFE4775>) |
+| Intel      | Core i3-8109U                    | 3.00 | 46    | [3E5090ECEAA3](<Mini Pc/Intel Client Systems/NUC8/NUC8i3BEH/3E5090ECEAA3>) |
+| Intel      | Core i5-3210M                    | 2.50 | 46    | [752E7F63EA4A](<Mini Pc/Apple/Macmini6/Macmini6,1/752E7F63EA4A>) |
+| Intel      | Core i7-8559U                    | 2.70 | 44    | [CC63723A9946](<Mini Pc/Intel Client Systems/NUC8/NUC8i7BEH/CC63723A9946>) |
+| Intel      | Core i3-7100U                    | 2.40 | 40    | [0B50C88805F1](<Mini Pc/Intel/NUC7i3BNB/NUC7i3BNB J22859-303/0B50C88805F1>) |
+| Intel      | Core i5-7260U                    | 2.20 | 39    | [AEB46873549B](<Mini Pc/Intel Client Systems/NUC7/NUC7i5BNH/AEB46873549B>) |
+| Intel      | Core i5-4278U                    | 2.60 | 38    | [5E58DA5118A8](<Mini Pc/Apple/Macmini7/Macmini7,1/5E58DA5118A8>) |
+| Intel      | Core i5-6500T                    | 2.50 | 35    | [766B125DB5D8](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 600 G3 DM/766B125DB5D8>) |
+| Intel      | Core i3-5010U                    | 2.10 | 32    | [CE8A12A00B51](<Mini Pc/Intel/NUC5i3MYBE/NUC5i3MYBE H47781-209/CE8A12A00B51>) |
+| AMD        | Ryzen 9 5900HX with Radeon Gr... |      | 31    | [89906C26AEC6](<Mini Pc/AZW/GTR/GTR/89906C26AEC6>) |
+| Intel      | Core i5-2415M                    | 2.30 | 30    | [337DD5D34BEB](<Mini Pc/Apple/Macmini5/Macmini5,1/337DD5D34BEB>) |
+| Intel      | Atom Z3735F                      | 1.33 | 30    | [DA2626D0F5E3](<Mini Pc/AMI/Aptio/Aptio CRB/DA2626D0F5E3>) |
+| Intel      | Core i5-5250U                    | 1.60 | 30    | [C211B64E17A5](<Mini Pc/Intel/NUC5i5RYB/NUC5i5RYB H40999-505/C211B64E17A5>) |
+| AMD        | Ryzen 7 5700U with Radeon Gra... |      | 29    | [621DD3B2632D](<Mini Pc/AZW/SER/SER/621DD3B2632D>) |
+| Intel      | Celeron J1900                    | 1.99 | 28    | [CE33A578FA08](<Mini Pc/AMI/Aptio/Aptio CRB/CE33A578FA08>) |
+| AMD        | Embedded G-Series GX-420GI Ra... |      | 27    | [1AF24C549C62](<Mini Pc/Hewlett-Packard/t630/t630 Thin Client/1AF24C549C62>) |
+| AMD        | Ryzen 5 5560U with Radeon Gra... |      | 27    | [CE65584EE726](<Mini Pc/AZW/SER/SER/CE65584EE726>) |
+| Intel      | 13th Gen Core i5-1340P           |      | 27    | [78E0BC244D76](<Mini Pc/Intel Client Systems/NUC13/NUC13ANKi5/78E0BC244D76>) |
+| Intel      | Core i3-10110U                   | 2.10 | 26    | [0125FFC3D382](<Mini Pc/Intel Client Systems/NUC10/NUC10i3FNK/0125FFC3D382>) |
+| Intel      | Celeron N3350                    | 1.10 | 26    | [AB68C201EFD4](<Mini Pc/Intel/AB2/AB2L/AB68C201EFD4>) |
+| Intel      | Core i5-4260U                    | 1.40 | 25    | [DD575070ADB3](<Mini Pc/Apple/Macmini7/Macmini7,1/DD575070ADB3>) |
+| Intel      | Core i7-6770HQ                   | 2.60 | 25    | [4F886C0F740F](<Mini Pc/Intel/NUC6i7KYB/NUC6i7KYB H90766-406/4F886C0F740F>) |
+| AMD        | Ryzen 5 5600H with Radeon Gra... |      | 24    | [F8D511D38DDB](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN52/F8D511D38DDB>) |
+| Intel      | Pentium Silver J5005             | 1.50 | 24    | [3D46678B9AC5](<Mini Pc/Dell/Wyse/Wyse 5070 Extended Thin Client/3D46678B9AC5>) |
+| Intel      | Core i7-3615QM                   | 2.30 | 24    | [FAC8616568BC](<Mini Pc/Apple/Macmini6/Macmini6,2/FAC8616568BC>) |
+| Intel      | Core i5-10210U                   | 1.60 | 23    | [DF0D9B50BF89](<Mini Pc/Intel Client Systems/NUC10/NUC10i5FNK/DF0D9B50BF89>) |
+| Intel      | N100                             |      | 23    | [1D5A038AC1ED](<Mini Pc/Chuwi/HeroBox/HeroBox/1D5A038AC1ED>) |
+| Intel      | Pentium N3700                    | 1.60 | 22    | [221D1663B6D0](<Mini Pc/Intel/NUC5PPYB/NUC5PPYB H76558-106/221D1663B6D0>) |
+| Intel      | Celeron N4020                    | 1.10 | 21    | [3C8EDFAE809B](<Mini Pc/Others/GB3/GB3B/3C8EDFAE809B>) |
+| Intel      | Celeron N3050                    | 1.60 | 21    | [047B6DAA7461](<Mini Pc/Lenovo/C20-00/C20-00 F0BB003JRK/047B6DAA7461>) |
+| AMD        | Ryzen 9 7940HS w/ Radeon 780M... |      | 20    | [3BAF981353FE](<Mini Pc/Micro Computer (HK) Tech Limited/Venus/Venus series/3BAF981353FE>) |
+| AMD        | Ryzen 9 6900HX with Radeon Gr... |      | 20    | [70A697D8101B](<Mini Pc/AZW/SER/SER/70A697D8101B>) |
+| Intel      | Core i5-7500T                    | 2.70 | 20    | [A387C1AB8037](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M910q 10MVS0CN00/A387C1AB8037>) |
+| Intel      | Core i7-8809G                    | 3.10 | 20    | [D04E39CCED32](<Mini Pc/Intel Client Systems/NUC8/NUC8i7HVK/D04E39CCED32>) |
+| Intel      | Celeron N3450                    | 1.10 | 20    | [C448CE9EA620](<Mini Pc/ZOTAC/ZBOX-CI327/ZBOX-CI327NANO-GS-01/C448CE9EA620>) |
+| Intel      | Core i7-7567U                    | 3.50 | 19    | [C7BCE64F181F](<Mini Pc/Intel/NUC7/NUC7i7BNH/C7BCE64F181F>) |
+| AMD        | A9-9400 RADEON R5, 5 COMPUTE ... |      | 18    | [9664EDEE7102](<Mini Pc/ATOPNUC/MA/MA90/9664EDEE7102>) |
+| Intel      | Celeron J4005                    | 2.00 | 18    | [3F30AC0E5D22](<Mini Pc/Intel Client Systems/NUC7/NUC7CJYH/3F30AC0E5D22>) |
+| Intel      | Core i5-8500T                    | 2.10 | 18    | [632BA1BEDA25](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M720q 10T8S4T600/632BA1BEDA25>) |
+| Intel      | Atom x5-Z8350                    | 1.44 | 18    | [AA03F426DCF7](<Mini Pc/Dell/Wyse/Wyse 3040 Thin Client/AA03F426DCF7>) |
+| AMD        | Ryzen 5 5500U with Radeon Gra... |      | 17    | [182915A05EAA](<Mini Pc/AZW/SER/SER/182915A05EAA>) |
+| AMD        | Ryzen 7 4700U with Radeon Gra... |      | 17    | [A7EBDA905616](<Mini Pc/AZW/SER/SER/A7EBDA905616>) |
+| Intel      | Core 2 Duo P8600                 | 2.40 | 17    | [AAC098D8DB44](<Mini Pc/Apple/Macmini4/Macmini4,1/AAC098D8DB44>) |
+| Intel      | Core i3-6100U                    | 2.30 | 17    | [FAE792E61AC2](<Mini Pc/Intel/NUC6i3SYB/NUC6i3SYB H81132-505/FAE792E61AC2>) |
+| AMD        | Ryzen 7 4800U with Radeon Gra... |      | 16    | [788AA74B4B60](<Mini Pc/AZW/SER/SER/788AA74B4B60>) |
+| Intel      | 13th Gen Core i7-13700K          |      | 16    | [0EACF4C8D303](<Mini Pc/Lenovo/ThinkStation/ThinkStation P3 Tiny 30H0006AGE/0EACF4C8D303>) |
+| Intel      | Core i7-3720QM                   | 2.60 | 16    | [C44F356D3F6B](<Mini Pc/Apple/Macmini6/Macmini6,2/C44F356D3F6B>) |
+| Intel      | Core i7-8700B                    | 3.20 | 15    | [4F7677849E29](<Mini Pc/Apple/Macmini8/Macmini8,1/4F7677849E29>) |
+| Intel      | Core i7-5557U                    | 3.10 | 15    | [1EA24459978E](<Mini Pc/Intel/NUC5i7RYB/NUC5i7RYB H73774-102/1EA24459978E>) |
+| Intel      | Celeron N3150                    | 1.60 | 15    | [5DE9AB2F6049](<Mini Pc/AMI/Aptio/Aptio CRB/5DE9AB2F6049>) |
+| Intel      | Core i5-6260U                    | 1.80 | 15    | [FB12EDE50DE4](<Mini Pc/Intel/NUC6i5SYB/NUC6i5SYB H81131-505/FB12EDE50DE4>) |
+| AMD        | Ryzen 7 7840HS w/ Radeon 780M... |      | 14    | [0AE4D4E1A91B](<Mini Pc/Micro Computer (HK) Tech Limited/Venus/Venus series/0AE4D4E1A91B>) |
+| AMD        | G-T56N                           |      | 13    | [A01F5CBD22D4](<Mini Pc/Hewlett-Packard/t610/t610 WW Thin Client/A01F5CBD22D4>) |
+| Intel      | 12th Gen Core i5-12500           |      | 13    | [DBA783C983A6](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M70q Gen 3 11T300BLGE/DBA783C983A6>) |
+| Intel      | Celeron J1900                    | 1.99 | 13    | [B8EEE095C5DC](<Mini Pc/AMI/Aptio/Aptio CRB/B8EEE095C5DC>) |
+| Intel      | Celeron N4100                    | 1.10 | 12    | [C0D04E936FD2](<Mini Pc/ASUSTek Computer/PN/PN40/C0D04E936FD2>) |
+| Intel      | Core i7-8650U                    | 1.90 | 12    | [8108904B82E7](<Mini Pc/Intel Client Systems/NUC7/NUC7i7DNHE/8108904B82E7>) |
+| Intel      | Core i5-8400T                    | 1.70 | 12    | [43E3B4C1159D](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M720q 10T8S64M00/43E3B4C1159D>) |
+| Intel      | Core i5-8500B                    | 3.00 | 12    | [BDE5ABDC6215](<Mini Pc/Apple/Macmini8/Macmini8,1/BDE5ABDC6215>) |
+| Intel      | Core i7-10700                    | 2.90 | 12    | [7A21AB2D0D5E](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 600 G6 Desktop Mini PC/7A21AB2D0D5E>) |
+| Intel      | Core 2 Duo P8700                 | 2.53 | 12    | [CB722E4FAEA5](<Mini Pc/Apple/Macmini3/Macmini3,1/CB722E4FAEA5>) |
+| AMD        | Ryzen 5 PRO 4650GE with Radeo... |      | 11    | [F51B00AC99D9](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 805 G6 Desktop Mini PC/F51B00AC99D9>) |
+| AMD        | Ryzen 7 7735HS with Radeon Gr... |      | 11    | [6A8219B028E8](<Mini Pc/AZW/SER/SER/6A8219B028E8>) |
+| Intel      | Core i7-8700T                    | 2.40 | 11    | [F5D0EAD6267E](<Mini Pc/Lenovo/ThinkStation/ThinkStation P330 Tiny 30CECTO1WW/F5D0EAD6267E>) |
+| Intel      | Core i5-2520M                    | 2.50 | 11    | [358A8F5F2FBF](<Mini Pc/Apple/Macmini5/Macmini5,2/358A8F5F2FBF>) |
+| Intel      | Core i7-4578U                    | 3.00 | 11    | [E0C219EC48F3](<Mini Pc/Apple/Macmini7/Macmini7,1/E0C219EC48F3>) |
+| Intel      | Core i7-7700T                    | 2.90 | 10    | [CE6E4D983EDC](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 600 G3 DM/CE6E4D983EDC>) |
+| Intel      | Core i5-10500T                   | 2.30 | 10    | [51908D93D66A](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M80q 11DQS2NU09/51908D93D66A>) |
+| Intel      | Core 2 Duo P7550                 | 2.26 | 10    | [282F4FA55477](<Mini Pc/Apple/Macmini3/Macmini3,1/282F4FA55477>) |
+| AMD        | Ryzen 5 PRO 3400GE w/ Radeon ... |      | 9     | [467E9C948DD7](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M75q-1 11A40011US/467E9C948DD7>) |
+| AMD        | Ryzen 3 4300U with Radeon Gra... |      | 9     | [AF64A36ECB42](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/AF64A36ECB42>) |
+| AMD        | Ryzen 5 4500U with Radeon Gra... |      | 9     | [65ED76199328](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50-E1/65ED76199328>) |
+| Intel      | 12th Gen Core i5-1235U           |      | 9     | [E366D2D7136B](<Mini Pc/ASUSTek Computer/NUC12/NUC12WSH-B/E366D2D7136B>) |
+| Intel      | Core i3-8100B                    | 3.60 | 9     | [05B5510E3969](<Mini Pc/Apple/Macmini8/Macmini8,1/05B5510E3969>) |
+| Intel      | Core i3-7100T                    | 3.40 | 9     | [BF54BF0857DB](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 400 G3 DM/BF54BF0857DB>) |
+| Intel      | Core i7-8705G                    | 3.10 | 9     | [9344657AF525](<Mini Pc/Intel Client Systems/NUC8/NUC8i7HNK/9344657AF525>) |
+| Intel      | Core i5-10400T                   | 2.00 | 9     | [6A6ACA909F6B](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M70q 11DUSBVM00/6A6ACA909F6B>) |
+| Intel      | Celeron J1800                    | 2.41 | 9     | [F163053D4532](<Mini Pc/Lenovo/H30-00/H30-00 90C2007LGE/F163053D4532>) |
+| Intel      | Celeron N2930                    | 1.83 | 9     | [FC8713610F98](<Mini Pc/ZOTAC/ZBOX-CI320NANO/ZBOX-CI320NANO series/FC8713610F98>) |
+| Intel      | Pentium J2900                    | 2.41 | 9     | [1E28F3D9725D](<Mini Pc/Lenovo/E50-00/E50-00 90BX0018MB/1E28F3D9725D>) |
+| AMD        | GX-424CC SOC with Radeon R5E ... |      | 8     | [10BBCE226DB9](<Mini Pc/CompuLab/fitlet-T/fitlet-T/10BBCE226DB9>) |
+| Centaur... | VIA Eden X2 U4200 @ 1.0+ GHz     |      | 8     | [362AD698331E](<Mini Pc/Hewlett-Packard/t510/t510 Thin Client/362AD698331E>) |
+| Intel      | Celeron J4105                    | 1.50 | 8     | [9365FFE95007](<Mini Pc/Dell/Wyse/Wyse 5070 Thin Client/9365FFE95007>) |
+| Intel      | Celeron J4025                    | 2.00 | 8     | [FD7D2D30EAA5](<Mini Pc/ASUSTek Computer/PN/PN40/FD7D2D30EAA5>) |
+| Intel      | Core i5-7400T                    | 2.40 | 8     | [0E0FC76D9FC6](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M710q 10MR000XGE/0E0FC76D9FC6>) |
+| Intel      | Core Ultra 7 155H                |      | 8     | [BF2DD5B4D222](<Mini Pc/AZW/GTi/GTi14/BF2DD5B4D222>) |
+| Intel      | Core 2 Duo P7350                 | 2.00 | 8     | [61BDA93F49B5](<Mini Pc/Apple/Macmini3/Macmini3,1/61BDA93F49B5>) |
+| Intel      | Celeron N2807                    | 1.58 | 8     | [21655F011AEA](<Mini Pc/WYSE/Dell/Dell Thin Client Desktop 3030 LT/21655F011AEA>) |
+| Intel      | Celeron J3060                    | 1.60 | 8     | [883DE7BD5452](<Mini Pc/Intel/NUC5CPYB/NUC5CPYB H61145-410/883DE7BD5452>) |
+| AMD        | Embedded G-Series GX-215JJ Ra... |      | 7     | [16EE3F3B4751](<Mini Pc/Hewlett-Packard/t530/t530 Thin Client/16EE3F3B4751>) |
 | AMD        | Ryzen 5 2400GE with Radeon Ve... |      | 7     | [400B2FD2C454](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M715q 10VHS23000/400B2FD2C454>) |
-| AMD        | Ryzen 5 PRO 3400GE w/ Radeon ... |      | 7     | [42D660DDA8A4](<Mini Pc/Daten Tecnologia/DC3/DC3A-U/42D660DDA8A4>) |
-| Intel      | Celeron N4100                    | 1.10 | 7     | [C0D04E936FD2](<Mini Pc/ASUSTek Computer/PN/PN40/C0D04E936FD2>) |
-| Intel      | Core i7-8650U                    | 1.90 | 7     | [E75029A9D00C](<Mini Pc/Intel/NUC7/NUC7i7DNKE/E75029A9D00C>) |
-| Intel      | Core i7-10700                    | 2.90 | 7     | [97C1F8B840C8](<Mini Pc/ZOTAC/ZBOX-ECM7307/ZBOX-ECM73070C-7307LH-53060C/97C1F8B840C8>) |
-| Intel      | Core 2 Duo P7350                 | 2.00 | 7     | [807755291B05](<Mini Pc/Apple/Macmini3/Macmini3,1/807755291B05>) |
-| Intel      | Core 2 Duo P7550                 | 2.26 | 7     | [34872FFDFEED](<Mini Pc/Apple/Macmini3/Macmini3,1/34872FFDFEED>) |
-| Intel      | Celeron N2930                    | 1.83 | 7     | [777238CAAA55](<Mini Pc/ZOTAC/ZBOX-CI320NANO/ZBOX-CI320NANO series/777238CAAA55>) |
-| AMD        | A9-9400 RADEON R5, 5 COMPUTE ... |      | 6     | [A53ED68DF138](<Mini Pc/ATOPNUC/MA/MA90/A53ED68DF138>) |
-| AMD        | Ryzen 7 5700U with Radeon Gra... |      | 6     | [4773A3E56AA1](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN51-E1/4773A3E56AA1>) |
-| Centaur... | VIA Eden X2 U4200 @ 1.0+ GHz     |      | 6     | [68BE52C35943](<Mini Pc/Hewlett-Packard/t510/t510 Thin Client/68BE52C35943>) |
-| Intel      | Core i5-8500B                    | 3.00 | 6     | [E9E73C1752E1](<Mini Pc/Apple/Macmini8/Macmini8,1/E9E73C1752E1>) |
-| Intel      | Core i7-8700T                    | 2.40 | 6     | [BEECE3233183](<Mini Pc/Lenovo/ThinkStation/ThinkStation P330 Tiny 30CES09U00/BEECE3233183>) |
-| Intel      | Core i7-7700T                    | 2.90 | 6     | [9F9358369869](<Mini Pc/Lenovo/ThinkStation/ThinkStation P320 Tiny 30C2001XRU/9F9358369869>) |
-| Intel      | 13th Gen Core i7-13700K          |      | 6     | [5FB909E0A69B](<Mini Pc/Intel Client Systems/NUC13/NUC13RNGi5/5FB909E0A69B>) |
+| AMD        | Ryzen 7 3750H with Radeon Veg... |      | 7     | [725E17B66333](<Mini Pc/Others/Others/Others/725E17B66333>) |
+| Intel      | Core i3-10100T                   | 3.00 | 7     | [EB1C9AFCC119](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M70q 11DT00B4GE/EB1C9AFCC119>) |
+| Intel      | Core i3-5005U                    | 2.00 | 7     | [24E07B3607A1](<Mini Pc/AZW/U/U55/24E07B3607A1>) |
+| Intel      | Celeron N3060                    | 1.60 | 7     | [3A61D18A471F](<Mini Pc/Intel/NUC5CPYB/NUC5CPYB H61145-413/3A61D18A471F>) |
+| AMD        | A9-9420e RADEON R5, 5 COMPUTE... |      | 6     | [EAF565A5B2FB](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M625q 10TF001GGE/EAF565A5B2FB>) |
+| Intel      | Celeron N4000                    | 1.10 | 6     | [5698BAEF3ADF](<Mini Pc/Hewlett-Packard/t430/t430 Thin Client/5698BAEF3ADF>) |
+| Intel      | 11th Gen Core i7-11850H          | 2.50 | 6     | [E1ADA35C85BB](<Mini Pc/Intel Client Systems/NUC11/NUC11DBBi9/E1ADA35C85BB>) |
+| Intel      | Core i3-8145U                    | 2.10 | 6     | [6F9877D0D4F1](<Mini Pc/Intel Client Systems/NUC8/NUC8i3PNH/6F9877D0D4F1>) |
+| Intel      | Core i5-7300U                    | 2.60 | 6     | [C93FD235134E](<Mini Pc/Intel Client Systems/NUC7/NUC7i5DNKPC/C93FD235134E>) |
+| Intel      | 12th Gen Core i9-12900K          |      | 6     | [6F076446DBA3](<Mini Pc/Intel Client Systems/NUC12/NUC12DCMi7/6F076446DBA3>) |
+| Intel      | Core i7-8700                     | 3.20 | 6     | [88993E9AA93E](<Mini Pc/Hewlett-Packard/Z2/Z2 Mini G4 Workstation/88993E9AA93E>) |
+| Intel      | Core i3-8100T                    | 3.10 | 6     | [4A63CD032E6C](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M720q 10T8S62P00/4A63CD032E6C>) |
+| Intel      | Core i7-10700T                   | 2.00 | 6     | [6BB6ECE7CCCC](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 400 G6 Desktop Mini PC/6BB6ECE7CCCC>) |
+| Intel      | 11th Gen Core i7-11700           | 2.50 | 6     | [6C7769E0369D](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M70q Gen 2 11MY0033SP/6C7769E0369D>) |
 | Intel      | Celeron N2840                    | 2.16 | 6     | [9310D018D536](<Mini Pc/DEXP/AIO/AIO/9310D018D536>) |
-| Intel      | Celeron J1900                    | 1.99 | 6     | [C74D177D4A99](<Mini Pc/AMI/Aptio/Aptio CRB/C74D177D4A99>) |
-| Intel      | Celeron N3060                    | 1.60 | 6     | [3412F4B83350](<Mini Pc/MSI/MS-B/MS-B120/3412F4B83350>) |
-| AMD        | Ryzen 3 4300U with Radeon Gra... |      | 5     | [FC7002DDE03C](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/FC7002DDE03C>) |
-| AMD        | Ryzen 5 4500U with Radeon Gra... |      | 5     | [2E531BF3A99D](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/2E531BF3A99D>) |
-| Intel      | Core i3-8100B                    | 3.60 | 5     | [C2BFA09A14AD](<Mini Pc/Apple/Macmini8/Macmini8,1/C2BFA09A14AD>) |
-| Intel      | Core i7-8700                     | 3.20 | 5     | [2A25D01147BA](<Mini Pc/Hewlett-Packard/Z2/Z2 Mini G4 Workstation/2A25D01147BA>) |
-| Intel      | Core i7-8705G                    | 3.10 | 5     | [2483CDED328C](<Mini Pc/Intel/NUC8/NUC8i7HNK/2483CDED328C>) |
-| Intel      | Core i3-10100T                   | 3.00 | 5     | [DFE02E0590AD](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M70q 11DT003GRU/DFE02E0590AD>) |
-| Intel      | Celeron J3060                    | 1.60 | 5     | [4827237811A9](<Mini Pc/Intel/NUC5CPYB/NUC5CPYB H61145-412/4827237811A9>) |
-| Intel      | Atom E3950                       | 1.60 | 5     | [22D503355AD1](<Mini Pc/EXTRA Computer/Pokini/Pokini F2/22D503355AD1>) |
-| Intel      | Pentium N4200                    | 1.10 | 5     | [084968A446B3](<Mini Pc/iBall/CompBook/CompBook Premio V3/084968A446B3>) |
-| AMD        | A9-9420e RADEON R5, 5 COMPUTE... |      | 4     | [2E9625BCD432](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M625q 10TF001NRU/2E9625BCD432>) |
-| AMD        | Embedded G-Series GX-215JJ Ra... |      | 4     | [2A38F450F1CB](<Mini Pc/Hewlett-Packard/t530/t530 Thin Client/2A38F450F1CB>) |
-| AMD        | Ryzen 7 5800H with Radeon Gra... |      | 4     | [89DAE8FF2DDA](<Mini Pc/AZW/SER/SER/89DAE8FF2DDA>) |
-| Intel      | Celeron J4105                    | 1.50 | 4     | [06099CAD1A2D](<Mini Pc/Dell/Wyse/Wyse 5070 Thin Client/06099CAD1A2D>) |
-| Intel      | 12th Gen Core i9-12900K          |      | 4     | [9DF75800A431](<Mini Pc/Intel Client Systems/NUC12/NUC12DCMi7/9DF75800A431>) |
-| Intel      | Xeon E-2286M                     | 2.40 | 4     | [41AB2C49D511](<Mini Pc/Intel Client Systems/NUC9/NUC9VXQNX/41AB2C49D511>) |
-| Intel      | Core i3-7100T                    | 3.40 | 4     | [4032A8D3845F](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M710q 10MQS2SP00/4032A8D3845F>) |
-| Intel      | Core i5-7400T                    | 2.40 | 4     | [CF634F337F26](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M710q 10MR001YMZ/CF634F337F26>) |
-| Intel      | Core i5-10400T                   | 2.00 | 4     | [8094613BB2EA](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M70q 11DT003RRU/8094613BB2EA>) |
-| Intel      | Core i5-10500T                   | 2.30 | 4     | [74BE63B62162](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 600 G6 Desktop Mini PC/74BE63B62162>) |
-| Intel      | Atom D425                        | 1.80 | 4     | [257EB416AC40](<Mini Pc/Intel/D425KT/D425KT AAE93083-301/257EB416AC40>) |
-| Intel      | Core i3-5005U                    | 2.00 | 4     | [23F9BF88A248](<Mini Pc/MITSUSHIBA/Intel/Intel NUC I3 BP-011F-BP-013F/23F9BF88A248>) |
-| Intel      | Core i7-4578U                    | 3.00 | 4     | [99F74036F07D](<Mini Pc/Apple/Macmini7/Macmini7,1/99F74036F07D>) |
+| Intel      | Atom E3950                       | 1.60 | 6     | [FE9990A90ADA](<Mini Pc/CompuLab/fitlet/fitlet2/FE9990A90ADA>) |
+| Intel      | Pentium N4200                    | 1.10 | 6     | [645CEF4A0D88](<Mini Pc/Kodlix/AP/AP42/645CEF4A0D88>) |
+| Intel      | Core i5-6400T                    | 2.20 | 6     | [FA2EBBCEC477](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M710q 10MQS0KU02/FA2EBBCEC477>) |
+| AMD        | Ryzen 3 PRO 2300U w/ Radeon V... |      | 5     | [44702C600CC4](<Mini Pc/Hewlett-Packard/mt44/mt44 Mobile Thin Client/44702C600CC4>) |
+| AMD        | Ryzen 5 PRO 2400GE w/ Radeon ... |      | 5     | [E4809D71F4E7](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M715q 10VHS2DL00/E4809D71F4E7>) |
+| AMD        | Ryzen 7 PRO 4750GE with Radeo... |      | 5     | [1298BD19153A](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 405 G6 Desktop Mini PC/1298BD19153A>) |
+| AMD        | Ryzen 7 6800H with Radeon Gra... |      | 5     | [A7D4557BBCB1](<Mini Pc/AZW/SER/SER/A7D4557BBCB1>) |
+| AMD        | Ryzen 5 PRO 5650GE with Radeo... |      | 5     | [52C68CA99B3E](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M75q Gen 2 11JN000EGE/52C68CA99B3E>) |
+| AMD        | Ryzen 7 5800U with Radeon Gra... |      | 5     | [7A7B094C4DF5](<Mini Pc/Others/V/V00/7A7B094C4DF5>) |
+| Intel      | Core i7-8550U                    | 1.80 | 5     | [E427CF90402F](<Mini Pc/ASUSTek Computer/UN68/UN68U/E427CF90402F>) |
+| Intel      | Core i5-7200U                    | 2.50 | 5     | [60EED1F1AFA8](<Mini Pc/ZOTAC/ZBOX-CI527/ZBOX-CI527-CI547/60EED1F1AFA8>) |
+| Intel      | Core i5-9400T                    | 1.80 | 5     | [DDC61CE367F2](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M720q m720q/DDC61CE367F2>) |
+| Intel      | Core i7-9700T                    | 2.00 | 5     | [816BAB70CE9B](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M720q 10T7CTO1WW/816BAB70CE9B>) |
+| Intel      | Xeon E-2286M                     | 2.40 | 5     | [3955FDC8D732](<Mini Pc/Intel Client Systems/NUC9/NUC9VXQNX/3955FDC8D732>) |
+| Intel      | 13th Gen Core i7-1355U           |      | 5     | [883EB9936C9F](<Mini Pc/Intel Client Systems/NUC13/NUC13ANHi3/883EB9936C9F>) |
+| Intel      | Atom D425                        | 1.80 | 5     | [F9CAE375B1F3](<Mini Pc/Intel/D425KT/D425KT AAE93083-400/F9CAE375B1F3>) |
+| Intel      | Core i5-5300U                    | 2.30 | 5     | [D781ED12854A](<Mini Pc/Intel/NUC5i5MYBE/NUC5i5MYBE H47797-203/D781ED12854A>) |
+| Intel      | Core i3-6100T                    | 3.20 | 5     | [84A6A5BE6438](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 600 G3 DM/84A6A5BE6438>) |
+| Intel      | Core i5-6500                     | 3.20 | 5     | [1958717F42C8](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M710q 10MQS2M703/1958717F42C8>) |
+| AMD        | PRO A10-9700E R7, 10 COMPUTE ... |      | 4     | [8C2CD3C46661](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M715q 10VGS05N00/8C2CD3C46661>) |
+| AMD        | Ryzen 3 2200GE with Radeon Ve... |      | 4     | [608F9F8F4E13](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M715q 10VHS0BL00/608F9F8F4E13>) |
+| AMD        | Ryzen Embedded R1505G with Ra... |      | 4     | [9AC0AB63F3A5](<Mini Pc/Hewlett-Packard/t640/t640 Thin Client/9AC0AB63F3A5>) |
+| AMD        | Ryzen 9 8945HS w/ Radeon 780M... |      | 4     | [4EBC68B98724](<Mini Pc/Micro Computer (HK) Tech Limited/EliteMini/EliteMini Series/4EBC68B98724>) |
+| AMD        | Ryzen 5 5600U with Radeon Gra... |      | 4     | [2428AE2E534B](<Mini Pc/Others/V/V00/2428AE2E534B>) |
+| Intel      | Pentium Silver N5030             | 1.10 | 4     | [D329E3028579](<Mini Pc/BESSTAR Tech/GK/GK50/D329E3028579>) |
+| Intel      | Core i5-8265U                    | 1.60 | 4     | [1B90726BBBB7](<Mini Pc/MouseComputer/MPro-M/MPro-M600/1B90726BBBB7>) |
+| Intel      | Core i7-8665U                    | 1.90 | 4     | [971A07F5CF5B](<Mini Pc/Intel Client Systems/NUC8/NUC8v7PNH/971A07F5CF5B>) |
+| Intel      | Atom x6425RE                     | 1.90 | 4     | [0A4DC4D7916D](<Mini Pc/congatec/conga-MA7/conga-MA7 B.4/0A4DC4D7916D>) |
+| Intel      | Core i5-9300H                    | 2.40 | 4     | [39BE0CAA78A2](<Mini Pc/Intel Client Systems/NUC9/NUC9i5QNX/39BE0CAA78A2>) |
+| Intel      | Core i5-9500T                    | 2.20 | 4     | [4D2BBC6838C0](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M720q 10T8SJXD00/4D2BBC6838C0>) |
+| Intel      | Core i3-9100                     | 3.60 | 4     | [7D871B605D57](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M920x 10S1S07700/7D871B605D57>) |
+| Intel      | Core i5-7500                     | 3.40 | 4     | [623C6DFA14C1](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 800 G3 DM 65W/623C6DFA14C1>) |
+| Intel      | Core 2 Duo P8800                 | 2.66 | 4     | [42C9CFFAF990](<Mini Pc/Apple/Macmini4/Macmini4,1/42C9CFFAF990>) |
+| Intel      | Celeron 1007U                    | 1.50 | 4     | [0D5FCE777B3D](<Mini Pc/ZOTAC/ZBOX-ID/ZBOX-ID18/0D5FCE777B3D>) |
+| Intel      | Core i7-3770T                    | 2.50 | 4     | [3BB1FB0050E9](<Mini Pc/ZOTAC/ZBOX-ID88/ZBOX-ID88-ID89-ID90/3BB1FB0050E9>) |
+| Intel      | Core i5-4308U                    | 2.80 | 4     | [746369232680](<Mini Pc/Apple/Macmini7/Macmini7,1/746369232680>) |
+| Intel      | Celeron N3160                    | 1.60 | 4     | [43133D883C9F](<Mini Pc/AMI/Aptio/Aptio CRB/43133D883C9F>) |
+| Intel      | Celeron N3350                    | 1.10 | 4     | [C15BA9F781DC](<Mini Pc/AMI/Aptio/Aptio CRB/C15BA9F781DC>) |
 | AMD        | RX-427BB with AMD Radeon R7 G... |      | 3     | [E94D038C9E51](<Mini Pc/Hewlett-Packard/t730/t730 Thin Client/E94D038C9E51>) |
-| AMD        | GX-424CC SOC with Radeon R5E ... |      | 3     | [BFFD9DC32BEF](<Mini Pc/WYSE/Dell/Dell Thin Client Desktop 5060/BFFD9DC32BEF>) |
+| AMD        | Ryzen 3 PRO 2200GE w/ Radeon ... |      | 3     | [EC2585700499](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M715q 10VGCTO1WW/EC2585700499>) |
+| AMD        | Athlon Silver 3050e with Rade... |      | 3     | [63BF4E6C46E3](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M75n 11GW000BUS/63BF4E6C46E3>) |
 | AMD        | Ryzen 3 PRO 4350GE with Radeo... |      | 3     | [B114BBC992FE](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M75q Gen 2 11JJ001RRU/B114BBC992FE>) |
-| AMD        | Ryzen 7 PRO 4750GE with Radeo... |      | 3     | [1298BD19153A](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 405 G6 Desktop Mini PC/1298BD19153A>) |
-| AMD        | Ryzen 7 7735HS with Radeon Gr... |      | 3     | [6ACE98838322](<Mini Pc/AZW/SER/SER/6ACE98838322>) |
-| Intel      | Celeron N4000                    | 1.10 | 3     | [96DF0C529E2C](<Mini Pc/Hewlett-Packard/t430/t430 Thin Client/96DF0C529E2C>) |
-| Intel      | Pentium Silver N5030             | 1.10 | 3     | [0786D176E577](<Mini Pc/BESSTAR Tech/GK/GK50/0786D176E577>) |
-| Intel      | Core i7-8550U                    | 1.80 | 3     | [5E476A2F4BF6](<Mini Pc/ZOTAC/ZBOX-MI640/ZBOX-MI640-MI660-MI620NANO/5E476A2F4BF6>) |
-| Intel      | Core i7-8665U                    | 1.90 | 3     | [AECCF9C01BD8](<Mini Pc/Intel Client Systems/NUC8/NUC8v7PNH/AECCF9C01BD8>) |
-| Intel      | Core i5-7200U                    | 2.50 | 3     | [859CC84F4A33](<Mini Pc/ASUSTek Computer/UN65/UN65U/859CC84F4A33>) |
-| Intel      | Core i5-8500T                    | 2.10 | 3     | [C6037FE7549F](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M920q 10RRS38W00/C6037FE7549F>) |
-| Intel      | Core i5-9300H                    | 2.40 | 3     | [FEC8FB1A3ACB](<Mini Pc/ZOTAC/ZBOX-EN7208/ZBOX-EN72080V-EN72070V-EN52060V-EN51660T/FEC8FB1A3ACB>) |
-| Intel      | Core i3-8100T                    | 3.10 | 3     | [12F3D5AFE1A4](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M720q 10T8SD6H00/12F3D5AFE1A4>) |
-| Intel      | Core i5-7500                     | 3.40 | 3     | [623C6DFA14C1](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 800 G3 DM 65W/623C6DFA14C1>) |
+| AMD        | Ryzen 7 7840H w/ Radeon 780M ... |      | 3     | [198D5E70E3B4](<Mini Pc/MECHREVO/F7BSC/F7BSC V1.0/198D5E70E3B4>) |
+| Intel      | Pentium Silver J5040             | 2.00 | 3     | [0FCC56EE94E2](<Mini Pc/ASUSTek Computer/PN/PN40/0FCC56EE94E2>) |
+| Intel      | Core i7-10510U                   | 1.80 | 3     | [B1FA9822101A](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN62/B1FA9822101A>) |
+| Intel      | Core 2 T5600                     | 1.83 | 3     | [C0FBE2569FA5](<Mini Pc/Apple/Macmini2/Macmini2,1/C0FBE2569FA5>) |
+| Intel      | Core i3-9100T                    | 3.10 | 3     | [136182EF0F71](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M720q 10T7009YRU/136182EF0F71>) |
 | Intel      | Core i5-10400                    | 2.90 | 3     | [9B9DAD9D895A](<Mini Pc/ZOTAC/ZBOX-ECM7307/ZBOX-ECM73070C-53060C/9B9DAD9D895A>) |
-| Intel      | Core i7-10700T                   | 2.00 | 3     | [AAA8C7B92FB7](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 400 G6 Desktop Mini PC/AAA8C7B92FB7>) |
-| Intel      | Core 2 Duo P8800                 | 2.66 | 3     | [FD1C304A8806](<Mini Pc/Apple/Macmini4/Macmini4,1/FD1C304A8806>) |
+| Intel      | 13th Gen Core i5-13400F          |      | 3     | [6435D8892050](<Mini Pc/ZOTAC/ZBOX-EN3740/ZBOX-EN374070C/6435D8892050>) |
 | Intel      | Atom D525                        | 1.80 | 3     | [E272C7549D5E](<Mini Pc/ZOTAC/ZBOX-ID/ZBOX-ID41/E272C7549D5E>) |
+| Intel      | Core i7-2635QM                   | 2.00 | 3     | [1050EC7A4611](<Mini Pc/Apple/Macmini5/Macmini5,3/1050EC7A4611>) |
 | Intel      | Atom D2550                       | 1.86 | 3     | [2624D8EDD4B1](<Mini Pc/ZOTAC/ZBOX-ID/ZBOX-ID84/2624D8EDD4B1>) |
 | Intel      | Atom Z3736F                      | 1.33 | 3     | [DE244C0DB460](<Mini Pc/AMI/Aptio/Aptio CRB/DE244C0DB460>) |
-| Intel      | Celeron N2807                    | 1.58 | 3     | [E0B056E177FA](<Mini Pc/Clientron/C/C800/E0B056E177FA>) |
-| Intel      | Celeron 1007U                    | 1.50 | 3     | [71AD0A83CC3F](<Mini Pc/ZOTAC/ZBOX-ID/ZBOX-ID18/71AD0A83CC3F>) |
+| Intel      | Pentium N3540                    | 2.16 | 3     | [3B57C2CC34CE](<Mini Pc/Exo/Smart/Smart R8-CE/3B57C2CC34CE>) |
+| Intel      | Atom E3827                       | 1.74 | 3     | [C50F3F9F774B](<Mini Pc/Dell/Edge/Edge Gateway 5000/C50F3F9F774B>) |
 | Intel      | Core i7-3517UE                   | 1.70 | 3     | [F82D466DC54E](<Mini Pc/CompuLab/Intense-PC/Intense-PC/F82D466DC54E>) |
-| Intel      | Core i7-3770T                    | 2.50 | 3     | [5FDA0C4A434D](<Mini Pc/ZOTAC/ZBOX-ID88/ZBOX-ID88-ID89-ID90/5FDA0C4A434D>) |
-| Intel      | Core i5-5300U                    | 2.30 | 3     | [7B4D2C094AB2](<Mini Pc/Intel/NUC5i5MYBE/NUC5i5MYBE H47797-202/7B4D2C094AB2>) |
-| Intel      | Celeron N3350                    | 1.10 | 3     | [127575E26FEC](<Mini Pc/congatec/conga-MA5/conga-MA5 B.2/127575E26FEC>) |
-| Intel      | Core i3-6100T                    | 3.20 | 3     | [67905C6C5309](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M710q 10MSS01C00/67905C6C5309>) |
+| Intel      | Core i5-5200U                    | 2.20 | 3     | [A9A2DF7B7E36](<Mini Pc/ZOTAC/ZBOX/ZBOX/A9A2DF7B7E36>) |
+| Intel      | Pentium J3710                    | 1.60 | 3     | [DC50599AB825](<Mini Pc/AMI/Aptio/Aptio CRB/DC50599AB825>) |
+| Intel      | Core i7-6700T                    | 2.80 | 3     | [BF32A8DAED23](<Mini Pc/Lenovo/ThinkStation/ThinkStation P320 Tiny 30C1S1K902/BF32A8DAED23>) |
 | Intel      | Pentium G4400T                   | 2.90 | 3     | [895099FEC069](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 600 G3 DM/895099FEC069>) |
 | AMD        | E2-1800 APU with Radeon HD Gr... |      | 2     | [1942AB43E912](<Mini Pc/ZOTAC/ZBOXNANO-AD/ZBOXNANO-AD12/1942AB43E912>) |
-| AMD        | PRO A10-9700E R7, 10 COMPUTE ... |      | 2     | [0168DA559F7B](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M715q 10M2S0JL00/0168DA559F7B>) |
+| AMD        | PRO A8-8600B R6, 10 Compute C... |      | 2     | [759D5A0D248F](<Mini Pc/Hewlett-Packard/mt42/mt42 Mobile Thin Client/759D5A0D248F>) |
 | AMD        | A4-5000 APU with Radeon HD Gr... |      | 2     | [CB6345F9DAF9](<Mini Pc/ZOTAC/ZBOXNANO-AQ/ZBOXNANO-AQ01/CB6345F9DAF9>) |
 | AMD        | Ryzen 3 5300U with Radeon Gra... |      | 2     | [AA990300D125](<Mini Pc/CSL-Computer/Celeron/Celeron/AA990300D125>) |
-| AMD        | Ryzen 5 5500U with Radeon Gra... |      | 2     | [8C48251D82E0](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN51-E1/8C48251D82E0>) |
-| AMD        | Ryzen 3 2200GE with Radeon Ve... |      | 2     | [28BB5B3B7530](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M715q 10VG001QRU/28BB5B3B7530>) |
-| AMD        | Ryzen 3 PRO 2200GE w/ Radeon ... |      | 2     | [FEE9E9034339](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M715q 10VG000EUS/FEE9E9034339>) |
 | AMD        | Ryzen 3 3200U with Radeon Veg... |      | 2     | [4F9AF19348C5](<Mini Pc/AZW/SER/SER/4F9AF19348C5>) |
-| AMD        | Ryzen 7 3750H with Radeon Veg... |      | 2     | [1D2AD30187E0](<Mini Pc/AZW/SER/SER/1D2AD30187E0>) |
-| AMD        | Ryzen Embedded R1505G with Ra... |      | 2     | [E6875D808502](<Mini Pc/Hewlett-Packard/t640/t640 Thin Client/E6875D808502>) |
-| AMD        | Athlon Silver 3050e with Rade... |      | 2     | [5439510A54DE](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M75n 11GWCTO1WW/5439510A54DE>) |
-| AMD        | Ryzen 5 5600U with Radeon Gra... |      | 2     | [6374A297A2ED](<Mini Pc/Others/V/V00/6374A297A2ED>) |
+| AMD        | Ryzen 3 PRO 3300U w/ Radeon V... |      | 2     | [DE20DCCB487E](<Mini Pc/Hewlett-Packard/mt45/mt45 Mobile Thin Client/DE20DCCB487E>) |
+| AMD        | Ryzen 5 PRO 4650G with Radeon... |      | 2     | [0E8F2605F090](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 805 G6 Desktop Mini PC/0E8F2605F090>) |
+| AMD        | Ryzen 7 PRO 4750G with Radeon... |      | 2     | [AD7BFEA4A1A9](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 805 G6 Desktop Mini PC/AD7BFEA4A1A9>) |
+| AMD        | Ryzen 7 8745H w/ Radeon 780M ... |      | 2     | [E5142BB15DAA](<Mini Pc/Micro Computer (HK) Tech Limited/EliteMini/EliteMini Series/E5142BB15DAA>) |
+| AMD        | Ryzen 7 8845HS w/ Radeon 780M... |      | 2     | [D9CDC861F498](<Mini Pc/AZW/SER/SER8/D9CDC861F498>) |
+| AMD        | Ryzen 5 6600H with Radeon Gra... |      | 2     | [72ACADE6F6FA](<Mini Pc/AZW/EQ/EQ/72ACADE6F6FA>) |
 | Intel      | Celeron J4115                    | 1.80 | 2     | [4AD6D812FCDC](<Mini Pc/Chuwi/LarkBox/LarkBox/4AD6D812FCDC>) |
 | Intel      | Genuine T2300                    | 1.66 | 2     | [588F8BC921DB](<Mini Pc/Apple/Macmini2/Macmini2,1/588F8BC921DB>) |
-| Intel      | 11th Gen Core i7-11850H          | 2.50 | 2     | [74EFD96AADA4](<Mini Pc/Intel Client Systems/NUC11/NUC11BTMi7/74EFD96AADA4>) |
-| Intel      | Core i3-8145U                    | 2.10 | 2     | [B9CCA0A76C35](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M90n-1 11AHS0B200/B9CCA0A76C35>) |
-| Intel      | Core i5-8265U                    | 1.60 | 2     | [D203F33318BC](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M90n-1 11AD002DGE/D203F33318BC>) |
-| Intel      | Core i7-10510U                   | 1.80 | 2     | [C2E86CC7FC26](<Mini Pc/SiComputer/Zepto/Zepto/C2E86CC7FC26>) |
-| Intel      | Core i5-7300U                    | 2.60 | 2     | [9520DB1C59AE](<Mini Pc/Intel Client Systems/NUC7/NUC7i5DNKE/9520DB1C59AE>) |
-| Intel      | Core 2 T5600                     | 1.83 | 2     | [8B91B715078D](<Mini Pc/Apple/Macmini2/Macmini2,1/8B91B715078D>) |
-| Intel      | Atom x6425RE                     | 1.90 | 2     | [FC51E41C422F](<Mini Pc/congatec/conga-PA7/conga-PA7 A.0/FC51E41C422F>) |
-| Intel      | 12th Gen Core i5-12500           |      | 2     | [9FD935DA3E5B](<Mini Pc/Hewlett-Packard/Elite/Elite Mini 600 G9 Desktop PC/9FD935DA3E5B>) |
-| Intel      | Core i5-9400T                    | 1.80 | 2     | [D38F05F5B16E](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M720q 10T700BGGE/D38F05F5B16E>) |
-| Intel      | Core i5-9500T                    | 2.20 | 2     | [41DB2AC53FB7](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M720q 10T8SEYP00/41DB2AC53FB7>) |
-| Intel      | Core i7-9700T                    | 2.00 | 2     | [C62828790843](<Mini Pc/Lenovo/ThinkStation/ThinkStation P330 Tiny 30CES0BH00/C62828790843>) |
+| Intel      | Core i5-8500                     | 3.00 | 2     | [91B5792D0623](<Mini Pc/Lenovo/ThinkStation/ThinkStation P330 Tiny 30CES3QF18/91B5792D0623>) |
+| Intel      | Pentium Gold G5400               | 3.70 | 2     | [2E6CC0B13701](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M920x 10S0S0FU00/2E6CC0B13701>) |
 | Intel      | Core i9-9980HK                   | 2.40 | 2     | [519180459546](<Mini Pc/Intel Client Systems/NUC9/NUC9i9QNX/519180459546>) |
+| Intel      | Xeon E-2278GE                    | 3.30 | 2     | [5F4EB4EF9A37](<Mini Pc/CompuLab/Airtop/Airtop3/5F4EB4EF9A37>) |
 | Intel      | Core i7-7700                     | 3.60 | 2     | [8084FB81FAB5](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 800 G3 DM 65W/8084FB81FAB5>) |
+| Intel      | Pentium G4560T                   | 2.90 | 2     | [2F49A5234E8E](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M710q 10MRCTO1WW/2F49A5234E8E>) |
+| Intel      | Xeon E3-1245 v6                  | 3.70 | 2     | [AC3690C45960](<Mini Pc/Hewlett-Packard/Z2/Z2 Mini G3 Workstation/AC3690C45960>) |
+| Intel      | Core i3-10105T                   | 3.00 | 2     | [9DE4E31495C1](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M70q Gen 2 11MY003MRU/9DE4E31495C1>) |
 | Intel      | Core i5-10500                    | 3.10 | 2     | [1AD35AB4DD59](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 800 G6 Desktop Mini PC/1AD35AB4DD59>) |
 | Intel      | Pentium Gold G6400T              | 3.40 | 2     | [3BD98BA3E33B](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 600 G6 Desktop Mini PC/3BD98BA3E33B>) |
+| Intel      | Core i9-10900                    | 2.80 | 2     | [C6A832D343B8](<Mini Pc/Hewlett-Packard/Z2/Z2 Mini G5 Workstation/C6A832D343B8>) |
 | Intel      | Core i9-10900T                   | 1.90 | 2     | [D309CE75F12D](<Mini Pc/Lenovo/ThinkStation/ThinkStation P340 Tiny 30DFS05W00/D309CE75F12D>) |
 | Intel      | Core i3-2120T                    | 2.60 | 2     | [694AE29C9C7C](<Mini Pc/Fujitsu/ESPRIMO/ESPRIMO Q510/694AE29C9C7C>) |
-| Intel      | Core i7-2635QM                   | 2.00 | 2     | [0F258C6DB887](<Mini Pc/Apple/Macmini5/Macmini5,3/0F258C6DB887>) |
 | Intel      | Atom Z3770                       | 1.46 | 2     | [7B0A825C6EAF](<Mini Pc/Advantech/MICA/MICA-071/7B0A825C6EAF>) |
-| Intel      | Pentium N3540                    | 2.16 | 2     | [561537D5DFFE](<Mini Pc/NOBLEX/N15/N15W1/561537D5DFFE>) |
+| Intel      | Atom Z3735D                      | 1.33 | 2     | [A98F6B3CA080](<Mini Pc/AMI/Aptio/Aptio CRB/A98F6B3CA080>) |
 | Intel      | Atom E3826                       | 1.46 | 2     | [11F11A09D2B7](<Mini Pc/AMI/Aptio/Aptio CRB/11F11A09D2B7>) |
-| Intel      | Atom E3827                       | 1.74 | 2     | [6EF054560413](<Mini Pc/NEXCOM/VTC/VTC1010/6EF054560413>) |
+| Intel      | Atom E3845                       | 1.91 | 2     | [F79EAED60BA9](<Mini Pc/AMI/Aptio/Aptio CRB/F79EAED60BA9>) |
 | Intel      | Core i5-4570T                    | 2.90 | 2     | [502C1C75B175](<Mini Pc/ZOTAC/ZBOX-ID92/ZBOX-ID92-ZBOX-IQ01/502C1C75B175>) |
+| Intel      | Core i5-5257U                    | 2.70 | 2     | [584B8A576A80](<Mini Pc/AZW/U/U57/584B8A576A80>) |
+| Intel      | Celeron 2955U                    | 1.40 | 2     | [D0CC508105CA](<Mini Pc/ZOTAC/ZBOX-RI323/ZBOX-RI323NANO/D0CC508105CA>) |
+| Intel      | Core i3-4010U                    | 1.70 | 2     | [8A8D3CC56672](<Mini Pc/ZOTAC/ZBOXNANO-ID67/ZBOXNANO-ID67-ID68-ID69/8A8D3CC56672>) |
 | Intel      | Core i3-4020Y                    | 1.50 | 2     | [21A14733677F](<Mini Pc/ZOTAC/ZBOXNANO-CI520/ZBOXNANO-CI520NANO-CI540NANO/21A14733677F>) |
+| Intel      | Core i5-4200U                    | 1.60 | 2     | [F6BBB53F7FB4](<Mini Pc/ZOTAC/ZBOX-EN/ZBOX-EN760/F6BBB53F7FB4>) |
+| Intel      | Core i7-4500U                    | 1.80 | 2     | [0191C0AB4C2A](<Mini Pc/ZOTAC/ZBOXNANO-ID67/ZBOXNANO-ID67-ID68-ID69/0191C0AB4C2A>) |
 | Intel      | Celeron J3160                    | 1.60 | 2     | [D41DED68FC5F](<Mini Pc/LTD Delovoy Office/IRU/IRU 316/D41DED68FC5F>) |
-| Intel      | Celeron N3160                    | 1.60 | 2     | [19DF7B640AD0](<Mini Pc/AMI/Aptio/Aptio CRB/19DF7B640AD0>) |
-| Intel      | Pentium J3710                    | 1.60 | 2     | [ECF84EB7642C](<Mini Pc/Lenovo/S200z/S200z 10HA001ERU/ECF84EB7642C>) |
-| Intel      | Core i5-6400T                    | 2.20 | 2     | [E94166AEDF2E](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 600 G3 DM/E94166AEDF2E>) |
+| Intel      | Core i3-6100                     | 3.70 | 2     | [0F43A4C5E695](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 800 G3 DM 65W/0F43A4C5E695>) |
 | Intel      | Core i5-6600T                    | 2.70 | 2     | [15934EA5120E](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 800 G3 DM 35W/15934EA5120E>) |
-| Intel      | Core i7-6700T                    | 2.80 | 2     | [BF32A8DAED23](<Mini Pc/Lenovo/ThinkStation/ThinkStation P320 Tiny 30C1S1K902/BF32A8DAED23>) |
 | Intel      | Xeon E3-1245 v5                  | 3.50 | 2     | [E04529F8DAEB](<Mini Pc/Supermicro/SYS-5039/SYS-5039MS-H12TRF-OS012/E04529F8DAEB>) |
 | AMD        | E-350                            |      | 1     | [9D6F0E41A45F](<Mini Pc/ZOTAC/ZBOX-AD/ZBOX-AD02/9D6F0E41A45F>) |
 | AMD        | E-450 APU with Radeon HD Grap... |      | 1     | [98C0247E4D26](<Mini Pc/ZOTAC/ZBOX-AD/ZBOX-AD04/98C0247E4D26>) |
 | AMD        | PRO A10-8770E R7, 10 COMPUTE ... |      | 1     | [BC868DED3F88](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M715q 10M2S0DL00/BC868DED3F88>) |
+| AMD        | PRO A12-9800E R7, 12 COMPUTE ... |      | 1     | [2E7C2ABFFDEE](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M715q 10M30009US/2E7C2ABFFDEE>) |
 | AMD        | E2-9000e RADEON R2, 4 COMPUTE... |      | 1     | [6B93E22F3C3B](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M625q 10TLS06200/6B93E22F3C3B>) |
 | AMD        | A8-5545M APU with Radeon HD G... |      | 1     | [652E2251D263](<Mini Pc/ZOTAC/ZBOXNANO-AQ/ZBOXNANO-AQ02/652E2251D263>) |
-| AMD        | PRO A8-8600B R6, 10 Compute C... |      | 1     | [A398497B20DA](<Mini Pc/Hewlett-Packard/mt42/mt42 Mobile Thin Client/A398497B20DA>) |
 | AMD        | GX-420CA SOC with Radeon HD G... |      | 1     | [EE1B264492ED](<Mini Pc/CompuLab/fit-PC/fit-PC4/EE1B264492ED>) |
+| AMD        | A10 Micro-6700T APU+AMD Radeo... |      | 1     | [307739200CE6](<Mini Pc/CompuLab/fitlet/fitlet/307739200CE6>) |
 | AMD        | A4 Micro-6400T APU + AMD Rade... |      | 1     | [69515BF9320E](<Mini Pc/CompuLab/fitlet/fitlet/69515BF9320E>) |
-| AMD        | Ryzen 3 PRO 2300U w/ Radeon V... |      | 1     | [367A393AEEB1](<Mini Pc/Hewlett-Packard/mt44/mt44 Mobile Thin Client/367A393AEEB1>) |
 | AMD        | Ryzen 3 PRO 3200GE w/ Radeon ... |      | 1     | [A737C6A344F7](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 405 G6 Desktop Mini PC/A737C6A344F7>) |
-| AMD        | Ryzen 3 PRO 3300U w/ Radeon V... |      | 1     | [FD1DFF3BA674](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M75n 11BS0000IX/FD1DFF3BA674>) |
 | AMD        | Ryzen Embedded R1305G with Ra... |      | 1     | [D3480EA77BCC](<Mini Pc/Hewlett-Packard/t540/t540 Thin Client/D3480EA77BCC>) |
 | AMD        | Ryzen 3 4300GE with Radeon Gr... |      | 1     | [713BB5539E2A](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 405 G6 Desktop Mini PC/713BB5539E2A>) |
-| AMD        | Ryzen 5 PRO 4650G with Radeon... |      | 1     | [20C32FFA6ABD](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 805 G6 Desktop Mini PC/20C32FFA6ABD>) |
-| AMD        | Ryzen 7 PRO 4750G with Radeon... |      | 1     | [FB1F518D1327](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 805 G6 Desktop Mini PC/FB1F518D1327>) |
-| AMD        | Ryzen 7 6800H with Radeon Gra... |      | 1     | [031C11533068](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN53/031C11533068>) |
+| AMD        | Ryzen 7 8745HS w/ Radeon 780M... |      | 1     | [F15326D41E2E](<Mini Pc/AZW/SER/SER8/F15326D41E2E>) |
+| AMD        | Ryzen 7 PRO 8700GE w/ Radeon ... |      | 1     | [802F91CAC000](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M75q Gen 5 12RQCTO1WW/802F91CAC000>) |
+| AMD        | Ryzen 3 8300GE w/ Radeon 740M... |      | 1     | [75430220DA58](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M75q Gen 5 12RQCTO1WW/75430220DA58>) |
 | AMD        | Ryzen 3 PRO 5350GE with Radeo... |      | 1     | [EFCDDA73E969](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M75q Gen 2 11JNS02N00/EFCDDA73E969>) |
+| AMD        | Ryzen 5 5600GE with Radeon Gr... |      | 1     | [0631703E328F](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M75q Gen 2 11JNCTO1WW/0631703E328F>) |
 | AMD        | Ryzen 5 PRO 5650G with Radeon... |      | 1     | [C85E0CDAD14F](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 805 G8 Desktop Mini PC/C85E0CDAD14F>) |
+| AMD        | Ryzen 7 5825U with Radeon Gra... |      | 1     | [83A73A39498C](<Mini Pc/GMKtec/M5/M5 PLUS/83A73A39498C>) |
 | AMD        | Ryzen 7 PRO 5750GE with Radeo... |      | 1     | [1AEE52FF07DC](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M75q Gen 2 11JN000NGE/1AEE52FF07DC>) |
 | Centaur... | ZHAOXIN Z3-6540M@2.1+GHz         |      | 1     | [2B904DC08E19](<Mini Pc/Shanghai Zhaoxin Semiconductor/ZEB/ZEB20/2B904DC08E19>) |
+| Intel      | Core i3-8121U                    | 2.20 | 1     | [9D22957442B9](<Mini Pc/Intel Client Systems/NUC8/NUC8i3CYS/9D22957442B9>) |
 | Intel      | Pentium Silver N5000             | 1.10 | 1     | [65635FC05246](<Mini Pc/ASUSTek Computer/PN/PN40/65635FC05246>) |
-| Intel      | Celeron J4025                    | 2.00 | 1     | [3A95FF73D4BD](<Mini Pc/Intel Client Systems/NUC7/NUC7CJYHN/3A95FF73D4BD>) |
-| Intel      | Pentium Silver J5040             | 2.00 | 1     | [4C38130D2991](<Mini Pc/Intel Client Systems/NUC7/NUC7PJYHN/4C38130D2991>) |
+| Intel      | Celeron N4120                    | 1.10 | 1     | [598EE128A07D](<Mini Pc/CSL-Computer/Tiny/Tiny Box/598EE128A07D>) |
 | Intel      | Celeron M processor              | 1.50 | 1     | [6CDD298F6645](<Mini Pc/Radiant Systems/P/P845/6CDD298F6645>) |
 | Intel      | Genuine T1200                    | 1.50 | 1     | [D792240572E1](<Mini Pc/Apple/Macmini1/Macmini1,1/D792240572E1>) |
+| Intel      | 11th Gen Core i7-11390H          | 3.40 | 1     | [DCFF5513ACF6](<Mini Pc/GRT/H/H90/DCFF5513ACF6>) |
+| Intel      | Celeron 3867U                    | 1.80 | 1     | [0D92C7F0D0AF](<Mini Pc/BESSTAR Tech/U/U300/0D92C7F0D0AF>) |
 | Intel      | Core i3-8130U                    | 2.20 | 1     | [FDE0A74A7C8E](<Mini Pc/ZOTAC/ZBOX-CI620/ZBOX-CI620-CI640-CI660/FDE0A74A7C8E>) |
 | Intel      | Core i3-8140U                    | 2.10 | 1     | [2CD62D46C73E](<Mini Pc/Intel Client Systems/NUC8/NUC8i3BEHS/2CD62D46C73E>) |
 | Intel      | Core i5-8260U                    | 1.60 | 1     | [6C0455382A59](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEHS/6C0455382A59>) |
@@ -221,308 +270,259 @@ Report - link to DMI report.
 | Intel      | Core i5-8265U                    | 1.60 | 1     | [B6171178AD06](<Mini Pc/Intel Client Systems/NUC8/NUC8i5INH/B6171178AD06>) |
 | Intel      | Core i7-8565U                    | 1.80 | 1     | [BB74D3AD9876](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN61/BB74D3AD9876>) |
 | Intel      | Pentium 5405U                    | 2.30 | 1     | [7F8C8151CE1E](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M630e 10YM001SRU/7F8C8151CE1E>) |
-| Intel      | Celeron 4205U                    | 1.80 | 1     | [2D30F94EDBCE](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M90n-1 11AJS09D00/2D30F94EDBCE>) |
-| Intel      | Core i7-8565U                    | 1.80 | 1     | [F5766C1EDC88](<Mini Pc/Dell/OptiPlex/OptiPlex 7070 Ultra/F5766C1EDC88>) |
-| Intel      | Core i3-7130U                    | 2.70 | 1     | [D334B500C95E](<Mini Pc/Hewlett-Packard/260/260 G3 DM/D334B500C95E>) |
-| Intel      | Core 2 T7200                     | 2.00 | 1     | [1428C76BF5C9](<Mini Pc/Apple/Macmini2/Macmini2,1/1428C76BF5C9>) |
-| Intel      | 12th Gen Core i5-1235U           |      | 1     | [DF69F2CC4EB2](<Mini Pc/Hewlett-Packard/Pro/Pro Mini 260 G9 Desktop PC/DF69F2CC4EB2>) |
-| Intel      | Core i7-9750H                    | 2.60 | 1     | [D9A2248485AE](<Mini Pc/ShuttleInc./ZBOX-EN7208/ZBOX-EN72080V-EN72070V-EN52060V-EN51660T/D9A2248485AE>) |
-| Intel      | Pentium Gold G5400               | 3.70 | 1     | [B0B5B987C581](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M920x 10S0S00900/B0B5B987C581>) |
-| Intel      | Core i3-9100                     | 3.60 | 1     | [59BDC87984FB](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M920x 10S1S07700/59BDC87984FB>) |
-| Intel      | Core i3-9100T                    | 3.10 | 1     | [8AADD72F351A](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M720q 10T70099RU/8AADD72F351A>) |
-| Intel      | Xeon E-2278GE                    | 3.30 | 1     | [1F2E8F787ED7](<Mini Pc/CompuLab/Airtop/Airtop3/1F2E8F787ED7>) |
-| Intel      | Core i5-7600                     | 3.50 | 1     | [84DEEFE7B796](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 800 G3 DM 65W/84DEEFE7B796>) |
-| Intel      | Core i5-7600T                    | 2.80 | 1     | [5CEC86B8AF22](<Mini Pc/Daten Tecnologia/DC2/DC2B-U/5CEC86B8AF22>) |
-| Intel      | Pentium G4560T                   | 2.90 | 1     | [A1FF571792EA](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 400 G3 DM/A1FF571792EA>) |
-| Intel      | Xeon E3-1230 v6                  | 3.50 | 1     | [C29A8D8B7AFC](<Mini Pc/Supermicro/SYS-5039/SYS-5039MS-H12TRF/C29A8D8B7AFC>) |
-| Intel      | Xeon E3-1245 v6                  | 3.70 | 1     | [0D7D0C390F76](<Mini Pc/Hewlett-Packard/Z2/Z2 Mini G3 Workstation/0D7D0C390F76>) |
-| Intel      | Core i7-10750H                   | 2.60 | 1     | [C3C7681D8B56](<Mini Pc/ZOTAC/ZBOX-QCM7/ZBOX-QCM7T3000-EN072080S-EN072070S-EN052060C/C3C7681D8B56>) |
-| Intel      | Core i3-10100F                   | 3.60 | 1     | [3A332FF10E08](<Mini Pc/ZOTAC/ZBOX-ECM7307/ZBOX-ECM73070C-53060C/3A332FF10E08>) |
-| Intel      | Core i3-10105T                   | 3.00 | 1     | [9EE717DD71FC](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M70q Gen 2 11MY003MRU/9EE717DD71FC>) |
-| Intel      | Core i9-10900                    | 2.80 | 1     | [AEAA18AE3FAE](<Mini Pc/Lenovo/ThinkStation/ThinkStation P340 Tiny 30DFCTO1WW/AEAA18AE3FAE>) |
-| Intel      | Xeon W-1290                      | 3.20 | 1     | [1BFEF2E15210](<Mini Pc/Hewlett-Packard/Z2/Z2 Mini G5 Workstation/1BFEF2E15210>) |
-| Intel      | 11th Gen Core i7-11700           | 2.50 | 1     | [F8E8A618C39F](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M70q Gen 2 11MY0038MH/F8E8A618C39F>) |
-| Intel      | Core 2 Duo P8400                 | 2.26 | 1     | [AFC1899C7563](<Mini Pc/Apple/Macmini3/Macmini3,1/AFC1899C7563>) |
-| Intel      | Celeron 847                      | 1.10 | 1     | [C393C8C09EE6](<Mini Pc/ZOTAC/ZBOX-ID42/ZBOX-ID42-BE/C393C8C09EE6>) |
-| Intel      | Celeron 857                      | 1.20 | 1     | [F7860DA1FE29](<Mini Pc/ZOTAC/ZBOX-ID/ZBOX-ID81/F7860DA1FE29>) |
-| Intel      | Xeon                             | 2.00 | 1     | [223D303B469A](<Mini Pc/AMI/Aptio/Aptio CRB/223D303B469A>) |
-| Intel      | Atom D2700                       | 2.13 | 1     | [E1C6E46AEEE7](<Mini Pc/ZOTAC/ZBOX-ID/ZBOX-ID80/E1C6E46AEEE7>) |
-| Intel      | Celeron J1850                    | 1.99 | 1     | [0127105F4BF9](<Mini Pc/Lenovo/H500/H500 10156/0127105F4BF9>) |
-| Intel      | Pentium N3520                    | 2.16 | 1     | [81DBE3C8B20C](<Mini Pc/AMI/Aptio/Aptio CRB/81DBE3C8B20C>) |
-| Intel      | Atom Z3735D                      | 1.33 | 1     | [2C8FD39EB4D9](<Mini Pc/Hkjulong/A/A1/2C8FD39EB4D9>) |
-| Intel      | Atom Z3735G                      | 1.33 | 1     | [D5C576CA4B94](<Mini Pc/AMI/Aptio/Aptio CRB/D5C576CA4B94>) |
-| Intel      | Atom E3805                       | 1.33 | 1     | [9349E7ABA493](<Mini Pc/Dell/Edge/Edge Gateway 3001/9349E7ABA493>) |
-| Intel      | Atom E3825                       | 1.33 | 1     | [CA0946537674](<Mini Pc/AMI/Aptio/Aptio CRB/CA0946537674>) |
-| Intel      | Core i3-3120M                    | 2.50 | 1     | [B34DC74B5FFC](<Mini Pc/ZOTAC/ZBOX-ID/ZBOX-ID83/B34DC74B5FFC>) |
-| Intel      | Core i7-4770T                    | 2.50 | 1     | [889E1539266B](<Mini Pc/ZOTAC/ZBOX-ID92/ZBOX-ID92-ZBOX-IQ01/889E1539266B>) |
-| Intel      | Core i5-5200U                    | 2.20 | 1     | [7D34FF7AFACD](<Mini Pc/ZOTAC/ZBOX/ZBOX/7D34FF7AFACD>) |
-| Intel      | Core i5-5257U                    | 2.70 | 1     | [A7BD25E4A2FB](<Mini Pc/AZW/U/U57/A7BD25E4A2FB>) |
-| Intel      | Celeron 2955U                    | 1.40 | 1     | [C92EA8DE9F21](<Mini Pc/ZOTAC/ZBOX-BI/ZBOX-BI320/C92EA8DE9F21>) |
-| Intel      | Core i3-4010U                    | 1.70 | 1     | [BE5DEB7E25E5](<Mini Pc/ZOTAC/ZBOX-MI330/ZBOX-MI330-MI320/BE5DEB7E25E5>) |
-| Intel      | Core i5-4200U                    | 1.60 | 1     | [0A652766F53A](<Mini Pc/Gigabyte Technology/MMLP5/MMLP5AP-SI/0A652766F53A>) |
-| Intel      | Core i5-4308U                    | 2.80 | 1     | [D9BC49EF0A1C](<Mini Pc/Apple/Macmini7/Macmini7,1/D9BC49EF0A1C>) |
-| Intel      | Core i7-4500U                    | 1.80 | 1     | [C3933CE474DF](<Mini Pc/ZOTAC/ZBOXNANO-ID/ZBOXNANO-ID67/C3933CE474DF>) |
-| Intel      | Core i7-5775C                    | 3.30 | 1     | [ABBFB7A6CD86](<Mini Pc/CompuLab/Airtop/Airtop/ABBFB7A6CD86>) |
-| Intel      | Atom x5-Z8300                    | 1.44 | 1     | [416FD8A6D5D1](<Mini Pc/Orbsmart/AW-06/AW-06 PLUS/416FD8A6D5D1>) |
-| Intel      | Atom x5-E8000                    | 1.04 | 1     | [0B79A42636B6](<Mini Pc/AMI/Aptio/Aptio CRB/0B79A42636B6>) |
-| Intel      | Atom C2758                       | 2.40 | 1     | [F097711C2215](<Mini Pc/Supermicro/A1/A1SAi/F097711C2215>) |
-| Intel      | Atom E3930                       | 1.30 | 1     | [75C30D659F87](<Mini Pc/congatec/conga-SA5/conga-SA5 B.3/75C30D659F87>) |
-| Intel      | Celeron J3355                    | 2.00 | 1     | [EF1BD8AC204C](<Mini Pc/AMI/Aptio/Aptio CRB/EF1BD8AC204C>) |
-| Intel      | Core i3-6100                     | 3.70 | 1     | [B4016DB6A371](<Mini Pc/Soyo/SY-Thin/SY-Thin Mini H110/B4016DB6A371>) |
-| Intel      | Xeon E3-1230 v5                  | 3.40 | 1     | [4A081CB2E3C4](<Mini Pc/Supermicro/SYS-5039/SYS-5039MS-H12TRF/4A081CB2E3C4>) |
 
 ### Memory
 
 | MFG        | Name                         | Size     | Type | MT/s | Count | Report |
 |------------|------------------------------|----------|------|------|-------|--------|
-|            | 123456789012345678 DIMM L... | 2 GB     |      | 2400 | 77    | [E97F04B2B1C1](<Mini Pc/Fanless Mini PC/PCG35/PCG35 GLK/E97F04B2B1C1>) |
-|            | Module DIMM                  | 2048 MB  | DDR3 | 1333 | 18    | [3664AFF5BAB7](<Mini Pc/AMI/Aptio/Aptio CRB/3664AFF5BAB7>) |
-| Samsung    | M471A5244CB0-CTD SODIMM      | 4 GB     | DDR4 | 3266 | 15    | [06099CAD1A2D](<Mini Pc/Dell/Wyse/Wyse 5070 Thin Client/06099CAD1A2D>) |
-| Kingston   | KHX1600C9S3L/8G SODIMM       | 8 GB     | DDR3 | 1600 | 13    | [21A14733677F](<Mini Pc/ZOTAC/ZBOXNANO-CI520/ZBOXNANO-CI520NANO-CI540NANO/21A14733677F>) |
-| Corsair    | CMSX16GX4M2A2400C16 SODIMM   | 8 GB     | DDR4 | 2400 | 12    | [7C5081232828](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEH/7C5081232828>) |
-| SK hynix   | HMA81GS6AFR8N-UH SODIMM      | 8 GB     | DDR4 | 2667 | 12    | [CF634F337F26](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M710q 10MR001YMZ/CF634F337F26>) |
-| Crucial    | CT16G4SFD824A.C16FDD SODIMM  | 16 GB    | DDR4 | 2400 | 11    | [75311C25B096](<Mini Pc/Intel Client Systems/NUC8/NUC8i3BEH/75311C25B096>) |
-| Crucial    | CT8G4SFS824A.M8FE SODIMM     | 8 GB     | DDR4 | 2667 | 11    | [B1AD0E64616C](<Mini Pc/Intel Client Systems/NUC8/NUC8i7BEH/B1AD0E64616C>) |
-| SK hynix   | Module SODIMM                | 2 GB     | DDR3 | 1600 | 11    | [C4978D02A604](<Mini Pc/Apple/Macmini7/Macmini7,1/C4978D02A604>) |
-| Kingston   | KHX2400C14S4/16G SODIMM      | 16 GB    | DDR4 | 2667 | 10    | [C708E1327B22](<Mini Pc/ZOTAC/ZBOX-EN1070/ZBOX-EN1070-1060,EN1070K-1060K/C708E1327B22>) |
-| Crucial    | CT16G4SFS832A.C8FE SODIMM    | 16 GB    | DDR4 | 3200 | 9     | [69C523FFEC59](<Mini Pc/Intel Client Systems/NUC12/NUC12DCMi9/69C523FFEC59>) |
-| Kingston   | KHX2666C15S4/16G SODIMM      | 16 GB    | DDR4 | 2667 | 9     | [FF9B4FBF244B](<Mini Pc/Intel Client Systems/NUC10/NUC10i7FNH/FF9B4FBF244B>) |
-| Samsung    | M471A1K43CB1-CTD SODIMM      | 8 GB     | DDR4 | 2667 | 9     | [FB6EB060C710](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M710q 10MQS2SV0F/FB6EB060C710>) |
-| Crucial    | CT102464BF160B.C16 SODIMM    | 8 GB     | DDR3 | 1600 | 8     | [CB6345F9DAF9](<Mini Pc/ZOTAC/ZBOXNANO-AQ/ZBOXNANO-AQ01/CB6345F9DAF9>) |
-| Crucial    | CT16G4SFS832A.C8FF SODIMM    | 16 GB    | DDR4 | 3200 | 8     | [C2116ED1D5B5](<Mini Pc/AZW/GTR/GTR/C2116ED1D5B5>) |
-| Crucial    | CT8G4SFS824A.C8FE SODIMM     | 8 GB     | DDR4 | 2667 | 8     | [DDD3E8ECA091](<Mini Pc/ZOTAC/ZBOX-CI527/ZBOX-CI527-CI547NANO/DDD3E8ECA091>) |
-| Kingston   | 99U5428-018.A00LF SODIMM     | 8 GB     | DDR3 | 1600 | 8     | [1C065FF2993D](<Mini Pc/Intel/NUC5i5MYBE/NUC5i5MYBE H47797-206/1C065FF2993D>) |
-| Kingston   | KHX2666C15S4/8G SODIMM       | 8 GB     | DDR4 | 2667 | 8     | [5D586EE5CBC9](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEK/5D586EE5CBC9>) |
+|            | 123456789012345678 DIMM L... | 2048 MB  |      | 2400 | 117   | [3C8EDFAE809B](<Mini Pc/Others/GB3/GB3B/3C8EDFAE809B>) |
+| Micron     | 8ATF1G64HZ-3G2R1 SODIMM      | 8 GB     | DDR4 | 3200 | 37    | [DFA4578837C6](<Mini Pc/AZW/S/S5/DFA4578837C6>) |
+| Crucial    | CT8G4SFS832A.M8FR SODIMM     | 8 GB     | DDR4 | 3200 | 29    | [621DD3B2632D](<Mini Pc/AZW/SER/SER/621DD3B2632D>) |
+| Crucial    | CT16G4SFS832A.C8FF SODIMM    | 16 GB    | DDR4 | 3200 | 27    | [9550130C7D74](<Mini Pc/AZW/SER/SER/9550130C7D74>) |
+| Samsung    | M471A5244CB0-CTD SODIMM      | 4 GB     | DDR4 | 3266 | 23    | [1EF66628C33F](<Mini Pc/Hewlett-Packard/t630/t630 Thin Client/1EF66628C33F>) |
+| Samsung    | M471A1K43CB1-CTD SODIMM      | 8 GB     | DDR4 | 2667 | 21    | [91B5792D0623](<Mini Pc/Lenovo/ThinkStation/ThinkStation P330 Tiny 30CES3QF18/91B5792D0623>) |
+|            | Module DIMM                  | 2048 MB  | DDR3 | 1333 | 20    | [DA2626D0F5E3](<Mini Pc/AMI/Aptio/Aptio CRB/DA2626D0F5E3>) |
+| Crucial    | CT16G56C46S5.M8G1 SODIMM     | 16 GB    | DDR5 | 5600 | 19    | [0AE4D4E1A91B](<Mini Pc/Micro Computer (HK) Tech Limited/Venus/Venus series/0AE4D4E1A91B>) |
+| SK hynix   | HMA81GS6AFR8N-UH SODIMM      | 8 GB     | DDR4 | 2667 | 19    | [816BAB70CE9B](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M720q 10T7CTO1WW/816BAB70CE9B>) |
+| Samsung    | Module SODIMM                | 4 GB     | DDR3 | 1600 | 18    | [BB831872A479](<Mini Pc/Apple/Macmini7/Macmini7,1/BB831872A479>) |
+| SK hynix   | Module SODIMM                | 4 GB     | DDR3 | 1600 | 18    | [1FFF2163F3B5](<Mini Pc/Apple/Macmini7/Macmini7,1/1FFF2163F3B5>) |
+| Ramaxel    | RMSA3260ME78HAF-2666 SODIMM  | 8 GB     | DDR4 | 2667 | 16    | [B23BA530BE95](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M710q 10MR000XFR/B23BA530BE95>) |
+| Crucial    | Module SODIMM                | 8 GB     | DDR3 | 1600 | 15    | [C44F356D3F6B](<Mini Pc/Apple/Macmini6/Macmini6,2/C44F356D3F6B>) |
+| Kingston   | 99U5469-045.A00LF SODIMM     | 4 GB     | DDR3 | 1600 | 15    | [3791402B865D](<Mini Pc/Intel/NUC5i3MYBE/NUC5i3MYBE H47781-205/3791402B865D>) |
+| Kingston   | KHX1600C9S3L/8G SODIMM       | 8192 MB  | DDR3 | 1600 | 15    | [4C92603F44AE](<Mini Pc/Intel/NUC5i5RYB/NUC5i5RYB H40999-504/4C92603F44AE>) |
+| Samsung    | M471A1K43CB1-CRC SODIMM      | 8 GB     | DDR4 | 2667 | 15    | [1AF24C549C62](<Mini Pc/Hewlett-Packard/t630/t630 Thin Client/1AF24C549C62>) |
+| Wodposit   | WPBH26D408SWA-8G SODIMM      | 8 GB     | DDR4 | 2667 | 15    | [9664EDEE7102](<Mini Pc/ATOPNUC/MA/MA90/9664EDEE7102>) |
+| Corsair    | CMSX16GX4M2A2400C16 SODIMM   | 8 GB     | DDR4 | 2400 | 14    | [9CEE84C90072](<Mini Pc/Intel/NUC7/NUC7i7BNH/9CEE84C90072>) |
+| Crucial    | CT102464BF160B.M16 SODIMM    | 8 GB     | DDR3 | 1600 | 14    | [672115AFB880](<Mini Pc/Intel Client Systems/NUC6/NUC6CAYH/672115AFB880>) |
+| Crucial    | CT16G48C40S5.M8A1 SODIMM     | 16 GB    | DDR5 | 4800 | 14    | [A7D4557BBCB1](<Mini Pc/AZW/SER/SER/A7D4557BBCB1>) |
+| Crucial    | CT16G4SFS832A.C8FE SODIMM    | 16 GB    | DDR4 | 3200 | 14    | [89906C26AEC6](<Mini Pc/AZW/GTR/GTR/89906C26AEC6>) |
+| Crucial    | CT32G4SFD832A.C16FF SODIMM   | 32 GB    | DDR4 | 3200 | 14    | [23A5577F4FF0](<Mini Pc/System76/Meerkat/Meerkat/23A5577F4FF0>) |
+| Kingston   | 99U5428-018.A00LF SODIMM     | 8 GB     | DDR3 | 1600 | 14    | [F5399D2B455A](<Mini Pc/Intel/NUC6/NUC6CAYH/F5399D2B455A>) |
+|            | Module SODIMM                | 8 GB     | DDR3 | 1600 | 14    | [C83178E2A984](<Mini Pc/Intel/NUC5i5RYB/NUC5i5RYB H40999-504/C83178E2A984>) |
+| SK hynix   | Module SODIMM                | 2 GB     | DDR3 | 1600 | 14    | [0871637AEBCD](<Mini Pc/Apple/Macmini7/Macmini7,1/0871637AEBCD>) |
+| Crucial    | CT102464BF160B.C16 SODIMM    | 8192 MB  | DDR3 | 1600 | 13    | [1EA24459978E](<Mini Pc/Intel/NUC5i7RYB/NUC5i7RYB H73774-102/1EA24459978E>) |
+| Crucial    | CT16G4SFD824A.C16FDD SODIMM  | 16 GB    | DDR4 | 2400 | 13    | [D4D14AFB30BD](<Mini Pc/Intel Client Systems/NUC8/NUC8i7HNK/D4D14AFB30BD>) |
+| Crucial    | CT16G4SFS832A.M8FF SODIMM    | 16 GB    | DDR4 | 3200 | 13    | [7D1AA28A9A5C](<Mini Pc/AZW/SER/SER/7D1AA28A9A5C>) |
+| Kingston   | KHX2400C14S4/16G SODIMM      | 16 GB    | DDR4 | 2667 | 13    | [CC63723A9946](<Mini Pc/Intel Client Systems/NUC8/NUC8i7BEH/CC63723A9946>) |
+| Samsung    | M471A1K43DB1-CTD SODIMM      | 8 GB     | DDR4 | 2667 | 13    | [BF119B5C81A1](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M720q 10T7002CUS/BF119B5C81A1>) |
+| Crucial    | CT8G4SFS824A.M8FE SODIMM     | 8 GB     | DDR4 | 2667 | 12    | [899527C6C18D](<Mini Pc/Intel/NUC7i3BNB/NUC7i3BNB J22859-303/899527C6C18D>) |
+| G.Skill    | F4-3200C22-32GRS SODIMM      | 32 GB    | DDR4 | 3200 | 12    | [873F52AD6701](<Mini Pc/Intel Client Systems/NUC11/NUC11TNHi3/873F52AD6701>) |
+| Kingston   | Module SODIMM                | 8 GB     | DDR3 | 1600 | 12    | [752E7F63EA4A](<Mini Pc/Apple/Macmini6/Macmini6,1/752E7F63EA4A>) |
+| SK hynix   | HMA81GS6CJR8N-VK SODIMM      | 8 GB     | DDR4 | 2667 | 12    | [7681DF7AF0C9](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M710q 10MR0004US/7681DF7AF0C9>) |
+| Elpida     | Module SODIMM                | 8 GB     | DDR3 | 1600 | 11    | [E0C219EC48F3](<Mini Pc/Apple/Macmini7/Macmini7,1/E0C219EC48F3>) |
+| Samsung    | M471A2K43CB1-CTD SODIMM      | 16 GB    | DDR4 | 8400 | 11    | [425155C7FBCA](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M920q 10RRS09W00/425155C7FBCA>) |
+| Samsung    | Module SODIMM                | 8 GB     | DDR4 | 2133 | 11    | [654A9FE4BBA3](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 800 G3 DM 65W/654A9FE4BBA3>) |
+| Crucial    | CT32G4SFD832A.M16FF SODIMM   | 32 GB    | DDR4 | 3200 | 10    | [4E4A11F88BA2](<Mini Pc/Intel Client Systems/NUC12/NUC12WSHi5/4E4A11F88BA2>) |
+| Crucial    | CT8G4SFS832A.C8FR SODIMM     | 8 GB     | DDR4 | 3200 | 10    | [89BF83AB3047](<Mini Pc/AZW/SER/SER/89BF83AB3047>) |
+| SK hynix   | Module SODIMM                | 8 GB     | DDR4 | 2133 | 10    | [766B125DB5D8](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 600 G3 DM/766B125DB5D8>) |
+| Kingston   | KHX2666C15S4/16G SODIMM      | 16 GB    | DDR4 | 2667 | 10    | [68005F9CCDFD](<Mini Pc/Intel Client Systems/NUC11/NUC11TNKi7/68005F9CCDFD>) |
+| Micron     | 4ATF51264HZ-2G6E3 SODIMM     | 4 GB     | DDR4 | 2667 | 10    | [05B5510E3969](<Mini Pc/Apple/Macmini8/Macmini8,1/05B5510E3969>) |
+| Samsung    | M471A1K43EB1-CWE SODIMM      | 8 GB     | DDR4 | 3200 | 10    | [EB1C9AFCC119](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M70q 11DT00B4GE/EB1C9AFCC119>) |
+| Team       | TEAMGROUP-SD4-3200 SODIMM    | 16 GB    | DDR4 | 3200 | 10    | [788AA74B4B60](<Mini Pc/AZW/SER/SER/788AA74B4B60>) |
+| Crucial    | CT16G4SFD824A.M16FE SODIMM   | 16 GB    | DDR4 | 2400 | 9     | [5FF4BE6E6E34](<Mini Pc/Intel Client Systems/NUC10/NUC10i3FNH/5FF4BE6E6E34>) |
+| Crucial    | CT16G4SFRA32A.M16FR SODIMM   | 16 GB    | DDR4 | 3200 | 9     | [6552312CA665](<Mini Pc/Intel Client Systems/NUC12/NUC12WSHi5/6552312CA665>) |
+| Crucial    | CT8G4SFS824A.C8FE SODIMM     | 8 GB     | DDR4 | 2667 | 9     | [438246B9AC78](<Mini Pc/Intel/NUC7/NUC7i7DNKE/438246B9AC78>) |
+| G.Skill    | F4-2400C16-8GRS SODIMM       | 8 GB     | DDR4 | 2400 | 9     | [C0D04E936FD2](<Mini Pc/ASUSTek Computer/PN/PN40/C0D04E936FD2>) |
+| Micron     | 8ATF1G64HZ-2G6E1 SODIMM      | 8 GB     | DDR4 | 2667 | 9     | [3F557B4A1613](<Mini Pc/Hewlett-Packard/t630/t630 Thin Client/3F557B4A1613>) |
+| Micron     | 8ATF1G64HZ-3G2J1 SODIMM      | 8 GB     | DDR4 | 3200 | 9     | [1958717F42C8](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M710q 10MQS2M703/1958717F42C8>) |
+|            | Module DIMM                  | 2 GB     | DDR3 | 1333 | 9     | [9EE667AA43C8](<Mini Pc/MODECOM/FreeONE/FreeONE/9EE667AA43C8>) |
+|            | Module Row Of Chips          | 2 GB     | DDR3 | 1600 | 9     | [AA03F426DCF7](<Mini Pc/Dell/Wyse/Wyse 3040 Thin Client/AA03F426DCF7>) |
+| Samsung    | M471A5244CB0-CRC SODIMM      | 4 GB     | DDR4 | 2667 | 9     | [C8F421E13DE0](<Mini Pc/ASUSTek Computer/PN/PN40/C8F421E13DE0>) |
+| SK hynix   | Module SODIMM                | 8 GB     | DDR3 | 1600 | 9     | [0FA5028DC4FB](<Mini Pc/Apple/Macmini6/Macmini6,2/0FA5028DC4FB>) |
+| Corsair    | CMSX16GX4M1A2400C16 SODIMM   | 16 GB    | DDR4 | 2400 | 8     | [1ECB1666915A](<Mini Pc/Intel Client Systems/NUC8/NUC8i7BEH/1ECB1666915A>) |
+| Crucial    | CT16G48C40S5.C8A1 SODIMM     | 16 GB    | DDR5 | 4800 | 8     | [39FC72693157](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN53-G/39FC72693157>) |
+| Crucial    | CT32G4SFD832A.C16FE SODIMM   | 32 GB    | DDR4 | 3200 | 8     | [80C27FB406EA](<Mini Pc/Intel Client Systems/NUC11/NUC11PAHi7/80C27FB406EA>) |
+| Crucial    | CT51264BF160B.C16F SODIMM    | 4 GB     | DDR3 | 1600 | 8     | [4823F579C2BD](<Mini Pc/Intel/NUC5i5RYB/NUC5i5RYB H40999-502/4823F579C2BD>) |
+| Crucial    | CT51264BF160BJ.M8F SODIMM    | 4 GB     | DDR3 | 1600 | 8     | [FA9C98587151](<Mini Pc/Intel/NUC5i3RYB/NUC5i3RYB H41000-502/FA9C98587151>) |
+| Kingston   | CBD32D4S2S8MF-16 SODIMM      | 16 GB    | DDR4 | 3200 | 8     | [9683056E5C67](<Mini Pc/VIT/M2400/M2400-01/9683056E5C67>) |
+| Kingston   | KF3200C20S4/32GX SODIMM      | 32 GB    | DDR4 | 3200 | 8     | [BBD6186E4F66](<Mini Pc/Intel Client Systems/NUC13/NUC13ANHi7/BBD6186E4F66>) |
+| Kingston   | KF3200C20S4/8G SODIMM        | 8 GB     | DDR4 | 3200 | 8     | [483ABB36C97B](<Mini Pc/Intel Client Systems/NUC11/NUC11PAHi7/483ABB36C97B>) |
+| Kingston   | KHX2666C15S4/8G SODIMM       | 8 GB     | DDR4 | 2667 | 8     | [4DF52099CB25](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/4DF52099CB25>) |
 |            | Module SODIMM                | 1536 MB  | DDR3 | 1600 | 8     | [5B023D8A425A](<Mini Pc/Prestigio/PSB133/PSB133S01ZFP/5B023D8A425A>) |
-| Ramaxel    | RMSA3260ME78HAF-2666 SODIMM  | 8 GB     | DDR4 | 2667 | 8     | [4032A8D3845F](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M710q 10MQS2SP00/4032A8D3845F>) |
-| Samsung    | M471A1K43DB1-CTD SODIMM      | 8 GB     | DDR4 | 2667 | 8     | [5CFC5EAFB4A1](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M720q 10T7002CUS/5CFC5EAFB4A1>) |
-| SK hynix   | Module SODIMM                | 4 GB     | DDR3 | 1600 | 8     | [D3A31E4E14CF](<Mini Pc/Apple/Macmini7/Macmini7,1/D3A31E4E14CF>) |
-| Corsair    | CMSX16GX4M1A2400C16 SODIMM   | 16 GB    | DDR4 | 2400 | 7     | [1ECB1666915A](<Mini Pc/Intel Client Systems/NUC8/NUC8i7BEH/1ECB1666915A>) |
-| Crucial    | CT102464BF160B.M16 SODIMM    | 8 GB     | DDR3 | 1600 | 7     | [927DC09056A4](<Mini Pc/Intel/NUC5CPYB/NUC5CPYB H61145-408/927DC09056A4>) |
-| Crucial    | CT51264BF160B.C16F SODIMM    | 4 GB     | DDR3 | 1600 | 7     | [C393C8C09EE6](<Mini Pc/ZOTAC/ZBOX-ID42/ZBOX-ID42-BE/C393C8C09EE6>) |
-| Crucial    | CT8G4SFS832A.M8FR SODIMM     | 8 GB     | DDR4 | 3200 | 7     | [DA91E486C26C](<Mini Pc/AZW/SER/SER/DA91E486C26C>) |
-| G.Skill    | F4-2400C16-8GRS SODIMM       | 8 GB     | DDR4 | 2400 | 7     | [C0D04E936FD2](<Mini Pc/ASUSTek Computer/PN/PN40/C0D04E936FD2>) |
-| Kingston   | 99U5469-045.A00LF SODIMM     | 4 GB     | DDR3 | 1600 | 7     | [307528649A8F](<Mini Pc/Intel/NUC5i3RYB/NUC5i3RYB H41000-507/307528649A8F>) |
-| Kingston   | Module SODIMM                | 8 GB     | DDR3 | 1600 | 7     | [A8A176CDCCDC](<Mini Pc/Apple/Macmini6/Macmini6,2/A8A176CDCCDC>) |
-| Micron     | 8ATF1G64HZ-3G2R1 SODIMM      | 8 GB     | DDR4 | 3200 | 7     | [CDBA8041B3A5](<Mini Pc/AZW/SER/SER/CDBA8041B3A5>) |
-|            | Module DIMM                  | 2 GB     | DDR3 | 1333 | 7     | [775D6272E88F](<Mini Pc/MODECOM/Free/Free PC/775D6272E88F>) |
-| Ramaxel    | RMT3170MN68F9F1600 DIMM      | 4 GB     | DDR3 | 1600 | 7     | [1522F026E3A1](<Mini Pc/Lenovo/C20-00/C20-00 F0BB00VCAU/1522F026E3A1>) |
-| Samsung    | M471A2K43CB1-CTD SODIMM      | 16 GB    | DDR4 | 8400 | 7     | [7325471A8004](<Mini Pc/Intel Client Systems/NUC10/NUC10i5FNH/7325471A8004>) |
-| Samsung    | Module SODIMM                | 2 GB     | DDR3 | 1067 | 7     | [45072781701D](<Mini Pc/Apple/Macmini3/Macmini3,1/45072781701D>) |
-| Samsung    | Module SODIMM                | 4 GB     | DDR3 | 1600 | 7     | [D9BC49EF0A1C](<Mini Pc/Apple/Macmini7/Macmini7,1/D9BC49EF0A1C>) |
-| Corsair    | CMSO8GX4M1A2133C15 SODIMM    | 8 GB     | DDR4 | 2133 | 6     | [1C010438D4AF](<Mini Pc/Intel/NUC6i3SYB/NUC6i3SYB H81132-503/1C010438D4AF>) |
-| Crucial    | CT16G4SFD824A.M16FE SODIMM   | 16 GB    | DDR4 | 2400 | 6     | [156E47AE720D](<Mini Pc/Intel Client Systems/NUC8/NUC8i7BEH/156E47AE720D>) |
-| Crucial    | CT32G4SFD832A.C16FE SODIMM   | 32 GB    | DDR4 | 3200 | 6     | [6FBA232AFE00](<Mini Pc/AZW/GTR/GTR/6FBA232AFE00>) |
-| Crucial    | CT32G4SFD832A.C16FF SODIMM   | 32 GB    | DDR4 | 3200 | 6     | [797C2DA701A6](<Mini Pc/Intel Client Systems/NUC11/NUC11PAHi7/797C2DA701A6>) |
-| Elpida     | Module SODIMM                | 8 GB     | DDR3 | 1600 | 6     | [99F74036F07D](<Mini Pc/Apple/Macmini7/Macmini7,1/99F74036F07D>) |
-| SK hynix   | HMA851S6AFR6N-UH SODIMM      | 4 GB     | DDR4 | 2400 | 6     | [5634E5897917](<Mini Pc/Hewlett-Packard/t630/t630 Thin Client/5634E5897917>) |
-| Micron     | 4ATF51264HZ-2G6E3 SODIMM     | 4 GB     | DDR4 | 2667 | 6     | [C2BFA09A14AD](<Mini Pc/Apple/Macmini8/Macmini8,1/C2BFA09A14AD>) |
+| Ramaxel    | RMT3170MN68F9F1600 DIMM      | 4 GB     | DDR3 | 1600 | 8     | [14A9ECB6B519](<Mini Pc/Lenovo/C20-00/C20-00 F0BB00GULD/14A9ECB6B519>) |
+| Samsung    | M471A2K43DB1-CTD SODIMM      | 16 GB    | DDR4 | 2667 | 8     | [667F00B512EF](<Mini Pc/Dell/Wyse/Wyse 5070 Thin Client/667F00B512EF>) |
+| Samsung    | Module SODIMM                | 2 GB     | DDR3 | 1067 | 8     | [2A011B228D99](<Mini Pc/Apple/Macmini3/Macmini3,1/2A011B228D99>) |
+| SK hynix   | HMA81GS6DJR8N-XN SODIMM      | 8 GB     | DDR4 | 3200 | 8     | [05AE73A9226C](<Mini Pc/Intel Client Systems/NUC11/NUC11ATKC4/05AE73A9226C>) |
+| SK hynix   | Module Row Of Chips LPDDR4   | 8 GB     |      | 3200 | 8     | [9F4D77A2527D](<Mini Pc/Fanless Mini PC/Quieter/Quieter 3C/9F4D77A2527D>) |
+| Corsair    | CMSO8GX4M1A2133C15 SODIMM    | 8192 MB  | DDR4 | 2133 | 7     | [436725A40981](<Mini Pc/Intel/NUC7/NUC7i5BNH/436725A40981>) |
+| Corsair    | CMSX32GX4M2A2400C16 SODIMM   | 16 GB    | DDR4 | 2400 | 7     | [DFFBECCDECD6](<Mini Pc/Wortmann AG/1009664/1009664_1400140/DFFBECCDECD6>) |
+| Crucial    | CT16G4SFD8213.C16FBD SODIMM  | 16 GB    | DDR4 | 2133 | 7     | [FB12EDE50DE4](<Mini Pc/Intel/NUC6i5SYB/NUC6i5SYB H81131-505/FB12EDE50DE4>) |
+| Crucial    | CT16G4SFRA32A.C8FF SODIMM    | 16 GB    | DDR4 | 3200 | 7     | [2B9572D6CEF1](<Mini Pc/Prime Computer/PrimeMini5/PrimeMini5 i7 11G/2B9572D6CEF1>) |
+| Crucial    | CT4G4SFS824A.C8FF SODIMM     | 4 GB     | DDR4 | 2400 | 7     | [FD7D2D30EAA5](<Mini Pc/ASUSTek Computer/PN/PN40/FD7D2D30EAA5>) |
+| Crucial    | CT8G4SFS824A.C8FDD1 SODIMM   | 8 GB     | DDR4 | 2400 | 7     | [3E5090ECEAA3](<Mini Pc/Intel Client Systems/NUC8/NUC8i3BEH/3E5090ECEAA3>) |
+| Crucial    | CT8G4SFS832A.C8FN SODIMM     | 8 GB     | DDR4 | 3200 | 7     | [A7EBDA905616](<Mini Pc/AZW/SER/SER/A7EBDA905616>) |
+| G.Skill    | F4-2400C16-16GRS SODIMM      | 16 GB    | DDR4 | 2667 | 7     | [BC99F9CDC500](<Mini Pc/Intel Client Systems/NUC11/NUC11ATKPE/BC99F9CDC500>) |
+| SK hynix   | HMA851S6AFR6N-UH SODIMM      | 4 GB     | DDR4 | 2400 | 7     | [12B73FAB291F](<Mini Pc/Hewlett-Packard/t630/t630 Thin Client/12B73FAB291F>) |
+| SK hynix   | Module DIMM                  | 4 GB     | DDR3 | 1600 | 7     | [81B4AA056E38](<Mini Pc/BESSTAR Tech/Z83/Z83-F/81B4AA056E38>) |
+| Kingston   | 9905711-015.A00G SODIMM      | 4096 MB  | DDR4 | 2400 | 7     | [F0B191CFC162](<Mini Pc/Intel Client Systems/NUC7/NUC7PJYH/F0B191CFC162>) |
+| Micron     | Module SODIMM                | 8 GB     | DDR3 | 1600 | 7     | [752E7F63EA4A](<Mini Pc/Apple/Macmini6/Macmini6,1/752E7F63EA4A>) |
+| Samsung    | M471A1K43DB1-CWE SODIMM      | 8 GB     | DDR4 | 3200 | 7     | [9E9166490D0F](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M70q 11DUS5HX00/9E9166490D0F>) |
+| Samsung    | M471A2K43CB1-CRC SODIMM      | 16 GB    | DDR4 | 2667 | 7     | [758016AB6F4D](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M920x Tiny/758016AB6F4D>) |
+| Samsung    | M471A2K43EB1-CWE SODIMM      | 16 GB    | DDR4 | 3200 | 7     | [E4809D71F4E7](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M715q 10VHS2DL00/E4809D71F4E7>) |
+| SK hynix   | HMA851S6CJR6N-VK SODIMM      | 4 GB     | DDR4 | 2667 | 7     | [BDE5ABDC6215](<Mini Pc/Apple/Macmini8/Macmini8,1/BDE5ABDC6215>) |
+| Corsair    | CMSX32GX4M2A2666C18 SODIMM   | 16 GB    | DDR4 | 2667 | 6     | [735A73561A9A](<Mini Pc/Apple/Macmini8/Macmini8,1/735A73561A9A>) |
+| Corsair    | Module SODIMM                | 8 GB     | DDR3 | 1600 | 6     | [4C160705D99F](<Mini Pc/Apple/Macmini6/Macmini6,2/4C160705D99F>) |
+| Crucial    | CT8G4SFRA266.C8FE SODIMM     | 8 GB     | DDR4 | 2667 | 6     | [7F55AD12F76C](<Mini Pc/ASUSTek Computer/PN/PN40/7F55AD12F76C>) |
+| Elpida     | Module SODIMM                | 4 GB     | DDR3 | 1600 | 6     | [3C45342E3FB9](<Mini Pc/Apple/Macmini7/Macmini7,1/3C45342E3FB9>) |
+| G.Skill    | F4-2133C15-8GRS SODIMM       | 8 GB     | DDR4 | 2667 | 6     | [4F886C0F740F](<Mini Pc/Intel/NUC6i7KYB/NUC6i7KYB H90766-406/4F886C0F740F>) |
+| G.Skill    | F4-3200C22-16GRS SODIMM      | 16 GB    | DDR4 | 3200 | 6     | [C46764A4355B](<Mini Pc/GMKtec/M5/M5 Pro/C46764A4355B>) |
+| Kingston   | KHX2400C14S4/8G SODIMM       | 8 GB     | DDR4 | 2400 | 6     | [74F6D3590CC0](<Mini Pc/Intel/NUC7i7BNB/NUC7i7BNB J31145-303/74F6D3590CC0>) |
+| Micron     | Module Row Of Chips LPDDR4   | 16 GB    |      | 3200 | 6     | [1C22D3BF4B4A](<Mini Pc/Fanless Mini PC/Quieter/Quieter 3C/1C22D3BF4B4A>) |
+|            | Module 1024kB Chip EEPROM    |          |      | 33   | 6     | [2B43C404B93D](<Mini Pc/Hewlett-Packard/t510/t510 Thin Client/2B43C404B93D>) |
 |            | Module SODIMM                | 8192 MB  | DDR3 | 1600 | 6     | [FF654F542B7B](<Mini Pc/Intel/NUC6/NUC6CAYH/FF654F542B7B>) |
-|            | Module SODIMM                | 8 GB     | DDR3 | 1600 | 6     | [FF654F542B7B](<Mini Pc/Intel/NUC6/NUC6CAYH/FF654F542B7B>) |
-| Samsung    | M471A5244CB0-CRC SODIMM      | 4 GB     | DDR4 | 2667 | 6     | [FEE9E9034339](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M715q 10VG000EUS/FEE9E9034339>) |
+| Ramaxel    | RMSA3320MR78HAF-3200 SODIMM  | 8 GB     | DDR4 | 3200 | 6     | [DBA783C983A6](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M70q Gen 3 11T300BLGE/DBA783C983A6>) |
+| Samsung    | Module SODIMM                | 16 GB    | DDR4 | 3200 | 6     | [F51B00AC99D9](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 805 G6 Desktop Mini PC/F51B00AC99D9>) |
+| Samsung    | Module SODIMM                | 4 GB     | DDR3 | 1067 | 6     | [66B1FF947F37](<Mini Pc/Apple/Macmini5/Macmini5,1/66B1FF947F37>) |
 | Samsung    | Module SODIMM                | 8192 MB  | DDR4 | 3200 | 6     | [F373E702B28B](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 405 G6 Desktop Mini PC/F373E702B28B>) |
-| SK hynix   | HMA81GS6CJR8N-VK SODIMM      | 8 GB     | DDR4 | 2667 | 6     | [41DB2AC53FB7](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M720q 10T8SEYP00/41DB2AC53FB7>) |
-| SK hynix   | Module Row Of Chips LPDDR4   | 8 GB     |      | 3200 | 6     | [09653BE1DD03](<Mini Pc/Fanless Mini PC/Quieter/Quieter 3/09653BE1DD03>) |
-| Wodposit   | WPBH26D408SWA-8G SODIMM      | 8 GB     | DDR4 | 2400 | 6     | [A53ED68DF138](<Mini Pc/ATOPNUC/MA/MA90/A53ED68DF138>) |
-| Corsair    | CMSX32GX4M2A2400C16 SODIMM   | 16384 MB | DDR4 | 2400 | 5     | [A9D5EFB700E1](<Mini Pc/Intel/NUC6i5SYB/NUC6i5SYB H81131-506/A9D5EFB700E1>) |
+| Samsung    | Module SODIMM                | 8 GB     | DDR4 | 2400 | 6     | [CE6E4D983EDC](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 600 G3 DM/CE6E4D983EDC>) |
+| SK hynix   | HMA82GS6CJR8N-VK SODIMM      | 16 GB    | DDR4 | 2667 | 6     | [39BE0CAA78A2](<Mini Pc/Intel Client Systems/NUC9/NUC9i5QNX/39BE0CAA78A2>) |
+| SK hynix   | HMA851S6AFR6N-UH SODIMM      | 4096 MB  | DDR4 | 2667 | 6     | [3D46678B9AC5](<Mini Pc/Dell/Wyse/Wyse 5070 Extended Thin Client/3D46678B9AC5>) |
+| Team       | TEAMGROUP-SD4-2400 SODIMM    | 16 GB    | DDR4 | 8400 | 6     | [9365FFE95007](<Mini Pc/Dell/Wyse/Wyse 5070 Thin Client/9365FFE95007>) |
+| A-DA       | AM1L16BC2N1-BQHS SODIMM      | 2 GB     | DDR3 | 1600 | 5     | [150D2AC24183](<Mini Pc/Intel/NUC6/NUC6CAYS/150D2AC24183>) |
+| Corsair    | CMSO16GX4M1A2133C15 SODIMM   | 16 GB    | DDR4 | 2667 | 5     | [B903C8D552C2](<Mini Pc/Intel/NUC7i5BNB/NUC7i5BNB J31144-303/B903C8D552C2>) |
+| Corsair    | CMSX32GX4M2A3200C22 SODIMM   | 16 GB    | DDR4 | 3200 | 5     | [7A7B094C4DF5](<Mini Pc/Others/V/V00/7A7B094C4DF5>) |
+| Crucial    | BLS16G4S240FSD.16FBD SODIMM  | 16 GB    | DDR4 | 2400 | 5     | [DF0D9E79A875](<Mini Pc/ZOTAC/ZBOX/ZBOX/DF0D9E79A875>) |
 | Crucial    | CT16G4SFD8213.C16FAD SODIMM  | 16 GB    | DDR4 | 2133 | 5     | [E75029A9D00C](<Mini Pc/Intel/NUC7/NUC7i7DNKE/E75029A9D00C>) |
-| Crucial    | CT4G4SFS824A.C8FF SODIMM     | 4 GB     | DDR4 | 2400 | 5     | [3F30AC0E5D22](<Mini Pc/Intel Client Systems/NUC7/NUC7CJYH/3F30AC0E5D22>) |
-| Crucial    | CT51264BF160BJ.M8F SODIMM    | 4 GB     | DDR3 | 1600 | 5     | [6CC0B4F1BE95](<Mini Pc/Intel Client Systems/NUC6/NUC6CAYH/6CC0B4F1BE95>) |
-| Crucial    | CT8G4SFS824A.C8FDD1 SODIMM   | 8 GB     | DDR4 | 2400 | 5     | [DFFAF76553E6](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEK/DFFAF76553E6>) |
+| Crucial    | CT16G4SFD8213.C16FBR SODIMM  | 16 GB    | DDR4 | 2133 | 5     | [8DFDBBEBA5D6](<Mini Pc/Intel/NUC6i7KYB/NUC6i7KYB H90766-406/8DFDBBEBA5D6>) |
+| Crucial    | CT16G4SFD824A.C16FE SODIMM   | 16 GB    | DDR4 | 2667 | 5     | [68770038660D](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M715q 10VG000SUS/68770038660D>) |
+| Crucial    | CT16G4SFRA266.C8FB SODIMM    | 16 GB    | DDR4 | 2667 | 5     | [01AA0F125F1B](<Mini Pc/Intel Client Systems/NUC10/NUC10i7FNK/01AA0F125F1B>) |
+| Crucial    | CT16G4SFRA32A.C8FE SODIMM    | 16 GB    | DDR4 | 3200 | 5     | [EC7E298EE8A0](<Mini Pc/Intel Client Systems/NUC11/NUC11ATKC4/EC7E298EE8A0>) |
+| Crucial    | CT32G4SFD832A.C16FB SODIMM   | 32 GB    | DDR4 | 3200 | 5     | [E1ADA35C85BB](<Mini Pc/Intel Client Systems/NUC11/NUC11DBBi9/E1ADA35C85BB>) |
+| Crucial    | CT8G4SFD8213.C16FHP SODIMM   | 8 GB     | DDR4 | 2133 | 5     | [A7C9B36847E6](<Mini Pc/Intel/NUC7i5BNB/NUC7i5BNB J31144-304/A7C9B36847E6>) |
+| Crucial    | CT8G4SFRA32A.M8FRS SODIMM    | 8 GB     | DDR4 | 3200 | 5     | [9046A1BDB22D](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/9046A1BDB22D>) |
+| Crucial    | CT8G4SFS824A.C8FP SODIMM     | 8 GB     | DDR4 | 2400 | 5     | [90AB61A478B0](<Mini Pc/Intel Client Systems/NUC7/NUC7CJYHN/90AB61A478B0>) |
 | Crucial    | Module SODIMM                | 8192 MB  | DDR3 | 1600 | 5     | [E44143411C41](<Mini Pc/Apple/Macmini6/Macmini6,2/E44143411C41>) |
-| Crucial    | Module SODIMM                | 8 GB     | DDR3 | 1600 | 5     | [969ABB03AAF4](<Mini Pc/Apple/Macmini6/Macmini6,1/969ABB03AAF4>) |
-| G.Skill    | F4-2400C16-16GRS SODIMM      | 16 GB    | DDR4 | 2667 | 5     | [C6B76D6C0340](<Mini Pc/Intel/NUC6i5SYB/NUC6i5SYB H81131-503/C6B76D6C0340>) |
-| Kingston   | KHX2400C14S4/8G SODIMM       | 8 GB     | DDR4 | 2400 | 5     | [17172630B556](<Mini Pc/Intel/NUC7i5BNB/NUC7i5BNB J31144-304/17172630B556>) |
+| Elpida     | Module SODIMM                | 2 GB     | DDR3 | 1600 | 5     | [FAC8616568BC](<Mini Pc/Apple/Macmini6/Macmini6,2/FAC8616568BC>) |
+| G.Skill    | F4-2666C19-8GRS SODIMM       | 8 GB     | DDR4 | 2667 | 5     | [2AEA76D4E1D2](<Mini Pc/Intel Client Systems/NUC10/NUC10i5FNH/2AEA76D4E1D2>) |
+| Kingston   | KF3200C20S4/16G SODIMM       | 16 GB    | DDR4 | 3200 | 5     | [A4CDF5C1F555](<Mini Pc/Intel Client Systems/NUC11/NUC11BTMi9/A4CDF5C1F555>) |
+| Kingston   | KHX2133C13S4/8G SODIMM       | 8 GB     | DDR4 | 2267 | 5     | [08D516CE4E21](<Mini Pc/Intel/NUC6i5SYB/NUC6i5SYB H81131-502/08D516CE4E21>) |
+| Kingston   | KNWMX1-ETB SODIMM            | 4 GB     | DDR3 | 1600 | 5     | [59AE598BAF65](<Mini Pc/WYSE/Dell/Dell Thin Client Desktop 5060/59AE598BAF65>) |
+| Kingston   | Module SODIMM                | 4 GB     | DDR3 | 1067 | 5     | [66B1FF947F37](<Mini Pc/Apple/Macmini5/Macmini5,1/66B1FF947F37>) |
 | Kingston   | Module SODIMM                | 8192 MB  | DDR3 | 1600 | 5     | [5BB28D99FC2C](<Mini Pc/Apple/Macmini6/Macmini6,2/5BB28D99FC2C>) |
-|            | Module 1024kB Chip EEPROM    |          |      | 33   | 5     | [21A13F83F33E](<Mini Pc/Hewlett-Packard/t510/t510 Thin Client/21A13F83F33E>) |
-| Samsung    | M471A2K43CB1-CRC SODIMM      | 16 GB    | DDR4 | 2667 | 5     | [9F9358369869](<Mini Pc/Lenovo/ThinkStation/ThinkStation P320 Tiny 30C2001XRU/9F9358369869>) |
+| Micron     | 16ATF2G64HZ-2G6E1 SODIMM     | 16 GB    | DDR4 | 2667 | 5     | [05DFBBA6D767](<Mini Pc/ZOTAC/ZBOX-MI643/ZBOX-MI643-MI623/05DFBBA6D767>) |
+| Micron     | 4ATF51264HZ-2G6E1 SODIMM     | 4 GB     | DDR4 | 2667 | 5     | [63BF4E6C46E3](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M75n 11GW000BUS/63BF4E6C46E3>) |
+| Micron     | Module SODIMM                | 2 GB     | DDR3 | 1067 | 5     | [CB722E4FAEA5](<Mini Pc/Apple/Macmini3/Macmini3,1/CB722E4FAEA5>) |
+|            | Module SODIMM                | 16 GB    | DDR4 | 3200 | 5     | [DCFF5513ACF6](<Mini Pc/GRT/H/H90/DCFF5513ACF6>) |
+|            | Module DIMM                  | 2 GB     | DDR3 | 1600 | 5     | [645CEF4A0D88](<Mini Pc/Kodlix/AP/AP42/645CEF4A0D88>) |
+|            | Module DIMM                  | 4 GB     | DDR3 | 1600 | 5     | [47D992AE3A01](<Mini Pc/AMI/Aptio/Aptio CRB/47D992AE3A01>) |
+| Samsung    | M471A1K43BB1-CRC SODIMM      | 8 GB     | DDR4 | 2667 | 5     | [90D9B5F0FC1D](<Mini Pc/Intel/NUC7/NUC7i5BNH/90D9B5F0FC1D>) |
 | Samsung    | M471A4G43MB1-CTD SODIMM      | 32 GB    | DDR4 | 2667 | 5     | [C05AA4C14BB9](<Mini Pc/Intel Client Systems/NUC10/NUC10i7FNH/C05AA4C14BB9>) |
+| Samsung    | M471B5173DB0-YK0 DIMM        | 4 GB     | DDR3 | 1600 | 5     | [1E28F3D9725D](<Mini Pc/Lenovo/E50-00/E50-00 90BX0018MB/1E28F3D9725D>) |
 | Samsung    | M471B5173DB0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 5     | [9D6C082135D2](<Mini Pc/Intel/NUC5CPYB/NUC5CPYB H61145-413/9D6C082135D2>) |
-| A-DA       | AM1L16BC2N1-BQHS SODIMM      | 2 GB     | DDR3 | 1600 | 4     | [964F9DF89D52](<Mini Pc/Intel Client Systems/NUC6/NUC6CAYS/964F9DF89D52>) |
-| Corsair    | CMSO16GX4M1A2133C15 SODIMM   | 16 GB    | DDR4 | 2133 | 4     | [4773A3E56AA1](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN51-E1/4773A3E56AA1>) |
-| Corsair    | CMSX32GX4M2A2666C18 SODIMM   | 16 GB    | DDR4 | 2667 | 4     | [B42AFC7A5AFD](<Mini Pc/Intel Client Systems/NUC8/NUC8i7BEH/B42AFC7A5AFD>) |
-| Crucial    | BLS16G4S240FSD.16FBD SODIMM  | 16 GB    | DDR4 | 2400 | 4     | [F93E47848AEB](<Mini Pc/Intel Client Systems/NUC7/NUC7i3DNHE/F93E47848AEB>) |
-| Crucial    | CT16G4SFD8213.C16FBR SODIMM  | 16 GB    | DDR4 | 2133 | 4     | [27CE60DE8503](<Mini Pc/Intel Client Systems/NUC8/NUC8i3BEK/27CE60DE8503>) |
+| Samsung    | Module SODIMM                | 2 GB     | DDR3 | 1600 | 5     | [4C482DAB7E1D](<Mini Pc/Apple/Macmini7/Macmini7,1/4C482DAB7E1D>) |
+| Samsung    | Module Row Of Chips LPDDR5   | 3 GB     |      | 6400 | 5     | [E3D3F661B6A1](<Mini Pc/Shenzhen DOKE electronic/MP/MP80/E3D3F661B6A1>) |
+| SK hynix   | HMA41GS6AFR8N-TF SODIMM      | 8 GB     | DDR4 | 2667 | 5     | [6BF49914A08B](<Mini Pc/Intel/NUC7/NUC7i7BNH/6BF49914A08B>) |
+|            | 123456789012345678 SODIMM    | 4 GB     | DDR4 | 2400 | 4     | [EE0E4CF77196](<Mini Pc/AMI/Aptio/Aptio CRB/EE0E4CF77196>) |
+| Corsair    | CMSX16GX4M1A3200C22 SODIMM   | 16 GB    | DDR4 | 3200 | 4     | [873F52AD6701](<Mini Pc/Intel Client Systems/NUC11/NUC11TNHi3/873F52AD6701>) |
+| Corsair    | CMSX8GX4M1A2400C16 SODIMM    | 8 GB     | DDR4 | 2400 | 4     | [53CC243135C7](<Mini Pc/Intel Client Systems/NUC8/NUC8i7BEH/53CC243135C7>) |
+| Crucial    | BLS8G3N169ES4.16FE SODIMM    | 8 GB     | DDR3 | 1600 | 4     | [A9E6A8796450](<Mini Pc/Intel/NUC5i7RYB/NUC5i7RYB H73774-101/A9E6A8796450>) |
 | Crucial    | CT16G4SFD8266.C16FD1 SODIMM  | 16 GB    | DDR4 | 2667 | 4     | [0577EEAC7900](<Mini Pc/Apple/Macmini8/Macmini8,1/0577EEAC7900>) |
-| Crucial    | CT16G4SFRA266.C8FB SODIMM    | 16 GB    | DDR4 | 2667 | 4     | [01AA0F125F1B](<Mini Pc/Intel Client Systems/NUC10/NUC10i7FNK/01AA0F125F1B>) |
 | Crucial    | CT16G4SFS832A.C8FB SODIMM    | 16 GB    | DDR4 | 3200 | 4     | [150CD34EF594](<Mini Pc/AZW/GTR/GTR/150CD34EF594>) |
-| Crucial    | CT8G4SFD8213.C16FHP SODIMM   | 8192 MB  | DDR4 | 2133 | 4     | [9B7E0A8E9AE1](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M715q 10VGCTO1WW/9B7E0A8E9AE1>) |
-| Crucial    | CT8G4SFRA32A.M8FRS SODIMM    | 8 GB     | DDR4 | 3200 | 4     | [571D7E017220](<Mini Pc/CSL-Computer/Mini/Mini PN41/571D7E017220>) |
+| Crucial    | CT16G56C46S5.C8D SODIMM      | 16 GB    | DDR5 | 5600 | 4     | [BF2DD5B4D222](<Mini Pc/AZW/GTi/GTi14/BF2DD5B4D222>) |
+| Crucial    | CT8G4SFRA32A.C8FR SODIMM     | 8 GB     | DDR4 | 3200 | 4     | [CD02A9EE38BE](<Mini Pc/ASUSTek Computer/PN/PN41/CD02A9EE38BE>) |
+| Crucial    | CT8G4SFRA32A.M4FF SODIMM     | 8 GB     | DDR4 | 3200 | 4     | [376FA1860135](<Mini Pc/Intel Client Systems/NUC12/NUC12WSHi7/376FA1860135>) |
+| Crucial    | CT8G4SFS8213.C8FH1 SODIMM    | 8 GB     | DDR4 | 2133 | 4     | [C1361E7A80A9](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre neo 50q Gen 4 12LN000EFR/C1361E7A80A9>) |
+| Crucial    | CT8G4SFS824A.C8FR SODIMM     | 8 GB     | DDR4 | 2400 | 4     | [470E2732EB56](<Mini Pc/Intel/NUC7/NUC7i5BNHX/470E2732EB56>) |
+| Crucial    | CT8G4SFS824A.M8FD SODIMM     | 8 GB     | DDR4 | 2400 | 4     | [DA9AF5F60A67](<Mini Pc/Intel Client Systems/NUC7/NUC7i3BNK/DA9AF5F60A67>) |
+| Crucial    | CT8G4SFS8266.C8FN SODIMM     | 8192 MB  | DDR4 | 2667 | 4     | [F9FC40BCC314](<Mini Pc/Intel Client Systems/NUC10/NUC10i5FNH/F9FC40BCC314>) |
 | Crucial    | CT8G4SFS8266.M8FE SODIMM     | 8 GB     | DDR4 | 2667 | 4     | [21A3465BD54D](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEH/21A3465BD54D>) |
-| Crucial    | CT8G4SFS832A.C8FR SODIMM     | 8 GB     | DDR4 | 3200 | 4     | [89DAE8FF2DDA](<Mini Pc/AZW/SER/SER/89DAE8FF2DDA>) |
-| G.Skill    | F4-2133C15-8GRS SODIMM       | 8 GB     | DDR4 | 2667 | 4     | [6D46DA52E0A4](<Mini Pc/Intel/NUC7/NUC7i3BNH/6D46DA52E0A4>) |
-| G.Skill    | F4-2666C19-8GRS SODIMM       | 8 GB     | DDR4 | 2667 | 4     | [271976958C44](<Mini Pc/Intel Client Systems/NUC8/NUC8i3BEH/271976958C44>) |
-| G.Skill    | F4-3200C22-16GRS SODIMM      | 16 GB    | DDR4 | 3200 | 4     | [A6FB31A882F4](<Mini Pc/Intel Client Systems/NUC11/NUC11PAHi7/A6FB31A882F4>) |
-| SK hynix   | Module SODIMM                | 8 GB     | DDR4 | 2133 | 4     | [2514B016D057](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 600 G3 DM/2514B016D057>) |
+| Crucial    | CT8G4SFS832A.M8FE SODIMM     | 8 GB     | DDR4 | 3200 | 4     | [A5598034B16D](<Mini Pc/AZW/SER/SER/A5598034B16D>) |
+| Crucial    | Module SODIMM                | 4 GB     | DDR3 | 1600 | 4     | [D0CC508105CA](<Mini Pc/ZOTAC/ZBOX-RI323/ZBOX-RI323NANO/D0CC508105CA>) |
+|            | CT48G56C46S5.M16B1 SODIMM    | 48 GB    | DDR5 | 5600 | 4     | [3BAF981353FE](<Mini Pc/Micro Computer (HK) Tech Limited/Venus/Venus series/3BAF981353FE>) |
+|            | DDR4 NB 16G 2666 SODIMM      | 16384 MB | DDR4 | 2667 | 4     | [21A5C17C45C6](<Mini Pc/Chuwi/CoreBox/CoreBox/21A5C17C45C6>) |
+| G.Skill    | F4-3200C22-8GRS SODIMM       | 8 GB     | DDR4 | 3200 | 4     | [FF50DAF05B24](<Mini Pc/Dell/OptiPlex/OptiPlex 3000 Thin Client/FF50DAF05B24>) |
+| SK hynix   | HMA81GS6AFR8N-UH SODIMM      | 8 GB     | DDR4 | 2400 | 4     | [A934796548E9](<Mini Pc/Hewlett-Packard/t630/t630 Thin Client/A934796548E9>) |
+| SK hynix   | Module SODIMM                | 8 GB     | DDR4 | 3200 | 4     | [86D112A571C8](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 800 G8 Desktop Mini PC/86D112A571C8>) |
 | Kingston   | 9905428-435.A00LF SODIMM     | 8 GB     | DDR3 | 1600 | 4     | [2297F3A6FA43](<Mini Pc/Intel/NUC5i5RYB/NUC5i5RYB H40999-504/2297F3A6FA43>) |
-| Kingston   | 9905711-015.A00G SODIMM      | 4 GB     | DDR4 | 2400 | 4     | [E180865C89B6](<Mini Pc/Intel Client Systems/NUC8/NUC8i3BEH/E180865C89B6>) |
+| Kingston   | CBD56S46BD8HA-32 SODIMM      | 32 GB    | DDR5 | 5600 | 4     | [D725A40F6BE7](<Mini Pc/Micro Computer (HK) Tech Limited/Venus/Venus series/D725A40F6BE7>) |
+| Kingston   | KF556S40-16 SODIMM           | 16 GB    | DDR5 | 5600 | 4     | [E8B5D4E379D6](<Mini Pc/Micro Computer (HK) Tech Limited/Venus/Venus series/E8B5D4E379D6>) |
+| Kingston   | KF556S40-32 SODIMM           | 32 GB    | DDR5 | 5600 | 4     | [802F91CAC000](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M75q Gen 5 12RQCTO1WW/802F91CAC000>) |
 | Kingston   | KHX3200C20S4/16GX SODIMM     | 16 GB    | DDR4 | 3200 | 4     | [257051F41D1C](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/257051F41D1C>) |
-| Micron     | 16ATF2G64HZ-2G6E1 SODIMM     | 16 GB    | DDR4 | 2667 | 4     | [F297DC375194](<Mini Pc/Intel Client Systems/NUC10/NUC10i7FNH/F297DC375194>) |
-| Micron     | 4ATF51264HZ-2G6E1 SODIMM     | 4 GB     | DDR4 | 2667 | 4     | [5439510A54DE](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M75n 11GWCTO1WW/5439510A54DE>) |
-| Micron     | 8ATF1G64HZ-3G2J1 SODIMM      | 8 GB     | DDR4 | 3200 | 4     | [41ED21501F1F](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M75q Gen 2 11JJ000AIX/41ED21501F1F>) |
-| Micron     | Module SODIMM                | 8 GB     | DDR3 | 1600 | 4     | [C0A47B84A375](<Mini Pc/Apple/Macmini6/Macmini6,2/C0A47B84A375>) |
+| Lexar      | LD4AS016G-3200ST SODIMM      | 16 GB    | DDR4 | 3200 | 4     | [E56DDFAD7379](<Mini Pc/GMKtec/M5/M5 Pro/E56DDFAD7379>) |
+| Micron     | 4ATF51264HZ-3G2J1 SODIMM     | 4 GB     | DDR4 | 3200 | 4     | [29148DA21C0A](<Mini Pc/Hewlett-Packard/260/260 G4 Desktop Mini PC/29148DA21C0A>) |
+| Micron     | 53D512M64D4RQ-046 Row Of ... | 8 GB     |      | 4267 | 4     | [15DE3F3C710F](<Mini Pc/Chuwi/HeroBox/HeroBox Pro/15DE3F3C710F>) |
+| Micron     | MTC4C10163S1SC48BA1 SODIMM   | 8 GB     | DDR5 | 4800 | 4     | [72ACADE6F6FA](<Mini Pc/AZW/EQ/EQ/72ACADE6F6FA>) |
+| Micron     | Module Row Of Chips LPDDR5   | 3 GB     |      | 6400 | 4     | [EFBD907F675F](<Mini Pc/Chuwi/LarkBox/LarkBox X/EFBD907F675F>) |
 | Micron     | Module SODIMM                | 8 GB     | DDR4 | 3200 | 4     | [3BD98BA3E33B](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 600 G6 Desktop Mini PC/3BD98BA3E33B>) |
 |            | Module DIMM                  | 2048 MB  | DDR3 | 1600 | 4     | [5D90ACC24076](<Mini Pc/Beelink/AP/AP34/5D90ACC24076>) |
-|            | Module DIMM                  | 2 GB     | DDR3 | 1600 | 4     | [6388D7A8ED9F](<Mini Pc/BESSTAR Tech/N/N34/6388D7A8ED9F>) |
-| Samsung    | M471A1K43CB1-CRC SODIMM      | 8 GB     | DDR4 | 2667 | 4     | [5A48D52A7EDA](<Mini Pc/Wortmann AG/TERRA_PC/TERRA_PC/5A48D52A7EDA>) |
-| Samsung    | M471A1K43DB1-CWE SODIMM      | 8 GB     | DDR4 | 3200 | 4     | [DFE02E0590AD](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M70q 11DT003GRU/DFE02E0590AD>) |
-| Samsung    | M471A1K43EB1-CWE SODIMM      | 8 GB     | DDR4 | 3200 | 4     | [E56BBEFB761C](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M70q 11DT003GRU/E56BBEFB761C>) |
-| Samsung    | M471B5173DB0-YK0 DIMM        | 4 GB     | DDR3 | 1600 | 4     | [EB2BCA05FD7C](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M53 10DD001BFR/EB2BCA05FD7C>) |
-| Samsung    | Module SODIMM                | 16 GB    | DDR4 | 3200 | 4     | [44C939723A39](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 400 G6 Desktop Mini PC/44C939723A39>) |
-| Samsung    | Module SODIMM                | 4 GB     | DDR3 | 1067 | 4     | [63E8E2C932EC](<Mini Pc/Apple/Macmini6/Macmini6,1/63E8E2C932EC>) |
-| SK hynix   | HMA81GS6DJR8N-XN SODIMM      | 8 GB     | DDR4 | 3200 | 4     | [6981015F1795](<Mini Pc/ASUSTek Computer/PN/PN41/6981015F1795>) |
-| SK hynix   | HMA851S6CJR6N-VK SODIMM      | 4 GB     | DDR4 | 2667 | 4     | [883BB3FE6AE1](<Mini Pc/Apple/Macmini8/Macmini8,1/883BB3FE6AE1>) |
+| Samsung    | M471A2G43AB2-CWE SODIMM      | 16 GB    | DDR4 | 3200 | 4     | [E4809D71F4E7](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M715q 10VHS2DL00/E4809D71F4E7>) |
+| Samsung    | M471A2G43BB2-CWE SODIMM      | 16 GB    | DDR4 | 3200 | 4     | [A3E515EDF4A6](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M920q Bos8988/A3E515EDF4A6>) |
+| Samsung    | M471B1G73DB0-YK0 DIMM        | 8 GB     | DDR3 | 1600 | 4     | [FF29E72D8A31](<Mini Pc/AMI/Aptio/Aptio CRB/FF29E72D8A31>) |
+| Samsung    | M471B5173EB0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 4     | [BFD9693562FF](<Mini Pc/Wortmann AG/TERRA_PC/TERRA_PC/BFD9693562FF>) |
+| Samsung    | M471B5173QH0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 4     | [DD0ADEFB709A](<Mini Pc/Intel/NUC5i7RYB/NUC5i7RYB H73774-102/DD0ADEFB709A>) |
+| Samsung    | Module SODIMM                | 2048 MB  | DDR3 | 1600 | 4     | [7A43FA49CA20](<Mini Pc/Apple/Macmini7/Macmini7,1/7A43FA49CA20>) |
+| Samsung    | Module Row Of Chips LPDDR5   | 2 GB     |      | 6400 | 4     | [1D5A038AC1ED](<Mini Pc/Chuwi/HeroBox/HeroBox/1D5A038AC1ED>) |
+| Samsung    | Module SODIMM                | 8 GB     | DDR4 | 3200 | 4     | [0E8F2605F090](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 805 G6 Desktop Mini PC/0E8F2605F090>) |
+| SK hynix   | HMA82GS6DJR8N-XN SODIMM      | 16 GB    | DDR4 | 3200 | 4     | [6A6ACA909F6B](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M70q 11DUSBVM00/6A6ACA909F6B>) |
+| SK hynix   | Module SODIMM                | 2 GB     | DDR3 | 1333 | 4     | [88F486C2AD31](<Mini Pc/Apple/Macmini5/Macmini5,2/88F486C2AD31>) |
 | Team       | TEAMGROUP-SD4-2666 SODIMM    | 16 GB    | DDR4 | 2667 | 4     | [DF5A02C114E3](<Mini Pc/Intel Client Systems/NUC10/NUC10i7FNH/DF5A02C114E3>) |
+| Transcend  | JM2666HSB-8G SODIMM          | 8 GB     | DDR4 | 2667 | 4     | [4648AA597E56](<Mini Pc/ZOTAC/ZBOX-MI/ZBOX-MI549/4648AA597E56>) |
 | Transcend  | TS512MSK64W6H DIMM           | 4 GB     | DDR3 | 1600 | 4     | [4E0316855847](<Mini Pc/AMI/Aptio/Aptio CRB/4E0316855847>) |
+| A-DATA     | CBDAD5S560032G-BAD SODIMM    | 32 GB    | DDR5 | 5600 | 3     | [4EBC68B98724](<Mini Pc/Micro Computer (HK) Tech Limited/EliteMini/EliteMini Series/4EBC68B98724>) |
 | A-DATA     | Module SODIMM                | 32 GB    | DDR4 | 3200 | 3     | [4F20BA8A725D](<Mini Pc/AZW/GTR/GTR/4F20BA8A725D>) |
-|            | 123456789012345678 SODIMM... | 2 GB     |      | 2400 | 3     | [084968A446B3](<Mini Pc/iBall/CompBook/CompBook Premio V3/084968A446B3>) |
+| A-DATA     | Module SODIMM                | 8 GB     | DDR4 | 2667 | 3     | [73C1EB1E8CDA](<Mini Pc/Intel Client Systems/NUC11/NUC11PAHi7/73C1EB1E8CDA>) |
+| A-DATA     | Module SODIMM                | 8 GB     | DDR4 | 3200 | 3     | [3EAF5A48DF52](<Mini Pc/Intel Client Systems/NUC11/NUC11ATKC4/3EAF5A48DF52>) |
 | A-DATA     | Module SODIMM                | 8192 MB  | DDR4 | 2667 | 3     | [9F7937F8975F](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEK/9F7937F8975F>) |
-| Corsair    | CMSO16GX4M2A2133C15 SODIMM   | 8192 MB  | DDR4 | 2667 | 3     | [5A6812AEE6BE](<Mini Pc/Intel/NUC7/NUC7i5BNH/5A6812AEE6BE>) |
-| Corsair    | CMSO8GX3M1C1600C11 SODIMM    | 8 GB     | DDR3 | 1600 | 3     | [32492BE64C1E](<Mini Pc/Intel/NUC5i5RYB/NUC5i5RYB H40999-508/32492BE64C1E>) |
-| Corsair    | CMSX8GX4M1A2400C16 SODIMM    | 8 GB     | DDR4 | 2400 | 3     | [7EED5700CD8B](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN62/7EED5700CD8B>) |
-| Corsair    | Module SODIMM                | 8 GB     | DDR3 | 1600 | 3     | [7ECE2CD1F7A1](<Mini Pc/Apple/Macmini6/Macmini6,2/7ECE2CD1F7A1>) |
-| Crucial    | CT16G48C40S5.M8A1 SODIMM     | 16 GB    | DDR5 | 4800 | 3     | [6ACE98838322](<Mini Pc/AZW/SER/SER/6ACE98838322>) |
-| Crucial    | CT16G4SFD8213.C16FBD SODIMM  | 16 GB    | DDR4 | 2133 | 3     | [E821B07C41C5](<Mini Pc/Intel/NUC6i7KYB/NUC6i7KYB H90766-406/E821B07C41C5>) |
-| Crucial    | CT16G4SFD824A.C16FE SODIMM   | 16 GB    | DDR4 | 2667 | 3     | [256EB048B176](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 400 G3 DM/256EB048B176>) |
+| Corsair    | CMSO16GX4M2A2133C15 SODIMM   | 8 GB     | DDR4 | 2667 | 3     | [5A6812AEE6BE](<Mini Pc/Intel/NUC7/NUC7i5BNH/5A6812AEE6BE>) |
+| Corsair    | CMSO8GX3M1C1600C11 SODIMM    | 8192 MB  | DDR3 | 1600 | 3     | [32492BE64C1E](<Mini Pc/Intel/NUC5i5RYB/NUC5i5RYB H40999-508/32492BE64C1E>) |
+| Corsair    | CMSX64GX4M2A2666C18 SODIMM   | 32 GB    | DDR4 | 2667 | 3     | [DF0D9B50BF89](<Mini Pc/Intel Client Systems/NUC10/NUC10i5FNK/DF0D9B50BF89>) |
+| Corsair    | CMSX8GX4M2A2400C16 SODIMM    | 4 GB     | DDR4 | 2400 | 3     | [B3E34ED1135D](<Mini Pc/Intel Client Systems/NUC7/NUC7CJYHN/B3E34ED1135D>) |
+| Corsair    | Module SODIMM                | 4 GB     | DDR3 | 1333 | 3     | [9A2432883483](<Mini Pc/Apple/Macmini5/Macmini5,1/9A2432883483>) |
 | Crucial    | CT16G4SFD824A.M16FB SODIMM   | 16 GB    | DDR4 | 2400 | 3     | [90A7B6AE2869](<Mini Pc/Hewlett-Packard/Z2/Z2 Mini G3 Workstation/90A7B6AE2869>) |
+| Crucial    | CT16G4SFD8266.C16FE SODIMM   | 16 GB    | DDR4 | 2667 | 3     | [086259C38FE1](<Mini Pc/Apple/Macmini8/Macmini8,1/086259C38FE1>) |
 | Crucial    | CT16G4SFD8266.M16FE SODIMM   | 16 GB    | DDR4 | 2667 | 3     | [B361B69539AD](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M715q 10VG000JUS/B361B69539AD>) |
 | Crucial    | CT16G4SFRA266.C8FE SODIMM    | 16 GB    | DDR4 | 2667 | 3     | [01AA0F125F1B](<Mini Pc/Intel Client Systems/NUC10/NUC10i7FNK/01AA0F125F1B>) |
-| Crucial    | CT16G4SFRA32A.C8FF SODIMM    | 16 GB    | DDR4 | 3200 | 3     | [10393889EC9C](<Mini Pc/Intel Client Systems/NUC11/NUC11TNKv7/10393889EC9C>) |
-| Crucial    | CT16G4SFRA32A.M16FRS SODIMM  | 16 GB    | DDR4 | 3200 | 3     | [87358FD5B37C](<Mini Pc/VeryPC/NUCS-CL5/NUCS-CL5I-N/87358FD5B37C>) |
-| Crucial    | CT16G4SFS832A.M8FF SODIMM    | 16 GB    | DDR4 | 3200 | 3     | [539DB5800CEE](<Mini Pc/AZW/GTR/GTR/539DB5800CEE>) |
-| Crucial    | CT32G4SFD832A.C16FB SODIMM   | 32 GB    | DDR4 | 3200 | 3     | [1298BD19153A](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 405 G6 Desktop Mini PC/1298BD19153A>) |
+| Crucial    | CT16G4SFRA32A.C16FN SODIMM   | 16 GB    | DDR4 | 3200 | 3     | [524B72AF7113](<Mini Pc/Intel Client Systems/NUC12/NUC12WSKi3/524B72AF7113>) |
+| Crucial    | CT16G4SFRA32A.C16FT SODIMM   | 16 GB    | DDR4 | 3200 | 3     | [883EB9936C9F](<Mini Pc/Intel Client Systems/NUC13/NUC13ANHi3/883EB9936C9F>) |
+| Crucial    | CT16G4SFRA32A.M16FRS SODIMM  | 16 GB    | DDR4 | 3200 | 3     | [86C8213ACE93](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/86C8213ACE93>) |
+| Crucial    | CT16G56C46S5.M8B2 SODIMM     | 16 GB    | DDR5 | 5600 | 3     | [862A546C55C0](<Mini Pc/Micro Computer (HK) Tech Limited/Venus/Venus series/862A546C55C0>) |
+| Crucial    | CT32G48C40S5.M16A1 SODIMM    | 32 GB    | DDR5 | 4800 | 3     | [034F81168417](<Mini Pc/Intel Client Systems/NUC13/NUC13RNGi9/034F81168417>) |
+| Crucial    | CT32G4SFD8266.C16FE SODIMM   | 32 GB    | DDR4 | 2667 | 3     | [21EF93200532](<Mini Pc/Intel Client Systems/NUC13/NUC13ANHi5/21EF93200532>) |
+| Crucial    | CT32G56C46S5.M16B2 SODIMM    | 32 GB    | DDR5 | 5600 | 3     | [198D5E70E3B4](<Mini Pc/MECHREVO/F7BSC/F7BSC V1.0/198D5E70E3B4>) |
 | Crucial    | CT4G4SFS824A.C8FE SODIMM     | 4 GB     | DDR4 | 2400 | 3     | [80C97F0A7DE7](<Mini Pc/Intel Client Systems/NUC7/NUC7PJYH/80C97F0A7DE7>) |
 | Crucial    | CT4G4SFS824A.M8FE SODIMM     | 4 GB     | DDR4 | 2400 | 3     | [54C1EA65CE1C](<Mini Pc/Intel Client Systems/NUC8/NUC8i3BEH/54C1EA65CE1C>) |
 | Crucial    | CT4G4SFS824A.M8FF SODIMM     | 4 GB     | DDR4 | 2400 | 3     | [3F30AC0E5D22](<Mini Pc/Intel Client Systems/NUC7/NUC7CJYH/3F30AC0E5D22>) |
-| Crucial    | CT8G4SFRA266.C8FE SODIMM     | 8 GB     | DDR4 | 2667 | 3     | [992629F4FA0A](<Mini Pc/Intel Client Systems/NUC10/NUC10i5FNH/992629F4FA0A>) |
-| Crucial    | CT8G4SFRA32A.C8FR SODIMM     | 8 GB     | DDR4 | 3200 | 3     | [CD02A9EE38BE](<Mini Pc/ASUSTek Computer/PN/PN41/CD02A9EE38BE>) |
-| Crucial    | CT8G4SFRA32A.M4FF SODIMM     | 8 GB     | DDR4 | 3200 | 3     | [6E4E3EFED7D6](<Mini Pc/CSL-Computer/Mini/Mini PN41/6E4E3EFED7D6>) |
-| Crucial    | CT8G4SFS824A.C8FP SODIMM     | 8 GB     | DDR4 | 2400 | 3     | [B1AD0E64616C](<Mini Pc/Intel Client Systems/NUC8/NUC8i7BEH/B1AD0E64616C>) |
-| Crucial    | CT8G4SFS824A.M8FD SODIMM     | 8 GB     | DDR4 | 2400 | 3     | [A22147E6DCE0](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEH/A22147E6DCE0>) |
+| Crucial    | CT51264BF160BJ.C8F SODIMM    | 4 GB     | DDR3 | 1600 | 3     | [C448CE9EA620](<Mini Pc/ZOTAC/ZBOX-CI327/ZBOX-CI327NANO-GS-01/C448CE9EA620>) |
+| Crucial    | CT8G4SFS824A.C8FHD1 SODIMM   | 8 GB     | DDR4 | 2667 | 3     | [95FEC85BA62D](<Mini Pc/Intel/NUC7/NUC7i5BNH/95FEC85BA62D>) |
+| Crucial    | CT8G4SFS824A.C8FN SODIMM     | 8 GB     | DDR4 | 2400 | 3     | [77E85ADF2A1E](<Mini Pc/Intel Client Systems/NUC12/NUC12WSHi5/77E85ADF2A1E>) |
 | Crucial    | CT8G4SFS8266.C8FD1 SODIMM    | 8 GB     | DDR4 | 2667 | 3     | [DDDA1EF2FB00](<Mini Pc/Intel/NUC8/NUC8i7HVK/DDDA1EF2FB00>) |
-| Crucial    | CT8G4SFS8266.C8FN SODIMM     | 8192 MB  | DDR4 | 2667 | 3     | [F9FC40BCC314](<Mini Pc/Intel Client Systems/NUC10/NUC10i5FNH/F9FC40BCC314>) |
-| Crucial    | CT8G4SFS832A.C8FN SODIMM     | 8 GB     | DDR4 | 3200 | 3     | [A6955C9B9593](<Mini Pc/AZW/SER/SER/A6955C9B9593>) |
-|            | DDR4 NB 16G 2666 SODIMM      | 16384 MB | DDR4 | 2667 | 3     | [5D8F87EBC9F9](<Mini Pc/Chuwi/CoreBox/CoreBox/5D8F87EBC9F9>) |
+| Crucial    | Module SODIMM                | 4 GB     | DDR3 | 1067 | 3     | [C2D37A123A1A](<Mini Pc/Apple/Macmini4/Macmini4,1/C2D37A123A1A>) |
+| Crucial    | Module SODIMM                | 8 GB     | DDR3 | 1333 | 3     | [D48852BD1949](<Mini Pc/Apple/Macmini5/Macmini5,1/D48852BD1949>) |
 | Elpida     | Module SODIMM                | 2048 MB  | DDR3 | 1600 | 3     | [F0E209234250](<Mini Pc/Apple/Macmini6/Macmini6,1/F0E209234250>) |
 | Elpida     | Module SODIMM                | 4096 MB  | DDR3 | 1600 | 3     | [A8C0908EEE3B](<Mini Pc/Apple/Macmini7/Macmini7,1/A8C0908EEE3B>) |
+|            | FD4AS3200C8GZH SODIMM        | 8 GB     | DDR4 | 3200 | 3     | [B0D1FD92EE7B](<Mini Pc/Others/V/V00/B0D1FD92EE7B>) |
 | G.Skill    | F4-2400C16-4GRS SODIMM       | 4 GB     | DDR4 | 2400 | 3     | [2CAA9C44DD55](<Mini Pc/Intel Client Systems/NUC11/NUC11TNHi3/2CAA9C44DD55>) |
-| G.Skill    | F4-3200C22-32GRS SODIMM      | 32 GB    | DDR4 | 3200 | 3     | [240D56DBC91B](<Mini Pc/Intel Client Systems/NUC11/NUC11TNHi3/240D56DBC91B>) |
+| G.Skill    | F4-2666C18-16GRS SODIMM      | 16 GB    | DDR4 | 2667 | 3     | [5064CDE9A044](<Mini Pc/Intel Client Systems/NUC10/NUC10i3FNK/5064CDE9A044>) |
+| G.Skill    | F4-2666C19-16GRS SODIMM      | 16 GB    | DDR4 | 2667 | 3     | [C98F8F99AC25](<Mini Pc/Intel Client Systems/NUC10/NUC10i7FNK/C98F8F99AC25>) |
+| Golden ... | CL19-19-19 D4-2666 SODIMM    | 16 GB    | DDR4 | 2667 | 3     | [E8620B84D30F](<Mini Pc/Intel/NUC7/NUC7i7DNHE/E8620B84D30F>) |
+| SK hynix   | HMA81GS6CJR8N-VK SODIMM      | 8 GB     | DDR4 | 2667 | 3     | [8C2CD3C46661](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M715q 10VGS05N00/8C2CD3C46661>) |
+| SK hynix   | HMA81GS6DJR8N-XN SODIMM      | 8 GB     | DDR4 | 3200 | 3     | [0631703E328F](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M75q Gen 2 11JNCTO1WW/0631703E328F>) |
+| SK hynix   | HMT325S6EFR8C-PB SODIMM      | 2 GB     | DDR3 | 1600 | 3     | [2B43C404B93D](<Mini Pc/Hewlett-Packard/t510/t510 Thin Client/2B43C404B93D>) |
+| SK hynix   | HMT451S6BFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 3     | [30C531C8110F](<Mini Pc/Intel/NUC5i7RYB/NUC5i7RYB H73774-104/30C531C8110F>) |
+| SK hynix   | Module SODIMM                | 8 GB     | DDR4 | 2400 | 3     | [623C6DFA14C1](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 800 G3 DM 65W/623C6DFA14C1>) |
+| SK hynix   | HMT425S6AFR6A-PB DIMM        | 2 GB     | DDR3 | 1600 | 3     | [33075BEB3B66](<Mini Pc/Lenovo/H500s/H500s 10157/33075BEB3B66>) |
 | SK hynix   | HMT451S6BFR8A-PB DIMM        | 4 GB     | DDR3 | 1600 | 3     | [6EF054560413](<Mini Pc/NEXCOM/VTC/VTC1010/6EF054560413>) |
-| SK hynix   | Module DIMM                  | 4 GB     | DDR3 | 1600 | 3     | [E4F29253430F](<Mini Pc/BESSTAR Tech/Z83/Z83-F/E4F29253430F>) |
+| SK hynix   | Module DIMM                  | 2 GB     | DDR3 | 800  | 3     | [1801678C5263](<Mini Pc/Hewlett-Packard/t610/t610 WW Thin Client/1801678C5263>) |
+| SK hynix   | Module DIMM                  | 4 GB     | DDR3 | 800  | 3     | [5A3A0363FA80](<Mini Pc/Hewlett-Packard/t610/t610 WW Thin Client/5A3A0363FA80>) |
+| Kingston   | 9905700-101.A00G SODIMM      | 16 GB    | DDR4 | 3200 | 3     | [7908F41C0325](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN42/7908F41C0325>) |
+| Kingston   | 9905700-118.A00G SODIMM      | 8 GB     | DDR4 | 3200 | 3     | [DF21916C000F](<Mini Pc/System76/Meerkat/Meerkat/DF21916C000F>) |
+| Kingston   | 9905700-122.A00G SODIMM      | 16 GB    | DDR4 | 3200 | 3     | [C5A1880686C9](<Mini Pc/Intel Client Systems/NUC13/NUC13ANHi7/C5A1880686C9>) |
 | Kingston   | 9905711-027.A00G SODIMM      | 4 GB     | DDR4 | 2667 | 3     | [EF3EAAB05908](<Mini Pc/ASUSTek Computer/PN/PN41/EF3EAAB05908>) |
+| Kingston   | 9905744-066.A00G SODIMM      | 32 GB    | DDR4 | 3200 | 3     | [BE447B8A47E1](<Mini Pc/Intel Client Systems/NUC12/NUC12WSKi5/BE447B8A47E1>) |
+| Kingston   | 99U5428-063.A00LF SODIMM     | 8 GB     | DDR3 | 2667 | 3     | [0191C0AB4C2A](<Mini Pc/ZOTAC/ZBOXNANO-ID67/ZBOXNANO-ID67-ID68-ID69/0191C0AB4C2A>) |
 | Kingston   | 99U5469-045.A00LF DIMM       | 4 GB     | DDR3 | 1600 | 3     | [F18645F6DAA1](<Mini Pc/Hewlett-Packard/t610/t610 PLUS WW Thin Client/F18645F6DAA1>) |
+| Kingston   | 99U5469-051.A00LF SODIMM     | 4 GB     | DDR3 | 1600 | 3     | [002C83D62DF6](<Mini Pc/Intel/NUC5/NUC5i5RYH/002C83D62DF6>) |
 | Kingston   | 99U5469-055.A00LF SODIMM     | 4 GB     | DDR3 | 1600 | 3     | [394DD61C99C7](<Mini Pc/Intel Client Systems/NUC6/NUC6CAYH/394DD61C99C7>) |
 | Kingston   | 99U5469-070.A00LF SODIMM     | 4 GB     | DDR3 | 1600 | 3     | [5D59DF48F59F](<Mini Pc/Intel/NUC5i3MYBE/NUC5i3MYBE H47781-211/5D59DF48F59F>) |
 | Kingston   | 99U5469-078.A00LF SODIMM     | 4 GB     | DDR3 | 1600 | 3     | [98748FE72606](<Mini Pc/Intel Client Systems/NUC6/NUC6CAYH/98748FE72606>) |
+| Kingston   | 99U5700-027.A00G SODIMM      | 8 GB     | DDR4 | 2667 | 3     | [876601EF0821](<Mini Pc/Intel Client Systems/NUC11/NUC11PHi7/876601EF0821>) |
 | Kingston   | 99U5700-028.A00G SODIMM      | 8 GB     | DDR4 | 2400 | 3     | [07033AB3C8D3](<Mini Pc/Intel Client Systems/NUC7/NUC7CJYH/07033AB3C8D3>) |
 | Kingston   | 99U5704-001.A00G SODIMM      | 4 GB     | DDR4 | 2400 | 3     | [5DB9DCFA32A0](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEK/5DB9DCFA32A0>) |
 | Kingston   | KHX1600C9S3L/4G SODIMM       | 4 GB     | DDR3 | 1600 | 3     | [EA276D8D3DFD](<Mini Pc/Intel/NUC5i5RYB/NUC5i5RYB H40999-502/EA276D8D3DFD>) |
-| Kingston   | KHX1866C11S3L/4G SODIMM      | 4 GB     | DDR3 | 1866 | 3     | [C4879C1A9E9F](<Mini Pc/Intel Client Systems/NUC6/NUC6CAYH/C4879C1A9E9F>) |
-| Kingston   | KHX2133C13S4/8G SODIMM       | 8 GB     | DDR4 | 2133 | 3     | [490ACB393881](<Mini Pc/Intel/NUC6i3SYB/NUC6i3SYB H81132-505/490ACB393881>) |
-| Micron     | 4ATF51264HZ-3G2J1 SODIMM     | 4 GB     | DDR4 | 3200 | 3     | [068CB6AF0606](<Mini Pc/Intel Client Systems/NUC11/NUC11ATKC4/068CB6AF0606>) |
-| Micron     | 53D512M64D4RQ-046 Row Of ... | 8 GB     |      | 4267 | 3     | [7CB92A102103](<Mini Pc/Chuwi/HeroBox/HeroBox Pro/7CB92A102103>) |
-| Micron     | 8ATF1G64HZ-2G6E1 SODIMM      | 8 GB     | DDR4 | 2667 | 3     | [F8398AF98B3D](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M630e 10YM0001SP/F8398AF98B3D>) |
-| Patriot    | PSD38G1600L2S SODIMM         | 8 GB     | DDR3 | 1600 | 3     | [DC744812C3F3](<Mini Pc/Intel/NUC5PPYB/NUC5PPYB H76558-107/DC744812C3F3>) |
-|            | Module SODIMM                | 16 GB    | DDR4 | 2400 | 3     | [D309CE75F12D](<Mini Pc/Lenovo/ThinkStation/ThinkStation P340 Tiny 30DFS05W00/D309CE75F12D>) |
-|            | Module SODIMM                | 2048 MB  | DDR3 | 1333 | 3     | [BEC15F044556](<Mini Pc/MiPi PC/Mini/Mini PC/BEC15F044556>) |
-|            | Module Row Of Chips          | 2 GB     | DDR3 | 1600 | 3     | [AC1F30A762B7](<Mini Pc/Dell/Wyse/Wyse 3040 Thin Client/AC1F30A762B7>) |
-|            | Module DIMM                  | 4096 MB  | DDR3 | 1600 | 3     | [70F0BAC4BCE3](<Mini Pc/Acute angle/AA-B/AA-B4/70F0BAC4BCE3>) |
-|            | Module DIMM                  | 8192 MB  | DDR3 | 1600 | 3     | [36C849FD2D2C](<Mini Pc/AMI/Aptio/Aptio CRB/36C849FD2D2C>) |
-| Samsung    | M471A2K43DB1-CTD SODIMM      | 16 GB    | DDR4 | 2667 | 3     | [F5766C1EDC88](<Mini Pc/Dell/OptiPlex/OptiPlex 7070 Ultra/F5766C1EDC88>) |
-| Samsung    | M471B1G73DB0-YK0 DIMM        | 8 GB     | DDR3 | 1600 | 3     | [32B998916CDE](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M53 10DE001HUS/32B998916CDE>) |
-| Samsung    | M471B5173EB0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 3     | [E0B056E177FA](<Mini Pc/Clientron/C/C800/E0B056E177FA>) |
-| Samsung    | Module SODIMM                | 2048 MB  | DDR3 | 1067 | 3     | [3F79E879A3EF](<Mini Pc/Apple/Macmini3/Macmini3,1/3F79E879A3EF>) |
-| Samsung    | Module SODIMM                | 2048 MB  | DDR3 | 1600 | 3     | [F9B75684DD56](<Mini Pc/Apple/Macmini7/Macmini7,1/F9B75684DD56>) |
-| Samsung    | Module SODIMM                | 4096 MB  | DDR3 | 1333 | 3     | [D9AED057291D](<Mini Pc/Apple/Macmini5/Macmini5,2/D9AED057291D>) |
-| SK hynix   | HMA41GS6AFR8N-TF SODIMM      | 8 GB     | DDR4 | 2667 | 3     | [FA0B01CC86C2](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M910q 10MVS02T00/FA0B01CC86C2>) |
-| SK hynix   | Module SODIMM                | 1 GB     | DDR3 | 1067 | 3     | [FD1C304A8806](<Mini Pc/Apple/Macmini4/Macmini4,1/FD1C304A8806>) |
-| SK hynix   | Module SODIMM                | 4096 MB  | DDR3 | 1600 | 3     | [81E8ED8F9FC0](<Mini Pc/Apple/Macmini7/Macmini7,1/81E8ED8F9FC0>) |
-| SK hynix   | Module SODIMM                | 8 GB     | DDR3 | 1600 | 3     | [7517EDEE3C76](<Mini Pc/Apple/Macmini6/Macmini6,2/7517EDEE3C76>) |
-| Team       | TEAMGROUP-SD4-2400 SODIMM    | 16 GB    | DDR4 | 8400 | 3     | [93AEAB1C8291](<Mini Pc/Intel Client Systems/NUC8/NUC8i7BEH/93AEAB1C8291>) |
-| Transcend  | JM2666HSB-8G SODIMM          | 8 GB     | DDR4 | 2667 | 3     | [DDBBA5E30B27](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M710q 10MR0053RU/DDBBA5E30B27>) |
-| A-DATA     | Module SODIMM                | 16 GB    | DDR4 | 3200 | 2     | [6917428F4B9A](<Mini Pc/Intel Client Systems/NUC11/NUC11PAHi7/6917428F4B9A>) |
-| A-DATA     | Module DIMM                  | 2048 MB  | DDR3 | 1866 | 2     | [EF1BD8AC204C](<Mini Pc/AMI/Aptio/Aptio CRB/EF1BD8AC204C>) |
-| A-DATA     | Module SODIMM                | 8 GB     | DDR4 | 2667 | 2     | [F0926A9BC31C](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN62/F0926A9BC31C>) |
-| A-DATA     | Module SODIMM                | 8 GB     | DDR4 | 3200 | 2     | [99448835CE69](<Mini Pc/Intel Client Systems/NUC12/NUC12WSKi7/99448835CE69>) |
-| Corsair    | CM4X32GE2666C18S2 SODIMM     | 32 GB    | DDR4 | 2667 | 2     | [782076B2C579](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/782076B2C579>) |
-| Corsair    | CMSX16GX4M1A2666C18 SODIMM   | 16 GB    | DDR4 | 2667 | 2     | [B00A248BE284](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEH/B00A248BE284>) |
-| Corsair    | CMSX64GX4M2A2666C18 SODIMM   | 32 GB    | DDR4 | 2667 | 2     | [4B6571645AB6](<Mini Pc/Intel Client Systems/NUC10/NUC10i7FNH/4B6571645AB6>) |
-| Corsair    | CMSX8GX4M2A2400C16 SODIMM    | 4096 MB  | DDR4 | 2400 | 2     | [0FC6B6E10997](<Mini Pc/Intel Client Systems/NUC8/NUC8i3BEH/0FC6B6E10997>) |
-| Corsair    | Module SODIMM                | 4096 MB  | DDR3 | 1333 | 2     | [9A2432883483](<Mini Pc/Apple/Macmini5/Macmini5,1/9A2432883483>) |
-| Crucial    | BL32G32C16S4B.M16FB1 SODIMM  | 32 GB    | DDR4 | 2667 | 2     | [38B5F469A134](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/38B5F469A134>) |
-| Crucial    | BL8G26C16S4B.8FD SODIMM      | 8 GB     | DDR4 | 2400 | 2     | [D38466FE1C6C](<Mini Pc/Intel Client Systems/NUC10/NUC10i3FNH/D38466FE1C6C>) |
-| Crucial    | BL8G32C16S4B.8FE SODIMM      | 8 GB     | DDR4 | 3200 | 2     | [0756106F58E2](<Mini Pc/Intel Client Systems/NUC11/NUC11PAHi7/0756106F58E2>) |
-| Crucial    | BLS16G4S240FSD.16FAD SODIMM  | 16 GB    | DDR4 | 2400 | 2     | [7F5890C4044F](<Mini Pc/Intel Client Systems/NUC8/NUC8i7BEH/7F5890C4044F>) |
-| Crucial    | BLS8G3N169ES4.16FE SODIMM    | 8 GB     | DDR3 | 1600 | 2     | [7B4966383EE1](<Mini Pc/Intel/NUC5CPYB/NUC5CPYB H61145-402/7B4966383EE1>) |
-| Crucial    | CT16G4SFD824A.C16FJ SODIMM   | 16 GB    | DDR4 | 2400 | 2     | [491DF6CA7E6C](<Mini Pc/Intel Client Systems/NUC7/NUC7i7DNKE/491DF6CA7E6C>) |
-| Crucial    | CT16G4SFD8266.C16FE SODIMM   | 16 GB    | DDR4 | 2667 | 2     | [F8049112DC4B](<Mini Pc/Intel Client Systems/NUC10/NUC10i3FNK/F8049112DC4B>) |
-| Crucial    | CT16G4SFD832A.C16FN SODIMM   | 16384 MB | DDR4 | 3200 | 2     | [16DDAFEC50A3](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50-E1/16DDAFEC50A3>) |
-| Crucial    | CT16G4SFRA266.M16FJ SODIMM   | 16 GB    | DDR4 | 2667 | 2     | [AB601F3A2215](<Mini Pc/Intel Client Systems/NUC10/NUC10i3FNH/AB601F3A2215>) |
-| Crucial    | CT16G4SFRA32A.C16FP SODIMM   | 16 GB    | DDR4 | 3200 | 2     | [F5D34816D4F0](<Mini Pc/Intel Client Systems/NUC10/NUC10i7FNH/F5D34816D4F0>) |
-| Crucial    | CT32G48C40S5.M16A1 SODIMM    | 32 GB    | DDR5 | 4800 | 2     | [2ACF97E96836](<Mini Pc/Intel Client Systems/NUC13/NUC13RNGi9/2ACF97E96836>) |
-| Crucial    | CT32G4SFD8266.C16FE SODIMM   | 32 GB    | DDR4 | 2667 | 2     | [9B9DAD9D895A](<Mini Pc/ZOTAC/ZBOX-ECM7307/ZBOX-ECM73070C-53060C/9B9DAD9D895A>) |
-| Crucial    | CT4G4SFS824A.C8FG SODIMM     | 4 GB     | DDR4 | 2400 | 2     | [2190BF2A5D2A](<Mini Pc/ZOTAC/ZBOX-CI331/ZBOX-CI331NANO/2190BF2A5D2A>) |
-| Crucial    | CT4G4SFS824A.M8FB SODIMM     | 4096 MB  | DDR4 | 2400 | 2     | [D8BB90D408A6](<Mini Pc/Intel/NUC7/NUC7PJYH/D8BB90D408A6>) |
-| Crucial    | CT8G4SFD8213.C16FBD1 SODIMM  | 8 GB     | DDR4 | 2133 | 2     | [C6B76D6C0340](<Mini Pc/Intel/NUC6i5SYB/NUC6i5SYB H81131-503/C6B76D6C0340>) |
-| Crucial    | CT8G4SFRA266.C8FP SODIMM     | 8 GB     | DDR4 | 2667 | 2     | [B70050EE408C](<Mini Pc/Intel Client Systems/NUC10/NUC10i5FNK/B70050EE408C>) |
-| Crucial    | CT8G4SFRA32A.C4FE SODIMM     | 8 GB     | DDR4 | 3200 | 2     | [CF6E642D0851](<Mini Pc/Intel Client Systems/NUC11/NUC11PAHi5/CF6E642D0851>) |
-| Crucial    | CT8G4SFRA32A.C8FN SODIMM     | 8 GB     | DDR4 | 3200 | 2     | [1A77C2AC53A8](<Mini Pc/BYTENUC/AZ/AZ51/1A77C2AC53A8>) |
-| Crucial    | CT8G4SFRA32A.M8FJ SODIMM     | 8 GB     | DDR4 | 3200 | 2     | [DA788620325B](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEH/DA788620325B>) |
-| Crucial    | CT8G4SFS8213.C8FH1 SODIMM    | 8 GB     | DDR4 | 2133 | 2     | [899527C6C18D](<Mini Pc/Intel/NUC7i3BNB/NUC7i3BNB J22859-303/899527C6C18D>) |
-| Crucial    | CT8G4SFS824A.C8FBD1 SODIMM   | 8 GB     | DDR4 | 2667 | 2     | [DC511A2DF716](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEH/DC511A2DF716>) |
-| Crucial    | CT8G4SFS824A.C8FHD1 SODIMM   | 8 GB     | DDR4 | 2667 | 2     | [9356451BFEB8](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M910x 10N0001NGE/9356451BFEB8>) |
-| Crucial    | CT8G4SFS824A.C8FJ SODIMM     | 8192 MB  | DDR4 | 2400 | 2     | [2DE24158EAE0](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEK/2DE24158EAE0>) |
-| Crucial    | CT8G4SFS8266.C8FE SODIMM     | 8 GB     | DDR4 | 2667 | 2     | [4EFB6D67886F](<Mini Pc/Intel/NUC8/NUC8i7HVK/4EFB6D67886F>) |
-| Crucial    | Module SODIMM                | 4 GB     | DDR3 | 1067 | 2     | [07A39FBFD714](<Mini Pc/Apple/Macmini3/Macmini3,1/07A39FBFD714>) |
-| Crucial    | Module SODIMM                | 4 GB     | DDR3 | 1600 | 2     | [8FB44501D2B3](<Mini Pc/Intel/NUC5i5RYB/NUC5i5RYB H40999-504/8FB44501D2B3>) |
-| Elpida     | Module SODIMM                | 4 GB     | DDR3 | 1600 | 2     | [4FF3B8AF7593](<Mini Pc/Apple/Macmini6/Macmini6,1/4FF3B8AF7593>) |
-| Foxline    | FL1600D3S11SL-2G DIMM        | 2 GB     | DDR3 | 1600 | 2     | [A0CCC50D7DCA](<Mini Pc/Aquarius/Tcc/Tcc Uvl U30 S25/A0CCC50D7DCA>) |
-| G.Skill    | F4-2666C18-16GRS SODIMM      | 16 GB    | DDR4 | 2667 | 2     | [24AA08459D0E](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/24AA08459D0E>) |
-| Golden ... | CL19-19-19 D4-2666 SODIMM    | 16 GB    | DDR4 | 2667 | 2     | [773AB968BC22](<Mini Pc/Intel Client Systems/NUC10/NUC10i7FNH/773AB968BC22>) |
-| GOODRAM    | GR2400S464L17/16G SODIMM     | 16 GB    | DDR4 | 2400 | 2     | [A53CBF17553B](<Mini Pc/Intel Client Systems/NUC8/NUC8i5BEH/A53CBF17553B>) |
-| GOODRAM    | GR2666S464L19/16G SODIMM     | 16 GB    | DDR4 | 2667 | 2     | [D14A501869D8](<Mini Pc/Hewlett-Packard/t630/t630 Thin Client/D14A501869D8>) |
-| SK hynix   | HMA81GS6CJR8N-VK SODIMM      | 8 GB     | DDR4 | 2667 | 2     | [FEE9E9034339](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M715q 10VG000EUS/FEE9E9034339>) |
-| SK hynix   | HMA81GS6DJR8N-XN SODIMM      | 8192 MB  | DDR4 | 3200 | 2     | [D3480EA77BCC](<Mini Pc/Hewlett-Packard/t540/t540 Thin Client/D3480EA77BCC>) |
-| SK hynix   | HMT325S6CFR8C-PB SODIMM      | 2 GB     | DDR3 | 1600 | 2     | [7A1B8D7179F5](<Mini Pc/Hewlett-Packard/t510/t510 Thin Client/7A1B8D7179F5>) |
-| SK hynix   | HMT325S6EFR8C-PB SODIMM      | 2 GB     | DDR3 | 1600 | 2     | [21A13F83F33E](<Mini Pc/Hewlett-Packard/t510/t510 Thin Client/21A13F83F33E>) |
-| SK hynix   | HMA81GS6CJR8N-VK SODIMM      | 8 GB     | DDR4 | 2400 | 2     | [BC868DED3F88](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M715q 10M2S0DL00/BC868DED3F88>) |
-| SK hynix   | HMT451S6BFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 2     | [707016B9D2C4](<Mini Pc/Wortmann AG/TERRA_PC/TERRA_PC/707016B9D2C4>) |
-| SK hynix   | Module SODIMM                | 16 GB    | DDR4 | 2133 | 2     | [15934EA5120E](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 800 G3 DM 35W/15934EA5120E>) |
-| SK hynix   | Module SODIMM                | 8 GB     | DDR4 | 3200 | 2     | [C85E0CDAD14F](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 805 G8 Desktop Mini PC/C85E0CDAD14F>) |
-| SK hynix   | HMT425S6AFR6A-PB DIMM        | 4 GB     | DDR3 | 1600 | 2     | [BB394062E9F8](<Mini Pc/Lenovo/H50-00/H50-00 90C1000PRS/BB394062E9F8>) |
-| SK hynix   | Module DIMM                  | 2 GB     | DDR3 | 800  | 2     | [BEAC1352D90A](<Mini Pc/Hewlett-Packard/t610/t610 WW Thin Client/BEAC1352D90A>) |
-| SK hynix   | Module DIMM                  | 4 GB     | DDR3 | 800  | 2     | [F18645F6DAA1](<Mini Pc/Hewlett-Packard/t610/t610 PLUS WW Thin Client/F18645F6DAA1>) |
-| SK hynix   | Module DIMM                  | 4096 MB  | DDR3 | 1600 | 2     | [A249FF515CC1](<Mini Pc/Beelink/BT3/BT3 Pro/A249FF515CC1>) |
-| Kimtigo    | KT8GS3EDF DIMM               | 8192 MB  | DDR3 | 1600 | 2     | [97BDB7B88620](<Mini Pc/AMI/Aptio/Aptio CRB/97BDB7B88620>) |
-| Kingston   | 9905428-435.A01LF SODIMM     | 8192 MB  | DDR3 | 1600 | 2     | [843DE42B8DDA](<Mini Pc/Intel/NUC5i7RYB/NUC5i7RYB H73774-104/843DE42B8DDA>) |
-| Kingston   | 9905469-157.A00LF SODIMM     | 4096 MB  | DDR3 | 1600 | 2     | [6324EDCF21F5](<Mini Pc/Intel/NUC5i3RYB/NUC5i3RYB H41000-503/6324EDCF21F5>) |
-| Kingston   | 9905594-001.A00G SODIMM      | 2 GB     | DDR3 | 1600 | 2     | [9F01D7B0BACC](<Mini Pc/Intel/NUC5CPYB/NUC5CPYB H61145-404/9F01D7B0BACC>) |
-| Kingston   | 9905594-014.A00LF SODIMM     | 2 GB     | DDR3 | 1600 | 2     | [C8CA8CB884E5](<Mini Pc/Intel/NUC5i3RYB/NUC5i3RYB H41000-502/C8CA8CB884E5>) |
-| Kingston   | 9905624-007.A00G SODIMM      | 8 GB     | DDR4 | 2400 | 2     | [41760ECEF797](<Mini Pc/Intel/NUC7/NUC7i3BNK/41760ECEF797>) |
-| Kingston   | 9905700-025.A00G SODIMM      | 8 GB     | DDR4 | 2667 | 2     | [B3B1BF60D153](<Mini Pc/Intel Client Systems/NUC8/NUC8i3BEK/B3B1BF60D153>) |
-| Kingston   | 9905700-118.A00G SODIMM      | 8 GB     | DDR4 | 3200 | 2     | [EAB552C4E79A](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN51-S1/EAB552C4E79A>) |
-| Kingston   | 9905711-017.A00G SODIMM      | 4 GB     | DDR4 | 2667 | 2     | [C5A82ADBCB5E](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN62S/C5A82ADBCB5E>) |
-| Kingston   | 9905744-101.A00G SODIMM      | 32 GB    | DDR4 | 3200 | 2     | [FB888A87C7EB](<Mini Pc/Intel Client Systems/NUC12/NUC12WSKi7/FB888A87C7EB>) |
-| Kingston   | 99U5428-063.A00LF SODIMM     | 8 GB     | DDR3 | 1600 | 2     | [7D34FF7AFACD](<Mini Pc/ZOTAC/ZBOX/ZBOX/7D34FF7AFACD>) |
-| Kingston   | 99U5428-101.A00LF SODIMM     | 8 GB     | DDR3 | 1600 | 2     | [C038E5383042](<Mini Pc/Intel/NUC5PPYB/NUC5PPYB H76558-108/C038E5383042>) |
-| Kingston   | 99U5469-051.A00LF SODIMM     | 4 GB     | DDR3 | 1600 | 2     | [8054EC01AC51](<Mini Pc/Intel/NUC5PPYB/NUC5PPYB H76558-102/8054EC01AC51>) |
-| Kingston   | 99U5469-069.A00LF SODIMM     | 4096 MB  | DDR3 | 1600 | 2     | [1874146AB696](<Mini Pc/Intel/NUC6/NUC6CAYS/1874146AB696>) |
-| Kingston   | KF2666C15S4/8G SODIMM        | 8 GB     | DDR4 | 2667 | 2     | [9E2B32EAF0E2](<Mini Pc/ASUSTek Computer/PN/PN41/9E2B32EAF0E2>) |
-| Kingston   | KF3200C20S4/16GX SODIMM      | 16 GB    | DDR4 | 3200 | 2     | [894923AF1BC3](<Mini Pc/Intel Client Systems/NUC11/NUC11PHi7/894923AF1BC3>) |
-| Kingston   | KHX2400C15S4/16G SODIMM      | 16 GB    | DDR4 | 2400 | 2     | [DACBC07BD200](<Mini Pc/Intel/NUC6i7KYB/NUC6i7KYB H90766-406/DACBC07BD200>) |
-| Kingston   | KHX3200C20S4/16G SODIMM      | 16 GB    | DDR4 | 3200 | 2     | [AECCF9C01BD8](<Mini Pc/Intel Client Systems/NUC8/NUC8v7PNH/AECCF9C01BD8>) |
-| Kingston   | KHX3200C20S4/8G SODIMM       | 8 GB     | DDR4 | 3200 | 2     | [F2B94439B34B](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/F2B94439B34B>) |
-| Kingston   | KNWMX1-ETB SODIMM            | 4 GB     | DDR3 | 1600 | 2     | [BFFD9DC32BEF](<Mini Pc/WYSE/Dell/Dell Thin Client Desktop 5060/BFFD9DC32BEF>) |
-| Kingston   | Module SODIMM                | 4 GB     | DDR3 | 1067 | 2     | [34872FFDFEED](<Mini Pc/Apple/Macmini3/Macmini3,1/34872FFDFEED>) |
-| Kingston   | Module SODIMM                | 4 GB     | DDR3 | 1333 | 2     | [93233E0F26DF](<Mini Pc/Apple/Macmini5/Macmini5,1/93233E0F26DF>) |
-| Micron     | 16ATF2G64HZ-2G6E3 SODIMM     | 16 GB    | DDR4 | 2667 | 2     | [5F17BABAAD74](<Mini Pc/Apple/Macmini8/Macmini8,1/5F17BABAAD74>) |
-| Micron     | 16ATF4G64HZ-3G2E1 SODIMM     | 32 GB    | DDR4 | 3200 | 2     | [C451E140BD96](<Mini Pc/Intel Client Systems/NUC12/NUC12WSKi7/C451E140BD96>) |
-| Micron     | 16KTF1G64HZ-1G6E1 SODIMM     | 8 GB     | DDR3 | 1600 | 2     | [E94D038C9E51](<Mini Pc/Hewlett-Packard/t730/t730 Thin Client/E94D038C9E51>) |
-| Micron     | 16KTF51264HZ-1G6M1 SODIMM    | 4 GB     | DDR3 | 1600 | 2     | [C355D6D9F913](<Mini Pc/Fujitsu/ESPRIMO/ESPRIMO Q510/C355D6D9F913>) |
-| Micron     | 18ADF2G72AZ-2G3B1 DIMM       | 16 GB    | DDR4 | 2666 | 2     | [4A081CB2E3C4](<Mini Pc/Supermicro/SYS-5039/SYS-5039MS-H12TRF/4A081CB2E3C4>) |
-| Micron     | 8ATF1G64HZ-2G6E3 SODIMM      | 8 GB     | DDR4 | 2667 | 2     | [E9E73C1752E1](<Mini Pc/Apple/Macmini8/Macmini8,1/E9E73C1752E1>) |
-| Micron     | 8ATF2G64HZ-3G2E2 SODIMM      | 16 GB    | DDR4 | 3200 | 2     | [D5FE8BA62113](<Mini Pc/Intel Client Systems/NUC11/NUC11TNHi5/D5FE8BA62113>) |
-| Micron     | 8KTF51264HZ-1G6E1 SODIMM     | 4 GB     | DDR3 | 1600 | 2     | [69515BF9320E](<Mini Pc/CompuLab/fitlet/fitlet/69515BF9320E>) |
-| Micron     | 8KTF51264HZ-1G9E2 SODIMM     | 4 GB     | DDR3 | 1600 | 2     | [A9B5CA67672E](<Mini Pc/Intel/NUC5i3RYB/NUC5i3RYB H41000-503/A9B5CA67672E>) |
-| Micron     | Module Row Of Chips LPDDR4   | 16 GB    |      | 3200 | 2     | [016B911AE609](<Mini Pc/Fanless Mini PC/Quieter/Quieter 3C/016B911AE609>) |
+| Kingston   | KHX1866C11S3L/4G SODIMM      | 4 GB     | DDR3 | 1867 | 3     | [C4879C1A9E9F](<Mini Pc/Intel Client Systems/NUC6/NUC6CAYH/C4879C1A9E9F>) |
+| Kingston   | KHX2133C13S4/4G SODIMM       | 4 GB     | DDR4 | 2133 | 3     | [FAE792E61AC2](<Mini Pc/Intel/NUC6i3SYB/NUC6i3SYB H81132-505/FAE792E61AC2>) |
+| Kingston   | KHX3200C20S4/8G SODIMM       | 8 GB     | DDR4 | 3200 | 3     | [BCC01AB755EE](<Mini Pc/ASUSTek Computer/MINIPC/MINIPC PN50/BCC01AB755EE>) |
+| Kingston   | Module SODIMM                | 8 GB     | DDR4 | 2133 | 3     | [0E6781088B41](<Mini Pc/Hewlett-Packard/ProDesk/ProDesk 400 G3 DM/0E6781088B41>) |
+| Micron     | 16KTF1G64HZ-1G9P1 SODIMM     | 8 GB     | DDR3 | 1867 | 3     | [3A61D18A471F](<Mini Pc/Intel/NUC5CPYB/NUC5CPYB H61145-413/3A61D18A471F>) |
+| Micron     | 4ATF51264HZ-2G3B1 SODIMM     | 4 GB     | DDR4 | 3200 | 3     | [4AA2F6154800](<Mini Pc/Hewlett-Packard/t630/t630 Thin Client/4AA2F6154800>) |
 

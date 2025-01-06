@@ -12,7 +12,7 @@ by the [hw-probe](https://github.com/linuxhw/hw-probe) tool:
 
     sudo -E hw-probe -all -upload
 
-Total reports: 113504.
+Total reports: 162480.
 
 Contents
 --------
@@ -44,764 +44,764 @@ Report - link to DMI report.
 
 | MFG        | Name                             | GHz  | Count | Report |
 |------------|----------------------------------|------|-------|--------|
-| Intel      | 11th Gen Core i5-1135G7          | 2.40 | 3055  | [11F61137DC15](<Notebook/Dynabook/Satellite/Satellite Pro C50-J/11F61137DC15>) |
-| Intel      | Core i5-8250U                    | 1.60 | 1091  | [FC89A5E51EAE](<Notebook/Dell/Latitude/Latitude 5290/FC89A5E51EAE>) |
-| Intel      | Core i7-8550U                    | 1.80 | 1016  | [12325A990B32](<Notebook/Hewlett-Packard/EliteBook/EliteBook 840 G5/12325A990B32>) |
-| Intel      | Core i5-7200U                    | 2.50 | 894   | [9911083B00F9](<Notebook/Hewlett-Packard/ProBook/ProBook 440 G4/9911083B00F9>) |
-| AMD        | Ryzen 5 3600 6-Core              |      | 785   | [57EFD5B4322B](<Desktop/ASRock/B450M/B450M Steel Legend/57EFD5B4322B>) |
-| Intel      | 12th Gen Core i7-12700H          |      | 779   | [37910A3DDDFF](<Notebook/Dell/Inspiron/Inspiron 16 Plus 7620/37910A3DDDFF>) |
-| Intel      | Core i7-10510U                   | 1.80 | 724   | [1BD4FAC2B4C3](<Notebook/Dell/Inspiron/Inspiron 5391/1BD4FAC2B4C3>) |
-| Intel      | Core i7-9750H                    | 2.60 | 706   | [5F4D0AB0905E](<Notebook/Lenovo/Legion/Legion Y540-15IRH 81SX/5F4D0AB0905E>) |
-| AMD        | Ryzen 5 3500U with Radeon Veg... |      | 695   | [26116FF2B2E2](<Notebook/HUAWEI/NBLK-WAX9/NBLK-WAX9X/26116FF2B2E2>) |
-| Intel      | Core i5-10210U                   | 1.60 | 686   | [5AA0FDDE192E](<Notebook/HUAWEI/NBLB-WAX9/NBLB-WAX9N/5AA0FDDE192E>) |
-| Intel      | Core i7-8750H                    | 2.20 | 676   | [753782FFE946](<Notebook/Acer/Aspire/Aspire A715-72G/753782FFE946>) |
-| Intel      | Core i5-3210M                    | 2.50 | 639   | [540AF9B46C29](<Notebook/Samsung Electronics/350V5/350V5C-351V5C-3540VC-3440VC/540AF9B46C29>) |
-| AMD        | Ryzen 7 3700X 8-Core             |      | 627   | [124C8A1B9995](<Desktop/ASUSTek Computer/PRIME/PRIME B550M-K/124C8A1B9995>) |
-| Intel      | Core i5-6200U                    | 2.30 | 626   | [4BEE0CAA54AA](<Notebook/Hewlett-Packard/250/250 G5 Notebook PC/4BEE0CAA54AA>) |
-| Intel      | Core i7-7700HQ                   | 2.80 | 608   | [B18B674EE141](<Notebook/Dell/Precision/Precision 7720/B18B674EE141>) |
-| Intel      | 11th Gen Core i7-11850H          | 2.50 | 566   | [1D6F35E22C18](<Notebook/Avell High Performance/A65/A65 MOB/1D6F35E22C18>) |
-| Intel      | Core i7-7500U                    | 2.70 | 553   | [CC79FDC974C7](<Notebook/TUXEDO/N24/N24_25BU/CC79FDC974C7>) |
-| Intel      | Core i5-8265U                    | 1.60 | 521   | [6214F3DFC9AB](<Notebook/Hewlett-Packard/EliteBook/EliteBook 840 G6/6214F3DFC9AB>) |
-| Intel      | Core i7-8565U                    | 1.80 | 507   | [1EC55A488EF5](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop X432FA_S432FA/1EC55A488EF5>) |
-| Intel      | Core i5-2520M                    | 2.50 | 502   | [8854B2161F24](<Notebook/Lenovo/ThinkPad/ThinkPad T420s 4174W2X/8854B2161F24>) |
-| Intel      | Celeron N2840                    | 2.16 | 502   | [A3B42A7B6114](<Notebook/ASUSTek Computer/X200/X200MA/A3B42A7B6114>) |
-| Intel      | Core i5-3470                     | 3.20 | 501   | [791575E45E29](<Desktop/Lenovo/ThinkCentre/ThinkCentre M92P 3227BD2/791575E45E29>) |
-| Intel      | Core i7-10750H                   | 2.60 | 500   | [674D96FDF457](<Notebook/ASUSTek Computer/ROG/ROG Zephyrus M15 GU502LW_GU502LW/674D96FDF457>) |
-| Intel      | Core i5-5200U                    | 2.20 | 480   | [287C0142E54D](<Notebook/ASUSTek Computer/X555/X555LJ/287C0142E54D>) |
-| Intel      | Core i5-3320M                    | 2.60 | 466   | [E2A51E4B633B](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8470p/E2A51E4B633B>) |
-| Intel      | Core i5-3230M                    | 2.60 | 459   | [E86AA98876D7](<Notebook/Notebook/W250/W250EGQ-W270EGQ/E86AA98876D7>) |
-| AMD        | Ryzen 5 5500U with Radeon Gra... |      | 448   | [89AC4AB12668](<Convertible/Hewlett-Packard/ENVY/ENVY x360 Convertible 15m-eu0xxx/89AC4AB12668>) |
-| Intel      | Core 2 Duo E8400                 | 3.00 | 442   | [C86078D39B1D](<Desktop/Intel/DP43TF/DP43TF AAE34878-403/C86078D39B1D>) |
-| Intel      | Core i7-3770                     | 3.40 | 434   | [69D8B31022D1](<Desktop/ASUSTek Computer/P8Z77-V/P8Z77-V DELUXE/69D8B31022D1>) |
-| AMD        | Ryzen 5 2600 Six-Core            |      | 424   | [0E4430B16F5F](<Desktop/Gigabyte Technology/B450/B450 AORUS M/0E4430B16F5F>) |
-| Intel      | Atom x5-Z8350                    | 1.44 | 421   | [B000C4859752](<Notebook/Beelink/BT3/BT3 PRO/B000C4859752>) |
-| Intel      | Core i5-6300U                    | 2.40 | 421   | [060101A7B46D](<Convertible/Lenovo/ThinkPad/ThinkPad Yoga 460 20ELS0FJ01/060101A7B46D>) |
-| Intel      | Core i7-8565U                    | 1.80 | 415   | [2E8FC5060A14](<Notebook/Lenovo/ThinkBook/ThinkBook 13s-IWL 20R9/2E8FC5060A14>) |
-| AMD        | Ryzen 7 4700U with Radeon Gra... |      | 414   | [CF04095B1306](<Notebook/Lenovo/ThinkPad/ThinkPad E14 Gen 2 20T60029RT/CF04095B1306>) |
-| Intel      | Core i5-4210U                    | 1.70 | 414   | [3BE7A14EC8D5](<Notebook/Hewlett-Packard/EliteBook/EliteBook 840 G1/3BE7A14EC8D5>) |
-| Intel      | Core i5-2400                     | 3.10 | 412   | [0FF37B6BAA24](<Desktop/Others/Others/Others/0FF37B6BAA24>) |
-| Intel      | Core i7-6700HQ                   | 2.60 | 409   | [D88E08C3A7A1](<Notebook/TerraQue/W65/W65_W67RB/D88E08C3A7A1>) |
-| AMD        | Ryzen 7 4800H with Radeon Gra... |      | 397   | [B9B57A731D44](<Notebook/Dell/G5/G5 5505/B9B57A731D44>) |
-| Intel      | Core i5-1035G1                   | 1.00 | 396   | [83C5E1166CAF](<Tablet/Microsoft/Surface/Surface Laptop Go/83C5E1166CAF>) |
-| AMD        | FX -6300 Six-Core                |      | 390   | [6BAC82210FE1](<Desktop/ASRock/970M/970M Pro3/6BAC82210FE1>) |
-| Intel      | Core i3-2120                     | 3.30 | 390   | [D7591CF7C8EA](<Desktop/Dell/OptiPlex/OptiPlex 7010/D7591CF7C8EA>) |
-| AMD        | Ryzen 7 5700U with Radeon Gra... |      | 388   | [EEC49B509995](<Convertible/Hewlett-Packard/ENVY/ENVY x360 Convertible 15-ee1xxx/EEC49B509995>) |
-| AMD        | Ryzen 9 3900X 12-Core            |      | 388   | [D1E7CA404339](<Desktop/ASUSTek Computer/PRIME/PRIME X570-PRO/D1E7CA404339>) |
-| Intel      | Core i5-2410M                    | 2.30 | 386   | [31E6EFD8D207](<Notebook/Toshiba/Satellite/Satellite L755/31E6EFD8D207>) |
-| Intel      | Core 2 Duo P7450                 | 2.13 | 383   | [122635676299](<Notebook/Sony/VPCCW1/VPCCW1S1E/122635676299>) |
-| AMD        | Ryzen 5 4500U with Radeon Gra... |      | 382   | [CF2DAC92FEBB](<Notebook/Hewlett-Packard/ProBook/ProBook 445 G7/CF2DAC92FEBB>) |
-| AMD        | FX-8350 Eight-Core               |      | 380   | [4209CEC662D2](<Desktop/Gigabyte Technology/970/970A-DS3P/4209CEC662D2>) |
-| Intel      | 11th Gen Core i7-11700           | 2.50 | 380   | [AA0705BC8FAC](<Desktop/Gigabyte Technology/Z590/Z590 AORUS ULTRA/AA0705BC8FAC>) |
-| Intel      | Core i5-2450M                    | 2.50 | 380   | [E81BF21D4D94](<Notebook/Sony/VPCZ23/VPCZ23Q9R/E81BF21D4D94>) |
-| AMD        | Ryzen 7 5800H with Radeon Gra... |      | 379   | [2BE152EEFFDD](<Notebook/Lenovo/Legion/Legion 5 15ACH6 82JW/2BE152EEFFDD>) |
-| Intel      | Core i7-1065G7                   | 1.30 | 367   | [6D5F5C296418](<Convertible/Lenovo/IdeaPadFlex/IdeaPadFlex 5 14IIL05 81X1/6D5F5C296418>) |
-| Intel      | 12th Gen Core i9-12900K          |      | 358   | [46556BD3958D](<Desktop/ASUSTek Computer/ROG/ROG STRIX Z690-A GAMING WIFI D4/46556BD3958D>) |
-| AMD        | Ryzen 7 2700X Eight-Core         |      | 356   | [9B3E9D48669C](<Desktop/ASUSTek Computer/PRIME/PRIME X470-PRO/9B3E9D48669C>) |
-| Intel      | Celeron N3060                    | 1.60 | 354   | [2EDB83247697](<Notebook/Hewlett-Packard/Notebook/Notebook/2EDB83247697>) |
-| Intel      | Core i7-4790                     | 3.60 | 351   | [D2A83135503F](<Desktop/Dell/OptiPlex/OptiPlex 9020/D2A83135503F>) |
-| Intel      | Core i5-8265U                    | 1.60 | 350   | [6AF4025C842E](<Notebook/Hewlett-Packard/Laptop/Laptop 15-da1xxx/6AF4025C842E>) |
-| Intel      | Core i5-4200U                    | 1.60 | 344   | [E5D25577EBCB](<Notebook/Packard Bell/EasyNote/EasyNote TE69HW/E5D25577EBCB>) |
-| Intel      | Core i3-3110M                    | 2.40 | 337   | [F963F60499C1](<Notebook/Dell/Inspiron/Inspiron 3520/F963F60499C1>) |
-| Intel      | Core i3-6006U                    | 2.00 | 335   | [AD011DB09D1C](<Notebook/Lenovo/E31-80/E31-80 80MX/AD011DB09D1C>) |
-| Intel      | Pentium Silver N6000             | 1.10 | 332   | [53CF20A09429](<Desktop/AZW/MINI/MINI S/53CF20A09429>) |
-| Intel      | Core i7-6500U                    | 2.50 | 329   | [9654B0B310BA](<Desktop/Others/Others/Others/9654B0B310BA>) |
-| Intel      | Core 2 Duo E7500                 | 2.93 | 325   | [656BCFA44494](<Desktop/Intel/DG43GT/DG43GT AAE62768-300/656BCFA44494>) |
-| Intel      | Core i3-5005U                    | 2.00 | 323   | [8DFB23283FCD](<Notebook/Hewlett-Packard/Notebook/Notebook/8DFB23283FCD>) |
-| Intel      | Core i3-3220                     | 3.30 | 319   | [43C25A9EA8C2](<Desktop/Hewlett-Packard/Compaq/Compaq Pro 6300 MT/43C25A9EA8C2>) |
-| Intel      | Core i3-2350M                    | 2.30 | 317   | [5E803907CCF8](<Notebook/ASUSTek Computer/K54/K54HR/5E803907CCF8>) |
-| Intel      | Core i3-2100                     | 3.10 | 315   | [A77DA1060A8E](<Desktop/Foxconn/H61/H61MXV-H67MXV/A77DA1060A8E>) |
-| Intel      | Core i7-2600                     | 3.40 | 310   | [6827F97BCD6A](<Desktop/Intel/H/H61/6827F97BCD6A>) |
-| Intel      | Core i5-2430M                    | 2.40 | 308   | [CEDFE32C9D52](<Notebook/Dell/Inspiron/Inspiron N5110/CEDFE32C9D52>) |
-| Intel      | Core 2 Quad Q6600                | 2.40 | 307   | [3D488BD047B1](<Desktop/ASUSTek Computer/P5KPL-AM/P5KPL-AM SE/3D488BD047B1>) |
-| Intel      | Celeron N3350                    | 1.10 | 304   | [6BA806AD85DC](<Notebook/Alcor Digital/Snugbook/Snugbook N1431/6BA806AD85DC>) |
-| Intel      | Celeron N4020                    | 1.10 | 302   | [F85ED92E93ED](<Notebook/GPU Company/GWTC116/GWTC116-2/F85ED92E93ED>) |
-| AMD        | Ryzen 5 5600X 6-Core             |      | 299   | [405CEAE381D2](<Desktop/ASRock/B450M/B450M Steel Legend/405CEAE381D2>) |
-| Intel      | Core i3-2310M                    | 2.10 | 297   | [69A81B6CB108](<Notebook/ASUSTek Computer/K73/K73E/69A81B6CB108>) |
-| Intel      | Core i5-6500                     | 3.20 | 297   | [18BE455764D5](<Desktop/ASUSTek Computer/Z170I/Z170I PRO GAMING/18BE455764D5>) |
-| Intel      | Core i5-5300U                    | 2.30 | 292   | [9DC8CA3DF416](<Notebook/Dell/Latitude/Latitude E7450/9DC8CA3DF416>) |
-| Intel      | Core i5-4460                     | 3.20 | 290   | [DF723B4B77B5](<Desktop/MSI/MS/MS-7816/DF723B4B77B5>) |
-| Intel      | Core i3 M 370                    | 2.40 | 282   | [66FE7E8D7F44](<Notebook/Hewlett-Packard/630/630/66FE7E8D7F44>) |
-| Intel      | Core i5-4570                     | 3.20 | 277   | [E9FD17DAA8B2](<Desktop/Dell/OptiPlex/OptiPlex 9020/E9FD17DAA8B2>) |
-| Intel      | Core i7-8650U                    | 1.90 | 275   | [71FFDA7F373E](<Notebook/Dell/Latitude/Latitude 7490/71FFDA7F373E>) |
-| Intel      | Core i5-8300H                    | 2.30 | 272   | [C47E2769EDB1](<Notebook/Lenovo/Legion/Legion Y7000 81FW/C47E2769EDB1>) |
-| AMD        | Ryzen 5 4600H with Radeon Gra... |      | 270   | [5D8ED7ADD7DF](<Notebook/Lenovo/Legion/Legion 5 15ARH05 82B5/5D8ED7ADD7DF>) |
-| Intel      | 12th Gen Core i5-1235U           |      | 270   | [61779DC30678](<Notebook/Hewlett-Packard/Laptop/Laptop 17-cn2xxx/61779DC30678>) |
-| AMD        | Ryzen 5 2500U with Radeon Veg... |      | 265   | [BF440AD92075](<Notebook/ASUSTek Computer/VivoBook_ASUS/VivoBook_ASUS Laptop X505ZA_R504ZA/BF440AD92075>) |
-| Intel      | Atom N270                        | 1.60 | 265   | [7B8FCF2DC8DB](<Notebook/Lenovo/4068/4068AGJ/7B8FCF2DC8DB>) |
-| Intel      | Core i7-6700K                    | 4.00 | 265   | [55EAA5F4B3CF](<Desktop/Gigabyte Technology/Z170X-Gaming/Z170X-Gaming 3/55EAA5F4B3CF>) |
-| Intel      | Core i3 M 380                    | 2.53 | 264   | [E0C11E2DCE11](<Notebook/Dell/Inspiron/Inspiron N5010/E0C11E2DCE11>) |
-| Intel      | Pentium B960                     | 2.20 | 259   | [D928F6851B7B](<Notebook/Itautec/Infoway/Infoway w7535/D928F6851B7B>) |
-| Intel      | Core i7-6700                     | 3.40 | 259   | [BC9CF352F91A](<Desktop/ASUSTek Computer/Z170/Z170-P/BC9CF352F91A>) |
-| Intel      | Core i5-4300U                    | 1.90 | 256   | [BE159E2FFF98](<Notebook/Lenovo/ThinkPad/ThinkPad T440 20B7A0CYFR/BE159E2FFF98>) |
-| Intel      | Core i7-3630QM                   | 2.40 | 255   | [9ECF6B177836](<Notebook/Samsung Electronics/350V5/350V5C-351V5C-3540VC-3440VC/9ECF6B177836>) |
-| Intel      | Core i7-2670QM                   | 2.20 | 249   | [48C48CE24154](<Notebook/Others/Others/Others/48C48CE24154>) |
-| AMD        | Ryzen 5 5600G with Radeon Gra... |      | 248   | [BD5F281A2678](<Desktop/Gigabyte Technology/B550M/B550M DS3H/BD5F281A2678>) |
-| Intel      | Core i7-4770                     | 3.40 | 248   | [02BF18B75E6E](<Desktop/Gigabyte Technology/Z97/Z97P-D3/02BF18B75E6E>) |
-| AMD        | Ryzen 5 1600 Six-Core            |      | 246   | [0A9E01FDC5FC](<Desktop/MSI/MS-7/MS-7A34/0A9E01FDC5FC>) |
-| Intel      | Core i7-6600U                    | 2.60 | 246   | [1DBF19E30974](<Convertible/Lenovo/ThinkPad/ThinkPad Yoga 260 20FES1L60R/1DBF19E30974>) |
-| AMD        | Ryzen 7 3700U with Radeon Veg... |      | 244   | [44E71F2A11E6](<Notebook/GPU Company/GWNR/GWNR71517/44E71F2A11E6>) |
-| Intel      | Atom N450                        | 1.66 | 241   | [587F03DC9979](<Notebook/ASUSTek Computer/1001/1001PX/587F03DC9979>) |
-| Intel      | Core i5-4590                     | 3.30 | 240   | [EF1772B991DB](<Desktop/Dell/OptiPlex/OptiPlex 9020/EF1772B991DB>) |
-| Intel      | Core i7-5500U                    | 2.40 | 238   | [26098637A976](<Notebook/Hewlett-Packard/Others/Others/26098637A976>) |
-| AMD        | E-450 APU with Radeon HD Grap... |      | 237   | [6B8DE2BAD9FB](<Notebook/ASUSTek Computer/K53/K53BR/6B8DE2BAD9FB>) |
-| AMD        | Ryzen 5 3400G with Radeon Veg... |      | 237   | [271CDE20E3D3](<Desktop/ASUSTek Computer/PRIME/PRIME B550-PLUS/271CDE20E3D3>) |
-| AMD        | Ryzen 3 2200G with Radeon Veg... |      | 234   | [68D04878595E](<Desktop/CMS Computers/7200/7200-5413A/68D04878595E>) |
-| AMD        | Ryzen 7 PRO 4750U with Radeon... |      | 233   | [282395B9AD24](<Notebook/Lenovo/ThinkPad/ThinkPad P14s Gen 1 20Y1001HTX/282395B9AD24>) |
-| Intel      | Core i7-8700                     | 3.20 | 233   | [6EDAE1870B25](<Desktop/ASRock/B360M/B360M IB-R1/6EDAE1870B25>) |
-| Intel      | Core i7-4790K                    | 4.00 | 230   | [55E374A7ECC4](<Desktop/ASUSTek Computer/All/All Series/55E374A7ECC4>) |
-| Intel      | Core i3-3217U                    | 1.80 | 229   | [61709C060715](<Notebook/ASUSTek Computer/X202/X202E/61709C060715>) |
-| Intel      | Core i5-7400                     | 3.00 | 222   | [1EEFF6255E0E](<Desktop/Hewlett-Packard/Pavilion/Pavilion Desktop PC 570-p5xx/1EEFF6255E0E>) |
-| AMD        | Ryzen 7 5800X 8-Core             |      | 219   | [8CED5CE61807](<Desktop/ASUSTek Computer/ROG/ROG STRIX X570-E GAMING/8CED5CE61807>) |
-| Intel      | Core i5-8400                     | 2.80 | 216   | [CE18A432A8EF](<Desktop/Medion/MD3410/MD34100-2543/CE18A432A8EF>) |
-| Intel      | Core i3-4005U                    | 1.70 | 215   | [7BA22E7981CD](<Notebook/Lenovo/G50-80/G50-80 80L0/7BA22E7981CD>) |
-| Intel      | Core i5-8350U                    | 1.70 | 213   | [12A57ACC2E26](<Notebook/Hewlett-Packard/EliteBook/EliteBook 830 G5/12A57ACC2E26>) |
-| Intel      | Celeron N4000                    | 1.10 | 212   | [96DF0C529E2C](<Mini Pc/Hewlett-Packard/t430/t430 Thin Client/96DF0C529E2C>) |
-| Intel      | Celeron N3050                    | 1.60 | 211   | [409B91849443](<Notebook/Hewlett-Packard/15/15 Notebook PC/409B91849443>) |
-| Intel      | Core i5-3570K                    | 3.40 | 209   | [0B0B26A1FB63](<Desktop/Gigabyte Technology/Z77/Z77-DS3H/0B0B26A1FB63>) |
-| Intel      | Core i7-3770K                    | 3.50 | 209   | [3DCC04D7FE29](<Desktop/ASUSTek Computer/P8Z77-V/P8Z77-V LE/3DCC04D7FE29>) |
-| Intel      | Core i7-8665U                    | 1.90 | 208   | [AECCF9C01BD8](<Mini Pc/Intel Client Systems/NUC8/NUC8v7PNH/AECCF9C01BD8>) |
-| Intel      | Core i3-2330M                    | 2.20 | 207   | [BA1DF2DADB62](<Notebook/ASUSTek Computer/K73/K73SJ/BA1DF2DADB62>) |
-| Intel      | Core i7-8700K                    | 3.70 | 206   | [94E45CAB4EE0](<Desktop/Gigabyte Technology/Z390/Z390 GAMING X/94E45CAB4EE0>) |
-| Intel      | Core i7-7700K                    | 4.20 | 205   | [C1DFDE9A944B](<Desktop/ASUSTek Computer/PRIME/PRIME Z270-K/C1DFDE9A944B>) |
-| Intel      | Core i5-5250U                    | 1.60 | 205   | [DAC4653A934F](<Notebook/Apple/MacBookAir7/MacBookAir7,2/DAC4653A934F>) |
-| Intel      | Core i7-7700                     | 3.60 | 204   | [D03AB5FF3F68](<Desktop/Hewlett-Packard/ProDesk/ProDesk 600 G3 SFF/D03AB5FF3F68>) |
-| Intel      | Pentium Dual-Core T4500          | 2.30 | 203   | [678FA81C1F08](<Notebook/eMachines/E/E725/678FA81C1F08>) |
-| Intel      | Core i5-3337U                    | 1.80 | 203   | [2F3EAFFD46E4](<Notebook/Lenovo/IdeaPad/IdeaPad U510 20191/2F3EAFFD46E4>) |
-| AMD        | Ryzen 5 5600H with Radeon Gra... |      | 199   | [168A3EC1E1EA](<Notebook/Hewlett-Packard/Victus/Victus by Laptop 16-e0xxx/168A3EC1E1EA>) |
-| Intel      | Core i3-6100                     | 3.70 | 197   | [30F694CCEC2B](<Desktop/MSI/MS/MS-7996/30F694CCEC2B>) |
-| AMD        | Athlon II X2 250                 |      | 196   | [FA6847F222B5](<Desktop/Biostar/A780/A780L3C/FA6847F222B5>) |
-| AMD        | FX-8320 Eight-Core               |      | 196   | [C38537745C61](<Desktop/ASUSTek Computer/M5A97/M5A97 EVO R2.0/C38537745C61>) |
-| Intel      | Core i5-3570                     | 3.40 | 196   | [DED037CCA348](<Desktop/Intel/B/B75/DED037CCA348>) |
-| Intel      | Pentium Dual-Core E5300          | 2.60 | 195   | [56CDA0F2FEEF](<Desktop/Hewlett-Packard/Compaq/Compaq dc7900 Small Form Factor/56CDA0F2FEEF>) |
-| Intel      | Core i3-4130                     | 3.40 | 195   | [3D7A5792365C](<Desktop/ASUSTek Computer/All/All Series/3D7A5792365C>) |
-| Intel      | Core i5-10300H                   | 2.50 | 194   | [1876F7CE86CD](<Notebook/ASUSTek Computer/ASUS/ASUS TUF Gaming F15 FX506LI_FX566LI/1876F7CE86CD>) |
-| Intel      | Core i7-4510U                    | 2.00 | 194   | [03EEFC9685DF](<Notebook/Lenovo/G50-70/G50-70 20351/03EEFC9685DF>) |
-| AMD        | Ryzen 7 2700 Eight-Core          |      | 193   | [348836DC6639](<Desktop/Gigabyte Technology/B450/B450 AORUS ELITE/348836DC6639>) |
-| Intel      | Core i3-7100U                    | 2.40 | 191   | [0F893A98C637](<Notebook/Acer/Aspire/Aspire E5-576/0F893A98C637>) |
-| Intel      | Atom N455                        | 1.66 | 191   | [58B5AF505AA0](<Desktop/Intel/WADE-8076/WADE-8076-ST-WMS/58B5AF505AA0>) |
-| Intel      | Core i5-2500K                    | 3.30 | 191   | [B80153BC8F95](<Desktop/Gigabyte Technology/H61/H61M-D2H-USB3/B80153BC8F95>) |
-| Intel      | Core i5-9300H                    | 2.40 | 190   | [1AC2A4AA7A96](<Notebook/Lenovo/Legion/Legion Y540-15IRH-PG0 81SY/1AC2A4AA7A96>) |
-| Intel      | Core i7-2630QM                   | 2.00 | 190   | [7713EE2713FC](<Notebook/Acer/Aspire/Aspire 5750G/7713EE2713FC>) |
-| AMD        | Ryzen 9 5900X 12-Core            |      | 188   | [C7CA1B973424](<Desktop/ASUSTek Computer/ROG/ROG STRIX X570-F GAMING/C7CA1B973424>) |
-| AMD        | Ryzen 5 3600X 6-Core             |      | 186   | [AE75D1AB7CB4](<Desktop/ASUSTek Computer/TUF/TUF B450-PLUS GAMING/AE75D1AB7CB4>) |
-| AMD        | Ryzen 7 1700 Eight-Core          |      | 185   | [BE6B2A31F668](<Desktop/Gigabyte Technology/B450/B450 I AORUS PRO WIFI/BE6B2A31F668>) |
-| Intel      | Core i7-4700MQ                   | 2.40 | 185   | [58E500E065B5](<Notebook/Lenovo/ThinkPad/ThinkPad W540 20BHS1J000/58E500E065B5>) |
-| AMD        | Ryzen 5 2400G with Radeon Veg... |      | 184   | [A2EE7FB360B4](<Desktop/ASUSTek Computer/PRIME/PRIME A320M-K/A2EE7FB360B4>) |
-| AMD        | Ryzen 9 5900HX with Radeon Gr... |      | 184   | [1FE0593076B3](<Desktop/Others/HX/HX90/1FE0593076B3>) |
-| Intel      | Core i5-2500                     | 3.30 | 184   | [C58861466405](<Desktop/Others/Others/Others/C58861466405>) |
-| Intel      | Core i3-3120M                    | 2.50 | 184   | [8BCDDD9F9C62](<Notebook/Toshiba/Satellite/Satellite C855/8BCDDD9F9C62>) |
-| AMD        | Ryzen 7 5700G with Radeon Gra... |      | 182   | [1C885144C28F](<Desktop/ASUSTek Computer/PRIME/PRIME B550-PLUS/1C885144C28F>) |
-| AMD        | Ryzen 3 3200G with Radeon Veg... |      | 181   | [DDF6FDC2A438](<Desktop/ASRock/A320M-HDV/A320M-HDV R4.0/DDF6FDC2A438>) |
-| Intel      | Core i3-10110U                   | 2.10 | 181   | [9FC3E9497287](<Notebook/Hewlett-Packard/Laptop/Laptop 15-dw1xxx/9FC3E9497287>) |
-| Intel      | Pentium 2020M                    | 2.40 | 180   | [66BB96E66B62](<Notebook/Medion/E/E6234/66BB96E66B62>) |
-| Intel      | Core 2 Duo P8600                 | 2.40 | 179   | [70447EBB84BB](<Notebook/Dell/Latitude/Latitude E6400/70447EBB84BB>) |
-| Intel      | Core i3-1005G1                   | 1.20 | 176   | [013E551719B3](<Notebook/Acer/Extensa/Extensa 215-52/013E551719B3>) |
-| Intel      | Core i5-7300HQ                   | 2.50 | 176   | [74B446CE2C6E](<Notebook/Lenovo/Y520-15IKBN/Y520-15IKBN 80WK/74B446CE2C6E>) |
-| Intel      | Core i5 M 460                    | 2.53 | 176   | [8B75DDBC39E0](<Notebook/ASUSTek Computer/K42/K42Jc/8B75DDBC39E0>) |
-| Intel      | Core i5 M 520                    | 2.40 | 176   | [255277C340F9](<Notebook/Fujitsu/T/T900/255277C340F9>) |
-| Intel      | Core i5-4200M                    | 2.50 | 176   | [0E0E9BD92F1F](<Notebook/Lenovo/ThinkPad/ThinkPad T540p 20BE003YUK/0E0E9BD92F1F>) |
-| Intel      | Core i7-4500U                    | 1.80 | 176   | [53EE0636FFCA](<Notebook/Dell/Inspiron/Inspiron 3537/53EE0636FFCA>) |
-| AMD        | FX -4300 Quad-Core               |      | 175   | [C85B0030F9F4](<Desktop/MSI/MS/MS-7693/C85B0030F9F4>) |
-| Intel      | Celeron J4125                    | 2.00 | 175   | [BD0FBF639942](<Desktop/ASRock/J4125/J4125M/BD0FBF639942>) |
-| Intel      | Core i7-3610QM                   | 2.30 | 175   | [B36E5125492E](<Notebook/Toshiba/Satellite/Satellite L855/B36E5125492E>) |
-| AMD        | Ryzen 5 2600X Six-Core           |      | 174   | [06F6A88794AD](<Desktop/ASRock/X470/X470 Master SLI/06F6A88794AD>) |
-| Intel      | Pentium Dual-Core T4300          | 2.10 | 173   | [95759DCE41E1](<Notebook/eMachines/E/E725/95759DCE41E1>) |
-| Intel      | Core i7-2600K                    | 3.40 | 173   | [9F17790B4089](<Desktop/Intel/DZ68DB/DZ68DB AAG27985-101/9F17790B4089>) |
-| Intel      | Core i5-7300U                    | 2.60 | 171   | [55DE83D5ACA3](<Convertible/Lenovo/ThinkPad/ThinkPad Yoga 370 20JJS0A44Z/55DE83D5ACA3>) |
-| Intel      | Core i5-6400                     | 2.70 | 171   | [A7E6ADB389B1](<Desktop/ASUSTek Computer/D320/D320SF/A7E6ADB389B1>) |
-| Intel      | Atom N2600                       | 1.60 | 167   | [65CA43BBFA98](<Notebook/Intel/powered/powered classmate PC/65CA43BBFA98>) |
-| Intel      | Core i5-3317U                    | 1.70 | 167   | [B4E5A7138DB1](<Notebook/Samsung Electronics/530U3/530U3C-530U4C-532U3C/B4E5A7138DB1>) |
-| AMD        | Ryzen 9 5950X 16-Core            |      | 166   | [A0A588B9313C](<Desktop/ASRock/X570/X570 Phantom Gaming X/A0A588B9313C>) |
-| Intel      | Pentium Dual-Core T4400          | 2.20 | 166   | [B7D24A17624E](<Desktop/Medion/MS/MS-7621/B7D24A17624E>) |
-| Intel      | Pentium Dual-Core E5700          | 3.00 | 165   | [0AD4BEF7C1C1](<Desktop/ASUSTek Computer/P5G41T-M/P5G41T-M LX/0AD4BEF7C1C1>) |
-| Intel      | Pentium N3540                    | 2.16 | 165   | [AE366F96F926](<Notebook/Lenovo/Yoga/Yoga 300-11IBY 80M0/AE366F96F926>) |
-| Intel      | Celeron 2955U                    | 1.40 | 165   | [B411A7C47BF4](<Notebook/Acer/Peppy/Peppy/B411A7C47BF4>) |
-| Intel      | Core i3-6100U                    | 2.30 | 164   | [853AB1A7D0CA](<Notebook/Lenovo/ThinkPad/ThinkPad L560 20F2S13L00/853AB1A7D0CA>) |
-| Intel      | Core 2 Duo E6550                 | 2.33 | 163   | [0772711AD395](<Desktop/ASUSTek Computer/P5/P5K/0772711AD395>) |
-| Intel      | Core i3-3240                     | 3.40 | 163   | [D9B19A219BD4](<Desktop/Hewlett-Packard/Pro3500/Pro3500 Series/D9B19A219BD4>) |
-| AMD        | Ryzen 7 3800X 8-Core             |      | 162   | [638A9F7B01C2](<Desktop/System76/Thelio/Thelio/638A9F7B01C2>) |
-| Intel      | Core 2 T7200                     | 2.00 | 161   | [1EF0617FEF8B](<Notebook/Hewlett-Packard/Others/Others/1EF0617FEF8B>) |
-| Intel      | Atom Z3735F                      | 1.33 | 161   | [B7F891A25D5D](<Notebook/Hewlett-Packard/Pro/Pro Tablet 10 EE G1/B7F891A25D5D>) |
-| Intel      | Core i7-4600U                    | 2.10 | 161   | [6BE8E7B2C3D1](<Notebook/Toshiba/PORTEGE/PORTEGE Z30t-A/6BE8E7B2C3D1>) |
-| Intel      | Celeron N2830                    | 2.16 | 157   | [91236DA4B8CC](<Notebook/Hewlett-Packard/15/15/91236DA4B8CC>) |
-| Intel      | Pentium G4400                    | 3.30 | 157   | [56AEBC520FFC](<Desktop/Dell/Inspiron/Inspiron 3250/56AEBC520FFC>) |
-| Intel      | Core i3-7100                     | 3.90 | 156   | [0401B4CF51F2](<Desktop/Others/Others/Others/0401B4CF51F2>) |
-| AMD        | Phenom II X4 965                 |      | 155   | [2DA9AF5AE83C](<Desktop/ASRock/890FX/890FX Deluxe4/2DA9AF5AE83C>) |
-| AMD        | Ryzen 5 3550H with Radeon Veg... |      | 155   | [3144AE490C42](<Notebook/ASUSTek Computer/TUF/TUF Gaming FX505DT_FX505DT/3144AE490C42>) |
-| Intel      | Core i5-2540M                    | 2.60 | 155   | [E28D554E86AB](<Notebook/ASUSTek Computer/K54/K54HR/E28D554E86AB>) |
-| Intel      | Core 2 Duo P8700                 | 2.53 | 153   | [F6A099116F75](<Notebook/Dell/Inspiron/Inspiron 1545/F6A099116F75>) |
-| Intel      | Core i3 M 330                    | 2.13 | 153   | [14BB1CEB4A34](<Notebook/Dell/Inspiron/Inspiron 1564/14BB1CEB4A34>) |
-| Intel      | Core i5-7500                     | 3.40 | 152   | [623C6DFA14C1](<Mini Pc/Hewlett-Packard/EliteDesk/EliteDesk 800 G3 DM 65W/623C6DFA14C1>) |
-| Intel      | Core i3-8100                     | 3.60 | 151   | [5322EAC8B99B](<All In One/Apple/iMac19/iMac19,2/5322EAC8B99B>) |
-| Intel      | Core i3 M 350                    | 2.27 | 151   | [358862D39503](<Notebook/Lenovo/G560/G560 0679/358862D39503>) |
-| Intel      | Core i5 M 480                    | 2.67 | 151   | [26799175FD73](<Notebook/Toshiba/Satellite/Satellite L655/26799175FD73>) |
-| Intel      | Core i5-10400                    | 2.90 | 150   | [B2419177B3BB](<Notebook/Lenovo/IdeaCentre/IdeaCentre AIO 3 24IMB05 F0EU00M8RU/B2419177B3BB>) |
-| Intel      | Pentium N3700                    | 1.60 | 149   | [9AE6692DF089](<Notebook/Compaq/420/420/9AE6692DF089>) |
-| AMD        | E-350                            |      | 146   | [8EE658D49209](<Notebook/eMachines/eMachiens/eMachiens G443/8EE658D49209>) |
-| Intel      | Core 2 Duo P8400                 | 2.26 | 146   | [27C961FA19BA](<Notebook/Sony/VGN-AW11/VGN-AW11M_H/27C961FA19BA>) |
-| Intel      | Core i7-3520M                    | 2.90 | 146   | [0CD38833C0EF](<Notebook/Lenovo/ThinkPad/ThinkPad W530 24473F2/0CD38833C0EF>) |
-| Intel      | Core i3-4160                     | 3.60 | 146   | [69A6781598B0](<Desktop/Hewlett-Packard/EliteDesk/EliteDesk 800 G1 USDT/69A6781598B0>) |
-| Intel      | Core i7-6820HQ                   | 2.70 | 146   | [19A0DFEDBDBA](<Notebook/Dell/Latitude/Latitude E5570/19A0DFEDBDBA>) |
-| AMD        | Phenom II X4 955                 |      | 145   | [196D4EF3C39F](<Desktop/Gigabyte Technology/GA-890/GA-890GPA-UD3H/196D4EF3C39F>) |
-| Intel      | Core i7-10710U                   | 1.10 | 143   | [1139C4064B3E](<Notebook/Dell/XPS/XPS 13 7390/1139C4064B3E>) |
-| Intel      | Pentium Dual-Core T4200          | 2.00 | 143   | [70AE28A451E1](<Notebook/Acer/Aspire/Aspire 5737Z/70AE28A451E1>) |
-| Intel      | Pentium N3710                    | 1.60 | 143   | [A9E04C353111](<Notebook/ASUSTek Computer/X751/X751SA/A9E04C353111>) |
-| Intel      | Core i5 M 560                    | 2.67 | 142   | [4CD8E7447BCF](<Notebook/Lenovo/ThinkPad/ThinkPad T410 2537CC5/4CD8E7447BCF>) |
-| Intel      | Pentium Silver N5000             | 1.10 | 141   | [222540F56EB8](<Notebook/Dell/Latitude/Latitude 3190/222540F56EB8>) |
-| Intel      | Core i7-3632QM                   | 2.20 | 141   | [F3A46F755B08](<Notebook/Hewlett-Packard/ProBook/ProBook 4540s/F3A46F755B08>) |
-| Intel      | Core i7-5600U                    | 2.60 | 141   | [15A99CEFC60A](<Notebook/Dell/Latitude/Latitude E7450/15A99CEFC60A>) |
-| Intel      | Core i3-4030U                    | 1.90 | 141   | [0D939CEB1C39](<Notebook/Acer/Aspire/Aspire E5-571/0D939CEB1C39>) |
-| Intel      | Core i5-6600K                    | 3.50 | 141   | [4023F73158C0](<Desktop/MSI/MS/MS-7977/4023F73158C0>) |
-| Intel      | Pentium M processor              | 1.20 | 140   | [9F658ADA0B8C](<Notebook/Fujitsu Siemens/AMILO/AMILO Pro V2085/9F658ADA0B8C>) |
-| Intel      | Core i3-8130U                    | 2.20 | 140   | [843240D4F665](<Notebook/Lenovo/ThinkPad/ThinkPad E480 20KQS0B800/843240D4F665>) |
-| Intel      | Core i5-9400F                    | 2.90 | 140   | [61CCACD32BF7](<Desktop/ASRock/B365/B365M-HDV/61CCACD32BF7>) |
-| Intel      | Core 2 Duo E7400                 | 2.80 | 139   | [A182B9C1083D](<Desktop/Dell/OptiPlex/OptiPlex 360/A182B9C1083D>) |
-| Intel      | Pentium G630                     | 2.70 | 139   | [95E149EAB845](<Desktop/ASUSTek Computer/P8H61-M/P8H61-M LE/95E149EAB845>) |
-| AMD        | Ryzen 3 3200U with Radeon Veg... |      | 138   | [3776BE581EA4](<Notebook/Hewlett-Packard/Laptop/Laptop 15-db1xxx/3776BE581EA4>) |
-| Intel      | Pentium Dual-Core E5400          | 2.70 | 138   | [8C4550B7A236](<Desktop/Hewlett-Packard/NY705AA-ABL/NY705AA-ABL p6204y/8C4550B7A236>) |
-| Intel      | Core i5-4440                     | 3.10 | 138   | [5679A1E0F90A](<Desktop/ASUSTek Computer/All/All Series/5679A1E0F90A>) |
-| Intel      | Core i7-4710HQ                   | 2.50 | 138   | [C9A4FBC6CC20](<Notebook/ASUSTek Computer/N550/N550JK/C9A4FBC6CC20>) |
-| Intel      | Core 2 Duo E4500                 | 2.20 | 137   | [A00073A380BB](<Desktop/Hewlett-Packard/Compaq/Compaq dc5700 Microtower/A00073A380BB>) |
-| Intel      | Core i7-8850H                    | 2.60 | 137   | [87A913ED52D7](<Notebook/Hewlett-Packard/ZBook/ZBook 17 G5/87A913ED52D7>) |
-| Intel      | Core i5 750                      | 2.67 | 137   | [B36DC4286599](<Desktop/Gigabyte Technology/P55/P55M-UD2/B36DC4286599>) |
-| Intel      | Pentium P6200                    | 2.13 | 137   | [BBDFB7B4C795](<Notebook/Acer/Aspire/Aspire 5733Z/BBDFB7B4C795>) |
-| Intel      | Core i5 M 430                    | 2.27 | 136   | [16E400040011](<Notebook/Dell/Studio/Studio 1749/16E400040011>) |
-| Intel      | Pentium N4200                    | 1.10 | 134   | [B50AFE691E19](<Notebook/Acer/Aspire/Aspire ES1-132/B50AFE691E19>) |
-| Intel      | Core i5-3330                     | 3.00 | 133   | [A200DB8D59E6](<Desktop/Gigabyte Technology/H61/H61M-DS2/A200DB8D59E6>) |
-| Intel      | Core 2 Duo E8500                 | 3.16 | 132   | [37AA4ADCE327](<Desktop/Fujitsu Siemens/ESPRIMO/ESPRIMO E5730/37AA4ADCE327>) |
-| AMD        | E-300 APU with Radeon HD Grap... |      | 131   | [C4520EE41BBA](<Desktop/Acer/Aspire/Aspire X1430/C4520EE41BBA>) |
-| Intel      | Atom N570                        | 1.66 | 131   | [13EB7525030C](<Notebook/ASUSTek Computer/1011/1011PX/13EB7525030C>) |
-| Intel      | Core i7-4770K                    | 3.50 | 131   | [1994E7184BE8](<Desktop/ASUSTek Computer/All/All Series/1994E7184BE8>) |
-| Intel      | Pentium G3220                    | 3.00 | 131   | [27BE6AA7E202](<Desktop/ASUSTek Computer/All/All Series/27BE6AA7E202>) |
-| Intel      | Core i3-10100                    | 3.60 | 130   | [370152E34E95](<Desktop/Gigabyte Technology/H410M/H410M H/370152E34E95>) |
-| Intel      | Core i7-2677M                    | 1.80 | 130   | [588BA5B99F69](<Notebook/Toshiba/PORTEGE/PORTEGE Z830/588BA5B99F69>) |
-| AMD        | A8-7410 APU with AMD Radeon R... |      | 129   | [DB0B516E7227](<Notebook/Lenovo/IdeaPad/IdeaPad 110-15ACL 80TJ/DB0B516E7227>) |
-| Intel      | Core i7-7600U                    | 2.80 | 129   | [D3E48CC00280](<Notebook/Dell/Latitude/Latitude 5580/D3E48CC00280>) |
-| Intel      | Pentium P6100                    | 2.00 | 129   | [281A2D7E86DE](<Notebook/Acer/Aspire/Aspire 4738Z/281A2D7E86DE>) |
-| Intel      | Celeron N4100                    | 1.10 | 127   | [A06CAC27185E](<Notebook/UMAX/VisionBook/VisionBook 15Wg Plus/A06CAC27185E>) |
-| Intel      | Atom D525                        | 1.80 | 127   | [4A875927140B](<Desktop/Standard/XS/XS35/4A875927140B>) |
-| Intel      | Core 2 Duo T7500                 | 2.20 | 126   | [BEAC6535D134](<Notebook/Toshiba/Satellite/Satellite U300/BEAC6535D134>) |
-| Intel      | 11th Gen Core i7-11390H          | 3.40 | 125   | [8F79CD741C6A](<Notebook/Acer/Aspire/Aspire AV15-51/8F79CD741C6A>) |
-| Intel      | Core i5-9400                     | 2.90 | 125   | [8E72A411386D](<Desktop/Gigabyte Technology/Z390/Z390 UD/8E72A411386D>) |
-| Intel      | Core i3-2370M                    | 2.40 | 125   | [C606E552CA9D](<Notebook/Hewlett-Packard/Pavilion/Pavilion g4/C606E552CA9D>) |
-| Intel      | Core i7-10700                    | 2.90 | 124   | [97C1F8B840C8](<Mini Pc/ZOTAC/ZBOX-ECM7307/ZBOX-ECM73070C-7307LH-53060C/97C1F8B840C8>) |
-| Intel      | Celeron N3450                    | 1.10 | 124   | [8D451E22FBA6](<Notebook/Medion/E/E11201/8D451E22FBA6>) |
-| Intel      | Core i3 550                      | 3.20 | 123   | [CD13ABD91DA2](<Desktop/Hewlett-Packard/PPPPP-CCC#MMMMMMMM/PPPPP-CCC#MMMMMMMM/CD13ABD91DA2>) |
-| Intel      | Pentium 4                        | 3.20 | 122   | [A43658F87F83](<Desktop/Fujitsu Siemens/D2156/D2156-A1/A43658F87F83>) |
-| Intel      | Core 2 Duo T8100                 | 2.10 | 122   | [258D5EEEFCDD](<Notebook/Toshiba/dynabook/dynabook SS M42 210E-3W/258D5EEEFCDD>) |
-| AMD        | FX -6100 Six-Core                |      | 121   | [BE1BD60498B9](<Desktop/ASUSTek Computer/M5A97/M5A97 R2.0/BE1BD60498B9>) |
-| Intel      | Pentium 4                        | 3.00 | 121   | [664E7BEB3DAE](<Desktop/Gigabyte Technology/8IPE1000/8IPE1000-G/664E7BEB3DAE>) |
-| Intel      | Core 2 Duo T7250                 | 2.00 | 121   | [2E4E795E6EF5](<Notebook/Hewlett-Packard/Compaq/Compaq 6720s/2E4E795E6EF5>) |
-| Intel      | Core 2 Duo T8300                 | 2.40 | 121   | [8FF6EAC5652A](<Notebook/Dell/Inspiron/Inspiron 1720/8FF6EAC5652A>) |
-| Intel      | Pentium G620                     | 2.60 | 121   | [D98A1DAB1265](<Desktop/Dell/OptiPlex/OptiPlex 390/D98A1DAB1265>) |
+| Intel      | 11th Gen Core i5-1135G7          | 2.40 | 4867  | [673A82CC398B](<Convertible/Lenovo/IdeaPadFlex/IdeaPadFlex 5 14ITL05 82HS/673A82CC398B>) |
+| Intel      | 12th Gen Core i7-12700H          |      | 2027  | [77DBFC2A6E52](<Notebook/Acer/Aspire/Aspire A515-57/77DBFC2A6E52>) |
+| Intel      | Core i5-8250U                    | 1.60 | 1471  | [D815A0CA9F13](<Notebook/Dell/Latitude/Latitude 7390/D815A0CA9F13>) |
+| Intel      | Core i7-8550U                    | 1.80 | 1313  | [3203336A2B46](<Notebook/Dell/Inspiron/Inspiron 5570/3203336A2B46>) |
+| Intel      | Core i5-7200U                    | 2.50 | 1211  | [1EEF9A4214F5](<Convertible/Lenovo/Yoga/Yoga 720-12IKB 81B5/1EEF9A4214F5>) |
+| AMD        | Ryzen 5 3600 6-Core              |      | 1108  | [C7A89415BB4B](<Desktop/MSI/MS-7/MS-7C02/C7A89415BB4B>) |
+| Intel      | 12th Gen Core i5-1235U           |      | 1067  | [21DA868DBAA1](<Notebook/Hewlett-Packard/ProBook/ProBook 440 14 inch G9 Notebook PC/21DA868DBAA1>) |
+| Intel      | Core i5-10210U                   | 1.60 | 985   | [EE2448EC4BD6](<Convertible/Lenovo/IdeaPad/IdeaPad Flex-14IML 81XG/EE2448EC4BD6>) |
+| Intel      | 11th Gen Core i7-11850H          | 2.50 | 983   | [A0E8DB681FDD](<Notebook/Acer/Nitro/Nitro AN517-54/A0E8DB681FDD>) |
+| Intel      | Core i7-10510U                   | 1.80 | 943   | [F23C082FDA9E](<Convertible/Lenovo/IdeaPad/IdeaPad Flex-15IML 81XH/F23C082FDA9E>) |
+| Intel      | Core i7-9750H                    | 2.60 | 911   | [59B69D658F39](<Notebook/Lenovo/IdeaPad/IdeaPad L340-15IRH Gaming 81LK/59B69D658F39>) |
+| AMD        | Ryzen 5 3500U with Radeon Veg... |      | 908   | [3035086EFC0B](<Notebook/Acer/Aspire/Aspire A315-42/3035086EFC0B>) |
+| Intel      | 13th Gen Core i5-1340P           |      | 865   | [E28A1E841461](<Notebook/Framework/Laptop/Laptop/E28A1E841461>) |
+| Intel      | Core i5-6200U                    | 2.30 | 846   | [2CD52138069F](<Notebook/ASUSTek Computer/X556/X556UR/2CD52138069F>) |
+| Intel      | Core i7-8750H                    | 2.20 | 842   | [2E7CE511186E](<Notebook/ASUSTek Computer/Strix/Strix 15 GL503GE/2E7CE511186E>) |
+| Intel      | Core i5-3210M                    | 2.50 | 835   | [752E7F63EA4A](<Mini Pc/Apple/Macmini6/Macmini6,1/752E7F63EA4A>) |
+| AMD        | Ryzen 7 3700X 8-Core             |      | 827   | [2B2FB01EB8B4](<Desktop/Gigabyte Technology/X470/X470 AORUS ULTRA GAMING/2B2FB01EB8B4>) |
+| Intel      | 13th Gen Core i7-13700K          |      | 826   | [54E9F4E8E3F9](<Notebook/Lenovo/Legion/Legion Pro 5 16IRX8 82WK/54E9F4E8E3F9>) |
+| AMD        | Ryzen 5 5500U with Radeon Gra... |      | 825   | [1722BB93FF17](<Notebook/Lenovo/ThinkPad/ThinkPad E14 Gen 3 20Y70038US/1722BB93FF17>) |
+| Intel      | Core i7-7700HQ                   | 2.80 | 792   | [A39D5CE4C3D7](<Notebook/ASUSTek Computer/GL703/GL703VM/A39D5CE4C3D7>) |
+| AMD        | Ryzen 7 5700U with Radeon Gra... |      | 775   | [7A2551764539](<Notebook/Acer/Aspire/Aspire A315-44P/7A2551764539>) |
+| Intel      | 12th Gen Core i9-12900K          |      | 757   | [B57482B55E27](<Desktop/ASRock/Z790/Z790 PG SONIC/B57482B55E27>) |
+| Intel      | Core i7-7500U                    | 2.70 | 729   | [D9CD642F66C1](<Convertible/ASUSTek Computer/Q524/Q524UQK/D9CD642F66C1>) |
+| Intel      | Core i7-10750H                   | 2.60 | 714   | [E43BF5E3F0FB](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 17-cd1xxx/E43BF5E3F0FB>) |
+| Intel      | Core i5-3470                     | 3.20 | 700   | [05DEE4E22315](<Desktop/ASUSTek Computer/P8Z77-V/P8Z77-V LX/05DEE4E22315>) |
+| AMD        | Ryzen 7 5800H with Radeon Gra... |      | 698   | [47BA57D1C1B2](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop M1603QA_M1603QA/47BA57D1C1B2>) |
+| Intel      | Core i5-8265U                    | 1.60 | 694   | [5D11FE94E7EF](<Notebook/ASUSTek Computer/VivoBook/VivoBook S13 X330FN_S330FN/5D11FE94E7EF>) |
+| Intel      | Core i5-6300U                    | 2.40 | 685   | [E658B68361F2](<Notebook/Lenovo/ThinkPad/ThinkPad T560 20FJS44L0B/E658B68361F2>) |
+| Intel      | Core i5-2520M                    | 2.50 | 664   | [F09CF33870BD](<Notebook/Hewlett-Packard/ProBook/ProBook 6560b/F09CF33870BD>) |
+| Intel      | 11th Gen Core i7-11700           | 2.50 | 648   | [8318D3FD8343](<Desktop/Gigabyte Technology/B560M/B560M AORUS ELITE/8318D3FD8343>) |
+| Intel      | Core i5-5200U                    | 2.20 | 638   | [9845589C2E2E](<Notebook/Toshiba/Satellite/Satellite C70-B/9845589C2E2E>) |
+| Intel      | Core i7-8565U                    | 1.80 | 622   | [4EC1B097E2BE](<Notebook/Lenovo/IdeaPad/IdeaPad S540-14IWL 81ND/4EC1B097E2BE>) |
+| Intel      | Pentium Silver N6000             | 1.10 | 608   | [9A4014CDA6EF](<Desktop/AZW/MINI/MINI S/9A4014CDA6EF>) |
+| Intel      | Core i7-3770                     | 3.40 | 601   | [0EF93A75DC6F](<Desktop/Hewlett-Packard/h8/h8-1520t/0EF93A75DC6F>) |
+| Intel      | Celeron N4020                    | 1.10 | 600   | [D5BB73BFCD47](<Notebook/VALE/Notebook/Notebook Slim S132/D5BB73BFCD47>) |
+| Intel      | Core i5-3320M                    | 2.60 | 599   | [BED2AB98C19A](<Notebook/Lenovo/ThinkPad/ThinkPad T430 2349TFK/BED2AB98C19A>) |
+| Intel      | Core i5-1035G1                   | 1.00 | 596   | [E4ACDDB3B2C7](<Notebook/Acer/Aspire/Aspire A317-52/E4ACDDB3B2C7>) |
+| Intel      | Celeron N2840                    | 2.16 | 596   | [C42FEE2E30C9](<Notebook/Hewlett-Packard/Stream/Stream Notebook PC 13/C42FEE2E30C9>) |
+| Intel      | Core i5-3230M                    | 2.60 | 590   | [37E21E49E6EF](<Notebook/Acer/Aspire/Aspire E1-571G/37E21E49E6EF>) |
+| AMD        | Ryzen 5 2600 Six-Core            |      | 575   | [10FCED84DE65](<Desktop/MSI/MS-7/MS-7B86/10FCED84DE65>) |
+| AMD        | Ryzen 7 4800H with Radeon Gra... |      | 548   | [75C49E26FFD1](<Notebook/HUAWEI/KLVL-WXX/KLVL-WXX9/75C49E26FFD1>) |
+| Intel      | Core i5-2400                     | 3.10 | 542   | [1F2A81C4AB8E](<Desktop/Dell/OptiPlex/OptiPlex 790/1F2A81C4AB8E>) |
+| Intel      | Core i5-4210U                    | 1.70 | 542   | [46F718A80B6D](<Notebook/Dell/Inspiron/Inspiron 3542/46F718A80B6D>) |
+| Intel      | Core 2 Duo E8400                 | 3.00 | 540   | [4EFAD502F05E](<Desktop/Hewlett-Packard/Compaq/Compaq 8000 Elite SFF PC/4EFAD502F05E>) |
+| Intel      | Core i7-6700HQ                   | 2.60 | 538   | [826DD5643F33](<Notebook/MSI/GS60/GS60 6QE/826DD5643F33>) |
+| AMD        | Ryzen 5 5600G with Radeon Gra... |      | 537   | [B82F7FACAFF0](<Desktop/Gigabyte Technology/A520M/A520M DS3H/B82F7FACAFF0>) |
+| Intel      | Atom x5-Z8350                    | 1.44 | 532   | [A586653DE545](<Notebook/Morshow/CB/CB01/A586653DE545>) |
+| Intel      | Core i7-4790                     | 3.60 | 513   | [89A433DBAC77](<Desktop/Dell/OptiPlex/OptiPlex 9020/89A433DBAC77>) |
+| AMD        | Ryzen 7 4700U with Radeon Gra... |      | 510   | [5E9CA431A68F](<All In One/Lenovo/IdeaCentre/IdeaCentre AIO 3 24ARE05 F0EW004WUK/5E9CA431A68F>) |
+| AMD        | Ryzen 9 3900X 12-Core            |      | 509   | [E0839CF115CB](<Desktop/ASUSTek Computer/ROG/ROG CROSSHAIR VIII HERO/E0839CF115CB>) |
+| AMD        | Ryzen 5 4500U with Radeon Gra... |      | 500   | [34FBC94B9A9A](<Convertible/Lenovo/IdeaPadFlex/IdeaPadFlex 5 14ARE05 81X2/34FBC94B9A9A>) |
+| Intel      | Core i3-2120                     | 3.30 | 496   | [4AFB3EC71AB3](<Desktop/Hewlett-Packard/Compaq/Compaq 6200 Pro SFF PC/4AFB3EC71AB3>) |
+| Intel      | Celeron N3350                    | 1.10 | 493   | [56B59C250BC0](<Tablet/Jumper/EZpad/EZpad/56B59C250BC0>) |
+| Intel      | Core i7-1065G7                   | 1.30 | 491   | [288CF2E38A6C](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop X712JA_S712JA/288CF2E38A6C>) |
+| Intel      | Celeron N3060                    | 1.60 | 490   | [0354CE3B7A28](<Notebook/Hewlett-Packard/Laptop/Laptop 14-bs0xx/0354CE3B7A28>) |
+| Intel      | Core i7-8565U                    | 1.80 | 489   | [B3BF76AA6381](<Notebook/Lenovo/ThinkPad/ThinkPad L390 20NR001HPG/B3BF76AA6381>) |
+| AMD        | FX-8350 Eight-Core               |      | 474   | [EDE97632E268](<Desktop/ASRock/960GC-GS/960GC-GS FX/EDE97632E268>) |
+| Intel      | Core i5-2410M                    | 2.30 | 472   | [3490DCB42F4E](<Notebook/Fujitsu/LIFEBOOK/LIFEBOOK AH531/3490DCB42F4E>) |
+| Intel      | Core i7-8650U                    | 1.90 | 470   | [980E2F97C968](<Tablet/Lenovo/ThinkPad/ThinkPad X1 Tablet Gen 3 20KKS0S901/980E2F97C968>) |
+| AMD        | FX -6300 Six-Core                |      | 469   | [8F462E74EBFD](<Desktop/MSI/MS/MS-7693/8F462E74EBFD>) |
+| Intel      | Core i5-2450M                    | 2.50 | 468   | [17F6CAD4252F](<Notebook/Samsung Electronics/300E4/300E4A-300E5A-300E7A-3430EA-3530EA/17F6CAD4252F>) |
+| AMD        | Ryzen 7 2700X Eight-Core         |      | 459   | [E252D6C18DE3](<Desktop/ASUSTek Computer/ROG/ROG STRIX B350-F GAMING/E252D6C18DE3>) |
+| Intel      | Core i7-6500U                    | 2.50 | 458   | [BAEAB9ABEA9E](<Notebook/Acer/Aspire/Aspire V3-372/BAEAB9ABEA9E>) |
+| Intel      | Core i5-6500                     | 3.20 | 458   | [1958717F42C8](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M710q 10MQS2M703/1958717F42C8>) |
+| Intel      | Core i5-8350U                    | 1.70 | 455   | [D06ECE8FBB9A](<Notebook/Dell/Latitude/Latitude 7390 2-in-1/D06ECE8FBB9A>) |
+| Intel      | Core i3-6006U                    | 2.00 | 431   | [0471C76D1EC5](<Notebook/Hewlett-Packard/Laptop/Laptop 15-bs0xx/0471C76D1EC5>) |
+| Intel      | Core i5-4200U                    | 1.60 | 430   | [C7107FE133FA](<Notebook/Lenovo/Yoga/Yoga 2 13 20344/C7107FE133FA>) |
+| Intel      | Core i3-5005U                    | 2.00 | 429   | [FF50D96BC6B1](<Notebook/Acer/Aspire/Aspire E5-573G/FF50D96BC6B1>) |
+| AMD        | Ryzen 5 5600X 6-Core             |      | 428   | [5342B9CA551D](<Desktop/ASUSTek Computer/PRIME/PRIME X570-P/5342B9CA551D>) |
+| Intel      | Core i5-8265U                    | 1.60 | 428   | [E5006ED04FFC](<Notebook/Lenovo/ThinkPad/ThinkPad E490 20N8CTO1WW/E5006ED04FFC>) |
+| Intel      | 13th Gen Core i7-1355U           |      | 423   | [03554E0996C1](<Notebook/Hewlett-Packard/250/250 15.6 inch G10/03554E0996C1>) |
+| Intel      | Core i7-2600                     | 3.40 | 420   | [1EF1ECE712DD](<Desktop/Hewlett-Packard/Compaq/Compaq 8200 Elite SFF PC/1EF1ECE712DD>) |
+| Intel      | Core i3-3110M                    | 2.40 | 410   | [73E673B38E27](<Notebook/ASUSTek Computer/X550/X550VL/73E673B38E27>) |
+| Intel      | Core i5-5300U                    | 2.30 | 407   | [4C5860CF97FA](<Notebook/Dell/Latitude/Latitude E7450/4C5860CF97FA>) |
+| AMD        | Ryzen 7 5700G with Radeon Gra... |      | 404   | [57D9DF839B4F](<Desktop/ASUSTek Computer/TUF/TUF Gaming B550-PLUS WIFI II/57D9DF839B4F>) |
+| Intel      | Core i5-4460                     | 3.20 | 403   | [282BDAD48ABF](<Desktop/MSI/MS/MS-7924/282BDAD48ABF>) |
+| AMD        | Ryzen 5 5600H with Radeon Gra... |      | 397   | [166BCE9277D1](<Notebook/Hewlett-Packard/Victus/Victus by Gaming Laptop 15-fb0xxx/166BCE9277D1>) |
+| Intel      | Core 2 Duo E7500                 | 2.93 | 397   | [5DC4E38B3B74](<Desktop/Dell/OptiPlex/OptiPlex 780/5DC4E38B3B74>) |
+| Intel      | Core i7-6700                     | 3.40 | 397   | [3C0F57476362](<Desktop/ASUSTek Computer/G20/G20CB/3C0F57476362>) |
+| Intel      | Core i3-3220                     | 3.30 | 394   | [68E517D28B5B](<Desktop/Hewlett-Packard/p6/p6-2430ef/68E517D28B5B>) |
+| Intel      | Core 2 Duo P7450                 | 2.13 | 392   | [A7036718579C](<Notebook/Apple/MacBook5/MacBook5,2/A7036718579C>) |
+| Intel      | Core i3-2350M                    | 2.30 | 384   | [7B539C8539AA](<Notebook/ASUSTek Computer/K53/K53E/7B539C8539AA>) |
+| AMD        | Ryzen 5 4600H with Radeon Gra... |      | 383   | [D6ADE9C4B78D](<Notebook/ASUSTek Computer/ASUS/ASUS TUF Gaming A17 FA706IH_FA706IH/D6ADE9C4B78D>) |
+| Intel      | Core i3-2100                     | 3.10 | 383   | [05F8E32151A5](<Desktop/Lenovo/ThinkCentre/ThinkCentre M81 5049D7G/05F8E32151A5>) |
+| Intel      | Core i5-2430M                    | 2.40 | 382   | [307BFD98B544](<Notebook/Hewlett-Packard/Pavilion/Pavilion g7/307BFD98B544>) |
+| Intel      | N100                             |      | 380   | [A87F09289266](<Desktop/PELADN/WI/WI-6/A87F09289266>) |
+| Intel      | Core i5-4300U                    | 1.90 | 380   | [9A502B2F7D5F](<Tablet/Microsoft/Surface/Surface Pro 2/9A502B2F7D5F>) |
+| Intel      | Core i3-2310M                    | 2.10 | 379   | [8536F70D7731](<Notebook/ASUSTek Computer/K53/K53E/8536F70D7731>) |
+| Intel      | Core Ultra 7 155H                |      | 374   | [38BFA92704CB](<Convertible/Lenovo/Yoga/Yoga 7 2-in-1 14IML9 83DJ/38BFA92704CB>) |
+| Intel      | Core i5-4570                     | 3.20 | 372   | [7609A4D128DC](<Desktop/Hewlett-Packard/ProDesk/ProDesk 600 G1 SFF/7609A4D128DC>) |
+| Intel      | Core i3 M 370                    | 2.40 | 364   | [B4E20CCBCA01](<Notebook/Lenovo/G460/G460 20041/B4E20CCBCA01>) |
+| Intel      | Core i7-6600U                    | 2.60 | 360   | [C21CC8AC7701](<Notebook/Hewlett-Packard/EliteBook/EliteBook 840 G3/C21CC8AC7701>) |
+| Intel      | Core 2 Quad Q6600                | 2.40 | 357   | [CAD6E08D778D](<Desktop/Dell/OptiPlex/OptiPlex 745/CAD6E08D778D>) |
+| Intel      | 12th Gen Core i5-12500           |      | 357   | [A2707C20967C](<Desktop/Graviton/D15/D15i/A2707C20967C>) |
+| Intel      | Core i7-6700K                    | 4.00 | 357   | [C3CEAA365EF5](<Desktop/ASUSTek Computer/Z170/Z170 PRO GAMING/C3CEAA365EF5>) |
+| Intel      | Core i7-4770                     | 3.40 | 356   | [021D0F97B209](<Desktop/Hewlett-Packard/700/700-019/021D0F97B209>) |
+| Intel      | Core i5-8300H                    | 2.30 | 355   | [02407CDB6873](<Notebook/ECT/Others/Others/02407CDB6873>) |
+| AMD        | Ryzen 7 5800X 8-Core             |      | 347   | [5FF2D0AC5D6D](<Desktop/ASUSTek Computer/ROG/ROG STRIX B550-E GAMING/5FF2D0AC5D6D>) |
+| Intel      | Core i5-7300U                    | 2.60 | 343   | [71D2DD20CB26](<Tablet/Panasonic/CF-33/CF-33-1/71D2DD20CB26>) |
+| Intel      | Core i7-8700                     | 3.20 | 343   | [89370B1DE85C](<Desktop/MSI/MS-7/MS-7B18/89370B1DE85C>) |
+| AMD        | Ryzen 5 2500U with Radeon Veg... |      | 342   | [ACFE8ADD45EC](<Notebook/Lenovo/IdeaPad/IdeaPad 330-15ARR 81D2/ACFE8ADD45EC>) |
+| Intel      | Core i5-7400                     | 3.00 | 340   | [E4AB5103884A](<Desktop/Hewlett-Packard/Pavilion/Pavilion Desktop PC 570-p0xx/E4AB5103884A>) |
+| Intel      | Core i5-4590                     | 3.30 | 337   | [28AAC0B95507](<Desktop/Acer/Veriton/Veriton S6630G/28AAC0B95507>) |
+| AMD        | Ryzen 7 3700U with Radeon Veg... |      | 335   | [8942D56644CD](<Notebook/Lenovo/IdeaPad/IdeaPad S340-15API 81NC/8942D56644CD>) |
+| Intel      | Core i7-3630QM                   | 2.40 | 328   | [BBDD2F4A75B6](<Notebook/Hewlett-Packard/ENVY/ENVY dv6/BBDD2F4A75B6>) |
+| Intel      | Celeron N4000                    | 1.10 | 326   | [6956EB99B888](<Notebook/Hewlett-Packard/Laptop/Laptop 14-ck0xxx/6956EB99B888>) |
+| Intel      | Core i7-5500U                    | 2.40 | 322   | [0049D45200B3](<Notebook/Hewlett-Packard/ENVY/ENVY m7/0049D45200B3>) |
+| Intel      | Core i7-4790K                    | 4.00 | 321   | [CAC0DD6997E8](<Desktop/Gigabyte Technology/Z97X-Gaming/Z97X-Gaming 5/CAC0DD6997E8>) |
+| Intel      | Core i7-2670QM                   | 2.20 | 319   | [C133C1641ECF](<Notebook/Toshiba/Satellite/Satellite P755/C133C1641ECF>) |
+| Intel      | Core i3 M 380                    | 2.53 | 318   | [A5968B277DCB](<Notebook/Lenovo/B560/B560 43308LG/A5968B277DCB>) |
+| AMD        | Ryzen 3 2200G with Radeon Veg... |      | 314   | [234F8AC2996B](<Desktop/ASUSTek Computer/PRIME/PRIME A320M-K/234F8AC2996B>) |
+| Intel      | Core i5-8400                     | 2.80 | 312   | [69BE606FC895](<Desktop/MSI/MS-7/MS-7B48/69BE606FC895>) |
+| Intel      | 11th Gen Core i7-11390H          | 3.40 | 310   | [120F397045B8](<Notebook/Dell/Vostro/Vostro 13 5310/120F397045B8>) |
+| AMD        | Ryzen 5 1600 Six-Core            |      | 307   | [D3DABCB5883B](<Desktop/Gigabyte Technology/AB350/AB350-Gaming-CF/D3DABCB5883B>) |
+| Intel      | Core i7-8665U                    | 1.90 | 302   | [050B9B1D7FFD](<Convertible/Fujitsu/LIFEBOOK/LIFEBOOK T939/050B9B1D7FFD>) |
+| AMD        | Ryzen 5 3400G with Radeon Veg... |      | 301   | [EF4B140B96CA](<Desktop/ASUSTek Computer/PRIME/PRIME B450M-K/EF4B140B96CA>) |
+| Intel      | Core i7-7700                     | 3.60 | 300   | [292BEB0D4DA6](<Desktop/ASUSTek Computer/PRIME/PRIME Z270-P/292BEB0D4DA6>) |
+| Intel      | Atom N270                        | 1.60 | 299   | [BFDA6EC83E3A](<Notebook/Hewlett-Packard/Compaq/Compaq Mini 311-1100/BFDA6EC83E3A>) |
+| Intel      | Core i3-3217U                    | 1.80 | 296   | [BD8CBFC97A7E](<Desktop/Lenovo/IdeaCentre/IdeaCentre Q190 10115/BD8CBFC97A7E>) |
+| Intel      | Pentium B960                     | 2.20 | 295   | [C75A2ED8E5A3](<Notebook/Dell/System/System Inspiron N7110/C75A2ED8E5A3>) |
+| Intel      | Core i3-10110U                   | 2.10 | 291   | [311332855F16](<Notebook/Dell/Latitude/Latitude 3410/311332855F16>) |
+| Intel      | Core i5-10300H                   | 2.50 | 288   | [DF60D39CFF89](<Notebook/Acer/Nitro/Nitro AN517-52/DF60D39CFF89>) |
+| Intel      | Core i3-6100                     | 3.70 | 288   | [92BBB4678066](<Desktop/Hewlett-Packard/550/550-166d/92BBB4678066>) |
+| Intel      | Core i3-4005U                    | 1.70 | 287   | [B177451C5799](<Notebook/Dell/Inspiron/Inspiron 3542/B177451C5799>) |
+| AMD        | Ryzen 7 PRO 4750U with Radeon... |      | 285   | [65C9066BF452](<Notebook/Lenovo/ThinkPad/ThinkPad T14 Gen 1 20UES5NA00/65C9066BF452>) |
+| Intel      | Core i5-10400                    | 2.90 | 285   | [C701786EF3F7](<Desktop/Lenovo/IdeaCentre/IdeaCentre 5 14IMB05 90NA001RIX/C701786EF3F7>) |
+| AMD        | E-450 APU with Radeon HD Grap... |      | 283   | [46D02272EFA3](<Notebook/ASUSTek Computer/1225/1225B/46D02272EFA3>) |
+| Intel      | Atom N450                        | 1.66 | 281   | [BCCA88178B39](<Notebook/MSI/MS-N/MS-N014/BCCA88178B39>) |
+| AMD        | Ryzen 9 5900HX with Radeon Gr... |      | 280   | [897AA67A4046](<Desktop/Micro Computer (HK) Tech Limited/UM/UM590/897AA67A4046>) |
+| Intel      | Core i7-7700K                    | 4.20 | 277   | [5F604152EE58](<Desktop/MSI/MS-7/MS-7A68/5F604152EE58>) |
+| AMD        | Ryzen 9 5900X 12-Core            |      | 274   | [CE509B54F33A](<Desktop/ASUSTek Computer/TUF/TUF Gaming X570-PLUS/CE509B54F33A>) |
+| Intel      | Core i7-4510U                    | 2.00 | 274   | [2CE3E3777DB8](<Notebook/Hewlett-Packard/ProBook/ProBook 440 G2/2CE3E3777DB8>) |
+| Intel      | Core i3-4130                     | 3.40 | 273   | [65B45F557B0B](<Desktop/Gigabyte Technology/H97/H97M-HD3/65B45F557B0B>) |
+| Intel      | Celeron N3050                    | 1.60 | 271   | [AD7E2D21FE1A](<Notebook/ASUSTek Computer/X540/X540SA/AD7E2D21FE1A>) |
+| Intel      | Core i7-8700K                    | 3.70 | 270   | [0F9C63DCE4D3](<Desktop/ASUSTek Computer/PRIME/PRIME H310I-PLUS/0F9C63DCE4D3>) |
+| Intel      | Core i7-3770K                    | 3.50 | 269   | [4B8CFE7139DA](<Desktop/ASUSTek Computer/P8Z77-V/P8Z77-V LE PLUS/4B8CFE7139DA>) |
+| Intel      | Core i3-1005G1                   | 1.20 | 267   | [97FB2314C1D2](<Notebook/Dell/Vostro/Vostro 3491/97FB2314C1D2>) |
+| Intel      | Core i3-7100U                    | 2.40 | 265   | [19288C8FC1B0](<Notebook/Lenovo/ThinkPad/ThinkPad E570 20H5S0CF00/19288C8FC1B0>) |
+| Intel      | Core i5-5250U                    | 1.60 | 265   | [64B51A14987B](<Notebook/Apple/MacBookAir7/MacBookAir7,2/64B51A14987B>) |
+| Intel      | Core i5-3570                     | 3.40 | 263   | [39846C6908FB](<Desktop/ASRock/Z68/Z68 Extreme4 Gen3/39846C6908FB>) |
+| Intel      | Celeron J4125                    | 2.00 | 262   | [6C4A4010567B](<Desktop/Seeed Studio/ODYSSEY-X86J41X5/ODYSSEY-X86J41X5 CJ41GV2-410-O.C 12-02-2022 15:01:15/6C4A4010567B>) |
+| Intel      | Core i5-3337U                    | 1.80 | 260   | [A91A0D968260](<Notebook/ASUSTek Computer/K56/K56CA/A91A0D968260>) |
+| Intel      | Core i5-9300H                    | 2.40 | 259   | [5298B6A54341](<Notebook/Acer/Nitro/Nitro AN515-54/5298B6A54341>) |
+| AMD        | Ryzen 3 3200G with Radeon Veg... |      | 253   | [DDBE72A2FA8D](<Desktop/Hewlett-Packard/Desktop/Desktop M01-F0xxx/DDBE72A2FA8D>) |
+| Intel      | Core i3-2330M                    | 2.20 | 249   | [499AEFE74238](<Notebook/Lenovo/G470/G470 20078/499AEFE74238>) |
+| AMD        | Ryzen 9 5950X 16-Core            |      | 247   | [A68679D3B159](<Desktop/Gigabyte Technology/B550/B550 AORUS PRO AC/A68679D3B159>) |
+| Intel      | Pentium Dual-Core T4500          | 2.30 | 247   | [57F9631BBE0B](<Notebook/Lenovo/G550/G550 20023/57F9631BBE0B>) |
+| Intel      | Core i7-2630QM                   | 2.00 | 247   | [94EF4F8FC851](<Notebook/Hewlett-Packard/Pavilion/Pavilion dv7/94EF4F8FC851>) |
+| Intel      | Core i7-4700MQ                   | 2.40 | 247   | [0AFE5D8721FC](<Notebook/Notebook/P375/P375SM/0AFE5D8721FC>) |
+| Intel      | Core i5-8365U                    | 1.60 | 242   | [4B4A75AA346F](<Notebook/Dell/Latitude/Latitude 5400/4B4A75AA346F>) |
+| AMD        | Ryzen 5 3600X 6-Core             |      | 239   | [9E6AC03E4931](<Desktop/ASRock/X370M-HDV/X370M-HDV R4.0/9E6AC03E4931>) |
+| Intel      | Core 2 Duo P8600                 | 2.40 | 239   | [D8EB6E6ABAE2](<Notebook/Dell/Inspiron/Inspiron 1545/D8EB6E6ABAE2>) |
+| Intel      | Core i5-3570K                    | 3.40 | 238   | [FC045897C1E7](<Desktop/ASRock/Z77/Z77 Extreme4/FC045897C1E7>) |
+| Intel      | Core i5-7300HQ                   | 2.50 | 235   | [C72D07F7CCC5](<Notebook/MSI/GL62M/GL62M 7RDX/C72D07F7CCC5>) |
+| Intel      | Core i5-7500                     | 3.40 | 235   | [B112ED0889BD](<Desktop/ASUSTek Computer/H110/H110M-K/B112ED0889BD>) |
+| Intel      | Core i5-2500K                    | 3.30 | 235   | [E44DB9193FF3](<Desktop/MSI/MS/MS-7673/E44DB9193FF3>) |
+| AMD        | FX-8320 Eight-Core               |      | 234   | [B4C8B59A78DE](<Desktop/Gigabyte Technology/970/970A-DS3P/B4C8B59A78DE>) |
+| AMD        | Ryzen 7 2700 Eight-Core          |      | 234   | [55DE784FFBA2](<Desktop/ASRock/AB350M/AB350M Pro4/55DE784FFBA2>) |
+| Intel      | Core i5 M 520                    | 2.40 | 234   | [E4369CCED2D6](<Notebook/Lenovo/ThinkPad/ThinkPad X201 3680X08/E4369CCED2D6>) |
+| Intel      | Core i3-6100U                    | 2.30 | 234   | [19776503D2C1](<Notebook/Lenovo/ThinkPad/ThinkPad L460 20FVS2LC00/19776503D2C1>) |
+| Intel      | Pentium Dual-Core E5300          | 2.60 | 233   | [073D29198D44](<Desktop/Gigabyte Technology/G31/G31M-ES2L/073D29198D44>) |
+| Intel      | Core i5-2500                     | 3.30 | 232   | [8B8801C5D917](<Desktop/ASUSTek Computer/P8H67-M/P8H67-M PRO/8B8801C5D917>) |
+| Intel      | Core i5-4200M                    | 2.50 | 231   | [5FA7CA50988F](<Notebook/Lenovo/ThinkPad/ThinkPad T440p 20AN0069US/5FA7CA50988F>) |
+| Intel      | Core i7-4500U                    | 1.80 | 231   | [48FAC5ACFBCC](<Notebook/ASUSTek Computer/S551/S551LB/48FAC5ACFBCC>) |
+| Intel      | Core i5-6400                     | 2.70 | 231   | [AFC51AE1EE8A](<All In One/MSI/MS-B/MS-B09012/AFC51AE1EE8A>) |
+| AMD        | Ryzen 5 2400G with Radeon Veg... |      | 226   | [7EFFF0688F78](<Desktop/Gigabyte Technology/B450M/B450M DS3H/7EFFF0688F78>) |
+| Intel      | Core i7-3610QM                   | 2.30 | 226   | [142C0ABE36B4](<Notebook/Hewlett-Packard/Pavilion/Pavilion dv6/142C0ABE36B4>) |
+| Intel      | Pentium 2020M                    | 2.40 | 226   | [2846687B9E23](<Notebook/Lenovo/B590/B590 20206/2846687B9E23>) |
+| Intel      | Core i7-6820HQ                   | 2.70 | 226   | [3B8F8D2C29D9](<Notebook/Lenovo/ThinkPad/ThinkPad P50 20EQS12Q06/3B8F8D2C29D9>) |
+| AMD        | Ryzen 7 3800X 8-Core             |      | 225   | [FC88EA97858B](<Desktop/ASUSTek Computer/TUF/TUF B450-PLUS GAMING/FC88EA97858B>) |
+| AMD        | Ryzen 5 2600X Six-Core           |      | 224   | [522A58633AB8](<Desktop/ASRock/B450M/B450M Pro4-F/522A58633AB8>) |
+| AMD        | Ryzen 9 7950X 16-Core            |      | 224   | [D3FAB6D34468](<Desktop/ASRock/X670E/X670E Steel Legend/D3FAB6D34468>) |
+| AMD        | Athlon II X2 250                 |      | 223   | [F39DBE376494](<Desktop/ASUSTek Computer/M5A78L-M/M5A78L-M LE/F39DBE376494>) |
+| Intel      | Atom N455                        | 1.66 | 223   | [86DDC7AC9AB7](<Notebook/eMachines/eM/eM355/86DDC7AC9AB7>) |
+| AMD        | Ryzen 7 1700 Eight-Core          |      | 221   | [D25A5954B7D6](<Desktop/ASUSTek Computer/PRIME/PRIME B350-PLUS/D25A5954B7D6>) |
+| Intel      | Core i3-8100                     | 3.60 | 221   | [2230D71B48FF](<Desktop/Lenovo/IdeaCentre/IdeaCentre 510A-15ICB 90HV001MUS/2230D71B48FF>) |
+| Intel      | Core i5-3317U                    | 1.70 | 221   | [3F284D368C2E](<Notebook/Apple/MacBookAir5/MacBookAir5,1/3F284D368C2E>) |
+| Intel      | Core i7-2600K                    | 3.40 | 220   | [28F5BB366953](<Desktop/Gigabyte Technology/Z68/Z68X-UD3-B3/28F5BB366953>) |
+| Intel      | Core i7-4600U                    | 2.10 | 218   | [6D8BFD9B5EF2](<Notebook/Dell/Latitude/Latitude E7440/6D8BFD9B5EF2>) |
+| Intel      | Core i5 M 460                    | 2.53 | 216   | [F4D1E695E2E8](<Notebook/Acer/Aspire/Aspire 5742/F4D1E695E2E8>) |
+| Intel      | Core i3-3120M                    | 2.50 | 216   | [DE0FA167C05B](<Notebook/Lenovo/ThinkPad/ThinkPad L430 24662N5/DE0FA167C05B>) |
+| AMD        | Ryzen 5 3550H with Radeon Veg... |      | 215   | [32B51ED331BD](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 15-ec0xxx/32B51ED331BD>) |
+| Intel      | Core i5-2540M                    | 2.60 | 215   | [74551388C6E5](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8460p/74551388C6E5>) |
+| Intel      | Core 2 Duo P8700                 | 2.53 | 214   | [BF097D2E0EB3](<Notebook/Apple/MacBookPro5/MacBookPro5,5/BF097D2E0EB3>) |
+| Intel      | Atom Z3735F                      | 1.33 | 214   | [19BF4FD0AB27](<Notebook/ASUSTek Computer/T100/T100TAF/19BF4FD0AB27>) |
+| Intel      | Celeron 2955U                    | 1.40 | 214   | [A0B2FB6F8587](<Notebook/Gateway/NE/NE572/A0B2FB6F8587>) |
+| Intel      | Pentium N3540                    | 2.16 | 213   | [5B6A0065F740](<Notebook/Lenovo/Yoga/Yoga 300-11IBY 80M0/5B6A0065F740>) |
+| AMD        | Ryzen 5 5625U with Radeon Gra... |      | 211   | [DABAF56E5585](<Notebook/Hewlett-Packard/Pavilion/Pavilion Laptop 15-eh2xxx/DABAF56E5585>) |
+| Intel      | Core i3-7100                     | 3.90 | 211   | [1E80645DDF9B](<Desktop/PCWare/IPMH110/IPMH110G-DDR3/1E80645DDF9B>) |
+| Intel      | Core i3-3240                     | 3.40 | 211   | [D25D96FF8FA5](<Desktop/Biostar/H61/H61MGC/D25D96FF8FA5>) |
+| AMD        | FX -4300 Quad-Core               |      | 206   | [F8C4D55B70EA](<Desktop/ASUSTek Computer/M5A78L-M/M5A78L-M LX3/F8C4D55B70EA>) |
+| Intel      | Pentium Dual-Core T4300          | 2.10 | 205   | [3A2238B0E18B](<Notebook/Samsung Electronics/R530/R530-R730/3A2238B0E18B>) |
+| Intel      | Pentium Dual-Core E5700          | 3.00 | 203   | [FB11F6ADEB7F](<Desktop/ICP-iEi/SA/SA16/FB11F6ADEB7F>) |
+| Intel      | Pentium G4400                    | 3.30 | 202   | [E21E2252C54A](<Desktop/MSI/MS/MS-7996/E21E2252C54A>) |
+| Intel      | Pentium Dual-Core T4400          | 2.20 | 201   | [20A7B1828118](<Notebook/Acer/Aspire/Aspire 5732Z/20A7B1828118>) |
+| Intel      | Core i7-3520M                    | 2.90 | 201   | [0E84946ED7FC](<Notebook/Apple/MacBookPro9/MacBookPro9,2/0E84946ED7FC>) |
+| Intel      | Core i7-5600U                    | 2.60 | 201   | [CCE186DED05F](<Notebook/Dell/Latitude/Latitude E5550/CCE186DED05F>) |
+| AMD        | Ryzen 9 5900X 12-Core            |      | 200   | [B7784E7921C1](<Desktop/MSI/MS-7/MS-7D14/B7784E7921C1>) |
+| Intel      | Core i3-8130U                    | 2.20 | 199   | [F6FC816725AE](<All In One/Hewlett-Packard/All-in-One/All-in-One 24-f0xx/F6FC816725AE>) |
+| Intel      | Atom N2600                       | 1.60 | 199   | [3189AD0C2029](<Notebook/ASUSTek Computer/1015/1015CX/3189AD0C2029>) |
+| AMD        | Ryzen 5 5600X 6-Core             |      | 197   | [593FF1160899](<Desktop/ASUSTek Computer/ROG/ROG STRIX B550-F GAMING/593FF1160899>) |
+| Intel      | Core i5-3330                     | 3.00 | 197   | [691348F9B8F7](<Desktop/MSI/MS/MS-7758/691348F9B8F7>) |
+| AMD        | Ryzen 7 6800H with Radeon Gra... |      | 196   | [6C33B6C5E4CA](<Notebook/ASUSTek Computer/ASUS/ASUS TUF Gaming A15 FA507RE_FA577RE/6C33B6C5E4CA>) |
+| Intel      | Core i7-8850H                    | 2.60 | 195   | [55C5D1D9BCA3](<Notebook/Lenovo/ThinkPad/ThinkPad P1 20MES1V800/55C5D1D9BCA3>) |
+| Intel      | Core i5-9400F                    | 2.90 | 193   | [610FBBCCDC71](<Desktop/ASUSTek Computer/PRIME/PRIME H310-PLUS R2.0/610FBBCCDC71>) |
+| Intel      | Core i3 M 330                    | 2.13 | 193   | [C31F487E8425](<Notebook/Dell/Inspiron/Inspiron 1564/C31F487E8425>) |
+| AMD        | Ryzen 7 5825U with Radeon Gra... |      | 191   | [60364FEADB18](<Desktop/Shenzhen DOKE electronic/MP/MP100/60364FEADB18>) |
+| Intel      | Celeron N2830                    | 2.16 | 191   | [882C9935ACA7](<Notebook/Dell/Inspiron/Inspiron 11 - 3147/882C9935ACA7>) |
+| AMD        | Ryzen 7 7730U with Radeon Gra... |      | 190   | [BF78C6914A9F](<Convertible/Lenovo/IdeaPadFlex/IdeaPadFlex 5 14ABR8 82XX/BF78C6914A9F>) |
+| Intel      | Core 2 Duo E7400                 | 2.80 | 189   | [370FD27E468C](<Desktop/ASUSTek Computer/P5KPL-AM/P5KPL-AM SE/370FD27E468C>) |
+| Intel      | Core i3-4030U                    | 1.90 | 189   | [425DA2347FFC](<Notebook/Dell/Inspiron/Inspiron 11 - 3148/425DA2347FFC>) |
+| Intel      | Core i5-9400                     | 2.90 | 188   | [3F7945C53716](<Desktop/ASUSTek Computer/PRIME/PRIME H310M-E R2.0/3F7945C53716>) |
+| Intel      | Core i5 M 560                    | 2.67 | 188   | [33953B7BF047](<Notebook/Hewlett-Packard/G/G42/33953B7BF047>) |
+| Intel      | Core i3-10100                    | 3.60 | 187   | [F54ADC493621](<Desktop/Hewlett-Packard/Slim/Slim Desktop S01-pF1xxx/F54ADC493621>) |
+| Intel      | Pentium N3700                    | 1.60 | 187   | [4210D97C8BC6](<Notebook/DNS/W510/W510LU/4210D97C8BC6>) |
+| Intel      | Core i3-4160                     | 3.60 | 186   | [4222E42A139A](<Desktop/Hewlett-Packard/ProDesk/ProDesk 400 G2 MT/4222E42A139A>) |
+| Intel      | Core i7-10700                    | 2.90 | 185   | [BD8F80012FA4](<Desktop/ASUSTek Computer/ROG/ROG STRIX B460-H GAMING/BD8F80012FA4>) |
+| Intel      | Core i5-4440                     | 3.10 | 185   | [C9C29CB7A349](<Desktop/ASUSTek Computer/All/All Series/C9C29CB7A349>) |
+| Intel      | Core i7-4710HQ                   | 2.50 | 185   | [E85588B5C0C2](<Notebook/ASUSTek Computer/G771/G771JM/E85588B5C0C2>) |
+| AMD        | Ryzen 3 3200U with Radeon Veg... |      | 184   | [01DDE0B05DAB](<Notebook/Lenovo/IdeaPad/IdeaPad L340-15API 81LW/01DDE0B05DAB>) |
+| Intel      | Core i7-7600U                    | 2.80 | 184   | [F075C17EEE65](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 5th 20HRCTO1WW/F075C17EEE65>) |
+| Intel      | Core i7-3632QM                   | 2.20 | 184   | [3A482B4BD601](<Notebook/Lenovo/ThinkPad/ThinkPad T430 2349A17/3A482B4BD601>) |
+| AMD        | Ryzen 7 5700X 8-Core             |      | 182   | [0CF125A71FC2](<Desktop/ASUSTek Computer/TUF/TUF Gaming B550M-ZAKU/0CF125A71FC2>) |
+| Intel      | Celeron N4100                    | 1.10 | 180   | [2CC76EFD06D0](<Notebook/Dell/Wyse/Wyse 5470/2CC76EFD06D0>) |
+| Intel      | Core 2 Duo E6550                 | 2.33 | 180   | [9FE84A87E749](<Desktop/Gigabyte Technology/P35/P35-DS3R/9FE84A87E749>) |
+| Intel      | Core i5 M 480                    | 2.67 | 180   | [D97ACAF2A028](<Notebook/Acer/Aspire/Aspire 5742/D97ACAF2A028>) |
+| AMD        | E-350                            |      | 179   | [190269634D32](<Notebook/Acer/Aspire/Aspire 5253/190269634D32>) |
+| Intel      | Pentium Silver N5000             | 1.10 | 179   | [7697A87466CB](<Notebook/ASUSTek Computer/VivoBook/VivoBook 14_ASUS Laptop X407MA_X407MA/7697A87466CB>) |
+| Intel      | Celeron N3450                    | 1.10 | 179   | [772DD01C99D2](<Notebook/Hampoo/C3/C3W6_AP108_4GB/772DD01C99D2>) |
+| Intel      | Core i3 M 350                    | 2.27 | 178   | [D43480FE5D66](<Notebook/ASUSTek Computer/K72/K72Jr/D43480FE5D66>) |
+| AMD        | Phenom II X4 955                 |      | 176   | [CA1D9809D4A3](<Desktop/ASUSTek Computer/M4/M4A785T-M/CA1D9809D4A3>) |
+| AMD        | Phenom II X4 965                 |      | 176   | [565BD96C0912](<Desktop/ASUSTek Computer/M4A79XTD/M4A79XTD EVO/565BD96C0912>) |
+| Intel      | Core 2 T7200                     | 2.00 | 176   | [ABFBEC695A67](<Notebook/Dell/Inspiron/Inspiron MM061/ABFBEC695A67>) |
+| Intel      | Core 2 Duo P8400                 | 2.26 | 174   | [7D3E8CB7704B](<Notebook/Packard Bell/EasyNote/EasyNote ML65/7D3E8CB7704B>) |
+| Intel      | Pentium G3220                    | 3.00 | 174   | [A7A5A85D06C6](<Desktop/Gigabyte Technology/H81/H81M-S2PH/A7A5A85D06C6>) |
+| Intel      | Pentium N4200                    | 1.10 | 174   | [FAB169D73643](<Notebook/Acer/Aspire/Aspire A114-31/FAB169D73643>) |
+| AMD        | Ryzen 3 3250U with Radeon Gra... |      | 173   | [BC7A8F028184](<Notebook/Unchartevice/6540/6540/BC7A8F028184>) |
+| Intel      | Core i5 M 430                    | 2.27 | 173   | [7ECF22E8607B](<Notebook/Hewlett-Packard/ProBook/ProBook 4720s/7ECF22E8607B>) |
+| Intel      | Pentium N3710                    | 1.60 | 172   | [E84CE2292245](<Notebook/Dell/Inspiron/Inspiron 15-3552/E84CE2292245>) |
+| Intel      | Core i7-10710U                   | 1.10 | 171   | [01AA0F125F1B](<Mini Pc/Intel Client Systems/NUC10/NUC10i7FNK/01AA0F125F1B>) |
+| Intel      | Celeron N4120                    | 1.10 | 170   | [4DDCFDF3E5EE](<Convertible/Medion/E/E3224/4DDCFDF3E5EE>) |
+| Intel      | Core i5-6600K                    | 3.50 | 170   | [9725E019A5E8](<Desktop/Gigabyte Technology/Z170X-Gaming/Z170X-Gaming 7/9725E019A5E8>) |
+| AMD        | A8-7410 APU with AMD Radeon R... |      | 167   | [56E83070BA6B](<Desktop/Hewlett-Packard/260/260-a123nl/56E83070BA6B>) |
+| Intel      | Core i5 750                      | 2.67 | 167   | [14462A4951D0](<Desktop/MSI/MS/MS-7583/14462A4951D0>) |
+| Intel      | Pentium Dual-Core T4200          | 2.00 | 166   | [886BF877022D](<Notebook/Toshiba/Satellite/Satellite U400/886BF877022D>) |
+| Intel      | Pentium M processor              | 1.20 | 165   | [FABC5AC48B1E](<Notebook/Fujitsu Siemens/LIFEBOOK/LIFEBOOK S7020/FABC5AC48B1E>) |
+| Intel      | Pentium Dual-Core E5400          | 2.70 | 165   | [D818B3CDE8A3](<Desktop/Biostar/G41/G41D3/D818B3CDE8A3>) |
+| AMD        | Ryzen 5 7520U with Radeon Gra... |      | 162   | [9DDB0CB01873](<Notebook/ASUSTek Computer/Vivobook/Vivobook Go E1504FA_E1504FA/9DDB0CB01873>) |
+| Intel      | Core i7-4770K                    | 3.50 | 162   | [E9FC93F4366A](<Desktop/ASUSTek Computer/All/All Series/E9FC93F4366A>) |
+| Intel      | Pentium P6100                    | 2.00 | 161   | [CEAA1DA52EDF](<Notebook/Acer/Aspire/Aspire 5742Z/CEAA1DA52EDF>) |
 
 ### Memory
 
 | MFG        | Name                         | Size     | Type | MT/s | Count | Report |
 |------------|------------------------------|----------|------|------|-------|--------|
-| Samsung    | M471A5244CB0-CTD SODIMM      | 4 GB     | DDR4 | 3266 | 963   | [40E4E0D39D59](<Notebook/Lenovo/IdeaPad/IdeaPad 530S-14ARR 81H1/40E4E0D39D59>) |
-| SK hynix   | HMA81GS6AFR8N-UH SODIMM      | 8 GB     | DDR4 | 2667 | 943   | [CF634F337F26](<Mini Pc/Lenovo/ThinkCentre/ThinkCentre M710q 10MR001YMZ/CF634F337F26>) |
-| Samsung    | M471B5273DH0-CH9 SODIMM      | 4 GB     | DDR3 | 1334 | 929   | [6451DAC2C40C](<Notebook/Clevo/W240/W240EL-W250ELQ-W270ELQ/6451DAC2C40C>) |
-| Samsung    | M471B5173DB0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 843   | [91236DA4B8CC](<Notebook/Hewlett-Packard/15/15/91236DA4B8CC>) |
-| Samsung    | M471B5173QH0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 790   | [BE159E2FFF98](<Notebook/Lenovo/ThinkPad/ThinkPad T440 20B7A0CYFR/BE159E2FFF98>) |
-| Samsung    | M471A1G44AB0-CWE SODIMM      | 8 GB     | DDR4 | 3200 | 787   | [E10E74F99078](<Convertible/Lenovo/ThinkPad/ThinkPad L13 Yoga Gen 2 20VK0019US/E10E74F99078>) |
-|            | 123456789012345678 SODIMM... | 2 GB     |      | 2400 | 656   | [F85ED92E93ED](<Notebook/GPU Company/GWTC116/GWTC116-2/F85ED92E93ED>) |
-| Samsung    | M471B5173EB0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 650   | [2EDB83247697](<Notebook/Hewlett-Packard/Notebook/Notebook/2EDB83247697>) |
-| Samsung    | M471A5244CB0-CRC SODIMM      | 4 GB     | DDR4 | 2667 | 649   | [5AD4BE07916A](<Notebook/Lenovo/IdeaPad/IdeaPad 320-15IKB 80YH/5AD4BE07916A>) |
-| Samsung    | M471B5273CH0-CH9 SODIMM      | 4 GB     | DDR3 | 1334 | 644   | [B84254541CB4](<Notebook/Lenovo/ThinkPad/ThinkPad Edge E320 129885G/B84254541CB4>) |
-|            | Module DIMM                  | 2048 MB  | DDR2 | 800  | 638   | [36027F8271C2](<Desktop/ASUSTek Computer/P5/P5Q/36027F8271C2>) |
-|            | Module DIMM SDRAM            | 2048 MB  |      |      | 616   | [367737B0531D](<Desktop/ECS/G31/G31T-M7/367737B0531D>) |
-|            | Module DIMM                  | 4096 MB  |      | 1333 | 570   | [9A8304B2EB9E](<Desktop/Gigabyte Technology/GA-970/GA-970A-UD3/9A8304B2EB9E>) |
-|            | Module DIMM                  | 2048 MB  |      | 800  | 568   | [4C1C2EA37337](<Desktop/Gigabyte Technology/M56/M56S-S3/4C1C2EA37337>) |
-| Samsung    | M471A1K43DB1-CWE SODIMM      | 8 GB     | DDR4 | 3200 | 567   | [674D96FDF457](<Notebook/ASUSTek Computer/ROG/ROG Zephyrus M15 GU502LW_GU502LW/674D96FDF457>) |
-| SK hynix   | HMT451S6BFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 560   | [C215D8839BA5](<Notebook/Panasonic/CF-54/CF-54-1/C215D8839BA5>) |
-| Samsung    | M471A1K43CB1-CRC SODIMM      | 8 GB     | DDR4 | 2667 | 545   | [4BEE0CAA54AA](<Notebook/Hewlett-Packard/250/250 G5 Notebook PC/4BEE0CAA54AA>) |
-| Samsung    | M471A1K43CB1-CTD SODIMM      | 8 GB     | DDR4 | 2667 | 525   | [6AF4025C842E](<Notebook/Hewlett-Packard/Laptop/Laptop 15-da1xxx/6AF4025C842E>) |
-|            | Module DIMM                  | 2048 MB  |      | 1333 | 516   | [196D4EF3C39F](<Desktop/Gigabyte Technology/GA-890/GA-890GPA-UD3H/196D4EF3C39F>) |
-|            | Module DIMM SDRAM            | 1024 MB  |      |      | 493   | [CAC1B02939F7](<Desktop/MSI/MS-7210/MS-7210 100/CAC1B02939F7>) |
-| SK hynix   | HMT351S6CFR8C-PB SODIMM      | 4 GB     | DDR3 | 1600 | 478   | [C358BF3191FD](<Notebook/ASUSTek Computer/X501/X501A1/C358BF3191FD>) |
-| Samsung    | M471B5773CHS-CH9 SODIMM      | 2048 MB  | DDR3 | 4199 | 474   | [03CF7A67BAC6](<Notebook/Dell/Latitude/Latitude E5520/03CF7A67BAC6>) |
-| Samsung    | M471A1K43DB1-CTD SODIMM      | 8 GB     | DDR4 | 2667 | 463   | [5F4D0AB0905E](<Notebook/Lenovo/Legion/Legion Y540-15IRH 81SX/5F4D0AB0905E>) |
-| Samsung    | M471B1G73DB0-YK0 SODIMM      | 8192 MB  | DDR3 | 1600 | 463   | [4D3BE90674ED](<Notebook/Lenovo/E50-80/E50-80 80J2/4D3BE90674ED>) |
-| Samsung    | M471B5273DH0-CK0 SODIMM      | 4 GB     | DDR3 | 1600 | 461   | [B36E5125492E](<Notebook/Toshiba/Satellite/Satellite L855/B36E5125492E>) |
-| Samsung    | M471B5773DH0-CH9 SODIMM      | 2048 MB  |      | 1600 | 456   | [255277C340F9](<Notebook/Fujitsu/T/T900/255277C340F9>) |
-| Corsair    | CMK16GX4M2B3200C16 DIMM      | 8 GB     | DDR4 | 3600 | 451   | [0A9E01FDC5FC](<Desktop/MSI/MS-7/MS-7A34/0A9E01FDC5FC>) |
-| Micron     | 4ATF51264HZ-2G6E1 SODIMM     | 4 GB     | DDR4 | 2667 | 433   | [995D0AA58091](<Notebook/Lenovo/IdeaPad/IdeaPad 330S-15IKB 81F5/995D0AA58091>) |
-| Samsung    | M471B1G73QH0-YK0 SODIMM      | 8192 MB  | DDR3 | 1867 | 422   | [441E0E237259](<Notebook/Acer/Aspire/Aspire E5-571G/441E0E237259>) |
-| SK hynix   | HMA851S6AFR6N-UH SODIMM      | 4 GB     | DDR4 | 2667 | 405   | [2144FBCACB95](<Notebook/ASUSTek Computer/VivoBook/VivoBook 15_ASUS Laptop X507UAR/2144FBCACB95>) |
-| SK hynix   | HMT41GS6BFR8A-PB SODIMM      | 8192 MB  | DDR3 | 1600 | 397   | [5951FA74A2EE](<Notebook/Lenovo/ThinkPad/ThinkPad W541 20EGS0B010/5951FA74A2EE>) |
-| Samsung    | M471A5244CB0-CWE SODIMM      | 4 GB     | DDR4 | 3200 | 381   | [A3EC1FBD0030](<Notebook/Lenovo/ThinkPad/ThinkPad T470 20HD0001MX/A3EC1FBD0030>) |
-|            | Module DIMM                  | 1024 MB  | DDR2 | 800  | 380   | [35969E35F43D](<Desktop/Intel/DG41RQ/DG41RQ AAE54511-203/35969E35F43D>) |
-|            | Module SODIMM                | 2048 MB  | DDR2 | 667  | 372   | [AA102333E166](<Desktop/Standard/XS/XS35/AA102333E166>) |
-| Samsung    | M471A1K43BB1-CRC SODIMM      | 8 GB     | DDR4 | 2667 | 367   | [71FFDA7F373E](<Notebook/Dell/Latitude/Latitude 7490/71FFDA7F373E>) |
-| Samsung    | M471A1G44AB0-CWE Row Of C... | 8 GB     | DDR4 | 3200 | 358   | [7E43A9DF4838](<Notebook/Lenovo/V17/V17 G2 ITL 82NX/7E43A9DF4838>) |
-| SK hynix   | HMA81GS6CJR8N-VK SODIMM      | 8 GB     | DDR4 | 2667 | 351   | [4DDB8C367C5E](<Convertible/Lenovo/Yoga/Yoga 530-14IKB 81EK/4DDB8C367C5E>) |
-| Samsung    | M471A1K43EB1-CWE SODIMM      | 8 GB     | DDR4 | 3200 | 343   | [61779DC30678](<Notebook/Hewlett-Packard/Laptop/Laptop 17-cn2xxx/61779DC30678>) |
-| SK hynix   | HMA81GS6JJR8N-VK SODIMM      | 8 GB     | DDR4 | 2667 | 335   | [159C1420443D](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 15-dk0xxx/159C1420443D>) |
-| Corsair    | CMK16GX4M2B3000C15 DIMM      | 8 GB     | DDR4 | 3200 | 318   | [B647CF3822F1](<Desktop/ASUSTek Computer/ROG/ROG STRIX Z370-G GAMING/B647CF3822F1>) |
-| Kingston   | KHX1600C9D3/4GX DIMM         | 4 GB     | DDR3 | 1600 | 318   | [5F478F119DC0](<Desktop/Shuttle/SZ/SZ77/5F478F119DC0>) |
-| Micron     | 4ATF1G64HZ-3G2E1 SODIMM      | 8 GB     | DDR4 | 3200 | 315   | [BA29145B1BAF](<Notebook/Lenovo/ThinkBook/ThinkBook 15 G2 ARE 20VG/BA29145B1BAF>) |
-| Samsung    | M471B1G73EB0-YK0 SODIMM      | 8 GB     | DDR3 | 1600 | 312   | [DB0B516E7227](<Notebook/Lenovo/IdeaPad/IdeaPad 110-15ACL 80TJ/DB0B516E7227>) |
-|            | Module SODIMM                | 2048 MB  | DDR2 |      | 307   | [E55BD7ACEF7B](<Notebook/Acer/Aspire/Aspire 5110/E55BD7ACEF7B>) |
-|            | Module SODIMM                | 2 GB     | DDR2 | 667  | 304   | [25DC47FCD4CF](<Notebook/Apple/MacBook3/MacBook3,1/25DC47FCD4CF>) |
-| Kingston   | KHX1600C10D3/8G DIMM         | 8 GB     | DDR3 | 1600 | 297   | [0931B22FD179](<Desktop/ASRock/Z97/Z97 Extreme4/0931B22FD179>) |
-|            | Module DIMM                  | 1024 MB  |      | 800  | 297   | [379945E91382](<Desktop/Gigabyte Technology/G41/G41M-ES2L/379945E91382>) |
-| Elpida     | EBJ41UF8BCS0-DJ-F SODIMM     | 4096 MB  | DDR3 | 1334 | 296   | [BD76C9627370](<Notebook/ASUSTek Computer/X202/X202E/BD76C9627370>) |
-|            | Module DIMM                  | 4096 MB  | DDR3 | 1333 | 295   | [BE1BD60498B9](<Desktop/ASUSTek Computer/M5A97/M5A97 R2.0/BE1BD60498B9>) |
-|            | Module DIMM                  | 1024 MB  | DDR2 | 667  | 294   | [AE084EA145E6](<Desktop/Fujitsu Siemens/ESPRIMO/ESPRIMO EDITION P2511/AE084EA145E6>) |
-| SK hynix   | HMT451S6AFR8A-PB SODIMM      | 4096 MB  | DDR3 | 1600 | 293   | [EB7267A67BDA](<Notebook/ASUSTek Computer/X550/X550LB/EB7267A67BDA>) |
-| Samsung    | M471A2K43DB1-CWE SODIMM      | 16 GB    | DDR4 | 3200 | 291   | [11F61137DC15](<Notebook/Dynabook/Satellite/Satellite Pro C50-J/11F61137DC15>) |
-| Micron     | 8ATF1G64HZ-3G2J1 SODIMM      | 8 GB     | DDR4 | 3200 | 289   | [69E8EF1A2769](<Notebook/ASUSTek Computer/TUF/TUF Gaming FX505DT_FX505DT/69E8EF1A2769>) |
-| Samsung    | M471A2K43CB1-CTD SODIMM      | 16 GB    | DDR4 | 8400 | 280   | [9654B0B310BA](<Desktop/Others/Others/Others/9654B0B310BA>) |
-| Samsung    | M471B5673FH0-CH9 SODIMM      | 2048 MB  | DDR3 | 1334 | 279   | [E48B9460A6B3](<Notebook/Hewlett-Packard/EliteBook/EliteBook 2540p/E48B9460A6B3>) |
-|            | Module DIMM                  | 2048 MB  | DDR2 | 667  | 276   | [AE084EA145E6](<Desktop/Fujitsu Siemens/ESPRIMO/ESPRIMO EDITION P2511/AE084EA145E6>) |
-| SK hynix   | HMA41GS6AFR8N-TF SODIMM      | 8 GB     | DDR4 | 2667 | 273   | [0A14953B346E](<Desktop/Dell/OptiPlex/OptiPlex 3050/0A14953B346E>) |
-| Micron     | 4ATF51264HZ-3G2J1 SODIMM     | 4 GB     | DDR4 | 3200 | 269   | [EEC49B509995](<Convertible/Hewlett-Packard/ENVY/ENVY x360 Convertible 15-ee1xxx/EEC49B509995>) |
-| Micron     | 8KTF51264HZ-1G6E1 SODIMM     | 4 GB     | DDR3 | 1600 | 269   | [287C0142E54D](<Notebook/ASUSTek Computer/X555/X555LJ/287C0142E54D>) |
-| SK hynix   | HMA81GS6DJR8N-XN SODIMM      | 8 GB     | DDR4 | 3200 | 267   | [B469300A3E04](<Notebook/Dell/Latitude/Latitude 5310/B469300A3E04>) |
-|            | 123456789012345678 DIMM L... | 2 GB     |      | 2400 | 266   | [7E2DCAD143A6](<Desktop/Others/Others/Others/7E2DCAD143A6>) |
-| Micron     | 8ATF1G64HZ-2G6E1 SODIMM      | 8 GB     | DDR4 | 2667 | 266   | [3735EB8699CE](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop X510QA_X510QA/3735EB8699CE>) |
-| SK hynix   | Module SODIMM                | 1 GB     | DDR2 | 800  | 264   | [D9B78B2BBE43](<Notebook/Apple/MacBook5/MacBook5,2/D9B78B2BBE43>) |
-|            | Module DIMM                  | 4 GB     |      | 1333 | 261   | [99DA8E367A7A](<Desktop/Gigabyte Technology/Z68/Z68MA-D2H-B3/99DA8E367A7A>) |
-| Samsung    | M471B5673FH0-CF8 SODIMM      | 2 GB     | DDR3 | 1067 | 252   | [16E400040011](<Notebook/Dell/Studio/Studio 1749/16E400040011>) |
-|            | Module SODIMM                | 1024 MB  | DDR2 |      | 251   | [AC99315BC1FF](<Notebook/Toshiba/Satellite/Satellite A100/AC99315BC1FF>) |
-| Kingston   | KHX2666C16/8G DIMM           | 8 GB     | DDR4 | 3466 | 248   | [06D2617A49D3](<Desktop/Gigabyte Technology/Z370/Z370 HD3P/06D2617A49D3>) |
-| Micron     | 16KTF51264HZ-1G6M1 SODIMM    | 4 GB     | DDR3 | 1600 | 244   | [BF600B17E00E](<Notebook/ASUSTek Computer/S550/S550CM/BF600B17E00E>) |
-|            | Module SODIMM                | 1024 MB  | DDR2 | 667  | 242   | [061881953EF5](<Notebook/Lenovo/ThinkPad/ThinkPad SL500 27464DG/061881953EF5>) |
-|            | Module DIMM                  | 2 GB     | DDR2 | 800  | 242   | [3FD6E4DB1ED2](<Desktop/ASUSTek Computer/P5Q/P5Q SE2/3FD6E4DB1ED2>) |
-| Micron     | 4ATF51264HZ-2G3B1 SODIMM     | 4 GB     | DDR4 | 2400 | 240   | [6637BFAE0708](<Notebook/Acer/Aspire/Aspire A315-53/6637BFAE0708>) |
-|            | Module SODIMM                | 4096 MB  | DDR3 |      | 239   | [9465299787D1](<Notebook/Sony/SVF1521/SVF1521C6EW/9465299787D1>) |
-| Nanya      | NT2GC64B88B0NS-CG SODIMM     | 2 GB     |      | 1334 | 235   | [221FB2041E0B](<Notebook/Fujitsu/FMVA705/FMVA705ABS/221FB2041E0B>) |
-|            | Module DIMM SDRAM            | 2 GB     |      |      | 233   | [169175B3E5B7](<Desktop/ASRock/A330/A330GC/169175B3E5B7>) |
-| Samsung    | M471A2K43CB1-CRC SODIMM      | 16 GB    | DDR4 | 2667 | 233   | [057161CC5B29](<Notebook/Lenovo/ThinkPad/ThinkPad T470 20HES63400/057161CC5B29>) |
-| G.Skill    | F4-3200C16-8GVKB DIMM        | 8 GB     | DDR4 | 3866 | 232   | [94E45CAB4EE0](<Desktop/Gigabyte Technology/Z390/Z390 GAMING X/94E45CAB4EE0>) |
-| Micron     | 4ATF1G64HZ-3G2E1 Row Of C... | 8 GB     | DDR4 | 3200 | 231   | [6D5F5C296418](<Convertible/Lenovo/IdeaPadFlex/IdeaPadFlex 5 14IIL05 81X1/6D5F5C296418>) |
-| SK hynix   | HMAA1GS6CJR6N-XN SODIMM      | 8192 MB  | DDR4 | 3200 | 227   | [BC262F5312A0](<Notebook/Dell/Latitude/Latitude 5520/BC262F5312A0>) |
-| Micron     | 4ATF1G64HZ-3G2E2 SODIMM      | 8 GB     | DDR4 | 3200 | 226   | [391EED81DBAB](<Notebook/Lenovo/ThinkBook/ThinkBook 16p Gen 2 20YM/391EED81DBAB>) |
-| G.Skill    | F4-3200C16-16GVK DIMM        | 16 GB    | DDR4 | 3600 | 225   | [D1E7CA404339](<Desktop/ASUSTek Computer/PRIME/PRIME X570-PRO/D1E7CA404339>) |
-| Kingston   | KHX3200C16D4/8GX DIMM        | 8 GB     | DDR4 | 3600 | 222   | [2A24C69265A0](<Desktop/MSI/MS-7/MS-7C37/2A24C69265A0>) |
-| Crucial    | CT102464BF160B.C16 SODIMM    | 8 GB     | DDR3 | 1600 | 220   | [D88E08C3A7A1](<Notebook/TerraQue/W65/W65_W67RB/D88E08C3A7A1>) |
-| SK hynix   | H9CCNNNCLGALAR-NVD Row Of... | 8 GB     |      | 2133 | 220   | [1139C4064B3E](<Notebook/Dell/XPS/XPS 13 7390/1139C4064B3E>) |
-| SK hynix   | HMT351S6EFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 215   | [A448AB0E32FF](<Notebook/Dell/Inspiron/Inspiron 5521/A448AB0E32FF>) |
-| Samsung    | M471B5273CH0-CK0 SODIMM      | 4 GB     | DDR3 | 1333 | 215   | [B9DCF480A389](<Notebook/ASUSTek Computer/X401/X401A1/B9DCF480A389>) |
-|            | Module DIMM                  | 2 GB     |      | 800  | 214   | [13F02D223AC8](<Desktop/Gigabyte Technology/GA-MA770/GA-MA770-US3/13F02D223AC8>) |
-|            | Module DIMM                  | 2048 MB  |      | 667  | 212   | [FF39EAFDF33C](<Desktop/Gigabyte Technology/G33/G33M-S2/FF39EAFDF33C>) |
-|            | Module DIMM                  | 4096 MB  |      | 1600 | 209   | [1FBAF6BE6F36](<Desktop/ASUSTek Computer/M4A785TD-M/M4A785TD-M EVO/1FBAF6BE6F36>) |
-| Kingston   | KHX1866C10D3/8G DIMM         | 8 GB     | DDR3 | 2133 | 208   | [CC8F22CF0D4F](<Desktop/MSI/MS/MS-7922/CC8F22CF0D4F>) |
-|            | Module DIMM                  | 1024 MB  |      | 667  | 200   | [379945E91382](<Desktop/Gigabyte Technology/G41/G41M-ES2L/379945E91382>) |
-| Samsung    | M471A5244CB0-CWE Row Of C... | 4 GB     | DDR4 | 3200 | 197   | [0D45CB7AAF30](<Notebook/Lenovo/IdeaPad/IdeaPad 3 15IML05 81WB/0D45CB7AAF30>) |
-| SK hynix   | HMA82GS6AFR8N-UH SODIMM      | 16 GB    | DDR4 | 2667 | 197   | [97C1F8B840C8](<Mini Pc/ZOTAC/ZBOX-ECM7307/ZBOX-ECM73070C-7307LH-53060C/97C1F8B840C8>) |
-| SK hynix   | HMA82GS6JJR8N-VK SODIMM      | 16 GB    | DDR4 | 2667 | 197   | [D3E48CC00280](<Notebook/Dell/Latitude/Latitude 5580/D3E48CC00280>) |
-| SK hynix   | HMA851S6CJR6N-VK SODIMM      | 4 GB     | DDR4 | 2667 | 194   | [D52DC518DF62](<Notebook/Dell/Inspiron/Inspiron 5490/D52DC518DF62>) |
-| Kingston   | KHX2400C15/8G DIMM           | 8 GB     | DDR4 | 3400 | 193   | [251C93855B45](<Desktop/MSI/MS-7/MS-7A33/251C93855B45>) |
-|            | Module DIMM                  | 2048 MB  | DDR3 | 1333 | 193   | [25E2FF4C9B8F](<Server/Hewlett-Packard/ProLiant/ProLiant DL360 G7/25E2FF4C9B8F>) |
-| G.Skill    | F4-3000C16-8GISB DIMM        | 8192 MB  | DDR4 | 3200 | 192   | [1DCD288DE1CB](<Desktop/ASUSTek Computer/ROG/ROG STRIX B550-F GAMING/1DCD288DE1CB>) |
-| SK hynix   | HMT351U6CFR8C-PB DIMM        | 4 GB     | DDR3 | 1800 | 192   | [4B34DC92D076](<Desktop/Dell/OptiPlex/OptiPlex 7010/4B34DC92D076>) |
-| SK hynix   | HYMP125S64CP8-S6 SODIMM DDR  | 2 GB     |      | 800  | 192   | [F6A099116F75](<Notebook/Dell/Inspiron/Inspiron 1545/F6A099116F75>) |
-| SK hynix   | HMT351S6CFR8C-H9 SODIMM      | 4096 MB  | DDR3 | 1333 | 190   | [BA1DF2DADB62](<Notebook/ASUSTek Computer/K73/K73SJ/BA1DF2DADB62>) |
-| SK hynix   | HMT41GS6AFR8A-PB SODIMM      | 8192 MB  | DDR3 | 1600 | 190   | [58E500E065B5](<Notebook/Lenovo/ThinkPad/ThinkPad W540 20BHS1J000/58E500E065B5>) |
-| Micron     | 16KTF1G64HZ-1G6E1 SODIMM     | 8 GB     | DDR3 | 1600 | 190   | [9DC8CA3DF416](<Notebook/Dell/Latitude/Latitude E7450/9DC8CA3DF416>) |
-|            | Module DIMM                  | 4 GB     | DDR3 | 1333 | 190   | [A77DA1060A8E](<Desktop/Foxconn/H61/H61MXV-H67MXV/A77DA1060A8E>) |
-| Kingston   | 99U5428-018.A00LF SODIMM     | 8 GB     | DDR3 | 1600 | 189   | [03EEFC9685DF](<Notebook/Lenovo/G50-70/G50-70 20351/03EEFC9685DF>) |
-| Samsung    | M471A2K43DB1-CTD SODIMM      | 16 GB    | DDR4 | 2667 | 189   | [F5BC18F8B347](<Notebook/Lenovo/Legion/Legion Y540-17IRH 81Q4/F5BC18F8B347>) |
-| Crucial    | CT102464BF160B.M16 SODIMM    | 8 GB     | DDR3 | 1600 | 186   | [B50AFE691E19](<Notebook/Acer/Aspire/Aspire ES1-132/B50AFE691E19>) |
-| SK hynix   | HMT425S6AFR6A-PB SODIMM      | 2 GB     | DDR3 | 3200 | 185   | [36D732658869](<Notebook/ASUSTek Computer/S551/S551LN/36D732658869>) |
-| Samsung    | M471A1K43BB0-CPB SODIMM      | 8 GB     | DDR4 | 2133 | 184   | [578E80B42B1D](<Notebook/Dell/Vostro/Vostro 14-3468/578E80B42B1D>) |
-| Corsair    | CMK32GX4M2B3200C16 DIMM      | 16 GB    | DDR4 | 3400 | 183   | [27EB1FCAC7E3](<Desktop/ASUSTek Computer/PRIME/PRIME Z490-A/27EB1FCAC7E3>) |
-| SK hynix   | HMAA1GS6CJR6N-XN SODIMM      | 8 GB     | DDR4 | 3200 | 183   | [2BE152EEFFDD](<Notebook/Lenovo/Legion/Legion 5 15ACH6 82JW/2BE152EEFFDD>) |
-| Nanya      | NT4GC64B8HB0NS-CG SODIMM     | 4 GB     | DDR3 | 1334 | 183   | [7713EE2713FC](<Notebook/Acer/Aspire/Aspire 5750G/7713EE2713FC>) |
-| Samsung    | M471A2G44AM0-CWE SODIMM      | 16 GB    | DDR4 | 3200 | 183   | [453DF2D4D0F6](<Notebook/Lenovo/ThinkPad/ThinkPad T14 Gen 1 20S0S2FQ00/453DF2D4D0F6>) |
-|            | Module DIMM                  | 2048 MB  |      | 400  | 182   | [0D061C50B134](<Desktop/Gigabyte Technology/EG41/EG41MFT-US2H/0D061C50B134>) |
-| SK hynix   | HMT325S6BFR8C-H9 SODIMM      | 2 GB     |      | 1600 | 181   | [221FB2041E0B](<Notebook/Fujitsu/FMVA705/FMVA705ABS/221FB2041E0B>) |
-| SK hynix   | HMT451S6BFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 178   | [989373FD84A0](<Notebook/Acer/Aspire/Aspire E5-521G/989373FD84A0>) |
-|            | Module DIMM                  | 2 GB     |      | 1333 | 178   | [EE2D95CF9A1E](<Desktop/Gigabyte Technology/GA-78/GA-78LMT-USB3/EE2D95CF9A1E>) |
-|            | Module DIMM SDRAM            | 512 MB   |      |      | 178   | [7CD02692A8A4](<Desktop/EVERCOM NETWORK/Others/Others/7CD02692A8A4>) |
-| Elpida     | EBJ40UG8BBU0-GN-F SODIMM     | 4 GB     | DDR3 | 1600 | 173   | [8854B2161F24](<Notebook/Lenovo/ThinkPad/ThinkPad T420s 4174W2X/8854B2161F24>) |
-| Micron     | 8JTF51264AZ-1G6E1 DIMM       | 4 GB     | DDR3 | 1600 | 173   | [4A54E9E0D620](<Desktop/Hewlett-Packard/EliteDesk/EliteDesk 800 G1 SFF/4A54E9E0D620>) |
-| Ramaxel    | RMSA3260ME78HAF-2666 SODIMM  | 8 GB     | DDR4 | 2667 | 173   | [632E4360ACF2](<Notebook/Lenovo/20RD001/20RD001FHV/632E4360ACF2>) |
-| Kingston   | 99U5584-005.A00LF DIMM       | 4 GB     | DDR3 | 1600 | 172   | [7854EA01C399](<Desktop/ASUSTek Computer/F1/F1A75-V/7854EA01C399>) |
-| SK hynix   | HMA81GS6DJR8N-XN SODIMM      | 8192 MB  | DDR4 | 3200 | 169   | [168A3EC1E1EA](<Notebook/Hewlett-Packard/Victus/Victus by Laptop 16-e0xxx/168A3EC1E1EA>) |
-| Samsung    | M471B5674QH0-YK0 SODIMM      | 2 GB     | DDR3 | 1600 | 169   | [AE366F96F926](<Notebook/Lenovo/Yoga/Yoga 300-11IBY 80M0/AE366F96F926>) |
-| Samsung    | M471B5773DH0-CK0 SODIMM      | 2 GB     | DDR3 | 1600 | 169   | [0F767C61EAA3](<Notebook/Lenovo/V580c/V580c 20160/0F767C61EAA3>) |
-| Micron     | 16JSF51264HZ-1G4D1 SODIMM    | 4 GB     | DDR3 | 1334 | 167   | [18328F956F7B](<Notebook/Hewlett-Packard/Others/Others/18328F956F7B>) |
-|            | Module DIMM                  | 1024 MB  |      |      | 165   | [92C78BFA8A5B](<Desktop/EPoX Computer/nForce3/nForce3 DDR: 8KDA3I Series/92C78BFA8A5B>) |
-| Samsung    | M378B5273DH0-CH9 DIMM        | 4 GB     | DDR3 | 2133 | 165   | [D98A1DAB1265](<Desktop/Dell/OptiPlex/OptiPlex 390/D98A1DAB1265>) |
-| Samsung    | M471A4G43MB1-CTD SODIMM      | 32 GB    | DDR4 | 2667 | 165   | [B723043741B6](<Notebook/Dell/XPS/XPS 15 9570/B723043741B6>) |
-| SK hynix   | HMT351S6CFR8C-H9 SODIMM      | 4 GB     | DDR3 | 1334 | 165   | [2D936D9BC482](<Notebook/Medion/X/X6816/2D936D9BC482>) |
-| 48spaces   | 0123456789012345678901234... | 2 GB     | DDR2 | 667  | 159   | [5FAE2CF4B073](<Notebook/Samsung Electronics/NC210/NC210-NC110/5FAE2CF4B073>) |
-| Nanya      | NT4GC64B8HG0NS-CG SODIMM     | 4096 MB  | DDR3 | 1334 | 159   | [E28D554E86AB](<Notebook/ASUSTek Computer/K54/K54HR/E28D554E86AB>) |
-|            | Module SODIMM                | 4 GB     | DDR3 |      | 158   | [F82C1434057C](<Notebook/Sony/SVF1521/SVF1521G1EW/F82C1434057C>) |
-| Samsung    | M471A1G44BB0-CWE SODIMM      | 8 GB     | DDR4 | 3200 | 157   | [EAB3E679E00F](<Notebook/Lenovo/ThinkPad/ThinkPad L13 Gen 3 21BAS0X700/EAB3E679E00F>) |
-| Samsung    | M471A5244BB0-CRC SODIMM      | 4 GB     | DDR4 | 2667 | 155   | [5DBF672BE302](<Notebook/Hewlett-Packard/240/240 G6 Notebook PC/5DBF672BE302>) |
-| Samsung    | M471A5244CB0-CTD Row Of C... | 4 GB     | DDR4 | 2667 | 155   | [10E137561305](<Notebook/HUAWEI/BOHK-WAX9/BOHK-WAX9X/10E137561305>) |
-| Samsung    | M471A2G43AB2-CWE SODIMM      | 16 GB    | DDR4 | 3200 | 154   | [8C478B25D8B8](<Notebook/Dell/Precision/Precision 7550/8C478B25D8B8>) |
-|            | Module SODIMM                | 2 GB     | DDR2 |      | 153   | [82074F847535](<Notebook/eMachines/eMG/eMG620/82074F847535>) |
-| Samsung    | M378B5173QH0-CK0 DIMM        | 4 GB     | DDR3 | 1600 | 151   | [4A54E9E0D620](<Desktop/Hewlett-Packard/EliteDesk/EliteDesk 800 G1 SFF/4A54E9E0D620>) |
-| Samsung    | M378B5673FH0-CH9 DIMM        | 2 GB     | DDR3 | 1600 | 151   | [0FB5B778B8FA](<Desktop/Acer/Aspire/Aspire M7811/0FB5B778B8FA>) |
-| SK hynix   | HMA82GS6CJR8N-VK SODIMM      | 16 GB    | DDR4 | 2667 | 151   | [1CCC12BCA23A](<Notebook/ASUSTek Computer/Strix/Strix GL504GS_GL504GS/1CCC12BCA23A>) |
-| Micron     | MT52L1G32D4PG-093 Row Of ... | 8 GB     |      | 2133 | 150   | [6AF72B9E35F5](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop X403FA_X403FA/6AF72B9E35F5>) |
-| Kingston   | 99U5471-012.A00LF DIMM       | 4 GB     | DDR3 | 1600 | 149   | [ACA7A7AF2693](<Desktop/MSI/MS/MS-7673/ACA7A7AF2693>) |
-| Crucial    | CT51264BF160B.C16F SODIMM    | 4 GB     | DDR3 | 1600 | 148   | [605BD9AFAC61](<Notebook/Toshiba/PORTEGE/PORTEGE R830/605BD9AFAC61>) |
-| SK hynix   | HMT351S6BFR8C-H9 SODIMM      | 4 GB     | DDR3 | 1333 | 148   | [0D263D3267F2](<Notebook/Acer/Aspire/Aspire V5-571P/0D263D3267F2>) |
-| Ramaxel    | RMT3160ED58E9W1600 SODIMM    | 4 GB     | DDR3 | 1600 | 148   | [14945A3CB42C](<Notebook/Medion/X681/X681X/14945A3CB42C>) |
-| Samsung    | M378B5173DB0-CK0 DIMM        | 4 GB     | DDR3 | 1600 | 148   | [29258FB520FE](<Desktop/Lenovo/ThinkCentre/ThinkCentre M83 10AHS0CK14/29258FB520FE>) |
-| Kingston   | KHX1600C10D3/4G DIMM         | 4096 MB  | DDR3 | 1866 | 147   | [43C25A9EA8C2](<Desktop/Hewlett-Packard/Compaq/Compaq Pro 6300 MT/43C25A9EA8C2>) |
-|            | Module DIMM DDR              | 2048 MB  |      | 1333 | 147   | [AF56DA109B0C](<Desktop/ASUSTek Computer/P7H55-M/P7H55-M LE/AF56DA109B0C>) |
-|            | Module DIMM                  | 4096 MB  | DDR3 | 1600 | 147   | [273F2675355C](<Desktop/Biostar/A68/A68N-5100/273F2675355C>) |
-| Elpida     | Module SODIMM                | 2 GB     | DDR3 | 1333 | 146   | [77E59E48D72A](<Notebook/ASUSTek Computer/UX31/UX31E/77E59E48D72A>) |
-| Samsung    | M378B5773DH0-CH9 DIMM        | 2048 MB  | DDR3 | 1333 | 146   | [D7591CF7C8EA](<Desktop/Dell/OptiPlex/OptiPlex 7010/D7591CF7C8EA>) |
-| Samsung    | M471B5173BH0-CK0 SODIMM      | 4 GB     | DDR3 | 1600 | 146   | [540AF9B46C29](<Notebook/Samsung Electronics/350V5/350V5C-351V5C-3540VC-3440VC/540AF9B46C29>) |
-| SK hynix   | HMT351S6CFR8C-PB SODIMM      | 4 GB     | DDR3 | 1600 | 146   | [2F3EAFFD46E4](<Notebook/Lenovo/IdeaPad/IdeaPad U510 20191/2F3EAFFD46E4>) |
-| Elpida     | EBJ21UE8BDS0-DJ-F SODIMM     | 2 GB     |      | 1334 | 145   | [8908DA2EE463](<Notebook/Hewlett-Packard/Pavilion/Pavilion dv7/8908DA2EE463>) |
-| Micron     | 8JSF25664HZ-1G4D1 SODIMM     | 2 GB     | DDR3 | 1334 | 145   | [CEDFE32C9D52](<Notebook/Dell/Inspiron/Inspiron N5110/CEDFE32C9D52>) |
-| SK hynix   | HMT351S6CFR8C-PB SODIMM      | 4 GB     | DDR3 | 1600 | 144   | [F965CE321B66](<Notebook/Hewlett-Packard/Pavilion/Pavilion g6/F965CE321B66>) |
-| Kingston   | KHX1600C9S3L/8G SODIMM       | 8 GB     | DDR3 | 1600 | 144   | [8AD38FC6EFF5](<Notebook/Notebook/W54/W54_55SU1,SUW/8AD38FC6EFF5>) |
-| Corsair    | CMZ8GX3M2A1600C9 DIMM        | 4 GB     |      | 1600 | 142   | [2DA9AF5AE83C](<Desktop/ASRock/890FX/890FX Deluxe4/2DA9AF5AE83C>) |
-| Elpida     | EBJ21UE8BFU0-DJ-F SODIMM     | 2048 MB  | DDR3 | 1334 | 139   | [312162E4A31C](<Notebook/Toshiba/Satellite/Satellite C855-12N/312162E4A31C>) |
-| Samsung    | M471B5673EH1-CF8 SODIMM      | 2 GB     | DDR3 | 4199 | 139   | [5B5B94441F81](<Notebook/Toshiba/Satellite/Satellite C640/5B5B94441F81>) |
-| Kingston   | KHX3200C16D4/16GX DIMM       | 16 GB    | DDR4 | 3600 | 138   | [8AA5E51F68FC](<Desktop/ASUSTek Computer/PRIME/PRIME X470-PRO/8AA5E51F68FC>) |
-|            | Module SODIMM                | 2048 MB  | DDR2 | 800  | 137   | [B98875E62A9C](<Notebook/Samsung Electronics/RV408/RV408-RV508/B98875E62A9C>) |
-| Micron     | 8ATF1G64HZ-2G3B1 SODIMM      | 8 GB     | DDR4 | 2400 | 135   | [B18B674EE141](<Notebook/Dell/Precision/Precision 7720/B18B674EE141>) |
-| Ramaxel    | RMSA3270ME86H9F-2666 SODIMM  | 4 GB     | DDR4 | 2667 | 135   | [48120198E4DD](<Notebook/Lenovo/IdeaPad/IdeaPad L340-17API 81LY/48120198E4DD>) |
-| Samsung    | M378B5773CH0-CH9 DIMM        | 2 GB     | DDR3 | 1867 | 135   | [A6D68C2F6B29](<Desktop/Dell/OptiPlex/OptiPlex 990/A6D68C2F6B29>) |
-|            | Module SODIMM                | 2048 MB  | DDR3 | 1333 | 134   | [DDB3CA994B67](<Notebook/Digibras/NH4/NH4CU03/DDB3CA994B67>) |
-| Crucial    | BLS8G3D1609DS1S00. DIMM      | 8 GB     | DDR3 | 1600 | 133   | [C3DF7CBECBA0](<Desktop/ASUSTek Computer/P8H77-M/P8H77-M PRO/C3DF7CBECBA0>) |
-| SK hynix   | HMT351S6EFR8C-PB SODIMM      | 4 GB     | DDR3 | 1600 | 133   | [41F24CD9EBA0](<Notebook/Lenovo/ThinkPad/ThinkPad T530 24294A1/41F24CD9EBA0>) |
-|            | Module DIMM                  | 4096 MB  |      | 400  | 132   | [CD88FBA23CCD](<Desktop/Gigabyte Technology/G41/G41M-Combo/CD88FBA23CCD>) |
-| Kingston   | ACR256X64D3S1333C9 SODIMM    | 2 GB     | DDR3 | 1334 | 131   | [66FE7E8D7F44](<Notebook/Hewlett-Packard/630/630/66FE7E8D7F44>) |
-|            | Module DIMM                  | 2048 MB  |      | 1066 | 131   | [C8ECDC6BA2DD](<Desktop/Gigabyte Technology/M52/M52LT-D3/C8ECDC6BA2DD>) |
-| SK hynix   | HMT351S6BFR8C-H9 SODIMM      | 4 GB     | DDR3 | 1334 | 131   | [15315EE5426D](<Notebook/Acer/TravelMate/TravelMate 8572T/15315EE5426D>) |
-| Kingston   | 99U5471-020.A00LF DIMM       | 4 GB     | DDR3 | 1600 | 130   | [AA1E95BD9503](<Desktop/ASUSTek Computer/M4/M4A89GTD-PRO-USB3/AA1E95BD9503>) |
-| SK hynix   | HMT325S6CFR8C-PB SODIMM      | 2048 MB  | DDR3 | 1600 | 129   | [655040974D4A](<Notebook/Hewlett-Packard/EliteBook/EliteBook 2560p/655040974D4A>) |
-| Kingston   | 99U5469-045.A00LF SODIMM     | 4 GB     | DDR3 | 1600 | 129   | [AA82EE9EA95F](<Notebook/Sony/SVE1713/SVE1713A1EW/AA82EE9EA95F>) |
-| Ramaxel    | RMT3170ME68F9F1600 SODIMM    | 4 GB     | DDR3 | 1600 | 128   | [B477AFB73A44](<Notebook/Lenovo/B50-70/B50-70 80EU/B477AFB73A44>) |
-| Samsung    | M4 70T5663QZ3-CF7 SODIMM DDR | 2 GB     |      | 2048 | 128   | [5940627C6D0F](<Notebook/Dell/Inspiron/Inspiron MM061/5940627C6D0F>) |
-| SK hynix   | HMT451U6AFR8C-PB DIMM        | 4 GB     | DDR3 | 1600 | 127   | [4DD5319CB14B](<Desktop/Lenovo/ThinkCentre/ThinkCentre M83 10AHS0W300/4DD5319CB14B>) |
-| Micron     | 4ATF51264HZ-3G2J1 Row Of ... | 4 GB     | DDR4 | 3200 | 127   | [025CD388C420](<Notebook/Lenovo/IdeaPad/IdeaPad 5 14ALC05 82LM/025CD388C420>) |
-| Ramaxel    | RMT3170EB68F9W1600 SODIMM    | 4 GB     | DDR3 | 1600 | 127   | [6FFE12406668](<Notebook/Lenovo/G/G700/6FFE12406668>) |
-| Samsung    | M471B5173BH0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 127   | [5A83E6F1C4D7](<Notebook/Lenovo/IdeaPad/IdeaPad S510p 20298/5A83E6F1C4D7>) |
-| SK hynix   | HMA851S6CJR6N-VK SODIMM      | 4 GB     | DDR4 | 2667 | 126   | [CEE8A0F5FCB6](<Notebook/Acer/Swift/Swift SF314-41/CEE8A0F5FCB6>) |
-| SK hynix   | HMA851S6AFR6N-UH SODIMM      | 4 GB     | DDR4 | 2400 | 125   | [0EAC158BB4C2](<Notebook/Lenovo/IdeaPad/IdeaPad 330-15ARR 81D2/0EAC158BB4C2>) |
-|            | Module SODIMM DDR            | 1024 MB  |      |      | 125   | [E587DFDCB4C9](<Notebook/IBM/ThinkPad/ThinkPad T41 23731HG/E587DFDCB4C9>) |
-|            | Module DIMM                  | 1024 MB  | DDR2 |      | 125   | [A65895D913D5](<Desktop/ABIT/I-45/I-45CV/A65895D913D5>) |
-|            | Module SODIMM DRAM           | 1024 MB  |      |      | 125   | [D0740CBC6042](<Notebook/Fujitsu Siemens/ESPRIMO/ESPRIMO Mobile V5535/D0740CBC6042>) |
-| Samsung    | M471A4G43AB1-CWE SODIMM      | 32 GB    | DDR4 | 3200 | 125   | [512CE5A79924](<Desktop/ASRock/4X4-4000/4X4-4000 Series/512CE5A79924>) |
-| Samsung    | M471B5273EB0-CK0 SODIMM      | 4 GB     | DDR3 | 4199 | 124   | [8BCDDD9F9C62](<Notebook/Toshiba/Satellite/Satellite C855/8BCDDD9F9C62>) |
-| Samsung    | UBE3D4AA-MGCR Row Of Chip... | 2048 MB  |      | 4267 | 124   | [F74F913BD7D2](<Convertible/ASUSTek Computer/Zenbook/Zenbook UP5401EA_UP5401EA/F74F913BD7D2>) |
-| Samsung    | K4EBE304EB-EGCG Row Of Ch... | 8 GB     |      | 2133 | 122   | [4EC50344FB96](<Notebook/ASUSTek Computer/UX430/UX430UNR/4EC50344FB96>) |
-| Samsung    | M471A1K43BB1-CTD SODIMM      | 8 GB     | DDR4 | 2667 | 122   | [033977C615EA](<Notebook/Lenovo/ThinkPad/ThinkPad T490 20N20008US/033977C615EA>) |
-|            | Module SODIMM SDRAM          | 2048 MB  |      |      | 121   | [B2FE664B3D97](<Notebook/ASUSTek Computer/F5/F5SL/B2FE664B3D97>) |
-| Kingston   | 99U5471-054.A00LF DIMM       | 8 GB     | DDR3 | 1600 | 120   | [B0C3AEAA59D5](<Desktop/ASUSTek Computer/B150-PRO/B150-PRO D3/B0C3AEAA59D5>) |
-| Kingston   | ACR16D3LS1KFG/4G SODIMM      | 4 GB     | DDR3 | 1600 | 120   | [909871A56E7E](<Notebook/Acer/Aspire/Aspire E3-111/909871A56E7E>) |
-|            | Module DIMM                  | 1024 MB  | DDR2 | 333  | 120   | [FB088E456F37](<Desktop/ASUSTek Computer/P5/P5GC-MX/FB088E456F37>) |
-|            | Module SODIMM                | 1 GB     | DDR2 | 667  | 120   | [258D5EEEFCDD](<Notebook/Toshiba/dynabook/dynabook SS M42 210E-3W/258D5EEEFCDD>) |
-| Samsung    | M471B2873FHS-CH9 SODIMM      | 1 GB     | DDR3 | 1334 | 120   | [281A2D7E86DE](<Notebook/Acer/Aspire/Aspire 4738Z/281A2D7E86DE>) |
-| Kingston   | KHX1866C10D3/4G DIMM         | 4 GB     | DDR3 | 1867 | 119   | [37C23860D721](<Desktop/ASUSTek Computer/All/All Series/37C23860D721>) |
-| SK hynix   | HMT451S6BFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 119   | [2254AF4107F2](<Notebook/ASUSTek Computer/X756/X756UJ/2254AF4107F2>) |
-| SK hynix   | Module SODIMM                | 4 GB     | DDR3 | 1600 | 119   | [ED988FB747CF](<All In One/Apple/iMac13/iMac13,1/ED988FB747CF>) |
-| Corsair    | CMK16GX4M2A2666C16 DIMM      | 8 GB     | DDR4 | 3400 | 118   | [C23E2E331FC1](<Desktop/ASUSTek Computer/PRIME/PRIME B350-PLUS/C23E2E331FC1>) |
-| Micron     | 8ATF1G64HZ-3G2R1 SODIMM      | 8 GB     | DDR4 | 3200 | 117   | [5D93153924FD](<Notebook/MSI/Katana/Katana GF66 11UE/5D93153924FD>) |
-| Micron     | 8KTF51264HZ-1G6N1 SODIMM     | 4096 MB  | DDR3 | 1600 | 116   | [D4F3D3623D0C](<Notebook/Dell/Inspiron/Inspiron 5558/D4F3D3623D0C>) |
-| SK hynix   | HMA851S6DJR6N-XN SODIMM      | 4 GB     | DDR4 | 3200 | 116   | [265341C0BA65](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop X415EA_X415EA/265341C0BA65>) |
-| SK hynix   | HMT325S6BFR8C-H9 SODIMM      | 2048 MB  | DDR3 | 1333 | 115   | [03CF7A67BAC6](<Notebook/Dell/Latitude/Latitude E5520/03CF7A67BAC6>) |
-| Patriot    | 3200 C16 Series DIMM         | 8 GB     | DDR4 | 3266 | 115   | [06D2617A49D3](<Desktop/Gigabyte Technology/Z370/Z370 HD3P/06D2617A49D3>) |
-|            | Module DIMM                  | 2048 MB  | DDR2 |      | 114   | [0CAEFEDD2BC9](<Desktop/ECS/K8/K8M890M-M/0CAEFEDD2BC9>) |
-| Samsung    | M471A5143EB0-CPB SODIMM      | 4 GB     | DDR4 | 2133 | 114   | [D87A74C2C54D](<Notebook/Lenovo/IdeaPad/IdeaPad 310-15ISK 80UH/D87A74C2C54D>) |
-| SK hynix   | HMA851S6JJR6N-VK SODIMM      | 4 GB     | DDR4 | 2667 | 114   | [0217A612716E](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop X509JA_X509JA/0217A612716E>) |
-| Micron     | 4ATS1G64HZ-2G6E1 SODIMM      | 8 GB     | DDR4 | 2667 | 113   | [F2FC8D92167B](<Notebook/Lenovo/ThinkPad/ThinkPad T495 20NK000XBR/F2FC8D92167B>) |
-|            | Module DIMM SDRAM            | 4096 MB  |      |      | 113   | [FD3682A77774](<Desktop/Intel/H/H55/FD3682A77774>) |
-|            | Module SODIMM                | 2048 MB  | DDR3 |      | 112   | [4918FDDA4745](<Notebook/Sony/SVE1513/SVE1513C5E/4918FDDA4745>) |
-| A-DATA     | DDR4 3200 DIMM               | 8 GB     | DDR4 | 3600 | 111   | [5CD9D1C7363B](<Desktop/ASUSTek Computer/TUF/TUF Gaming X570-PLUS/5CD9D1C7363B>) |
-| Nanya      | NT4GC64B8HG0NS-DI SODIMM     | 4 GB     | DDR3 | 1600 | 111   | [A91CB55D9DAD](<Notebook/ASUSTek Computer/X550/X550CA/A91CB55D9DAD>) |
-| Micron     | 4ATS2G64HZ-3G2B1 SODIMM      | 16 GB    | DDR4 | 3200 | 110   | [C8933F6E73F1](<Notebook/Lenovo/ThinkPad/ThinkPad T15 Gen 2i 20W4CTO1WW/C8933F6E73F1>) |
-|            | Module SODIMM                | 4096 MB  | DDR3 | 1333 | 110   | [36A5543B052C](<Notebook/Lenovo/ThinkPad/ThinkPad X220 4291T4Y/36A5543B052C>) |
-| SK hynix   | HMA851S6CJR6N-VK Row Of C... | 4 GB     | DDR4 | 2667 | 109   | [26116FF2B2E2](<Notebook/HUAWEI/NBLK-WAX9/NBLK-WAX9X/26116FF2B2E2>) |
-|            | Module DIMM                  | 8192 MB  | DDR3 | 1333 | 109   | [BE1BD60498B9](<Desktop/ASUSTek Computer/M5A97/M5A97 R2.0/BE1BD60498B9>) |
-|            | Module DIMM                  | 8192 MB  | DDR3 | 1600 | 109   | [B0100D0F1501](<Desktop/ASUSTek Computer/A68/A68HM-K/B0100D0F1501>) |
-| SK hynix   | HMAA2GS6CJR8N-XN SODIMM      | 16 GB    | DDR4 | 3200 | 109   | [8B88F37C6042](<Notebook/Lenovo/ThinkBook/ThinkBook 15p Gen 2 21B1/8B88F37C6042>) |
-|            | Module SODIMM                | 4 GB     | DDR3 | 1600 | 108   | [1B67F8711069](<Tablet/Lenovo/MIIX/MIIX 320-10ICR 80XF/1B67F8711069>) |
-| A-DATA     | AD73I1C1674EV SODIMM         | 4 GB     | DDR3 | 1334 | 106   | [912243495AB4](<Notebook/Hewlett-Packard/Pavilion/Pavilion g7/912243495AB4>) |
-|            | Module DIMM                  | 2048 MB  | DDR2 | 333  | 106   | [AD7E535377DC](<Desktop/ASUSTek Computer/P5/P5SD2-VM/AD7E535377DC>) |
-| Team       | TEAMGROUP-UD4-3200 DIMM      | 8 GB     | DDR4 | 3800 | 106   | [405CEAE381D2](<Desktop/ASRock/B450M/B450M Steel Legend/405CEAE381D2>) |
-| Micron     | 16ATF2G64HZ-2G6E1 SODIMM     | 16 GB    | DDR4 | 2667 | 105   | [753782FFE946](<Notebook/Acer/Aspire/Aspire A715-72G/753782FFE946>) |
-|            | Module DIMM SDRAM            | 1 GB     |      |      | 105   | [E65CFCE88793](<Desktop/ASRock/G41/G41C-GS/E65CFCE88793>) |
-|            | Module DIMM                  | 2 GB     | DDR3 | 1333 | 105   | [DB41A06B4FE4](<Desktop/Hewlett-Packard/ProLiant/ProLiant ML310e Gen8 v2/DB41A06B4FE4>) |
-| Samsung    | Module SODIMM                | 8 GB     | DDR4 | 2133 | 105   | [961F670F4BDF](<Notebook/Hewlett-Packard/ProBook/ProBook 650 G4/961F670F4BDF>) |
-| Kingston   | KHX2666C15S4/16G SODIMM      | 16 GB    | DDR4 | 2667 | 104   | [D9525DA7254E](<Notebook/MSI/Modern/Modern 14 A10M/D9525DA7254E>) |
-|            | Module SODIMM                | 4096 MB  | DDR3 | 1600 | 104   | [DC30228D2ADB](<Tablet/ASUSTek Computer/T103/T103HAF/DC30228D2ADB>) |
-| Samsung    | M378B5273CH0-CH9 DIMM        | 4 GB     | DDR3 | 1867 | 104   | [D0383231F31D](<Desktop/Dell/OptiPlex/OptiPlex 3020/D0383231F31D>) |
-| SK hynix   | HMT41GS6BFR8A-PB SODIMM      | 8 GB     | DDR3 | 1600 | 104   | [5CAAF3725021](<Notebook/Hewlett-Packard/Pavilion/Pavilion Notebook/5CAAF3725021>) |
-| SK hynix   | HMT351U6CFR8C-H9 DIMM        | 4 GB     | DDR3 | 1600 | 103   | [CD1EB621EC76](<Desktop/Dell/OptiPlex/OptiPlex 790/CD1EB621EC76>) |
-| SK hynix   | HMA851S6JJR6N-VK SODIMM      | 4 GB     | DDR4 | 2667 | 102   | [398AFC2DCD84](<Notebook/Acer/Aspire/Aspire A315-42/398AFC2DCD84>) |
-| SK hynix   | HMA451S6AFR8N-TF SODIMM      | 4096 MB  | DDR4 | 2133 | 102   | [A7E6ADB389B1](<Desktop/ASUSTek Computer/D320/D320SF/A7E6ADB389B1>) |
-|            | Module SODIMM SDRAM          | 1024 MB  |      |      | 101   | [B2FE664B3D97](<Notebook/ASUSTek Computer/F5/F5SL/B2FE664B3D97>) |
-| Samsung    | M471B5273CH0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 101   | [C606E552CA9D](<Notebook/Hewlett-Packard/Pavilion/Pavilion g4/C606E552CA9D>) |
-| G.Skill    | F4-3200C16-8GIS DIMM         | 8 GB     | DDR4 | 3200 | 100   | [27C9C6FA7847](<Desktop/CSL-Computer/V2888/V28880w/27C9C6FA7847>) |
-|            | Module SODIMM                | 2048 MB  | DDR3 | 1600 | 100   | [DC27A3540C58](<Tablet/Lenovo/MIIX/MIIX 310-10ICR 80SG/DC27A3540C58>) |
-|            | Module DIMM                  | 8 GB     | DDR3 | 1333 | 100   | [4B51A0766BCB](<Desktop/ASUSTek Computer/CROSSBLADE/CROSSBLADE RANGER/4B51A0766BCB>) |
-| Samsung    | M4 70T5663EH3-CF7 SODIMM     | 2 GB     | DDR2 | 975  | 100   | [AE67D017FFD5](<Notebook/Toshiba/Satellite/Satellite L300D/AE67D017FFD5>) |
-| Samsung    | M471A1G43DB0-CPB SODIMM      | 8 GB     | DDR4 | 2400 | 100   | [BD36213603BD](<Notebook/Lenovo/ThinkBook/ThinkBook 14-IML 20RV/BD36213603BD>) |
-| SK hynix   | HMA82GS6DJR8N-XN SODIMM      | 16 GB    | DDR4 | 3200 | 100   | [85E79C2C1537](<Notebook/Dell/XPS/XPS 15 9500/85E79C2C1537>) |
-|            | Module SODIMM                | 512 MB   | DDR2 |      | 98    | [2BEE4480A9C3](<Notebook/Fujitsu Siemens/AMILO/AMILO Pro Edition V3505/2BEE4480A9C3>) |
-| Ramaxel    | RMT3170MN68F9F1600 SODIMM    | 4 GB     | DDR3 | 1600 | 98    | [27A8CB39F479](<Notebook/Fujitsu/LIFEBOOK/LIFEBOOK A555/27A8CB39F479>) |
-| Samsung    | Module SODIMM                | 16384 MB | DDR4 | 2667 | 98    | [D5FE9D804340](<Notebook/Hewlett-Packard/EliteBook/EliteBook 755 G5/D5FE9D804340>) |
-| Kingston   | KHX1600C10D3/8GX DIMM        | 8 GB     | DDR3 | 1600 | 97    | [59EF573E85F4](<Desktop/ASRock/970/970 Pro3 R2.0/59EF573E85F4>) |
-| Ramaxel    | RMT3020EC58E9F1333 SODIMM    | 4 GB     | DDR3 | 4199 | 97    | [1F5C959CE79E](<Notebook/Lenovo/ThinkPad/ThinkPad L512 4444PS9/1F5C959CE79E>) |
-| Samsung    | K4E6E304EC-EGCG Row Of Ch... | 4 GB     |      | 2133 | 97    | [1EC55A488EF5](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop X432FA_S432FA/1EC55A488EF5>) |
-| Samsung    | M378A1K43CB2-CTD DIMM        | 8 GB     | DDR4 | 3266 | 97    | [1B36F0DF1999](<Desktop/ASRock/B450/B450 Gaming K4/1B36F0DF1999>) |
+| Samsung    | M471A5244CB0-CTD SODIMM      | 4 GB     | DDR4 | 3266 | 1300  | [E4ACDDB3B2C7](<Notebook/Acer/Aspire/Aspire A317-52/E4ACDDB3B2C7>) |
+| SK hynix   | HMA81GS6AFR8N-UH SODIMM      | 8 GB     | DDR4 | 2667 | 1294  | [AAFEFBFC85EE](<Notebook/Dell/Inspiron/Inspiron 5567/AAFEFBFC85EE>) |
+| Samsung    | M471A1G44AB0-CWE SODIMM      | 8 GB     | DDR4 | 3200 | 1190  | [673A82CC398B](<Convertible/Lenovo/IdeaPadFlex/IdeaPadFlex 5 14ITL05 82HS/673A82CC398B>) |
+| Samsung    | M471B5273DH0-CH9 SODIMM      | 4 GB     | DDR3 | 1334 | 1172  | [307BFD98B544](<Notebook/Hewlett-Packard/Pavilion/Pavilion g7/307BFD98B544>) |
+| Samsung    | M471B5173DB0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 1137  | [321789196A5C](<Notebook/Dell/Latitude/Latitude E7440/321789196A5C>) |
+|            | 123456789012345678 SODIMM    | 4 GB     | DDR4 | 2400 | 1097  | [4DDCFDF3E5EE](<Convertible/Medion/E/E3224/4DDCFDF3E5EE>) |
+| Samsung    | M471B5173QH0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 1047  | [BED2AB98C19A](<Notebook/Lenovo/ThinkPad/ThinkPad T430 2349TFK/BED2AB98C19A>) |
+| Samsung    | M471B5173EB0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 869   | [4F3C4511C7E0](<Notebook/Lenovo/ThinkPad/ThinkPad T450s 20BWS5F400/4F3C4511C7E0>) |
+| Samsung    | M471A5244CB0-CRC SODIMM      | 4 GB     | DDR4 | 2667 | 847   | [1EEF9A4214F5](<Convertible/Lenovo/Yoga/Yoga 720-12IKB 81B5/1EEF9A4214F5>) |
+| Samsung    | M471A1K43EB1-CWE SODIMM      | 8 GB     | DDR4 | 3200 | 826   | [750FE26CFBDC](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop X1704VA_F1704VA/750FE26CFBDC>) |
+| Samsung    | M471B5273CH0-CH9 SODIMM      | 4 GB     | DDR3 | 1334 | 817   | [D97ACAF2A028](<Notebook/Acer/Aspire/Aspire 5742/D97ACAF2A028>) |
+| Samsung    | M471A1K43DB1-CWE SODIMM      | 8 GB     | DDR4 | 3200 | 803   | [3F26AB4D5CB4](<Notebook/ASUSTek Computer/ROG/ROG Zephyrus G14 GA401IV_GA401IV/3F26AB4D5CB4>) |
+| Samsung    | M471A1K43CB1-CRC SODIMM      | 8 GB     | DDR4 | 2667 | 777   | [19288C8FC1B0](<Notebook/Lenovo/ThinkPad/ThinkPad E570 20H5S0CF00/19288C8FC1B0>) |
+| SK hynix   | HMT451S6BFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 776   | [C133C1641ECF](<Notebook/Toshiba/Satellite/Satellite P755/C133C1641ECF>) |
+| Samsung    | M471A1K43CB1-CTD SODIMM      | 8 GB     | DDR4 | 2667 | 732   | [7382ABA92246](<Notebook/MSI/GF63/GF63 Thin 8SC/7382ABA92246>) |
+| Samsung    | M471A5244CB0-CWE SODIMM      | 4 GB     | DDR4 | 3200 | 704   | [288CF2E38A6C](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop X712JA_S712JA/288CF2E38A6C>) |
+| Corsair    | CMK16GX4M2B3200C16 DIMM      | 8 GB     | DDR4 | 3600 | 678   | [0E0AE5C97293](<Desktop/ASUSTek Computer/PRIME/PRIME B560-PLUS/0E0AE5C97293>) |
+|            | Module DIMM                  | 2048 MB  | DDR2 | 800  | 643   | [E88D352A1406](<Desktop/Intel/DP35DP/DP35DP AAD81073-206/E88D352A1406>) |
+| Samsung    | M471A1K43DB1-CTD SODIMM      | 8 GB     | DDR4 | 2667 | 632   | [2E7CE511186E](<Notebook/ASUSTek Computer/Strix/Strix 15 GL503GE/2E7CE511186E>) |
+| SK hynix   | HMT351S6CFR8C-PB SODIMM      | 4 GB     | DDR3 | 1600 | 629   | [17F6CAD4252F](<Notebook/Samsung Electronics/300E4/300E4A-300E5A-300E7A-3430EA-3530EA/17F6CAD4252F>) |
+| Samsung    | M471B1G73DB0-YK0 SODIMM      | 8 GB     | DDR3 | 1600 | 626   | [46F718A80B6D](<Notebook/Dell/Inspiron/Inspiron 3542/46F718A80B6D>) |
+|            | Module DIMM SDRAM            | 2048 MB  |      |      | 624   | [5D3AFC349EB5](<Desktop/MSI/MS/MS-7267/5D3AFC349EB5>) |
+| Samsung    | M471B1G73QH0-YK0 SODIMM      | 8 GB     | DDR3 | 1600 | 595   | [F09CF33870BD](<Notebook/Hewlett-Packard/ProBook/ProBook 6560b/F09CF33870BD>) |
+| Micron     | 4ATF51264HZ-2G6E1 SODIMM     | 4 GB     | DDR4 | 2667 | 589   | [CA16AD8F340D](<Notebook/Hewlett-Packard/Laptop/Laptop 14-cm0xxx/CA16AD8F340D>) |
+|            | Module DIMM                  | 2048 MB  |      | 800  | 581   | [E1A6C7BBBCB7](<Desktop/ASUSTek Computer/M2/M2N-E/E1A6C7BBBCB7>) |
+|            | Module DIMM                  | 4096 MB  |      | 1333 | 581   | [403486D514D6](<Desktop/Gigabyte Technology/GA-780/GA-780T-D3L/403486D514D6>) |
+| SK hynix   | HMT41GS6BFR8A-PB SODIMM      | 8 GB     | DDR3 | 1600 | 575   | [8C592F7882A5](<Desktop/Dell/OptiPlex/OptiPlex 9020M/8C592F7882A5>) |
+| Samsung    | M471B5773CHS-CH9 SODIMM      | 2 GB     | DDR3 | 4199 | 569   | [6274932030CE](<Notebook/Toshiba/Satellite/Satellite L755/6274932030CE>) |
+| Samsung    | M471A1G44BB0-CWE SODIMM      | 8 GB     | DDR4 | 3200 | 566   | [E26E6F99E56D](<Notebook/Lenovo/ThinkPad/ThinkPad E15 Gen 4 21E7S4BD00/E26E6F99E56D>) |
+| Samsung    | M471A1G44AB0-CWE Row Of C... | 8 GB     | DDR4 | 3200 | 558   | [75C49E26FFD1](<Notebook/HUAWEI/KLVL-WXX/KLVL-WXX9/75C49E26FFD1>) |
+| Samsung    | M471B5273DH0-CK0 SODIMM      | 4 GB     | DDR3 | 2400 | 551   | [DFDA2CCFCE2C](<Notebook/Toshiba/Satellite/Satellite C655D/DFDA2CCFCE2C>) |
+| Samsung    | M471B5773DH0-CH9 SODIMM      | 2 GB     | DDR3 | 1600 | 543   | [32AA4D8C9F5E](<Notebook/Hewlett-Packard/Pavilion/Pavilion dv6/32AA4D8C9F5E>) |
+| SK hynix   | HMA851S6AFR6N-UH SODIMM      | 4096 MB  | DDR4 | 2667 | 542   | [0471C76D1EC5](<Notebook/Hewlett-Packard/Laptop/Laptop 15-bs0xx/0471C76D1EC5>) |
+| Samsung    | M471A1K43BB1-CRC SODIMM      | 8 GB     | DDR4 | 2667 | 529   | [0A26B6F080AE](<Notebook/Lenovo/IdeaPad/IdeaPad 710S Plus-13IKB 80W3/0A26B6F080AE>) |
+|            | Module DIMM                  | 2048 MB  |      | 1333 | 521   | [B9F30C2A959A](<Desktop/Gigabyte Technology/H67/H67A-UD3H-B3/B9F30C2A959A>) |
+|            | Module DIMM SDRAM            | 1024 MB  |      |      | 498   | [DC0D37153663](<Desktop/ASRock/Wolfdale1333/Wolfdale1333-D667/DC0D37153663>) |
+| Micron     | 4ATF1G64HZ-3G2E1 SODIMM      | 8 GB     | DDR4 | 3200 | 480   | [A8C54F684530](<Notebook/ASUSTek Computer/ROG/ROG Zephyrus M16 GU603HM_GU603HM/A8C54F684530>) |
+| SK hynix   | HMA81GS6CJR8N-VK SODIMM      | 8 GB     | DDR4 | 2667 | 461   | [2E7CE511186E](<Notebook/ASUSTek Computer/Strix/Strix 15 GL503GE/2E7CE511186E>) |
+|            | Module SODIMM                | 2 GB     | DDR2 | 667  | 457   | [F9466773AA13](<Notebook/ASUSTek Computer/1015/1015PN/F9466773AA13>) |
+| Samsung    | M471B1G73EB0-YK0 SODIMM      | 8 GB     | DDR3 | 1600 | 450   | [0A56E7AAF61F](<Notebook/Acer/TMP645/TMP645-M/0A56E7AAF61F>) |
+| SK hynix   | HMAA1GS6CJR6N-XN SODIMM      | 8 GB     | DDR4 | 3200 | 447   | [5383C735EF5E](<Notebook/Acer/Aspire/Aspire A715-51G/5383C735EF5E>) |
+| SK hynix   | HMA81GS6JJR8N-VK SODIMM      | 8 GB     | DDR4 | 2667 | 436   | [4EC1B097E2BE](<Notebook/Lenovo/IdeaPad/IdeaPad S540-14IWL 81ND/4EC1B097E2BE>) |
+| Corsair    | CMK16GX4M2B3000C15 DIMM      | 8 GB     | DDR4 | 3600 | 418   | [A20D3408DAA4](<Desktop/ASRock/B450M/B450M Pro4/A20D3408DAA4>) |
+| Micron     | 8ATF1G64HZ-3G2J1 SODIMM      | 8 GB     | DDR4 | 3200 | 418   | [A8C54F684530](<Notebook/ASUSTek Computer/ROG/ROG Zephyrus M16 GU603HM_GU603HM/A8C54F684530>) |
+| SK hynix   | HMA81GS6DJR8N-XN SODIMM      | 8 GB     | DDR4 | 3200 | 414   | [145540D21FF5](<Notebook/Hewlett-Packard/Pavilion/Pavilion Laptop 15-eg2xxx/145540D21FF5>) |
+|            | 123456789012345678 DIMM L... | 2048 MB  |      | 2400 | 411   | [6C4A4010567B](<Desktop/Seeed Studio/ODYSSEY-X86J41X5/ODYSSEY-X86J41X5 CJ41GV2-410-O.C 12-02-2022 15:01:15/6C4A4010567B>) |
+|            | Module DIMM                  | 4 GB     |      | 1333 | 398   | [7997391A348D](<Desktop/Dell/Studio/Studio XPS 8100/7997391A348D>) |
+| Kingston   | KHX1600C9D3/4GX DIMM         | 4 GB     | DDR3 | 1800 | 397   | [05DEE4E22315](<Desktop/ASUSTek Computer/P8Z77-V/P8Z77-V LX/05DEE4E22315>) |
+| Micron     | 4ATF51264HZ-3G2J1 SODIMM     | 4 GB     | DDR4 | 3200 | 397   | [8931357C872D](<Convertible/Lenovo/IdeaPad/IdeaPad C340-15IIL 81XJ/8931357C872D>) |
+| Samsung    | M471A2K43DB1-CWE SODIMM      | 16 GB    | DDR4 | 3200 | 390   | [FD48C5C782DD](<Notebook/Dell/Precision/Precision 7750/FD48C5C782DD>) |
+| Kingston   | KHX1600C10D3/8G DIMM         | 8 GB     | DDR3 | 1600 | 388   | [691348F9B8F7](<Desktop/MSI/MS/MS-7758/691348F9B8F7>) |
+| SK hynix   | HMT451S6AFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 385   | [8721BA59F35E](<Notebook/Dell/Latitude/Latitude E6220/8721BA59F35E>) |
+|            | Module DIMM                  | 1024 MB  | DDR2 | 800  | 384   | [7F6B6AF8ED05](<Desktop/Wortmann AG/P5/P5K-MVM/7F6B6AF8ED05>) |
+|            | Module SODIMM                | 2048 MB  | DDR2 | 667  | 384   | [5E82909F272A](<Notebook/Fujitsu Siemens/ESPRIMO/ESPRIMO Mobile V6535/5E82909F272A>) |
+| SK hynix   | HMA41GS6AFR8N-TF SODIMM      | 8 GB     | DDR4 | 2667 | 384   | [965492A8792A](<Desktop/Lenovo/ThinkCentre/ThinkCentre M900 10FLS2XC00/965492A8792A>) |
+| Micron     | 8KTF51264HZ-1G6E1 SODIMM     | 4 GB     | DDR3 | 1600 | 382   | [E76AFAC83B95](<Notebook/Dell/Latitude/Latitude E6430/E76AFAC83B95>) |
+|            | Module DIMM                  | 2 GB     | DDR2 | 800  | 382   | [D9929FA1336B](<Desktop/ASUSTek Computer/M4/M4A785-M/D9929FA1336B>) |
+| Micron     | 8ATF1G64HZ-3G2R1 SODIMM      | 8 GB     | DDR4 | 3200 | 376   | [166BCE9277D1](<Notebook/Hewlett-Packard/Victus/Victus by Gaming Laptop 15-fb0xxx/166BCE9277D1>) |
+| Elpida     | EBJ41UF8BCS0-DJ-F SODIMM     | 4 GB     | DDR3 | 1334 | 373   | [32F108EFA19F](<Notebook/ASUSTek Computer/N53/N53SV/32F108EFA19F>) |
+| Samsung    | M471A2K43CB1-CTD SODIMM      | 16 GB    | DDR4 | 8400 | 370   | [D815A0CA9F13](<Notebook/Dell/Latitude/Latitude 7390/D815A0CA9F13>) |
+| Micron     | 4ATF1G64HZ-3G2E1 Row Of C... | 8 GB     | DDR4 | 3200 | 365   | [EB36684248CC](<Convertible/Lenovo/IdeaPadFlex/IdeaPadFlex 5 14ALC05 82HU/EB36684248CC>) |
+|            | Module DIMM SDRAM            | 2 GB     |      |      | 361   | [BEFD57C0148A](<Desktop/ASRock/G31/G31M-GS/BEFD57C0148A>) |
+| Micron     | 8ATF1G64HZ-2G6E1 SODIMM      | 8 GB     | DDR4 | 2667 | 348   | [10E9FB511960](<Notebook/Lenovo/ThinkPad/ThinkPad A485 20RUTOEIIT/10E9FB511960>) |
+| Micron     | 4ATF1G64HZ-3G2F1 SODIMM      | 8 GB     | DDR4 | 3200 | 347   | [928526AD5068](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop X1704ZA_F1704ZA/928526AD5068>) |
+| Samsung    | M471B5673FH0-CH9 SODIMM      | 2 GB     | DDR3 | 1334 | 345   | [ED6AC14F653C](<Notebook/Acer/Others/Others/ED6AC14F653C>) |
+| Samsung    | M471A5244CB0-CWE Row Of C... | 4 GB     | DDR4 | 3200 | 342   | [59C105260EC3](<Notebook/Lenovo/IdeaPad/IdeaPad 5 15ALC05 82LN/59C105260EC3>) |
+| G.Skill    | F4-3200C16-16GVK DIMM        | 16 GB    | DDR4 | 3600 | 327   | [3CDF356CA9A8](<Desktop/ASUSTek Computer/ROG/ROG STRIX Z390-F GAMING/3CDF356CA9A8>) |
+| G.Skill    | F4-3200C16-8GVKB DIMM        | 8 GB     | DDR4 | 4000 | 326   | [D22F4BB88C59](<Desktop/ASUSTek Computer/PRIME/PRIME B550-PLUS/D22F4BB88C59>) |
+| Samsung    | M471A2K43CB1-CRC SODIMM      | 16 GB    | DDR4 | 2667 | 326   | [707A3D8F2480](<Notebook/Lenovo/ThinkPad/ThinkPad X270 20K5S1A524/707A3D8F2480>) |
+| Micron     | 4ATF1G64HZ-3G2E2 SODIMM      | 8 GB     | DDR4 | 3200 | 324   | [957C4D53C299](<Notebook/Gigabyte Technology/AERO/AERO 17 KC/957C4D53C299>) |
+|            | Module SODIMM                | 2048 MB  | DDR2 |      | 318   | [E20753192FA0](<Notebook/Lenovo/ThinkPad/ThinkPad T60 1953D9U/E20753192FA0>) |
+| Micron     | 4ATF51264HZ-2G3B1 SODIMM     | 4 GB     | DDR4 | 3200 | 316   | [DB4FB3E0DA86](<Notebook/Acer/Aspire/Aspire ES1-572/DB4FB3E0DA86>) |
+| Micron     | 16KTF51264HZ-1G6M1 SODIMM    | 4 GB     | DDR3 | 1600 | 315   | [00EC1CA477D6](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8560w/00EC1CA477D6>) |
+| Kingston   | KHX3200C16D4/8GX DIMM        | 8 GB     | DDR4 | 3733 | 311   | [10FCED84DE65](<Desktop/MSI/MS-7/MS-7B86/10FCED84DE65>) |
+| Kingston   | KHX2666C16/8G DIMM           | 8 GB     | DDR4 | 3466 | 308   | [B6E6160B9705](<Desktop/Gigabyte Technology/B560M/B560M DS3H/B6E6160B9705>) |
+| SK hynix   | HMA82GS6AFR8N-UH SODIMM      | 16 GB    | DDR4 | 2667 | 308   | [8D8D80F3ABC2](<Notebook/Dell/Inspiron/Inspiron 5567/8D8D80F3ABC2>) |
+| SK hynix   | HMA851S6CJR6N-VK SODIMM      | 4 GB     | DDR4 | 2667 | 308   | [91E400AA092D](<Notebook/Lenovo/ThinkPad/ThinkPad L13 Gen 1 20R4S0G500/91E400AA092D>) |
+| Crucial    | CT102464BF160B.C16 SODIMM    | 8192 MB  | DDR3 | 1600 | 307   | [D8291EF1E6D2](<Notebook/Lenovo/ThinkPad/ThinkPad T420 418062U/D8291EF1E6D2>) |
+| SK hynix   | HMAA1GS6CJR6N-XN SODIMM      | 8 GB     | DDR4 | 3200 | 306   | [0B137467B2D8](<Notebook/Lenovo/Legion/Legion S7 15ACH6 82K8/0B137467B2D8>) |
+|            | Module DIMM                  | 4096 MB  | DDR3 | 1333 | 304   | [D57F558F7A82](<Desktop/ASRock/B85M/B85M Pro4/D57F558F7A82>) |
+| Samsung    | M471B5673FH0-CF8 SODIMM      | 2 GB     | DDR3 | 1067 | 304   | [94DC153C38C2](<Notebook/Toshiba/Satellite/Satellite C650/94DC153C38C2>) |
+|            | Module DIMM                  | 1024 MB  |      | 800  | 299   | [61AADFA12FB2](<Desktop/ASUSTek Computer/P5G41T-M/P5G41T-M LX2-GB/61AADFA12FB2>) |
+|            | Module DIMM                  | 1024 MB  | DDR2 | 667  | 299   | [9DE96B29B899](<Desktop/Gateway/945/945GCT-M3/9DE96B29B899>) |
+| Nanya      | NT2GC64B88B0NS-CG SODIMM     | 2 GB     | DDR3 | 1334 | 295   | [D97ACAF2A028](<Notebook/Acer/Aspire/Aspire 5742/D97ACAF2A028>) |
+|            | Module DIMM                  | 4 GB     | DDR3 | 1333 | 293   | [E31357392155](<Desktop/Intel/H/H81/E31357392155>) |
+| SK hynix   | HMT351S6EFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 288   | [C133C1641ECF](<Notebook/Toshiba/Satellite/Satellite P755/C133C1641ECF>) |
+|            | Module DIMM                  | 2 GB     |      | 800  | 283   | [B37417979A6E](<Desktop/ASUSTek Computer/P5G41T-M/P5G41T-M LX2-GB/B37417979A6E>) |
+| Samsung    | M471A2K43DB1-CTD SODIMM      | 16 GB    | DDR4 | 2667 | 282   | [8931357C872D](<Convertible/Lenovo/IdeaPad/IdeaPad C340-15IIL 81XJ/8931357C872D>) |
+|            | Module DIMM                  | 2048 MB  | DDR2 | 667  | 281   | [AE084EA145E6](<Desktop/Fujitsu Siemens/ESPRIMO/ESPRIMO EDITION P2511/AE084EA145E6>) |
+| Micron     | 16KTF1G64HZ-1G6E1 SODIMM     | 8 GB     | DDR3 | 1600 | 278   | [0049D45200B3](<Notebook/Hewlett-Packard/ENVY/ENVY m7/0049D45200B3>) |
+| Micron     | 8JTF51264AZ-1G6E1 DIMM       | 4 GB     | DDR3 | 1600 | 270   | [4222E42A139A](<Desktop/Hewlett-Packard/ProDesk/ProDesk 400 G2 MT/4222E42A139A>) |
+| Samsung    | M425R1GB4BB0-CQKOL SODIMM    | 8 GB     | DDR5 | 4800 | 269   | [F1BA918E8023](<Notebook/ASUSTek Computer/ASUS/ASUS TUF Gaming A16 FA617NS_FA617NS/F1BA918E8023>) |
+| SK hynix   | H9CCNNNCLGALAR-NVD Row Of... | 8 GB     |      | 2133 | 269   | [DE9C1EA4683F](<Convertible/Hewlett-Packard/Spectre/Spectre x360 Convertible 13-ae0xx/DE9C1EA4683F>) |
+| SK hynix   | Module SODIMM                | 1 GB     | DDR2 | 800  | 267   | [666DC9525D7D](<Notebook/Apple/MacBook5/MacBook5,2/666DC9525D7D>) |
+| Samsung    | M471A1K43BB0-CPB SODIMM      | 8 GB     | DDR4 | 2133 | 266   | [E119ABC80EC8](<Notebook/Dell/Latitude/Latitude 7490/E119ABC80EC8>) |
+| G.Skill    | F4-3000C16-8GISB DIMM        | 8 GB     | DDR4 | 3200 | 265   | [E703390C6D6E](<Desktop/ASRock/A320M/A320M Pro4 R2.0/E703390C6D6E>) |
+| SK hynix   | HMT41GS6AFR8A-PB SODIMM      | 8 GB     | DDR3 | 2667 | 265   | [3490DCB42F4E](<Notebook/Fujitsu/LIFEBOOK/LIFEBOOK AH531/3490DCB42F4E>) |
+|            | Module DIMM                  | 2 GB     |      | 1333 | 265   | [AB8973E3B2CB](<Desktop/ASUSTek Computer/M4/M4A78LT-M-LE/AB8973E3B2CB>) |
+| SK hynix   | HMT351U6CFR8C-PB DIMM        | 4 GB     | DDR3 | 1800 | 263   | [021D0F97B209](<Desktop/Hewlett-Packard/700/700-019/021D0F97B209>) |
+|            | Module SODIMM                | 4 GB     | DDR3 |      | 263   | [1612583DFCAB](<Notebook/Sony/VPCSB3/VPCSB3V9R/1612583DFCAB>) |
+| Samsung    | M471A2G44AM0-CWE SODIMM      | 16 GB    | DDR4 | 3200 | 261   | [18826ED2270B](<Notebook/Lenovo/ThinkPad/ThinkPad T14 Gen 2i 20W000NXIX/18826ED2270B>) |
+| SK hynix   | HMA81GS6DJR8N-XN SODIMM      | 8 GB     | DDR4 | 3200 | 259   | [7757E259E194](<Notebook/Lenovo/ThinkPad/ThinkPad E14 Gen 3 20YE000GCD/7757E259E194>) |
+| Kingston   | KHX1866C10D3/8G DIMM         | 8 GB     | DDR3 | 2133 | 258   | [C5A2AEE85970](<Desktop/ASUSTek Computer/SABERTOOTH/SABERTOOTH 990FX R2.0/C5A2AEE85970>) |
+| Kingston   | KHX2400C15/8G DIMM           | 8 GB     | DDR4 | 3400 | 258   | [B439AF57EE23](<Desktop/MSI/MS-7/MS-7B45/B439AF57EE23>) |
+|            | Module SODIMM                | 1024 MB  | DDR2 |      | 258   | [E20753192FA0](<Notebook/Lenovo/ThinkPad/ThinkPad T60 1953D9U/E20753192FA0>) |
+| SK hynix   | HMA82GS6JJR8N-VK SODIMM      | 16 GB    | DDR4 | 2667 | 256   | [CD7C542F15EB](<Desktop/Dell/OptiPlex/OptiPlex 3080/CD7C542F15EB>) |
+| Samsung    | M471B5273CH0-CK0 SODIMM      | 4 GB     | DDR3 | 1600 | 255   | [03DFC14FA38D](<Notebook/Hewlett-Packard/ProBook/ProBook 4330s/03DFC14FA38D>) |
+| Crucial    | CT102464BF160B.M16 SODIMM    | 8 GB     | DDR3 | 1600 | 253   | [6D8BFD9B5EF2](<Notebook/Dell/Latitude/Latitude E7440/6D8BFD9B5EF2>) |
+| SK hynix   | HYMP125S64CP8-S6 SODIMM      | 2048 MB  | DDR2 | 975  | 251   | [91D4FA24ADBE](<Notebook/Dell/Latitude/Latitude E6500/91D4FA24ADBE>) |
+| SK hynix   | Module SODIMM                | 4 GB     | DDR3 | 1600 | 251   | [8862854ABDE3](<Notebook/Apple/MacBookAir6/MacBookAir6,2/8862854ABDE3>) |
+|            | Module SODIMM                | 1024 MB  | DDR2 | 667  | 250   | [5E82909F272A](<Notebook/Fujitsu Siemens/ESPRIMO/ESPRIMO Mobile V6535/5E82909F272A>) |
+| Corsair    | CMK32GX4M2E3200C16 DIMM      | 16 GB    | DDR4 | 3534 | 245   | [5FF2D0AC5D6D](<Desktop/ASUSTek Computer/ROG/ROG STRIX B550-E GAMING/5FF2D0AC5D6D>) |
+| SK hynix   | HMT451S6BFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 244   | [9EF31BA9AAA0](<Notebook/Hewlett-Packard/Notebook/Notebook/9EF31BA9AAA0>) |
+|            | Module SODIMM                | 4096 MB  | DDR3 |      | 242   | [4513137DD41B](<Notebook/Sony/SVE1511/SVE1511C1RB/4513137DD41B>) |
+| Ramaxel    | RMSA3260ME78HAF-2666 SODIMM  | 8 GB     | DDR4 | 2667 | 242   | [E5006ED04FFC](<Notebook/Lenovo/ThinkPad/ThinkPad E490 20N8CTO1WW/E5006ED04FFC>) |
+| Corsair    | CMK32GX4M2B3200C16 DIMM      | 16 GB    | DDR4 | 3800 | 240   | [9565FA8F0E15](<Desktop/ASUSTek Computer/PRIME/PRIME B450M-A/9565FA8F0E15>) |
+| SK hynix   | HMT351S6CFR8C-H9 SODIMM      | 4 GB     | DDR3 | 1333 | 236   | [479BFC1603C2](<Notebook/ASUSTek Computer/X555/X555YI/479BFC1603C2>) |
+| Kingston   | 99U5428-018.A00LF SODIMM     | 8 GB     | DDR3 | 1600 | 233   | [EAF4136FB502](<Notebook/Lenovo/ThinkPad/ThinkPad X230 23252UG/EAF4136FB502>) |
+|            | Module SODIMM                | 2 GB     | DDR2 |      | 230   | [6B5EB9D79098](<Notebook/Sony/VGN-CR220/VGN-CR220E/6B5EB9D79098>) |
+| SK hynix   | HMT425S6AFR6A-PB SODIMM      | 2 GB     | DDR3 | 3200 | 228   | [E27929CBCC01](<Notebook/ASUSTek Computer/S301/S301LA/E27929CBCC01>) |
+| Kingston   | KF3200C16D4/8GX DIMM         | 8 GB     | DDR4 | 3600 | 228   | [892ED35F8D6B](<Desktop/MSI/MS-7/MS-7C95/892ED35F8D6B>) |
+| Samsung    | M471A2G43AB2-CWE SODIMM      | 16 GB    | DDR4 | 3200 | 228   | [56CBC8038B88](<Notebook/Hewlett-Packard/Laptop/Laptop 17-cn0xxx/56CBC8038B88>) |
+| Elpida     | EBJ40UG8BBU0-GN-F SODIMM     | 4 GB     | DDR3 | 1600 | 222   | [FC163D18511C](<Notebook/ASUSTek Computer/X502/X502CA/FC163D18511C>) |
+| SK hynix   | HMA82GS6CJR8N-VK SODIMM      | 16 GB    | DDR4 | 2667 | 221   | [F6F92F033FA3](<Notebook/Lenovo/ThinkPad/ThinkPad P52s 20LCS08300/F6F92F033FA3>) |
+| Nanya      | NT4GC64B8HB0NS-CG SODIMM     | 4 GB     | DDR3 | 1334 | 220   | [5527891B54F6](<Notebook/Acer/Aspire/Aspire 5742G/5527891B54F6>) |
+| Samsung    | M378B5173QH0-CK0 DIMM        | 4 GB     | DDR3 | 1600 | 220   | [DE0871A8855E](<Desktop/Hewlett-Packard/EliteDesk/EliteDesk 800 G1 SFF/DE0871A8855E>) |
+|            | Module DIMM                  | 2048 MB  |      | 667  | 219   | [928DE04C6943](<Desktop/Gigabyte Technology/945/945GCM-S2L/928DE04C6943>) |
+| Samsung    | M471A5244BB0-CRC SODIMM      | 4 GB     | DDR4 | 2667 | 219   | [16EE3F3B4751](<Mini Pc/Hewlett-Packard/t530/t530 Thin Client/16EE3F3B4751>) |
+| Samsung    | Module SODIMM                | 8 GB     | DDR4 | 2133 | 219   | [960BBF1370AB](<Notebook/Hewlett-Packard/EliteBook/EliteBook 850 G4/960BBF1370AB>) |
+| Samsung    | M378B5173DB0-CK0 DIMM        | 4096 MB  | DDR3 | 1600 | 217   | [F51FFCD16AF1](<Desktop/Hewlett-Packard/Z400/Z400 Workstation/F51FFCD16AF1>) |
+| SK hynix   | HMA851S6DJR6N-XN SODIMM      | 4 GB     | DDR4 | 3200 | 217   | [BC193EBC5536](<Notebook/Acer/Aspire/Aspire A315-58/BC193EBC5536>) |
+| SK hynix   | HMT325S6BFR8C-H9 SODIMM      | 2048 MB  | DDR3 | 1600 | 217   | [0637990DAC59](<Notebook/Lenovo/ThinkPad/ThinkPad Edge 031925U/0637990DAC59>) |
+| Kingston   | 99U5584-005.A00LF DIMM       | 4 GB     | DDR3 | 1600 | 216   | [649FA9690F10](<Desktop/ASUSTek Computer/All/All Series/649FA9690F10>) |
+|            | Module DIMM                  | 4096 MB  |      | 1600 | 215   | [E16F0428121F](<Desktop/ASUSTek Computer/M5A78L-M/M5A78L-M LX3/E16F0428121F>) |
+| Samsung    | M471A5244CB0-CTD Row Of C... | 4 GB     | DDR4 | 2667 | 213   | [010DA2EEF7B0](<Notebook/Lenovo/V15-IIL/V15-IIL 82C5/010DA2EEF7B0>) |
+| Samsung    | M378B5273DH0-CH9 DIMM        | 4096 MB  | DDR3 | 2133 | 210   | [BAD5FEF5927B](<Desktop/Lenovo/1730/1730-A1G/BAD5FEF5927B>) |
+| SK hynix   | HMAA2GS6CJR8N-XN SODIMM      | 16 GB    | DDR4 | 3200 | 210   | [EBD9F4A07E2A](<Notebook/Acer/Aspire/Aspire A515-57/EBD9F4A07E2A>) |
+| Micron     | 16JSF51264HZ-1G4D1 SODIMM    | 4 GB     | DDR3 | 1334 | 207   | [94EF4F8FC851](<Notebook/Hewlett-Packard/Pavilion/Pavilion dv7/94EF4F8FC851>) |
+|            | Module DIMM                  | 1024 MB  |      | 667  | 205   | [928DE04C6943](<Desktop/Gigabyte Technology/945/945GCM-S2L/928DE04C6943>) |
+| SK hynix   | HMT351S6CFR8C-H9 SODIMM      | 4 GB     | DDR3 | 1334 | 205   | [D02AD4C72CA7](<Notebook/Dell/Inspiron/Inspiron N5050/D02AD4C72CA7>) |
+| Kingston   | KHX3200C16D4/16GX DIMM       | 16 GB    | DDR4 | 3600 | 203   | [BD8F80012FA4](<Desktop/ASUSTek Computer/ROG/ROG STRIX B460-H GAMING/BD8F80012FA4>) |
+| Nanya      | NT4GC64B8HG0NS-CG SODIMM     | 4 GB     | DDR3 | 1334 | 203   | [95767550A471](<Notebook/Lenovo/ThinkPad/ThinkPad T420 4180F64/95767550A471>) |
+| Samsung    | M471A4G43MB1-CTD SODIMM      | 32 GB    | DDR4 | 2667 | 203   | [CEEF3F35B577](<Notebook/Lenovo/ThinkPad/ThinkPad P51 20HJS0AQ2S/CEEF3F35B577>) |
+| SK hynix   | HMT351S6BFR8C-H9 SODIMM      | 4 GB     | DDR3 | 1333 | 202   | [0911ED8F0EC5](<Notebook/ASUSTek Computer/G53/G53SW/0911ED8F0EC5>) |
+| Samsung    | M471B5674QH0-YK0 SODIMM      | 2 GB     | DDR3 | 3200 | 202   | [549BBDF2E4E4](<Notebook/Dell/Inspiron/Inspiron 5555/549BBDF2E4E4>) |
+| Micron     | MT52L1G32D4PG-093 Row Of ... | 8 GB     |      | 2133 | 200   | [681360B86112](<Notebook/ASUSTek Computer/ZenBook/ZenBook UX334FLC_UX334FL/681360B86112>) |
+| Kingston   | KF3200C16D4/16GX DIMM        | 16 GB    | DDR4 | 3200 | 199   | [B7784E7921C1](<Desktop/MSI/MS-7/MS-7D14/B7784E7921C1>) |
+|            | Module DIMM                  | 2048 MB  | DDR3 | 1333 | 199   | [F6BC11D86C9B](<Desktop/ASUSTek Computer/P8H61-M/P8H61-M LE/F6BC11D86C9B>) |
+| Samsung    | M471B5773DH0-CK0 SODIMM      | 2 GB     | DDR3 | 1600 | 196   | [8B1670CC4954](<Notebook/Lenovo/ThinkPad/ThinkPad T520 4242A25/8B1670CC4954>) |
+| Ramaxel    | RMT3160ED58E9W1600 SODIMM    | 4 GB     | DDR3 | 1600 | 194   | [EAF4136FB502](<Notebook/Lenovo/ThinkPad/ThinkPad X230 23252UG/EAF4136FB502>) |
+| Samsung    | UBE3D4AA-MGCR Row Of Chip... | 2 GB     |      | 4267 | 193   | [714803C5D648](<Notebook/ASUSTek Computer/ZenBook/ZenBook UX325EA_UX325EA/714803C5D648>) |
+|            | Module DIMM SDRAM            | 512 MB   |      |      | 189   | [2E43AB03C3FC](<Desktop/Others/Alviso/Alviso/2E43AB03C3FC>) |
+| 48spaces   | 0123456789012345678901234... | 2 GB     | DDR2 | 667  | 188   | [B5A919D45ED7](<Notebook/Samsung Electronics/N150/N150-N210-N220/B5A919D45ED7>) |
+| A-DATA     | DDR4 3200 DIMM               | 8 GB     | DDR4 | 3600 | 188   | [9C4BEE3F5B7B](<Desktop/CSL-Computer/T/T8186/9C4BEE3F5B7B>) |
+| Crucial    | CT51264BF160B.C16F SODIMM    | 4 GB     | DDR3 | 1600 | 187   | [EC4C5F544880](<Notebook/ASUSTek Computer/X550/X550CC/EC4C5F544880>) |
+| Kingston   | 99U5471-012.A00LF DIMM       | 4 GB     | DDR3 |      | 187   | [2CAE737842A0](<Desktop/Intel/B/B75/2CAE737842A0>) |
+| Kingston   | KHX1600C10D3/4G DIMM         | 4 GB     | DDR3 | 1600 | 187   | [688F167541E1](<Desktop/ASRock/Z97X/Z97X Killer/688F167541E1>) |
+|            | Module SODIMM                | 8 GB     | DDR3 | 1600 | 187   | [C1056B2F0556](<Desktop/Hewlett-Packard/ProOne/ProOne 600 G1 AiO/C1056B2F0556>) |
+| Samsung    | M471A4G43AB1-CWE SODIMM      | 32 GB    | DDR4 | 3200 | 187   | [DA6C3047EF76](<Desktop/AZW/U/U59/DA6C3047EF76>) |
+| G.Skill    | F4-3200C16-8GIS DIMM         | 8 GB     | DDR4 | 3200 | 186   | [234F8AC2996B](<Desktop/ASUSTek Computer/PRIME/PRIME A320M-K/234F8AC2996B>) |
+| Micron     | 4ATF51264HZ-3G2J1 Row Of ... | 4 GB     | DDR4 | 3200 | 186   | [24F03572999C](<Notebook/Lenovo/IdeaPad/IdeaPad 3 14ITL6 82H7/24F03572999C>) |
+|            | Module SODIMM                | 1 GB     | DDR2 | 667  | 186   | [C6C289849FAF](<Notebook/Acer/TravelMate/TravelMate 6292/C6C289849FAF>) |
+| Corsair    | CMZ8GX3M2A1600C9 DIMM        | 4 GB     | DDR3 | 1800 | 184   | [D696AF592395](<Desktop/ASUSTek Computer/All/All Series/D696AF592395>) |
+| SK hynix   | HMT351S6CFR8C-PB SODIMM      | 4 GB     | DDR3 | 1600 | 184   | [E6B6E1B9CF85](<Notebook/Toshiba/Satellite/Satellite C50D-A-12M/E6B6E1B9CF85>) |
+|            | Module DIMM                  | 2048 MB  |      | 400  | 183   | [30269FB3C8E0](<Desktop/Gigabyte Technology/G41/G41M-Combo/30269FB3C8E0>) |
+| Crucial    | BLS8G3D1609DS1S00. DIMM      | 8 GB     | DDR3 | 1800 | 182   | [AF30A1F68DA8](<Desktop/Gigabyte Technology/B85/B85M-D3H/AF30A1F68DA8>) |
+| Samsung    | M4 70T5663QZ3-CF7 SODIMM     | 2 GB     | DDR2 | 2048 | 182   | [7E0D24A68E5C](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8730w/7E0D24A68E5C>) |
+| Team       | TEAMGROUP-UD4-3200 DIMM      | 8 GB     | DDR4 | 3800 | 182   | [695E352A1B48](<Desktop/ASRock/B550/B550M-C/695E352A1B48>) |
+|            | Module SODIMM                | 4 GB     | DDR3 | 1600 | 181   | [7DAC1838861C](<Notebook/Dell/Latitude/Latitude E5550/7DAC1838861C>) |
+| Ramaxel    | RMSA3270ME86H9F-2666 SODIMM  | 4 GB     | DDR4 | 2667 | 181   | [01DDE0B05DAB](<Notebook/Lenovo/IdeaPad/IdeaPad L340-15API 81LW/01DDE0B05DAB>) |
+| Samsung    | K4EBE304EB-EGCG Row Of Ch... | 8 GB     |      | 2133 | 181   | [157A4C5AF28C](<Notebook/Lenovo/ThinkPad/ThinkPad X1 Carbon 6th 20KGS0N400/157A4C5AF28C>) |
+| Samsung    | M471A1K43BB1-CTD SODIMM      | 8 GB     | DDR4 | 2667 | 181   | [6A69B366C2BD](<Notebook/Lenovo/ThinkPad/ThinkPad X390 20Q0CTO1WW/6A69B366C2BD>) |
+| Samsung    | M471B5173BH0-CK0 SODIMM      | 4 GB     | DDR3 | 1600 | 181   | [2846687B9E23](<Notebook/Lenovo/B590/B590 20206/2846687B9E23>) |
+| Micron     | 8ATF1G64HZ-2G3B1 SODIMM      | 8 GB     | DDR4 | 2400 | 180   | [718204E689F2](<Notebook/Hewlett-Packard/Notebook/Notebook/718204E689F2>) |
+| Elpida     | Module SODIMM                | 2 GB     | DDR3 | 1333 | 178   | [E0336250387E](<All In One/Apple/iMac12/iMac12,2/E0336250387E>) |
+| Samsung    | M378B5673FH0-CH9 DIMM        | 2 GB     | DDR3 | 1600 | 178   | [635367FC7718](<Desktop/Lenovo/ThinkCentre/ThinkCentre M90p 5536P79/635367FC7718>) |
+| SK hynix   | HMT451U6AFR8C-PB DIMM        | 4 GB     | DDR3 | 1600 | 176   | [50E8B6DB82B3](<Desktop/Hewlett-Packard/ProDesk/ProDesk 600 G1 TWR/50E8B6DB82B3>) |
+|            | Module DIMM                  | 8 GB     | DDR3 | 1600 | 176   | [A4B3E062D24F](<Desktop/Acer/Veriton/Veriton X2631G/A4B3E062D24F>) |
+| Samsung    | M378B5773DH0-CH9 DIMM        | 2048 MB  | DDR3 | 1333 | 175   | [D9D8F7D4B536](<Desktop/ECS/A55/A55F-M3/D9D8F7D4B536>) |
+| Samsung    | M471B5673EH1-CF8 SODIMM      | 2 GB     |      | 4199 | 175   | [463FEDA8D262](<Notebook/Acer/Aspire/Aspire 5738/463FEDA8D262>) |
+| SK hynix   | HMT351S6BFR8C-H9 SODIMM      | 4 GB     | DDR3 | 1334 | 172   | [E4369CCED2D6](<Notebook/Lenovo/ThinkPad/ThinkPad X201 3680X08/E4369CCED2D6>) |
+| Micron     | 8JSF25664HZ-1G4D1 SODIMM     | 2 GB     | DDR3 | 1334 | 171   | [BB53DD4ACB6A](<Notebook/Hewlett-Packard/EliteBook/EliteBook 2540p/BB53DD4ACB6A>) |
+| SK hynix   | HMT351S6CFR8C-PB SODIMM      | 4 GB     | DDR3 | 1600 | 170   | [F2A12A751B05](<Notebook/Hewlett-Packard/ProBook/ProBook 4535s/F2A12A751B05>) |
+| Samsung    | M378B5773CH0-CH9 DIMM        | 2 GB     | DDR3 | 1867 | 170   | [CADC0571A83C](<Desktop/Dell/Inspiron/Inspiron 560/CADC0571A83C>) |
+| Elpida     | EBJ21UE8BDS0-DJ-F SODIMM     | 2 GB     | DDR3 | 1334 | 169   | [2108CB020FBA](<Notebook/Hewlett-Packard/EliteBook/EliteBook 8440p/2108CB020FBA>) |
+| Samsung    | M471A2K43EB1-CWE SODIMM      | 16 GB    | DDR4 | 3200 | 169   | [7C75519B591E](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop X1605VA_X1605VA/7C75519B591E>) |
+| Micron     | 4ATS1G64HZ-2G6E1 SODIMM      | 8 GB     | DDR4 | 2667 | 168   | [9A72CAFFBFD7](<Notebook/Lenovo/ThinkPad/ThinkPad T495 20NKS2JD00/9A72CAFFBFD7>) |
+| Ramaxel    | RMT3170ME68F9F1600 SODIMM    | 4 GB     | DDR3 | 1600 | 168   | [03379A91D4DC](<Notebook/Hewlett-Packard/EliteBook/EliteBook Folio 9480m/03379A91D4DC>) |
+| Kingston   | 99U5469-045.A00LF SODIMM     | 4 GB     | DDR3 | 1600 | 167   | [55D765B7E842](<Notebook/ASUSTek Computer/X550/X550JF/55D765B7E842>) |
+|            | Module DIMM                  | 1024 MB  |      |      | 166   | [5E0A14BCF009](<Desktop/Hewlett-Packard/GG045AA-ABA/GG045AA-ABA a6142n/5E0A14BCF009>) |
+| Kingston   | KHX1600C9S3L/8G SODIMM       | 8192 MB  | DDR3 | 1600 | 165   | [8ABA5CD64582](<Desktop/Lenovo/ThinkCentre/ThinkCentre M92z 33252S6/8ABA5CD64582>) |
+| Micron     | MTC4C10163S1SC48BA1 SODIMM   | 8 GB     | DDR5 | 4800 | 165   | [6C33B6C5E4CA](<Notebook/ASUSTek Computer/ASUS/ASUS TUF Gaming A15 FA507RE_FA577RE/6C33B6C5E4CA>) |
+| Elpida     | Module SODIMM                | 4 GB     | DDR3 | 1600 | 164   | [7D9EECEFFC2B](<Notebook/Apple/MacBookAir7/MacBookAir7,2/7D9EECEFFC2B>) |
+| SK hynix   | HMT351S6EFR8C-PB SODIMM      | 4 GB     | DDR3 | 1600 | 163   | [D2EFD6893E78](<Notebook/Lenovo/ThinkPad/ThinkPad T430 2349NZ4/D2EFD6893E78>) |
+| SK hynix   | H9JCNNNCP3MLYR-N6E Row Of... | 2 GB     |      | 6400 | 163   | [F2FBCD1C359C](<Notebook/ASUSTek Computer/Zenbook/Zenbook UX3402ZA_UX3402ZA/F2FBCD1C359C>) |
+| Patriot    | 3200 C16 Series DIMM         | 4 GB     | DDR4 | 3600 | 162   | [B82F7FACAFF0](<Desktop/Gigabyte Technology/A520M/A520M DS3H/B82F7FACAFF0>) |
+| Elpida     | EBJ21UE8BFU0-DJ-F SODIMM     | 2 GB     | DDR3 | 1333 | 160   | [8536F70D7731](<Notebook/ASUSTek Computer/K53/K53E/8536F70D7731>) |
+| SK hynix   | HMA851S6CJR6N-VK SODIMM      | 4 GB     | DDR4 | 2667 | 160   | [19C51B14C7DD](<Notebook/Lenovo/IdeaPad/IdeaPad S145-15API 81UT/19C51B14C7DD>) |
+| Samsung    | Module SODIMM                | 16 GB    | DDR4 | 3200 | 159   | [21DA868DBAA1](<Notebook/Hewlett-Packard/ProBook/ProBook 440 14 inch G9 Notebook PC/21DA868DBAA1>) |
+| SK hynix   | HMA851S6AFR6N-UH SODIMM      | 4 GB     | DDR4 | 2400 | 158   | [CD52135FD93F](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop X512DA_X512DA/CD52135FD93F>) |
+| Kingston   | 99U5471-020.A00LF DIMM       | 4 GB     | DDR3 | 1600 | 158   | [DAAEDA573AD3](<Desktop/MSI/MS/MS-7798/DAAEDA573AD3>) |
+| Samsung    | M425R2GA3BB0-CQKOL SODIMM    | 16 GB    | DDR5 | 4800 | 157   | [AB12BC8E8260](<Notebook/MSI/Vector/Vector GP66 12UHSO/AB12BC8E8260>) |
+| SK hynix   | Module SODIMM                | 8 GB     | DDR4 | 2133 | 156   | [8DD774BAE2EB](<Notebook/Hewlett-Packard/EliteBook/EliteBook 820 G3/8DD774BAE2EB>) |
+| Micron     | 8KTF51264HZ-1G6N1 SODIMM     | 4 GB     | DDR3 | 1600 | 156   | [B2CBCCF999D1](<Notebook/Hewlett-Packard/Notebook/Notebook/B2CBCCF999D1>) |
+| Ramaxel    | RMT3170EB68F9W1600 SODIMM    | 4 GB     | DDR3 | 1600 | 156   | [8741D27EB7F3](<Desktop/Lenovo/ThinkCentre/ThinkCentre E93z 10BA0001AU/8741D27EB7F3>) |
+| SK hynix   | HMT325S6CFR8C-PB SODIMM      | 2 GB     | DDR3 | 1600 | 155   | [ED64DC835252](<Notebook/Lenovo/ThinkPad/ThinkPad X131e 33722WU/ED64DC835252>) |
+| SK hynix   | Module SODIMM                | 8 GB     | DDR3 | 1600 | 155   | [1AAE3FCFA334](<Notebook/Apple/MacBookPro11/MacBookPro11,4/1AAE3FCFA334>) |
+| Kingston   | 99U5471-054.A00LF DIMM       | 8 GB     | DDR3 | 1600 | 154   | [4B216AA9EA52](<Desktop/Dell/OptiPlex/OptiPlex 7010/4B216AA9EA52>) |
+| Micron     | 4ATS2G64HZ-3G2B1 SODIMM      | 16 GB    | DDR4 | 3200 | 153   | [9A6593AB3EF9](<Notebook/Lenovo/ThinkPad/ThinkPad T14 Gen 2i 20W000BWMX/9A6593AB3EF9>) |
+| Samsung    | M471B5173BH0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 153   | [F0E4B8D772B3](<Notebook/Toshiba/Satellite/Satellite C50D-A-133/F0E4B8D772B3>) |
+| SK hynix   | HMT451S6BFR8A-PB SODIMM      | 4 GB     | DDR3 | 1600 | 153   | [5E43D288C796](<All In One/Hewlett-Packard/27/27-p014/5E43D288C796>) |
+| Kingston   | ACR256X64D3S1333C9 SODIMM    | 2 GB     | DDR3 | 1334 | 152   | [E78EE4A92CE7](<Notebook/Acer/Aspire/Aspire 5733/E78EE4A92CE7>) |
+|            | Module DIMM DDR              | 2048 MB  |      | 1333 | 152   | [B1764C728D58](<Desktop/ASUSTek Computer/M4A79T/M4A79T Deluxe/B1764C728D58>) |
+|            | Module DIMM                  | 2 GB     | DDR3 | 1333 | 151   | [5E59DF1A21D1](<Desktop/ASUSTek Computer/A68/A68HM-K/5E59DF1A21D1>) |
+|            | Module DIMM                  | 4096 MB  | DDR3 | 1600 | 151   | [F51FFCD16AF1](<Desktop/Hewlett-Packard/Z400/Z400 Workstation/F51FFCD16AF1>) |
+|            | Module DIMM                  | 8 GB     | DDR3 | 1333 | 151   | [1EF1ECE712DD](<Desktop/Hewlett-Packard/Compaq/Compaq 8200 Elite SFF PC/1EF1ECE712DD>) |
+| Samsung    | M471A5143EB0-CPB SODIMM      | 4 GB     | DDR4 | 2133 | 151   | [2CD52138069F](<Notebook/ASUSTek Computer/X556/X556UR/2CD52138069F>) |
+| SK hynix   | HMT41GS6BFR8A-PB SODIMM      | 8 GB     | DDR3 | 1600 | 151   | [DEB1561C4802](<Notebook/Lenovo/ThinkPad/ThinkPad T460 20FMS3320G/DEB1561C4802>) |
+| Corsair    | CMK16GX4M2A2666C16 DIMM      | 8 GB     | DDR4 | 3400 | 150   | [E4AB5103884A](<Desktop/Hewlett-Packard/Pavilion/Pavilion Desktop PC 570-p0xx/E4AB5103884A>) |
+| SK hynix   | HMA82GS6DJR8N-XN SODIMM      | 16 GB    | DDR4 | 3200 | 150   | [E43BF5E3F0FB](<Notebook/Hewlett-Packard/Pavilion/Pavilion Gaming Laptop 17-cd1xxx/E43BF5E3F0FB>) |
+| SK hynix   | HMA851S6CJR6N-VK Row Of C... | 4 GB     | DDR4 | 2667 | 149   | [EB58F64E2F99](<Notebook/HUAWEI/BOHK-WAX9/BOHK-WAX9X/EB58F64E2F99>) |
+| Samsung    | M471A1G43DB0-CPB SODIMM      | 8 GB     | DDR4 | 3200 | 149   | [3B8F8D2C29D9](<Notebook/Lenovo/ThinkPad/ThinkPad P50 20EQS12Q06/3B8F8D2C29D9>) |
+| Samsung    | M471B5273EB0-CK0 SODIMM      | 4096 MB  | DDR3 | 4199 | 148   | [B7601389FED4](<All In One/Dell/XPS/XPS One 2710/B7601389FED4>) |
+|            | Module DIMM SDRAM            | 1 GB     |      |      | 146   | [592887AB254B](<Desktop/MSI/MS/MS-6701/592887AB254B>) |
+| Samsung    | M471B5273CH0-YK0 SODIMM      | 4 GB     | DDR3 | 1600 | 146   | [D6743F69927F](<Notebook/Toshiba/Satellite/Satellite L855/D6743F69927F>) |
+| Kingston   | ACR16D3LS1KFG/4G SODIMM      | 4 GB     | DDR3 | 1600 | 145   | [7E87E58E0326](<Notebook/Acer/Aspire/Aspire E1-731/7E87E58E0326>) |
+|            | Module DIMM                  | 4 GB     |      | 1600 | 145   | [8C361D61CA81](<Desktop/ASUSTek Computer/M4A88TD-V/M4A88TD-V EVO-USB3/8C361D61CA81>) |
+| Samsung    | U6E3S4AA-MGCR Row Of Chip... | 1 GB     |      | 4267 | 144   | [27E5EAA2D856](<Notebook/Acer/Swift/Swift SF314-59/27E5EAA2D856>) |
+| Kingston   | KHX1866C10D3/4G DIMM         | 4 GB     | DDR3 | 1923 | 143   | [EA467D68B2B0](<Desktop/ASRock/Z87/Z87 Killer/EA467D68B2B0>) |
+| Nanya      | NT4GC64B8HG0NS-DI SODIMM     | 4 GB     | DDR3 | 1600 | 143   | [9B8B98C59599](<Notebook/Dell/Vostro/Vostro 2520/9B8B98C59599>) |
+|            | Module Row Of Chips LPDDR4   | 2 GB     |      | 4267 | 143   | [E40D55F40B44](<Notebook/HUAWEI/RLEF-XX/RLEF-XX/E40D55F40B44>) |
+|            | Module DIMM                  | 4 GB     | DDR3 | 1600 | 143   | [EC6669129997](<Desktop/ASUSTek Computer/SABERTOOTH/SABERTOOTH 990FX/EC6669129997>) |
+| SK hynix   | HMA451S6AFR8N-TF SODIMM      | 4 GB     | DDR4 | 2133 | 142   | [6A8AAA05DEA5](<Convertible/Hewlett-Packard/Pavilion/Pavilion x360 m3 Convertible/6A8AAA05DEA5>) |
+| Micron     | 16ATF2G64HZ-2G6E1 SODIMM     | 16 GB    | DDR4 | 2667 | 141   | [050B9B1D7FFD](<Convertible/Fujitsu/LIFEBOOK/LIFEBOOK T939/050B9B1D7FFD>) |
+| Samsung    | Module SODIMM                | 16 GB    | DDR4 | 2667 | 141   | [E5F896FA5EDA](<Desktop/Hewlett-Packard/ProDesk/ProDesk 400 G4 DM/E5F896FA5EDA>) |
+| SK hynix   | HMA851S6JJR6N-VK SODIMM      | 4 GB     | DDR4 | 2667 | 141   | [D90176014461](<Notebook/ASUSTek Computer/VivoBook_ASUSLaptop/VivoBook_ASUSLaptop X509JA_X509JA/D90176014461>) |
+| Corsair    | CMK16GX4M2D3600C18 DIMM      | 8 GB     | DDR4 | 3600 | 140   | [1308B9921756](<Desktop/ASRock/Z370/Z370 Pro4/1308B9921756>) |
+| SK hynix   | HMT351U6EFR8C-PB DIMM        | 4 GB     | DDR3 | 1600 | 140   | [D21E9EEFFC43](<Desktop/Dell/OptiPlex/OptiPlex 9020/D21E9EEFFC43>) |
+|            | Module SODIMM                | 2048 MB  | DDR2 | 800  | 140   | [8CFB09ABBC00](<Notebook/Samsung Electronics/R528/R528-R728/8CFB09ABBC00>) |
+|            | Module SODIMM                | 2048 MB  | DDR3 | 1333 | 140   | [19BF4FD0AB27](<Notebook/ASUSTek Computer/T100/T100TAF/19BF4FD0AB27>) |
+| Team       | TEAMGROUP-UD4-3200 DIMM      | 8 GB     | DDR4 | 3733 | 140   | [5342B9CA551D](<Desktop/ASUSTek Computer/PRIME/PRIME X570-P/5342B9CA551D>) |
+| Corsair    | CMK32GX4M2D3600C18 DIMM      | 16 GB    | DDR4 | 3800 | 139   | [0CF125A71FC2](<Desktop/ASUSTek Computer/TUF/TUF Gaming B550M-ZAKU/0CF125A71FC2>) |
+|            | Module DIMM                  | 2 GB     | DDR2 | 667  | 139   | [F87484BC20AC](<Desktop/ASUSTek Computer/M3/M3A78-CM/F87484BC20AC>) |
+|            | Module SODIMM                | 2 GB     | DDR3 | 1333 | 139   | [3CDFDFEDA432](<Notebook/Positivo/W940/W940TU/3CDFDFEDA432>) |
+| SK hynix   | HMAA1GS6CJR6N-XN Row Of C... | 8 GB     | DDR4 | 3200 | 138   | [F0368201B804](<Notebook/Lenovo/IdeaPad/IdeaPad 1 15ALC7 82R4/F0368201B804>) |
+| Samsung    | M378A1K43CB2-CTD DIMM        | 8 GB     | DDR4 | 3266 | 138   | [ADBCE64F802C](<Desktop/ASUSTek Computer/ROG/ROG Strix GL10DH_GL10DH/ADBCE64F802C>) |
+|            | Module SODIMM                | 4 GB     | DDR3 | 1333 | 137   | [BACCDDF67BC6](<Notebook/Digibras/NH4/NH4CU53/BACCDDF67BC6>) |
+| Samsung    | M471B2873FHS-CH9 SODIMM      | 1 GB     | DDR3 | 1333 | 137   | [9DF2A2067147](<Notebook/Lenovo/G41-35/G41-35 80M7/9DF2A2067147>) |
+| SK hynix   | HMT325S6BFR8C-H9 SODIMM      | 2 GB     | DDR3 | 1333 | 135   | [FCC0FE6F7D0B](<Notebook/Lenovo/ThinkPad/ThinkPad X130e 233827C/FCC0FE6F7D0B>) |
+| SK hynix   | HMT451U6BFR8A-PB DIMM        | 4 GB     | DDR3 | 1600 | 135   | [89A433DBAC77](<Desktop/Dell/OptiPlex/OptiPlex 9020/89A433DBAC77>) |
 
 ### Battery
 
 | MFG        | Name           | Wh    | Type    | Count | Probe |
 |------------|----------------|-------|---------|-------|-------|
-| ASUSTek    | ASUS           | 42.2  | Li-ion  | 2632  | [F4D1F788E1](https://linux-hardware.org/?probe=f4d1f788e1) |
-| Hewlett... | PABAS0241231   | 41.9  | Li-ion  | 1213  | [E1313AF3E6](https://linux-hardware.org/?probe=e1313af3e6) |
-| Compal     | PABAS0241231   | 48.8  | Li-ion  | 927   | [47F5FE62AA](https://linux-hardware.org/?probe=47f5fe62aa) |
-| Lenovo     | PABAS0241231   | 45.0  | Li-ion  | 774   | [9355511511](https://linux-hardware.org/?probe=9355511511) |
-| MSI        | BIF0_9         | 51.4  | Li-ion  | 709   | [E69F8169FC](https://linux-hardware.org/?probe=e69f8169fc) |
-| SMP        | bq20z451       | 63.2  | Li-ion  | 607   | [B951048D8F](https://linux-hardware.org/?probe=b951048d8f) |
-| Intel SR 1 | SR Real        | 45.6  |         | 508   | [535CC48341](https://linux-hardware.org/?probe=535cc48341) |
-| OEM        | standard       | 93.5  | Li-ion  | 467   | [D6C6781535](https://linux-hardware.org/?probe=d6c6781535) |
-| Samsung    |                | 49    | Li-ion  | 466   | [A91BA19B0A](https://linux-hardware.org/?probe=a91ba19b0a) |
-| Hewlett... | Primary        | 45    | Li-ion  | 436   | [C78F20F332](https://linux-hardware.org/?probe=c78f20f332) |
-| Samsung    | SR Real        | 39.0  | Li-ion  | 374   | [167229560A](https://linux-hardware.org/?probe=167229560a) |
-| Hewlett... | Primary        | 48    | Li-ion  | 372   | [C941DA38CD](https://linux-hardware.org/?probe=c941da38cd) |
-| SANYO      | Li_Ion_4000mA  | 47.5  | Li-ion  | 366   | [8394909745](https://linux-hardware.org/?probe=8394909745) |
-| ASUSTek    | A32-K55        | 48.0  | Li-ion  | 357   | [B1B0FA7485](https://linux-hardware.org/?probe=b1b0fa7485) |
-| SMP        | DELL GPM0365   | 97.0  | Li-ion  | 342   | [15160B0649](https://linux-hardware.org/?probe=15160b0649) |
-| Hewlett... | Primary        | 40    | Li-ion  | 280   | [48D87E5C6E](https://linux-hardware.org/?probe=48d87e5c6e) |
-| LG         | PABAS0241231   | 48.9  | Li-ion  | 269   | [DA1C6920B6](https://linux-hardware.org/?probe=da1c6920b6) |
-| SANYO      | 45N1773        | 23.2  | Li-ion  | 241   | [CB2A0EFE72](https://linux-hardware.org/?probe=cb2a0efe72) |
-| Hewlett... | Primary        | 42    | Li-ion  | 238   | [3C422C5E96](https://linux-hardware.org/?probe=3c422c5e96) |
-| Hewlett... | Primary        | 41    | Li-ion  | 237   | [446A548122](https://linux-hardware.org/?probe=446a548122) |
-| DP         | bq20z451       | 54.3  | Li-ion  | 228   | [97D802A5D6](https://linux-hardware.org/?probe=97d802a5d6) |
-| Hewlett... | Primary        | 44    | Li-ion  | 224   | [56542DE280](https://linux-hardware.org/?probe=56542de280) |
-| Notebook   | BAT            | 49    | Li-ion  | 219   | [F63A54BF5F](https://linux-hardware.org/?probe=f63a54bf5f) |
-| Hewlett... | Primary        | 39    | Li-ion  | 213   | [EC3EE4B9DA](https://linux-hardware.org/?probe=ec3ee4b9da) |
-| LGC        | 45N1127        | 23.5  | Li-ion  | 212   | [8A7ED180C0](https://linux-hardware.org/?probe=8a7ed180c0) |
-| Hewlett... | Primary        | 50    | Li-ion  | 209   | [A86BD404E0](https://linux-hardware.org/?probe=a86bd404e0) |
-| Hewlett... | Primary        | 53    | Li-ion  | 205   | [1C98821416](https://linux-hardware.org/?probe=1c98821416) |
-| Hewlett... | Primary        | 38    | Li-ion  | 202   | [A3065A1B59](https://linux-hardware.org/?probe=a3065a1b59) |
-| Samsung    |                | 44    | Li-ion  | 193   | [9908964D4A](https://linux-hardware.org/?probe=9908964d4a) |
-| SMP        | L16M2PB1       | 30.0  | Li-poly | 192   | [483415E8CB](https://linux-hardware.org/?probe=483415e8cb) |
-| ASUSTek    | X550A26        | 38.0  | Li-ion  | 188   | [3D35FF8B68](https://linux-hardware.org/?probe=3d35ff8b68) |
-| Hewlett... | Primary        | 56    | Li-ion  | 186   | [907A94AE07](https://linux-hardware.org/?probe=907a94ae07) |
-| Hewlett... | Primary        | 43    | Li-ion  | 185   | [C8373114EF](https://linux-hardware.org/?probe=c8373114ef) |
-| Hewlett... | Primary        | 46    | Li-ion  | 183   | [64BBFA416B](https://linux-hardware.org/?probe=64bbfa416b) |
-| Hewlett... | Primary        | 41    | Li-ion  | 179   | [B3BF20B454](https://linux-hardware.org/?probe=b3bf20b454) |
-| Hewlett... | Primary        | 36    | Li-ion  | 175   | [A0B1299BAA](https://linux-hardware.org/?probe=a0b1299baa) |
-| SMP        | DELL G8VCF6C   | 52.0  | Li-poly | 175   | [F830561F82](https://linux-hardware.org/?probe=f830561f82) |
-| LGC        | AP18C8K        | 48.0  | Li-ion  | 173   | [B76E0E7397](https://linux-hardware.org/?probe=b76e0e7397) |
-| SANYO      | PABAS0241231   | 63.4  | Li-ion  | 172   | [44C5B43B8D](https://linux-hardware.org/?probe=44c5b43b8d) |
-| SANYO      | AL12A32        | 37.0  | Li-ion  | 171   | [E9212685F5](https://linux-hardware.org/?probe=e9212685f5) |
-| Notebook   | BAT            | 48    | Li-ion  | 164   | [1D50DA2BA5](https://linux-hardware.org/?probe=1d50da2ba5) |
-| CPT-COS    | L16C2PB2       | 30.6  | Li-poly | 161   | [E80EA5C4AE](https://linux-hardware.org/?probe=e80ea5c4ae) |
-| SANYO      | AL10B31        | 48.8  | Li-ion  | 160   | [5FE24A9991](https://linux-hardware.org/?probe=5fe24a9991) |
-| SANYO      | 45N1775        | 23.2  | Li-ion  | 159   | [CB2A0EFE72](https://linux-hardware.org/?probe=cb2a0efe72) |
-|            | Battery        |       |         | 158   | [8A7ED180C0](https://linux-hardware.org/?probe=8a7ed180c0) |
-| Hewlett... | Primary        | 37    | Li-ion  | 154   | [FD991056E0](https://linux-hardware.org/?probe=fd991056e0) |
-| SIMPLO     | PABAS0241231   | 77.0  | Li-ion  | 154   | [C17CFE4D6D](https://linux-hardware.org/?probe=c17cfe4d6d) |
-| LGC        | AP18E8M        | 57.5  | Li-ion  | 151   | [E788D3FEE0](https://linux-hardware.org/?probe=e788d3fee0) |
-| SMP        | L16M2PB2       | 35.0  | Li-poly | 149   | [BBE569DFF7](https://linux-hardware.org/?probe=bbe569dff7) |
-| SANYO      | AL15A32        | 37.0  | Li-ion  | 148   | [EDFA9FCBEF](https://linux-hardware.org/?probe=edfa9fcbef) |
-| Panasonic  | AP16M5J        | 37.0  | Li-ion  | 147   | [8849D7A1C9](https://linux-hardware.org/?probe=8849d7a1c9) |
-| Panasonic  | Li_Ion_4000mA  | 47.5  | Li-ion  | 144   | [6B908B35CC](https://linux-hardware.org/?probe=6b908b35cc) |
-| LG         | Li_Ion_4000mA  | 47.5  | Li-ion  | 139   | [289BD8C2FD](https://linux-hardware.org/?probe=289bd8c2fd) |
-| SMP        | DELL 70N2F95   | 84.3  | Li-poly | 137   | [2AB4F57FF6](https://linux-hardware.org/?probe=2ab4f57ff6) |
-| ASUSTek    | UX31-35        | 47.9  | Li-ion  | 136   | [1FB0CA13FF](https://linux-hardware.org/?probe=1fb0ca13ff) |
-| LGC        | AC14B8K        | 48.9  | Li-ion  | 134   | [CBD0938F3C](https://linux-hardware.org/?probe=cbd0938f3c) |
-| SANYO      | AS10D31        | 47.5  | Li-ion  | 132   | [05291D9029](https://linux-hardware.org/?probe=05291d9029) |
-| Hewlett... | Primary        | 49    | Li-ion  | 131   | [23B5CBFB33](https://linux-hardware.org/?probe=23b5cbfb33) |
-| Hewlett... | Primary        |       | Li-ion  | 130   | [716373F59A](https://linux-hardware.org/?probe=716373f59a) |
-| LGC        | L16L2PB2       | 30.0  | Li-poly | 128   | [C53EC6A9C0](https://linux-hardware.org/?probe=c53ec6a9c0) |
-| Sony       | 45N1111        | 23.2  | Li-poly | 126   | [BF207E9DC3](https://linux-hardware.org/?probe=bf207e9dc3) |
-| ASUSTek    | F82-22         | 48.4  | Li-ion  | 122   | [E5AAD61A1B](https://linux-hardware.org/?probe=e5aad61a1b) |
-| ASUSTek    | K52F-44        | 72.6  | Li-ion  | 121   | [AE414CF185](https://linux-hardware.org/?probe=ae414cf185) |
-| LGC        | 45N1049        | 40.4  | Li-ion  | 121   | [8A0AF12A27](https://linux-hardware.org/?probe=8a0af12a27) |
-| SMP        | DELL Y3F7Y6B   | 42.0  | Li-ion  | 120   | [9EAA09FAF0](https://linux-hardware.org/?probe=9eaa09faf0) |
-| LG         | 004B3842343... | 48.9  | Li-ion  | 119   | [BD4C84DA60](https://linux-hardware.org/?probe=bd4c84da60) |
-| ASUSTek    | X550A30        | 44.2  | Li-ion  | 118   | [053E93702B](https://linux-hardware.org/?probe=053e93702b) |
-| Samsung    |                | 48    | Li-ion  | 118   | [F983DADFEB](https://linux-hardware.org/?probe=f983dadfeb) |
-| SANYO      | GC86508SAT0    | 44.4  | Li-ion  | 117   | [F566395F99](https://linux-hardware.org/?probe=f566395f99) |
-| LGC        | 5B10W139       | 57.0  | Li-poly | 116   | [A27C899176](https://linux-hardware.org/?probe=a27c899176) |
-| TKBSS      | NS2P3SZMC4WR   | 49.5  | Li-ion  | 116   | [525C048249](https://linux-hardware.org/?probe=525c048249) |
-| Emdoor     |  Li-ion        | 38.0  | Li-ion  | 115   | [DD406112DE](https://linux-hardware.org/?probe=dd406112de) |
-| Hewlett... | Primary        | 35    | Li-ion  | 115   | [DDF0CB8A28](https://linux-hardware.org/?probe=ddf0cb8a28) |
-| SANYO      | 00323341343... | 55.9  | Li-ion  | 115   | [4B45FABD96](https://linux-hardware.org/?probe=4b45fabd96) |
-| Sony       | VGP-BPS26      | 43.2  | Li-ion  | 115   | [521DB31DFC](https://linux-hardware.org/?probe=521db31dfc) |
-| Hewlett... | Primary        | 34    | Li-ion  | 113   | [1BF512EE24](https://linux-hardware.org/?probe=1bf512ee24) |
-| Hewlett... | Primary        | 47    | Li-ion  | 113   | [34F1E1686E](https://linux-hardware.org/?probe=34f1e1686e) |
-| Notebook   | BAT            | 62    | Li-ion  | 112   | [F4E4C58948](https://linux-hardware.org/?probe=f4e4c58948) |
-| LGC        | 45N1113        | 23.5  | Li-ion  | 111   | [7FCB72C132](https://linux-hardware.org/?probe=7fcb72c132) |
-| LGC        | AC14B18J       | 36.7  | Li-ion  | 110   | [1AF4545239](https://linux-hardware.org/?probe=1af4545239) |
-| Hewlett... | Primary        | 32    | Li-ion  | 109   | [C8B979D035](https://linux-hardware.org/?probe=c8b979d035) |
-| Lenovo     | BASE-BAT       | 30.0  | Li-poly | 108   | [D79463EA93](https://linux-hardware.org/?probe=d79463ea93) |
-| Panasonic  | AS16A5K        | 41.4  | Li-ion  | 108   | [6F8DBB2E8E](https://linux-hardware.org/?probe=6f8dbb2e8e) |
-| SANYO      | PABAS024       | 48.8  | Li-ion  | 107   | [4C0751AA89](https://linux-hardware.org/?probe=4c0751aa89) |
-| Hewlett... | Primary        | 51    | Li-ion  | 105   | [C7308F11CE](https://linux-hardware.org/?probe=c7308f11ce) |
-|            | 47.52          | 48    | Li-ion  | 101   | [775C7346EB](https://linux-hardware.org/?probe=775c7346eb) |
-| SMP        | 01AV421        | 24.0  | Li-poly | 100   | [66B49186CB](https://linux-hardware.org/?probe=66b49186cb) |
-| Hewlett... | Primary        | 28    | Li-ion  | 99    | [DD6FFB8639](https://linux-hardware.org/?probe=dd6ffb8639) |
-| WB SR 1    | WB Lion        | 41.8  | Li-ion  | 99    | [A915E84A9A](https://linux-hardware.org/?probe=a915e84a9a) |
-| ASUSTek    | X555-50        | 37.3  | Li-ion  | 98    | [C7F621E335](https://linux-hardware.org/?probe=c7f621e335) |
-| Hewlett... | Primary        | 55    | Li-ion  | 97    | [E3F05FE37F](https://linux-hardware.org/?probe=e3f05fe37f) |
-| Hewlett... | Primary        | 30    | Li-ion  | 95    | [168B3CF595](https://linux-hardware.org/?probe=168b3cf595) |
-| Panasonic  | AP19B5L        | 53.0  | Li-ion  | 95    | [F7C7C572E4](https://linux-hardware.org/?probe=f7c7c572e4) |
-| SMP        | 5B10W13933     | 46.0  | Li-poly | 94    | [C5687C048F](https://linux-hardware.org/?probe=c5687c048f) |
-| ASUSTek    | K55--44        | 47.5  | Li-ion  | 92    | [0ABF7DF439](https://linux-hardware.org/?probe=0abf7df439) |
-| SANYO      | 45N1001        | 71.3  | Li-ion  | 91    | [7AEC73DFA1](https://linux-hardware.org/?probe=7aec73dfa1) |
-| CPT-COS    | L16C2PB1       | 35.3  | Li-poly | 89    | [C8A19F5567](https://linux-hardware.org/?probe=c8a19f5567) |
-| Hewlett... | Primary        | 31    | Li-ion  | 88    | [4F777DF0E8](https://linux-hardware.org/?probe=4f777df0e8) |
-| Razer      | Blade          | 70.6  |         | 87    | [4B2265C354](https://linux-hardware.org/?probe=4b2265c354) |
-| Samsung    |                | 58    | Li-ion  | 87    | [EA4FDD80E6](https://linux-hardware.org/?probe=ea4fdd80e6) |
-| Lenovo ... |                | 28    |         | 86    | [784570BAE3](https://linux-hardware.org/?probe=784570bae3) |
-| LGC        | L16L2PB3       | 35.0  | Li-poly | 86    | [EB559D913E](https://linux-hardware.org/?probe=eb559d913e) |
-| LG         | PABAS024       | 40.0  | Li-ion  | 85    | [2DF8B64F07](https://linux-hardware.org/?probe=2df8b64f07) |
-| Notebook   | BAT            | 74    | Li-ion  | 84    | [C775137D4F](https://linux-hardware.org/?probe=c775137d4f) |
-| CosMX      | AP20CBL        | 53.0  | Li-ion  | 83    | [9D7736A816](https://linux-hardware.org/?probe=9d7736a816) |
-| NVT        | Framewo        | 55.0  | Li-ion  | 82    | [78E63B3BD3](https://linux-hardware.org/?probe=78e63b3bd3) |
-| SIMPLO     | SDI ICR18650   | 64.0  | Li-ion  | 82    | [DB8E950D12](https://linux-hardware.org/?probe=db8e950d12) |
-| Celxpert   | 01AV448        | 45.7  | Li-poly | 80    | [95A77F6DCC](https://linux-hardware.org/?probe=95a77f6dcc) |
-| Hewlett... | Primary        | 33    | Li-ion  | 80    | [11B0A5BAA1](https://linux-hardware.org/?probe=11b0a5baa1) |
-| SMP        | DELL VN3N047   | 41.4  | Li-ion  | 80    | [FCCFCD375F](https://linux-hardware.org/?probe=fccfcd375f) |
-| SMP        | 01AV447        | 45.7  | Li-poly | 79    | [1E65B46A12](https://linux-hardware.org/?probe=1e65b46a12) |
-| Sony       | Li_Ion_4000mA  | 97.7  | Li-ion  | 79    | [1C163EB17F](https://linux-hardware.org/?probe=1c163eb17f) |
-| Sunwoda-H  | HB4692Z9ECW... | 55.2  | Li-ion  | 78    | [1B0786EC5E](https://linux-hardware.org/?probe=1b0786ec5e) |
-|            | 48.6           | 49    | Li-ion  | 77    | [5E78FF90CC](https://linux-hardware.org/?probe=5e78ff90cc) |
-| Celxpert   | 01AV424        | 24.1  | Li-poly | 77    | [66B49186CB](https://linux-hardware.org/?probe=66b49186cb) |
-| SMP        | 00HW023        | 23.5  | Li-poly | 77    | [4229BE0AFA](https://linux-hardware.org/?probe=4229be0afa) |
-| Sony       |                | 42    | Li-ion  | 77    | [C182925286](https://linux-hardware.org/?probe=c182925286) |
-| AS3GWAF3KC | GA50358        | 90.0  | Li-ion  | 76    | [E43DA42C9C](https://linux-hardware.org/?probe=e43da42c9c) |
-| Hewlett... | Primary        | 89    | Li-ion  | 76    | [2AE0D7557B](https://linux-hardware.org/?probe=2ae0d7557b) |
-| Hewlett... | Primary        | 42    | Li-ion  | 76    | [816F9E047A](https://linux-hardware.org/?probe=816f9e047a) |
-| ASUSTek    | K53--52        | 48.4  | Li-ion  | 75    | [4F37849C94](https://linux-hardware.org/?probe=4f37849c94) |
-| Hewlett... | Primary        | 29    | Li-ion  | 75    | [A3496C8509](https://linux-hardware.org/?probe=a3496c8509) |
-| LGC        | 45N1011        | 86.6  | Li-ion  | 75    | [D95CCBF97D](https://linux-hardware.org/?probe=d95ccbf97d) |
-| OEM        | FX50442        | 48.0  | Li-ion  | 74    | [F23FB5CCA0](https://linux-hardware.org/?probe=f23fb5cca0) |
-| CPT-COS    | L17C4PB0       | 45.5  | Li-poly | 72    | [4B23B933B5](https://linux-hardware.org/?probe=4b23b933b5) |
-| LGC        | 45N1005        | 56.2  | Li-ion  | 72    | [8695D820E4](https://linux-hardware.org/?probe=8695d820e4) |
-| SMP        | DELL VM73283   | 42.0  | Li-poly | 72    | [DAD60CB86A](https://linux-hardware.org/?probe=dad60cb86a) |
-| CPT-COS    | L14C3P6        | 36.6  | Li-ion  | 71    | [BD97B057E3](https://linux-hardware.org/?probe=bd97b057e3) |
-| Hewlett... | Primary        | 26    | Li-ion  | 71    | [AA27725A50](https://linux-hardware.org/?probe=aa27725a50) |
-| SANYO      | 45N1043        | 38.9  | Li-ion  | 71    | [74348D01F3](https://linux-hardware.org/?probe=74348d01f3) |
-| Hewlett... | Primary        | 27    | Li-ion  | 70    | [CB00A3E89D](https://linux-hardware.org/?probe=cb00a3e89d) |
-| Samsung... | DELL P8TC727   | 31.1  | Li-ion  | 70    | [B72361CA9E](https://linux-hardware.org/?probe=b72361ca9e) |
-| SMP        | DELL TP1GT61   | 60.0  | Li-poly | 70    | [8C73ABE0EE](https://linux-hardware.org/?probe=8c73abe0ee) |
-| Sunwoda    | R15B01W        | 60.5  | Li-ion  | 70    | [C41D566374](https://linux-hardware.org/?probe=c41d566374) |
-| SANYO      | 01AV405        | 26.3  | Li-ion  | 69    | [4229BE0AFA](https://linux-hardware.org/?probe=4229be0afa) |
-| Sunwoda-H  | HB4692Z9ECW-41 | 55.2  | Li-ion  | 69    | [A4F5DCE6D6](https://linux-hardware.org/?probe=a4f5dce6d6) |
-| ASUSTek    | N56--52        | 57.2  | Li-ion  | 68    | [C49DEE996B](https://linux-hardware.org/?probe=c49dee996b) |
-| SIMPLO     | BASE-BAT       | 38.0  | Li-poly | 68    | [CACF6A8831](https://linux-hardware.org/?probe=cacf6a8831) |
-| ASUSTek    | F3---24        | 52.8  | Li-ion  | 67    | [3D4D35A9A7](https://linux-hardware.org/?probe=3d4d35a9a7) |
-| ASUSTek    | K55--47        | 48.4  | Li-ion  | 67    | [5ECB1BB650](https://linux-hardware.org/?probe=5ecb1bb650) |
-| Celxpert   | L19C3PD6       | 52.5  | Li-poly | 67    | [E1F824B7E1](https://linux-hardware.org/?probe=e1f824b7e1) |
-| Dynapack   | HB4593R1ECW    | 56.3  | Li-ion  | 67    | [2CF04D07FB](https://linux-hardware.org/?probe=2cf04d07fb) |
-| Notebook   | BAT            | 53    | Li-ion  | 67    | [5DA0DF2CF0](https://linux-hardware.org/?probe=5da0df2cf0) |
-| SANYO      | L09S6Y02       | 38.9  | Li-ion  | 67    | [C59C5C0CDF](https://linux-hardware.org/?probe=c59c5c0cdf) |
-| ASUSTek    | X453-42        | 31.7  | Li-ion  | 66    | [0A307C8C2B](https://linux-hardware.org/?probe=0a307c8c2b) |
-| Hewlett... | Primary        | 38    | Li-ion  | 66    | [A36C4E671D](https://linux-hardware.org/?probe=a36c4e671d) |
-| SMP        | 00NY493        | 90.0  | Li-poly | 66    | [85A4DE4E58](https://linux-hardware.org/?probe=85a4de4e58) |
-|            | 48.84          | 49    | Li-ion  | 65    | [53538C2AE9](https://linux-hardware.org/?probe=53538c2ae9) |
-| LGC        | 01AV445        | 45.0  | Li-poly | 65    | [47BFD44610](https://linux-hardware.org/?probe=47bfd44610) |
-| SMP        | 01AV430        | 57.0  | Li-poly | 65    | [4B60A30117](https://linux-hardware.org/?probe=4b60a30117) |
-| SMP        | L19M4PC0       | 60.0  | Li-poly | 65    | [4AD69AEA88](https://linux-hardware.org/?probe=4ad69aea88) |
-| SANYO      | GRAPE32        | 21.9  | Li-ion  | 64    | [8154485976](https://linux-hardware.org/?probe=8154485976) |
-| SMP        | L17M3PG2       | 57.0  | Li-poly | 64    | [00DF9B6BDA](https://linux-hardware.org/?probe=00df9b6bda) |
-| Hewlett... | 5600           | 62.2  | Li-ion  | 63    | [C91E4D9C5A](https://linux-hardware.org/?probe=c91e4d9c5a) |
-| LGC        | 01AV489        | 23.9  | Li-poly | 63    | [F67154866C](https://linux-hardware.org/?probe=f67154866c) |
-| LGC        | L17L2PF1       | 30.0  | Li-poly | 63    | [580E3A1237](https://linux-hardware.org/?probe=580e3a1237) |
-| Sunwoda    | 5B10X025       | 45.0  | Li-poly | 63    | [FC28F6D3F0](https://linux-hardware.org/?probe=fc28f6d3f0) |
-| LGC        | 45N1025        | 62.2  | Li-ion  | 62    | [874513DB8D](https://linux-hardware.org/?probe=874513db8d) |
-| SANYO      | 45N1023        | 48.8  | Li-ion  | 62    | [D8EC895BEA](https://linux-hardware.org/?probe=d8ec895bea) |
-| ASUSTek    | F5---22        | 48.4  | Li-ion  | 61    | [1E5BB7661E](https://linux-hardware.org/?probe=1e5bb7661e) |
-| Celxpert   | 5B10X026       | 45.0  | Li-poly | 61    | [AF9591CEDC](https://linux-hardware.org/?probe=af9591cedc) |
-| LGC        | LNV-45N1       | 47.0  | Li-ion  | 61    | [A8090F51BC](https://linux-hardware.org/?probe=a8090f51bc) |
-| Notebook   | BAT            | 35    | Li-ion  | 61    | [51EE77485D](https://linux-hardware.org/?probe=51ee77485d) |
-| SMP        | AP18E7M        | 58.8  | Li-ion  | 61    | [EFB597952F](https://linux-hardware.org/?probe=efb597952f) |
-| SMP        | DELL DM3WC64   | 60.0  | Li-poly | 61    | [DC5C96E431](https://linux-hardware.org/?probe=dc5c96e431) |
-| Sunwoda-H  | HB4692J5ECW-31 | 41.4  | Li-ion  | 61    | [21577119AD](https://linux-hardware.org/?probe=21577119ad) |
-| Hewlett... | Primary        | 54    | Li-ion  | 60    | [8A1EF40351](https://linux-hardware.org/?probe=8a1ef40351) |
-| SANYO      | AP13B3K        | 53.4  | Li-ion  | 60    | [4FA79FB180](https://linux-hardware.org/?probe=4fa79fb180) |
-| SMP        | 02DL005        | 51.0  | Li-poly | 60    | [7C862E338C](https://linux-hardware.org/?probe=7c862e338c) |
-| SMP        | DELL VM73297   | 42.0  | Li-poly | 60    | [6A837BDF4D](https://linux-hardware.org/?probe=6a837bdf4d) |
-| Hewlett... | Primary        | 40    | Li-ion  | 59    | [3C321C476A](https://linux-hardware.org/?probe=3c321c476a) |
-| Hewlett... | Primary        | 57    | Li-ion  | 58    | [7ED9078ED9](https://linux-hardware.org/?probe=7ed9078ed9) |
-| Lenovo     |                | 28    |         | 58    | [C8D8595AF5](https://linux-hardware.org/?probe=c8d8595af5) |
-| LG         | LGC-LGC        | 80.0  | Li-ion  | 58    | [F8F6EC2123](https://linux-hardware.org/?probe=f8f6ec2123) |
-| SANYO      | 00HW022        | 23.5  | Li-poly | 57    | [7A570EFE74](https://linux-hardware.org/?probe=7a570efe74) |
-| SMP        | DELL GD1JP65   | 68.0  | Li-poly | 57    | [89F89D2A9E](https://linux-hardware.org/?probe=89f89d2a9e) |
-| Sunwoda    | HB6081V1ECW-41 | 55.2  | Li-ion  | 57    | [3C82FEA068](https://linux-hardware.org/?probe=3c82fea068) |
-| ASUSTek    | 1015PE         | 47.5  | Li-ion  | 56    | [6AA9D32DDA](https://linux-hardware.org/?probe=6aa9d32dda) |
-| LGC        | 45N1738        | 71.1  | Li-ion  | 56    | [1701C2BAAE](https://linux-hardware.org/?probe=1701c2baae) |
-| Samsung    |                | 24    | Li-ion  | 56    | [4B58936AD7](https://linux-hardware.org/?probe=4b58936ad7) |
-| SMP        | ASMB016        | 57.7  | Li-ion  | 56    | [E7EBC0EC0E](https://linux-hardware.org/?probe=e7ebc0ec0e) |
-| ASUSTek    | K53--27        | 37.8  | Li-ion  | 55    | [77CBFA62CD](https://linux-hardware.org/?probe=77cbfa62cd) |
-| ASUSTek    | K56--30        | 33.0  | Li-ion  | 55    | [D878FAD4D0](https://linux-hardware.org/?probe=d878fad4d0) |
-|            |                | 38    | Li-ion  | 55    | [73E11E9235](https://linux-hardware.org/?probe=73e11e9235) |
-| LGC        | 01AV490        | 23.9  | Li-poly | 55    | [00DE843C75](https://linux-hardware.org/?probe=00de843c75) |
-| Notebook   | BAT            | 60    | Li-ion  | 55    | [A4BD2C22EB](https://linux-hardware.org/?probe=a4bd2c22eb) |
-| SANYO      | 42T4763        | 47.5  | Li-ion  | 55    | [40489044A0](https://linux-hardware.org/?probe=40489044a0) |
-| Sony       |                | 51    | Li-ion  | 55    | [49DC80D94C](https://linux-hardware.org/?probe=49dc80d94c) |
-| Hewlett... | Primary        | 52    | Li-ion  | 54    | [D0319BDF17](https://linux-hardware.org/?probe=d0319bdf17) |
-| Lenovo ... |                | 38    |         | 54    | [5234925C5C](https://linux-hardware.org/?probe=5234925c5c) |
-| LGC KT0... | AP18C8K        | 48.0  | Li-ion  | 54    | [6FD79B811F](https://linux-hardware.org/?probe=6fd79b811f) |
-| OEM        | AS10D31        | 48.4  | Li-ion  | 54    | [5F191F449F](https://linux-hardware.org/?probe=5f191f449f) |
-| SMP        | L19M3PF7       | 45.0  | Li-poly | 54    | [0E798DB6A8](https://linux-hardware.org/?probe=0e798db6a8) |
-| ASUSTek    | N550-40        | 59.2  | Li-ion  | 53    | [A799667521](https://linux-hardware.org/?probe=a799667521) |
-| GLK MRD    |  Li-ion        | 34.2  | Li-ion  | 53    | [208F6823ED](https://linux-hardware.org/?probe=208f6823ed) |
-| Hewlett... | Primary        | 24    | Li-ion  | 53    | [A63003783D](https://linux-hardware.org/?probe=a63003783d) |
-| LGC        | 02DL004        | 51.0  | Li-poly | 53    | [C81213C25E](https://linux-hardware.org/?probe=c81213c25e) |
-| SANYO      | 42T4799        | 86.6  | Li-ion  | 53    | [AAAD7B3A55](https://linux-hardware.org/?probe=aaad7b3a55) |
-| SMP        | 5B10W138       | 45.3  | Li-poly | 53    | [915C34D052](https://linux-hardware.org/?probe=915c34d052) |
-| SMP        | L14M3P24       | 45.0  | Li-poly | 53    | [AD9AF07A7C](https://linux-hardware.org/?probe=ad9af07a7c) |
-| Celxpert   | 5B10W138       | 45.7  | Li-poly | 52    | [B402183807](https://linux-hardware.org/?probe=b402183807) |
-| APL MRD    |  Li-ion        | 38.0  | Li-ion  | 50    | [5FE84B74B0](https://linux-hardware.org/?probe=5fe84b74b0) |
-| LGC        | 5B10X026       | 45.0  | Li-poly | 50    | [A438A0C994](https://linux-hardware.org/?probe=a438a0c994) |
-| Panasonic  | AS10D51        | 47.5  | Li-ion  | 50    | [A74C66FC15](https://linux-hardware.org/?probe=a74c66fc15) |
-| SANYO      | AS07B31        | 47.5  | Li-ion  | 50    | [224DC7209E](https://linux-hardware.org/?probe=224dc7209e) |
-| Toshiba    | PABAS0241231   | 32.1  | Li-ion  | 50    | [338DA8730F](https://linux-hardware.org/?probe=338da8730f) |
-| Dynapack   | HB4593J6ECW    | 41.2  | Li-ion  | 49    | [D07874C829](https://linux-hardware.org/?probe=d07874c829) |
-| Hewlett... | Primary        | 22    | Li-ion  | 49    | [F78F58795C](https://linux-hardware.org/?probe=f78f58795c) |
-| Samsung    |                | 45    | Li-ion  | 49    | [D016282342](https://linux-hardware.org/?probe=d016282342) |
-| SANYO      | AS07A31        | 48.8  | Li-ion  | 49    | [4463D7323A](https://linux-hardware.org/?probe=4463d7323a) |
-| SMP        | 5B10W139       | 50.5  | Li-poly | 49    | [E9D9710EF9](https://linux-hardware.org/?probe=e9d9710ef9) |
-| Sunwoda    | 5B10W13935     | 46.0  | Li-poly | 49    | [BAB222234A](https://linux-hardware.org/?probe=bab222234a) |
-| Notebook   | BAT            | 45    | Li-ion  | 48    | [6D89F7E662](https://linux-hardware.org/?probe=6d89f7e662) |
-| ASUSTek    | UX425          | 50.0  | Li-ion  | 47    | [679F0C2F88](https://linux-hardware.org/?probe=679f0c2f88) |
-| ASUSTek    | X200-30        | 33.8  | Li-ion  | 47    | [1F7840B315](https://linux-hardware.org/?probe=1f7840b315) |
-| LGC        | L11L6Y01       | 40.4  | Li-ion  | 47    | [EFB4022E4C](https://linux-hardware.org/?probe=efb4022e4c) |
-| SANYO      | 42T4791        | 56.2  | Li-ion  | 47    | [0C4578A674](https://linux-hardware.org/?probe=0c4578a674) |
-| SMP        | L17M3PG1       | 52.5  | Li-poly | 47    | [510237FACD](https://linux-hardware.org/?probe=510237facd) |
-| Sony       | PABAS024       | 52.7  | Li-ion  | 47    | [7A1A8BB421](https://linux-hardware.org/?probe=7a1a8bb421) |
-| Sunwoda    | 5B10W13975     | 57.0  | Li-poly | 47    | [B9CFD37540](https://linux-hardware.org/?probe=b9cfd37540) |
-| TPS        | S10            | 44.7  | Li-ion  | 47    | [FFAA34D0C1](https://linux-hardware.org/?probe=ffaa34d0c1) |
-| Hewlett... | Primary        | 39    | Li-ion  | 46    | [198FA6162E](https://linux-hardware.org/?probe=198fa6162e) |
-| LGC        | 01AV494        | 57.0  | Li-poly | 46    | [A467A04489](https://linux-hardware.org/?probe=a467a04489) |
-| LGC        | 45N1147        | 56.2  | Li-ion  | 46    | [988731AC8D](https://linux-hardware.org/?probe=988731ac8d) |
-| Notebook   | BAT            | 36    | Li-ion  | 46    | [069A675D2A](https://linux-hardware.org/?probe=069a675d2a) |
-| SMP        | 45N1045        | 42.8  | Li-ion  | 46    | [5AAD144224](https://linux-hardware.org/?probe=5aad144224) |
-| SMP        | 5B10X026       | 45.7  | Li-poly | 46    | [69D1F17B35](https://linux-hardware.org/?probe=69d1f17b35) |
-| ASUSTek    | T12--22        | 46.2  | Li-ion  | 45    | [95935443C0](https://linux-hardware.org/?probe=95935443c0) |
-| Celxpert   | 01AY969        | 80.4  | Li-poly | 45    | [D859E0FF10](https://linux-hardware.org/?probe=d859e0ff10) |
-| Celxpert   | L20C4PC1       | 80.0  | Li-poly | 45    | [ACD4C4AF90](https://linux-hardware.org/?probe=acd4c4af90) |
-| Hewlett... | Primary        | 37    | Li-ion  | 45    | [D809F15D99](https://linux-hardware.org/?probe=d809f15d99) |
-| LGC        | 45N1735        | 47.5  | Li-ion  | 45    | [F945EC106E](https://linux-hardware.org/?probe=f945ec106e) |
-| SANYO      | 45N1777        | 71.3  | Li-ion  | 45    | [A8DEB2307C](https://linux-hardware.org/?probe=a8deb2307c) |
-| SMP        | 01AV452        | 24.0  | Li-poly | 45    | [96E067F5C8](https://linux-hardware.org/?probe=96e067f5c8) |
-| SMP        | 5B11C732       | 57.0  | Li-poly | 45    | [1E70580006](https://linux-hardware.org/?probe=1e70580006) |
-| SMP        | L09M6Y02       | 46.4  | Li-ion  | 45    | [2316D5DC8B](https://linux-hardware.org/?probe=2316d5dc8b) |
-| Sunwoda    | L20D4PC1       | 80.0  | Li-poly | 45    | [2BAF2CBC85](https://linux-hardware.org/?probe=2baf2cbc85) |
-| ASUSTek    | PA3533U        | 56.2  | Li-ion  | 44    | [F21E7219CE](https://linux-hardware.org/?probe=f21e7219ce) |
-| Getac      | BC 4S1P        | 73.4  | Li-ion  | 44    | [40C181B615](https://linux-hardware.org/?probe=40c181b615) |
-| Hewlett... | Primary        | 5     | Li-ion  | 44    | [0519471935](https://linux-hardware.org/?probe=0519471935) |
-| Panasonic  | AS16B5J        | 62.2  | Li-ion  | 44    | [3497FEDA9F](https://linux-hardware.org/?probe=3497feda9f) |
-| SANYO      | 45N1779        | 99.5  | Li-ion  | 44    | [228AEC8C45](https://linux-hardware.org/?probe=228aec8c45) |
-| SMP        | 00HW029        | 52.1  | Li-poly | 44    | [7ADB4B2000](https://linux-hardware.org/?probe=7adb4b2000) |
-| SMP        | 01AV446        | 45.3  | Li-poly | 44    | [779E8396D6](https://linux-hardware.org/?probe=779e8396d6) |
-| ASUSTek    | UX325          | 67.3  | Li-ion  | 43    | [92CBB2E876](https://linux-hardware.org/?probe=92cbb2e876) |
-| ASUSTek    | X550E26        | 37.4  | Li-ion  | 43    | [00FBE71B59](https://linux-hardware.org/?probe=00fbe71b59) |
-| Hewlett... | Primary        | 18    | Li-ion  | 43    | [CC5F5EE72C](https://linux-hardware.org/?probe=cc5f5ee72c) |
-| LGC        | 01AV478        | 57.0  | Li-poly | 43    | [47AC6239D5](https://linux-hardware.org/?probe=47ac6239d5) |
-| LGC        | 02DL007        | 50.5  | Li-poly | 43    | [C7CA4B1477](https://linux-hardware.org/?probe=c7ca4b1477) |
-| LGC        | 42T4911        | 47.5  | Li-ion  | 43    | [10DE9F17E1](https://linux-hardware.org/?probe=10de9f17e1) |
+| ASUSTek    | ASUS           | 39.0  | Li-ion  | 4346  | [8550E720AF](https://linux-hardware.org/?probe=8550e720af) |
+| Hewlett... | PABAS0241231   | 51.0  | Li-ion  | 1780  | [F3519FBD26](https://linux-hardware.org/?probe=f3519fbd26) |
+| Compal     | PABAS0241231   | 4.2   | Li-ion  | 1179  | [919F9D689C](https://linux-hardware.org/?probe=919f9d689c) |
+| MSI        | BIF0_9         | 80.3  | Li-ion  | 1157  | [B064D5D8AA](https://linux-hardware.org/?probe=b064d5d8aa) |
+| SMP        | bq20z451       | 54.3  | Li-ion  | 1069  | [531FEB4D85](https://linux-hardware.org/?probe=531feb4d85) |
+| Lenovo     | PABAS0241231   | 50.2  | Li-ion  | 934   | [1BE4064009](https://linux-hardware.org/?probe=1be4064009) |
+| Intel SR 1 | SR Real        | 50.0  |         | 879   | [A5D0C097A5](https://linux-hardware.org/?probe=a5d0c097a5) |
+| OEM        | standard       | 99.1  | Li-ion  | 733   | [5D3FE59ED7](https://linux-hardware.org/?probe=5d3fe59ed7) |
+| ASUSTek    | A32-K55        | 64.4  | Li-ion  | 731   | [3CF042BF3F](https://linux-hardware.org/?probe=3cf042bf3f) |
+| Hewlett... | Primary        | 45    | Li-ion  | 638   | [2E0D9756FE](https://linux-hardware.org/?probe=2e0d9756fe) |
+| Samsung    | SR Real        | 43.1  | Li-ion  | 600   | [7D22EFB355](https://linux-hardware.org/?probe=7d22efb355) |
+| Samsung    |                | 49    | Li-ion  | 549   | [C66EAF3382](https://linux-hardware.org/?probe=c66eaf3382) |
+| Hewlett... | Primary        | 48    | Li-ion  | 524   | [EB07190046](https://linux-hardware.org/?probe=eb07190046) |
+| SANYO      | Li_Ion_4000mA  | 47.5  | Li-ion  | 451   | [AA9170D15A](https://linux-hardware.org/?probe=aa9170d15a) |
+| SMP        | DELL GPM0365   | 97.0  | Li-ion  | 416   | [4780FBFF59](https://linux-hardware.org/?probe=4780fbff59) |
+| Hewlett... | Primary        | 50    | Li-ion  | 378   | [E0F48651C0](https://linux-hardware.org/?probe=e0f48651c0) |
+| Hewlett... | Primary        | 41    | Li-ion  | 372   | [94FDF69690](https://linux-hardware.org/?probe=94fdf69690) |
+| DP         | bq20z451       | 54.3  | Li-ion  | 366   | [16DF9D43B9](https://linux-hardware.org/?probe=16df9d43b9) |
+| Hewlett... | Primary        | 40    | Li-ion  | 363   | [C2AE1365C2](https://linux-hardware.org/?probe=c2ae1365c2) |
+| SANYO      | 45N1773        | 23.2  | Li-ion  | 344   | [E45E264430](https://linux-hardware.org/?probe=e45e264430) |
+| LG         | PABAS0241231   | 40.4  | Li-ion  | 341   | [0CCE8338D7](https://linux-hardware.org/?probe=0cce8338d7) |
+| Hewlett... | Primary        | 41    | Li-ion  | 330   | [2E065DA895](https://linux-hardware.org/?probe=2e065da895) |
+| Hewlett... | Primary        | 53    | Li-ion  | 321   | [9F0FC66E58](https://linux-hardware.org/?probe=9f0fc66e58) |
+| LGC        | 45N1127        | 23.5  | Li-ion  | 318   | [56B90E34AE](https://linux-hardware.org/?probe=56b90e34ae) |
+| Hewlett... | Primary        | 42    | Li-ion  | 315   | [2B45C6C699](https://linux-hardware.org/?probe=2b45c6c699) |
+| Hewlett... | Primary        | 56    | Li-ion  | 303   | [97A21CD2B9](https://linux-hardware.org/?probe=97a21cd2b9) |
+| Hewlett... | Primary        | 43    | Li-ion  | 289   | [2127FD790B](https://linux-hardware.org/?probe=2127fd790b) |
+| Hewlett... | Primary        | 38    | Li-ion  | 288   | [ACB7DEECE7](https://linux-hardware.org/?probe=acb7deece7) |
+| Hewlett... | Primary        | 39    | Li-ion  | 286   | [BA44D0E580](https://linux-hardware.org/?probe=ba44d0e580) |
+| Hewlett... | Primary        | 44    | Li-ion  | 285   | [2729BDE753](https://linux-hardware.org/?probe=2729bde753) |
+| LGC        | AP18C8K        | 48.0  | Li-ion  | 280   | [52B26CAC3F](https://linux-hardware.org/?probe=52b26cac3f) |
+| Hewlett... | Primary        | 46    | Li-ion  | 279   | [349DDF33A4](https://linux-hardware.org/?probe=349ddf33a4) |
+| Hewlett... | Primary        | 51    | Li-ion  | 273   | [60AB24F653](https://linux-hardware.org/?probe=60ab24f653) |
+| Notebook   | BAT            | 49    | Li-ion  | 267   | [7DA1ABB74D](https://linux-hardware.org/?probe=7da1abb74d) |
+| LGC        | AP18E8M        | 57.5  | Li-ion  | 264   | [8461425EC1](https://linux-hardware.org/?probe=8461425ec1) |
+| SMP        | L16M2PB1       | 30.0  | Li-poly | 249   | [3200CAAB14](https://linux-hardware.org/?probe=3200caab14) |
+| Hewlett... | Primary        | 36    | Li-ion  | 248   | [D87A6139F6](https://linux-hardware.org/?probe=d87a6139f6) |
+| WB SR 1    | WB Lion        | 19.2  | Li-ion  | 240   | [DAE997FEE3](https://linux-hardware.org/?probe=dae997fee3) |
+| ASUSTek    | X550A26        | 34.6  | Li-ion  | 231   | [FFFC36417C](https://linux-hardware.org/?probe=fffc36417c) |
+|            | Battery        |       |         | 229   | [EB1866B0F2](https://linux-hardware.org/?probe=eb1866b0f2) |
+| SANYO      | 45N1775        | 23.2  | Li-ion  | 228   | [F78ACAD9FD](https://linux-hardware.org/?probe=f78acad9fd) |
+| Notebook   | BAT            | 48    | Li-ion  | 225   | [C4AF5FAFE4](https://linux-hardware.org/?probe=c4af5fafe4) |
+| CPT-COS    | L16C2PB2       | 30.6  | Li-poly | 222   | [145B300A77](https://linux-hardware.org/?probe=145b300a77) |
+| Hewlett... | Primary        | 37    | Li-ion  | 218   | [317B3A0D60](https://linux-hardware.org/?probe=317b3a0d60) |
+| SMP        | L16M2PB2       | 35.0  | Li-poly | 217   | [B55322DD58](https://linux-hardware.org/?probe=b55322dd58) |
+| SANYO      | AL12A32        | 37.0  | Li-ion  | 212   | [C0F17443E2](https://linux-hardware.org/?probe=c0f17443e2) |
+| SMP        | DELL G8VCF6C   | 52.0  | Li-poly | 207   | [E6D3CB85C1](https://linux-hardware.org/?probe=e6d3cb85c1) |
+| Panasonic  | AP16M5J        | 37.0  | Li-ion  | 206   | [734FD13848](https://linux-hardware.org/?probe=734fd13848) |
+| Samsung    |                | 44    | Li-ion  | 206   | [924A6A8572](https://linux-hardware.org/?probe=924a6a8572) |
+| Panasonic  | AP19B5L        | 53.0  | Li-ion  | 204   | [D2483D4BB8](https://linux-hardware.org/?probe=d2483d4bb8) |
+| SMP        | DELL 70N2F95   | 84.3  | Li-poly | 204   | [D929F4B785](https://linux-hardware.org/?probe=d929f4b785) |
+| SANYO      | PABAS0241231   | 38.9  | Li-ion  | 203   | [9CBBD96A18](https://linux-hardware.org/?probe=9cbbd96a18) |
+| SANYO      | AL15A32        | 29.6  | Li-ion  | 198   | [42555DDE71](https://linux-hardware.org/?probe=42555dde71) |
+| Emdoor     |  Li-ion        | 38.0  | Li-ion  | 194   | [4A1B8628E0](https://linux-hardware.org/?probe=4a1b8628e0) |
+| SIMPLO     | PABAS0241231   | 46.0  | Li-ion  | 194   | [4D428FF2FD](https://linux-hardware.org/?probe=4d428ff2fd) |
+| CosMX      | AP20CBL        | 53.0  | Li-ion  | 181   | [67B8E4D3E7](https://linux-hardware.org/?probe=67b8e4d3e7) |
+| SANYO      | AL10B31        | 48.8  | Li-ion  | 180   | [99379DECCC](https://linux-hardware.org/?probe=99379deccc) |
+| Hewlett... | Primary        |       | Li-ion  | 178   | [010343CF1D](https://linux-hardware.org/?probe=010343cf1d) |
+| Sony       | 45N1111        | 23.2  | Li-poly | 171   | [C62F3B52E2](https://linux-hardware.org/?probe=c62f3b52e2) |
+| LGC        | AC14B8K        | 48.9  | Li-ion  | 170   | [ED218C23AE](https://linux-hardware.org/?probe=ed218c23ae) |
+| SMP        | 01AV421        | 24.0  | Li-poly | 169   | [A84D2E6201](https://linux-hardware.org/?probe=a84d2e6201) |
+| Sunwoda-H  | HB4692Z9ECW... | 55.2  | Li-ion  | 169   | [B88F684622](https://linux-hardware.org/?probe=b88f684622) |
+| LGC        | L16L2PB2       | 29.6  | Li-poly | 168   | [2BC9B23A42](https://linux-hardware.org/?probe=2bc9b23a42) |
+| Hewlett... | Primary        | 32    | Li-ion  | 167   | [EA9DCCD4A8](https://linux-hardware.org/?probe=ea9dccd4a8) |
+| Panasonic  | Li_Ion_4000mA  | 47.5  | Li-ion  | 166   | [18A8D13FE9](https://linux-hardware.org/?probe=18a8d13fe9) |
+| Hewlett... | Primary        | 49    | Li-ion  | 165   | [87AEA4A07B](https://linux-hardware.org/?probe=87aea4a07b) |
+| AS3GWAF3KC | GA50358        | 90.0  |         | 163   | [EEEF064F3D](https://linux-hardware.org/?probe=eeef064f3d) |
+| Hewlett... | Primary        | 34    | Li-ion  | 161   | [98D64B84A8](https://linux-hardware.org/?probe=98d64b84a8) |
+| LG         | Li_Ion_4000mA  | 47.5  | Li-ion  | 160   | [1C7D970F58](https://linux-hardware.org/?probe=1c7d970f58) |
+| Hewlett... | Primary        | 35    | Li-ion  | 158   | [F6EDF49C41](https://linux-hardware.org/?probe=f6edf49c41) |
+| Hewlett... | Primary        | 47    | Li-ion  | 158   | [F1BC5970F8](https://linux-hardware.org/?probe=f1bc5970f8) |
+| LGC        | 45N1113        | 23.5  | Li-ion  | 157   | [E29CC227AE](https://linux-hardware.org/?probe=e29cc227ae) |
+| LGC        | 5B10W139       | 57.0  | Li-poly | 154   | [31A4026530](https://linux-hardware.org/?probe=31a4026530) |
+| ASUSTek    | UX31-35        | 47.9  | Li-ion  | 149   | [E909C7AC51](https://linux-hardware.org/?probe=e909c7ac51) |
+| LGC        | 45N1049        | 47.5  | Li-ion  | 148   | [0EC203FDB6](https://linux-hardware.org/?probe=0ec203fdb6) |
+| Lenovo     | BASE-BAT       | 32.2  | Li-poly | 146   | [B458C0587B](https://linux-hardware.org/?probe=b458c0587b) |
+| LGC        | AC14B18J       | 36.7  | Li-ion  | 146   | [D4CF291B46](https://linux-hardware.org/?probe=d4cf291b46) |
+| Notebook   | BAT            | 74    | Li-ion  | 146   | [C5C16912FE](https://linux-hardware.org/?probe=c5c16912fe) |
+| SANYO      | 00323341343... | 55.9  | Li-ion  | 146   | [4E3D903B5D](https://linux-hardware.org/?probe=4e3d903b5d) |
+| SANYO      | AS10D31        | 73.3  | Li-ion  | 146   | [7F36D968E4](https://linux-hardware.org/?probe=7f36d968e4) |
+| ASUSTek    | X550A30        | 37.4  | Li-ion  | 144   | [F39F501A7F](https://linux-hardware.org/?probe=f39f501a7f) |
+| LG         | 004B3842343... | 48.9  | Li-ion  | 143   | [7784C8E1A1](https://linux-hardware.org/?probe=7784c8e1a1) |
+| Samsung    |                | 48    | Li-ion  | 142   | [76E645E1F5](https://linux-hardware.org/?probe=76e645e1f5) |
+| TKBSS      | NS2P3SZMC4WR   | 48.4  | Li-ion  | 142   | [38ED2A4B9E](https://linux-hardware.org/?probe=38ed2a4b9e) |
+| SMP        | DELL Y3F7Y6B   | 42.0  | Li-ion  | 141   | [06F46F7744](https://linux-hardware.org/?probe=06f46f7744) |
+| Panasonic  | AS16A5K        | 41.4  | Li-ion  | 140   | [19077CD048](https://linux-hardware.org/?probe=19077cd048) |
+| NVT        | Framewo        | 55.0  | Li-ion  | 139   | [705DCE2BDC](https://linux-hardware.org/?probe=705dce2bdc) |
+|            | 47.52          | 48    | Li-ion  | 138   | [6C895D905F](https://linux-hardware.org/?probe=6c895d905f) |
+| Notebook   | BAT            | 62    | Li-ion  | 137   | [02CCCCE76F](https://linux-hardware.org/?probe=02cccce76f) |
+| ASUSTek    | K52F-44        | 57.2  | Li-ion  | 136   | [A19AD8FBD8](https://linux-hardware.org/?probe=a19ad8fbd8) |
+| Razer      | Blade          | 65.0  |         | 136   | [E052122061](https://linux-hardware.org/?probe=e052122061) |
+| SANYO      | GC86508SAT0    | 44.4  | Li-ion  | 136   | [10F43A8F8C](https://linux-hardware.org/?probe=10f43a8f8c) |
+| Sony       | VGP-BPS26      | 45.0  | Li-ion  | 136   | [11625E4A3C](https://linux-hardware.org/?probe=11625e4a3c) |
+| Hewlett... | Primary        | 28    | Li-ion  | 135   | [413B02DC7A](https://linux-hardware.org/?probe=413b02dc7a) |
+| SIMPLO     | BASE-BAT       | 66.0  | Li-poly | 135   | [B0481EA420](https://linux-hardware.org/?probe=b0481ea420) |
+| ASUSTek    | F82-22         | 46.2  | Li-ion  | 134   | [707B1552B4](https://linux-hardware.org/?probe=707b1552b4) |
+| SMP        | AP18E7M        | 58.8  | Li-ion  | 134   | [E3FB9AF71C](https://linux-hardware.org/?probe=e3fb9af71c) |
+| Hewlett... | Primary        | 33    | Li-ion  | 131   | [AC422E1A6C](https://linux-hardware.org/?probe=ac422e1a6c) |
+| SANYO      | PABAS024       | 38.9  | Li-ion  | 130   | [9D15C84512](https://linux-hardware.org/?probe=9d15c84512) |
+| ASUSTek    | X555-50        | 37.3  | Li-ion  | 128   | [220480564A](https://linux-hardware.org/?probe=220480564a) |
+| LGC        | L16L2PB3       | 35.0  | Li-poly | 127   | [DD0F8BEB36](https://linux-hardware.org/?probe=dd0f8beb36) |
+| Hewlett... | Primary        | 55    | Li-ion  | 126   | [BB10D0F283](https://linux-hardware.org/?probe=bb10d0f283) |
+| Celxpert   | 01AV424        | 24.1  | Li-poly | 124   | [CC7C458456](https://linux-hardware.org/?probe=cc7c458456) |
+| Hewlett... | Primary        | 31    | Li-ion  | 124   | [B31F0109E7](https://linux-hardware.org/?probe=b31f0109e7) |
+| SANYO      | 45N1001        | 56.2  | Li-ion  | 124   | [F06B701043](https://linux-hardware.org/?probe=f06b701043) |
+| CPT-COS    | L16C2PB1       | 35.3  | Li-poly | 122   | [F149ED620F](https://linux-hardware.org/?probe=f149ed620f) |
+| Hewlett... | Primary        | 30    | Li-ion  | 121   | [9CE5B91ECB](https://linux-hardware.org/?probe=9ce5b91ecb) |
+| Desay      | HB4692Z9ECW... | 55.2  | Li-ion  | 117   | [E97A651E78](https://linux-hardware.org/?probe=e97a651e78) |
+| SIMPLO     | SDI ICR18650   | 48.0  | Li-ion  | 116   | [02F586555D](https://linux-hardware.org/?probe=02f586555d) |
+| LGC        | 01AV489        | 23.9  | Li-poly | 112   | [55F0836EA7](https://linux-hardware.org/?probe=55f0836ea7) |
+| Hewlett... | Primary        | 38    | Li-ion  | 109   | [83D420AB00](https://linux-hardware.org/?probe=83d420ab00) |
+| SANYO      | 01AV405        | 26.3  | Li-ion  | 108   | [701FC032DB](https://linux-hardware.org/?probe=701fc032db) |
+| SMP        | 5B10W13933     | 46.0  | Li-poly | 108   | [9B87A450BD](https://linux-hardware.org/?probe=9b87a450bd) |
+| Hewlett... | Primary        | 42    | Li-ion  | 107   | [941BD5D7BC](https://linux-hardware.org/?probe=941bd5d7bc) |
+| Samsung... | DELL P8TC727   | 48.8  | Li-ion  | 107   | [C3A5CF03A9](https://linux-hardware.org/?probe=c3a5cf03a9) |
+| Lenovo ... |                | 28    |         | 106   | [E3FF832AE6](https://linux-hardware.org/?probe=e3ff832ae6) |
+| ASUSTek    | K55--44        | 48.4  | Li-ion  | 105   | [991EDF32B4](https://linux-hardware.org/?probe=991edf32b4) |
+| SMP        | 00HW023        | 23.5  | Li-poly | 105   | [A22BE910D2](https://linux-hardware.org/?probe=a22be910d2) |
+| Sony       | Li_Ion_4000mA  | 47.5  | Li-ion  | 105   | [2D5EEF0754](https://linux-hardware.org/?probe=2d5eef0754) |
+| Hewlett... | Primary        | 29    | Li-ion  | 104   | [4891753C29](https://linux-hardware.org/?probe=4891753c29) |
+| OEM        | FX50442        | 48.0  | Li-ion  | 103   | [AAED88422C](https://linux-hardware.org/?probe=aaed88422c) |
+| Celxpert   | 01AV448        | 45.7  | Li-poly | 101   | [D64710669E](https://linux-hardware.org/?probe=d64710669e) |
+| LGC        | 45N1005        | 56.2  | Li-ion  | 100   | [FBC061A72A](https://linux-hardware.org/?probe=fbc061a72a) |
+| SMP        | 00NY493        | 90.0  | Li-poly | 100   | [ECD4468E9C](https://linux-hardware.org/?probe=ecd4468e9c) |
+|            | 48.6           | 49    | Li-ion  | 99    | [5014D7827E](https://linux-hardware.org/?probe=5014d7827e) |
+| SMP        | 01AV430        | 57.0  | Li-poly | 99    | [5F5AE67CD6](https://linux-hardware.org/?probe=5f5ae67cd6) |
+| SMP        | DELL VN3N047   | 41.4  | Li-ion  | 99    | [35F435CD1F](https://linux-hardware.org/?probe=35f435cd1f) |
+| SANYO      | 00HW022        | 23.5  | Li-poly | 98    | [701FC032DB](https://linux-hardware.org/?probe=701fc032db) |
+| SMP        | L20M2PF0       | 38.0  | Li-poly | 98    | [079C56CEAB](https://linux-hardware.org/?probe=079c56ceab) |
+| Sunwoda    | 5B10W13975     | 57.0  | Li-poly | 98    | [7D10950E55](https://linux-hardware.org/?probe=7d10950e55) |
+| Sunwoda-H  | HB4692J5ECW-31 | 41.4  | Li-ion  | 98    | [3B12D86F3D](https://linux-hardware.org/?probe=3b12d86f3d) |
+| ASUSTek    | K53--52        | 48.4  | Li-ion  | 97    | [33CE8DAF57](https://linux-hardware.org/?probe=33ce8daf57) |
+| Hewlett... | Primary        | 89    | Li-ion  | 97    | [6C3D7E52E4](https://linux-hardware.org/?probe=6c3d7e52e4) |
+| Samsung    |                | 58    | Li-ion  | 97    | [981D2CCF1D](https://linux-hardware.org/?probe=981d2ccf1d) |
+| SMP        | 01AV447        | 45.7  | Li-poly | 97    | [61FE1222C2](https://linux-hardware.org/?probe=61fe1222c2) |
+| SMP        | DELL DM3WC64   | 60.0  | Li-poly | 97    | [FAA26E30D0](https://linux-hardware.org/?probe=faa26e30d0) |
+| SANYO      | 45N1023        | 93.2  | Li-ion  | 96    | [68E4BABAF4](https://linux-hardware.org/?probe=68e4babaf4) |
+| Hewlett... | Primary        | 26    | Li-ion  | 95    | [CF6BA1EAD2](https://linux-hardware.org/?probe=cf6ba1ead2) |
+| Hewlett... | Primary        | 27    | Li-ion  | 95    | [14D900EECC](https://linux-hardware.org/?probe=14d900eecc) |
+| Hewlett... | Primary        | 40    | Li-ion  | 95    | [90DDB2C764](https://linux-hardware.org/?probe=90ddb2c764) |
+| LG         | PABAS024       | 40.0  | Li-ion  | 95    | [B41AB58347](https://linux-hardware.org/?probe=b41ab58347) |
+| SMP        | DELL VM73283   | 42.0  | Li-poly | 92    | [083EF3A0A2](https://linux-hardware.org/?probe=083ef3a0a2) |
+| Hewlett... | Primary        | 70    | Li-ion  | 91    | [779320377B](https://linux-hardware.org/?probe=779320377b) |
+| SMP        | DELL TP1GT61   | 60.0  | Li-poly | 91    | [4E5B03BFD7](https://linux-hardware.org/?probe=4e5b03bfd7) |
+| SMP        | L19M4PC0       | 60.0  | Li-poly | 91    | [79AB3BBC9E](https://linux-hardware.org/?probe=79ab3bbc9e) |
+| Desay      | HB4692J5ECW-31 | 41.4  | Li-ion  | 90    | [94C62E3B8B](https://linux-hardware.org/?probe=94c62e3b8b) |
+| LGC        | 45N1011        | 93.6  | Li-ion  | 90    | [278931EF6A](https://linux-hardware.org/?probe=278931ef6a) |
+| CPT-COS    | L17C4PB0       | 45.5  | Li-poly | 89    | [22FCB1190C](https://linux-hardware.org/?probe=22fcb1190c) |
+| LG         | LGC-LGC        | 80.0  | Li-ion  | 89    | [CC84DBC880](https://linux-hardware.org/?probe=cc84dbc880) |
+| LGC        | 45N1025        | 57.7  | Li-ion  | 89    | [155F2F1E8F](https://linux-hardware.org/?probe=155f2f1e8f) |
+| Sony       |                | 42    | Li-ion  | 89    | [2B91CCAB1C](https://linux-hardware.org/?probe=2b91ccab1c) |
+| Sunwoda-H  | HB4692Z9ECW-41 | 55.2  | Li-ion  | 89    | [287C370D01](https://linux-hardware.org/?probe=287c370d01) |
+| ASUSTek    | N56--52        | 54.0  | Li-ion  | 88    | [952D22573D](https://linux-hardware.org/?probe=952d22573d) |
+| SMP        | DELL VM73297   | 42.0  | Li-poly | 88    | [97DAAED0C7](https://linux-hardware.org/?probe=97daaed0c7) |
+| ASUSTek    | K55--47        | 51.7  | Li-ion  | 87    | [5A4A07F120](https://linux-hardware.org/?probe=5a4a07f120) |
+| LGC        | 01AV445        | 45.0  | Li-poly | 87    | [99C42F786E](https://linux-hardware.org/?probe=99c42f786e) |
+| LGC        | L17L2PF1       | 30.0  | Li-poly | 87    | [CDD64FE0E0](https://linux-hardware.org/?probe=cdd64fe0e0) |
+| APL MRD    |  Li-ion        | 27.8  | Li-ion  | 86    | [87F8D03C80](https://linux-hardware.org/?probe=87f8d03c80) |
+| Hewlett... | Primary        | 37    | Li-ion  | 86    | [210729B8A3](https://linux-hardware.org/?probe=210729b8a3) |
+| Celxpert   | L19C3PD6       | 52.5  | Li-poly | 85    | [56DA00ADA2](https://linux-hardware.org/?probe=56da00ada2) |
+| SANYO      | 45N1043        | 38.9  | Li-ion  | 85    | [E73050A450](https://linux-hardware.org/?probe=e73050a450) |
+| SMP        | DELL GD1JP65   | 68.0  | Li-poly | 85    | [B9ACBDA728](https://linux-hardware.org/?probe=b9acbda728) |
+| SMP        | L17M3PG2       | 57.4  | Li-poly | 85    | [CBEBFA258B](https://linux-hardware.org/?probe=cbebfa258b) |
+| LGC        | AP19B8K        | 41.8  | Li-ion  | 84    | [3D85A6B6D7](https://linux-hardware.org/?probe=3d85a6b6d7) |
+| Sunwoda    | 5B10X025       | 45.0  | Li-poly | 82    | [46361A1B83](https://linux-hardware.org/?probe=46361a1b83) |
+| ASUSTek    | X453-42        | 31.7  | Li-ion  | 81    | [68441310DB](https://linux-hardware.org/?probe=68441310db) |
+| LGC        | 01AV490        | 23.9  | Li-poly | 81    | [A84D2E6201](https://linux-hardware.org/?probe=a84d2e6201) |
+| Notebook   | BAT            | 53    | Li-ion  | 81    | [1E6E93D88B](https://linux-hardware.org/?probe=1e6e93d88b) |
+| Sunwoda    | R15B01W        | 60.0  | Li-ion  | 81    | [4A2509BD5A](https://linux-hardware.org/?probe=4a2509bd5a) |
+| Dynapack   | HB4593R1ECW    | 56.3  | Li-ion  | 80    | [6BCB7835D8](https://linux-hardware.org/?probe=6bcb7835d8) |
+| Hewlett... | Primary        | 24    | Li-ion  | 80    | [7D0E5BBE48](https://linux-hardware.org/?probe=7d0e5bbe48) |
+| LGC        | LNV-45N1       | 47.5  | Li-ion  | 80    | [0AD5EC9E46](https://linux-hardware.org/?probe=0ad5ec9e46) |
+| Notebook   | BAT            | 36    | Li-ion  | 80    | [4CDFCE4D81](https://linux-hardware.org/?probe=4cdfce4d81) |
+| SANYO      | 42T4763        | 47.5  | Li-ion  | 80    | [467D5BF559](https://linux-hardware.org/?probe=467d5bf559) |
+| Standard   | SR Real        | 43.9  | Li-ion  | 80    | [1D27092258](https://linux-hardware.org/?probe=1d27092258) |
+|            | 48.84          | 49    | Li-ion  | 79    | [53E5C4A853](https://linux-hardware.org/?probe=53e5c4a853) |
+| Celxpert   | 5B10X026       | 45.0  | Li-poly | 78    | [C4604E2890](https://linux-hardware.org/?probe=c4604e2890) |
+| Hewlett... | Primary        | 57    | Li-ion  | 78    | [E2BABD2E7E](https://linux-hardware.org/?probe=e2babd2e7e) |
+| Notebook   | BAT            | 60    | Li-ion  | 78    | [1BCBFEE6C4](https://linux-hardware.org/?probe=1bcbfee6c4) |
+| AS3GWYF3KC | GA50358        | 90.0  | Li-ion  | 76    | [537E296CF8](https://linux-hardware.org/?probe=537e296cf8) |
+| Sunwoda    | HB6081V1ECW-41 | 55.2  | Li-ion  | 76    | [5B9314F900](https://linux-hardware.org/?probe=5b9314f900) |
+| Hewlett... | Primary        | 54    | Li-ion  | 75    | [003D0CC183](https://linux-hardware.org/?probe=003d0cc183) |
+| Hewlett... | Primary        | 39    | Li-ion  | 75    | [F2B2C52113](https://linux-hardware.org/?probe=f2b2c52113) |
+| SMP        | L19M3PF7       | 45.0  | Li-poly | 75    | [986D807D00](https://linux-hardware.org/?probe=986d807d00) |
+| Celxpert   | L20C4PC1       | 80.0  | Li-poly | 74    | [B4EC08B540](https://linux-hardware.org/?probe=b4ec08b540) |
+| GLK MRD    |  Li-ion        | 29.6  | Li-ion  | 74    | [1B076CC569](https://linux-hardware.org/?probe=1b076cc569) |
+| LGC        | 01AV494        | 57.0  | Li-poly | 74    | [07DF89F610](https://linux-hardware.org/?probe=07df89f610) |
+| ASUSTek    | F3---24        | 51.3  | Li-ion  | 73    | [5AE3280AA4](https://linux-hardware.org/?probe=5ae3280aa4) |
+| LGC        | 01AV478        | 57.0  | Li-poly | 73    | [77513C5287](https://linux-hardware.org/?probe=77513c5287) |
+| Notebook   | BAT            | 35    | Li-ion  | 73    | [A45B75D9EC](https://linux-hardware.org/?probe=a45b75d9ec) |
+| SANYO      | L09S6Y02       | 38.9  | Li-ion  | 73    | [E6F8F51A09](https://linux-hardware.org/?probe=e6f8f51a09) |
+| DSY        | bq20z451       | 54.7  | Li-ion  | 72    | [D91DBCCFEE](https://linux-hardware.org/?probe=d91dbccfee) |
+| SANYO      | GRAPE32        | 48.8  | Li-ion  | 72    | [D596BA355A](https://linux-hardware.org/?probe=d596ba355a) |
+| SMP        | 02DL005        | 51.0  | Li-poly | 72    | [21EE611B47](https://linux-hardware.org/?probe=21ee611b47) |
+| Sunwoda    | L20D4PC1       | 80.0  | Li-poly | 72    | [F7062395DC](https://linux-hardware.org/?probe=f7062395dc) |
+| CPT-COS    | L14C3P6        | 36.6  | Li-ion  | 71    | [074B44CE16](https://linux-hardware.org/?probe=074b44ce16) |
+| Lenovo     |                | 28    |         | 71    | [9228EF946E](https://linux-hardware.org/?probe=9228ef946e) |
+| SMP        | L14M3P24       | 45.0  | Li-poly | 71    | [E21A2D89C6](https://linux-hardware.org/?probe=e21a2d89c6) |
+|            |                | 38    | Li-ion  | 70    | [4B5DE9A37A](https://linux-hardware.org/?probe=4b5de9a37a) |
+| SANYO      | 42T4799        | 93.2  | Li-ion  | 70    | [9FDE9FE106](https://linux-hardware.org/?probe=9fde9fe106) |
+| SANYO      | AP13B3K        | 54.9  | Li-ion  | 70    | [6E5B5FDDF5](https://linux-hardware.org/?probe=6e5b5fddf5) |
+| Hewlett... | 5600           | 62.2  |         | 69    | [92FE6246AB](https://linux-hardware.org/?probe=92fe6246ab) |
+| Hewlett... | Primary        | 36    | Li-ion  | 69    | [92FAD15C25](https://linux-hardware.org/?probe=92fad15c25) |
+| Lenovo ... |                | 38    |         | 69    | [03181287B8](https://linux-hardware.org/?probe=03181287b8) |
+| Notebook   | BAT            | 71    | Li-ion  | 69    | [3863C274D8](https://linux-hardware.org/?probe=3863c274d8) |
+| Panasonic  | AP19B5K        | 39.7  | Li-ion  | 69    | [E373D8AEF5](https://linux-hardware.org/?probe=e373d8aef5) |
+| SMP        | 5B10X026       | 45.7  | Li-poly | 69    | [F6852CBDBB](https://linux-hardware.org/?probe=f6852cbdbb) |
+| OEM        | AS10D31        | 48.4  | Li-ion  | 68    | [FDEB7FFD07](https://linux-hardware.org/?probe=fdeb7ffd07) |
+| SANYO      | 45N1777        | 71.3  | Li-ion  | 68    | [D92935DB90](https://linux-hardware.org/?probe=d92935db90) |
+| SMP        | 01AV452        | 24.0  | Li-poly | 68    | [DC1B85E281](https://linux-hardware.org/?probe=dc1b85e281) |
+| SMP        | 5B10W138       | 45.3  | Li-poly | 68    | [EADC7945CF](https://linux-hardware.org/?probe=eadc7945cf) |
+| SMP        | 5B10W13973     | 57.0  | Li-poly | 68    | [E08182ADC8](https://linux-hardware.org/?probe=e08182adc8) |
+| ASUSTek    | UX425          | 67.3  | Li-ion  | 67    | [17286DDCF5](https://linux-hardware.org/?probe=17286ddcf5) |
+| LGC        | 45N1147        | 56.2  | Li-ion  | 67    | [0574E44035](https://linux-hardware.org/?probe=0574e44035) |
+| LGC        | 45N1735        | 47.5  | Li-ion  | 67    | [90C5C9954F](https://linux-hardware.org/?probe=90c5c9954f) |
+| LGC KT0... | AP18C8K        | 48.0  | Li-ion  | 67    | [4C12C9EEDA](https://linux-hardware.org/?probe=4c12c9eeda) |
+| SMP        | 5B10W139       | 57.0  | Li-poly | 67    | [7BFAD25E97](https://linux-hardware.org/?probe=7bfad25e97) |
+| ASUSTek    | K56--30        | 44.6  | Li-ion  | 66    | [89F8BE5027](https://linux-hardware.org/?probe=89f8be5027) |
+| Hewlett... | Primary        | 22    | Li-ion  | 66    | [AA662F23E7](https://linux-hardware.org/?probe=aa662f23e7) |
+| SMP        | 01AV406        | 26.1  | Li-poly | 66    | [6ABE074048](https://linux-hardware.org/?probe=6abe074048) |
+| ASUSTek    | F5---22        | 47.3  | Li-ion  | 65    | [8B5218D324](https://linux-hardware.org/?probe=8b5218d324) |
+| LGC        | 45N1738        | 71.1  | Li-ion  | 65    | [CA04E40DD4](https://linux-hardware.org/?probe=ca04e40dd4) |
+| SANYO      | 45N1767        | 47.5  | Li-ion  | 65    | [B200A9D4F6](https://linux-hardware.org/?probe=b200a9d4f6) |
+| SMP        | 5B10W13906     | 50.5  | Li-poly | 65    | [E5BF005A5F](https://linux-hardware.org/?probe=e5bf005a5f) |
+| SMP        | 5B11C732       | 57.0  | Li-poly | 65    | [ED035FD7D8](https://linux-hardware.org/?probe=ed035fd7d8) |
+| ASUSTek    | UM3402         | 75.1  | Li-ion  | 64    | [FAE705DE3F](https://linux-hardware.org/?probe=fae705de3f) |
+| Hewlett... | Primary        | 18    | Li-ion  | 64    | [5692787B6F](https://linux-hardware.org/?probe=5692787b6f) |
+| Sony       |                | 51    | Li-ion  | 64    | [B7D8F997E5](https://linux-hardware.org/?probe=b7d8f997e5) |
+|            |                |       | Li-ion  | 63    | [9E63659C87](https://linux-hardware.org/?probe=9e63659c87) |
+| BYD        | L20B2PF0       | 38.0  | Li-poly | 63    | [4053C77698](https://linux-hardware.org/?probe=4053c77698) |
+| LGC        | 02DL004        | 51.0  | Li-poly | 63    | [2D1F00B430](https://linux-hardware.org/?probe=2d1f00b430) |
+| Samsung    |                | 24    | Li-ion  | 63    | [8147199CF5](https://linux-hardware.org/?probe=8147199cf5) |
+| ASUSTek    | K53--27        | 37.8  | Li-ion  | 62    | [BE228218D5](https://linux-hardware.org/?probe=be228218d5) |
+| ASUSTek    | N550-40        | 60.5  | Li-ion  | 62    | [9601E6C7A2](https://linux-hardware.org/?probe=9601e6c7a2) |
+| ASUSTek    | UX325          | 67.3  | Li-ion  | 62    | [12BE2072AF](https://linux-hardware.org/?probe=12be2072af) |
+| LGC        | L20L2PF0       | 38.0  | Li-poly | 62    | [CD9B055146](https://linux-hardware.org/?probe=cd9b055146) |
+| Notebook   | BAT            | 47    | Li-ion  | 62    | [FEC43DC843](https://linux-hardware.org/?probe=fec43dc843) |
+| Samsung    |                | 45    | Li-ion  | 62    | [B56D767DB4](https://linux-hardware.org/?probe=b56d767db4) |
+| SMP        | 5B10W51827     | 50.5  | Li-poly | 62    | [369CDD52D8](https://linux-hardware.org/?probe=369cdd52d8) |
+| SWD        | bq20z451       | 58.2  | Li-ion  | 62    | [73163D4EE6](https://linux-hardware.org/?probe=73163d4ee6) |
+| Hewlett... | Primary        | 52    | Li-ion  | 61    | [62C6C176F6](https://linux-hardware.org/?probe=62c6c176f6) |
+| LGC        | 5B10X026       | 45.0  | Li-poly | 61    | [32F125D899](https://linux-hardware.org/?probe=32f125d899) |
+| Panasonic  | AS16B5J        | 48.8  | Li-ion  | 61    | [AEB8A7CB0E](https://linux-hardware.org/?probe=aeb8a7cb0e) |
+| SANYO      | AS07B31        | 48.8  | Li-ion  | 61    | [9426ED7AFF](https://linux-hardware.org/?probe=9426ed7aff) |
+| Toshiba    | PABAS0241231   | 45.0  | Li-ion  | 61    | [1D473C3A6C](https://linux-hardware.org/?probe=1d473c3a6c) |
+| Amd Bat... |  Real Li-ion   | 49.1  | Li-ion  | 60    | [F57DB5B2DD](https://linux-hardware.org/?probe=f57db5b2dd) |
+| Celxpert   | 5B10W138       | 45.7  | Li-poly | 60    | [2F3855ED8D](https://linux-hardware.org/?probe=2f3855ed8d) |
+| Getac      | BC 4S1P        | 73.4  | Li-ion  | 60    | [AD76CB1437](https://linux-hardware.org/?probe=ad76cb1437) |
+| Notebook   | BAT            | 52    | Li-ion  | 60    | [CB477659F5](https://linux-hardware.org/?probe=cb477659f5) |
+| Panasonic  | AP15O5L        | 53.9  | Li-ion  | 60    | [6A294F74E1](https://linux-hardware.org/?probe=6a294f74e1) |
 
