@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
 Table at 0xCB707000.
@@ -6,8 +6,8 @@ Table at 0xCB707000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: GKCN59WW
-	Release Date: 11/21/2022
+	Version: GKCN60WW
+	Release Date: 03/07/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -31,8 +31,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.59
-	Firmware Revision: 1.59
+	BIOS Revision: 1.60
+	Firmware Revision: 1.60
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -395,20 +395,16 @@ System Slot Information
 
 Handle 0x001F, DMI type 11, 5 bytes
 OEM Strings
-	String 1: Country - ??
-
-Handle 0x0020, DMI type 11, 5 bytes
-OEM Strings
 	String 1: Modern Preload
 
-Handle 0x0021, DMI type 12, 5 bytes
+Handle 0x0020, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: String1 for Type12 Equipment Manufacturer
 	Option 2: String2 for Type12 Equipment Manufacturer
 	Option 3: String3 for Type12 Equipment Manufacturer
 	Option 4: String4 for Type12 Equipment Manufacturer
 
-Handle 0x0022, DMI type 13, 22 bytes
+Handle 0x0021, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 4
@@ -418,19 +414,19 @@ BIOS Language Information
 		zh|TW|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0023, DMI type 16, 23 bytes
+Handle 0x0022, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
 	Maximum Capacity: 32 GB
-	Error Information Handle: 0x0026
+	Error Information Handle: 0x0025
 	Number Of Devices: 2
 
-Handle 0x0024, DMI type 17, 92 bytes
+Handle 0x0023, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x0023
-	Error Information Handle: 0x0027
+	Array Handle: 0x0022
+	Error Information Handle: 0x0026
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
@@ -462,10 +458,10 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0025, DMI type 17, 92 bytes
+Handle 0x0024, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x0023
-	Error Information Handle: 0x0028
+	Array Handle: 0x0022
+	Error Information Handle: 0x0027
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
@@ -497,6 +493,16 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
+Handle 0x0025, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
 Handle 0x0026, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
@@ -517,23 +523,24 @@ Handle 0x0027, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0028, DMI type 18, 23 bytes
-32-bit Memory Error Information
-	Type: OK
-	Granularity: Unknown
-	Operation: Unknown
-	Vendor Syndrome: Unknown
-	Memory Array Address: Unknown
-	Device Address: Unknown
-	Resolution: Unknown
-
-Handle 0x0029, DMI type 19, 31 bytes
+Handle 0x0028, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
-	Physical Array Handle: 0x0023
+	Physical Array Handle: 0x0022
 	Partition Width: 2
+
+Handle 0x0029, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x0023
+	Memory Array Mapped Address Handle: 0x0028
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x002A, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -541,29 +548,18 @@ Memory Device Mapped Address
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
 	Physical Device Handle: 0x0024
-	Memory Array Mapped Address Handle: 0x0029
+	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x002B, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x0025
-	Memory Array Mapped Address Handle: 0x0029
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
-
-Handle 0x002C, DMI type 21, 7 bytes
+Handle 0x002B, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Touch Pad
 	Interface: PS/2
 	Buttons: 4
 
-Handle 0x002D, DMI type 22, 26 bytes
+Handle 0x002C, DMI type 22, 26 bytes
 Portable Battery
 	Location: Fake
 	Manufacturer: -Virtual Battery 0-
@@ -577,14 +573,14 @@ Portable Battery
 	Maximum Error: Unknown
 	OEM-specific Information: 0x00000000
 
-Handle 0x002E, DMI type 24, 5 bytes
+Handle 0x002D, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
 
-Handle 0x002F, DMI type 26, 22 bytes
+Handle 0x002E, DMI type 26, 22 bytes
 Voltage Probe
 	Description: Voltage Probe Description
 	Location: Unknown
@@ -597,7 +593,7 @@ Voltage Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x0030, DMI type 27, 15 bytes
+Handle 0x002F, DMI type 27, 15 bytes
 Cooling Device
 	Type: Fan
 	Status: OK
@@ -605,11 +601,11 @@ Cooling Device
 	Nominal Speed: 8192 rpm
 	Description: Cooling Device Description
 
-Handle 0x0031, DMI type 32, 20 bytes
+Handle 0x0030, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0032, DMI type 40, 18 bytes
+Handle 0x0031, DMI type 40, 18 bytes
 Additional Information 1
 	Referenced Handle: 0x0018
 	Referenced Offset: 0x05
@@ -621,7 +617,7 @@ Additional Information 2
 	String: Compiler Version: VC 9.0
 	Value: 0x05dc
 
-Handle 0x0033, DMI type 41, 11 bytes
+Handle 0x0032, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Realtek RTL8111E Ethernet LOM
 	Type: Ethernet
@@ -629,7 +625,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:03:00.0
 
-Handle 0x0034, DMI type 41, 11 bytes
+Handle 0x0033, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Realtek ALC701
 	Type: Sound
@@ -637,25 +633,25 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 00ff:ff:1f.7
 
-Handle 0x0035, DMI type 133, 5 bytes
+Handle 0x0034, DMI type 133, 5 bytes
 OEM-specific Type
 	Header and Data:
-		85 05 35 00 01
+		85 05 34 00 01
 	Strings:
 		KHOIHGIUCCHHII
 
-Handle 0x0036, DMI type 200, 16 bytes
+Handle 0x0035, DMI type 200, 16 bytes
 OEM-specific Type
 	Header and Data:
-		C8 10 36 00 01 02 01 27 01 14 01 53 B0 80 01 05
+		C8 10 35 00 01 02 01 27 01 14 01 53 B0 80 01 05
 	Strings:
 		IdeaPad
 		82JQ0062IN
 
-Handle 0x0037, DMI type 248, 18 bytes
+Handle 0x0036, DMI type 248, 18 bytes
 OEM-specific Type
 	Header and Data:
-		F8 12 37 00 AC AC AA 17 00 00 00 00 00 00 00 00
+		F8 12 36 00 AC AC AA 17 00 00 00 00 00 00 00 00
 		00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0 present.
-70 structures occupying 3951 bytes.
+70 structures occupying 3945 bytes.
 Table at 0x000E6010.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -327,7 +327,8 @@ Port Connector Information
 Handle 0x0019, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 1
@@ -339,7 +340,8 @@ System Slot Information
 Handle 0x001A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D2
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 2
@@ -351,7 +353,8 @@ System Slot Information
 Handle 0x001B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 3
@@ -363,7 +366,8 @@ System Slot Information
 Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7D1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 4
@@ -375,7 +379,8 @@ System Slot Information
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8C1
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Other
 	ID: 5
@@ -462,7 +467,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -470,14 +475,14 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2667 MT/s
-	Manufacturer: Samsung
+	Manufacturer: 04EF
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471A1K43DB1-CTD    
+	Part Number: TEAMGROUP-SD4-2666  
 	Rank: 1
 	Configured Memory Speed: 2667 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
+	Minimum Voltage: 1.25 V
+	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.2 V
 
 Handle 0x0027, DMI type 17, 40 bytes
@@ -486,7 +491,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -494,29 +499,29 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2667 MT/s
-	Manufacturer: Samsung
+	Manufacturer: 04EF
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471A5244CB0-CTD    
+	Part Number: TEAMGROUP-SD4-2666  
 	Rank: 1
 	Configured Memory Speed: 2667 MT/s
-	Minimum Voltage: 1.35 V
-	Maximum Voltage: 1.35 V
+	Minimum Voltage: 1.25 V
+	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.2 V
 
 Handle 0x0028, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 12 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0025
 	Partition Width: 2
 
 Handle 0x0029, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0026
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: Unknown
@@ -526,8 +531,8 @@ Memory Device Mapped Address
 Handle 0x002A, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0027
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: Unknown
