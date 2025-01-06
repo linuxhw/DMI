@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0xCA509000.
+Table at 0xCA4A8000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: G5CN15WW(V1.03)
-	Release Date: 01/04/2021
+	Version: G5CN70WW(V2.16)
+	Release Date: 03/26/2024
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -31,8 +31,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.15
-	Firmware Revision: 1.15
+	BIOS Revision: 1.70
+	Firmware Revision: 1.70
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -321,7 +321,8 @@ Port Connector Information
 Handle 0x0019, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J10
-	Type: x8 PCI Express x8
+	Type: PCI Express x8
+	Data Bus Width: 8x or x8
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -334,7 +335,8 @@ System Slot Information
 Handle 0x001A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J79
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -347,7 +349,8 @@ System Slot Information
 Handle 0x001B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J92
-	Type: x1 M.2 Socket 1-SD
+	Type: M.2 Socket 1-SD
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	Characteristics:
@@ -359,7 +362,8 @@ System Slot Information
 Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J90
-	Type: x1 M.2 Socket 3
+	Type: M.2 Socket 3
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	Characteristics:
@@ -371,7 +375,8 @@ System Slot Information
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J19
-	Type: x2 M.2 Socket 3
+	Type: M.2 Socket 3
+	Data Bus Width: 2x or x2
 	Current Usage: Available
 	Length: Short
 	Characteristics:
@@ -383,7 +388,8 @@ System Slot Information
 Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: CON1
-	Type: x4 PCI Express x8
+	Type: PCI Express x8
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Short
 	ID: 6
@@ -423,14 +429,14 @@ Physical Memory Array
 	Error Information Handle: 0x0025
 	Number Of Devices: 2
 
-Handle 0x0023, DMI type 17, 84 bytes
+Handle 0x0023, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x0022
 	Error Information Handle: 0x0026
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
-	Form Factor: SODIMM
+	Form Factor: Row Of Chips
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL A
@@ -458,14 +464,14 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0024, DMI type 17, 84 bytes
+Handle 0x0024, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x0022
 	Error Information Handle: 0x0027
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
-	Form Factor: SODIMM
+	Form Factor: Row Of Chips
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL B

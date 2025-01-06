@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3 present.
-71 structures occupying 3588 bytes.
+72 structures occupying 3914 bytes.
 Table at 0x40083000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -504,15 +504,16 @@ Group Associations
 	Items: 1
 		0x003D (OEM-specific)
 
-Handle 0x0045, DMI type 14, 20 bytes
+Handle 0x0046, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
-	Items: 5
+	Items: 6
 		0x003E (OEM-specific)
 		0x003F (OEM-specific)
 		0x0040 (OEM-specific)
 		0x0041 (OEM-specific)
 		0x0042 (OEM-specific)
+		0x0043 (OEM-specific)
 
 Handle 0x0027, DMI type 15, 29 bytes
 System Event Log
@@ -834,18 +835,43 @@ OEM-specific Type
 		Thunderbolt(TM) FW Version
 		System Agent Manageability Engine FW Version
 
-Handle 0x0043, DMI type 222, 21 bytes
+Handle 0x0043, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DE 15 43 00 01 42 B5 82 CC 1E 9B 11 B2 A8 5C 8B
+		DD 52 43 00 0B 01 00 FF FF FF FF FF 02 00 FF FF
+		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
+		FF 07 08 FF FF FF FF FF 09 00 FF FF FF FF FF 0A
+		00 FF FF FF FF FF 0B 00 01 17 00 00 00 0C 00 00
+		21 00 46 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
+		00 00
+	Strings:
+		Lan Phy Version
+		Sensor Firmware Version
+		Debug Mode Status
+		Disabled
+		Performance Mode Status
+		Disabled
+		Debug Use USB(Disabled:Serial)
+		Disabled
+		ICC Overclocking Version
+		UNDI Version
+		EC FW Version
+		GOP Version
+		Royal Park Version
+		Platform Version
+
+Handle 0x0044, DMI type 222, 21 bytes
+OEM-specific Type
+	Header and Data:
+		DE 15 44 00 01 42 B5 82 CC 1E 9B 11 B2 A8 5C 8B
 		62 ED 37 FE 66
 	Strings:
 		LCFC
 
-Handle 0x0044, DMI type 248, 18 bytes
+Handle 0x0045, DMI type 248, 18 bytes
 OEM-specific Type
 	Header and Data:
-		F8 12 44 00 AC AC AA 17 00 00 00 00 00 00 00 00
+		F8 12 45 00 AC AC AA 17 00 00 00 00 00 00 00 00
 		00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

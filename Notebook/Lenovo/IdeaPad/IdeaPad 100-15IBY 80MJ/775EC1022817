@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 53 structures occupying 2122 bytes.
@@ -359,7 +359,8 @@ Port Connector Information
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J5C1
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Other
 	ID: 0
@@ -372,7 +373,8 @@ System Slot Information
 Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J4B3
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 0
@@ -385,7 +387,8 @@ System Slot Information
 Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 0
@@ -398,7 +401,8 @@ System Slot Information
 Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 0
@@ -491,13 +495,6 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
 
 Handle 0x0028, DMI type 19, 15 bytes
 Memory Array Mapped Address

@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0xC9650000.
@@ -18,7 +18,7 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 16 GB
+	Maximum Capacity: 32 GB
 	Error Information Handle: 0x0000
 	Number Of Devices: 2
 
@@ -52,8 +52,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -68,8 +68,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -150,7 +150,7 @@ Memory Device
 	Error Information Handle: 0x0007
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: DIMM 0
@@ -206,7 +206,7 @@ Memory Device
 	Error Information Handle: 0x000A
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: DIMM 0
@@ -523,13 +523,16 @@ OEM-specific Type
 Handle 0x000D, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: E7CN26WW
-	Release Date: 06/22/2020
+	Version: E7CN51WW
+	Release Date: 09/18/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
 	Characteristics:
 		PCI is supported
+		PC Card (PCMCIA) is supported
+		PNP is supported
+		APM is supported
 		BIOS is upgradeable
 		BIOS shadowing is allowed
 		Boot from CD is supported
@@ -546,8 +549,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.26
-	Firmware Revision: 1.26
+	BIOS Revision: 1.51
+	Firmware Revision: 1.51
 
 Handle 0x000E, DMI type 1, 27 bytes
 System Information
@@ -571,7 +574,7 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Base Board Chassis Location
-	Chassis Handle: 0x0000
+	Chassis Handle: 0x0010
 	Type: Motherboard
 	Contained Object Handles: 0
 
@@ -603,14 +606,14 @@ OEM-specific Type
 
 Handle 0x0033, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 1138 bytes
+	Area Length: 130 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000046
+	Change Token: 0x00000007
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error

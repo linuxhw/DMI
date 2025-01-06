@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 53 structures occupying 2122 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 01/12/2016
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -47,7 +47,7 @@ Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: LENOVO
 	Product Name: Lenovo ideapad 1
-	Version: SDK0J40679 WIN
+	Version: SDK0H15299 WIN
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -117,7 +117,7 @@ Processor Information
 	Voltage: 0.8 V
 	External Clock: 83 MHz
 	Max Speed: 2656 MHz
-	Current Speed: 2177 MHz
+	Current Speed: 2179 MHz
 	Status: Populated, Enabled
 	Upgrade: None
 	L1 Cache Handle: 0x0008
@@ -142,8 +142,8 @@ Memory Module Information
 	Bank Connections: 0 0
 	Current Speed: Unknown
 	Type: None
-	Installed Size: 8192 MB (Single-bank Connection)
-	Enabled Size: 8192 MB (Single-bank Connection)
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0006, DMI type 6, 12 bytes
@@ -194,8 +194,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -463,7 +463,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -471,12 +471,12 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: 00
+	Manufacturer: 67
 	Serial Number: --
 	Asset Tag: --
-	Part Number: R538G1601S2SL-U   
+	Part Number: RMT3170MN68F9F1600
 	Rank: Unknown
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0027, DMI type 17, 34 bytes
 Memory Device
@@ -491,27 +491,20 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Clock Speed: Unknown
 
 Handle 0x0028, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0025
 	Partition Width: 2
 
 Handle 0x0029, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0026
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: Unknown
@@ -613,7 +606,7 @@ OEM-specific Type
 		C8 10 33 00 01 02 01 22 01 12 01 3D B2 80 01 05
 	Strings:
 		IdeaPad
-		80MJ00QQRK
+		80MJ005FRK
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x4A470000.
@@ -6,8 +6,8 @@ Table at 0x4A470000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: EMCN42WW
-	Release Date: 10/28/2020
+	Version: EMCN58WW
+	Release Date: 09/06/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 10 MB
@@ -31,8 +31,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.42
-	Firmware Revision: 1.42
+	BIOS Revision: 1.58
+	Firmware Revision: 1.58
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -411,19 +411,15 @@ System Slot Information
 
 Handle 0x001F, DMI type 11, 5 bytes
 OEM Strings
-	String 1: Country - ??
-
-Handle 0x0020, DMI type 11, 5 bytes
-OEM Strings
 	String 1: Modern Preload
 
-Handle 0x0021, DMI type 12, 5 bytes
+Handle 0x0020, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: ConfigOptions1
 	Option 2: ConfigOptions2
 	Option 3: ConfigOptions3
 
-Handle 0x0022, DMI type 13, 22 bytes
+Handle 0x0021, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 8
@@ -437,25 +433,25 @@ BIOS Language Information
 		pt|PT|iso8859-1,0
 	Currently Installed Language: en|US|iso8859-1,0
 
-Handle 0x0023, DMI type 14, 8 bytes
+Handle 0x0022, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x0045 (OEM-specific)
+		0x0044 (OEM-specific)
 
-Handle 0x0024, DMI type 14, 8 bytes
+Handle 0x0023, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x003F (OEM-specific)
 
-Handle 0x0025, DMI type 14, 8 bytes
+Handle 0x0024, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x003E (OEM-specific)
 
-Handle 0x0026, DMI type 15, 29 bytes
+Handle 0x0025, DMI type 15, 29 bytes
 System Event Log
 	Area Length: 0 bytes
 	Header Start Offset: 0x0000
@@ -474,7 +470,7 @@ System Event Log
 	Descriptor 3: Log area reset/cleared
 	Data Format 3: None
 
-Handle 0x0027, DMI type 16, 23 bytes
+Handle 0x0026, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -483,44 +479,44 @@ Physical Memory Array
 	Error Information Handle: No Error
 	Number Of Devices: 2
 
-Handle 0x0028, DMI type 17, 84 bytes
+Handle 0x0027, DMI type 17, 84 bytes
 Memory Device
-	Array Handle: 0x0027
+	Array Handle: 0x0026
 	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2667 MT/s
+	Manufacturer: 8A76
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: LD4AS008G-H2666GSC  
+	Rank: 1
+	Configured Memory Speed: 2667 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: None
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
+	Module Manufacturer ID: Bank 11, Hex 0x76
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: None
+	Volatile Size: 8 GB
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0029, DMI type 17, 84 bytes
+Handle 0x0028, DMI type 17, 84 bytes
 Memory Device
-	Array Handle: 0x0027
+	Array Handle: 0x0026
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -553,21 +549,32 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x002A, DMI type 19, 31 bytes
+Handle 0x0029, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
-	Physical Array Handle: 0x0027
-	Partition Width: 1
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
+	Physical Array Handle: 0x0026
+	Partition Width: 2
+
+Handle 0x002A, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0027
+	Memory Array Mapped Address Handle: 0x0029
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 1
 
 Handle 0x002B, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0029
-	Memory Array Mapped Address Handle: 0x002A
+	Physical Device Handle: 0x0028
+	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: Unknown
 	Interleave Position: 2
 	Interleaved Data Depth: 1
@@ -711,7 +718,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 3A 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 82 34 00 00 00 00 01 00 00 00 00 00 0D 00
-		3A 06 28 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		E3 06 2F 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 FF 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x003B, DMI type 133, 5 bytes
@@ -753,8 +760,8 @@ OEM-specific Type
 Handle 0x003F, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 3F 00 03 01 00 08 00 51 30 00 02 00 00 00
-		00 78 00 03 00 FF FF FF FF FF
+		DD 1A 3F 00 03 01 00 08 00 92 60 00 02 00 00 00
+		00 BA 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -763,8 +770,8 @@ OEM-specific Type
 Handle 0x0040, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 40 00 03 01 00 08 00 51 30 00 02 00 00 00
-		00 00 00 03 04 0D 00 28 3A 06
+		DD 1A 40 00 03 01 00 08 00 92 60 00 02 00 00 00
+		00 00 00 03 04 0D 00 2F E3 06
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -774,7 +781,7 @@ OEM-specific Type
 Handle 0x0041, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 41 00 07 01 00 08 00 51 30 00 02 03 FF FF
+		DD 36 41 00 07 01 00 08 00 92 60 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 30 00 05 00 FF FF FF 30
 		00 06 00 FF FF FF FF FF 07 00 17 FF FF FF FF 08
 		00 00 FF FF FF FF
@@ -791,8 +798,8 @@ OEM-specific Type
 Handle 0x0042, DMI type 221, 75 bytes
 OEM-specific Type
 	Header and Data:
-		DD 4B 42 00 0A 01 00 08 00 51 30 00 02 00 00 00
-		04 51 00 03 00 08 00 51 30 00 04 05 FF FF FF FF
+		DD 4B 42 00 0A 01 00 08 00 92 60 00 02 00 00 00
+		04 51 00 03 00 08 00 92 60 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 03 00 07 00 00 00 00 03 00 08
 		00 FF FF FF FF FF 09 00 04 13 00 00 00 0A 00 00
 		00 00 00 00 0B 00 00 00 00 00 00
@@ -816,46 +823,19 @@ OEM-specific Type
 	Strings:
 		FSP Binary Version
 
-Handle 0x0044, DMI type 221, 89 bytes
+Handle 0x0044, DMI type 222, 14 bytes
 OEM-specific Type
 	Header and Data:
-		DD 59 44 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
-		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
-		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 01 2A 00 00 00 0C 00 00
-		14 00 26 10 0D 0E 01 05 02 00 00 0F 00 00 07 03
-		00 00 10 00 00 02 00 0F 00
-	Strings:
-		Lan Phy Version
-		Sensor Firmware Version
-		Debug Mode Status
-		Disabled
-		Performance Mode Status
-		Disabled
-		Debug Use USB(Disabled:Serial)
-		Disabled
-		ICC Overclocking Version
-		UNDI Version
-		EC FW Version
-		GOP Version
-		Royal Park Version
-		BP1520_Formal_P01_RP01
-		Platform Version
-		Client Silicon Version
-
-Handle 0x0045, DMI type 222, 14 bytes
-OEM-specific Type
-	Header and Data:
-		DE 0E 45 00 01 99 00 03 10 01 20 02 30 03
+		DE 0E 44 00 01 99 00 03 10 01 20 02 30 03
 	Strings:
 		Memory Init Complete
 		End of DXE Phase
 		BIOS Boot Complete
 
-Handle 0x0046, DMI type 248, 18 bytes
+Handle 0x0045, DMI type 248, 18 bytes
 OEM-specific Type
 	Header and Data:
-		F8 12 46 00 AC AC AA 17 00 00 00 00 00 00 00 00
+		F8 12 45 00 AC AC AA 17 00 00 00 00 00 00 00 00
 		00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

@@ -1,8 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0 present.
-67 structures occupying 3452 bytes.
-Table at 0x000E6380.
+67 structures occupying 3449 bytes.
+Table at 0x000E5FF0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -117,7 +117,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
-	Voltage: 0.7 V
+	Voltage: 0.6 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
 	Current Speed: 1500 MHz
@@ -376,7 +376,7 @@ Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8C1
 	Type: x4 PCI Express x4
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Other
 	ID: 5
 	Characteristics:
@@ -480,7 +480,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -488,21 +488,21 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2133 MT/s
-	Manufacturer: Samsung
+	Manufacturer: 8502
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471A5143SB1-CRC    
+	Part Number: PSD416G320081S      
 	Rank: 1
 	Configured Memory Speed: 2133 MT/s
-	Minimum Voltage: 1.35 V
+	Minimum Voltage: 1.25 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.2 V
 
 Handle 0x0027, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 20 GB
 	Physical Array Handle: 0x0024
 	Partition Width: 2
 
@@ -520,8 +520,8 @@ Memory Device Mapped Address
 Handle 0x0029, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0026
 	Memory Array Mapped Address Handle: 0x0027
 	Partition Row Position: Unknown
@@ -683,7 +683,7 @@ OEM-specific Type
 Handle 0x003B, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 3B 00 01 03 01 55 02 00 90 06 01 10 8B 20
+		DB 51 3B 00 01 03 01 55 02 00 90 06 01 10 86 20
 		00 00 00 04 40 08 00 00 00 00 00 00 00 00 00 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

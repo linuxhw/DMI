@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
 Table at 0x439DB000.
@@ -6,8 +6,8 @@ Table at 0x439DB000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: GGCN48WW
-	Release Date: 07/11/2022
+	Version: GGCN55WW
+	Release Date: 06/12/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 12 MB
@@ -31,8 +31,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.48
-	Firmware Revision: 1.48
+	BIOS Revision: 1.55
+	Firmware Revision: 1.55
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -342,7 +342,8 @@ Port Connector Information
 Handle 0x001A, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J6C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 1
@@ -350,13 +351,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.0
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x001B, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J6D2
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 2
@@ -364,13 +366,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.1
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x001C, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J7C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 3
@@ -378,13 +381,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.2
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x001D, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J7D1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 4
@@ -392,13 +396,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.3
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x001E, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J8C1
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Other
 	ID: 5
@@ -406,24 +411,20 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.4
-	Data Bus Width: 10
+	Data Bus Width (Base): 10
 	Peer Devices: 0
 
 Handle 0x001F, DMI type 11, 5 bytes
 OEM Strings
 	String 1: Modern Preload
 
-Handle 0x0020, DMI type 11, 5 bytes
-OEM Strings
-	String 1: Modern Preload
-
-Handle 0x0021, DMI type 12, 5 bytes
+Handle 0x0020, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: ConfigOptions1
 	Option 2: ConfigOptions2
 	Option 3: ConfigOptions3
 
-Handle 0x0022, DMI type 13, 22 bytes
+Handle 0x0021, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 8
@@ -437,7 +438,7 @@ BIOS Language Information
 		pt|PT|iso8859-1,0
 	Currently Installed Language: en|US|iso8859-1,0
 
-Handle 0x0023, DMI type 14, 8 bytes
+Handle 0x0022, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
@@ -454,7 +455,7 @@ Group Associations
 		0x0040 (OEM-specific)
 		0x0041 (OEM-specific)
 
-Handle 0x0024, DMI type 15, 29 bytes
+Handle 0x0023, DMI type 15, 29 bytes
 System Event Log
 	Area Length: 0 bytes
 	Header Start Offset: 0x0000
@@ -473,7 +474,7 @@ System Event Log
 	Descriptor 3: Log area reset/cleared
 	Data Format 3: None
 
-Handle 0x0025, DMI type 16, 23 bytes
+Handle 0x0024, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -482,9 +483,9 @@ Physical Memory Array
 	Error Information Handle: No Error
 	Number Of Devices: 2
 
-Handle 0x0026, DMI type 17, 92 bytes
+Handle 0x0025, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x0025
+	Array Handle: 0x0024
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -517,9 +518,9 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0027, DMI type 17, 92 bytes
+Handle 0x0026, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x0025
+	Array Handle: 0x0024
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -552,43 +553,43 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0028, DMI type 19, 31 bytes
+Handle 0x0027, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x002FFFFFFFF
 	Range Size: 12 GB
-	Physical Array Handle: 0x0025
+	Physical Array Handle: 0x0024
 	Partition Width: 2
 
-Handle 0x0029, DMI type 20, 35 bytes
+Handle 0x0028, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0026
-	Memory Array Mapped Address Handle: 0x0028
+	Physical Device Handle: 0x0025
+	Memory Array Mapped Address Handle: 0x0027
 	Partition Row Position: Unknown
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x002A, DMI type 20, 35 bytes
+Handle 0x0029, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0027
-	Memory Array Mapped Address Handle: 0x0028
+	Physical Device Handle: 0x0026
+	Memory Array Mapped Address Handle: 0x0027
 	Partition Row Position: Unknown
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x002B, DMI type 21, 7 bytes
+Handle 0x002A, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Touch Pad
 	Interface: PS/2
 	Buttons: 4
 
-Handle 0x002C, DMI type 22, 26 bytes
+Handle 0x002B, DMI type 22, 26 bytes
 Portable Battery
 	Location: Fake
 	Manufacturer: -Virtual Battery 0-
@@ -602,14 +603,14 @@ Portable Battery
 	Maximum Error: Unknown
 	OEM-specific Information: 0x00000000
 
-Handle 0x002D, DMI type 24, 5 bytes
+Handle 0x002C, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
 
-Handle 0x002E, DMI type 26, 24 bytes
+Handle 0x002D, DMI type 26, 24 bytes
 Voltage Probe
 	Description: Voltage Probe Description
 	Location: Unknown
@@ -622,16 +623,16 @@ Voltage Probe
 	OEM-specific Information: 0x00008000
 	Nominal Value: 0.000 V
 
-Handle 0x002F, DMI type 27, 15 bytes
+Handle 0x002E, DMI type 27, 15 bytes
 Cooling Device
-	Temperature Probe Handle: 0x0030
+	Temperature Probe Handle: 0x002F
 	Type: Fan
 	Status: OK
 	OEM-specific Information: 0x00000000
 	Nominal Speed: 8192 rpm
 	Description: Cooling Device Description
 
-Handle 0x0030, DMI type 28, 24 bytes
+Handle 0x002F, DMI type 28, 24 bytes
 Temperature Probe
 	Description: Temperature Probe Description
 	Location: Unknown
@@ -644,11 +645,11 @@ Temperature Probe
 	OEM-specific Information: 0x00008000
 	Nominal Value: 0.0 deg C
 
-Handle 0x0031, DMI type 32, 11 bytes
+Handle 0x0030, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0032, DMI type 39, 22 bytes
+Handle 0x0031, DMI type 39, 22 bytes
 System Power Supply
 	Location: OEM Define 0
 	Name: OEM Define 1
@@ -664,7 +665,7 @@ System Power Supply
 	Plugged: No
 	Hot Replaceable: No
 
-Handle 0x0033, DMI type 40, 17 bytes
+Handle 0x0032, DMI type 40, 17 bytes
 Additional Information 1
 	Referenced Handle: 0x000e
 	Referenced Offset: 0x05
@@ -676,13 +677,23 @@ Additional Information 2
 	String: Compiler Version: VC 9.0
 	Value: 0x00
 
-Handle 0x0034, DMI type 41, 11 bytes
+Handle 0x0033, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: IGD
 	Type: Video
 	Status: Disabled
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
+
+Handle 0x0034, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: INTC
+	Specification Version: 2.0
+	Firmware Revision: 600.7
+	Description: TPM Device
+	Characteristics:
+		TPM Device characteristics not supported
+	OEM-specific Information: 0x00000000
 
 Handle 0x0035, DMI type 128, 8 bytes
 OEM-specific Type
@@ -731,7 +742,7 @@ OEM-specific Type
 Handle 0x003B, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 3B 00 01 04 01 45 02 00 A0 06 01 10 89 20
+		DB 6A 3B 00 01 04 01 45 02 00 A0 06 01 85 30 20
 		00 00 00 00 40 00 00 00 00 00 00 00 00 40 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -816,7 +827,7 @@ OEM-specific Type
 		DD 59 41 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 01 30 00 00 00 0C 00 00
+		00 FF FF FF FF FF 0B 00 01 37 00 00 00 0C 00 00
 		17 00 45 10 0D 00 FF FF FF FF FF 0E 00 00 07 03
 		00 00 0F 00 00 02 00 0F 00
 	Strings:

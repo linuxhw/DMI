@@ -1,13 +1,13 @@
 # dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0x4A470000.
+Table at 0x4A448000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: EMCN55WW
-	Release Date: 09/05/2022
+	Version: EMCN56WW
+	Release Date: 11/16/2022
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 10 MB
@@ -31,8 +31,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.55
-	Firmware Revision: 1.55
+	BIOS Revision: 1.56
+	Firmware Revision: 1.56
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -437,7 +437,7 @@ Handle 0x0022, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x0044 (OEM-specific)
+		0x0045 (OEM-specific)
 
 Handle 0x0023, DMI type 14, 8 bytes
 Group Associations
@@ -760,7 +760,7 @@ OEM-specific Type
 Handle 0x003F, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 3F 00 03 01 00 08 00 A6 50 00 02 00 00 00
+		DD 1A 3F 00 03 01 00 08 00 92 60 00 02 00 00 00
 		00 B2 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
@@ -770,7 +770,7 @@ OEM-specific Type
 Handle 0x0040, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 40 00 03 01 00 08 00 A6 50 00 02 00 00 00
+		DD 1A 40 00 03 01 00 08 00 92 60 00 02 00 00 00
 		00 00 00 03 04 0D 00 15 27 05
 	Strings:
 		Reference Code - ME
@@ -781,7 +781,7 @@ OEM-specific Type
 Handle 0x0041, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 41 00 07 01 00 08 00 A6 50 00 02 03 FF FF
+		DD 36 41 00 07 01 00 08 00 92 60 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 30 00 05 00 FF FF FF 30
 		00 06 00 FF FF FF FF FF 07 00 17 FF FF FF FF 08
 		00 00 FF FF FF FF
@@ -798,8 +798,8 @@ OEM-specific Type
 Handle 0x0042, DMI type 221, 75 bytes
 OEM-specific Type
 	Header and Data:
-		DD 4B 42 00 0A 01 00 08 00 A6 50 00 02 00 00 00
-		04 51 00 03 00 08 00 A6 50 00 04 05 FF FF FF FF
+		DD 4B 42 00 0A 01 00 08 00 92 60 00 02 00 00 00
+		04 51 00 03 00 08 00 92 60 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 03 00 07 00 00 00 00 03 00 08
 		00 FF FF FF FF FF 09 00 04 11 00 00 00 0A 00 00
 		00 00 00 00 0B 00 00 00 00 00 00
@@ -823,19 +823,46 @@ OEM-specific Type
 	Strings:
 		FSP Binary Version
 
-Handle 0x0044, DMI type 222, 14 bytes
+Handle 0x0044, DMI type 221, 89 bytes
 OEM-specific Type
 	Header and Data:
-		DE 0E 44 00 01 99 00 03 10 01 20 02 30 03
+		DD 59 44 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
+		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
+		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
+		00 FF FF FF FF FF 0B 00 01 38 00 00 00 0C 00 00
+		14 00 26 10 0D 0E 01 05 02 00 00 0F 00 00 07 03
+		00 00 10 00 00 02 00 0F 00
+	Strings:
+		Lan Phy Version
+		Sensor Firmware Version
+		Debug Mode Status
+		Disabled
+		Performance Mode Status
+		Disabled
+		Debug Use USB(Disabled:Serial)
+		Disabled
+		ICC Overclocking Version
+		UNDI Version
+		EC FW Version
+		GOP Version
+		Royal Park Version
+		BP1520_Formal_P01_RP01
+		Platform Version
+		Client Silicon Version
+
+Handle 0x0045, DMI type 222, 14 bytes
+OEM-specific Type
+	Header and Data:
+		DE 0E 45 00 01 99 00 03 10 01 20 02 30 03
 	Strings:
 		Memory Init Complete
 		End of DXE Phase
 		BIOS Boot Complete
 
-Handle 0x0045, DMI type 248, 18 bytes
+Handle 0x0046, DMI type 248, 18 bytes
 OEM-specific Type
 	Header and Data:
-		F8 12 45 00 AC AC AA 17 00 00 00 00 00 00 00 00
+		F8 12 46 00 AC AC AA 17 00 00 00 00 00 00 00 00
 		00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

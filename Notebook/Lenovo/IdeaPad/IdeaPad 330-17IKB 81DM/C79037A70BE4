@@ -1,13 +1,13 @@
-# dmidecode 3.2
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x7C0FF000.
+Table at 0x8C0FF000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: 8TCN44WW
-	Release Date: 06/13/2018
+	Version: 8TCN61WW
+	Release Date: 05/19/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 6080 kB
@@ -31,8 +31,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.44
-	Firmware Revision: 1.44
+	BIOS Revision: 1.61
+	Firmware Revision: 1.61
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -116,9 +116,9 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
-	Voltage: 0.7 V
+	Voltage: 0.6 V
 	External Clock: 100 MHz
-	Max Speed: 8300 MHz
+	Max Speed: 3400 MHz
 	Current Speed: 1500 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1356
@@ -161,8 +161,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -177,8 +177,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -326,7 +326,8 @@ Port Connector Information
 Handle 0x0019, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Other
 	ID: 1
@@ -338,7 +339,8 @@ System Slot Information
 Handle 0x001A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D2
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 2
@@ -350,7 +352,8 @@ System Slot Information
 Handle 0x001B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 3
@@ -362,7 +365,8 @@ System Slot Information
 Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7D1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 4
@@ -374,7 +378,8 @@ System Slot Information
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8C1
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Other
 	ID: 5
@@ -461,7 +466,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -485,7 +490,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -688,7 +693,7 @@ OEM-specific Type
 Handle 0x003C, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 3C 00 01 03 01 45 02 00 A0 06 01 10 80 20
+		DB 51 3C 00 01 03 01 45 02 00 90 06 01 10 86 20
 		00 00 00 04 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -703,7 +708,7 @@ Handle 0x003D, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 3D 00 03 01 00 02 07 00 00 00 02 00 00 00
-		00 96 00 03 00 00 05 00 00 00
+		00 EA 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -764,7 +769,7 @@ OEM-specific Type
 		DD 67 41 00 0E 01 00 00 00 00 FF 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 01 2C 00 00 00 0C 00 FF
+		00 FF FF FF FF FF 0B 00 01 3D 00 00 00 0C 00 FF
 		FF FF FF FF 0D 00 FF FF FF FF FF 0E 00 FF FF FF
 		FF FF 0F 00 FF FF FF FF FF 10 11 01 03 04 01 00
 		12 00 00 07 03 00 00

@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
-Table at 0x000EC8C0.
+Table at 0xBA658000.
 
 Handle 0x0000, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -18,7 +18,7 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 12 GB
+	Maximum Capacity: 32 GB
 	Error Information Handle: 0x0000
 	Number Of Devices: 2
 
@@ -196,7 +196,7 @@ Memory Device
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 4 GB
-	Form Factor: SODIMM
+	Form Factor: Row Of Chips
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL B
@@ -473,17 +473,24 @@ OEM-specific Type
 Handle 0x0029, DMI type 11, 5 bytes
 OEM Strings
 	String 1: Modern Preload
+	String 2: <BAD INDEX>
+	String 3: <BAD INDEX>
+	String 4: <BAD INDEX>
+	String 5: <BAD INDEX>
 
 Handle 0x000D, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: E8CN36WW
-	Release Date: 05/23/2022
+	Version: E8CN39WW
+	Release Date: 04/10/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
+		PC Card (PCMCIA) is supported
+		PNP is supported
+		APM is supported
 		BIOS is upgradeable
 		BIOS shadowing is allowed
 		Boot from CD is supported
@@ -500,8 +507,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.36
-	Firmware Revision: 1.36
+	BIOS Revision: 1.39
+	Firmware Revision: 1.39
 
 Handle 0x000E, DMI type 1, 27 bytes
 System Information
@@ -525,7 +532,7 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Chassis Location Unknown
-	Chassis Handle: 0x0000
+	Chassis Handle: 0x0010
 	Type: Motherboard
 	Contained Object Handles: 0
 
@@ -557,14 +564,14 @@ OEM-specific Type
 
 Handle 0x0030, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 530 bytes
+	Area Length: 34 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000020
+	Change Token: 0x00000001
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error

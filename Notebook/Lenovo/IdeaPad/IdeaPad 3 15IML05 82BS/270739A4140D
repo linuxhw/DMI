@@ -1,14 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
-SMBIOS 3.2 present.
-68 structures occupying 3503 bytes.
-Table at 0x000E61D0.
+SMBIOS 3.2.0 present.
+Table at 0x8E33E000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: DXCN42WW
-	Release Date: 05/23/2022
+	Version: DXCN45WW
+	Release Date: 06/13/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 11 MB
@@ -32,8 +31,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.42
-	Firmware Revision: 1.42
+	BIOS Revision: 1.45
+	Firmware Revision: 1.45
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -327,7 +326,8 @@ Port Connector Information
 Handle 0x0019, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J6C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 1
@@ -335,13 +335,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.0
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x001A, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J6D2
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 2
@@ -349,13 +350,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.1
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x001B, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J7C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 3
@@ -363,13 +365,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.2
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x001C, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J7D1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 4
@@ -377,13 +380,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.3
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x001D, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J8C1
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Other
 	ID: 5
@@ -391,7 +395,7 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.4
-	Data Bus Width: 10
+	Data Bus Width (Base): 10
 	Peer Devices: 0
 
 Handle 0x001E, DMI type 11, 5 bytes
@@ -422,13 +426,13 @@ Handle 0x0021, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x0041 (OEM-specific)
+		0x0043 (OEM-specific)
 
 Handle 0x0022, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
-		0x003B (OEM-specific)
+		0x003C (OEM-specific)
 
 Handle 0x0023, DMI type 15, 29 bytes
 System Event Log
@@ -660,60 +664,70 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 
-Handle 0x0034, DMI type 128, 8 bytes
+Handle 0x0034, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: INTC
+	Specification Version: 2.0
+	Firmware Revision: 500.14
+	Description: TPM Device
+	Characteristics:
+		TPM Device characteristics not supported
+	OEM-specific Information: 0x00000000
+
+Handle 0x0035, DMI type 128, 8 bytes
 OEM-specific Type
 	Header and Data:
-		80 08 34 00 55 AA 55 AA
+		80 08 35 00 55 AA 55 AA
 	Strings:
 		Oem Type 128 Test 1
 		Oem Type 128 Test 2
 
-Handle 0x0035, DMI type 129, 8 bytes
+Handle 0x0036, DMI type 129, 8 bytes
 OEM-specific Type
 	Header and Data:
-		81 08 35 00 01 01 02 01
+		81 08 36 00 01 01 02 01
 	Strings:
 		Insyde_ASF_001
 		Insyde_ASF_002
 
-Handle 0x0036, DMI type 130, 20 bytes
+Handle 0x0037, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 36 00 24 41 4D 54 01 01 01 01 01 A5 BF 02
+		82 14 37 00 24 41 4D 54 01 01 01 01 01 A5 BF 02
 		C0 00 01 00
 
-Handle 0x0037, DMI type 131, 64 bytes
+Handle 0x0038, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 37 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 38 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 84 02 00 00 00 00 01 00 00 00 01 00 0E 00
 		71 06 35 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 FF 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0038, DMI type 133, 5 bytes
+Handle 0x0039, DMI type 133, 5 bytes
 OEM-specific Type
 	Header and Data:
-		85 05 38 00 01
+		85 05 39 00 01
 	Strings:
 		KHOIHGIUCCHHII
 
-Handle 0x0039, DMI type 136, 6 bytes
+Handle 0x003A, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 39 00 FF FF
+		88 06 3A 00 FF FF
 
-Handle 0x003A, DMI type 200, 16 bytes
+Handle 0x003B, DMI type 200, 16 bytes
 OEM-specific Type
 	Header and Data:
-		C8 10 3A 00 01 02 01 27 01 14 01 4D B2 80 01 05
+		C8 10 3B 00 01 02 01 27 01 14 01 4D B2 80 01 05
 	Strings:
 		IdeaPad
 		82BS0006BR
 
-Handle 0x003B, DMI type 219, 106 bytes
+Handle 0x003C, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 3B 00 01 04 01 45 02 00 90 06 01 10 80 20
+		DB 6A 3C 00 01 04 01 45 02 00 90 06 01 10 86 20
 		00 00 00 00 40 00 00 00 00 00 00 06 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -726,20 +740,20 @@ OEM-specific Type
 		MEI3
 		MEI4
 
-Handle 0x003C, DMI type 221, 26 bytes
+Handle 0x003D, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 3C 00 03 01 00 09 00 21 30 00 02 00 00 00
-		00 F0 00 03 00 FF FF FF FF FF
+		DD 1A 3D 00 03 01 00 09 00 21 30 00 02 00 00 00
+		00 F4 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
 		TXT ACM version
 
-Handle 0x003D, DMI type 221, 26 bytes
+Handle 0x003E, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 3D 00 03 01 00 09 00 21 30 00 02 00 00 00
+		DD 1A 3E 00 03 01 00 09 00 21 30 00 02 00 00 00
 		00 00 00 03 04 0E 01 35 71 06
 	Strings:
 		Reference Code - ME
@@ -747,10 +761,10 @@ OEM-specific Type
 		ME Firmware Version
 		Consumer SKU
 
-Handle 0x003E, DMI type 221, 54 bytes
+Handle 0x003F, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 3E 00 07 01 00 09 00 21 30 00 02 03 FF FF
+		DD 36 3F 00 07 01 00 09 00 21 30 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
 		00 06 00 FF FF FF FF FF 07 00 15 FF FF FF FF 08
 		00 00 FF FF FF FF
@@ -764,10 +778,10 @@ OEM-specific Type
 		ChipsetInit Base Version
 		ChipsetInit Oem Version
 
-Handle 0x003F, DMI type 221, 54 bytes
+Handle 0x0040, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 3F 00 07 01 00 09 00 21 30 00 02 00 00 00
+		DD 36 40 00 07 01 00 09 00 21 30 00 02 00 00 00
 		00 30 00 03 00 09 00 21 30 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 0C 00 07 00 00 00 00 0C 00 08
 		00 FF FF FF FF FF
@@ -781,26 +795,52 @@ OEM-specific Type
 		SA-CRID New Value
 		OPROM - VBIOS
 
-Handle 0x0040, DMI type 221, 12 bytes
+Handle 0x0041, DMI type 221, 12 bytes
 OEM-specific Type
 	Header and Data:
-		DD 0C 40 00 01 01 00 04 00 00 00 00
+		DD 0C 41 00 01 01 00 04 00 00 00 00
 	Strings:
 		FSP Binary Version
 
-Handle 0x0041, DMI type 222, 14 bytes
+Handle 0x0042, DMI type 221, 89 bytes
 OEM-specific Type
 	Header and Data:
-		DE 0E 41 00 01 99 00 03 10 01 20 02 30 03
+		DD 59 42 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
+		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
+		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
+		00 FF FF FF FF FF 0B 00 01 2D 00 00 00 0C 00 FF
+		FF FF FF FF 0D 00 FF FF FF FF FF 0E 00 00 07 03
+		00 00 0F 00 00 02 00 0F 00
+	Strings:
+		Lan Phy Version
+		Sensor Firmware Version
+		Debug Mode Status
+		Disabled
+		Performance Mode Status
+		Disabled
+		Debug Use USB(Disabled:Serial)
+		Disabled
+		ICC Overclocking Version
+		UNDI Version
+		EC FW Version
+		GOP Version
+		Royal Park Version
+		Platform Version
+		Client Silicon Version
+
+Handle 0x0043, DMI type 222, 14 bytes
+OEM-specific Type
+	Header and Data:
+		DE 0E 43 00 01 99 00 03 10 01 20 02 30 03
 	Strings:
 		Memory Init Complete
 		End of DXE Phase
 		BIOS Boot Complete
 
-Handle 0x0042, DMI type 248, 18 bytes
+Handle 0x0044, DMI type 248, 18 bytes
 OEM-specific Type
 	Header and Data:
-		F8 12 42 00 AC AC AA 17 00 00 00 00 00 00 00 00
+		F8 12 44 00 AC AC AA 17 00 00 00 00 00 00 00 00
 		00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

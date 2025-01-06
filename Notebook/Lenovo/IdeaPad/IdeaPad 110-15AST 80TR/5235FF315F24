@@ -1,8 +1,8 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 45 structures occupying 1762 bytes.
-Table at 0x000EA880.
+Table at 0xCC073000.
 
 Handle 0x0004, DMI type 8, 9 bytes
 Port Connector Information
@@ -274,8 +274,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -350,7 +350,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -396,7 +396,7 @@ OEM-specific Type
 
 Handle 0x001F, DMI type 24, 5 bytes
 Hardware Security
-	Power-On Password Status: Disabled
+	Power-On Password Status: Enabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Enabled
 	Front Panel Reset Status: Disabled
@@ -414,7 +414,7 @@ BIOS Information
 	Release Date: 07/31/2017
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -435,6 +435,27 @@ BIOS Information
 		UEFI is supported
 	BIOS Revision: 1.29
 	Firmware Revision: 1.29
+
+Handle 0x002B, DMI type 15, 31 bytes
+System Event Log
+	Area Length: 2050 bytes
+	Header Start Offset: 0x0000
+	Header Length: 16 bytes
+	Data Start Offset: 0x0010
+	Access Method: General-purpose non-volatile data functions
+	Access Address: 0x00F0
+	Status: Valid, Not Full
+	Change Token: 0x0000007F
+	Header Format: Type 1
+	Supported Log Type Descriptors: 4
+	Descriptor 1: POST error
+	Data Format 1: POST results bitmap
+	Descriptor 2: PCI system error
+	Data Format 2: None
+	Descriptor 3: System reconfigured
+	Data Format 3: None
+	Descriptor 4: Log area reset/cleared
+	Data Format 4: None
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -487,27 +508,6 @@ OEM-specific Type
 	Strings:
 		IdeaPad
 		80TR002MSP
-
-Handle 0x002B, DMI type 15, 31 bytes
-System Event Log
-	Area Length: 274 bytes
-	Header Start Offset: 0x0000
-	Header Length: 16 bytes
-	Data Start Offset: 0x0010
-	Access Method: General-purpose non-volatile data functions
-	Access Address: 0x00F0
-	Status: Valid, Not Full
-	Change Token: 0x00000010
-	Header Format: Type 1
-	Supported Log Type Descriptors: 4
-	Descriptor 1: POST error
-	Data Format 1: POST results bitmap
-	Descriptor 2: PCI system error
-	Data Format 2: None
-	Descriptor 3: System reconfigured
-	Data Format 3: None
-	Descriptor 4: Log area reset/cleared
-	Data Format 4: None
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table
