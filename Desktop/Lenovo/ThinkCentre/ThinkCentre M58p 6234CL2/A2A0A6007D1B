@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 64 structures occupying 3123 bytes.
@@ -343,14 +343,14 @@ BIOS Language Information
 
 Handle 0x001D, DMI type 15, 29 bytes
 System Event Log
-	Area Length: 48 bytes
+	Area Length: 128 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x0000
 	Status: Valid, Not Full
-	Change Token: 0x000000A0
+	Change Token: 0x000000A6
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -374,7 +374,7 @@ Memory Device
 	Array Handle: 0x001E
 	Error Information Handle: 0xFF00
 	Total Width: 40960 bits
-	Data Width: 40962 bits
+	Data Width: 40960 bits
 	Size: 4 GB
 	Form Factor: DIMM
 	Set: 1
@@ -394,7 +394,7 @@ Memory Device
 	Error Information Handle: 0xFF00
 	Total Width: 41472 bits
 	Data Width: 41472 bits
-	Size: 4 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: J6G2
@@ -413,7 +413,7 @@ Memory Device
 	Error Information Handle: 0xFF00
 	Total Width: 41984 bits
 	Data Width: 41984 bits
-	Size: 2 GB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: J6H1
@@ -432,7 +432,7 @@ Memory Device
 	Error Information Handle: 0xFF00
 	Total Width: 42496 bits
 	Data Width: 42496 bits
-	Size: 4 GB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: J6H2
@@ -458,8 +458,8 @@ Handle 0x0023, DMI type 18, 23 bytes
 Handle 0x0024, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0037FFFFFFF
-	Range Size: 14 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x001E
 	Partition Width: 2
 
@@ -477,8 +477,8 @@ Memory Device Mapped Address
 Handle 0x0026, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0020
 	Memory Array Mapped Address Handle: 0x0024
 	Partition Row Position: Unknown
@@ -487,9 +487,9 @@ Memory Device Mapped Address
 
 Handle 0x0027, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x0027FFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00180000000
+	Ending Address: 0x001BFFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0021
 	Memory Array Mapped Address Handle: 0x0024
 	Partition Row Position: Unknown
@@ -498,9 +498,9 @@ Memory Device Mapped Address
 
 Handle 0x0028, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00280000000
-	Ending Address: 0x0037FFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x001C0000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0022
 	Memory Array Mapped Address Handle: 0x0024
 	Partition Row Position: Unknown
@@ -630,9 +630,9 @@ ThinkVantage Technologies
 Handle 0x0037, DMI type 140, 121 bytes
 OEM-specific Type
 	Header and Data:
-		8C 79 37 00 4C 45 4E 4F 56 4F 0B 00 01 8E 77 39
-		18 41 82 CB 7C 57 AB 80 4E EC 59 5E 11 01 00 49
-		D1 B2 DE BA 71 03 56 3C 1B D0 43 5B 5B 3D B1 01
+		8C 79 37 00 4C 45 4E 4F 56 4F 0B 00 01 53 A8 D0
+		71 8C 9E 34 FE 58 B5 FC 1E 26 F7 72 EF 01 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

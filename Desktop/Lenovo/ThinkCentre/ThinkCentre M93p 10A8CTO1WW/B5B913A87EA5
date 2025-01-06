@@ -1,14 +1,14 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 91 structures occupying 3643 bytes.
-Table at 0x000EDC10.
+Table at 0xDBEC0018.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: FBKTDEAUS
-	Release Date: 06/16/2020
+	Version: FBKTE0AUS
+	Release Date: 12/23/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 6656 kB
@@ -32,7 +32,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.222
+	BIOS Revision: 1.224
 	Firmware Revision: 1.13
 
 Handle 0x0001, DMI type 1, 27 bytes
@@ -327,7 +327,7 @@ System Slot Information
 Handle 0x0020, DMI type 10, 12 bytes
 On Board Device 1 Information
 	Type: Video
-	Status: Disabled
+	Status: Enabled
 	Description:    Onboard Video
 On Board Device 2 Information
 	Type: Ethernet
@@ -345,7 +345,7 @@ On Board Device 4 Information
 Handle 0x0021, DMI type 11, 5 bytes
 OEM Strings
 	String 1: LENOVO ThinkCentre Embedded Controller -[FBCT13A-1.13]-
-	String 2: LENOVO ThinkCentre BIOS Boot Block Revision 1.DE
+	String 2: LENOVO ThinkCentre BIOS Boot Block Revision 1.E0
 
 Handle 0x0022, DMI type 12, 5 bytes
 System Configuration Options
@@ -632,11 +632,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Xeon(R) CPU E3-1220 v3 @ 3.10GHz
+	Version: Intel(R) Xeon(R) CPU E3-1246 v3 @ 3.50GHz
 	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 3100 MHz
+	Current Speed: 3500 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
 	L1 Cache Handle: 0x003F
@@ -647,7 +647,7 @@ Processor Information
 	Part Number: Fill By OEM
 	Core Count: 4
 	Core Enabled: 4
-	Thread Count: 4
+	Thread Count: 8
 	Characteristics:
 		64-bit capable
 
@@ -657,8 +657,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -689,8 +689,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -714,7 +714,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -722,10 +722,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: 1337
 	Serial Number: --
 	Asset Tag: --
-	Part Number: SNOAMOO Ltd:016M00
+	Part Number: FLGF65F-C8KJB     
 	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
@@ -739,7 +739,7 @@ System Event Log
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0xFFC7C000
+	Access Address: 0x00000000
 	Status: Valid, Not Full
 	Change Token: 0x00000001
 	Header Format: Type 1
@@ -812,7 +812,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
@@ -820,11 +820,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 1337
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: FLGF65F-D8KMB     
-	Rank: 1
+	Part Number: SNOAMOO Ltd:016M00
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
@@ -847,7 +847,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -855,11 +855,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: 1337
 	Serial Number: --
 	Asset Tag: --
-	Part Number: SNOAMOO Ltd:016M00
-	Rank: 2
+	Part Number: FLGF65F-D8KMB     
+	Rank: 1
 	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
@@ -882,7 +882,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
@@ -890,10 +890,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 1337
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: FLGF65F-C8KJB     
+	Part Number: SNOAMOO Ltd:016M00
 	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
@@ -932,8 +932,8 @@ OEM-specific Type
 Handle 0x0051, DMI type 140, 85 bytes
 OEM-specific Type
 	Header and Data:
-		8C 55 51 00 4C 45 4E 4F 56 4F 0B 00 01 A6 A6 2E
-		EE 07 78 D6 AF FE E8 8F A5 CC 01 8B 2E 01 00 00
+		8C 55 51 00 4C 45 4E 4F 56 4F 0B 00 01 53 E1 BB
+		5B 0D BE B0 48 18 A0 40 0D 49 74 F1 59 01 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

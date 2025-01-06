@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 64 structures occupying 3125 bytes.
@@ -277,7 +277,8 @@ Port Connector Information
 Handle 0x0015, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI Slot 1
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 2
@@ -288,7 +289,8 @@ System Slot Information
 Handle 0x0016, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI Slot 2
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 3
@@ -299,7 +301,8 @@ System Slot Information
 Handle 0x0017, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIE x16
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: Unknown
 	Length: Long
 	ID: 0
@@ -309,7 +312,8 @@ System Slot Information
 Handle 0x0018, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIE x1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Unknown
 	Length: Long
 	ID: 0
@@ -630,11 +634,11 @@ ThinkVantage Technologies
 Handle 0x0037, DMI type 140, 121 bytes
 OEM-specific Type
 	Header and Data:
-		8C 79 37 00 4C 45 4E 4F 56 4F 0B 00 01 F9 6F 72
-		5F 0C 12 63 E6 C5 8C 7D BC BE B9 49 B9 01 00 00
+		8C 79 37 00 4C 45 4E 4F 56 4F 0B 00 01 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 30 24 60 2D C1 E8 15 E8 BD E4 0B B9 77 F0 7A
+		3F 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00

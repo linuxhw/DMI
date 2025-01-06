@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
 Table at 0x7C940000.
@@ -129,7 +129,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -137,11 +137,11 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2666 MT/s
-	Manufacturer: Corsair
+	Manufacturer: Ramaxel
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMK32GX4M2A2666C16  
-	Rank: 2
+	Part Number: RMUA5110ME78HAF-2666
+	Rank: 1
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -174,8 +174,8 @@ Memory Device
 Handle 0x000C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 24 GB
 	Physical Array Handle: 0x0009
 	Partition Width: 2
 
@@ -366,8 +366,8 @@ OEM-specific Type
 Handle 0x001E, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x000A
 	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: Unknown
@@ -376,8 +376,8 @@ Memory Device Mapped Address
 
 Handle 0x001F, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x007FFFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x005FFFFFFFF
 	Range Size: 16 GB
 	Physical Device Handle: 0x000B
 	Memory Array Mapped Address Handle: 0x000C
@@ -623,8 +623,8 @@ Group Associations
 Handle 0x0035, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 35 00 01 04 01 45 02 00 90 06 01 85 30 20
-		00 00 00 00 40 00 00 00 00 00 00 00 00 00 40 02
+		DB 6A 35 00 01 04 01 45 02 00 90 06 01 85 36 20
+		00 00 00 04 40 00 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

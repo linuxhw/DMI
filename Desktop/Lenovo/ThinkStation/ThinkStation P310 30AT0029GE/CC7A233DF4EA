@@ -1,7 +1,7 @@
 # dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x8D1B0000.
+Table at 0x8F9B0000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -274,14 +274,14 @@ Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B2
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 1
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:10.0
+	Bus Address: 0000:01:10.0
 
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
@@ -811,7 +811,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFD75000
 	Status: Valid, Not Full
-	Change Token: 0x0000004B
+	Change Token: 0x000000D1
 	Header Format: Type 1
 	Supported Log Type Descriptors: 25
 	Descriptor 1: Single-bit ECC memory error
@@ -955,7 +955,7 @@ OEM-specific Type
 		DD 36 5B 00 07 01 00 01 08 00 00 00 02 00 01 08
 		00 01 00 03 00 01 08 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 07 00 07 00 FF FF FF 07 00 08
-		00 FF FF FF 52 10
+		00 FF FF FF 02 03
 	Strings:
 		Reference Code - SA - System Agent
 		Reference Code - MRC

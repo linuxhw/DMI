@@ -1,7 +1,7 @@
 # dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-91 structures occupying 3612 bytes.
+91 structures occupying 3613 bytes.
 Table at 0x000EDC20.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -599,7 +599,7 @@ Handle 0x003D, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: SOCKET 0
 	Type: Central Processor
-	Family: Core i5
+	Family: Core i7
 	Manufacturer: Intel
 	ID: C3 06 03 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 60, Stepping 3
@@ -632,11 +632,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i5-4570 CPU @ 3.20GHz
+	Version: Intel(R) Core(TM) i7-4770K CPU @ 3.50GHz
 	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 3200 MHz
+	Current Speed: 3500 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
 	L1 Cache Handle: 0x003F
@@ -647,7 +647,7 @@ Processor Information
 	Part Number: Fill By OEM
 	Core Count: 4
 	Core Enabled: 4
-	Thread Count: 4
+	Thread Count: 8
 	Characteristics:
 		64-bit capable
 
@@ -689,15 +689,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6 MB
-	Maximum Size: 6 MB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
 	Speed: Unknown
 	Error Correction Type: Single-bit ECC
 	System Type: Unified
-	Associativity: 12-way Set-associative
+	Associativity: 16-way Set-associative
 
 Handle 0x0041, DMI type 16, 23 bytes
 Physical Memory Array
@@ -936,8 +936,8 @@ OEM-specific Type
 		29 A1 67 3E 79 4F 0E A9 55 0C DB 29 51 01 00 04
 		54 1E B2 9A 34 26 FC 79 2A 09 55 CA 57 83 6C 01
 		00 65 9A 24 61 D0 F2 62 D2 BA F2 24 FE 11 AF 9F
-		89 01 00 A1 61 EC B0 D0 AB FA 07 41 F1 43 2B 07
-		DC D3 62 01 00
+		89 01 00 48 49 F2 F1 F3 EC DF 3C 4D 57 8E FE A1
+		DC 69 B1 01 00
 
 Handle 0x0052, DMI type 140, 47 bytes
 OEM-specific Type
@@ -995,14 +995,14 @@ OEM-specific Type
 Handle 0x005A, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 5A 00 24 41 4D 54 01 01 01 01 01 A5 8F 02
-		01 00 01 00
+		82 14 5A 00 24 41 4D 54 00 00 00 00 00 A5 8F 02
+		01 00 00 00
 
 Handle 0x005B, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 5B 00 35 00 00 00 0A 00 00 00 00 00 04 00
-		F8 00 4E 8C 00 00 00 00 09 E0 00 00 01 00 09 00
+		83 40 5B 00 31 00 00 00 0A 00 00 00 00 00 04 00
+		F8 00 4E 8C 00 00 00 00 11 20 00 00 01 00 09 00
 		60 04 00 00 00 00 00 00 C8 00 3A 15 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 

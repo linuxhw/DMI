@@ -1,8 +1,8 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-81 structures occupying 3511 bytes.
-Table at 0x7D236018.
+82 structures occupying 3533 bytes.
+Table at 0x7D2A5018.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -395,7 +395,7 @@ Handle 0x0017, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J18
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 3
 	Characteristics:
@@ -455,7 +455,7 @@ Handle 0x001D, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
-	Error Correction Type: Multi-bit ECC
+	Error Correction Type: None
 	Maximum Capacity: 128 GB
 	Error Information Handle: 0x001E
 	Number Of Devices: 4
@@ -473,44 +473,12 @@ Handle 0x001E, DMI type 18, 23 bytes
 Handle 0x001F, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x005FFFFFFFF
-	Range Size: 24 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x001D
 	Partition Width: 4
 
 Handle 0x0020, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x001D
-	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 8192 MB
-	Form Factor: DIMM
-	Set: 1
-	Locator: CPU0_Dimm0
-	Bank Locator: CPU0_Bank0
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1600 MT/s
-	Manufacturer: Samsung           
-	Serial Number: --
-	Asset Tag: --
-	Part Number: M393B1G73QH0-
-	Rank: 2
-	Configured Clock Speed: 1600 MT/s
-
-Handle 0x0021, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x0020
-	Memory Array Mapped Address Handle: 0x001F
-	Partition Row Position: 1
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
-
-Handle 0x0024, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x001D
 	Error Information Handle: Not Provided
@@ -519,90 +487,106 @@ Memory Device
 	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
-	Locator: CPU0_Dimm2
-	Bank Locator: CPU0_Bank1
+	Locator: CPU0_Dimm0
+	Bank Locator: CPU0_Bank0
 	Type: Unknown
 	Type Detail: Synchronous
 	Speed: Unknown
-	Manufacturer: Dimm2_Manufacturer
+	Manufacturer: Dimm0_Manufacturer
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Dimm2_PartNum
+	Part Number: Dimm0_PartNum
 	Rank: Unknown
 	Configured Clock Speed: Unknown
 
-Handle 0x0025, DMI type 126, 35 bytes
+Handle 0x0021, DMI type 126, 35 bytes
 Inactive
+
+Handle 0x0024, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x001D
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8192 MB
+	Form Factor: DIMM
+	Set: 1
+	Locator: CPU0_Dimm2
+	Bank Locator: CPU0_Bank1
+	Type: DDR3
+	Type Detail: Unbuffered (Unregistered)
+	Speed: 1600 MT/s
+	Manufacturer: Kingston          
+	Serial Number: --
+	Asset Tag: --
+	Part Number: KHX1866C10D3/
+	Rank: 2
+	Configured Clock Speed: 1600 MT/s
+
+Handle 0x0025, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0024
+	Memory Array Mapped Address Handle: 0x001F
+	Partition Row Position: 1
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x0028, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x001D
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 8192 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
-	Set: 1
+	Set: None
 	Locator: CPU0_Dimm4
 	Bank Locator: CPU0_Bank2
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1600 MT/s
-	Manufacturer: Samsung           
+	Type: Unknown
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: Dimm4_Manufacturer
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M393B1G73QH0-
-	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Part Number: Dimm4_PartNum
+	Rank: Unknown
+	Configured Clock Speed: Unknown
 
-Handle 0x0029, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x0028
-	Memory Array Mapped Address Handle: 0x001F
-	Partition Row Position: 1
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+Handle 0x0029, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x002C, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x001D
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 8192 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
-	Set: 1
+	Set: None
 	Locator: CPU0_Dimm6
 	Bank Locator: CPU0_Bank3
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1600 MT/s
-	Manufacturer: Samsung           
+	Type: Unknown
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: Dimm6_Manufacturer
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M393B1G73QH0-
-	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Part Number: Dimm6_PartNum
+	Rank: Unknown
+	Configured Clock Speed: Unknown
 
-Handle 0x002D, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x005FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x002C
-	Memory Array Mapped Address Handle: 0x001F
-	Partition Row Position: 1
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+Handle 0x002D, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x0030, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
-	Error Correction Type: Multi-bit ECC
+	Error Correction Type: None
 	Maximum Capacity: 128 GB
 	Error Information Handle: 0x0031
 	Number Of Devices: 4
@@ -619,9 +603,9 @@ Handle 0x0031, DMI type 18, 23 bytes
 
 Handle 0x0032, DMI type 19, 31 bytes
 Memory Array Mapped Address
-	Starting Address: 0x00600000000
-	Ending Address: 0x00BFFFFFFFF
-	Range Size: 24 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0030
 	Partition Width: 4
 
@@ -629,39 +613,31 @@ Handle 0x0033, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0030
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 8192 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
-	Set: 1
+	Set: None
 	Locator: CPU1_Dimm0
 	Bank Locator: CPU1_Bank0
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1600 MT/s
-	Manufacturer: Samsung           
+	Type: Unknown
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: Dimm0_Manufacturer
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M393B1G73QH0-
-	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Part Number: Dimm0_PartNum
+	Rank: Unknown
+	Configured Clock Speed: Unknown
 
-Handle 0x0034, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00600000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x0033
-	Memory Array Mapped Address Handle: 0x0032
-	Partition Row Position: 2
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+Handle 0x0034, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x0037, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0030
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
+	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8192 MB
 	Form Factor: DIMM
@@ -669,19 +645,19 @@ Memory Device
 	Locator: CPU1_Dimm2
 	Bank Locator: CPU1_Bank1
 	Type: DDR3
-	Type Detail: Registered (Buffered)
+	Type Detail: Unbuffered (Unregistered)
 	Speed: 1600 MT/s
-	Manufacturer: Samsung           
+	Manufacturer: Kingston          
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M393B1G73QH0-
+	Part Number: KHX1866C10D3/
 	Rank: 2
 	Configured Clock Speed: 1600 MT/s
 
 Handle 0x0038, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00800000000
-	Ending Address: 0x009FFFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x0037
 	Memory Array Mapped Address Handle: 0x0032
@@ -693,33 +669,25 @@ Handle 0x003B, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0030
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 64 bits
-	Size: 8192 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
-	Set: 1
+	Set: None
 	Locator: CPU1_Dimm4
 	Bank Locator: CPU1_Bank2
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1600 MT/s
-	Manufacturer: Samsung           
+	Type: Unknown
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: Dimm4_Manufacturer
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M393B1G73QH0-
-	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Part Number: Dimm4_PartNum
+	Rank: Unknown
+	Configured Clock Speed: Unknown
 
-Handle 0x003C, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00A00000000
-	Ending Address: 0x00BFFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x003B
-	Memory Array Mapped Address Handle: 0x0032
-	Partition Row Position: 2
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+Handle 0x003C, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x003F, DMI type 17, 34 bytes
 Memory Device
@@ -841,7 +809,7 @@ System Event Log
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0xFFAC3000
+	Access Address: 0x000EF7A0
 	Status: Valid, Not Full
 	Change Token: 0x00000001
 	Header Format: Type 1
@@ -908,105 +876,113 @@ OEM-specific Type
 Handle 0x005A, DMI type 140, 31 bytes
 OEM-specific Type
 	Header and Data:
-		8C 1F 5A 00 4C 45 4E 4F 56 4F 00 00 01 04 00 F8
-		65 FA 37 A7 57 AB DD 2C 3C FF 77 10 F7 07 00
+		8C 1F 5A 00 4C 45 4E 4F 56 4F 00 00 01 7A E4 C8
+		36 04 93 20 98 E9 CC F9 C2 BD 91 30 AC 07 00
 
 Handle 0x005B, DMI type 140, 31 bytes
 OEM-specific Type
 	Header and Data:
-		8C 1F 5B 00 4C 45 4E 4F 56 4F 00 00 01 EC FD 60
-		CD 46 A3 C9 BB B2 16 F2 00 8F 8B 86 08 07 00
+		8C 1F 5B 00 4C 45 4E 4F 56 4F 00 00 01 9E 22 9A
+		81 91 83 66 37 F2 E9 00 24 7A 9B B8 44 07 00
 
 Handle 0x005C, DMI type 140, 31 bytes
 OEM-specific Type
 	Header and Data:
-		8C 1F 5C 00 4C 45 4E 4F 56 4F 00 00 01 EA 55 DF
-		C2 8D A5 C9 4A EC 39 92 1B C3 75 D3 AE 07 00
+		8C 1F 5C 00 4C 45 4E 4F 56 4F 00 00 01 5C 5B FB
+		07 25 72 F2 C8 CF 5B 34 14 BD 70 02 F0 07 00
 
-Handle 0x005D, DMI type 140, 31 bytes
+Handle 0x005D, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 1F 5D 00 4C 45 4E 4F 56 4F 00 00 01 C7 DC 48
-		A0 9F 16 DD 67 06 9B 61 0D 61 6E 03 C0 07 00
-
-Handle 0x005E, DMI type 140, 19 bytes
-OEM-specific Type
-	Header and Data:
-		8C 13 5E 00 4C 45 4E 4F 56 4F 05 05 01 0F 00 00
+		8C 13 5D 00 4C 45 4E 4F 56 4F 05 05 01 0B 00 00
 		00 53 55
 
-Handle 0x005F, DMI type 140, 23 bytes
+Handle 0x005E, DMI type 140, 23 bytes
 OEM-specific Type
 	Header and Data:
-		8C 17 5F 00 4C 45 4E 4F 56 4F 06 06 01 00 00 00
+		8C 17 5E 00 4C 45 4E 4F 56 4F 06 06 01 00 00 00
 		00 00 00 00 00 00 00
 
-Handle 0x0060, DMI type 140, 85 bytes
+Handle 0x005F, DMI type 140, 85 bytes
 OEM-specific Type
 	Header and Data:
-		8C 55 60 00 4C 45 4E 4F 56 4F 0B 00 01 0C 67 DB
-		C5 C9 D3 AF 4A 71 80 33 D9 C1 57 85 B3 01 00 E8
-		D4 D4 DB 75 4D 7F EA FF 60 A7 19 B9 33 DE 9B 01
-		00 B1 08 78 FD 59 4D C8 AA 8B B3 87 E2 FA FB 12
-		BB 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		8C 55 5F 00 4C 45 4E 4F 56 4F 0B 00 01 6F 9C BF
+		E8 B3 15 EB A6 20 A5 36 99 D3 93 1A 73 01 00 5B
+		FC 2D 1E 45 34 3E C5 F4 46 CD 56 3A CC 55 A6 01
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00
 
-Handle 0x0061, DMI type 140, 47 bytes
+Handle 0x0060, DMI type 140, 47 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2F 61 00 4C 45 4E 4F 56 4F 0B 01 01 08 00 27
+		8C 2F 60 00 4C 45 4E 4F 56 4F 0B 01 01 09 00 27
 		EC FC E4 06 72 8E 40 87 8D D9 94 92 8D 79 0F 00
 		00 00 00 10 00 10 00 10 01 D0 00 20 01 00 01
 
-Handle 0x0062, DMI type 140, 63 bytes
+Handle 0x0061, DMI type 140, 63 bytes
 OEM-specific Type
 	Header and Data:
-		8C 3F 62 00 4C 45 4E 4F 56 4F 0B 02 01 00 00 00
+		8C 3F 61 00 4C 45 4E 4F 56 4F 0B 02 01 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 
-Handle 0x0063, DMI type 140, 17 bytes
+Handle 0x0062, DMI type 140, 17 bytes
 OEM-specific Type
 	Header and Data:
-		8C 11 63 00 4C 45 4E 4F 56 4F 0B 03 01 00 00 00
+		8C 11 62 00 4C 45 4E 4F 56 4F 0B 03 01 00 00 00
 		00
 
-Handle 0x0064, DMI type 140, 19 bytes
+Handle 0x0063, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 64 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 53
+		8C 13 63 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 53
 		4D 20 00
 
-Handle 0x0065, DMI type 134, 16 bytes
+Handle 0x0064, DMI type 134, 16 bytes
 OEM-specific Type
 	Header and Data:
-		86 10 65 00 00 50 10 00 00 47 00 00 00 03 01 02
+		86 10 64 00 00 50 10 00 00 47 00 00 00 02 01 02
 	Strings:
 		TPM INFO
 		System Reserved
 
-Handle 0x0066, DMI type 10, 6 bytes
+Handle 0x0065, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Other
 	Status: Disabled
 	Description: IBM Embedded Security Hardware Type 3
 
-Handle 0x0067, DMI type 13, 22 bytes
+Handle 0x0066, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x006B, DMI type 131, 64 bytes
+Handle 0x006A, DMI type 129, 8 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 6B 00 35 00 00 00 07 00 00 00 00 00 3F 00
-		F8 00 41 1D FF FF FF FF 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 C8 00 02 15 00 00 00 00
+		81 08 6A 00 01 01 02 01
+	Strings:
+		Intel_ASF
+		Intel_ASF_001
+
+Handle 0x006B, DMI type 130, 20 bytes
+OEM-specific Type
+	Header and Data:
+		82 14 6B 00 24 41 4D 54 01 01 01 01 01 A5 1B 02
+		00 00 00 00
+
+Handle 0x006C, DMI type 131, 64 bytes
+OEM-specific Type
+	Header and Data:
+		83 40 6C 00 35 00 00 00 07 00 00 00 00 00 3F 00
+		F8 00 41 1D FF FF FF FF 09 00 00 00 01 00 07 00
+		C9 0C 5C 00 00 00 00 00 C8 00 02 15 00 00 00 00
 		00 00 00 00 36 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x006D, DMI type 127, 4 bytes
+Handle 0x006E, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.1 present.
-Table at 0x8B8B1000.
+Table at 0x3B8B1000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
@@ -715,9 +715,9 @@ System Event Log
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0x8B263018
+	Access Address: 0x3B263018
 	Status: Valid, Not Full
-	Change Token: 0x00000009
+	Change Token: 0x0000000E
 	Header Format: Type 1
 	Supported Log Type Descriptors: 25
 	Descriptor 1: Single-bit ECC memory error
@@ -926,7 +926,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz
-	Voltage: 1.0 V
+	Voltage: 1.1 V
 	External Clock: 100 MHz
 	Max Speed: 4700 MHz
 	Current Speed: 3700 MHz
@@ -1158,8 +1158,8 @@ OEM-specific Type
 		DD 59 67 00 0C 01 00 00 00 00 A6 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF 00 0B 00 01 17 00 00 00 0C 00 00
-		09 00 80 10 0D 0E 01 04 03 00 00 0F 00 00 07 00
+		00 FF FF FF FF 00 0B 00 01 17 00 00 00 0C 00 FF
+		FF FF FF FF 0D 0E 01 04 03 00 00 0F 00 00 07 00
 		00 00 10 00 00 02 00 0E 00
 	Strings:
 		Lan Phy Version
@@ -1218,7 +1218,7 @@ Group Associations
 Handle 0x006D, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 6D 00 01 04 01 45 02 00 90 00 81 10 82 30
+		DB 6A 6D 00 01 04 01 45 02 00 90 00 81 10 80 30
 		00 00 00 00 40 00 00 00 00 00 00 04 00 00 C0 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

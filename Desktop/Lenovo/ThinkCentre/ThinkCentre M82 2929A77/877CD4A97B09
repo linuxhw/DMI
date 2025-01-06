@@ -1,14 +1,14 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-87 structures occupying 3382 bytes.
-Table at 0x000ED9D0.
+91 structures occupying 3486 bytes.
+Table at 0xDEE97018.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: 9SKT54AUS
-	Release Date: 11/08/2012
+	Version: 9SKT9CAUS
+	Release Date: 12/11/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 4608 kB
@@ -32,7 +32,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 0.54
+	BIOS Revision: 0.6
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -62,10 +62,10 @@ Base Board Information
 
 Handle 0x0003, DMI type 3, 22 bytes
 Chassis Information
-	Manufacturer: To Be Filled By O.E.M.
+	Manufacturer: LENOVO
 	Type: Desktop
 	Lock: Not Present
-	Version: To Be Filled By O.E.M.
+	Version: None
 	Serial Number: --
 	Asset Tag: --
 	Boot-up State: Safe
@@ -618,8 +618,8 @@ Cache Information
 	Installed SRAM Type: Unknown
 	Speed: Unknown
 	Error Correction Type: Multi-bit ECC
-	System Type: Instruction
-	Associativity: 16-way Set-associative
+	System Type: Unified
+	Associativity: 8-way Set-associative
 
 Handle 0x003F, DMI type 7, 19 bytes
 Cache Information
@@ -634,8 +634,8 @@ Cache Information
 	Installed SRAM Type: Unknown
 	Speed: Unknown
 	Error Correction Type: Parity
-	System Type: Other
-	Associativity: 16-way Set-associative
+	System Type: Data
+	Associativity: 8-way Set-associative
 
 Handle 0x0040, DMI type 7, 19 bytes
 Cache Information
@@ -650,8 +650,8 @@ Cache Information
 	Installed SRAM Type: Unknown
 	Speed: Unknown
 	Error Correction Type: Multi-bit ECC
-	System Type: Instruction
-	Associativity: 48-way Set-associative
+	System Type: Unified
+	Associativity: 12-way Set-associative
 
 Handle 0x0041, DMI type 16, 23 bytes
 Physical Memory Array
@@ -700,7 +700,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz
-	Voltage: 8.6 V
+	Voltage: 1.1 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
 	Current Speed: 3300 MHz
@@ -725,7 +725,7 @@ System Event Log
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0x000EEF70
+	Access Address: 0x00000000
 	Status: Valid, Not Full
 	Change Token: 0x00000001
 	Header Format: Type 1
@@ -794,13 +794,6 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
 
 Handle 0x0045, DMI type 17, 34 bytes
 Memory Device
@@ -816,6 +809,38 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
+	Manufacturer: 029E
+	Serial Number: --
+	Asset Tag: --
+	Part Number: CMV4GX3M1A1600C11 
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
+
+Handle 0x0046, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0045
+	Memory Array Mapped Address Handle: 0x004B
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 2
+
+Handle 0x0047, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x0041
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelB-DIMM0
+	Bank Locator: BANK 2
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
 	Manufacturer: 0443
 	Serial Number: --
 	Asset Tag: --
@@ -823,144 +848,146 @@ Memory Device
 	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0046, DMI type 20, 35 bytes
+Handle 0x0048, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0045
-	Memory Array Mapped Address Handle: 0x0049
+	Physical Device Handle: 0x0047
+	Memory Array Mapped Address Handle: 0x004B
 	Partition Row Position: Unknown
 
-Handle 0x0047, DMI type 17, 34 bytes
+Handle 0x0049, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0041
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: ChannelB-DIMM0
-	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-
-Handle 0x0048, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x0041
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 3
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: 029E
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: CMV4GX3M1A1600C11 
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0049, DMI type 19, 31 bytes
+Handle 0x004A, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0049
+	Memory Array Mapped Address Handle: 0x004B
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x004B, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x0041
 	Partition Width: 4
 
-Handle 0x004B, DMI type 131, 22 bytes
+Handle 0x004D, DMI type 131, 22 bytes
 ThinkVantage Technologies
 	Version: 1
 	Diagnostics: Available
 
-Handle 0x004C, DMI type 140, 85 bytes
+Handle 0x004E, DMI type 140, 85 bytes
 OEM-specific Type
 	Header and Data:
-		8C 55 4C 00 4C 45 4E 4F 56 4F 0B 00 01 05 99 2A
-		83 BC A2 1E CE 41 DE D2 8A 19 1A F5 0A 01 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		8C 55 4E 00 4C 45 4E 4F 56 4F 0B 00 01 BB 01 FD
+		97 E9 5F BF 94 5F E7 FA 86 2B B9 A6 99 01 00 05
+		99 2A 83 BC A2 1E CE 41 DE D2 8A 19 1A F5 0A 01
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00
 
-Handle 0x004D, DMI type 140, 47 bytes
+Handle 0x004F, DMI type 140, 47 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2F 4D 00 4C 45 4E 4F 56 4F 0B 01 01 09 00 8A
+		8C 2F 4F 00 4C 45 4E 4F 56 4F 0B 01 01 09 00 8A
 		46 74 9E A2 D6 22 B9 D7 91 99 56 0C 56 41 38 00
 		00 00 00 10 00 10 00 10 01 D0 00 20 01 00 01
 
-Handle 0x004E, DMI type 140, 63 bytes
+Handle 0x0050, DMI type 140, 63 bytes
 OEM-specific Type
 	Header and Data:
-		8C 3F 4E 00 4C 45 4E 4F 56 4F 0B 02 01 00 00 00
+		8C 3F 50 00 4C 45 4E 4F 56 4F 0B 02 01 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 
-Handle 0x004F, DMI type 140, 17 bytes
+Handle 0x0051, DMI type 140, 17 bytes
 OEM-specific Type
 	Header and Data:
-		8C 11 4F 00 4C 45 4E 4F 56 4F 0B 03 01 00 00 00
+		8C 11 51 00 4C 45 4E 4F 56 4F 0B 03 01 00 00 00
 		00
 
-Handle 0x0050, DMI type 140, 19 bytes
+Handle 0x0052, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 50 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
+		8C 13 52 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
 		53 20 00
 
-Handle 0x0051, DMI type 134, 16 bytes
+Handle 0x0053, DMI type 134, 16 bytes
 OEM-specific Type
 	Header and Data:
-		86 10 51 00 00 50 10 00 00 47 00 00 00 03 01 02
+		86 10 53 00 00 50 10 00 00 47 00 00 00 03 01 02
 	Strings:
 		TPM INFO
 		System Reserved
 
-Handle 0x0052, DMI type 10, 6 bytes
+Handle 0x0054, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Other
 	Status: Disabled
 	Description: IBM Embedded Security Hardware Type 3
 
-Handle 0x0053, DMI type 129, 8 bytes
+Handle 0x0055, DMI type 129, 8 bytes
 OEM-specific Type
 	Header and Data:
-		81 08 53 00 01 01 02 01
+		81 08 55 00 01 01 02 01
 	Strings:
 		Intel_ASF
 		Intel_ASF_001
 
-Handle 0x0054, DMI type 130, 20 bytes
+Handle 0x0056, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 54 00 24 41 4D 54 00 00 00 00 00 A5 8F 02
+		82 14 56 00 24 41 4D 54 00 00 00 00 00 A5 8F 02
 		00 00 00 00
 
-Handle 0x0055, DMI type 131, 64 bytes
+Handle 0x0057, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 55 00 31 00 00 00 08 00 00 00 00 00 42 00
+		83 40 57 00 31 00 00 00 08 00 00 00 00 00 45 00
 		F8 00 48 1E FF FF FF FF 11 00 00 00 01 00 08 00
 		F1 04 00 00 00 00 00 00 C8 00 02 15 00 00 00 00
-		00 00 00 00 F6 00 00 00 76 50 72 6F 00 00 00 00
+		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0056, DMI type 13, 22 bytes
+Handle 0x0058, DMI type 140, 19 bytes
+OEM-specific Type
+	Header and Data:
+		8C 13 58 00 4C 45 4E 4F 56 4F 0B 05 01 06 00 00
+		00 53 55
+
+Handle 0x0059, DMI type 140, 23 bytes
+OEM-specific Type
+	Header and Data:
+		8C 17 59 00 4C 45 4E 4F 56 4F 0B 06 01 00 00 00
+		00 00 00 00 00 00 00
+
+Handle 0x005A, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 3
@@ -969,6 +996,6 @@ BIOS Language Information
 		zh|CN|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0058, DMI type 127, 4 bytes
+Handle 0x005C, DMI type 127, 4 bytes
 End Of Table
 

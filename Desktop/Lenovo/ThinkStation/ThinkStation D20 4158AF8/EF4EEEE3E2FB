@@ -34,7 +34,7 @@ System Information
 	Version: ThinkStation D20
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: AC Power Restored
 	SKU Number: NONE
 	Family: NONE
 
@@ -335,7 +335,7 @@ Handle 0x0011, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE x16 Slot #2 - J11
 	Type: 32-bit PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 2
 	Characteristics:
@@ -359,7 +359,7 @@ Handle 0x0013, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE x16 Slot #4 - J10
 	Type: 32-bit PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 4
 	Characteristics:
@@ -485,9 +485,9 @@ Handle 0x001E, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x001B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU1_DIMM2
@@ -495,10 +495,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Null
+	Manufacturer: 00DA
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Null             
+	Part Number: HMT41GR7BFR4A-PB 
 	Rank: 1
 
 Handle 0x001F, DMI type 17, 28 bytes
@@ -525,9 +525,9 @@ Handle 0x0020, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x001B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: CPU1_DIMM3
@@ -535,10 +535,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Null
+	Manufacturer: 00DA
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Null             
+	Part Number: HMT41GR7AFR4A-PB 
 	Rank: 1
 
 Handle 0x0021, DMI type 17, 28 bytes
@@ -684,8 +684,8 @@ Memory Device
 Handle 0x0028, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x005FFFFFFFF
-	Range Size: 24 GB
+	Ending Address: 0x009FFFFFFFF
+	Range Size: 40 GB
 	Physical Array Handle: 0x001B
 	Partition Width: 2
 
@@ -713,9 +713,9 @@ Memory Device Mapped Address
 
 Handle 0x002B, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x001FFFFFC00
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 1 kB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: 1
@@ -724,8 +724,8 @@ Memory Device Mapped Address
 
 Handle 0x002C, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x001FFFFFC00
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x003FFFFFC00
+	Ending Address: 0x003FFFFFFFF
 	Range Size: 1 kB
 	Physical Device Handle: 0x001F
 	Memory Array Mapped Address Handle: 0x0028
@@ -735,9 +735,9 @@ Memory Device Mapped Address
 
 Handle 0x002D, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x001FFFFFC00
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 1 kB
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0020
 	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: 1
@@ -746,8 +746,8 @@ Memory Device Mapped Address
 
 Handle 0x002E, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x001FFFFFC00
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x005FFFFFC00
+	Ending Address: 0x005FFFFFFFF
 	Range Size: 1 kB
 	Physical Device Handle: 0x0021
 	Memory Array Mapped Address Handle: 0x0028
@@ -757,8 +757,8 @@ Memory Device Mapped Address
 
 Handle 0x002F, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x001FFFFFC00
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x005FFFFFC00
+	Ending Address: 0x005FFFFFFFF
 	Range Size: 1 kB
 	Physical Device Handle: 0x0022
 	Memory Array Mapped Address Handle: 0x0028
@@ -768,8 +768,8 @@ Memory Device Mapped Address
 
 Handle 0x0030, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x001FFFFFC00
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x005FFFFFC00
+	Ending Address: 0x005FFFFFFFF
 	Range Size: 1 kB
 	Physical Device Handle: 0x0023
 	Memory Array Mapped Address Handle: 0x0028
@@ -779,8 +779,8 @@ Memory Device Mapped Address
 
 Handle 0x0031, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x002FFFFFFFF
+	Starting Address: 0x00600000000
+	Ending Address: 0x006FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0024
 	Memory Array Mapped Address Handle: 0x0028
@@ -790,8 +790,8 @@ Memory Device Mapped Address
 
 Handle 0x0032, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00300000000
-	Ending Address: 0x003FFFFFFFF
+	Starting Address: 0x00700000000
+	Ending Address: 0x007FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0025
 	Memory Array Mapped Address Handle: 0x0028
@@ -801,8 +801,8 @@ Memory Device Mapped Address
 
 Handle 0x0033, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x004FFFFFFFF
+	Starting Address: 0x00800000000
+	Ending Address: 0x008FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0026
 	Memory Array Mapped Address Handle: 0x0028
@@ -812,8 +812,8 @@ Memory Device Mapped Address
 
 Handle 0x0034, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00500000000
-	Ending Address: 0x005FFFFFFFF
+	Starting Address: 0x00900000000
+	Ending Address: 0x009FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0027
 	Memory Array Mapped Address Handle: 0x0028

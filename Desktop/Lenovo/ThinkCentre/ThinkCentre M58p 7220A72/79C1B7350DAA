@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 64 structures occupying 3125 bytes.
@@ -277,7 +277,8 @@ Port Connector Information
 Handle 0x0015, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI Slot 1
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 2
@@ -288,7 +289,8 @@ System Slot Information
 Handle 0x0016, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI Slot 2
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 3
@@ -299,7 +301,8 @@ System Slot Information
 Handle 0x0017, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIE x16
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: Unknown
 	Length: Long
 	ID: 0
@@ -309,7 +312,8 @@ System Slot Information
 Handle 0x0018, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIE x1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Unknown
 	Length: Long
 	ID: 0
@@ -343,14 +347,14 @@ BIOS Language Information
 
 Handle 0x001D, DMI type 15, 29 bytes
 System Event Log
-	Area Length: 240 bytes
+	Area Length: 400 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x0000
 	Status: Valid, Not Full
-	Change Token: 0x00000048
+	Change Token: 0x00000052
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error

@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 88 structures occupying 3263 bytes.
@@ -273,7 +273,8 @@ Port Connector Information
 Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B2
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -286,7 +287,8 @@ System Slot Information
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -299,7 +301,8 @@ System Slot Information
 Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -312,7 +315,8 @@ System Slot Information
 Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 3
@@ -325,7 +329,8 @@ System Slot Information
 Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -643,8 +648,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -787,7 +792,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -800,7 +805,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: M471B5173EB0-YK0  
 	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0045, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -819,7 +824,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -832,7 +837,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: HMT351S6EFR8A-PB  
 	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0047, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -854,12 +859,9 @@ Memory Array Mapped Address
 	Partition Width: 2
 
 Handle 0x004A, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 4A 00 01 02 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 80 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: Available
 
 Handle 0x004B, DMI type 140, 85 bytes
 OEM-specific Type

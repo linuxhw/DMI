@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-37 structures occupying 1716 bytes.
+37 structures occupying 1724 bytes.
 Table at 0x000EBE90.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -301,7 +301,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -309,11 +309,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 1302
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 1600 CL10 Series  
-	Rank: 2
+	Part Number: 99U5584-005.A00LF 
+	Rank: 1
 	Configured Clock Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
@@ -326,7 +326,7 @@ System Event Log
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0x000ED550
+	Access Address: 0x000ED560
 	Status: Valid, Not Full
 	Change Token: 0x00000001
 	Header Format: Type 1
@@ -385,8 +385,8 @@ System Event Log
 Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0013
 	Memory Array Mapped Address Handle: 0x0018
 	Partition Row Position: Unknown
@@ -399,7 +399,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -407,11 +407,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 1302
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 1600 CL10 Series  
-	Rank: 2
+	Part Number: 99U5584-005.A00LF 
+	Rank: 1
 	Configured Clock Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
@@ -419,9 +419,9 @@ Memory Device
 
 Handle 0x0017, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0016
 	Memory Array Mapped Address Handle: 0x0018
 	Partition Row Position: Unknown
@@ -431,8 +431,8 @@ Memory Device Mapped Address
 Handle 0x0018, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0012
 	Partition Width: 2
 
@@ -464,9 +464,9 @@ OEM-specific Type
 Handle 0x0020, DMI type 140, 85 bytes
 OEM-specific Type
 	Header and Data:
-		8C 55 20 00 4C 45 4E 4F 56 4F 0B 00 01 9C F4 2D
-		99 C1 70 56 D0 D0 ED A2 7D 09 3F 43 3C 01 00 F2
-		ED AF 7B 5C E6 E8 D9 D8 B2 4B BC 4C F8 8A 39 01
+		8C 55 20 00 4C 45 4E 4F 56 4F 0B 00 01 6C F7 8C
+		93 46 02 2D 21 7C BB 04 5F 16 7F BB B7 01 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00

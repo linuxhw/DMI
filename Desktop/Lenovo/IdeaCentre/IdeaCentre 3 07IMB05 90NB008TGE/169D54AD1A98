@@ -968,7 +968,7 @@ OEM-specific Type
 		DD 59 60 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 01 0E 00 00 00 0C 00 00
+		00 FF FF FF FF 00 0B 00 01 0E 00 00 00 0C 00 00
 		09 00 07 11 0D 00 FF FF FF FF FF 0E 00 00 07 00
 		00 00 0F 00 00 02 00 0F 00
 	Strings:
@@ -993,16 +993,79 @@ ThinkVantage Technologies
 	Version: 1
 	Diagnostics: Available
 
-Handle 0x0062, DMI type 14, 8 bytes
+Handle 0x0062, DMI type 15, 73 bytes
+System Event Log
+	Area Length: 4096 bytes
+	Header Start Offset: 0x0000
+	Header Length: 16 bytes
+	Data Start Offset: 0x0010
+	Access Method: Memory-mapped physical 32-bit address
+	Access Address: 0x94B42018
+	Status: Valid, Not Full
+	Change Token: 0x00000024
+	Header Format: Type 1
+	Supported Log Type Descriptors: 25
+	Descriptor 1: Single-bit ECC memory error
+	Data Format 1: Multiple-event handle
+	Descriptor 2: Multi-bit ECC memory error
+	Data Format 2: Multiple-event handle
+	Descriptor 3: Parity memory error
+	Data Format 3: None
+	Descriptor 4: Bus timeout
+	Data Format 4: None
+	Descriptor 5: I/O channel block
+	Data Format 5: None
+	Descriptor 6: Software NMI
+	Data Format 6: None
+	Descriptor 7: POST memory resize
+	Data Format 7: None
+	Descriptor 8: POST error
+	Data Format 8: POST results bitmap
+	Descriptor 9: PCI parity error
+	Data Format 9: Multiple-event handle
+	Descriptor 10: PCI system error
+	Data Format 10: Multiple-event handle
+	Descriptor 11: CPU failure
+	Data Format 11: None
+	Descriptor 12: EISA failsafe timer timeout
+	Data Format 12: None
+	Descriptor 13: Correctable memory log disabled
+	Data Format 13: None
+	Descriptor 14: Logging disabled
+	Data Format 14: None
+	Descriptor 15: System limit exceeded
+	Data Format 15: None
+	Descriptor 16: Asynchronous hardware timer expired
+	Data Format 16: None
+	Descriptor 17: System configuration information
+	Data Format 17: None
+	Descriptor 18: Hard disk information
+	Data Format 18: None
+	Descriptor 19: System reconfigured
+	Data Format 19: None
+	Descriptor 20: Uncorrectable CPU-complex error
+	Data Format 20: None
+	Descriptor 21: Log area reset/cleared
+	Data Format 21: None
+	Descriptor 22: System boot
+	Data Format 22: None
+	Descriptor 23: End of log
+	Data Format 23: None
+	Descriptor 24: OEM-specific
+	Data Format 24: OEM-specific
+	Descriptor 25: OEM-specific
+	Data Format 25: OEM-specific
+
+Handle 0x0063, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x0063, DMI type 219, 106 bytes
+Handle 0x0064, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 63 00 01 04 01 45 02 00 90 06 01 85 36 20
+		DB 6A 64 00 01 04 01 45 02 00 90 06 01 85 36 20
 		00 00 00 00 40 08 00 03 1F 00 00 CF 02 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -1015,12 +1078,12 @@ OEM-specific Type
 		MEI3
 		MEI4
 
-Handle 0x0064, DMI type 136, 6 bytes
+Handle 0x0065, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 64 00 00 00
+		88 06 65 00 00 00
 
-Handle 0x0065, DMI type 14, 26 bytes
+Handle 0x0066, DMI type 14, 26 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 7
@@ -1032,7 +1095,7 @@ Group Associations
 		0x004D (OEM-specific)
 		0x0060 (OEM-specific)
 
-Handle 0x0066, DMI type 13, 22 bytes
+Handle 0x0067, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 4
@@ -1042,6 +1105,6 @@ BIOS Language Information
 		ru|RU|iso8859-5
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0067, DMI type 127, 4 bytes
+Handle 0x0068, DMI type 127, 4 bytes
 End Of Table
 

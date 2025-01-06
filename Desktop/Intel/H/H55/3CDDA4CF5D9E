@@ -214,8 +214,8 @@ Memory Module Information
 	Bank Connections: 0 1
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 8192 MB (Double-bank Connection)
+	Enabled Size: 8192 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
@@ -234,8 +234,8 @@ Memory Module Information
 	Bank Connections: 4 5
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: 8192 MB (Double-bank Connection)
-	Enabled Size: 8192 MB (Double-bank Connection)
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x000C, DMI type 6, 12 bytes
@@ -517,21 +517,27 @@ Handle 0x002B, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0029
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
-	Type: Unknown
-	Type Detail: Unknown
+	Type: SDRAM
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: Manufacturer00
+	Serial Number: --
+	Asset Tag: --
+	Part Number: ModulePartNumber00
+	Rank: Unknown
 
 Handle 0x002C, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x002B
 	Memory Array Mapped Address Handle: 0x002A
 	Partition Row Position: 1
@@ -565,27 +571,21 @@ Handle 0x002F, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0029
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
-	Type: SDRAM
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Manufacturer02
-	Serial Number: --
-	Asset Tag: --
-	Part Number: ModulePartNumber02
-	Rank: Unknown
+	Type: Unknown
+	Type Detail: Unknown
 
 Handle 0x0030, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
 	Physical Device Handle: 0x002F
 	Memory Array Mapped Address Handle: 0x002A
 	Partition Row Position: 1

@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 39 structures occupying 1659 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 12/08/2009
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -58,7 +58,7 @@ Base Board Information
 	Version: ST-4254 Padrao 01(Itautec_M)
 	Serial Number: --
 	Asset Tag: --
-	...
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:  
@@ -73,8 +73,8 @@ Chassis Information
 	Lock: Not Present
 	Version:  
 	Serial Number: --
-	Asset Tag: --
-	...
+	271882FD79060B21C43F805A2DE81148  
+	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -161,8 +161,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -214,8 +214,8 @@ Memory Module Information
 	Bank Connections: 0 1
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
@@ -224,8 +224,8 @@ Memory Module Information
 	Bank Connections: 4 5
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000B, DMI type 9, 13 bytes
@@ -319,20 +319,15 @@ Handle 0x0013, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0010
 	Error Information Handle: 0x0014
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2048 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 800 MT/s
-	Manufacturer: Manufacturer00
-	Serial Number: --
-	Asset Tag: --
-	Part Number: ModulePartNumber00
+	Type: Unknown
+	Type Detail: Unknown
 
 Handle 0x0014, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -347,8 +342,8 @@ Handle 0x0014, DMI type 18, 23 bytes
 Handle 0x0015, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
 	Physical Device Handle: 0x0013
 	Memory Array Mapped Address Handle: 0x0012
 	Partition Row Position: 1
@@ -358,16 +353,16 @@ Handle 0x0016, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0010
 	Error Information Handle: 0x0017
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 800 MT/s
 	Manufacturer: Manufacturer01
 	Serial Number: --
 	Asset Tag: --
@@ -386,8 +381,8 @@ Handle 0x0017, DMI type 18, 23 bytes
 Handle 0x0018, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0016
 	Memory Array Mapped Address Handle: 0x0012
 	Partition Row Position: 1
