@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0x000ED250.
@@ -10,7 +10,7 @@ BIOS Information
 	Release Date: 04/28/2017
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -37,7 +37,7 @@ System Information
 	Version:  
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Unknown
+	Wake-up Type: AC Power Restored
 	SKU Number: 1GV39EA#ABD
 	Family: 103C_53311M HP Pavilion
 
@@ -270,7 +270,8 @@ Port Connector Information
 Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B2
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -283,7 +284,8 @@ System Slot Information
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -296,7 +298,8 @@ System Slot Information
 Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -367,8 +370,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -619,15 +622,15 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 8 GB
+	Maximum Capacity: 16 GB
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
 Handle 0x0041, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0040
 	Partition Width: 255
 
@@ -637,7 +640,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
@@ -645,12 +648,12 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2400 MT/s
-	Manufacturer: Samsung
+	Manufacturer: <BAD INDEX>
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M378A1K43CB2-CRC    
+	Part Number: CT8G4DFS824A.C8FR   
 	Rank: 1
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -661,23 +664,23 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: SODIMM
+	Size: 8 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 3
 	Bank Locator: CHANNEL B
 	Type: DDR4
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer1
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 2400 MT/s
+	Manufacturer: <BAD INDEX>
 	Serial Number: --
 	Asset Tag: --
-	Part Number: A1_PartNum1
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
+	Part Number: CT8G4DFS824A.C8FR   
+	Rank: 1
+	Configured Memory Speed: 2400 MT/s
+	Minimum Voltage: 1.5 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: 1.5 V
 
 Handle 0x0044, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -688,12 +691,21 @@ Memory Device Mapped Address
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: 1
 
-Handle 0x0045, DMI type 208, 5 bytes
+Handle 0x0045, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0043
+	Memory Array Mapped Address Handle: 0x0041
+	Partition Row Position: 1
+
+Handle 0x0046, DMI type 208, 5 bytes
 OEM-specific Type
 	Header and Data:
-		D0 05 45 00 00
+		D0 05 46 00 01
 
-Handle 0x0048, DMI type 4, 48 bytes
+Handle 0x0049, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: P0
 	Type: Central Processor
@@ -731,6 +743,6 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0049, DMI type 127, 4 bytes
+Handle 0x004A, DMI type 127, 4 bytes
 End Of Table
 

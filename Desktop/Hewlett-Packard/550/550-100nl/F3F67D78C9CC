@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 46 structures occupying 1841 bytes.
@@ -446,11 +446,25 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
-	Form Factor: DIMM
+	Size: No Module Installed
+	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 2
 	Bank Locator: CHANNEL A
+	Type: DDR3
+	Type Detail: None
+
+Handle 0x002B, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0028
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM 4
+	Bank Locator: CHANNEL B
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 1600 MT/s
@@ -464,32 +478,7 @@ Memory Device
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
 
-Handle 0x002B, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x0028
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: SODIMM
-	Set: None
-	Locator: DIMM 4
-	Bank Locator: CHANNEL B
-	Type: DDR3
-	Type Detail: None
-
 Handle 0x002C, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x002A
-	Memory Array Mapped Address Handle: 0x0029
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
-
-Handle 0x002D, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000000003FF
@@ -497,6 +486,17 @@ Memory Device Mapped Address
 	Physical Device Handle: 0x0000
 	Memory Array Mapped Address Handle: 0x0000
 	Partition Row Position: <OUT OF SPEC>
+
+Handle 0x002D, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x002B
+	Memory Array Mapped Address Handle: 0x0029
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
 Handle 0x0030, DMI type 4, 42 bytes
 Processor Information

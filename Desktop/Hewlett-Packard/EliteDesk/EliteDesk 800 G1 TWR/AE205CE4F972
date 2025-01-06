@@ -1,8 +1,8 @@
-# dmidecode 3.5
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-78 structures occupying 2971 bytes.
-Table at 0x000E84D7.
+78 structures occupying 2973 bytes.
+Table at 0x000E84D5.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -749,7 +749,8 @@ Port Connector Information
 Handle 0x004E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: X16PCIEXP
-	Type: x16 PCI Express 3 x16
+	Type: PCI Express 3 x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 255
@@ -761,19 +762,21 @@ System Slot Information
 Handle 0x004F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: X4PCIEXP
-	Type: x4 PCI Express 2 x4
+	Type: PCI Express 2 x4
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Long
 	ID: 255
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:08:00.0
+	Bus Address: 0000:05:00.0
 
 Handle 0x0050, DMI type 9, 17 bytes
 System Slot Information
 	Designation: X1PCIEXP1
-	Type: x1 PCI Express 2 x1
+	Type: PCI Express 2 x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Other
 	ID: 255
@@ -785,7 +788,8 @@ System Slot Information
 Handle 0x0051, DMI type 9, 17 bytes
 System Slot Information
 	Designation: X1PCIEXP2
-	Type: x1 PCI Express 2 x1
+	Type: PCI Express 2 x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Other
 	ID: 255

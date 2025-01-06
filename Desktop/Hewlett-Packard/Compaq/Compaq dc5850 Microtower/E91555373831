@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
-73 structures occupying 2172 bytes.
+73 structures occupying 2181 bytes.
 Table at 0x000ED260.
 
 Handle 0x0001, DMI type 0, 24 bytes
@@ -63,7 +63,7 @@ Chassis Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	380AD15AAB729CF25C4397C21C466ACE
+	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: Unknown
@@ -394,7 +394,8 @@ Port Connector Information
 Handle 0x002A, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI1
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -407,7 +408,8 @@ System Slot Information
 Handle 0x002B, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI EXPRESS x1 SLOT 1 (PCIEx1)
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -419,7 +421,8 @@ System Slot Information
 Handle 0x002C, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI EXPRESS x1 SLOT 2 (PCIEx1)
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 2
@@ -431,7 +434,8 @@ System Slot Information
 Handle 0x002D, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI EXPRESS x16 SLOT (PCIEx16)
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 1

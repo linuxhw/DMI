@@ -1,13 +1,13 @@
-# dmidecode 3.5
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0xBABFC000.
+Table at 0xBABFD000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: AMI
-	Version: F.21
-	Release Date: 10/06/2022
+	Version: F.35
+	Release Date: 06/14/2024
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -23,7 +23,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.33
+	BIOS Revision: 15.53
 	Firmware Revision: 120.4
 
 Handle 0x0001, DMI type 1, 27 bytes
@@ -332,7 +332,7 @@ Handle 0x001D, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.87
+	Firmware Revision: 3.92
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -723,7 +723,7 @@ Port Connector Information
 
 Handle 0x003D, DMI type 8, 9 bytes
 Port Connector Information
-	Internal Reference Designator: AJ78
+	Internal Reference Designator: AJ78/AJ1
 	Internal Connector Type: None
 	External Reference Designator: Audio Jack
 	External Connector Type: Mini Jack (headphones)
@@ -732,7 +732,8 @@ Port Connector Information
 Handle 0x003E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J41 Pcie x16
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Short
 	ID: 48
@@ -744,19 +745,21 @@ System Slot Information
 Handle 0x003F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J31 Pcie x1 slot from Promontory
-	Type: x1 PCI Express x1
-	Current Usage: Available
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
+	Current Usage: In Use
 	Length: Short
 	ID: 32
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:00:1f.7
+	Bus Address: 0000:02:00.0
 
 Handle 0x0040, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J39 M2-2280
-	Type: x1 M.2 Socket 3
+	Type: M.2 Socket 3
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	Characteristics:
@@ -767,7 +770,8 @@ System Slot Information
 Handle 0x0041, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J38 M2-2230 from Promontory
-	Type: x1 M.2 Socket 1-SD
+	Type: M.2 Socket 1-SD
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	Characteristics:

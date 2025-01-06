@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0x7EE95000.
@@ -6,8 +6,8 @@ Table at 0x7EE95000.
 Handle 0x0003, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: P06 Ver. 02.42
-	Release Date: 12/14/2022
+	Version: P06 Ver. 02.45
+	Release Date: 07/16/2024
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 0 MB
@@ -29,7 +29,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.42
+	BIOS Revision: 2.45
 	Firmware Revision: 6.33
 
 Handle 0x0004, DMI type 1, 27 bytes
@@ -567,8 +567,8 @@ Physical Memory Array
 Handle 0x003A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x009FFFFFFFF
-	Range Size: 40 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Array Handle: 0x0035
 	Partition Width: 4
 
@@ -618,7 +618,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -629,8 +629,8 @@ Memory Device
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9905713-017.A00G    
-	Rank: 1
+	Part Number: 9905625-074.A00G    
+	Rank: 2
 	Configured Memory Speed: 1866 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -666,7 +666,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4
@@ -677,8 +677,8 @@ Memory Device
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9905713-017.A00G    
-	Rank: 1
+	Part Number: 9905625-075.A00G    
+	Rank: 2
 	Configured Memory Speed: 1866 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -696,8 +696,8 @@ Memory Device Mapped Address
 Handle 0x003E, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00400000000
-	Ending Address: 0x004FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0039
 	Memory Array Mapped Address Handle: 0x003A
 	Partition Row Position: 1
@@ -705,8 +705,8 @@ Memory Device Mapped Address
 
 Handle 0x003F, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00500000000
-	Ending Address: 0x008FFFFFFFF
+	Starting Address: 0x00800000000
+	Ending Address: 0x00BFFFFFFFF
 	Range Size: 16 GB
 	Physical Device Handle: 0x0038
 	Memory Array Mapped Address Handle: 0x003A
@@ -715,9 +715,9 @@ Memory Device Mapped Address
 
 Handle 0x0040, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00900000000
-	Ending Address: 0x009FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00C00000000
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0037
 	Memory Array Mapped Address Handle: 0x003A
 	Partition Row Position: 1
@@ -735,7 +735,13 @@ Handle 0x0042, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0043, DMI type 39, 22 bytes
+Handle 0x0043, DMI type 10, 6 bytes
+On Board Device Information
+	Type: Video
+	Status: Enabled
+	Description: 1024 MB
+
+Handle 0x0044, DMI type 39, 22 bytes
 System Power Supply
 	Location:  
 	Name:  

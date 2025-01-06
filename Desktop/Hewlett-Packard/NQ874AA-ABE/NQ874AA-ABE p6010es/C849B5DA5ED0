@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 27 structures occupying 1900 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 02/20/2009
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -56,7 +56,7 @@ Base Board Information
 	Product Name: Boston
 	Version: 1.0
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Features:
 		Board is a hosting board
 
@@ -68,7 +68,7 @@ Chassis Information
 	Version:  
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: <OUT OF SPEC>
+	512D84035B68B3D61ED0C0337A5B379C
 	Power Supply State: <OUT OF SPEC>
 	Thermal State: <OUT OF SPEC>
 	Security Status: <OUT OF SPEC>
@@ -122,7 +122,7 @@ Processor Information
 	L2 Cache Handle: 0x0009
 	L3 Cache Handle: Not Provided
 	Serial Number: --
-	Asset Tag: --
+	271882FD79060B21C43F805A2DE81148  
 	Part Number:  
 	Core Count: 2
 	Core Enabled: 2
@@ -153,21 +153,21 @@ Memory Controller Information
 Handle 0x0006, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A0
-	Bank Connections: 0 1
+	Bank Connections: 0
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 2048 MB (Double-bank Connection)
-	Enabled Size: 2048 MB (Double-bank Connection)
+	Installed Size: 1024 MB (Single-bank Connection)
+	Enabled Size: 1024 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: A1
-	Bank Connections: 2
+	Bank Connections: 2 3
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 1024 MB (Single-bank Connection)
-	Enabled Size: 1024 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0008, DMI type 7, 19 bytes
@@ -192,8 +192,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: External
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -282,7 +282,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
@@ -290,10 +290,10 @@ Memory Device
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 800 MT/s
-	Manufacturer: CE00000000000000
+	Manufacturer: 7F7FFE0000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M3 78T5663QZ3-CF7 
+	Part Number: EBE10UE8AEFA-8G-E 
 
 Handle 0x0014, DMI type 17, 27 bytes
 Memory Device
@@ -301,7 +301,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1
@@ -309,10 +309,10 @@ Memory Device
 	Type: DDR2
 	Type Detail: Synchronous
 	Speed: 800 MT/s
-	Manufacturer: 7F7FFE0000000000
+	Manufacturer: CE00000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: EBE10UE8AEFA-8G-E 
+	Part Number: M3 78T5663QZ3-CF7 
 
 Handle 0x0015, DMI type 19, 15 bytes
 Memory Array Mapped Address
@@ -325,17 +325,17 @@ Memory Array Mapped Address
 Handle 0x0016, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0013
 	Memory Array Mapped Address Handle: 0x0015
 	Partition Row Position: 1
 
 Handle 0x0017, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
+	Starting Address: 0x00040000000
 	Ending Address: 0x000BFFFFFFF
-	Range Size: 1 GB
+	Range Size: 2 GB
 	Physical Device Handle: 0x0014
 	Memory Array Mapped Address Handle: 0x0015
 	Partition Row Position: 1

@@ -1,14 +1,14 @@
 # dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-72 structures occupying 2802 bytes.
-Table at 0x000E8580.
+72 structures occupying 2797 bytes.
+Table at 0x000E8585.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Hewlett-Packard
-	Version: L01 v02.33
-	Release Date: 07/15/2014
+	Version: L01 v02.78
+	Release Date: 02/20/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -30,7 +30,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.33
+	BIOS Revision: 2.78
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -229,7 +229,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4
@@ -237,18 +237,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT451U6AFR8A-PB  
-	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Part Number: XRD3PC16-8G       
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000F, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x000E
 	Memory Array Mapped Address Handle: 0x0016
 	Partition Row Position: Unknown
@@ -261,7 +261,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
@@ -269,18 +269,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Micron
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 8JTF51264AZ-1G6E1 
-	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Part Number: XRD3PC16-8G       
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0011, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0010
 	Memory Array Mapped Address Handle: 0x0016
 	Partition Row Position: Unknown
@@ -293,26 +293,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: 1337
+	Speed: 1600 MT/s
+	Manufacturer: 1319
 	Serial Number: --
 	Asset Tag: --
-	Part Number: FLFF65F-D8KM9     
-	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Part Number:                   
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0013, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0012
 	Memory Array Mapped Address Handle: 0x0016
 	Partition Row Position: Unknown
@@ -325,26 +325,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: 0112
+	Speed: 1600 MT/s
+	Manufacturer: 1319
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 78.B1GEP.CP00C    
-	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Part Number:                   
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00300000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0014
 	Memory Array Mapped Address Handle: 0x0016
 	Partition Row Position: Unknown
@@ -354,8 +354,8 @@ Memory Device Mapped Address
 Handle 0x0016, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x000D
 	Partition Width: 4
 

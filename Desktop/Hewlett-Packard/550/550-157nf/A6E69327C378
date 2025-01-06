@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 37 structures occupying 1626 bytes.
@@ -105,7 +105,8 @@ Port Connector Information
 Handle 0x0007, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI Express x16 Slot
-	Type: x16 PCI Express 3 x16
+	Type: PCI Express 3 x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -118,7 +119,8 @@ System Slot Information
 Handle 0x0008, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI Express x1 Slot
-	Type: x1 PCI Express 3 x1
+	Type: PCI Express 3 x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -131,7 +133,8 @@ System Slot Information
 Handle 0x0009, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2 Card Slot 1
-	Type: x2 M.2 Socket 1-DP
+	Type: M.2 Socket 1-DP
+	Data Bus Width: 2x or x2
 	Current Usage: In Use
 	Length: Short
 	Characteristics:
@@ -419,10 +422,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Micron
+	Manufacturer: SK Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT51264BD160BJ.M8F
+	Part Number: HMT451U6BFR8A-PB  
 	Rank: 1
 	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: Unknown
@@ -443,10 +446,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: SK Hynix
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT451U6BFR8A-PB  
+	Part Number: CT51264BD160BJ.M8F
 	Rank: 1
 	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: Unknown
@@ -509,12 +512,18 @@ Group Associations
 		0x0000 (OEM-specific)
 
 Handle 0x0023, DMI type 219, 81 bytes
-HP ProLiant Information
-	Power Features: 0x45010301
-	Omega Features: 0x06900002
-	Misc. Features: 0x00000000
-		iCRU: No
-		UEFI: No
+OEM-specific Type
+	Header and Data:
+		DB 51 23 00 01 03 01 45 02 00 90 06 03 11 86 00
+		00 00 00 00 40 08 00 00 00 00 00 00 00 00 40 02
+		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+		FF FF FF FF FF FF FF FF 03 FF FF FF FF FF FF FF
+		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+		FF
+	Strings:
+		MEI1
+		MEI2
+		MEI3
 
 Handle 0x0024, DMI type 127, 4 bytes
 End Of Table

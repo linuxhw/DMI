@@ -1,8 +1,8 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-58 structures occupying 2460 bytes.
-Table at 0x000E92F7.
+60 structures occupying 2556 bytes.
+Table at 0x000E9297.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -50,7 +50,7 @@ Base Board Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	...
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is removable
 		Board is replaceable
@@ -67,7 +67,7 @@ Chassis Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -176,8 +176,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -498,43 +498,33 @@ Handle 0x002C, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: 8JTF25664AZ-1G4M1 
+	Rank: 1
+	Configured Memory Speed: 1333 MT/s
 
-Handle 0x002D, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x002B
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM3
-	Bank Locator: BANK 1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+Handle 0x002D, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x002C
+	Memory Array Mapped Address Handle: 0x0034
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 2
 
 Handle 0x002E, DMI type 17, 34 bytes
 Memory Device
@@ -542,7 +532,39 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM3
+	Bank Locator: BANK 1
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Micron
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 8JTF25664AZ-1G4M1 
+	Rank: 1
+	Configured Memory Speed: 1333 MT/s
+
+Handle 0x002F, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00180000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x002E
+	Memory Array Mapped Address Handle: 0x0034
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 2
+
+Handle 0x0030, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x002B
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -553,28 +575,28 @@ Memory Device
 	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 8JTF25664AZ-1G4M1 
-	Rank: 1
-	Configured Clock Speed: 1333 MT/s
+	Part Number: 16JTF51264AZ-1G6M1
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
-Handle 0x002F, DMI type 20, 35 bytes
+Handle 0x0031, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x002E
-	Memory Array Mapped Address Handle: 0x0032
+	Starting Address: 0x00080000000
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0030
+	Memory Array Mapped Address Handle: 0x0034
 	Partition Row Position: Unknown
-	Interleave Position: 1
-	Interleaved Data Depth: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 2
 
-Handle 0x0030, DMI type 17, 34 bytes
+Handle 0x0032, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002B
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -585,30 +607,30 @@ Memory Device
 	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 8JTF25664AZ-1G4M1 
-	Rank: 1
-	Configured Clock Speed: 1333 MT/s
+	Part Number: 16JTF51264AZ-1G6M1
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
-Handle 0x0031, DMI type 20, 35 bytes
+Handle 0x0033, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x0030
-	Memory Array Mapped Address Handle: 0x0032
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0032
+	Memory Array Mapped Address Handle: 0x0034
 	Partition Row Position: Unknown
-	Interleave Position: 1
-	Interleaved Data Depth: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 2
 
-Handle 0x0032, DMI type 19, 31 bytes
+Handle 0x0034, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x002B
 	Partition Width: 4
 
-Handle 0x003E, DMI type 13, 22 bytes
+Handle 0x0040, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 12
@@ -626,7 +648,7 @@ BIOS Language Information
 		ja|JP|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0040, DMI type 8, 9 bytes
+Handle 0x0042, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: HLCK
 	Internal Connector Type: Other
@@ -634,7 +656,7 @@ Port Connector Information
 	External Connector Type: Other
 	Port Type: Other
 
-Handle 0x0041, DMI type 8, 9 bytes
+Handle 0x0043, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: HSNR
 	Internal Connector Type: Other
@@ -642,28 +664,28 @@ Port Connector Information
 	External Connector Type: Other
 	Port Type: Other
 
-Handle 0x0042, DMI type 129, 8 bytes
+Handle 0x0044, DMI type 129, 8 bytes
 OEM-specific Type
 	Header and Data:
-		81 08 42 00 01 01 02 01
+		81 08 44 00 01 01 02 01
 	Strings:
 		Intel_ASF
 		Intel_ASF_001
 
-Handle 0x0043, DMI type 130, 20 bytes
+Handle 0x0045, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 43 00 24 41 4D 54 00 00 00 00 00 A5 2F 02
+		82 14 45 00 24 41 4D 54 00 00 00 00 00 A5 2F 02
 		00 00 00 00
 
-Handle 0x0044, DMI type 131, 64 bytes
+Handle 0x0046, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 44 00 31 00 00 00 08 00 00 00 00 00 3D 00
+		83 40 46 00 10 00 00 00 08 00 00 00 00 00 3D 00
 		F8 00 48 1E FF FF FF FF 11 00 00 00 00 00 08 00
 		A1 05 04 00 00 00 00 00 C8 00 02 15 00 00 00 00
 		00 00 00 00 36 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0045, DMI type 127, 4 bytes
+Handle 0x0047, DMI type 127, 4 bytes
 End Of Table
 

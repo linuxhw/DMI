@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 70 structures occupying 2731 bytes.
@@ -236,13 +236,6 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
 
 Handle 0x000F, DMI type 17, 34 bytes
 Memory Device
@@ -289,13 +282,6 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
 
 Handle 0x0012, DMI type 17, 34 bytes
 Memory Device
@@ -679,7 +665,8 @@ Port Connector Information
 Handle 0x0046, DMI type 9, 17 bytes
 System Slot Information
 	Designation: X16PCIEXP
-	Type: x16 PCI Express 3 x16
+	Type: PCI Express 3 x16
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 255
@@ -691,7 +678,8 @@ System Slot Information
 Handle 0x0047, DMI type 9, 17 bytes
 System Slot Information
 	Designation: X4PCIEXP
-	Type: x4 PCI Express 2 x4
+	Type: PCI Express 2 x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Long
 	ID: 255
@@ -703,7 +691,8 @@ System Slot Information
 Handle 0x0048, DMI type 9, 17 bytes
 System Slot Information
 	Designation: X1PCIEXP1
-	Type: x1 PCI Express 2 x1
+	Type: PCI Express 2 x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 255
@@ -715,7 +704,8 @@ System Slot Information
 Handle 0x0049, DMI type 9, 17 bytes
 System Slot Information
 	Designation: X1PCIEXP2
-	Type: x1 PCI Express 2 x1
+	Type: PCI Express 2 x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 255

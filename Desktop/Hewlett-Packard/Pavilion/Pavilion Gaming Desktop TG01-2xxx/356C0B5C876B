@@ -1,13 +1,13 @@
 # dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0xBABFD000.
+Table at 0xBABFB000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: AMI
-	Version: F.15
-	Release Date: 04/19/2022
+	Version: F.36
+	Release Date: 10/23/2024
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -19,12 +19,11 @@ BIOS Information
 		Boot from CD is supported
 		Selectable boot is supported
 		EDD is supported
-		ACPI is supported
 		BIOS boot specification is supported
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.21
+	BIOS Revision: 15.54
 	Firmware Revision: 120.4
 
 Handle 0x0001, DMI type 1, 27 bytes
@@ -333,7 +332,7 @@ Handle 0x001D, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.77
+	Firmware Revision: 3.92
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -361,8 +360,8 @@ Physical Memory Array
 Handle 0x0020, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x005FFFFFFFF
-	Range Size: 24 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x001F
 	Partition Width: 2
 
@@ -486,19 +485,19 @@ Memory Device
 	Error Information Handle: 0x0025
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
-	Manufacturer: Kingston
+	Speed: 2667 MT/s
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HP32D4U2S8MR-8      
-	Rank: 1
+	Part Number: M4U16S682LJJJ43-12  
+	Rank: 2
 	Configured Memory Speed: 2667 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -506,20 +505,20 @@ Memory Device
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 2, Hex 0x98
+	Module Manufacturer ID: Bank 2, Hex 0xBA
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0027, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Device Handle: 0x0026
 	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: 1
@@ -574,8 +573,8 @@ Memory Device
 Handle 0x002A, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x005FFFFFFFF
-	Range Size: 24 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Device Handle: 0x0029
 	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: 1
@@ -584,7 +583,7 @@ Memory Device Mapped Address
 Handle 0x002B, DMI type 208, 5 bytes
 OEM-specific Type
 	Header and Data:
-		D0 05 2B 00 02
+		D0 05 2B 00 01
 
 Handle 0x002C, DMI type 8, 9 bytes
 Port Connector Information
@@ -724,7 +723,7 @@ Port Connector Information
 
 Handle 0x003D, DMI type 8, 9 bytes
 Port Connector Information
-	Internal Reference Designator: AJ78
+	Internal Reference Designator: AJ78/AJ1
 	Internal Connector Type: None
 	External Reference Designator: Audio Jack
 	External Connector Type: Mini Jack (headphones)
@@ -746,13 +745,13 @@ Handle 0x003F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J31 Pcie x1 slot from Promontory
 	Type: x1 PCI Express x1
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 32
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:00:1f.7
+	Bus Address: 0000:05:00.0
 
 Handle 0x0040, DMI type 9, 17 bytes
 System Slot Information

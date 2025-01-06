@@ -1,14 +1,14 @@
 # dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-83 structures occupying 2439 bytes.
-Table at 0x000E9FF0.
+83 structures occupying 2470 bytes.
+Table at 0x000E9FB0.
 
 Handle 0x0001, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Hewlett-Packard
-	Version: 786G2 v01.09
-	Release Date: 08/25/2009
+	Version: 786G2 v02.03
+	Release Date: 10/19/2015
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 4 MB
@@ -31,7 +31,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
-	BIOS Revision: 1.9
+	BIOS Revision: 2.3
 
 Handle 0x0002, DMI type 1, 27 bytes
 System Information
@@ -51,7 +51,7 @@ Base Board Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	97946E993916094B22613E03B8339091
+	Features:
 		Board is a hosting board
 		Board is removable
 		Board is replaceable
@@ -67,7 +67,7 @@ Chassis Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	380AD15AAB729CF25C4397C21C466ACE
+	Boot-up State: Safe
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: Unknown
@@ -417,14 +417,6 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0029, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: FLOPPY
-	Internal Connector Type: On Board Floppy
-	External Reference Designator: Not Specified
-	External Connector Type: None
-	Port Type: None
-
 Handle 0x002A, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: SPEAKER (SPKR)
@@ -480,7 +472,7 @@ Handle 0x0031, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI EXPRESS x1 SLOT 2 (PCIEx1 2)
 	Type: x1 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 1
 	Characteristics:
@@ -518,7 +510,7 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 4 GB
+	Maximum Capacity: 16 GB
 	Error Information Handle: Not Provided
 	Number Of Devices: 4
 
@@ -796,51 +788,68 @@ OEM-specific Type
 		99 13 57 00 7F 01 1C 01 00 04 00 56 00 01 04 03
 		01 05 00
 
-Handle 0x0058, DMI type 129, 8 bytes
+Handle 0x0058, DMI type 39, 22 bytes
+System Power Supply
+	Location: Not Specified
+	Name: Not Specified
+	Manufacturer: Not Specified
+	Serial Number: --
+	Asset Tag: --
+	Model Part Number: High Efficiency
+	Revision: Not Specified
+	Max Power Capacity: Unknown
+	Status: Present, Unknown
+	Type: Unknown
+	Input Voltage Range Switching: Unknown
+	Plugged: Yes
+	Hot Replaceable: No
+	Cooling Device Handle: 0x0052
+
+Handle 0x0059, DMI type 129, 8 bytes
 OEM-specific Type
 	Header and Data:
-		81 08 58 00 01 01 02 00
+		81 08 59 00 01 01 02 00
 	Strings:
 		Intel_ASF
 		Intel_ASF_001
 
-Handle 0x0059, DMI type 130, 20 bytes
+Handle 0x005A, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 59 00 24 41 4D 54 01 01 01 01 01 A5 1B 02
+		82 14 5A 00 24 41 4D 54 01 01 01 01 01 A5 1B 02
 		00 00 00 00
 
-Handle 0x005A, DMI type 131, 64 bytes
+Handle 0x005B, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 5A 00 30 00 00 00 00 00 10 2E 05 00 00 00
+		83 40 5B 00 30 00 00 00 00 00 10 2E 05 00 00 00
 		F8 00 4E 24 00 00 00 00 1F 48 00 00 01 00 05 00
 		97 04 0A 00 03 00 01 02 C8 00 DE 10 00 00 00 00
 		00 00 00 00 DF 03 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x005B, DMI type 136, 6 bytes
+Handle 0x005C, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 5B 00 5A 5A
+		88 06 5C 00 5A 5A
 
-Handle 0x005C, DMI type 137, 12 bytes
+Handle 0x005D, DMI type 137, 12 bytes
 OEM-specific Type
 	Header and Data:
-		89 0C 5C 00 01 00 F0 03 F0 FF 01 02
+		89 0C 5D 00 01 00 F0 03 F0 FF 01 02
 	Strings:
 		Hewlett-Packard
 		_ucode_
 
-Handle 0x005E, DMI type 197, 10 bytes
+Handle 0x005F, DMI type 197, 10 bytes
 OEM-specific Type
 	Header and Data:
-		C5 0A 5E 00 05 00 00 01 FF 01
+		C5 0A 5F 00 05 00 00 01 FF 01
 
-Handle 0x005F, DMI type 208, 5 bytes
+Handle 0x0060, DMI type 208, 5 bytes
 OEM-specific Type
 	Header and Data:
-		D0 05 5F 00 01
+		D0 05 60 00 01
 
-Handle 0x0060, DMI type 127, 4 bytes
+Handle 0x0061, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-87 structures occupying 2558 bytes.
+89 structures occupying 2656 bytes.
 Table at 0x000E9EC0.
 
 Handle 0x0001, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 10/14/2015
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -151,8 +151,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Burst
 	Installed SRAM Type: Burst
@@ -524,7 +524,7 @@ Handle 0x0038, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI EXPRESS x16 SLOT (PCIEx16)
 	Type: x16 PCI Express 2
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 1
 	Characteristics:
@@ -582,7 +582,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: XMM1
@@ -600,41 +600,41 @@ Handle 0x003F, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x003C
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: XMM2
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
+	Speed: 1333 MT/s
+	Manufacturer: JEDEC ID:85 9B
 	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
-	Part Number:  
-	Rank: Unknown
+	Asset Tag: --
+	Part Number: CT51264BD160B.C16
+	Rank: 2
 
 Handle 0x0040, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x003C
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: 2
 	Locator: XMM3
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
+	Speed: 1333 MT/s
+	Manufacturer: JEDEC ID:85 9B
 	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
-	Part Number:  
-	Rank: Unknown
+	Asset Tag: --
+	Part Number: CT51264BD160B.C16
+	Rank: 2
 
 Handle 0x0041, DMI type 17, 28 bytes
 Memory Device
@@ -642,7 +642,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: 2
 	Locator: XMM4
@@ -662,7 +662,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 2 bits
 	Data Width: 2 bits
-	Size: 4096 kB
+	Size: 4 MB
 	Form Factor: Chip
 	Set: None
 	Locator: SYSTEM ROM
@@ -687,8 +687,8 @@ Memory Array Mapped Address
 Handle 0x0045, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0021BFFFFFF
-	Range Size: 4544 MB
+	Ending Address: 0x0041BFFFFFF
+	Range Size: 12736 MB
 	Physical Array Handle: 0x003C
 	Partition Width: 2
 
@@ -711,10 +711,32 @@ Memory Device Mapped Address
 	Interleave Position: 1
 	Interleaved Data Depth: 2
 
-Handle 0x004A, DMI type 20, 19 bytes
+Handle 0x0048, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x003F
+	Memory Array Mapped Address Handle: 0x0044
+	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 2
+
+Handle 0x0049, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0040
+	Memory Array Mapped Address Handle: 0x0044
+	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x004A, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x0041
 	Memory Array Mapped Address Handle: 0x0044

@@ -1,8 +1,8 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-36 structures occupying 1586 bytes.
-Table at 0x000EC340.
+37 structures occupying 1634 bytes.
+Table at 0xDBD65018.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -119,7 +119,8 @@ Port Connector Information
 Handle 0x0009, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI Express x16 Slot
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 0
@@ -132,7 +133,8 @@ System Slot Information
 Handle 0x000A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI Express x1 Slot 1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -145,7 +147,8 @@ System Slot Information
 Handle 0x000B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Mini Card Slot 1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -207,23 +210,44 @@ Handle 0x000F, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x000E
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Micron
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 16JTF1G64AZ-1G6E1 
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
+	Minimum Voltage: 1.5 V
+	Maximum Voltage: 1.5 V
+	Configured Voltage: 1.5 V
 
-Handle 0x0010, DMI type 17, 40 bytes
+Handle 0x0010, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x000F
+	Memory Array Mapped Address Handle: 0x0013
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0011, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x000E
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -234,29 +258,29 @@ Memory Device
 	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 8JTF51264AZ-1G6E1 
-	Rank: 1
+	Part Number: 16JTF1G64AZ-1G6E1 
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
 
-Handle 0x0011, DMI type 20, 35 bytes
+Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0010
-	Memory Array Mapped Address Handle: 0x0012
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0011
+	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0012, DMI type 19, 31 bytes
+Handle 0x0013, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x000E
 	Partition Width: 2
 
@@ -460,20 +484,20 @@ Cache Information
 	System Type: Unified
 	Associativity: 12-way Set-associative
 
-Handle 0x002A, DMI type 208, 5 bytes
+Handle 0x002B, DMI type 208, 5 bytes
 OEM-specific Type
 	Header and Data:
-		D0 05 2A 00 00
+		D0 05 2B 00 01
 
-Handle 0x002D, DMI type 131, 64 bytes
+Handle 0x002E, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 2D 00 10 00 00 00 00 00 00 00 00 00 00 00
+		83 40 2E 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 4A 8C 00 00 00 00 01 20 00 00 01 00 09 00
 		0B 04 14 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x002E, DMI type 13, 22 bytes
+Handle 0x002F, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 13
@@ -492,6 +516,6 @@ BIOS Language Information
 		zhCN
 	Currently Installed Language: enUS
 
-Handle 0x0030, DMI type 127, 4 bytes
+Handle 0x0031, DMI type 127, 4 bytes
 End Of Table
 

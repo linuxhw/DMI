@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 60 structures occupying 2556 bytes.
@@ -50,7 +50,7 @@ Base Board Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	...
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is removable
 		Board is replaceable
@@ -67,7 +67,7 @@ Chassis Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	...
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -114,11 +114,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz
+	Version: Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz
 	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 3300 MHz
+	Current Speed: 3100 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
 	L1 Cache Handle: 0x0005
@@ -176,8 +176,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -500,7 +500,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4
@@ -511,15 +511,15 @@ Memory Device
 	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 16JTF51264AZ-1G6M1
-	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Part Number: 8JTF25664AZ-1G4M1 
+	Rank: 1
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x002D, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x002C
 	Memory Array Mapped Address Handle: 0x0034
 	Partition Row Position: Unknown
@@ -532,7 +532,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
@@ -545,12 +545,12 @@ Memory Device
 	Asset Tag: --
 	Part Number: 8JTF25664AZ-1G4M1 
 	Rank: 1
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x002F, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x0027FFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x0017FFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x002E
 	Memory Array Mapped Address Handle: 0x0034
@@ -564,7 +564,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -575,15 +575,15 @@ Memory Device
 	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 16JTF51264AZ-1G6M1
-	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Part Number: 8JTF25664AZ-1G4M1 
+	Rank: 1
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0031, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0030
 	Memory Array Mapped Address Handle: 0x0034
 	Partition Row Position: Unknown
@@ -596,7 +596,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -609,12 +609,12 @@ Memory Device
 	Asset Tag: --
 	Part Number: 8JTF25664AZ-1G4M1 
 	Rank: 1
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0033, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00280000000
-	Ending Address: 0x002FFFFFFFF
+	Starting Address: 0x00180000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0032
 	Memory Array Mapped Address Handle: 0x0034
@@ -625,8 +625,8 @@ Memory Device Mapped Address
 Handle 0x0034, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 12 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x002B
 	Partition Width: 4
 
