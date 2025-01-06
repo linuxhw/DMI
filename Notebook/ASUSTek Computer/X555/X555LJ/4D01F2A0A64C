@@ -1,14 +1,14 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 26 structures occupying 2082 bytes.
-Table at 0xCC7D0000.
+Table at 0x947CB000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: X555LJ.305
-	Release Date: 05/26/2015
+	Version: X555LJ.604
+	Release Date: 04/16/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 6464 kB
@@ -197,8 +197,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -271,7 +271,7 @@ Processor Information
 Handle 0x0012, DMI type 221, 12 bytes
 OEM-specific Type
 	Header and Data:
-		DD 0C 12 00 01 01 00 02 04 00 00 00
+		DD 0C 12 00 01 01 00 02 09 01 00 00
 	Strings:
 		Reference Code - ACPI
 
@@ -290,7 +290,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -303,7 +303,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: MT41K512M8RH-125:E
 	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0015, DMI type 17, 34 bytes
 Memory Device
@@ -318,13 +318,6 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Clock Speed: Unknown
 
 Handle 0x0016, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -348,8 +341,8 @@ Memory Device Mapped Address
 Handle 0x0018, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 18 00 07 01 00 02 04 00 00 00 02 00 02 04
-		00 01 00 03 00 02 04 00 00 00 04 05 FF FF FF FF
+		DD 36 18 00 07 01 00 02 09 01 00 00 02 00 02 09
+		01 00 00 03 00 02 09 01 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 09 00 07 00 FF FF FF 09 00 08
 		00 FF FF FF FF FF
 	Strings:
@@ -365,7 +358,7 @@ OEM-specific Type
 Handle 0x0019, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 19 00 03 01 00 02 04 00 00 00 02 00 FF FF
+		DD 1A 19 00 03 01 00 02 09 01 00 00 02 00 FF FF
 		FF FF 00 03 04 0A 00 1E 30 04
 	Strings:
 		Reference Code - ME 10.0
@@ -376,7 +369,7 @@ OEM-specific Type
 Handle 0x001A, DMI type 221, 68 bytes
 OEM-specific Type
 	Header and Data:
-		DD 44 1A 00 09 01 00 02 04 00 00 00 02 03 FF FF
+		DD 44 1A 00 09 01 00 02 09 01 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 03 00 05 00 FF FF FF 03
 		00 06 00 FF FF FF FF FF 07 00 19 00 00 00 00 08
 		00 2C 00 00 00 00 09 00 03 00 00 00 00 0A 00 01
@@ -396,8 +389,8 @@ OEM-specific Type
 Handle 0x001B, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 1B 00 03 01 00 02 04 00 00 00 02 00 00 00
-		00 1F 00 03 00 00 05 00 00 00
+		DD 1A 1B 00 03 01 00 02 09 01 00 00 02 00 00 00
+		00 22 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version

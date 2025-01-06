@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
 Table at 0x425A4000.
@@ -6,8 +6,8 @@ Table at 0x425A4000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: UX325EA.300
-	Release Date: 10/26/2020
+	Version: UX325EA.308
+	Release Date: 07/29/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 0 MB
@@ -24,7 +24,7 @@ BIOS Information
 		Targeted content distribution is supported
 		UEFI is supported
 	BIOS Revision: 5.19
-	Firmware Revision: 3.0
+	Firmware Revision: 3.8
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -472,7 +472,7 @@ Memory Array Mapped Address
 	Physical Array Handle: 0x003A
 	Partition Width: 8
 
-Handle 0x0044, DMI type 17, 100 bytes
+Handle 0x0044, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x003A
 	Error Information Handle: Not Provided
@@ -507,7 +507,7 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0045, DMI type 17, 100 bytes
+Handle 0x0045, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x003A
 	Error Information Handle: Not Provided
@@ -542,7 +542,7 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0046, DMI type 17, 100 bytes
+Handle 0x0046, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x003A
 	Error Information Handle: Not Provided
@@ -577,7 +577,7 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0047, DMI type 17, 100 bytes
+Handle 0x0047, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x003A
 	Error Information Handle: Not Provided
@@ -612,7 +612,7 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0048, DMI type 17, 100 bytes
+Handle 0x0048, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x003A
 	Error Information Handle: Not Provided
@@ -647,7 +647,7 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0049, DMI type 17, 100 bytes
+Handle 0x0049, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x003A
 	Error Information Handle: Not Provided
@@ -682,7 +682,7 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x004A, DMI type 17, 100 bytes
+Handle 0x004A, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x003A
 	Error Information Handle: Not Provided
@@ -717,7 +717,7 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x004B, DMI type 17, 100 bytes
+Handle 0x004B, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x003A
 	Error Information Handle: Not Provided
@@ -850,8 +850,8 @@ OEM-specific Type
 Handle 0x0055, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 55 00 03 01 00 0A 00 2A 32 00 02 00 00 00
-		00 60 00 03 00 01 0E 08 00 00
+		DD 1A 55 00 03 01 00 0A 00 38 51 00 02 00 00 00
+		00 8A 00 03 00 01 0E 08 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -860,8 +860,8 @@ OEM-specific Type
 Handle 0x0056, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 56 00 03 01 00 0A 00 2A 32 00 02 00 00 00
-		00 00 00 03 04 0F 00 02 61 05
+		DD 1A 56 00 03 01 00 0A 00 38 51 00 02 00 00 00
+		00 00 00 03 04 0F 00 17 AA 06
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -871,7 +871,7 @@ OEM-specific Type
 Handle 0x0057, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 57 00 06 01 00 0A 00 2A 32 00 02 03 FF FF
+		DD 2F 57 00 06 01 00 0A 00 38 51 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 20 00 05 00 FF FF FF 20
 		00 06 00 02 46 00 00 00 07 00 04 00 00 00 00
 	Strings:
@@ -886,11 +886,11 @@ OEM-specific Type
 Handle 0x0058, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 58 00 0B 01 00 0A 00 2A 32 00 02 00 01 00
-		00 00 00 03 00 0A 00 2A 32 00 04 05 FF FF FF FF
+		DD 52 58 00 0B 01 00 0A 00 38 51 00 02 00 01 00
+		0C 00 00 03 00 0A 00 38 51 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 01 00 07 00 00 00 00 01 00 08
 		00 FF FF FF FF FF 09 00 11 01 00 00 00 0A 00 00
-		00 00 DD 00 0B 00 22 01 00 00 00 0C 00 FF FF FF
+		00 00 F8 00 0B 00 29 00 00 00 00 0C 00 FF FF FF
 		FF FF
 	Strings:
 		Reference Code - SA - System Agent
@@ -1043,7 +1043,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 68 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 82 A0 00 00 00 00 01 00 00 00 00 00 0F 00
-		61 05 02 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		AA 06 17 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0069, DMI type 41, 11 bytes
@@ -1204,7 +1204,7 @@ OEM-specific Type
 		DD 59 7C 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 03 00 00 00 00 0C 00 00
+		00 FF FF FF FF FF 0B 00 03 08 00 00 00 0C 00 00
 		17 00 44 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
 		00 00 0F 00 00 02 00 0F 00
 	Strings:
@@ -1578,7 +1578,7 @@ Handle 0x00AA, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
 		DB 6A AA 00 01 04 01 45 02 00 90 06 01 85 39 20
-		00 00 00 00 40 00 00 03 1F 00 00 C9 03 40 44 02
+		00 00 00 00 40 00 00 03 1F 00 00 C9 03 60 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

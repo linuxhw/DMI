@@ -1,16 +1,16 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
-Table at 0x000EA7F0.
+Table at 0x7DAFD000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: X570ZD.311
-	Release Date: 09/27/2019
+	Version: X570ZD.312
+	Release Date: 02/25/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -104,10 +104,10 @@ Physical Memory Array
 Handle 0x000A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0009
-	Partition Width: 1
+	Partition Width: 2
 
 Handle 0x000B, DMI type 7, 19 bytes
 Cache Information
@@ -131,8 +131,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -147,8 +147,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -227,27 +227,38 @@ Handle 0x0010, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0009
 	Error Information Handle: 0x000F
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 2400 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
+	Part Number: CT8G4SFS824A.C8FP
+	Rank: 1
+	Configured Memory Speed: 2400 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
 
-Handle 0x0011, DMI type 18, 23 bytes
+Handle 0x0011, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x0010
+	Memory Array Mapped Address Handle: 0x000A
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0012, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -257,13 +268,13 @@ Handle 0x0011, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0012, DMI type 17, 40 bytes
+Handle 0x0013, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0009
-	Error Information Handle: 0x0011
+	Error Information Handle: 0x0012
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -271,26 +282,28 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2400 MT/s
-	Manufacturer: Hynix
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA81GS6AFR8N-UH    
+	Part Number: CT8G4SFS824A.C8FP
 	Rank: 1
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0013, DMI type 20, 35 bytes
+Handle 0x0014, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x0012
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x0013
 	Memory Array Mapped Address Handle: 0x000A
 	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
 
-Handle 0x0026, DMI type 10, 26 bytes
+Handle 0x0027, DMI type 10, 26 bytes
 On Board Device 1 Information
 	Type: Video
 	Status: Enabled
@@ -336,7 +349,7 @@ On Board Device 11 Information
 	Status: Enabled
 	Description: Bluetooth
 
-Handle 0x0027, DMI type 11, 5 bytes
+Handle 0x0028, DMI type 11, 5 bytes
 OEM Strings
 	String 1: kPJ-+7X7+EfTa
 	String 2: jTyRUBSNi7Ydf
@@ -344,20 +357,20 @@ OEM Strings
 	String 4:  
 	String 5: 90NB0IU1-M04480
 
-Handle 0x0028, DMI type 12, 5 bytes
+Handle 0x0029, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: SMI:00B26C
 	Option 2: DSN:                                
 	Option 3: DSN:                                
 	Option 4: DSN:                                
 
-Handle 0x0029, DMI type 13, 22 bytes
+Handle 0x002A, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x002A, DMI type 127, 4 bytes
+Handle 0x002B, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 21 structures occupying 1430 bytes.
 Table at 0x000EBA70.
@@ -10,7 +11,7 @@ BIOS Information
 	Release Date: 11/09/2012
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 6144 kB
+	ROM Size: 6 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -94,9 +95,9 @@ On Board Device 3 Information
 
 Handle 0x0005, DMI type 11, 5 bytes
 OEM Strings
-	String 1: Y0skrfcTMzg6o
-	String 2: AJqMTd-JduI81
-	String 3: b15HDcAqgmjKP
+	String 1: OkJlrWsq6K8oO
+	String 2: xmCpQnKUdY7vA
+	String 3: l9EZ7AUbcRhtE
 	String 4: 90NBHA138W2C146045QU
 	String 5:  
 	String 6:  
@@ -107,7 +108,7 @@ OEM Strings
 
 Handle 0x0006, DMI type 12, 5 bytes
 System Configuration Options
-	Option 1: DSN:2SRU9JCH178174                  
+	Option 1: DSN:            M57AV4Q8            
 	Option 2: DSN:EFF705E60680                    
 	Option 3: DSN:08606E507FFE                    
 	Option 4: SMI:00B2CA
@@ -154,8 +155,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -248,7 +249,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: [Empty]
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x000E, DMI type 17, 34 bytes
 Memory Device
@@ -269,7 +270,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: [Empty]
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x000F, DMI type 17, 34 bytes
 Memory Device
@@ -277,20 +278,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: 859B
 	Serial Number: --
 	Asset Tag: --
 	Part Number: ST51264BC1339.M16F
 	Rank: 2
-	Configured Clock Speed: 1333 MHz
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0010, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -322,7 +323,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: [Empty]
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x0012, DMI type 19, 31 bytes
 Memory Array Mapped Address

@@ -1,7 +1,8 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 28 structures occupying 1158 bytes.
-Table at 0x2FEC6000.
+Table at 0xAFEC6000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -10,7 +11,7 @@ BIOS Information
 	Release Date: 08/16/2010
 	Address: 0xE2720
 	Runtime Size: 121056 bytes
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -68,7 +69,7 @@ Chassis Information
 	Version: N/A         
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -149,8 +150,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -281,18 +282,18 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: S1
 	Bank Locator: DIMM0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 667 MHz
-	Manufacturer: 0198            
+	Speed: 667 MT/s
+	Manufacturer: 059B            
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ACR128X64D3S1333C9
+	Part Number: CT4G3S1339M       
 	Rank: Unknown
 
 Handle 0x0014, DMI type 18, 23 bytes
@@ -308,16 +309,16 @@ Handle 0x0014, DMI type 18, 23 bytes
 Handle 0x0015, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0012
 	Partition Width: 2
 
 Handle 0x0016, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0013
 	Memory Array Mapped Address Handle: 0x0015
 	Partition Row Position: 2
@@ -329,13 +330,17 @@ System Boot Information
 	Status: <OUT OF SPEC>
 
 Handle 0x0018, DMI type 170, 78 bytes
-OEM-specific Type
-	Header and Data:
-		AA 4E 18 00 01 08 08 00 7F 00 0E 00 07 00 01 02
-		01 08 24 01 08 00 85 01 10 00 41 02 01 00 42 02
-		02 00 43 02 04 00 44 02 08 00 45 02 10 00 46 02
-		20 00 47 02 40 00 61 02 01 00 62 02 02 00 63 02
-		04 00 64 02 08 00 82 02 02 00 83 02 04 00
+Acer Hotkey Function
+	Function bitmap for Communication Button: 0x0801
+		WiFi: Yes
+		3G: No
+		WiMAX: No
+		Bluetooth: Yes
+	Function bitmap for Application Button: 0x0008
+	Function bitmap for Media Button: 0x007f
+	Function bitmap for Display Button: 0x000e
+	Function bitmap for Others Button: 0x0007
+	Communication Function Key Number: 1
 
 Handle 0x0019, DMI type 171, 39 bytes
 OEM-specific Type
