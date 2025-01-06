@@ -1,10 +1,10 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-32 structures occupying 1601 bytes.
+33 structures occupying 1662 bytes.
 Table at 0xBBE3F000.
 
-Handle 0x000C, DMI type 0, 24 bytes
+Handle 0x000D, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Hewlett-Packard
 	Version: L71 Ver. 01.49
@@ -34,7 +34,7 @@ BIOS Information
 	BIOS Revision: 1.49
 	Firmware Revision: 21.89
 
-Handle 0x000D, DMI type 1, 27 bytes
+Handle 0x000E, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Hewlett-Packard
 	Product Name: HP EliteBook 820 G1
@@ -45,7 +45,7 @@ System Information
 	SKU Number: J2A92AV
 	Family: 103C_5336AN G=N L=BUS B=HP S=ELI
 
-Handle 0x000E, DMI type 2, 16 bytes
+Handle 0x000F, DMI type 2, 16 bytes
 Base Board Information
 	Manufacturer: Hewlett-Packard
 	Product Name: 1991
@@ -56,11 +56,11 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:  
-	Chassis Handle: 0x000F
+	Chassis Handle: 0x0010
 	Type: Unknown
 	Contained Object Handles: 0
 
-Handle 0x000F, DMI type 3, 17 bytes
+Handle 0x0010, DMI type 3, 17 bytes
 Chassis Information
 	Manufacturer: Hewlett-Packard
 	Type: Notebook
@@ -194,7 +194,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 12-way Set-associative
 
-Handle 0x0014, DMI type 8, 9 bytes
+Handle 0x0015, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port0
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -202,7 +202,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x0015, DMI type 8, 9 bytes
+Handle 0x0016, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port5
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -210,7 +210,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x0016, DMI type 8, 9 bytes
+Handle 0x0017, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port4
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -218,7 +218,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x0017, DMI type 8, 9 bytes
+Handle 0x0018, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port3
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -226,7 +226,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x0018, DMI type 8, 9 bytes
+Handle 0x0019, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port2
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -234,7 +234,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x0019, DMI type 8, 9 bytes
+Handle 0x001A, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port1
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -242,7 +242,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x001B, DMI type 9, 13 bytes
+Handle 0x001C, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI SLOT1
 	Type: 32-bit PCI
@@ -254,13 +254,13 @@ System Slot Information
 		PME signal is supported
 		SMBus signal is supported
 
-Handle 0x0011, DMI type 10, 6 bytes
+Handle 0x0012, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
 	Description: 32
 
-Handle 0x001A, DMI type 11, 5 bytes
+Handle 0x001B, DMI type 11, 5 bytes
 OEM Strings
 	String 1: FBYTE#3X47676J6S6b757H7M7Q7W7j7saBaqawce.yB;
 	String 2: BUILDID#13WWSBDW601#SAK8#DAK8;
@@ -269,7 +269,7 @@ OEM Strings
 	String 5: HP_Mute_LED_0_0
 	String 6: www.hp.com
 
-Handle 0x001E, DMI type 13, 22 bytes
+Handle 0x001F, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 14
@@ -312,10 +312,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: 1315
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT41GS6BFR8A-PB  
+	Part Number: CT102464BF160B.C16
 	Rank: Unknown
 	Configured Memory Speed: Unknown
 
@@ -323,21 +323,28 @@ Handle 0x000A, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0007
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(right)
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: 1315
+	Serial Number: --
+	Asset Tag: --
+	Part Number: CT102464BF160B.C16
+	Rank: Unknown
+	Configured Memory Speed: Unknown
 
-Handle 0x000B, DMI type 19, 31 bytes
+Handle 0x000C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0007
 	Partition Width: 2
 
@@ -347,12 +354,23 @@ Memory Device Mapped Address
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x0008
-	Memory Array Mapped Address Handle: 0x000B
+	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: 1
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x001C, DMI type 22, 26 bytes
+Handle 0x000B, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x000A
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 1
+
+Handle 0x001D, DMI type 22, 26 bytes
 Portable Battery
 	Location: Primary
 	Manufacturer: 33-1C
@@ -366,11 +384,11 @@ Portable Battery
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
-Handle 0x0010, DMI type 32, 20 bytes
+Handle 0x0011, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0012, DMI type 41, 11 bytes
+Handle 0x0013, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: 32
 	Type: Video
@@ -378,7 +396,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 
-Handle 0x0013, DMI type 41, 11 bytes
+Handle 0x0014, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: WLAN
 	Type: Ethernet
@@ -400,10 +418,10 @@ OEM-specific Type
 		B8 0B 41 00 00 00 00 00 C8 00 5A 15 00 00 00 00
 		04 0A 00 00 32 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x001D, DMI type 137, 12 bytes
+Handle 0x001E, DMI type 137, 12 bytes
 OEM-specific Type
 	Header and Data:
-		89 0C 1D 00 01 00 F0 03 F0 FF 00 00
+		89 0C 1E 00 01 00 F0 03 F0 FF 00 00
 
 Handle 0xFFFD, DMI type 127, 4 bytes
 End Of Table

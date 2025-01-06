@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-64 structures occupying 3130 bytes.
+63 structures occupying 3058 bytes.
 Table at 0x9CE7C000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -597,28 +597,14 @@ Built-in Pointing Device
 	Interface: PS/2
 	Buttons: 4
 
-Handle 0x002F, DMI type 22, 26 bytes
-Portable Battery
-	Location: Primary
-	Manufacturer: 13-54
-	Manufacture Date: 01/01/2013
-	Serial Number: --
-	Name: PI06062
-	Chemistry: Lithium Ion
-	Design Capacity: 61993 mWh
-	Design Voltage: 11100 mV
-	SBDS Version: Not Specified
-	Maximum Error: 3%
-	OEM-specific Information: 0x00000000
-
-Handle 0x0030, DMI type 24, 5 bytes
+Handle 0x002F, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
 
-Handle 0x0031, DMI type 26, 22 bytes
+Handle 0x0030, DMI type 26, 22 bytes
 Voltage Probe
 	Description: Voltage Probe Description.
 	Location: Unknown
@@ -631,7 +617,7 @@ Voltage Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x0032, DMI type 27, 15 bytes
+Handle 0x0031, DMI type 27, 15 bytes
 Cooling Device
 	Type: Fan
 	Status: OK
@@ -639,11 +625,11 @@ Cooling Device
 	Nominal Speed: 2000 rpm
 	Description: Cooling Device Description.
 
-Handle 0x0033, DMI type 32, 20 bytes
+Handle 0x0032, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0034, DMI type 39, 22 bytes
+Handle 0x0033, DMI type 39, 22 bytes
 System Power Supply
 	Location: OEM_Define0
 	Name: OEM_Define1
@@ -658,9 +644,9 @@ System Power Supply
 	Input Voltage Range Switching: Auto-switch
 	Plugged: No
 	Hot Replaceable: No
-	Cooling Device Handle: 0x0032
+	Cooling Device Handle: 0x0031
 
-Handle 0x0035, DMI type 40, 18 bytes
+Handle 0x0034, DMI type 40, 18 bytes
 Additional Information 1
 	Referenced Handle: 0x0019
 	Referenced Offset: 0x05
@@ -672,7 +658,7 @@ Additional Information 2
 	String: Compiler Version: VC 9.0
 	Value: 0x05dc
 
-Handle 0x0036, DMI type 41, 11 bytes
+Handle 0x0035, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Ralink RT3290LE 802.11bgn 1x1 Wi-Fi Adapter
 	Type: Other
@@ -680,7 +666,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:07:00.0
 
-Handle 0x0037, DMI type 41, 11 bytes
+Handle 0x0036, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Hanksville Gbe Lan Connection
 	Type: Ethernet
@@ -688,49 +674,55 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:0f:00.0
 
-Handle 0x0038, DMI type 128, 8 bytes
+Handle 0x0037, DMI type 128, 8 bytes
 OEM-specific Type
 	Header and Data:
-		80 08 38 00 55 AA 55 AA
+		80 08 37 00 55 AA 55 AA
 	Strings:
 		Oem Test 1
 		Oem Test 2
 
-Handle 0x0039, DMI type 129, 8 bytes
+Handle 0x0038, DMI type 129, 8 bytes
 OEM-specific Type
 	Header and Data:
-		81 08 39 00 01 01 02 01
+		81 08 38 00 01 01 02 01
 	Strings:
 		Intel_ASF
 		Intel_ASF_001
 
-Handle 0x003A, DMI type 130, 20 bytes
+Handle 0x0039, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 3A 00 24 41 4D 54 01 01 01 01 01 A5 9F 02
+		82 14 39 00 24 41 4D 54 01 01 01 01 01 A5 9F 02
 		00 00 01 00
 
-Handle 0x003B, DMI type 131, 64 bytes
+Handle 0x003A, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 3B 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 3A 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 4B 8C 00 00 00 00 01 00 00 00 00 00 09 00
 		B6 05 15 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 FF 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x003C, DMI type 136, 6 bytes
+Handle 0x003B, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 3C 00 FF FF
+		88 06 3B 00 FF FF
+
+Handle 0x003C, DMI type 221, 12 bytes
+OEM-specific Type
+	Header and Data:
+		DD 0C 3C 00 01 01 00 01 06 02 00 00
+	Strings:
+		Reference Code - ACPI
 
 Handle 0x003D, DMI type 221, 12 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.1, MAC address 00:01:06:02:00:00
+OEM-specific Type
+	Header and Data:
+		DD 0C 3D 00 01 01 00 01 06 02 00 00
+	Strings:
+		Reference Code - Intel Rapid Start
 
-Handle 0x003E, DMI type 221, 12 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.1, MAC address 00:01:06:02:00:00
-
-Handle 0x003F, DMI type 127, 4 bytes
+Handle 0x003E, DMI type 127, 4 bytes
 End Of Table
 

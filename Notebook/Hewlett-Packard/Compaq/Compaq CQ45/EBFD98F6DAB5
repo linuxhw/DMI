@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-61 structures occupying 2949 bytes.
+60 structures occupying 2895 bytes.
 Table at 0xAAEBC000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -117,10 +117,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Celeron(R) CPU B830 @ 1.80GHz
-	Voltage: 1.1 V
+	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 1800 MHz
-	Current Speed: 1800 MHz
+	Current Speed: 1400 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket rPGA988B
 	L1 Cache Handle: 0x0009
@@ -501,13 +501,6 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Empty
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Empty
-	Rank: Unknown
-	Configured Memory Speed: Unknown
 
 Handle 0x002A, DMI type 17, 34 bytes
 Memory Device
@@ -575,28 +568,14 @@ Built-in Pointing Device
 	Interface: PS/2
 	Buttons: 4
 
-Handle 0x0030, DMI type 22, 26 bytes
-Portable Battery
-	Location: Primary
-	Manufacturer: 13-54
-	Name: MU06047
-	Chemistry: Lithium Ion
-	Design Capacity: 47520 mWh
-	Design Voltage: 10800 mV
-	SBDS Version: Not Specified
-	Maximum Error: 8%
-	SBDS Serial Number: --
-	SBDS Manufacture Date: 2016-04-08
-	OEM-specific Information: 0x0000FFFF
-
-Handle 0x0031, DMI type 24, 5 bytes
+Handle 0x0030, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
 
-Handle 0x0032, DMI type 26, 22 bytes
+Handle 0x0031, DMI type 26, 22 bytes
 Voltage Probe
 	Description: Voltage Probe Description.
 	Location: Unknown
@@ -609,7 +588,7 @@ Voltage Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x0033, DMI type 27, 15 bytes
+Handle 0x0032, DMI type 27, 15 bytes
 Cooling Device
 	Type: Fan
 	Status: OK
@@ -617,11 +596,11 @@ Cooling Device
 	Nominal Speed: 2000 rpm
 	Description: Cooling Device Description.
 
-Handle 0x0034, DMI type 32, 20 bytes
+Handle 0x0033, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0035, DMI type 39, 22 bytes
+Handle 0x0034, DMI type 39, 22 bytes
 System Power Supply
 	Location: OEM_Define0
 	Name: OEM_Define1
@@ -636,9 +615,9 @@ System Power Supply
 	Input Voltage Range Switching: Auto-switch
 	Plugged: No
 	Hot Replaceable: No
-	Cooling Device Handle: 0x0033
+	Cooling Device Handle: 0x0032
 
-Handle 0x0036, DMI type 40, 18 bytes
+Handle 0x0035, DMI type 40, 18 bytes
 Additional Information 1
 	Referenced Handle: 0x001c
 	Referenced Offset: 0x05
@@ -650,7 +629,7 @@ Additional Information 2
 	String: Compiler Version: VC 9.0
 	Value: 0x05dc
 
-Handle 0x0037, DMI type 41, 11 bytes
+Handle 0x0036, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Intel(R) Graphics Media Accelerator HD
 	Type: Video
@@ -658,7 +637,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 
-Handle 0x0038, DMI type 41, 11 bytes
+Handle 0x0037, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Atheros AR9485 802.11b/g/n WiFi Adapter
 	Type: Other
@@ -666,7 +645,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:01:00.0
 
-Handle 0x0039, DMI type 41, 11 bytes
+Handle 0x0038, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Hanksville 10/100 Lan Connection
 	Type: Ethernet
@@ -674,41 +653,41 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:08:00.0
 
-Handle 0x003A, DMI type 128, 8 bytes
+Handle 0x0039, DMI type 128, 8 bytes
 OEM-specific Type
 	Header and Data:
-		80 08 3A 00 55 AA 55 AA
+		80 08 39 00 55 AA 55 AA
 	Strings:
 		Oem Test 1
 		Oem Test 2
 
-Handle 0x003B, DMI type 129, 8 bytes
+Handle 0x003A, DMI type 129, 8 bytes
 OEM-specific Type
 	Header and Data:
-		81 08 3B 00 01 01 02 01
+		81 08 3A 00 01 01 02 01
 	Strings:
 		Intel_ASF
 		Intel_ASF_001
 
-Handle 0x003C, DMI type 130, 20 bytes
+Handle 0x003B, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 3C 00 24 41 4D 54 01 01 01 01 01 A5 1F 02
+		82 14 3B 00 24 41 4D 54 01 01 01 01 01 A5 1F 02
 		00 00 00 00
 
-Handle 0x003D, DMI type 131, 64 bytes
+Handle 0x003C, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 3D 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 3C 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 5E 1E FF FF FF FF 01 20 00 00 01 00 08 00
 		38 05 14 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 FF 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x003E, DMI type 136, 6 bytes
+Handle 0x003D, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 3E 00 FF FF
+		88 06 3D 00 FF FF
 
-Handle 0x003F, DMI type 127, 4 bytes
+Handle 0x003E, DMI type 127, 4 bytes
 End Of Table
 

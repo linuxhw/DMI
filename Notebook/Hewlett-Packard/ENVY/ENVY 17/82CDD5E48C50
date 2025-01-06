@@ -1,7 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-64 structures occupying 3111 bytes.
+64 structures occupying 3053 bytes.
 Table at 0x9CE7C000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 07/22/2016
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 5120 kB
+	ROM Size: 5 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -194,8 +194,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -495,7 +495,7 @@ Memory Device
 	Error Information Handle: 0x0028
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(top)
@@ -503,12 +503,12 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Micron Technology
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 8KTF51264HZ-1G6E1 
-	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Part Number: Not Specified
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0027, DMI type 17, 34 bytes
 Memory Device
@@ -516,7 +516,7 @@ Memory Device
 	Error Information Handle: 0x0029
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(under)
@@ -524,12 +524,12 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Micron Technology
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 16KTF1G64HZ-1G6E1 
+	Part Number: Not Specified
 	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0028, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -564,16 +564,16 @@ Handle 0x002A, DMI type 18, 23 bytes
 Handle 0x002B, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 12 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0025
 	Partition Width: 2
 
 Handle 0x002C, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0026
 	Memory Array Mapped Address Handle: 0x002B
 	Partition Row Position: 1

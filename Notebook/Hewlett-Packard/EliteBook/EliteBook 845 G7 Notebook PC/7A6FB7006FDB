@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0xB354D000.
@@ -154,12 +154,23 @@ Handle 0x000B, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x000F, DMI type 253, 7 bytes
+Handle 0x000F, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: IFX
+	Specification Version: 2.0
+	Firmware Revision: 7.85
+	Description: SLB9670
+	Characteristics:
+		Family configurable via firmware update
+		Family configurable via platform software support
+	OEM-specific Information: 0x00000000
+
+Handle 0x0010, DMI type 253, 7 bytes
 OEM-specific Type
 	Header and Data:
-		FD 07 0F 00 00 00 00
+		FD 07 10 00 00 00 00
 
-Handle 0x0010, DMI type 0, 26 bytes
+Handle 0x0011, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
 	Version: S77 Ver. 01.08.00
@@ -188,7 +199,7 @@ BIOS Information
 	BIOS Revision: 8.0
 	Firmware Revision: 7.56
 
-Handle 0x0011, DMI type 1, 27 bytes
+Handle 0x0012, DMI type 1, 27 bytes
 System Information
 	Manufacturer: HP
 	Product Name: HP EliteBook 845 G7 Notebook PC
@@ -199,7 +210,7 @@ System Information
 	SKU Number: 1W9C8UT#ABA
 	Family: 103C_5336AN HP EliteBook
 
-Handle 0x0012, DMI type 2, 17 bytes
+Handle 0x0013, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 8760
@@ -213,7 +224,7 @@ Base Board Information
 	Type: Motherboard
 	Contained Object Handles: 0
 
-Handle 0x0013, DMI type 3, 24 bytes
+Handle 0x0014, DMI type 3, 24 bytes
 Chassis Information
 	Manufacturer: HP
 	Type: Notebook
@@ -231,7 +242,7 @@ Chassis Information
 	Contained Elements: 0
 	SKU Number: Not Specified
 
-Handle 0x0015, DMI type 13, 22 bytes
+Handle 0x0016, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 15
@@ -252,7 +263,7 @@ BIOS Language Information
 		ruRU
 	Currently Installed Language: enUS
 
-Handle 0x0016, DMI type 8, 9 bytes
+Handle 0x0017, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port0
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -260,7 +271,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x0017, DMI type 9, 24 bytes
+Handle 0x0018, DMI type 9, 24 bytes
 System Slot Information
 	Designation: M.2 NVMe SSD
 	Type: 32-bit PCI Express 3 x4
@@ -275,7 +286,7 @@ System Slot Information
 	Data Bus Width: 77
 	Peer Devices: 46
 
-Handle 0x0018, DMI type 9, 24 bytes
+Handle 0x0019, DMI type 9, 24 bytes
 System Slot Information
 	Designation: M.2 WLAN/BT
 	Type: 32-bit PCI Express x1
@@ -290,7 +301,7 @@ System Slot Information
 	Data Bus Width: 77
 	Peer Devices: 46
 
-Handle 0x0019, DMI type 9, 24 bytes
+Handle 0x001A, DMI type 9, 24 bytes
 System Slot Information
 	Designation: M.2 WWAN
 	Type: 32-bit PCI Express x1
@@ -306,7 +317,7 @@ System Slot Information
 	Peer Devices: 0
 	Height: Not applicable
 
-Handle 0x001A, DMI type 41, 11 bytes
+Handle 0x001B, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard IGD
 	Type: Video
@@ -314,7 +325,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:03:00.0
 
-Handle 0x001B, DMI type 17, 84 bytes
+Handle 0x001C, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x0001
 	Error Information Handle: 0x0007
@@ -389,7 +400,7 @@ Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x007FFEFFFFF
 	Range Size: 32767 MB
-	Physical Device Handle: 0x001B
+	Physical Device Handle: 0x001C
 	Memory Array Mapped Address Handle: 0x0002
 	Partition Row Position: 1
 
@@ -428,7 +439,7 @@ Handle 0x000E, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x001C, DMI type 11, 5 bytes
+Handle 0x001D, DMI type 11, 5 bytes
 OEM Strings
 	String 1: FBYTE#3X476J6S6b7B7H7M7R7W7m7saBapaqauawb8bUbhcAdUdpdqfPguhKhkjhk8mE.rE;
 	String 2: BUILDID#20WWLDAT601#SABA#DABA;
@@ -436,7 +447,7 @@ OEM Strings
 	String 4: Buff=2
 	String 5: HRDWFEATS=;PROGKEY:1;NONHPBATDET:1;
 
-Handle 0x0014, DMI type 10, 6 bytes
+Handle 0x0015, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled

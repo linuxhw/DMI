@@ -1,14 +1,14 @@
-# dmidecode 3.5
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.4 present.
-73 structures occupying 4002 bytes.
-Table at 0x3FA91000.
+74 structures occupying 4328 bytes.
+Table at 0x3FA1F000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Insyde
-	Version: F.11
-	Release Date: 03/21/2023
+	Version: F.20
+	Release Date: 04/13/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 9 MB
@@ -32,8 +32,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.11
-	Firmware Revision: 23.39
+	BIOS Revision: 15.20
+	Firmware Revision: 23.43
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -50,7 +50,7 @@ Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 8A2D
-	Version: 23.39
+	Version: 23.43
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -540,15 +540,16 @@ Group Associations
 	Items: 1
 		0x0041 (OEM-specific)
 
-Handle 0x0047, DMI type 14, 20 bytes
+Handle 0x0048, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
-	Items: 5
+	Items: 6
 		0x0042 (OEM-specific)
 		0x0043 (OEM-specific)
 		0x0044 (OEM-specific)
 		0x0045 (OEM-specific)
 		0x0046 (OEM-specific)
+		0x0047 (OEM-specific)
 
 Handle 0x002A, DMI type 15, 29 bytes
 System Event Log
@@ -584,7 +585,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom - Slot 1 (left)
@@ -595,8 +596,8 @@ Memory Device
 	Manufacturer: Crucial Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT16G48C40S5.M8A1   
-	Rank: 1
+	Part Number: CT32G48C40S5.M16A1  
+	Rank: 2
 	Configured Memory Speed: 4800 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -609,7 +610,7 @@ Memory Device
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 16 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
@@ -619,7 +620,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom - Slot 2 (right)
@@ -630,8 +631,8 @@ Memory Device
 	Manufacturer: Crucial Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT16G48C40S5.M8A1   
-	Rank: 1
+	Part Number: CT32G48C40S5.M16A1  
+	Rank: 2
 	Configured Memory Speed: 4800 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -644,23 +645,23 @@ Memory Device
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 16 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x002E, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Array Handle: 0x002B
 	Partition Width: 2
 
 Handle 0x002F, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Device Handle: 0x002C
 	Memory Array Mapped Address Handle: 0x002E
 	Partition Row Position: 1
@@ -670,8 +671,8 @@ Memory Device Mapped Address
 Handle 0x0030, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Device Handle: 0x002D
 	Memory Array Mapped Address Handle: 0x002E
 	Partition Row Position: 1
@@ -819,7 +820,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 3F 00 35 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 82 51 00 00 00 00 21 20 00 00 01 00 10 00
-		8C 07 19 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		4C 08 19 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0040, DMI type 136, 6 bytes
@@ -830,7 +831,7 @@ OEM-specific Type
 Handle 0x0041, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 41 00 01 04 01 45 02 00 90 06 01 10 80 20
+		DB 6A 41 00 01 04 01 45 02 00 90 06 01 85 30 20
 		00 00 00 00 40 00 00 03 1F 04 10 CB 03 60 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -854,7 +855,7 @@ Handle 0x0043, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 43 00 03 01 00 0C 00 68 73 00 02 00 00 00
-		04 23 00 03 00 FF FF FF FF FF
+		04 2A 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -864,7 +865,7 @@ Handle 0x0044, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 44 00 03 01 00 0C 00 68 73 00 02 00 00 00
-		00 00 00 03 04 10 01 19 8C 07
+		00 00 00 03 04 10 01 19 4C 08
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -893,7 +894,7 @@ OEM-specific Type
 		04 06 00 03 00 0C 00 68 73 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 02 00 07 00 00 00 00 02 00 08
 		00 FF FF FF FF FF 09 00 24 00 06 00 00 0A 00 00
-		00 00 14 20 0B 00 11 05 00 00 00 0C 00 FF FF FF
+		00 00 41 20 0B 00 13 01 00 00 00 0C 00 FF FF FF
 		FF FF
 	Strings:
 		Reference Code - SA - System Agent
@@ -908,6 +909,31 @@ OEM-specific Type
 		PHY Build Version
 		Thunderbolt(TM) FW Version
 		System Agent Manageability Engine FW Version
+
+Handle 0x0047, DMI type 221, 82 bytes
+OEM-specific Type
+	Header and Data:
+		DD 52 47 00 0B 01 00 FF FF FF FF FF 02 00 FF FF
+		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
+		FF 07 08 FF FF FF FF FF 09 00 FF FF FF FF FF 0A
+		00 FF FF FF FF FF 0B 00 17 2B 00 00 00 0C 00 00
+		21 00 46 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
+		00 00
+	Strings:
+		Lan Phy Version
+		Sensor Firmware Version
+		Debug Mode Status
+		Disabled
+		Performance Mode Status
+		Disabled
+		Debug Use USB(Disabled:Serial)
+		Disabled
+		ICC Overclocking Version
+		UNDI Version
+		EC FW Version
+		GOP Version
+		Royal Park Version
+		Platform Version
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

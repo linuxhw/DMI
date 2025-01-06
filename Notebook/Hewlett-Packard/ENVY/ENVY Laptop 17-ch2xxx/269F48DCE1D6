@@ -1,14 +1,14 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3 present.
-74 structures occupying 4350 bytes.
-Table at 0x3FA36000.
+73 structures occupying 4024 bytes.
+Table at 0x3FAB4000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Insyde
-	Version: F.11
-	Release Date: 09/12/2022
+	Version: F.16
+	Release Date: 11/09/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 9 MB
@@ -32,8 +32,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.11
-	Firmware Revision: 11.30
+	BIOS Revision: 15.16
+	Firmware Revision: 11.34
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -50,7 +50,7 @@ Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 89DF
-	Version: 11.30
+	Version: 11.34
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -431,7 +431,8 @@ Port Connector Information
 Handle 0x0021, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J6C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Other
 	ID: 1
@@ -439,13 +440,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.0
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x0022, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J6D2
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 2
@@ -453,13 +455,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.1
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x0023, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J7C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 3
@@ -467,13 +470,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.2
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x0024, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J7D1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 4
@@ -481,13 +485,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.3
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x0025, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J8C1
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Other
 	ID: 5
@@ -495,7 +500,7 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.4
-	Data Bus Width: 10
+	Data Bus Width (Base): 10
 	Peer Devices: 0
 
 Handle 0x0026, DMI type 11, 5 bytes
@@ -540,16 +545,15 @@ Group Associations
 	Items: 1
 		0x0041 (OEM-specific)
 
-Handle 0x0048, DMI type 14, 23 bytes
+Handle 0x0047, DMI type 14, 20 bytes
 Group Associations
 	Name: Firmware Version Info
-	Items: 6
+	Items: 5
 		0x0042 (OEM-specific)
 		0x0043 (OEM-specific)
 		0x0044 (OEM-specific)
 		0x0045 (OEM-specific)
 		0x0046 (OEM-specific)
-		0x0047 (OEM-specific)
 
 Handle 0x002A, DMI type 15, 29 bytes
 System Event Log
@@ -855,7 +859,7 @@ Handle 0x0043, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 43 00 03 01 00 0C 00 65 70 00 02 00 00 00
-		04 23 00 03 00 FF FF FF FF FF
+		04 2C 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -909,31 +913,6 @@ OEM-specific Type
 		PHY Build Version
 		Thunderbolt(TM) FW Version
 		System Agent Manageability Engine FW Version
-
-Handle 0x0047, DMI type 221, 82 bytes
-OEM-specific Type
-	Header and Data:
-		DD 52 47 00 0B 01 00 FF FF FF FF FF 02 00 FF FF
-		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
-		FF 07 08 FF FF FF FF FF 09 00 FF FF FF FF FF 0A
-		00 FF FF FF FF FF 0B 00 0B 1E 00 00 00 0C 00 00
-		21 00 48 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
-		00 00
-	Strings:
-		Lan Phy Version
-		Sensor Firmware Version
-		Debug Mode Status
-		Disabled
-		Performance Mode Status
-		Disabled
-		Debug Use USB(Disabled:Serial)
-		Disabled
-		ICC Overclocking Version
-		UNDI Version
-		EC FW Version
-		GOP Version
-		Royal Park Version
-		Platform Version
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

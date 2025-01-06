@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0xB354E000.
+Table at 0xB354D000.
 
 Handle 0x0000, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -173,8 +173,8 @@ OEM-specific Type
 Handle 0x0011, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: S77 Ver. 01.05.00
-	Release Date: 05/14/2021
+	Version: S77 Ver. 01.10.00
+	Release Date: 07/15/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -196,8 +196,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 5.0
-	Firmware Revision: 7.48
+	BIOS Revision: 10.0
+	Firmware Revision: 7.58
 
 Handle 0x0012, DMI type 1, 27 bytes
 System Information
@@ -210,21 +210,7 @@ System Information
 	SKU Number: 229R3EA#ABY
 	Family: 103C_5336AN HP EliteBook
 
-Handle 0x0013, DMI type 2, 17 bytes
-Base Board Information
-	Manufacturer: HP
-	Product Name: 8760
-	Version: KBC Version 07.30.00
-	Serial Number: --
-	Asset Tag: --
-	97946E993916094B22613E03B8339091
-		Board is a hosting board
-	Location In Chassis:  
-	Chassis Handle: 0x0000
-	Type: Motherboard
-	Contained Object Handles: 0
-
-Handle 0x0014, DMI type 3, 24 bytes
+Handle 0x0013, DMI type 3, 24 bytes
 Chassis Information
 	Manufacturer: HP
 	Type: Notebook
@@ -242,7 +228,7 @@ Chassis Information
 	Contained Elements: 0
 	SKU Number: Not Specified
 
-Handle 0x0016, DMI type 13, 22 bytes
+Handle 0x0015, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 15
@@ -262,6 +248,20 @@ BIOS Language Information
 		zhTW
 		ruRU
 	Currently Installed Language: enUS
+
+Handle 0x0016, DMI type 2, 17 bytes
+Base Board Information
+	Manufacturer: HP
+	Product Name: 8760
+	Version: KBC Version 07.3A.00
+	Serial Number: --
+	Asset Tag: --
+	97946E993916094B22613E03B8339091
+		Board is a hosting board
+	Location In Chassis:  
+	Chassis Handle: 0x0013
+	Type: Motherboard
+	Contained Object Handles: 0
 
 Handle 0x0017, DMI type 8, 9 bytes
 Port Connector Information
@@ -447,7 +447,7 @@ OEM Strings
 	String 4: Buff=2
 	String 5: HRDWFEATS=;PROGKEY:1;NONHPBATDET:1;
 
-Handle 0x0015, DMI type 10, 6 bytes
+Handle 0x0014, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled

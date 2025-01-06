@@ -1,17 +1,17 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
-18 structures occupying 721 bytes.
+18 structures occupying 744 bytes.
 Table at 0x000DC010.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Hewlett-Packard
-	Version: F.07
-	Release Date: 06/26/2008
-	Address: 0xE65D0
-	Runtime Size: 105008 bytes
-	ROM Size: 1024 kB
+	Version: F.54
+	Release Date: 08/18/2009
+	Address: 0xE6510
+	Runtime Size: 105200 bytes
+	ROM Size: 1 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -27,13 +27,13 @@ BIOS Information
 		AGP is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
-	BIOS Revision: 15.7
+	BIOS Revision: 15.84
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Hewlett-Packard
 	Product Name: Compaq Presario CQ50 Notebook PC
-	Version: F.07
+	Version: F.54
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -44,7 +44,7 @@ Handle 0x0002, DMI type 2, 8 bytes
 Base Board Information
 	Manufacturer: Wistron
 	Product Name: 360A
-	Version: 08.36
+	Version: 08.60
 	Serial Number: --
 
 807075653E24ECB98B63F18E00309403
@@ -131,8 +131,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 2048 kB
+	Installed Size: 1 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Burst
 		Pipeline Burst
@@ -167,6 +167,7 @@ OEM Strings
 	String 1: $HP$
 	String 2: ABS 72/73 F9 FA FB FC
 	String 3: LOC#ACB
+	String 4: CNB1 01100000100D10000
 
 Handle 0x000A, DMI type 15, 29 bytes
 System Event Log
@@ -176,8 +177,8 @@ System Event Log
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x0000
-	Status: Invalid, Not Full
-	Change Token: 0x00000000
+	Status: Valid, Not Full
+	Change Token: 0x00000001
 	Header Format: Type 1
 	Supported Log Type Descriptors: 3
 	Descriptor 1: POST error
@@ -199,10 +200,10 @@ Physical Memory Array
 Handle 0x000C, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x000B
-	Error Information Handle: No Error
+	Error Information Handle: 0xFFA5
 	Total Width: 32 bits
 	Data Width: 32 bits
-	Size: 1024 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: S1
@@ -218,10 +219,10 @@ Memory Device
 Handle 0x000D, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x000B
-	Error Information Handle: No Error
+	Error Information Handle: 0xFFA5
 	Total Width: 32 bits
 	Data Width: 32 bits
-	Size: 1024 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 2
 	Locator: S2
@@ -237,16 +238,16 @@ Memory Device
 Handle 0x000E, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x000B
 	Partition Width: 2
 
 Handle 0x000F, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x000C
 	Memory Array Mapped Address Handle: 0x000E
 	Partition Row Position: 1

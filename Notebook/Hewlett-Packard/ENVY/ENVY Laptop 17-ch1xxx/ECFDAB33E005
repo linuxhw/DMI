@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
 Table at 0x42DD4000.
@@ -366,7 +366,8 @@ Port Connector Information
 Handle 0x001D, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J6C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Other
 	ID: 1
@@ -374,13 +375,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.0
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x001E, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J6D2
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 2
@@ -388,13 +390,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.1
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x001F, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J7C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 3
@@ -402,13 +405,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.2
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x0020, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J7D1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 4
@@ -416,13 +420,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.3
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x0021, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J8C1
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Other
 	ID: 5
@@ -430,7 +435,7 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.4
-	Data Bus Width: 10
+	Data Bus Width (Base): 10
 	Peer Devices: 0
 
 Handle 0x0022, DMI type 11, 5 bytes
@@ -764,59 +769,112 @@ OEM-specific Type
 		88 06 3C 00 FF FF
 
 Handle 0x003D, DMI type 219, 106 bytes
-HP ProLiant Information
-	Power Features: 0x45010401
-	Omega Features: 0x06900002
-	Misc. Features: 0x00000000
-		iCRU: No
-		UEFI: No
+OEM-specific Type
+	Header and Data:
+		DB 6A 3D 00 01 04 01 45 02 00 90 06 01 85 39 20
+		00 00 00 00 40 00 00 03 1F 04 10 CB 03 60 44 02
+		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00
+	Strings:
+		MEI1
+		MEI2
+		MEI3
+		MEI4
 
 Handle 0x003E, DMI type 221, 26 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:0A:00:4F:31:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:28:00:03
+OEM-specific Type
+	Header and Data:
+		DD 1A 3E 00 03 01 00 0A 00 4F 31 00 02 00 00 00
+		00 28 00 03 00 01 0E 27 00 00
+	Strings:
+		Reference Code - CPU
+		uCode Version
+		TXT ACM version
 
 Handle 0x003F, DMI type 221, 26 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:0A:00:4F:31:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:00:00:03
+OEM-specific Type
+	Header and Data:
+		DD 1A 3F 00 03 01 00 0A 00 4F 31 00 02 00 00 00
+		00 00 00 03 04 0F 00 1E F0 06
+	Strings:
+		Reference Code - ME
+		MEBx version
+		ME Firmware Version
+		Consumer SKU
 
 Handle 0x0040, DMI type 221, 47 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.6, MAC address 00:0A:00:4F:31:00
-	NIC 2: PCI device 03:00.2, MAC address FF:FF:FF:FF:FF:04
-	NIC 3: PCI device ff:00.0, MAC address FF:FF:30:00:05:00
-	NIC 4: Not Installed
-	NIC 5: PCI device 00:08.6, MAC address 00:00:07:00:04:00
+OEM-specific Type
+	Header and Data:
+		DD 2F 40 00 06 01 00 0A 00 4F 31 00 02 03 FF FF
+		FF FF FF 04 00 FF FF FF 30 00 05 00 FF FF FF 30
+		00 06 00 02 46 00 00 00 07 00 04 00 00 00 00
+	Strings:
+		Reference Code - PCH
+		PCH-CRID Status
+		Disabled
+		PCH-CRID Original Value
+		PCH-CRID New Value
+		OPROM - RST - RAID
+		PCH Hsio Version
 
 Handle 0x0041, DMI type 221, 82 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:01.3, MAC address 00:0A:00:4F:31:00
-	NIC 2: PCI device 00:00.2, MAC address 02:00:02:02:00:03
-	NIC 3: PCI device 0a:00.0, MAC address 00:4F:31:00:04:05
-	NIC 4: Not Installed
-	NIC 5: Disabled
-	NIC 6: PCI device 02:00.0, MAC address 00:08:00:FF:FF:FF
-	NIC 7: Not Installed
-	NIC 8: PCI device 0a:00.0, MAC address 00:00:00:00:C0:00
-	NIC 9: PCI device 00:01.3, MAC address 29:00:00:00:00:0C
+OEM-specific Type
+	Header and Data:
+		DD 52 41 00 0B 01 00 0A 00 4F 31 00 02 00 02 00
+		02 02 00 03 00 0A 00 4F 31 00 04 05 FF FF FF FF
+		FF 06 00 00 00 00 02 00 07 00 00 00 00 02 00 08
+		00 FF FF FF FF FF 09 00 11 01 05 00 00 0A 00 00
+		00 00 C0 00 0B 00 29 00 00 00 00 0C 00 FF FF FF
+		FF FF
+	Strings:
+		Reference Code - SA - System Agent
+		Reference Code - MRC
+		SA - PCIe Version
+		SA-CRID Status
+		Disabled
+		SA-CRID Original Value
+		SA-CRID New Value
+		OPROM - VBIOS
+		IO Manageability Engine FW Version
+		PHY Build Version
+		Thunderbolt(TM) FW Version
+		System Agent Manageability Engine FW Version
 
 Handle 0x0042, DMI type 221, 12 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.1, MAC address 00:04:00:00:00:00
+OEM-specific Type
+	Header and Data:
+		DD 0C 42 00 01 01 00 04 00 00 00 00
+	Strings:
+		FSP Binary Version
 
 Handle 0x0043, DMI type 221, 89 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:01.4, MAC address 00:FF:FF:FF:FF:FF
-	NIC 2: PCI device 00:00.2, MAC address FF:FF:FF:FF:FF:03
-	NIC 3: PCI device ff:00.4, MAC address FF:FF:FF:FF:05:06
-	NIC 4: Not Installed
-	NIC 5: Not Installed
-	NIC 6: Disabled
-	NIC 7: Not Installed
-	NIC 8: PCI device 0c:00.0, MAC address 00:00:17:00:61:10
-	NIC 9: PCI device 00:01.5, MAC address FF:FF:FF:FF:FF:0E
-	NIC 10: Disabled
+OEM-specific Type
+	Header and Data:
+		DD 59 43 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
+		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
+		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
+		00 FF FF FF FF FF 0B 00 3E 2E 00 00 00 0C 00 00
+		17 00 61 10 0D 00 FF FF FF FF FF 0E 00 00 07 03
+		00 00 0F 00 00 02 00 0F 00
+	Strings:
+		Lan Phy Version
+		Sensor Firmware Version
+		Debug Mode Status
+		Disabled
+		Performance Mode Status
+		Disabled
+		Debug Use USB(Disabled:Serial)
+		Disabled
+		ICC Overclocking Version
+		UNDI Version
+		EC FW Version
+		GOP Version
+		Royal Park Version
+		Platform Version
+		Client Silicon Version
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

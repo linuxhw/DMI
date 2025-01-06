@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-68 structures occupying 3588 bytes.
+68 structures occupying 3590 bytes.
 Table at 0x77578000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -527,7 +527,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-slot 2(right)
@@ -535,21 +535,21 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Micron
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 16KTF1G64HZ-1G6N1 
-	Rank: 2
+	Part Number: SNY16D3LS1KBG/4G  
+	Rank: 1
 	Configured Memory Speed: 1600 MT/s
-	Minimum Voltage: 1.35 V
+	Minimum Voltage: 1.25 V
 	Maximum Voltage: 1.35 V
 	Configured Voltage: 1.35 V
 
 Handle 0x002B, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x0028
 	Partition Width: 2
 
@@ -567,8 +567,8 @@ Memory Device Mapped Address
 Handle 0x002D, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x002A
 	Memory Array Mapped Address Handle: 0x002B
 	Partition Row Position: 1
@@ -591,7 +591,7 @@ Portable Battery
 	Design Capacity: 41440 mWh
 	Design Voltage: 14800 mV
 	SBDS Version: !
-	Maximum Error: 2%
+	Maximum Error: 12%
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x000A070C
 

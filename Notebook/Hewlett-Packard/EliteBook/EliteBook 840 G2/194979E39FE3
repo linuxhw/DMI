@@ -1,14 +1,14 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-33 structures occupying 1687 bytes.
-Table at 0xA7E3F000.
+33 structures occupying 1689 bytes.
+Table at 0xA3E3F000.
 
-Handle 0x000D, DMI type 0, 24 bytes
+Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Hewlett-Packard
-	Version: M71 Ver. 01.24
-	Release Date: 01/25/2018
+	Version: M71 Ver. 01.31
+	Release Date: 02/24/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 10 MB
@@ -31,10 +31,10 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.24
+	BIOS Revision: 1.31
 	Firmware Revision: 150.91
 
-Handle 0x000E, DMI type 1, 27 bytes
+Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Hewlett-Packard
 	Product Name: HP EliteBook 840 G2
@@ -45,7 +45,7 @@ System Information
 	SKU Number: J8R60EA#UUZ
 	Family: 103C_5336AN G=N L=BUS B=HP S=ELI
 
-Handle 0x000F, DMI type 2, 16 bytes
+Handle 0x0002, DMI type 2, 16 bytes
 Base Board Information
 	Manufacturer: Hewlett-Packard
 	Product Name: 2216
@@ -56,11 +56,11 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:  
-	Chassis Handle: 0x0010
+	Chassis Handle: 0x0003
 	Type: Unknown
 	Contained Object Handles: 0
 
-Handle 0x0010, DMI type 3, 17 bytes
+Handle 0x0003, DMI type 3, 17 bytes
 Chassis Information
 	Manufacturer: Hewlett-Packard
 	Type: Notebook
@@ -74,7 +74,7 @@ Chassis Information
 	Security Status: Other
 	OEM Information: 0x00000000
 
-Handle 0x0007, DMI type 4, 42 bytes
+Handle 0x001A, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: U3E1
 	Type: Central Processor
@@ -118,9 +118,9 @@ Processor Information
 	Current Speed: 2900 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1168
-	L1 Cache Handle: 0x0008
-	L2 Cache Handle: 0x0009
-	L3 Cache Handle: 0x000A
+	L1 Cache Handle: 0x001B
+	L2 Cache Handle: 0x001C
+	L3 Cache Handle: 0x001D
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
@@ -135,7 +135,7 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0006, DMI type 7, 19 bytes
+Handle 0x0019, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -151,7 +151,7 @@ Cache Information
 	System Type: Data
 	Associativity: 8-way Set-associative
 
-Handle 0x0008, DMI type 7, 19 bytes
+Handle 0x001B, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -167,7 +167,7 @@ Cache Information
 	System Type: Instruction
 	Associativity: 8-way Set-associative
 
-Handle 0x0009, DMI type 7, 19 bytes
+Handle 0x001C, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -183,7 +183,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x000A, DMI type 7, 19 bytes
+Handle 0x001D, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L3 Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -199,7 +199,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0015, DMI type 8, 9 bytes
+Handle 0x0008, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port0
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -207,7 +207,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x0016, DMI type 8, 9 bytes
+Handle 0x0009, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port5
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -215,7 +215,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x0017, DMI type 8, 9 bytes
+Handle 0x000A, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port4
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -223,7 +223,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x0018, DMI type 8, 9 bytes
+Handle 0x000B, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port3
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -231,7 +231,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x0019, DMI type 8, 9 bytes
+Handle 0x000C, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port2
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -239,7 +239,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x001A, DMI type 8, 9 bytes
+Handle 0x000D, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port1
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -247,7 +247,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x001C, DMI type 9, 13 bytes
+Handle 0x000F, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI SLOT1
 	Type: 32-bit PCI
@@ -259,22 +259,22 @@ System Slot Information
 		PME signal is supported
 		SMBus signal is supported
 
-Handle 0x0012, DMI type 10, 6 bytes
+Handle 0x0005, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
-	Description: 64
+	Description: 128
 
-Handle 0x001B, DMI type 11, 5 bytes
+Handle 0x000E, DMI type 11, 5 bytes
 OEM Strings
 	String 1: FBYTE#3X47676J6S6b757H7M7Q7W7s7zaBaEaqawbUce.mh;
 	String 2: BUILDID#14WWCSBW601#SUUZ#DUUZ;
 	String 3: ABS 70/71 79 7A 7B 7C
-	String 4: CSM v01.5B
+	String 4: CSM v0x.xx
 	String 5: HP_Mute_LED_0_0
 	String 6: www.hp.com
 
-Handle 0x001F, DMI type 13, 22 bytes
+Handle 0x0012, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 14
@@ -294,7 +294,7 @@ BIOS Language Information
 		zh-TW
 	Currently Installed Language: de-DE
 
-Handle 0x0000, DMI type 16, 23 bytes
+Handle 0x0013, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -303,9 +303,9 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
-Handle 0x0001, DMI type 17, 34 bytes
+Handle 0x0014, DMI type 17, 34 bytes
 Memory Device
-	Array Handle: 0x0000
+	Array Handle: 0x0013
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -324,9 +324,9 @@ Memory Device
 	Rank: Unknown
 	Configured Memory Speed: Unknown
 
-Handle 0x0003, DMI type 17, 34 bytes
+Handle 0x0016, DMI type 17, 34 bytes
 Memory Device
-	Array Handle: 0x0000
+	Array Handle: 0x0013
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -345,37 +345,37 @@ Memory Device
 	Rank: Unknown
 	Configured Memory Speed: Unknown
 
-Handle 0x0005, DMI type 19, 31 bytes
+Handle 0x0018, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
-	Physical Array Handle: 0x0000
+	Physical Array Handle: 0x0013
 	Partition Width: 2
 
-Handle 0x0002, DMI type 20, 35 bytes
+Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0001
-	Memory Array Mapped Address Handle: 0x0005
+	Physical Device Handle: 0x0014
+	Memory Array Mapped Address Handle: 0x0018
 	Partition Row Position: 1
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x0004, DMI type 20, 35 bytes
+Handle 0x0017, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00200000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0003
-	Memory Array Mapped Address Handle: 0x0005
+	Physical Device Handle: 0x0016
+	Memory Array Mapped Address Handle: 0x0018
 	Partition Row Position: 1
 	Interleave Position: 2
 	Interleaved Data Depth: 1
 
-Handle 0x001D, DMI type 22, 26 bytes
+Handle 0x0010, DMI type 22, 26 bytes
 Portable Battery
 	Location: Primary
 	Manufacturer: 333-54-22
@@ -389,19 +389,19 @@ Portable Battery
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
-Handle 0x0011, DMI type 32, 20 bytes
+Handle 0x0004, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0013, DMI type 41, 11 bytes
+Handle 0x0006, DMI type 41, 11 bytes
 Onboard Device
-	Reference Designation: 64
+	Reference Designation: 128
 	Type: Video
 	Status: Enabled
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 
-Handle 0x0014, DMI type 41, 11 bytes
+Handle 0x0007, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: WLAN
 	Type: Ethernet
@@ -409,24 +409,24 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:03:00.0
 
-Handle 0x000B, DMI type 130, 20 bytes
+Handle 0x001E, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 0B 00 24 41 4D 54 00 00 00 00 00 A5 00 00
+		82 14 1E 00 24 41 4D 54 00 00 00 00 00 A5 00 00
 		00 00 00 00
 
-Handle 0x000C, DMI type 131, 64 bytes
+Handle 0x001F, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 0C 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 1F 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 C3 9C 00 00 00 00 01 00 00 00 00 00 0A 00
 		E8 03 25 00 00 00 00 00 C8 00 A2 15 00 00 00 00
-		04 16 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
+		04 16 00 00 20 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x001E, DMI type 137, 12 bytes
+Handle 0x0011, DMI type 137, 12 bytes
 OEM-specific Type
 	Header and Data:
-		89 0C 1E 00 01 00 F0 03 F0 FF 00 00
+		89 0C 11 00 01 00 F0 03 F0 FF 00 00
 
 Handle 0xFFFD, DMI type 127, 4 bytes
 End Of Table

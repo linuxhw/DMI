@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.4.0 present.
-Table at 0x4AB37000.
+Table at 0x4AA35000.
 
 Handle 0x0000, DMI type 7, 27 bytes
 Cache Information
@@ -168,8 +168,8 @@ TPM Device
 Handle 0x0010, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: U82 Ver. 01.04.01
-	Release Date: 01/12/2023
+	Version: U82 Ver. 01.07.00
+	Release Date: 10/05/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -190,14 +190,14 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 4.1
-	Firmware Revision: 9.73
+	BIOS Revision: 7.0
+	Firmware Revision: 9.78
 
 Handle 0x0011, DMI type 1, 27 bytes
 System Information
 	Manufacturer: HP
 	Product Name: HP EliteBook 845 14 inch G9 Notebook PC
-	Version:  
+	Version: SBKPF
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -247,7 +247,7 @@ Handle 0x0015, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 8990
-	Version: KBC Version 09.49.00
+	Version: KBC Version 09.4E.00
 	Serial Number: --
 	Asset Tag: --
 	97946E993916094B22613E03B8339091
@@ -389,7 +389,7 @@ Memory Device
 	Type: DDR5
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 4800 MT/s
-	Manufacturer: Micron Technology
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
 	8DD1BD6A8BB2BA857A4F0554D6464C12            
@@ -424,7 +424,7 @@ Memory Device
 	Type: DDR5
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 4800 MT/s
-	Manufacturer: Micron Technology
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
 	8DD1BD6A8BB2BA857A4F0554D6464C12            
@@ -478,33 +478,26 @@ Portable Battery
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
-Handle 0x000C, DMI type 24, 5 bytes
-Hardware Security
-	Power-On Password Status: Disabled
-	Keyboard Password Status: Disabled
-	Administrator Password Status: Disabled
-	Front Panel Reset Status: Disabled
-
-Handle 0x000D, DMI type 32, 11 bytes
+Handle 0x000C, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0013, DMI type 248, 9 bytes
+Handle 0x000E, DMI type 248, 9 bytes
 OEM-specific Type
 	Header and Data:
-		F8 09 13 00 34 02 6C 00 00
+		F8 09 0E 00 34 02 6C 00 00
 
-Handle 0x0024, DMI type 249, 84 bytes
+Handle 0x0013, DMI type 249, 84 bytes
 OEM-specific Type
 	Header and Data:
-		F9 54 24 00 02 01 00 00 00 00 00 00 00 00 00 00
+		F9 54 13 00 02 01 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 01 01 00 00 00 00 00 00
 		78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78
 		78 78 78 78 78 78 01 01 00 00 00 00 00 00 78 78
 		78 78 78 78 78 78 78 78 78 78 78 78 78 78 78 78
 		78 78 78 78
 
-Handle 0x000E, DMI type 11, 5 bytes
+Handle 0x000D, DMI type 11, 5 bytes
 OEM Strings
 	String 1: FBYTE#476J6S6b7B7H7M7Q7W7m7saBaEapaqauawbUcAdXdpdqeMfPguhKhkjhk8mEmGmVn7nWngpDpFpppqqjqz.r7;
 	String 2: BUILDID#22WWLHAT601#SUUZ#DUUZ;
@@ -512,11 +505,18 @@ OEM Strings
 	String 4: Buff=2
 	String 5: HRDWFEATS=;PROGKEY:1;NONHPBATDET:1;
 
-Handle 0x0025, DMI type 10, 6 bytes
+Handle 0x0024, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
 	Description: 512 MB
+
+Handle 0x0025, DMI type 24, 5 bytes
+Hardware Security
+	Power-On Password Status: Disabled
+	Keyboard Password Status: Disabled
+	Administrator Password Status: Disabled
+	Front Panel Reset Status: Disabled
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table
