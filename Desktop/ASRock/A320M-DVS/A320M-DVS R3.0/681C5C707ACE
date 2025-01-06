@@ -1,7 +1,6 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
-SMBIOS 3.0 present.
-22 structures occupying 1215 bytes.
+SMBIOS 3.0.0 present.
 Table at 0x000E94F0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -52,7 +51,7 @@ Base Board Information
 	Version:                       
 	Serial Number: --
 	Asset Tag: --
-	Features:
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:                       
@@ -89,7 +88,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:42:00.0
+	Bus Address: 0000:04:00.0
 
 Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
@@ -154,10 +153,10 @@ Physical Memory Array
 Handle 0x000C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x000B
-	Partition Width: 1
+	Partition Width: 2
 
 Handle 0x000D, DMI type 7, 19 bytes
 Cache Information
@@ -181,8 +180,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -260,27 +259,36 @@ Handle 0x0011, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x000B
 	Error Information Handle: 0x0010
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: CHANNEL A
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 2400 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
+	Part Number: DGMAD42666008S
+	Rank: 1
+	Configured Memory Speed: 1200 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
 
-Handle 0x0012, DMI type 18, 23 bytes
+Handle 0x0012, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0011
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: Unknown
+
+Handle 0x0013, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -290,13 +298,13 @@ Handle 0x0012, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0013, DMI type 17, 40 bytes
+Handle 0x0014, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x000B
-	Error Information Handle: 0x0012
+	Error Information Handle: 0x0013
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
@@ -309,20 +317,20 @@ Memory Device
 	Asset Tag: --
 	Part Number: CL19-19-19 D4-2666  
 	Rank: 1
-	Configured Clock Speed: 1200 MT/s
+	Configured Memory Speed: 1200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0014, DMI type 20, 35 bytes
+Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0013
+	Physical Device Handle: 0x0014
 	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: Unknown
 
-Handle 0x0015, DMI type 127, 4 bytes
+Handle 0x0016, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,14 +1,14 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-18 structures occupying 1079 bytes.
+18 structures occupying 1064 bytes.
 Table at 0x000EBE70.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: P1.50
-	Release Date: 04/29/2015
+	Version: P1.50D
+	Release Date: 03/03/2016
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 4 MB
@@ -82,19 +82,22 @@ Chassis Information
 Handle 0x0004, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE1
-	Type: x4 PCI Express
-	Current Usage: Available
+	Type: PCI Express
+	Data Bus Width: 4x or x4
+	Current Usage: In Use
 	Length: Long
 	ID: 17
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
+	Bus Address: ffff:01:1f.7
 
 Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 18
@@ -116,15 +119,15 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 8 GB
+	Maximum Capacity: 12 GB
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
 Handle 0x0010, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x000F
 	Partition Width: 255
 
@@ -134,8 +137,8 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
-	Form Factor: SODIMM
+	Size: 8 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: CHANNEL A
@@ -145,10 +148,10 @@ Memory Device
 	Manufacturer: <BAD INDEX>
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5173DB0-YK0  
-	Rank: 1
+	Part Number: BLS8G3D1609DS1S00.
+	Rank: 2
 	Configured Memory Speed: 800 MT/s
-	Minimum Voltage: 1.35 V
+	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
 
@@ -179,16 +182,16 @@ Memory Device
 Handle 0x0013, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0011
 	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: 1
 
 Handle 0x0014, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0012
 	Memory Array Mapped Address Handle: 0x0010

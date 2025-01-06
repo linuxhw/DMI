@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x80520000.
@@ -699,7 +699,8 @@ Onboard Device
 Handle 0x0047, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 0
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 0
@@ -709,14 +710,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.0
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x0048, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -726,14 +728,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.1
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x0049, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 2
@@ -743,14 +746,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.2
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x004A, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 3
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 3
@@ -760,14 +764,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.3
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x004B, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 4
@@ -777,14 +782,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.4
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x004C, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 5
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 5
@@ -794,14 +800,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.5
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x004D, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 6
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 6
@@ -811,7 +818,7 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.6
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
@@ -963,7 +970,7 @@ Group Associations
 Handle 0x0057, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 57 00 01 04 01 45 02 00 A0 06 01 10 80 20
+		DB 6A 57 00 01 04 01 45 02 00 90 06 01 10 80 20
 		00 00 00 00 48 00 00 00 00 00 00 06 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

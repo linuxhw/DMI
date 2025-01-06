@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 30 structures occupying 1427 bytes.
@@ -159,41 +159,41 @@ Memory Controller Information
 Handle 0x0008, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM0
-	Bank Connections: 1
+	Bank Connections: 0 5
 	Current Speed: 161 ns
-	Type: Unknown
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Type: ECC DIMM
+	Installed Size: 4096 MB (Double-bank Connection)
+	Enabled Size: 4096 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM1
-	Bank Connections: 1
+	Bank Connections: 0 5
 	Current Speed: 163 ns
-	Type: Unknown
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Type: ECC DIMM
+	Installed Size: 4096 MB (Double-bank Connection)
+	Enabled Size: 4096 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM2
-	Bank Connections: 0 5
+	Bank Connections: 1
 	Current Speed: 165 ns
-	Type: ECC DIMM
-	Installed Size: 4096 MB (Double-bank Connection)
-	Enabled Size: 4096 MB (Double-bank Connection)
+	Type: Unknown
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x000B, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM3
-	Bank Connections: 0 5
+	Bank Connections: 1
 	Current Speed: 167 ns
-	Type: ECC DIMM
-	Installed Size: 4096 MB (Double-bank Connection)
-	Enabled Size: 4096 MB (Double-bank Connection)
+	Type: Unknown
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x000C, DMI type 9, 13 bytes
@@ -212,7 +212,7 @@ Handle 0x000D, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIE2
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 18
 	Characteristics:
@@ -224,7 +224,7 @@ Handle 0x000E, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIE3
 	Type: x16 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 19
 	Characteristics:
@@ -289,25 +289,59 @@ Handle 0x0014, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0012
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: 64 bits
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 72 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 266 MT/s
 	Manufacturer: Manufacturer0
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum0
 
-Handle 0x0015, DMI type 126, 19 bytes
-Inactive
+Handle 0x0015, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0014
+	Memory Array Mapped Address Handle: 0x0013
+	Partition Row Position: 1
 
 Handle 0x0016, DMI type 17, 27 bytes
+Memory Device
+	Array Handle: 0x0012
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 72 bits
+	Size: 4 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM1
+	Bank Locator: BANK1
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 266 MT/s
+	Manufacturer: Manufacturer1
+	Serial Number: --
+	Asset Tag: --
+	Part Number: PartNum1
+
+Handle 0x0017, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0016
+	Memory Array Mapped Address Handle: 0x0013
+	Partition Row Position: 1
+
+Handle 0x0018, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0012
 	Error Information Handle: Not Provided
@@ -316,74 +350,30 @@ Memory Device
 	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
-	Locator: DIMM1
-	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Manufacturer1
-	Serial Number: --
-	Asset Tag: --
-	Part Number: PartNum1
-
-Handle 0x0017, DMI type 126, 19 bytes
-Inactive
-
-Handle 0x0018, DMI type 17, 27 bytes
-Memory Device
-	Array Handle: 0x0012
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 72 bits
-	Size: 4 GB
-	Form Factor: DIMM
-	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
-	Type: DDR2
-	Type Detail: Synchronous
-	Speed: 266 MT/s
-	Manufacturer: Manufacturer2
-	Serial Number: --
-	Asset Tag: --
-	Part Number: PartNum2
+	Type: Unknown
+	Type Detail: Unknown
 
-Handle 0x0019, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0018
-	Memory Array Mapped Address Handle: 0x0013
-	Partition Row Position: 1
+Handle 0x0019, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x001A, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0012
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 72 bits
-	Size: 4 GB
+	Total Width: Unknown
+	Data Width: 64 bits
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
-	Type: DDR2
-	Type Detail: Synchronous
-	Speed: 266 MT/s
-	Manufacturer: Manufacturer3
-	Serial Number: --
-	Asset Tag: --
-	Part Number: PartNum3
+	Type: Unknown
+	Type Detail: Unknown
 
-Handle 0x001B, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x001A
-	Memory Array Mapped Address Handle: 0x0013
-	Partition Row Position: 1
+Handle 0x001B, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x001C, DMI type 32, 20 bytes
 System Boot Information

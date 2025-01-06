@@ -1,13 +1,13 @@
-# dmidecode 3.5
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0xBDE22000.
+Table at 0x000E6CC0.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: P5.00
-	Release Date: 05/10/2021
+	Version: P10.08
+	Release Date: 01/19/2024
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -80,7 +80,8 @@ Chassis Information
 Handle 0x0004, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 17
@@ -93,7 +94,8 @@ System Slot Information
 Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE2
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 18
@@ -106,7 +108,8 @@ System Slot Information
 Handle 0x0006, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE3
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 19
@@ -119,7 +122,8 @@ System Slot Information
 Handle 0x0007, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE4_M2_1
-	Type: x4 PCI Express
+	Type: PCI Express
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Short
 	ID: 20
@@ -132,7 +136,8 @@ System Slot Information
 Handle 0x0008, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE5
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 21
@@ -145,7 +150,8 @@ System Slot Information
 Handle 0x0009, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE6
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 22
@@ -179,7 +185,7 @@ Handle 0x000E, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.7
+	Firmware Revision: 3.8
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -363,25 +369,25 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
+	Speed: 2933 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F4-3200C16-8GFX
+	Part Number: CMK8GX4M1D3000C16   
 	Rank: 1
-	Configured Memory Speed: 2400 MT/s
+	Configured Memory Speed: 2933 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
-	Memory Technology: DRAM
-	Memory Operating Mode Capability: Volatile memory
+	Memory Technology: <OUT OF SPEC>
+	Memory Operating Mode Capability: None
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 5, Hex 0xCD
+	Module Manufacturer ID: Unknown
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: None
 	Cache Size: None
 	Logical Size: None
 
@@ -443,25 +449,25 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
+	Speed: 2933 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F4-3200C16-8GFX
+	Part Number: CMK8GX4M1D3000C16   
 	Rank: 1
-	Configured Memory Speed: 2400 MT/s
+	Configured Memory Speed: 2933 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
-	Memory Technology: DRAM
-	Memory Operating Mode Capability: Volatile memory
+	Memory Technology: <OUT OF SPEC>
+	Memory Operating Mode Capability: None
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 5, Hex 0xCD
+	Module Manufacturer ID: Unknown
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: None
 	Cache Size: None
 	Logical Size: None
 

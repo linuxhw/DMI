@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x4F0F8000.
+Table at 0x4F0C2000.
 
 Handle 0x0000, DMI type 222, 14 bytes
 OEM-specific Type
@@ -45,13 +45,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: LPDDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2133 MT/s
+	Speed: 1867 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: K4EBE304EB-EGCG   
+	Part Number: K4EBE304EB-EGCF   
 	Rank: 2
-	Configured Memory Speed: 2133 MT/s
+	Configured Memory Speed: 1867 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -69,13 +69,13 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: LPDDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2133 MT/s
+	Speed: 1867 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: K4EBE304EB-EGCG   
+	Part Number: K4EBE304EB-EGCF   
 	Rank: 2
-	Configured Memory Speed: 2133 MT/s
+	Configured Memory Speed: 1867 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -488,14 +488,14 @@ OEM-specific Type
 
 Handle 0x002D, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 50 bytes
+	Area Length: 386 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000002
+	Change Token: 0x00000017
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -560,7 +560,7 @@ OEM-specific Type
 Handle 0x0036, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 36 00 4C 45 4E 4F 56 4F 0B 05 01 06 00 00
+		8C 13 36 00 4C 45 4E 4F 56 4F 0B 05 01 07 00 00
 		00 00 00
 
 Handle 0x0037, DMI type 140, 23 bytes
@@ -596,8 +596,8 @@ Group Associations
 Handle 0x003C, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 3C 00 01 03 01 45 02 00 90 06 81 10 80 30
-		00 00 00 04 40 C8 00 01 1F 00 00 C9 0A 40 44 02
+		DB 51 3C 00 01 03 01 45 02 00 A0 06 83 10 89 30
+		00 00 00 00 40 C8 00 01 1F 00 00 C9 0A 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

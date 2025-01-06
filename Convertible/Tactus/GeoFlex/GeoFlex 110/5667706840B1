@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x79F0B000.
@@ -40,7 +40,7 @@ System Information
 	Version: Default string
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: Reserved
 	SKU Number: GE244-DE-1
 	Family: GeoFlex
 
@@ -818,7 +818,8 @@ BIOS Language Information
 Handle 0x0055, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J7H1
-	Type: x4 PCI Express 2 x4
+	Type: PCI Express 2 x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Short
 	ID: 0
@@ -827,13 +828,14 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:00:13.0
-	Data Bus Width: 10
+	Data Bus Width (Base): 10
 	Peer Devices: 0
 
 Handle 0x0056, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J8H1
-	Type: x2 PCI Express 2 x2
+	Type: PCI Express 2 x2
+	Data Bus Width: 2x or x2
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -842,7 +844,7 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:00:14.1
-	Data Bus Width: 9
+	Data Bus Width (Base): 9
 	Peer Devices: 0
 
 Handle 0x0057, DMI type 127, 4 bytes

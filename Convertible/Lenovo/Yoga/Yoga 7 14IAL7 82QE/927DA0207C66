@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3 present.
 86 structures occupying 5351 bytes.
@@ -7,8 +7,8 @@ Table at 0x40082000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: J1CN34WW
-	Release Date: 09/26/2022
+	Version: J1CN40WW
+	Release Date: 08/10/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -32,8 +32,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.34
-	Firmware Revision: 1.34
+	BIOS Revision: 1.40
+	Firmware Revision: 1.40
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -407,7 +407,8 @@ Port Connector Information
 Handle 0x001E, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J6C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 1
@@ -415,13 +416,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.0
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x001F, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J6D2
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 2
@@ -429,13 +431,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.1
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x0020, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J7C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 3
@@ -443,13 +446,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.2
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x0021, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J7D1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 4
@@ -457,13 +461,14 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.3
-	Data Bus Width: 8
+	Data Bus Width (Base): 8
 	Peer Devices: 0
 
 Handle 0x0022, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J8C1
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Other
 	ID: 5
@@ -471,7 +476,7 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.4
-	Data Bus Width: 10
+	Data Bus Width (Base): 10
 	Peer Devices: 0
 
 Handle 0x0023, DMI type 11, 5 bytes
@@ -1078,7 +1083,7 @@ OEM-specific Type
 Handle 0x004B, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 4B 00 01 04 01 45 02 00 90 06 01 85 30 20
+		DB 6A 4B 00 01 04 01 45 02 00 A0 06 01 85 30 20
 		00 00 00 00 40 00 00 03 1F 04 02 C9 03 60 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -1101,8 +1106,8 @@ OEM-specific Type
 Handle 0x004D, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 4D 00 03 01 00 0C 00 65 70 00 02 00 00 00
-		04 1F 00 03 00 FF FF FF FF FF
+		DD 1A 4D 00 03 01 00 0C 00 75 10 00 02 00 00 00
+		04 24 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -1111,7 +1116,7 @@ OEM-specific Type
 Handle 0x004E, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 4E 00 03 01 00 0C 00 65 70 00 02 00 00 00
+		DD 1A 4E 00 03 01 00 0C 00 75 10 00 02 00 00 00
 		00 00 00 03 04 10 00 0F F2 06
 	Strings:
 		Reference Code - ME
@@ -1122,7 +1127,7 @@ OEM-specific Type
 Handle 0x004F, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 4F 00 06 01 00 0C 00 65 70 00 02 03 FF FF
+		DD 2F 4F 00 06 01 00 0C 00 75 10 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 01 00 05 00 FF FF FF 01
 		00 06 00 02 46 00 00 00 07 00 04 00 00 00 00
 	Strings:
@@ -1137,8 +1142,8 @@ OEM-specific Type
 Handle 0x0050, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 50 00 0B 01 00 0C 00 65 70 00 02 00 00 00
-		03 60 00 03 00 0C 00 65 70 00 04 05 FF FF FF FF
+		DD 52 50 00 0B 01 00 0C 00 75 10 00 02 00 00 00
+		03 60 00 03 00 0C 00 75 10 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 02 00 07 00 00 00 00 02 00 08
 		00 FF FF FF FF FF 09 00 00 00 00 7F 00 0A 00 00
 		00 00 11 00 0B 00 10 01 00 00 00 0C 00 FF FF FF
@@ -1163,7 +1168,7 @@ OEM-specific Type
 		DD 52 51 00 0B 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 FF FF FF FF FF 0A
-		00 FF FF FF FF FF 0B 00 01 22 00 00 00 0C 00 00
+		00 FF FF FF FF FF 0B 00 01 28 00 00 00 0C 00 00
 		21 00 46 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
 		00 00
 	Strings:

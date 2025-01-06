@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x80520000.
@@ -109,7 +109,7 @@ Handle 0x0006, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 06 00 03 01 00 09 00 15 50 00 02 00 00 00
-		00 D6 00 03 00 01 05 00 00 00
+		00 EC 00 03 00 01 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -711,6 +711,7 @@ System Slot Information
 	Bus Address: 0000:00:1c.0
 	Data Bus Width: 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0048, DMI type 9, 24 bytes
 System Slot Information
@@ -727,6 +728,7 @@ System Slot Information
 	Bus Address: 0000:00:1c.1
 	Data Bus Width: 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0049, DMI type 9, 24 bytes
 System Slot Information
@@ -743,6 +745,7 @@ System Slot Information
 	Bus Address: 0000:00:1c.2
 	Data Bus Width: 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x004A, DMI type 9, 24 bytes
 System Slot Information
@@ -759,6 +762,7 @@ System Slot Information
 	Bus Address: 0000:00:1c.3
 	Data Bus Width: 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x004B, DMI type 9, 24 bytes
 System Slot Information
@@ -775,6 +779,7 @@ System Slot Information
 	Bus Address: 0000:00:1c.4
 	Data Bus Width: 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x004C, DMI type 9, 24 bytes
 System Slot Information
@@ -791,6 +796,7 @@ System Slot Information
 	Bus Address: 0000:00:1c.5
 	Data Bus Width: 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x004D, DMI type 9, 24 bytes
 System Slot Information
@@ -807,6 +813,7 @@ System Slot Information
 	Bus Address: 0000:00:1c.6
 	Data Bus Width: 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x004E, DMI type 200, 16 bytes
 OEM-specific Type
@@ -829,16 +836,10 @@ OEM-specific Type
 		F8 12 51 00 AC AC AA 17 FF FF 00 00 00 00 00 00
 		00 00
 
-Handle 0x0052, DMI type 130, 20 bytes
+Handle 0x0052, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 52 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
-		C0 00 00 00
-
-Handle 0x0053, DMI type 131, 64 bytes
-OEM-specific Type
-	Header and Data:
-		83 40 53 00 31 00 00 00 0D 00 00 00 00 00 04 00
+		83 40 52 00 31 00 00 00 0D 00 00 00 00 00 04 00
 		F8 00 84 02 00 00 00 00 01 00 00 00 00 00 0E 00
 		25 04 00 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 E2 01 00 00 76 50 72 6F 00 00 00 00
@@ -846,8 +847,8 @@ OEM-specific Type
 Handle 0x000F, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: CHCN23WW
-	Release Date: 06/05/2020
+	Version: CHCN27WW
+	Release Date: 12/06/2021
 	ROM Size: 16 MB
 	Characteristics:
 		PCI is supported
@@ -868,8 +869,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.5
-	Firmware Revision: 1.18
+	BIOS Revision: 1.27
+	Firmware Revision: 1.19
 
 Handle 0x0011, DMI type 2, 17 bytes
 Base Board Information
@@ -911,18 +912,18 @@ System Information
 	Version: Lenovo YOGA C640-13IML
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: Other
 	SKU Number: LENOVO_MT_81UE_BU_idea_FM_YOGA C640-13IML
 	Family: YOGA C640-13IML
 
-Handle 0x0054, DMI type 24, 5 bytes
+Handle 0x0053, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Not Implemented
 	Keyboard Password Status: Not Implemented
 	Administrator Password Status: Not Implemented
 	Front Panel Reset Status: Not Implemented
 
-Handle 0x0055, DMI type 14, 20 bytes
+Handle 0x0054, DMI type 14, 20 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 5
@@ -932,7 +933,7 @@ Group Associations
 		0x0009 (OEM-specific)
 		0x000A (OEM-specific)
 
-Handle 0x0056, DMI type 15, 31 bytes
+Handle 0x0055, DMI type 15, 31 bytes
 System Event Log
 	Area Length: 3970 bytes
 	Header Start Offset: 0x0000
@@ -953,16 +954,16 @@ System Event Log
 	Descriptor 4: Log area reset/cleared
 	Data Format 4: None
 
-Handle 0x0057, DMI type 14, 8 bytes
+Handle 0x0056, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x0058, DMI type 219, 106 bytes
+Handle 0x0057, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 58 00 01 04 01 45 02 00 A0 06 01 10 80 20
+		DB 6A 57 00 01 04 01 45 02 00 A0 06 01 10 86 20
 		00 00 00 00 48 00 00 00 00 00 00 06 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -977,7 +978,7 @@ OEM-specific Type
 
 Handle 0x0050, DMI type 24, 5 bytes
 Hardware Security
-	Power-On Password Status: Enabled
+	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Enabled
 	Front Panel Reset Status: Disabled

@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0x36770000.
+Table at 0x37766000.
 
 Handle 0x0000, DMI type 16, 23 bytes
 Physical Memory Array
@@ -313,8 +313,8 @@ TPM Device
 Handle 0x000B, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 0B 00 03 01 00 0A 00 2D 72 00 02 00 00 00
-		00 66 00 03 00 01 0E 0A 00 00
+		DD 1A 0B 00 03 01 00 0A 00 7E 70 00 02 00 00 00
+		00 A6 00 03 00 01 0E 14 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -323,8 +323,8 @@ OEM-specific Type
 Handle 0x000C, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 0C 00 03 01 00 0A 00 2D 72 00 02 00 0F 00
-		00 02 00 03 04 0F 00 02 61 05
+		DD 1A 0C 00 03 01 00 0A 00 7E 70 00 02 00 0F 00
+		00 03 00 03 04 0F 00 02 61 05
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -334,7 +334,7 @@ OEM-specific Type
 Handle 0x000D, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 0D 00 06 01 00 0A 00 2D 72 00 02 03 FF FF
+		DD 2F 0D 00 06 01 00 0A 00 7E 70 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 20 00 05 00 FF FF FF 20
 		00 06 00 02 46 00 00 00 07 00 04 00 00 00 00
 	Strings:
@@ -349,8 +349,8 @@ OEM-specific Type
 Handle 0x000E, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 0E 00 0B 01 00 0A 00 2D 72 00 02 00 01 00
-		04 02 00 03 00 0A 00 2D 72 00 04 05 FF FF FF FF
+		DD 52 0E 00 0B 01 00 0A 00 7E 70 00 02 00 02 00
+		02 09 00 03 00 0A 00 7E 70 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 01 00 07 00 00 00 00 01 00 08
 		00 FF FF FF FF FF 09 00 11 01 00 00 00 0A 00 00
 		00 00 DD 00 0B 00 22 01 00 00 00 0C 00 FF FF FF
@@ -481,7 +481,7 @@ Processor Information
 	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 3000 MHz
-	Current Speed: 3000 MHz
+	Current Speed: 4300 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0011
@@ -937,7 +937,8 @@ Onboard Device
 Handle 0x0050, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 0
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 0
@@ -947,13 +948,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.0
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0051, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -963,13 +966,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.1
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0052, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 2
@@ -979,13 +984,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.2
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0053, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 3
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 3
@@ -995,13 +1002,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.3
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0054, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 4
@@ -1011,13 +1020,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.4
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0055, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 5
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 5
@@ -1027,13 +1038,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.5
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0056, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 6
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 6
@@ -1043,8 +1056,9 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.6
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0057, DMI type 11, 5 bytes
 OEM Strings
@@ -1059,16 +1073,16 @@ OEM-specific Type
 Handle 0x0059, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 59 00 35 00 00 00 0F 00 00 00 00 00 02 00
+		83 40 59 00 35 00 00 00 0F 00 00 00 00 00 03 00
 		F8 00 82 A0 00 00 00 00 01 00 00 00 00 00 0F 00
 		61 05 02 00 00 00 00 00 FE 00 FF FF 00 00 00 00
-		00 00 00 00 E6 01 00 00 76 50 72 6F 00 00 00 00
+		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0018, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: EHCN40WW
-	Release Date: 01/28/2021
+	Version: EHCN81WW
+	Release Date: 02/28/2024
 	ROM Size: 12 MB
 	Characteristics:
 		ACPI is supported
@@ -1079,8 +1093,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.40
-	Firmware Revision: 1.40
+	BIOS Revision: 1.81
+	Firmware Revision: 1.81
 
 Handle 0x0019, DMI type 1, 27 bytes
 System Information
@@ -1129,7 +1143,7 @@ Chassis Information
 Handle 0x0015, DMI type 200, 16 bytes
 OEM-specific Type
 	Header and Data:
-		C8 10 15 00 01 02 01 27 01 14 01 20 B2 80 01 20
+		C8 10 15 00 01 02 01 27 01 14 01 50 B2 80 01 05
 	Strings:
 		INVALID
 		82BG0001US
@@ -1168,14 +1182,14 @@ Group Associations
 
 Handle 0x005E, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 2610 bytes
+	Area Length: 3970 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
-	Status: Valid, Not Full
-	Change Token: 0x000000A2
+	Status: Valid, Full
+	Change Token: 0x000000F7
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
