@@ -1,8 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
 72 structures occupying 5153 bytes.
-Table at 0x7CFE5000.
+Table at 0x7CFE1000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -146,8 +146,8 @@ OEM-specific Type
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.20.2
-	Release Date: 10/27/2022
+	Version: 1.29.0
+	Release Date: 04/29/2024
 	ROM Size: 32 MB
 	Characteristics:
 		PCI is supported
@@ -168,7 +168,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.20
+	BIOS Revision: 1.29
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -252,7 +252,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i3-10110U CPU @ 2.10GHz
-	Voltage: 0.7 V
+	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 2600 MHz
 	Current Speed: 2673 MHz
@@ -732,7 +732,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 00 83 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 84 02 00 00 00 00 01 00 00 00 01 00 0E 00
-		C6 07 41 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		EF 08 48 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x8800, DMI type 136, 8 bytes
@@ -777,7 +777,7 @@ OEM-specific Type
 Handle 0xCD00, DMI type 205, 12 bytes
 OEM-specific Type
 	Header and Data:
-		CD 0C 00 CD 01 01 00 02 00 00 14 12
+		CD 0C 00 CD 01 01 00 02 00 00 BF 00
 	Strings:
 		BIOS Guard
 
@@ -785,7 +785,7 @@ Handle 0xCD01, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 01 CD 03 01 00 09 00 9E 10 00 02 00 00 00
-		00 F0 00 03 00 01 02 00 00 00
+		00 F8 00 03 00 01 02 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -795,7 +795,7 @@ Handle 0xCD02, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 02 CD 03 01 00 09 00 9E 10 00 02 00 00 00
-		00 00 00 03 04 0E 01 41 C6 07
+		00 00 00 03 04 0E 01 48 EF 08
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -928,7 +928,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 22 12 27 12 54 01 00 00
+		DE 10 00 DE 01 04 00 00 24 08 18 23 43 01 00 00
 
 Handle 0xF800, DMI type 248, 9 bytes
 OEM-specific Type

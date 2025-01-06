@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-56 structures occupying 2341 bytes.
+56 structures occupying 2265 bytes.
 Table at 0x000EBA00.
 
 Handle 0xDA00, DMI type 218, 245 bytes
@@ -417,42 +417,33 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
-Handle 0x001E, DMI type 17, 28 bytes
-Memory Device
-	Array Handle: 0x001D
-	Error Information Handle: 0x0000
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM_A
-	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-
-Handle 0x0020, DMI type 20, 19 bytes
+Handle 0x001F, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x001F
-	Memory Array Mapped Address Handle: 0x0021
+	Physical Device Handle: 0x001E
+	Memory Array Mapped Address Handle: 0x0022
 	Partition Row Position: 1
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x0021, DMI type 19, 15 bytes
+Handle 0x0021, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0020
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 1
+
+Handle 0x0022, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x001D
 	Partition Width: 2
 
@@ -462,14 +453,6 @@ BIOS Language Information
 	Installable Languages: 1
 		eng
 	Currently Installed Language: eng
-
-Handle 0x0039, DMI type 131, 64 bytes
-OEM-specific Type
-	Header and Data:
-		83 40 39 00 31 00 00 00 00 00 00 00 00 00 00 00
-		F8 00 4B 1C FF FF FF FF 01 00 00 00 00 00 07 00
-		AD 04 04 00 00 00 00 00 C8 00 FF FF 00 00 00 00
-		00 00 00 00 F2 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0032, DMI type 216, 9 bytes
 OEM-specific Type
@@ -568,9 +551,29 @@ Handle 0x001A, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
-	Description: Mobile Intel SandyBridge HD Graphics
+	Description: NVIDIA N12P GE
 
-Handle 0x001F, DMI type 17, 28 bytes
+Handle 0x001E, DMI type 17, 28 bytes
+Memory Device
+	Array Handle: 0x001D
+	Error Information Handle: 0x0000
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: SODIMM
+	Set: None
+	Locator: DIMM_A
+	Bank Locator: BANK 0
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: 017A
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 78.B2GCN.B700C    
+	Rank: Unknown
+
+Handle 0x0020, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x001D
 	Error Information Handle: 0x0000
@@ -590,6 +593,6 @@ Memory Device
 	Part Number: AM1U16BC4P2-B19B  
 	Rank: Unknown
 
-Handle 0x003A, DMI type 127, 4 bytes
+Handle 0x0039, DMI type 127, 4 bytes
 End Of Table
 

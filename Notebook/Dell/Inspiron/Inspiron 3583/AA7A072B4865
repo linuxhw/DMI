@@ -1,13 +1,13 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.1 present.
-Table at 0x000E0000.
+Table at 0x000E7710.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.15.0
-	Release Date: 08/31/2021
+	Version: 1.22.1
+	Release Date: 12/19/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -34,7 +34,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.15
+	BIOS Revision: 1.22
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -58,7 +58,7 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Not Specified
-	Chassis Handle: 0x0003
+	Chassis Handle: 0x0300
 	Type: Motherboard
 	Contained Object Handles: 0
 
@@ -549,7 +549,7 @@ Handle 0x0047, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 47 00 03 01 00 07 00 58 40 00 02 00 00 00
-		00 EA 00 03 00 01 05 00 00 00
+		00 F4 00 03 00 01 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -559,7 +559,7 @@ Handle 0x0048, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 48 00 03 01 00 07 00 58 40 00 02 00 00 00
-		00 00 00 03 04 0C 00 51 D9 06
+		00 00 00 03 04 0C 00 5A 18 08
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -703,7 +703,7 @@ Processor Information
 	L3 Cache Handle: 0x004D
 	Serial Number: --
 	Asset Tag: --
-	Part Number: To Be Filled By O.E.M.
+	Part Number: Not Specified
 	Core Count: 2
 	Core Enabled: 2
 	Thread Count: 4
@@ -807,7 +807,7 @@ Portable Battery
 	Design Capacity: 41990 mWh
 	Design Voltage: 11400 mV
 	SBDS Version: 1.0
-	Maximum Error: 9%
+	Maximum Error: 2%
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000801
 
@@ -879,7 +879,7 @@ OEM-specific Type
 Handle 0xD000, DMI type 208, 16 bytes
 OEM-specific Type
 	Header and Data:
-		D0 10 00 D0 03 0A FE 00 CA 08 01 02 00 00 00 00
+		D0 10 00 D0 03 11 FE 00 CA 08 01 02 00 00 00 00
 	Strings:
 		20190728
 		20190728
@@ -1060,7 +1060,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 21 11 22 16 52 01 00 00
+		DE 10 00 DE 01 04 00 00 23 04 30 01 12 01 00 00
 
 Handle 0xF022, DMI type 218, 65 bytes
 OEM-specific Type
@@ -1082,7 +1082,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 24 F0 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 84 9D 00 00 00 00 01 00 00 00 00 00 0C 00
-		D9 06 51 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		18 08 5A 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0xF029, DMI type 41, 11 bytes
@@ -1219,8 +1219,8 @@ OEM-specific Type
 		CD 59 39 F0 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
-		09 00 85 10 0D 0E 01 04 03 00 00 0F 00 00 07 00
+		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
+		FF FF FF FF 0D 0E 01 04 03 00 00 0F 00 00 07 00
 		00 00 10 00 00 02 00 0E 00
 	Strings:
 		Lan Phy Version

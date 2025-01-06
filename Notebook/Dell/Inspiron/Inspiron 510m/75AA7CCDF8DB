@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.3 present.
 61 structures occupying 2310 bytes.
@@ -62,7 +62,7 @@ Base Board Information
 	Serial Number: --
 	Asset Tag: --
 
-...
+5977B1E14E8F708A5CB03358AE2DB83A
 Chassis Information
 	Manufacturer: Dell Inc.
 	Type: Portable
@@ -115,7 +115,7 @@ Processor Information
 	Voltage: 3.3 V
 	External Clock: 133 MHz
 	Max Speed: 1800 MHz
-	Current Speed: 600 MHz
+	Current Speed: 1600 MHz
 	Status: Populated, Enabled
 	Upgrade: None
 	L1 Cache Handle: 0x0700
@@ -144,8 +144,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -233,7 +233,8 @@ Port Connector Information
 Handle 0x0900, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCMCIA 0
-	Type: 32-bit PC Card (PCMCIA)
+	Type: PC Card (PCMCIA)
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Other
 	ID: Adapter 0, Socket 0
@@ -251,7 +252,8 @@ Inactive
 Handle 0x0904, DMI type 9, 13 bytes
 System Slot Information
 	Designation: MiniPCI
-	Type: 32-bit Other
+	Type: Other
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Other
 	Characteristics:
@@ -274,7 +276,7 @@ On Board Device Information
 Handle 0x0B00, DMI type 11, 5 bytes
 OEM Strings
 	String 1: Dell System
-	String 2: 5[0004]
+	String 2: 5[0003]
 
 Handle 0x0D00, DMI type 13, 22 bytes
 BIOS Language Information
@@ -298,7 +300,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A
@@ -317,7 +319,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B
@@ -455,7 +457,7 @@ OEM-specific Type
 Handle 0xD300, DMI type 211, 13 bytes
 OEM-specific Type
 	Header and Data:
-		D3 0D 00 D3 01 03 02 01 00 00 00 00 02
+		D3 0D 00 D3 01 04 02 01 00 00 00 00 02
 	Strings:
 		Back of System
 		        

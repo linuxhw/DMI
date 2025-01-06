@@ -1,8 +1,8 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
-89 structures occupying 6548 bytes.
-Table at 0x60937000.
+89 structures occupying 6564 bytes.
+Table at 0x6092F000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -148,8 +148,8 @@ OEM-specific Type
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.21.0
-	Release Date: 03/10/2023
+	Version: 1.33.0
+	Release Date: 11/14/2024
 	ROM Size: 32 MB
 	Characteristics:
 		PCI is supported
@@ -170,7 +170,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.21
+	BIOS Revision: 1.33
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -257,7 +257,7 @@ Processor Information
 	Voltage: 0.6 V
 	External Clock: 100 MHz
 	Max Speed: 4200 MHz
-	Current Speed: 1300 MHz
+	Current Speed: 1400 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0701
@@ -424,7 +424,8 @@ Port Connector Information
 Handle 0x0900, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 0
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -434,14 +435,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.0
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x0901, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -451,14 +453,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.6
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x0902, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Long
 	ID: 2
@@ -468,7 +471,7 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:14.3
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
@@ -864,7 +867,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 00 83 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 82 A0 00 00 00 00 01 00 00 00 00 00 0F 00
-		6E 08 29 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		49 0A 32 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x8800, DMI type 136, 8 bytes
@@ -915,15 +918,15 @@ OEM-specific Type
 Handle 0xCD00, DMI type 205, 12 bytes
 OEM-specific Type
 	Header and Data:
-		CD 0C 00 CD 01 01 00 02 00 00 4F 12
+		CD 0C 00 CD 01 01 00 02 00 00 69 00
 	Strings:
 		BIOS Guard
 
 Handle 0xCD01, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
-		CD 1A 01 CD 03 01 00 0A 00 51 31 00 02 00 00 00
-		00 A4 00 03 00 01 0E 2E 00 00
+		CD 1A 01 CD 03 01 00 0A 00 7E 70 00 02 00 00 00
+		00 B8 00 03 00 01 0E 2E 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -932,8 +935,8 @@ OEM-specific Type
 Handle 0xCD02, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
-		CD 1A 02 CD 03 01 00 0A 00 51 31 00 02 00 00 00
-		00 00 00 03 04 0F 00 29 6E 08
+		CD 1A 02 CD 03 01 00 0A 00 7E 70 00 02 00 00 00
+		00 00 00 03 04 0F 00 32 49 0A
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -943,7 +946,7 @@ OEM-specific Type
 Handle 0xCD03, DMI type 205, 47 bytes
 OEM-specific Type
 	Header and Data:
-		CD 2F 03 CD 06 01 00 0A 00 51 31 00 02 03 FF FF
+		CD 2F 03 CD 06 01 00 0A 00 7E 70 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 20 00 05 00 FF FF FF 20
 		00 06 00 02 0A 00 00 00 07 00 04 00 00 00 00
 	Strings:
@@ -958,11 +961,11 @@ OEM-specific Type
 Handle 0xCD04, DMI type 205, 82 bytes
 OEM-specific Type
 	Header and Data:
-		CD 52 04 CD 0B 01 00 0A 00 51 31 00 02 00 02 00
-		02 02 00 03 00 0A 00 51 31 00 04 05 FF FF FF FF
+		CD 52 04 CD 0B 01 00 0A 00 7E 70 00 02 00 02 00
+		02 0A 00 03 00 0A 00 7E 70 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 01 00 07 00 00 00 00 01 00 08
-		00 FF FF FF FF FF 09 00 11 01 07 00 00 0A 00 00
-		00 00 FA 00 0B 00 2E 01 00 00 00 0C 00 FF FF FF
+		00 FF FF FF FF FF 09 00 11 01 08 00 00 0A 00 00
+		00 00 FB 00 0B 00 30 01 00 00 00 0C 00 FF FF FF
 		FF FF
 	Strings:
 		Reference Code - SA - System Agent
@@ -1080,7 +1083,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 23 04 07 15 59 01 00 00
+		DE 10 00 DE 01 04 00 00 24 12 02 16 33 01 00 00
 
 Handle 0xF800, DMI type 248, 9 bytes
 OEM-specific Type

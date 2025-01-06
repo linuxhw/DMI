@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x79997000.
+Table at 0x79994000.
 
 Handle 0xDA00, DMI type 218, 245 bytes
 OEM-specific Type
@@ -175,8 +175,8 @@ OEM-specific Type
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.8.0
-	Release Date: 10/03/2019
+	Version: 1.14.0
+	Release Date: 01/12/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 6144 kB
@@ -202,13 +202,13 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.8
+	BIOS Revision: 1.14
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Dell Inc.
 	Product Name: Inspiron 15-3573
-	Version: 1.8.0
+	Version: 1.14.0
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -500,7 +500,7 @@ OEM Strings
 	String 3: 3[3.3]
 	String 4: 4[0001]
 	String 5: 6[D0, D4, D8, D9, DB, DC, DD]
-	String 6: 10[01.08.00]
+	String 6: 10[01.14.00]
 	String 7: 13[P63F]
 	String 8: 14[0]
 	String 9: 15[11]
@@ -565,25 +565,33 @@ Handle 0x0028, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0029, DMI type 216, 9 bytes
-OEM-specific Type
-	Header and Data:
-		D8 09 29 00 00 00 00 00 00
+Handle 0x0029, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: CTNI
+	Specification Version: 2.0	Firmware Revision: 403.1
+	Description: INTEL	Characteristics:
+		Family configurable via platform software support
+	OEM-specific Information: 0x00000000
 
-Handle 0x002A, DMI type 217, 37 bytes
+Handle 0x002A, DMI type 216, 9 bytes
 OEM-specific Type
 	Header and Data:
-		D9 25 2A 00 01 02 02 02 4B 65 79 62 6F 61 72 64
+		D8 09 2A 00 00 00 00 00 00
+
+Handle 0x002B, DMI type 217, 37 bytes
+OEM-specific Type
+	Header and Data:
+		D9 25 2B 00 01 02 02 02 4B 65 79 62 6F 61 72 64
 		20 4C 61 79 6F 75 74 00 4B 65 79 62 6F 61 72 64
 		20 54 79 70 65
 
-Handle 0x002B, DMI type 220, 22 bytes
+Handle 0x002C, DMI type 220, 22 bytes
 OEM-specific Type
 	Header and Data:
-		DC 16 2B 00 01 F0 00 00 02 F0 00 00 00 00 03 F0
+		DC 16 2C 00 01 F0 00 00 02 F0 00 00 00 00 03 F0
 		04 F0 00 00 00 00
 
-Handle 0x002C, DMI type 7, 19 bytes
+Handle 0x002D, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L1
 	Configuration: Enabled, Not Socketed, Level 1
@@ -599,7 +607,7 @@ Cache Information
 	System Type: Other
 	Associativity: Other
 
-Handle 0x002D, DMI type 7, 19 bytes
+Handle 0x002E, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L2
 	Configuration: Enabled, Not Socketed, Level 2
@@ -615,7 +623,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x002E, DMI type 4, 48 bytes
+Handle 0x002F, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: SOCKET 0
 	Type: Central Processor
@@ -659,8 +667,8 @@ Processor Information
 	Current Speed: 1100 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
-	L1 Cache Handle: 0x002C
-	L2 Cache Handle: 0x002D
+	L1 Cache Handle: 0x002D
+	L2 Cache Handle: 0x002E
 	L3 Cache Handle: Not Provided
 	Serial Number: --
 	Asset Tag: --
@@ -671,17 +679,17 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x002F, DMI type 13, 22 bytes
+Handle 0x0030, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0030, DMI type 222, 16 bytes
+Handle 0x0031, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 30 00 00 00 FF FF 00 00 00 00 00 00 00 00
+		DE 10 31 00 00 00 FF FF 00 00 00 00 00 00 00 00
 
 Handle 0xB000, DMI type 176, 5 bytes
 OEM-specific Type

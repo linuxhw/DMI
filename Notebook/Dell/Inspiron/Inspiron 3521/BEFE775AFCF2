@@ -1,13 +1,14 @@
-# dmidecode 2.12
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-72 structures occupying 3120 bytes.
-Table at 0x000E68F0.
+72 structures occupying 3117 bytes.
+Table at 0x9AEBC000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: A14
-	Release Date: 07/31/2015
+	Version: A16
+	Release Date: 05/24/2018
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 4608 kB
@@ -43,7 +44,7 @@ Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Dell Inc.
 	Product Name: Inspiron 3521
-	Version: A14
+	Version: A16
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -70,7 +71,7 @@ Chassis Information
 	Manufacturer: Dell Inc.
 	Type: Portable
 	Lock: Not Present
-	Version: A14
+	Version: A16
 	Serial Number: --
 	Asset Tag: --
 	Boot-up State: Safe
@@ -121,7 +122,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i3-3227U CPU @ 1.90GHz
-	Voltage: 0.9 V
+	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 4000 MHz
 	Current Speed: 1900 MHz
@@ -170,8 +171,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -238,8 +239,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -449,7 +450,7 @@ OEM Strings
 	String 7: 7[]
 	String 8: 8[]
 	String 9: 9[]
-	String 10: 10[A14]
+	String 10: 10[A16]
 	String 11: 11[]
 	String 12: 12[]
 	String 13: 13[P28F]
@@ -487,20 +488,20 @@ Memory Device
 	Error Information Handle: 0x0026
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: JDIMM1
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1066 MHz
-	Manufacturer: Samsung
+	Speed: 1333 MT/s
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5673FH0-CF8  
+	Part Number: GR1333S364L9/8G
 	Rank: 2
-	Configured Clock Speed: 1067 MHz
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0025, DMI type 17, 34 bytes
 Memory Device
@@ -508,20 +509,20 @@ Memory Device
 	Error Information Handle: 0x0027
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: JDIMM2
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: ASint Technology
 	Serial Number: --
 	Asset Tag: --
 	Part Number: SSA302G08-GDJEC   
 	Rank: 2
-	Configured Clock Speed: 1067 MHz
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0026, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -556,16 +557,16 @@ Handle 0x0028, DMI type 18, 23 bytes
 Handle 0x0029, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x0023
 	Partition Width: 2
 
 Handle 0x002A, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0024
 	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: 1

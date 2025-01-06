@@ -1,7 +1,7 @@
 # dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-71 structures occupying 2945 bytes.
+71 structures occupying 2913 bytes.
 Table at 0x000FA9E0.
 
 Handle 0x0004, DMI type 4, 42 bytes
@@ -516,20 +516,6 @@ BIOS Language Information
 		ruRU
 	Currently Installed Language: enUS
 
-Handle 0x002E, DMI type 22, 26 bytes
-Portable Battery
-	Location: Rear
-	Manufacturer: Dynapack
-	Manufacture Date: 2008
-	Serial Number: --
-	Name: DELL
-	Design Capacity: 48840 mWh
-	Design Voltage: 11100 mV
-	SBDS Version: V1.0
-	Maximum Error: Unknown
-	SBDS Chemistry: LION
-	OEM-specific Information: 0x00000000
-
 Handle 0x002F, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
@@ -590,20 +576,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMMA
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: 075D
+	Speed: 1333 MT/s
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: W-DL16S08G        
+	Part Number: 16JSF51264HZ-1G4D1
 	Rank: Unknown
-	Configured Memory Speed: 1600 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0037, DMI type 17, 34 bytes
 Memory Device
@@ -611,35 +597,35 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 1 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMMB
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: 075D
+	Speed: 1333 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: W-DL16S08G        
+	Part Number: M471B2873FHS-CH9  
 	Rank: Unknown
-	Configured Memory Speed: 1600 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0038, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0036
 	Memory Array Mapped Address Handle: 0x003A
 	Partition Row Position: 1
 
 Handle 0x0039, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x0013FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0036
 	Memory Array Mapped Address Handle: 0x003A
 	Partition Row Position: 1
@@ -647,8 +633,8 @@ Memory Device Mapped Address
 Handle 0x003A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x0013FFFFFFF
+	Range Size: 5 GB
 	Physical Array Handle: 0x0035
 	Partition Width: 2
 
@@ -754,6 +740,9 @@ OEM Strings
 	String 3: 13[PP36S]
 	String 4: 14[3]
 	String 5: 15[9]
+
+Handle 0x002E, DMI type 126, 4 bytes
+Inactive
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

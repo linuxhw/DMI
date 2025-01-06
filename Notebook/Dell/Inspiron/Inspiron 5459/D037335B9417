@@ -1,8 +1,8 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 102 structures occupying 5654 bytes.
-Table at 0x000EDC20.
+Table at 0x000E0000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -315,7 +315,8 @@ Port Connector Information
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B2
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -328,7 +329,8 @@ System Slot Information
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -341,7 +343,8 @@ System Slot Information
 Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -354,7 +357,8 @@ System Slot Information
 Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 3
@@ -367,7 +371,8 @@ System Slot Information
 Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -732,13 +737,13 @@ Handle 0x1600, DMI type 22, 26 bytes
 Portable Battery
 	Location: Sys. Battery Bay
 	Manufacturer: LG
-	Manufacture Date: 03/22/2016
+	Manufacture Date: 01/23/2016
 	Serial Number: --
-	Name: DELL 991XP64
+	Name: DELL 991XP62
 	Design Capacity: 41440 mWh
 	Design Voltage: 14800 mV
 	SBDS Version: 1.0
-	Maximum Error: 2%
+	Maximum Error: 100%
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000801
 
@@ -1044,7 +1049,7 @@ OEM-specific Type
 		CD 36 28 F0 07 01 00 01 02 00 00 00 02 00 01 02
 		00 00 00 03 00 01 02 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 08 00 07 00 FF FF FF 08 00 08
-		00 FF FF FF 33 10
+		00 FF FF FF FF FF
 	Strings:
 		Reference Code - SA - System Agent
 		Reference Code - MRC
@@ -1061,8 +1066,8 @@ OEM-specific Type
 		CD 60 29 F0 0D 01 00 00 00 00 00 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
-		FF FF FF FF 0D 00 02 00 00 00 00 0E 00 FF FF FF
+		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
+		09 00 75 10 0D 00 02 00 00 00 00 0E 00 FF FF FF
 		FF FF 0F 00 FF FF FF FF FF 10 11 01 02 02 03 00
 	Strings:
 		Lan Phy Version
@@ -1092,8 +1097,8 @@ Group Associations
 Handle 0xF035, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 35 F0 01 03 01 45 02 00 90 06 03 00 60 20
-		04 00 00 00 40 08 00 01 01 00 00 C9 0B C0 43 02
+		DB 51 35 F0 01 03 01 45 02 00 90 06 03 10 80 20
+		04 00 00 04 40 08 00 01 01 00 00 C9 0B C0 43 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

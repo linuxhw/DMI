@@ -1,7 +1,7 @@
-# dmidecode 3.1
-Getting SMBIOS data from sysfs.
+# dmidecode 3.3
+Scanning /dev/mem for entry point.
 SMBIOS 2.7 present.
-65 structures occupying 2923 bytes.
+65 structures occupying 2992 bytes.
 Table at 0xBCC3A000.
 
 Handle 0x0000, DMI type 4, 42 bytes
@@ -51,7 +51,7 @@ Processor Information
 	L1 Cache Handle: 0x0002
 	L2 Cache Handle: 0x0003
 	L3 Cache Handle: 0x0004
-	Serial Number: --
+	
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
 	Core Count: 2
@@ -114,8 +114,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Asynchronous
 	Installed SRAM Type: Asynchronous
@@ -139,7 +139,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM_A
@@ -148,11 +148,11 @@ Memory Device
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
 	Manufacturer: Hynix/Hyundai
-	Serial Number: --
+	
 	Asset Tag: --
 	Part Number: HMT451S6BFR8A-PB  
 	Rank: Unknown
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0007, DMI type 17, 34 bytes
 Memory Device
@@ -160,7 +160,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM_B
@@ -169,11 +169,11 @@ Memory Device
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
 	Manufacturer: Hynix/Hyundai
-	Serial Number: --
+	
 	Asset Tag: --
 	Part Number: HMT451S6BFR8A-PB  
 	Rank: Unknown
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0008, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -222,7 +222,7 @@ System Information
 	Manufacturer: Dell Inc.         
 	Product Name: Inspiron 7737
 	Version: Not Specified
-	Serial Number: --
+	
 	UUID: --
 	Wake-up Type: Power Switch
 	SKU Number: Inspiron 7737
@@ -233,7 +233,7 @@ Base Board Information
 	Manufacturer: Dell Inc.         
 	Product Name: 0YHYKX
 	Version: A00
-	Serial Number: --
+	
 	Asset Tag: --
 	...
 		Board is a hosting board
@@ -249,7 +249,7 @@ Chassis Information
 	Type: Portable
 	Lock: Not Present
 	Version: 0.1
-	Serial Number: --
+	
 	Asset Tag: --
 	...
 	Power Supply State: Safe
@@ -495,6 +495,20 @@ BIOS Language Information
 		ru-RU
 	Currently Installed Language: en-US
 
+Handle 0x002C, DMI type 22, 26 bytes
+Portable Battery
+	Location: Rear
+	Manufacturer: LGC-LGR3.9
+	Manufacture Date: 2008
+	
+	Name: DELL G4YJM4A
+	Design Capacity: 57720 mWh
+	Design Voltage: 14800 mV
+	SBDS Version: V1.0
+	Maximum Error: Unknown
+	SBDS Chemistry: LION
+	OEM-specific Information: 0x00000000
+
 Handle 0x002D, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
@@ -542,14 +556,14 @@ Cooling Device
 
 Handle 0x0033, DMI type 15, 81 bytes
 System Event Log
-	Area Length: 139 bytes
+	Area Length: 27 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000008
+	Change Token: 0x00000001
 	Header Format: Type 1
 	Supported Log Type Descriptors: 29
 	Descriptor 1: Single-bit ECC memory error
@@ -723,10 +737,7 @@ OEM Strings
 	String 5: 14[3]
 	String 6: 15[11]
 
-Handle 0x003E, DMI type 126, 4 bytes
-Inactive
-
-Handle 0x003F, DMI type 0, 24 bytes
+Handle 0x003E, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Dell Inc.         
 	Version: A10

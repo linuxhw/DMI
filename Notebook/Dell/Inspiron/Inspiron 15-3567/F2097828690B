@@ -6,8 +6,8 @@ Table at 0x000E0000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 2.17.0
-	Release Date: 10/18/2021
+	Version: 2.20.0
+	Release Date: 07/12/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -34,7 +34,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.17
+	BIOS Revision: 2.20
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -58,7 +58,7 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Not Specified
-	Chassis Handle: 0x0003
+	Chassis Handle: 0x0300
 	Type: Motherboard
 	Contained Object Handles: 0
 
@@ -743,7 +743,7 @@ OEM-specific Type
 Handle 0xD000, DMI type 208, 16 bytes
 OEM-specific Type
 	Header and Data:
-		D0 10 00 D0 03 0A FE 00 8C 07 01 02 00 00 00 00
+		D0 10 00 D0 03 11 FE 00 8C 07 01 02 00 00 00 00
 	Strings:
 		20180323
 		20180604
@@ -936,7 +936,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 21 12 16 19 33 01 00 00
+		DE 10 00 DE 01 04 00 00 23 03 01 11 13 01 00 00
 
 Handle 0xF023, DMI type 130, 20 bytes
 OEM-specific Type
@@ -949,14 +949,14 @@ OEM-specific Type
 	Header and Data:
 		83 40 24 F0 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 48 9D 00 00 00 00 01 00 00 00 08 00 0B 00
-		25 0F 56 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		7E 10 5C 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0xF025, DMI type 221, 33 bytes
 OEM-specific Type
 	Header and Data:
 		DD 21 25 F0 04 01 00 02 09 00 00 00 02 00 00 00
-		00 EA 00 03 00 00 05 00 00 00 04 00 02 00 00 63
+		00 F0 00 03 00 00 05 00 00 00 04 00 02 00 00 63
 		0E
 	Strings:
 		Reference Code - CPU
@@ -968,7 +968,7 @@ Handle 0xF026, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 26 F0 03 01 00 02 09 00 00 00 02 00 00 00
-		00 00 00 03 04 0B 08 56 25 0F
+		00 00 00 03 04 0B 08 5C 7E 10
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version

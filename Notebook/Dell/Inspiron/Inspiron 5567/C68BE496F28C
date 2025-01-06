@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-93 structures occupying 5615 bytes.
+94 structures occupying 5681 bytes.
 Table at 0x000E9CA0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -455,25 +455,25 @@ Handle 0x003B, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x003A
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8192 MB
+	Form Factor: SODIMM
 	Set: None
-	Locator: ChannelA-DIMM0
+	Locator: DIMM A
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2400 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
+	Part Number: 99U5700-010.A00G    
+	Rank: 1
+	Configured Clock Speed: 2133 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
 
 Handle 0x003C, DMI type 17, 40 bytes
 Memory Device
@@ -502,10 +502,10 @@ Memory Device
 Handle 0x003D, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x003A
-	Partition Width: 1
+	Partition Width: 2
 
 Handle 0x003E, DMI type 7, 19 bytes
 Cache Information
@@ -619,11 +619,24 @@ Processor Information
 Handle 0x0042, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x003B
+	Memory Array Mapped Address Handle: 0x003D
+	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x0043, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x003C
 	Memory Array Mapped Address Handle: 0x003D
 	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 1
 
 Handle 0x0300, DMI type 3, 22 bytes
 Chassis Information
@@ -653,7 +666,7 @@ Portable Battery
 	Design Capacity: 41990 mWh
 	Design Voltage: 11400 mV
 	SBDS Version: 1.0
-	Maximum Error: 11%
+	Maximum Error: 2%
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000801
 
@@ -1053,7 +1066,7 @@ Group Associations
 Handle 0xF03D, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 3D F0 01 03 01 45 02 00 A0 06 01 00 60 20
+		DB 51 3D F0 01 03 01 45 02 00 90 06 01 00 60 20
 		00 00 00 00 40 08 00 01 1F 00 00 C9 0B C0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -1064,6 +1077,6 @@ OEM-specific Type
 		MEI2
 		MEI3
 
-Handle 0xF041, DMI type 127, 4 bytes
+Handle 0xF044, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 45 structures occupying 1982 bytes.
@@ -249,7 +249,8 @@ Port Connector Information
 Handle 0x0900, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCMCIA 0
-	Type: 32-bit PC Card (PCMCIA)
+	Type: PC Card (PCMCIA)
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Other
 	ID: Adapter 0, Socket 0
@@ -301,7 +302,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A
@@ -309,10 +310,10 @@ Memory Device
 	Type: DDR
 	Type Detail: Synchronous
 	Speed: 667 MT/s
-	Manufacturer: CE00000000000000
+	Manufacturer: 7F98000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M4 70T2864QZ3-CE6 
+	Part Number: 9905295-055.A00LF 
 
 Handle 0x1101, DMI type 17, 27 bytes
 Memory Device
@@ -320,32 +321,32 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B
 	Bank Locator: Not Specified
 	Type: DDR
 	Type Detail: Synchronous
-	Speed: 667 MT/s
-	Manufacturer: CE00000000000000
+	Speed: 800 MT/s
+	Manufacturer: 7F98000000000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M4 70T2864QZ3-CE6 
+	Part Number:                   
 
 Handle 0x1301, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x1000
 	Partition Width: 1
 
 Handle 0x1401, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x1100
 	Memory Array Mapped Address Handle: 0x1301
 	Partition Row Position: 1
@@ -358,8 +359,8 @@ Inactive
 Handle 0x1402, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x1101
 	Memory Array Mapped Address Handle: 0x1301
 	Partition Row Position: 1

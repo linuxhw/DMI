@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
 75 structures occupying 5518 bytes.
@@ -168,8 +168,8 @@ OEM-specific Type
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.18.0
-	Release Date: 09/07/2022
+	Version: 1.28.0
+	Release Date: 04/29/2024
 	ROM Size: 24 MB
 	Characteristics:
 		PCI is supported
@@ -190,7 +190,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.18
+	BIOS Revision: 1.28
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -274,10 +274,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
-	Voltage: 0.6 V
+	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 2500 MHz
-	Current Speed: 792 MHz
+	Current Speed: 2772 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0700
@@ -611,7 +611,7 @@ Portable Battery
 	Design Capacity: 55990 mWh
 	Design Voltage: 11400 mV
 	SBDS Version: 1.0
-	Maximum Error: 10%
+	Maximum Error: 7%
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000801
 
@@ -777,7 +777,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 00 83 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 8D 06 00 00 00 00 01 00 00 00 01 00 0E 00
-		C6 07 41 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		EF 08 48 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x8800, DMI type 136, 8 bytes
@@ -805,7 +805,7 @@ OEM-specific Type
 Handle 0xCB00, DMI type 203, 106 bytes
 OEM-specific Type
 	Header and Data:
-		CB 6A 00 CB 01 04 01 45 02 00 A0 06 01 10 86 20
+		CB 6A 00 CB 01 04 01 45 02 00 90 06 01 10 80 20
 		00 00 00 00 40 00 00 01 1F 00 00 C9 03 C0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -821,7 +821,7 @@ OEM-specific Type
 Handle 0xCD00, DMI type 205, 12 bytes
 OEM-specific Type
 	Header and Data:
-		CD 0C 00 CD 01 01 00 02 00 00 F4 11
+		CD 0C 00 CD 01 01 00 02 00 00 BF 00
 	Strings:
 		BIOS Guard
 
@@ -829,7 +829,7 @@ Handle 0xCD01, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 01 CD 03 01 00 09 00 9E 10 00 02 00 00 00
-		00 F0 00 03 00 FF FF FF FF FF
+		00 F8 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -839,7 +839,7 @@ Handle 0xCD02, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 02 CD 03 01 00 09 00 9E 10 00 02 00 00 00
-		00 00 00 03 04 0E 01 41 C6 07
+		00 00 00 03 04 0E 01 48 EF 08
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -984,7 +984,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 22 10 21 19 38 01 00 00
+		DE 10 00 DE 01 04 00 00 24 06 27 10 12 01 00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table
