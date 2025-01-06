@@ -1,14 +1,14 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 63 structures occupying 2655 bytes.
-Table at 0xBDA06000.
+Table at 0xBD9C6000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: H.G0
-	Release Date: 07/27/2022
+	Version: H.K0
+	Release Date: 07/23/2024
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -31,7 +31,6 @@ BIOS Information
 		Serial services are supported (int 14h)
 		Printer services are supported (int 17h)
 		CGA/mono video services are supported (int 10h)
-		ACPI is supported
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
@@ -85,7 +84,8 @@ Chassis Information
 Handle 0x0004, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B2
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -98,7 +98,8 @@ System Slot Information
 Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -111,7 +112,8 @@ System Slot Information
 Handle 0x0006, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -124,7 +126,8 @@ System Slot Information
 Handle 0x0007, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 3
@@ -137,7 +140,8 @@ System Slot Information
 Handle 0x0008, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -150,7 +154,8 @@ System Slot Information
 Handle 0x0009, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8D1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 5
@@ -163,7 +168,8 @@ System Slot Information
 Handle 0x000A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B3
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: In Use
 	Length: Short
 	ID: 6
@@ -352,13 +358,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
+	Speed: 3400 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CMK32GX4M2D3600C18
 	Rank: 2
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 3400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -397,13 +403,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
+	Speed: 3400 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CMK32GX4M2D3600C18
 	Rank: 2
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 3400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -442,13 +448,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
+	Speed: 3400 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CMK32GX4M2D3600C18
 	Rank: 2
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 3400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -487,13 +493,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
+	Speed: 3400 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: CMK32GX4M2D3600C18
 	Rank: 2
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 3400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -656,7 +662,8 @@ Port Connector Information
 Handle 0x0035, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J10
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Short
 	ID: 12
@@ -668,19 +675,21 @@ System Slot Information
 Handle 0x0036, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3600 Pcie x8 slot
-	Type: x8 PCI Express x8
-	Current Usage: In Use
+	Type: PCI Express x8
+	Data Bus Width: 8x or x8
+	Current Usage: Available
 	Length: Short
 	ID: 13
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:00:03.2
+	Bus Address: 0000:00:1f.7
 
 Handle 0x0037, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3707 Pcie x4 slot
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Other
 	Length: Short
 	ID: 32
@@ -692,7 +701,8 @@ System Slot Information
 Handle 0x0038, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3700 PCIE x4 slot from Promontory
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -704,7 +714,8 @@ System Slot Information
 Handle 0x0039, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3702 PCIE x1 slot from Promontory
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -716,7 +727,8 @@ System Slot Information
 Handle 0x003A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3703 PCIE x1 slot from Promontory
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 4
@@ -728,7 +740,8 @@ System Slot Information
 Handle 0x003B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3701 M.2 WLAN/BT slot
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 5

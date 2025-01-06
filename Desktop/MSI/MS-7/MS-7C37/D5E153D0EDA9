@@ -1,14 +1,14 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-59 structures occupying 2470 bytes.
-Table at 0xCDC05000.
+59 structures occupying 2481 bytes.
+Table at 0xCDA04000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
-	Vendor: American Megatrends Inc.
-	Version: A.B0
-	Release Date: 10/29/2020
+	Vendor: American Megatrends International, LLC.
+	Version: A.D0
+	Release Date: 05/20/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -20,6 +20,9 @@ BIOS Information
 		Selectable boot is supported
 		BIOS ROM is socketed
 		EDD is supported
+		Japanese floppy for NEC 9800 1.2 MB is supported (int 13h)
+		Japanese floppy for Toshiba 1.2 MB is supported (int 13h)
+		5.25"/360 kB floppy services are supported (int 13h)
 		5.25"/1.2 MB floppy services are supported (int 13h)
 		3.5"/720 kB floppy services are supported (int 13h)
 		3.5"/2.88 MB floppy services are supported (int 13h)
@@ -27,6 +30,7 @@ BIOS Information
 		8042 keyboard services are supported (int 9h)
 		Serial services are supported (int 14h)
 		Printer services are supported (int 17h)
+		CGA/mono video services are supported (int 10h)
 		ACPI is supported
 		USB legacy is supported
 		BIOS boot specification is supported
@@ -243,8 +247,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -259,8 +263,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 32768 kB
-	Maximum Size: 32768 kB
+	Installed Size: 32 MB
+	Maximum Size: 32 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -348,16 +352,6 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: 3200 MT/s
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: 3200 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x0019, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -375,20 +369,20 @@ Memory Device
 	Error Information Handle: 0x0019
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
+	Speed: 3600 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: BLS16G4D32AESC.M16FE
+	Part Number: F4-3600C16-16GTZNC
 	Rank: 2
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 3600 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -427,16 +421,6 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: 3200 MT/s
-	Manufacturer: Unknown
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Unknown
-	Rank: Unknown
-	Configured Memory Speed: 3200 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x001E, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -454,20 +438,20 @@ Memory Device
 	Error Information Handle: 0x001E
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
+	Speed: 3600 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: BLS16G4D32AESC.M16FE
+	Part Number: F4-3600C16-16GTZNC
 	Rank: 2
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 3600 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -687,13 +671,13 @@ Handle 0x0037, DMI type 9, 17 bytes
 System Slot Information
 	Designation: U3700 M.2 Slot
 	Type: x1 PCI Express x1
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 14
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:00:1f.7
+	Bus Address: 0000:00:01.1
 
 Handle 0x0038, DMI type 41, 11 bytes
 Onboard Device

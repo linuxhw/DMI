@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0 present.
 86 structures occupying 4159 bytes.
@@ -257,7 +257,8 @@ Port Connector Information
 Handle 0x001A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B2
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -270,7 +271,8 @@ System Slot Information
 Handle 0x001B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -283,7 +285,8 @@ System Slot Information
 Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -296,7 +299,8 @@ System Slot Information
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 3
@@ -309,7 +313,8 @@ System Slot Information
 Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -322,7 +327,8 @@ System Slot Information
 Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8D1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 5
@@ -335,7 +341,8 @@ System Slot Information
 Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B3
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: In Use
 	Length: Short
 	ID: 6
@@ -603,61 +610,27 @@ Handle 0x003D, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x003C
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8 GB
-	Form Factor: DIMM
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: DDR4
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
-	Manufacturer: 029E
-	Serial Number: --
-	Asset Tag: --
-	Part Number: CMK16GX4M2B3000C15  
-	Rank: 1
-	Configured Memory Speed: 2400 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: 1.35 V
+	Type: Unknown
+	Type Detail: None
 
 Handle 0x003E, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x003C
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
-	Set: None
-	Locator: ChannelA-DIMM1
-	Bank Locator: BANK 1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-
-Handle 0x003F, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x003C
-	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: ChannelB-DIMM0
-	Bank Locator: BANK 2
+	Locator: ChannelA-DIMM1
+	Bank Locator: BANK 1
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2400 MT/s
@@ -671,7 +644,7 @@ Memory Device
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.35 V
 
-Handle 0x0040, DMI type 17, 40 bytes
+Handle 0x003F, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x003C
 	Error Information Handle: Not Provided
@@ -680,20 +653,34 @@ Memory Device
 	Size: No Module Installed
 	Form Factor: Unknown
 	Set: None
-	Locator: ChannelB-DIMM1
-	Bank Locator: BANK 3
+	Locator: ChannelB-DIMM0
+	Bank Locator: BANK 2
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+
+Handle 0x0040, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x003C
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelB-DIMM1
+	Bank Locator: BANK 3
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 2400 MT/s
+	Manufacturer: 029E
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: CMK16GX4M2B3000C15  
+	Rank: 1
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
+	Configured Voltage: 1.35 V
 
 Handle 0x0041, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -792,7 +779,7 @@ Processor Information
 	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
-	Current Speed: 4000 MHz
+	Current Speed: 3800 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0042
@@ -816,7 +803,7 @@ Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x003D
+	Physical Device Handle: 0x003E
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: Unknown
 	Interleave Position: 1
@@ -827,7 +814,7 @@ Memory Device Mapped Address
 	Starting Address: 0x00200000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x003F
+	Physical Device Handle: 0x0040
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: Unknown
 	Interleave Position: 2

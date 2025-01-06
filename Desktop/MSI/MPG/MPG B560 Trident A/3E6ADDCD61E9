@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 138 structures occupying 6018 bytes.
@@ -586,8 +586,8 @@ Physical Memory Array
 Handle 0x003F, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Array Handle: 0x003A
 	Partition Width: 2
 
@@ -597,7 +597,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: Controller0-ChannelA-DIMM0
@@ -605,11 +605,11 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 3200 MT/s
-	Manufacturer: SK Hynix
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA81GU6CJR8N-XN    
-	Rank: 1
+	Part Number: KVR32N22D8/32       
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -617,12 +617,12 @@ Memory Device
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Not Specified
-	Module Manufacturer ID: Bank 1, Hex 0xAD
+	Module Manufacturer ID: Bank 2, Hex 0x98
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: 32767 MB
 	Cache Size: None
 	Logical Size: None
 
@@ -639,27 +639,6 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x0042, DMI type 17, 92 bytes
 Memory Device
@@ -667,7 +646,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: Controller0-ChannelB-DIMM0
@@ -675,11 +654,11 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 3200 MT/s
-	Manufacturer: SK Hynix
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA81GU6CJR8N-XN    
-	Rank: 1
+	Part Number: KVR32N22D8/32       
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -687,12 +666,12 @@ Memory Device
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Not Specified
-	Module Manufacturer ID: Bank 1, Hex 0xAD
+	Module Manufacturer ID: Bank 2, Hex 0x98
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: 32767 MB
 	Cache Size: None
 	Logical Size: None
 
@@ -709,33 +688,12 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x0044, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Device Handle: 0x0040
 	Memory Array Mapped Address Handle: 0x003F
 	Partition Row Position: Unknown
@@ -744,9 +702,9 @@ Memory Device Mapped Address
 
 Handle 0x0045, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00800000000
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 32 GB
 	Physical Device Handle: 0x0042
 	Memory Array Mapped Address Handle: 0x003F
 	Partition Row Position: Unknown
@@ -924,9 +882,9 @@ Processor Information
 	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 4900 MHz
-	Current Speed: 2475 MHz
+	Current Speed: 2500 MHz
 	Status: Populated, Enabled
-	Upgrade: <OUT OF SPEC>
+	Upgrade: Socket LGA1200
 	L1 Cache Handle: 0x004C
 	L2 Cache Handle: 0x004D
 	L3 Cache Handle: 0x004E
@@ -1038,7 +996,7 @@ OEM-specific Type
 		DD 52 5B 00 0B 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF 00 0B 00 FF FF 00 00 00 0C 00 00
+		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
 		17 00 58 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
 		00 00
 	Strings:
@@ -1063,7 +1021,7 @@ OEM-specific Type
 		8F 10 5C 00 00 01 02 03 04 05 06 07 08 09 0A 0B
 	Strings:
 		MEFW-15.0.22.1680
-		GOP1-[17.0.1058]
+		GOP1-[20.0.1049]
 		RAID-18.31
 		PXEU1-v2.052
 		AMI-AptioV
@@ -1428,7 +1386,7 @@ Group Associations
 Handle 0x008A, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 8A 00 01 04 01 55 02 00 90 06 01 85 32 20
+		DB 6A 8A 00 01 04 01 55 02 00 90 06 01 85 30 20
 		00 00 00 00 40 00 00 00 00 00 00 00 00 00 00 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

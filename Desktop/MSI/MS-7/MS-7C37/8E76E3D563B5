@@ -1,14 +1,14 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-62 structures occupying 2614 bytes.
-Table at 0x000E6CF0.
+62 structures occupying 2620 bytes.
+Table at 0xDD9FC000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: H.H0
-	Release Date: 05/19/2022
+	Version: H.M0
+	Release Date: 10/13/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -31,7 +31,6 @@ BIOS Information
 		Serial services are supported (int 14h)
 		Printer services are supported (int 17h)
 		CGA/mono video services are supported (int 10h)
-		ACPI is supported
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
@@ -194,7 +193,7 @@ Handle 0x000F, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.84
+	Firmware Revision: 3.92
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -222,16 +221,16 @@ Physical Memory Array
 Handle 0x0012, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000CFFFFFFF
-	Range Size: 3328 MB
+	Ending Address: 0x000DFFFFFFF
+	Range Size: 3584 MB
 	Physical Array Handle: 0x0011
 	Partition Width: 4
 
 Handle 0x0013, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0062FFFFFFF
-	Range Size: 21248 MB
+	Ending Address: 0x0061FFFFFFF
+	Range Size: 20992 MB
 	Physical Array Handle: 0x0011
 	Partition Width: 4
 
@@ -362,13 +361,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
+	Speed: 2667 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M378A1K43EB2-CVF    
 	Rank: 1
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 2667 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -407,13 +406,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
+	Speed: 2667 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M378A5244CB0-CTD    
 	Rank: 1
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 2667 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -452,13 +451,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
+	Speed: 2667 MT/s
 	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
 	Part Number: HMA81GU6DJR8N-XN    
 	Rank: 1
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 2667 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -497,13 +496,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3200 MT/s
+	Speed: 2667 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M378A5244CB0-CTD    
 	Rank: 1
-	Configured Memory Speed: 3200 MT/s
+	Configured Memory Speed: 2667 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -744,9 +743,9 @@ OEM-specific Type
 	Header and Data:
 		8F 10 3C 00 00 01 02 03 04 05 06 07 08 09 0A 0B
 	Strings:
-		VBIOS-0000
+		GOP1-[20.0.1063]
 		RAID-14.8.0.1042
-		PXEL1-v2.1.1.5
+		PXEU1-v1.1.0.4
 		AMI-AptioV
 		GSES-5/3
 		MsiFlash-18

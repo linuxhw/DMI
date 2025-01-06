@@ -1,14 +1,14 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-64 structures occupying 2697 bytes.
-Table at 0xBDA06000.
+64 structures occupying 2690 bytes.
+Table at 0xBD9FB000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: M.G0
-	Release Date: 05/25/2022
+	Version: M.K0
+	Release Date: 10/20/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -31,7 +31,6 @@ BIOS Information
 		Serial services are supported (int 14h)
 		Printer services are supported (int 17h)
 		CGA/mono video services are supported (int 10h)
-		ACPI is supported
 		USB legacy is supported
 		BIOS boot specification is supported
 		Targeted content distribution is supported
@@ -85,7 +84,8 @@ Chassis Information
 Handle 0x0004, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B2
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -98,7 +98,8 @@ System Slot Information
 Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -111,7 +112,8 @@ System Slot Information
 Handle 0x0006, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -124,7 +126,8 @@ System Slot Information
 Handle 0x0007, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 3
@@ -137,7 +140,8 @@ System Slot Information
 Handle 0x0008, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -150,7 +154,8 @@ System Slot Information
 Handle 0x0009, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8D1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 5
@@ -163,7 +168,8 @@ System Slot Information
 Handle 0x000A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B3
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: In Use
 	Length: Short
 	ID: 6
@@ -194,7 +200,7 @@ Handle 0x000F, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.84
+	Firmware Revision: 3.92
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -230,8 +236,8 @@ Memory Array Mapped Address
 Handle 0x0013, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x00C3FFFFFFF
-	Range Size: 45 GB
+	Ending Address: 0x0103FFFFFFF
+	Range Size: 61 GB
 	Physical Array Handle: 0x0011
 	Partition Width: 4
 
@@ -319,7 +325,7 @@ Processor Information
 	Voltage: 1.1 V
 	External Clock: 100 MHz
 	Max Speed: 4850 MHz
-	Current Speed: 4375 MHz
+	Current Speed: 3800 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
 	L1 Cache Handle: 0x0014
@@ -362,13 +368,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
-	Manufacturer: SK Hynix
+	Speed: 2133 MT/s
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA82GU6AFR8N-UH    
+	Part Number: CMK64GX4M4D3600C18
 	Rank: 2
-	Configured Memory Speed: 2400 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -376,8 +382,8 @@ Memory Device
 Handle 0x001A, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00BFFFFFFFF
-	Range Size: 48 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Device Handle: 0x0019
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown
@@ -400,20 +406,20 @@ Memory Device
 	Error Information Handle: 0x001B
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
+	Speed: 2133 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT8G4DFD824A.M16FF
+	Part Number: CMK64GX4M4D3600C18
 	Rank: 2
-	Configured Memory Speed: 2400 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -421,8 +427,8 @@ Memory Device
 Handle 0x001D, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00BFFFFFFFF
-	Range Size: 48 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Device Handle: 0x001C
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown
@@ -445,20 +451,20 @@ Memory Device
 	Error Information Handle: 0x001E
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
+	Speed: 2133 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMK16GX4M2A2400C16  
+	Part Number: CMK64GX4M4D3600C18
 	Rank: 2
-	Configured Memory Speed: 2400 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -466,8 +472,8 @@ Memory Device
 Handle 0x0020, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00BFFFFFFFF
-	Range Size: 48 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Device Handle: 0x001F
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown
@@ -497,13 +503,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
+	Speed: 2133 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT16G4DFD824A.C16FDD
+	Part Number: CMK64GX4M4D3600C18
 	Rank: 2
-	Configured Memory Speed: 2400 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -511,8 +517,8 @@ Memory Device
 Handle 0x0023, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00BFFFFFFFF
-	Range Size: 48 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Device Handle: 0x0022
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown
@@ -666,7 +672,8 @@ Port Connector Information
 Handle 0x0036, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J10
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Short
 	ID: 12
@@ -678,7 +685,8 @@ System Slot Information
 Handle 0x0037, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3600 Pcie x8 slot
-	Type: x8 PCI Express x8
+	Type: PCI Express x8
+	Data Bus Width: 8x or x8
 	Current Usage: Available
 	Length: Short
 	ID: 13
@@ -690,7 +698,8 @@ System Slot Information
 Handle 0x0038, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3707 Pcie x4 slot
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Other
 	Length: Short
 	ID: 32
@@ -702,7 +711,8 @@ System Slot Information
 Handle 0x0039, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3700 PCIE x4 slot from Promontory
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -714,7 +724,8 @@ System Slot Information
 Handle 0x003A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3702 PCIE x1 slot from Promontory
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -726,7 +737,8 @@ System Slot Information
 Handle 0x003B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3703 PCIE x1 slot from Promontory
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 4
@@ -738,7 +750,8 @@ System Slot Information
 Handle 0x003C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3701 M.2 WLAN/BT slot
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 5

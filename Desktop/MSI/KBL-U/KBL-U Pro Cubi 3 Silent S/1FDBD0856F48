@@ -1,8 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0 present.
-86 structures occupying 4254 bytes.
-Table at 0x8B258000.
+86 structures occupying 4259 bytes.
+Table at 0x8B259000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -636,16 +636,6 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x003F, DMI type 17, 40 bytes
 Memory Device
@@ -684,16 +674,6 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x0041, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -896,7 +876,7 @@ OEM-specific Type
 		DD 36 4D 00 07 01 00 01 07 00 00 00 02 00 01 07
 		00 00 00 03 00 01 07 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 02 00 07 00 FF FF FF 02 00 08
-		00 FF FF FF 02 03
+		00 FF FF FF FF FF
 	Strings:
 		Reference Code - SA - System Agent
 		Reference Code - MRC
@@ -913,8 +893,8 @@ OEM-specific Type
 		DD 67 4E 00 0E 01 00 00 00 00 A6 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
-		FF FF FF FF 0D 00 FF FF FF FF FF 0E 00 FF FF FF
+		00 FF FF FF FF 00 0B 00 FF FF 00 00 00 0C 00 00
+		09 00 52 10 0D 00 FF FF FF FF FF 0E 00 FF FF FF
 		FF FF 0F 00 FF FF FF FF FF 10 11 01 03 04 01 00
 		12 00 00 07 03 00 00
 	Strings:
@@ -943,9 +923,9 @@ OEM-specific Type
 		8F 10 4F 00 00 01 02 03 04 05 06 07 08 09 0A 0B
 	Strings:
 		MEFW-11.8.50.3399
-		VBIOS-1046
+		GOP1-[9.0.1052]
 		RAID-15.5.0.2875
-		PXEL1-v0.1.10
+		PXEU1-v0.0.09
 		AMI-AptioV
 		GSES-5/5
 		N/A
@@ -986,7 +966,7 @@ Group Associations
 Handle 0x0054, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 54 00 01 03 01 55 02 00 90 06 01 00 66 20
+		DB 51 54 00 01 03 01 55 02 00 90 06 03 10 86 20
 		00 00 00 00 40 08 00 00 00 00 00 02 00 00 00 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
