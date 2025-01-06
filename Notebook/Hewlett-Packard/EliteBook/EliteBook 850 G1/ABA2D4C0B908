@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 32 structures occupying 1597 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 02/24/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		PC Card (PCMCIA) is supported
@@ -184,8 +184,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Asynchronous
 	Installed SRAM Type: Asynchronous
@@ -245,7 +245,8 @@ Port Connector Information
 Handle 0x000F, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI SLOT1
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -304,7 +305,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(left)

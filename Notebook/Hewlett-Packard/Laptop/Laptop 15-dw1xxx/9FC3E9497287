@@ -1,8 +1,6 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-# SMBIOS implementations newer than version 3.1.1 are not
-# fully supported by this version of dmidecode.
 Table at 0x9984F000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -118,12 +116,12 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i3-10110U CPU @ 2.10GHz
-	Voltage: 0.7 V
+	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
-	Current Speed: 2079 MHz
+	Current Speed: 2772 MHz
 	Status: Populated, Enabled
-	Upgrade: <OUT OF SPEC>
+	Upgrade: Socket BGA1528
 	L1 Cache Handle: 0x0005
 	L2 Cache Handle: 0x0006
 	L3 Cache Handle: 0x0007
@@ -352,6 +350,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.0
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001C, DMI type 9, 19 bytes
 System Slot Information
@@ -364,6 +364,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.1
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001D, DMI type 9, 19 bytes
 System Slot Information
@@ -376,6 +378,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.2
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001E, DMI type 9, 19 bytes
 System Slot Information
@@ -388,6 +392,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.3
+	Data Bus Width: 8
+	Peer Devices: 0
 
 Handle 0x001F, DMI type 9, 19 bytes
 System Slot Information
@@ -400,6 +406,8 @@ System Slot Information
 		PME signal is supported
 		Hot-plug devices are supported
 	Bus Address: 0000:00:1c.4
+	Data Bus Width: 10
+	Peer Devices: 0
 
 Handle 0x0020, DMI type 11, 5 bytes
 OEM Strings
@@ -483,7 +491,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(left)
@@ -496,10 +504,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: HMA81GS6DJR8N-XN    
 	Rank: 1
-	Configured Clock Speed: 2667 MT/s
+	Configured Memory Speed: 2667 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 1, Hex 0xAD
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 8 GB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0028, DMI type 17, 84 bytes
 Memory Device
@@ -520,10 +539,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: Not Specified
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
+	Memory Technology: <OUT OF SPEC>
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0029, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -665,8 +695,10 @@ Onboard Device
 Handle 0x0037, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: INTC
-	Specification Version: 2.0	Firmware Revision: 500.1
-	Description: TPM Device	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 500.14
+	Description: TPM Device
+	Characteristics:
 		TPM Device characteristics not supported
 	OEM-specific Information: 0x00000000
 
@@ -708,7 +740,7 @@ OEM-specific Type
 Handle 0x003D, DMI type 219, 106 bytes
 HP ProLiant Information
 	Power Features: 0x45010401
-	Omega Features: 0x06a00002
+	Omega Features: 0x06900002
 	Misc. Features: 0x04000000
 		iCRU: No
 		UEFI: No

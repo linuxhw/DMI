@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0xBCA1E000.
+Table at 0xBC9E8000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: AMI
-	Version: F.25
-	Release Date: 07/05/2022
+	Version: F.33
+	Release Date: 04/22/2024
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -18,14 +18,13 @@ BIOS Information
 		Boot from CD is supported
 		Selectable boot is supported
 		EDD is supported
-		ACPI is supported
 		Smart battery is supported
 		BIOS boot specification is supported
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.25
-	Firmware Revision: 59.17
+	BIOS Revision: 15.33
+	Firmware Revision: 59.24
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -42,7 +41,7 @@ Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 887A
-	Version: 59.17
+	Version: 59.24
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -89,9 +88,9 @@ OEM Strings
 	String 1: $HP$
 	String 2: ABS 70/71 79 7A 7B 7C
 	String 3: BCU_Y
-	String 4: FBYTE#3K3Y5Y6E6b7K7P7d7zapawbCbhfPm9.nB;BUILDID#21WW1EDD601#SACB
-	String 5: #DACB;
-	String 6:  
+	String 4: OEM Video Flag - F0
+	String 5: FBYTE#3K3Y5Y6E6b7K7P7d7zapawbCbhfPm9.nB;BUILDID#21WW1EDD601#SACB
+	String 6: #DACB;
 	String 7:  
 	String 8:  
 	String 9:  
@@ -135,7 +134,7 @@ Handle 0x000A, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.84
+	Firmware Revision: 3.92
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -163,8 +162,8 @@ Physical Memory Array
 Handle 0x000D, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x000C
 	Partition Width: 2
 
@@ -288,7 +287,7 @@ Memory Device
 	Error Information Handle: 0x0012
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom - Slot 1 (left)
@@ -299,7 +298,7 @@ Memory Device
 	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA851S6CJR6N-XN    
+	Part Number: HMA41GS6AFR8N-XN    
 	Rank: 1
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
@@ -313,15 +312,15 @@ Memory Device
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 4 GB
+	Volatile Size: 8 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0014, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0013
 	Memory Array Mapped Address Handle: 0x000D
 	Partition Row Position: 1
@@ -342,7 +341,7 @@ Memory Device
 	Error Information Handle: 0x0015
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom - Slot 2 (right)
@@ -353,7 +352,7 @@ Memory Device
 	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA851S6CJR6N-XN    
+	Part Number: HMA81GS6DJR8N-XN    
 	Rank: 1
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
@@ -367,15 +366,15 @@ Memory Device
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 4 GB
+	Volatile Size: 8 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0017, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0016
 	Memory Array Mapped Address Handle: 0x000D
 	Partition Row Position: 1

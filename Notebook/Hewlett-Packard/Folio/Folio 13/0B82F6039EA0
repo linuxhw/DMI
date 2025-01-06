@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 39 structures occupying 1792 bytes.
@@ -80,7 +80,8 @@ Chassis Information
 Handle 0x0004, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J5C1
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -94,7 +95,8 @@ System Slot Information
 Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6C1
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Short
 	ID: 0
@@ -108,7 +110,8 @@ System Slot Information
 Handle 0x0006, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6C2
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -122,7 +125,8 @@ System Slot Information
 Handle 0x0007, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D2
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -136,7 +140,8 @@ System Slot Information
 Handle 0x0008, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 3
@@ -150,7 +155,8 @@ System Slot Information
 Handle 0x0009, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7D2
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -164,7 +170,8 @@ System Slot Information
 Handle 0x000A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8C2
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 1
@@ -209,7 +216,7 @@ Portable Battery
 	Design Capacity: 59940 mWh
 	Design Voltage: 11100 mV
 	SBDS Version: 1
-	Maximum Error: 1%
+	Maximum Error: 2%
 	SBDS Serial Number: --
 	SBDS Manufacture Date: 2012-04-20
 	OEM-specific Information: 0x0000FFFF
@@ -421,7 +428,7 @@ Processor Information
 	Voltage: 0.0 V
 	External Clock: 1333 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 1800 MHz
+	Current Speed: 1600 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0023

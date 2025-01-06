@@ -278,7 +278,17 @@ Unknown Type
 	Header and Data:
 		2C 09 1A 00 FF FF 01 01 00
 
-Handle 0x001B, DMI type 16, 23 bytes
+Handle 0x001B, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: INTC
+	Specification Version: 2.0
+	Firmware Revision: 600.7
+	Description: INTEL
+	Characteristics:
+		Family configurable via platform software support
+	OEM-specific Information: 0x00000000
+
+Handle 0x001C, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -287,17 +297,17 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
-Handle 0x0024, DMI type 19, 31 bytes
+Handle 0x0025, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Array Handle: 0x001B
+	Physical Array Handle: 0x001C
 	Partition Width: 2
 
-Handle 0x0025, DMI type 17, 100 bytes
+Handle 0x0026, DMI type 17, 100 bytes
 Memory Device
-	Array Handle: 0x001B
+	Array Handle: 0x001C
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -330,9 +340,9 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0026, DMI type 17, 100 bytes
+Handle 0x0027, DMI type 17, 100 bytes
 Memory Device
-	Array Handle: 0x001B
+	Array Handle: 0x001C
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -365,39 +375,39 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0027, DMI type 20, 35 bytes
+Handle 0x0028, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0025
-	Memory Array Mapped Address Handle: 0x0024
+	Physical Device Handle: 0x0026
+	Memory Array Mapped Address Handle: 0x0025
 	Partition Row Position: 1
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x0028, DMI type 20, 35 bytes
+Handle 0x0029, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00100000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0026
-	Memory Array Mapped Address Handle: 0x0024
+	Physical Device Handle: 0x0027
+	Memory Array Mapped Address Handle: 0x0025
 	Partition Row Position: 1
 	Interleave Position: 2
 	Interleaved Data Depth: 1
 
-Handle 0x0029, DMI type 221, 26 bytes
+Handle 0x002A, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 1: PCI device 01:00.3, MAC address 00:0A:00:2A:32:00
 	NIC 2: PCI device 00:00.2, MAC address 00:00:00:9A:00:03
 
-Handle 0x002A, DMI type 221, 26 bytes
+Handle 0x002B, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 1: PCI device 01:00.3, MAC address 00:0A:00:2A:32:00
 	NIC 2: PCI device 00:00.2, MAC address 00:00:00:00:00:03
 
-Handle 0x002B, DMI type 221, 47 bytes
+Handle 0x002C, DMI type 221, 47 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 1: PCI device 01:00.6, MAC address 00:0A:00:2A:32:00
 	NIC 2: PCI device 03:00.2, MAC address FF:FF:FF:FF:FF:04
@@ -405,7 +415,7 @@ HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 4: Not Installed
 	NIC 5: PCI device 00:08.6, MAC address 00:00:07:00:04:00
 
-Handle 0x002C, DMI type 221, 82 bytes
+Handle 0x002D, DMI type 221, 82 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 1: PCI device 01:01.3, MAC address 00:0A:00:2A:32:00
 	NIC 2: PCI device 00:00.2, MAC address 01:00:00:00:00:03
@@ -417,11 +427,11 @@ HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 8: PCI device 0a:00.0, MAC address 00:00:00:00:00:00
 	NIC 9: PCI device 00:01.3, MAC address 00:00:00:00:00:0C
 
-Handle 0x002D, DMI type 221, 12 bytes
+Handle 0x002E, DMI type 221, 12 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 1: PCI device 01:00.1, MAC address 00:04:00:00:00:00
 
-Handle 0x002E, DMI type 7, 27 bytes
+Handle 0x002F, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -437,7 +447,7 @@ Cache Information
 	System Type: Data
 	Associativity: 12-way Set-associative
 
-Handle 0x002F, DMI type 7, 27 bytes
+Handle 0x0030, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -453,7 +463,7 @@ Cache Information
 	System Type: Instruction
 	Associativity: 8-way Set-associative
 
-Handle 0x0030, DMI type 7, 27 bytes
+Handle 0x0031, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -469,7 +479,7 @@ Cache Information
 	System Type: Unified
 	Associativity: Other
 
-Handle 0x0031, DMI type 7, 27 bytes
+Handle 0x0032, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L3 Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -485,7 +495,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0032, DMI type 4, 48 bytes
+Handle 0x0033, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: U3E1
 	Type: Central Processor
@@ -523,15 +533,15 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: 11th Gen Intel(R) Core(TM) i3-1125G4 @ 2.00GHz
-	Voltage: 0.6 V
+	Voltage: 0.7 V
 	External Clock: 100 MHz
 	Max Speed: 3700 MHz
 	Current Speed: 2000 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
-	L1 Cache Handle: 0x002F
-	L2 Cache Handle: 0x0030
-	L3 Cache Handle: 0x0031
+	L1 Cache Handle: 0x0030
+	L2 Cache Handle: 0x0031
+	L3 Cache Handle: 0x0032
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
@@ -546,15 +556,15 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0033, DMI type 131, 64 bytes
+Handle 0x0034, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 33 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 34 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 82 A0 00 00 00 00 01 00 00 00 00 00 0F 00
 		F0 06 1E 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0034, DMI type 41, 11 bytes
+Handle 0x0035, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Realtek Wireless LAN + BT
 	Type: Other
@@ -562,7 +572,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:01:00.0
 
-Handle 0x0035, DMI type 221, 89 bytes
+Handle 0x0036, DMI type 221, 89 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 1: PCI device 01:01.4, MAC address 00:FF:FF:FF:FF:FF
 	NIC 2: PCI device 00:00.2, MAC address FF:FF:FF:FF:FF:03
@@ -575,11 +585,11 @@ HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 9: PCI device 00:01.5, MAC address FF:FF:FF:FF:FF:0E
 	NIC 10: Disabled
 
-Handle 0x0036, DMI type 32, 11 bytes
+Handle 0x0037, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0037, DMI type 13, 22 bytes
+Handle 0x0038, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 5
@@ -590,12 +600,12 @@ BIOS Language Information
 		zh|CN|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0039, DMI type 136, 8 bytes
+Handle 0x003A, DMI type 136, 8 bytes
 OEM-specific Type
 	Header and Data:
-		88 08 39 00 00 00 00 00
+		88 08 3A 00 00 00 00 00
 
-Handle 0x003A, DMI type 8, 9 bytes
+Handle 0x003B, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Ctrl0Port1
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -603,7 +613,7 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x003B, DMI type 27, 15 bytes
+Handle 0x003C, DMI type 27, 15 bytes
 Cooling Device
 	Type: Fan
 	Status: OK
@@ -611,13 +621,13 @@ Cooling Device
 	Nominal Speed: Unknown Or Non-rotating
 	Description: Cooling Dev 1
 
-Handle 0x003C, DMI type 14, 8 bytes
+Handle 0x003D, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x003D, DMI type 219, 106 bytes
+Handle 0x003E, DMI type 219, 106 bytes
 HP ProLiant Information
 	Power Features: 0x45010401
 	Omega Features: 0x06a00002
@@ -625,22 +635,22 @@ HP ProLiant Information
 		iCRU: No
 		UEFI: No
 
-Handle 0x003E, DMI type 136, 6 bytes
+Handle 0x003F, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 3E 00 00 00
+		88 06 3F 00 00 00
 
-Handle 0x003F, DMI type 14, 23 bytes
+Handle 0x0040, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 6
-		0x0029 (OEM-specific)
 		0x002A (OEM-specific)
 		0x002B (OEM-specific)
 		0x002C (OEM-specific)
 		0x002D (OEM-specific)
-		0x0035 (OEM-specific)
+		0x002E (OEM-specific)
+		0x0036 (OEM-specific)
 
-Handle 0x0040, DMI type 127, 4 bytes
+Handle 0x0041, DMI type 127, 4 bytes
 End Of Table
 

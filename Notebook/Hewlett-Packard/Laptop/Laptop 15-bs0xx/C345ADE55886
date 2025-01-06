@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0 present.
 68 structures occupying 3649 bytes.
@@ -7,8 +7,8 @@ Table at 0x000E60A0.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Insyde
-	Version: F.67
-	Release Date: 12/23/2020
+	Version: F.72
+	Release Date: 04/10/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 6 MB
@@ -32,7 +32,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.67
+	BIOS Revision: 15.72
 	Firmware Revision: 23.77
 
 Handle 0x0001, DMI type 1, 27 bytes
@@ -695,9 +695,9 @@ OEM-specific Type
 Handle 0x003B, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 3B 00 10 00 00 00 00 00 00 00 00 00 00 00
+		83 40 3B 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 4E 9D 00 00 00 00 01 00 00 00 08 00 0B 00
-		FE 0E 52 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		E3 10 5D 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 FF 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x003C, DMI type 136, 6 bytes
@@ -706,43 +706,79 @@ OEM-specific Type
 		88 06 3C 00 FF FF
 
 Handle 0x003D, DMI type 219, 81 bytes
-HP ProLiant Information
-	Power Features: 0x45010301
-	Omega Features: 0x06900002
-	Misc. Features: 0x00000000
-		iCRU: No
-		UEFI: No
+OEM-specific Type
+	Header and Data:
+		DB 51 3D 00 01 03 01 45 02 00 90 06 01 10 80 20
+		00 00 00 00 40 08 00 00 00 00 00 00 00 00 40 02
+		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00
+	Strings:
+		MEI1
+		MEI2
+		MEI3
 
 Handle 0x003E, DMI type 221, 33 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.4, MAC address 00:03:02:00:00:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:DE:00:03
-	NIC 3: Disabled
+OEM-specific Type
+	Header and Data:
+		DD 21 3E 00 04 01 00 03 08 04 00 00 02 00 00 00
+		00 F0 00 03 00 00 05 00 00 00 04 00 FF FF FF FF
+		FF
+	Strings:
+		Reference Code - CPU
+		uCode Version
+		TXT ACM Version
+		BIOS Guard Version
 
 Handle 0x003F, DMI type 221, 26 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:03:02:00:00:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:00:00:03
+OEM-specific Type
+	Header and Data:
+		DD 1A 3F 00 03 01 00 03 08 04 00 00 02 00 00 00
+		00 00 00 03 04 0B 08 5D E3 10
+	Strings:
+		Reference Code - ME 11.0
+		MEBx version
+		ME Firmware Version
+		Consumer SKU
 
 Handle 0x0040, DMI type 221, 75 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:01.2, MAC address 00:03:02:00:00:00
-	NIC 2: PCI device 03:00.2, MAC address FF:FF:FF:FF:FF:04
-	NIC 3: PCI device ff:00.0, MAC address FF:FF:21:00:05:00
-	NIC 4: Not Installed
-	NIC 5: Not Installed
-	NIC 6: Disabled
-	NIC 7: Disabled
-	NIC 8: PCI device 0a:00.0, MAC address 00:3E:00:00:00:00
+OEM-specific Type
+	Header and Data:
+		DD 4B 40 00 0A 01 00 03 08 04 00 00 02 03 FF FF
+		FF FF FF 04 00 FF FF FF 21 00 05 00 FF FF FF 21
+		00 06 00 FF FF FF FF FF 07 00 3E 00 00 00 00 08
+		00 34 00 00 00 00 09 00 0B 00 00 00 00 0A 00 3E
+		00 00 00 00 0B 00 34 00 00 00 00
+	Strings:
+		Reference Code - SKL PCH
+		PCH-CRID Status
+		Disabled
+		PCH-CRID Original Value
+		PCH-CRID New Value
+		OPROM - RST - RAID
+		SKL PCH H Bx Hsio Version
+		SKL PCH H Dx Hsio Version
+		KBL PCH H Ax Hsio Version
+		SKL PCH LP Bx Hsio Version
+		SKL PCH LP Cx Hsio Version
 
 Handle 0x0041, DMI type 221, 54 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.7, MAC address 00:03:02:00:00:00
-	NIC 2: PCI device 00:00.2, MAC address 03:02:00:00:00:03
-	NIC 3: PCI device 03:00.0, MAC address 02:00:00:00:04:05
-	NIC 4: Not Installed
-	NIC 5: Not Installed
-	NIC 6: PCI device 02:1f.7, MAC address 00:08:00:FF:FF:FF
+OEM-specific Type
+	Header and Data:
+		DD 36 41 00 07 01 00 03 08 04 00 00 02 00 03 08
+		04 00 00 03 00 03 08 04 00 00 04 05 FF FF FF FF
+		FF 06 00 FF FF FF 02 00 07 00 FF FF FF 02 00 08
+		00 FF FF FF 00 00
+	Strings:
+		Reference Code - SA - System Agent
+		Reference Code - MRC
+		SA - PCIe Version
+		SA-CRID Status
+		Disabled
+		SA-CRID Original Value
+		SA-CRID New Value
+		OPROM - VBIOS
 
 Handle 0x0042, DMI type 222, 14 bytes
 OEM-specific Type

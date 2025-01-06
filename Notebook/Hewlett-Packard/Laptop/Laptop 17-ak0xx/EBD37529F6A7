@@ -1,7 +1,8 @@
-# dmidecode 3.2
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
-SMBIOS 3.0.0 present.
-Table at 0xBF1DB000.
+SMBIOS 3.0 present.
+49 structures occupying 2314 bytes.
+Table at 0x000E36D0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -10,7 +11,7 @@ BIOS Information
 	Release Date: 11/02/2017
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -151,8 +152,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -292,7 +293,8 @@ Port Connector Information
 Handle 0x0017, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3600
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -305,7 +307,8 @@ System Slot Information
 Handle 0x0018, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3700
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -318,7 +321,8 @@ System Slot Information
 Handle 0x0019, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3605
-	Type: x8 PCI Express x8
+	Type: PCI Express x8
+	Data Bus Width: 8x or x8
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -331,7 +335,8 @@ System Slot Information
 Handle 0x001A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3702
-	Type: x1 Other
+	Type: Other
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	Characteristics:
@@ -343,7 +348,8 @@ System Slot Information
 Handle 0x001B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3703
-	Type: x1 Other
+	Type: Other
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	Characteristics:
@@ -355,7 +361,8 @@ System Slot Information
 Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J4000
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 4
@@ -421,16 +428,6 @@ Memory Device
 	Bank Locator: CHANNEL A
 	Type: DDR
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Empty
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Empty
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x0022, DMI type 17, 40 bytes
 Memory Device
@@ -438,7 +435,7 @@ Memory Device
 	Error Information Handle: 0x0024
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-slot 2(right)

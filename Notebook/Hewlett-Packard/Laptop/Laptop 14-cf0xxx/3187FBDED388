@@ -1,16 +1,16 @@
-# dmidecode 3.1
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x8A095000.
+Table at 0x8A02E000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Insyde
-	Version: F.05
-	Release Date: 04/09/2018
+	Version: F.63
+	Release Date: 03/25/2021
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 6144 kB
+	ROM Size: 6 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -31,8 +31,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.5
-	Firmware Revision: 74.19
+	BIOS Revision: 15.63
+	Firmware Revision: 74.36
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -49,7 +49,7 @@ Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 84B3
-	Version: KBC Version 74.19
+	Version: KBC Version 74.36
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -177,8 +177,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -342,7 +342,8 @@ Port Connector Information
 Handle 0x001B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Other
 	ID: 1
@@ -354,7 +355,8 @@ System Slot Information
 Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D2
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 2
@@ -366,7 +368,8 @@ System Slot Information
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7C1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 3
@@ -378,7 +381,8 @@ System Slot Information
 Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7D1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 4
@@ -390,7 +394,8 @@ System Slot Information
 Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8C1
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Other
 	ID: 5
@@ -406,7 +411,7 @@ OEM Strings
 	String 3: BCU_Y
 	String 4: ABS 70/71 78 79 7A 7B
 	String 5: OemString5
-	String 6: HP_Mute_LED_P_G
+	String 6: HP_Mute_LED_0_C
 	String 7: FBYTE#3K6b7B7K7P7WaBapaqarawbCbhcbdUdpdqfP.FQ;
 	String 8: BUILDID#18WW1HET601#SACB#DACB;
 	String 9: OemString9
@@ -437,7 +442,7 @@ Handle 0x0023, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x0042 (OEM-specific)
+		0x0041 (OEM-specific)
 
 Handle 0x0024, DMI type 14, 8 bytes
 Group Associations
@@ -485,7 +490,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(left)
@@ -498,7 +503,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: M471A5244CB0-CTD    
 	Rank: 1
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.35 V
 	Maximum Voltage: 1.35 V
 	Configured Voltage: 1.2 V
@@ -509,7 +514,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(right)
@@ -522,7 +527,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: M471A5244CB0-CTD    
 	Rank: 1
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.35 V
 	Maximum Voltage: 1.35 V
 	Configured Voltage: 1.2 V
@@ -566,16 +571,16 @@ Built-in Pointing Device
 Handle 0x002E, DMI type 22, 26 bytes
 Portable Battery
 	Location: Primary
-	Manufacturer: 313-1C-34-A
-	Manufacture Date: 05/31/2018
+	Manufacturer: 333-42-5D
+	Manufacture Date: 10/22/2022
 	Serial Number: --
-	Name: HT03041
+	Name: TF03041
 	Chemistry: Lithium Ion
-	Design Capacity: 41040 mWh
-	Design Voltage: 11400 mV
+	Design Capacity: 37740 mWh
+	Design Voltage: 11100 mV
 	SBDS Version: NULL
-	Maximum Error: 5%
-	OEM-specific Information: 0x000C090E
+	Maximum Error: 8%
+	OEM-specific Information: 0x000A070C
 
 Handle 0x002F, DMI type 24, 5 bytes
 Hardware Security
@@ -695,62 +700,84 @@ OEM-specific Type
 		88 06 3B 00 FF FF
 
 Handle 0x003C, DMI type 219, 81 bytes
-HP ProLiant Information
-	Power Features: 0x45010301
-	Omega Features: 0x06900002
-	Misc. Features: 0x04000000
-		iCRU: No
-		UEFI: No
-
-Handle 0x003D, DMI type 221, 33 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.4, MAC address 00:02:09:00:00:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:70:00:03
-	NIC 3: Disabled
-
-Handle 0x003E, DMI type 221, 26 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:02:09:00:00:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:00:00:03
-
-Handle 0x003F, DMI type 221, 75 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:01.2, MAC address 00:02:09:00:00:00
-	NIC 2: PCI device 03:00.2, MAC address FF:FF:FF:FF:FF:04
-	NIC 3: PCI device ff:00.0, MAC address FF:FF:21:00:05:00
-	NIC 4: Not Installed
-	NIC 5: PCI device 00:01.1, MAC address 00:00:07:00:3E:00
-	NIC 6: Disabled
-	NIC 7: Disabled
-	NIC 8: PCI device 0a:00.0, MAC address 00:3E:00:00:00:00
-
-Handle 0x0040, DMI type 221, 54 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.7, MAC address 00:02:09:00:00:00
-	NIC 2: PCI device 00:00.2, MAC address 02:09:00:00:00:03
-	NIC 3: PCI device 02:00.0, MAC address 09:00:00:00:04:05
-	NIC 4: Not Installed
-	NIC 5: Not Installed
-	NIC 6: PCI device 08:1f.7, MAC address 00:08:00:FF:FF:FF
-
-Handle 0x0041, DMI type 221, 96 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:01.5, MAC address 00:00:00:00:FF:00
-	NIC 2: PCI device 00:00.2, MAC address FF:FF:FF:FF:FF:03
-	NIC 3: PCI device ff:00.4, MAC address FF:FF:FF:FF:05:06
-	NIC 4: Not Installed
-	NIC 5: Not Installed
-	NIC 6: Disabled
-	NIC 7: Not Installed
-	NIC 8: PCI device 0c:00.0, MAC address 00:00:09:00:74:10
-	NIC 9: PCI device 00:01.5, MAC address FF:FF:FF:FF:FF:0E
-	NIC 10: PCI device ff:00.0, MAC address FF:FF:FF:FF:0F:10
-	NIC 11: PCI device 03:00.1, MAC address 04:01:00:11:00:00
-
-Handle 0x0042, DMI type 222, 14 bytes
 OEM-specific Type
 	Header and Data:
-		DE 0E 42 00 01 99 00 03 10 01 20 02 30 03
+		DB 51 3C 00 01 03 01 45 02 00 90 06 01 10 80 20
+		00 00 00 04 40 08 00 00 00 00 00 00 00 00 40 02
+		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00
+	Strings:
+		MEI1
+		MEI2
+		MEI3
+
+Handle 0x003D, DMI type 221, 33 bytes
+OEM-specific Type
+	Header and Data:
+		DD 21 3D 00 04 01 00 03 06 09 00 00 02 00 00 00
+		00 E0 00 03 00 00 05 00 00 00 04 00 FF FF FF FF
+		FF
+	Strings:
+		Reference Code - CPU
+		uCode Version
+		TXT ACM Version
+		BIOS Guard Version
+
+Handle 0x003E, DMI type 221, 26 bytes
+OEM-specific Type
+	Header and Data:
+		DD 1A 3E 00 03 01 00 03 06 09 00 00 02 00 00 00
+		00 00 00 03 04 0B 08 32 61 0D
+	Strings:
+		Reference Code - ME 11.0
+		MEBx version
+		ME Firmware Version
+		Consumer SKU
+
+Handle 0x003F, DMI type 221, 75 bytes
+OEM-specific Type
+	Header and Data:
+		DD 4B 3F 00 0A 01 00 03 06 09 00 00 02 03 FF FF
+		FF FF FF 04 00 FF FF FF 21 00 05 00 FF FF FF 21
+		00 06 00 11 08 00 00 00 07 00 3E 00 00 00 00 08
+		00 34 00 00 00 00 09 00 0B 00 00 00 00 0A 00 3E
+		00 00 00 00 0B 00 34 00 00 00 00
+	Strings:
+		Reference Code - SKL PCH
+		PCH-CRID Status
+		Disabled
+		PCH-CRID Original Value
+		PCH-CRID New Value
+		OPROM - RST - RAID
+		SKL PCH H Bx Hsio Version
+		SKL PCH H Dx Hsio Version
+		KBL PCH H Ax Hsio Version
+		SKL PCH LP Bx Hsio Version
+		SKL PCH LP Cx Hsio Version
+
+Handle 0x0040, DMI type 221, 54 bytes
+OEM-specific Type
+	Header and Data:
+		DD 36 40 00 07 01 00 03 06 09 00 00 02 00 03 06
+		09 00 00 03 00 03 06 09 00 00 04 05 FF FF FF FF
+		FF 06 00 FF FF FF 08 00 07 00 FF FF FF 08 00 08
+		00 FF FF FF 00 00
+	Strings:
+		Reference Code - SA - System Agent
+		Reference Code - MRC
+		SA - PCIe Version
+		SA-CRID Status
+		Disabled
+		SA-CRID Original Value
+		SA-CRID New Value
+		OPROM - VBIOS
+
+Handle 0x0041, DMI type 222, 14 bytes
+OEM-specific Type
+	Header and Data:
+		DE 0E 41 00 01 99 00 03 10 01 20 02 30 03
 	Strings:
 		Memory Init Complete
 		End of DXE Phase
