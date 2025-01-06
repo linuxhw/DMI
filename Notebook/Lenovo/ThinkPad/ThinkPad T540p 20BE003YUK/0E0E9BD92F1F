@@ -1,14 +1,14 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-67 structures occupying 2673 bytes.
+67 structures occupying 2680 bytes.
 Table at 0xBCD2D000.
 
 Handle 0x0000, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPU Socket - U3E1
 	Type: Central Processor
-	Family: Core i5
+	Family: Core i7
 	Manufacturer: Intel(R) Corporation
 	ID: C3 06 03 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 60, Stepping 3
@@ -41,11 +41,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz
+	Version: Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz
 	Voltage: 0.8 V
 	External Clock: 100 MHz
-	Max Speed: 2500 MHz
-	Current Speed: 2500 MHz
+	Max Speed: 2400 MHz
+	Current Speed: 2400 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket rPGA988B
 	L1 Cache Handle: 0x0002
@@ -54,9 +54,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: None
-	Core Count: 2
-	Core Enabled: 2
-	Thread Count: 4
+	Core Count: 4
+	Core Enabled: 4
+	Thread Count: 8
 	Characteristics:
 		64-bit capable
 
@@ -114,8 +114,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 6144 kB
+	Maximum Size: 6144 kB
 	Supported SRAM Types:
 		Asynchronous
 	Installed SRAM Type: Asynchronous
@@ -168,10 +168,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5173QH0-YK0  
+	Part Number: HMT451S6BFR8A-PB  
 	Rank: Unknown
 	Configured Clock Speed: 1600 MT/s
 
@@ -461,14 +461,14 @@ OEM-specific Type
 
 Handle 0x0035, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 139 bytes
+	Area Length: 187 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000008
+	Change Token: 0x0000000B
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -483,9 +483,9 @@ System Event Log
 Handle 0x0036, DMI type 140, 85 bytes
 OEM-specific Type
 	Header and Data:
-		8C 55 36 00 4C 45 4E 4F 56 4F 0B 00 01 E3 9F 3F
-		F1 4C 71 CE DC 06 72 FD D5 1F D1 78 34 01 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		8C 55 36 00 4C 45 4E 4F 56 4F 0B 00 01 C4 1F BA
+		89 75 E9 6A EE 0D E8 38 10 21 AA E8 3A 01 00 E3
+		9F 3F F1 4C 71 CE DC 06 72 FD D5 1F D1 78 34 01
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 7E 02 00 F0 7E
 		02 00 F0 00 F0
@@ -520,13 +520,13 @@ OEM-specific Type
 Handle 0x003B, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 3B 00 4C 45 4E 4F 56 4F 0B 05 01 07 00 00
+		8C 13 3B 00 4C 45 4E 4F 56 4F 0B 05 01 03 00 00
 		00 00 00
 
 Handle 0x003C, DMI type 140, 23 bytes
 OEM-specific Type
 	Header and Data:
-		8C 17 3C 00 4C 45 4E 4F 56 4F 0B 06 01 8A 13 04
+		8C 17 3C 00 4C 45 4E 4F 56 4F 0B 06 01 8A 13 00
 		00 00 00 00 00 00 00
 
 Handle 0x003D, DMI type 24, 5 bytes
@@ -539,7 +539,7 @@ Hardware Security
 Handle 0x003E, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 3E 00 01 D8 36
+		84 07 3E 00 01 C0 36
 
 Handle 0x003F, DMI type 135, 18 bytes
 OEM-specific Type

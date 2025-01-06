@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 69 structures occupying 2650 bytes.
@@ -50,7 +50,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
-	Voltage: 0.9 V
+	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 2600 MHz
 	Current Speed: 2600 MHz
@@ -163,10 +163,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B1G73QHO-YKO  
+	Part Number: HMT351S6EFR8C-PB  
 	Rank: Unknown
 	Configured Memory Speed: 1600 MT/s
 
@@ -184,10 +184,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT351S6EFR8C-PB  
+	Part Number: M471B1G73QHO-YKO  
 	Rank: Unknown
 	Configured Memory Speed: 1600 MT/s
 
@@ -429,7 +429,7 @@ Portable Battery
 	Location: Rear
 	Manufacturer: LGC
 	Name: 45N1005
-	Design Capacity: 47520 mWh
+	Design Capacity: 56160 mWh
 	Design Voltage: 10800 mV
 	SBDS Version: 03.01
 	Maximum Error: Unknown
@@ -482,7 +482,7 @@ OEM-specific Type
 Handle 0x0034, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 34 00 10 00 00 00 08 00 00 00 00 00 45 00
+		83 40 34 00 31 00 00 00 08 00 00 00 00 00 45 00
 		F8 00 55 1E FF FF FF FF 21 20 00 00 01 00 08 00
 		BA 0B 48 00 00 00 00 00 C8 00 02 15 00 00 00 00
 		00 00 00 00 60 00 00 00 76 50 72 6F 00 00 00 00
@@ -505,14 +505,14 @@ OEM-specific Type
 
 Handle 0x0037, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 66 bytes
+	Area Length: 98 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000003
+	Change Token: 0x00000005
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error

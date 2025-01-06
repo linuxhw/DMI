@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-70 structures occupying 2816 bytes.
+70 structures occupying 2791 bytes.
 Table at 0xDF69C000.
 
 Handle 0x0000, DMI type 134, 16 bytes
@@ -155,20 +155,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Samsung
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5273DH0-CH9  
+	Part Number: 9905428-426.A00LF 
 	Rank: Unknown
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0009, DMI type 17, 34 bytes
 Memory Device
@@ -176,20 +176,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5273DH0-CK0  
+	Part Number: M471B1G73EB0-YK0  
 	Rank: Unknown
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000A, DMI type 17, 34 bytes
 Memory Device
@@ -197,20 +197,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Samsung
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5173BH0-CK0  
+	Part Number: 9905428-426.A00LF 
 	Rank: Unknown
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000B, DMI type 17, 34 bytes
 Memory Device
@@ -218,26 +218,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 3
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5273DH0-CK0  
+	Part Number: M471B1G73EB0-YK0  
 	Rank: Unknown
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0007
 	Partition Width: 4
 
@@ -526,19 +526,8 @@ BIOS Language Information
 		en-US
 	Currently Installed Language: en-US
 
-Handle 0x002E, DMI type 22, 26 bytes
-Portable Battery
-	Location: Rear
-	Manufacturer: LGC
-	Name: 45N1011
-	Design Capacity: 93600 mWh
-	Design Voltage: 11100 mV
-	SBDS Version: 03.01
-	Maximum Error: Unknown
-	SBDS Serial Number: --
-	SBDS Manufacture Date: 2012-10-06
-	SBDS Chemistry: LION
-	OEM-specific Information: 0x00000000
+Handle 0x002E, DMI type 126, 26 bytes
+Inactive
 
 Handle 0x002F, DMI type 126, 26 bytes
 Inactive

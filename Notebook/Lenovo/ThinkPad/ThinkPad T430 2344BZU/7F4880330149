@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-69 structures occupying 2656 bytes.
+69 structures occupying 2645 bytes.
 Table at 0xDAE9C000.
 
 Handle 0x0000, DMI type 134, 16 bytes
@@ -50,7 +50,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz
-	Voltage: 0.8 V
+	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 2600 MHz
 	Current Speed: 2600 MHz
@@ -155,7 +155,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -163,10 +163,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: 86D3
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT351S6CFR8C-PB  
+	Part Number:                   
 	Rank: Unknown
 	Configured Memory Speed: 1600 MT/s
 
@@ -176,7 +176,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -184,18 +184,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Elpida
+	Manufacturer: 86D3
 	Serial Number: --
 	Asset Tag: --
-	Part Number: EBJ40UG8EFU0-GN-F 
+	Part Number:                   
 	Rank: Unknown
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0007
 	Partition Width: 2
 
@@ -387,7 +387,8 @@ Inactive
 Handle 0x0026, DMI type 9, 17 bytes
 System Slot Information
 	Designation: ExpressCard Slot
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 1
@@ -399,6 +400,7 @@ Handle 0x0027, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Media Card Slot
 	Type: Other
+	Data Bus Width: Other
 	Current Usage: Available
 	Length: Other
 	Characteristics:
@@ -429,12 +431,12 @@ Portable Battery
 	Location: Rear
 	Manufacturer: SANYO
 	Name: 45N1015
-	Design Capacity: 47520 mWh
+	Design Capacity: 57720 mWh
 	Design Voltage: 10800 mV
 	SBDS Version: 03.01
 	Maximum Error: Unknown
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 2020-03-07
+	SBDS Manufacture Date: 2023-11-30
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
@@ -505,14 +507,14 @@ OEM-specific Type
 
 Handle 0x0037, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 866 bytes
+	Area Length: 1378 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000035
+	Change Token: 0x00000055
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -527,8 +529,8 @@ System Event Log
 Handle 0x0038, DMI type 140, 67 bytes
 OEM-specific Type
 	Header and Data:
-		8C 43 38 00 4C 45 4E 4F 56 4F 0B 00 01 D4 5E 5E
-		5B 37 B6 01 1B 8B EC 93 3E BD 88 A5 2F 01 00 00
+		8C 43 38 00 4C 45 4E 4F 56 4F 0B 00 01 5D 5D 3A
+		25 EF 47 61 24 F2 1C 16 20 A8 37 D7 52 01 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00

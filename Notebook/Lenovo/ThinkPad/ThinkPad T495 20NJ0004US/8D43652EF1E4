@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
-Table at 0xB9EBF000.
+Table at 0xBBFF7000.
 
 Handle 0x0000, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -203,10 +203,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 2400 MT/s
-	Manufacturer: Ramaxel Technology
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: RMSA3300ME78HBF-2666
+	Part Number: 99U5428-063.A00LF/  
 	Rank: 2
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
@@ -232,8 +232,8 @@ OEM-specific Type
 Handle 0x000E, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: R12ET58W(1.28 )
-	Release Date: 06/11/2021
+	Version: R12ET64W(1.34 )
+	Release Date: 02/23/2024
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -256,8 +256,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.28
-	Firmware Revision: 1.28
+	BIOS Revision: 1.34
+	Firmware Revision: 1.34
 
 Handle 0x000F, DMI type 1, 27 bytes
 System Information
@@ -426,7 +426,8 @@ Port Connector Information
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-E x1 (J3600)
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -440,7 +441,8 @@ System Slot Information
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-E x8 (J3605)
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -454,7 +456,8 @@ System Slot Information
 Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2 PCI-E Connector (J3700)
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -468,7 +471,8 @@ System Slot Information
 Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2 WWAN Connector (J3702)
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 4
@@ -482,7 +486,8 @@ System Slot Information
 Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2 WLAN/BT Connector (J3703)
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 5
@@ -496,7 +501,8 @@ System Slot Information
 Handle 0x0026, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE SD_Card (J4000)
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 6
@@ -560,32 +566,127 @@ Portable Battery
 Handle 0x002D, DMI type 126, 26 bytes
 Inactive
 
-Handle 0x002E, DMI type 133, 5 bytes
+Handle 0x002E, DMI type 28, 22 bytes
+Temperature Probe
+	Description: APU_Temperature
+	Location: Processor
+	Status: OK
+	Maximum Value: Unknown
+	Minimum Value: Unknown
+	Resolution: Unknown
+	Tolerance: Unknown
+	Accuracy: Unknown
+	OEM-specific Information: 0x00000000
+	Nominal Value: Unknown
+
+Handle 0x002F, DMI type 28, 22 bytes
+Temperature Probe
+	Description: DDR_Temperature
+	Location: Memory Module
+	Status: OK
+	Maximum Value: Unknown
+	Minimum Value: Unknown
+	Resolution: Unknown
+	Tolerance: Unknown
+	Accuracy: Unknown
+	OEM-specific Information: 0x00000000
+	Nominal Value: Unknown
+
+Handle 0x0030, DMI type 27, 15 bytes
+Cooling Device
+	Temperature Probe Handle: 0x002E
+	Type: Fan
+	Status: OK
+	Cooling Unit Group: 1
+	OEM-specific Information: 0x00000000
+	Nominal Speed: Unknown Or Non-rotating
+	Description: FAN_SPEED
+
+Handle 0x0031, DMI type 34, 11 bytes
+Management Device
+	Description: IT8586
+	Type: Other
+	Address: 0x00000000
+	Address Type: Other
+
+Handle 0x0032, DMI type 36, 16 bytes
+Management Device Threshold Data
+
+Handle 0x0033, DMI type 36, 16 bytes
+Management Device Threshold Data
+
+Handle 0x0034, DMI type 36, 16 bytes
+Management Device Threshold Data
+
+Handle 0x0035, DMI type 35, 11 bytes
+Management Device Component
+	Description: APU_Temperature
+	Management Device Handle: 0x0031
+	Component Handle: 0x002E
+	Threshold Handle: 0x0032
+
+Handle 0x0036, DMI type 35, 11 bytes
+Management Device Component
+	Description: DDR_Temperature
+	Management Device Handle: 0x0031
+	Component Handle: 0x002F
+	Threshold Handle: 0x0033
+
+Handle 0x0037, DMI type 35, 11 bytes
+Management Device Component
+	Description: FAN_SPEED
+	Management Device Handle: 0x0031
+	Component Handle: 0x0030
+	Threshold Handle: 0x0034
+
+Handle 0x0038, DMI type 255, 14 bytes
 OEM-specific Type
 	Header and Data:
-		85 05 2E 00 01
+		FF 0E 38 00 2E 00 09 00 01 01 38 00 00 00
+
+Handle 0x0039, DMI type 255, 14 bytes
+OEM-specific Type
+	Header and Data:
+		FF 0E 39 00 2F 00 09 00 02 02 38 00 00 00
+
+Handle 0x003A, DMI type 255, 14 bytes
+OEM-specific Type
+	Header and Data:
+		FF 0E 3A 00 30 00 09 00 05 05 38 00 00 00
+
+Handle 0x003B, DMI type 133, 5 bytes
+OEM-specific Type
+	Header and Data:
+		85 05 3B 00 01
 	Strings:
 		KHOIHGIUCCHHII
 
-Handle 0x002F, DMI type 135, 19 bytes
+Handle 0x003C, DMI type 160, 7 bytes
 OEM-specific Type
 	Header and Data:
-		87 13 2F 00 54 50 07 02 42 41 59 20 49 2F 4F 20
+		A0 07 3C 00 79 00 00
+	Strings:
+		dptalC3Ct0
+
+Handle 0x003D, DMI type 135, 19 bytes
+OEM-specific Type
+	Header and Data:
+		87 13 3D 00 54 50 07 02 42 41 59 20 49 2F 4F 20
 		04 00 00
 
-Handle 0x0030, DMI type 24, 5 bytes
+Handle 0x003E, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
-Handle 0x0031, DMI type 132, 7 bytes
+Handle 0x003F, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 31 00 01 D8 36
+		84 07 3F 00 01 D8 36
 
-Handle 0x0032, DMI type 18, 23 bytes
+Handle 0x0040, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -595,38 +696,38 @@ Handle 0x0032, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0033, DMI type 21, 7 bytes
+Handle 0x0041, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Track Point
 	Interface: PS/2
 	Buttons: 3
 
-Handle 0x0034, DMI type 21, 7 bytes
+Handle 0x0042, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Touch Pad
 	Interface: PS/2
 	Buttons: 2
 
-Handle 0x0035, DMI type 131, 22 bytes
+Handle 0x0043, DMI type 131, 22 bytes
 ThinkVantage Technologies
 	Version: 1
 	Diagnostics: No
 
-Handle 0x0036, DMI type 136, 6 bytes
+Handle 0x0044, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 36 00 5A 5A
+		88 06 44 00 5A 5A
 
-Handle 0x0037, DMI type 15, 31 bytes
+Handle 0x0045, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 610 bytes
+	Area Length: 626 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000025
+	Change Token: 0x00000026
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -638,34 +739,34 @@ System Event Log
 	Descriptor 4: Log area reset/cleared
 	Data Format 4: None
 
-Handle 0x0038, DMI type 140, 19 bytes
+Handle 0x0046, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 38 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
+		8C 13 46 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
 		53 20 00
 
-Handle 0x0039, DMI type 140, 19 bytes
+Handle 0x0047, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 39 00 4C 45 4E 4F 56 4F 0B 05 01 06 00 00
+		8C 13 47 00 4C 45 4E 4F 56 4F 0B 05 01 06 00 00
 		00 00 00
 
-Handle 0x003A, DMI type 140, 23 bytes
+Handle 0x0048, DMI type 140, 23 bytes
 OEM-specific Type
 	Header and Data:
-		8C 17 3A 00 4C 45 4E 4F 56 4F 0B 06 01 8A 13 00
+		8C 17 48 00 4C 45 4E 4F 56 4F 0B 06 01 8A 13 00
 		00 00 00 00 00 00 00
 
-Handle 0x003B, DMI type 135, 18 bytes
+Handle 0x0049, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 3B 00 54 50 07 01 01 00 02 00 02 00 00 00
+		87 12 49 00 54 50 07 01 01 00 02 00 02 00 00 00
 		02 00
 
-Handle 0x003C, DMI type 140, 15 bytes
+Handle 0x004A, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: R12HT58W
-	Release Date: 05/12/2021
+	Version ID: R12HT64W
+	Release Date: 02/23/2024
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

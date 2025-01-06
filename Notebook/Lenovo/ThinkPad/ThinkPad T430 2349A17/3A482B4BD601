@@ -1,4 +1,4 @@
-# dmidecode 3.5
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 68 structures occupying 2622 bytes.
@@ -50,7 +50,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-3632QM CPU @ 2.20GHz
-	Voltage: 0.8 V
+	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 2200 MHz
 	Current Speed: 2200 MHz
@@ -387,7 +387,8 @@ Inactive
 Handle 0x0026, DMI type 9, 17 bytes
 System Slot Information
 	Designation: ExpressCard Slot
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 1
@@ -399,6 +400,7 @@ Handle 0x0027, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Media Card Slot
 	Type: Other
+	Data Bus Width: Other
 	Current Usage: Available
 	Length: Other
 	Characteristics:
@@ -527,8 +529,8 @@ System Event Log
 Handle 0x0038, DMI type 140, 67 bytes
 OEM-specific Type
 	Header and Data:
-		8C 43 38 00 4C 45 4E 4F 56 4F 0B 00 01 B3 EC 03
-		B1 FD CA B8 F9 D4 E2 51 8E 36 5C F6 3A 01 00 2B
+		8C 43 38 00 4C 45 4E 4F 56 4F 0B 00 01 69 59 83
+		8F E3 4B 60 D1 9A 82 E4 37 59 C4 11 41 01 00 2B
 		68 02 C4 91 2C 32 D7 E4 9A 72 DA EF 4D 15 C7 01
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00
@@ -592,9 +594,9 @@ ThinkPad Embedded Controller Program
 Handle 0x0042, DMI type 140, 43 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2B 42 00 4C 45 4E 4F 56 4F 0B 08 01 02 17 03
-		1E 11 21 02 16 06 05 00 2A 02 15 0C 0B 0B 28 02
-		15 0C 03 00 04 02 15 0B 18 08 2B
+		8C 2B 42 00 4C 45 4E 4F 56 4F 0B 08 01 02 18 02
+		08 17 38 02 17 05 1C 0D 0F 02 17 05 0C 09 04 02
+		17 05 0C 09 00 02 17 03 1E 11 21
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

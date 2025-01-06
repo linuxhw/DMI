@@ -1,4 +1,4 @@
-# dmidecode 3.0
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 69 structures occupying 2652 bytes.
@@ -122,8 +122,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -155,20 +155,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M471B5273DH0-CK0  
 	Rank: Unknown
-	Configured Clock Speed: 1600 MHz
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0009, DMI type 17, 34 bytes
 Memory Device
@@ -176,20 +176,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
 	Part Number: HMT451S6AFR8A-PB  
 	Rank: Unknown
-	Configured Clock Speed: 1600 MHz
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000A, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -211,7 +211,7 @@ BIOS Information
 	Release Date: 08/24/2016
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 12288 kB
+	ROM Size: 12 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -469,12 +469,9 @@ Built-in Pointing Device
 	Buttons: 2
 
 Handle 0x0031, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 31 00 01 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: No
 
 Handle 0x0032, DMI type 136, 6 bytes
 OEM-specific Type
@@ -490,9 +487,9 @@ OEM-specific Type
 Handle 0x0034, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 34 00 14 00 00 00 08 00 00 00 00 00 45 00
-		F8 00 55 1E FF FF FF FF 09 C0 00 00 00 00 08 00
-		DA 05 0C 00 00 00 00 00 C8 00 02 15 00 00 00 00
+		83 40 34 00 35 00 00 00 08 00 00 00 00 00 45 00
+		F8 00 55 1E FF FF FF FF 09 C0 00 00 01 00 08 00
+		BA 0B 48 00 00 00 00 00 C8 00 02 15 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0035, DMI type 135, 74 bytes
@@ -513,14 +510,14 @@ OEM-specific Type
 
 Handle 0x0037, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 34 bytes
+	Area Length: 66 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000001
+	Change Token: 0x00000003
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -535,8 +532,8 @@ System Event Log
 Handle 0x0038, DMI type 140, 67 bytes
 OEM-specific Type
 	Header and Data:
-		8C 43 38 00 4C 45 4E 4F 56 4F 0B 00 01 D0 0A B9
-		05 4E 0E A9 77 36 86 02 7F CC D1 46 D1 01 00 00
+		8C 43 38 00 4C 45 4E 4F 56 4F 0B 00 01 11 E7 BB
+		65 0E 33 26 9D 53 CD 64 EF 2E 8B B8 63 01 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00
@@ -571,7 +568,7 @@ OEM-specific Type
 Handle 0x003D, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 3D 00 4C 45 4E 4F 56 4F 0B 05 01 07 00 00
+		8C 13 3D 00 4C 45 4E 4F 56 4F 0B 05 01 03 00 00
 		00 00 00
 
 Handle 0x003E, DMI type 140, 23 bytes
@@ -599,12 +596,9 @@ OEM-specific Type
 		00 00
 
 Handle 0x0042, DMI type 140, 15 bytes
-OEM-specific Type
-	Header and Data:
-		8C 0F 42 00 4C 45 4E 4F 56 4F 0B 07 01 01 02
-	Strings:
-		G4HT39WW
-		03/31/2014
+ThinkPad Embedded Controller Program
+	Version ID: G4HT39WW
+	Release Date: 03/31/2014
 
 Handle 0x0043, DMI type 140, 43 bytes
 OEM-specific Type

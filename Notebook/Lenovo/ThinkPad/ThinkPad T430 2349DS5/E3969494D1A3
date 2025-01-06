@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-71 structures occupying 2768 bytes.
+71 structures occupying 2742 bytes.
 Table at 0xDAE9D000.
 
 Handle 0x0000, DMI type 134, 16 bytes
@@ -16,7 +16,7 @@ Handle 0x0001, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPU Socket - U3E1
 	Type: Central Processor
-	Family: Core i5
+	Family: Core i7
 	Manufacturer: Intel(R) Corporation
 	ID: A9 06 03 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 58, Stepping 9
@@ -49,11 +49,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz
+	Version: Intel(R) Core(TM) i7-3632QM CPU @ 2.20GHz
 	Voltage: 0.9 V
 	External Clock: 100 MHz
-	Max Speed: 2600 MHz
-	Current Speed: 2600 MHz
+	Max Speed: 2200 MHz
+	Current Speed: 2200 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket rPGA988B
 	L1 Cache Handle: 0x0003
@@ -62,9 +62,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: None
-	Core Count: 2
-	Core Enabled: 2
-	Thread Count: 4
+	Core Count: 4
+	Core Enabled: 4
+	Thread Count: 8
 	Characteristics:
 		64-bit capable
 
@@ -122,8 +122,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3 MB
-	Maximum Size: 3 MB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -446,19 +446,8 @@ BIOS Language Information
 		en-US
 	Currently Installed Language: en-US
 
-Handle 0x002E, DMI type 22, 26 bytes
-Portable Battery
-	Location: Rear
-	Manufacturer: LGC
-	Name: 45N1005
-	Design Capacity: 56160 mWh
-	Design Voltage: 10800 mV
-	SBDS Version: 03.01
-	Maximum Error: Unknown
-	SBDS Serial Number: --
-	SBDS Manufacture Date: 2012-06-10
-	SBDS Chemistry: LION
-	OEM-specific Information: 0x00000000
+Handle 0x002E, DMI type 126, 26 bytes
+Inactive
 
 Handle 0x002F, DMI type 126, 26 bytes
 Inactive
@@ -498,16 +487,16 @@ OEM-specific Type
 Handle 0x0035, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 35 00 24 41 4D 54 01 01 01 01 01 A5 FF 03
-		00 00 01 00
+		82 14 35 00 24 41 4D 54 00 00 00 00 01 A5 FF 03
+		00 00 00 00
 
 Handle 0x0036, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 36 00 35 00 00 00 08 00 00 00 00 00 3F 00
-		F8 00 55 1E FF FF FF FF 09 E0 00 00 00 00 08 00
+		83 40 36 00 31 00 00 00 08 00 00 00 00 00 3F 00
+		F8 00 55 1E FF FF FF FF 21 20 00 00 00 00 08 00
 		DA 05 0C 00 00 00 00 00 C8 00 02 15 00 00 00 00
-		00 00 00 00 62 00 00 00 76 50 72 6F 00 00 00 00
+		00 00 00 00 60 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0037, DMI type 135, 74 bytes
 OEM-specific Type

@@ -1,13 +1,13 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-69 structures occupying 2646 bytes.
+67 structures occupying 2548 bytes.
 Table at 0xDAE9C000.
 
 Handle 0x0000, DMI type 134, 16 bytes
 OEM-specific Type
 	Header and Data:
-		86 10 00 00 00 53 54 4D 20 01 01 00 00 03 01 02
+		86 10 00 00 00 53 54 4D 20 01 01 00 00 02 01 02
 	Strings:
 		TPM INFO
 		System Reserved
@@ -162,13 +162,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Samsung
+	Speed: 1867 MT/s
+	Manufacturer: 04CD
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B1G73BH0-CK0  
+	Part Number: F3-1866C11-8GRSL
 	Rank: Unknown
-	Configured Memory Speed: 1600 MT/s
+	Configured Memory Speed: 1867 MT/s
 
 Handle 0x0009, DMI type 17, 34 bytes
 Memory Device
@@ -183,13 +183,13 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Samsung
+	Speed: 1867 MT/s
+	Manufacturer: 04CD
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B1G73BH0-CK0  
+	Part Number: F3-1866C11-8GRSL
 	Rank: Unknown
-	Configured Memory Speed: 1600 MT/s
+	Configured Memory Speed: 1867 MT/s
 
 Handle 0x000A, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -232,7 +232,7 @@ BIOS Information
 		Targeted content distribution is supported
 		UEFI is supported
 	BIOS Revision: 2.77
-	Firmware Revision: 1.14
+	Firmware Revision: 1.13
 
 Handle 0x000D, DMI type 1, 27 bytes
 System Information
@@ -423,7 +423,7 @@ System Slot Information
 Handle 0x0029, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Other
-	Status: Enabled
+	Status: Disabled
 	Description: IBM Embedded Security hardware
 
 Handle 0x002A, DMI type 12, 5 bytes
@@ -485,46 +485,32 @@ OEM-specific Type
 	Header and Data:
 		88 06 32 00 5A 5A
 
-Handle 0x0033, DMI type 130, 20 bytes
+Handle 0x0033, DMI type 135, 74 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 33 00 24 41 4D 54 01 01 01 01 01 A5 FF 03
-		00 00 01 00
-
-Handle 0x0034, DMI type 131, 64 bytes
-OEM-specific Type
-	Header and Data:
-		83 40 34 00 35 00 00 00 08 00 00 00 00 00 45 00
-		F8 00 55 1E FF FF FF FF 09 E0 00 00 01 00 08 00
-		BA 0B 48 00 00 00 00 00 C8 00 02 15 00 00 00 00
-		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
-
-Handle 0x0035, DMI type 135, 74 bytes
-OEM-specific Type
-	Header and Data:
-		87 4A 35 00 54 50 07 02 42 41 59 20 49 2F 4F 20
+		87 4A 33 00 54 50 07 02 42 41 59 20 49 2F 4F 20
 		03 00 06 FF 00 00 00 00 00 00 00 FF 00 00 00 00
 		00 00 00 FF 00 00 00 00 00 00 00 FF 00 00 00 00
 		00 00 00 FF 00 00 00 00 00 00 00 FF 00 00 00 00
 		00 00 00 06 00 02 04 FF 03 FF
 
-Handle 0x0036, DMI type 133, 5 bytes
+Handle 0x0034, DMI type 133, 5 bytes
 OEM-specific Type
 	Header and Data:
-		85 05 36 00 01
+		85 05 34 00 01
 	Strings:
 		KHOIHGIUCCHHII
 
-Handle 0x0037, DMI type 15, 31 bytes
+Handle 0x0035, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 34 bytes
+	Area Length: 18 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000001
+	Change Token: 0x00000000
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -536,81 +522,81 @@ System Event Log
 	Descriptor 4: Log area reset/cleared
 	Data Format 4: None
 
-Handle 0x0038, DMI type 140, 67 bytes
+Handle 0x0036, DMI type 140, 67 bytes
 OEM-specific Type
 	Header and Data:
-		8C 43 38 00 4C 45 4E 4F 56 4F 0B 00 01 78 8C A6
-		22 87 27 44 14 1F 4C AF A9 27 A9 A1 A8 01 00 00
+		8C 43 36 00 4C 45 4E 4F 56 4F 0B 00 01 18 5D F3
+		4C EF 0C 8F F3 E6 47 68 08 0F BF 70 03 01 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00
 
-Handle 0x0039, DMI type 140, 47 bytes
+Handle 0x0037, DMI type 140, 47 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2F 39 00 4C 45 4E 4F 56 4F 0B 01 01 29 00 2E
+		8C 2F 37 00 4C 45 4E 4F 56 4F 0B 01 01 29 00 2E
 		52 70 B7 11 CA 47 EE BF A4 32 12 6D 43 6F 59 00
 		00 00 00 10 00 10 00 10 01 D0 00 20 01 00 01
 
-Handle 0x003A, DMI type 140, 63 bytes
+Handle 0x0038, DMI type 140, 63 bytes
 OEM-specific Type
 	Header and Data:
-		8C 3F 3A 00 4C 45 4E 4F 56 4F 0B 02 01 00 00 00
+		8C 3F 38 00 4C 45 4E 4F 56 4F 0B 02 01 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 
-Handle 0x003B, DMI type 140, 17 bytes
+Handle 0x0039, DMI type 140, 17 bytes
 OEM-specific Type
 	Header and Data:
-		8C 11 3B 00 4C 45 4E 4F 56 4F 0B 03 01 00 00 00
+		8C 11 39 00 4C 45 4E 4F 56 4F 0B 03 01 00 00 00
 		00
 
-Handle 0x003C, DMI type 140, 19 bytes
+Handle 0x003A, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 3C 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
+		8C 13 3A 00 4C 45 4E 4F 56 4F 0B 04 01 B2 00 4D
 		53 20 00
 
-Handle 0x003D, DMI type 140, 19 bytes
+Handle 0x003B, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 3D 00 4C 45 4E 4F 56 4F 0B 05 01 07 00 00
+		8C 13 3B 00 4C 45 4E 4F 56 4F 0B 05 01 07 00 00
 		00 00 00
 
-Handle 0x003E, DMI type 140, 23 bytes
+Handle 0x003C, DMI type 140, 23 bytes
 OEM-specific Type
 	Header and Data:
-		8C 17 3E 00 4C 45 4E 4F 56 4F 0B 06 01 7E 14 00
+		8C 17 3C 00 4C 45 4E 4F 56 4F 0B 06 01 7E 14 00
 		00 00 00 00 00 00 00
 
-Handle 0x003F, DMI type 24, 5 bytes
+Handle 0x003D, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
-Handle 0x0040, DMI type 132, 7 bytes
+Handle 0x003E, DMI type 132, 7 bytes
 OEM-specific Type
 	Header and Data:
-		84 07 40 00 01 D8 36
+		84 07 3E 00 01 D8 36
 
-Handle 0x0041, DMI type 135, 18 bytes
+Handle 0x003F, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 41 00 54 50 07 01 01 D5 FF 01 00 00 F5 01
+		87 12 3F 00 54 50 07 01 01 D5 FF 01 00 00 F5 01
 		00 00
 
-Handle 0x0042, DMI type 140, 15 bytes
+Handle 0x0040, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: G4HT40WW
-	Release Date: 09/10/2019
+	Version ID: G4HT39WW
+	Release Date: 03/31/2014
 
-Handle 0x0043, DMI type 140, 43 bytes
+Handle 0x0041, DMI type 140, 43 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2B 43 00 4C 45 4E 4F 56 4F 0B 08 01 FF FF FF
+		8C 2B 41 00 4C 45 4E 4F 56 4F 0B 08 01 FF FF FF
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF FF FF FF
 

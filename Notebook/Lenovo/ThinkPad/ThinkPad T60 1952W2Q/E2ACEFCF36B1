@@ -1,5 +1,5 @@
-# dmidecode 3.0
-Scanning /dev/mem for entry point.
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 68 structures occupying 2219 bytes.
 Table at 0x000E0010.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 11/20/2006
 	Address: 0xDC000
 	Runtime Size: 144 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		PCI is supported
 		PC Card (PCMCIA) is supported
@@ -167,8 +167,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Burst
 	Installed SRAM Type: Burst
@@ -313,7 +313,7 @@ Inactive
 Handle 0x0025, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Other
-	Status: Disabled
+	Status: Enabled
 	Description: IBM Embedded Security hardware
 
 Handle 0x0026, DMI type 11, 5 bytes
@@ -357,7 +357,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 1
@@ -376,7 +376,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 2
@@ -466,12 +466,9 @@ OEM-specific Type
 		IBM System Metrics
 
 Handle 0x0036, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 36 00 01 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: No
 
 Handle 0x0037, DMI type 132, 7 bytes
 OEM-specific Type
@@ -501,7 +498,7 @@ OEM-specific Type
 Handle 0x003B, DMI type 134, 16 bytes
 OEM-specific Type
 	Header and Data:
-		86 10 3B 00 00 41 54 4D 4C 01 01 00 00 02 01 02
+		86 10 3B 00 00 41 54 4D 4C 01 01 00 00 03 01 02
 	Strings:
 		TPM INFO
 		System Reserved

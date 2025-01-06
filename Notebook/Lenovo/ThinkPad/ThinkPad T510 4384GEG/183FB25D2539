@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-78 structures occupying 2863 bytes.
+78 structures occupying 2838 bytes.
 Table at 0x000E0010.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -390,7 +390,8 @@ Port Connector Information
 Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: ExpressCard Slot
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 0
@@ -402,6 +403,7 @@ Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Media Card Slot
 	Type: Other
+	Data Bus Width: Other
 	Current Usage: Available
 	Length: Other
 	Characteristics:
@@ -540,19 +542,8 @@ Built-in Pointing Device
 	Interface: PS/2
 	Buttons: 0
 
-Handle 0x0033, DMI type 22, 26 bytes
-Portable Battery
-	Location: Rear
-	Manufacturer: SANYO
-	Name: 45N1173
-	Design Capacity: 85860 mWh
-	Design Voltage: 10800 mV
-	SBDS Version: 03.01
-	Maximum Error: Unknown
-	SBDS Serial Number: --
-	SBDS Manufacture Date: 2014-05-06
-	SBDS Chemistry: LION
-	OEM-specific Information: 0x00000000
+Handle 0x0033, DMI type 126, 26 bytes
+Inactive
 
 Handle 0x0034, DMI type 126, 26 bytes
 Inactive

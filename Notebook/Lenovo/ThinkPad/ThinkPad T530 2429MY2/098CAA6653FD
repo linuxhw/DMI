@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-69 structures occupying 2656 bytes.
+69 structures occupying 2638 bytes.
 Table at 0xDAE9C000.
 
 Handle 0x0000, DMI type 134, 16 bytes
@@ -155,20 +155,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Hynix/Hyundai
+	Speed: 1600 MT/s
+	Manufacturer: 8AAD
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT351S6CFR8A-H9  
+	Part Number: PSK-D3D11M1600BL-8
 	Rank: Unknown
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0009, DMI type 17, 34 bytes
 Memory Device
@@ -176,26 +176,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Hynix/Hyundai
+	Speed: 1600 MT/s
+	Manufacturer: 8AAD
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT351S6CFR8A-H9  
+	Part Number: PSK-D3D11M1600BL-8
 	Rank: Unknown
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0007
 	Partition Width: 2
 
@@ -392,7 +392,8 @@ Inactive
 Handle 0x0026, DMI type 9, 17 bytes
 System Slot Information
 	Designation: ExpressCard Slot
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 1
@@ -404,6 +405,7 @@ Handle 0x0027, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Media Card Slot
 	Type: Other
+	Data Bus Width: Other
 	Current Usage: Available
 	Length: Other
 	Characteristics:
@@ -487,7 +489,7 @@ OEM-specific Type
 Handle 0x0034, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 34 00 14 00 00 00 08 00 00 00 00 00 45 00
+		83 40 34 00 35 00 00 00 08 00 00 00 00 00 45 00
 		F8 00 55 1E FF FF FF FF 09 C0 00 00 01 00 08 00
 		BA 0B 48 00 00 00 00 00 C8 00 02 15 00 00 00 00
 		00 00 00 00 62 00 00 00 76 50 72 6F 00 00 00 00

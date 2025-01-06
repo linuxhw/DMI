@@ -1,13 +1,13 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-69 structures occupying 2658 bytes.
+69 structures occupying 2656 bytes.
 Table at 0xBAE9C000.
 
 Handle 0x0000, DMI type 134, 16 bytes
 OEM-specific Type
 	Header and Data:
-		86 10 00 00 00 53 54 4D 20 01 01 00 00 03 01 02
+		86 10 00 00 00 53 54 4D 20 01 01 00 00 02 01 02
 	Strings:
 		TPM INFO
 		System Reserved
@@ -122,8 +122,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -155,7 +155,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -168,7 +168,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: HMT351S6CFR8C-PB  
 	Rank: Unknown
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0009, DMI type 17, 34 bytes
 Memory Device
@@ -176,7 +176,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -189,7 +189,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: HMT351S6CFR8C-PB  
 	Rank: Unknown
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000A, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -207,11 +207,11 @@ OEM-specific Type
 Handle 0x000C, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: G4ETA2WW (2.62 )
-	Release Date: 08/21/2014
+	Version: G4ETB7WW (2.77 )
+	Release Date: 09/09/2019
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 12288 kB
+	ROM Size: 12 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -231,8 +231,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.62
-	Firmware Revision: 1.13
+	BIOS Revision: 2.77
+	Firmware Revision: 1.14
 
 Handle 0x000D, DMI type 1, 27 bytes
 System Information
@@ -423,7 +423,7 @@ System Slot Information
 Handle 0x0029, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Other
-	Status: Enabled
+	Status: Disabled
 	Description: IBM Embedded Security hardware
 
 Handle 0x002A, DMI type 12, 5 bytes
@@ -439,14 +439,14 @@ BIOS Language Information
 Handle 0x002C, DMI type 22, 26 bytes
 Portable Battery
 	Location: Rear
-	Manufacturer: SANYO
-	Name: 45N1007
-	Design Capacity: 86580 mWh
+	Manufacturer: LGC
+	Name: 45N1011
+	Design Capacity: 93600 mWh
 	Design Voltage: 11100 mV
 	SBDS Version: 03.01
 	Maximum Error: Unknown
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 2012-08-07
+	SBDS Manufacture Date: 2013-02-28
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
@@ -476,12 +476,9 @@ Built-in Pointing Device
 	Buttons: 2
 
 Handle 0x0031, DMI type 131, 22 bytes
-OEM-specific Type
-	Header and Data:
-		83 16 31 00 01 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 01
-	Strings:
-		TVT-Enablement
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: No
 
 Handle 0x0032, DMI type 136, 6 bytes
 OEM-specific Type
@@ -497,10 +494,10 @@ OEM-specific Type
 Handle 0x0034, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 34 00 14 00 00 00 08 00 00 00 00 00 45 00
+		83 40 34 00 35 00 00 00 08 00 00 00 00 00 45 00
 		F8 00 55 1E FF FF FF FF 09 E0 00 00 01 00 08 00
-		F1 04 00 00 00 00 00 00 C8 00 02 15 00 00 00 00
-		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
+		BA 0B 48 00 00 00 00 00 C8 00 02 15 00 00 00 00
+		00 00 00 00 62 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0035, DMI type 135, 74 bytes
 OEM-specific Type
@@ -542,8 +539,8 @@ System Event Log
 Handle 0x0038, DMI type 140, 67 bytes
 OEM-specific Type
 	Header and Data:
-		8C 43 38 00 4C 45 4E 4F 56 4F 0B 00 01 39 6D A3
-		CA 18 00 86 1D 05 B8 7E 09 03 C8 C1 C2 01 00 00
+		8C 43 38 00 4C 45 4E 4F 56 4F 0B 00 01 02 38 19
+		60 5F 05 40 14 55 C2 B5 33 63 C3 0F B0 01 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00
@@ -602,16 +599,13 @@ OEM-specific Type
 Handle 0x0041, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 41 00 54 50 07 01 01 D5 1F 00 00 00 15 00
+		87 12 41 00 54 50 07 01 01 D5 FF 01 00 00 F5 01
 		00 00
 
 Handle 0x0042, DMI type 140, 15 bytes
-OEM-specific Type
-	Header and Data:
-		8C 0F 42 00 4C 45 4E 4F 56 4F 0B 07 01 01 02
-	Strings:
-		G4HT39WW
-		03/31/2014
+ThinkPad Embedded Controller Program
+	Version ID: G4HT40WW
+	Release Date: 09/10/2019
 
 Handle 0x0043, DMI type 140, 43 bytes
 OEM-specific Type
