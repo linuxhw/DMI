@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 24 structures occupying 1336 bytes.
@@ -89,7 +89,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:04:01.0
+	Bus Address: ffff:05:01.0
 
 Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
@@ -102,19 +102,20 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:04:02.0
+	Bus Address: ffff:05:02.0
 
 Handle 0x0006, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE1
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 17
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
+	Bus Address: ffff:01:00.0
 
 Handle 0x0007, DMI type 9, 17 bytes
 System Slot Information
@@ -127,7 +128,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:01:00.0
+	Bus Address: ffff:02:00.0
 
 Handle 0x0008, DMI type 11, 5 bytes
 OEM Strings
@@ -232,7 +233,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
-	Voltage: 5.6 V
+	Voltage: 4.1 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
 	Current Speed: 3200 MHz
@@ -256,7 +257,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -264,18 +265,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 859B
+	Manufacturer: 0B2C
 	Serial Number: --
 	Asset Tag: --
-	Part Number: BLS4G3D1609DS1S00.
+	Part Number: HKED3081BAA3H3HA1 
 	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0010, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x000F
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: 1
@@ -288,7 +289,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -296,18 +297,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 859B
+	Manufacturer: 0B2C
 	Serial Number: --
 	Asset Tag: --
-	Part Number: BLS4G3D1609DS1S00.
+	Part Number: HKED3081BAA3H3HA1 
 	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0011
 	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: 1
@@ -317,8 +318,8 @@ Memory Device Mapped Address
 Handle 0x0013, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x000D
 	Partition Width: 2
 

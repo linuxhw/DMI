@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0xBDE21000.
+Table at 0xBDC20000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: P4.80
-	Release Date: 08/03/2021
+	Version: P10.01
+	Release Date: 04/13/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -36,7 +36,7 @@ BIOS Information
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: To Be Filled By O.E.M.
-	Product Name: To Be Filled By O.E.M.
+	Product Name: B450M-HDV R4.0
 	Version: To Be Filled By O.E.M.
 	Serial Number: --
 	UUID: --
@@ -80,7 +80,8 @@ Chassis Information
 Handle 0x0004, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 17
@@ -93,7 +94,8 @@ System Slot Information
 Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE2
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 18
@@ -106,7 +108,8 @@ System Slot Information
 Handle 0x0006, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE3_M2_1
-	Type: x4 PCI Express
+	Type: PCI Express
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Short
 	ID: 19
@@ -140,7 +143,7 @@ Handle 0x000B, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.58
+	Firmware Revision: 3.90
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -262,7 +265,7 @@ Processor Information
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
 	Version: AMD Ryzen 5 3600 6-Core Processor              
-	Voltage: 1.4 V
+	Voltage: 1.3 V
 	External Clock: 100 MHz
 	Max Speed: 4200 MHz
 	Current Speed: 4000 MHz
@@ -308,13 +311,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
+	Speed: 3000 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: 78.C1GMM.AUW0C      
 	Rank: 1
-	Configured Memory Speed: 2400 MT/s
+	Configured Memory Speed: 3000 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -364,13 +367,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
+	Speed: 3000 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: 78.C1GMM.AUW0C      
 	Rank: 1
-	Configured Memory Speed: 2400 MT/s
+	Configured Memory Speed: 3000 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V

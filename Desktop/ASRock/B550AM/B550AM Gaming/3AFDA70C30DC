@@ -1,13 +1,13 @@
-# dmidecode 3.5
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0xCDE20000.
+Table at 0x000E6CC0.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: P1.60
-	Release Date: 10/14/2020
+	Version: P2.00
+	Release Date: 04/20/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -79,81 +79,87 @@ Chassis Information
 
 Handle 0x0004, DMI type 9, 17 bytes
 System Slot Information
-	Designation: J6B2
-	Type: x16 PCI Express
+	Designation: PCIE1
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
-	Length: Long
-	ID: 0
+	Length: Short
+	ID: 17
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:01.0
+	Bus Address: 0000:00:00.0
 
 Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
-	Designation: J6B1
-	Type: x1 PCI Express
+	Designation: PCIE2
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
-	Length: Short
-	ID: 1
+	Length: Long
+	ID: 18
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:1c.3
+	Bus Address: 0000:00:00.0
 
 Handle 0x0006, DMI type 9, 17 bytes
 System Slot Information
-	Designation: J6D1
-	Type: x1 PCI Express
+	Designation: PCIE3
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
-	ID: 2
+	ID: 19
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:1c.4
+	Bus Address: 0000:00:00.0
 
 Handle 0x0007, DMI type 9, 17 bytes
 System Slot Information
-	Designation: J7B1
-	Type: x1 PCI Express
+	Designation: PCIE4
+	Type: PCI Express
+	Data Bus Width: 8x or x8
 	Current Usage: In Use
-	Length: Short
-	ID: 3
+	Length: Long
+	ID: 20
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:1c.5
+	Bus Address: 0000:00:00.0
 
 Handle 0x0008, DMI type 9, 17 bytes
 System Slot Information
-	Designation: J8B4
-	Type: x1 PCI Express
+	Designation: PCIE5
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
-	ID: 4
+	ID: 21
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:1c.6
+	Bus Address: 0000:00:00.0
 
 Handle 0x0009, DMI type 9, 17 bytes
 System Slot Information
-	Designation: J8D1
-	Type: x1 PCI Express
+	Designation: PCIE6
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
-	ID: 5
+	ID: 22
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:00:1c.7
+	Bus Address: 0000:00:00.0
 
 Handle 0x000A, DMI type 11, 5 bytes
 OEM Strings
@@ -179,7 +185,7 @@ Handle 0x000E, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 3.44
+	Firmware Revision: 3.84
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -207,16 +213,16 @@ Physical Memory Array
 Handle 0x0011, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000CFFFFFFF
-	Range Size: 3328 MB
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 3 GB
 	Physical Array Handle: 0x0010
 	Partition Width: 4
 
 Handle 0x0012, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0202FFFFFFF
-	Range Size: 127744 MB
+	Ending Address: 0x0203FFFFFFF
+	Range Size: 125 GB
 	Physical Array Handle: 0x0010
 	Partition Width: 4
 
@@ -334,7 +340,7 @@ Handle 0x0017, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0018, DMI type 17, 84 bytes
+Handle 0x0018, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x0010
 	Error Information Handle: 0x0017
@@ -347,13 +353,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
+	Speed: 3200 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: BL32G32C16U4B.M16FB1
 	Rank: 2
-	Configured Memory Speed: 2400 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -390,7 +396,7 @@ Handle 0x001A, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x001B, DMI type 17, 84 bytes
+Handle 0x001B, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x0010
 	Error Information Handle: 0x001A
@@ -403,13 +409,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
+	Speed: 3200 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: BL32G32C16U4B.M16FB1
 	Rank: 2
-	Configured Memory Speed: 2400 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -446,7 +452,7 @@ Handle 0x001D, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x001E, DMI type 17, 84 bytes
+Handle 0x001E, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x0010
 	Error Information Handle: 0x001D
@@ -459,13 +465,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
+	Speed: 3200 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: BL32G32C16U4B.M16FB1
 	Rank: 2
-	Configured Memory Speed: 2400 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -502,7 +508,7 @@ Handle 0x0020, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0021, DMI type 17, 84 bytes
+Handle 0x0021, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x0010
 	Error Information Handle: 0x0020
@@ -515,13 +521,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 2400 MT/s
+	Speed: 3200 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: BL32G32C16U4B.M16FB1
 	Rank: 2
-	Configured Memory Speed: 2400 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V

@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
-SMBIOS 3.2.1 present.
+SMBIOS 3.3.0 present.
 Table at 0x000E6CC0.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: P3.70
-	Release Date: 11/14/2019
+	Version: P10.10
+	Release Date: 01/24/2024
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -31,12 +31,12 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 5.14
+	BIOS Revision: 5.17
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: To Be Filled By O.E.M.
-	Product Name: To Be Filled By O.E.M.
+	Product Name: B450M-HDV R4.0
 	Version: To Be Filled By O.E.M.
 	Serial Number: --
 	UUID: --
@@ -131,7 +131,22 @@ Additional Information 1
 	String: MORDOR
 	Value: 0x00000000
 
-Handle 0x000A, DMI type 18, 23 bytes
+Handle 0x000A, DMI type 44, 9 bytes
+Unknown Type
+	Header and Data:
+		2C 09 0A 00 FF FF 01 01 00
+
+Handle 0x000B, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: AMD
+	Specification Version: 2.0
+	Firmware Revision: 3.8
+	Description: AMD
+	Characteristics:
+		Family configurable via platform software support
+	OEM-specific Information: 0x00000000
+
+Handle 0x000C, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -141,24 +156,24 @@ Handle 0x000A, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x000B, DMI type 16, 23 bytes
+Handle 0x000D, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
 	Maximum Capacity: 128 GB
-	Error Information Handle: 0x000A
+	Error Information Handle: 0x000C
 	Number Of Devices: 2
 
-Handle 0x000C, DMI type 19, 31 bytes
+Handle 0x000E, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
-	Physical Array Handle: 0x000B
+	Physical Array Handle: 0x000D
 	Partition Width: 2
 
-Handle 0x000D, DMI type 7, 27 bytes
+Handle 0x000F, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1 - Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -174,7 +189,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x000E, DMI type 7, 27 bytes
+Handle 0x0010, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L2 - Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -190,7 +205,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x000F, DMI type 7, 27 bytes
+Handle 0x0011, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L3 - Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -206,7 +221,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0010, DMI type 4, 48 bytes
+Handle 0x0012, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: AM4
 	Type: Central Processor
@@ -245,9 +260,9 @@ Processor Information
 	Current Speed: 3400 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM4
-	L1 Cache Handle: 0x000D
-	L2 Cache Handle: 0x000E
-	L3 Cache Handle: 0x000F
+	L1 Cache Handle: 0x000F
+	L2 Cache Handle: 0x0010
+	L3 Cache Handle: 0x0011
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Unknown
@@ -262,7 +277,7 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0011, DMI type 18, 23 bytes
+Handle 0x0013, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -272,10 +287,10 @@ Handle 0x0011, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0012, DMI type 17, 40 bytes
+Handle 0x0014, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x000B
-	Error Information Handle: 0x0011
+	Array Handle: 0x000D
+	Error Information Handle: 0x0013
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
@@ -295,19 +310,30 @@ Memory Device
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: <OUT OF SPEC>
+	Memory Operating Mode Capability: None
+	Firmware Version: Unknown
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
 
-Handle 0x0013, DMI type 20, 35 bytes
+Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
-	Physical Device Handle: 0x0012
-	Memory Array Mapped Address Handle: 0x000C
+	Physical Device Handle: 0x0014
+	Memory Array Mapped Address Handle: 0x000E
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0014, DMI type 18, 23 bytes
+Handle 0x0016, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -317,10 +343,10 @@ Handle 0x0014, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0015, DMI type 17, 40 bytes
+Handle 0x0017, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x000B
-	Error Information Handle: 0x0014
+	Array Handle: 0x000D
+	Error Information Handle: 0x0016
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
@@ -340,18 +366,29 @@ Memory Device
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: <OUT OF SPEC>
+	Memory Operating Mode Capability: None
+	Firmware Version: Unknown
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
 
-Handle 0x0016, DMI type 20, 35 bytes
+Handle 0x0018, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
-	Physical Device Handle: 0x0015
-	Memory Array Mapped Address Handle: 0x000C
+	Physical Device Handle: 0x0017
+	Memory Array Mapped Address Handle: 0x000E
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0017, DMI type 127, 4 bytes
+Handle 0x0019, DMI type 127, 4 bytes
 End Of Table
 

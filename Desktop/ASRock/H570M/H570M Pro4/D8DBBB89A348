@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0x89D61000.
+Table at 0x99D61000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: P1.50
-	Release Date: 04/13/2021
+	Version: P2.00
+	Release Date: 06/06/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -39,7 +39,7 @@ BIOS Information
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: To Be Filled By O.E.M.
-	Product Name: To Be Filled By O.E.M.
+	Product Name: H570M Pro4
 	Version: To Be Filled By O.E.M.
 	Serial Number: --
 	UUID: --
@@ -97,14 +97,14 @@ Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot2
 	Type: x1 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 18
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:02:00.0
+	Bus Address: 0000:1b:00.3
 
 Handle 0x0006, DMI type 9, 17 bytes
 System Slot Information
@@ -136,27 +136,27 @@ Handle 0x0008, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M2_1
 	Type: x4 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 33
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:06:00.0
+	Bus Address: 0000:02:00.0
 
 Handle 0x0009, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M2_2
 	Type: x4 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 34
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:1b:00.4
+	Bus Address: 0000:04:00.0
 
 Handle 0x000A, DMI type 9, 17 bytes
 System Slot Information
@@ -214,27 +214,6 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: None
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x0015, DMI type 17, 92 bytes
 Memory Device
@@ -284,27 +263,6 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x0017, DMI type 17, 92 bytes
 Memory Device
@@ -367,7 +325,7 @@ Handle 0x001A, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 1A 00 03 01 00 0B 01 37 50 00 02 00 00 00
-		00 3C 00 03 00 FF FF FF FF FF
+		00 50 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -389,7 +347,7 @@ OEM-specific Type
 	Header and Data:
 		DD 2F 1C 00 06 01 00 0B 01 37 50 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 11 00 05 00 FF FF FF 11
-		00 06 00 01 00 00 00 00 07 00 04 00 00 00 00
+		00 06 00 FF FF FF FF FF 07 00 04 00 00 00 00
 	Strings:
 		Reference Code - PCH
 		PCH-CRID Status
@@ -536,7 +494,7 @@ Processor Information
 	Max Speed: 4400 MHz
 	Current Speed: 2574 MHz
 	Status: Populated, Enabled
-	Upgrade: <OUT OF SPEC>
+	Upgrade: Socket LGA1200
 	L1 Cache Handle: 0x0020
 	L2 Cache Handle: 0x0021
 	L3 Cache Handle: 0x0022
@@ -603,7 +561,7 @@ Handle 0x0028, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
 		DB 6A 28 00 01 04 01 45 02 00 90 06 01 85 39 20
-		00 00 00 00 40 00 00 00 00 00 00 00 00 00 00 02
+		00 00 00 04 40 00 00 00 00 00 00 00 00 00 00 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

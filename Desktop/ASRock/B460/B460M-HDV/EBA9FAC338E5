@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x8DAB9000.
@@ -6,8 +6,8 @@ Table at 0x8DAB9000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: P1.60
-	Release Date: 06/23/2020
+	Version: L1.61
+	Release Date: 12/07/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -120,14 +120,14 @@ Handle 0x0007, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M2_1
 	Type: x4 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 33
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:01:00.3
+	Bus Address: 0000:01:00.0
 
 Handle 0x0008, DMI type 9, 17 bytes
 System Slot Information
@@ -415,10 +415,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
-	Voltage: 0.9 V
+	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
-	Current Speed: 3199 MHz
+	Current Speed: 2899 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0017

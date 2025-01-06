@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 23 structures occupying 1206 bytes.
@@ -231,7 +231,8 @@ Inactive
 Handle 0x000C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 18
@@ -243,7 +244,8 @@ System Slot Information
 Handle 0x000D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE3
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 19
@@ -255,7 +257,8 @@ System Slot Information
 Handle 0x000E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI1
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -324,12 +327,6 @@ Memory Device
 	Bank Locator: BANK1
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Manufacturer01
-	Serial Number: --
-	Asset Tag: --
-	Part Number: ModulePartNumber01
-	Rank: Unknown
 
 Handle 0x0014, DMI type 126, 19 bytes
 Inactive

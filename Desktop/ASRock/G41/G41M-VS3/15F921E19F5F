@@ -2,13 +2,13 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 21 structures occupying 1145 bytes.
-Table at 0x000FB5E0.
+Table at 0x000FB620.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: P1.30
-	Release Date: 02/15/2011
+	Version: P1.80
+	Release Date: 05/18/2012
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 1 MB
@@ -84,10 +84,10 @@ Handle 0x0004, DMI type 4, 40 bytes
 Processor Information
 	Socket Designation: CPUSocket
 	Type: Central Processor
-	Family: Pentium
+	Family: Pentium 4
 	Manufacturer: Intel            
-	ID: 61 06 01 00 FF FB EB AF
-	Signature: Type 0, Family 6, Model 22, Stepping 1
+	ID: F2 06 00 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 15, Stepping 2
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -114,13 +114,14 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		SS (Self-snoop)
+		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Celeron(R) CPU          430  @ 1.80GHz     
+	Version: Intel(R) Core(TM)2 CPU          6400  @ 2.13GHz     
 	Voltage: 1.3 V
-	External Clock: 200 MHz
-	Max Speed: 1800 MHz
-	Current Speed: 1800 MHz
+	External Clock: 267 MHz
+	Max Speed: 2133 MHz
+	Current Speed: 2133 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -129,9 +130,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
-	Core Count: 1
-	Core Enabled: 1
-	Thread Count: 1
+	Core Count: 2
+	Core Enabled: 2
+	Thread Count: 2
 	Characteristics:
 		64-bit capable
 
@@ -141,8 +142,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 32 kB
-	Maximum Size: 32 kB
+	Installed Size: 64 kB
+	Maximum Size: 64 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -157,15 +158,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 512 kB
-	Maximum Size: 512 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
 	Speed: Unknown
 	Error Correction Type: Single-bit ECC
 	System Type: Unified
-	Associativity: 2-way Set-associative
+	Associativity: 8-way Set-associative
 
 Handle 0x0007, DMI type 7, 19 bytes
 Cache Information
@@ -210,8 +211,8 @@ Memory Module Information
 	Bank Connections: 0 1
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Installed Size: 1024 MB (Single-bank Connection)
+	Enabled Size: 1024 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
@@ -220,8 +221,8 @@ Memory Module Information
 	Bank Connections: 4 5
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: 1024 MB (Single-bank Connection)
-	Enabled Size: 1024 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000B, DMI type 9, 13 bytes
@@ -260,8 +261,8 @@ Physical Memory Array
 Handle 0x000E, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 3 GB
 	Physical Array Handle: 0x000D
 	Partition Width: 4
 
@@ -269,23 +270,30 @@ Handle 0x000F, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x000D
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
-	Type: Unknown
-	Type Detail: Unknown
+	Type: SDRAM
+	Type Detail: Synchronous
 	Speed: Unknown
 	Manufacturer: Manufacturer00
 	Serial Number: --
 	Asset Tag: --
 	Part Number: ModulePartNumber00
 
-Handle 0x0010, DMI type 126, 19 bytes
-Inactive
+Handle 0x0010, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
+	Physical Device Handle: 0x000F
+	Memory Array Mapped Address Handle: 0x000E
+	Partition Row Position: 1
+	Interleaved Data Depth: 1
 
 Handle 0x0011, DMI type 17, 27 bytes
 Memory Device
@@ -293,7 +301,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -308,9 +316,9 @@ Memory Device
 
 Handle 0x0012, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Starting Address: 0x00040000000
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0011
 	Memory Array Mapped Address Handle: 0x000E
 	Partition Row Position: 1

@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 22 structures occupying 1128 bytes.
@@ -168,11 +168,11 @@ Memory Module Information
 Handle 0x0009, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM1
-	Bank Connections: 0
-	Current Speed: Unknown
-	Type: Other
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Bank Connections: 0 7
+	Current Speed: 166 ns
+	Type: ECC DIMM
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 9, 13 bytes
@@ -235,8 +235,8 @@ Physical Memory Array
 Handle 0x000F, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0021FFFFFFF
-	Range Size: 8704 MB
+	Ending Address: 0x0031FFFFFFF
+	Range Size: 12800 MB
 	Physical Array Handle: 0x000E
 	Partition Width: 1
 
@@ -272,18 +272,29 @@ Handle 0x0012, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x000E
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: Other
+	Size: 4 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: None
+	Type: Other
+	Type Detail: Synchronous
+	Speed: 400 MT/s
+	Manufacturer: Manufacturer1
+	Serial Number: --
+	Asset Tag: --
+	Part Number: PartNum1
 
-Handle 0x0013, DMI type 126, 19 bytes
-Inactive
+Handle 0x0013, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0012
+	Memory Array Mapped Address Handle: 0x000F
+	Partition Row Position: 1
 
 Handle 0x0014, DMI type 32, 20 bytes
 System Boot Information

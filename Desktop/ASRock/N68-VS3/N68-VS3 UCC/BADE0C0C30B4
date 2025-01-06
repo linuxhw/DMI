@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 20 structures occupying 1089 bytes.
@@ -182,11 +182,11 @@ Memory Controller Information
 Handle 0x0008, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM0
-	Bank Connections: 0 7
-	Current Speed: 160 ns
-	Type: ECC DIMM
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Bank Connections: 0
+	Current Speed: Unknown
+	Type: Other
+	Installed Size: Not Installed
+	Enabled Size: Not Installed
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
@@ -235,8 +235,8 @@ Physical Memory Array
 Handle 0x000D, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0011FFFFFFF
-	Range Size: 4608 MB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Array Handle: 0x000C
 	Partition Width: 1
 
@@ -244,29 +244,18 @@ Handle 0x000E, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x000C
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
+	Total Width: Unknown
 	Data Width: 64 bits
-	Size: 2 GB
-	Form Factor: DIMM
+	Size: No Module Installed
+	Form Factor: Other
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
-	Type: Other
-	Type Detail: Synchronous
-	Speed: 400 MT/s
-	Manufacturer: Manufacturer0
-	Serial Number: --
-	Asset Tag: --
-	Part Number: PartNum0
+	Type: Unknown
+	Type Detail: None
 
-Handle 0x000F, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x000E
-	Memory Array Mapped Address Handle: 0x000D
-	Partition Row Position: 1
+Handle 0x000F, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x0010, DMI type 17, 27 bytes
 Memory Device
@@ -289,8 +278,8 @@ Memory Device
 
 Handle 0x0011, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0010
 	Memory Array Mapped Address Handle: 0x000D

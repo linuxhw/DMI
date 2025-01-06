@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0x8EC61000.
+Table at 0x9EC61000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
@@ -132,7 +132,17 @@ Unknown Type
 	Header and Data:
 		2C 09 09 00 FF FF 01 01 00
 
-Handle 0x000A, DMI type 16, 23 bytes
+Handle 0x000A, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: INTC
+	Specification Version: 2.0
+	Firmware Revision: 600.7
+	Description: INTEL
+	Characteristics:
+		Family configurable via platform software support
+	OEM-specific Information: 0x00000000
+
+Handle 0x000B, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -141,60 +151,25 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
-Handle 0x000D, DMI type 19, 31 bytes
+Handle 0x000E, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x002FFFFFFFF
 	Range Size: 12 GB
-	Physical Array Handle: 0x000A
+	Physical Array Handle: 0x000B
 	Partition Width: 2
-
-Handle 0x000E, DMI type 17, 92 bytes
-Memory Device
-	Array Handle: 0x000A
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4 GB
-	Form Factor: DIMM
-	Set: None
-	Locator: Controller0-ChannelA
-	Bank Locator: BANK 0
-	Type: DDR4
-	Type Detail: Synchronous
-	Speed: 2667 MT/s
-	Manufacturer: Kingston
-	Serial Number: --
-	Asset Tag: --
-	Part Number: KF2666C16D4/4G      
-	Rank: 1
-	Configured Memory Speed: 2667 MT/s
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
-	Memory Technology: DRAM
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Bank 2, Hex 0x98
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: 4 GB
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x000F, DMI type 17, 92 bytes
 Memory Device
-	Array Handle: 0x000A
+	Array Handle: 0x000B
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: Controller0-ChannelB
-	Bank Locator: BANK 1
+	Locator: Controller0-ChannelA
+	Bank Locator: BANK 0
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2667 MT/s
@@ -219,42 +194,77 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0010, DMI type 20, 35 bytes
+Handle 0x0010, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x000B
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: Controller0-ChannelB
+	Bank Locator: BANK 1
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2667 MT/s
+	Manufacturer: Kingston
+	Serial Number: --
+	Asset Tag: --
+	Part Number: KF2666C16D4/4G      
+	Rank: 1
+	Configured Memory Speed: 2667 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 2, Hex 0x98
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 4 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0011, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x000E
-	Memory Array Mapped Address Handle: 0x000D
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x000F
+	Memory Array Mapped Address Handle: 0x000E
 	Partition Row Position: 1
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x0011, DMI type 20, 35 bytes
+Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
+	Starting Address: 0x00200000000
 	Ending Address: 0x002FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x000F
-	Memory Array Mapped Address Handle: 0x000D
+	Range Size: 4 GB
+	Physical Device Handle: 0x0010
+	Memory Array Mapped Address Handle: 0x000E
 	Partition Row Position: 1
 	Interleave Position: 2
 	Interleaved Data Depth: 1
 
-Handle 0x0012, DMI type 221, 26 bytes
+Handle 0x0013, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 12 00 03 01 00 0B 01 37 50 00 02 00 00 00
+		DD 1A 13 00 03 01 00 0B 01 37 50 00 02 00 00 00
 		00 E0 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
 		TXT ACM version
 
-Handle 0x0013, DMI type 221, 26 bytes
+Handle 0x0014, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 13 00 03 01 00 0B 01 37 50 00 02 00 0F 00
+		DD 1A 14 00 03 01 00 0B 01 37 50 00 02 00 0F 00
 		00 03 00 03 04 0F 00 16 90 06
 	Strings:
 		Reference Code - ME
@@ -262,10 +272,10 @@ OEM-specific Type
 		ME Firmware Version
 		Consumer SKU
 
-Handle 0x0014, DMI type 221, 47 bytes
+Handle 0x0015, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 14 00 06 01 00 0B 01 37 50 00 02 03 FF FF
+		DD 2F 15 00 06 01 00 0B 01 37 50 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 11 00 05 00 FF FF FF 11
 		00 06 00 FF FF FF FF FF 07 00 04 00 00 00 00
 	Strings:
@@ -277,10 +287,10 @@ OEM-specific Type
 		OPROM - RST - RAID
 		PCH Hsio Version
 
-Handle 0x0015, DMI type 221, 82 bytes
+Handle 0x0016, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 15 00 0B 01 00 0B 01 37 50 00 02 00 00 00
+		DD 52 16 00 0B 01 00 0B 01 37 50 00 02 00 00 00
 		00 39 00 03 00 0B 01 37 50 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 03 00 07 00 00 00 00 03 00 08
 		00 FF FF FF FF FF 09 00 FF FF FF FF FF 0A 00 FF
@@ -300,14 +310,14 @@ OEM-specific Type
 		Thunderbolt(TM) FW Version
 		System Agent Manageability Engine FW Version
 
-Handle 0x0016, DMI type 221, 12 bytes
+Handle 0x0017, DMI type 221, 12 bytes
 OEM-specific Type
 	Header and Data:
-		DD 0C 16 00 01 01 00 04 00 00 00 00
+		DD 0C 17 00 01 01 00 04 00 00 00 00
 	Strings:
 		FSP Binary Version
 
-Handle 0x0017, DMI type 7, 27 bytes
+Handle 0x0018, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -323,7 +333,7 @@ Cache Information
 	System Type: Other
 	Associativity: 8-way Set-associative
 
-Handle 0x0018, DMI type 7, 27 bytes
+Handle 0x0019, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -339,7 +349,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 4-way Set-associative
 
-Handle 0x0019, DMI type 7, 27 bytes
+Handle 0x001A, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L3 Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -355,7 +365,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x001A, DMI type 4, 48 bytes
+Handle 0x001B, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: CPUSocket
 	Type: Central Processor
@@ -393,15 +403,15 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
-	Voltage: 0.9 V
+	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 4300 MHz
-	Current Speed: 3168 MHz
+	Current Speed: 2871 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
-	L1 Cache Handle: 0x0017
-	L2 Cache Handle: 0x0018
-	L3 Cache Handle: 0x0019
+	L1 Cache Handle: 0x0018
+	L2 Cache Handle: 0x0019
+	L3 Cache Handle: 0x001A
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
@@ -416,24 +426,24 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x001B, DMI type 130, 20 bytes
+Handle 0x001C, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 1B 00 24 41 4D 54 00 00 00 00 00 A5 EF 02
+		82 14 1C 00 24 41 4D 54 00 00 00 00 00 A5 EF 02
 		C0 00 00 00
 
-Handle 0x001C, DMI type 131, 64 bytes
+Handle 0x001D, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 1C 00 10 00 00 00 0F 00 00 00 00 00 03 00
+		83 40 1D 00 31 00 00 00 0F 00 00 00 00 00 03 00
 		F8 00 88 43 00 00 00 00 01 00 00 00 00 00 0F 00
 		90 06 16 00 00 00 00 00 FE 00 FA 15 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x001D, DMI type 221, 82 bytes
+Handle 0x001E, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 1D 00 0B 01 00 00 00 00 A6 00 02 00 FF FF
+		DD 52 1E 00 0B 01 00 00 00 00 A6 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
 		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
@@ -455,16 +465,16 @@ OEM-specific Type
 		Royal Park Version
 		Platform Version
 
-Handle 0x001E, DMI type 14, 8 bytes
+Handle 0x001F, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x001F, DMI type 219, 106 bytes
+Handle 0x0020, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 1F 00 01 04 01 45 02 00 90 06 01 85 39 20
+		DB 6A 20 00 01 04 01 45 02 00 90 06 01 85 39 20
 		00 00 00 04 40 00 00 00 00 00 00 00 00 00 00 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -477,11 +487,11 @@ OEM-specific Type
 		MEI3
 		MEI4
 
-Handle 0x0020, DMI type 136, 6 bytes
+Handle 0x0021, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 20 00 00 00
+		88 06 21 00 00 00
 
-Handle 0x0021, DMI type 127, 4 bytes
+Handle 0x0022, DMI type 127, 4 bytes
 End Of Table
 
