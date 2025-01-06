@@ -1,14 +1,14 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 73 structures occupying 3478 bytes.
-Table at 0xAB692000.
+Table at 0xCB692000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Hewlett-Packard
-	Version: M60 v02.38
-	Release Date: 11/08/2017
+	Version: M60 v02.58
+	Release Date: 12/07/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -30,7 +30,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.38
+	BIOS Revision: 2.58
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -49,7 +49,7 @@ Base Board Information
 	Product Name: 212A
 	Version: 1.01
 	Serial Number: --
-	12DBCF8E7BFBC5DF53F2542706885B28
+	75CACE5E1A5B573DD956705B867F4F87
 	Features:
 		Board is a hosting board
 		Board is removable
@@ -117,16 +117,16 @@ Physical Memory Array
 Handle 0x0008, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000AFFFFFFF
-	Range Size: 2816 MB
+	Ending Address: 0x000CFFFFFFF
+	Range Size: 3328 MB
 	Physical Array Handle: 0x0007
 	Partition Width: 1
 
 Handle 0x0009, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0104FFFFFFF
-	Range Size: 62720 MB
+	Ending Address: 0x0102FFFFFFF
+	Range Size: 62208 MB
 	Physical Array Handle: 0x0007
 	Partition Width: 1
 
@@ -641,7 +641,7 @@ Handle 0x003A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 4
 	Type: x8 PCI Express 3
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 4
 	Characteristics:
@@ -794,7 +794,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Xeon(R) CPU E5-2660 v4 @ 2.00GHz
-	Voltage: 0.7 V
+	Voltage: 1.8 V
 	External Clock: 100 MHz
 	Max Speed: 4000 MHz
 	Current Speed: 2000 MHz
@@ -848,7 +848,7 @@ OEM-specific Type
 Handle 0x0047, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 47 00 14 00 00 00 09 00 00 00 00 00 1D 00
+		83 40 47 00 35 00 00 00 09 00 00 00 00 00 1D 00
 		F8 00 44 8D 00 00 00 00 09 80 00 00 01 00 09 00
 		BA 0B 2A 00 00 00 00 00 C8 00 A0 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00

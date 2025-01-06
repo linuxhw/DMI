@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 27 structures occupying 1453 bytes.
@@ -114,7 +114,7 @@ Handle 0x0009, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: SOCKET 0
 	Type: Central Processor
-	Family: Core i3
+	Family: Core i5
 	Manufacturer: Intel
 	ID: C3 06 03 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 60, Stepping 3
@@ -147,11 +147,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i3-4170T CPU @ 3.20GHz
+	Version: Intel(R) Core(TM) i5-4670T CPU @ 2.30GHz
 	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 3200 MHz
+	Current Speed: 2300 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
 	L1 Cache Handle: 0x000B
@@ -160,8 +160,8 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Fill By OEM
-	Core Count: 2
-	Core Enabled: 2
+	Core Count: 4
+	Core Enabled: 4
 	Thread Count: 4
 	Characteristics:
 		64-bit capable
@@ -172,8 +172,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 512 kB
-	Maximum Size: 512 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -188,8 +188,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 128 kB
-	Maximum Size: 128 kB
+	Installed Size: 256 kB
+	Maximum Size: 256 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -204,8 +204,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3 MB
-	Maximum Size: 3 MB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -227,34 +227,13 @@ Handle 0x000E, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000D
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM3
-	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-
-Handle 0x000F, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x000D
-	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
-	Locator: DIMM1
-	Bank Locator: BANK 0
+	Locator: DIMM3
+	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
@@ -265,16 +244,30 @@ Memory Device
 	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0010, DMI type 20, 35 bytes
+Handle 0x000F, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x000F
+	Physical Device Handle: 0x000E
 	Memory Array Mapped Address Handle: 0x0011
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
+
+Handle 0x0010, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x000D
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM1
+	Bank Locator: BANK 0
+	Type: Unknown
+	Type Detail: None
 
 Handle 0x0011, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -360,7 +353,7 @@ OEM-specific Type
 Handle 0x0023, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 23 00 31 00 00 00 09 00 00 00 00 00 1C 00
+		83 40 23 00 35 00 00 00 09 00 00 00 00 00 1C 00
 		F8 00 4C 8C 00 00 00 00 11 00 00 00 01 00 09 00
 		B8 0B 2D 00 00 00 00 00 C8 00 3A 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00

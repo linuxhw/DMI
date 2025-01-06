@@ -1,4 +1,4 @@
-# dmidecode 3.5
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0xBF762000.
@@ -23,8 +23,8 @@ Memory Array Mapped Address
 Handle 0x0006, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: P07 Ver. 02.43
-	Release Date: 07/28/2022
+	Version: P07 Ver. 02.49
+	Release Date: 12/08/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 0 MB
@@ -46,7 +46,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.43
+	BIOS Revision: 2.49
 	Firmware Revision: 6.41
 
 Handle 0x0007, DMI type 1, 27 bytes
@@ -476,7 +476,8 @@ Port Connector Information
 Handle 0x002F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot1 / X16PCIEXP
-	Type: x16 PCI Express 3 x16
+	Type: PCI Express 3 x16
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -489,7 +490,8 @@ System Slot Information
 Handle 0x0030, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot2 / M2 WLAN/BT
-	Type: x1 PCI Express 3 x1
+	Type: PCI Express 3 x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 2
@@ -502,7 +504,8 @@ System Slot Information
 Handle 0x0031, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot3 / M2 SSD
-	Type: x4 PCI Express 3 x4
+	Type: PCI Express 3 x4
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Long
 	ID: 3
@@ -515,7 +518,8 @@ System Slot Information
 Handle 0x0032, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot4 / X4PCIEXP
-	Type: x4 PCI Express 3 x4
+	Type: PCI Express 3 x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Long
 	ID: 4
@@ -566,7 +570,7 @@ OEM-specific Type
 Handle 0x0037, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 37 00 14 00 00 00 0B 00 00 00 00 00 0C 00
+		83 40 37 00 35 00 00 00 0B 00 00 00 00 00 0C 00
 		F8 00 C6 A2 00 00 00 00 11 00 00 00 08 00 0B 00
 		61 0D 32 00 00 00 00 00 FE 00 E3 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
@@ -680,8 +684,8 @@ System Boot Information
 Handle 0x003C, DMI type 221, 33 bytes
 OEM-specific Type
 	Header and Data:
-		DD 21 3C 00 04 01 00 03 08 04 00 00 02 00 00 00
-		00 F0 00 03 00 00 05 00 00 00 04 00 FF FF FF FF
+		DD 21 3C 00 04 01 00 03 08 08 00 00 02 00 00 00
+		00 F8 00 03 00 00 05 00 00 00 04 00 FF FF FF FF
 		FF
 	Strings:
 		Reference Code - CPU
@@ -692,7 +696,7 @@ OEM-specific Type
 Handle 0x003D, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 3D 00 03 01 00 03 08 04 00 00 02 00 0B 00
+		DD 1A 3D 00 03 01 00 03 08 08 00 00 02 00 0B 00
 		00 0C 00 03 04 0B 08 32 61 0D
 	Strings:
 		Reference Code - ME 11.0
@@ -703,7 +707,7 @@ OEM-specific Type
 Handle 0x003E, DMI type 221, 75 bytes
 OEM-specific Type
 	Header and Data:
-		DD 4B 3E 00 0A 01 00 03 08 04 00 00 02 03 FF FF
+		DD 4B 3E 00 0A 01 00 03 08 08 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
 		00 06 00 02 0A 00 00 00 07 00 3E 00 00 00 00 08
 		00 34 00 00 00 00 09 00 0B 00 00 00 00 0A 00 3E
@@ -724,8 +728,8 @@ OEM-specific Type
 Handle 0x003F, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 3F 00 07 01 00 03 08 04 00 00 02 00 03 08
-		04 00 00 03 00 03 08 04 00 00 04 05 FF FF FF FF
+		DD 36 3F 00 07 01 00 03 08 08 00 00 02 00 03 08
+		08 00 00 03 00 03 08 08 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 05 00 07 00 FF FF FF 05 00 08
 		00 FF FF FF FF FF
 	Strings:

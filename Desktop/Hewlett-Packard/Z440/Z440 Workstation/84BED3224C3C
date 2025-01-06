@@ -2,13 +2,13 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 80 structures occupying 4680 bytes.
-Table at 0xCB3A8000.
+Table at 0xCB348000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Hewlett-Packard
-	Version: M60 v02.59
-	Release Date: 03/31/2022
+	Version: M60 v02.61
+	Release Date: 03/23/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -30,7 +30,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.59
+	BIOS Revision: 2.61
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -774,14 +774,14 @@ Handle 0x003F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 1
 	Type: x1 PCI Express 2 x4
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 1
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
 		SMBus signal is supported
-	Bus Address: 0000:07:00.0
+	Bus Address: 0000:05:00.0
 
 Handle 0x0040, DMI type 9, 17 bytes
 System Slot Information
@@ -807,7 +807,7 @@ System Slot Information
 		3.3 V is provided
 		PME signal is supported
 		SMBus signal is supported
-	Bus Address: 0000:0a:00.0
+	Bus Address: 0000:08:00.0
 
 Handle 0x0042, DMI type 9, 17 bytes
 System Slot Information
@@ -826,14 +826,14 @@ Handle 0x0043, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 5
 	Type: x16 PCI Express 3
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 5
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
 		SMBus signal is supported
-	Bus Address: 0000:05:00.0
+	Bus Address: 0000:03:00.0
 
 Handle 0x0044, DMI type 9, 17 bytes
 System Slot Information
@@ -846,7 +846,7 @@ System Slot Information
 		5.0 V is provided
 		PME signal is supported
 		SMBus signal is supported
-	Bus Address: 0000:09:00.0
+	Bus Address: 0000:07:00.0
 
 Handle 0x0045, DMI type 41, 11 bytes
 Onboard Device
@@ -980,10 +980,11 @@ Processor Information
 	Part Number: Not Specified
 	Core Count: 6
 	Core Enabled: 6
-	Thread Count: 6
+	Thread Count: 12
 	Characteristics:
 		64-bit capable
 		Multi-Core
+		Hardware Thread
 		Execute Protection
 		Enhanced Virtualization
 		Power/Performance Control

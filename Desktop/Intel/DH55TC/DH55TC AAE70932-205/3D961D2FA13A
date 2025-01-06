@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 81 structures occupying 3215 bytes.
@@ -331,7 +331,8 @@ Port Connector Information
 Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: IJ31
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -344,7 +345,8 @@ System Slot Information
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: IJ32
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -357,7 +359,8 @@ System Slot Information
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: IJ311
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: In Use
 	Length: Short
 	ID: 3
@@ -434,12 +437,6 @@ Memory Device
 	Bank Locator: CHANNEL A-DIMM 0
 	Type: Unknown
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer0
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Array1_PartNumber0
-	Rank: Unknown
 
 Handle 0x002C, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -506,12 +503,6 @@ Memory Device
 	Bank Locator: CHANNEL B-DIMM 0
 	Type: Unknown
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer2
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Array1_PartNumber2
-	Rank: Unknown
 
 Handle 0x0032, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -803,7 +794,8 @@ Onboard Device
 Handle 0x004D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: IJ41
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0

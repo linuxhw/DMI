@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-49 structures occupying 2201 bytes.
+49 structures occupying 2186 bytes.
 Table at 0xDE2FB018.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -80,7 +80,8 @@ Chassis Information
 Handle 0x0004, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI Express x16 Slot
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -93,7 +94,8 @@ System Slot Information
 Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI Express x1 Slot #1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -106,7 +108,8 @@ System Slot Information
 Handle 0x0006, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI Express x1 Slot #2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -119,7 +122,8 @@ System Slot Information
 Handle 0x0007, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI Express x1 Slot #3
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -132,8 +136,9 @@ System Slot Information
 Handle 0x0008, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Mini Card Slot
-	Type: x1 PCI Express
-	Current Usage: In Use
+	Type: PCI Express
+	Data Bus Width: 1x or x1
+	Current Usage: Available
 	Length: Short
 	ID: 4
 	Characteristics:
@@ -496,7 +501,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz
-	Voltage: 3.3 V
+	Voltage: 5.0 V 3.3 V 2.9 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
 	Current Speed: 3300 MHz
@@ -529,7 +534,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -537,18 +542,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT325U6EFR8C-PB  
-	Rank: 1
+	Part Number: M378B1G73DB0-CK0  
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x002A, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0029
 	Memory Array Mapped Address Handle: 0x002D
 	Partition Row Position: Unknown
@@ -561,7 +566,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -569,18 +574,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: 859B
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT351U6EFR8C-PB  
+	Part Number: CT102464BD160B.M16
 	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x002C, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x002B
 	Memory Array Mapped Address Handle: 0x002D
 	Partition Row Position: Unknown
@@ -590,15 +595,15 @@ Memory Device Mapped Address
 Handle 0x002D, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0028
 	Partition Width: 2
 
 Handle 0x0030, DMI type 208, 5 bytes
 OEM-specific Type
 	Header and Data:
-		D0 05 30 00 02
+		D0 05 30 00 01
 
 Handle 0x0031, DMI type 13, 22 bytes
 BIOS Language Information

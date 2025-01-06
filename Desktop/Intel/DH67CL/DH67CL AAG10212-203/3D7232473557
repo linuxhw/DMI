@@ -2,7 +2,7 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 64 structures occupying 2593 bytes.
-Table at 0x000EB170.
+Table at 0x000E9440.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -344,7 +344,7 @@ System Slot Information
 Handle 0x0021, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
-	Status: Enabled
+	Status: Disabled
 	Description: Intel(R) HD Graphics Device
 
 Handle 0x0022, DMI type 10, 6 bytes
@@ -396,8 +396,8 @@ Handle 0x0028, DMI type 18, 23 bytes
 Handle 0x0029, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0027
 	Partition Width: 1
 
@@ -440,7 +440,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -448,10 +448,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Micron          
+	Manufacturer: Kingston        
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 8JTF25664AZ-1G4D1 
+	Part Number: 99U5474-028.A00LF 
 	Rank: 1
 
 Handle 0x002E, DMI type 18, 23 bytes
@@ -467,8 +467,8 @@ Handle 0x002E, DMI type 18, 23 bytes
 Handle 0x002F, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x002D
 	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: 1
@@ -512,7 +512,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -520,10 +520,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Micron          
+	Manufacturer: Kingston        
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 8JTF25664AZ-1G4D1 
+	Part Number: 99U5474-028.A00LF 
 	Rank: 1
 
 Handle 0x0034, DMI type 18, 23 bytes
@@ -538,9 +538,9 @@ Handle 0x0034, DMI type 18, 23 bytes
 
 Handle 0x0035, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0033
 	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: 1
@@ -553,7 +553,7 @@ Handle 0x0037, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Intel(R) HD Graphics Device
 	Type: Video
-	Status: Enabled
+	Status: Disabled
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 

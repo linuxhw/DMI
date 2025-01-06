@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-34 structures occupying 1749 bytes.
+35 structures occupying 1799 bytes.
 Table at 0x000EB730.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -81,14 +81,14 @@ Handle 0x0004, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI Express x16 Slot
 	Type: x16 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 0
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:01:01.0
+	Bus Address: 0000:ff:01.0
 
 Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
@@ -140,7 +140,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:03:1c.6
+	Bus Address: 0000:02:1c.6
 
 Handle 0x0009, DMI type 11, 5 bytes
 OEM Strings
@@ -217,7 +217,7 @@ Memory Device Mapped Address
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x000C
-	Memory Array Mapped Address Handle: 0x001E
+	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: Unknown
 	Interleave Position: 1
 	Interleaved Data Depth: 2
@@ -226,17 +226,35 @@ Handle 0x000E, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 1
-	Type: Unknown
-	Type Detail: None
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M378B5273CH0-CK0  
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x000F, DMI type 17, 34 bytes
+Handle 0x000F, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x000E
+	Memory Array Mapped Address Handle: 0x001F
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x0010, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000B
 	Error Information Handle: Not Provided
@@ -250,23 +268,12 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M378B5273CH0-CK0  
-	Rank: 2
+	Part Number: 99U5402-052.A00LF 
+	Rank: 1
 	Configured Memory Speed: 1600 MT/s
-
-Handle 0x0010, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x000F
-	Memory Array Mapped Address Handle: 0x001E
-	Partition Row Position: Unknown
-	Interleave Position: 2
-	Interleaved Data Depth: 2
 
 Handle 0x0011, DMI type 32, 20 bytes
 System Boot Information
@@ -345,9 +352,9 @@ Handle 0x0017, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation:  Onboard IGD
 	Type: Video
-	Status: Disabled
+	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:ff:02.0
+	Bus Address: 0000:00:02.0
 
 Handle 0x0018, DMI type 41, 11 bytes
 Onboard Device
@@ -355,7 +362,7 @@ Onboard Device
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:04:00.0
+	Bus Address: 0000:03:00.0
 
 Handle 0x0019, DMI type 7, 19 bytes
 Cache Information
@@ -405,19 +412,16 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x001C, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x000B
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: ChannelB-DIMM1
-	Bank Locator: BANK 3
-	Type: Unknown
-	Type Detail: None
+Handle 0x001C, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0010
+	Memory Array Mapped Address Handle: 0x001F
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 2
 
 Handle 0x001D, DMI type 4, 42 bytes
 Processor Information
@@ -475,20 +479,34 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x001E, DMI type 19, 31 bytes
+Handle 0x001E, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x000B
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelB-DIMM1
+	Bank Locator: BANK 3
+	Type: Unknown
+	Type Detail: None
+
+Handle 0x001F, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x000B
 	Partition Width: 4
 
-Handle 0x0028, DMI type 208, 5 bytes
+Handle 0x0029, DMI type 208, 5 bytes
 OEM-specific Type
 	Header and Data:
-		D0 05 28 00 01
+		D0 05 29 00 01
 
-Handle 0x0029, DMI type 13, 22 bytes
+Handle 0x002A, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 12
@@ -506,6 +524,6 @@ BIOS Language Information
 		jpn
 	Currently Installed Language: eng
 
-Handle 0x002A, DMI type 127, 4 bytes
+Handle 0x002B, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,14 +1,14 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-73 structures occupying 3451 bytes.
-Table at 0xCB6BA000.
+85 structures occupying 4909 bytes.
+Table at 0xCB303000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Hewlett-Packard
-	Version: M60 v02.14
-	Release Date: 02/18/2016
+	Version: M60 v02.62
+	Release Date: 01/04/2024
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -30,7 +30,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.14
+	BIOS Revision: 2.62
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -47,7 +47,7 @@ Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: Hewlett-Packard
 	Product Name: 212A
-	Version: unknown
+	Version: 1.01
 	Serial Number: --
 	271882FD79060B21C43F805A2DE81148  
 	Features:
@@ -55,7 +55,7 @@ Base Board Information
 		Board is removable
 		Board is replaceable
 	Location In Chassis: Not Specified
-	Chassis Handle: 0x0000
+	Chassis Handle: 0x0003
 	Type: Motherboard
 	Contained Object Handles: 0
 
@@ -125,8 +125,8 @@ Memory Array Mapped Address
 Handle 0x0009, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0102FFFFFFF
-	Range Size: 62208 MB
+	Ending Address: 0x0202FFFFFFF
+	Range Size: 127744 MB
 	Physical Array Handle: 0x0007
 	Partition Width: 1
 
@@ -136,19 +136,19 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0-DIMM1
 	Bank Locator: CPU0
 	Type: DDR4
-	Type Detail: Synchronous Registered (Buffered)
+	Type Detail: Synchronous LRDIMM
 	Speed: 2133 MT/s
-	Manufacturer: Hynix
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA42GR7AFR4N-TF
-	Rank: 2
+	Part Number: M386A4G40DM0-CPB
+	Rank: 4
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -157,20 +157,20 @@ Memory Device
 Handle 0x000B, DMI type 235, 226 bytes
 OEM-specific Type
 	Header and Data:
-		EB E2 0B 00 0A 00 00 00 50 23 11 0C 01 84 21 00
-		08 00 40 00 03 08 0B 80 00 00 00 08 0D F4 03 00
-		00 6C 6C 6C 11 08 74 20 08 00 05 70 03 00 78 1E
-		2B 2E 00 78 00 14 3C 00 00 00 00 00 00 00 00 00
+		EB E2 0B 00 0A 00 00 00 50 23 10 0C 04 84 21 91
+		08 00 40 00 03 18 0B 80 00 00 00 08 0C F8 03 00
+		00 6E 6E 6E 11 08 76 20 08 00 05 70 03 00 78 1E
+		2B 2E 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B
 		0B 0B 0B 0B 0B 0B 0B 00 00 70 00 30 00 00 00 00
-		00 86 B5 CE 00 00 00 00 E7 C1 0D 02 11 11 00 09
-		00 80 B3 30 01 65 05 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 F0 00 10 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 54 ED 40
-		01 40 80 AD 01 16 15 26 8A 3B 78 48 4D 41 34 32
-		47 52 37 41 46 52 34 4E 2D 54 46 20 20 20 20 00
-		80 AD FF 57 56 36 34 4E 30 33 37 32 49 30 35 00
-		00 00 01 00 00 00 00 00 00 02 00 00 00 00 00 DD
+		00 83 B5 CE 00 00 00 00 00 C2 A1 07 11 11 03 09
+		00 86 32 B1 01 76 0A A1 1D 1D 1D 1D 25 15 15 00
+		00 14 14 00 27 27 00 00 00 00 00 00 F0 00 10 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 EA DC 40
+		01 40 80 CE 02 17 11 35 2B 2B 58 4D 33 38 36 41
+		34 47 34 30 44 4D 30 2D 43 50 42 20 20 20 20 00
+		80 CE 00 53 5A 38 59 41 31 30 08 00 01 45 00 00
+		00 00 01 01 01 00 00 00 00 00 00 00 00 00 00 DD
 		00 00
 
 Handle 0x000C, DMI type 17, 40 bytes
@@ -179,19 +179,19 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0-DIMM3
 	Bank Locator: CPU0
 	Type: DDR4
-	Type Detail: Synchronous Registered (Buffered)
-	Speed: 2666 MT/s
-	Manufacturer: Micron
+	Type Detail: Synchronous LRDIMM
+	Speed: 2133 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 18ASF2G72PDZ-2G6D1
-	Rank: 2
+	Part Number: M386A4G40DM0-CPB
+	Rank: 4
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -200,20 +200,20 @@ Memory Device
 Handle 0x000D, DMI type 235, 226 bytes
 OEM-specific Type
 	Header and Data:
-		EB E2 0D 00 0C 00 00 00 50 23 11 0C 01 85 21 00
-		08 00 60 00 03 09 0B 80 00 00 00 06 0D F8 FF 01
-		00 6E 6E 6E 11 00 6E F0 0A 20 08 00 05 00 A8 18
-		28 28 00 78 00 14 3C 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 0C 2C 0C 2C 0C 2C 0C 2C 0C 2C 0C
-		2C 0C 2C 0C 2C 0C 2C 00 00 70 00 30 00 00 00 00
-		00 00 9C 00 00 00 00 00 E7 00 C4 82 11 11 24 15
-		00 86 32 A0 01 10 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 F0 00 10 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 07 60 40
-		01 40 80 2C 0F 18 29 1D 80 55 9D 31 38 41 53 46
-		32 47 37 32 50 44 5A 2D 32 47 36 44 31 20 20 31
-		80 2C 44 44 50 41 4B 53 45 50 30 31 36 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		EB E2 0D 00 0C 00 00 00 50 23 10 0C 04 84 21 91
+		08 00 40 00 03 18 0B 80 00 00 00 08 0C F8 03 00
+		00 6E 6E 6E 11 08 76 20 08 00 05 70 03 00 78 1E
+		2B 2E 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B
+		0B 0B 0B 0B 0B 0B 0B 00 00 70 00 30 00 00 00 00
+		00 83 B5 CE 00 00 00 00 00 C2 A1 07 11 11 03 09
+		00 86 32 B1 01 76 0A A1 1D 1D 1D 1D 25 15 15 00
+		00 14 14 00 27 27 00 00 00 00 00 00 F0 00 10 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 EA DC 40
+		01 40 80 CE 02 17 12 35 3D B5 32 4D 33 38 36 41
+		34 47 34 30 44 4D 30 2D 43 50 42 20 20 20 20 00
+		80 CE 00 43 5A 43 5A 41 31 30 08 00 01 00 00 00
+		00 00 01 01 00 00 00 00 00 00 00 00 00 00 00 DD
 		00 00
 
 Handle 0x000E, DMI type 17, 40 bytes
@@ -222,19 +222,19 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0-DIMM6
 	Bank Locator: CPU0
 	Type: DDR4
-	Type Detail: Synchronous Registered (Buffered)
-	Speed: 2666 MT/s
-	Manufacturer: Micron
+	Type Detail: Synchronous LRDIMM
+	Speed: 2133 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 18ASF2G72PDZ-2G6D1
-	Rank: 2
+	Part Number: M386A4G40DM0-CPB
+	Rank: 4
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -243,20 +243,20 @@ Memory Device
 Handle 0x000F, DMI type 235, 226 bytes
 OEM-specific Type
 	Header and Data:
-		EB E2 0F 00 0E 00 00 00 50 23 11 0C 01 85 21 00
-		08 00 60 00 03 09 0B 80 00 00 00 06 0D F8 FF 01
-		00 6E 6E 6E 11 00 6E F0 0A 20 08 00 05 00 A8 18
-		28 28 00 78 00 14 3C 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 0C 2C 0C 2C 0C 2C 0C 2C 0C 2C 0C
-		2C 0C 2C 0C 2C 0C 2C 00 00 70 00 30 00 00 00 00
-		00 00 9C 00 00 00 00 00 E7 00 C4 82 11 11 24 15
-		00 86 32 A0 01 10 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 F0 00 10 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 07 60 40
-		01 40 80 2C 0F 18 29 1D 80 56 0F 31 38 41 53 46
-		32 47 37 32 50 44 5A 2D 32 47 36 44 31 20 20 31
-		80 2C 44 44 50 41 4B 53 45 50 30 31 36 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		EB E2 0F 00 0E 00 00 00 50 23 10 0C 04 84 21 91
+		08 00 40 00 03 18 0B 80 00 00 00 08 0C F8 03 00
+		00 6E 6E 6E 11 08 76 20 08 00 05 70 03 00 78 1E
+		2B 2E 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B
+		0B 0B 0B 0B 0B 0B 0B 00 00 70 00 30 00 00 00 00
+		00 83 B5 CE 00 00 00 00 00 C2 A1 07 11 11 03 09
+		00 80 B3 30 01 76 0A 21 1D 1D 1D 1D 25 15 15 00
+		00 14 14 00 27 27 00 00 00 00 00 00 F0 00 10 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 3F D3 40
+		01 40 80 CE 02 15 07 40 07 8A 47 4D 33 38 36 41
+		34 47 34 30 44 4D 30 2D 43 50 42 20 20 20 20 00
+		80 CE 00 43 30 32 48 30 30 30 05 00 01 00 00 00
+		00 00 01 01 00 00 00 00 00 00 00 00 00 00 00 DD
 		00 00
 
 Handle 0x0010, DMI type 17, 40 bytes
@@ -265,19 +265,19 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0-DIMM8
 	Bank Locator: CPU0
 	Type: DDR4
-	Type Detail: Synchronous Registered (Buffered)
+	Type Detail: Synchronous LRDIMM
 	Speed: 2133 MT/s
-	Manufacturer: Hynix
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA42GR7AFR4N-TF
-	Rank: 2
+	Part Number: M386A4G40DM0-CPB
+	Rank: 4
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -286,23 +286,212 @@ Memory Device
 Handle 0x0011, DMI type 235, 226 bytes
 OEM-specific Type
 	Header and Data:
-		EB E2 11 00 10 00 00 00 50 23 11 0C 01 84 21 00
-		08 00 40 00 03 08 0B 80 00 00 00 08 0D F4 03 00
-		00 6C 6C 6C 11 08 74 20 08 00 05 70 03 00 78 1E
-		2B 2E 00 78 00 14 3C 00 00 00 00 00 00 00 00 00
+		EB E2 11 00 10 00 00 00 50 23 10 0C 04 84 21 91
+		08 00 40 00 03 18 0B 80 00 00 00 08 0C F8 03 00
+		00 6E 6E 6E 11 08 76 20 08 00 05 70 03 00 78 1E
+		2B 2E 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B
 		0B 0B 0B 0B 0B 0B 0B 00 00 70 00 30 00 00 00 00
-		00 86 B5 CE 00 00 00 00 E7 C1 0D 02 11 11 00 09
-		00 80 B3 30 01 65 05 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 F0 00 10 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 54 ED 40
-		01 40 80 AD 01 16 15 26 8A 3B 97 48 4D 41 34 32
-		47 52 37 41 46 52 34 4E 2D 54 46 20 20 20 20 00
-		80 AD FF 57 56 36 34 4E 30 33 37 32 49 30 35 00
-		00 00 01 00 00 00 00 00 00 02 00 00 00 00 00 DD
+		00 83 B5 CE 00 00 00 00 00 C2 A1 07 11 11 03 09
+		00 80 B3 30 01 76 0A 21 1D 1D 1D 1D 25 15 15 00
+		00 14 14 00 27 27 00 00 00 00 00 00 F0 00 10 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 3F D3 40
+		01 40 80 CE 02 15 05 39 F8 B5 10 4D 33 38 36 41
+		34 47 34 30 44 4D 30 2D 43 50 42 20 20 20 20 00
+		80 CE 00 43 30 30 59 30 30 30 05 00 01 00 00 00
+		00 00 01 01 00 00 00 00 00 00 00 00 00 00 00 DD
 		00 00
 
-Handle 0x0012, DMI type 8, 9 bytes
+Handle 0x0012, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: Multi-bit ECC
+	Maximum Capacity: 256 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 4
+
+Handle 0x0013, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x02030000000
+	Ending Address: 0x0402FFFFFFF
+	Range Size: 128 GB
+	Physical Array Handle: 0x0012
+	Partition Width: 1
+
+Handle 0x0014, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0012
+	Error Information Handle: Not Provided
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU1-DIMM1
+	Bank Locator: CPU1
+	Type: DDR4
+	Type Detail: Synchronous LRDIMM
+	Speed: 2133 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M386A4G40DM0-CPB
+	Rank: 4
+	Configured Memory Speed: 2133 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+
+Handle 0x0015, DMI type 235, 226 bytes
+OEM-specific Type
+	Header and Data:
+		EB E2 15 00 14 00 00 00 50 23 10 0C 04 84 21 91
+		08 00 40 00 03 18 0B 80 00 00 00 08 0C F8 03 00
+		00 6E 6E 6E 11 08 76 20 08 00 05 70 03 00 78 1E
+		2B 2E 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B
+		0B 0B 0B 0B 0B 0B 0B 00 00 70 00 30 00 00 00 00
+		00 83 B5 CE 00 00 00 00 00 C2 A1 07 11 11 03 09
+		00 86 32 B1 01 76 0A A1 1D 1D 1D 1D 25 15 15 00
+		00 14 14 00 27 27 00 00 00 00 00 00 F0 00 10 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 EA DC 40
+		01 40 80 CE 02 17 11 35 2B 16 9E 4D 33 38 36 41
+		34 47 34 30 44 4D 30 2D 43 50 42 20 20 20 20 00
+		80 CE 00 53 5A 38 59 41 31 30 08 00 01 00 00 00
+		00 00 01 01 01 00 00 00 00 00 00 00 00 00 00 DD
+		00 00
+
+Handle 0x0016, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0012
+	Error Information Handle: Not Provided
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU1-DIMM2
+	Bank Locator: CPU1
+	Type: DDR4
+	Type Detail: Synchronous LRDIMM
+	Speed: 2133 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M386A4G40DM0-CPB
+	Rank: 4
+	Configured Memory Speed: 2133 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+
+Handle 0x0017, DMI type 235, 226 bytes
+OEM-specific Type
+	Header and Data:
+		EB E2 17 00 16 00 00 00 50 23 10 0C 04 84 21 91
+		08 00 40 00 03 18 0B 80 00 00 00 08 0C F8 03 00
+		00 6E 6E 6E 11 08 76 20 08 00 05 70 03 00 78 1E
+		2B 2E 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B
+		0B 0B 0B 0B 0B 0B 0B 00 00 70 00 30 00 00 00 00
+		00 83 B5 CE 00 00 00 00 00 C2 A1 07 11 11 03 09
+		00 86 32 B1 01 76 0A A1 1D 1D 1D 1D 25 15 15 00
+		00 14 14 00 27 27 00 00 00 00 00 00 F0 00 10 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 EA DC 40
+		01 40 80 CE 02 17 11 35 2B 1A 71 4D 33 38 36 41
+		34 47 34 30 44 4D 30 2D 43 50 42 20 20 20 20 00
+		80 CE 00 53 5A 38 59 41 31 30 08 00 01 00 00 00
+		00 00 01 01 01 00 00 00 00 00 00 00 00 00 00 DD
+		00 00
+
+Handle 0x0018, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0012
+	Error Information Handle: Not Provided
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU1-DIMM3
+	Bank Locator: CPU1
+	Type: DDR4
+	Type Detail: Synchronous LRDIMM
+	Speed: 2133 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M386A4G40DM0-CPB
+	Rank: 4
+	Configured Memory Speed: 2133 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+
+Handle 0x0019, DMI type 235, 226 bytes
+OEM-specific Type
+	Header and Data:
+		EB E2 19 00 18 00 00 00 50 23 10 0C 04 84 21 91
+		08 00 40 00 03 18 0B 80 00 00 00 08 0C F8 03 00
+		00 6E 6E 6E 11 08 76 20 08 00 05 70 03 00 78 1E
+		2B 2E 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B
+		0B 0B 0B 0B 0B 0B 0B 00 00 70 00 30 00 00 00 00
+		00 83 B5 CE 00 00 00 00 00 C2 A1 07 11 11 03 09
+		00 80 B3 30 01 76 0A 21 1D 1D 1D 1D 25 15 15 00
+		00 14 14 00 27 27 00 00 00 00 00 00 F0 00 10 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 3F D3 40
+		01 40 80 CE 02 15 53 31 2B 3F F8 4D 33 38 36 41
+		34 47 34 30 44 4D 30 2D 43 50 42 20 20 20 20 00
+		80 CE 00 53 54 47 41 41 31 30 06 00 01 00 00 00
+		00 00 01 01 00 00 00 00 00 00 00 00 00 00 00 DD
+		00 00
+
+Handle 0x001A, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0012
+	Error Information Handle: Not Provided
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU1-DIMM4
+	Bank Locator: CPU1
+	Type: DDR4
+	Type Detail: Synchronous LRDIMM
+	Speed: 2133 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M386A4G40DM0-CPB
+	Rank: 4
+	Configured Memory Speed: 2133 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+
+Handle 0x001B, DMI type 235, 226 bytes
+OEM-specific Type
+	Header and Data:
+		EB E2 1B 00 1A 00 00 00 50 23 10 0C 04 84 21 91
+		08 00 40 00 03 18 0B 80 00 00 00 08 0C F8 03 00
+		00 6E 6E 6E 11 08 76 20 08 00 05 70 03 00 78 1E
+		2B 2E 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B
+		0B 0B 0B 0B 0B 0B 0B 00 00 70 00 30 00 00 00 00
+		00 83 B5 CE 00 00 00 00 00 C2 A1 07 11 11 03 09
+		00 80 B3 30 01 76 0A 21 1D 1D 1D 1D 25 15 15 00
+		00 14 14 00 27 27 00 00 00 00 00 00 F0 00 10 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 3F D3 40
+		01 40 80 CE 02 15 53 31 2A 72 16 4D 33 38 36 41
+		34 47 34 30 44 4D 30 2D 43 50 42 20 20 20 20 00
+		80 CE 00 53 54 47 33 41 34 30 09 00 01 00 00 00
+		00 00 01 01 00 00 00 00 00 00 00 00 00 00 00 DD
+		00 00
+
+Handle 0x001C, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J68 PS2
 	Internal Connector Type: None
@@ -310,7 +499,7 @@ Port Connector Information
 	External Connector Type: PS/2
 	Port Type: Mouse Port
 
-Handle 0x0013, DMI type 8, 9 bytes
+Handle 0x001D, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J68 PS2
 	Internal Connector Type: None
@@ -318,7 +507,7 @@ Port Connector Information
 	External Connector Type: PS/2
 	Port Type: Keyboard Port
 
-Handle 0x0014, DMI type 8, 9 bytes
+Handle 0x001E, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P52 SERIAL
 	Internal Connector Type: Proprietary
@@ -326,7 +515,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Serial Port 16550A Compatible
 
-Handle 0x0015, DMI type 8, 9 bytes
+Handle 0x001F, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J9 RJ45
 	Internal Connector Type: None
@@ -334,7 +523,7 @@ Port Connector Information
 	External Connector Type: RJ-45
 	Port Type: Network Port
 
-Handle 0x0016, DMI type 8, 9 bytes
+Handle 0x0020, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J78 AUDIO
 	Internal Connector Type: None
@@ -342,7 +531,7 @@ Port Connector Information
 	External Connector Type: Mini DIN
 	Port Type: Audio Port
 
-Handle 0x0017, DMI type 8, 9 bytes
+Handle 0x0021, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J78 AUDIO
 	Internal Connector Type: None
@@ -350,7 +539,7 @@ Port Connector Information
 	External Connector Type: Mini DIN
 	Port Type: Audio Port
 
-Handle 0x0018, DMI type 8, 9 bytes
+Handle 0x0022, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P23 FRONT AUDIO
 	Internal Connector Type: Proprietary
@@ -358,7 +547,7 @@ Port Connector Information
 	External Connector Type: Mini DIN
 	Port Type: Audio Port
 
-Handle 0x0019, DMI type 8, 9 bytes
+Handle 0x0023, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P23 FRONT AUDIO
 	Internal Connector Type: Proprietary
@@ -366,7 +555,7 @@ Port Connector Information
 	External Connector Type: Mini DIN
 	Port Type: Audio Port
 
-Handle 0x001A, DMI type 8, 9 bytes
+Handle 0x0024, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J81 RIO USB2
 	Internal Connector Type: None
@@ -374,7 +563,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x001B, DMI type 8, 9 bytes
+Handle 0x0025, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J81 RIO USB2
 	Internal Connector Type: None
@@ -382,7 +571,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x001C, DMI type 8, 9 bytes
+Handle 0x0026, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J82 RIO USB3
 	Internal Connector Type: None
@@ -390,7 +579,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x001D, DMI type 8, 9 bytes
+Handle 0x0027, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J82 RIO USB3
 	Internal Connector Type: None
@@ -398,7 +587,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x001E, DMI type 8, 9 bytes
+Handle 0x0028, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J80 RIO USB3
 	Internal Connector Type: None
@@ -406,7 +595,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x001F, DMI type 8, 9 bytes
+Handle 0x0029, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J80 RIO USB3
 	Internal Connector Type: None
@@ -414,7 +603,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0020, DMI type 8, 9 bytes
+Handle 0x002A, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P26 FRONT USB3
 	Internal Connector Type: Proprietary
@@ -422,7 +611,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0021, DMI type 8, 9 bytes
+Handle 0x002B, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P26 FRONT USB3
 	Internal Connector Type: Proprietary
@@ -430,7 +619,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0022, DMI type 8, 9 bytes
+Handle 0x002C, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P26 FRONT USB3
 	Internal Connector Type: Proprietary
@@ -438,7 +627,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0023, DMI type 8, 9 bytes
+Handle 0x002D, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P26 FRONT USB3
 	Internal Connector Type: Proprietary
@@ -446,7 +635,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0024, DMI type 8, 9 bytes
+Handle 0x002E, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P150 INT USB2 (1)
 	Internal Connector Type: Proprietary
@@ -454,7 +643,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: USB
 
-Handle 0x0025, DMI type 8, 9 bytes
+Handle 0x002F, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P150 INT USB2 (2)
 	Internal Connector Type: Proprietary
@@ -462,7 +651,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: USB
 
-Handle 0x0026, DMI type 8, 9 bytes
+Handle 0x0030, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P27 INT USB3
 	Internal Connector Type: Proprietary
@@ -470,7 +659,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: USB
 
-Handle 0x0027, DMI type 8, 9 bytes
+Handle 0x0031, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P64 SATA0
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -478,7 +667,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x0028, DMI type 8, 9 bytes
+Handle 0x0032, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P65 SATA1
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -486,7 +675,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x0029, DMI type 8, 9 bytes
+Handle 0x0033, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P60 sSATA0
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -494,7 +683,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x002A, DMI type 8, 9 bytes
+Handle 0x0034, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P61 sSATA1
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -502,7 +691,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x002B, DMI type 8, 9 bytes
+Handle 0x0035, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P62 sSATA2
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -510,7 +699,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x002C, DMI type 8, 9 bytes
+Handle 0x0036, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P63 sSATA3
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -518,7 +707,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x002D, DMI type 8, 9 bytes
+Handle 0x0037, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P1 MAIN PWR
 	Internal Connector Type: Other
@@ -526,7 +715,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x002E, DMI type 8, 9 bytes
+Handle 0x0038, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P2 CPU MEM PWR
 	Internal Connector Type: Other
@@ -534,7 +723,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x002F, DMI type 8, 9 bytes
+Handle 0x0039, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P3 CPU0+MEM PWR
 	Internal Connector Type: Other
@@ -542,7 +731,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0030, DMI type 8, 9 bytes
+Handle 0x003A, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P4 CPU1+MEM PWR
 	Internal Connector Type: Other
@@ -550,7 +739,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0031, DMI type 8, 9 bytes
+Handle 0x003B, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P8 CPU0 FAN
 	Internal Connector Type: Other
@@ -558,7 +747,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0032, DMI type 8, 9 bytes
+Handle 0x003C, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P91 MEM FAN
 	Internal Connector Type: Other
@@ -566,7 +755,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0033, DMI type 8, 9 bytes
+Handle 0x003D, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P9 FRNT FAN
 	Internal Connector Type: Other
@@ -574,7 +763,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0034, DMI type 8, 9 bytes
+Handle 0x003E, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P95 REAR FANS
 	Internal Connector Type: Other
@@ -582,7 +771,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0035, DMI type 8, 9 bytes
+Handle 0x003F, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: P5 FRONT UI
 	Internal Connector Type: Proprietary
@@ -590,7 +779,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0036, DMI type 8, 9 bytes
+Handle 0x0040, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: E49 PSWD
 	Internal Connector Type: Other
@@ -598,20 +787,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0037, DMI type 9, 17 bytes
-System Slot Information
-	Designation: SLOT 1
-	Type: x1 PCI Express 2 x4
-	Current Usage: Available
-	Length: Long
-	ID: 1
-	Characteristics:
-		3.3 V is provided
-		PME signal is supported
-		SMBus signal is supported
-	Bus Address: 0000:05:00.0
-
-Handle 0x0038, DMI type 9, 17 bytes
+Handle 0x0041, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 2
 	Type: x16 PCI Express 3
@@ -624,7 +800,7 @@ System Slot Information
 		SMBus signal is supported
 	Bus Address: 0000:02:00.0
 
-Handle 0x0039, DMI type 9, 17 bytes
+Handle 0x0042, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 3
 	Type: x4 PCI Express 2 x8
@@ -637,7 +813,7 @@ System Slot Information
 		SMBus signal is supported
 	Bus Address: 0000:08:00.0
 
-Handle 0x003A, DMI type 9, 17 bytes
+Handle 0x0043, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 4
 	Type: x8 PCI Express 3
@@ -650,7 +826,7 @@ System Slot Information
 		SMBus signal is supported
 	Bus Address: 0000:01:00.0
 
-Handle 0x003B, DMI type 9, 17 bytes
+Handle 0x0044, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 5
 	Type: x16 PCI Express 3
@@ -663,7 +839,7 @@ System Slot Information
 		SMBus signal is supported
 	Bus Address: 0000:03:00.0
 
-Handle 0x003C, DMI type 9, 17 bytes
+Handle 0x0045, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 6
 	Type: 32-bit PCI
@@ -676,7 +852,7 @@ System Slot Information
 		SMBus signal is supported
 	Bus Address: 0000:07:00.0
 
-Handle 0x003D, DMI type 41, 11 bytes
+Handle 0x0046, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: HD Audio
 	Type: Sound
@@ -684,7 +860,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:1b.0
 
-Handle 0x003E, DMI type 41, 11 bytes
+Handle 0x0047, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: LAN (AMT)
 	Type: Ethernet
@@ -692,7 +868,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:19.0
 
-Handle 0x003F, DMI type 41, 11 bytes
+Handle 0x0048, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: sSATA
 	Type: SATA Controller
@@ -700,7 +876,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:11.4
 
-Handle 0x0040, DMI type 41, 11 bytes
+Handle 0x0049, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: SATA
 	Type: SATA Controller
@@ -708,7 +884,7 @@ Onboard Device
 	Type Instance: 2
 	Bus Address: 0000:00:1f.2
 
-Handle 0x0041, DMI type 7, 19 bytes
+Handle 0x004A, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1-Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -724,7 +900,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0042, DMI type 7, 19 bytes
+Handle 0x004B, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2-Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -740,7 +916,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0043, DMI type 7, 19 bytes
+Handle 0x004C, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L3-Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -756,7 +932,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 20-way Set-associative
 
-Handle 0x0044, DMI type 4, 42 bytes
+Handle 0x004D, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPU0
 	Type: Central Processor
@@ -794,15 +970,15 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
-	Voltage: 0.7 V
+	Voltage: 1.8 V
 	External Clock: 100 MHz
 	Max Speed: 4000 MHz
 	Current Speed: 2100 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA2011-3
-	L1 Cache Handle: 0x0041
-	L2 Cache Handle: 0x0042
-	L3 Cache Handle: 0x0043
+	L1 Cache Handle: 0x004A
+	L2 Cache Handle: 0x004B
+	L3 Cache Handle: 0x004C
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
@@ -817,40 +993,127 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0045, DMI type 4, 42 bytes
+Handle 0x004E, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L1-Cache
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Parity
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x004F, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L2-Cache
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Varies With Memory Address
+	Location: Internal
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x0050, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L3-Cache
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Varies With Memory Address
+	Location: Internal
+	Installed Size: 40 MB
+	Maximum Size: 40 MB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: 20-way Set-associative
+
+Handle 0x0051, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPU1
 	Type: Central Processor
-	Family: Unknown
-	Manufacturer: Not Specified
-	ID: 00 00 00 00 00 00 00 00
-	Version: Not Specified
-	Voltage: Unknown
-	External Clock: Unknown
+	Family: Xeon
+	Manufacturer: Intel(R) Corporation
+	ID: F1 06 04 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 79, Stepping 1
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		DS (Debug store)
+		ACPI (ACPI supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		SS (Self-snoop)
+		HTT (Multi-threading)
+		TM (Thermal monitor supported)
+		PBE (Pending break enabled)
+	Version: Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+	Voltage: 1.8 V
+	External Clock: 100 MHz
 	Max Speed: 4000 MHz
-	Current Speed: Unknown
-	Status: Unpopulated
+	Current Speed: 2100 MHz
+	Status: Populated, Enabled
 	Upgrade: Socket LGA2011-3
-	L1 Cache Handle: Not Provided
-	L2 Cache Handle: Not Provided
-	L3 Cache Handle: Not Provided
+	L1 Cache Handle: 0x004E
+	L2 Cache Handle: 0x004F
+	L3 Cache Handle: 0x0050
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
-	Characteristics: None
+	Core Count: 16
+	Core Enabled: 16
+	Thread Count: 32
+	Characteristics:
+		64-bit capable
+		Multi-Core
+		Hardware Thread
+		Execute Protection
+		Enhanced Virtualization
+		Power/Performance Control
 
-Handle 0x0046, DMI type 130, 20 bytes
+Handle 0x0052, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 46 00 24 41 4D 54 01 00 00 01 01 A5 2F 02
+		82 14 52 00 24 41 4D 54 00 00 00 00 00 A5 2F 02
 		00 00 00 00
 
-Handle 0x0047, DMI type 131, 64 bytes
+Handle 0x0053, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 47 00 14 00 00 00 09 00 00 00 00 00 1D 00
-		F8 00 44 8D 00 00 00 00 09 80 00 00 01 00 09 00
-		EA 03 25 00 00 00 00 00 C8 00 A0 15 00 00 00 00
+		83 40 53 00 35 00 00 00 09 00 00 00 00 00 1D 00
+		F8 00 44 8D 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 C8 00 A0 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 52 structures occupying 1598 bytes.
@@ -380,16 +380,16 @@ Handle 0x001C, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x001A
 	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: DIMM1C
 	Bank Locator: Not Specified
-	Type: Reserved
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
+	Speed: 1600 MT/s
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
@@ -402,7 +402,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: DIMM4B
@@ -439,8 +439,8 @@ Memory Device
 Handle 0x001F, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x0047FFFFFFF
+	Range Size: 18 GB
 	Physical Array Handle: 0x001A
 	Partition Width: 4
 
@@ -457,9 +457,9 @@ Memory Device Mapped Address
 
 Handle 0x0021, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x000FFFFFC00
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 1 kB
+	Starting Address: 0x00100000000
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x001C
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: Unknown
@@ -468,9 +468,9 @@ Memory Device Mapped Address
 
 Handle 0x0022, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00300000000
+	Ending Address: 0x0037FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x001D
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: Unknown
@@ -479,8 +479,8 @@ Memory Device Mapped Address
 
 Handle 0x0023, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00300000000
-	Ending Address: 0x003FFFFFFFF
+	Starting Address: 0x00380000000
+	Ending Address: 0x0047FFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x001F
@@ -585,9 +585,8 @@ HP BIOS PXE NIC PCI and MAC Information
 	NIC 1: PCI device 1e:00.0, MAC address F4:CE:46:27:42:03
 
 Handle 0x0031, DMI type 224, 5 bytes
-OEM-specific Type
-	Header and Data:
-		E0 05 31 00 00
+HP Trusted Module (TPM or TCM) Status
+	Status: Not Present
 
 Handle 0x0032, DMI type 225, 12 bytes
 OEM-specific Type

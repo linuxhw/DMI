@@ -1,8 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 57 structures occupying 2265 bytes.
-Table at 0x000EB170.
+Table at 0x000EB160.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -331,7 +331,7 @@ Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIe x16 Slot
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 0
 	Characteristics:
@@ -343,7 +343,7 @@ System Slot Information
 Handle 0x0021, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
-	Status: Enabled
+	Status: Disabled
 	Description: Intel(R) HD Graphics Device
 
 Handle 0x0022, DMI type 10, 6 bytes
@@ -395,8 +395,8 @@ Handle 0x0028, DMI type 18, 23 bytes
 Handle 0x0029, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0027
 	Partition Width: 1
 
@@ -445,19 +445,19 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: Channel B DIMM 0
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer1
+	Speed: 1333 MT/s
+	Manufacturer: Kingmax         
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber1
-	Rank: Unknown
+	Part Number: FLFE85F-C8KM9     
+	Rank: 1
 
 Handle 0x002E, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -469,8 +469,14 @@ Handle 0x002E, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x002F, DMI type 126, 19 bytes
-Inactive
+Handle 0x002F, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x002D
+	Memory Array Mapped Address Handle: 0x0029
+	Partition Row Position: 1
 
 Handle 0x0030, DMI type 32, 20 bytes
 System Boot Information
@@ -480,7 +486,7 @@ Handle 0x0031, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Intel(R) HD Graphics Device
 	Type: Video
-	Status: Enabled
+	Status: Disabled
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 
@@ -547,7 +553,7 @@ Handle 0x0034, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI Slot
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 5
 	Characteristics:

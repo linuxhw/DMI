@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0x000ED9B0.
@@ -273,7 +273,7 @@ Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot1
 	Type: x1 PCI Express 3 x1
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 1
 	Characteristics:
@@ -299,14 +299,14 @@ Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot3
 	Type: x1 PCI Express 3 x1
-	Current Usage: Unknown
+	Current Usage: In Use
 	Length: Short
 	ID: 3
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:00.0
+	Bus Address: 0000:81:00.0
 
 Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
@@ -826,46 +826,47 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 4
 
-Handle 0x0057, DMI type 19, 31 bytes
-Memory Array Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
-	Physical Array Handle: 0x0056
-	Partition Width: 2
+Handle 0x0057, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0056
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: NO DIMM
+	Bank Locator: NO DIMM
+	Type: Unknown
+	Type Detail: Unknown
 
 Handle 0x0058, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0056
 	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 72 bits
-	Size: 16 GB
-	Form Factor: DIMM
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
 	Set: None
-	Locator: DIMM_A1
-	Bank Locator: NODE 1
-	Type: DDR4
-	Type Detail: Synchronous
-	Speed: 2133 MT/s
-	Manufacturer: Samsung
-	Serial Number: --
-	Asset Tag: --
-	Part Number: M393A2G40DB0-CPB    
-	Rank: 2
-	Configured Memory Speed: 2133 MT/s
-	Minimum Voltage: 1.14 V
-	Maximum Voltage: 1.26 V
-	Configured Voltage: 1.2 V
+	Locator: NO DIMM
+	Bank Locator: NO DIMM
+	Type: Unknown
+	Type Detail: Unknown
 
-Handle 0x0059, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x0058
-	Memory Array Mapped Address Handle: 0x0057
-	Partition Row Position: 1
+Handle 0x0059, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0056
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: NO DIMM
+	Bank Locator: NO DIMM
+	Type: Unknown
+	Type Detail: Unknown
 
 Handle 0x005A, DMI type 17, 40 bytes
 Memory Device
@@ -880,75 +881,8 @@ Memory Device
 	Bank Locator: NO DIMM
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: 1.14 V
-	Maximum Voltage: 1.26 V
-	Configured Voltage: 1.2 V
 
-Handle 0x005B, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x0056
-	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 72 bits
-	Size: 16 GB
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM_B1
-	Bank Locator: NODE 1
-	Type: DDR4
-	Type Detail: Synchronous
-	Speed: 2133 MT/s
-	Manufacturer: Samsung
-	Serial Number: --
-	Asset Tag: --
-	Part Number: M393A2G40DB0-CPB    
-	Rank: 2
-	Configured Memory Speed: 2133 MT/s
-	Minimum Voltage: 1.14 V
-	Maximum Voltage: 1.26 V
-	Configured Voltage: 1.2 V
-
-Handle 0x005C, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x005B
-	Memory Array Mapped Address Handle: 0x0057
-	Partition Row Position: 1
-
-Handle 0x005D, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x0056
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
-	Set: None
-	Locator: NO DIMM
-	Bank Locator: NO DIMM
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: 1.14 V
-	Maximum Voltage: 1.26 V
-	Configured Voltage: 1.2 V
-
-Handle 0x005E, DMI type 16, 23 bytes
+Handle 0x005B, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -957,9 +891,50 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 4
 
+Handle 0x005C, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 128 GB
+	Physical Array Handle: 0x005B
+	Partition Width: 2
+
+Handle 0x005D, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x005B
+	Error Information Handle: Not Provided
+	Total Width: 72 bits
+	Data Width: 72 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_C1
+	Bank Locator: NODE 2
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2400 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M386A8K40BM1-CRC    
+	Rank: 4
+	Configured Memory Speed: 2133 MT/s
+	Minimum Voltage: 1.14 V
+	Maximum Voltage: 1.26 V
+	Configured Voltage: 1.2 V
+
+Handle 0x005E, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x005D
+	Memory Array Mapped Address Handle: 0x005C
+	Partition Row Position: 1
+
 Handle 0x005F, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x005E
+	Array Handle: 0x005B
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -970,68 +945,43 @@ Memory Device
 	Bank Locator: NO DIMM
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: 1.14 V
-	Maximum Voltage: 1.26 V
-	Configured Voltage: 1.2 V
 
 Handle 0x0060, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x005E
+	Array Handle: 0x005B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 72 bits
+	Data Width: 72 bits
+	Size: 64 GB
+	Form Factor: DIMM
 	Set: None
-	Locator: NO DIMM
-	Bank Locator: NO DIMM
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
+	Locator: DIMM_D1
+	Bank Locator: NODE 2
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2400 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: M386A8K40BM1-CRC    
+	Rank: 4
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.14 V
 	Maximum Voltage: 1.26 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0061, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x005E
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
-	Set: None
-	Locator: NO DIMM
-	Bank Locator: NO DIMM
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: 1.14 V
-	Maximum Voltage: 1.26 V
-	Configured Voltage: 1.2 V
+Handle 0x0061, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x01000000000
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0060
+	Memory Array Mapped Address Handle: 0x005C
+	Partition Row Position: 1
 
 Handle 0x0062, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x005E
+	Array Handle: 0x005B
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -1042,16 +992,6 @@ Memory Device
 	Bank Locator: NO DIMM
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: 1.14 V
-	Maximum Voltage: 1.26 V
-	Configured Voltage: 1.2 V
 
 Handle 0x0063, DMI type 16, 23 bytes
 Physical Memory Array
@@ -1062,77 +1002,46 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 4
 
-Handle 0x0064, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x0063
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
-	Set: None
-	Locator: NO DIMM
-	Bank Locator: NO DIMM
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: 1.14 V
-	Maximum Voltage: 1.26 V
-	Configured Voltage: 1.2 V
+Handle 0x0064, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x02000000000
+	Ending Address: 0x03FFFFFFFFF
+	Range Size: 128 GB
+	Physical Array Handle: 0x0063
+	Partition Width: 2
 
 Handle 0x0065, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0063
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 72 bits
+	Data Width: 72 bits
+	Size: 64 GB
+	Form Factor: DIMM
 	Set: None
-	Locator: NO DIMM
-	Bank Locator: NO DIMM
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
+	Locator: DIMM_E1
+	Bank Locator: NODE 3
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2400 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: M386A8K40BM1-CRC    
+	Rank: 4
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.14 V
 	Maximum Voltage: 1.26 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0066, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x0063
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
-	Set: None
-	Locator: NO DIMM
-	Bank Locator: NO DIMM
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: 1.14 V
-	Maximum Voltage: 1.26 V
-	Configured Voltage: 1.2 V
+Handle 0x0066, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x02000000000
+	Ending Address: 0x02FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0065
+	Memory Array Mapped Address Handle: 0x0064
+	Partition Row Position: 1
 
 Handle 0x0067, DMI type 17, 40 bytes
 Memory Device
@@ -1147,18 +1056,55 @@ Memory Device
 	Bank Locator: NO DIMM
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
+
+Handle 0x0068, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0063
+	Error Information Handle: Not Provided
+	Total Width: 72 bits
+	Data Width: 72 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_F1
+	Bank Locator: NODE 3
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2400 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: M386A8K40BM1-CRC    
+	Rank: 4
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.14 V
 	Maximum Voltage: 1.26 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0068, DMI type 16, 23 bytes
+Handle 0x0069, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x03000000000
+	Ending Address: 0x03FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0068
+	Memory Array Mapped Address Handle: 0x0064
+	Partition Row Position: 1
+
+Handle 0x006A, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0063
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: NO DIMM
+	Bank Locator: NO DIMM
+	Type: Unknown
+	Type Detail: Unknown
+
+Handle 0x006B, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -1167,50 +1113,9 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 4
 
-Handle 0x0069, DMI type 19, 31 bytes
-Memory Array Mapped Address
-	Starting Address: 0x00800000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 32 GB
-	Physical Array Handle: 0x0068
-	Partition Width: 2
-
-Handle 0x006A, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x0068
-	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 72 bits
-	Size: 16 GB
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM_G1
-	Bank Locator: NODE 4
-	Type: DDR4
-	Type Detail: Synchronous
-	Speed: 2133 MT/s
-	Manufacturer: Samsung
-	Serial Number: --
-	Asset Tag: --
-	Part Number: M393A2G40DB0-CPB    
-	Rank: 2
-	Configured Memory Speed: 2133 MT/s
-	Minimum Voltage: 1.14 V
-	Maximum Voltage: 1.26 V
-	Configured Voltage: 1.2 V
-
-Handle 0x006B, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00800000000
-	Ending Address: 0x00BFFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x006A
-	Memory Array Mapped Address Handle: 0x0069
-	Partition Row Position: 1
-
 Handle 0x006C, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0068
+	Array Handle: 0x006B
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -1221,53 +1126,10 @@ Memory Device
 	Bank Locator: NO DIMM
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: 1.14 V
-	Maximum Voltage: 1.26 V
-	Configured Voltage: 1.2 V
 
 Handle 0x006D, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0068
-	Error Information Handle: Not Provided
-	Total Width: 72 bits
-	Data Width: 72 bits
-	Size: 16 GB
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM_H1
-	Bank Locator: NODE 4
-	Type: DDR4
-	Type Detail: Synchronous
-	Speed: 2133 MT/s
-	Manufacturer: Samsung
-	Serial Number: --
-	Asset Tag: --
-	Part Number: M393A2G40DB0-CPB    
-	Rank: 2
-	Configured Memory Speed: 2133 MT/s
-	Minimum Voltage: 1.14 V
-	Maximum Voltage: 1.26 V
-	Configured Voltage: 1.2 V
-
-Handle 0x006E, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00C00000000
-	Ending Address: 0x00FFFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x006D
-	Memory Array Mapped Address Handle: 0x0069
-	Partition Row Position: 1
-
-Handle 0x006F, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x0068
+	Array Handle: 0x006B
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -1278,16 +1140,34 @@ Memory Device
 	Bank Locator: NO DIMM
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: 1.14 V
-	Maximum Voltage: 1.26 V
-	Configured Voltage: 1.2 V
+
+Handle 0x006E, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x006B
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: NO DIMM
+	Bank Locator: NO DIMM
+	Type: Unknown
+	Type Detail: Unknown
+
+Handle 0x006F, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x006B
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: NO DIMM
+	Bank Locator: NO DIMM
+	Type: Unknown
+	Type Detail: Unknown
 
 Handle 0x0070, DMI type 7, 19 bytes
 Cache Information

@@ -378,8 +378,8 @@ Handle 0x0027, DMI type 18, 23 bytes
 Handle 0x0028, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 20 GB
 	Physical Array Handle: 0x0026
 	Partition Width: 1
 
@@ -389,19 +389,19 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: CHANNEL A DIMM0
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer0
+	Speed: 1333 MT/s
+	Manufacturer: Undefined       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber0
-	Rank: Unknown
+	Part Number: F3-1333C9-8GIS    
+	Rank: 2
 	Configured Memory Speed: Unknown
 
 Handle 0x002A, DMI type 18, 23 bytes
@@ -414,8 +414,14 @@ Handle 0x002A, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x002B, DMI type 126, 35 bytes
-Inactive
+Handle 0x002B, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0029
+	Memory Array Mapped Address Handle: 0x0028
+	Partition Row Position: 1
 
 Handle 0x002C, DMI type 17, 34 bytes
 Memory Device
@@ -450,8 +456,8 @@ Handle 0x002D, DMI type 18, 23 bytes
 
 Handle 0x002E, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x0027FFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x002C
 	Memory Array Mapped Address Handle: 0x0028
@@ -463,19 +469,19 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM4
 	Bank Locator: CHANNEL B DIMM0
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer2
+	Speed: 1333 MT/s
+	Manufacturer: Undefined       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber2
-	Rank: Unknown
+	Part Number: F3-1333C9-8GIS    
+	Rank: 2
 	Configured Memory Speed: Unknown
 
 Handle 0x0030, DMI type 18, 23 bytes
@@ -488,8 +494,14 @@ Handle 0x0030, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0031, DMI type 126, 35 bytes
-Inactive
+Handle 0x0031, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00280000000
+	Ending Address: 0x0047FFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x002F
+	Memory Array Mapped Address Handle: 0x0028
+	Partition Row Position: 1
 
 Handle 0x0032, DMI type 17, 34 bytes
 Memory Device
@@ -524,8 +536,8 @@ Handle 0x0033, DMI type 18, 23 bytes
 
 Handle 0x0034, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00480000000
+	Ending Address: 0x004FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0032
 	Memory Array Mapped Address Handle: 0x0028
@@ -619,7 +631,7 @@ Handle 0x004B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI Slot
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 5
 	Characteristics:

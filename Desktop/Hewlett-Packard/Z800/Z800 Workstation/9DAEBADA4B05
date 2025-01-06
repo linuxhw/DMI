@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 118 structures occupying 3499 bytes.
@@ -128,7 +128,7 @@ Processor Information
 	Part Number: Not Specified
 	Core Count: 6
 	Core Enabled: 6
-	Thread Count: 6
+	Thread Count: 12
 	Characteristics:
 		64-bit capable
 
@@ -184,7 +184,7 @@ Processor Information
 	Part Number: Not Specified
 	Core Count: 6
 	Core Enabled: 6
-	Thread Count: 6
+	Thread Count: 12
 	Characteristics:
 		64-bit capable
 
@@ -671,7 +671,8 @@ Port Connector Information
 Handle 0x003D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 1
-	Type: x4 PCI Express 2 x8
+	Type: PCI Express 2 x8
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -684,7 +685,8 @@ System Slot Information
 Handle 0x003E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 2
-	Type: x16 PCI Express 2
+	Type: PCI Express 2
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 2
@@ -697,7 +699,8 @@ System Slot Information
 Handle 0x003F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 3
-	Type: x4 PCI Express x8
+	Type: PCI Express x8
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Long
 	ID: 3
@@ -710,7 +713,8 @@ System Slot Information
 Handle 0x0040, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 4
-	Type: x8 PCI Express 2 x16
+	Type: PCI Express 2 x16
+	Data Bus Width: 8x or x8
 	Current Usage: Available
 	Length: Long
 	ID: 4
@@ -723,7 +727,8 @@ System Slot Information
 Handle 0x0041, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 5
-	Type: x16 PCI Express 2
+	Type: PCI Express 2
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 5
@@ -736,7 +741,8 @@ System Slot Information
 Handle 0x0042, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 6
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 6
@@ -750,7 +756,8 @@ System Slot Information
 Handle 0x0043, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 7
-	Type: x8 PCI Express 2 x16
+	Type: PCI Express 2 x16
+	Data Bus Width: 8x or x8
 	Current Usage: Available
 	Length: Long
 	ID: 7
@@ -831,12 +838,6 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
-	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
-	Part Number:  
-	Rank: Unknown
 
 Handle 0x004B, DMI type 17, 28 bytes
 Memory Device
@@ -871,12 +872,6 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
-	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
-	Part Number:  
-	Rank: Unknown
 
 Handle 0x004D, DMI type 17, 28 bytes
 Memory Device
@@ -891,12 +886,6 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
-	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
-	Part Number:  
-	Rank: Unknown
 
 Handle 0x004E, DMI type 17, 28 bytes
 Memory Device
@@ -911,12 +900,6 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
-	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
-	Part Number:  
-	Rank: Unknown
 
 Handle 0x004F, DMI type 17, 28 bytes
 Memory Device
@@ -951,12 +934,6 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
-	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
-	Part Number:  
-	Rank: Unknown
 
 Handle 0x0051, DMI type 17, 28 bytes
 Memory Device
@@ -991,12 +968,6 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
-	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
-	Part Number:  
-	Rank: Unknown
 
 Handle 0x0053, DMI type 17, 28 bytes
 Memory Device
@@ -1011,12 +982,6 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
-	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
-	Part Number:  
-	Rank: Unknown
 
 Handle 0x0054, DMI type 17, 28 bytes
 Memory Device
@@ -1031,12 +996,6 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
-	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
-	Part Number:  
-	Rank: Unknown
 
 Handle 0x0056, DMI type 17, 27 bytes
 Memory Device

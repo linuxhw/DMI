@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 75 structures occupying 2093 bytes.
@@ -320,7 +320,7 @@ Handle 0x0901, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI Slot 1  
 	Type: 64-bit PCI-X
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 1
 	Characteristics:
@@ -613,7 +613,7 @@ Memory Device Mapped Address
 
 Handle 0x2000, DMI type 32, 11 bytes
 System Boot Information
-	Status: No errors detected
+	Status: Firmware-detected hardware failure
 
 Handle 0x2600, DMI type 38, 18 bytes
 IPMI Device Information
@@ -633,9 +633,12 @@ OEM-specific Type
 		09/12/2006
 
 Handle 0xC200, DMI type 194, 5 bytes
-OEM-specific Type
-	Header and Data:
-		C2 05 00 C2 09
+HP ProLiant Super IO Enable/Disable Indicator
+	Serial Port A: Enabled
+	Serial Port B: Disabled
+	Parallel Port: Disabled
+	Floppy Disk Port: Disabled
+	Virtual Serial Port: Disabled
 
 Handle 0xC300, DMI type 195, 5 bytes
 OEM-specific Type

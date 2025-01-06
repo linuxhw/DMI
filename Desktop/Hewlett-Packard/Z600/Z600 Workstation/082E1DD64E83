@@ -1,17 +1,17 @@
-# dmidecode 3.3
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-98 structures occupying 2934 bytes.
+96 structures occupying 2900 bytes.
 Table at 0x000EB300.
 
 Handle 0x0001, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Hewlett-Packard
-	Version: 786G4 v03.54
-	Release Date: 11/02/2011
+	Version: 786G4 v03.61
+	Release Date: 03/05/2018
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 2 MB
+	ROM Size: 2048 kB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -33,7 +33,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
-	BIOS Revision: 3.54
+	BIOS Revision: 3.61
 
 Handle 0x0002, DMI type 1, 27 bytes
 System Information
@@ -226,8 +226,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12 MB
-	Maximum Size: 12 MB
+	Installed Size: 12288 kB
+	Maximum Size: 12288 kB
 	Supported SRAM Types:
 		Burst
 	Installed SRAM Type: Burst
@@ -274,8 +274,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12 MB
-	Maximum Size: 12 MB
+	Installed Size: 12288 kB
+	Maximum Size: 12288 kB
 	Supported SRAM Types:
 		Burst
 	Installed SRAM Type: Burst
@@ -623,7 +623,7 @@ Handle 0x0035, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 4
 	Type: x16 PCI Express 2
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 4
 	Characteristics:
@@ -676,18 +676,9 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: Multi-bit ECC
-	Maximum Capacity: 12 GB
+	Maximum Capacity: 24 GB
 	Error Information Handle: Not Provided
-	Number Of Devices: 3
-
-Handle 0x003B, DMI type 16, 15 bytes
-Physical Memory Array
-	Location: System Board Or Motherboard
-	Use: System Memory
-	Error Correction Type: Multi-bit ECC
-	Maximum Capacity: 12 GB
-	Error Information Handle: Not Provided
-	Number Of Devices: 3
+	Number Of Devices: 6
 
 Handle 0x003C, DMI type 16, 15 bytes
 Physical Memory Array
@@ -704,7 +695,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 16384 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0 DIMM1
@@ -724,7 +715,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 16384 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0 DIMM2
@@ -744,7 +735,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 16384 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0 DIMM3
@@ -760,11 +751,11 @@ Memory Device
 
 Handle 0x0040, DMI type 17, 28 bytes
 Memory Device
-	Array Handle: 0x003B
+	Array Handle: 0x003A
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 16384 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU1 DIMM1
@@ -780,11 +771,11 @@ Memory Device
 
 Handle 0x0041, DMI type 17, 28 bytes
 Memory Device
-	Array Handle: 0x003B
+	Array Handle: 0x003A
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 16384 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU1 DIMM2
@@ -800,11 +791,11 @@ Memory Device
 
 Handle 0x0042, DMI type 17, 28 bytes
 Memory Device
-	Array Handle: 0x003B
+	Array Handle: 0x003A
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 16384 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU1 DIMM3
@@ -824,7 +815,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 2 bits
 	Data Width: 2 bits
-	Size: 2 MB
+	Size: 2048 kB
 	Form Factor: Chip
 	Set: None
 	Locator: SYSTEM ROM
@@ -840,25 +831,17 @@ Memory Device
 Handle 0x0045, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000DFFFFFFF
-	Range Size: 3584 MB
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 3 GB
 	Physical Array Handle: 0x003A
 	Partition Width: 1
 
 Handle 0x0046, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x00C1FFFFFFF
-	Range Size: 45568 MB
+	Ending Address: 0x0183FFFFFFF
+	Range Size: 93 GB
 	Physical Array Handle: 0x003A
-	Partition Width: 1
-
-Handle 0x0047, DMI type 19, 15 bytes
-Memory Array Mapped Address
-	Starting Address: 0x00C20000000
-	Ending Address: 0x0181FFFFFFF
-	Range Size: 48 GB
-	Physical Array Handle: 0x003B
 	Partition Width: 1
 
 Handle 0x0049, DMI type 19, 15 bytes

@@ -1,14 +1,14 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 90 structures occupying 3049 bytes.
-Table at 0xF3FCB000.
+Table at 0xD7FCB000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: HP
 	Version: P78
-	Release Date: 03/28/2014
+	Release Date: 04/04/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8 MB
@@ -34,7 +34,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
-	Firmware Revision: 2.2
+	Firmware Revision: 2.77
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -55,8 +55,8 @@ Chassis Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	380AD15AAB729CF25C4397C21C466ACE
-	Power Supply State: Safe
+	93EE3508EC5652A6369A7DC6C82AAA3C
+	Power Supply State: Critical
 	Thermal State: Safe
 	Security Status: Unknown
 	OEM Information: 0x00000000
@@ -287,7 +287,7 @@ Handle 0x0903, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-E Slot 3
 	Type: x8 PCI Express 3 x8
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 3
 	Characteristics:
@@ -298,7 +298,7 @@ Handle 0x0902, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-E Slot 2
 	Type: x1 PCI Express 2 x8
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 2
 	Characteristics:
@@ -336,23 +336,23 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: PROC  1 DIMM  1 
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1333 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: UNKNOWN
 	Serial Number: --
 	Asset Tag: --
 	Part Number: NOT AVAILABLE       
-	Rank: 1
-	Configured Memory Speed: 1333 MT/s
-	Minimum Voltage: 1.5 V
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
+	Minimum Voltage: 1.35 V
 	Maximum Voltage: 1.5 V
-	Configured Voltage: 1.5 V
+	Configured Voltage: 1.35 V
 
 Handle 0x1101, DMI type 17, 40 bytes
 Memory Device
@@ -360,23 +360,23 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: PROC  1 DIMM  2 
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1333 MT/s
-	Manufacturer: HP     
+	Speed: 1600 MT/s
+	Manufacturer: UNKNOWN
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 647657-071          
+	Part Number: NOT AVAILABLE       
 	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.35 V
 	Maximum Voltage: 1.5 V
-	Configured Voltage: 1.5 V
+	Configured Voltage: 1.35 V
 
 Handle 0x1102, DMI type 17, 40 bytes
 Memory Device
@@ -384,23 +384,23 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: 2
 	Locator: PROC  1 DIMM  3 
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1333 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: UNKNOWN
 	Serial Number: --
 	Asset Tag: --
 	Part Number: NOT AVAILABLE       
-	Rank: 1
-	Configured Memory Speed: 1333 MT/s
-	Minimum Voltage: 1.5 V
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
+	Minimum Voltage: 1.35 V
 	Maximum Voltage: 1.5 V
-	Configured Voltage: 1.5 V
+	Configured Voltage: 1.35 V
 
 Handle 0x1103, DMI type 17, 40 bytes
 Memory Device
@@ -408,37 +408,37 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: 3
 	Locator: PROC  1 DIMM  4 
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1333 MT/s
-	Manufacturer: HP     
+	Speed: 1600 MT/s
+	Manufacturer: UNKNOWN
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 647657-071          
+	Part Number: NOT AVAILABLE       
 	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.35 V
 	Maximum Voltage: 1.5 V
-	Configured Voltage: 1.5 V
+	Configured Voltage: 1.35 V
 
 Handle 0x1300, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000F3FFFFFF
-	Range Size: 3904 MB
+	Ending Address: 0x000D7FFFFFF
+	Range Size: 3456 MB
 	Physical Array Handle: 0x1000
 	Partition Width: 1
 
 Handle 0x1301, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0030BFFFFFF
-	Range Size: 8384 MB
+	Ending Address: 0x00827FFFFFF
+	Range Size: 29312 MB
 	Physical Array Handle: 0x1000
 	Partition Width: 1
 
@@ -510,8 +510,8 @@ Onboard Device
 	Reference Designation: Storage Controller
 	Type: SAS Controller
 	Status: Enabled
-	Type Instance: 182
-	Bus Address: 0000:04:00.0
+	Type Instance: 175
+	Bus Address: 0000:0a:00.0
 
 Handle 0x2942, DMI type 41, 11 bytes
 Onboard Device
@@ -532,9 +532,12 @@ OEM-specific Type
 		          
 
 Handle 0xC200, DMI type 194, 5 bytes
-OEM-specific Type
-	Header and Data:
-		C2 05 00 C2 11
+HP ProLiant Super IO Enable/Disable Indicator
+	Serial Port A: Enabled
+	Serial Port B: Disabled
+	Parallel Port: Disabled
+	Floppy Disk Port: Disabled
+	Virtual Serial Port: Enabled
 
 Handle 0xC300, DMI type 195, 7 bytes
 OEM-specific Type
@@ -587,7 +590,7 @@ Handle 0xC700, DMI type 199, 28 bytes
 OEM-specific Type
 	Header and Data:
 		C7 1C 00 C7 06 00 FF FF 12 20 17 10 C2 06 03 00
-		17 00 00 00 13 20 16 08 C3 06 03 00
+		27 00 00 00 19 20 26 02 C3 06 03 00
 
 Handle 0xD100, DMI type 209, 20 bytes
 HP BIOS PXE NIC PCI and MAC Information
@@ -600,65 +603,55 @@ OEM-specific Type
 		D7 06 00 D7 00 05
 
 Handle 0xD800, DMI type 216, 23 bytes
-OEM-specific Type
-	Header and Data:
-		D8 17 00 D8 01 00 01 02 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00
-	Strings:
-		System ROM
-		03/28/2014
+HP Version Indicator
+	Firmware Type: System ROM
+	Firmware Name String: System ROM
+	Firmware Version String: 04/04/2019
+	Version Data: No Version Data
 
 Handle 0xD801, DMI type 216, 23 bytes
-OEM-specific Type
-	Header and Data:
-		D8 17 01 D8 02 00 01 02 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00
-	Strings:
-		Redundant System ROM
-		03/28/2014
+HP Version Indicator
+	Firmware Type: Redundant System ROM
+	Firmware Name String: Redundant System ROM
+	Firmware Version String: 03/28/2014
+	Version Data: No Version Data
 
 Handle 0xD802, DMI type 216, 23 bytes
-OEM-specific Type
-	Header and Data:
-		D8 17 02 D8 03 00 01 02 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00
-	Strings:
-		System ROM Bootblock
-		02/04/2012
+HP Version Indicator
+	Firmware Type: System ROM Bootblock
+	Firmware Name String: System ROM Bootblock
+	Firmware Version String: 02/04/2012
+	Version Data: No Version Data
 
 Handle 0xD803, DMI type 216, 23 bytes
-OEM-specific Type
-	Header and Data:
-		D8 17 03 D8 04 00 01 02 02 33 00 00 00 00 00 00
-		00 00 00 00 00 0C 00
-	Strings:
-		Power Management Controller Firmware
-		3.3
+HP Version Indicator
+	Firmware Type: Power Management Controller Firmware
+	Firmware Name String: Power Management Controller Firmware
+	Firmware Version String: 3.3
+	Version Data: 3.3
+	Unique ID: 0x000c
 
 Handle 0xD804, DMI type 216, 23 bytes
-OEM-specific Type
-	Header and Data:
-		D8 17 04 D8 05 00 01 02 02 27 00 00 00 00 00 00
-		00 00 00 00 00 0C 00
-	Strings:
-		Power Management Controller Firmware Bootloader
-		2.7
+HP Version Indicator
+	Firmware Type: Power Management Controller Firmware Bootloader
+	Firmware Name String: Power Management Controller Firmware Bootloader
+	Firmware Version String: 2.7
+	Version Data: 2.7
+	Unique ID: 0x000c
 
 Handle 0xD805, DMI type 216, 23 bytes
-OEM-specific Type
-	Header and Data:
-		D8 17 05 D8 08 00 01 00 01 00 05 00 00 00 00 00
-		00 00 00 00 00 00 00
-	Strings:
-		System Programmable Logic Device
+HP Version Indicator
+	Firmware Type: Hardware PAL/CPLD
+	Firmware Name String: System Programmable Logic Device
+	Firmware Version String: Not Specified
+	Version Data: R.0.5
 
 Handle 0xD806, DMI type 216, 23 bytes
-OEM-specific Type
-	Header and Data:
-		D8 17 06 D8 09 00 01 00 03 03 00 00 00 05 00 80
-		00 0C 00 00 00 00 00
-	Strings:
-		Server Platform Services (SPS) Firmware
+HP Version Indicator
+	Firmware Type: SPS Firmware (ME Firmware)
+	Firmware Name String: Server Platform Services (SPS) Firmware
+	Firmware Version String: Not Specified
+	Version Data: Reserved
 
 Handle 0xDB00, DMI type 219, 32 bytes
 HP ProLiant Information
@@ -679,9 +672,8 @@ OEM-specific Type
 		DF 07 00 DF 66 46 70
 
 Handle 0xE000, DMI type 224, 5 bytes
-OEM-specific Type
-	Header and Data:
-		E0 05 00 E0 00
+HP Trusted Module (TPM or TCM) Status
+	Status: Not Present
 
 Handle 0xE200, DMI type 226, 21 bytes
 OEM-specific Type
@@ -774,49 +766,51 @@ OEM-specific Type
 Handle 0xE500, DMI type 229, 100 bytes
 OEM-specific Type
 	Header and Data:
-		E5 64 00 E5 24 44 46 43 00 50 FE F1 00 00 00 00
-		00 04 00 00 24 43 52 50 00 50 F9 F1 00 00 00 00
-		00 00 05 00 24 48 44 44 00 30 F9 F1 00 00 00 00
-		00 20 00 00 24 4F 43 53 00 F0 F8 F1 00 00 00 00
-		00 40 00 00 24 4F 43 42 00 F0 F7 F1 00 00 00 00
-		00 00 01 00 24 53 41 45 00 E0 F7 F1 00 00 00 00
+		E5 64 00 E5 24 44 46 43 00 50 FE D5 00 00 00 00
+		00 04 00 00 24 43 52 50 00 50 F9 D5 00 00 00 00
+		00 00 05 00 24 48 44 44 00 30 F9 D5 00 00 00 00
+		00 20 00 00 24 4F 43 53 00 F0 F8 D5 00 00 00 00
+		00 40 00 00 24 4F 43 42 00 F0 F7 D5 00 00 00 00
+		00 00 01 00 24 53 41 45 00 E0 F7 D5 00 00 00 00
 		00 10 00 00
 
 Handle 0xE600, DMI type 230, 11 bytes
-OEM-specific Type
-	Header and Data:
-		E6 0B 00 E6 00 27 01 02 02 03 A0
-	Strings:
-		DELTA           
-		04      
+HP Power Supply Information
+	Associated Handle: 0x2700
+	Manufacturer: DELTA           
+	Revision: 04      
+	Access Method: iLO
+	I2C Segment Number: 3
+	I2C Address: 0x50
 
 Handle 0xE601, DMI type 230, 11 bytes
-OEM-specific Type
-	Header and Data:
-		E6 0B 01 E6 01 27 01 02 02 03 A2
-	Strings:
-		DELTA           
-		04      
+HP Power Supply Information
+	Associated Handle: 0x2701
+	Manufacturer: DELTA           
+	Revision: 04      
+	Access Method: iLO
+	I2C Segment Number: 3
+	I2C Address: 0x51
 
 Handle 0xE800, DMI type 232, 14 bytes
 OEM-specific Type
 	Header and Data:
-		E8 0E 00 E8 00 11 04 00 00 00 DC 05 DC 05
+		E8 0E 00 E8 00 11 04 00 00 00 46 05 46 05
 
 Handle 0xE801, DMI type 232, 14 bytes
 OEM-specific Type
 	Header and Data:
-		E8 0E 01 E8 01 11 05 00 00 00 46 05 DC 05
+		E8 0E 01 E8 01 11 04 00 00 00 46 05 46 05
 
 Handle 0xE802, DMI type 232, 14 bytes
 OEM-specific Type
 	Header and Data:
-		E8 0E 02 E8 02 11 04 00 00 00 DC 05 DC 05
+		E8 0E 02 E8 02 11 04 00 00 00 46 05 46 05
 
 Handle 0xE803, DMI type 232, 14 bytes
 OEM-specific Type
 	Header and Data:
-		E8 0E 03 E8 03 11 05 00 00 00 46 05 DC 05
+		E8 0E 03 E8 03 11 04 00 00 00 46 05 46 05
 
 Handle 0x7F00, DMI type 127, 4 bytes
 End Of Table

@@ -258,7 +258,7 @@ Handle 0x0014, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIe Slot #3 - PCI4
 	Type: x8 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 4
 	Characteristics:
@@ -324,14 +324,14 @@ Memory Device
 	Error Information Handle: 0xFF01
 	Total Width: 40968 bits
 	Data Width: 41024 bits
-	Size: 1 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: DIMM1
 	Bank Locator: DIMM 0
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MT/s
+	Speed: 800 MT/s
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
@@ -350,7 +350,7 @@ Memory Device
 	Bank Locator: DIMM 1
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MT/s
+	Speed: 800 MT/s
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
@@ -362,14 +362,14 @@ Memory Device
 	Error Information Handle: 0xFF01
 	Total Width: 41992 bits
 	Data Width: 42048 bits
-	Size: 1 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: DIMM3
 	Bank Locator: DIMM 2
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MT/s
+	Speed: 800 MT/s
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
@@ -388,7 +388,7 @@ Memory Device
 	Bank Locator: DIMM 3
 	Type: DDR2
 	Type Detail: Synchronous
-	Speed: 667 MT/s
+	Speed: 800 MT/s
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
@@ -397,16 +397,16 @@ Memory Device
 Handle 0x0020, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 6 GB
 	Physical Array Handle: 0x001B
 	Partition Width: 2
 
 Handle 0x0021, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x001C
 	Memory Array Mapped Address Handle: 0x0020
 	Partition Row Position: Unknown
@@ -415,8 +415,8 @@ Memory Device Mapped Address
 
 Handle 0x0022, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x0007FFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x000BFFFFFFF
 	Range Size: 1 GB
 	Physical Device Handle: 0x001D
 	Memory Array Mapped Address Handle: 0x0020

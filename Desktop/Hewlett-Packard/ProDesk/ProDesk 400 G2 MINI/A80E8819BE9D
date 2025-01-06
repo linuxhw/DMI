@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-51 structures occupying 2677 bytes.
+52 structures occupying 2734 bytes.
 Table at 0xAB7EB000.
 
 Handle 0x0000, DMI type 7, 19 bytes
@@ -10,8 +10,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 64 kB
-	Maximum Size: 64 kB
+	Installed Size: 128 kB
+	Maximum Size: 128 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -26,8 +26,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 64 kB
-	Maximum Size: 64 kB
+	Installed Size: 128 kB
+	Maximum Size: 128 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -42,8 +42,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 512 kB
-	Maximum Size: 512 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -58,21 +58,21 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
 	Speed: Unknown
 	Error Correction Type: Multi-bit ECC
 	System Type: Unified
-	Associativity: 12-way Set-associative
+	Associativity: 16-way Set-associative
 
 Handle 0x0004, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: U3E1
 	Type: Central Processor
-	Family: Core i3
+	Family: Core i7
 	Manufacturer: Intel(R) Corporation
 	ID: E3 06 05 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 94, Stepping 3
@@ -105,11 +105,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i3-6100T CPU @ 3.20GHz
+	Version: Intel(R) Core(TM) i7-6700T CPU @ 2.80GHz
 	Voltage: 1.0 V
 	External Clock: 100 MHz
-	Max Speed: 3200 MHz
-	Current Speed: 3100 MHz
+	Max Speed: 3600 MHz
+	Current Speed: 2700 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0001
@@ -118,9 +118,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
-	Core Count: 2
-	Core Enabled: 2
-	Thread Count: 4
+	Core Count: 4
+	Core Enabled: 4
+	Thread Count: 8
 	Characteristics:
 		64-bit capable
 		Multi-Core
@@ -141,16 +141,16 @@ Physical Memory Array
 Handle 0x000A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0005
-	Partition Width: 1
+	Partition Width: 2
 
 Handle 0x000B, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: HP
-	Version: N23 Ver. 02.54
-	Release Date: 11/18/2021
+	Version: N23 Ver. 02.58
+	Release Date: 07/29/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -172,7 +172,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.54
+	BIOS Revision: 2.58
 	Firmware Revision: 5.57
 
 Handle 0x000C, DMI type 1, 27 bytes
@@ -208,7 +208,7 @@ Chassis Information
 	Version:  
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -408,7 +408,7 @@ Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot2 / X4PCIEXP
 	Type: x4 PCI Express x4
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Other
 	ID: 2
 	Characteristics:
@@ -458,9 +458,9 @@ OEM-specific Type
 Handle 0x002A, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 2A 00 31 00 00 00 0B 00 00 00 00 00 0C 00
+		83 40 2A 00 35 00 00 00 0B 00 00 00 00 00 0C 00
 		F8 00 43 A1 00 00 00 00 01 00 00 00 08 00 0B 00
-		61 0D 32 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		7E 10 5C 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x002B, DMI type 17, 40 bytes
@@ -469,7 +469,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM1
@@ -491,25 +491,25 @@ Handle 0x0008, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0005
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Other
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: ChannelA
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 2133 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	6A28062C588E31E200F0984C56811567    
+	Rank: 1
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
+	Configured Voltage: 1.2 V
 
 Handle 0x0006, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -520,28 +520,38 @@ Memory Device Mapped Address
 	Memory Array Mapped Address Handle: 0x000A
 	Partition Row Position: 1
 
-Handle 0x0007, DMI type 24, 5 bytes
+Handle 0x0007, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0008
+	Memory Array Mapped Address Handle: 0x000A
+	Partition Row Position: 1
+	Interleave Position: 1
+
+Handle 0x0009, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
 
-Handle 0x0009, DMI type 32, 11 bytes
+Handle 0x002C, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
-
-Handle 0x002C, DMI type 221, 26 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:02:01:00:00:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:EC:00:03
 
 Handle 0x002D, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 1: PCI device 01:00.3, MAC address 00:02:01:00:00:00
+	NIC 2: PCI device 00:00.2, MAC address 00:00:00:F0:00:03
+
+Handle 0x002E, DMI type 221, 26 bytes
+HP BIOS iSCSI NIC PCI and MAC Information
+	NIC 1: PCI device 01:00.3, MAC address 00:02:01:00:00:00
 	NIC 2: PCI device 00:00.2, MAC address 0B:00:00:0C:00:03
 
-Handle 0x002E, DMI type 221, 68 bytes
+Handle 0x002F, DMI type 221, 68 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 1: PCI device 01:01.1, MAC address 00:02:01:00:00:00
 	NIC 2: PCI device 03:00.2, MAC address FF:FF:FF:FF:FF:04
@@ -552,7 +562,7 @@ HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 7: Disabled
 	NIC 8: PCI device 0a:00.0, MAC address 00:34:00:00:00:00
 
-Handle 0x002F, DMI type 221, 54 bytes
+Handle 0x0030, DMI type 221, 54 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 1: PCI device 01:00.7, MAC address 00:02:01:00:00:00
 	NIC 2: PCI device 00:00.2, MAC address 02:01:00:00:00:03
@@ -561,17 +571,17 @@ HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 5: Not Installed
 	NIC 6: PCI device 07:1f.7, MAC address 00:08:00:FF:FF:FF
 
-Handle 0x0030, DMI type 14, 8 bytes
+Handle 0x0031, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x0031, DMI type 219, 81 bytes
+Handle 0x0032, DMI type 219, 81 bytes
 HP ProLiant Information
 	Power Features: 0x45010301
 	Omega Features: 0x06900002
-	Misc. Features: 0x00000004
+	Misc. Features: 0x04000004
 		iCRU: No
 		UEFI: No
 

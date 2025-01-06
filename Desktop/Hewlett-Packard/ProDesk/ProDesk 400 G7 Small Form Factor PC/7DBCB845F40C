@@ -1,14 +1,14 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
-68 structures occupying 3369 bytes.
-Table at 0xCB064000.
+68 structures occupying 3374 bytes.
+Table at 0xAF064000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: S08 Ver. 02.10.10
-	Release Date: 03/17/2022
+	Version: S08 Ver. 02.18.00
+	Release Date: 12/13/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -30,35 +30,21 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 10.10
-	Firmware Revision: 9.151
+	BIOS Revision: 18.0
+	Firmware Revision: 9.8
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: HP
 	Product Name: HP ProDesk 400 G7 Small Form Factor PC
-	Version:  
+	Version: SBKPF
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
 	SKU Number: 9DF60AV
 	Family: 103C_53307F HP ProDesk
 
-Handle 0x0002, DMI type 2, 17 bytes
-Base Board Information
-	Manufacturer: HP
-	Product Name: 8719
-	Version: KBC Version 09.97.00
-	Serial Number: --
-	Asset Tag: --
-	97946E993916094B22613E03B8339091
-		Board is a hosting board
-	Location In Chassis:  
-	Chassis Handle: 0x0000
-	Type: Motherboard
-	Contained Object Handles: 0
-
-Handle 0x0003, DMI type 3, 24 bytes
+Handle 0x0002, DMI type 3, 24 bytes
 Chassis Information
 	Manufacturer: HP
 	Type: Desktop
@@ -76,7 +62,7 @@ Chassis Information
 	Contained Elements: 0
 	SKU Number: Not Specified
 
-Handle 0x0005, DMI type 13, 22 bytes
+Handle 0x0004, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 15
@@ -96,6 +82,20 @@ BIOS Language Information
 		zhTW
 		ruRU
 	Currently Installed Language: enUS
+
+Handle 0x0005, DMI type 2, 17 bytes
+Base Board Information
+	Manufacturer: HP
+	Product Name: 8719
+	Version: KBC Version 09.08.23
+	Serial Number: --
+	Asset Tag: --
+	97946E993916094B22613E03B8339091
+		Board is a hosting board
+	Location In Chassis:  
+	Chassis Handle: 0x0002
+	Type: Motherboard
+	Contained Object Handles: 0
 
 Handle 0x0006, DMI type 16, 23 bytes
 Physical Memory Array
@@ -128,36 +128,66 @@ Cooling Device
 	Description: CPU Fan
 
 Handle 0x000E, DMI type 221, 26 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:09:00:A0:10:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:EE:00:03
+OEM-specific Type
+	Header and Data:
+		DD 1A 0E 00 03 01 00 09 00 C0 20 00 02 00 00 00
+		00 FA 00 03 00 01 0D 22 00 00
+	Strings:
+		Reference Code - CPU
+		uCode Version
+		TXT ACM version
 
 Handle 0x000F, DMI type 221, 26 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:09:00:A0:10:00
-	NIC 2: PCI device 00:00.2, MAC address 0E:00:00:04:00:03
+OEM-specific Type
+	Header and Data:
+		DD 1A 0F 00 03 01 00 09 00 C0 20 00 02 00 0E 00
+		00 04 00 03 04 0E 01 48 EF 08
+	Strings:
+		Reference Code - ME
+		MEBx version
+		ME Firmware Version
+		Corporate SKU
 
 Handle 0x0010, DMI type 221, 54 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.7, MAC address 00:09:00:A0:10:00
-	NIC 2: PCI device 03:00.2, MAC address FF:FF:FF:FF:FF:04
-	NIC 3: PCI device ff:00.0, MAC address FF:FF:00:00:05:00
-	NIC 4: Not Installed
-	NIC 5: PCI device 00:01.2, MAC address 00:00:07:00:1B:FF
-	NIC 6: Not Installed
+OEM-specific Type
+	Header and Data:
+		DD 36 10 00 07 01 00 09 00 C0 20 00 02 03 FF FF
+		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
+		00 06 00 02 0A 00 00 00 07 00 1B FF FF FF FF 08
+		00 00 FF FF FF FF
+	Strings:
+		Reference Code - CML PCH
+		PCH-CRID Status
+		Disabled
+		PCH-CRID Original Value
+		PCH-CRID New Value
+		OPROM - RST - RAID
+		ChipsetInit Base Version
+		ChipsetInit Oem Version
 
 Handle 0x0011, DMI type 221, 54 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.7, MAC address 00:09:00:A0:10:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:55:00:03
-	NIC 3: PCI device 09:00.0, MAC address 00:A0:10:00:04:05
-	NIC 4: Not Installed
-	NIC 5: Disabled
-	NIC 6: PCI device 05:00.0, MAC address 00:08:00:FF:FF:FF
+OEM-specific Type
+	Header and Data:
+		DD 36 11 00 07 01 00 09 00 C0 20 00 02 00 00 00
+		00 55 00 03 00 09 00 C0 20 00 04 05 FF FF FF FF
+		FF 06 00 00 00 00 05 00 07 00 00 00 00 05 00 08
+		00 FF FF FF FF FF
+	Strings:
+		Reference Code - SA - System Agent
+		Reference Code - MRC
+		SA - PCIe Version
+		SA-CRID Status
+		Enabled 
+		SA-CRID Original Value
+		SA-CRID New Value
+		OPROM - VBIOS
 
 Handle 0x0012, DMI type 221, 12 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.1, MAC address 00:04:00:00:00:00
+OEM-specific Type
+	Header and Data:
+		DD 0C 12 00 01 01 00 04 00 00 00 00
+	Strings:
+		FSP Binary Version
 
 Handle 0x0013, DMI type 7, 27 bytes
 Cache Information
@@ -519,7 +549,8 @@ Port Connector Information
 Handle 0x0036, DMI type 9, 24 bytes
 System Slot Information
 	Designation: Slot1 / X16PCIEXP
-	Type: x16 PCI Express 3 x16
+	Type: PCI Express 3 x16
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -528,13 +559,14 @@ System Slot Information
 		PME signal is supported
 		SMBus signal is supported
 	Bus Address: 0000:00:01.0
-	Data Bus Width: 83
+	Data Bus Width (Base): 83
 	Peer Devices: 108
 
 Handle 0x0037, DMI type 9, 24 bytes
 System Slot Information
 	Designation: Slot2 / X1PCIEXP1
-	Type: x1 PCI Express 3 x1
+	Type: PCI Express 3 x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 2
@@ -543,13 +575,14 @@ System Slot Information
 		PME signal is supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1d.0
-	Data Bus Width: 83
+	Data Bus Width (Base): 83
 	Peer Devices: 108
 
 Handle 0x0038, DMI type 9, 24 bytes
 System Slot Information
 	Designation: Slot3 / M2 WLAN/BT
-	Type: x1 PCI Express 3 x1
+	Type: PCI Express 3 x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 3
@@ -558,13 +591,14 @@ System Slot Information
 		PME signal is supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.7
-	Data Bus Width: 83
+	Data Bus Width (Base): 83
 	Peer Devices: 108
 
 Handle 0x0039, DMI type 9, 24 bytes
 System Slot Information
 	Designation: Slot4 / M2 SSD
-	Type: x4 PCI Express 3 x4
+	Type: PCI Express 3 x4
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Other
 	ID: 4
@@ -573,8 +607,9 @@ System Slot Information
 		PME signal is supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1b.4
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x003A, DMI type 39, 22 bytes
 System Power Supply
@@ -613,7 +648,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 3D 00 14 00 00 00 0E 00 00 00 00 00 04 00
 		F8 00 87 06 00 00 00 00 11 00 00 00 01 00 0E 00
-		0F 07 3C 00 00 00 00 00 FE 00 4C 0D 00 00 00 00
+		EF 08 48 00 00 00 00 00 FE 00 4C 0D 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x003E, DMI type 17, 84 bytes
@@ -724,11 +759,11 @@ OEM Strings
 	String 4: Buff=2
 	String 5: HRDWFEATS=VMCSSHAD:1;VTX:0;VTD:0;SGX:0;
 
-Handle 0x0004, DMI type 10, 6 bytes
+Handle 0x0003, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
-	Description: 64 MB
+	Description: 512 MB
 
 Handle 0x0041, DMI type 14, 8 bytes
 Group Associations
@@ -737,12 +772,20 @@ Group Associations
 		0x0000 (OEM-specific)
 
 Handle 0x0042, DMI type 219, 106 bytes
-HP ProLiant Information
-	Power Features: 0x45010401
-	Omega Features: 0x06900002
-	Misc. Features: 0x00000000
-		iCRU: No
-		UEFI: No
+OEM-specific Type
+	Header and Data:
+		DB 6A 42 00 01 04 01 45 02 00 90 06 81 10 80 30
+		00 00 00 00 40 00 00 00 00 00 00 06 00 40 C0 02
+		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00
+	Strings:
+		MEI1
+		MEI2
+		MEI3
+		MEI4
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

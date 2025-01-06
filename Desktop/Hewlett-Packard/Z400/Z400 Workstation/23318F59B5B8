@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-78 structures occupying 2268 bytes.
+78 structures occupying 2316 bytes.
 Table at 0x000EB300.
 
 Handle 0x0001, DMI type 0, 24 bytes
@@ -53,7 +53,7 @@ Base Board Information
 	Version: D
 	Serial Number: --
 	Asset Tag: --
-	Features:
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is removable
 		Board is replaceable
@@ -70,7 +70,7 @@ Chassis Information
 	Version: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: Unknown
@@ -80,10 +80,10 @@ Handle 0x0005, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPU0 PROCESSOR
 	Type: Central Processor
-	Family: Quad-Core Xeon 3xxx
+	Family: Multi-Core Xeon
 	Manufacturer: Intel
-	ID: A5 06 01 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 26, Stepping 5
+	ID: C2 06 02 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 44, Stepping 2
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -113,11 +113,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Xeon(R) CPU W3565 @ 3.20GHz
+	Version: Intel(R) Xeon(R) CPU W3690 @ 3.47GHz
 	Voltage: 1.2 V
-	External Clock: 4800 MHz
+	External Clock: 6400 MHz
 	Max Speed: 6000 MHz
-	Current Speed: 3200 MHz
+	Current Speed: 3466 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA1366
 	L1 Cache Handle: 0x0006
@@ -126,9 +126,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
-	Core Count: 4
-	Core Enabled: 4
-	Thread Count: 8
+	Core Count: 6
+	Core Enabled: 6
+	Thread Count: 12
 	Characteristics:
 		64-bit capable
 
@@ -138,8 +138,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 256 kB
-	Maximum Size: 256 kB
+	Installed Size: 384 kB
+	Maximum Size: 384 kB
 	Supported SRAM Types:
 		Burst
 	Installed SRAM Type: Burst
@@ -154,8 +154,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1 MB
-	Maximum Size: 1 MB
+	Installed Size: 1536 kB
+	Maximum Size: 1536 kB
 	Supported SRAM Types:
 		Burst
 	Installed SRAM Type: Burst
@@ -170,8 +170,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8 MB
-	Maximum Size: 8 MB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Burst
 	Installed SRAM Type: Burst
@@ -471,7 +471,8 @@ Port Connector Information
 Handle 0x002D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 1
-	Type: x4 PCI Express 2 x8
+	Type: PCI Express 2 x8
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Long
 	ID: 1
@@ -484,8 +485,9 @@ System Slot Information
 Handle 0x002E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 2
-	Type: x16 PCI Express 2
-	Current Usage: Available
+	Type: PCI Express 2
+	Data Bus Width: 16x or x16
+	Current Usage: In Use
 	Length: Long
 	ID: 2
 	Characteristics:
@@ -497,7 +499,8 @@ System Slot Information
 Handle 0x002F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 3
-	Type: x4 PCI Express x8
+	Type: PCI Express x8
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Long
 	ID: 3
@@ -510,8 +513,9 @@ System Slot Information
 Handle 0x0030, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 4
-	Type: x16 PCI Express 2
-	Current Usage: In Use
+	Type: PCI Express 2
+	Data Bus Width: 16x or x16
+	Current Usage: Available
 	Length: Long
 	ID: 4
 	Characteristics:
@@ -523,7 +527,8 @@ System Slot Information
 Handle 0x0031, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 5
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 5
@@ -537,7 +542,8 @@ System Slot Information
 Handle 0x0032, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 6
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 6
@@ -601,21 +607,21 @@ Handle 0x0038, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0035
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0 DIMM2
 	Bank Locator: Not Specified
 	Type: DDR3
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1333 MT/s
+	Manufacturer: JEDEC ID:00 00
 	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
+	Asset Tag: --
 	Part Number:  
-	Rank: Unknown
+	Rank: 2
 
 Handle 0x0039, DMI type 17, 28 bytes
 Memory Device
@@ -641,61 +647,61 @@ Handle 0x003A, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0035
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0 DIMM4
 	Bank Locator: Not Specified
 	Type: DDR3
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1333 MT/s
+	Manufacturer: JEDEC ID:83 19
 	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
-	Part Number:  
-	Rank: Unknown
+	Asset Tag: --
+	Part Number: NIGV78PEA
+	Rank: 2
 
 Handle 0x003B, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0035
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0 DIMM5
 	Bank Locator: Not Specified
 	Type: DDR3
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1333 MT/s
+	Manufacturer: JEDEC ID:00 00
 	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
-	Part Number:  
-	Rank: Unknown
+	Asset Tag: --
+	Part Number: A-Tech
+	Rank: 2
 
 Handle 0x003C, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0035
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0 DIMM6
 	Bank Locator: Not Specified
 	Type: DDR3
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: JEDEC ID:
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1333 MT/s
+	Manufacturer: JEDEC ID:00 00
 	Serial Number: --
-	3D153A129FECFD993684B5FCC9BF367A
-	Part Number:  
-	Rank: Unknown
+	Asset Tag: --
+	Part Number: A-Tech
+	Rank: 2
 
 Handle 0x003E, DMI type 17, 27 bytes
 Memory Device
@@ -719,16 +725,16 @@ Memory Device
 Handle 0x003F, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000DFFFFFFF
-	Range Size: 3584 MB
+	Ending Address: 0x000CFFFFFFF
+	Range Size: 3328 MB
 	Physical Array Handle: 0x0035
 	Partition Width: 1
 
 Handle 0x0040, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x0021FFFFFFF
-	Range Size: 4608 MB
+	Ending Address: 0x0062FFFFFFF
+	Range Size: 21248 MB
 	Physical Array Handle: 0x0035
 	Partition Width: 1
 

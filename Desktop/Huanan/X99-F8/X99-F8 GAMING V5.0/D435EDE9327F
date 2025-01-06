@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x000EBC60.
+Table at 0x773D1000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
 	Version: 5.11
-	Release Date: 06/06/2022
+	Release Date: 10/29/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8 MB
@@ -272,14 +272,14 @@ Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot1
 	Type: x1 PCI Express 3 x1
-	Current Usage: Unknown
+	Current Usage: In Use
 	Length: Short
 	ID: 1
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:00.3
+	Bus Address: 0000:07:00.3
 
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
@@ -324,14 +324,14 @@ Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot5
 	Type: x4 PCI Express 3 x4
-	Current Usage: Unknown
+	Current Usage: In Use
 	Length: Short
 	ID: 5
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:00.4
+	Bus Address: 0000:08:00.4
 
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
@@ -879,16 +879,6 @@ Memory Device
 	Bank Locator: NO DIMM
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: 1.14 V
-	Maximum Voltage: 1.26 V
-	Configured Voltage: 1.2 V
 
 Handle 0x005B, DMI type 16, 23 bytes
 Physical Memory Array
@@ -953,16 +943,6 @@ Memory Device
 	Bank Locator: NO DIMM
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: 1.14 V
-	Maximum Voltage: 1.26 V
-	Configured Voltage: 1.2 V
 
 Handle 0x0060, DMI type 7, 19 bytes
 Cache Information
@@ -1086,13 +1066,27 @@ OEM-specific Type
 		B8 0B 2D 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0066, DMI type 13, 22 bytes
+Handle 0x0066, DMI type 130, 20 bytes
+OEM-specific Type
+	Header and Data:
+		82 14 66 00 24 41 4D 54 00 00 00 00 00 A5 2F 02
+		00 00 00 00
+
+Handle 0x0067, DMI type 131, 64 bytes
+OEM-specific Type
+	Header and Data:
+		83 40 67 00 35 00 00 00 00 00 00 00 00 00 00 00
+		F8 00 44 8D 00 00 00 00 01 00 00 00 01 00 09 00
+		B8 0B 2D 00 00 00 00 00 C8 00 FF FF 00 00 00 00
+		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
+
+Handle 0x0068, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0067, DMI type 127, 4 bytes
+Handle 0x0069, DMI type 127, 4 bytes
 End Of Table
 

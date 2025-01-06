@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 129 structures occupying 5172 bytes.
@@ -160,8 +160,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -176,8 +176,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 20480 kB
-	Maximum Size: 20480 kB
+	Installed Size: 20 MB
+	Maximum Size: 20 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -269,8 +269,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -285,8 +285,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 20480 kB
-	Maximum Size: 20480 kB
+	Installed Size: 20 MB
+	Maximum Size: 20 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -738,7 +738,8 @@ Port Connector Information
 Handle 0x0043, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 1
-	Type: x4 PCI Express 3 x8
+	Type: PCI Express 3 x8
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -751,7 +752,8 @@ System Slot Information
 Handle 0x0044, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 2
-	Type: x16 PCI Express 3
+	Type: PCI Express 3
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 2
@@ -764,7 +766,8 @@ System Slot Information
 Handle 0x0045, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 3
-	Type: x8 PCI Express 3 x16
+	Type: PCI Express 3 x16
+	Data Bus Width: 8x or x8
 	Current Usage: Available
 	Length: Long
 	ID: 3
@@ -777,7 +780,8 @@ System Slot Information
 Handle 0x0046, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 4
-	Type: x16 PCI Express 3
+	Type: PCI Express 3
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 4
@@ -790,7 +794,8 @@ System Slot Information
 Handle 0x0047, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 5
-	Type: x4 PCI Express 2 x8
+	Type: PCI Express 2 x8
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Long
 	ID: 5
@@ -803,7 +808,8 @@ System Slot Information
 Handle 0x0048, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 6
-	Type: x16 PCI Express 3
+	Type: PCI Express 3
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 6
@@ -816,7 +822,8 @@ System Slot Information
 Handle 0x0049, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT 7
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 7
@@ -873,7 +880,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0-DIMM1
@@ -904,7 +911,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0-DIMM2
@@ -935,7 +942,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0-DIMM3
@@ -966,7 +973,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0-DIMM4
@@ -997,7 +1004,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0-DIMM5
@@ -1028,7 +1035,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0-DIMM6
@@ -1059,7 +1066,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0-DIMM7
@@ -1090,7 +1097,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU0-DIMM8
@@ -1148,7 +1155,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU1-DIMM1
@@ -1179,7 +1186,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU1-DIMM2
@@ -1210,7 +1217,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU1-DIMM3
@@ -1241,7 +1248,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU1-DIMM4
@@ -1272,7 +1279,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU1-DIMM5
@@ -1303,7 +1310,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU1-DIMM6
@@ -1334,7 +1341,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU1-DIMM7
@@ -1365,7 +1372,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: CPU1-DIMM8
