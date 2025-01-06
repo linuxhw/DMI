@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.4.0 present.
-Table at 0x8D895000.
+Table at 0x8E095000.
 
 Handle 0x0000, DMI type 134, 13 bytes
 OEM-specific Type
@@ -332,8 +332,8 @@ OEM-specific Type
 Handle 0x000E, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 0E 00 03 01 00 0C 00 69 74 00 02 00 00 00
-		04 23 00 03 00 01 12 07 00 00
+		DD 1A 0E 00 03 01 00 0C 00 9F 50 00 02 00 00 00
+		04 32 00 03 00 01 12 07 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -342,8 +342,8 @@ OEM-specific Type
 Handle 0x000F, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 0F 00 03 01 00 0C 00 69 74 00 02 00 00 00
-		00 00 00 03 04 10 01 19 8C 07
+		DD 1A 0F 00 03 01 00 0C 00 9F 50 00 02 00 00 00
+		00 00 00 03 04 10 01 1B 80 08
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -353,7 +353,7 @@ OEM-specific Type
 Handle 0x0010, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 10 00 06 01 00 0C 00 69 74 00 02 03 FF FF
+		DD 2F 10 00 06 01 00 0C 00 9F 50 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 01 00 05 00 FF FF FF 01
 		00 06 00 FF FF FF FF FF 07 00 04 00 00 00 00
 	Strings:
@@ -368,11 +368,11 @@ OEM-specific Type
 Handle 0x0011, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 11 00 0B 01 00 0C 00 69 74 00 02 00 00 00
-		04 06 00 03 00 0C 00 69 74 00 04 05 FF FF FF FF
+		DD 52 11 00 0B 01 00 0C 00 9F 50 00 02 00 00 00
+		04 7C 00 03 00 0C 00 9F 50 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 04 00 07 00 00 00 00 04 00 08
-		00 FF FF FF FF FF 09 00 24 00 04 00 00 0A 00 00
-		00 00 13 20 0B 00 11 05 00 00 00 0C 00 FF FF FF
+		00 FF FF FF FF FF 09 00 24 00 06 00 00 0A 00 00
+		00 00 41 20 0B 00 13 01 00 00 00 0C 00 FF FF FF
 		FF FF
 	Strings:
 		Reference Code - SA - System Agent
@@ -559,7 +559,7 @@ Processor Information
 	Max Speed: 4400 MHz
 	Current Speed: 1600 MHz
 	Status: Populated, Enabled
-	Upgrade: Other
+	Upgrade: <OUT OF SPEC>
 	L1 Cache Handle: 0x0017
 	L2 Cache Handle: 0x0018
 	L3 Cache Handle: 0x0019
@@ -580,8 +580,8 @@ Processor Information
 Handle 0x001B, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: N3AET67W (1.32 )
-	Release Date: 09/27/2022
+	Version: N3AET79W (1.44 )
+	Release Date: 11/27/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -604,8 +604,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.32
-	Firmware Revision: 1.15
+	BIOS Revision: 1.44
+	Firmware Revision: 1.23
 
 Handle 0x001C, DMI type 1, 27 bytes
 System Information
@@ -796,7 +796,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 38 00 3F 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 82 51 00 00 00 00 29 E0 00 00 01 00 10 00
-		8C 07 19 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		80 08 1B 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 E6 01 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0039, DMI type 140, 15 bytes
@@ -804,8 +804,8 @@ OEM-specific Type
 	Header and Data:
 		8C 0F 39 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
 	Strings:
-		1.32 
-		1.32 
+		1.44 
+		1.44 
 
 Handle 0x003A, DMI type 14, 8 bytes
 Group Associations
@@ -816,7 +816,7 @@ Group Associations
 Handle 0x003B, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 3B 00 01 04 01 45 02 00 A0 06 81 85 30 30
+		DB 6A 3B 00 01 04 01 45 02 00 90 06 81 85 30 30
 		00 00 00 00 40 00 00 03 1F 04 02 CB 03 40 C4 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -833,7 +833,7 @@ Handle 0x003C, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
-	Administrator Password Status: Disabled
+	Administrator Password Status: Enabled
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x003D, DMI type 132, 8 bytes
@@ -910,42 +910,42 @@ Handle 0x0046, DMI type 140, 23 bytes
 OEM-specific Type
 	Header and Data:
 		8C 17 46 00 4C 45 4E 4F 56 4F 0B 06 01 CB 06 70
-		D4 01 60 00 00 00 00
+		64 02 60 00 00 00 00
 
 Handle 0x0047, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 47 00 54 48 4E 4B 00 00 00 00 00 00 84 00
+		8D 12 47 00 54 48 4E 4B 00 00 00 00 00 00 0C 0F
 		00 00
 
 Handle 0x0048, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 48 00 54 48 4E 4B 00 00 10 00 00 00 00 00
+		8D 12 48 00 54 48 4E 4B 00 00 10 00 00 00 01 00
 		00 00
 
 Handle 0x0049, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 49 00 54 48 4E 4B 00 00 30 00 00 00 67 00
+		8D 12 49 00 54 48 4E 4B 00 00 30 00 00 00 57 02
 		00 00
 
 Handle 0x004A, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 4A 00 54 48 4E 4B 00 00 40 00 00 00 0A 00
+		8D 12 4A 00 54 48 4E 4B 00 00 40 00 00 00 96 00
 		00 00
 
 Handle 0x004B, DMI type 141, 30 bytes
 OEM-specific Type
 	Header and Data:
-		8D 1E 4B 00 54 48 4E 4B 00 00 50 00 00 00 76 7F
-		76 07 00 00 00 00 52 FA 14 2C 00 00 00 00
+		8D 1E 4B 00 54 48 4E 4B 00 00 50 00 00 00 6F E4
+		BF 02 00 00 00 00 EB 04 EA 02 00 00 00 00
 
 Handle 0x004C, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: N3AHT43W
-	Release Date: 09/09/20
+	Version ID: N3AHT51W
+	Release Date: 09/20/20
 
 Handle 0x004D, DMI type 140, 43 bytes
 OEM-specific Type
@@ -957,15 +957,15 @@ OEM-specific Type
 Handle 0x004E, DMI type 141, 56 bytes
 OEM-specific Type
 	Header and Data:
-		8D 38 4E 00 54 48 4E 4B 00 00 60 00 00 00 02 00
-		01 20 01 01 00 00 04 00 01 20 01 01 00 00 04 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00
+		8D 38 4E 00 54 48 4E 4B 00 00 60 00 00 00 05 00
+		23 20 11 25 15 13 20 00 23 20 11 25 15 11 10 00
+		23 20 03 10 07 44 48 00 01 20 01 01 00 00 04 00
+		01 20 01 01 00 00 04 00
 
 Handle 0x004F, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 4F 00 54 50 07 01 01 00 02 00 00 00 00 00
+		87 12 4F 00 54 50 07 01 01 00 06 00 00 00 00 00
 		00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

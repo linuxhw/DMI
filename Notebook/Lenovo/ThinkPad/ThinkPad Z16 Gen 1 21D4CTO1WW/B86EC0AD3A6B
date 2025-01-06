@@ -1,7 +1,7 @@
 # dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0x7342C000.
+Table at 0x4215B000.
 
 Handle 0x0000, DMI type 7, 27 bytes
 Cache Information
@@ -366,8 +366,8 @@ OEM-specific Type
 Handle 0x0014, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: N3GET42W (1.22 )
-	Release Date: 09/06/2022
+	Version: N3GET57W (1.57 )
+	Release Date: 05/10/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -390,8 +390,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.22
-	Firmware Revision: 1.51
+	BIOS Revision: 1.57
+	Firmware Revision: 1.59
 
 Handle 0x0015, DMI type 1, 27 bytes
 System Information
@@ -403,21 +403,6 @@ System Information
 	Wake-up Type: Power Switch
 	SKU Number: LENOVO_MT_21D4_BU_Think_FM_ThinkPad Z16 Gen 1
 	Family: ThinkPad Z16 Gen 1
-
-Handle 0x0016, DMI type 2, 15 bytes
-Base Board Information
-	Manufacturer: LENOVO
-	Product Name: 21D4CTO1WW
-	Version: Not Defined
-	Serial Number: --
-	Asset Tag: --
-	Features:
-		Board is a hosting board
-		Board is replaceable
-	Location In Chassis: Not Available
-	Chassis Handle: 0x0017
-	Type: Motherboard
-	Contained Object Handles: 0
 
 Handle 0x0017, DMI type 3, 22 bytes
 Chassis Information
@@ -665,11 +650,7 @@ On Board Device Information
 	Status: Enabled
 	Description: ST TPM ST33TPMF12SPI
 
-Handle 0x0031, DMI type 11, 5 bytes
-OEM Strings
-	String 1: OEM default string
-
-Handle 0x0032, DMI type 13, 22 bytes
+Handle 0x0031, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 6
@@ -681,7 +662,7 @@ BIOS Language Information
 		zh-CHS
 	Currently Installed Language: en-US
 
-Handle 0x0033, DMI type 22, 26 bytes
+Handle 0x0032, DMI type 22, 26 bytes
 Portable Battery
 	Location: Front
 	Manufacturer: Sunwoda
@@ -695,38 +676,53 @@ Portable Battery
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000000
 
-Handle 0x0034, DMI type 126, 26 bytes
+Handle 0x0033, DMI type 126, 26 bytes
 Inactive
 
-Handle 0x0035, DMI type 133, 5 bytes
+Handle 0x0016, DMI type 2, 15 bytes
+Base Board Information
+	Manufacturer: LENOVO
+	Product Name: 21D4CTO1WW
+	Version: Not Defined
+	Serial Number: --
+	Asset Tag: --
+	Features:
+		Board is a hosting board
+		Board is replaceable
+	Location In Chassis: Not Available
+	Chassis Handle: 0x0017
+	Type: Motherboard
+	Contained Object Handles: 0
+
+Handle 0x0034, DMI type 133, 5 bytes
 OEM-specific Type
 	Header and Data:
-		85 05 35 00 01
+		85 05 34 00 01
 	Strings:
 		KHOIHGIUCCHHII
 
-Handle 0x0036, DMI type 133, 44 bytes
+Handle 0x0035, DMI type 133, 44 bytes
 OEM-specific Type
 	Header and Data:
-		85 2C 36 00 F9 B4 95 78 4D 92 0A 41 96 39 12 38
+		85 2C 35 00 F9 B4 95 78 4D 92 0A 41 96 39 12 38
 		62 B2 8A 63 00 03 50 02 06 01 00 17 00 00 00 01
 		00 00 00 61 72 57 18 03 00 00 00 00
 
-Handle 0x0037, DMI type 135, 19 bytes
+Handle 0x0036, DMI type 135, 19 bytes
 OEM-specific Type
 	Header and Data:
-		87 13 37 00 54 50 07 02 42 41 59 20 49 2F 4F 20
+		87 13 36 00 54 50 07 02 42 41 59 20 49 2F 4F 20
 		04 00 00
 
-Handle 0x0038, DMI type 140, 15 bytes
+Handle 0x0037, DMI type 140, 15 bytes
 OEM-specific Type
 	Header and Data:
-		8C 0F 38 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
+		8C 0F 37 00 4C 45 4E 4F 56 4F 0B 09 01 01 02
 	Strings:
-		1.22 
-		1.21 
+		1.57 
+		1.57 
 
-Handle 0x0039, DMI type 18, 23 bytes
+Handle 0x0038, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -736,48 +732,48 @@ Handle 0x0039, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x003A, DMI type 21, 7 bytes
+Handle 0x0039, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Track Point
 	Interface: PS/2
 	Buttons: 3
 
-Handle 0x003B, DMI type 21, 7 bytes
+Handle 0x003A, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Touch Pad
 	Interface: PS/2
 	Buttons: 2
 
-Handle 0x003C, DMI type 131, 22 bytes
+Handle 0x003B, DMI type 131, 22 bytes
 ThinkVantage Technologies
 	Version: 1
 	Diagnostics: No
 
-Handle 0x003D, DMI type 136, 6 bytes
+Handle 0x003C, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 3D 00 5A 5A
+		88 06 3C 00 5A 5A
 
-Handle 0x003E, DMI type 248, 9 bytes
+Handle 0x003D, DMI type 248, 9 bytes
 OEM-specific Type
 	Header and Data:
-		F8 09 3E 00 00 02 6C 00 01
+		F8 09 3D 00 00 02 6C 00 01
 	Strings:
 		BDF_LE_NDA-M
 
-Handle 0x003F, DMI type 24, 5 bytes
+Handle 0x003E, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
-Handle 0x0040, DMI type 132, 8 bytes
+Handle 0x003F, DMI type 132, 8 bytes
 OEM-specific Type
 	Header and Data:
-		84 08 40 00 02 D8 36 00
+		84 08 3F 00 02 D8 36 00
 
-Handle 0x0041, DMI type 15, 31 bytes
+Handle 0x0040, DMI type 15, 31 bytes
 System Event Log
 	Area Length: 34 bytes
 	Header Start Offset: 0x0000
@@ -798,79 +794,79 @@ System Event Log
 	Descriptor 4: Log area reset/cleared
 	Data Format 4: None
 
+Handle 0x0041, DMI type 141, 18 bytes
+OEM-specific Type
+	Header and Data:
+		8D 12 41 00 54 48 4E 4B 00 00 00 00 00 00 C4 05
+		00 00
+
 Handle 0x0042, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 42 00 54 48 4E 4B 00 00 00 00 00 00 16 01
+		8D 12 42 00 54 48 4E 4B 00 00 10 00 00 00 01 00
 		00 00
 
 Handle 0x0043, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 43 00 54 48 4E 4B 00 00 10 00 00 00 01 00
+		8D 12 43 00 54 48 4E 4B 00 00 30 00 00 00 98 00
 		00 00
 
 Handle 0x0044, DMI type 141, 18 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 44 00 54 48 4E 4B 00 00 30 00 00 00 2D 00
+		8D 12 44 00 54 48 4E 4B 00 00 40 00 00 00 23 00
 		00 00
 
-Handle 0x0045, DMI type 141, 18 bytes
+Handle 0x0045, DMI type 141, 30 bytes
 OEM-specific Type
 	Header and Data:
-		8D 12 45 00 54 48 4E 4B 00 00 40 00 00 00 07 00
-		00 00
+		8D 1E 45 00 54 48 4E 4B 00 00 50 00 00 00 C0 20
+		17 02 00 00 00 00 FA DB 10 05 00 00 00 00
 
-Handle 0x0046, DMI type 141, 30 bytes
+Handle 0x0046, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8D 1E 46 00 54 48 4E 4B 00 00 50 00 00 00 C2 37
-		89 00 00 00 00 00 35 48 A4 00 00 00 00 00
+		8C 13 46 00 4C 45 4E 4F 56 4F 0B 04 01 B0 00 4D
+		53 20 00
 
 Handle 0x0047, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 47 00 4C 45 4E 4F 56 4F 0B 04 01 B0 00 4D
-		53 20 00
-
-Handle 0x0048, DMI type 140, 19 bytes
-OEM-specific Type
-	Header and Data:
-		8C 13 48 00 4C 45 4E 4F 56 4F 0B 05 01 03 00 00
+		8C 13 47 00 4C 45 4E 4F 56 4F 0B 05 01 03 00 00
 		00 00 00
 
-Handle 0x0049, DMI type 140, 23 bytes
+Handle 0x0048, DMI type 140, 23 bytes
 OEM-specific Type
 	Header and Data:
-		8C 17 49 00 4C 45 4E 4F 56 4F 0B 06 01 00 00 0E
+		8C 17 48 00 4C 45 4E 4F 56 4F 0B 06 01 00 00 0E
 		00 06 30 00 00 00 00
 
-Handle 0x004A, DMI type 140, 15 bytes
+Handle 0x0049, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: N3GHT51W
-	Release Date: 10/17/20
+	Version ID: N3GHT59W
+	Release Date: 06/26/20
 
-Handle 0x004B, DMI type 140, 43 bytes
+Handle 0x004A, DMI type 140, 43 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2B 4B 00 4C 45 4E 4F 56 4F 0B 08 01 FF FF FF
+		8C 2B 4A 00 4C 45 4E 4F 56 4F 0B 08 01 FF FF FF
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF FF FF FF
 
-Handle 0x004C, DMI type 141, 56 bytes
+Handle 0x004B, DMI type 141, 56 bytes
 OEM-specific Type
 	Header and Data:
-		8D 38 4C 00 54 48 4E 4B 00 00 60 00 00 00 00 00
+		8D 38 4B 00 54 48 4E 4B 00 00 60 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00
 
-Handle 0x004D, DMI type 135, 18 bytes
+Handle 0x004C, DMI type 135, 18 bytes
 OEM-specific Type
 	Header and Data:
-		87 12 4D 00 54 50 07 01 01 00 02 00 00 00 02 00
-		00 00
+		87 12 4C 00 54 50 07 01 01 00 02 00 05 00 02 00
+		05 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 68 structures occupying 2627 bytes.
-Table at 0xDAE9C000.
+Table at 0xDAA9C000.
 
 Handle 0x0000, DMI type 134, 16 bytes
 OEM-specific Type
 	Header and Data:
-		86 10 00 00 00 53 54 4D 20 01 01 00 00 02 01 02
+		86 10 00 00 00 53 54 4D 20 01 01 00 00 03 01 02
 	Strings:
 		TPM INFO
 		System Reserved
@@ -163,10 +163,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5173QH0-YK0  
+	Part Number: HMT351S6CFR8C-PB  
 	Rank: Unknown
 	Configured Memory Speed: 1600 MT/s
 
@@ -184,10 +184,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT351S6CFR8C-PB  
+	Part Number: M471B5173QH0-YK0  
 	Rank: Unknown
 	Configured Memory Speed: 1600 MT/s
 
@@ -411,7 +411,7 @@ Inactive
 Handle 0x0029, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Other
-	Status: Disabled
+	Status: Enabled
 	Description: IBM Embedded Security hardware
 
 Handle 0x002A, DMI type 12, 5 bytes
@@ -482,26 +482,26 @@ OEM-specific Type
 Handle 0x0034, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 34 00 35 00 00 00 08 00 00 00 00 00 45 00
+		83 40 34 00 3F 00 00 00 08 00 00 00 00 00 45 00
 		F8 00 55 1E FF FF FF FF 09 C0 00 00 01 00 08 00
 		BA 0B 48 00 00 00 00 00 C8 00 02 15 00 00 00 00
-		00 00 00 00 62 00 00 00 76 50 72 6F 00 00 00 00
+		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0035, DMI type 133, 5 bytes
+Handle 0x0035, DMI type 135, 74 bytes
 OEM-specific Type
 	Header and Data:
-		85 05 35 00 01
-	Strings:
-		KHOIHGIUCCHHII
-
-Handle 0x0036, DMI type 135, 74 bytes
-OEM-specific Type
-	Header and Data:
-		87 4A 36 00 54 50 07 02 42 41 59 20 49 2F 4F 20
+		87 4A 35 00 54 50 07 02 42 41 59 20 49 2F 4F 20
 		03 00 06 FF 00 00 00 00 00 00 00 FF 00 00 00 00
 		00 00 00 FF 00 00 00 00 00 00 00 FF 00 00 00 00
 		00 00 00 FF 00 00 00 00 00 00 00 FF 00 00 00 00
 		00 00 00 06 00 02 04 FF 03 FF
+
+Handle 0x0036, DMI type 133, 5 bytes
+OEM-specific Type
+	Header and Data:
+		85 05 36 00 01
+	Strings:
+		KHOIHGIUCCHHII
 
 Handle 0x0037, DMI type 15, 31 bytes
 System Event Log
@@ -527,8 +527,8 @@ System Event Log
 Handle 0x0038, DMI type 140, 67 bytes
 OEM-specific Type
 	Header and Data:
-		8C 43 38 00 4C 45 4E 4F 56 4F 0B 00 01 F5 92 F3
-		6A 76 7F 4E 56 DA 63 C2 16 CE 9B C7 35 01 00 00
+		8C 43 38 00 4C 45 4E 4F 56 4F 0B 00 01 16 42 05
+		75 E9 2A 8D 03 26 39 2C 37 96 D0 B5 7E 01 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00

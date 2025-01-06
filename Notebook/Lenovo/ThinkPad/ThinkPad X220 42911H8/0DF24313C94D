@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-66 structures occupying 2481 bytes.
+66 structures occupying 2454 bytes.
 Table at 0xDAA9C000.
 
 Handle 0x0000, DMI type 134, 16 bytes
@@ -378,7 +378,8 @@ Inactive
 Handle 0x0026, DMI type 9, 17 bytes
 System Slot Information
 	Designation: ExpressCard Slot
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 1
@@ -390,6 +391,7 @@ Handle 0x0027, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Media Card Slot
 	Type: Other
+	Data Bus Width: Other
 	Current Usage: Available
 	Length: Other
 	Characteristics:
@@ -415,19 +417,8 @@ BIOS Language Information
 		en-US
 	Currently Installed Language: en-US
 
-Handle 0x002C, DMI type 22, 26 bytes
-Portable Battery
-	Location: Rear
-	Manufacturer: LGC
-	Name: 45N1025
-	Design Capacity: 93240 mWh
-	Design Voltage: 11100 mV
-	SBDS Version: 03.01
-	Maximum Error: Unknown
-	SBDS Serial Number: --
-	SBDS Manufacture Date: 2016-08-01
-	SBDS Chemistry: LION
-	OEM-specific Information: 0x00000000
+Handle 0x002C, DMI type 126, 26 bytes
+Inactive
 
 Handle 0x002D, DMI type 126, 26 bytes
 Inactive

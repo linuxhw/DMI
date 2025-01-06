@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-68 structures occupying 2625 bytes.
+68 structures occupying 2617 bytes.
 Table at 0xDAE9C000.
 
 Handle 0x0000, DMI type 134, 16 bytes
@@ -50,7 +50,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz
-	Voltage: 0.9 V
+	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 2600 MHz
 	Current Speed: 2600 MHz
@@ -155,20 +155,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Samsung
+	Speed: 1600 MT/s
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5273DH0-CK0  
+	Part Number: HMT425S6AFR6A-PB  
 	Rank: Unknown
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0009, DMI type 17, 34 bytes
 Memory Device
@@ -183,19 +183,19 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT325S6CFR8C-H9  
+	Part Number: HMT425S6AFR6A-PB  
 	Rank: Unknown
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0007
 	Partition Width: 2
 
@@ -207,8 +207,8 @@ OEM-specific Type
 Handle 0x000C, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: G2ETB7WW (2.77 )
-	Release Date: 09/24/2019
+	Version: G2ETB5WW (2.75 )
+	Release Date: 04/09/2019
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 12 MB
@@ -231,8 +231,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.77
-	Firmware Revision: 1.15
+	BIOS Revision: 2.75
+	Firmware Revision: 1.14
 
 Handle 0x000D, DMI type 1, 27 bytes
 System Information
@@ -304,7 +304,7 @@ Handle 0x0014, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Not Available
 	Internal Connector Type: None
-	External Reference Designator: Headphone/Microphone Combo Jack
+	External Reference Designator: Headphone Jack
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
@@ -427,14 +427,14 @@ BIOS Language Information
 Handle 0x002C, DMI type 22, 26 bytes
 Portable Battery
 	Location: Rear
-	Manufacturer: LGC
-	Name: 45N1029
-	Design Capacity: 93240 mWh
+	Manufacturer: SANYO 
+	Name: 42T4861
+	Design Capacity: 48840 mWh
 	Design Voltage: 11100 mV
 	SBDS Version: 03.01
 	Maximum Error: Unknown
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 2013-07-25
+	SBDS Manufacture Date: 2021-10-24
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
@@ -482,7 +482,7 @@ OEM-specific Type
 Handle 0x0034, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 34 00 35 00 00 00 08 00 00 00 00 00 45 00
+		83 40 34 00 14 00 00 00 08 00 00 00 00 00 45 00
 		F8 00 55 1E FF FF FF FF 09 E0 00 00 00 00 08 00
 		DA 05 0C 00 00 00 00 00 C8 00 02 15 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
@@ -505,14 +505,14 @@ OEM-specific Type
 
 Handle 0x0037, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 50 bytes
+	Area Length: 114 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000002
+	Change Token: 0x00000006
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -536,7 +536,7 @@ OEM-specific Type
 Handle 0x0039, DMI type 140, 47 bytes
 OEM-specific Type
 	Header and Data:
-		8C 2F 39 00 4C 45 4E 4F 56 4F 0B 01 01 29 00 C3
+		8C 2F 39 00 4C 45 4E 4F 56 4F 0B 01 01 28 00 C3
 		D1 C1 25 18 93 EE 13 B0 53 C3 ED 31 AA 3D 82 00
 		00 00 00 10 00 10 00 10 01 D0 00 20 01 00 01
 
@@ -563,7 +563,7 @@ OEM-specific Type
 Handle 0x003D, DMI type 140, 19 bytes
 OEM-specific Type
 	Header and Data:
-		8C 13 3D 00 4C 45 4E 4F 56 4F 0B 05 01 06 00 00
+		8C 13 3D 00 4C 45 4E 4F 56 4F 0B 05 01 0A 00 00
 		00 00 00
 
 Handle 0x003E, DMI type 24, 5 bytes
@@ -586,8 +586,8 @@ OEM-specific Type
 
 Handle 0x0041, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: G2HT36WW
-	Release Date: 09/24/2019
+	Version ID: G2HT35WW
+	Release Date: 04/09/2014
 
 Handle 0x0042, DMI type 140, 43 bytes
 OEM-specific Type

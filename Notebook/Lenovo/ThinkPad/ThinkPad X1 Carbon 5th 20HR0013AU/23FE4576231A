@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x4F11E000.
+Table at 0x4F0B9000.
 
 Handle 0x0000, DMI type 222, 14 bytes
 OEM-specific Type
@@ -38,7 +38,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -62,7 +62,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -126,8 +126,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -200,8 +200,8 @@ Processor Information
 Handle 0x000B, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: N1MET54W (1.39 )
-	Release Date: 04/16/2019
+	Version: N1MET77W (1.62 )
+	Release Date: 02/15/2024
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -224,8 +224,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.39
-	Firmware Revision: 1.19
+	BIOS Revision: 1.62
+	Firmware Revision: 1.22
 
 Handle 0x000C, DMI type 1, 27 bytes
 System Information
@@ -358,6 +358,7 @@ Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Media Card Slot
 	Type: Other
+	Data Bus Width: Other
 	Current Usage: Available
 	Length: Other
 	Characteristics:
@@ -368,6 +369,7 @@ Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SimCard Slot
 	Type: Other
+	Data Bus Width: Other
 	Current Usage: Available
 	Length: Other
 	Characteristics: None
@@ -422,16 +424,16 @@ OEM-specific Type
 Handle 0x0028, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 28 00 10 00 00 00 0B 00 00 00 00 00 0A 00
+		83 40 28 00 31 00 00 00 0B 00 00 00 00 00 0C 00
 		F8 00 58 9D 00 00 00 00 01 00 00 00 08 00 0B 00
-		2A 0E 46 00 00 00 00 00 FE 00 D8 15 00 00 00 00
+		8E 11 5E 00 00 00 00 00 FE 00 D8 15 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0029, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 29 00 03 01 00 03 06 07 01 00 02 00 00 00
-		00 B4 00 03 00 00 05 00 00 00
+		DD 1A 29 00 03 01 00 03 07 03 00 00 02 00 00 00
+		00 F4 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -440,8 +442,8 @@ OEM-specific Type
 Handle 0x002A, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 2A 00 03 01 00 03 06 07 01 00 02 00 0B 00
-		00 0A 00 03 04 0B 08 46 2A 0E
+		DD 1A 2A 00 03 01 00 03 07 03 00 00 02 00 0B 00
+		00 0C 00 03 04 0B 08 5E 8E 11
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
@@ -451,7 +453,7 @@ OEM-specific Type
 Handle 0x002B, DMI type 221, 75 bytes
 OEM-specific Type
 	Header and Data:
-		DD 4B 2B 00 0A 01 00 03 06 07 01 00 02 03 FF FF
+		DD 4B 2B 00 0A 01 00 03 07 03 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 21 00 05 00 FF FF FF 21
 		00 06 00 02 0A 00 00 00 07 00 3E 00 00 00 00 08
 		00 34 00 00 00 00 09 00 0B 00 00 00 00 0A 00 3E
@@ -472,8 +474,8 @@ OEM-specific Type
 Handle 0x002C, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 2C 00 07 01 00 03 06 07 01 00 02 00 71 20
-		9B 54 00 03 00 03 06 07 01 00 04 05 FF FF FF FF
+		DD 36 2C 00 07 01 00 03 07 03 00 00 02 00 71 20
+		9B 54 00 03 00 03 07 03 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 02 00 07 00 FF FF FF 02 00 08
 		00 FF FF FF 04 02
 	Strings:
@@ -578,7 +580,7 @@ Group Associations
 Handle 0x0039, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 39 00 01 03 01 45 02 00 90 06 01 10 86 20
+		DB 51 39 00 01 03 01 45 02 00 A0 06 03 00 66 20
 		00 00 00 00 40 08 00 01 1F 00 00 C9 0A 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -597,8 +599,8 @@ OEM-specific Type
 
 Handle 0x003B, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: N1MHT30W
-	Release Date: 02/28/2018
+	Version ID: N1MHT33W
+	Release Date: 07/27/2021
 
 Handle 0x003C, DMI type 140, 43 bytes
 OEM-specific Type

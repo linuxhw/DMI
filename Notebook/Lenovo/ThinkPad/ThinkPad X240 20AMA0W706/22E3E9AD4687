@@ -1,8 +1,8 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 61 structures occupying 2432 bytes.
-Table at 0xDCD3D000.
+Table at 0xBCD3D000.
 
 Handle 0x0000, DMI type 4, 42 bytes
 Processor Information
@@ -298,6 +298,7 @@ Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Media Card Slot
 	Type: Other
+	Data Bus Width: Other
 	Current Usage: Available
 	Length: Other
 	Characteristics:
@@ -308,6 +309,7 @@ Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SmartCard Slot
 	Type: Other
+	Data Bus Width: Other
 	Current Usage: Available
 	Length: Other
 	Characteristics:
@@ -318,6 +320,7 @@ Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SimCard Slot
 	Type: Other
+	Data Bus Width: Other
 	Current Usage: Available
 	Length: Other
 	Characteristics: None
@@ -417,9 +420,9 @@ Handle 0x002C, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
 		83 40 2C 00 31 00 00 00 09 00 00 00 00 00 1C 00
-		F8 00 43 9C 00 00 00 00 21 20 00 00 05 00 09 00
+		F8 00 43 9C 00 00 00 00 21 00 00 00 05 00 09 00
 		B8 0B 41 00 00 00 00 00 C8 00 5A 15 00 00 00 00
-		00 00 00 00 64 00 00 00 76 50 72 6F 00 00 00 00
+		00 00 00 00 24 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x002D, DMI type 133, 5 bytes
 OEM-specific Type
@@ -463,14 +466,14 @@ BIOS Information
 
 Handle 0x0030, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 788 bytes
+	Area Length: 884 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000031
+	Change Token: 0x00000037
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
