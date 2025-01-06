@@ -1,6 +1,8 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.4.0 present.
+# SMBIOS implementations newer than version 3.3.0 are not
+# fully supported by this version of dmidecode.
 Table at 0x75D19000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -743,7 +745,7 @@ Memory Device
 	Set: None
 	Locator: Controller0-DIMM0
 	Bank Locator: BANK 0
-	Type: DDR5
+	Type: <OUT OF SPEC>
 	Type Detail: Synchronous
 	Speed: 4000 MT/s
 	Manufacturer: Kingston
@@ -778,7 +780,7 @@ Memory Device
 	Set: None
 	Locator: Controller0-DIMM1
 	Bank Locator: BANK 0
-	Type: DDR5
+	Type: <OUT OF SPEC>
 	Type Detail: Synchronous
 	Speed: 4000 MT/s
 	Manufacturer: Kingston
@@ -813,7 +815,7 @@ Memory Device
 	Set: None
 	Locator: Controller1-DIMM0
 	Bank Locator: BANK 0
-	Type: DDR5
+	Type: <OUT OF SPEC>
 	Type Detail: Synchronous
 	Speed: 4000 MT/s
 	Manufacturer: Kingston
@@ -848,7 +850,7 @@ Memory Device
 	Set: None
 	Locator: Controller1-DIMM1
 	Bank Locator: BANK 0
-	Type: DDR5
+	Type: <OUT OF SPEC>
 	Type Detail: Synchronous
 	Speed: 4000 MT/s
 	Manufacturer: Kingston
@@ -1169,7 +1171,7 @@ Processor Information
 	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 8500 MHz
-	Current Speed: 4900 MHz
+	Current Speed: 3200 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0061

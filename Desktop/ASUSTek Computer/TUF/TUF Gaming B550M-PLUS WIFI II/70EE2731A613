@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0x000E6F40.
+Table at 0xCB9F0000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
@@ -363,27 +363,27 @@ Management Device
 
 Handle 0x0028, DMI type 40, 50 bytes
 Additional Information 1
-	Referenced Handle: 0x00a1
+	Referenced Handle: 0x0023
 	Referenced Offset: 0x01
 	String: To Be Filled By O.E.M. 1
 	Value: 0x00000000
 Additional Information 2
-	Referenced Handle: 0x0011
+	Referenced Handle: 0x0001
 	Referenced Offset: 0x0f
 	String: Not Specified
 	Value: 0x0000001e
 Additional Information 3
-	Referenced Handle: 0x0011
+	Referenced Handle: 0x0001
 	Referenced Offset: 0x1a
 	String: Mordor 2
 	Value: 0x00000000
 Additional Information 4
-	Referenced Handle: 0x0011
+	Referenced Handle: 0x0001
 	Referenced Offset: 0x1a
 	String: PRODUCT_LINE
 	Value: 0x00000000
 Additional Information 5
-	Referenced Handle: 0x0011
+	Referenced Handle: 0x0001
 	Referenced Offset: 0x19
 	String: PRODUCT_SKU
 	Value: 0x00000003
@@ -597,13 +597,13 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3600 MT/s
+	Speed: 2133 MT/s
 	Manufacturer: G-Skill
 	Serial Number: --
 	Asset Tag: --
 	Part Number: F4-3600C16-8GTZNC
 	Rank: 1
-	Configured Memory Speed: 3600 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -677,13 +677,13 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3600 MT/s
+	Speed: 2133 MT/s
 	Manufacturer: G-Skill
 	Serial Number: --
 	Asset Tag: --
 	Part Number: F4-3600C16-8GTZNC
 	Rank: 1
-	Configured Memory Speed: 3600 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -728,7 +728,8 @@ BIOS Language Information
 Handle 0x003F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -740,7 +741,8 @@ System Slot Information
 Handle 0x0040, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_2
-	Type: x4 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Long
 	ID: 1
@@ -752,7 +754,8 @@ System Slot Information
 Handle 0x0041, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 2

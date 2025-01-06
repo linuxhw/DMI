@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 104 structures occupying 3760 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 08/13/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -119,7 +119,7 @@ Processor Information
 	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 3439 MHz
+	Current Speed: 3418 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -155,8 +155,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -171,8 +171,8 @@ Cache Information
 	Configuration: Disabled, Not Socketed, Level 3
 	Operational Mode: Unknown
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -936,13 +936,6 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
 
 Handle 0x005B, DMI type 16, 23 bytes
 Physical Memory Array
@@ -969,20 +962,20 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1800 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: 04CD
 	Serial Number: --
 	Asset Tag: --
 	Part Number: F3-1866C10-8GAB
 	Rank: 2
-	Configured Memory Speed: 1800 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x005E, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -1018,13 +1011,6 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
 
 Handle 0x0061, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -1042,20 +1028,20 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 3
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1800 MT/s
+	Speed: 1333 MT/s
 	Manufacturer: 04CD
 	Serial Number: --
 	Asset Tag: --
 	Part Number: F3-1866C10-8GAB
 	Rank: 2
-	Configured Memory Speed: 1800 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0063, DMI type 18, 23 bytes
 32-bit Memory Error Information
