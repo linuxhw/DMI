@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 32 structures occupying 1379 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 11/25/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 6144 kB
+	ROM Size: 6 MB
 	Characteristics:
 		PCI is supported
 		PC Card (PCMCIA) is supported
@@ -41,7 +41,7 @@ System Information
 	Version:  
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: Other
 	SKU Number:  
 	Family:  
 
@@ -52,7 +52,7 @@ Base Board Information
 	Version:  
 	Serial Number: --
 	Asset Tag: --
-	...
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 	Location In Chassis:  
 	Chassis Handle: 0x0003
@@ -67,7 +67,7 @@ Chassis Information
 	Version:  
 	Serial Number: --
 	Asset Tag: --
-	...
+	F6698203954ED9B7A20341549F7CA083
 	Power Supply State: Unknown
 	Thermal State: Unknown
 	Security Status: Unknown
@@ -80,7 +80,8 @@ Chassis Information
 Handle 0x0004, DMI type 9, 17 bytes
 System Slot Information
 	Designation: ExpressCard-1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Unknown
 	Length: Other
 	ID: 0
@@ -91,14 +92,14 @@ System Slot Information
 
 Handle 0x0005, DMI type 11, 5 bytes
 OEM Strings
-	String 1: RF0UpeoZva6y7
-	String 2: Kag-04oCRrmdP
-	String 3: 2vi9fHmJOsxFy
+	String 1: E+im28DqTXU85
+	String 2: MGPRN2UlVqBgk
+	String 3: 0nD88u7kOA8Hs
 
 Handle 0x0006, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: SMI:00B2C801
-	Option 2: TIM:201907220957                    
+	Option 2: TIM:202412151919                    
 	Option 3: HDD:    W -DXW168EL25L84            
 	Option 4: MEM:6B273F4399U5428-063.A00L        
 
@@ -192,8 +193,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -273,7 +274,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -286,7 +287,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 99U5428-063.A00LF 
 	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -305,7 +306,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -318,7 +319,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 16KTF51264HZ-1G6M1
 	Rank: 2
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0014, DMI type 20, 35 bytes
 Memory Device Mapped Address

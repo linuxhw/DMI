@@ -1,17 +1,17 @@
-# dmidecode 3.3
+# dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
-39 structures occupying 1318 bytes.
-Table at 0x000E5220.
+40 structures occupying 1336 bytes.
+Table at 0x000E5DB0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: FUJITSU // Phoenix Technologies Ltd.
-	Version: Version 1.11 
-	Release Date: 06/27/2007
+	Version: Version 1.30 
+	Release Date: 08/20/2008
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 1 MB
+	ROM Size: 1024 kB
 	Characteristics:
 		PCI is supported
 		PC Card (PCMCIA) is supported
@@ -32,7 +32,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
-	BIOS Revision: 1.17
+	BIOS Revision: 1.48
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -105,11 +105,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM)2 Duo CPU     T7500  @ 2.20GHz
+	Version: Intel(R) Core(TM)2 Duo CPU     T7700  @ 2.40GHz
 	Voltage: 1.2 V
 	External Clock: 200 MHz
-	Max Speed: 2200 MHz
-	Current Speed: 2200 MHz
+	Max Speed: 2400 MHz
+	Current Speed: 2400 MHz
 	Status: Populated, Enabled
 	Upgrade: None
 	L1 Cache Handle: 0x0008
@@ -145,8 +145,8 @@ Memory Module Information
 	Bank Connections: 0 1
 	Current Speed: Unknown
 	Type: DIMM SDRAM
-	Installed Size: 1024 MB (Double-bank Connection)
-	Enabled Size: 1024 MB (Double-bank Connection)
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -181,8 +181,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4 MB
-	Maximum Size: 4 MB
+	Installed Size: 4096 kB
+	Maximum Size: 4096 kB
 	Supported SRAM Types:
 		Pipeline Burst
 		Synchronous
@@ -223,14 +223,14 @@ BIOS Language Information
 
 Handle 0x000E, DMI type 15, 45 bytes
 System Event Log
-	Area Length: 304 bytes
+	Area Length: 480 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFF80400
 	Status: Valid, Not Full
-	Change Token: 0x00000009
+	Change Token: 0x00000014
 	Header Format: Type 1
 	Supported Log Type Descriptors: 11
 	Descriptor 1: POST memory resize
@@ -271,7 +271,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1 GB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DDRII 1
@@ -290,7 +290,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DDRII 2
@@ -306,24 +306,24 @@ Memory Device
 Handle 0x0012, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x000F
 	Partition Width: 4
 
 Handle 0x0013, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0010
 	Memory Array Mapped Address Handle: 0x0012
 	Partition Row Position: 1
 
 Handle 0x0014, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00040000000
-	Ending Address: 0x000BFFFFFFF
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0011
 	Memory Array Mapped Address Handle: 0x0012
@@ -403,16 +403,21 @@ OEM-specific Type
 	Header and Data:
 		8F 10 23 00 03 05 01 01 64 00 67 00 00 00 00 00
 
-Handle 0x0024, DMI type 176, 16 bytes
+Handle 0x0024, DMI type 143, 16 bytes
 OEM-specific Type
 	Header and Data:
-		B0 10 24 00 10 00 00 00 00 00 FF FF FF FF FF FF
+		8F 10 24 00 03 06 01 01 00 00 00 00 00 00 00 00
 
-Handle 0x0025, DMI type 188, 8 bytes
+Handle 0x0025, DMI type 176, 16 bytes
 OEM-specific Type
 	Header and Data:
-		BC 08 25 00 39 38 31 24
+		B0 10 25 00 10 00 00 00 00 00 FF FF FF FF FF FF
 
-Handle 0x0026, DMI type 127, 4 bytes
+Handle 0x0026, DMI type 188, 8 bytes
+OEM-specific Type
+	Header and Data:
+		BC 08 26 00 39 38 31 24
+
+Handle 0x0027, DMI type 127, 4 bytes
 End Of Table
 

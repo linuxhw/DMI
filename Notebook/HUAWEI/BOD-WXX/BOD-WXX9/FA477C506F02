@@ -35,7 +35,7 @@ System Information
 	Version: M1010
 	Serial Number: --
 	UUID: --
-	Wake-up Type: APM Timer
+	Wake-up Type: Power Switch
 	SKU Number: C170
 	Family: MateBook D
 
@@ -244,18 +244,18 @@ Handle 0x000D, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
-		0x0023 (OEM-specific)
+		0x0022 (OEM-specific)
 
-Handle 0x002A, DMI type 14, 23 bytes
+Handle 0x0029, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 6
+		0x0023 (OEM-specific)
 		0x0024 (OEM-specific)
 		0x0025 (OEM-specific)
 		0x0026 (OEM-specific)
 		0x0027 (OEM-specific)
 		0x0028 (OEM-specific)
-		0x0029 (OEM-specific)
 
 Handle 0x000E, DMI type 16, 23 bytes
 Physical Memory Array
@@ -659,23 +659,13 @@ Portable Battery
 	Design Capacity: 0 mWh
 	Design Voltage: 11460 mV
 	SBDS Version: Not Specified
-	Maximum Error: 2%
+	Maximum Error: 1%
 	OEM-specific Information: 0x00000048
 
-Handle 0x0022, DMI type 43, 31 bytes
-TPM Device
-	Vendor ID: INTC
-	Specification Version: 2.0
-	Firmware Revision: 600.7
-	Description: TPM Device
-	Characteristics:
-		TPM Device characteristics not supported
-	OEM-specific Information: 0x00000000
-
-Handle 0x0023, DMI type 219, 106 bytes
+Handle 0x0022, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 23 00 01 04 01 45 02 00 A0 06 01 85 30 20
+		DB 6A 22 00 01 04 01 45 02 00 90 06 01 85 39 20
 		00 00 00 00 40 00 00 00 00 00 00 00 00 20 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -688,20 +678,20 @@ OEM-specific Type
 		MEI3
 		MEI4
 
-Handle 0x0024, DMI type 221, 26 bytes
+Handle 0x0023, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 24 00 03 01 00 0A 00 38 51 00 02 00 00 00
+		DD 1A 23 00 03 01 00 0A 00 38 51 00 02 00 00 00
 		00 8A 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
 		TXT ACM version
 
-Handle 0x0025, DMI type 221, 26 bytes
+Handle 0x0024, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 25 00 03 01 00 0A 00 38 51 00 02 00 00 00
+		DD 1A 24 00 03 01 00 0A 00 38 51 00 02 00 00 00
 		00 00 00 03 04 0F 00 17 AA 06
 	Strings:
 		Reference Code - ME
@@ -709,10 +699,10 @@ OEM-specific Type
 		ME Firmware Version
 		Consumer SKU
 
-Handle 0x0026, DMI type 221, 47 bytes
+Handle 0x0025, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 26 00 06 01 00 0A 00 38 51 00 02 03 FF FF
+		DD 2F 25 00 06 01 00 0A 00 38 51 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 20 00 05 00 FF FF FF 20
 		00 06 00 FF FF FF FF FF 07 00 04 00 00 00 00
 	Strings:
@@ -724,10 +714,10 @@ OEM-specific Type
 		OPROM - RST - RAID
 		PCH Hsio Version
 
-Handle 0x0027, DMI type 221, 82 bytes
+Handle 0x0026, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 27 00 0B 01 00 0A 00 38 51 00 02 00 01 00
+		DD 52 26 00 0B 01 00 0A 00 38 51 00 02 00 01 00
 		0C 00 00 03 00 0A 00 38 51 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 01 00 07 00 00 00 00 01 00 08
 		00 FF FF FF FF FF 09 00 11 01 04 00 00 0A 00 00
@@ -747,17 +737,17 @@ OEM-specific Type
 		Thunderbolt(TM) FW Version
 		System Agent Manageability Engine FW Version
 
-Handle 0x0028, DMI type 221, 12 bytes
+Handle 0x0027, DMI type 221, 12 bytes
 OEM-specific Type
 	Header and Data:
-		DD 0C 28 00 01 01 00 04 00 00 00 00
+		DD 0C 27 00 01 01 00 04 00 00 00 00
 	Strings:
 		FSP Binary Version
 
-Handle 0x0029, DMI type 221, 89 bytes
+Handle 0x0028, DMI type 221, 89 bytes
 OEM-specific Type
 	Header and Data:
-		DD 59 29 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
+		DD 59 28 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
 		00 FF FF FF FF FF 0B 00 02 1D 00 00 00 0C 00 00

@@ -142,8 +142,8 @@ Memory Module Information
 	Bank Connections: 0 1
 	Current Speed: Unknown
 	Type: Other
-	Installed Size: 2048 MB (Double-bank Connection)
-	Enabled Size: 2048 MB (Double-bank Connection)
+	Installed Size: 1024 MB (Double-bank Connection)
+	Enabled Size: 1024 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -152,8 +152,8 @@ Memory Module Information
 	Bank Connections: 2 3
 	Current Speed: Unknown
 	Type: Other
-	Installed Size: 1024 MB (Double-bank Connection)
-	Enabled Size: 1024 MB (Double-bank Connection)
+	Installed Size: 512 MB (Double-bank Connection)
+	Enabled Size: 512 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x0008, DMI type 7, 19 bytes
@@ -418,14 +418,14 @@ BIOS Language Information
 
 Handle 0x0028, DMI type 15, 43 bytes
 System Event Log
-	Area Length: 320 bytes
+	Area Length: 1088 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFF02000
 	Status: Valid, Not Full
-	Change Token: 0x000000AB
+	Change Token: 0x000000F4
 	Header Format: Type 1
 	Supported Log Type Descriptors: 10
 	Descriptor 1: POST memory resize
@@ -464,7 +464,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 1024 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DDRII 1
@@ -483,7 +483,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 512 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DDRII 2
@@ -499,25 +499,25 @@ Memory Device
 Handle 0x002C, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x0005FFFFFFF
+	Range Size: 1536 MB
 	Physical Array Handle: 0x0029
 	Partition Width: 4
 
 Handle 0x002D, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x002A
 	Memory Array Mapped Address Handle: 0x002C
 	Partition Row Position: 1
 
 Handle 0x002E, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 1 GB
+	Starting Address: 0x00040000000
+	Ending Address: 0x0005FFFFFFF
+	Range Size: 512 MB
 	Physical Device Handle: 0x002B
 	Memory Array Mapped Address Handle: 0x002C
 	Partition Row Position: 1

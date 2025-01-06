@@ -1,0 +1,561 @@
+# dmidecode 3.6
+Getting SMBIOS data from sysfs.
+SMBIOS 3.3 present.
+46 structures occupying 1688 bytes.
+Table at 0x94DC0000.
+
+Handle 0x0000, DMI type 224, 24 bytes
+OEM-specific Type
+	Header and Data:
+		E0 18 00 00 53 42 54 54 01 01 01 01 2F 08 00 00
+		00 80 DA 94 00 20 00 00
+
+Handle 0x0001, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 64 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 2
+
+Handle 0x0002, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
+	Physical Array Handle: 0x0001
+	Partition Width: 2
+
+Handle 0x0003, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0001
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 16 GB
+	Form Factor: SODIMM
+	Set: Unknown
+	Locator: DIMM 0
+	Bank Locator: CHANNEL A
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 3200 MT/s
+	Manufacturer: Xi'an UniIC Semiconductors Co Ltd
+	Serial Number: --
+	Asset Tag: --
+	532FB646AE0D14A6D5F6A1D75B20F196   
+	Rank: 1
+	Configured Memory Speed: 3200 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: NVDIMM-F
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0004, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x0003
+	Memory Array Mapped Address Handle: 0x0002
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0005, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0001
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 16 GB
+	Form Factor: SODIMM
+	Set: Unknown
+	Locator: DIMM 1
+	Bank Locator: CHANNEL A
+	Type: DDR4
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 3200 MT/s
+	Manufacturer: <Unknown>
+	Serial Number: --
+	Asset Tag: --
+	B3594C41295D8F64ABCB000560A27B29
+	Rank: 1
+	Configured Memory Speed: 3200 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: NVDIMM-F
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0006, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00400000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x0005
+	Memory Array Mapped Address Handle: 0x0002
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0007, DMI type 0, 26 bytes
+BIOS Information
+	Vendor: Byosoft
+	Version: 03.04
+	Release Date: 08/03/2023
+	Address: 0xF0000
+	Runtime Size: 64 kB
+	ROM Size: 8 MB
+	Characteristics:
+		PCI is supported
+		BIOS is upgradeable
+		BIOS shadowing is allowed
+		Boot from CD is supported
+		Selectable boot is supported
+		BIOS ROM is socketed
+		EDD is supported
+		Print screen service is supported (int 5h)
+		8042 keyboard services are supported (int 9h)
+		Serial services are supported (int 14h)
+		ACPI is supported
+		USB legacy is supported
+		BIOS boot specification is supported
+		Targeted content distribution is supported
+		UEFI is supported
+	BIOS Revision: 3.4
+	Firmware Revision: 3.1
+
+Handle 0x0008, DMI type 1, 27 bytes
+System Information
+	Manufacturer: GITSTAR
+	Product Name: GDC-1461
+	Version: TBD
+	Serial Number: --
+	UUID: --
+	Wake-up Type: Power Switch
+	SKU Number: TBD
+	Family: ZXE
+
+Handle 0x0009, DMI type 3, 22 bytes
+Chassis Information
+	Manufacturer: GITSTAR
+	Type: Notebook
+	Lock: Not Present
+	Version: TBD
+	Serial Number: --
+	Asset Tag: --
+	Boot-up State: Other
+	Power Supply State: Other
+	Thermal State: Other
+	Security Status: Other
+	OEM Information: 0x00000000
+	Height: Unspecified
+	Number Of Power Cords: Unspecified
+	Contained Elements: 0
+	SKU Number: TBD
+
+Handle 0x000A, DMI type 2, 15 bytes
+Base Board Information
+	Manufacturer: GITSTAR
+	Product Name: GM-1461
+	Version: TBD
+	Serial Number: --
+	Asset Tag: --
+	Features:
+		Board is a hosting board
+		Board is replaceable
+	Location In Chassis: TBD
+	Chassis Handle: 0x0009
+	Type: Motherboard
+	Contained Object Handles: 0
+
+Handle 0x000B, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: PS2B
+	Internal Connector Type: None
+	External Reference Designator: PS2 Mouse
+	External Connector Type: PS/2
+	Port Type: Mouse Port
+
+Handle 0x000C, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: PS2A
+	Internal Connector Type: None
+	External Reference Designator: PS2 Keyboard
+	External Connector Type: PS/2
+	Port Type: Keyboard Port
+
+Handle 0x000D, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J78
+	Internal Connector Type: None
+	External Reference Designator: COM0
+	External Connector Type: Other
+	Port Type: Serial Port 16550 Compatible
+
+Handle 0x000E, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J27
+	Internal Connector Type: None
+	External Reference Designator: VGA
+	External Connector Type: DB-15 female
+	Port Type: Video Port
+
+Handle 0x000F, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J30
+	Internal Connector Type: None
+	External Reference Designator: HDMI
+	External Connector Type: Other
+	Port Type: Video Port
+
+Handle 0x0010, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J26
+	Internal Connector Type: None
+	External Reference Designator: DP
+	External Connector Type: Other
+	Port Type: Video Port
+
+Handle 0x0011, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J37A
+	Internal Connector Type: None
+	External Reference Designator: USB 1
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0012, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J37B
+	Internal Connector Type: None
+	External Reference Designator: USB 2
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0013, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J40
+	Internal Connector Type: None
+	External Reference Designator: USB 3
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0014, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J39
+	Internal Connector Type: None
+	External Reference Designator: USB 4
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0015, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J43
+	Internal Connector Type: None
+	External Reference Designator: USB 5
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0016, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J37C
+	Internal Connector Type: None
+	External Reference Designator: Ethernet
+	External Connector Type: RJ-45
+	Port Type: Network Port
+
+Handle 0x0017, DMI type 11, 5 bytes
+OEM Strings
+	String 1: TBD
+
+Handle 0x0018, DMI type 12, 5 bytes
+System Configuration Options
+	Option 1: System Option String
+
+Handle 0x0019, DMI type 23, 13 bytes
+System Reset
+	Status: Disabled
+	Watchdog Timer: Not Present
+
+Handle 0x001A, DMI type 32, 11 bytes
+System Boot Information
+	Status: No errors detected
+
+Handle 0x001B, DMI type 39, 22 bytes
+System Power Supply
+	Power Unit Group: 1
+	Location:  
+	Name:  
+	Manufacturer:  
+	Serial Number: --
+	271882FD79060B21C43F805A2DE81148  
+	Model Part Number:  
+	Revision:  
+	Max Power Capacity: Unknown
+	Status: Present, OK
+	Type: Switching
+	Input Voltage Range Switching: Unknown
+	Plugged: Yes
+	Hot Replaceable: No
+
+Handle 0x001C, DMI type 155, 5 bytes
+OEM-specific Type
+	Header and Data:
+		9B 05 1C 00 02
+	Strings:
+		03.0408/03/2023
+
+Handle 0x001D, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L1 Cache
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 0 kB
+	Maximum Size: 0 kB
+	Supported SRAM Types:
+		Pipeline Burst
+		Synchronous
+	Installed SRAM Type: Pipeline Burst Synchronous
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x001E, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L2 Cache
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Varies With Memory Address
+	Location: Internal
+	Installed Size: 0 kB
+	Maximum Size: 0 kB
+	Supported SRAM Types:
+		Pipeline Burst
+		Synchronous
+	Installed SRAM Type: Pipeline Burst Synchronous
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: 16-way Set-associative
+
+Handle 0x001F, DMI type 4, 50 bytes
+Processor Information
+	Socket Designation: CPU01
+	Type: Central Processor
+	Family: Other
+	Manufacturer: Zhaoxin
+	ID: B2 07 03 00 00 00 00 00
+	Version: ZHAOXIN KaiXian KX-6000G/4@3.0GHz
+	Voltage: 1.3 V
+	External Clock: 100 MHz
+	Max Speed: 3300 MHz
+	Current Speed: 3000 MHz
+	Status: Populated, Enabled
+	Upgrade: None
+	L1 Cache Handle: 0x001D
+	L2 Cache Handle: 0x001E
+	L3 Cache Handle: Not Provided
+	Serial Number: --
+	Asset Tag: --
+	Part Number: To be filled by O.E.M.
+	Core Count: 4
+	Core Enabled: 4
+	Thread Count: 4
+	Characteristics:
+		64-bit capable
+		Multi-Core
+		Execute Protection
+		Enhanced Virtualization
+		Power/Performance Control
+
+Handle 0x0020, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - Lan
+	Type: Ethernet
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:04:00.0
+
+Handle 0x0021, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - SATA
+	Type: SATA Controller
+	Status: Disabled
+	Type Instance: 1
+
+Handle 0x0022, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - Video
+	Type: Video
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:00:01.0
+
+Handle 0x0023, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - Audio
+	Type: Sound
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:00:14.0
+
+Handle 0x0024, DMI type 9, 24 bytes
+System Slot Information
+	Designation: J85
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
+	Current Usage: Available
+	Length: Short
+	ID: 0
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 0000:00:03.0
+	Data Bus Width (Base): 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x0025, DMI type 9, 24 bytes
+System Slot Information
+	Designation: J89
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
+	Current Usage: Available
+	Length: Short
+	ID: 1
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 00ff:ff:1f.7
+	Data Bus Width (Base): 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x0026, DMI type 9, 24 bytes
+System Slot Information
+	Designation: J91
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
+	Current Usage: In Use
+	Length: Short
+	ID: 2
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 0000:00:03.2
+	Data Bus Width (Base): 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x0027, DMI type 9, 24 bytes
+System Slot Information
+	Designation: J37C
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
+	Current Usage: Available
+	Length: Other
+	ID: 3
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 00ff:ff:1f.7
+	Data Bus Width (Base): 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x0028, DMI type 9, 24 bytes
+System Slot Information
+	Designation: J60
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
+	Current Usage: Available
+	Length: Long
+	ID: 4
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 0000:00:04.0
+	Data Bus Width (Base): 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x0029, DMI type 9, 24 bytes
+System Slot Information
+	Designation: J65
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
+	Current Usage: Available
+	Length: Long
+	ID: 5
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 00ff:ff:1f.7
+	Data Bus Width (Base): 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x002A, DMI type 9, 24 bytes
+System Slot Information
+	Designation: J79
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
+	Current Usage: In Use
+	Length: Short
+	ID: 7
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 0000:00:05.1
+	Data Bus Width (Base): 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x002B, DMI type 13, 22 bytes
+BIOS Language Information
+	Language Description Format: Long
+	Installable Languages: 2
+		en|US|iso8859-1
+		zh|CN|unicode
+	Currently Installed Language: en|US|iso8859-1
+
+Handle 0x002C, DMI type 24, 5 bytes
+Hardware Security
+	Power-On Password Status: Disabled
+	Keyboard Password Status: Not Implemented
+	Administrator Password Status: Enabled
+	Front Panel Reset Status: Not Implemented
+
+Handle 0xFEFF, DMI type 127, 4 bytes
+End Of Table
+

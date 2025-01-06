@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-44 structures occupying 1476 bytes.
+44 structures occupying 1419 bytes.
 Table at 0x000E0CB0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -81,7 +81,7 @@ Handle 0x0004, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: Onboard
 	Type: Central Processor
-	Family: Celeron
+	Family: Core i5
 	Manufacturer: Intel(R) Corporation
 	ID: C3 06 03 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 60, Stepping 3
@@ -114,11 +114,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Celeron(R) CPU 2950M @ 2.00GHz
-	Voltage: 0.7 V
+	Version: Intel(R) Core(TM) i5-4300M CPU @ 2.60GHz
+	Voltage: 0.8 V
 	External Clock: 100 MHz
-	Max Speed: 2000 MHz
-	Current Speed: 2000 MHz
+	Max Speed: 2600 MHz
+	Current Speed: 2600 MHz
 	Status: Populated, Enabled
 	Upgrade: None
 	L1 Cache Handle: 0x0006
@@ -129,7 +129,7 @@ Processor Information
 	Part Number:  
 	Core Count: 2
 	Core Enabled: 2
-	Thread Count: 2
+	Thread Count: 4
 	Characteristics:
 		64-bit capable
 
@@ -187,15 +187,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2 MB
-	Maximum Size: 2 MB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
 	Speed: Unknown
 	Error Correction Type: Multi-bit ECC
 	System Type: Unified
-	Associativity: 8-way Set-associative
+	Associativity: 12-way Set-associative
 
 Handle 0x0009, DMI type 16, 23 bytes
 Physical Memory Array
@@ -212,7 +212,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM1
@@ -223,15 +223,15 @@ Memory Device
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5173DB0-YK0  
+	Part Number:                   
 	Rank: Unknown
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000B, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x000A
 	Memory Array Mapped Address Handle: 0x000E
 	Partition Row Position: Unknown
@@ -244,7 +244,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM2
@@ -252,18 +252,18 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Micron
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 16JTF51264HZ-1G6M1
+	Part Number:                   
 	Rank: Unknown
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000D, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x000C
 	Memory Array Mapped Address Handle: 0x000E
 	Partition Row Position: Unknown
@@ -273,15 +273,15 @@ Memory Device Mapped Address
 Handle 0x000E, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0009
 	Partition Width: 2
 
 Handle 0x000F, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 0F 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 0F 00 35 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 49 8C 00 00 00 00 01 00 00 00 00 00 09 00
 		B6 05 15 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 20 00 00 00 76 50 72 6F 00 00 00 00
@@ -319,19 +319,8 @@ Hardware Security
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
-Handle 0x0017, DMI type 22, 26 bytes
-Portable Battery
-	Location: Internal Battery
-	Manufacturer: FUJITSU
-	Manufacture Date:  
-	Serial Number: --
-	Name: CP700278-01
-	Chemistry: Lithium Ion
-	Design Capacity: 24300 mWh
-	Design Voltage: 10800 mV
-	SBDS Version:  
-	Maximum Error: Unknown
-	OEM-specific Information: 0xFFFFFFFF
+Handle 0x0017, DMI type 126, 26 bytes
+Inactive
 
 Handle 0x0018, DMI type 126, 26 bytes
 Inactive
@@ -373,7 +362,7 @@ OEM-specific Type
 Handle 0x0020, DMI type 143, 7 bytes
 OEM-specific Type
 	Header and Data:
-		8F 07 20 00 02 01 01
+		8F 07 20 00 02 01 00
 
 Handle 0x0021, DMI type 143, 7 bytes
 OEM-specific Type
@@ -424,14 +413,14 @@ OEM-specific Type
 
 Handle 0x002A, DMI type 15, 71 bytes
 System Event Log
-	Area Length: 754 bytes
+	Area Length: 1666 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x0000002E
+	Change Token: 0x00000067
 	Header Format: Type 1
 	Supported Log Type Descriptors: 24
 	Descriptor 1: POST memory resize

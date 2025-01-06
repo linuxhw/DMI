@@ -109,7 +109,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
-	Voltage: 0.8 V
+	Voltage: 0.6 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
 	Current Speed: 2574 MHz
@@ -222,7 +222,7 @@ Handle 0x000C, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x001E (OEM-specific)
+		0x001D (OEM-specific)
 
 Handle 0x000D, DMI type 14, 8 bytes
 Group Associations
@@ -372,8 +372,8 @@ TPM Device
 Handle 0x0017, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 17 00 01 04 01 45 02 00 A0 06 01 10 86 20
-		00 00 00 00 48 00 00 00 00 00 00 06 00 00 40 02
+		DB 6A 17 00 01 04 01 45 02 00 A0 06 01 10 80 20
+		00 00 00 04 48 00 00 00 00 00 00 06 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -447,36 +447,10 @@ OEM-specific Type
 	Strings:
 		FSP Binary Version
 
-Handle 0x001D, DMI type 221, 89 bytes
+Handle 0x001D, DMI type 222, 14 bytes
 OEM-specific Type
 	Header and Data:
-		DD 59 1D 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
-		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
-		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 01 2A 00 00 00 0C 00 00
-		09 00 05 11 0D 00 FF FF FF FF FF 0E 00 00 07 03
-		00 00 0F 00 00 02 00 0F 00
-	Strings:
-		Lan Phy Version
-		Sensor Firmware Version
-		Debug Mode Status
-		Disabled
-		Performance Mode Status
-		Disabled
-		Debug Use USB(Disabled:Serial)
-		Disabled
-		ICC Overclocking Version
-		UNDI Version
-		EC FW Version
-		GOP Version
-		Royal Park Version
-		Platform Version
-		Client Silicon Version
-
-Handle 0x001E, DMI type 222, 14 bytes
-OEM-specific Type
-	Header and Data:
-		DE 0E 1E 00 01 99 00 03 10 01 20 02 30 03
+		DE 0E 1D 00 01 99 00 03 10 01 20 02 30 03
 	Strings:
 		Memory Init Complete
 		End of DXE Phase

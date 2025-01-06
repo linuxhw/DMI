@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x41CD9000.
@@ -851,7 +851,7 @@ Processor Information
 	Voltage: 0.7 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
-	Current Speed: 1100 MHz
+	Current Speed: 1200 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0049
@@ -963,9 +963,25 @@ Onboard Device
 	Type: Other
 	Status: Enabled
 	Type Instance: 9
-	Bus Address: 0000:00:16.0
+	Bus Address: 0000:00:15.2
 
 Handle 0x0059, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - Other
+	Type: Other
+	Status: Enabled
+	Type Instance: 10
+	Bus Address: 0000:00:15.3
+
+Handle 0x005A, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - Other
+	Type: Other
+	Status: Enabled
+	Type Instance: 11
+	Bus Address: 0000:00:16.0
+
+Handle 0x005B, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - SATA
 	Type: SATA Controller
@@ -973,29 +989,13 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:17.0
 
-Handle 0x005A, DMI type 41, 11 bytes
-Onboard Device
-	Reference Designation: Onboard - Other
-	Type: Other
-	Status: Enabled
-	Type Instance: 10
-	Bus Address: 0000:00:19.0
-
-Handle 0x005B, DMI type 41, 11 bytes
-Onboard Device
-	Reference Designation: Onboard - Other
-	Type: Other
-	Status: Enabled
-	Type Instance: 11
-	Bus Address: 0000:00:1a.0
-
 Handle 0x005C, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
 	Type Instance: 12
-	Bus Address: 0000:00:1e.0
+	Bus Address: 0000:00:19.0
 
 Handle 0x005D, DMI type 41, 11 bytes
 Onboard Device
@@ -1003,7 +1003,7 @@ Onboard Device
 	Type: Other
 	Status: Enabled
 	Type Instance: 13
-	Bus Address: 0000:00:1e.3
+	Bus Address: 0000:00:19.1
 
 Handle 0x005E, DMI type 41, 11 bytes
 Onboard Device
@@ -1011,9 +1011,33 @@ Onboard Device
 	Type: Other
 	Status: Enabled
 	Type Instance: 14
-	Bus Address: 0000:00:1f.0
+	Bus Address: 0000:00:1a.0
 
 Handle 0x005F, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - Other
+	Type: Other
+	Status: Enabled
+	Type Instance: 15
+	Bus Address: 0000:00:1e.0
+
+Handle 0x0060, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - Other
+	Type: Other
+	Status: Enabled
+	Type Instance: 16
+	Bus Address: 0000:00:1e.3
+
+Handle 0x0061, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - Other
+	Type: Other
+	Status: Enabled
+	Type Instance: 17
+	Bus Address: 0000:00:1f.0
+
+Handle 0x0062, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Sound
 	Type: Sound
@@ -1021,26 +1045,26 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:1f.3
 
-Handle 0x0060, DMI type 41, 11 bytes
+Handle 0x0063, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
-	Type Instance: 15
+	Type Instance: 18
 	Bus Address: 0000:00:1f.4
 
-Handle 0x0061, DMI type 41, 11 bytes
+Handle 0x0064, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
-	Type Instance: 16
+	Type Instance: 19
 	Bus Address: 0000:00:1f.5
 
-Handle 0x0062, DMI type 221, 89 bytes
+Handle 0x0065, DMI type 221, 89 bytes
 OEM-specific Type
 	Header and Data:
-		DD 59 62 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
+		DD 59 65 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 FF FF FF FF FF 0A
 		00 FF FF FF FF FF 0B 00 01 00 00 00 00 0C 00 00
@@ -1064,12 +1088,12 @@ OEM-specific Type
 		Platform Version
 		Client Silicon Version
 
-Handle 0x0063, DMI type 136, 6 bytes
+Handle 0x0066, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 63 00 00 00
+		88 06 66 00 00 00
 
-Handle 0x0064, DMI type 14, 23 bytes
+Handle 0x0067, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 6
@@ -1078,18 +1102,18 @@ Group Associations
 		0x0045 (OEM-specific)
 		0x0046 (OEM-specific)
 		0x0047 (OEM-specific)
-		0x0062 (OEM-specific)
+		0x0065 (OEM-specific)
 
-Handle 0x0065, DMI type 14, 8 bytes
+Handle 0x0068, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x0066, DMI type 219, 106 bytes
+Handle 0x0069, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 66 00 01 04 01 55 02 00 A0 06 01 85 30 20
+		DB 6A 69 00 01 04 01 55 02 00 90 06 01 10 80 20
 		00 00 00 04 40 00 00 00 00 00 00 00 00 40 00 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -1102,13 +1126,13 @@ OEM-specific Type
 		MEI3
 		MEI4
 
-Handle 0x0067, DMI type 13, 22 bytes
+Handle 0x006A, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0068, DMI type 127, 4 bytes
+Handle 0x006B, DMI type 127, 4 bytes
 End Of Table
 
