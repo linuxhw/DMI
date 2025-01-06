@@ -1,7 +1,7 @@
 # dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1 present.
-37 structures occupying 1293 bytes.
+38 structures occupying 1355 bytes.
 Table at 0x95DC0000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -224,8 +224,8 @@ Physical Memory Array
 Handle 0x0017, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 24 GB
 	Physical Array Handle: 0x0016
 	Partition Width: 2
 
@@ -268,17 +268,38 @@ Handle 0x001A, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0016
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 16 GB
+	Form Factor: DIMM
 	Set: Unknown
 	Locator: DIMM 1
 	Bank Locator: CHANNEL B
 	Type: DDR4
-	Type Detail: Unknown
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 3200 MT/s
+	Manufacturer: Kingbank Technology Co Ltd
+	Serial Number: --
+	Asset Tag: --
+	4776D9C5F6FCD6E78ABCA33413CFBF20             
+	Rank: 1
+	Configured Memory Speed: 2666 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
 
-Handle 0x001B, DMI type 4, 48 bytes
+Handle 0x001B, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x001A
+	Memory Array Mapped Address Handle: 0x0017
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x001C, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: CPU 1
 	Type: Central Processor
@@ -292,8 +313,8 @@ Processor Information
 	Current Speed: 2600 MHz
 	Status: Populated, Enabled
 	Upgrade: None
-	L1 Cache Handle: 0x001C
-	L2 Cache Handle: 0x001D
+	L1 Cache Handle: 0x001D
+	L2 Cache Handle: 0x001E
 	L3 Cache Handle: Not Provided
 	Serial Number: --
 	Asset Tag: --
@@ -308,7 +329,7 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x001C, DMI type 7, 27 bytes
+Handle 0x001D, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1-Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -325,7 +346,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x001D, DMI type 7, 27 bytes
+Handle 0x001E, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L2-Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -342,7 +363,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x001E, DMI type 9, 17 bytes
+Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J52
 	Type: x16 PCI Express x16
@@ -355,7 +376,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:04.0
 
-Handle 0x001F, DMI type 9, 17 bytes
+Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J66
 	Type: x4 PCI Express x4
@@ -368,7 +389,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:04.1
 
-Handle 0x0020, DMI type 9, 17 bytes
+Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J56
 	Type: x1 PCI Express x1
@@ -381,7 +402,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:05.1
 
-Handle 0x0021, DMI type 9, 17 bytes
+Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J67
 	Type: x4 PCI Express x4
@@ -394,7 +415,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:03.0
 
-Handle 0x0022, DMI type 13, 22 bytes
+Handle 0x0023, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 2
@@ -402,7 +423,7 @@ BIOS Language Information
 		zh|CN|unicode
 	Currently Installed Language: zh|CN|unicode
 
-Handle 0x0023, DMI type 24, 5 bytes
+Handle 0x0024, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Not Implemented

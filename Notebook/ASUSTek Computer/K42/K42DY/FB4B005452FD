@@ -421,8 +421,8 @@ Physical Memory Array
 Handle 0x0029, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000800003FF
-	Range Size: 2 GB
+	Ending Address: 0x001D00803FF
+	Range Size: 7424 MB
 	Physical Array Handle: 0x0028
 	Partition Width: 255
 
@@ -430,24 +430,30 @@ Handle 0x002A, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0028
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: DIMM
+	Size: 4 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: A1_DIMM0
 	Bank Locator: A1_BANK0
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer0
+	Speed: 1600 MT/s
+	Manufacturer: Undefined       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber0
-	Rank: Unknown
+	Part Number: R534G1601S1S      
+	Rank: 1
 
-Handle 0x002B, DMI type 126, 19 bytes
-Inactive
+Handle 0x002B, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x002A
+	Memory Array Mapped Address Handle: 0x0029
+	Partition Row Position: 1
 
 Handle 0x002C, DMI type 17, 28 bytes
 Memory Device
@@ -471,8 +477,8 @@ Memory Device
 
 Handle 0x002D, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x0017FFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x002C
 	Memory Array Mapped Address Handle: 0x0029

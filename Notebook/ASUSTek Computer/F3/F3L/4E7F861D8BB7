@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 34 structures occupying 1770 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 02/20/2008
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -155,8 +155,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -264,7 +264,8 @@ Port Connector Information
 Handle 0x0013, DMI type 9, 13 bytes
 System Slot Information
 	Designation: AGP
-	Type: 32-bit AGP 4x
+	Type: AGP 4x
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 0
@@ -327,7 +328,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: SODIMM0
@@ -357,7 +358,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: SODIMM1

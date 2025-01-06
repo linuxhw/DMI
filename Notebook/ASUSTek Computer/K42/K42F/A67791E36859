@@ -1,7 +1,7 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-103 structures occupying 3809 bytes.
+104 structures occupying 3839 bytes.
 Table at 0x000EB8B0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 08/11/2010
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -157,8 +157,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -960,23 +960,34 @@ Handle 0x0043, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0041
 	Error Information Handle: 0x0045
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1067 MT/s
+	Manufacturer: 80CE
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
+	Part Number: M471B5673EH1-CH9  
 	Rank: Unknown
 
-Handle 0x0044, DMI type 17, 28 bytes
+Handle 0x0044, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0043
+	Memory Array Mapped Address Handle: 0x0064
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x0046, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0041
 	Error Information Handle: No Error
@@ -989,20 +1000,14 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
 
-Handle 0x0046, DMI type 17, 28 bytes
+Handle 0x0047, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0041
 	Error Information Handle: 0x0048
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM2
@@ -1016,18 +1021,18 @@ Memory Device
 	Part Number: AD73I1B1672EG     
 	Rank: Unknown
 
-Handle 0x0047, DMI type 20, 19 bytes
+Handle 0x0049, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x0007FFFFFFF
 	Range Size: 2 GB
-	Physical Device Handle: 0x0046
-	Memory Array Mapped Address Handle: 0x0065
+	Physical Device Handle: 0x0047
+	Memory Array Mapped Address Handle: 0x0064
 	Partition Row Position: Unknown
 	Interleave Position: 2
 	Interleaved Data Depth: 1
 
-Handle 0x0049, DMI type 17, 28 bytes
+Handle 0x0065, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0041
 	Error Information Handle: No Error
@@ -1040,18 +1045,12 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
 
-Handle 0x0065, DMI type 19, 15 bytes
+Handle 0x0064, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0041
 	Partition Width: 4
 
