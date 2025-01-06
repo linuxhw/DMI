@@ -1,8 +1,8 @@
-# dmidecode 2.12
-# SMBIOS entry point at 0x000f04c0
+# dmidecode 3.5
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-22 structures occupying 1496 bytes.
-Table at 0x000EBA60.
+23 structures occupying 1546 bytes.
+Table at 0xCA0FF018.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 01/25/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 6144 kB
+	ROM Size: 6 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -95,9 +95,9 @@ On Board Device 3 Information
 
 Handle 0x0005, DMI type 11, 5 bytes
 OEM Strings
-	String 1: nbiRDexG0c6EZ
-	String 2: tPA0UF8piBuiM
-	String 3: iy2hMzD6119Fx
+	String 1: 0000000000000
+	String 2: 0000000000000
+	String 3: 0000000000000
 	String 4: 90NB0151-M00340
 	String 5:  
 	String 6:  
@@ -108,7 +108,7 @@ OEM Strings
 
 Handle 0x0006, DMI type 12, 5 bytes
 System Configuration Options
-	Option 1: DSN:      ATB811V3BKLRND            
+	Option 1: DSN:004288032214 9                  
 	Option 2: DSN:6BA180B20D47                    
 	Option 3: DSN:74D02B081AB6                    
 	Option 4: SMI:00B2CA
@@ -155,8 +155,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -212,7 +212,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Pentium(R) CPU 987 @ 1.50GHz
-	Voltage: 5.0 V 3.3 V
+	Voltage: Unknown
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
 	Current Speed: 1500 MHz
@@ -236,20 +236,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
 	Part Number: M471B5273CH0-CK0  
 	Rank: 2
-	Configured Clock Speed: 1333 MHz
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x000E, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -257,10 +257,10 @@ Memory Device Mapped Address
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x000D
-	Memory Array Mapped Address Handle: 0x0012
+	Memory Array Mapped Address Handle: 0x0013
 	Partition Row Position: Unknown
 	Interleave Position: 1
-	Interleaved Data Depth: 1
+	Interleaved Data Depth: 2
 
 Handle 0x000F, DMI type 17, 34 bytes
 Memory Device
@@ -275,36 +275,40 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
 
 Handle 0x0010, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: KVR16LS11/4       
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
-Handle 0x0011, DMI type 17, 34 bytes
+Handle 0x0011, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0010
+	Memory Array Mapped Address Handle: 0x0013
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x0012, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000B
 	Error Information Handle: Not Provided
@@ -317,37 +321,30 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
 
-Handle 0x0012, DMI type 19, 31 bytes
+Handle 0x0013, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x000B
 	Partition Width: 4
 
-Handle 0x0017, DMI type 131, 64 bytes
+Handle 0x0018, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 17 00 00 00 00 00 00 00 00 00 00 00 00 00
+		83 40 18 00 00 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 59 1E 00 00 00 00 01 20 00 00 01 00 08 00
 		26 05 02 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0018, DMI type 13, 22 bytes
+Handle 0x0019, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0019, DMI type 127, 4 bytes
+Handle 0x001A, DMI type 127, 4 bytes
 End Of Table
 

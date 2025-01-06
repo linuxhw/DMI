@@ -1,6 +1,7 @@
-# dmidecode 2.12
+# dmidecode 3.5
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-99 structures occupying 3925 bytes.
+100 structures occupying 3973 bytes.
 Table at 0x000EBC30.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -10,7 +11,7 @@ BIOS Information
 	Release Date: 09/26/2011
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -122,7 +123,7 @@ Processor Information
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
 	L2 Cache Handle: 0x0006
-	L3 Cache Handle: Not Provided
+	L3 Cache Handle: 0x0007
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
@@ -138,15 +139,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 0 kB
-	Maximum Size: 0 kB
+	Installed Size: 32 kB
+	Maximum Size: 32 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
 	Speed: Unknown
 	Error Correction Type: None
-	System Type: <OUT OF SPEC>
-	Associativity: <OUT OF SPEC>
+	System Type: Unified
+	Associativity: 8-way Set-associative
 
 Handle 0x0006, DMI type 7, 19 bytes
 Cache Information
@@ -154,18 +155,31 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 0 kB
-	Maximum Size: 0 kB
+	Installed Size: 256 kB
+	Maximum Size: 256 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
 	Speed: Unknown
 	Error Correction Type: None
-	System Type: <OUT OF SPEC>
-	Associativity: <OUT OF SPEC>
+	System Type: Unified
+	Associativity: 8-way Set-associative
 
-Handle 0x0007, DMI type 126, 19 bytes
-Inactive
+Handle 0x0007, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L3-Cache
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Varies With Memory Address
+	Location: Internal
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
+	Supported SRAM Types:
+		Other
+	Installed SRAM Type: Other
+	Speed: Unknown
+	Error Correction Type: None
+	System Type: Unified
+	Associativity: Other
 
 Handle 0x0008, DMI type 8, 9 bytes
 Port Connector Information
@@ -551,14 +565,14 @@ Handle 0x0035, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7D2
 	Type: x1 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 4
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:04:1c.3
+	Bus Address: 0000:ff:1c.3
 
 Handle 0x0036, DMI type 9, 17 bytes
 System Slot Information
@@ -584,7 +598,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:05:1c.5
+	Bus Address: 0000:04:1c.5
 
 Handle 0x0038, DMI type 10, 6 bytes
 On Board Device Information
@@ -640,20 +654,20 @@ Memory Device
 	Error Information Handle: 0x0041
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
-	Manufacturer: 0443
+	Speed: 1067 MT/s
+	Manufacturer: Elpida
 	Serial Number: --
 	Asset Tag: --
-	Part Number: RMT3010EC58E8F1333
-	Rank: 1
-	Configured Clock Speed: Unknown
+	Part Number: EBJ21UE8BDS0-AE-F 
+	Rank: 2
+	Configured Memory Speed: Unknown
 
 Handle 0x0040, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -661,10 +675,10 @@ Memory Device Mapped Address
 	Ending Address: 0x0007FFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x003F
-	Memory Array Mapped Address Handle: 0x0060
+	Memory Array Mapped Address Handle: 0x0061
 	Partition Row Position: Unknown
 	Interleave Position: 1
-	Interleaved Data Depth: 1
+	Interleaved Data Depth: 2
 
 Handle 0x0041, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -689,34 +703,27 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
 
 Handle 0x0043, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x003D
 	Error Information Handle: 0x0044
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1067 MT/s
+	Manufacturer: 0443
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: RMT3010EC58E8F1333
+	Rank: 1
+	Configured Memory Speed: Unknown
 
 Handle 0x0044, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -728,26 +735,16 @@ Handle 0x0044, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0045, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x003D
-	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: ChannelB-DIMM1
-	Bank Locator: BANK 3
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+Handle 0x0045, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0043
+	Memory Array Mapped Address Handle: 0x0061
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 2
 
 Handle 0x0046, DMI type 21, 7 bytes
 Built-in Pointing Device
@@ -999,21 +996,35 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:1b.0
 
-Handle 0x0060, DMI type 19, 31 bytes
+Handle 0x0060, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x003D
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelB-DIMM1
+	Bank Locator: BANK 3
+	Type: Unknown
+	Type Detail: None
+
+Handle 0x0061, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x003D
 	Partition Width: 4
 
-Handle 0x0069, DMI type 13, 22 bytes
+Handle 0x006A, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x006A, DMI type 127, 4 bytes
+Handle 0x006B, DMI type 127, 4 bytes
 End Of Table
 

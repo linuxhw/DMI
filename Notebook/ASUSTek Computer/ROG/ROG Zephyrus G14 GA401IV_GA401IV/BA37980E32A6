@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0xACDFE000.
@@ -6,8 +6,8 @@ Table at 0xACDFE000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: GA401IV.218
-	Release Date: 11/05/2020
+	Version: GA401IV.222
+	Release Date: 09/28/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -33,7 +33,7 @@ BIOS Information
 		Targeted content distribution is supported
 		UEFI is supported
 	BIOS Revision: 5.16
-	Firmware Revision: 3.13
+	Firmware Revision: 3.16
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -42,7 +42,7 @@ System Information
 	Version: 1.0       
 	Serial Number: --
 	UUID: --
-	Wake-up Type: PCI PME#
+	Wake-up Type: Power Switch
 	SKU Number:  
 	Family: ROG Zephyrus G14
 
@@ -115,8 +115,8 @@ Physical Memory Array
 Handle 0x000B, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x009FFFFFFFF
+	Range Size: 40 GB
 	Physical Array Handle: 0x000A
 	Partition Width: 2
 
@@ -296,7 +296,7 @@ Memory Device
 	Error Information Handle: 0x0013
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 32 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
@@ -304,11 +304,11 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 3200 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471A1K43DB1-CWE    
-	Rank: 1
+	Part Number: CT32G4SFD832A.M16FF
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
@@ -316,20 +316,20 @@ Memory Device
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Unknown
-	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Manufacturer ID: Bank 6, Hex 0x9B
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: 32 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x009FFFFFFFF
+	Range Size: 40 GB
 	Physical Device Handle: 0x0014
 	Memory Array Mapped Address Handle: 0x000B
 	Partition Row Position: Unknown

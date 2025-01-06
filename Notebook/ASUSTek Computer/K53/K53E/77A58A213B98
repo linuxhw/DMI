@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-80 structures occupying 2849 bytes.
+80 structures occupying 2852 bytes.
 Table at 0x000EB940.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -127,15 +127,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 0 kB
-	Maximum Size: 0 kB
+	Installed Size: 32 kB
+	Maximum Size: 32 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
 	Speed: Unknown
 	Error Correction Type: None
-	System Type: <OUT OF SPEC>
-	Associativity: <OUT OF SPEC>
+	System Type: Instruction
+	Associativity: 8-way Set-associative
 
 Handle 0x0006, DMI type 7, 19 bytes
 Cache Information
@@ -487,7 +487,8 @@ Port Connector Information
 Handle 0x0031, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J5C1
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 0
@@ -500,7 +501,8 @@ System Slot Information
 Handle 0x0032, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6C2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -513,7 +515,8 @@ System Slot Information
 Handle 0x0033, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -526,7 +529,8 @@ System Slot Information
 Handle 0x0034, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7C1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -539,7 +543,8 @@ System Slot Information
 Handle 0x0035, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7D2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -552,7 +557,8 @@ System Slot Information
 Handle 0x0036, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6C1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 5
@@ -565,7 +571,8 @@ System Slot Information
 Handle 0x0037, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8C2
-	Type: 32-bit PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 32 bit
 	Current Usage: In Use
 	Length: Long
 	ID: 6
@@ -578,7 +585,8 @@ System Slot Information
 Handle 0x0038, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6UB
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 0
@@ -591,7 +599,8 @@ System Slot Information
 Handle 0x0039, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J15BU
-	Type: x4 PCI Express
+	Type: PCI Express
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -604,7 +613,8 @@ System Slot Information
 Handle 0x003A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J13BU
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -712,12 +722,6 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
 
 Handle 0x0043, DMI type 17, 28 bytes
 Memory Device
@@ -725,7 +729,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1 GB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -733,11 +737,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: 06C1
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: SSY3128M8-EDJEF   
-	Rank: 1
+	Part Number: M471B5273DH0-CH9  
+	Rank: 2
 
 Handle 0x0044, DMI type 17, 28 bytes
 Memory Device
@@ -752,18 +756,12 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
 
 Handle 0x0045, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0044
 	Memory Array Mapped Address Handle: 0x004B
 	Partition Row Position: 1
@@ -773,8 +771,8 @@ Memory Device Mapped Address
 Handle 0x0049, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0044
 	Memory Array Mapped Address Handle: 0x004B
 	Partition Row Position: 1
@@ -783,9 +781,9 @@ Memory Device Mapped Address
 
 Handle 0x0048, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 1 GB
+	Starting Address: 0x00000000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0044
 	Memory Array Mapped Address Handle: 0x004B
 	Partition Row Position: 1
@@ -793,8 +791,8 @@ Memory Device Mapped Address
 Handle 0x004B, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000BFFFFFFF
-	Range Size: 3 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Array Handle: 0x0040
 	Partition Width: 4
 

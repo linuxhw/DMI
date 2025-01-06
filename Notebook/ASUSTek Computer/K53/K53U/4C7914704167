@@ -328,15 +328,15 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 2 GB
+	Maximum Capacity: 3 GB
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
 Handle 0x0023, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 3 GB
 	Physical Array Handle: 0x0022
 	Partition Width: 255
 
@@ -344,25 +344,31 @@ Handle 0x0024, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0022
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 1024 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM0
 	Bank Locator: A1_BANK0
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer0
+	Speed: 667 MT/s
+	Manufacturer: Undefined       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber0
-	Rank: Unknown
+	Part Number: SSY3128M8-EDJEF   
+	Rank: 1
 	Configured Clock Speed: Unknown
 
-Handle 0x0025, DMI type 126, 35 bytes
-Inactive
+Handle 0x0025, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
+	Physical Device Handle: 0x0024
+	Memory Array Mapped Address Handle: 0x0023
+	Partition Row Position: 1
 
 Handle 0x0026, DMI type 17, 34 bytes
 Memory Device
@@ -387,8 +393,8 @@ Memory Device
 
 Handle 0x0027, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
+	Starting Address: 0x00040000000
+	Ending Address: 0x000BFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0026
 	Memory Array Mapped Address Handle: 0x0023

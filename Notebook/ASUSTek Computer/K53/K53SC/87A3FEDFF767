@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 99 structures occupying 3925 bytes.
@@ -123,7 +123,7 @@ Processor Information
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
 	L2 Cache Handle: 0x0006
-	L3 Cache Handle: Not Provided
+	L3 Cache Handle: 0x0007
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
@@ -165,8 +165,21 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0007, DMI type 126, 19 bytes
-Inactive
+Handle 0x0007, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L3-Cache
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Varies With Memory Address
+	Location: Internal
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
+	Supported SRAM Types:
+		Other
+	Installed SRAM Type: Other
+	Speed: Unknown
+	Error Correction Type: None
+	System Type: Unified
+	Associativity: Other
 
 Handle 0x0008, DMI type 8, 9 bytes
 Port Connector Information
@@ -499,7 +512,8 @@ Port Connector Information
 Handle 0x0031, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J5C1
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -512,7 +526,8 @@ System Slot Information
 Handle 0x0032, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6C2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -525,7 +540,8 @@ System Slot Information
 Handle 0x0033, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -538,7 +554,8 @@ System Slot Information
 Handle 0x0034, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7C1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -551,7 +568,8 @@ System Slot Information
 Handle 0x0035, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7D2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -564,7 +582,8 @@ System Slot Information
 Handle 0x0036, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6C1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 5
@@ -577,7 +596,8 @@ System Slot Information
 Handle 0x0037, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8C2
-	Type: 32-bit PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 32 bit
 	Current Usage: In Use
 	Length: Long
 	ID: 6
@@ -690,13 +710,6 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
 
 Handle 0x0043, DMI type 17, 34 bytes
 Memory Device
@@ -711,13 +724,6 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
 
 Handle 0x0044, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -742,13 +748,6 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
 
 Handle 0x0046, DMI type 21, 7 bytes
 Built-in Pointing Device

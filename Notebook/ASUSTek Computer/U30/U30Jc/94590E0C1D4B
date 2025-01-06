@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-82 structures occupying 2797 bytes.
+80 structures occupying 2781 bytes.
 Table at 0x000EC360.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 01/24/2011
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -159,8 +159,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -696,7 +696,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -704,10 +704,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1067 MT/s
-	Manufacturer: 017A
+	Manufacturer: 80CE
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 78.B2GCJ.AU30C    
+	Part Number: M471B5273CH0-CH9  
 	Rank: Unknown
 
 Handle 0x0043, DMI type 20, 19 bytes
@@ -734,12 +734,6 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
 
 Handle 0x0045, DMI type 17, 28 bytes
 Memory Device
@@ -747,7 +741,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM2
@@ -755,10 +749,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1067 MT/s
-	Manufacturer: 80CE
+	Manufacturer: 017A
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5273CH0-CH9  
+	Part Number: 78.B2GCJ.AU30C    
 	Rank: Unknown
 
 Handle 0x0046, DMI type 20, 19 bytes
@@ -785,12 +779,6 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
 
 Handle 0x004B, DMI type 19, 15 bytes
 Memory Array Mapped Address
@@ -827,16 +815,6 @@ OEM-specific Type
 	Header and Data:
 		88 06 4C 00 00 00
 
-Handle 0x004D, DMI type 136, 6 bytes
-OEM-specific Type
-	Header and Data:
-		88 06 4D 00 00 00
-
-Handle 0x004E, DMI type 136, 6 bytes
-OEM-specific Type
-	Header and Data:
-		88 06 4E 00 00 00
-
-Handle 0x004F, DMI type 127, 4 bytes
+Handle 0x004D, DMI type 127, 4 bytes
 End Of Table
 
