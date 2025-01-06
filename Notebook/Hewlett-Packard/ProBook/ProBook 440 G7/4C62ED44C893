@@ -1,8 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
 32 structures occupying 2269 bytes.
-Table at 0xCEDB5000.
+Table at 0xCEF2C000.
 
 Handle 0x0000, DMI type 43, 31 bytes
 TPM Device
@@ -18,8 +18,8 @@ TPM Device
 Handle 0x0001, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: S71 Ver. 01.13.00
-	Release Date: 04/07/2022
+	Version: S71 Ver. 01.16.00
+	Release Date: 12/30/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -42,8 +42,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 13.0
-	Firmware Revision: 2.56
+	BIOS Revision: 16.0
+	Firmware Revision: 2.59
 
 Handle 0x0002, DMI type 1, 27 bytes
 System Information
@@ -56,21 +56,7 @@ System Information
 	SKU Number: 2B257LA#ABM
 	Family: 103C_5336AN HP ProBook
 
-Handle 0x0003, DMI type 2, 17 bytes
-Base Board Information
-	Manufacturer: HP
-	Product Name: 869D
-	Version: KBC Version 02.38.00
-	Serial Number: --
-	Asset Tag: --
-	97946E993916094B22613E03B8339091
-		Board is a hosting board
-	Location In Chassis:  
-	Chassis Handle: 0x0000
-	Type: Motherboard
-	Contained Object Handles: 0
-
-Handle 0x0004, DMI type 3, 24 bytes
+Handle 0x0003, DMI type 3, 24 bytes
 Chassis Information
 	Manufacturer: HP
 	Type: Notebook
@@ -88,7 +74,7 @@ Chassis Information
 	Contained Elements: 0
 	SKU Number: Not Specified
 
-Handle 0x0006, DMI type 13, 22 bytes
+Handle 0x0005, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 15
@@ -107,7 +93,21 @@ BIOS Language Information
 		zhCN
 		zhTW
 		ruRU
-	Currently Installed Language: enUS
+	Currently Installed Language: esES
+
+Handle 0x0006, DMI type 2, 17 bytes
+Base Board Information
+	Manufacturer: HP
+	Product Name: 869D
+	Version: KBC Version 02.3B.00
+	Serial Number: --
+	Asset Tag: --
+	97946E993916094B22613E03B8339091
+		Board is a hosting board
+	Location In Chassis:  
+	Chassis Handle: 0x0003
+	Type: Motherboard
+	Contained Object Handles: 0
 
 Handle 0x0007, DMI type 16, 23 bytes
 Physical Memory Array
@@ -127,36 +127,66 @@ Memory Array Mapped Address
 	Partition Width: 1
 
 Handle 0x000D, DMI type 221, 26 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:09:00:B1:60:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:F0:00:03
+OEM-specific Type
+	Header and Data:
+		DD 1A 0D 00 03 01 00 09 00 C0 10 00 02 00 00 00
+		00 F4 00 03 00 FF FF FF FF FF
+	Strings:
+		Reference Code - CPU
+		uCode Version
+		TXT ACM version
 
 Handle 0x000E, DMI type 221, 26 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:09:00:B1:60:00
-	NIC 2: PCI device 00:00.2, MAC address 0C:00:00:08:00:03
+OEM-specific Type
+	Header and Data:
+		DD 1A 0E 00 03 01 00 09 00 C0 10 00 02 00 0C 00
+		00 08 00 03 04 0E 01 43 FE 07
+	Strings:
+		Reference Code - ME
+		MEBx version
+		ME Firmware Version
+		Consumer SKU
 
 Handle 0x000F, DMI type 221, 54 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.7, MAC address 00:09:00:B1:60:00
-	NIC 2: PCI device 03:00.2, MAC address FF:FF:FF:FF:FF:04
-	NIC 3: PCI device ff:00.0, MAC address FF:FF:00:00:05:00
-	NIC 4: Not Installed
-	NIC 5: PCI device 00:01.2, MAC address 00:00:07:00:17:FF
-	NIC 6: Not Installed
+OEM-specific Type
+	Header and Data:
+		DD 36 0F 00 07 01 00 09 00 C0 10 00 02 03 FF FF
+		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
+		00 06 00 02 0A 00 00 00 07 00 17 FF FF FF FF 08
+		00 00 FF FF FF FF
+	Strings:
+		Reference Code - CML PCH
+		PCH-CRID Status
+		Disabled
+		PCH-CRID Original Value
+		PCH-CRID New Value
+		OPROM - RST - RAID
+		ChipsetInit Base Version
+		ChipsetInit Oem Version
 
 Handle 0x0010, DMI type 221, 54 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.7, MAC address 00:09:00:B1:60:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:55:00:03
-	NIC 3: PCI device 09:00.0, MAC address 00:B1:60:00:04:05
-	NIC 4: Not Installed
-	NIC 5: Disabled
-	NIC 6: PCI device 0c:00.0, MAC address 00:08:00:FF:FF:FF
+OEM-specific Type
+	Header and Data:
+		DD 36 10 00 07 01 00 09 00 C0 10 00 02 00 00 00
+		00 55 00 03 00 09 00 C0 10 00 04 05 FF FF FF FF
+		FF 06 00 00 00 00 0C 00 07 00 00 00 00 0C 00 08
+		00 FF FF FF FF FF
+	Strings:
+		Reference Code - SA - System Agent
+		Reference Code - MRC
+		SA - PCIe Version
+		SA-CRID Status
+		Enabled 
+		SA-CRID Original Value
+		SA-CRID New Value
+		OPROM - VBIOS
 
 Handle 0x0011, DMI type 221, 12 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.1, MAC address 00:04:00:00:00:00
+OEM-specific Type
+	Header and Data:
+		DD 0C 11 00 01 01 00 04 00 00 00 00
+	Strings:
+		FSP Binary Version
 
 Handle 0x0012, DMI type 7, 27 bytes
 Cache Information
@@ -296,6 +326,7 @@ System Slot Information
 	Bus Address: 0000:00:1d.4
 	Data Bus Width: 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0018, DMI type 41, 11 bytes
 Onboard Device
@@ -310,7 +341,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 19 00 31 00 00 00 0C 00 00 00 00 00 08 00
 		F8 00 84 02 00 00 00 00 01 00 00 00 01 00 0E 00
-		B1 07 41 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		FE 07 43 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x001A, DMI type 17, 84 bytes
@@ -326,27 +357,6 @@ Memory Device
 	Bank Locator: ChannelA
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: None
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x0008, DMI type 17, 84 bytes
 Memory Device
@@ -411,7 +421,7 @@ Handle 0x000B, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
-	Administrator Password Status: Disabled
+	Administrator Password Status: Enabled
 	Front Panel Reset Status: Disabled
 
 Handle 0x001B, DMI type 32, 11 bytes
@@ -427,7 +437,7 @@ OEM Strings
 	String 5: HRDWFEATS=VTX:1;VTD:1;SGX:0;NONHPBATDET:1;
 	String 6: MEFWRec
 
-Handle 0x0005, DMI type 10, 6 bytes
+Handle 0x0004, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
@@ -440,12 +450,20 @@ Group Associations
 		0x0000 (OEM-specific)
 
 Handle 0x001E, DMI type 219, 106 bytes
-HP ProLiant Information
-	Power Features: 0x45010401
-	Omega Features: 0x06900002
-	Misc. Features: 0x00000000
-		iCRU: No
-		UEFI: No
+OEM-specific Type
+	Header and Data:
+		DB 6A 1E 00 01 04 01 45 02 00 90 06 01 10 86 20
+		00 00 00 00 40 00 00 00 00 00 00 06 00 40 40 02
+		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00
+	Strings:
+		MEI1
+		MEI2
+		MEI3
+		MEI4
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

@@ -1,10 +1,10 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
-20 structures occupying 910 bytes.
-Table at 0x7BA99000.
+21 structures occupying 964 bytes.
+Table at 0xFFFFFFFFB9EC3000.
 
-Handle 0x0009, DMI type 0, 24 bytes
+Handle 0x000A, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Hewlett-Packard
 	Version: 68PHT Ver. F.0F
@@ -33,7 +33,7 @@ BIOS Information
 	BIOS Revision: 15.15
 	Firmware Revision: 14.18
 
-Handle 0x000A, DMI type 1, 27 bytes
+Handle 0x000B, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Hewlett-Packard
 	Product Name: HP ProBook 4310s
@@ -44,7 +44,7 @@ System Information
 	SKU Number: VC349EA#ACB
 	Family: 103C_5336AN
 
-Handle 0x000B, DMI type 2, 16 bytes
+Handle 0x000C, DMI type 2, 16 bytes
 Base Board Information
 	Manufacturer: Hewlett-Packard
 	Product Name: 7015
@@ -55,11 +55,11 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:  
-	Chassis Handle: 0x000C
+	Chassis Handle: 0x000D
 	Type: Unknown
 	Contained Object Handles: 0
 
-Handle 0x000C, DMI type 3, 17 bytes
+Handle 0x000D, DMI type 3, 17 bytes
 Chassis Information
 	Manufacturer: Hewlett-Packard
 	Type: Notebook
@@ -79,7 +79,7 @@ Processor Information
 	Type: Central Processor
 	Family: Other
 	Manufacturer: Intel(R) Corporation
-	ID: 7A 06 01 00 FF FB EB AF
+	ID: 7A 06 01 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 23, Stepping 10
 	Flags:
 		FPU (Floating-point unit on-chip)
@@ -107,6 +107,7 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		SS (Self-snoop)
+		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM)2 Duo CPU     T6570  @ 2.10GHz
@@ -171,7 +172,7 @@ Cache Information
 	System Type: Instruction
 	Associativity: 8-way Set-associative
 
-Handle 0x0010, DMI type 9, 13 bytes
+Handle 0x0011, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI SLOT1
 	Type: 32-bit PCI
@@ -183,13 +184,13 @@ System Slot Information
 		PME signal is supported
 		SMBus signal is supported
 
-Handle 0x000E, DMI type 10, 6 bytes
+Handle 0x000F, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
 	Description: 64
 
-Handle 0x000F, DMI type 11, 5 bytes
+Handle 0x0010, DMI type 11, 5 bytes
 OEM Strings
 	String 1: ABS 70/71 79 7A 7B 7C
 	String 2: CSM v01.3B
@@ -209,8 +210,8 @@ Memory Device
 	Array Handle: 0x0004
 	Error Information Handle: Not Provided
 	Total Width: Unknown
-	Data Width: 65476 bits
-	Size: 2048 MB
+	Data Width: 65508 bits
+	Size: 4096 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Top
@@ -221,60 +222,73 @@ Memory Device
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5673EH1-CH9 
+	Part Number: M471B5273EH1-CF8 
 
 Handle 0x0007, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0004
 	Error Information Handle: Not Provided
 	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Data Width: 65476 bits
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 800 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
+	Part Number: M471B5673EH1-CH9 
 
-Handle 0x0008, DMI type 19, 15 bytes
+Handle 0x0009, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 6 GB
 	Physical Array Handle: 0x0004
 	Partition Width: 2
 
 Handle 0x0006, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0005
+	Memory Array Mapped Address Handle: 0x0009
+	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x0008, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
 	Ending Address: 0x0007FFFFFFF
 	Range Size: 2 GB
-	Physical Device Handle: 0x0005
-	Memory Array Mapped Address Handle: 0x0008
+	Physical Device Handle: 0x0007
+	Memory Array Mapped Address Handle: 0x0009
 	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 1
 
-Handle 0x000D, DMI type 32, 20 bytes
+Handle 0x000E, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0011, DMI type 129, 8 bytes
+Handle 0x0012, DMI type 129, 8 bytes
 OEM-specific Type
 	Header and Data:
-		81 08 11 00 01 01 02 00
+		81 08 12 00 01 01 02 00
 	Strings:
 		Intel_ASF
 		Intel_ASF_001
 
-Handle 0x0012, DMI type 130, 20 bytes
+Handle 0x0013, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 12 00 24 41 4D 54 01 00 00 00 00 A5 0B 02
+		82 14 13 00 24 41 4D 54 01 00 00 00 00 A5 0B 02
 		00 00 00 00
 
 Handle 0xFFFD, DMI type 127, 4 bytes

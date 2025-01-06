@@ -3,14 +3,14 @@ Getting SMBIOS data from sysfs.
 SMBIOS 3.3 present.
 # SMBIOS implementations newer than version 3.1.1 are not
 # fully supported by this version of dmidecode.
-33 structures occupying 2501 bytes.
-Table at 0x20970000.
+34 structures occupying 2526 bytes.
+Table at 0x30970000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: T74 Ver. 01.12.00
-	Release Date: 12/30/2022
+	Version: T74 Ver. 01.14.00
+	Release Date: 06/28/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -33,8 +33,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 12.0
-	Firmware Revision: 51.34
+	BIOS Revision: 14.0
+	Firmware Revision: 51.36
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -90,7 +90,7 @@ Handle 0x0005, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 87ED
-	Version: KBC Version 33.22.00
+	Version: KBC Version 33.24.00
 	Serial Number: --
 	Asset Tag: --
 	...
@@ -120,7 +120,7 @@ Memory Array Mapped Address
 Handle 0x0018, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 1: PCI device 01:00.3, MAC address 00:0A:00:7D:70:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:A6:00:03
+	NIC 2: PCI device 00:00.2, MAC address 00:00:00:AC:00:03
 
 Handle 0x0019, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
@@ -144,8 +144,8 @@ HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 5: Disabled
 	NIC 6: PCI device 01:00.0, MAC address 00:08:00:FF:FF:FF
 	NIC 7: Not Installed
-	NIC 8: PCI device 0a:00.0, MAC address 00:00:00:00:FC:00
-	NIC 9: PCI device 00:01.3, MAC address 2E:01:00:00:00:0C
+	NIC 8: PCI device 0a:00.0, MAC address 00:00:00:00:FB:00
+	NIC 9: PCI device 00:01.3, MAC address 30:01:00:00:00:0C
 
 Handle 0x001C, DMI type 221, 12 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
@@ -284,7 +284,15 @@ Port Connector Information
 	External Connector Type: SAS/SATA Plug Receptacle
 	Port Type: SATA
 
-Handle 0x0023, DMI type 9, 24 bytes
+Handle 0x0023, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: HDMI
+	Internal Connector Type: Other
+	External Reference Designator: HDMI Port
+	External Connector Type: Other
+	Port Type: Video Port
+
+Handle 0x0024, DMI type 9, 24 bytes
 System Slot Information
 	Designation: M2 WLAN/BT
 	Type: x1 PCI Express 3 x1
@@ -297,7 +305,7 @@ System Slot Information
 		SMBus signal is supported
 	Bus Address: 0000:00:14.3
 
-Handle 0x0024, DMI type 9, 24 bytes
+Handle 0x0025, DMI type 9, 24 bytes
 System Slot Information
 	Designation: M2 SSD
 	Type: x4 PCI Express 3 x4
@@ -310,7 +318,7 @@ System Slot Information
 		SMBus signal is supported
 	Bus Address: 0000:00:1d.0
 
-Handle 0x0025, DMI type 41, 11 bytes
+Handle 0x0026, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard IGD
 	Type: Video
@@ -318,15 +326,15 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 
-Handle 0x0027, DMI type 131, 64 bytes
+Handle 0x0028, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 27 00 31 00 00 00 0F 00 00 00 00 00 04 00
+		83 40 28 00 31 00 00 00 0F 00 00 00 00 00 04 00
 		F8 00 82 A0 00 00 00 00 01 00 00 00 00 00 0F 00
-		BB 08 2A 00 00 00 00 00 FE 00 FC 15 00 00 00 00
+		6B 09 2D 00 00 00 00 00 FE 00 FC 15 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0026, DMI type 17, 92 bytes
+Handle 0x0027, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x0006
 	Error Information Handle: Not Provided
@@ -350,7 +358,7 @@ Memory Device
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
 
-Handle 0x0028, DMI type 17, 92 bytes
+Handle 0x0029, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x0006
 	Error Information Handle: Not Provided
@@ -379,7 +387,7 @@ Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0026
+	Physical Device Handle: 0x0027
 	Memory Array Mapped Address Handle: 0x0017
 	Partition Row Position: 1
 
@@ -421,7 +429,7 @@ Handle 0x000B, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
-	Description: 512 MB
+	Description: 256 MB
 
 Handle 0x000C, DMI type 14, 8 bytes
 Group Associations

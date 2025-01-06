@@ -1,8 +1,6 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0xB334C000.
 
 Handle 0x0000, DMI type 18, 23 bytes
@@ -54,8 +52,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -70,8 +68,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 16384 kB
-	Maximum Size: 16384 kB
+	Installed Size: 16 MB
+	Maximum Size: 16 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -159,8 +157,10 @@ Handle 0x000B, DMI type 18, 23 bytes
 Handle 0x000F, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: IFX
-	Specification Version: 2.0	Firmware Revision: 7.85
-	Description: SLB9670	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 7.85
+	Description: SLB9670
+	Characteristics:
 		Family configurable via firmware update
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
@@ -282,6 +282,8 @@ System Slot Information
 		PME signal is supported
 		SMBus signal is supported
 	Bus Address: 0000:00:02.4
+	Data Bus Width: 77
+	Peer Devices: 46
 
 Handle 0x0019, DMI type 9, 24 bytes
 System Slot Information
@@ -295,6 +297,8 @@ System Slot Information
 		PME signal is supported
 		SMBus signal is supported
 	Bus Address: 0000:00:01.3
+	Data Bus Width: 77
+	Peer Devices: 46
 
 Handle 0x001A, DMI type 9, 24 bytes
 System Slot Information
@@ -308,6 +312,9 @@ System Slot Information
 		PME signal is supported
 		SMBus signal is supported
 	Bus Address: 0000:00:01.2
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x001B, DMI type 41, 11 bytes
 Onboard Device
@@ -323,7 +330,7 @@ Memory Device
 	Error Information Handle: 0x0007
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(left)
@@ -358,7 +365,7 @@ Memory Device
 	Error Information Handle: 0x000B
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(right)

@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1 present.
-34 structures occupying 2389 bytes.
+34 structures occupying 2383 bytes.
 Table at 0xCEE73000.
 
 Handle 0x0000, DMI type 43, 31 bytes
@@ -127,39 +127,72 @@ Memory Array Mapped Address
 	Partition Width: 1
 
 Handle 0x000D, DMI type 221, 26 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:07:00:76:30:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:F0:00:03
+OEM-specific Type
+	Header and Data:
+		DD 1A 0D 00 03 01 00 07 00 76 30 00 02 00 00 00
+		00 F0 00 03 00 01 05 00 00 00
+	Strings:
+		Reference Code - CPU
+		uCode Version
+		TXT ACM version
 
 Handle 0x000E, DMI type 221, 26 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:07:00:76:30:00
-	NIC 2: PCI device 00:00.2, MAC address 0C:00:00:0B:00:03
+OEM-specific Type
+	Header and Data:
+		DD 1A 0E 00 03 01 00 07 00 76 30 00 02 00 0C 00
+		00 0B 00 03 04 0C 00 5A 18 08
+	Strings:
+		Reference Code - ME
+		MEBx version
+		ME Firmware Version
+		Corporate SKU
 
 Handle 0x000F, DMI type 221, 82 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:01.3, MAC address 00:07:00:76:30:00
-	NIC 2: PCI device 03:00.2, MAC address FF:FF:FF:FF:FF:04
-	NIC 3: PCI device ff:00.0, MAC address FF:FF:30:00:05:00
-	NIC 4: Not Installed
-	NIC 5: PCI device 00:01.2, MAC address 00:00:07:00:02:00
-	NIC 6: Disabled
-	NIC 7: Disabled
-	NIC 8: PCI device 0a:00.0, MAC address 00:07:00:00:00:00
-	NIC 9: PCI device 00:01.3, MAC address 06:00:00:00:00:0C
+OEM-specific Type
+	Header and Data:
+		DD 52 0F 00 0B 01 00 07 00 76 30 00 02 03 FF FF
+		FF FF FF 04 00 FF FF FF 30 00 05 00 FF FF FF 11
+		00 06 00 02 0A 00 00 00 07 00 02 00 00 00 00 08
+		00 09 00 00 00 00 09 00 0D 00 00 00 00 0A 00 07
+		00 00 00 00 0B 00 06 00 00 00 00 0C 00 08 00 00
+		00 00
+	Strings:
+		Reference Code - CNL PCH
+		PCH-CRID Status
+		Enabled 
+		PCH-CRID Original Value
+		PCH-CRID New Value
+		OPROM - RST - RAID
+		CNL PCH H A0 Hsio Version
+		CNL PCH H Ax Hsio Version
+		CNL PCH H Bx Hsio Version
+		CNL PCH LP B0 Hsio Version
+		CNL PCH LP Bx Hsio Version
+		CNL PCH LP Dx Hsio Version
 
 Handle 0x0010, DMI type 221, 54 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.7, MAC address 00:07:00:76:30:00
-	NIC 2: PCI device 00:00.2, MAC address 00:07:01:79:00:03
-	NIC 3: PCI device 07:00.0, MAC address 00:76:30:00:04:05
-	NIC 4: Not Installed
-	NIC 5: Disabled
-	NIC 6: PCI device 0c:00.0, MAC address 00:08:00:FF:FF:FF
+OEM-specific Type
+	Header and Data:
+		DD 36 10 00 07 01 00 07 00 76 30 00 02 00 00 07
+		01 79 00 03 00 07 00 76 30 00 04 05 FF FF FF FF
+		FF 06 00 00 00 00 0C 00 07 00 00 00 00 0C 00 08
+		00 FF FF FF FF FF
+	Strings:
+		Reference Code - SA - System Agent
+		Reference Code - MRC
+		SA - PCIe Version
+		SA-CRID Status
+		Enabled 
+		SA-CRID Original Value
+		SA-CRID New Value
+		OPROM - VBIOS
 
 Handle 0x0011, DMI type 221, 12 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.1, MAC address 00:04:00:00:00:00
+OEM-specific Type
+	Header and Data:
+		DD 0C 11 00 01 01 00 04 00 00 00 00
+	Strings:
+		FSP Binary Version
 
 Handle 0x0012, DMI type 7, 27 bytes
 Cache Information
@@ -341,16 +374,6 @@ Memory Device
 	Bank Locator: ChannelA0
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x0008, DMI type 17, 40 bytes
 Memory Device
@@ -366,10 +389,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2667 MT/s
-	Manufacturer: Hynix/Hyundai
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	EFE581C4A468A7157E0A353DEDC0CF60    
+	2AFD17A55C81F76680FACD0551834C9C    
 	Rank: 2
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: Unknown
@@ -433,12 +456,20 @@ Group Associations
 		0x0000 (OEM-specific)
 
 Handle 0x0020, DMI type 219, 106 bytes
-HP ProLiant Information
-	Power Features: 0x45010401
-	Omega Features: 0x06900002
-	Misc. Features: 0x04000000
-		iCRU: No
-		UEFI: No
+OEM-specific Type
+	Header and Data:
+		DB 6A 20 00 01 04 01 45 02 00 A0 06 81 10 80 30
+		00 00 00 04 48 00 00 00 00 00 00 04 00 40 40 02
+		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00
+	Strings:
+		MEI1
+		MEI2
+		MEI3
+		MEI4
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

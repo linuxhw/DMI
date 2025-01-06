@@ -1,10 +1,10 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-25 structures occupying 1168 bytes.
+26 structures occupying 1224 bytes.
 Table at 0xBCDB8000.
 
-Handle 0x000A, DMI type 0, 24 bytes
+Handle 0x000B, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Hewlett-Packard
 	Version: 68SRR Ver. F.23
@@ -33,7 +33,7 @@ BIOS Information
 	BIOS Revision: 15.35
 	Firmware Revision: 34.33
 
-Handle 0x000B, DMI type 1, 27 bytes
+Handle 0x000C, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Hewlett-Packard
 	Product Name: HP ProBook 4330s
@@ -44,7 +44,7 @@ System Information
 	SKU Number: LY464EA#ABU
 	Family: 103C_5336AN
 
-Handle 0x000C, DMI type 2, 16 bytes
+Handle 0x000D, DMI type 2, 16 bytes
 Base Board Information
 	Manufacturer: Hewlett-Packard
 	Product Name: 167E
@@ -55,11 +55,11 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:  
-	Chassis Handle: 0x000D
+	Chassis Handle: 0x000E
 	Type: Unknown
 	Contained Object Handles: 0
 
-Handle 0x000D, DMI type 3, 17 bytes
+Handle 0x000E, DMI type 3, 17 bytes
 Chassis Information
 	Manufacturer: Hewlett-Packard
 	Type: Notebook
@@ -193,7 +193,7 @@ Cache Information
 	System Type: Unknown
 	Associativity: 16-way Set-associative
 
-Handle 0x0013, DMI type 9, 13 bytes
+Handle 0x0014, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI SLOT1
 	Type: 32-bit PCI
@@ -205,13 +205,13 @@ System Slot Information
 		PME signal is supported
 		SMBus signal is supported
 
-Handle 0x000F, DMI type 10, 6 bytes
+Handle 0x0010, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
 	Description: 32
 
-Handle 0x0012, DMI type 11, 5 bytes
+Handle 0x0013, DMI type 11, 5 bytes
 OEM Strings
 	String 1: ABS 70/71 79 7A 7B 7C
 	String 2: CSM v01.52
@@ -219,7 +219,7 @@ OEM Strings
 	String 4: www.hp.com
 	String 5: $OSTYPE
 
-Handle 0x0016, DMI type 13, 22 bytes
+Handle 0x0017, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 12
@@ -269,26 +269,26 @@ Handle 0x0008, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0005
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
+	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(top)
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
+	Part Number: 16KTF51264HZ-1G6M1
 
-Handle 0x0009, DMI type 19, 15 bytes
+Handle 0x000A, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0005
 	Partition Width: 2
 
@@ -298,12 +298,23 @@ Memory Device Mapped Address
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0006
-	Memory Array Mapped Address Handle: 0x0009
+	Memory Array Mapped Address Handle: 0x000A
 	Partition Row Position: 1
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x0014, DMI type 22, 26 bytes
+Handle 0x0009, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0008
+	Memory Array Mapped Address Handle: 0x000A
+	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 1
+
+Handle 0x0015, DMI type 22, 26 bytes
 Portable Battery
 	Location: Primary
 	Manufacturer: 13-15
@@ -317,11 +328,11 @@ Portable Battery
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
-Handle 0x000E, DMI type 32, 20 bytes
+Handle 0x000F, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0010, DMI type 41, 11 bytes
+Handle 0x0011, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: 32
 	Type: Video
@@ -329,7 +340,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 
-Handle 0x0011, DMI type 41, 11 bytes
+Handle 0x0012, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: WLAN
 	Type: Ethernet
@@ -337,18 +348,18 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:24:00.0
 
-Handle 0x0017, DMI type 131, 64 bytes
+Handle 0x0018, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 17 00 10 00 00 00 00 00 00 00 00 00 00 00
+		83 40 18 00 10 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 49 1C FF FF FF FF 01 00 00 00 01 00 07 00
 		1D 04 03 00 00 00 00 00 E5 24 FF FF 00 00 00 00
 		04 01 00 00 00 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0015, DMI type 137, 12 bytes
+Handle 0x0016, DMI type 137, 12 bytes
 OEM-specific Type
 	Header and Data:
-		89 0C 15 00 01 00 F0 03 F0 FF 00 00
+		89 0C 16 00 01 00 F0 03 F0 FF 00 00
 
 Handle 0xFFFD, DMI type 127, 4 bytes
 End Of Table

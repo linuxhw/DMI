@@ -1,8 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-34 structures occupying 1744 bytes.
-Table at 0x000E9480.
+33 structures occupying 1685 bytes.
+Table at 0x000E94B0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -79,7 +79,8 @@ Chassis Information
 Handle 0x0004, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI Express Graphic X16
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Other
 	ID: 0
@@ -91,7 +92,8 @@ System Slot Information
 Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI Express X1-0
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 0
@@ -103,7 +105,8 @@ System Slot Information
 Handle 0x0006, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI Express X1-1
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Other
 	ID: 1
@@ -163,25 +166,11 @@ Built-in Pointing Device
 	Interface: PS/2
 	Buttons: 4
 
-Handle 0x000D, DMI type 22, 26 bytes
-Portable Battery
-	Location: In the back
-	Manufacturer: GW
-	Name: MU06047
-	Chemistry: Lithium Ion
-	Design Capacity: 4400 mWh
-	Design Voltage: 10800 mV
-	SBDS Version: 3.1
-	Maximum Error: 1%
-	SBDS Serial Number: --
-	SBDS Manufacture Date: 2020-12-18
-	OEM-specific Information: 0xFFFFFFFF
-
-Handle 0x000E, DMI type 32, 20 bytes
+Handle 0x000D, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x000F, DMI type 41, 11 bytes
+Handle 0x000E, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Intel(R) Graphics Media Accelerator HD
 	Type: Video
@@ -189,7 +178,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:00.2
 
-Handle 0x0010, DMI type 41, 11 bytes
+Handle 0x000F, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: ATI Mobility Radeon HD 6550
 	Type: Video
@@ -197,7 +186,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:01:00.0
 
-Handle 0x0011, DMI type 41, 11 bytes
+Handle 0x0010, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Atheros AR9285 802.11b/g/n WiFi Adapter
 	Type: Other
@@ -205,15 +194,15 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:02:00.0
 
-Handle 0x0012, DMI type 131, 64 bytes
+Handle 0x0011, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 12 00 11 00 00 00 00 00 44 00 05 00 00 00
+		83 40 11 00 11 00 00 00 00 00 44 00 05 00 00 00
 		F8 00 09 3B 00 00 00 00 01 20 00 00 01 00 06 00
 		15 04 01 00 00 00 00 00 C8 00 FF FF 00 00 00 FF
 		00 00 00 00 76 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0013, DMI type 4, 42 bytes
+Handle 0x0012, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPU
 	Type: Central Processor
@@ -257,9 +246,9 @@ Processor Information
 	Current Speed: 2666 MHz
 	Status: Populated, Enabled
 	Upgrade: ZIF Socket
-	L1 Cache Handle: 0x0017
-	L2 Cache Handle: 0x0016
-	L3 Cache Handle: 0x0014
+	L1 Cache Handle: 0x0016
+	L2 Cache Handle: 0x0015
+	L3 Cache Handle: 0x0013
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
@@ -269,7 +258,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0014, DMI type 7, 19 bytes
+Handle 0x0013, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L3 Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -285,7 +274,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 12-way Set-associative
 
-Handle 0x0015, DMI type 7, 19 bytes
+Handle 0x0014, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -301,7 +290,7 @@ Cache Information
 	System Type: Data
 	Associativity: 8-way Set-associative
 
-Handle 0x0016, DMI type 7, 19 bytes
+Handle 0x0015, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -317,7 +306,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0017, DMI type 7, 19 bytes
+Handle 0x0016, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -333,7 +322,7 @@ Cache Information
 	System Type: Instruction
 	Associativity: 4-way Set-associative
 
-Handle 0x0018, DMI type 16, 15 bytes
+Handle 0x0017, DMI type 16, 15 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -342,10 +331,10 @@ Physical Memory Array
 	Error Information Handle: No Error
 	Number Of Devices: 2
 
-Handle 0x0019, DMI type 17, 28 bytes
+Handle 0x0018, DMI type 17, 28 bytes
 Memory Device
-	Array Handle: 0x0018
-	Error Information Handle: 0x001A
+	Array Handle: 0x0017
+	Error Information Handle: 0x0019
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 4 GB
@@ -362,7 +351,7 @@ Memory Device
 	Part Number: HMT351S6BFR8C-H9  
 	Rank: 2
 
-Handle 0x001A, DMI type 18, 23 bytes
+Handle 0x0019, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -372,21 +361,21 @@ Handle 0x001A, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x001B, DMI type 20, 19 bytes
+Handle 0x001A, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0019
-	Memory Array Mapped Address Handle: 0x0020
+	Physical Device Handle: 0x0018
+	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: 2
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x001C, DMI type 17, 28 bytes
+Handle 0x001B, DMI type 17, 28 bytes
 Memory Device
-	Array Handle: 0x0018
-	Error Information Handle: 0x001D
+	Array Handle: 0x0017
+	Error Information Handle: 0x001C
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 4 GB
@@ -403,7 +392,7 @@ Memory Device
 	Part Number: M471B5273DH0-CH9  
 	Rank: 2
 
-Handle 0x001D, DMI type 18, 23 bytes
+Handle 0x001C, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -413,18 +402,18 @@ Handle 0x001D, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x001E, DMI type 20, 19 bytes
+Handle 0x001D, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x001C
-	Memory Array Mapped Address Handle: 0x0020
+	Physical Device Handle: 0x001B
+	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: 2
 	Interleave Position: 2
 	Interleaved Data Depth: 1
 
-Handle 0x001F, DMI type 18, 23 bytes
+Handle 0x001E, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -434,14 +423,14 @@ Handle 0x001F, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0020, DMI type 19, 15 bytes
+Handle 0x001F, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Array Handle: 0x0018
+	Physical Array Handle: 0x0017
 	Partition Width: 2
 
-Handle 0x0021, DMI type 127, 4 bytes
+Handle 0x0020, DMI type 127, 4 bytes
 End Of Table
 

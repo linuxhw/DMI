@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
-32 structures occupying 2264 bytes.
+32 structures occupying 2268 bytes.
 Table at 0xCEDB5000.
 
 Handle 0x0000, DMI type 43, 31 bytes
@@ -18,8 +18,8 @@ TPM Device
 Handle 0x0001, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: S71 Ver. 01.16.00
-	Release Date: 12/30/2022
+	Version: S71 Ver. 01.21.00
+	Release Date: 04/12/2024
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -42,14 +42,14 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 16.0
-	Firmware Revision: 2.59
+	BIOS Revision: 21.0
+	Firmware Revision: 2.60
 
 Handle 0x0002, DMI type 1, 27 bytes
 System Information
 	Manufacturer: HP
 	Product Name: HP ProBook 440 G7
-	Version:  
+	Version: SBKPF
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -99,7 +99,7 @@ Handle 0x0006, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 869D
-	Version: KBC Version 02.3B.00
+	Version: KBC Version 02.3C.00
 	Serial Number: --
 	Asset Tag: --
 	97946E993916094B22613E03B8339091
@@ -129,8 +129,8 @@ Memory Array Mapped Address
 Handle 0x000D, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 0D 00 03 01 00 09 00 C0 10 00 02 00 00 00
-		00 F4 00 03 00 FF FF FF FF FF
+		DD 1A 0D 00 03 01 00 09 00 C0 20 00 02 00 00 00
+		00 FA 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -139,8 +139,8 @@ OEM-specific Type
 Handle 0x000E, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 0E 00 03 01 00 09 00 C0 10 00 02 00 0C 00
-		00 08 00 03 04 0E 01 43 FE 07
+		DD 1A 0E 00 03 01 00 09 00 C0 20 00 02 00 0C 00
+		00 08 00 03 04 0E 01 48 EF 08
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -150,7 +150,7 @@ OEM-specific Type
 Handle 0x000F, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 0F 00 07 01 00 09 00 C0 10 00 02 03 FF FF
+		DD 36 0F 00 07 01 00 09 00 C0 20 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
 		00 06 00 02 0A 00 00 00 07 00 17 FF FF FF FF 08
 		00 00 FF FF FF FF
@@ -167,8 +167,8 @@ OEM-specific Type
 Handle 0x0010, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 10 00 07 01 00 09 00 C0 10 00 02 00 00 00
-		00 55 00 03 00 09 00 C0 10 00 04 05 FF FF FF FF
+		DD 36 10 00 07 01 00 09 00 C0 20 00 02 00 00 00
+		00 55 00 03 00 09 00 C0 20 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 0C 00 07 00 00 00 00 0C 00 08
 		00 FF FF FF FF FF
 	Strings:
@@ -300,7 +300,8 @@ Processor Information
 Handle 0x0016, DMI type 9, 24 bytes
 System Slot Information
 	Designation: M2 WLAN/BT
-	Type: x1 PCI Express 3 x1
+	Type: PCI Express 3 x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Long
 	ID: 1
@@ -309,13 +310,14 @@ System Slot Information
 		PME signal is supported
 		SMBus signal is supported
 	Bus Address: 0000:00:14.3
-	Data Bus Width: 77
+	Data Bus Width (Base): 77
 	Peer Devices: 50
 
 Handle 0x0017, DMI type 9, 24 bytes
 System Slot Information
 	Designation: M2 SSD
-	Type: x4 PCI Express 3 x4
+	Type: PCI Express 3 x4
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Long
 	ID: 2
@@ -324,7 +326,7 @@ System Slot Information
 		PME signal is supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1d.4
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
@@ -341,7 +343,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 19 00 31 00 00 00 0C 00 00 00 00 00 08 00
 		F8 00 84 02 00 00 00 00 01 00 00 00 01 00 0E 00
-		FE 07 43 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		EF 08 48 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x001A, DMI type 17, 84 bytes
@@ -452,7 +454,7 @@ Group Associations
 Handle 0x001E, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 1E 00 01 04 01 45 02 00 90 06 01 10 80 20
+		DB 6A 1E 00 01 04 01 45 02 00 90 06 01 10 86 20
 		00 00 00 00 40 00 00 00 00 00 00 06 00 40 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

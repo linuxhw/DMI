@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-31 structures occupying 1559 bytes.
+30 structures occupying 1501 bytes.
 Table at 0xB9E3F000.
 
 Handle 0x000B, DMI type 0, 24 bytes
@@ -184,8 +184,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Asynchronous
 	Installed SRAM Type: Asynchronous
@@ -269,7 +269,7 @@ OEM Strings
 	String 5: HP_Mute_LED_0_0
 	String 6: www.hp.com
 
-Handle 0x001D, DMI type 13, 22 bytes
+Handle 0x001C, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 14
@@ -287,7 +287,7 @@ BIOS Language Information
 		sv-SE
 		zh-CN
 		zh-TW
-	Currently Installed Language: en-US
+	Currently Installed Language: fr-FR
 
 Handle 0x0006, DMI type 16, 23 bytes
 Physical Memory Array
@@ -325,7 +325,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Top - Slot 2 (under)
@@ -359,20 +359,6 @@ Memory Device Mapped Address
 	Interleave Position: 1
 	Interleaved Data Depth: 1
 
-Handle 0x001B, DMI type 22, 26 bytes
-Portable Battery
-	Location: Primary
-	Manufacturer: 14-15
-	Name: FP06047
-	Design Capacity: 47520 mWh
-	Design Voltage: 10800 mV
-	SBDS Version: 1.1
-	Maximum Error: Unknown
-	SBDS Serial Number: --
-	SBDS Manufacture Date: 2013-11-22
-	SBDS Chemistry: LION
-	OEM-specific Information: 0x00000000
-
 Handle 0x000F, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
@@ -401,10 +387,10 @@ OEM-specific Type
 		BB 05 16 00 00 00 00 00 E5 03 FF FF 00 00 00 00
 		04 0C 00 00 00 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x001C, DMI type 137, 12 bytes
+Handle 0x001B, DMI type 137, 12 bytes
 OEM-specific Type
 	Header and Data:
-		89 0C 1C 00 01 00 F0 03 F0 FF 00 00
+		89 0C 1B 00 01 00 F0 03 F0 FF 00 00
 
 Handle 0xFFFD, DMI type 127, 4 bytes
 End Of Table

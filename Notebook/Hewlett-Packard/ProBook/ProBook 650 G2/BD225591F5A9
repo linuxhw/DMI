@@ -1,8 +1,8 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-34 structures occupying 2195 bytes.
-Table at 0xC77EB000.
+34 structures occupying 2196 bytes.
+Table at 0x9F8EB000.
 
 Handle 0x0000, DMI type 7, 19 bytes
 Cache Information
@@ -42,8 +42,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -58,8 +58,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -106,7 +106,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-6820HQ CPU @ 2.70GHz
-	Voltage: 1.2 V
+	Voltage: 1.1 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
 	Current Speed: 3200 MHz
@@ -149,8 +149,8 @@ Memory Array Mapped Address
 Handle 0x000B, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: HP
-	Version: N87 Ver. 01.59
-	Release Date: 12/15/2022
+	Version: N87 Ver. 01.60
+	Release Date: 03/16/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -173,7 +173,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.59
+	BIOS Revision: 1.60
 	Firmware Revision: 35.116
 
 Handle 0x000C, DMI type 1, 27 bytes
@@ -249,7 +249,7 @@ Handle 0x0011, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
-	Description: 32 MB
+	Description: 512 MB
 
 Handle 0x0012, DMI type 8, 9 bytes
 Port Connector Information
@@ -308,7 +308,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Top-Slot 1(left)
@@ -321,7 +321,7 @@ Memory Device
 	Asset Tag: --
 	...
 	Rank: 1
-	Configured Clock Speed: 2133 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -332,7 +332,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Top-Slot 2(right)
@@ -345,7 +345,7 @@ Memory Device
 	Asset Tag: --
 	...
 	Rank: 1
-	Configured Clock Speed: 2133 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -372,14 +372,14 @@ Memory Device Mapped Address
 Handle 0x0009, DMI type 22, 26 bytes
 Portable Battery
 	Location: Primary
-	Manufacturer: 333-54-2A
+	Manufacturer: 333-42-2A
 	Name: CI03048XL
-	Design Capacity: 48010 mWh
+	Design Capacity: 50160 mWh
 	Design Voltage: 11400 mV
 	SBDS Version: 1.1
 	Maximum Error: Unknown
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 2017-02-09
+	SBDS Manufacture Date: 2023-06-05
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 

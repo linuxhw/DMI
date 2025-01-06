@@ -1,5 +1,5 @@
-# dmidecode 2.12
-# SMBIOS entry point at 0x9aebef98
+# dmidecode 3.5
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 36 structures occupying 2004 bytes.
 Table at 0x9AEBC000.
@@ -19,26 +19,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(top)
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
-	Manufacturer: Micron Technology
+	Speed: 1600 MT/s
+	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 8KTF25664HZ-1G6M1 
-	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Part Number: HMT351S6CFR8C-PB  
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0003, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0001
 	Memory Array Mapped Address Handle: 0x0007
 	Partition Row Position: 1
@@ -51,26 +51,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(under)
 	Bank Locator: BANK 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
-	Manufacturer: Hynix
+	Speed: 1600 MT/s
+	Manufacturer: Micron Technology
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT351S6CFR8C-PB  
-	Rank: 2
-	Configured Clock Speed: 1600 MHz
+	Part Number: 8KTF25664HZ-1G6M1 
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0006, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0004
 	Memory Array Mapped Address Handle: 0x0007
 	Partition Row Position: 1
@@ -378,10 +378,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz
-	Voltage: 0.8 V
+	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 1200 MHz
+	Current Speed: 2500 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket rPGA988B
 	L1 Cache Handle: 0x0023
@@ -455,8 +455,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown

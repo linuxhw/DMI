@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-48 structures occupying 2164 bytes.
+47 structures occupying 2104 bytes.
 Table at 0x3AEBC000.
 
 Handle 0x0000, DMI type 16, 23 bytes
@@ -405,32 +405,18 @@ BIOS Language Information
 		zh|TW|unicode
 	Currently Installed Language: fr|CA|iso8859-1
 
-Handle 0x002D, DMI type 22, 26 bytes
-Portable Battery
-	Location: In the back
-	Manufacturer: 12-54
-	Name: MO06062
-	Chemistry: Lithium Ion
-	Design Capacity: 71280 mWh
-	Design Voltage: 10800 mV
-	SBDS Version: 1
-	Maximum Error: 1%
-	SBDS Serial Number: --
-	SBDS Manufacture Date: 2019-07-26
-	OEM-specific Information: 0x0000FFFF
-
-Handle 0x002E, DMI type 24, 5 bytes
+Handle 0x002D, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
 
-Handle 0x0031, DMI type 32, 20 bytes
+Handle 0x0030, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0034, DMI type 41, 11 bytes
+Handle 0x0033, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Realtek PCIe GBE Family Controller
 	Type: Ethernet
@@ -438,15 +424,15 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:07:00.2
 
-Handle 0x0039, DMI type 131, 64 bytes
+Handle 0x0038, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 39 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 38 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 57 1E FF FF FF FF 01 20 00 00 00 00 08 00
 		A1 05 04 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 FF 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x003A, DMI type 41, 11 bytes
+Handle 0x0039, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Broadcom 802.11b/g/n WLAN
 	Type: Other
@@ -454,7 +440,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:08:00.0
 
-Handle 0x003B, DMI type 4, 42 bytes
+Handle 0x003A, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: U3E1
 	Type: Central Processor
@@ -498,9 +484,9 @@ Processor Information
 	Current Speed: 2500 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket rPGA988B
-	L1 Cache Handle: 0x003D
-	L2 Cache Handle: 0x003E
-	L3 Cache Handle: 0x003F
+	L1 Cache Handle: 0x003C
+	L2 Cache Handle: 0x003D
+	L3 Cache Handle: 0x003E
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
@@ -515,7 +501,7 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x003C, DMI type 7, 19 bytes
+Handle 0x003B, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -531,7 +517,7 @@ Cache Information
 	System Type: Data
 	Associativity: 8-way Set-associative
 
-Handle 0x003D, DMI type 7, 19 bytes
+Handle 0x003C, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -547,7 +533,7 @@ Cache Information
 	System Type: Instruction
 	Associativity: 8-way Set-associative
 
-Handle 0x003E, DMI type 7, 19 bytes
+Handle 0x003D, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -563,7 +549,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x003F, DMI type 7, 19 bytes
+Handle 0x003E, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L3 Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -579,6 +565,6 @@ Cache Information
 	System Type: Unified
 	Associativity: 12-way Set-associative
 
-Handle 0x0040, DMI type 127, 4 bytes
+Handle 0x003F, DMI type 127, 4 bytes
 End Of Table
 

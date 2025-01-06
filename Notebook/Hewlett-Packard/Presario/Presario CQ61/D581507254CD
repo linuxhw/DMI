@@ -1,8 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-25 structures occupying 1254 bytes.
-Table at 0x000E92D0.
+24 structures occupying 1178 bytes.
+Table at 0x000E9320.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -136,25 +136,11 @@ Handle 0x0009, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x000A, DMI type 22, 26 bytes
-Portable Battery
-	Location: Primary
-	Manufacturer: SDI-KTY
-	Manufacture Date: Unknown
-	Serial Number: --
-	Name: EV06047
-	Design Capacity: 47520 mWh
-	Design Voltage: 10800 mV
-	SBDS Version: 3.1
-	Maximum Error: 2%
-	SBDS Chemistry: LION
-	OEM-specific Information: 0xFFFFFFFF
-
-Handle 0x000B, DMI type 32, 20 bytes
+Handle 0x000A, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x000C, DMI type 41, 11 bytes
+Handle 0x000B, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: 256
 	Type: Video
@@ -162,7 +148,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:01:05.0
 
-Handle 0x000D, DMI type 41, 11 bytes
+Handle 0x000C, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: AR5007 802.11b/g WiFi Adapter
 	Type: Other
@@ -170,7 +156,7 @@ Onboard Device
 	Type Instance: 2
 	Bus Address: 0000:08:00.0
 
-Handle 0x000E, DMI type 4, 42 bytes
+Handle 0x000D, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: Socket S1G3
 	Type: Central Processor
@@ -209,9 +195,9 @@ Processor Information
 	Current Speed: 2100 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket S1
-	L1 Cache Handle: 0x000F
-	L2 Cache Handle: 0x0010
-	L3 Cache Handle: 0x0011
+	L1 Cache Handle: 0x000E
+	L2 Cache Handle: 0x000F
+	L3 Cache Handle: 0x0010
 	Serial Number: --
 	Asset Tag: --
 	Part Number: FFFF
@@ -220,7 +206,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x000F, DMI type 7, 19 bytes
+Handle 0x000E, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Disabled, Not Socketed, Level 1
@@ -236,7 +222,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 2-way Set-associative
 
-Handle 0x0010, DMI type 7, 19 bytes
+Handle 0x000F, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -252,7 +238,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0011, DMI type 7, 19 bytes
+Handle 0x0010, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L3 Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -268,7 +254,7 @@ Cache Information
 	System Type: Unified
 	Associativity: Other
 
-Handle 0x0012, DMI type 16, 15 bytes
+Handle 0x0011, DMI type 16, 15 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -277,9 +263,9 @@ Physical Memory Array
 	Error Information Handle: No Error
 	Number Of Devices: 2
 
-Handle 0x0013, DMI type 17, 28 bytes
+Handle 0x0012, DMI type 17, 28 bytes
 Memory Device
-	Array Handle: 0x0012
+	Array Handle: 0x0011
 	Error Information Handle: 0x0000
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -297,18 +283,18 @@ Memory Device
 	Part Number: M4 70T5663QZ3-CF7 
 	Rank: 2
 
-Handle 0x0014, DMI type 20, 19 bytes
+Handle 0x0013, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x0007FFFFFFF
 	Range Size: 2 GB
-	Physical Device Handle: 0x0013
-	Memory Array Mapped Address Handle: 0x0017
+	Physical Device Handle: 0x0012
+	Memory Array Mapped Address Handle: 0x0016
 	Partition Row Position: 1
 
-Handle 0x0015, DMI type 17, 28 bytes
+Handle 0x0014, DMI type 17, 28 bytes
 Memory Device
-	Array Handle: 0x0012
+	Array Handle: 0x0011
 	Error Information Handle: 0x0000
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -326,23 +312,23 @@ Memory Device
 	Part Number: M4 70T5663QZ3-CF7 
 	Rank: 2
 
-Handle 0x0016, DMI type 20, 19 bytes
+Handle 0x0015, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00080000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 2 GB
-	Physical Device Handle: 0x0015
-	Memory Array Mapped Address Handle: 0x0017
+	Physical Device Handle: 0x0014
+	Memory Array Mapped Address Handle: 0x0016
 	Partition Row Position: 1
 
-Handle 0x0017, DMI type 19, 15 bytes
+Handle 0x0016, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Array Handle: 0x0012
+	Physical Array Handle: 0x0011
 	Partition Width: 2
 
-Handle 0x0018, DMI type 127, 4 bytes
+Handle 0x0017, DMI type 127, 4 bytes
 End Of Table
 

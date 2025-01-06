@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3 present.
-34 structures occupying 2524 bytes.
+35 structures occupying 2600 bytes.
 Table at 0x3C970000.
 
 Handle 0x0000, DMI type 43, 31 bytes
@@ -121,44 +121,76 @@ Physical Memory Array
 Handle 0x0018, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0007
-	Partition Width: 1
+	Partition Width: 2
 
 Handle 0x0019, DMI type 221, 26 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:0A:00:5D:32:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:9A:00:03
+OEM-specific Type
+	Header and Data:
+		DD 1A 19 00 03 01 00 0A 00 5D 32 00 02 00 00 00
+		00 9A 00 03 00 FF FF FF FF FF
+	Strings:
+		Reference Code - CPU
+		uCode Version
+		TXT ACM version
 
 Handle 0x001A, DMI type 221, 26 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:0A:00:5D:32:00
-	NIC 2: PCI device 00:00.2, MAC address 0F:00:00:04:00:03
+OEM-specific Type
+	Header and Data:
+		DD 1A 1A 00 03 01 00 0A 00 5D 32 00 02 00 0F 00
+		00 04 00 03 04 0F 00 23 9F 07
+	Strings:
+		Reference Code - ME
+		MEBx version
+		ME Firmware Version
+		Consumer SKU
 
 Handle 0x001B, DMI type 221, 47 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.6, MAC address 00:0A:00:5D:32:00
-	NIC 2: PCI device 03:00.2, MAC address FF:FF:FF:FF:FF:04
-	NIC 3: PCI device ff:00.0, MAC address FF:FF:20:00:05:00
-	NIC 4: Not Installed
-	NIC 5: PCI device 00:08.6, MAC address 00:00:07:00:04:00
+OEM-specific Type
+	Header and Data:
+		DD 2F 1B 00 06 01 00 0A 00 5D 32 00 02 03 FF FF
+		FF FF FF 04 00 FF FF FF 20 00 05 00 FF FF FF 20
+		00 06 00 02 46 00 00 00 07 00 04 00 00 00 00
+	Strings:
+		Reference Code - PCH
+		PCH-CRID Status
+		Disabled
+		PCH-CRID Original Value
+		PCH-CRID New Value
+		OPROM - RST - RAID
+		PCH Hsio Version
 
 Handle 0x001C, DMI type 221, 82 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:01.3, MAC address 00:0A:00:5D:32:00
-	NIC 2: PCI device 00:00.2, MAC address 02:00:02:08:00:03
-	NIC 3: PCI device 0a:00.0, MAC address 00:5D:32:00:04:05
-	NIC 4: Not Installed
-	NIC 5: Disabled
-	NIC 6: PCI device 01:00.0, MAC address 00:08:00:FF:FF:FF
-	NIC 7: Not Installed
-	NIC 8: PCI device 0a:00.0, MAC address 00:00:00:00:F9:00
-	NIC 9: PCI device 00:01.3, MAC address 2B:01:00:00:00:0C
+OEM-specific Type
+	Header and Data:
+		DD 52 1C 00 0B 01 00 0A 00 5D 32 00 02 00 02 00
+		02 08 00 03 00 0A 00 5D 32 00 04 05 FF FF FF FF
+		FF 06 00 00 00 00 01 00 07 00 00 00 00 01 00 08
+		00 FF FF FF FF FF 09 00 11 01 06 00 00 0A 00 00
+		00 00 F9 00 0B 00 2B 01 00 00 00 0C 00 FF FF FF
+		FF FF
+	Strings:
+		Reference Code - SA - System Agent
+		Reference Code - MRC
+		SA - PCIe Version
+		SA-CRID Status
+		Disabled
+		SA-CRID Original Value
+		SA-CRID New Value
+		OPROM - VBIOS
+		IO Manageability Engine FW Version
+		PHY Build Version
+		Thunderbolt(TM) FW Version
+		System Agent Manageability Engine FW Version
 
 Handle 0x001D, DMI type 221, 12 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.1, MAC address 00:04:00:00:00:00
+OEM-specific Type
+	Header and Data:
+		DD 0C 1D 00 01 01 00 04 00 00 00 00
+	Strings:
+		FSP Binary Version
 
 Handle 0x001E, DMI type 7, 27 bytes
 Cache Information
@@ -265,7 +297,7 @@ Processor Information
 	Voltage: 0.7 V
 	External Clock: 100 MHz
 	Max Speed: 4200 MHz
-	Current Speed: 3800 MHz
+	Current Speed: 2400 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x001F
@@ -322,6 +354,7 @@ System Slot Information
 	Bus Address: 0000:00:1d.0
 	Data Bus Width: 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0026, DMI type 41, 11 bytes
 Onboard Device
@@ -345,7 +378,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(left)
@@ -353,10 +386,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 3200 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Unknown - [0x0285]
 	Serial Number: --
 	Asset Tag: --
-	9D8AD3861E4315E805856E556A608C53    
+	25E13CCC74AB29D22E97276C78B27106
 	Rank: 1
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: Unknown
@@ -365,12 +398,12 @@ Memory Device
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Not Specified
-	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Manufacturer ID: Bank 6, Hex 0x02
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
 
@@ -378,47 +411,57 @@ Handle 0x0029, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x0007
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Other
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 16 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(right)
 	Bank Locator: Controller1ChannelADimm0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 3200 MT/s
+	Manufacturer: Unknown - [0x0285]
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	25E13CCC74AB29D22E97276C78B27106
+	Rank: 1
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
+	Module Manufacturer ID: Bank 6, Hex 0x02
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: None
+	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x0008, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0027
 	Memory Array Mapped Address Handle: 0x0018
 	Partition Row Position: 1
 
-Handle 0x0009, DMI type 22, 26 bytes
+Handle 0x0009, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00400000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x0029
+	Memory Array Mapped Address Handle: 0x0018
+	Partition Row Position: 1
+	Interleave Position: 1
+
+Handle 0x000A, DMI type 22, 26 bytes
 Portable Battery
 	Location: Primary
 	Manufacturer: 333-17-40-A
@@ -432,14 +475,14 @@ Portable Battery
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000000
 
-Handle 0x000A, DMI type 24, 5 bytes
+Handle 0x000B, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
 
-Handle 0x000B, DMI type 32, 11 bytes
+Handle 0x000C, DMI type 32, 11 bytes
 System Boot Information
 	Status: No errors detected
 
@@ -452,25 +495,33 @@ OEM Strings
 	String 5: HRDWFEATS=VTX:1;VTD:1;SGX:0;PROGKEY:1;NONHPBATDET:1;
 	String 6: MEFWRec
 
-Handle 0x000C, DMI type 10, 6 bytes
+Handle 0x000D, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
 	Description: 64 MB
 
-Handle 0x000D, DMI type 14, 8 bytes
+Handle 0x000E, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x000E, DMI type 219, 106 bytes
-HP ProLiant Information
-	Power Features: 0x45010401
-	Omega Features: 0x06900002
-	Misc. Features: 0x00000000
-		iCRU: No
-		UEFI: No
+Handle 0x000F, DMI type 219, 106 bytes
+OEM-specific Type
+	Header and Data:
+		DB 6A 0F 00 01 04 01 45 02 00 A0 06 01 10 80 20
+		00 00 00 00 40 00 00 03 1F 04 00 CF 03 60 C4 02
+		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00
+	Strings:
+		MEI1
+		MEI2
+		MEI3
+		MEI4
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table

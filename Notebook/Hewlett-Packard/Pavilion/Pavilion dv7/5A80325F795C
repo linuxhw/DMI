@@ -1,8 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-55 structures occupying 2519 bytes.
-Table at 0x000E6BB0.
+54 structures occupying 2465 bytes.
+Table at 0x9AEBB000.
 
 Handle 0x0000, DMI type 16, 23 bytes
 Physical Memory Array
@@ -428,28 +428,14 @@ Built-in Pointing Device
 	Interface: PS/2
 	Buttons: 4
 
-Handle 0x0029, DMI type 22, 26 bytes
-Portable Battery
-	Location: Primary
-	Manufacturer: 12-32
-	Name: MO06062
-	Chemistry: Lithium Ion
-	Design Capacity: 62160 mWh
-	Design Voltage: 11100 mV
-	SBDS Version: Not Specified
-	Maximum Error: 0%
-	SBDS Serial Number: --
-	SBDS Manufacture Date: 2012-05-12
-	OEM-specific Information: 0x0000FFFF
-
-Handle 0x002A, DMI type 24, 5 bytes
+Handle 0x0029, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
 	Administrator Password Status: Disabled
 	Front Panel Reset Status: Disabled
 
-Handle 0x002B, DMI type 26, 22 bytes
+Handle 0x002A, DMI type 26, 22 bytes
 Voltage Probe
 	Description: Voltage Probe Description.
 	Location: Unknown
@@ -462,7 +448,7 @@ Voltage Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x002C, DMI type 27, 15 bytes
+Handle 0x002B, DMI type 27, 15 bytes
 Cooling Device
 	Type: Fan
 	Status: OK
@@ -470,11 +456,11 @@ Cooling Device
 	Nominal Speed: 2000 rpm
 	Description: Cooling Device Description.
 
-Handle 0x002D, DMI type 32, 20 bytes
+Handle 0x002C, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x002E, DMI type 39, 22 bytes
+Handle 0x002D, DMI type 39, 22 bytes
 System Power Supply
 	Location: OEM_Define0
 	Name: OEM_Define1
@@ -489,9 +475,9 @@ System Power Supply
 	Input Voltage Range Switching: Auto-switch
 	Plugged: No
 	Hot Replaceable: No
-	Cooling Device Handle: 0x002C
+	Cooling Device Handle: 0x002B
 
-Handle 0x002F, DMI type 40, 18 bytes
+Handle 0x002E, DMI type 40, 18 bytes
 Additional Information 1
 	Referenced Handle: 0x001c
 	Referenced Offset: 0x05
@@ -503,7 +489,7 @@ Additional Information 2
 	String: Compiler Version: VC 9.0
 	Value: 0x05dc
 
-Handle 0x0030, DMI type 41, 11 bytes
+Handle 0x002F, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: NVIDIA GeForce GT 630M
 	Type: Video
@@ -511,15 +497,15 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:01:00.0
 
-Handle 0x0035, DMI type 131, 64 bytes
+Handle 0x0034, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 35 00 11 00 00 00 00 00 00 00 00 00 00 00
+		83 40 34 00 11 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 57 1E FF FF FF FF 01 20 00 00 00 00 08 00
 		82 05 02 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 FF 00 00 62 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0036, DMI type 41, 11 bytes
+Handle 0x0035, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Intel(R) HD Graphics 4000
 	Type: Video
@@ -527,7 +513,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 
-Handle 0x0037, DMI type 41, 11 bytes
+Handle 0x0036, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Broadcom Valentine 802.11bgn 1x1 Combo
 	Type: Other
@@ -535,7 +521,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:0a:00.0
 
-Handle 0x0038, DMI type 41, 11 bytes
+Handle 0x0037, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Realtek PCIe GBE Family Controller
 	Type: Ethernet
@@ -543,7 +529,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:0b:00.0
 
-Handle 0x0039, DMI type 4, 42 bytes
+Handle 0x0038, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: U3E1
 	Type: Central Processor
@@ -587,9 +573,9 @@ Processor Information
 	Current Speed: 2300 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket rPGA988B
-	L1 Cache Handle: 0x003B
-	L2 Cache Handle: 0x003C
-	L3 Cache Handle: 0x003D
+	L1 Cache Handle: 0x003A
+	L2 Cache Handle: 0x003B
+	L3 Cache Handle: 0x003C
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
@@ -604,7 +590,7 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x003A, DMI type 7, 19 bytes
+Handle 0x0039, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -620,7 +606,7 @@ Cache Information
 	System Type: Data
 	Associativity: 8-way Set-associative
 
-Handle 0x003B, DMI type 7, 19 bytes
+Handle 0x003A, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -636,7 +622,7 @@ Cache Information
 	System Type: Instruction
 	Associativity: 8-way Set-associative
 
-Handle 0x003C, DMI type 7, 19 bytes
+Handle 0x003B, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -652,7 +638,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x003D, DMI type 7, 19 bytes
+Handle 0x003C, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L3 Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -668,6 +654,6 @@ Cache Information
 	System Type: Unified
 	Associativity: 12-way Set-associative
 
-Handle 0x003E, DMI type 127, 4 bytes
+Handle 0x003D, DMI type 127, 4 bytes
 End Of Table
 
