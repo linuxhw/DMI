@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x6FEED000.
+Table at 0x4FEED000.
 
 Handle 0x0000, DMI type 11, 5 bytes
 OEM Strings
@@ -746,10 +746,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
-	Voltage: 0.9 V
+	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
-	Current Speed: 2700 MHz
+	Current Speed: 3400 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0042
@@ -840,7 +840,7 @@ OEM-specific Type
 		DD 36 4C 00 07 01 00 01 02 00 00 00 02 00 01 02
 		00 00 00 03 00 01 02 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 05 00 07 00 FF FF FF 05 00 08
-		00 FF FF FF FF FF
+		00 FF FF FF 50 10
 	Strings:
 		Reference Code - SA - System Agent
 		Reference Code - MRC
@@ -857,8 +857,8 @@ OEM-specific Type
 		DD 67 4D 00 0E 01 00 00 00 00 00 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
-		09 00 56 10 0D 00 FF FF FF FF FF 0E 00 FF FF FF
+		00 FF FF FF FF 00 0B 00 FF FF 00 00 00 0C 00 FF
+		FF FF FF FF 0D 00 FF FF FF FF FF 0E 00 FF FF FF
 		FF FF 0F 00 FF FF FF FF FF 10 11 01 03 03 01 00
 		12 00 00 07 03 00 00
 	Strings:
@@ -914,7 +914,7 @@ Group Associations
 Handle 0x0052, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 52 00 01 03 01 45 02 00 90 06 01 10 86 20
+		DB 51 52 00 01 03 01 45 02 00 90 06 01 00 60 20
 		00 00 00 00 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

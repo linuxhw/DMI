@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-83 structures occupying 3653 bytes.
+83 structures occupying 3663 bytes.
 Table at 0x9CEDE000.
 
 Handle 0x0000, DMI type 11, 5 bytes
@@ -19,7 +19,7 @@ BIOS Information
 	Release Date: 07/05/2016
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 6 MB
+	ROM Size: 6144 kB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -651,8 +651,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3 MB
-	Maximum Size: 3 MB
+	Installed Size: 3072 kB
+	Maximum Size: 3072 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -744,7 +744,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8192 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -752,11 +752,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Kingston
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: MSI16D3LS1MNG/4G  
-	Rank: 1
+	Part Number: HMT41GS6AFR8A-PB  
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -768,7 +768,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8192 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -776,11 +776,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Kingston
+	Manufacturer: Hynix/Hyundai
 	Serial Number: --
 	Asset Tag: --
-	Part Number: MSI16D3LS1MNG/4G  
-	Rank: 1
+	Part Number: HMT41GS6AFR8A-PB  
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -789,16 +789,16 @@ Memory Device
 Handle 0x0047, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0044
 	Partition Width: 2
 
 Handle 0x0048, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0046
 	Memory Array Mapped Address Handle: 0x0047
 	Partition Row Position: Unknown
@@ -807,9 +807,9 @@ Memory Device Mapped Address
 
 Handle 0x0049, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0046
 	Memory Array Mapped Address Handle: 0x0047
 	Partition Row Position: Unknown

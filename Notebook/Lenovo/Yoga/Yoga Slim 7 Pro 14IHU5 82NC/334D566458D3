@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0x439DE000.
+Table at 0x4397E000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
@@ -217,7 +217,7 @@ Port Connector Information
 	Internal Connector Type: None
 	External Reference Designator: Type-C
 	External Connector Type: USB Type-C Receptacle
-	Port Type: <OUT OF SPEC>
+	Port Type: Thunderbolt
 
 Handle 0x000B, DMI type 8, 9 bytes
 Port Connector Information
@@ -225,7 +225,7 @@ Port Connector Information
 	Internal Connector Type: None
 	External Reference Designator: Type-C
 	External Connector Type: USB Type-C Receptacle
-	Port Type: <OUT OF SPEC>
+	Port Type: Thunderbolt
 
 Handle 0x000C, DMI type 8, 9 bytes
 Port Connector Information
@@ -252,15 +252,16 @@ Group Associations
 	Items: 1
 		0x002D (OEM-specific)
 
-Handle 0x0034, DMI type 14, 20 bytes
+Handle 0x0035, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
-	Items: 5
+	Items: 6
 		0x002E (OEM-specific)
 		0x002F (OEM-specific)
 		0x0030 (OEM-specific)
 		0x0031 (OEM-specific)
 		0x0032 (OEM-specific)
+		0x0033 (OEM-specific)
 
 Handle 0x0010, DMI type 15, 29 bytes
 System Event Log
@@ -690,7 +691,7 @@ Handle 0x0025, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
-	Administrator Password Status: Disabled
+	Administrator Password Status: Enabled
 	Front Panel Reset Status: Disabled
 
 Handle 0x0026, DMI type 32, 11 bytes
@@ -825,10 +826,36 @@ OEM-specific Type
 	Strings:
 		FSP Binary Version
 
-Handle 0x0033, DMI type 248, 18 bytes
+Handle 0x0033, DMI type 221, 89 bytes
 OEM-specific Type
 	Header and Data:
-		F8 12 33 00 AC AC AA 17 00 00 00 00 00 00 00 00
+		DD 59 33 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
+		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
+		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
+		00 FF FF FF FF FF 0B 00 01 1F 00 00 00 0C 00 00
+		17 00 61 10 0D 00 FF FF FF FF FF 0E 00 00 07 03
+		00 00 0F 00 00 02 00 0F 00
+	Strings:
+		Lan Phy Version
+		Sensor Firmware Version
+		Debug Mode Status
+		Disabled
+		Performance Mode Status
+		Disabled
+		Debug Use USB(Disabled:Serial)
+		Disabled
+		ICC Overclocking Version
+		UNDI Version
+		EC FW Version
+		GOP Version
+		Royal Park Version
+		Platform Version
+		Client Silicon Version
+
+Handle 0x0034, DMI type 248, 18 bytes
+OEM-specific Type
+	Header and Data:
+		F8 12 34 00 AC AC AA 17 00 00 00 00 00 00 00 00
 		00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes

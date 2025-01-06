@@ -1,8 +1,8 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 70 structures occupying 2963 bytes.
-Table at 0x000E6E60.
+Table at 0x9CEBC000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -168,8 +168,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 8192 MB (Single-bank Connection)
-	Enabled Size: 8192 MB (Single-bank Connection)
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -188,8 +188,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
@@ -549,19 +549,19 @@ Memory Device
 	Error Information Handle: 0x002F
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Unknown
+	Speed: 1600 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: GR1333S364L9/8G
-	Rank: 2
+	Part Number: M471B5173QH0-YK0  
+	Rank: 1
 	Configured Memory Speed: 1333 MT/s
 
 Handle 0x002C, DMI type 17, 34 bytes
@@ -584,19 +584,19 @@ Memory Device
 	Error Information Handle: 0x0030
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Samsung
+	Speed: 1333 MT/s
+	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5173QH0-YK0  
-	Rank: 1
+	Part Number: GR1333S364L9/8G
+	Rank: 2
 	Configured Memory Speed: 1333 MT/s
 
 Handle 0x002E, DMI type 17, 34 bytes
@@ -654,8 +654,8 @@ Memory Array Mapped Address
 Handle 0x0033, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x002B
 	Memory Array Mapped Address Handle: 0x0032
 	Partition Row Position: Unknown
@@ -665,8 +665,8 @@ Memory Device Mapped Address
 Handle 0x0034, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x002D
 	Memory Array Mapped Address Handle: 0x0032
 	Partition Row Position: Unknown

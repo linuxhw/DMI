@@ -1,14 +1,14 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
-SMBIOS 3.3 present.
+SMBIOS 3.4 present.
 67 structures occupying 4851 bytes.
-Table at 0x2802A000.
+Table at 0x28028000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: HMCN33WW
-	Release Date: 07/22/2022
+	Version: HMCN46WW
+	Release Date: 08/01/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -32,8 +32,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.33
-	Firmware Revision: 1.30
+	BIOS Revision: 1.46
+	Firmware Revision: 1.34
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -50,7 +50,7 @@ Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: LENOVO
 	Product Name: LNVNB161216
-	Version: SDK0T76461 WIN
+	Version: SDK0K17763 WIN
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -117,10 +117,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: 12th Gen Intel(R) Core(TM) i7-12700H
-	Voltage: 1.3 V
+	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 4700 MHz
-	Current Speed: 4059 MHz
+	Current Speed: 2277 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x000A
@@ -374,7 +374,7 @@ Memory Device
 	Set: None
 	Locator: Controller0-ChannelA
 	Bank Locator: BANK 0
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: SK Hynix
@@ -409,7 +409,7 @@ Memory Device
 	Set: None
 	Locator: Controller0-ChannelB
 	Bank Locator: BANK 1
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: SK Hynix
@@ -444,7 +444,7 @@ Memory Device
 	Set: None
 	Locator: Controller0-ChannelC
 	Bank Locator: BANK 2
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: SK Hynix
@@ -479,7 +479,7 @@ Memory Device
 	Set: None
 	Locator: Controller0-ChannelD
 	Bank Locator: BANK 3
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: SK Hynix
@@ -514,7 +514,7 @@ Memory Device
 	Set: None
 	Locator: Controller1-ChannelA
 	Bank Locator: BANK 0
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: SK Hynix
@@ -549,7 +549,7 @@ Memory Device
 	Set: None
 	Locator: Controller1-ChannelB
 	Bank Locator: BANK 1
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: SK Hynix
@@ -584,7 +584,7 @@ Memory Device
 	Set: None
 	Locator: Controller1-ChannelC
 	Bank Locator: BANK 2
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: SK Hynix
@@ -619,7 +619,7 @@ Memory Device
 	Set: None
 	Locator: Controller1-ChannelD
 	Bank Locator: BANK 3
-	Type: <OUT OF SPEC>
+	Type: LPDDR5
 	Type Detail: Synchronous
 	Speed: 6400 MT/s
 	Manufacturer: SK Hynix
@@ -893,12 +893,12 @@ OEM-specific Type
 		C8 10 38 00 01 02 01 27 01 14 01 3D B2 C1 01 05
 	Strings:
 		IdeaPad
-		82TKCTO1WW
+		82TKCT01WW
 
 Handle 0x0039, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 39 00 01 04 01 45 02 00 90 06 01 85 39 20
+		DB 6A 39 00 01 04 01 45 02 00 A0 06 01 85 30 20
 		00 00 00 00 40 00 00 03 1F 04 02 C9 03 60 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -921,8 +921,8 @@ OEM-specific Type
 Handle 0x003B, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 3B 00 03 01 00 0C 00 65 70 00 02 00 00 00
-		04 1B 00 03 00 FF FF FF FF FF
+		DD 1A 3B 00 03 01 00 0C 00 69 74 00 02 00 00 00
+		04 2A 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -931,7 +931,7 @@ OEM-specific Type
 Handle 0x003C, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 3C 00 03 01 00 0C 00 65 70 00 02 00 00 00
+		DD 1A 3C 00 03 01 00 0C 00 69 74 00 02 00 00 00
 		00 00 00 03 04 10 00 0F C7 06
 	Strings:
 		Reference Code - ME
@@ -942,7 +942,7 @@ OEM-specific Type
 Handle 0x003D, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 3D 00 06 01 00 0C 00 65 70 00 02 03 FF FF
+		DD 2F 3D 00 06 01 00 0C 00 69 74 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 01 00 05 00 FF FF FF 01
 		00 06 00 FF FF FF FF FF 07 00 04 00 00 00 00
 	Strings:
@@ -957,11 +957,11 @@ OEM-specific Type
 Handle 0x003E, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 3E 00 0B 01 00 0C 00 65 70 00 02 00 00 00
-		03 80 00 03 00 0C 00 65 70 00 04 05 FF FF FF FF
+		DD 52 3E 00 0B 01 00 0C 00 69 74 00 02 00 00 00
+		04 06 00 03 00 0C 00 69 74 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 02 00 07 00 00 00 00 02 00 08
 		00 FF FF FF FF FF 09 00 22 00 09 00 00 0A 00 00
-		00 00 10 00 0B 00 10 01 00 00 00 0C 00 FF FF FF
+		00 00 10 20 0B 00 10 01 00 00 00 0C 00 FF FF FF
 		FF FF
 	Strings:
 		Reference Code - SA - System Agent
@@ -983,7 +983,7 @@ OEM-specific Type
 		DD 52 3F 00 0B 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 FF FF FF FF FF 0A
-		00 FF FF FF FF FF 0B 00 01 1E 00 00 00 0C 00 00
+		00 FF FF FF FF FF 0B 00 01 22 00 00 00 0C 00 00
 		21 00 53 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
 		00 00
 	Strings:

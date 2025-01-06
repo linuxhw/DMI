@@ -14,8 +14,8 @@ OEM Strings
 Handle 0x0001, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: E14C6IMS.115
-	Release Date: 04/18/2022
+	Version: E14C6IMS.118
+	Release Date: 03/13/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -41,7 +41,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.21
+	BIOS Revision: 1.24
 
 Handle 0x0002, DMI type 1, 27 bytes
 System Information
@@ -978,7 +978,7 @@ Handle 0x004F, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 4F 00 03 01 00 0C 00 62 10 00 02 00 00 00
-		04 14 00 03 00 01 12 05 00 00
+		04 1F 00 03 00 01 12 05 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -988,7 +988,7 @@ Handle 0x0050, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 50 00 03 01 00 0C 00 62 10 00 02 00 00 00
-		00 00 00 03 04 10 00 0F 7E 06
+		00 00 00 03 04 10 01 19 4C 08
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -1017,7 +1017,7 @@ OEM-specific Type
 		03 1E 00 03 00 0C 00 62 10 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 02 00 07 00 00 00 00 02 00 08
 		00 FF FF FF FF FF 09 00 00 00 00 7F 00 0A 00 00
-		00 00 0E 00 0B 00 0F 00 00 00 00 0C 00 FF FF FF
+		00 00 41 00 0B 00 13 01 00 00 00 0C 00 FF FF FF
 		FF FF
 	Strings:
 		Reference Code - SA - System Agent
@@ -1199,10 +1199,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: 12th Gen Intel(R) Core(TM) i7-1280P
-	Voltage: 0.9 V
+	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 4800 MHz
-	Current Speed: 2673 MHz
+	Current Speed: 3465 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0054
@@ -1226,8 +1226,8 @@ Handle 0x005C, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
 		83 40 5C 00 35 00 00 00 00 00 00 00 00 00 00 00
-		F8 00 82 51 00 00 00 00 21 20 00 00 00 00 10 00
-		7E 06 0F 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		F8 00 82 51 00 00 00 00 21 20 00 00 01 00 10 00
+		4C 08 19 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x005D, DMI type 41, 11 bytes
@@ -1394,7 +1394,7 @@ BIOS Language Information
 		en|US|iso8859-1
 		zh|CN|unicode
 		zh|TW|unicode
-	Currently Installed Language: en|US|iso8859-1
+	Currently Installed Language: Not Specified
 
 Handle 0x0070, DMI type 8, 9 bytes
 Port Connector Information
@@ -1745,7 +1745,7 @@ Group Associations
 Handle 0x009C, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 9C 00 01 04 01 45 02 00 A0 06 01 85 3B 20
+		DB 6A 9C 00 01 04 01 45 02 00 90 06 01 85 3B 20
 		00 00 00 00 40 00 00 03 1F 04 00 C9 03 60 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

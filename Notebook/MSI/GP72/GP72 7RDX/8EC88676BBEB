@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0x7D2ED000.
@@ -610,7 +610,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -621,7 +621,7 @@ Memory Device
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: MSI24D4S7S1MB-4     
+	Part Number: MSI24D4S7S8MB-8     
 	Rank: 1
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
@@ -634,7 +634,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -645,7 +645,7 @@ Memory Device
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: MSI24D4S7S8MB-8     
+	Part Number: MSI24D4S7S1MB-4     
 	Rank: 1
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
@@ -772,8 +772,8 @@ Processor Information
 Handle 0x0046, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x003F
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: Unknown
@@ -782,9 +782,9 @@ Memory Device Mapped Address
 
 Handle 0x0047, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
+	Starting Address: 0x00200000000
 	Ending Address: 0x002FFFFFFFF
-	Range Size: 8 GB
+	Range Size: 4 GB
 	Physical Device Handle: 0x0040
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: Unknown
@@ -927,7 +927,7 @@ Group Associations
 Handle 0x0053, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 53 00 01 03 01 45 02 00 90 06 01 00 60 20
+		DB 51 53 00 01 03 01 45 02 00 90 06 01 00 66 20
 		00 00 00 00 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
