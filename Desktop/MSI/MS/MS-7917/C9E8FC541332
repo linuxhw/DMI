@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 88 structures occupying 3888 bytes.
@@ -716,7 +716,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -724,12 +724,12 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 1315
+	Manufacturer: 1302
 	Serial Number: --
 	Asset Tag: --
-	Part Number: BLS4G3D1609DS1S00.
+	Part Number: 1600 Series       
 	Rank: 2
-	Configured Memory Speed: 1600 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -753,7 +753,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 1600 CL9 Series   
 	Rank: 2
-	Configured Memory Speed: 1600 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -764,7 +764,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -772,12 +772,12 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 1315
+	Manufacturer: 1302
 	Serial Number: --
 	Asset Tag: --
-	Part Number: BLS4G3D1609DS1S00.
+	Part Number: 1600 Series       
 	Rank: 2
-	Configured Memory Speed: 1600 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -801,7 +801,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: 1600 CL9 Series   
 	Rank: 2
-	Configured Memory Speed: 1600 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -809,16 +809,16 @@ Memory Device
 Handle 0x0047, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x005FFFFFFFF
-	Range Size: 24 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0042
 	Partition Width: 4
 
 Handle 0x0048, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0043
 	Memory Array Mapped Address Handle: 0x0047
 	Partition Row Position: Unknown
@@ -827,8 +827,8 @@ Memory Device Mapped Address
 
 Handle 0x0049, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x0044
 	Memory Array Mapped Address Handle: 0x0047
@@ -838,9 +838,9 @@ Memory Device Mapped Address
 
 Handle 0x004A, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0045
 	Memory Array Mapped Address Handle: 0x0047
 	Partition Row Position: Unknown
@@ -849,8 +849,8 @@ Memory Device Mapped Address
 
 Handle 0x004B, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x005FFFFFFFF
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x0046
 	Memory Array Mapped Address Handle: 0x0047

@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 86 structures occupying 3795 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 02/16/2016
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -675,8 +675,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -691,8 +691,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -714,23 +714,23 @@ Handle 0x0043, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0042
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: 65535 MT/s
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: 0215
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum Voltage: 1.25 V
+	Part Number: CML16GX3M2A1600C9 
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
+	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
 
@@ -738,13 +738,27 @@ Handle 0x0044, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0042
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8192 MB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 1
+	Type: Unknown
+	Type Detail: None
+
+Handle 0x0045, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0042
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelB-DIMM0
+	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
@@ -753,12 +767,12 @@ Memory Device
 	Asset Tag: --
 	Part Number: CML16GX3M2A1600C9 
 	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
 
-Handle 0x0045, DMI type 17, 40 bytes
+Handle 0x0046, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0042
 	Error Information Handle: Not Provided
@@ -767,44 +781,10 @@ Memory Device
 	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
-	Locator: ChannelB-DIMM0
-	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: 65535 MT/s
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum Voltage: 1.25 V
-	Maximum Voltage: 1.5 V
-	Configured Voltage: 1.5 V
-
-Handle 0x0046, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x0042
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8192 MB
-	Form Factor: DIMM
-	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 3
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: 0215
-	Serial Number: --
-	Asset Tag: --
-	Part Number: CML16GX3M2A1600C9 
-	Rank: 2
-	Configured Clock Speed: 1333 MT/s
-	Minimum Voltage: 1.5 V
-	Maximum Voltage: 1.5 V
-	Configured Voltage: 1.5 V
+	Type: Unknown
+	Type Detail: None
 
 Handle 0x0047, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -819,7 +799,7 @@ Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0044
+	Physical Device Handle: 0x0043
 	Memory Array Mapped Address Handle: 0x0047
 	Partition Row Position: Unknown
 	Interleave Position: 1
@@ -830,7 +810,7 @@ Memory Device Mapped Address
 	Starting Address: 0x00200000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0046
+	Physical Device Handle: 0x0045
 	Memory Array Mapped Address Handle: 0x0047
 	Partition Row Position: Unknown
 	Interleave Position: 2
@@ -871,7 +851,7 @@ BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
-	Currently Installed Language: Not Specified
+	Currently Installed Language: en|US|iso8859-1
 
 Handle 0x0050, DMI type 221, 12 bytes
 OEM-specific Type

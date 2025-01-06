@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 54 structures occupying 1990 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 08/02/2007
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -94,7 +94,7 @@ Processor Information
 	Voltage: 1.5 V
 	External Clock: 200 MHz
 	Max Speed: 3000 MHz
-	Current Speed: 3029 MHz
+	Current Speed: 3033 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -130,8 +130,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -470,8 +470,8 @@ Physical Memory Array
 Handle 0x002C, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001F1FFFFFF
-	Range Size: 7968 MB
+	Ending Address: 0x001EFFFFFFF
+	Range Size: 7936 MB
 	Physical Array Handle: 0x002B
 	Partition Width: 1
 
@@ -481,7 +481,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 72 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
@@ -509,7 +509,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 72 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
@@ -537,7 +537,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 72 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -565,7 +565,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 72 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3

@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-76 structures occupying 2761 bytes.
+76 structures occupying 2762 bytes.
 Table at 0xD5EFF018.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -598,7 +598,7 @@ Handle 0x003E, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: SOCKET 0
 	Type: Central Processor
-	Family: Core i3
+	Family: Core i5
 	Manufacturer: Intel
 	ID: C3 06 03 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 60, Stepping 3
@@ -631,11 +631,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i3-4160 CPU @ 3.60GHz
+	Version: Intel(R) Core(TM) i5-4670T CPU @ 2.30GHz
 	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 3600 MHz
+	Current Speed: 2300 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
 	L1 Cache Handle: 0x0040
@@ -644,8 +644,8 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Fill By OEM
-	Core Count: 2
-	Core Enabled: 2
+	Core Count: 4
+	Core Enabled: 4
 	Thread Count: 4
 	Characteristics:
 		64-bit capable
@@ -656,8 +656,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 512 kB
-	Maximum Size: 512 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -672,8 +672,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 128 kB
-	Maximum Size: 128 kB
+	Installed Size: 256 kB
+	Maximum Size: 256 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -688,8 +688,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3 MB
-	Maximum Size: 3 MB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -711,13 +711,27 @@ Handle 0x0043, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0042
 	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelA-DIMM0
+	Bank Locator: BANK 0
+	Type: Unknown
+	Type Detail: None
+
+Handle 0x0044, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0042
+	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: ChannelA-DIMM0
-	Bank Locator: BANK 0
+	Locator: ChannelB-DIMM0
+	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
@@ -731,40 +745,16 @@ Memory Device
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
 
-Handle 0x0044, DMI type 20, 35 bytes
+Handle 0x0045, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0043
+	Physical Device Handle: 0x0044
 	Memory Array Mapped Address Handle: 0x0046
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
-
-Handle 0x0045, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x0042
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
-	Set: None
-	Locator: ChannelB-DIMM0
-	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x0046, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -788,7 +778,7 @@ OEM-specific Type
 Handle 0x004B, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 4B 00 31 00 00 00 09 00 00 00 00 00 1C 00
+		83 40 4B 00 35 00 00 00 09 00 00 00 00 00 1C 00
 		F8 00 50 8C 00 00 00 00 21 20 00 00 00 00 09 00
 		7A 05 0D 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00

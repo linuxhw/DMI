@@ -1,6 +1,5 @@
-# dmidecode 3.1
-# SMBIOS entry point at 0x000f04d0
-Found SMBIOS entry point in EFI, reading table from /dev/mem.
+# dmidecode 3.5
+Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 78 structures occupying 2980 bytes.
 Table at 0x000EC3B0.
@@ -12,7 +11,7 @@ BIOS Information
 	Release Date: 05/15/2015
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -661,8 +660,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -693,8 +692,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -718,7 +717,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -731,7 +730,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: CML16GX3M2A1600C9 
 	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -760,16 +759,6 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x0045, DMI type 17, 40 bytes
 Memory Device
@@ -777,7 +766,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -790,7 +779,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: CML16GX3M2A1600C9 
 	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Configured Memory Speed: 1333 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -819,16 +808,6 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x0048, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -874,7 +853,7 @@ BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
-	Currently Installed Language: en|US|iso8859-1
+	Currently Installed Language: <BAD INDEX>
 
 Handle 0x0051, DMI type 127, 4 bytes
 End Of Table

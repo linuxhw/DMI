@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 54 structures occupying 1942 bytes.
@@ -119,7 +119,7 @@ Processor Information
 	Voltage: 1.5 V
 	External Clock: 200 MHz
 	Max Speed: 2600 MHz
-	Current Speed: 2600 MHz
+	Current Speed: 2400 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -401,8 +401,9 @@ Port Connector Information
 Handle 0x0023, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI1
-	Type: 32-bit PCI
-	Current Usage: Available
+	Type: PCI
+	Data Bus Width: 32 bit
+	Current Usage: In Use
 	Length: Short
 	ID: 1
 	Characteristics:
@@ -413,8 +414,9 @@ System Slot Information
 Handle 0x0024, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI2
-	Type: 32-bit PCI
-	Current Usage: In Use
+	Type: PCI
+	Data Bus Width: 32 bit
+	Current Usage: Available
 	Length: Short
 	ID: 2
 	Characteristics:
@@ -425,8 +427,9 @@ System Slot Information
 Handle 0x0025, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIE1
-	Type: 32-bit PCI Express
-	Current Usage: Available
+	Type: PCI Express
+	Data Bus Width: 32 bit
+	Current Usage: In Use
 	Length: Short
 	ID: 3
 	Characteristics:
@@ -437,7 +440,8 @@ System Slot Information
 Handle 0x0026, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIE2
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -449,7 +453,8 @@ System Slot Information
 Handle 0x0027, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIE3
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -461,7 +466,8 @@ System Slot Information
 Handle 0x0028, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIE4
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 3

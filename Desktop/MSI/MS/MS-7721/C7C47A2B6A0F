@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-55 structures occupying 2028 bytes.
+55 structures occupying 2236 bytes.
 Table at 0x000EBF10.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -436,15 +436,15 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 6 GB
+	Maximum Capacity: 32 GB
 	Error Information Handle: Not Provided
 	Number Of Devices: 4
 
 Handle 0x0035, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0034
 	Partition Width: 255
 
@@ -454,20 +454,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: CHANNEL A
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1333 MT/s
-	Manufacturer: <BAD INDEX>
+	Speed: 1600 MT/s
+	Manufacturer: A1_Manufacturer0
 	Serial Number: --
 	Asset Tag: --
-	Part Number: <BAD INDEX>
+	Part Number:                   
 	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -478,20 +478,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: CHANNEL A
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1333 MT/s
-	Manufacturer: <BAD INDEX>
+	Speed: 1600 MT/s
+	Manufacturer: A1_Manufacturer1
 	Serial Number: --
 	Asset Tag: --
-	Part Number: <BAD INDEX>
+	Part Number:                   
 	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -502,20 +502,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: CHANNEL B
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1333 MT/s
-	Manufacturer: <BAD INDEX>
+	Speed: 1600 MT/s
+	Manufacturer: A1_Manufacturer2
 	Serial Number: --
 	Asset Tag: --
-	Part Number: <BAD INDEX>
-	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Part Number:                   
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -526,20 +526,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 1
 	Bank Locator: CHANNEL B
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1333 MT/s
-	Manufacturer: <BAD INDEX>
+	Speed: 1600 MT/s
+	Manufacturer: A1_Manufacturer3
 	Serial Number: --
 	Asset Tag: --
-	Part Number: <BAD INDEX>
-	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Part Number:                   
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -547,8 +547,8 @@ Memory Device
 Handle 0x003A, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0036
 	Memory Array Mapped Address Handle: 0x0035
 	Partition Row Position: Unknown
@@ -557,9 +557,9 @@ Memory Device Mapped Address
 
 Handle 0x003B, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0037
 	Memory Array Mapped Address Handle: 0x0035
 	Partition Row Position: Unknown
@@ -568,9 +568,9 @@ Memory Device Mapped Address
 
 Handle 0x003C, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x0013FFFFFFF
-	Range Size: 1 GB
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0037
 	Memory Array Mapped Address Handle: 0x0035
 	Partition Row Position: Unknown
@@ -579,9 +579,9 @@ Memory Device Mapped Address
 
 Handle 0x003D, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00140000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 1 GB
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0037
 	Memory Array Mapped Address Handle: 0x0035
 	Partition Row Position: Unknown

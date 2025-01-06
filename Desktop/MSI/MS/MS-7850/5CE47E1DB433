@@ -1,14 +1,14 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-87 structures occupying 3836 bytes.
+88 structures occupying 3883 bytes.
 Table at 0x000ED5E0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: V4.10
-	Release Date: 08/11/2015
+	Version: V4.11
+	Release Date: 02/16/2016
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8 MB
@@ -601,7 +601,7 @@ Handle 0x003D, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: SOCKET 0
 	Type: Central Processor
-	Family: Core i5
+	Family: Core i7
 	Manufacturer: Intel
 	ID: C3 06 03 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 60, Stepping 3
@@ -634,11 +634,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i5-4690K CPU @ 3.50GHz
+	Version: Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz
 	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 3500 MHz
+	Current Speed: 4000 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
 	L1 Cache Handle: 0x003E
@@ -649,7 +649,7 @@ Processor Information
 	Part Number: Fill By OEM
 	Core Count: 4
 	Core Enabled: 4
-	Thread Count: 4
+	Thread Count: 8
 	Characteristics:
 		64-bit capable
 
@@ -691,15 +691,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6 MB
-	Maximum Size: 6 MB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
 	Speed: Unknown
 	Error Correction Type: Multi-bit ECC
 	System Type: Unified
-	Associativity: 12-way Set-associative
+	Associativity: 16-way Set-associative
 
 Handle 0x0042, DMI type 16, 23 bytes
 Physical Memory Array
@@ -724,10 +724,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 1315
+	Manufacturer: 1119
 	Serial Number: --
 	Asset Tag: --
-	Part Number: BLS8G3D1609DS1S00.
+	Part Number: S939A2UGS-ITR     
 	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
@@ -748,10 +748,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 1315
+	Manufacturer: 1119
 	Serial Number: --
 	Asset Tag: --
-	Part Number: BLS8G3D1609DS1S00.
+	Part Number: S939A2UGS-ITR     
 	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
@@ -762,23 +762,23 @@ Handle 0x0045, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0042
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: 1119
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: 1.25 V
+	Part Number: S939A2UGS-ITR     
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
+	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
 
@@ -796,10 +796,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 1315
+	Manufacturer: 1119
 	Serial Number: --
 	Asset Tag: --
-	Part Number: BLS8G3D1609DS1S00.
+	Part Number: S939A2UGS-ITR     
 	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
@@ -809,8 +809,8 @@ Memory Device
 Handle 0x0047, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x005FFFFFFFF
-	Range Size: 24 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0042
 	Partition Width: 4
 
@@ -823,12 +823,12 @@ Memory Device Mapped Address
 	Memory Array Mapped Address Handle: 0x0047
 	Partition Row Position: Unknown
 	Interleave Position: 1
-	Interleaved Data Depth: 1
+	Interleaved Data Depth: 2
 
 Handle 0x0049, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x0044
 	Memory Array Mapped Address Handle: 0x0047
@@ -838,8 +838,19 @@ Memory Device Mapped Address
 
 Handle 0x004A, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x005FFFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0045
+	Memory Array Mapped Address Handle: 0x0047
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x004B, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x0046
 	Memory Array Mapped Address Handle: 0x0047
@@ -847,17 +858,17 @@ Memory Device Mapped Address
 	Interleave Position: 2
 	Interleaved Data Depth: 2
 
-Handle 0x004C, DMI type 136, 6 bytes
+Handle 0x004D, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 4C 00 00 00
+		88 06 4D 00 00 00
 
-Handle 0x004D, DMI type 143, 16 bytes
+Handle 0x004E, DMI type 143, 16 bytes
 OEM-specific Type
 	Header and Data:
-		8F 10 4D 00 00 01 02 03 04 05 06 07 08 09 0A 0B
+		8F 10 4E 00 00 01 02 03 04 05 06 07 08 09 0A 0B
 	Strings:
-		MEFW-9.1.0.1120
+		MEFW-9.1.37.1002
 		VBIOS-5.5.1038
 		PXEL1-2.58
 		N/A
@@ -870,41 +881,41 @@ OEM-specific Type
 		N/A
 		N/A
 
-Handle 0x004E, DMI type 144, 5 bytes
+Handle 0x004F, DMI type 144, 5 bytes
 OEM-specific Type
 	Header and Data:
-		90 05 4E 00 01
+		90 05 4F 00 01
 	Strings:
 		$INT15SWIDd0c1
 
-Handle 0x004F, DMI type 13, 22 bytes
+Handle 0x0050, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0051, DMI type 221, 12 bytes
+Handle 0x0052, DMI type 221, 12 bytes
 OEM-specific Type
 	Header and Data:
-		DD 0C 51 00 01 01 00 02 08 00 00 00
+		DD 0C 52 00 01 01 00 02 08 00 00 00
 	Strings:
 		Reference Code - ACPI
 
-Handle 0x0052, DMI type 221, 26 bytes
+Handle 0x0053, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 52 00 03 01 00 02 08 00 00 00 02 00 00 00
-		00 1D 00 03 00 00 05 00 00 00
+		DD 1A 53 00 03 01 00 02 08 00 00 00 02 00 00 00
+		00 1E 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
 		TXT ACM version
 
-Handle 0x0053, DMI type 221, 68 bytes
+Handle 0x0054, DMI type 221, 68 bytes
 OEM-specific Type
 	Header and Data:
-		DD 44 53 00 09 01 00 02 08 00 00 00 02 03 FF FF
+		DD 44 54 00 09 01 00 02 08 00 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
 		00 06 00 FF FF FF FF FF 07 00 19 00 00 00 00 08
 		00 2C 00 00 00 00 09 00 03 00 00 00 00 0A 00 01
@@ -921,21 +932,21 @@ OEM-specific Type
 		PCH9S A0 Hsio Version
 		WPTLp B0 Hsio Version
 
-Handle 0x0054, DMI type 221, 26 bytes
+Handle 0x0055, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 54 00 03 01 00 02 08 00 00 00 02 00 FF FF
-		FF FF 00 03 04 09 01 00 60 04
+		DD 1A 55 00 03 01 00 02 08 00 00 00 02 00 FF FF
+		FF FF 00 03 04 09 01 25 EA 03
 	Strings:
 		Reference Code - ME 10.0
 		MEBx version
 		ME Firmware Version
 		1.5MB SKU
 
-Handle 0x0055, DMI type 221, 54 bytes
+Handle 0x0056, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 55 00 07 01 00 02 08 00 00 00 02 00 01 08
+		DD 36 56 00 07 01 00 02 08 00 00 00 02 00 01 08
 		00 03 00 03 00 02 08 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 06 00 07 00 FF FF FF 06 00 08
 		00 FF FF FF 38 10
@@ -949,32 +960,32 @@ OEM-specific Type
 		SA-CRID New Value
 		OPROM - VBIOS
 
-Handle 0x0056, DMI type 221, 12 bytes
+Handle 0x0057, DMI type 221, 12 bytes
 OEM-specific Type
 	Header and Data:
-		DD 0C 56 00 01 01 00 02 08 00 00 00
+		DD 0C 57 00 01 01 00 02 08 00 00 00
 	Strings:
 		Reference Code - Intel Rapid Start
 
-Handle 0x0057, DMI type 14, 23 bytes
+Handle 0x0058, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 6
-		0x0051 (OEM-specific)
 		0x0052 (OEM-specific)
 		0x0053 (OEM-specific)
 		0x0054 (OEM-specific)
 		0x0055 (OEM-specific)
 		0x0056 (OEM-specific)
+		0x0057 (OEM-specific)
 
-Handle 0x0058, DMI type 131, 64 bytes
+Handle 0x0059, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 58 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 59 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 00 00 00 00 00 00 01 20 00 00 01 00 09 00
-		60 04 00 00 00 00 00 00 C8 00 00 00 00 00 00 00
+		EA 03 25 00 00 00 00 00 C8 00 00 00 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0059, DMI type 127, 4 bytes
+Handle 0x005A, DMI type 127, 4 bytes
 End Of Table
 

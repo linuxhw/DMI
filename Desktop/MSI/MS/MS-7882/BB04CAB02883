@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0x000EBC60.
@@ -6,8 +6,8 @@ Table at 0x000EBC60.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 1.D0
-	Release Date: 06/15/2018
+	Version: 1.E1
+	Release Date: 06/13/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -272,7 +272,8 @@ Port Connector Information
 Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot1
-	Type: x1 PCI Express 3 x1
+	Type: PCI Express 3 x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -285,7 +286,8 @@ System Slot Information
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot2
-	Type: x8 PCI Express 3 x8
+	Type: PCI Express 3 x8
+	Data Bus Width: 8x or x8
 	Current Usage: Unknown
 	Length: Short
 	ID: 2
@@ -298,7 +300,8 @@ System Slot Information
 Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot3
-	Type: x1 PCI Express 3 x1
+	Type: PCI Express 3 x1
+	Data Bus Width: 1x or x1
 	Current Usage: Unknown
 	Length: Short
 	ID: 3
@@ -311,7 +314,8 @@ System Slot Information
 Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot4
-	Type: x16 PCI Express 3 x16
+	Type: PCI Express 3 x16
+	Data Bus Width: 16x or x16
 	Current Usage: Unknown
 	Length: Long
 	ID: 4
@@ -324,7 +328,8 @@ System Slot Information
 Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot5
-	Type: x4 PCI Express 3 x4
+	Type: PCI Express 3 x4
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Short
 	ID: 5
@@ -332,13 +337,14 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:02:00.4
+	Bus Address: 0000:03:00.4
 
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot6
-	Type: x16 PCI Express 3 x16
-	Current Usage: Available
+	Type: PCI Express 3 x16
+	Data Bus Width: 16x or x16
+	Current Usage: In Use
 	Length: Long
 	ID: 6
 	Characteristics:
@@ -350,7 +356,8 @@ System Slot Information
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot7
-	Type: x1 PCI Express 3 x1
+	Type: PCI Express 3 x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 7

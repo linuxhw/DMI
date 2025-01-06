@@ -1,13 +1,13 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.5.0 present.
-Table at 0x4468E000.
+Table at 0x6F66F000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: A.22
-	Release Date: 11/11/2022
+	Version: A.40
+	Release Date: 03/23/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -744,7 +744,7 @@ TPM Device
 Handle 0x0041, DMI type 45, 26 bytes
 Firmware Inventory Information
 	Firmware Component Name: TPM Firmware
-	Firmware Version: 2580012:1907E4..
+	Firmware Version: 2580012:19082B..
 	Firmware ID: Not Specified
 	Release Date: 2021-05-15T00:00:00Z
 	Manufacturer: INTEL
@@ -789,8 +789,8 @@ OEM-specific Type
 Handle 0x0045, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 45 00 03 01 00 0C 00 85 10 00 02 00 00 00
-		01 0E 00 03 00 FF FF FF FF FF
+		DD 1A 45 00 03 01 00 0C 00 93 20 00 02 00 00 00
+		01 13 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -799,8 +799,8 @@ OEM-specific Type
 Handle 0x0046, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 46 00 03 01 00 0C 00 85 10 00 02 00 00 00
-		00 00 00 03 04 10 01 19 E4 07
+		DD 1A 46 00 03 01 00 0C 00 93 20 00 02 00 00 00
+		00 00 00 03 04 10 01 19 2B 08
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -810,7 +810,7 @@ OEM-specific Type
 Handle 0x0047, DMI type 221, 47 bytes
 OEM-specific Type
 	Header and Data:
-		DD 2F 47 00 06 01 00 0C 00 85 10 00 02 03 FF FF
+		DD 2F 47 00 06 01 00 0C 00 93 20 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 11 00 05 00 FF FF FF 11
 		00 06 00 02 46 00 00 00 07 00 04 00 00 00 00
 	Strings:
@@ -825,8 +825,8 @@ OEM-specific Type
 Handle 0x0048, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 48 00 0B 01 00 0C 00 85 10 00 02 00 00 00
-		04 3B 00 03 00 0C 00 85 10 00 04 05 FF FF FF FF
+		DD 52 48 00 0B 01 00 0C 00 93 20 00 02 00 00 00
+		04 68 00 03 00 0C 00 93 20 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 01 00 07 00 00 00 00 01 00 08
 		00 FF FF FF FF FF 09 00 FF FF FF FF FF 0A 00 FF
 		FF FF FF FF 0B 00 FF FF FF FF FF 0C 00 FF FF FF
@@ -1016,7 +1016,7 @@ Processor Information
 	Max Speed: 8500 MHz
 	Current Speed: 3366 MHz
 	Status: Populated, Enabled
-	Upgrade: Other
+	Upgrade: <OUT OF SPEC>
 	L1 Cache Handle: 0x004E
 	L2 Cache Handle: 0x004F
 	L3 Cache Handle: 0x0050
@@ -1039,7 +1039,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 52 00 35 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 04 7A 00 00 00 00 21 20 00 00 01 00 10 00
-		E4 07 19 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		2B 08 19 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0053, DMI type 41, 11 bytes
@@ -1052,13 +1052,21 @@ Onboard Device
 
 Handle 0x0054, DMI type 41, 11 bytes
 Onboard Device
+	Reference Designation: Onboard - Video
+	Type: Video
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:00:02.0
+
+Handle 0x0055, DMI type 41, 11 bytes
+Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
 	Type Instance: 2
 	Bus Address: 0000:00:08.0
 
-Handle 0x0055, DMI type 41, 11 bytes
+Handle 0x0056, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1066,7 +1074,7 @@ Onboard Device
 	Type Instance: 3
 	Bus Address: 0000:00:0a.0
 
-Handle 0x0056, DMI type 41, 11 bytes
+Handle 0x0057, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1074,7 +1082,7 @@ Onboard Device
 	Type Instance: 4
 	Bus Address: 0000:00:14.0
 
-Handle 0x0057, DMI type 41, 11 bytes
+Handle 0x0058, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1082,7 +1090,7 @@ Onboard Device
 	Type Instance: 5
 	Bus Address: 0000:00:14.2
 
-Handle 0x0058, DMI type 41, 11 bytes
+Handle 0x0059, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Ethernet
 	Type: Ethernet
@@ -1090,7 +1098,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:14.3
 
-Handle 0x0059, DMI type 41, 11 bytes
+Handle 0x005A, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1098,7 +1106,7 @@ Onboard Device
 	Type Instance: 6
 	Bus Address: 0000:00:16.0
 
-Handle 0x005A, DMI type 41, 11 bytes
+Handle 0x005B, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - SATA
 	Type: SATA Controller
@@ -1106,7 +1114,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:17.0
 
-Handle 0x005B, DMI type 41, 11 bytes
+Handle 0x005C, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1114,7 +1122,7 @@ Onboard Device
 	Type Instance: 7
 	Bus Address: 0000:00:1f.0
 
-Handle 0x005C, DMI type 41, 11 bytes
+Handle 0x005D, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Sound
 	Type: Sound
@@ -1122,7 +1130,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:1f.3
 
-Handle 0x005D, DMI type 41, 11 bytes
+Handle 0x005E, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1130,7 +1138,7 @@ Onboard Device
 	Type Instance: 8
 	Bus Address: 0000:00:1f.4
 
-Handle 0x005E, DMI type 41, 11 bytes
+Handle 0x005F, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1138,14 +1146,14 @@ Onboard Device
 	Type Instance: 9
 	Bus Address: 0000:00:1f.5
 
-Handle 0x005F, DMI type 221, 103 bytes
+Handle 0x0060, DMI type 221, 103 bytes
 OEM-specific Type
 	Header and Data:
-		DD 67 5F 00 0E 01 00 FF FF FF FF FF 02 00 FF FF
+		DD 67 60 00 0E 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 FF FF FF FF FF 0A
-		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
-		FF FF FF FF 0D 00 FF FF FF FF FF 0E 00 00 07 00
+		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
+		17 00 81 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
 		00 00 0F 00 13 05 00 2C 16 10 00 FF FF FF FF FF
 		11 00 FF FF FF FF FF
 	Strings:
@@ -1167,13 +1175,13 @@ OEM-specific Type
 		TCSS PD0 Version
 		TCSS PD1 Version
 
-Handle 0x0060, DMI type 143, 16 bytes
+Handle 0x0061, DMI type 143, 16 bytes
 OEM-specific Type
 	Header and Data:
-		8F 10 60 00 00 01 02 03 04 05 06 07 08 09 0A 0B
+		8F 10 61 00 00 01 02 03 04 05 06 07 08 09 0A 0B
 	Strings:
-		MEFW-16.1.25.2020
-		GOP1-[N/A]     
+		MEFW-16.1.25.2091
+		GOP1-[17.0.1081]
 		RAID-19.5
 		PXEU1-v0.0.09
 		AMI-AptioV
@@ -1185,28 +1193,28 @@ OEM-specific Type
 		N/A
 		N/A
 
-Handle 0x0061, DMI type 133, 44 bytes
+Handle 0x0062, DMI type 133, 44 bytes
 OEM-specific Type
 	Header and Data:
-		85 2C 61 00 F9 B4 95 78 4D 92 0A 41 96 39 12 38
+		85 2C 62 00 F9 B4 95 78 4D 92 0A 41 96 39 12 38
 		62 B2 8A 63 00 86 80 08 16 12 20 26 12 86 80 01
 		00 00 00 61 72 57 18 03 00 00 00 00
 
-Handle 0x0062, DMI type 136, 8 bytes
+Handle 0x0063, DMI type 136, 8 bytes
 OEM-specific Type
 	Header and Data:
-		88 08 62 00 00 00 00 00
+		88 08 63 00 00 00 00 00
 
-Handle 0x0063, DMI type 14, 8 bytes
+Handle 0x0064, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x0064, DMI type 219, 106 bytes
+Handle 0x0065, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 64 00 01 04 01 45 02 00 90 06 01 85 39 20
+		DB 6A 65 00 01 04 01 45 02 00 90 06 01 85 39 20
 		00 00 00 00 40 00 00 00 00 00 00 06 00 20 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -1219,12 +1227,12 @@ OEM-specific Type
 		MEI3
 		MEI4
 
-Handle 0x0065, DMI type 136, 6 bytes
+Handle 0x0066, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 65 00 00 00
+		88 06 66 00 00 00
 
-Handle 0x0066, DMI type 14, 23 bytes
+Handle 0x0067, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 6
@@ -1233,8 +1241,8 @@ Group Associations
 		0x0046 (OEM-specific)
 		0x0047 (OEM-specific)
 		0x0048 (OEM-specific)
-		0x005F (OEM-specific)
+		0x0060 (OEM-specific)
 
-Handle 0x0067, DMI type 127, 4 bytes
+Handle 0x0068, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 105 structures occupying 3784 bytes.
@@ -305,7 +305,8 @@ Port Connector Information
 Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 0
@@ -318,7 +319,8 @@ System Slot Information
 Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B1
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -331,7 +333,8 @@ System Slot Information
 Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -344,7 +347,8 @@ System Slot Information
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -357,7 +361,8 @@ System Slot Information
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B4
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 4
@@ -370,7 +375,8 @@ System Slot Information
 Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8D1
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 5
@@ -383,7 +389,8 @@ System Slot Information
 Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B3
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 6
@@ -481,13 +488,6 @@ Memory Device
 	Bank Locator: A1_BANK1
 	Type: Unknown
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer1
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Array1_PartNumber1
-	Rank: Unknown
-	Configured Memory Speed: Unknown
 
 Handle 0x002E, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -555,13 +555,6 @@ Memory Device
 	Bank Locator: A1_BANK3
 	Type: Unknown
 	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer3
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Array1_PartNumber3
-	Rank: Unknown
-	Configured Memory Speed: 66 MT/s
 
 Handle 0x0034, DMI type 18, 23 bytes
 32-bit Memory Error Information

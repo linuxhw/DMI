@@ -1,8 +1,8 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0 present.
 85 structures occupying 4058 bytes.
-Table at 0x8FACA000.
+Table at 0x8B2CA000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 06/16/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -605,7 +605,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -618,7 +618,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: CT8G4DFS824A.C8FDD1 
 	Rank: 1
-	Configured Clock Speed: 2133 MT/s
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -636,16 +636,6 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x003F, DMI type 17, 40 bytes
 Memory Device
@@ -660,16 +650,6 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x0040, DMI type 17, 40 bytes
 Memory Device
@@ -684,16 +664,6 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x0041, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -741,8 +711,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -832,7 +802,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 48 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 43 A1 00 00 00 00 01 00 00 00 08 00 0B 00
-		47 0D 32 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		FE 0E 52 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0049, DMI type 221, 26 bytes
@@ -849,7 +819,7 @@ Handle 0x004A, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 4A 00 03 01 00 01 03 00 00 00 02 00 00 00
-		00 00 00 03 04 0B 08 32 47 0D
+		00 00 00 03 04 0B 08 52 FE 0E
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
@@ -883,7 +853,7 @@ OEM-specific Type
 		DD 36 4C 00 07 01 00 01 03 00 00 00 02 00 02 00
 		00 06 00 03 00 01 03 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 07 00 07 00 FF FF FF 07 00 08
-		00 FF FF FF 02 03
+		00 FF FF FF 46 10
 	Strings:
 		Reference Code - SA - System Agent
 		Reference Code - MRC
@@ -929,8 +899,8 @@ OEM-specific Type
 	Header and Data:
 		8F 10 4E 00 00 01 02 03 04 05 06 07 08 09 0A 0B
 	Strings:
-		MEFW-11.8.50.3399
-		VBIOS-0000
+		MEFW-11.8.82.3838
+		VBIOS-1046
 		PXEL1-2.64
 		AMI-AptioV
 		GSES-5/5

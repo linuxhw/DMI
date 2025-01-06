@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0 present.
-88 structures occupying 4291 bytes.
+88 structures occupying 4299 bytes.
 Table at 0x8FACA000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -605,7 +605,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -616,8 +616,8 @@ Memory Device
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9905625-062.A00G    
-	Rank: 2
+	Part Number: 9905743-213.A00G    
+	Rank: 1
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -629,7 +629,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
@@ -637,10 +637,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: 04CB
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number:                     
+	Part Number: 9905743-213.A00G    
 	Rank: 1
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
@@ -653,7 +653,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -664,8 +664,8 @@ Memory Device
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9905625-062.A00G    
-	Rank: 2
+	Part Number: 9905743-213.A00G    
+	Rank: 1
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -677,7 +677,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
@@ -685,10 +685,10 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: 04CB
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number:                     
+	Part Number: 9905743-213.A00G    
 	Rank: 1
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
@@ -698,8 +698,8 @@ Memory Device
 Handle 0x0041, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Array Handle: 0x003C
 	Partition Width: 4
 
@@ -725,8 +725,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -741,8 +741,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -815,8 +815,8 @@ Processor Information
 Handle 0x0046, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x003D
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: Unknown
@@ -825,9 +825,9 @@ Memory Device Mapped Address
 
 Handle 0x0047, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x005FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00800000000
+	Ending Address: 0x00BFFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x003E
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: Unknown
@@ -836,9 +836,9 @@ Memory Device Mapped Address
 
 Handle 0x0048, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00400000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x003F
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: Unknown
@@ -847,9 +847,9 @@ Memory Device Mapped Address
 
 Handle 0x0049, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00600000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00C00000000
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0040
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: Unknown
@@ -1008,8 +1008,8 @@ Group Associations
 Handle 0x0056, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 56 00 01 03 01 55 02 00 90 0E 81 10 80 30
-		00 00 00 00 40 08 00 00 00 00 00 02 00 00 00 02
+		DB 51 56 00 01 03 01 55 02 00 90 0E 81 00 60 30
+		00 00 00 04 40 08 00 00 00 00 00 02 00 00 00 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

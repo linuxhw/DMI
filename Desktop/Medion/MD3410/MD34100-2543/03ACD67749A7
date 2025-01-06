@@ -1,8 +1,6 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.1 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0x8A9BF000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -577,7 +575,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -601,7 +599,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -630,8 +628,10 @@ Memory Array Mapped Address
 Handle 0x003E, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: CTNI
-	Specification Version: 2.0	Firmware Revision: 403.1
-	Description: INTEL	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 403.1
+	Description: INTEL
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -661,7 +661,7 @@ OEM-specific Type
 	Header and Data:
 		DD 52 41 00 0B 01 00 07 00 51 41 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 10 00 05 00 FF FF FF 10
-		00 06 00 11 02 00 00 00 07 00 02 00 00 00 00 08
+		00 06 00 FF FF FF FF FF 07 00 02 00 00 00 00 08
 		00 09 00 00 00 00 09 00 0A 00 00 00 00 0A 00 07
 		00 00 00 00 0B 00 06 00 00 00 00 0C 00 07 00 00
 		00 00
@@ -741,8 +741,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 9216 kB
-	Maximum Size: 9216 kB
+	Installed Size: 9 MB
+	Maximum Size: 9 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -792,7 +792,7 @@ Processor Information
 	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
-	Current Speed: 2772 MHz
+	Current Speed: 2574 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA1151
 	L1 Cache Handle: 0x0044
@@ -914,10 +914,10 @@ Onboard Device
 
 Handle 0x0054, DMI type 41, 11 bytes
 Onboard Device
-	Reference Designation: Onboard - Other
-	Type: Other
+	Reference Designation: Onboard - SATA
+	Type: SATA Controller
 	Status: Enabled
-	Type Instance: 7
+	Type Instance: 1
 	Bus Address: 0000:00:17.0
 
 Handle 0x0055, DMI type 41, 11 bytes
@@ -925,7 +925,7 @@ Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
-	Type Instance: 8
+	Type Instance: 7
 	Bus Address: 0000:00:1f.0
 
 Handle 0x0056, DMI type 41, 11 bytes
@@ -941,7 +941,7 @@ Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
-	Type Instance: 9
+	Type Instance: 8
 	Bus Address: 0000:00:1f.4
 
 Handle 0x0058, DMI type 41, 11 bytes
@@ -949,7 +949,7 @@ Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
-	Type Instance: 10
+	Type Instance: 9
 	Bus Address: 0000:00:1f.5
 
 Handle 0x0059, DMI type 221, 89 bytes
@@ -1004,7 +1004,7 @@ Group Associations
 Handle 0x005D, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 5D 00 01 04 01 45 02 00 90 06 01 10 8B 20
+		DB 6A 5D 00 01 04 01 45 02 00 90 06 01 10 80 20
 		00 00 00 04 40 00 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
