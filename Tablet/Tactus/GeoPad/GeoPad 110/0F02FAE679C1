@@ -1,7 +1,7 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0x79CE2000.
+Table at 0x79CE4000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
@@ -306,7 +306,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM0
@@ -352,7 +352,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM1
@@ -396,22 +396,14 @@ Handle 0x0029, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x002A, DMI type 43, 31 bytes
-TPM Device
-	Vendor ID: CTNI
-	Specification Version: 2.0	Firmware Revision: 402.0
-	Description: INTEL	Characteristics:
-		Family configurable via platform software support
-	OEM-specific Information: 0x00000000
-
-Handle 0x002F, DMI type 7, 27 bytes
+Handle 0x002E, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: CPU Internal L1
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 0 kB
-	Maximum Size: 0 kB
+	Installed Size: 4352 MB
+	Maximum Size: 7424 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -420,14 +412,14 @@ Cache Information
 	System Type: Other
 	Associativity: Other
 
-Handle 0x0030, DMI type 7, 27 bytes
+Handle 0x002F, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: CPU Internal L2
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 0 kB
-	Maximum Size: 0 kB
+	Installed Size: 6464 MB
+	Maximum Size: 6464 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -436,7 +428,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0031, DMI type 4, 48 bytes
+Handle 0x0030, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: SOCKET 0
 	Type: Central Processor
@@ -480,8 +472,8 @@ Processor Information
 	Current Speed: 1100 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
-	L1 Cache Handle: 0x002F
-	L2 Cache Handle: 0x0030
+	L1 Cache Handle: 0x002E
+	L2 Cache Handle: 0x002F
 	L3 Cache Handle: Not Provided
 	Serial Number: --
 	Asset Tag: --
@@ -492,7 +484,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x0032, DMI type 41, 11 bytes
+Handle 0x0031, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - RTK Ethernet
 	Type: Ethernet
@@ -500,7 +492,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:03:00.0
 
-Handle 0x0033, DMI type 41, 11 bytes
+Handle 0x0032, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -508,7 +500,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:00.0
 
-Handle 0x0034, DMI type 41, 11 bytes
+Handle 0x0033, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -516,7 +508,7 @@ Onboard Device
 	Type Instance: 2
 	Bus Address: 0000:00:00.1
 
-Handle 0x0035, DMI type 41, 11 bytes
+Handle 0x0034, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Video
 	Type: Video
@@ -524,7 +516,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 
-Handle 0x0036, DMI type 41, 11 bytes
+Handle 0x0035, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Ethernet
 	Type: Ethernet
@@ -532,7 +524,7 @@ Onboard Device
 	Type Instance: 2
 	Bus Address: 0000:00:0c.0
 
-Handle 0x0037, DMI type 41, 11 bytes
+Handle 0x0036, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -540,7 +532,7 @@ Onboard Device
 	Type Instance: 3
 	Bus Address: 0000:00:0d.0
 
-Handle 0x0038, DMI type 41, 11 bytes
+Handle 0x0037, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -548,7 +540,7 @@ Onboard Device
 	Type Instance: 4
 	Bus Address: 0000:00:0d.2
 
-Handle 0x0039, DMI type 41, 11 bytes
+Handle 0x0038, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Sound
 	Type: Sound
@@ -556,7 +548,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:0e.0
 
-Handle 0x003A, DMI type 41, 11 bytes
+Handle 0x0039, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -564,7 +556,7 @@ Onboard Device
 	Type Instance: 5
 	Bus Address: 0000:00:0f.0
 
-Handle 0x003B, DMI type 41, 11 bytes
+Handle 0x003A, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - SATA
 	Type: SATA Controller
@@ -572,7 +564,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:12.0
 
-Handle 0x003C, DMI type 41, 11 bytes
+Handle 0x003B, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -580,7 +572,7 @@ Onboard Device
 	Type Instance: 6
 	Bus Address: 0000:00:15.0
 
-Handle 0x003D, DMI type 41, 11 bytes
+Handle 0x003C, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -588,7 +580,7 @@ Onboard Device
 	Type Instance: 7
 	Bus Address: 0000:00:16.0
 
-Handle 0x003E, DMI type 41, 11 bytes
+Handle 0x003D, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -596,7 +588,7 @@ Onboard Device
 	Type Instance: 8
 	Bus Address: 0000:00:16.1
 
-Handle 0x003F, DMI type 41, 11 bytes
+Handle 0x003E, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -604,7 +596,7 @@ Onboard Device
 	Type Instance: 9
 	Bus Address: 0000:00:16.2
 
-Handle 0x0040, DMI type 41, 11 bytes
+Handle 0x003F, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -612,7 +604,7 @@ Onboard Device
 	Type Instance: 10
 	Bus Address: 0000:00:16.3
 
-Handle 0x0041, DMI type 41, 11 bytes
+Handle 0x0040, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -620,7 +612,7 @@ Onboard Device
 	Type Instance: 11
 	Bus Address: 0000:00:17.0
 
-Handle 0x0042, DMI type 41, 11 bytes
+Handle 0x0041, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -628,7 +620,7 @@ Onboard Device
 	Type Instance: 12
 	Bus Address: 0000:00:17.1
 
-Handle 0x0043, DMI type 41, 11 bytes
+Handle 0x0042, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -636,7 +628,7 @@ Onboard Device
 	Type Instance: 13
 	Bus Address: 0000:00:17.2
 
-Handle 0x0044, DMI type 41, 11 bytes
+Handle 0x0043, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -644,7 +636,7 @@ Onboard Device
 	Type Instance: 14
 	Bus Address: 0000:00:17.3
 
-Handle 0x0045, DMI type 41, 11 bytes
+Handle 0x0044, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -652,7 +644,7 @@ Onboard Device
 	Type Instance: 15
 	Bus Address: 0000:00:18.0
 
-Handle 0x0046, DMI type 41, 11 bytes
+Handle 0x0045, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -660,7 +652,7 @@ Onboard Device
 	Type Instance: 16
 	Bus Address: 0000:00:18.1
 
-Handle 0x0047, DMI type 41, 11 bytes
+Handle 0x0046, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -668,7 +660,7 @@ Onboard Device
 	Type Instance: 17
 	Bus Address: 0000:00:18.2
 
-Handle 0x0048, DMI type 41, 11 bytes
+Handle 0x0047, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -676,7 +668,7 @@ Onboard Device
 	Type Instance: 18
 	Bus Address: 0000:00:18.3
 
-Handle 0x0049, DMI type 41, 11 bytes
+Handle 0x0048, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -684,7 +676,7 @@ Onboard Device
 	Type Instance: 19
 	Bus Address: 0000:00:19.0
 
-Handle 0x004A, DMI type 41, 11 bytes
+Handle 0x0049, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -692,7 +684,7 @@ Onboard Device
 	Type Instance: 20
 	Bus Address: 0000:00:19.1
 
-Handle 0x004B, DMI type 41, 11 bytes
+Handle 0x004A, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -700,7 +692,7 @@ Onboard Device
 	Type Instance: 21
 	Bus Address: 0000:00:19.2
 
-Handle 0x004C, DMI type 41, 11 bytes
+Handle 0x004B, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -708,7 +700,7 @@ Onboard Device
 	Type Instance: 22
 	Bus Address: 0000:00:1c.0
 
-Handle 0x004D, DMI type 41, 11 bytes
+Handle 0x004C, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -716,7 +708,7 @@ Onboard Device
 	Type Instance: 23
 	Bus Address: 0000:00:1e.0
 
-Handle 0x004E, DMI type 41, 11 bytes
+Handle 0x004D, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -724,7 +716,7 @@ Onboard Device
 	Type Instance: 24
 	Bus Address: 0000:00:1f.0
 
-Handle 0x004F, DMI type 41, 11 bytes
+Handle 0x004E, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -732,14 +724,14 @@ Onboard Device
 	Type Instance: 25
 	Bus Address: 0000:00:1f.1
 
-Handle 0x0050, DMI type 13, 22 bytes
+Handle 0x004F, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0051, DMI type 9, 19 bytes
+Handle 0x0050, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J7H1
 	Type: x4 PCI Express 2 x4
@@ -751,8 +743,10 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:00:13.0
+	Data Bus Width: 10
+	Peer Devices: 0
 
-Handle 0x0052, DMI type 9, 19 bytes
+Handle 0x0051, DMI type 9, 19 bytes
 System Slot Information
 	Designation: J8H1
 	Type: x2 PCI Express 2 x2
@@ -764,7 +758,9 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:00:14.0
+	Data Bus Width: 9
+	Peer Devices: 0
 
-Handle 0x0053, DMI type 127, 4 bytes
+Handle 0x0052, DMI type 127, 4 bytes
 End Of Table
 

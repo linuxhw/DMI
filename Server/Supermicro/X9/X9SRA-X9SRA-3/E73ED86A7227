@@ -384,25 +384,25 @@ Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT1 PCI-E 2.0 X4(IN X8)
 	Type: x4 PCI Express 2 x4
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 1
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:0c:00.0
+	Bus Address: 0000:09:00.0
 
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT2 PCI-E 3.0 X4(IN X8)
 	Type: x4 PCI Express 3 x4
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 2
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:02:00.0
+	Bus Address: 0000:03:00.0
 
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
@@ -414,19 +414,19 @@ System Slot Information
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:12:00.0
+	Bus Address: 0000:0d:00.0
 
 Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT4 PCI-E 3.0 X16
 	Type: x16 PCI Express 3 x16
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 4
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:05:00.0
+	Bus Address: 0000:07:00.0
 
 Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
@@ -438,7 +438,7 @@ System Slot Information
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:0f:00.0
+	Bus Address: 0000:0a:00.0
 
 Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
@@ -450,7 +450,7 @@ System Slot Information
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:03:00.0
+	Bus Address: 0000:06:00.0
 
 Handle 0x0026, DMI type 10, 12 bytes
 On Board Device 1 Information
@@ -491,8 +491,8 @@ Physical Memory Array
 Handle 0x002A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0029
 	Partition Width: 1
 
@@ -532,23 +532,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: P1-DIMMA2
 	Bank Locator: P0_Node0_Channel0_Dimm1
-	Type: Unknown
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Dimm1_Manufacturer       
+	Type: DDR3
+	Type Detail: Unbuffered (Unregistered)
+	Speed: 1600 MT/s
+	Manufacturer: Undefined                
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Dimm1_PartNum    
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: AQ12M72E8BKK0M   
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x002E, DMI type 126, 35 bytes
-Inactive
+Handle 0x002E, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x002D
+	Memory Array Mapped Address Handle: 0x002A
+	Partition Row Position: 1
 
 Handle 0x002F, DMI type 17, 34 bytes
 Memory Device
@@ -573,8 +579,8 @@ Memory Device
 
 Handle 0x0030, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x002F
 	Memory Array Mapped Address Handle: 0x002A
@@ -586,23 +592,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: P1-DIMMB2
 	Bank Locator: P0_Node0_Channel1_Dimm1
-	Type: Unknown
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Dimm3_Manufacturer       
+	Type: DDR3
+	Type Detail: Unbuffered (Unregistered)
+	Speed: 1600 MT/s
+	Manufacturer: Undefined                
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Dimm3_PartNum    
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: AQ12M72E8BKK0M   
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0032, DMI type 126, 35 bytes
-Inactive
+Handle 0x0032, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00300000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0031
+	Memory Array Mapped Address Handle: 0x002A
+	Partition Row Position: 1
 
 Handle 0x0033, DMI type 17, 34 bytes
 Memory Device
@@ -627,8 +639,8 @@ Memory Device
 
 Handle 0x0034, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x002FFFFFFFF
+	Starting Address: 0x00400000000
+	Ending Address: 0x004FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0033
 	Memory Array Mapped Address Handle: 0x002A
@@ -640,23 +652,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: P1-DIMMC2
 	Bank Locator: P0_Node0_Channel2_Dimm1
-	Type: Unknown
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Dimm5_Manufacturer       
+	Type: DDR3
+	Type Detail: Unbuffered (Unregistered)
+	Speed: 1600 MT/s
+	Manufacturer: Undefined                
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Dimm5_PartNum    
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: AQ12M72E8BKK0M   
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0036, DMI type 126, 35 bytes
-Inactive
+Handle 0x0036, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00500000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0035
+	Memory Array Mapped Address Handle: 0x002A
+	Partition Row Position: 1
 
 Handle 0x0037, DMI type 17, 34 bytes
 Memory Device
@@ -681,8 +699,8 @@ Memory Device
 
 Handle 0x0038, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00300000000
-	Ending Address: 0x003FFFFFFFF
+	Starting Address: 0x00600000000
+	Ending Address: 0x006FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0037
 	Memory Array Mapped Address Handle: 0x002A
@@ -694,23 +712,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: P1-DIMMD2
 	Bank Locator: P0_Node0_Channel3_Dimm1
-	Type: Unknown
-	Type Detail: Synchronous
-	Speed: Unknown
-	Manufacturer: Dimm7_Manufacturer       
+	Type: DDR3
+	Type Detail: Unbuffered (Unregistered)
+	Speed: 1600 MT/s
+	Manufacturer: Undefined                
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Dimm7_PartNum    
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: AQ12M72E8BKK0M   
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x003A, DMI type 126, 35 bytes
-Inactive
+Handle 0x003A, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00700000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0039
+	Memory Array Mapped Address Handle: 0x002A
+	Partition Row Position: 1
 
 Handle 0x003B, DMI type 32, 20 bytes
 System Boot Information
@@ -1161,7 +1185,7 @@ Onboard Device
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 2
-	Bus Address: 0000:11:00.0
+	Bus Address: 0000:0c:00.0
 
 Handle 0x006C, DMI type 41, 11 bytes
 Onboard Device
@@ -1169,7 +1193,7 @@ Onboard Device
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:0f:00.0
+	Bus Address: 0000:0a:00.0
 
 Handle 0x006D, DMI type 41, 11 bytes
 Onboard Device
@@ -1177,7 +1201,7 @@ Onboard Device
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 2
-	Bus Address: 0000:10:00.0
+	Bus Address: 0000:0b:00.0
 
 Handle 0x0072, DMI type 15, 73 bytes
 System Event Log

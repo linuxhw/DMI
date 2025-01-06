@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x7FED9000.
+Table at 0x8BE6B000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: P00HAC.019.170322.WY.1249
-	Release Date: 03/22/2017
+	Version: P04HAC.000.180220.WY.1219
+	Release Date: 02/20/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -36,7 +36,7 @@ Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: SAMSUNG ELECTRONICS CO., LTD.
 	Product Name: Galaxy Book 12
-	Version: P00HAC
+	Version: P04HAC
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -46,8 +46,8 @@ System Information
 Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: SAMSUNG ELECTRONICS CO., LTD.
-	Product Name: SM-W723NZKAXAR
-	Version: SGL8766A2E-C01-G001-S0002+10.0.14393
+	Product Name: SM-W720XZKBPAP
+	Version: SGL8766A2H-C01-G001-S0001+10.0.14393
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -199,7 +199,8 @@ Port Connector Information
 Handle 0x0013, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B2
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -212,7 +213,8 @@ System Slot Information
 Handle 0x0014, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -225,7 +227,8 @@ System Slot Information
 Handle 0x0015, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -238,7 +241,8 @@ System Slot Information
 Handle 0x0016, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 3
@@ -251,7 +255,8 @@ System Slot Information
 Handle 0x0017, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -265,16 +270,16 @@ Handle 0x0018, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
-	Description:    Onboard GFx
+	Description:    To Be Filled By O.E.M.
 
 Handle 0x0019, DMI type 11, 5 bytes
 OEM Strings
 	String 1: AAABAAAAAWVA
-	String 2: 2018/08/08
+	String 2: 2018/03/07
 	String 3: SECPARTN:HAC
 	String 4: Not Specified
 	String 5: Not Specified
-	String 6: [HWREV:04][SKU:10]
+	String 6: [HWREV:04][SKU:06]
 	String 7: [LCD_12][IBT_01]
 	String 8: YMDymd-0
 
@@ -580,7 +585,7 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 8 GB
+	Maximum Capacity: 4 GB
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
@@ -590,7 +595,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -601,8 +606,8 @@ Memory Device
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: K3QF4F40BM-AGCF   
-	Rank: 2
+	Part Number: K3QF3F30BM-AGCF   
+	Rank: 1
 	Configured Memory Speed: 1867 MT/s
 	Minimum Voltage: 1.25 V
 	Maximum Voltage: 1.25 V
@@ -614,7 +619,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 2 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -625,8 +630,8 @@ Memory Device
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: K3QF4F40BM-AGCF   
-	Rank: 2
+	Part Number: K3QF3F30BM-AGCF   
+	Rank: 1
 	Configured Memory Speed: 1867 MT/s
 	Minimum Voltage: 1.25 V
 	Maximum Voltage: 1.25 V
@@ -635,16 +640,16 @@ Memory Device
 Handle 0x003B, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x0038
 	Partition Width: 2
 
 Handle 0x003C, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0039
 	Memory Array Mapped Address Handle: 0x003B
 	Partition Row Position: Unknown
@@ -653,9 +658,9 @@ Memory Device Mapped Address
 
 Handle 0x003D, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00080000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x003A
 	Memory Array Mapped Address Handle: 0x003B
 	Partition Row Position: Unknown
@@ -781,15 +786,15 @@ Handle 0x0043, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
 		83 40 43 00 31 00 00 00 00 00 00 00 00 00 00 00
-		F8 00 4E 9D 00 00 00 00 01 00 00 00 06 00 0B 00
-		BC 04 0D 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		F8 00 4E 9D 00 00 00 00 01 00 00 00 08 00 0B 00
+		6A 0D 32 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0044, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 44 00 03 01 00 01 05 00 00 00 02 00 00 00
-		00 4E 00 03 00 00 05 00 00 00
+		DD 1A 44 00 03 01 00 01 09 00 00 00 02 00 00 00
+		00 84 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -798,8 +803,8 @@ OEM-specific Type
 Handle 0x0045, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 45 00 03 01 00 01 05 00 00 00 02 00 00 00
-		00 00 00 03 04 0B 06 0D BC 04
+		DD 1A 45 00 03 01 00 01 09 00 00 00 02 00 00 00
+		00 00 00 03 04 0B 08 32 6A 0D
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
@@ -809,7 +814,7 @@ OEM-specific Type
 Handle 0x0046, DMI type 221, 75 bytes
 OEM-specific Type
 	Header and Data:
-		DD 4B 46 00 0A 01 00 01 05 00 00 00 02 03 FF FF
+		DD 4B 46 00 0A 01 00 01 09 00 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 21 00 05 00 FF FF FF 21
 		00 06 00 FF FF FF FF FF 07 00 3E 00 00 00 00 08
 		00 34 00 00 00 00 09 00 0B 00 00 00 00 0A 00 3E
@@ -830,8 +835,8 @@ OEM-specific Type
 Handle 0x0047, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 47 00 07 01 00 01 05 00 00 00 02 00 01 05
-		00 00 00 03 00 01 05 00 00 00 04 05 FF FF FF FF
+		DD 36 47 00 07 01 00 01 09 00 00 00 02 00 01 09
+		00 00 00 03 00 01 09 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 02 00 07 00 FF FF FF 02 00 08
 		00 FF FF FF FF FF
 	Strings:
@@ -839,7 +844,7 @@ OEM-specific Type
 		Reference Code - MRC
 		SA - PCIe Version
 		SA-CRID Status
-		Enabled 
+		Disabled
 		SA-CRID Original Value
 		SA-CRID New Value
 		OPROM - VBIOS
@@ -852,7 +857,7 @@ OEM-specific Type
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
 		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
 		09 00 61 10 0D 00 02 00 00 00 00 0E 00 FF FF FF
-		FF FF 0F 00 FF FF FF FF FF 10 11 01 03 04 01 00
+		FF FF 0F 00 FF FF FF FF FF 10 11 01 03 04 01 01
 		12 00 00 07 03 00 00
 	Strings:
 		Lan Phy Version
@@ -871,7 +876,7 @@ OEM-specific Type
 		Base EC FW Version
 		EC-EC Protocol Version
 		Royal Park Version
-		BP1.3.4.0_RP01
+		BP1.3.4.1_RP01
 		Platform Version
 
 Handle 0x0049, DMI type 136, 6 bytes
@@ -889,36 +894,16 @@ Group Associations
 		0x0047 (OEM-specific)
 		0x0048 (OEM-specific)
 
-Handle 0x004C, DMI type 248, 9 bytes
-OEM-specific Type
-	Header and Data:
-		F8 09 4C 00 00 01 53 55 01
-	Strings:
-		ss_B
-
-Handle 0x004D, DMI type 14, 8 bytes
-Group Associations
-	Name: Samsung Model Info
-	Items: 1
-		0x004C (OEM-specific)
-
-Handle 0x004E, DMI type 13, 22 bytes
-BIOS Language Information
-	Language Description Format: Long
-	Installable Languages: 1
-		en|US|iso8859-1
-	Currently Installed Language: en|US|iso8859-1
-
-Handle 0x004F, DMI type 14, 8 bytes
+Handle 0x004B, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x0050, DMI type 219, 81 bytes
+Handle 0x004C, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 50 00 01 03 01 45 02 00 A0 06 01 00 66 20
+		DB 51 4C 00 01 03 01 45 02 00 A0 06 01 10 80 20
 		00 00 00 00 40 08 00 01 1F 00 00 C9 03 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -929,6 +914,6 @@ OEM-specific Type
 		MEI2
 		MEI3
 
-Handle 0x0051, DMI type 127, 4 bytes
+Handle 0x004D, DMI type 127, 4 bytes
 End Of Table
 

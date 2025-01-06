@@ -1,0 +1,202 @@
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
+SMBIOS 3.6.0 present.
+# SMBIOS implementations newer than version 3.5.0 are not
+# fully supported by this version of dmidecode.
+Table at 0x26D210000.
+
+Handle 0x0000, DMI type 0, 26 bytes
+BIOS Information
+	Vendor: EDK II
+	Version: 36.3.0-gcid-36191598
+	Release Date: 05/06/2024
+	ROM Size: 0 MB
+	Characteristics:
+		PCI is supported
+		PNP is supported
+		BIOS is upgradeable
+		BIOS shadowing is allowed
+		Boot from CD is supported
+		Selectable boot is supported
+		ACPI is supported
+		Targeted content distribution is supported
+		UEFI is supported
+	BIOS Revision: 0.0
+	Firmware Revision: 0.0
+
+Handle 0x0001, DMI type 1, 27 bytes
+System Information
+	Manufacturer: NVIDIA
+	Product Name: NVIDIA Jetson Orin NX Engineering Reference Developer Kit
+	Version: Not Specified
+	Serial Number: --
+	UUID: --
+	Wake-up Type: Power Switch
+	SKU Number: Unknown
+	Family: Unknown
+
+Handle 0x0002, DMI type 3, 25 bytes
+Chassis Information
+	Manufacturer: NVIDIA
+	Type: Other
+	Lock: Not Present
+	Version: Unknown
+	Serial Number: --
+	Asset Tag: --
+	Boot-up State: Unknown
+	Power Supply State: Unknown
+	Thermal State: Unknown
+	Security Status: Unknown
+	OEM Information: 0x00000000
+	Height: 1 U
+	Number Of Power Cords: 1
+	Contained Elements: 0
+	SKU Number: Unknown
+
+Handle 0x0003, DMI type 2, 17 bytes
+Base Board Information
+	Manufacturer: NVIDIA
+	Product Name: Jetson
+	Version: Not Specified
+	Serial Number: --
+	Asset Tag: --
+	Features:
+		Board is a hosting board
+		Board is replaceable
+	Location In Chassis: Unknown
+	Chassis Handle: 0x0002
+	Type: Motherboard
+	Contained Object Handles: 0
+
+Handle 0x0004, DMI type 13, 22 bytes
+BIOS Language Information
+	Language Description Format: Long
+	Installable Languages: 1
+		en|US|iso8859-1
+	Currently Installed Language: en|US|iso8859-1
+
+Handle 0x0005, DMI type 32, 11 bytes
+System Boot Information
+	Status: No errors detected
+
+Handle 0x0006, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L1 Instruction Cache
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Unknown
+	Location: Unknown
+	Installed Size: 384 kB
+	Maximum Size: 384 kB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Unknown
+	System Type: Instruction
+	Associativity: 4-way Set-associative
+
+Handle 0x0007, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L1 Data Cache
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Unknown
+	Location: Unknown
+	Installed Size: 384 kB
+	Maximum Size: 384 kB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Unknown
+	System Type: Data
+	Associativity: 4-way Set-associative
+
+Handle 0x0008, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L2 Cache
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Unknown
+	Location: Unknown
+	Installed Size: 1536 kB
+	Maximum Size: 1536 kB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Unknown
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x0009, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L3 Cache
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Unknown
+	Location: Unknown
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
+	Supported SRAM Types:
+		Unknown
+	Installed SRAM Type: Unknown
+	Speed: Unknown
+	Error Correction Type: Unknown
+	System Type: Unified
+	Associativity: 16-way Set-associative
+
+Handle 0x000A, DMI type 4, 50 bytes
+Processor Information
+	Socket Designation: Not Specified
+	Type: Central Processor
+	Family: ARMv8
+	Manufacturer: NVIDIA
+	ID: 34 02 6B 03 01 04 00 00
+	Signature: JEP-106 Bank 0x03 Manufacturer 0x6b, SoC ID 0x0234, SoC Revision 0x00000401
+	Version: Not Specified
+	Voltage: Unknown
+	External Clock: 31 MHz
+	Max Speed: Unknown
+	Current Speed: Unknown
+	Status: Populated, Enabled
+	Upgrade: Unknown
+	L1 Cache Handle: 0x0007
+	L2 Cache Handle: 0x0008
+	L3 Cache Handle: 0x0009
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Not Specified
+	Core Count: 6
+	Core Enabled: 6
+	Thread Count: 6
+	Characteristics:
+		64-bit capable
+		Execute Protection
+		Arm64 SoC ID
+
+Handle 0x000B, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: Single-bit ECC
+	Maximum Capacity: 8 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 1
+
+Handle 0x000C, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00080000000
+	Ending Address: 0x002725EFFFF
+	Range Size: 7973 MB
+	Physical Array Handle: 0x000B
+	Partition Width: 1
+
+Handle 0x000D, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00276000000
+	Ending Address: 0x00277FFFFFF
+	Range Size: 32 MB
+	Physical Array Handle: 0x000B
+	Partition Width: 1
+
+Handle 0xFEFF, DMI type 127, 4 bytes
+End Of Table
+
