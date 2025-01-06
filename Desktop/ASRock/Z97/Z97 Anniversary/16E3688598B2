@@ -1,14 +1,14 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-30 structures occupying 1644 bytes.
-Table at 0x000EE8C0.
+30 structures occupying 1651 bytes.
+Table at 0xDEEE2018.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: P2.10
-	Release Date: 03/08/2018
+	Version: P2.12
+	Release Date: 08/13/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8 MB
@@ -51,8 +51,8 @@ Base Board Information
 	Product Name: Z97 Anniversary
 	Version:                       
 	Serial Number: --
-	Asset Tag: --
-	97946E993916094B22613E03B8339091
+	271882FD79060B21C43F805A2DE81148                       
+	Features:
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis:                       
@@ -82,7 +82,8 @@ Chassis Information
 Handle 0x0004, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 17
@@ -94,7 +95,8 @@ System Slot Information
 Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Long
 	ID: 18
@@ -107,19 +109,22 @@ System Slot Information
 Handle 0x0006, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE3
-	Type: x1 PCI Express
-	Current Usage: Available
+	Type: PCI Express
+	Data Bus Width: 1x or x1
+	Current Usage: In Use
 	Length: Short
 	ID: 19
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
+	Bus Address: ffff:03:00.0
 
 Handle 0x0007, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 20
@@ -127,12 +132,13 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:03:00.0
+	Bus Address: ffff:04:00.0
 
 Handle 0x0008, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI1
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -140,12 +146,13 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:05:00.0
+	Bus Address: ffff:06:00.0
 
 Handle 0x0009, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI2
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Long
 	ID: 2
@@ -153,7 +160,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:05:01.0
+	Bus Address: ffff:06:01.0
 
 Handle 0x000A, DMI type 11, 5 bytes
 OEM Strings

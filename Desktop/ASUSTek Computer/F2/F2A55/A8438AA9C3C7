@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 63 structures occupying 2553 bytes.
@@ -321,7 +321,8 @@ Port Connector Information
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_1
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -334,7 +335,8 @@ System Slot Information
 Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -347,7 +349,8 @@ System Slot Information
 Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_2
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -360,8 +363,9 @@ System Slot Information
 Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI1
-	Type: 32-bit PCI
-	Current Usage: In Use
+	Type: PCI
+	Data Bus Width: 32 bit
+	Current Usage: Available
 	Length: Short
 	ID: 4
 	Characteristics:
@@ -373,7 +377,8 @@ System Slot Information
 Handle 0x0026, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_2
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 5
@@ -386,7 +391,8 @@ System Slot Information
 Handle 0x0027, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI2
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 6
@@ -399,7 +405,8 @@ System Slot Information
 Handle 0x0028, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI3
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 7
@@ -436,15 +443,15 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 12 GB
+	Maximum Capacity: 20 GB
 	Error Information Handle: Not Provided
 	Number Of Devices: 4
 
 Handle 0x002D, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 12 GB
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 20 GB
 	Physical Array Handle: 0x002C
 	Partition Width: 255
 
@@ -462,12 +469,12 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 1600 MT/s
-	Manufacturer: A1_Manufacturer1
+	Manufacturer: Undefined       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber1
-	Rank: Unknown
-	Configured Memory Speed: 1600 MT/s
+	Part Number: TIMETEC-UD3-1333  
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x002F, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -497,7 +504,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: KHX1600C10D3/8G   
 	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0031, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -527,7 +534,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: KHX1600C10D3/8G   
 	Rank: 1
-	Configured Memory Speed: 1600 MT/s
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0033, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -542,25 +549,31 @@ Handle 0x0034, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x002C
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: Unknown
+	Size: 8 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B2
 	Bank Locator: A1_BANK3
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer3
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1333 MT/s
+	Manufacturer: Kingston        
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber3
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: KHX1600C10D3/8G   
+	Rank: 1
+	Configured Memory Speed: 1333 MT/s
 
-Handle 0x0035, DMI type 126, 35 bytes
-Inactive
+Handle 0x0035, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00300000000
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0034
+	Memory Array Mapped Address Handle: 0x002D
+	Partition Row Position: 1
 
 Handle 0x0036, DMI type 32, 20 bytes
 System Boot Information
@@ -685,7 +698,7 @@ BIOS Language Information
 		ja|JP|unicode
 		zh|TW|unicode
 		zh|CN|unicode
-	Currently Installed Language: en|US|iso8859-1
+	Currently Installed Language: es|ES|iso8859-1
 
 Handle 0x003E, DMI type 127, 4 bytes
 End Of Table

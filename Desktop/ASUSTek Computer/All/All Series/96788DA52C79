@@ -1,17 +1,17 @@
-# dmidecode 2.12
-# SMBIOS entry point at 0x000f04c0
+# dmidecode 3.5
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-77 structures occupying 3049 bytes.
+77 structures occupying 3046 bytes.
 Table at 0x000EC2F0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 2501
-	Release Date: 07/22/2015
+	Version: 3602
+	Release Date: 03/23/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		APM is supported
@@ -575,20 +575,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
-	Manufacturer: 0000
+	Speed: 1600 MT/s
+	Manufacturer: 1319
 	Serial Number: --
 	Asset Tag: --
-	Part Number:                   
-	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Part Number: KRE-D3U1600M/8G   
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x003C, DMI type 16, 23 bytes
 Physical Memory Array
@@ -602,8 +602,8 @@ Physical Memory Array
 Handle 0x003D, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x003B
 	Memory Array Mapped Address Handle: 0x0044
 	Partition Row Position: Unknown
@@ -616,26 +616,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
-	Manufacturer: 0000
+	Speed: 1600 MT/s
+	Manufacturer: 1319
 	Serial Number: --
 	Asset Tag: --
-	Part Number:                   
-	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Part Number: KRE-D3U1600M/8G   
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x003F, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x003E
 	Memory Array Mapped Address Handle: 0x0044
 	Partition Row Position: Unknown
@@ -648,26 +648,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
-	Manufacturer: 0000
+	Speed: 1600 MT/s
+	Manufacturer: 1319
 	Serial Number: --
 	Asset Tag: --
-	Part Number:                   
-	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Part Number: KRE-D3U1600M/8G   
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0041, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0040
 	Memory Array Mapped Address Handle: 0x0044
 	Partition Row Position: Unknown
@@ -680,26 +680,26 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 3
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
-	Manufacturer: Samsung
+	Speed: 1600 MT/s
+	Manufacturer: 1319
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M378B5773SB0-CK0  
-	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Part Number: KRE-D3U1600M/8G   
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0043, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00180000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0042
 	Memory Array Mapped Address Handle: 0x0044
 	Partition Row Position: Unknown
@@ -709,8 +709,8 @@ Memory Device Mapped Address
 Handle 0x0044, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x003C
 	Partition Width: 4
 
@@ -736,8 +736,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -752,8 +752,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -761,32 +761,6 @@ Cache Information
 	Error Correction Type: Single-bit ECC
 	System Type: Unified
 	Associativity: 12-way Set-associative
-
-Handle 0x004B, DMI type 4, 42 bytes
-Processor Information
-	Socket Designation: SOCKET 1150
-	Type: Central Processor
-	Family: Other
-	Manufacturer: Intel
-	ID: C3 06 03 00 FF FB EB BF
-	Version: Intel(R) Core(TM) i5-4440 CPU @ 3.10GHz
-	Voltage: 1.2 V
-	External Clock: 100 MHz
-	Max Speed: 3900 MHz
-	Current Speed: 3100 MHz
-	Status: Populated, Enabled
-	Upgrade: Socket BGA1155
-	L1 Cache Handle: 0x0045
-	L2 Cache Handle: 0x0046
-	L3 Cache Handle: 0x0047
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Fill By OEM
-	Core Count: 4
-	Core Enabled: 4
-	Thread Count: 4
-	Characteristics:
-		64-bit capable
 
 Handle 0x0050, DMI type 136, 6 bytes
 OEM-specific Type
@@ -815,6 +789,32 @@ BIOS Language Information
 		zh|CN|unicode
 	Currently Installed Language: ru|RU|iso8859-5
 
-Handle 0x0054, DMI type 127, 4 bytes
+Handle 0x0054, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: SOCKET 1150
+	Type: Central Processor
+	Family: Other
+	Manufacturer: Intel
+	ID: C3 06 03 00 FF FB EB BF
+	Version: Intel(R) Core(TM) i5-4440 CPU @ 3.10GHz
+	Voltage: 1.2 V
+	External Clock: 100 MHz
+	Max Speed: 3900 MHz
+	Current Speed: 3115 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket BGA1155
+	L1 Cache Handle: 0x0045
+	L2 Cache Handle: 0x0046
+	L3 Cache Handle: 0x0047
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Fill By OEM
+	Core Count: 4
+	Core Enabled: 4
+	Thread Count: 4
+	Characteristics:
+		64-bit capable
+
+Handle 0x0059, DMI type 127, 4 bytes
 End Of Table
 

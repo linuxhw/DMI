@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0 present.
 81 structures occupying 3957 bytes.
@@ -701,13 +701,27 @@ Handle 0x003F, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x003E
 	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: DIMM_A1
+	Bank Locator: BANK 0
+	Type: Unknown
+	Type Detail: None
+
+Handle 0x0040, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x003E
+	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: DIMM_A1
-	Bank Locator: BANK 0
+	Locator: DIMM_B1
+	Bank Locator: BANK 2
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
@@ -720,30 +734,6 @@ Memory Device
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
-
-Handle 0x0040, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x003E
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
-	Set: None
-	Locator: DIMM_B1
-	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
 
 Handle 0x0041, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -765,7 +755,7 @@ Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x003F
+	Physical Device Handle: 0x0040
 	Memory Array Mapped Address Handle: 0x0041
 	Partition Row Position: Unknown
 
@@ -778,7 +768,7 @@ OEM-specific Type
 Handle 0x0045, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 45 00 10 00 00 00 00 00 00 00 00 00 00 00
+		83 40 45 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 43 A1 00 00 00 00 01 00 00 00 00 00 0B 00
 		90 04 00 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
@@ -889,7 +879,7 @@ Group Associations
 Handle 0x004E, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 4E 00 01 03 01 45 02 00 90 06 03 10 86 00
+		DB 51 4E 00 01 03 01 45 02 00 90 06 01 10 80 00
 		00 00 00 00 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 FF FF FF FF FF FF FF

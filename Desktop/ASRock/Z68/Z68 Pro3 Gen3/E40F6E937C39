@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-28 structures occupying 1631 bytes.
+26 structures occupying 1529 bytes.
 Table at 0x000EF370.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -257,7 +257,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
-	Voltage: 2.1 V
+	Voltage: 1.6 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
 	Current Speed: 3400 MHz
@@ -281,7 +281,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -289,20 +289,20 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Transcend
+	Manufacturer: 8313
 	Serial Number: --
 	Asset Tag: --
-	Part Number: JM1333KLU-2G      
+	Part Number: CL9-9-9 D3-1333   
 	Rank: 2
 	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0011
-	Memory Array Mapped Address Handle: 0x0019
+	Memory Array Mapped Address Handle: 0x0017
 	Partition Row Position: 1
 	Interleave Position: 1
 	Interleaved Data Depth: 2
@@ -311,35 +311,17 @@ Handle 0x0013, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000F
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 1
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Transcend
-	Serial Number: --
-	Asset Tag: --
-	Part Number: JM1333KLU-2G      
-	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Type: Unknown
+	Type Detail: None
 
-Handle 0x0014, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00280000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x0013
-	Memory Array Mapped Address Handle: 0x0019
-	Partition Row Position: 1
-	Interleave Position: 1
-	Interleaved Data Depth: 2
-
-Handle 0x0015, DMI type 17, 34 bytes
+Handle 0x0014, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000F
 	Error Information Handle: Not Provided
@@ -360,65 +342,47 @@ Memory Device
 	Rank: 2
 	Configured Memory Speed: 1333 MT/s
 
-Handle 0x0016, DMI type 20, 35 bytes
+Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x0027FFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0015
-	Memory Array Mapped Address Handle: 0x0019
+	Physical Device Handle: 0x0014
+	Memory Array Mapped Address Handle: 0x0017
 	Partition Row Position: 1
 	Interleave Position: 2
 	Interleaved Data Depth: 2
 
-Handle 0x0017, DMI type 17, 34 bytes
+Handle 0x0016, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x000F
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 3
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: 8313
-	Serial Number: --
-	Asset Tag: --
-	Part Number: CL9-9-9 D3-1333   
-	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Type: Unknown
+	Type Detail: None
 
-Handle 0x0018, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00300000000
-	Ending Address: 0x004FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x0017
-	Memory Array Mapped Address Handle: 0x0019
-	Partition Row Position: 1
-	Interleave Position: 2
-	Interleaved Data Depth: 2
-
-Handle 0x0019, DMI type 19, 31 bytes
+Handle 0x0017, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x004FFFFFFFF
-	Range Size: 20 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x000F
 	Partition Width: 4
 
-Handle 0x001C, DMI type 131, 64 bytes
+Handle 0x001A, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 1C 00 35 00 00 00 00 00 00 00 00 00 00 00
+		83 40 1A 00 35 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 44 1C FF FF FF FF 01 00 00 00 01 00 08 00
 		E0 04 00 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 36 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x001D, DMI type 127, 4 bytes
+Handle 0x001B, DMI type 127, 4 bytes
 End Of Table
 

@@ -321,14 +321,14 @@ Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_2
 	Type: x16 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 2
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:05:00.0
+	Bus Address: 0000:ff:00.0
 
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
@@ -341,7 +341,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:04:1c.7
+	Bus Address: 0000:ff:1c.7
 
 Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
@@ -354,7 +354,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:04:1d.0
+	Bus Address: 0000:ff:1d.0
 
 Handle 0x0024, DMI type 10, 8 bytes
 On Board Device 1 Information
@@ -653,13 +653,13 @@ Memory Device
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1648 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX1600C10D3/4G   
 	Rank: 1
-	Configured Memory Speed: 1648 MT/s
+	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -701,13 +701,13 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1648 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX1600C10D3/4G   
 	Rank: 1
-	Configured Memory Speed: 1648 MT/s
+	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.5 V
@@ -777,7 +777,7 @@ Processor Information
 	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 3900 MHz
-	Current Speed: 3305 MHz
+	Current Speed: 3200 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
 	L1 Cache Handle: 0x0050
@@ -865,7 +865,7 @@ Handle 0x0058, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 58 00 03 01 00 02 00 00 00 00 02 00 00 00
-		00 07 00 03 00 00 05 00 00 00
+		00 19 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version

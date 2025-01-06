@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 60 structures occupying 2232 bytes.
@@ -416,7 +416,8 @@ Port Connector Information
 Handle 0x0025, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIE1X
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 9
@@ -428,7 +429,8 @@ System Slot Information
 Handle 0x0026, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIE16X
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -440,7 +442,8 @@ System Slot Information
 Handle 0x0027, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI1
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 12
@@ -452,7 +455,8 @@ System Slot Information
 Handle 0x0028, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI2
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 13
@@ -536,8 +540,8 @@ Physical Memory Array
 Handle 0x0031, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0062FFFFFFF
-	Range Size: 25344 MB
+	Ending Address: 0x0022FFFFFFF
+	Range Size: 8960 MB
 	Physical Array Handle: 0x0030
 	Partition Width: 1
 
@@ -545,57 +549,35 @@ Handle 0x0032, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0030
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
-	Type: Other
-	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Manufacturer0
-	Serial Number: --
-	Asset Tag: --
-	Part Number: PartNum0
+	Type: Unknown
+	Type Detail: None
 
-Handle 0x0033, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x0032
-	Memory Array Mapped Address Handle: 0x0031
-	Partition Row Position: 1
+Handle 0x0033, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x0034, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0030
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Other
-	Type Detail: Synchronous
-	Speed: 1600 MT/s
-	Manufacturer: Manufacturer1
-	Serial Number: --
-	Asset Tag: --
-	Part Number: PartNum1
+	Type: Unknown
+	Type Detail: None
 
-Handle 0x0035, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
-	Physical Device Handle: 0x0034
-	Memory Array Mapped Address Handle: 0x0031
-	Partition Row Position: 1
+Handle 0x0035, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x0036, DMI type 17, 27 bytes
 Memory Device
@@ -618,8 +600,8 @@ Memory Device
 
 Handle 0x0037, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x004FFFFFFFF
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0036
 	Memory Array Mapped Address Handle: 0x0031
@@ -646,8 +628,8 @@ Memory Device
 
 Handle 0x0039, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00500000000
-	Ending Address: 0x005FFFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0038
 	Memory Array Mapped Address Handle: 0x0031

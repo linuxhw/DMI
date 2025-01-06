@@ -1,8 +1,8 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 91 structures occupying 3929 bytes.
-Table at 0x000ECFF0.
+Table at 0x000EA750.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -321,14 +321,14 @@ Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_2
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 2
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:00.0
+	Bus Address: 0000:05:00.0
 
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
@@ -381,7 +381,7 @@ Handle 0x0027, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Disabled
 	Keyboard Password Status: Disabled
-	Administrator Password Status: Disabled
+	Administrator Password Status: Enabled
 	Front Panel Reset Status: Disabled
 
 Handle 0x0028, DMI type 32, 20 bytes
@@ -930,7 +930,7 @@ OEM-specific Type
 		DD 36 5D 00 07 01 00 02 00 00 00 00 02 00 01 08
 		00 00 00 03 00 02 00 00 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 06 00 07 00 FF FF FF 06 00 08
-		00 FF FF FF 30 10
+		00 FF FF FF 00 00
 	Strings:
 		Reference Code - SA - System Agent
 		Reference Code - MRC
@@ -962,7 +962,7 @@ Group Associations
 Handle 0x0060, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 60 00 10 00 00 00 00 00 00 00 00 00 00 00
+		83 40 60 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 00 00 00 00 00 00 01 00 00 00 01 00 09 00
 		ED 03 19 00 00 00 00 00 C8 00 00 00 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00

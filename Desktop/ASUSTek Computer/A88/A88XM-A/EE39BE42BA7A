@@ -1,5 +1,5 @@
-# dmidecode 2.12
-# SMBIOS entry point at 0x000f04c0
+# dmidecode 3.5
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 55 structures occupying 2382 bytes.
 Table at 0x000EC150.
@@ -7,11 +7,11 @@ Table at 0x000EC150.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 2701
-	Release Date: 11/03/2015
+	Version: 3001
+	Release Date: 03/09/2016
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -316,7 +316,7 @@ Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI1
 	Type: 32-bit PCI
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 3
 	Characteristics:
@@ -371,85 +371,65 @@ Handle 0x0026, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0024
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
+	Total Width: Unknown
 	Data Width: 64 bits
-	Size: 4096 MB
-	Form Factor: DIMM
+	Size: No Module Installed
+	Form Factor: Unknown
 	Set: None
 	Locator: DIMM_A1
 	Bank Locator: A1_BANK0
+	Type: Unknown
+	Type Detail: None
+
+Handle 0x0027, DMI type 126, 35 bytes
+Inactive
+
+Handle 0x0028, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x0024
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_A2
+	Bank Locator: A1_BANK1
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1600 MHz
-	Manufacturer: A1_Manufacturer1
+	Speed: 1600 MT/s
+	Manufacturer: Undefined       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber1
-	Rank: Unknown
-	Configured Clock Speed: 1600 MHz
+	Part Number: QUM3U-4G1600C11   
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0027, DMI type 20, 35 bytes
+Handle 0x0029, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0026
+	Physical Device Handle: 0x0028
 	Memory Array Mapped Address Handle: 0x0025
 	Partition Row Position: 1
 
-Handle 0x0028, DMI type 17, 34 bytes
+Handle 0x002A, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0024
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: 64 bits
 	Size: No Module Installed
-	Form Factor: Unknown
-	Set: None
-	Locator: DIMM_A2
-	Bank Locator: A1_BANK1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer0
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Array1_PartNumber0
-	Rank: Unknown
-	Configured Clock Speed: Unknown
-
-Handle 0x0029, DMI type 126, 35 bytes
-Inactive
-
-Handle 0x002A, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x0024
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4096 MB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B1
 	Bank Locator: A1_BANK2
-	Type: DDR3
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1600 MHz
-	Manufacturer: Undefined       
-	Serial Number: --
-	Asset Tag: --
-	Part Number: QUM3U-4G1600C11   
-	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Type: Unknown
+	Type Detail: Synchronous
 
-Handle 0x002B, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x002A
-	Memory Array Mapped Address Handle: 0x0025
-	Partition Row Position: 1
+Handle 0x002B, DMI type 126, 35 bytes
+Inactive
 
 Handle 0x002C, DMI type 17, 34 bytes
 Memory Device
@@ -458,19 +438,12 @@ Memory Device
 	Total Width: Unknown
 	Data Width: 64 bits
 	Size: No Module Installed
-	Form Factor: Unknown
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B2
 	Bank Locator: A1_BANK3
 	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer3
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Array1_PartNumber3
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Type Detail: Synchronous
 
 Handle 0x002D, DMI type 126, 35 bytes
 Inactive
@@ -525,8 +498,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst

@@ -1,7 +1,7 @@
 # dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-28 structures occupying 1533 bytes.
+27 structures occupying 1466 bytes.
 Table at 0x000EC820.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -107,26 +107,26 @@ Handle 0x0006, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE3
 	Type: x1 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 19
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
+	Bus Address: ffff:03:00.0
 
 Handle 0x0007, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE4
 	Type: x1 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 20
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: ffff:03:00.0
 
 Handle 0x0008, DMI type 9, 17 bytes
 System Slot Information
@@ -193,10 +193,10 @@ Handle 0x000F, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPUSocket
 	Type: Central Processor
-	Family: Core i7
+	Family: Core i3
 	Manufacturer: Intel
-	ID: 71 06 04 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 71, Stepping 1
+	ID: C3 06 03 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 60, Stepping 3
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -226,11 +226,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i7-5775C CPU @ 3.30GHz
+	Version: Intel(R) Core(TM) i3-4130 CPU @ 3.40GHz
 	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 3300 MHz
+	Current Speed: 3400 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
 	L1 Cache Handle: 0x0010
@@ -239,9 +239,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Fill By OEM
-	Core Count: 4
-	Core Enabled: 4
-	Thread Count: 8
+	Core Count: 2
+	Core Enabled: 2
+	Thread Count: 4
 	Characteristics:
 		64-bit capable
 
@@ -251,8 +251,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 256 kB
-	Maximum Size: 256 kB
+	Installed Size: 128 kB
+	Maximum Size: 128 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -267,8 +267,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1 MB
-	Maximum Size: 1 MB
+	Installed Size: 512 kB
+	Maximum Size: 512 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -283,8 +283,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6 MB
-	Maximum Size: 6 MB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -383,14 +383,6 @@ OEM-specific Type
 	Header and Data:
 		88 06 1B 00 00 00
 
-Handle 0x001D, DMI type 131, 64 bytes
-OEM-specific Type
-	Header and Data:
-		83 40 1D 00 31 00 00 00 00 00 00 00 00 00 00 00
-		F8 00 00 00 00 00 00 00 01 00 00 00 01 00 09 00
-		ED 03 19 00 00 00 00 00 C8 00 00 00 00 00 00 00
-		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
-
-Handle 0x001E, DMI type 127, 4 bytes
+Handle 0x001D, DMI type 127, 4 bytes
 End Of Table
 

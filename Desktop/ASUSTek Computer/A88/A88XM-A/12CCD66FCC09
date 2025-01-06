@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 55 structures occupying 2382 bytes.
@@ -373,65 +373,11 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A1
 	Bank Locator: A1_BANK0
-	Type: DDR3
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1333 MT/s
-	Manufacturer: A1_Manufacturer1
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Array1_PartNumber1
-	Rank: Unknown
-	Configured Memory Speed: 1333 MT/s
-
-Handle 0x0027, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0026
-	Memory Array Mapped Address Handle: 0x0025
-	Partition Row Position: 1
-
-Handle 0x0028, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x0024
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: Unknown
-	Set: None
-	Locator: DIMM_A2
-	Bank Locator: A1_BANK1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer0
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Array1_PartNumber0
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-
-Handle 0x0029, DMI type 126, 35 bytes
-Inactive
-
-Handle 0x002A, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x0024
-	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4 GB
-	Form Factor: DIMM
-	Set: None
-	Locator: DIMM_B1
-	Bank Locator: A1_BANK2
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 1600 MT/s
@@ -440,13 +386,73 @@ Memory Device
 	Asset Tag: --
 	Part Number: 99U5584-003.A00LF 
 	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
+
+Handle 0x0027, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0026
+	Memory Array Mapped Address Handle: 0x0025
+	Partition Row Position: 1
+
+Handle 0x0028, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x0024
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_A2
+	Bank Locator: A1_BANK1
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1600 MT/s
+	Manufacturer: Kingston        
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 99U5584-003.A00LF 
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
+
+Handle 0x0029, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0028
+	Memory Array Mapped Address Handle: 0x0025
+	Partition Row Position: 1
+
+Handle 0x002A, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x0024
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM_B1
+	Bank Locator: A1_BANK2
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1600 MT/s
+	Manufacturer: Undefined       
+	Serial Number: --
+	Asset Tag: --
+	Part Number: ATERMITER         
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x002B, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00300000000
+	Ending Address: 0x004FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x002A
 	Memory Array Mapped Address Handle: 0x0025
 	Partition Row Position: 1
@@ -455,25 +461,31 @@ Handle 0x002C, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0024
 	Error Information Handle: Not Provided
-	Total Width: Unknown
+	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: No Module Installed
-	Form Factor: Unknown
+	Size: 4 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B2
 	Bank Locator: A1_BANK3
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: A1_Manufacturer3
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1600 MT/s
+	Manufacturer: Undefined       
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Array1_PartNumber3
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: ATERMITER         
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x002D, DMI type 126, 35 bytes
-Inactive
+Handle 0x002D, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00500000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x002C
+	Memory Array Mapped Address Handle: 0x0025
+	Partition Row Position: 1
 
 Handle 0x002E, DMI type 32, 20 bytes
 System Boot Information

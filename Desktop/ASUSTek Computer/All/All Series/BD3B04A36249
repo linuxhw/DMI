@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 70 structures occupying 2729 bytes.
@@ -7,8 +7,8 @@ Table at 0x000EC2F0.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 3602
-	Release Date: 03/26/2018
+	Version: 2203
+	Release Date: 06/18/2015
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8 MB
@@ -234,7 +234,8 @@ Port Connector Information
 Handle 0x0017, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 1
@@ -247,7 +248,8 @@ System Slot Information
 Handle 0x0018, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -260,7 +262,8 @@ System Slot Information
 Handle 0x0019, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 3
@@ -559,10 +562,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Kingston
+	Manufacturer: 0215
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9905471-064.A00LF 
+	Part Number: CMV8GX3M1A1600C11 
 	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
@@ -600,10 +603,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 0215
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMV8GX3M1A1600C11 
+	Part Number: 9905471-064.A00LF 
 	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
@@ -681,11 +684,11 @@ Processor Information
 	Family: Other
 	Manufacturer: Intel
 	ID: C3 06 03 00 FF FB EB BF
-	Version: Intel(R) Xeon(R) CPU E3-1220 v3 @ 3.10GHz
+	Version: Intel(R) Xeon(R) CPU E3-1270 v3 @ 3.50GHz
 	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 3900 MHz
-	Current Speed: 3100 MHz
+	Current Speed: 3502 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1155
 	L1 Cache Handle: 0x003E
@@ -696,7 +699,7 @@ Processor Information
 	Part Number: Fill By OEM
 	Core Count: 4
 	Core Enabled: 4
-	Thread Count: 4
+	Thread Count: 8
 	Characteristics:
 		64-bit capable
 

@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 63 structures occupying 2330 bytes.
@@ -120,11 +120,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM)2 Quad CPU Q8200 @ 2.33GHz         
-	Voltage: 1.3 V
+	Version: Intel(R) Core(TM)2 Quad CPU Q9400 @ 2.66GHz         
+	Voltage: 1.2 V
 	External Clock: 333 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 2333 MHz
+	Current Speed: 2666 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -161,15 +161,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4 MB
-	Maximum Size: 4 MB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
 	Speed: Unknown
 	Error Correction Type: Single-bit ECC
 	System Type: Unified
-	Associativity: 8-way Set-associative
+	Associativity: Other
 
 Handle 0x0007, DMI type 7, 19 bytes
 Cache Information
@@ -462,7 +462,8 @@ Port Connector Information
 Handle 0x002A, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIEX16_1
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 16
@@ -474,8 +475,9 @@ System Slot Information
 Handle 0x002B, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIEX1_1
-	Type: 32-bit PCI Express
-	Current Usage: In Use
+	Type: PCI Express
+	Data Bus Width: 32 bit
+	Current Usage: Available
 	Length: Short
 	ID: 32
 	Characteristics:
@@ -486,7 +488,8 @@ System Slot Information
 Handle 0x002C, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI_1
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -498,7 +501,8 @@ System Slot Information
 Handle 0x002D, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI_2
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -553,8 +557,8 @@ Physical Memory Array
 Handle 0x0033, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x0013FFFFFFF
+	Range Size: 5 GB
 	Physical Array Handle: 0x0032
 	Partition Width: 4
 
@@ -562,16 +566,16 @@ Handle 0x0034, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0032
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 800 MT/s
 	Manufacturer: Manufacturer0
 	Serial Number: --
 	Asset Tag: --
@@ -580,8 +584,8 @@ Memory Device
 Handle 0x0035, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000000003FF
-	Range Size: 1 kB
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
 	Physical Device Handle: 0x0034
 	Memory Array Mapped Address Handle: 0x0033
 	Partition Row Position: 1
@@ -608,8 +612,8 @@ Memory Device
 
 Handle 0x0037, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
+	Starting Address: 0x00040000000
+	Ending Address: 0x000BFFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x0036
 	Memory Array Mapped Address Handle: 0x0033
@@ -620,26 +624,21 @@ Handle 0x0038, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0032
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
-	Type: DDR2
-	Type Detail: Synchronous
-	Speed: 800 MT/s
-	Manufacturer: Manufacturer2
-	Serial Number: --
-	Asset Tag: --
-	Part Number: PartNum2
+	Type: Unknown
+	Type Detail: Unknown
 
 Handle 0x0039, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 2 GB
+	Starting Address: 0x00000000000
+	Ending Address: 0x000000003FF
+	Range Size: 1 kB
 	Physical Device Handle: 0x0038
 	Memory Array Mapped Address Handle: 0x0033
 	Partition Row Position: 1
@@ -666,8 +665,8 @@ Memory Device
 
 Handle 0x003B, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x0017FFFFFFF
+	Starting Address: 0x000C0000000
+	Ending Address: 0x0013FFFFFFF
 	Range Size: 2 GB
 	Physical Device Handle: 0x003A
 	Memory Array Mapped Address Handle: 0x0033

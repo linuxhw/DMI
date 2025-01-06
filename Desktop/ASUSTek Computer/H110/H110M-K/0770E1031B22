@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0xB3200000.
+Table at 0xC7A00000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 4211
-	Release Date: 02/04/2021
+	Version: 4401
+	Release Date: 12/19/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -260,7 +260,7 @@ Handle 0x0019, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_2
 	Type: x1 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 2
 	Characteristics:
@@ -560,25 +560,15 @@ Handle 0x0038, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0037
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 8 GB
-	Form Factor: DIMM
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
 	Set: None
 	Locator: DIMM_A1
 	Bank Locator: BANK 0
-	Type: DDR4
-	Type Detail: Synchronous
-	Speed: 2133 MT/s
-	Manufacturer: G-Skill
-	Serial Number: --
-	Asset Tag: --
-	Part Number: F4-2666C19-8GVR     
-	Rank: 1
-	Configured Memory Speed: 2133 MT/s
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: 1.2 V
+	Type: Unknown
+	Type Detail: None
 
 Handle 0x0039, DMI type 17, 40 bytes
 Memory Device
@@ -607,10 +597,10 @@ Memory Device
 Handle 0x003A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0037
-	Partition Width: 2
+	Partition Width: 1
 
 Handle 0x003B, DMI type 7, 19 bytes
 Cache Information
@@ -697,11 +687,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i7-6700T CPU @ 2.80GHz
-	Voltage: 1.0 V
+	Version: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
-	Current Speed: 2800 MHz
+	Current Speed: 4000 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x003B
@@ -726,51 +716,38 @@ Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0038
-	Memory Array Mapped Address Handle: 0x003A
-	Partition Row Position: Unknown
-	Interleave Position: 1
-	Interleaved Data Depth: 1
-
-Handle 0x0040, DMI type 20, 35 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
 	Physical Device Handle: 0x0039
 	Memory Array Mapped Address Handle: 0x003A
 	Partition Row Position: Unknown
-	Interleave Position: 2
-	Interleaved Data Depth: 1
 
-Handle 0x0041, DMI type 130, 20 bytes
+Handle 0x0040, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 41 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
+		82 14 40 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
 		C0 00 00 00
 
-Handle 0x0042, DMI type 131, 64 bytes
+Handle 0x0041, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 42 00 14 00 00 00 00 00 00 00 00 00 00 00
+		83 40 41 00 10 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 43 A1 00 00 00 00 01 00 00 00 08 00 0B 00
 		06 0E 41 00 00 00 00 00 FE 00 FF FF 00 00 00 00
-		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
+		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0043, DMI type 221, 26 bytes
+Handle 0x0042, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 43 00 03 01 00 01 00 05 00 00 02 00 00 00
+		DD 1A 42 00 03 01 00 01 00 05 00 00 02 00 00 00
 		00 CC 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
 		TXT ACM version
 
-Handle 0x0044, DMI type 221, 26 bytes
+Handle 0x0043, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 44 00 03 01 00 01 00 05 00 00 02 00 00 00
+		DD 1A 43 00 03 01 00 01 00 05 00 00 02 00 00 00
 		00 00 00 03 04 0B 08 41 06 0E
 	Strings:
 		Reference Code - ME 11.0
@@ -778,10 +755,10 @@ OEM-specific Type
 		ME Firmware Version
 		Consumer SKU
 
-Handle 0x0045, DMI type 221, 61 bytes
+Handle 0x0044, DMI type 221, 61 bytes
 OEM-specific Type
 	Header and Data:
-		DD 3D 45 00 08 01 00 01 00 05 00 00 02 03 FF FF
+		DD 3D 44 00 08 01 00 01 00 05 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 31 00 05 00 FF FF FF 31
 		00 06 00 FF FF FF FF FF 07 00 3E 00 00 00 00 08
 		00 34 00 00 00 00 09 00 0B 00 00 00 00
@@ -796,13 +773,13 @@ OEM-specific Type
 		SKL PCH H Dx Hsio Version
 		KBL PCH H Ax Hsio Version
 
-Handle 0x0046, DMI type 221, 54 bytes
+Handle 0x0045, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 46 00 07 01 00 01 00 05 00 00 02 00 02 00
+		DD 36 45 00 07 01 00 01 00 05 00 00 02 00 02 00
 		00 06 00 03 00 01 00 05 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 07 00 07 00 FF FF FF 07 00 08
-		00 FF FF FF 46 10
+		00 FF FF FF 02 03
 	Strings:
 		Reference Code - SA - System Agent
 		Reference Code - MRC
@@ -813,10 +790,10 @@ OEM-specific Type
 		SA-CRID New Value
 		OPROM - VBIOS
 
-Handle 0x0047, DMI type 221, 103 bytes
+Handle 0x0046, DMI type 221, 103 bytes
 OEM-specific Type
 	Header and Data:
-		DD 67 47 00 0E 01 00 00 00 00 00 00 02 00 FF FF
+		DD 67 46 00 0E 01 00 00 00 00 00 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
 		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
@@ -843,22 +820,22 @@ OEM-specific Type
 		BP1.3.3.0_RP01
 		Platform Version
 
-Handle 0x0048, DMI type 136, 6 bytes
+Handle 0x0047, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 48 00 00 00
+		88 06 47 00 00 00
 
-Handle 0x0049, DMI type 14, 20 bytes
+Handle 0x0048, DMI type 14, 20 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 5
+		0x0042 (OEM-specific)
 		0x0043 (OEM-specific)
 		0x0044 (OEM-specific)
 		0x0045 (OEM-specific)
 		0x0046 (OEM-specific)
-		0x0047 (OEM-specific)
 
-Handle 0x004A, DMI type 13, 22 bytes
+Handle 0x0049, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 8
@@ -872,16 +849,16 @@ BIOS Language Information
 		<BAD INDEX>
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x004B, DMI type 14, 8 bytes
+Handle 0x004A, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x004C, DMI type 219, 81 bytes
+Handle 0x004B, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 4C 00 01 03 01 45 02 00 90 06 03 10 86 20
+		DB 51 4B 00 01 03 01 45 02 00 90 06 03 10 86 20
 		00 00 00 00 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -892,6 +869,6 @@ OEM-specific Type
 		MEI2
 		MEI3
 
-Handle 0x004D, DMI type 127, 4 bytes
+Handle 0x004C, DMI type 127, 4 bytes
 End Of Table
 

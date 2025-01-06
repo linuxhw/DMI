@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0xBFED6000.
@@ -265,7 +265,8 @@ Port Connector Information
 Handle 0x001B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -278,7 +279,8 @@ System Slot Information
 Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -291,7 +293,8 @@ System Slot Information
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -719,7 +722,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A1
@@ -730,8 +733,8 @@ Memory Device
 	Manufacturer: CRUCIAL
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT8G4DFS8213.C8FBD1 
-	Rank: 1
+	Part Number: CT16G4DFRA32A.M16FE 
+	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -743,7 +746,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B1
@@ -754,8 +757,8 @@ Memory Device
 	Manufacturer: CRUCIAL
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CT8G4DFS8213.C8FBD1 
-	Rank: 1
+	Part Number: CT16G4DFRA32A.M16FE 
+	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -764,8 +767,8 @@ Memory Device
 Handle 0x0043, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0040
 	Partition Width: 2
 
@@ -779,8 +782,8 @@ OEM-specific Type
 Handle 0x0045, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0041
 	Memory Array Mapped Address Handle: 0x0043
 	Partition Row Position: Unknown
@@ -789,9 +792,9 @@ Memory Device Mapped Address
 
 Handle 0x0046, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00400000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0042
 	Memory Array Mapped Address Handle: 0x0043
 	Partition Row Position: Unknown
@@ -846,7 +849,7 @@ OEM-specific Type
 		DD 60 4A 00 0D 01 00 00 00 00 00 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF 00 0B 00 FF FF 00 00 00 0C 00 FF
+		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
 		FF FF FF FF 0D 00 02 00 00 00 00 0E 00 FF FF FF
 		FF FF 0F 00 FF FF FF FF FF 10 11 01 02 02 03 00
 	Strings:

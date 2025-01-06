@@ -1,8 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
-SMBIOS 2.8 present.
-48 structures occupying 2816 bytes.
-Table at 0x8F5C0000.
+SMBIOS 3.1.1 present.
+Table at 0x7EDC1000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
@@ -95,7 +94,7 @@ Handle 0x0005, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot2
 	Type: x16 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 18
 	Characteristics:
@@ -160,14 +159,14 @@ Handle 0x000A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot7
 	Type: x4 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 33
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:01:00.0
+	Bus Address: 0000:05:00.0
 
 Handle 0x000B, DMI type 9, 17 bytes
 System Slot Information
@@ -543,13 +542,21 @@ Onboard Device
 
 Handle 0x0024, DMI type 41, 11 bytes
 Onboard Device
+	Reference Designation: Onboard - Video
+	Type: Video
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:00:02.0
+
+Handle 0x0025, DMI type 41, 11 bytes
+Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
 	Type Instance: 2
 	Bus Address: 0000:00:14.0
 
-Handle 0x0025, DMI type 41, 11 bytes
+Handle 0x0026, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -557,7 +564,7 @@ Onboard Device
 	Type Instance: 3
 	Bus Address: 0000:00:14.2
 
-Handle 0x0026, DMI type 41, 11 bytes
+Handle 0x0027, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -565,7 +572,7 @@ Onboard Device
 	Type Instance: 4
 	Bus Address: 0000:00:16.0
 
-Handle 0x0027, DMI type 41, 11 bytes
+Handle 0x0028, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -573,7 +580,7 @@ Onboard Device
 	Type Instance: 5
 	Bus Address: 0000:00:17.0
 
-Handle 0x0028, DMI type 41, 11 bytes
+Handle 0x0029, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -581,7 +588,7 @@ Onboard Device
 	Type Instance: 6
 	Bus Address: 0000:00:1f.0
 
-Handle 0x0029, DMI type 41, 11 bytes
+Handle 0x002A, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -589,7 +596,7 @@ Onboard Device
 	Type Instance: 7
 	Bus Address: 0000:00:1f.2
 
-Handle 0x002A, DMI type 41, 11 bytes
+Handle 0x002B, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Sound
 	Type: Sound
@@ -597,7 +604,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:1f.3
 
-Handle 0x002B, DMI type 41, 11 bytes
+Handle 0x002C, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -605,7 +612,7 @@ Onboard Device
 	Type Instance: 8
 	Bus Address: 0000:00:1f.4
 
-Handle 0x002C, DMI type 41, 11 bytes
+Handle 0x002D, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Ethernet
 	Type: Ethernet
@@ -613,16 +620,16 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:1f.6
 
-Handle 0x002D, DMI type 14, 8 bytes
+Handle 0x002E, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x002E, DMI type 219, 81 bytes
+Handle 0x002F, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 2E 00 01 03 01 45 02 00 90 06 01 00 60 20
+		DB 51 2F 00 01 03 01 45 02 00 90 06 03 00 66 20
 		00 00 00 04 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -633,6 +640,6 @@ OEM-specific Type
 		MEI2
 		MEI3
 
-Handle 0x002F, DMI type 127, 4 bytes
+Handle 0x0030, DMI type 127, 4 bytes
 End Of Table
 
