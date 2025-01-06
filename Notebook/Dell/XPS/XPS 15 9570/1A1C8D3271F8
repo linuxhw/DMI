@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
 Table at 0x000E0000.
@@ -6,8 +6,8 @@ Table at 0x000E0000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.23.0
-	Release Date: 12/02/2021
+	Version: 1.30.0
+	Release Date: 12/15/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -34,7 +34,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.23
+	BIOS Revision: 1.30
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -564,7 +564,7 @@ Handle 0x0043, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 43 00 03 01 00 07 00 31 34 00 02 00 00 00
-		00 EC 00 03 00 01 01 00 00 00
+		00 F0 00 03 00 01 08 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -574,7 +574,7 @@ Handle 0x0044, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 44 00 03 01 00 07 00 31 34 00 02 00 0C 00
-		00 0B 00 03 04 0C 00 55 4D 07
+		00 0B 00 03 04 0C 00 5C 61 08
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -1064,7 +1064,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 22 03 17 13 37 01 00 00
+		DE 10 00 DE 01 04 00 00 23 03 04 23 48 01 00 00
 
 Handle 0xF026, DMI type 218, 77 bytes
 OEM-specific Type
@@ -1086,7 +1086,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 28 F0 31 00 00 00 0C 00 00 00 00 00 0B 00
 		F8 00 0E A3 00 00 00 00 01 00 00 00 00 00 0C 00
-		4D 07 55 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		61 08 5C 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0xF030, DMI type 205, 89 bytes

@@ -1,4 +1,4 @@
-# dmidecode 3.5
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
 98 structures occupying 6072 bytes.
@@ -155,8 +155,8 @@ OEM-specific Type
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.23.0
-	Release Date: 02/10/2023
+	Version: 1.30.0
+	Release Date: 04/26/2024
 	ROM Size: 32 MB
 	Characteristics:
 		PCI is supported
@@ -177,7 +177,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.23
+	BIOS Revision: 1.30
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -186,7 +186,7 @@ System Information
 	Version: Not Specified
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: APM Timer
 	SKU Number: 098F
 	Family: XPS
 
@@ -338,7 +338,7 @@ Port Connector Information
 	Internal Connector Type: None
 	External Reference Designator: USB-C 1
 	External Connector Type: USB Type-C Receptacle
-	Port Type: <OUT OF SPEC>
+	Port Type: Thunderbolt
 
 Handle 0x0801, DMI type 8, 9 bytes
 Port Connector Information
@@ -346,7 +346,7 @@ Port Connector Information
 	Internal Connector Type: None
 	External Reference Designator: USB-C 2
 	External Connector Type: USB Type-C Receptacle
-	Port Type: <OUT OF SPEC>
+	Port Type: Thunderbolt
 
 Handle 0x0802, DMI type 8, 9 bytes
 Port Connector Information
@@ -354,7 +354,7 @@ Port Connector Information
 	Internal Connector Type: None
 	External Reference Designator: USB-C 3
 	External Connector Type: USB Type-C Receptacle
-	Port Type: <OUT OF SPEC>
+	Port Type: Thunderbolt
 
 Handle 0x0803, DMI type 8, 9 bytes
 Port Connector Information
@@ -362,7 +362,7 @@ Port Connector Information
 	Internal Connector Type: None
 	External Reference Designator: USB-C 4
 	External Connector Type: USB Type-C Receptacle
-	Port Type: <OUT OF SPEC>
+	Port Type: Thunderbolt
 
 Handle 0x0804, DMI type 8, 9 bytes
 Port Connector Information
@@ -463,7 +463,8 @@ Port Connector Information
 Handle 0x0900, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 0
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -473,14 +474,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.0
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x0901, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -490,14 +492,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.1
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x0902, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Long
 	ID: 2
@@ -507,14 +510,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.2
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x0903, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 3
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 3
@@ -524,14 +528,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.3
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x0904, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Long
 	ID: 4
@@ -541,14 +546,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.4
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x0905, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 5
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 5
@@ -558,14 +564,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.5
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x0906, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 6
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 6
@@ -575,7 +582,7 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.6
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
@@ -726,7 +733,7 @@ Portable Battery
 	Design Capacity: 95060 mWh
 	Design Voltage: 11400 mV
 	SBDS Version: 1.0
-	Maximum Error: 8%
+	Maximum Error: 10%
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000801
 
@@ -937,7 +944,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 00 83 31 00 00 00 0E 00 00 00 00 00 04 00
 		F8 00 8E 06 00 00 00 00 01 00 00 00 01 00 0E 00
-		FE 07 43 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		EF 08 48 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x8800, DMI type 136, 8 bytes
@@ -981,7 +988,7 @@ OEM-specific Type
 Handle 0xCD00, DMI type 205, 12 bytes
 OEM-specific Type
 	Header and Data:
-		CD 0C 00 CD 01 01 00 02 00 00 F4 11
+		CD 0C 00 CD 01 01 00 02 00 00 BF 00
 	Strings:
 		BIOS Guard
 
@@ -989,7 +996,7 @@ Handle 0xCD01, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 01 CD 03 01 00 09 00 9E 10 00 02 00 00 00
-		00 F4 00 03 00 01 07 02 00 00
+		00 F8 00 03 00 01 07 02 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -999,7 +1006,7 @@ Handle 0xCD02, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 02 CD 03 01 00 09 00 9E 10 00 02 00 0E 00
-		00 04 00 03 04 0E 01 43 FE 07
+		00 04 00 03 04 0E 01 48 EF 08
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -1162,7 +1169,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 23 04 08 12 51 01 00 00
+		DE 10 00 DE 01 04 00 00 24 06 29 11 33 01 00 00
 
 Handle 0xF800, DMI type 248, 9 bytes
 OEM-specific Type

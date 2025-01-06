@@ -1,0 +1,737 @@
+# dmidecode 3.4
+Getting SMBIOS data from sysfs.
+SMBIOS 3.6.0 present.
+# SMBIOS implementations newer than version 3.5.0 are not
+# fully supported by this version of dmidecode.
+Table at 0x58E72000.
+
+Handle 0x0000, DMI type 0, 26 bytes
+BIOS Information
+	Vendor: INSYDE Corp.
+	Version: 03.03
+	Release Date: 03/27/2024
+	Address: 0xE0000
+	Runtime Size: 128 kB
+	ROM Size: 32 MB
+	Characteristics:
+		PCI is supported
+		BIOS is upgradeable
+		BIOS shadowing is allowed
+		Boot from CD is supported
+		Selectable boot is supported
+		8042 keyboard services are supported (int 9h)
+		CGA/mono video services are supported (int 10h)
+		ACPI is supported
+		USB legacy is supported
+		BIOS boot specification is supported
+		Targeted content distribution is supported
+		UEFI is supported
+	BIOS Revision: 3.3
+
+Handle 0x0001, DMI type 1, 27 bytes
+System Information
+	Manufacturer: Framework
+	Product Name: Laptop 16 (AMD Ryzen 7040 Series)
+	Version: A7
+	Serial Number: --
+	UUID: --
+	Wake-up Type: Power Switch
+	SKU Number: FRAGAACP07
+	Family: 16in Laptop
+
+Handle 0x0002, DMI type 2, 15 bytes
+Base Board Information
+	Manufacturer: Framework
+	Product Name: FRANMZCP07
+	Version: A7
+	Serial Number: --
+	Asset Tag: --
+	Features:
+		Board is a hosting board
+		Board is replaceable
+	Location In Chassis: *
+	Chassis Handle: 0x0003
+	Type: Motherboard
+	Contained Object Handles: 0
+
+Handle 0x0003, DMI type 3, 22 bytes
+Chassis Information
+	Manufacturer: Framework
+	Type: Notebook
+	Lock: Not Present
+	Version: A7
+	Serial Number: --
+	Asset Tag: --
+	Boot-up State: Safe
+	Power Supply State: Safe
+	Thermal State: Safe
+	Security Status: None
+	OEM Information: 0x00000000
+	Height: Unspecified
+	Number Of Power Cords: 1
+	Contained Elements: 0
+	SKU Number: FRAGAACP07
+
+Handle 0x0004, DMI type 4, 48 bytes
+Processor Information
+	Socket Designation: FP8
+	Type: Central Processor
+	Family: Zen
+	Manufacturer: Advanced Micro Devices, Inc.
+	ID: 41 0F A7 00 FF FB 8B 17
+	Signature: Family 25, Model 116, Stepping 1
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Ryzen 7 7840HS w/ Radeon 780M Graphics     
+	Voltage: 1.2 V
+	External Clock: 100 MHz
+	Max Speed: 5125 MHz
+	Current Speed: 3800 MHz
+	Status: Populated, Enabled
+	Upgrade: None
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: 0x0007
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Unknown
+	Core Count: 8
+	Core Enabled: 8
+	Thread Count: 16
+	Characteristics:
+		64-bit capable
+		Multi-Core
+		Hardware Thread
+		Execute Protection
+		Enhanced Virtualization
+		Power/Performance Control
+
+Handle 0x0005, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L1 - Cache
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 512 kB
+	Maximum Size: 512 kB
+	Supported SRAM Types:
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x0006, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L2 - Cache
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
+	Supported SRAM Types:
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x0007, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L3 - Cache
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 16 MB
+	Maximum Size: 16 MB
+	Supported SRAM Types:
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 16-way Set-associative
+
+Handle 0x0008, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: JTYPEC0
+	Internal Connector Type: None
+	External Reference Designator: USB
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0009, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: JTYPEC1
+	Internal Connector Type: None
+	External Reference Designator: USB
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x000A, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: JTYPEC2
+	Internal Connector Type: None
+	External Reference Designator: USB
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x000B, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: JTYPEC3
+	Internal Connector Type: None
+	External Reference Designator: USB
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x000C, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: JTYPEC4
+	Internal Connector Type: None
+	External Reference Designator: USB
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x000D, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: JTYPEC5
+	Internal Connector Type: None
+	External Reference Designator: USB
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x000E, DMI type 9, 17 bytes
+System Slot Information
+	Designation: JWLAN
+	Type: x1 M.2 Socket 2
+	Current Usage: Available
+	Length: Short
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		Hot-plug devices are supported
+	Bus Address: 0000:00:02.2
+
+Handle 0x000F, DMI type 9, 17 bytes
+System Slot Information
+	Designation: JSSD1
+	Type: x4 M.2 Socket 3
+	Current Usage: Available
+	Length: Short
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		Hot-plug devices are supported
+	Bus Address: 0000:00:02.4
+
+Handle 0x0010, DMI type 9, 17 bytes
+System Slot Information
+	Designation: JSSD2
+	Type: x4 M.2 Socket 3
+	Current Usage: Available
+	Length: Short
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		Hot-plug devices are supported
+	Bus Address: 0000:00:01.2
+
+Handle 0x0011, DMI type 9, 17 bytes
+System Slot Information
+	Designation: UMA FAN
+	Type: x8 PCI Express x8
+	Current Usage: Available
+	Length: Short
+	ID: 1
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		Hot-plug devices are supported
+	Bus Address: 0000:00:01.1
+
+Handle 0x0012, DMI type 11, 5 bytes
+OEM Strings
+	String 1: FRANMZCPA7409500S2
+	String 2: FRAGAACPA74102004S
+	String 3: FRANCPPAA34061010F
+	String 4: FRAGDABQA1342101V4
+	String 5: FRANDBATA1351109BR
+	String 6: FRAKDTENA1408207J7
+	String 7: 000000000000000000
+	String 8: FRAGBFJYA1404103JR
+	String 9: 000000000000000000
+	String 10: FRAGCACAA14082004P
+	String 11: 000000000000000000
+	String 12: FRAGCCCPA140410063
+	String 13: FRAGCDCAA13513005T
+	String 14: FRAGBWAWA14035028H
+	String 15: FRAGBVAWA140350195
+	String 16: 000000000000000000
+	String 17: FRAGBJCPA13521N179
+	String 18: FRAGBECPA13474A4PP
+	String 19: FRAGBCCPA13484A21H
+	String 20: FRAKHACMA14044017J
+	String 21: 000000000000000000
+	String 22: FRAGBXFGA1403302E4
+	String 23: 000000000000000000
+	String 24: 000000000000000000
+	String 25: 000000000000000000
+	String 26: 000000000000000000
+	String 27: FRAKHDCMA14022025S
+	String 28: FRAKHCCMA1402201N3
+	String 29: FRAGBHCPA1401600VR
+	String 30: FRAGBYCPA14081006H
+	String 31: 000000000000000000
+	String 32: FRAGBKCPA134510BF2
+	String 33: 000000000000000000
+	String 34: 000000000000000000
+	String 35: FRAKHMCPA14074072Z
+	String 36: FRAKHNCPA14032019S
+	String 37: 000000000000000000
+
+Handle 0x0013, DMI type 12, 5 bytes
+System Configuration Options
+	Option 1: String1 for Type12 Equipment Manufacturer
+	Option 2: String2 for Type12 Equipment Manufacturer
+	Option 3: String3 for Type12 Equipment Manufacturer
+	Option 4: String4 for Type12 Equipment Manufacturer
+
+Handle 0x0014, DMI type 13, 22 bytes
+BIOS Language Information
+	Language Description Format: Long
+	Installable Languages: 4
+		en|US|iso8859-1,0
+		fr|FR|iso8859-1,0
+		zh|TW|unicode,0
+		ja|JP|unicode,0
+	Currently Installed Language: en|US|iso8859-1,0
+
+Handle 0x0015, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 64 GB
+	Error Information Handle: 0x0018
+	Number Of Devices: 2
+
+Handle 0x0016, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0015
+	Error Information Handle: 0x0019
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: SODIMM
+	Set: None
+	Locator: DIMM 0
+	Bank Locator: P0 CHANNEL A
+	Type: DDR5
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 4800 MT/s
+	Manufacturer: Kingston
+	Serial Number: --
+	Asset Tag: --
+	Part Number: KF548S38-32         
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 2, Hex 0x98
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 32 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0017, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0015
+	Error Information Handle: 0x001A
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: DIMM 0
+	Bank Locator: P0 CHANNEL B
+	Type: Unknown
+	Type Detail: Unknown
+
+Handle 0x0018, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0019, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x001A, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x001B, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
+	Physical Array Handle: 0x0015
+	Partition Width: 1
+
+Handle 0x001C, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x0016
+	Memory Array Mapped Address Handle: 0x001B
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x001D, DMI type 21, 7 bytes
+Built-in Pointing Device
+	Type: Touch Pad
+	Interface: PS/2
+	Buttons: 4
+
+Handle 0x001E, DMI type 21, 7 bytes
+Built-in Pointing Device
+	Type: Optical Sensor
+	Interface: Serial
+	Buttons: 1
+
+Handle 0x001F, DMI type 21, 7 bytes
+Built-in Pointing Device
+	Type: Optical Sensor
+	Interface: Serial
+	Buttons: 1
+
+Handle 0x0020, DMI type 21, 7 bytes
+Built-in Pointing Device
+	Type: Optical Sensor
+	Interface: Serial
+	Buttons: 1
+
+Handle 0x0021, DMI type 21, 7 bytes
+Built-in Pointing Device
+	Type: Optical Sensor
+	Interface: Serial
+	Buttons: 1
+
+Handle 0x0022, DMI type 22, 26 bytes
+Portable Battery
+	Location: Front
+	Manufacturer: FRANDBATA1351109BR
+	Manufacture Date: 2024/1/20
+	Serial Number: --
+	Name: FRANDBAT
+	Chemistry: Lithium Ion
+	Design Capacity: 0 mWh
+	Design Voltage: 15 mV
+	SBDS Version:      
+	Maximum Error: Unknown
+	OEM-specific Information: 0x00000000
+
+Handle 0x0023, DMI type 26, 22 bytes
+Voltage Probe
+	Description: Voltage Probe Description
+	Location: Unknown
+	Status: Unknown
+	Maximum Value: Unknown
+	Minimum Value: Unknown
+	Resolution: Unknown
+	Tolerance: Unknown
+	Accuracy: Unknown
+	OEM-specific Information: 0x00000000
+	Nominal Value: Unknown
+
+Handle 0x0024, DMI type 27, 15 bytes
+Cooling Device
+	Temperature Probe Handle: 0x0025
+	Type: Fan
+	Status: OK
+	OEM-specific Information: 0x00000000
+	Nominal Speed: 26624 rpm
+	Description: Cooling Device Description
+
+Handle 0x0025, DMI type 28, 22 bytes
+Temperature Probe
+	Description: Internal APU temperature
+	Location: Unknown
+	Status: Unknown
+	Maximum Value: Unknown
+	Minimum Value: Unknown
+	Resolution: Unknown
+	Tolerance: Unknown
+	Accuracy: Unknown
+	OEM-specific Information: 0x00000000
+	Nominal Value: Unknown
+
+Handle 0x0026, DMI type 28, 22 bytes
+Temperature Probe
+	Description: Charger temperature
+	Location: Unknown
+	Status: Unknown
+	Maximum Value: Unknown
+	Minimum Value: Unknown
+	Resolution: Unknown
+	Tolerance: Unknown
+	Accuracy: Unknown
+	OEM-specific Information: 0x00000000
+	Nominal Value: Unknown
+
+Handle 0x0027, DMI type 28, 22 bytes
+Temperature Probe
+	Description: External APU temperature
+	Location: Unknown
+	Status: Unknown
+	Maximum Value: Unknown
+	Minimum Value: Unknown
+	Resolution: Unknown
+	Tolerance: Unknown
+	Accuracy: Unknown
+	OEM-specific Information: 0x00000000
+	Nominal Value: Unknown
+
+Handle 0x0028, DMI type 28, 22 bytes
+Temperature Probe
+	Description: I/O temperature
+	Location: Unknown
+	Status: Unknown
+	Maximum Value: Unknown
+	Minimum Value: Unknown
+	Resolution: Unknown
+	Tolerance: Unknown
+	Accuracy: Unknown
+	OEM-specific Information: 0x00000000
+	Nominal Value: Unknown
+
+Handle 0x0029, DMI type 32, 20 bytes
+System Boot Information
+	Status: No errors detected
+
+Handle 0x002A, DMI type 34, 11 bytes
+Management Device
+	Description: SB-TSI
+	Type: Other
+	Address: 0x00000000
+	Address Type: I/O Port
+
+Handle 0x002B, DMI type 34, 11 bytes
+Management Device
+	Description: TMP432 local sensor
+	Type: Other
+	Address: 0x00000000
+	Address Type: I/O Port
+
+Handle 0x002C, DMI type 34, 11 bytes
+Management Device
+	Description: TMP432 remote 1
+	Type: Other
+	Address: 0x00000000
+	Address Type: I/O Port
+
+Handle 0x002D, DMI type 34, 11 bytes
+Management Device
+	Description: TMP432 remote 2
+	Type: Other
+	Address: 0x00000000
+	Address Type: I/O Port
+
+Handle 0x002E, DMI type 35, 11 bytes
+Management Device Component
+	Description: Internal APU sensor
+	Management Device Handle: 0x002A
+	Component Handle: 0x0025
+	Threshold Handle: 0x0032
+
+Handle 0x002F, DMI type 35, 11 bytes
+Management Device Component
+	Description: Charger sensor
+	Management Device Handle: 0x002A
+	Component Handle: 0x0026
+	Threshold Handle: 0x0032
+
+Handle 0x0030, DMI type 35, 11 bytes
+Management Device Component
+	Description: External APU sensor
+	Management Device Handle: 0x002A
+	Component Handle: 0x0027
+	Threshold Handle: 0x0032
+
+Handle 0x0031, DMI type 35, 11 bytes
+Management Device Component
+	Description: I/O sensor
+	Management Device Handle: 0x002A
+	Component Handle: 0x0028
+	Threshold Handle: 0x0032
+
+Handle 0x0032, DMI type 36, 16 bytes
+Management Device Threshold Data
+	Lower Non-critical Threshold: 1
+	Upper Non-critical Threshold: 2
+	Lower Critical Threshold: 3
+	Upper Critical Threshold: 4
+	Lower Non-recoverable Threshold: 5
+	Upper Non-recoverable Threshold: 6
+
+Handle 0x0033, DMI type 36, 16 bytes
+Management Device Threshold Data
+	Lower Non-critical Threshold: 1
+	Upper Non-critical Threshold: 2
+	Lower Critical Threshold: 3
+	Upper Critical Threshold: 4
+	Lower Non-recoverable Threshold: 5
+	Upper Non-recoverable Threshold: 6
+
+Handle 0x0034, DMI type 36, 16 bytes
+Management Device Threshold Data
+	Lower Non-critical Threshold: 1
+	Upper Non-critical Threshold: 2
+	Lower Critical Threshold: 3
+	Upper Critical Threshold: 4
+	Lower Non-recoverable Threshold: 5
+	Upper Non-recoverable Threshold: 6
+
+Handle 0x0035, DMI type 36, 16 bytes
+Management Device Threshold Data
+	Lower Non-critical Threshold: 1
+	Upper Non-critical Threshold: 2
+	Lower Critical Threshold: 3
+	Upper Critical Threshold: 4
+	Lower Non-recoverable Threshold: 5
+	Upper Non-recoverable Threshold: 6
+
+Handle 0x0036, DMI type 39, 22 bytes
+System Power Supply
+	Location: UNKNOWN
+	Name:  UNKNOWN
+	Manufacturer:  UNKNOWN
+	Serial Number: --
+	Asset Tag: --
+	Model Part Number:  UNKNOWN
+	Revision:  UNKNOWN
+	Max Power Capacity: Unknown
+	Status: Present, <OUT OF SPEC>
+	Type: <OUT OF SPEC>
+	Input Voltage Range Switching: <OUT OF SPEC>
+	Plugged: No
+	Hot Replaceable: Yes
+
+Handle 0x0037, DMI type 40, 18 bytes
+Additional Information 1
+	Referenced Handle: 0x0020
+	Referenced Offset: 0x05
+	String: PCIExpressx16
+	Value: 0xaa
+Additional Information 2
+	Referenced Handle: 0x0000
+	Referenced Offset: 0x05
+	String: Compiler Version: VC 9.0
+	Value: 0x05dc
+
+Handle 0x0038, DMI type 40, 14 bytes
+Additional Information 1
+	Referenced Handle: 0x0000
+	Referenced Offset: 0x00
+	String: AGESA!V9 PhoenixPI-FP8-FP7 1.1.0.2a
+	Value: 0x00000000
+
+Handle 0x0039, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Realtek
+	Type: Ethernet
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:03:00.0
+
+Handle 0x003A, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Realtek ALC245
+	Type: Sound
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 00ff:ff:1f.7
+
+Handle 0x003B, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: MSFT
+	Specification Version: 2.0
+	Firmware Revision: 6.3
+	Description: TPM Device
+	Characteristics:
+		TPM Device characteristics not supported
+	OEM-specific Information: 0x00000000
+
+Handle 0x003C, DMI type 255, 16 bytes
+OEM-specific Type
+	Header and Data:
+		FF 10 3C 00 21 00 01 00 00 00 00 00 00 00 00 00
+
+Handle 0x003D, DMI type 255, 16 bytes
+OEM-specific Type
+	Header and Data:
+		FF 10 3D 00 26 00 01 00 00 00 00 00 00 00 00 00
+
+Handle 0x003E, DMI type 255, 16 bytes
+OEM-specific Type
+	Header and Data:
+		FF 10 3E 00 2B 00 01 00 00 00 00 00 00 00 00 00
+
+Handle 0x003F, DMI type 255, 16 bytes
+OEM-specific Type
+	Header and Data:
+		FF 10 3F 00 30 00 01 00 00 00 00 00 00 00 00 00
+
+Handle 0xFEFF, DMI type 127, 4 bytes
+End Of Table
+

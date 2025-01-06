@@ -2,15 +2,15 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.4 present.
 43 structures occupying 1550 bytes.
-Table at 0x5F6DF000.
+Table at 0xBF6DF000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Phoenix Technologies LTD
-	Version: V1.07     
-	Release Date: 01/16/2008
-	Address: 0xE6430
-	Runtime Size: 105424 bytes
+	Version: V1.10     
+	Release Date: 05/21/2009
+	Address: 0xE6480
+	Runtime Size: 105344 bytes
 	ROM Size: 1024 kB
 	Characteristics:
 		ISA is supported
@@ -296,7 +296,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 512 MB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: 1
 	Locator: M2
@@ -312,8 +312,8 @@ Memory Device
 Handle 0x0019, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0005FFFFFFF
-	Range Size: 1536 MB
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 3 GB
 	Physical Array Handle: 0x0016
 	Partition Width: 2
 
@@ -331,8 +331,8 @@ Memory Device Mapped Address
 Handle 0x001B, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00040000000
-	Ending Address: 0x0005FFFFFFF
-	Range Size: 512 MB
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0018
 	Memory Array Mapped Address Handle: 0x0019
 	Partition Row Position: Unknown

@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.4.0 present.
 Table at 0x4237B000.
@@ -6,8 +6,8 @@ Table at 0x4237B000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dynabook Inc.
-	Version: Version 2.50
-	Release Date: 09/28/2022
+	Version: Version 2.90
+	Release Date: 03/29/2023
 	ROM Size: 16 MB
 	Characteristics:
 		PCI is supported
@@ -22,8 +22,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.50
-	Firmware Revision: 2.10
+	BIOS Revision: 2.90
+	Firmware Revision: 2.40
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -72,6 +72,7 @@ Handle 0x0004, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SD CARD
 	Type: Other
+	Data Bus Width: Other
 	Current Usage: In Use
 	Length: Other
 	Characteristics:
@@ -976,10 +977,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: 12th Gen Intel(R) Core(TM) i7-1260P
-	Voltage: 0.8 V
+	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 4700 MHz
-	Current Speed: 2079 MHz
+	Current Speed: 3762 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x003C
@@ -1171,7 +1172,7 @@ OEM-specific Type
 		DD 52 7C 00 0B 01 00 00 00 00 A6 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 FF FF FF FF FF 0A
-		00 FF FF FF FF 00 0B 00 02 0A 00 00 00 0C 00 00
+		00 FF FF FF FF 00 0B 00 02 28 00 00 00 0C 00 00
 		21 00 44 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
 		00 00
 	Strings:
@@ -1551,7 +1552,7 @@ Group Associations
 Handle 0x00AB, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A AB 00 01 04 01 45 02 00 A0 06 01 85 3B 20
+		DB 6A AB 00 01 04 01 45 02 00 90 06 01 85 30 20
 		00 00 00 00 40 00 00 03 1F 04 00 CB 02 60 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

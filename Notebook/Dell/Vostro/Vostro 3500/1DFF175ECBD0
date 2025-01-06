@@ -1,8 +1,8 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
-81 structures occupying 5861 bytes.
-Table at 0x5FC74000.
+81 structures occupying 5904 bytes.
+Table at 0x5FC91000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -175,8 +175,8 @@ OEM-specific Type
 Handle 0x0001, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.15.0
-	Release Date: 05/17/2022
+	Version: 1.30.0
+	Release Date: 04/25/2024
 	ROM Size: 32 MB
 	Characteristics:
 		PCI is supported
@@ -197,7 +197,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.15
+	BIOS Revision: 1.30
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -281,7 +281,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
-	Voltage: 0.7 V
+	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 2400 MHz
 	Current Speed: 2400 MHz
@@ -451,7 +451,8 @@ Port Connector Information
 Handle 0x0900, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 0
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -461,13 +462,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.0
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0901, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -477,13 +480,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.1
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0902, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 2
@@ -493,13 +498,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.2
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0903, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 3
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 3
@@ -509,13 +516,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.3
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0904, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 4
@@ -525,13 +534,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.4
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0905, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 5
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 5
@@ -541,13 +552,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.5
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0906, DMI type 9, 24 bytes
 System Slot Information
 	Designation: PCI-Express 6
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 6
@@ -557,8 +570,9 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.6
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0B00, DMI type 11, 5 bytes
 OEM Strings
@@ -647,44 +661,44 @@ Handle 0x1101, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x1000
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM B
-	Bank Locator: BANK 0
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Bank Locator: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 3200 MT/s
+	Manufacturer: 04CD00000000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: F4-3200C22-8GRS     
+	Rank: 1
+	Configured Memory Speed: 2667 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
+	Module Manufacturer ID: Bank 5, Hex 0xCD
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: None
+	Volatile Size: 8 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x1300, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x1000
-	Partition Width: 1
+	Partition Width: 2
 
 Handle 0x1500, DMI type 21, 7 bytes
 Built-in Pointing Device
@@ -702,7 +716,7 @@ Portable Battery
 	Design Capacity: 41990 mWh
 	Design Voltage: 11400 mV
 	SBDS Version: 1.0
-	Maximum Error: 5%
+	Maximum Error: 2%
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000801
 
@@ -834,7 +848,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 00 83 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 82 A0 00 00 00 00 01 00 00 00 00 00 0F 00
-		F7 07 23 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		D9 09 2F 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 E2 01 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x8800, DMI type 136, 8 bytes
@@ -878,7 +892,7 @@ OEM-specific Type
 Handle 0xCD00, DMI type 205, 12 bytes
 OEM-specific Type
 	Header and Data:
-		CD 0C 00 CD 01 01 00 02 00 00 4F 12
+		CD 0C 00 CD 01 01 00 02 00 00 69 00
 	Strings:
 		BIOS Guard
 
@@ -886,7 +900,7 @@ Handle 0xCD01, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 01 CD 03 01 00 0A 00 2A 32 00 02 00 00 00
-		00 A4 00 03 00 01 0E 27 00 00
+		00 B4 00 03 00 01 0E 2E 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -896,7 +910,7 @@ Handle 0xCD02, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 02 CD 03 01 00 0A 00 2A 32 00 02 00 00 00
-		00 00 00 03 04 0F 00 23 F7 07
+		00 00 00 03 04 0F 00 2F D9 09
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -924,7 +938,7 @@ OEM-specific Type
 		CD 52 04 CD 0B 01 00 0A 00 2A 32 00 02 00 01 00
 		00 00 00 03 00 0A 00 2A 32 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 01 00 07 00 00 00 00 01 00 08
-		00 FF FF FF FF FF 09 00 11 01 06 00 00 0A 00 00
+		00 FF FF FF FF FF 09 00 11 01 08 00 00 0A 00 00
 		00 00 00 00 0B 00 00 00 00 00 00 0C 00 FF FF FF
 		FF FF
 	Strings:
@@ -1025,7 +1039,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 22 07 15 06 04 01 00 00
+		DE 10 00 DE 01 04 00 00 24 07 12 12 03 01 00 00
 
 Handle 0x0000, DMI type 255, 6 bytes
 OEM-specific Type

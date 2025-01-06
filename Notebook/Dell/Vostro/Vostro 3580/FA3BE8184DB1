@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.1 present.
 Table at 0x000E0000.
@@ -533,10 +533,10 @@ Physical Memory Array
 Handle 0x0045, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0042
-	Partition Width: 1
+	Partition Width: 2
 
 Handle 0x0046, DMI type 205, 12 bytes
 OEM-specific Type
@@ -695,7 +695,7 @@ Processor Information
 	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 3900 MHz
-	Current Speed: 3700 MHz
+	Current Speed: 3500 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket BGA1528
 	L1 Cache Handle: 0x004B
@@ -719,34 +719,34 @@ Handle 0x004F, DMI type 17, 84 bytes
 Memory Device
 	Array Handle: 0x0042
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: DIMM
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM A
 	Bank Locator: Not Specified
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2667 MT/s
+	Manufacturer: 017A000080CE
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: None
+	Part Number: D22.2356BS.001      
+	Rank: 1
+	Configured Memory Speed: 2400 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
+	Module Manufacturer ID: Bank 2, Hex 0x7A
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: None
+	Volatile Size: 8 GB
 	Cache Size: None
 	Logical Size: None
 
@@ -790,9 +790,22 @@ Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
+	Physical Device Handle: 0x004F
+	Memory Array Mapped Address Handle: 0x0045
+	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x0052, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0050
 	Memory Array Mapped Address Handle: 0x0045
 	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 1
 
 Handle 0x0300, DMI type 126, 22 bytes
 Inactive
@@ -1030,24 +1043,25 @@ OEM-specific Type
 		04 01 00 86 04 86 04 00 00 87 04 87 04 01 00 88
 		04 88 04 00 00 FF FF FF FF 00 00
 
-Handle 0xDA06, DMI type 218, 227 bytes
+Handle 0xDA06, DMI type 218, 251 bytes
 OEM-specific Type
 	Header and Data:
-		DA E3 06 DA B2 00 04 FF 1F B6 50 8C 04 8C 04 01
+		DA FB 06 DA B2 00 04 FF 1F B6 50 8C 04 8C 04 01
 		00 8D 04 8D 04 00 00 98 04 98 04 FF FF 9C 04 9C
 		04 01 00 9D 04 9D 04 00 00 9E 04 9E 04 01 00 9F
 		04 9F 04 00 00 A0 04 A0 04 01 00 A1 04 A1 04 00
 		00 A2 04 A2 04 01 00 A3 04 A3 04 00 00 AE 04 AE
-		04 01 00 AF 04 AF 04 00 00 E6 04 E6 04 01 00 E7
-		04 E7 04 00 00 EC 04 EC 04 01 00 ED 04 ED 04 00
-		00 00 05 00 05 FF FF 12 05 12 05 00 00 13 05 13
-		05 01 00 14 05 14 05 02 00 3B 05 3B 05 00 00 4A
-		40 4A 40 01 00 4B 40 4B 40 00 00 4C 40 4C 40 FF
-		FF 4F 40 4F 40 01 00 50 40 50 40 00 00 0C 80 0C
-		80 00 00 0D 80 0D 80 00 00 0E 80 0E 80 01 00 0F
-		80 0F 80 FF FF 12 80 12 80 FF FF 13 80 13 80 00
-		00 14 80 14 80 00 00 04 A0 04 A0 01 00 FF FF FF
-		FF 00 00
+		04 01 00 AF 04 AF 04 00 00 E0 04 E0 04 01 00 E1
+		04 E1 04 00 00 E2 04 E2 04 01 00 E3 04 E3 04 00
+		00 E6 04 E6 04 01 00 E7 04 E7 04 00 00 EC 04 EC
+		04 01 00 ED 04 ED 04 00 00 00 05 00 05 FF FF 12
+		05 12 05 00 00 13 05 13 05 01 00 14 05 14 05 02
+		00 3B 05 3B 05 00 00 4A 40 4A 40 01 00 4B 40 4B
+		40 00 00 4C 40 4C 40 FF FF 4F 40 4F 40 01 00 50
+		40 50 40 00 00 0C 80 0C 80 00 00 0D 80 0D 80 00
+		00 0E 80 0E 80 01 00 0F 80 0F 80 FF FF 12 80 12
+		80 FF FF 13 80 13 80 00 00 14 80 14 80 00 00 04
+		A0 04 A0 01 00 FF FF FF FF 00 00
 
 Handle 0xDC00, DMI type 220, 22 bytes
 OEM-specific Type
@@ -1101,7 +1115,7 @@ OEM-specific Type
 		8D 05 20 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0xF029, DMI type 41, 11 bytes
+Handle 0xF02C, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1109,7 +1123,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:00.0
 
-Handle 0xF02A, DMI type 41, 11 bytes
+Handle 0xF02D, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Video
 	Type: Video
@@ -1117,7 +1131,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:02.0
 
-Handle 0xF02B, DMI type 41, 11 bytes
+Handle 0xF02E, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1125,7 +1139,7 @@ Onboard Device
 	Type Instance: 2
 	Bus Address: 0000:00:04.0
 
-Handle 0xF02C, DMI type 41, 11 bytes
+Handle 0xF02F, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1133,7 +1147,7 @@ Onboard Device
 	Type Instance: 3
 	Bus Address: 0000:00:08.0
 
-Handle 0xF02D, DMI type 41, 11 bytes
+Handle 0xF030, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1141,7 +1155,7 @@ Onboard Device
 	Type Instance: 4
 	Bus Address: 0000:00:12.0
 
-Handle 0xF02E, DMI type 41, 11 bytes
+Handle 0xF031, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1149,7 +1163,7 @@ Onboard Device
 	Type Instance: 5
 	Bus Address: 0000:00:14.0
 
-Handle 0xF02F, DMI type 41, 11 bytes
+Handle 0xF032, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1157,7 +1171,7 @@ Onboard Device
 	Type Instance: 6
 	Bus Address: 0000:00:14.2
 
-Handle 0xF030, DMI type 41, 11 bytes
+Handle 0xF033, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1165,7 +1179,7 @@ Onboard Device
 	Type Instance: 7
 	Bus Address: 0000:00:15.0
 
-Handle 0xF031, DMI type 41, 11 bytes
+Handle 0xF034, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1173,7 +1187,7 @@ Onboard Device
 	Type Instance: 8
 	Bus Address: 0000:00:15.1
 
-Handle 0xF032, DMI type 41, 11 bytes
+Handle 0xF035, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1181,7 +1195,7 @@ Onboard Device
 	Type Instance: 9
 	Bus Address: 0000:00:16.0
 
-Handle 0xF033, DMI type 41, 11 bytes
+Handle 0xF036, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - SATA
 	Type: SATA Controller
@@ -1189,7 +1203,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:17.0
 
-Handle 0xF034, DMI type 41, 11 bytes
+Handle 0xF037, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1197,7 +1211,7 @@ Onboard Device
 	Type Instance: 10
 	Bus Address: 0000:00:19.0
 
-Handle 0xF035, DMI type 41, 11 bytes
+Handle 0xF038, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1205,7 +1219,7 @@ Onboard Device
 	Type Instance: 11
 	Bus Address: 0000:00:1f.0
 
-Handle 0xF036, DMI type 41, 11 bytes
+Handle 0xF039, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Sound
 	Type: Sound
@@ -1213,7 +1227,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:1f.3
 
-Handle 0xF037, DMI type 41, 11 bytes
+Handle 0xF03A, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1221,7 +1235,7 @@ Onboard Device
 	Type Instance: 12
 	Bus Address: 0000:00:1f.4
 
-Handle 0xF038, DMI type 41, 11 bytes
+Handle 0xF03B, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1229,10 +1243,10 @@ Onboard Device
 	Type Instance: 13
 	Bus Address: 0000:00:1f.5
 
-Handle 0xF039, DMI type 205, 89 bytes
+Handle 0xF03C, DMI type 205, 89 bytes
 OEM-specific Type
 	Header and Data:
-		CD 59 39 F0 0C 01 00 FF FF FF FF FF 02 00 FF FF
+		CD 59 3C F0 0C 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
 		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 00
@@ -1256,12 +1270,12 @@ OEM-specific Type
 		Platform Version
 		Client Silicon Version
 
-Handle 0xF043, DMI type 136, 6 bytes
+Handle 0xF046, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 43 F0 00 00
+		88 06 46 F0 00 00
 
-Handle 0xF044, DMI type 14, 23 bytes
+Handle 0xF047, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 6
@@ -1270,9 +1284,9 @@ Group Associations
 		0x0048 (OEM-specific)
 		0x0049 (OEM-specific)
 		0x004A (OEM-specific)
-		0xF039 (OEM-specific)
+		0xF03C (OEM-specific)
 
-Handle 0xF045, DMI type 13, 22 bytes
+Handle 0xF048, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 2
@@ -1280,16 +1294,16 @@ BIOS Language Information
 		<BAD INDEX>
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0xF046, DMI type 14, 8 bytes
+Handle 0xF049, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0xF047, DMI type 203, 106 bytes
+Handle 0xF04A, DMI type 203, 106 bytes
 OEM-specific Type
 	Header and Data:
-		CB 6A 47 F0 01 04 01 45 02 00 A0 00 01 10 80 20
+		CB 6A 4A F0 01 04 01 45 02 00 A0 06 01 10 86 20
 		00 00 00 00 40 00 00 01 1F 00 00 C9 0B C0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -1302,6 +1316,6 @@ OEM-specific Type
 		MEI3
 		MEI4
 
-Handle 0xF060, DMI type 127, 4 bytes
+Handle 0xF063, DMI type 127, 4 bytes
 End Of Table
 
