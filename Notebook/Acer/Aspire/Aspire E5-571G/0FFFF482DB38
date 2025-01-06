@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.5
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 31 structures occupying 2289 bytes.
 Table at 0x000E6BD0.
@@ -10,7 +11,7 @@ BIOS Information
 	Release Date: 08/03/2015
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 6144 kB
+	ROM Size: 6 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -68,7 +69,7 @@ Chassis Information
 	Version: V1.31
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -121,7 +122,7 @@ Processor Information
 	Max Speed: 2700 MHz
 	Current Speed: 2500 MHz
 	Status: Populated, Enabled
-	Upgrade: <OUT OF SPEC>
+	Upgrade: Socket BGA1168
 	L1 Cache Handle: 0x0006
 	L2 Cache Handle: 0x0007
 	L3 Cache Handle: 0x0008
@@ -188,8 +189,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -226,17 +227,17 @@ Handle 0x000C, DMI type 14, 20 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 5
-		0x0018 (<OUT OF SPEC>)
-		0x0016 (<OUT OF SPEC>)
-		0x0015 (<OUT OF SPEC>)
-		0x0014 (<OUT OF SPEC>)
-		0x0013 (<OUT OF SPEC>)
+		0x0018 (OEM-specific)
+		0x0016 (OEM-specific)
+		0x0015 (OEM-specific)
+		0x0014 (OEM-specific)
+		0x0013 (OEM-specific)
 
 Handle 0x000D, DMI type 14, 8 bytes
 Group Associations
 	Name: Intel(R) Silicon View Technology
 	Items: 1
-		0x001D (<OUT OF SPEC>)
+		0x001D (OEM-specific)
 
 Handle 0x000E, DMI type 16, 23 bytes
 Physical Memory Array
@@ -253,20 +254,20 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: ACR16D3LS1KNG/4G  
 	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0010, DMI type 17, 34 bytes
 Memory Device
@@ -274,20 +275,20 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: ACR16D3LS1KNG/8G  
 	Rank: 2
-	Configured Clock Speed: 1600 MHz
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0011, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -328,13 +329,17 @@ OEM-specific Type
 		00 FF 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0015, DMI type 170, 74 bytes
-OEM-specific Type
-	Header and Data:
-		AA 4A 15 00 01 08 00 00 7F 00 0F 00 06 00 03 01
-		01 08 41 01 04 00 42 01 20 00 43 01 40 00 44 01
-		08 00 45 01 10 00 48 01 01 00 49 01 02 00 61 01
-		08 00 62 01 01 00 63 01 02 00 64 01 04 00 81 01
-		04 00 83 01 02 00 88 01 00 04
+Acer Hotkey Function
+	Function bitmap for Communication Button: 0x0801
+		WiFi: Yes
+		3G: No
+		WiMAX: No
+		Bluetooth: Yes
+	Function bitmap for Application Button: 0x0000
+	Function bitmap for Media Button: 0x007f
+	Function bitmap for Display Button: 0x000f
+	Function bitmap for Others Button: 0x0006
+	Communication Function Key Number: 3
 
 Handle 0x0016, DMI type 171, 49 bytes
 OEM-specific Type

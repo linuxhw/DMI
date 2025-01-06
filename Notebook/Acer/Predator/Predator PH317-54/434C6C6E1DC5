@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x982BF000.
@@ -6,8 +6,8 @@ Table at 0x982BF000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Insyde
-	Version: V1.04
-	Release Date: 07/16/2020
+	Version: V1.06
+	Release Date: 11/25/2020
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16320 kB
@@ -31,14 +31,14 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.4
+	BIOS Revision: 1.6
 	Firmware Revision: 1.2
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Acer
 	Product Name: Predator PH317-54
-	Version: V1.04
+	Version: V1.06
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -49,7 +49,7 @@ Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: CML
 	Product Name: Vellfire_CMS
-	Version: V1.04
+	Version: V1.06
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -116,7 +116,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
-	Voltage: 0.8 V
+	Voltage: 0.7 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
 	Current Speed: 2376 MHz
@@ -245,27 +245,27 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2400 MT/s
-	Manufacturer: 04EF
+	Speed: 3200 MT/s
+	Manufacturer: 04CD
 	Serial Number: --
 	Asset Tag: --
-	Part Number: TEAMGROUP-SD4-2400  
+	Part Number: F4-3200C18-16GRS    
 	Rank: 2
-	Configured Memory Speed: 2400 MT/s
+	Configured Memory Speed: 2933 MT/s
 	Minimum Voltage: 1.25 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.2 V
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Not Specified
-	Module Manufacturer ID: Bank 5, Hex 0xEF
+	Module Manufacturer ID: Bank 5, Hex 0xCD
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
@@ -280,27 +280,27 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2400 MT/s
-	Manufacturer: 04EF
+	Speed: 3200 MT/s
+	Manufacturer: 04CD
 	Serial Number: --
 	Asset Tag: --
-	Part Number: TEAMGROUP-SD4-2400  
+	Part Number: F4-3200C18-16GRS    
 	Rank: 2
-	Configured Memory Speed: 2400 MT/s
+	Configured Memory Speed: 2933 MT/s
 	Minimum Voltage: 1.25 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.2 V
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Not Specified
-	Module Manufacturer ID: Bank 5, Hex 0xEF
+	Module Manufacturer ID: Bank 5, Hex 0xCD
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
@@ -383,7 +383,7 @@ OEM-specific Type
 Handle 0x0018, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 18 00 01 04 01 45 02 00 A0 06 01 10 80 20
+		DB 6A 18 00 01 04 01 45 02 00 90 06 01 10 86 20
 		00 00 00 00 40 00 00 00 00 00 00 00 00 80 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -400,7 +400,7 @@ Handle 0x0019, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 19 00 03 01 00 09 00 31 50 00 02 00 00 00
-		00 C8 00 03 00 FF FF FF FF FF
+		00 E2 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version

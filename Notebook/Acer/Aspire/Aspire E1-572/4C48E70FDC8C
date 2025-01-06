@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-27 structures occupying 1830 bytes.
+27 structures occupying 1828 bytes.
 Table at 0x9AEBC000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -249,7 +249,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -257,11 +257,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Kingston
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ACR16D3LS1NBG/4G  
-	Rank: 1
+	Part Number: M471B1G73BH0-YK0  
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x000F, DMI type 17, 34 bytes
@@ -270,7 +270,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM1
@@ -278,26 +278,26 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: Kingston
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ACR16D3LS1NGG/2G  
-	Rank: 1
+	Part Number: M471B1G73BH0-YK0  
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0010, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x000D
 	Partition Width: 2
 
 Handle 0x0011, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x000E
 	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: Unknown
@@ -307,8 +307,8 @@ Memory Device Mapped Address
 Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x000F
 	Memory Array Mapped Address Handle: 0x0010
 	Partition Row Position: Unknown

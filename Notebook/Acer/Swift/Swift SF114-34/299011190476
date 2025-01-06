@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3 present.
 34 structures occupying 2930 bytes.
@@ -7,8 +7,8 @@ Table at 0x744C1000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Insyde Corp.
-	Version: V1.11
-	Release Date: 08/02/2021
+	Version: V1.14
+	Release Date: 08/06/2022
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 4096 MB
@@ -32,14 +32,14 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.11
-	Firmware Revision: 1.11
+	BIOS Revision: 1.14
+	Firmware Revision: 1.14
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Acer
 	Product Name: Swift SF114-34
-	Version: V1.11
+	Version: V1.14
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -50,7 +50,7 @@ Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: JSL
 	Product Name: Labatt_JL
-	Version: V1.11
+	Version: V1.14
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -388,7 +388,7 @@ OEM-specific Type
 Handle 0x0017, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 17 00 01 04 01 45 02 00 A0 06 01 10 86 20
+		DB 6A 17 00 01 04 01 45 02 00 90 06 01 10 86 20
 		00 00 00 00 40 00 00 00 00 00 00 00 00 40 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -404,8 +404,8 @@ OEM-specific Type
 Handle 0x0018, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 18 00 03 01 00 08 07 22 30 00 02 00 00 00
-		00 1D 00 03 00 FF FF FF FF FF
+		DD 1A 18 00 03 01 00 08 07 22 30 00 02 00 24 00
+		00 23 00 03 00 FF FF FF FF FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -415,7 +415,7 @@ Handle 0x0019, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 19 00 03 01 00 08 07 22 30 00 02 00 00 00
-		00 00 00 03 04 0D 32 0A E4 04
+		00 00 00 03 04 0D 32 14 89 06
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -473,7 +473,7 @@ OEM-specific Type
 		DD 52 1D 00 0B 01 00 FF FF FF FF FF 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF FF 0B 00 01 0B 00 00 00 0C 00 00
+		00 FF FF FF FF FF 0B 00 01 0E 00 00 00 0C 00 00
 		18 00 34 10 0D 00 FF FF FF FF FF 0E 00 00 07 00
 		00 00
 	Strings:

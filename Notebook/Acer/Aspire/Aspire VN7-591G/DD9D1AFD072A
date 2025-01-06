@@ -1,8 +1,8 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-27 structures occupying 1431 bytes.
-Table at 0x000E6F40.
+27 structures occupying 1426 bytes.
+Table at 0x9CEBB000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 08/14/2014
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -194,8 +194,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -239,7 +239,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -252,7 +252,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: M471B5173DB0-YK0  
 	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -276,7 +276,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Empty
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -287,7 +287,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM2
@@ -300,7 +300,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: M471B5173DB0-YK0  
 	Rank: 1
-	Configured Clock Speed: 1600 MT/s
+	Configured Memory Speed: 1600 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -324,7 +324,7 @@ Memory Device
 	Asset Tag: --
 	Part Number: Empty
 	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Configured Memory Speed: Unknown
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
@@ -379,12 +379,12 @@ Acer Hotkey Function
 	Function bitmap for Others Button: 0x000e
 	Communication Function Key Number: 4
 
-Handle 0x0017, DMI type 171, 44 bytes
+Handle 0x0017, DMI type 171, 39 bytes
 OEM-specific Type
 	Header and Data:
-		AB 2C 17 00 01 DE 10 92 13 02 EC 10 68 81 03 DA
+		AB 27 17 00 01 DE 10 92 13 02 EC 10 68 81 03 DA
 		0B 29 01 04 F2 04 69 B4 05 EC 10 83 02 07 8C 16
-		34 00 08 89 04 76 E0 11 CB 06 70 29
+		34 00 08 89 04 76 E0
 
 Handle 0x0018, DMI type 172, 21 bytes
 OEM-specific Type

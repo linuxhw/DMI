@@ -1,16 +1,13 @@
-# dmidecode 2.12
-# SMBIOS entry point at 0x78865000
-SMBIOS 3.0 present.
-# SMBIOS implementations newer than version 2.7 are not
-# fully supported by this version of dmidecode.
-21 structures occupying 1257 bytes.
-Table at 0x78864000.
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
+SMBIOS 3.0.0 present.
+Table at 0x78862000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Insyde Corp.
-	Version: V1.08
-	Release Date: 01/20/2017
+	Version: V1.19
+	Release Date: 12/13/2018
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 4608 kB
@@ -35,24 +32,24 @@ BIOS Information
 		Targeted content distribution is supported
 		UEFI is supported
 	BIOS Revision: 0.0
-	Firmware Revision: 1.8
+	Firmware Revision: 1.16
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Acer
 	Product Name: Aspire ES1-533
-	Version: V1.08
+	Version: V1.19
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
-	SKU Number: Aspire ES1-533_1084_V1.08
+	SKU Number: Aspire ES1-533_1084_V1.19
 	Family: APL
 
 Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: Acer
 	Product Name: Stego_AP
-	Version: V1.08
+	Version: V1.19
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -68,10 +65,10 @@ Chassis Information
 	Manufacturer: Acer
 	Type: Notebook
 	Lock: Not Present
-	Version: V1.08
+	Version: V1.19
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -179,8 +176,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -230,23 +227,23 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 8 bits
 	Data Width: 8 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: 0420
 	Serial Number: --
 	Asset Tag: --
 	Part Number: AO1L16BC4R1-BQSS  
 	Rank: Unknown
-	Configured Clock Speed: 1600 MHz
-	Minimum voltage:  Unknown
-	Maximum voltage:  Unknown
-	Configured voltage:  Unknown
+	Configured Memory Speed: 1600 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
 Handle 0x000D, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -276,32 +273,36 @@ OEM-specific Type
 		00 00 00 00 00 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0010, DMI type 170, 82 bytes
-OEM-specific Type
-	Header and Data:
-		AA 52 10 00 01 08 00 00 7F 00 0F 00 06 00 03 01
-		01 08 41 01 04 00 42 01 20 00 43 01 40 00 44 01
-		08 00 45 01 10 00 48 01 01 00 49 01 02 00 61 01
-		08 00 62 01 01 00 63 01 02 00 64 01 04 00 81 01
-		04 00 83 01 02 00 87 01 00 02 88 01 00 04 8A 01
-		00 10
+Acer Hotkey Function
+	Function bitmap for Communication Button: 0x0801
+		WiFi: Yes
+		3G: No
+		WiMAX: No
+		Bluetooth: Yes
+	Function bitmap for Application Button: 0x0000
+	Function bitmap for Media Button: 0x007f
+	Function bitmap for Display Button: 0x000f
+	Function bitmap for Others Button: 0x0006
+	Communication Function Key Number: 3
 
-Handle 0x0011, DMI type 171, 44 bytes
+Handle 0x0011, DMI type 171, 54 bytes
 OEM-specific Type
 	Header and Data:
-		AB 2C 11 00 04 08 04 10 A0 08 87 80 A7 0A 01 86
-		80 84 5A 02 EC 10 68 81 05 86 80 98 5A 07 86 80
-		FB 24 0D 00 00 00 00 11 00 00 00 00
+		AB 36 11 00 03 DA 0B 29 01 04 08 04 10 A0 08 87
+		80 A7 0A 01 86 80 84 5A 02 EC 10 68 81 05 86 80
+		98 5A 07 86 80 FB 24 0D 00 00 00 00 11 00 00 00
+		00 17 00 00 00 00
 
 Handle 0x0012, DMI type 172, 27 bytes
 OEM-specific Type
 	Header and Data:
-		AC 1B 12 00 02 2A 01 FF 00 02 01 00 03 FF 00 04
+		AC 1B 12 00 02 2B 01 FF 00 02 01 00 03 FF 00 04
 		01 00 05 FF 00 06 FF 00 07 FF 00
 
 Handle 0x0013, DMI type 248, 11 bytes
 OEM-specific Type
 	Header and Data:
-		F8 0B 13 00 00 00 00 00 00 00 00
+		F8 0B 13 00 00 02 6C 00 00 00 00
 
 Handle 0xFEFF, DMI type 127, 4 bytes
 End Of Table
