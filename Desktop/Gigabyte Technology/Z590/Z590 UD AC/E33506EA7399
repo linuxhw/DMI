@@ -1,8 +1,6 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0x3AD0C000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -573,8 +571,10 @@ Unknown Type
 Handle 0x003B, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: INTC
-	Specification Version: 2.0	Firmware Revision: 600.7
-	Description: INTEL	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 600.7
+	Description: INTEL
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -636,7 +636,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: Controller0-ChannelA-DIMM1
@@ -706,7 +706,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: Controller0-ChannelB-DIMM1
@@ -861,8 +861,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4096 kB
-	Maximum Size: 4096 kB
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -877,8 +877,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 16384 kB
-	Maximum Size: 16384 kB
+	Installed Size: 16 MB
+	Maximum Size: 16 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous

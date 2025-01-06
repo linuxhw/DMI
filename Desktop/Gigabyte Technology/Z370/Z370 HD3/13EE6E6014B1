@@ -1,13 +1,13 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
-SMBIOS 3.0.0 present.
-Table at 0xCEE6E000.
+SMBIOS 3.1.1 present.
+Table at 0xCEB87000.
 
-Handle 0x0000, DMI type 0, 24 bytes
+Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: F5
-	Release Date: 10/30/2017
+	Version: F14
+	Release Date: 11/13/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -39,7 +39,7 @@ System Information
 	Version: Default string
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: PCI PME#
 	SKU Number: Default string
 	Family: Default string
 
@@ -47,7 +47,7 @@ Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: Gigabyte Technology Co., Ltd.
 	Product Name: Z370 HD3-CF
-	Version: x.x
+	Version: Default string
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -268,97 +268,32 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x001C, DMI type 9, 17 bytes
-System Slot Information
-	Designation: J6B2
-	Type: x16 PCI Express
-	Current Usage: In Use
-	Length: Long
-	ID: 0
-	Characteristics:
-		3.3 V is provided
-		Opening is shared
-		PME signal is supported
-	Bus Address: 0000:00:01.0
-
-Handle 0x001D, DMI type 9, 17 bytes
-System Slot Information
-	Designation: J6B1
-	Type: x1 PCI Express
-	Current Usage: In Use
-	Length: Short
-	ID: 1
-	Characteristics:
-		3.3 V is provided
-		Opening is shared
-		PME signal is supported
-	Bus Address: 0000:00:1c.3
-
-Handle 0x001E, DMI type 9, 17 bytes
-System Slot Information
-	Designation: J6D1
-	Type: x1 PCI Express
-	Current Usage: In Use
-	Length: Short
-	ID: 2
-	Characteristics:
-		3.3 V is provided
-		Opening is shared
-		PME signal is supported
-	Bus Address: 0000:00:1c.4
-
-Handle 0x001F, DMI type 9, 17 bytes
-System Slot Information
-	Designation: J7B1
-	Type: x1 PCI Express
-	Current Usage: In Use
-	Length: Short
-	ID: 3
-	Characteristics:
-		3.3 V is provided
-		Opening is shared
-		PME signal is supported
-	Bus Address: 0000:00:1c.5
-
-Handle 0x0020, DMI type 9, 17 bytes
-System Slot Information
-	Designation: J8B4
-	Type: x1 PCI Express
-	Current Usage: In Use
-	Length: Short
-	ID: 4
-	Characteristics:
-		3.3 V is provided
-		Opening is shared
-		PME signal is supported
-	Bus Address: 0000:00:1c.6
-
-Handle 0x0021, DMI type 10, 6 bytes
+Handle 0x001C, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
 	Description:    To Be Filled By O.E.M.
 
-Handle 0x0022, DMI type 11, 5 bytes
+Handle 0x001D, DMI type 11, 5 bytes
 OEM Strings
 	String 1: Default string
 
-Handle 0x0023, DMI type 12, 5 bytes
+Handle 0x001E, DMI type 12, 5 bytes
 System Configuration Options
 	Option 1: Default string
 
-Handle 0x0024, DMI type 32, 20 bytes
+Handle 0x001F, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x0025, DMI type 34, 11 bytes
+Handle 0x0020, DMI type 34, 11 bytes
 Management Device
 	Description: LM78-1
 	Type: LM78
 	Address: 0x00000000
 	Address Type: I/O Port
 
-Handle 0x0026, DMI type 26, 22 bytes
+Handle 0x0021, DMI type 26, 22 bytes
 Voltage Probe
 	Description: LM78A
 	Location: Motherboard
@@ -371,7 +306,7 @@ Voltage Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x0027, DMI type 36, 16 bytes
+Handle 0x0022, DMI type 36, 16 bytes
 Management Device Threshold Data
 	Lower Non-critical Threshold: 1
 	Upper Non-critical Threshold: 2
@@ -380,14 +315,14 @@ Management Device Threshold Data
 	Lower Non-recoverable Threshold: 5
 	Upper Non-recoverable Threshold: 6
 
-Handle 0x0028, DMI type 35, 11 bytes
+Handle 0x0023, DMI type 35, 11 bytes
 Management Device Component
 	Description: Default string
-	Management Device Handle: 0x0025
-	Component Handle: 0x0026
-	Threshold Handle: 0x0027
+	Management Device Handle: 0x0020
+	Component Handle: 0x0021
+	Threshold Handle: 0x0022
 
-Handle 0x0029, DMI type 28, 22 bytes
+Handle 0x0024, DMI type 28, 22 bytes
 Temperature Probe
 	Description: LM78A
 	Location: Motherboard
@@ -400,7 +335,7 @@ Temperature Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x002A, DMI type 36, 16 bytes
+Handle 0x0025, DMI type 36, 16 bytes
 Management Device Threshold Data
 	Lower Non-critical Threshold: 1
 	Upper Non-critical Threshold: 2
@@ -409,16 +344,16 @@ Management Device Threshold Data
 	Lower Non-recoverable Threshold: 5
 	Upper Non-recoverable Threshold: 6
 
-Handle 0x002B, DMI type 35, 11 bytes
+Handle 0x0026, DMI type 35, 11 bytes
 Management Device Component
 	Description: Default string
-	Management Device Handle: 0x0025
-	Component Handle: 0x0029
-	Threshold Handle: 0x002A
+	Management Device Handle: 0x0020
+	Component Handle: 0x0024
+	Threshold Handle: 0x0025
 
-Handle 0x002C, DMI type 27, 15 bytes
+Handle 0x0027, DMI type 27, 15 bytes
 Cooling Device
-	Temperature Probe Handle: 0x0029
+	Temperature Probe Handle: 0x0024
 	Type: Power Supply Fan
 	Status: OK
 	Cooling Unit Group: 1
@@ -426,7 +361,7 @@ Cooling Device
 	Nominal Speed: Unknown Or Non-rotating
 	Description: Cooling Dev 1
 
-Handle 0x002D, DMI type 36, 16 bytes
+Handle 0x0028, DMI type 36, 16 bytes
 Management Device Threshold Data
 	Lower Non-critical Threshold: 1
 	Upper Non-critical Threshold: 2
@@ -435,16 +370,16 @@ Management Device Threshold Data
 	Lower Non-recoverable Threshold: 5
 	Upper Non-recoverable Threshold: 6
 
-Handle 0x002E, DMI type 35, 11 bytes
+Handle 0x0029, DMI type 35, 11 bytes
 Management Device Component
 	Description: Default string
-	Management Device Handle: 0x0025
-	Component Handle: 0x002C
-	Threshold Handle: 0x002D
+	Management Device Handle: 0x0020
+	Component Handle: 0x0027
+	Threshold Handle: 0x0028
 
-Handle 0x002F, DMI type 27, 15 bytes
+Handle 0x002A, DMI type 27, 15 bytes
 Cooling Device
-	Temperature Probe Handle: 0x0029
+	Temperature Probe Handle: 0x0024
 	Type: Power Supply Fan
 	Status: OK
 	Cooling Unit Group: 1
@@ -452,7 +387,7 @@ Cooling Device
 	Nominal Speed: Unknown Or Non-rotating
 	Description: Not Specified
 
-Handle 0x0030, DMI type 36, 16 bytes
+Handle 0x002B, DMI type 36, 16 bytes
 Management Device Threshold Data
 	Lower Non-critical Threshold: 1
 	Upper Non-critical Threshold: 2
@@ -461,14 +396,14 @@ Management Device Threshold Data
 	Lower Non-recoverable Threshold: 5
 	Upper Non-recoverable Threshold: 6
 
-Handle 0x0031, DMI type 35, 11 bytes
+Handle 0x002C, DMI type 35, 11 bytes
 Management Device Component
 	Description: Default string
-	Management Device Handle: 0x0025
-	Component Handle: 0x002F
-	Threshold Handle: 0x0030
+	Management Device Handle: 0x0020
+	Component Handle: 0x002A
+	Threshold Handle: 0x002B
 
-Handle 0x0032, DMI type 29, 22 bytes
+Handle 0x002D, DMI type 29, 22 bytes
 Electrical Current Probe
 	Description: ABC
 	Location: Motherboard
@@ -481,17 +416,17 @@ Electrical Current Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x0033, DMI type 36, 16 bytes
+Handle 0x002E, DMI type 36, 16 bytes
 Management Device Threshold Data
 
-Handle 0x0034, DMI type 35, 11 bytes
+Handle 0x002F, DMI type 35, 11 bytes
 Management Device Component
 	Description: Default string
-	Management Device Handle: 0x0025
-	Component Handle: 0x0032
-	Threshold Handle: 0x0033
+	Management Device Handle: 0x0020
+	Component Handle: 0x002D
+	Threshold Handle: 0x002E
 
-Handle 0x0035, DMI type 26, 22 bytes
+Handle 0x0030, DMI type 26, 22 bytes
 Voltage Probe
 	Description: LM78A
 	Location: Power Unit
@@ -504,7 +439,7 @@ Voltage Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x0036, DMI type 28, 22 bytes
+Handle 0x0031, DMI type 28, 22 bytes
 Temperature Probe
 	Description: LM78A
 	Location: Power Unit
@@ -517,9 +452,9 @@ Temperature Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x0037, DMI type 27, 15 bytes
+Handle 0x0032, DMI type 27, 15 bytes
 Cooling Device
-	Temperature Probe Handle: 0x0036
+	Temperature Probe Handle: 0x0031
 	Type: Power Supply Fan
 	Status: OK
 	Cooling Unit Group: 1
@@ -527,7 +462,7 @@ Cooling Device
 	Nominal Speed: Unknown Or Non-rotating
 	Description: Cooling Dev 1
 
-Handle 0x0038, DMI type 29, 22 bytes
+Handle 0x0033, DMI type 29, 22 bytes
 Electrical Current Probe
 	Description: ABC
 	Location: Power Unit
@@ -540,7 +475,7 @@ Electrical Current Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x0039, DMI type 39, 22 bytes
+Handle 0x0034, DMI type 39, 22 bytes
 System Power Supply
 	Power Unit Group: 1
 	Location: To Be Filled By O.E.M.
@@ -556,35 +491,11 @@ System Power Supply
 	Input Voltage Range Switching: Auto-switch
 	Plugged: Yes
 	Hot Replaceable: No
-	Input Voltage Probe Handle: 0x0035
-	Cooling Device Handle: 0x0037
-	Input Current Probe Handle: 0x0038
+	Input Voltage Probe Handle: 0x0030
+	Cooling Device Handle: 0x0032
+	Input Current Probe Handle: 0x0033
 
-Handle 0x003A, DMI type 41, 11 bytes
-Onboard Device
-	Reference Designation:  Onboard IGD
-	Type: Video
-	Status: Enabled
-	Type Instance: 1
-	Bus Address: 0000:00:02.0
-
-Handle 0x003B, DMI type 41, 11 bytes
-Onboard Device
-	Reference Designation:  Onboard LAN
-	Type: Ethernet
-	Status: Enabled
-	Type Instance: 1
-	Bus Address: 0000:00:19.0
-
-Handle 0x003C, DMI type 41, 11 bytes
-Onboard Device
-	Reference Designation:  Onboard 1394
-	Type: Other
-	Status: Enabled
-	Type Instance: 1
-	Bus Address: 0000:03:1c.2
-
-Handle 0x003D, DMI type 16, 23 bytes
+Handle 0x0035, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -593,9 +504,9 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 4
 
-Handle 0x003E, DMI type 17, 40 bytes
+Handle 0x0036, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x003D
+	Array Handle: 0x0035
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -607,9 +518,9 @@ Memory Device
 	Type: Unknown
 	Type Detail: None
 
-Handle 0x003F, DMI type 17, 40 bytes
+Handle 0x0037, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x003D
+	Array Handle: 0x0035
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -621,9 +532,9 @@ Memory Device
 	Type: Unknown
 	Type Detail: None
 
-Handle 0x0040, DMI type 17, 40 bytes
+Handle 0x0038, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x003D
+	Array Handle: 0x0035
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -645,9 +556,9 @@ Memory Device
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0041, DMI type 17, 40 bytes
+Handle 0x0039, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x003D
+	Array Handle: 0x0035
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -669,22 +580,22 @@ Memory Device
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0042, DMI type 19, 31 bytes
+Handle 0x003A, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
-	Physical Array Handle: 0x003D
+	Physical Array Handle: 0x0035
 	Partition Width: 2
 
-Handle 0x0043, DMI type 7, 19 bytes
+Handle 0x003B, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 384 kB
-	Maximum Size: 384 kB
+	Installed Size: 0 kB
+	Maximum Size: 0 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -693,14 +604,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0044, DMI type 7, 19 bytes
+Handle 0x003C, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1536 kB
-	Maximum Size: 1536 kB
+	Installed Size: 0 kB
+	Maximum Size: 0 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -709,14 +620,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 4-way Set-associative
 
-Handle 0x0045, DMI type 7, 19 bytes
+Handle 0x003D, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L3 Cache
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12 MB
-	Maximum Size: 12 MB
+	Installed Size: 0 kB
+	Maximum Size: 0 kB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -725,7 +636,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0046, DMI type 4, 48 bytes
+Handle 0x003E, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: U3E1
 	Type: Central Processor
@@ -769,9 +680,9 @@ Processor Information
 	Current Speed: 4300 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA1151
-	L1 Cache Handle: 0x0043
-	L2 Cache Handle: 0x0044
-	L3 Cache Handle: 0x0045
+	L1 Cache Handle: 0x003B
+	L2 Cache Handle: 0x003C
+	L3 Cache Handle: 0x003D
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
@@ -786,63 +697,86 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0047, DMI type 20, 35 bytes
+Handle 0x003F, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0040
-	Memory Array Mapped Address Handle: 0x0042
+	Physical Device Handle: 0x0038
+	Memory Array Mapped Address Handle: 0x003A
 	Partition Row Position: Unknown
 
-Handle 0x0048, DMI type 20, 35 bytes
+Handle 0x0040, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00200000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 8 GB
-	Physical Device Handle: 0x0041
-	Memory Array Mapped Address Handle: 0x0042
+	Physical Device Handle: 0x0039
+	Memory Array Mapped Address Handle: 0x003A
 	Partition Row Position: Unknown
 
-Handle 0x0049, DMI type 130, 20 bytes
+Handle 0x0041, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 49 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
+		82 14 41 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
 		C0 00 00 00
 
-Handle 0x004A, DMI type 131, 64 bytes
+Handle 0x0042, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 4A 00 35 00 00 00 00 00 00 00 00 00 00 00
+		83 40 42 00 35 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 C9 A2 00 00 00 00 01 00 00 00 08 00 0B 00
-		47 0D 32 00 00 00 00 00 FE 00 B8 15 00 00 00 00
+		DF 0E 51 00 00 00 00 00 FE 00 B8 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x004B, DMI type 221, 26 bytes
+Handle 0x0043, DMI type 13, 22 bytes
+BIOS Language Information
+	Language Description Format: Long
+	Installable Languages: 15
+		en|US|iso8859-1
+		zh|TW|unicode
+		zh|CN|unicode
+		ru|RU|iso8859-5
+		de|DE|iso8859-1
+		ja|JP|unicode
+		ko|KR|unicode
+		es|ES|iso8859-1
+		fr|FR|iso8859-1
+		it|IT|iso8859-1
+		pt|PT|iso8859-1
+		vi|VI|iso8859-1
+		id|ID|iso8859-1
+		tr|TR|iso8859-1
+		pl|PL|iso8859-1
+	Currently Installed Language: en|US|iso8859-1
+
+Handle 0x0044, DMI type 221, 33 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 4B 00 03 01 00 02 06 02 00 00 02 00 00 00
-		00 70 00 03 00 00 05 00 00 00
+		DD 21 44 00 04 01 00 03 06 08 00 00 02 00 00 00
+		00 EA 00 03 00 00 05 00 00 00 04 00 FF FF FF FF
+		FF
 	Strings:
 		Reference Code - CPU
 		uCode Version
-		TXT ACM version
+		TXT ACM Version
+		BIOS Guard Version
 
-Handle 0x004C, DMI type 221, 26 bytes
+Handle 0x0045, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 4C 00 03 01 00 02 06 02 00 00 02 00 00 00
-		00 00 00 03 04 0B 08 32 47 0D
+		DD 1A 45 00 03 01 00 03 06 08 00 00 02 00 00 00
+		00 00 00 03 04 0B 08 51 DF 0E
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
 		ME Firmware Version
 		Consumer SKU
 
-Handle 0x004D, DMI type 221, 75 bytes
+Handle 0x0046, DMI type 221, 75 bytes
 OEM-specific Type
 	Header and Data:
-		DD 4B 4D 00 0A 01 00 02 06 02 00 00 02 03 FF FF
+		DD 4B 46 00 0A 01 00 03 06 08 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
 		00 06 00 FF FF FF FF FF 07 00 3E 00 00 00 00 08
 		00 34 00 00 00 00 09 00 0B 00 00 00 00 0A 00 3E
@@ -860,11 +794,11 @@ OEM-specific Type
 		SKL PCH LP Bx Hsio Version
 		SKL PCH LP Cx Hsio Version
 
-Handle 0x004E, DMI type 221, 54 bytes
+Handle 0x0047, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 4E 00 07 01 00 02 06 02 00 00 02 00 02 06
-		02 00 00 03 00 02 06 02 00 00 04 05 FF FF FF FF
+		DD 36 47 00 07 01 00 03 06 08 00 00 02 00 03 06
+		08 00 00 03 00 03 06 08 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 07 00 07 00 FF FF FF 07 00 08
 		00 FF FF FF FF FF
 	Strings:
@@ -877,16 +811,63 @@ OEM-specific Type
 		SA-CRID New Value
 		OPROM - VBIOS
 
-Handle 0x004F, DMI type 221, 103 bytes
+Handle 0x0048, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI-Express
+	Type: x16 PCI Express x16
+	Current Usage: In Use
+	Length: Long
+	ID: 1
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+	Bus Address: 0000:00:01.0
+
+Handle 0x0049, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI-Express 6
+	Type: x1 PCI Express
+	Current Usage: Available
+	Length: Long
+	ID: 2
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+	Bus Address: 0000:00:1c.6
+
+Handle 0x004A, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI-Express 7
+	Type: x1 PCI Express
+	Current Usage: Available
+	Length: Long
+	ID: 3
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+	Bus Address: 0000:00:1c.7
+
+Handle 0x004B, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI-Express 8
+	Type: x4 PCI Express
+	Current Usage: In Use
+	Length: Long
+	ID: 4
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+	Bus Address: 0000:00:1d.0
+
+Handle 0x004C, DMI type 221, 96 bytes
 OEM-specific Type
 	Header and Data:
-		DD 67 4F 00 0E 01 00 00 00 00 A6 00 02 00 FF FF
+		DD 60 4C 00 0D 01 00 00 00 00 A6 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
 		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
-		FF FF FF FF 0D 00 02 00 00 A8 0F 0E 00 FF FF FF
-		FF FF 0F 00 FF FF FF FF FF 10 11 01 03 04 01 01
-		12 00 00 07 03 00 00
+		FF FF FF FF 0D 00 FF FF FF FF FF 0E 00 FF FF FF
+		FF FF 0F 10 01 03 04 01 01 11 00 00 07 03 00 00
 	Strings:
 		Lan Phy Version
 		Sensor Firmware Version
@@ -900,39 +881,118 @@ OEM-specific Type
 		UNDI Version
 		EC FW Version
 		GOP Version
-		BIOS Guard Version
 		Base EC FW Version
 		EC-EC Protocol Version
 		Royal Park Version
 		BP1.3.4.1_RP01
 		Platform Version
 
-Handle 0x0050, DMI type 136, 6 bytes
+Handle 0x004D, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 50 00 00 00
+		88 06 4D 00 00 00
 
-Handle 0x0051, DMI type 14, 20 bytes
+Handle 0x004E, DMI type 14, 20 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 5
-		0x004B (OEM-specific)
+		0x0044 (OEM-specific)
+		0x0045 (OEM-specific)
+		0x0046 (OEM-specific)
+		0x0047 (OEM-specific)
 		0x004C (OEM-specific)
-		0x004D (OEM-specific)
-		0x004E (OEM-specific)
-		0x004F (OEM-specific)
 
-Handle 0x0052, DMI type 14, 8 bytes
+Handle 0x004F, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - Other
+	Type: Other
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:00:00.0
+
+Handle 0x0050, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - Other
+	Type: Other
+	Status: Enabled
+	Type Instance: 2
+	Bus Address: 0000:00:08.0
+
+Handle 0x0051, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - Other
+	Type: Other
+	Status: Enabled
+	Type Instance: 3
+	Bus Address: 0000:00:14.0
+
+Handle 0x0052, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - Other
+	Type: Other
+	Status: Enabled
+	Type Instance: 4
+	Bus Address: 0000:00:16.0
+
+Handle 0x0053, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - SATA
+	Type: SATA Controller
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:00:17.0
+
+Handle 0x0054, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - Other
+	Type: Other
+	Status: Enabled
+	Type Instance: 5
+	Bus Address: 0000:00:1f.0
+
+Handle 0x0055, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - Other
+	Type: Other
+	Status: Enabled
+	Type Instance: 6
+	Bus Address: 0000:00:1f.2
+
+Handle 0x0056, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - Sound
+	Type: Sound
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:00:1f.3
+
+Handle 0x0057, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - Other
+	Type: Other
+	Status: Enabled
+	Type Instance: 7
+	Bus Address: 0000:00:1f.4
+
+Handle 0x0058, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: Onboard - Ethernet
+	Type: Ethernet
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:00:1f.6
+
+Handle 0x0059, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x0053, DMI type 219, 81 bytes
+Handle 0x005A, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 53 00 01 03 01 55 02 00 90 06 03 10 80 20
-		00 00 00 00 40 08 00 00 00 00 00 00 00 00 00 02
+		DB 51 5A 00 01 03 01 55 02 00 90 06 01 10 86 20
+		00 00 00 00 48 08 00 00 00 00 00 00 00 00 00 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -942,6 +1002,6 @@ OEM-specific Type
 		MEI2
 		MEI3
 
-Handle 0x0054, DMI type 127, 4 bytes
+Handle 0x005B, DMI type 127, 4 bytes
 End Of Table
 

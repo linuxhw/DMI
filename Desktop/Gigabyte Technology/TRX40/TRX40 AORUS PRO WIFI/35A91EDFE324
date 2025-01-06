@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x000E8D60.
@@ -854,20 +854,22 @@ Port Connector Information
 Handle 0x003D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE1
-	Type: x8 PCI Express x8
-	Current Usage: Available
+	Type: PCI Express x8
+	Data Bus Width: 8x or x8
+	Current Usage: In Use
 	Length: Short
 	ID: 1
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:fe:01.3
+	Bus Address: 0000:40:01.3
 
 Handle 0x003E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE3
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -880,7 +882,8 @@ System Slot Information
 Handle 0x003F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE4
-	Type: x1 PCI Express x1
+	Type: PCI Express x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -893,7 +896,8 @@ System Slot Information
 Handle 0x0040, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE5
-	Type: x8 PCI Express x8
+	Type: PCI Express x8
+	Data Bus Width: 8x or x8
 	Current Usage: Available
 	Length: Short
 	ID: 4

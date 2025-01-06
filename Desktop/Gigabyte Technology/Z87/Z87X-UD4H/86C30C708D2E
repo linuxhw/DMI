@@ -1,14 +1,14 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-78 structures occupying 3152 bytes.
-Table at 0x000E9700.
+79 structures occupying 3253 bytes.
+Table at 0x000EC080.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: F7
-	Release Date: 08/03/2013
+	Version: 10b
+	Release Date: 06/12/2014
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -414,6 +414,10 @@ On Board Device Information
 Handle 0x0027, DMI type 11, 5 bytes
 OEM Strings
 	String 1: To Be Filled By O.E.M.
+	String 2: To Be Filled By O.E.M.
+	String 3: To Be Filled By O.E.M.
+	String 4: To Be Filled By O.E.M.
+	String 5: To Be Filled By O.E.M.
 
 Handle 0x0028, DMI type 12, 5 bytes
 System Configuration Options
@@ -838,15 +842,20 @@ Memory Array Mapped Address
 	Physical Array Handle: 0x0007
 	Partition Width: 4
 
-Handle 0x0050, DMI type 131, 64 bytes
+Handle 0x0050, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 50 00 31 00 00 00 00 00 00 00 00 00 00 00
+		88 06 50 00 00 00
+
+Handle 0x0051, DMI type 131, 64 bytes
+OEM-specific Type
+	Header and Data:
+		83 40 51 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 44 8C 00 00 00 00 01 20 00 00 00 00 09 00
-		43 05 03 00 00 00 00 00 C8 00 3B 15 00 00 00 00
+		CA 05 1E 00 00 00 00 00 C8 00 3B 15 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0051, DMI type 13, 22 bytes
+Handle 0x0052, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 7
@@ -859,6 +868,6 @@ BIOS Language Information
 		zh|CT|unicode
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0057, DMI type 127, 4 bytes
+Handle 0x0058, DMI type 127, 4 bytes
 End Of Table
 

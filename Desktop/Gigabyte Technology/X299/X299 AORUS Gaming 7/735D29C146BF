@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x4452A000.
+Table at 0x4E2FB000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -610,15 +610,15 @@ Memory Device
 	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: Not Specified
-	Bank Locator: Not Specified
+	Locator: CPU1_DIMM_A0
+	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2400 MT/s
 	Manufacturer: Kinston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX2400C15/16G      
+	635628BA0D3E5F52ECF149FA00109EEE      
 	Rank: 2
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
@@ -643,15 +643,15 @@ Memory Device
 	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: Not Specified
-	Bank Locator: Not Specified
+	Locator: CPU1_DIMM_A1
+	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2400 MT/s
 	Manufacturer: Kinston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX2400C15/16G      
+	635628BA0D3E5F52ECF149FA00109EEE      
 	Rank: 2
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
@@ -676,15 +676,15 @@ Memory Device
 	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: Not Specified
-	Bank Locator: Not Specified
+	Locator: CPU1_DIMM_B0
+	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2400 MT/s
 	Manufacturer: Kinston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX2400C15/16G      
+	635628BA0D3E5F52ECF149FA00109EEE      
 	Rank: 2
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
@@ -709,15 +709,15 @@ Memory Device
 	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: Not Specified
-	Bank Locator: Not Specified
+	Locator: CPU1_DIMM_B1
+	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2400 MT/s
 	Manufacturer: Kinston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX2400C15/16G      
+	635628BA0D3E5F52ECF149FA00109EEE      
 	Rank: 2
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
@@ -759,15 +759,15 @@ Memory Device
 	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: Not Specified
-	Bank Locator: Not Specified
+	Locator: CPU1_DIMM_C0
+	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2400 MT/s
 	Manufacturer: Kinston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX2400C15/16G      
+	635628BA0D3E5F52ECF149FA00109EEE      
 	Rank: 2
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
@@ -792,15 +792,15 @@ Memory Device
 	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: Not Specified
-	Bank Locator: Not Specified
+	Locator: CPU1_DIMM_C1
+	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2400 MT/s
 	Manufacturer: Kinston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX2400C15/16G      
+	635628BA0D3E5F52ECF149FA00109EEE      
 	Rank: 2
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
@@ -825,15 +825,15 @@ Memory Device
 	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: Not Specified
-	Bank Locator: Not Specified
+	Locator: CPU1_DIMM_D0
+	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2400 MT/s
 	Manufacturer: Kinston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX2400C15/16G      
+	635628BA0D3E5F52ECF149FA00109EEE      
 	Rank: 2
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
@@ -858,15 +858,15 @@ Memory Device
 	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: Not Specified
-	Bank Locator: Not Specified
+	Locator: CPU1_DIMM_D1
+	Bank Locator: NODE 1
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2400 MT/s
 	Manufacturer: Kinston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX2400C15/16G      
+	635628BA0D3E5F52ECF149FA00109EEE      
 	Rank: 2
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
@@ -932,10 +932,10 @@ Cache Information
 
 Handle 0x0054, DMI type 4, 48 bytes
 Processor Information
-	Socket Designation: <BAD INDEX>
+	Socket Designation: CPU0
 	Type: Central Processor
 	Family: Xeon
-	Manufacturer: <BAD INDEX>
+	Manufacturer: Intel(R) Corporation
 	ID: 54 06 05 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 85, Stepping 4
 	Flags:
@@ -967,7 +967,7 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: <BAD INDEX>
+	Version: Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz
 	Voltage: 1.6 V
 	External Clock: 100 MHz
 	Max Speed: 4000 MHz
@@ -991,36 +991,36 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0055, DMI type 130, 20 bytes
+Handle 0x0057, DMI type 130, 20 bytes
 OEM-specific Type
 	Header and Data:
-		82 14 55 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
+		82 14 57 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
 		C0 00 00 00
 
-Handle 0x0056, DMI type 131, 64 bytes
+Handle 0x0058, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 56 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 58 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 D2 A2 00 00 00 00 01 00 00 00 0A 00 0B 00
 		07 05 00 00 00 00 00 00 FE 00 B8 15 00 00 00 00
 		00 00 00 00 02 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x0057, DMI type 136, 6 bytes
+Handle 0x0059, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 57 00 00 00
+		88 06 59 00 00 00
 
-Handle 0x0058, DMI type 14, 8 bytes
+Handle 0x005A, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0x0059, DMI type 219, 81 bytes
+Handle 0x005B, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 59 00 01 03 01 55 02 00 90 16 03 00 60 20
-		00 00 00 04 40 08 00 00 00 00 00 00 00 00 00 02
+		DB 51 5B 00 01 03 01 55 02 20 90 06 02 10 84 20
+		00 00 00 04 00 08 00 00 00 00 00 00 00 00 00 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -1030,6 +1030,6 @@ OEM-specific Type
 		MEI2
 		MEI3
 
-Handle 0x005A, DMI type 127, 4 bytes
+Handle 0x005C, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,17 +1,17 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-76 structures occupying 3098 bytes.
-Table at 0x000EC070.
+77 structures occupying 3148 bytes.
+Table at 0x000EC130.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: FC
-	Release Date: 05/02/2014
+	Version: FE
+	Release Date: 08/10/2015
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -84,8 +84,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 128 kB
-	Maximum Size: 128 kB
+	Installed Size: 256 kB
+	Maximum Size: 256 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -100,8 +100,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 512 kB
-	Maximum Size: 512 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -116,8 +116,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -655,7 +655,7 @@ Handle 0x0041, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: SOCKET 0
 	Type: Central Processor
-	Family: Core i7
+	Family: Core i5
 	Manufacturer: Intel
 	ID: C3 06 03 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 60, Stepping 3
@@ -688,11 +688,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Pentium(R) CPU G3250 @ 3.20GHz
-	Voltage: 0.9 V
+	Version: Intel(R) Core(TM) i5-4670 CPU @ 3.40GHz
+	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 7000 MHz
-	Current Speed: 2900 MHz
+	Current Speed: 3600 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0004
@@ -701,7 +701,7 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Fill By OEM
-	Core Count: 2
+	Core Count: 4
 	Core Enabled: 1
 	Characteristics:
 		64-bit capable
@@ -712,20 +712,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1400 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
 	Part Number: KHX1600C10D3/8G   
 	Rank: 1
-	Configured Clock Speed: 1400 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0043, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -733,7 +733,7 @@ Memory Device Mapped Address
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0042
-	Memory Array Mapped Address Handle: 0x0047
+	Memory Array Mapped Address Handle: 0x0048
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
@@ -751,36 +751,40 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
 
 Handle 0x0045, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0007
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: 99P5584-040.A00LF 
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0046, DMI type 17, 34 bytes
+Handle 0x0046, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0045
+	Memory Array Mapped Address Handle: 0x0048
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0047, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0007
 	Error Information Handle: Not Provided
@@ -793,36 +797,29 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
 
-Handle 0x0047, DMI type 19, 31 bytes
+Handle 0x0048, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0007
 	Partition Width: 4
 
-Handle 0x004D, DMI type 136, 6 bytes
+Handle 0x004E, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 4D 00 00 00
+		88 06 4E 00 00 00
 
-Handle 0x004E, DMI type 131, 64 bytes
+Handle 0x004F, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 4E 00 10 00 00 00 00 00 00 00 00 00 00 00
-		F8 00 50 8C 00 00 00 00 01 20 00 00 00 00 09 00
+		83 40 4F 00 35 00 00 00 00 00 00 00 00 00 00 00
+		F8 00 50 8C 00 00 00 00 21 20 00 00 00 00 09 00
 		CA 05 1E 00 00 00 00 00 C8 00 FF FF 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00
 
-Handle 0x004F, DMI type 13, 22 bytes
+Handle 0x0050, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 7
@@ -835,6 +832,6 @@ BIOS Language Information
 		zh|CT|unicode
 	Currently Installed Language: ru|RU|iso8859-5
 
-Handle 0x0055, DMI type 127, 4 bytes
+Handle 0x0056, DMI type 127, 4 bytes
 End Of Table
 

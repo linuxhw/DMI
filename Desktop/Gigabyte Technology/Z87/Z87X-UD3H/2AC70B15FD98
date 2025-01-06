@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 79 structures occupying 3243 bytes.
@@ -116,15 +116,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6 MB
-	Maximum Size: 6 MB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
 	Speed: Unknown
 	Error Correction Type: Single-bit ECC
 	System Type: Unified
-	Associativity: 12-way Set-associative
+	Associativity: 16-way Set-associative
 
 Handle 0x0007, DMI type 16, 23 bytes
 Physical Memory Array
@@ -330,7 +330,8 @@ Port Connector Information
 Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B2
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -343,7 +344,8 @@ System Slot Information
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -356,7 +358,8 @@ System Slot Information
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D1
-	Type: x8 PCI Express
+	Type: PCI Express
+	Data Bus Width: 8x or x8
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -369,7 +372,8 @@ System Slot Information
 Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7B1
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Short
 	ID: 3
@@ -382,7 +386,8 @@ System Slot Information
 Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -395,7 +400,8 @@ System Slot Information
 Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B3
-	Type: 32-bit PCI
+	Type: PCI
+	Data Bus Width: 32 bit
 	Current Usage: In Use
 	Length: Short
 	ID: 6
@@ -688,11 +694,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i5-4670K CPU @ 3.40GHz
-	Voltage: 1.2 V
+	Version: Intel(R) Core(TM) i7-4790S CPU @ 3.20GHz
+	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 7000 MHz
-	Current Speed: 3800 MHz
+	Current Speed: 3600 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0004
@@ -703,6 +709,7 @@ Processor Information
 	Part Number: Fill By OEM
 	Core Count: 4
 	Core Enabled: 1
+	Thread Count: 2
 	Characteristics:
 		64-bit capable
 
@@ -850,7 +857,7 @@ OEM-specific Type
 Handle 0x0051, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 51 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 51 00 35 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 44 8C 00 00 00 00 01 20 00 00 00 00 09 00
 		CA 05 1E 00 00 00 00 00 C8 00 3B 15 00 00 00 00
 		00 00 00 00 66 00 00 00 76 50 72 6F 00 00 00 00

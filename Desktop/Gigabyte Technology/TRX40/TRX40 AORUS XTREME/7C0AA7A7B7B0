@@ -1,15 +1,13 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0x000E8D60.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: American Megatrends International, LLC.
-	Version: F4q
-	Release Date: 04/12/2021
+	Version: F6
+	Release Date: 09/07/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -49,7 +47,7 @@ Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: Gigabyte Technology Co., Ltd.
 	Product Name: TRX40 AORUS XTREME
-	Version: x.x
+	Version: Default string
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -102,7 +100,17 @@ Unknown Type
 	Header and Data:
 		2C 09 08 00 FF FF 01 01 00
 
-Handle 0x0009, DMI type 18, 23 bytes
+Handle 0x0009, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: 
+	Specification Version: 2.0
+	Firmware Revision: 3.77
+	Description: AMD
+	Characteristics:
+		Family configurable via platform software support
+	OEM-specific Information: 0x00000000
+
+Handle 0x000A, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -112,32 +120,32 @@ Handle 0x0009, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x000A, DMI type 16, 23 bytes
+Handle 0x000B, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
 	Maximum Capacity: 512 GB
-	Error Information Handle: 0x0009
+	Error Information Handle: 0x000A
 	Number Of Devices: 8
 
-Handle 0x000B, DMI type 19, 31 bytes
+Handle 0x000C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x0007FFFFFFF
 	Range Size: 2 GB
-	Physical Array Handle: 0x000A
+	Physical Array Handle: 0x000B
 	Partition Width: 8
 
-Handle 0x000C, DMI type 19, 31 bytes
+Handle 0x000D, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
 	Ending Address: 0x0107FFFFFFF
 	Range Size: 62 GB
-	Physical Array Handle: 0x000A
+	Physical Array Handle: 0x000B
 	Partition Width: 8
 
-Handle 0x000D, DMI type 7, 27 bytes
+Handle 0x000E, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1 - Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -153,7 +161,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x000E, DMI type 7, 27 bytes
+Handle 0x000F, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L2 - Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -169,7 +177,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x000F, DMI type 7, 27 bytes
+Handle 0x0010, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L3 - Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -185,7 +193,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0010, DMI type 4, 48 bytes
+Handle 0x0011, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: SP3r2
 	Type: Central Processor
@@ -224,9 +232,9 @@ Processor Information
 	Current Speed: 3700 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket SP3r2
-	L1 Cache Handle: 0x000D
-	L2 Cache Handle: 0x000E
-	L3 Cache Handle: 0x000F
+	L1 Cache Handle: 0x000E
+	L2 Cache Handle: 0x000F
+	L3 Cache Handle: 0x0010
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Unknown
@@ -241,7 +249,7 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0011, DMI type 18, 23 bytes
+Handle 0x0012, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -251,10 +259,10 @@ Handle 0x0011, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0012, DMI type 17, 84 bytes
+Handle 0x0013, DMI type 17, 84 bytes
 Memory Device
-	Array Handle: 0x000A
-	Error Information Handle: 0x0011
+	Array Handle: 0x000B
+	Error Information Handle: 0x0012
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
@@ -264,13 +272,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 4000 MT/s
+	Speed: 2666 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: BLM8G40C18U4B.M8FE1
 	Rank: 1
-	Configured Memory Speed: 4000 MT/s
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -286,18 +294,18 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0013, DMI type 20, 35 bytes
+Handle 0x0014, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x00FFFFFFFFF
 	Range Size: 64 GB
-	Physical Device Handle: 0x0012
-	Memory Array Mapped Address Handle: 0x000C
+	Physical Device Handle: 0x0013
+	Memory Array Mapped Address Handle: 0x000D
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0014, DMI type 18, 23 bytes
+Handle 0x0015, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -307,10 +315,10 @@ Handle 0x0014, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0015, DMI type 17, 84 bytes
+Handle 0x0016, DMI type 17, 84 bytes
 Memory Device
-	Array Handle: 0x000A
-	Error Information Handle: 0x0014
+	Array Handle: 0x000B
+	Error Information Handle: 0x0015
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
@@ -320,13 +328,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL A
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 4000 MT/s
+	Speed: 2666 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: BLM8G40C18U4B.M8FE1
 	Rank: 1
-	Configured Memory Speed: 4000 MT/s
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -342,7 +350,7 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0016, DMI type 18, 23 bytes
+Handle 0x0017, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -352,10 +360,10 @@ Handle 0x0016, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0017, DMI type 17, 84 bytes
+Handle 0x0018, DMI type 17, 84 bytes
 Memory Device
-	Array Handle: 0x000A
-	Error Information Handle: 0x0016
+	Array Handle: 0x000B
+	Error Information Handle: 0x0017
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
@@ -365,13 +373,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 4000 MT/s
+	Speed: 2666 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: BLM8G40C18U4B.M8FE1
 	Rank: 1
-	Configured Memory Speed: 4000 MT/s
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -387,18 +395,18 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0018, DMI type 20, 35 bytes
+Handle 0x0019, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x00FFFFFFFFF
 	Range Size: 64 GB
-	Physical Device Handle: 0x0017
-	Memory Array Mapped Address Handle: 0x000C
+	Physical Device Handle: 0x0018
+	Memory Array Mapped Address Handle: 0x000D
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0019, DMI type 18, 23 bytes
+Handle 0x001A, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -408,10 +416,10 @@ Handle 0x0019, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x001A, DMI type 17, 84 bytes
+Handle 0x001B, DMI type 17, 84 bytes
 Memory Device
-	Array Handle: 0x000A
-	Error Information Handle: 0x0019
+	Array Handle: 0x000B
+	Error Information Handle: 0x001A
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
@@ -421,13 +429,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL B
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 4000 MT/s
+	Speed: 2666 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: BLM8G40C18U4B.M8FE1
 	Rank: 1
-	Configured Memory Speed: 4000 MT/s
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -443,7 +451,7 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x001B, DMI type 18, 23 bytes
+Handle 0x001C, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -453,10 +461,10 @@ Handle 0x001B, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x001C, DMI type 17, 84 bytes
+Handle 0x001D, DMI type 17, 84 bytes
 Memory Device
-	Array Handle: 0x000A
-	Error Information Handle: 0x001B
+	Array Handle: 0x000B
+	Error Information Handle: 0x001C
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
@@ -466,13 +474,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL C
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 4000 MT/s
+	Speed: 2666 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: BLM8G40C18U4B.M8FE1
 	Rank: 1
-	Configured Memory Speed: 4000 MT/s
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -488,18 +496,18 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x001D, DMI type 20, 35 bytes
+Handle 0x001E, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x00FFFFFFFFF
 	Range Size: 64 GB
-	Physical Device Handle: 0x001C
-	Memory Array Mapped Address Handle: 0x000C
+	Physical Device Handle: 0x001D
+	Memory Array Mapped Address Handle: 0x000D
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x001E, DMI type 18, 23 bytes
+Handle 0x001F, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -509,10 +517,10 @@ Handle 0x001E, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x001F, DMI type 17, 84 bytes
+Handle 0x0020, DMI type 17, 84 bytes
 Memory Device
-	Array Handle: 0x000A
-	Error Information Handle: 0x001E
+	Array Handle: 0x000B
+	Error Information Handle: 0x001F
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
@@ -522,13 +530,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL C
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 4000 MT/s
+	Speed: 2666 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: BLM8G40C18U4B.M8FE1
 	Rank: 1
-	Configured Memory Speed: 4000 MT/s
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -544,7 +552,7 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0020, DMI type 18, 23 bytes
+Handle 0x0021, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -554,10 +562,10 @@ Handle 0x0020, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0021, DMI type 17, 84 bytes
+Handle 0x0022, DMI type 17, 84 bytes
 Memory Device
-	Array Handle: 0x000A
-	Error Information Handle: 0x0020
+	Array Handle: 0x000B
+	Error Information Handle: 0x0021
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
@@ -567,13 +575,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL D
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 4000 MT/s
+	Speed: 2666 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: BLM8G40C18U4B.M8FE1
 	Rank: 1
-	Configured Memory Speed: 4000 MT/s
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -589,18 +597,18 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0022, DMI type 20, 35 bytes
+Handle 0x0023, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x00FFFFFFFFF
 	Range Size: 64 GB
-	Physical Device Handle: 0x0021
-	Memory Array Mapped Address Handle: 0x000C
+	Physical Device Handle: 0x0022
+	Memory Array Mapped Address Handle: 0x000D
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0023, DMI type 18, 23 bytes
+Handle 0x0024, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -610,10 +618,10 @@ Handle 0x0023, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0024, DMI type 17, 84 bytes
+Handle 0x0025, DMI type 17, 84 bytes
 Memory Device
-	Array Handle: 0x000A
-	Error Information Handle: 0x0023
+	Array Handle: 0x000B
+	Error Information Handle: 0x0024
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 8 GB
@@ -623,13 +631,13 @@ Memory Device
 	Bank Locator: P0 CHANNEL D
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 4000 MT/s
+	Speed: 2666 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
 	Part Number: BLM8G40C18U4B.M8FE1
 	Rank: 1
-	Configured Memory Speed: 4000 MT/s
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -645,7 +653,7 @@ Memory Device
 	Cache Size: None
 	Logical Size: None
 
-Handle 0x0025, DMI type 8, 9 bytes
+Handle 0x0026, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1602
 	Internal Connector Type: None
@@ -653,7 +661,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0026, DMI type 8, 9 bytes
+Handle 0x0027, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1601
 	Internal Connector Type: None
@@ -661,7 +669,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0027, DMI type 8, 9 bytes
+Handle 0x0028, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1600
 	Internal Connector Type: None
@@ -669,7 +677,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0028, DMI type 8, 9 bytes
+Handle 0x0029, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1300
 	Internal Connector Type: None
@@ -677,31 +685,31 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0029, DMI type 8, 9 bytes
+Handle 0x002A, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1300
 	Internal Connector Type: None
 	External Reference Designator: PT RJ45
 	External Connector Type: RJ-45
 	Port Type: Network Port
-
-Handle 0x002A, DMI type 8, 9 bytes
-Port Connector Information
-	Internal Reference Designator: J2000
-	Internal Connector Type: None
-	External Reference Designator: USB3.1 G1
-	External Connector Type: Access Bus (USB)
-	Port Type: USB
 
 Handle 0x002B, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J2000
 	Internal Connector Type: None
+	External Reference Designator: USB3.1 G1
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x002C, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J2000
+	Internal Connector Type: None
 	External Reference Designator: PT RJ45
 	External Connector Type: RJ-45
 	Port Type: Network Port
 
-Handle 0x002C, DMI type 8, 9 bytes
+Handle 0x002D, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1503
 	Internal Connector Type: None
@@ -709,7 +717,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x002D, DMI type 8, 9 bytes
+Handle 0x002E, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J1502
 	Internal Connector Type: None
@@ -717,7 +725,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x002E, DMI type 8, 9 bytes
+Handle 0x002F, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J2100
 	Internal Connector Type: None
@@ -725,7 +733,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x002F, DMI type 8, 9 bytes
+Handle 0x0030, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J4306 - MEM FAN
 	Internal Connector Type: Other
@@ -733,7 +741,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0030, DMI type 8, 9 bytes
+Handle 0x0031, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J3000 - ATX PWR
 	Internal Connector Type: Other
@@ -741,7 +749,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0031, DMI type 8, 9 bytes
+Handle 0x0032, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J4300 - SYSTEM FAN
 	Internal Connector Type: Other
@@ -749,7 +757,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0032, DMI type 8, 9 bytes
+Handle 0x0033, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J4305 - CPU FAN
 	Internal Connector Type: Other
@@ -757,7 +765,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0033, DMI type 8, 9 bytes
+Handle 0x0034, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J3001 - ATX 12V PWR
 	Internal Connector Type: Other
@@ -765,7 +773,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0034, DMI type 8, 9 bytes
+Handle 0x0035, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J4301 - MEM FAN
 	Internal Connector Type: Other
@@ -773,7 +781,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0035, DMI type 8, 9 bytes
+Handle 0x0036, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J3002 - ATX 24PIN PWR
 	Internal Connector Type: Other
@@ -781,7 +789,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0036, DMI type 8, 9 bytes
+Handle 0x0037, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J49 - SATA
 	Internal Connector Type: Other
@@ -789,7 +797,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x0037, DMI type 8, 9 bytes
+Handle 0x0038, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J46 - iSATA
 	Internal Connector Type: Other
@@ -797,7 +805,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x0038, DMI type 8, 9 bytes
+Handle 0x0039, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J38 - iSATA
 	Internal Connector Type: Other
@@ -805,7 +813,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x0039, DMI type 8, 9 bytes
+Handle 0x003A, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J43 - iSATA
 	Internal Connector Type: Other
@@ -813,7 +821,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x003A, DMI type 8, 9 bytes
+Handle 0x003B, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J604 - Sink FAN
 	Internal Connector Type: Other
@@ -821,7 +829,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x003B, DMI type 8, 9 bytes
+Handle 0x003C, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J4304 - PT FAN
 	Internal Connector Type: Other
@@ -829,7 +837,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x003C, DMI type 8, 9 bytes
+Handle 0x003D, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: J202 - LPC HDR
 	Internal Connector Type: Other
@@ -837,7 +845,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x003D, DMI type 9, 17 bytes
+Handle 0x003E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE3
 	Type: x16 PCI Express x16
@@ -850,7 +858,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:40:03.1
 
-Handle 0x003E, DMI type 9, 17 bytes
+Handle 0x003F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE4
 	Type: x1 PCI Express x1
@@ -863,7 +871,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:42:05.0
 
-Handle 0x003F, DMI type 9, 17 bytes
+Handle 0x0040, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE5
 	Type: x8 PCI Express x8
@@ -876,7 +884,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:00:01.3
 
-Handle 0x0040, DMI type 41, 11 bytes
+Handle 0x0041, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard LAN RTL8111
 	Type: Ethernet
@@ -884,7 +892,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:45:00.0
 
-Handle 0x0041, DMI type 41, 11 bytes
+Handle 0x0042, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: X570/590 SATA0
 	Type: SATA Controller
@@ -892,7 +900,7 @@ Onboard Device
 	Type Instance: 5
 	Bus Address: 0000:48:00.0
 
-Handle 0x0042, DMI type 41, 11 bytes
+Handle 0x0043, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: X570/590 SATA1
 	Type: SATA Controller
@@ -900,7 +908,7 @@ Onboard Device
 	Type Instance: 6
 	Bus Address: 0000:49:00.0
 
-Handle 0x0043, DMI type 13, 22 bytes
+Handle 0x0044, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 15
@@ -921,6 +929,6 @@ BIOS Language Information
 		pl|PL|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0044, DMI type 127, 4 bytes
+Handle 0x0045, DMI type 127, 4 bytes
 End Of Table
 

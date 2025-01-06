@@ -117,8 +117,8 @@ Memory Module Information
 	Bank Connections: 1
 	Current Speed: Unknown
 	Type: Other
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -127,8 +127,8 @@ Memory Module Information
 	Bank Connections: 2
 	Current Speed: Unknown
 	Type: Other
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0008, DMI type 6, 12 bytes
@@ -137,8 +137,8 @@ Memory Module Information
 	Bank Connections: 3
 	Current Speed: Unknown
 	Type: Other
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
@@ -147,8 +147,8 @@ Memory Module Information
 	Bank Connections: 4
 	Current Speed: Unknown
 	Type: Other
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 2048 MB (Single-bank Connection)
+	Enabled Size: 2048 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 7, 19 bytes
@@ -326,7 +326,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 2304 bits
 	Data Width: 2244 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A0
@@ -345,7 +345,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 2304 bits
 	Data Width: 2244 bits
-	Size: 4 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1
@@ -364,7 +364,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 2304 bits
 	Data Width: 2244 bits
-	Size: 2 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A2
@@ -383,7 +383,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 2304 bits
 	Data Width: 2244 bits
-	Size: 4 GB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A3
@@ -407,17 +407,17 @@ Memory Array Mapped Address
 Handle 0x0020, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x001B
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: 1
 
 Handle 0x0021, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
+	Starting Address: 0x00100000000
 	Ending Address: 0x0017FFFFFFF
-	Range Size: 4 GB
+	Range Size: 2 GB
 	Physical Device Handle: 0x001C
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: 1
@@ -425,17 +425,17 @@ Memory Device Mapped Address
 Handle 0x0022, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00180000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x0027FFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x001D
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: 1
 
 Handle 0x0023, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
+	Starting Address: 0x00280000000
 	Ending Address: 0x002FFFFFFFF
-	Range Size: 4 GB
+	Range Size: 2 GB
 	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: 1
