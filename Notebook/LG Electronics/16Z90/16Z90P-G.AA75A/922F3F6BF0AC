@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x41AAC000.
@@ -705,7 +705,8 @@ Port Connector Information
 Handle 0x0029, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PEG Gen1/Gen2/Gen3 X16
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 0
@@ -718,7 +719,8 @@ System Slot Information
 Handle 0x002A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 1 X1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -731,7 +733,8 @@ System Slot Information
 Handle 0x002B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 2 X1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -744,7 +747,8 @@ System Slot Information
 Handle 0x002C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 3 X1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -757,7 +761,8 @@ System Slot Information
 Handle 0x002D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 4 X1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 4
@@ -770,7 +775,8 @@ System Slot Information
 Handle 0x002E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 5 X4
-	Type: x4 PCI Express
+	Type: PCI Express
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Short
 	ID: 5
@@ -852,7 +858,7 @@ Group Associations
 Handle 0x0039, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 39 00 01 04 01 45 02 00 90 06 01 10 89 20
+		DB 6A 39 00 01 04 01 45 02 00 A0 06 01 10 80 20
 		00 00 00 00 40 00 00 00 00 00 00 00 00 60 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

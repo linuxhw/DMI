@@ -1,8 +1,6 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-# SMBIOS implementations newer than version 3.2.0 are not
-# fully supported by this version of dmidecode.
 Table at 0xBCA0F000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -142,7 +140,7 @@ Onboard Device
 	Type: Video
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:08:00.0
+	Bus Address: 0000:09:00.0
 
 Handle 0x000B, DMI type 44, 9 bytes
 Unknown Type
@@ -152,8 +150,10 @@ Unknown Type
 Handle 0x000C, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
-	Specification Version: 2.0	Firmware Revision: 3.68
-	Description: AMD	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 3.68
+	Description: AMD
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -206,8 +206,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -222,8 +222,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 16384 kB
-	Maximum Size: 16384 kB
+	Installed Size: 16 MB
+	Maximum Size: 16 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -304,7 +304,7 @@ Memory Device
 	Error Information Handle: 0x0014
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom - Slot 1 (left)
@@ -358,7 +358,7 @@ Memory Device
 	Error Information Handle: 0x0017
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom - Slot 2 (right)

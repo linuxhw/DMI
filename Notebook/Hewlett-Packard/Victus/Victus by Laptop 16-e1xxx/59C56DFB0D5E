@@ -1,15 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.4.0 present.
-# SMBIOS implementations newer than version 3.3.0 are not
-# fully supported by this version of dmidecode.
-Table at 0xBA4FD000.
+Table at 0xB92FD000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: AMI
-	Version: F.17
-	Release Date: 11/02/2022
+	Version: F.19
+	Release Date: 07/14/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -25,7 +23,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.17
+	BIOS Revision: 15.19
 	Firmware Revision: 19.75
 
 Handle 0x0001, DMI type 1, 27 bytes
@@ -141,7 +139,7 @@ Onboard Device
 	Type: Video
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:06:00.0
+	Bus Address: 0000:07:00.0
 
 Handle 0x000B, DMI type 44, 9 bytes
 Unknown Type
@@ -152,7 +150,7 @@ Handle 0x000C, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
 	Specification Version: 2.0
-	Firmware Revision: 6.24
+	Firmware Revision: 6.29
 	Description: AMD
 	Characteristics:
 		Family configurable via platform software support
@@ -310,7 +308,7 @@ Memory Device
 	Set: None
 	Locator: Bottom - Slot 1 (left)
 	Bank Locator: P0 CHANNEL A
-	Type: <OUT OF SPEC>
+	Type: DDR5
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 4800 MT/s
 	Manufacturer: Samsung
@@ -364,7 +362,7 @@ Memory Device
 	Set: None
 	Locator: Bottom - Slot 2 (right)
 	Bank Locator: P0 CHANNEL B
-	Type: <OUT OF SPEC>
+	Type: DDR5
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 4800 MT/s
 	Manufacturer: Samsung
@@ -471,15 +469,15 @@ Onboard Device
 
 Handle 0x0025, DMI type 41, 11 bytes
 Onboard Device
-	Reference Designation: Realtek Gaming GBE Family Controller
-	Type: Ethernet
+	Reference Designation: Tequila MediaTek Wi-Fi 6 MT7921 + BT5.2
+	Type: Other
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:03:00.0
+	Bus Address: 0000:04:00.0
 
 Handle 0x0026, DMI type 41, 11 bytes
 Onboard Device
-	Reference Designation: OnBoard Enthernets
+	Reference Designation: Realtek Gaming GBE Family Controller
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 1
@@ -487,13 +485,21 @@ Onboard Device
 
 Handle 0x0027, DMI type 41, 11 bytes
 Onboard Device
+	Reference Designation: OnBoard Enthernets
+	Type: Ethernet
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:03:00.0
+
+Handle 0x0028, DMI type 41, 11 bytes
+Onboard Device
 	Reference Designation: Realtek PCIE CardReader
 	Type: Other
 	Status: Enabled
 	Type Instance: 1
 	Bus Address: 0000:05:00.0
 
-Handle 0x0028, DMI type 27, 15 bytes
+Handle 0x0029, DMI type 27, 15 bytes
 Cooling Device
 	Type: Fan
 	Status: OK
@@ -501,7 +507,7 @@ Cooling Device
 	Nominal Speed: Unknown Or Non-rotating
 	Description: Cooling Dev 1
 
-Handle 0x0029, DMI type 13, 22 bytes
+Handle 0x002A, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 5
@@ -512,6 +518,6 @@ BIOS Language Information
 		zh|CN|unicode
 	Currently Installed Language: es|ES|iso8859-1
 
-Handle 0x002A, DMI type 127, 4 bytes
+Handle 0x002B, DMI type 127, 4 bytes
 End Of Table
 

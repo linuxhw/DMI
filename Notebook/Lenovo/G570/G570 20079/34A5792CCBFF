@@ -1,4 +1,5 @@
-# dmidecode 2.12
+# dmidecode 3.5
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 48 structures occupying 2343 bytes.
 Table at 0x000E6A50.
@@ -312,20 +313,20 @@ Memory Device
 	Error Information Handle: 0x001C
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
 	Rank: Unknown
-	Configured Clock Speed: 1333 MHz
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x001B, DMI type 6, 12 bytes
 Memory Module Information
@@ -371,13 +372,6 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Clock Speed: Unknown
 
 Handle 0x001F, DMI type 6, 12 bytes
 Memory Module Information
@@ -395,20 +389,20 @@ Memory Device
 	Error Information Handle: 0x0022
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
 	Part Number: RMT3010EC58E8F1333
 	Rank: Unknown
-	Configured Clock Speed: 1333 MHz
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0021, DMI type 6, 12 bytes
 Memory Module Information
@@ -454,13 +448,6 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Clock Speed: Unknown
 
 Handle 0x0025, DMI type 6, 12 bytes
 Memory Module Information
@@ -627,8 +614,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous

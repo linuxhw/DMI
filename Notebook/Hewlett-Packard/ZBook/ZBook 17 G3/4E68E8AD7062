@@ -2,7 +2,7 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 38 structures occupying 2367 bytes.
-Table at 0x39A03000.
+Table at 0x2FAA1000.
 
 Handle 0x0000, DMI type 7, 19 bytes
 Cache Information
@@ -106,10 +106,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-6820HQ CPU @ 2.70GHz
-	Voltage: 1.0 V
+	Voltage: 1.2 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
-	Current Speed: 2200 MHz
+	Current Speed: 3200 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0001
@@ -149,8 +149,8 @@ Memory Array Mapped Address
 Handle 0x000B, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: HP
-	Version: N81 Ver. 01.23
-	Release Date: 01/30/2018
+	Version: N81 Ver. 01.60
+	Release Date: 04/24/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -173,8 +173,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.23
-	Firmware Revision: 16.115
+	BIOS Revision: 1.60
+	Firmware Revision: 16.117
 
 Handle 0x000C, DMI type 1, 27 bytes
 System Information
@@ -191,7 +191,7 @@ Handle 0x000D, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 80D6
-	Version: KBC Version 10.73
+	Version: KBC Version 10.75
 	Serial Number: --
 	Asset Tag: --
 	97946E993916094B22613E03B8339091
@@ -313,7 +313,7 @@ OEM-specific Type
 Handle 0x0019, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 19 00 35 00 00 00 0B 00 00 00 00 00 05 00
+		83 40 19 00 35 00 00 00 0B 00 00 00 00 00 0C 00
 		F8 00 50 A1 00 00 00 00 09 C0 00 00 00 00 0B 00
 		EA 03 12 00 00 00 00 00 FE 00 B7 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
@@ -462,12 +462,12 @@ System Boot Information
 Handle 0x001F, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 1: PCI device 01:00.3, MAC address 00:02:01:00:00:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:C2:00:03
+	NIC 2: PCI device 00:00.2, MAC address 00:00:00:F0:00:03
 
 Handle 0x0020, DMI type 221, 26 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
 	NIC 1: PCI device 01:00.3, MAC address 00:02:01:00:00:00
-	NIC 2: PCI device 00:00.2, MAC address 0B:00:00:05:00:03
+	NIC 2: PCI device 00:00.2, MAC address 0B:00:00:0C:00:03
 
 Handle 0x0021, DMI type 221, 68 bytes
 HP BIOS iSCSI NIC PCI and MAC Information
@@ -498,7 +498,7 @@ Group Associations
 Handle 0x0024, DMI type 219, 81 bytes
 HP ProLiant Information
 	Power Features: 0x45010301
-	Omega Features: 0x06900002
+	Omega Features: 0x06900000
 	Misc. Features: 0x00000000
 		iCRU: No
 		UEFI: No

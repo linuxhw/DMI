@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS version fixup (2.33 -> 2.3).
 SMBIOS 2.3 present.
@@ -77,8 +77,8 @@ Processor Information
 	Type: Central Processor
 	Family: Pentium M
 	Manufacturer: GenuineIntel
-	ID: 95 06 00 00 BF F9 E9 A7
-	Signature: Type 0, Family 6, Model 9, Stepping 5
+	ID: D8 06 00 00 FF F9 E9 AF
+	Signature: Type 0, Family 6, Model 13, Stepping 8
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -86,6 +86,7 @@ Processor Information
 		PSE (Page size extension)
 		TSC (Time stamp counter)
 		MSR (Model specific registers)
+		PAE (Physical address extension)
 		MCE (Machine check exception)
 		CX8 (CMPXCHG8 instruction supported)
 		SEP (Fast system call)
@@ -101,13 +102,14 @@ Processor Information
 		FXSR (FXSAVE and FXSTOR instructions supported)
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
+		SS (Self-snoop)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Pentium(R) M processor
-	Voltage: 1.5 V
+	Voltage: 1.4 V
 	External Clock: 400 MHz
-	Max Speed: 1600 MHz
-	Current Speed: 1600 MHz
+	Max Speed: 1533 MHz
+	Current Speed: 1533 MHz
 	Status: Populated, Enabled
 	Upgrade: None
 	L1 Cache Handle: 0x000A
@@ -180,8 +182,8 @@ Cache Information
 	Configuration: Enabled, Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1 MB
-	Maximum Size: 1 MB
+	Installed Size: 2 MB
+	Maximum Size: 2 MB
 	Supported SRAM Types:
 		Burst
 	Installed SRAM Type: Burst

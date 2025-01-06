@@ -1,7 +1,7 @@
 # dmidecode 3.1
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-49 structures occupying 2129 bytes.
+51 structures occupying 2209 bytes.
 Table at 0x000E4800.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -166,10 +166,10 @@ Handle 0x0006, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM 0
 	Bank Connections: None
-	Current Speed: Unknown
-	Type: None
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Current Speed: 1 ns
+	Type: DIMM
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 6, 12 bytes
@@ -440,35 +440,35 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: None
-	Maximum Capacity: 4 GB
-	Error Information Handle: 0x0026
+	Maximum Capacity: 8 GB
+	Error Information Handle: 0x0027
 	Number Of Devices: 2
 
 Handle 0x0023, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0022
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: <OUT OF SPEC>
+	Error Information Handle: 0x0025
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
+	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 0
 	Bank Locator: CHANNEL A
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Empty
+	Type: DDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 800 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Empty
-	Rank: Unknown
-	Configured Clock Speed: Unknown
+	Part Number: M471B5173DB0-YK0  
+	Rank: 1
+	Configured Clock Speed: 800 MT/s
 
 Handle 0x0024, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0022
-	Error Information Handle: 0x0025
+	Error Information Handle: 0x0026
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 4096 MB
@@ -506,32 +506,53 @@ Handle 0x0026, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0027, DMI type 19, 31 bytes
+Handle 0x0027, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0028, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0022
 	Partition Width: 255
 
-Handle 0x0028, DMI type 20, 35 bytes
+Handle 0x0029, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0024
-	Memory Array Mapped Address Handle: 0x0027
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0023
+	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: Unknown
 	Interleave Position: Unknown
 	Interleaved Data Depth: Unknown
 
-Handle 0x0029, DMI type 21, 7 bytes
+Handle 0x002A, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0024
+	Memory Array Mapped Address Handle: 0x0028
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x002B, DMI type 21, 7 bytes
 Built-in Pointing Device
 	Type: Touch Pad
 	Interface: PS/2
 	Buttons: 4
 
-Handle 0x002A, DMI type 26, 22 bytes
+Handle 0x002C, DMI type 26, 22 bytes
 Voltage Probe
 	Description: Voltage Probe Description.
 	Location: Unknown
@@ -544,11 +565,11 @@ Voltage Probe
 	OEM-specific Information: 0x00000000
 	Nominal Value: Unknown
 
-Handle 0x002B, DMI type 32, 20 bytes
+Handle 0x002D, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x002C, DMI type 40, 18 bytes
+Handle 0x002E, DMI type 40, 18 bytes
 Additional Information 1
 	Referenced Handle: 0x001a
 	Referenced Offset: 0x05
@@ -560,7 +581,7 @@ Additional Information 2
 	String: Compiler Version: VC 9.0
 	Value: 0x05dc
 
-Handle 0x002D, DMI type 41, 11 bytes
+Handle 0x002F, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: 82567LM Gigabit Network Connection
 	Type: Ethernet
@@ -568,21 +589,21 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:00.1
 
-Handle 0x002E, DMI type 128, 8 bytes
+Handle 0x0030, DMI type 128, 8 bytes
 OEM-specific Type
 	Header and Data:
-		80 08 2E 00 55 AA 55 AA
+		80 08 30 00 55 AA 55 AA
 	Strings:
 		Oem Test 1
 		Oem Test 2
 
-Handle 0x002F, DMI type 133, 5 bytes
+Handle 0x0031, DMI type 133, 5 bytes
 OEM-specific Type
 	Header and Data:
-		85 05 2F 00 01
+		85 05 31 00 01
 	Strings:
 		KHOIHGIUCCHHII
 
-Handle 0x0030, DMI type 127, 4 bytes
+Handle 0x0032, DMI type 127, 4 bytes
 End Of Table
 

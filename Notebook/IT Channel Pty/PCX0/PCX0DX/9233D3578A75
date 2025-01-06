@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0x81161000.
@@ -10,7 +10,7 @@ BIOS Information
 	Release Date: 06/17/2020
 	Address: 0xE0000
 	Runtime Size: 128 kB
-	ROM Size: 12288 kB
+	ROM Size: 12 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -109,7 +109,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz
-	Voltage: 0.7 V
+	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
 	Current Speed: 2178 MHz
@@ -352,7 +352,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
@@ -387,7 +387,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -551,8 +551,10 @@ Onboard Device
 Handle 0x002B, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: IFX
-	Specification Version: 2.0	Firmware Revision: 7.85
-	Description: TPM Device	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 7.85
+	Description: TPM Device
+	Characteristics:
 		TPM Device characteristics not supported
 	OEM-specific Information: 0x00000000
 
@@ -594,7 +596,7 @@ OEM-specific Type
 Handle 0x0031, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 31 00 01 04 01 55 02 00 90 06 01 10 80 20
+		DB 6A 31 00 01 04 01 55 02 00 90 06 01 10 86 20
 		00 00 00 00 40 00 00 00 00 00 00 00 00 40 00 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

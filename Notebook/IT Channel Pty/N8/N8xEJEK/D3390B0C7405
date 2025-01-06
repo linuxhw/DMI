@@ -1,8 +1,6 @@
-# dmidecode 3.0
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
-# SMBIOS implementations newer than version 3.0 are not
-# fully supported by this version of dmidecode.
 Table at 0x6FA99000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -12,7 +10,7 @@ BIOS Information
 	Release Date: 08/21/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -217,20 +215,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2400 MHz
+	Speed: 2400 MT/s
 	Manufacturer: 04EF
 	Serial Number: --
 	Asset Tag: --
 	Part Number: TEAMGROUP-SD4-2400  
 	Rank: 1
-	Configured Clock Speed: 2400 MHz
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
@@ -241,20 +239,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 16384 MB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR4
 	Type Detail: Synchronous
-	Speed: 2400 MHz
+	Speed: 2400 MT/s
 	Manufacturer: 04EF
 	Serial Number: --
 	Asset Tag: --
 	Part Number: TEAMGROUP-SD4-2400  
 	Rank: 1
-	Configured Clock Speed: 2400 MHz
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -374,8 +372,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 9216 kB
-	Maximum Size: 9216 kB
+	Installed Size: 9 MB
+	Maximum Size: 9 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -628,18 +626,18 @@ Handle 0x0035, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 6
-		0x0018 (<OUT OF SPEC>)
-		0x0019 (<OUT OF SPEC>)
-		0x001A (<OUT OF SPEC>)
-		0x001B (<OUT OF SPEC>)
-		0x001C (<OUT OF SPEC>)
-		0x0033 (<OUT OF SPEC>)
+		0x0018 (OEM-specific)
+		0x0019 (OEM-specific)
+		0x001A (OEM-specific)
+		0x001B (OEM-specific)
+		0x001C (OEM-specific)
+		0x0033 (OEM-specific)
 
 Handle 0x0036, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
-		0x0000 (<OUT OF SPEC>)
+		0x0000 (OEM-specific)
 
 Handle 0x0037, DMI type 219, 106 bytes
 OEM-specific Type

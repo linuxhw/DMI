@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 50 structures occupying 2283 bytes.
@@ -9,7 +9,7 @@ BIOS Information
 	Vendor: LENOVO
 	Version: 29CN40WW(V2.17)
 	Release Date: 04/13/2011
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -306,7 +306,7 @@ Memory Device
 	Error Information Handle: 0x001C
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
@@ -317,7 +317,7 @@ Memory Device
 	Manufacturer: Not Specified
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5773CHS-CH9  
+	Part Number: HMT351S6BFR8C-H9  
 	Rank: Unknown
 
 Handle 0x001B, DMI type 6, 12 bytes
@@ -326,8 +326,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 4096 MB (Single-bank Connection)
+	Enabled Size: 4096 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x001C, DMI type 18, 23 bytes
@@ -343,8 +343,8 @@ Handle 0x001C, DMI type 18, 23 bytes
 Handle 0x001D, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x001A
 	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: Unknown
@@ -364,12 +364,6 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1067 MT/s
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
 
 Handle 0x001F, DMI type 6, 12 bytes
 Memory Module Information
@@ -397,7 +391,7 @@ Memory Device
 	Error Information Handle: 0x0023
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM1
@@ -455,12 +449,6 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1067 MT/s
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
 
 Handle 0x0026, DMI type 6, 12 bytes
 Memory Module Information
@@ -495,8 +483,8 @@ Handle 0x0028, DMI type 18, 23 bytes
 Handle 0x0029, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 6 GB
 	Physical Array Handle: 0x0019
 	Partition Width: 2
 
@@ -569,7 +557,7 @@ Processor Information
 	Voltage: 0.0 V
 	External Clock: 1066 MHz
 	Max Speed: 2400 MHz
-	Current Speed: 2395 MHz
+	Current Speed: 2410 MHz
 	Status: Populated, Enabled
 	Upgrade: ZIF Socket
 	L1 Cache Handle: 0x0030
@@ -590,8 +578,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Through
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
