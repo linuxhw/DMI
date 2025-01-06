@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
-Table at 0x9DA75000.
+Table at 0x9DC39000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: AMI
-	Version: F.35
-	Release Date: 09/24/2019
+	Version: F.50
+	Release Date: 11/18/2022
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8 MB
@@ -32,8 +32,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.35
-	Firmware Revision: 99.22
+	BIOS Revision: 15.50
+	Firmware Revision: 99.30
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -50,7 +50,7 @@ Handle 0x0002, DMI type 2, 15 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 84E7
-	Version: 99.22
+	Version: 99.30
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -98,15 +98,15 @@ OEM Strings
 Handle 0x0005, DMI type 22, 26 bytes
 Portable Battery
 	Location: Primary
-	Manufacturer: Not Specified
-	Name: Not Installed
-	Design Capacity: Unknown
-	Design Voltage: Unknown
-	SBDS Version: Not Specified
+	Manufacturer: 333-42-5C-A
+	Name: HT03041
+	Design Capacity: 41690 mWh
+	Design Voltage: 11550 mV
+	SBDS Version: 3.1
 	Maximum Error: Unknown
 	SBDS Serial Number: --
-	SBDS Manufacture Date: 1980-00-00
-	SBDS Chemistry: Not Specified
+	SBDS Manufacture Date: 2023-08-07
+	SBDS Chemistry: LION
 	OEM-specific Information: 0x000A070C
 
 Handle 0x0006, DMI type 32, 20 bytes
@@ -135,8 +135,8 @@ Physical Memory Array
 Handle 0x0009, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 12 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0008
 	Partition Width: 2
 
@@ -271,7 +271,7 @@ Memory Device
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471A1K43DB1-CTD    
+	Part Number: M471A1K43CB1-CTD    
 	Rank: 1
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
@@ -281,8 +281,8 @@ Memory Device
 Handle 0x0010, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 12 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x000F
 	Memory Array Mapped Address Handle: 0x0009
 	Partition Row Position: 1
@@ -303,7 +303,7 @@ Memory Device
 	Error Information Handle: 0x0011
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom - Slot 2 (right)
@@ -314,7 +314,7 @@ Memory Device
 	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471A5244CB0-CTD    
+	Part Number: M471A1K43DB1-CTD    
 	Rank: 1
 	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.2 V
@@ -324,8 +324,8 @@ Memory Device
 Handle 0x0013, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0012
 	Memory Array Mapped Address Handle: 0x0009
 	Partition Row Position: 1
@@ -456,7 +456,8 @@ Port Connector Information
 Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3604
-	Type: x8 PCI Express x8
+	Type: PCI Express x8
+	Data Bus Width: 8x or x8
 	Current Usage: Available
 	Length: Short
 	ID: 1

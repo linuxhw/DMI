@@ -1,15 +1,13 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-# SMBIOS implementations newer than version 3.1.1 are not
-# fully supported by this version of dmidecode.
-Table at 0xACE17000.
+Table at 0xACE18000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: AMI
-	Version: F.29
-	Release Date: 10/27/2022
+	Version: F.33
+	Release Date: 04/29/2024
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -34,7 +32,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.29
+	BIOS Revision: 15.33
 	Firmware Revision: 31.25
 
 Handle 0x0001, DMI type 1, 27 bytes
@@ -155,8 +153,10 @@ Onboard Device
 Handle 0x000B, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: AMD
-	Specification Version: 2.0	Firmware Revision: 3.1
-	Description: AMD	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 3.92
+	Description: AMD
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -209,8 +209,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -225,8 +225,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -307,7 +307,7 @@ Memory Device
 	Error Information Handle: 0x0013
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom - Slot 1 (left)
@@ -320,10 +320,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: HMA81GS6CJR8N-XN    
 	Rank: 1
-	Configured Clock Speed: 3200 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xAD
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 8 GB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -350,7 +361,7 @@ Memory Device
 	Error Information Handle: 0x0016
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom - Slot 2 (right)
@@ -363,10 +374,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: HMA81GS6CJR8N-XN    
 	Rank: 1
-	Configured Clock Speed: 3200 MT/s
+	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xAD
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 8 GB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0018, DMI type 20, 35 bytes
 Memory Device Mapped Address

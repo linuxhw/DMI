@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.1 present.
-Table at 0x7AD53000.
+Table at 0x7A7E8000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Insyde
-	Version: F.23
-	Release Date: 06/18/2020
+	Version: F.29
+	Release Date: 11/10/2022
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 11 MB
@@ -31,8 +31,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.23
-	Firmware Revision: 70.58
+	BIOS Revision: 15.29
+	Firmware Revision: 70.60
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -49,7 +49,7 @@ Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 8478
-	Version: 70.58
+	Version: 70.60
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -383,7 +383,7 @@ Portable Battery
 	Design Capacity: 52552 mWh
 	Design Voltage: 11550 mV
 	SBDS Version: 1
-	Maximum Error: 1%
+	Maximum Error: 3%
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x000A070C
 
@@ -391,7 +391,7 @@ Handle 0x0019, DMI type 24, 5 bytes
 Hardware Security
 	Power-On Password Status: Not Implemented
 	Keyboard Password Status: Not Implemented
-	Administrator Password Status: Enabled
+	Administrator Password Status: Disabled
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x001A, DMI type 26, 24 bytes
@@ -520,7 +520,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 27 00 31 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 0D A3 00 00 00 00 01 00 00 00 00 00 0C 00
-		0F 06 40 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		61 08 5C 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 FF 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0028, DMI type 136, 6 bytes
@@ -529,25 +529,47 @@ OEM-specific Type
 		88 06 28 00 FF FF
 
 Handle 0x0029, DMI type 219, 106 bytes
-HP ProLiant Information
-	Power Features: 0x45010401
-	Omega Features: 0x06900002
-	Misc. Features: 0x04000000
-		iCRU: No
-		UEFI: No
+OEM-specific Type
+	Header and Data:
+		DB 6A 29 00 01 04 01 45 02 00 90 06 01 10 86 20
+		00 00 00 04 48 00 00 00 00 00 00 00 00 00 40 02
+		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00 00 00 00 00 00 00 00 00 00
+	Strings:
+		MEI1
+		MEI2
+		MEI3
+		MEI4
 
 Handle 0x002A, DMI type 221, 89 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:01.4, MAC address 00:FF:FF:FF:FF:FF
-	NIC 2: PCI device 00:00.2, MAC address FF:FF:FF:FF:FF:03
-	NIC 3: PCI device ff:00.4, MAC address FF:FF:FF:FF:05:06
-	NIC 4: Not Installed
-	NIC 5: Not Installed
-	NIC 6: Disabled
-	NIC 7: Not Installed
-	NIC 8: PCI device 0c:00.0, MAC address 00:FF:FF:FF:FF:FF
-	NIC 9: PCI device 0e:01.5, MAC address 01:04:01:00:00:0F
-	NIC 10: Disabled
+OEM-specific Type
+	Header and Data:
+		DD 59 2A 00 0C 01 00 FF FF FF FF FF 02 00 FF FF
+		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
+		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
+		00 FF FF FF FF FF 0B 00 46 3C 00 00 00 0C 00 FF
+		FF FF FF FF 0D 0E 01 04 01 00 00 0F 00 00 07 03
+		00 00 10 00 00 02 00 09 00
+	Strings:
+		Lan Phy Version
+		Sensor Firmware Version
+		Debug Mode Status
+		Disabled
+		Performance Mode Status
+		Disabled
+		Debug Use USB(Disabled:Serial)
+		Disabled
+		ICC Overclocking Version
+		UNDI Version
+		EC FW Version
+		GOP Version
+		Royal Park Version
+		BP1.4.1.0_RP06
+		Platform Version
+		Client Silicon Version
 
 Handle 0x002B, DMI type 222, 14 bytes
 OEM-specific Type

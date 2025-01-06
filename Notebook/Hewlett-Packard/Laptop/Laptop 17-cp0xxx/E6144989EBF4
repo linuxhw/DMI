@@ -1,13 +1,13 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.3.0 present.
-Table at 0xCCDE7000.
+Table at 0xBCDEC000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: AMI
-	Version: F.13
-	Release Date: 11/24/2021
+	Version: F.27
+	Release Date: 10/19/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -24,7 +24,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.13
+	BIOS Revision: 15.27
 	Firmware Revision: 74.21
 
 Handle 0x0001, DMI type 1, 27 bytes
@@ -259,7 +259,7 @@ Handle 0x0010, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0011, DMI type 17, 84 bytes
+Handle 0x0011, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x000A
 	Error Information Handle: 0x0010
@@ -313,7 +313,7 @@ Handle 0x0013, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0014, DMI type 17, 84 bytes
+Handle 0x0014, DMI type 17, 92 bytes
 Memory Device
 	Array Handle: 0x000A
 	Error Information Handle: 0x0013
@@ -472,7 +472,8 @@ Port Connector Information
 Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J3604
-	Type: x8 PCI Express x8
+	Type: PCI Express x8
+	Data Bus Width: 8x or x8
 	Current Usage: Available
 	Length: Short
 	ID: 1

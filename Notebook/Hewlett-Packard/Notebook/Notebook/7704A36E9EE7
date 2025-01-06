@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-26 structures occupying 1676 bytes.
+25 structures occupying 1590 bytes.
 Table at 0x000E4630.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -188,21 +188,7 @@ Handle 0x000C, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x000D, DMI type 22, 26 bytes
-Portable Battery
-	Location: Primary
-	Manufacturer: 131-14-72
-	Manufacture Date: 8/21/2015
-	Serial Number: --
-	Name: HS04041
-	Chemistry: Lithium Ion
-	Design Capacity: 41440 mWh
-	Design Voltage: 14800 mV
-	SBDS Version: 1
-	Maximum Error: 1%
-	OEM-specific Information: 0x000A070C
-
-Handle 0x000E, DMI type 41, 11 bytes
+Handle 0x000D, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: NAMI
 	Type: Other
@@ -210,7 +196,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:02:00.0
 
-Handle 0x000F, DMI type 41, 11 bytes
+Handle 0x000E, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: CX20752 HD AUDIO CODEC
 	Type: Sound
@@ -218,7 +204,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:02.4
 
-Handle 0x0010, DMI type 16, 23 bytes
+Handle 0x000F, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -227,9 +213,9 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
-Handle 0x0011, DMI type 17, 40 bytes
+Handle 0x0010, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0010
+	Array Handle: 0x000F
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -251,18 +237,18 @@ Memory Device
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x0013, DMI type 20, 35 bytes
+Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00100000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0011
-	Memory Array Mapped Address Handle: 0x0017
+	Physical Device Handle: 0x0010
+	Memory Array Mapped Address Handle: 0x0016
 	Partition Row Position: 1
 
-Handle 0x0014, DMI type 17, 40 bytes
+Handle 0x0013, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0010
+	Array Handle: 0x000F
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -284,24 +270,24 @@ Memory Device
 	Maximum Voltage: Unknown
 	Configured Voltage: Unknown
 
-Handle 0x0016, DMI type 20, 35 bytes
+Handle 0x0015, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0014
-	Memory Array Mapped Address Handle: 0x0017
+	Physical Device Handle: 0x0013
+	Memory Array Mapped Address Handle: 0x0016
 	Partition Row Position: 1
 
-Handle 0x0017, DMI type 19, 31 bytes
+Handle 0x0016, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 8 GB
-	Physical Array Handle: 0x0010
+	Physical Array Handle: 0x000F
 	Partition Width: 255
 
-Handle 0x0019, DMI type 4, 42 bytes
+Handle 0x0018, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: Socket FT3b
 	Type: Central Processor
@@ -340,8 +326,8 @@ Processor Information
 	Current Speed: 2200 MHz
 	Status: Populated, Enabled
 	Upgrade: None
-	L1 Cache Handle: 0x001A
-	L2 Cache Handle: 0x001B
+	L1 Cache Handle: 0x0019
+	L2 Cache Handle: 0x001A
 	L3 Cache Handle: Not Provided
 	Serial Number: --
 	Asset Tag: --
@@ -352,7 +338,7 @@ Processor Information
 	Characteristics:
 		64-bit capable
 
-Handle 0x001A, DMI type 7, 19 bytes
+Handle 0x0019, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L1 Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -368,7 +354,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 2-way Set-associative
 
-Handle 0x001B, DMI type 7, 19 bytes
+Handle 0x001A, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2 Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -384,6 +370,6 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x001C, DMI type 127, 4 bytes
+Handle 0x001B, DMI type 127, 4 bytes
 End Of Table
 

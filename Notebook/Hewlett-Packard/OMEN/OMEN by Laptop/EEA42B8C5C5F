@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
 55 structures occupying 3462 bytes.
@@ -594,42 +594,76 @@ OEM-specific Type
 		88 06 2F 00 FF FF
 
 Handle 0x0030, DMI type 219, 81 bytes
-HP ProLiant Information
-	Power Features: 0x45010301
-	Omega Features: 0x06900002
-	Misc. Features: 0x00000000
-		iCRU: No
-		UEFI: No
+OEM-specific Type
+	Header and Data:
+		DB 51 30 00 01 03 01 45 02 00 90 06 01 10 80 20
+		00 00 00 00 40 08 00 00 00 00 00 00 00 00 40 02
+		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+		FF FF FF FF FF FF FF FF 03 FF FF FF FF FF FF FF
+		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+		FF
+	Strings:
+		MEI1
+		MEI2
+		MEI3
 
 Handle 0x0031, DMI type 221, 26 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:01:08:00:00:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:84:00:03
+OEM-specific Type
+	Header and Data:
+		DD 1A 31 00 03 01 00 01 08 00 00 00 02 00 00 00
+		00 84 00 03 00 00 05 00 00 00
+	Strings:
+		Reference Code - CPU
+		uCode Version
+		TXT ACM version
 
 Handle 0x0032, DMI type 221, 26 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:01:08:00:00:00
-	NIC 2: PCI device 00:00.2, MAC address 01:08:00:00:00:03
+OEM-specific Type
+	Header and Data:
+		DD 1A 32 00 03 01 00 01 08 00 00 00 02 00 01 08
+		00 00 00 03 04 0B 08 32 61 0D
+	Strings:
+		Reference Code - ME 11.0
+		MEBx version
+		ME Firmware Version
+		Consumer SKU
 
 Handle 0x0033, DMI type 221, 68 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:01.1, MAC address 00:01:08:00:00:00
-	NIC 2: PCI device 03:00.2, MAC address FF:FF:FF:FF:FF:04
-	NIC 3: PCI device ff:00.0, MAC address FF:FF:31:00:05:00
-	NIC 4: Not Installed
-	NIC 5: Not Installed
-	NIC 6: Disabled
-	NIC 7: Disabled
-	NIC 8: PCI device 0a:00.0, MAC address 00:34:00:00:00:00
+OEM-specific Type
+	Header and Data:
+		DD 44 33 00 09 01 00 01 08 00 00 00 02 03 FF FF
+		FF FF FF 04 00 FF FF FF 31 00 05 00 FF FF FF 31
+		00 06 00 FF FF FF FF FF 07 00 3E 00 00 00 00 08
+		00 34 00 00 00 00 09 00 3E 00 00 00 00 0A 00 34
+		00 00 00 00
+	Strings:
+		Reference Code - SKL PCH
+		PCH-CRID Status
+		Disabled
+		PCH-CRID Original Value
+		PCH-CRID New Value
+		OPROM - RST - RAID
+		SKL PCH H Bx Hsio Version
+		SKL PCH H Dx Hsio Version
+		SKL PCH LP Bx Hsio Version
+		SKL PCH LP Cx Hsio Version
 
 Handle 0x0034, DMI type 221, 54 bytes
-HP BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.7, MAC address 00:01:08:00:00:00
-	NIC 2: PCI device 00:00.2, MAC address 01:08:00:01:00:03
-	NIC 3: PCI device 01:00.0, MAC address 08:00:00:00:04:05
-	NIC 4: Not Installed
-	NIC 5: Not Installed
-	NIC 6: PCI device 07:1f.7, MAC address 00:08:00:FF:FF:FF
+OEM-specific Type
+	Header and Data:
+		DD 36 34 00 07 01 00 01 08 00 00 00 02 00 01 08
+		00 01 00 03 00 01 08 00 00 00 04 05 FF FF FF FF
+		FF 06 00 FF FF FF 07 00 07 00 FF FF FF 07 00 08
+		00 FF FF FF FF FF
+	Strings:
+		Reference Code - SA - System Agent
+		Reference Code - MRC
+		SA - PCIe Version
+		SA-CRID Status
+		Disabled
+		SA-CRID Original Value
+		SA-CRID New Value
+		OPROM - VBIOS
 
 Handle 0x0035, DMI type 222, 14 bytes
 OEM-specific Type

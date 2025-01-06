@@ -1,7 +1,7 @@
 # dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-67 structures occupying 3545 bytes.
+67 structures occupying 3537 bytes.
 Table at 0x8C00F000.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -117,7 +117,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
-	Voltage: 0.8 V
+	Voltage: 0.7 V
 	External Clock: 100 MHz
 	Max Speed: 8300 MHz
 	Current Speed: 2400 MHz
@@ -480,7 +480,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-slot 1(left)
@@ -488,13 +488,13 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: SK Hynix
+	Manufacturer: 8C26
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA81GS6AFR8N-UH    
-	Rank: 1
+	Part Number: TIMETEC-S16G-3200   
+	Rank: 2
 	Configured Memory Speed: 2133 MT/s
-	Minimum Voltage: 1.35 V
+	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.2 V
 
@@ -504,7 +504,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-slot 2(right)
@@ -512,29 +512,29 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: SK Hynix
+	Manufacturer: 8C26
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA851S6AFR6N-UH    
-	Rank: 1
+	Part Number: TIMETEC-S16G-3200   
+	Rank: 2
 	Configured Memory Speed: 2133 MT/s
-	Minimum Voltage: 1.25 V
+	Minimum Voltage: 1.5 V
 	Maximum Voltage: 1.5 V
 	Configured Voltage: 1.2 V
 
 Handle 0x0029, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 12 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0026
 	Partition Width: 2
 
 Handle 0x002A, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0027
 	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: 1
@@ -544,8 +544,8 @@ Memory Device Mapped Address
 Handle 0x002B, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0028
 	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: 1
@@ -568,7 +568,7 @@ Portable Battery
 	Design Capacity: 32560 mWh
 	Design Voltage: 14800 mV
 	SBDS Version: 1
-	Maximum Error: 3%
+	Maximum Error: 6%
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x000A070C
 
@@ -687,7 +687,7 @@ OEM-specific Type
 Handle 0x003A, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 3A 00 31 00 00 00 00 00 00 00 00 00 00 00
+		83 40 3A 00 10 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 58 9D 00 00 00 00 01 00 00 00 08 00 0B 00
 		06 0E 41 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 FF 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
@@ -700,7 +700,7 @@ OEM-specific Type
 Handle 0x003C, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 3C 00 01 03 01 45 02 00 A0 06 01 10 86 20
+		DB 51 3C 00 01 03 01 45 02 00 90 06 01 10 80 20
 		00 00 00 00 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

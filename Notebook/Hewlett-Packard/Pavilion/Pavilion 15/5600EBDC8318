@@ -1,15 +1,15 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 34 structures occupying 1842 bytes.
-Table at 0x9FABC000.
+Table at 0x000E4800.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Insyde
 	Version: F.32
 	Release Date: 04/16/2014
-	ROM Size: 4096 kB
+	ROM Size: 4 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -216,7 +216,7 @@ Portable Battery
 	Design Capacity: 47520 mWh
 	Design Voltage: 10800 mV
 	SBDS Version: 3.1
-	Maximum Error: 2%
+	Maximum Error: 3%
 	OEM-specific Information: 0x00000000
 
 Handle 0x0018, DMI type 41, 11 bytes
@@ -274,7 +274,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 1(top)
@@ -282,12 +282,12 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 1333 MT/s
-	Manufacturer: Kingston
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 99U5428-040.A01LF 
-	Rank: 2
-	Configured Clock Speed: 1333 MT/s
+	Part Number: M471B5173BH0-YK0  
+	Rank: 1
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0021, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -304,7 +304,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: Bottom-Slot 2(under)
@@ -312,12 +312,12 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous Unbuffered (Unregistered)
 	Speed: 1333 MT/s
-	Manufacturer: Samsung
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5173BH0-YK0  
-	Rank: 1
-	Configured Clock Speed: 1333 MT/s
+	Part Number: 99U5428-040.A01LF 
+	Rank: 2
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x0024, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -409,8 +409,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
