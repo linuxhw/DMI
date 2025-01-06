@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 52 structures occupying 1887 bytes.
@@ -385,8 +385,9 @@ Port Connector Information
 Handle 0x0021, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIEX1_1
-	Type: 32-bit PCI Express
-	Current Usage: Available
+	Type: PCI Express
+	Data Bus Width: 32 bit
+	Current Usage: In Use
 	Length: Short
 	ID: 9
 	Characteristics:
@@ -397,8 +398,9 @@ System Slot Information
 Handle 0x0022, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIE16X
-	Type: 32-bit PCI Express
-	Current Usage: Available
+	Type: PCI Express
+	Data Bus Width: 32 bit
+	Current Usage: In Use
 	Length: Short
 	ID: 2
 	Characteristics:
@@ -409,7 +411,8 @@ System Slot Information
 Handle 0x0023, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIEX1_2
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 10
@@ -421,8 +424,9 @@ System Slot Information
 Handle 0x0024, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI1
-	Type: 32-bit PCI
-	Current Usage: In Use
+	Type: PCI
+	Data Bus Width: 32 bit
+	Current Usage: Available
 	Length: Short
 	ID: 12
 	Characteristics:
@@ -516,7 +520,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
@@ -532,8 +536,8 @@ Memory Device
 Handle 0x002F, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x002E
 	Memory Array Mapped Address Handle: 0x002D
 	Partition Row Position: 1
@@ -559,8 +563,8 @@ Memory Device
 
 Handle 0x0031, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0030
 	Memory Array Mapped Address Handle: 0x002D

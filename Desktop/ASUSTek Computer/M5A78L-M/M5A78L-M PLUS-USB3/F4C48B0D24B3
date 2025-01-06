@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 58 structures occupying 2175 bytes.
@@ -414,7 +414,7 @@ Handle 0x0024, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIE16X
 	Type: 32-bit PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 2
 	Characteristics:
@@ -509,8 +509,8 @@ Physical Memory Array
 Handle 0x002E, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0032EFFFFFF
-	Range Size: 13040 MB
+	Ending Address: 0x00236FFFFFF
+	Range Size: 9072 MB
 	Physical Array Handle: 0x002D
 	Partition Width: 1
 
@@ -546,29 +546,18 @@ Handle 0x0031, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x002D
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Manufacturer1
-	Serial Number: --
-	Asset Tag: --
-	Part Number: PartNum1
+	Type: Unknown
+	Type Detail: None
 
-Handle 0x0032, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0031
-	Memory Array Mapped Address Handle: 0x002E
-	Partition Row Position: 1
+Handle 0x0032, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x0033, DMI type 17, 27 bytes
 Memory Device
@@ -591,8 +580,8 @@ Memory Device
 
 Handle 0x0034, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x002FFFFFFFF
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0033
 	Memory Array Mapped Address Handle: 0x002E
@@ -611,11 +600,6 @@ Memory Device
 	Bank Locator: BANK3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Manufacturer3
-	Serial Number: --
-	Asset Tag: --
-	Part Number: PartNum3
 
 Handle 0x0036, DMI type 126, 19 bytes
 Inactive

@@ -1,16 +1,17 @@
-# dmidecode 2.12
+# dmidecode 3.5
+Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-106 structures occupying 3797 bytes.
+108 structures occupying 3865 bytes.
 Table at 0x000EB1D0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 3703
-	Release Date: 03/02/2012
+	Version: 4105
+	Release Date: 07/01/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -112,11 +113,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM) i5-3570K CPU @ 3.40GHz       
+	Version: Intel(R) Xeon(R) CPU E3-1270 V2 @ 3.50GHz      
 	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 3400 MHz
+	Current Speed: 3525 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -127,6 +128,7 @@ Processor Information
 	Part Number: To Be Filled By O.E.M.
 	Core Count: 4
 	Core Enabled: 1
+	Thread Count: 2
 	Characteristics:
 		64-bit capable
 
@@ -152,8 +154,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 1024 kB
-	Maximum Size: 1024 kB
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -168,15 +170,15 @@ Cache Information
 	Configuration: Disabled, Not Socketed, Level 3
 	Operational Mode: Unknown
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
 	Speed: Unknown
 	Error Correction Type: None
 	System Type: Unified
-	Associativity: Other
+	Associativity: 16-way Set-associative
 
 Handle 0x0008, DMI type 8, 9 bytes
 Port Connector Information
@@ -403,7 +405,7 @@ Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_1
 	Type: 32-bit PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 2
 	Characteristics:
@@ -657,8 +659,9 @@ System Power Supply
 	Input Current Probe Handle: 0x003A
 
 Handle 0x003E, DMI type 34, 16 bytes
+Invalid entry length (16). Fixed up to 11.
 Management Device
-	Description: 2
+	Description: LM78-2
 	Type: LM78
 	Address: 0x00000000
 	Address Type: I/O Port
@@ -946,18 +949,18 @@ Memory Device
 	Error Information Handle: 0x0060
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1867 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX1600C9D3LK2/8GX
+	Part Number: KHX1866C10D3/8G   
 	Rank: 2
 
 Handle 0x005F, DMI type 18, 23 bytes
@@ -973,10 +976,10 @@ Handle 0x005F, DMI type 18, 23 bytes
 Handle 0x005E, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x005C
-	Memory Array Mapped Address Handle: 0x0066
+	Memory Array Mapped Address Handle: 0x0068
 	Partition Row Position: Unknown
 	Interleave Position: 1
 	Interleaved Data Depth: 2
@@ -985,21 +988,21 @@ Handle 0x0061, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x005D
 	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1867 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
+	Part Number: KHX1866C10D3/8G   
+	Rank: 2
 
 Handle 0x0060, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -1011,27 +1014,38 @@ Handle 0x0060, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0063, DMI type 17, 28 bytes
+Handle 0x0063, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0061
+	Memory Array Mapped Address Handle: 0x0068
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 2
+
+Handle 0x0062, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x005D
-	Error Information Handle: 0x0062
+	Error Information Handle: 0x0065
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1867 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KHX1600C9D3LK2/8GX
+	Part Number: KHX1866C10D3/8G   
 	Rank: 2
 
-Handle 0x0062, DMI type 18, 23 bytes
+Handle 0x0065, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -1041,38 +1055,38 @@ Handle 0x0062, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0065, DMI type 20, 19 bytes
+Handle 0x0064, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0063
-	Memory Array Mapped Address Handle: 0x0066
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0062
+	Memory Array Mapped Address Handle: 0x0068
 	Partition Row Position: Unknown
 	Interleave Position: 2
 	Interleaved Data Depth: 2
 
-Handle 0x0064, DMI type 17, 28 bytes
+Handle 0x0067, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x005D
 	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 3
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1867 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
+	Part Number: KHX1866C10D3/8G   
+	Rank: 2
 
-Handle 0x0067, DMI type 18, 23 bytes
+Handle 0x0066, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -1082,15 +1096,26 @@ Handle 0x0067, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0066, DMI type 19, 15 bytes
+Handle 0x0069, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0067
+	Memory Array Mapped Address Handle: 0x0068
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x0068, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x005D
 	Partition Width: 4
 
-Handle 0x0068, DMI type 13, 22 bytes
+Handle 0x006A, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 8
@@ -1102,8 +1127,8 @@ BIOS Language Information
 		ja-
 		zh-
 		chs
-	Currently Installed Language: en-
+	Currently Installed Language: ru-
 
-Handle 0x0069, DMI type 127, 4 bytes
+Handle 0x006B, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-105 structures occupying 3699 bytes.
+107 structures occupying 3756 bytes.
 Table at 0x000EB1D0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -117,7 +117,7 @@ Processor Information
 	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 3400 MHz
+	Current Speed: 3430 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -969,7 +969,7 @@ Memory Device Mapped Address
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x005B
-	Memory Array Mapped Address Handle: 0x0065
+	Memory Array Mapped Address Handle: 0x0067
 	Partition Row Position: Unknown
 	Interleave Position: 1
 	Interleaved Data Depth: 2
@@ -978,21 +978,21 @@ Handle 0x0060, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x005C
 	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: 075D
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
+	Part Number: GR1333D364L9/4G
+	Rank: 2
 
 Handle 0x005F, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -1004,10 +1004,21 @@ Handle 0x005F, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0062, DMI type 17, 28 bytes
+Handle 0x0062, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0060
+	Memory Array Mapped Address Handle: 0x0067
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 2
+
+Handle 0x0061, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x005C
-	Error Information Handle: 0x0061
+	Error Information Handle: 0x0064
 	Total Width: 64 bits
 	Data Width: 64 bits
 	Size: 4 GB
@@ -1024,7 +1035,7 @@ Memory Device
 	Part Number: 9905403-149.A00LF 
 	Rank: 2
 
-Handle 0x0061, DMI type 18, 23 bytes
+Handle 0x0064, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -1034,38 +1045,38 @@ Handle 0x0061, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0064, DMI type 20, 19 bytes
+Handle 0x0063, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00100000000
 	Ending Address: 0x001FFFFFFFF
 	Range Size: 4 GB
-	Physical Device Handle: 0x0062
-	Memory Array Mapped Address Handle: 0x0065
+	Physical Device Handle: 0x0061
+	Memory Array Mapped Address Handle: 0x0067
 	Partition Row Position: Unknown
 	Interleave Position: 2
 	Interleaved Data Depth: 2
 
-Handle 0x0063, DMI type 17, 28 bytes
+Handle 0x0066, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x005C
 	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 3
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: 0443
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
+	Part Number: RMR1810KC58E8F1333
+	Rank: 1
 
-Handle 0x0066, DMI type 18, 23 bytes
+Handle 0x0065, DMI type 18, 23 bytes
 32-bit Memory Error Information
 	Type: OK
 	Granularity: Unknown
@@ -1075,15 +1086,26 @@ Handle 0x0066, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0065, DMI type 19, 15 bytes
+Handle 0x0068, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00300000000
+	Ending Address: 0x0037FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x0066
+	Memory Array Mapped Address Handle: 0x0067
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x0067, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x0037FFFFFFF
+	Range Size: 14 GB
 	Physical Array Handle: 0x005C
 	Partition Width: 4
 
-Handle 0x0067, DMI type 13, 22 bytes
+Handle 0x0069, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 6
@@ -1095,6 +1117,6 @@ BIOS Language Information
 		chs
 	Currently Installed Language: en-
 
-Handle 0x0068, DMI type 127, 4 bytes
+Handle 0x006A, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 46 structures occupying 1769 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 05/05/2016
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 2048 kB
+	ROM Size: 2 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -453,8 +453,8 @@ Physical Memory Array
 Handle 0x0027, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0012FFFFFFF
-	Range Size: 4864 MB
+	Ending Address: 0x001AFFFFFFF
+	Range Size: 6912 MB
 	Physical Array Handle: 0x0026
 	Partition Width: 1
 
@@ -464,7 +464,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
@@ -490,23 +490,29 @@ Handle 0x002A, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0026
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
+	Type: Other
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
 	Manufacturer: Manufacturer1
 	Serial Number: --
 	Asset Tag: --
 	Part Number: PartNum1
 
-Handle 0x002B, DMI type 126, 19 bytes
-Inactive
+Handle 0x002B, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 2 GB
+	Physical Device Handle: 0x002A
+	Memory Array Mapped Address Handle: 0x0027
+	Partition Row Position: 1
 
 Handle 0x002C, DMI type 32, 20 bytes
 System Boot Information

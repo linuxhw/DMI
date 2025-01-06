@@ -1,14 +1,14 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
-45 structures occupying 1709 bytes.
+46 structures occupying 1727 bytes.
 Table at 0x0009F400.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 0704   
-	Release Date: 05/19/2009
+	Version: 1801   
+	Release Date: 06/08/2010
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 1 MB
@@ -209,8 +209,8 @@ Memory Module Information
 	Bank Connections: 0 1
 	Current Speed: 30 ns
 	Type: DIMM
-	Installed Size: 2048 MB (Double-bank Connection)
-	Enabled Size: 2048 MB (Double-bank Connection)
+	Installed Size: 1024 MB (Single-bank Connection)
+	Enabled Size: 1024 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
@@ -369,7 +369,7 @@ Port Connector Information
 
 Handle 0x001D, DMI type 8, 9 bytes
 Port Connector Information
-	Internal Reference Designator: SATA1
+	Internal Reference Designator: CHA FAN
 	Internal Connector Type: Other
 	External Reference Designator: Not Specified
 	External Connector Type: None
@@ -377,13 +377,21 @@ Port Connector Information
 
 Handle 0x001E, DMI type 8, 9 bytes
 Port Connector Information
+	Internal Reference Designator: SATA1
+	Internal Connector Type: Other
+	External Reference Designator: Not Specified
+	External Connector Type: None
+	Port Type: Other
+
+Handle 0x001F, DMI type 8, 9 bytes
+Port Connector Information
 	Internal Reference Designator: SATA2
 	Internal Connector Type: Other
 	External Reference Designator: Not Specified
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x001F, DMI type 9, 13 bytes
+Handle 0x0020, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIEX16
 	Type: x16 PCI Express
@@ -394,11 +402,11 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 
-Handle 0x0020, DMI type 9, 13 bytes
+Handle 0x0021, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIEX1
 	Type: x1 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 3
 	Characteristics:
@@ -406,7 +414,7 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 
-Handle 0x0021, DMI type 9, 13 bytes
+Handle 0x0022, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI1
 	Type: 32-bit PCI
@@ -418,27 +426,27 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 
-Handle 0x0022, DMI type 10, 6 bytes
+Handle 0x0023, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
 	Description:   To Be Filled By O.E.M.
 
-Handle 0x0023, DMI type 11, 5 bytes
+Handle 0x0024, DMI type 11, 5 bytes
 OEM Strings
 	String 1: 00261841026F
 	String 2: To Be Filled By O.E.M.
 	String 3: To Be Filled By O.E.M.
 	String 4: To Be Filled By O.E.M.
 
-Handle 0x0024, DMI type 13, 22 bytes
+Handle 0x0025, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Abbreviated
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0025, DMI type 16, 15 bytes
+Handle 0x0026, DMI type 16, 15 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -447,21 +455,21 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 2
 
-Handle 0x0026, DMI type 19, 15 bytes
+Handle 0x0027, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0013FFFFFFF
-	Range Size: 5 GB
-	Physical Array Handle: 0x0025
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 3 GB
+	Physical Array Handle: 0x0026
 	Partition Width: 1
 
-Handle 0x0027, DMI type 17, 27 bytes
+Handle 0x0028, DMI type 17, 27 bytes
 Memory Device
-	Array Handle: 0x0025
+	Array Handle: 0x0026
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
@@ -474,18 +482,18 @@ Memory Device
 	Asset Tag: --
 	Part Number: PartNum0
 
-Handle 0x0028, DMI type 20, 19 bytes
+Handle 0x0029, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
-	Physical Device Handle: 0x0027
-	Memory Array Mapped Address Handle: 0x0026
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
+	Physical Device Handle: 0x0028
+	Memory Array Mapped Address Handle: 0x0027
 	Partition Row Position: 1
 
-Handle 0x0029, DMI type 17, 27 bytes
+Handle 0x002A, DMI type 17, 27 bytes
 Memory Device
-	Array Handle: 0x0025
+	Array Handle: 0x0026
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
@@ -502,19 +510,19 @@ Memory Device
 	Asset Tag: --
 	Part Number: PartNum1
 
-Handle 0x002A, DMI type 20, 19 bytes
+Handle 0x002B, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00080000000
-	Ending Address: 0x000FFFFFFFF
+	Starting Address: 0x00040000000
+	Ending Address: 0x000BFFFFFFF
 	Range Size: 2 GB
-	Physical Device Handle: 0x0029
-	Memory Array Mapped Address Handle: 0x0026
+	Physical Device Handle: 0x002A
+	Memory Array Mapped Address Handle: 0x0027
 	Partition Row Position: 1
 
-Handle 0x002B, DMI type 32, 20 bytes
+Handle 0x002C, DMI type 32, 20 bytes
 System Boot Information
 	Status: No errors detected
 
-Handle 0x002C, DMI type 127, 4 bytes
+Handle 0x002D, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,13 +1,13 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x9FA2E000.
+Table at 0x4F22D000.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 1301
-	Release Date: 03/14/2018
+	Version: 1501
+	Release Date: 07/13/2021
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -331,13 +331,13 @@ Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_2
 	Type: x1 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 2
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:ff:00.2
+	Bus Address: 0000:06:00.2
 
 Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
@@ -356,27 +356,27 @@ Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_3
 	Type: x1 PCI Express
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 4
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:03:00.7
+	Bus Address: 0000:ff:00.7
 
 Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX4_3
 	Type: x4 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 5
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:00.4
+	Bus Address: 0000:03:00.4
 
 Handle 0x0026, DMI type 10, 6 bytes
 On Board Device Information
@@ -664,20 +664,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM1
 	Bank Locator: BANK 0
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3007 MT/s
+	Speed: 2133 MT/s
 	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMK16GX4M2B3200C16  
-	Rank: 1
-	Configured Memory Speed: 3007 MT/s
+	Part Number: CMK32GX4M2A2666C16  
+	Rank: 2
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -688,20 +688,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA-DIMM2
 	Bank Locator: BANK 1
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3007 MT/s
+	Speed: 2133 MT/s
 	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMK16GX4M2B3200C16  
-	Rank: 1
-	Configured Memory Speed: 3007 MT/s
+	Part Number: CMK32GX4M2D3000C16  
+	Rank: 2
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -712,20 +712,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM1
 	Bank Locator: BANK 2
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3007 MT/s
+	Speed: 2133 MT/s
 	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMK16GX4M2B3200C16  
-	Rank: 1
-	Configured Memory Speed: 3007 MT/s
+	Part Number: CMK32GX4M2D3000C16  
+	Rank: 2
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -736,20 +736,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM2
 	Bank Locator: BANK 3
 	Type: DDR4
 	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 3007 MT/s
+	Speed: 2133 MT/s
 	Manufacturer: Corsair
 	Serial Number: --
 	Asset Tag: --
-	Part Number: CMK16GX4M2B3200C16  
-	Rank: 1
-	Configured Memory Speed: 3007 MT/s
+	Part Number: CMK32GX4M2A2666C16  
+	Rank: 2
+	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
 	Configured Voltage: 1.2 V
@@ -757,8 +757,8 @@ Memory Device
 Handle 0x0048, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Array Handle: 0x0043
 	Partition Width: 4
 
@@ -873,8 +873,8 @@ Processor Information
 Handle 0x004D, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0044
 	Memory Array Mapped Address Handle: 0x0048
 	Partition Row Position: Unknown
@@ -883,9 +883,9 @@ Memory Device Mapped Address
 
 Handle 0x004E, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x005FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00800000000
+	Ending Address: 0x00BFFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0045
 	Memory Array Mapped Address Handle: 0x0048
 	Partition Row Position: Unknown
@@ -894,9 +894,9 @@ Memory Device Mapped Address
 
 Handle 0x004F, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00400000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0046
 	Memory Array Mapped Address Handle: 0x0048
 	Partition Row Position: Unknown
@@ -905,9 +905,9 @@ Memory Device Mapped Address
 
 Handle 0x0050, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00600000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00C00000000
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 16 GB
 	Physical Device Handle: 0x0047
 	Memory Array Mapped Address Handle: 0x0048
 	Partition Row Position: Unknown
@@ -923,7 +923,7 @@ OEM-specific Type
 Handle 0x0052, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 52 00 14 00 00 00 00 00 00 00 00 00 00 00
+		83 40 52 00 35 00 00 00 00 00 00 00 00 00 00 00
 		F8 00 C5 A2 00 00 00 00 01 00 00 00 07 00 0B 00
 		CD 04 00 00 00 00 00 00 FE 00 B8 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
@@ -954,7 +954,7 @@ OEM-specific Type
 	Header and Data:
 		DD 4B 55 00 0A 01 00 01 08 00 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
-		00 06 00 0F 05 00 00 00 07 00 3E 00 00 00 00 08
+		00 06 00 FF FF FF FF FF 07 00 3E 00 00 00 00 08
 		00 34 00 00 00 00 09 00 0B 00 00 00 00 0A 00 3E
 		00 00 00 00 0B 00 34 00 00 00 00
 	Strings:
@@ -990,7 +990,7 @@ OEM-specific Type
 Handle 0x0057, DMI type 221, 103 bytes
 OEM-specific Type
 	Header and Data:
-		DD 67 57 00 0E 01 00 00 00 00 A6 00 02 00 FF FF
+		DD 67 57 00 0E 01 00 00 00 00 00 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
 		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
@@ -1041,7 +1041,7 @@ Group Associations
 Handle 0x005B, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 5B 00 01 03 01 45 02 00 90 46 03 10 86 20
+		DB 51 5B 00 01 03 01 45 02 00 90 46 01 10 86 20
 		00 00 00 00 40 08 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

@@ -1,4 +1,4 @@
-# dmidecode 3.5
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 45 structures occupying 2036 bytes.
@@ -249,20 +249,22 @@ Port Connector Information
 Handle 0x0019, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
-	Type: 32-bit PCI Express
-	Current Usage: Available
+	Type: PCI Express
+	Data Bus Width: 32 bit
+	Current Usage: In Use
 	Length: Short
 	ID: 1
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:01.0
+	Bus Address: 0000:01:01.0
 
 Handle 0x001A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: MINIPCIEX1
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -270,7 +272,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:02:15.0
+	Bus Address: 0000:03:15.0
 
 Handle 0x001B, DMI type 10, 10 bytes
 On Board Device 1 Information
@@ -384,7 +386,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
@@ -395,8 +397,8 @@ Memory Device
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: ASU16D3LU1MNG/8G  
-	Rank: 2
+	Part Number: 99U5584-017.A00LF 
+	Rank: 1
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x002B, DMI type 17, 34 bytes
@@ -405,7 +407,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM 0
@@ -416,15 +418,15 @@ Memory Device
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 99U5584-017.A00LF 
-	Rank: 1
+	Part Number: ASU16D3LU1MNG/8G  
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x002C, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x002A
 	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: Unknown
@@ -433,9 +435,9 @@ Memory Device Mapped Address
 
 Handle 0x002D, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
+	Starting Address: 0x00100000000
 	Ending Address: 0x002FFFFFFFF
-	Range Size: 4 GB
+	Range Size: 8 GB
 	Physical Device Handle: 0x002B
 	Memory Array Mapped Address Handle: 0x0029
 	Partition Row Position: Unknown

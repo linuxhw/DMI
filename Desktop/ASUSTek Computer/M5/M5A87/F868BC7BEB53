@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 59 structures occupying 2165 bytes.
@@ -87,10 +87,10 @@ Handle 0x0004, DMI type 4, 40 bytes
 Processor Information
 	Socket Designation: AM3R2
 	Type: Central Processor
-	Family: FX
+	Family: Phenom II
 	Manufacturer: AMD              
-	ID: 20 0F 60 00 FF FB 8B 17
-	Signature: Family 21, Model 2, Stepping 0
+	ID: 42 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 4, Stepping 2
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -115,11 +115,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD FX(tm)-4350 Quad-Core Processor                 
+	Version: AMD Phenom(tm) II X3 720 Processor                  
 	Voltage: 1.3 V
 	External Clock: 200 MHz
-	Max Speed: 4200 MHz
-	Current Speed: 4200 MHz
+	Max Speed: 2800 MHz
+	Current Speed: 2800 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM3
 	L1 Cache Handle: 0x0005
@@ -128,9 +128,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
-	Core Count: 4
-	Core Enabled: 4
-	Thread Count: 4
+	Core Count: 3
+	Core Enabled: 3
+	Thread Count: 3
 	Characteristics:
 		64-bit capable
 
@@ -140,8 +140,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 192 kB
-	Maximum Size: 192 kB
+	Installed Size: 384 kB
+	Maximum Size: 384 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -156,8 +156,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 4 MB
-	Maximum Size: 4 MB
+	Installed Size: 1536 kB
+	Maximum Size: 1536 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -172,15 +172,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8 MB
-	Maximum Size: 8 MB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
 	Speed: 1 ns
 	Error Correction Type: Multi-bit ECC
 	System Type: Unified
-	Associativity: 64-way Set-associative
+	Associativity: 48-way Set-associative
 
 Handle 0x0008, DMI type 8, 9 bytes
 Port Connector Information
@@ -537,8 +537,8 @@ Physical Memory Array
 Handle 0x0030, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0062EFFFFFF
-	Range Size: 25328 MB
+	Ending Address: 0x0022FFFFFFF
+	Range Size: 8960 MB
 	Physical Array Handle: 0x002F
 	Partition Width: 1
 
@@ -548,14 +548,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK0
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 667 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: Manufacturer0
 	Serial Number: --
 	Asset Tag: --
@@ -564,8 +564,8 @@ Memory Device
 Handle 0x0032, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0031
 	Memory Array Mapped Address Handle: 0x0030
 	Partition Row Position: 1
@@ -574,29 +574,18 @@ Handle 0x0033, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x002F
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK1
-	Type: Other
-	Type Detail: Synchronous
-	Speed: 667 MT/s
-	Manufacturer: Manufacturer1
-	Serial Number: --
-	Asset Tag: --
-	Part Number: PartNum1
+	Type: Unknown
+	Type Detail: None
 
-Handle 0x0034, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x002FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0033
-	Memory Array Mapped Address Handle: 0x0030
-	Partition Row Position: 1
+Handle 0x0034, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x0035, DMI type 17, 27 bytes
 Memory Device
@@ -604,14 +593,14 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
 	Bank Locator: BANK2
 	Type: Other
 	Type Detail: Synchronous
-	Speed: 667 MT/s
+	Speed: 1600 MT/s
 	Manufacturer: Manufacturer2
 	Serial Number: --
 	Asset Tag: --
@@ -619,9 +608,9 @@ Memory Device
 
 Handle 0x0036, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00300000000
-	Ending Address: 0x004FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x0035
 	Memory Array Mapped Address Handle: 0x0030
 	Partition Row Position: 1
@@ -630,29 +619,18 @@ Handle 0x0037, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x002F
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 4 GB
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM3
 	Bank Locator: BANK3
-	Type: Other
-	Type Detail: Synchronous
-	Speed: 667 MT/s
-	Manufacturer: Manufacturer3
-	Serial Number: --
-	Asset Tag: --
-	Part Number: PartNum3
+	Type: Unknown
+	Type Detail: None
 
-Handle 0x0038, DMI type 20, 19 bytes
-Memory Device Mapped Address
-	Starting Address: 0x00500000000
-	Ending Address: 0x005FFFFFFFF
-	Range Size: 4 GB
-	Physical Device Handle: 0x0037
-	Memory Array Mapped Address Handle: 0x0030
-	Partition Row Position: 1
+Handle 0x0038, DMI type 126, 19 bytes
+Inactive
 
 Handle 0x0039, DMI type 32, 20 bytes
 System Boot Information

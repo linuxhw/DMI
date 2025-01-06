@@ -87,10 +87,10 @@ Handle 0x0004, DMI type 4, 40 bytes
 Processor Information
 	Socket Designation: AM3R2
 	Type: Central Processor
-	Family: FX
+	Family: Phenom II
 	Manufacturer: AMD              
-	ID: 20 0F 60 00 FF FB 8B 17
-	Signature: Family 21, Model 2, Stepping 0
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -115,11 +115,11 @@ Processor Information
 		SSE (Streaming SIMD extensions)
 		SSE2 (Streaming SIMD extensions 2)
 		HTT (Multi-threading)
-	Version: AMD FX(tm)-8350 Eight-Core Processor                
-	Voltage: 1.3 V
+	Version: AMD Phenom(tm) II X4 840 Processor                  
+	Voltage: 1.4 V
 	External Clock: 200 MHz
-	Max Speed: 4000 MHz
-	Current Speed: 4000 MHz
+	Max Speed: 3200 MHz
+	Current Speed: 3200 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket AM3
 	L1 Cache Handle: 0x0005
@@ -128,9 +128,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
-	Core Count: 8
-	Core Enabled: 8
-	Thread Count: 8
+	Core Count: 4
+	Core Enabled: 4
+	Thread Count: 4
 	Characteristics:
 		64-bit capable
 
@@ -140,8 +140,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 384 kB
-	Maximum Size: 384 kB
+	Installed Size: 512 kB
+	Maximum Size: 512 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -156,8 +156,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 2048 kB
+	Maximum Size: 2048 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -172,15 +172,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 0 kB
+	Maximum Size: 0 kB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
 	Speed: 1 ns
 	Error Correction Type: Multi-bit ECC
 	System Type: Unified
-	Associativity: 64-way Set-associative
+	Associativity: Unknown
 
 Handle 0x0008, DMI type 8, 9 bytes
 Port Connector Information
@@ -509,8 +509,8 @@ Physical Memory Array
 Handle 0x002E, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x00236FFFFFF
-	Range Size: 9072 MB
+	Ending Address: 0x00237FFFFFF
+	Range Size: 9088 MB
 	Physical Array Handle: 0x002D
 	Partition Width: 1
 

@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-91 structures occupying 3296 bytes.
+92 structures occupying 3345 bytes.
 Table at 0x000EB1D0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -862,10 +862,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: 0000
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
+	Part Number: 9905403-400.A00LF 
 	Rank: 2
 
 Handle 0x0055, DMI type 18, 23 bytes
@@ -884,7 +884,7 @@ Memory Device Mapped Address
 	Ending Address: 0x000FFFFFFFF
 	Range Size: 4 GB
 	Physical Device Handle: 0x0052
-	Memory Array Mapped Address Handle: 0x0059
+	Memory Array Mapped Address Handle: 0x0058
 	Partition Row Position: Unknown
 	Interleave Position: 1
 	Interleaved Data Depth: 1
@@ -893,21 +893,21 @@ Handle 0x0057, DMI type 17, 28 bytes
 Memory Device
 	Array Handle: 0x0053
 	Error Information Handle: No Error
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
-	Type: Unknown
-	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1333 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
+	Part Number: 9905403-400.A00LF 
+	Rank: 2
 
 Handle 0x0056, DMI type 18, 23 bytes
 32-bit Memory Error Information
@@ -919,11 +919,22 @@ Handle 0x0056, DMI type 18, 23 bytes
 	Device Address: Unknown
 	Resolution: Unknown
 
-Handle 0x0059, DMI type 19, 15 bytes
+Handle 0x0059, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00100000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x0057
+	Memory Array Mapped Address Handle: 0x0058
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 1
+
+Handle 0x0058, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Array Handle: 0x0053
 	Partition Width: 2
 

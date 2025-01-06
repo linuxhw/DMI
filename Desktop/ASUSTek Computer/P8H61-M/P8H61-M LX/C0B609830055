@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-92 structures occupying 3349 bytes.
+92 structures occupying 3346 bytes.
 Table at 0x000E94B0.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -117,7 +117,7 @@ Processor Information
 	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 2800 MHz
+	Current Speed: 2806 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -334,7 +334,8 @@ Port Connector Information
 Handle 0x001B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX16_1
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -347,7 +348,8 @@ System Slot Information
 Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_1
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -360,7 +362,8 @@ System Slot Information
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_2
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -373,7 +376,8 @@ System Slot Information
 Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIEX1_3
-	Type: 32-bit PCI Express
+	Type: PCI Express
+	Data Bus Width: 32 bit
 	Current Usage: Available
 	Length: Short
 	ID: 4
@@ -894,7 +898,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB-DIMM0
@@ -902,10 +906,10 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1333 MT/s
-	Manufacturer: Samsung
+	Manufacturer: 0875
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M378B5273DH0-CH9  
+	Part Number: JHC1600U1108JY    
 	Rank: 2
 
 Handle 0x0056, DMI type 18, 23 bytes
@@ -921,8 +925,8 @@ Handle 0x0056, DMI type 18, 23 bytes
 Handle 0x0059, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0057
 	Memory Array Mapped Address Handle: 0x0058
 	Partition Row Position: Unknown
@@ -932,8 +936,8 @@ Memory Device Mapped Address
 Handle 0x0058, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x0053
 	Partition Width: 2
 

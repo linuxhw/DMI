@@ -89,8 +89,8 @@ Processor Information
 	Type: Central Processor
 	Family: Pentium 4
 	Manufacturer: Intel            
-	ID: FB 06 00 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 15, Stepping 11
+	ID: 7A 06 01 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 23, Stepping 10
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -120,11 +120,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Core(TM)2 Quad CPU Q6600 @ 2.40GHz         
-	Voltage: 1.2 V
-	External Clock: 321 MHz
+	Version: Intel(R) Core(TM)2 Quad CPU Q9550 @ 2.83GHz         
+	Voltage: 1.1 V
+	External Clock: 333 MHz
 	Max Speed: 3800 MHz
-	Current Speed: 2893 MHz
+	Current Speed: 2834 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0005
@@ -153,18 +153,18 @@ Cache Information
 Handle 0x0006, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: L2-Cache
-	Configuration: Enabled, Not Socketed, Level 2
-	Operational Mode: Varies With Memory Address
+	Configuration: Disabled, Not Socketed, Level 2
+	Operational Mode: Unknown
 	Location: Internal
-	Installed Size: 8 MB
-	Maximum Size: 8 MB
+	Installed Size: 0 kB
+	Maximum Size: 0 kB
 	Supported SRAM Types:
-		Pipeline Burst
-	Installed SRAM Type: Pipeline Burst
+		Unknown
+	Installed SRAM Type: Unknown
 	Speed: Unknown
-	Error Correction Type: Single-bit ECC
-	System Type: Unified
-	Associativity: 4-way Set-associative
+	Error Correction Type: Unknown
+	System Type: Unknown
+	Associativity: Unknown
 
 Handle 0x0007, DMI type 7, 19 bytes
 Cache Information
@@ -210,7 +210,7 @@ Memory Controller Information
 Handle 0x0009, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM0
-	Bank Connections: 2 2
+	Bank Connections: 9 10
 	Current Speed: Unknown
 	Type: Unknown ECC
 	Installed Size: 1024 MB (Double-bank Connection)
@@ -220,7 +220,7 @@ Memory Module Information
 Handle 0x000A, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM1
-	Bank Connections: 2 2
+	Bank Connections: 9 10
 	Current Speed: Unknown
 	Type: Unknown ECC
 	Installed Size: 1024 MB (Double-bank Connection)
@@ -230,7 +230,7 @@ Memory Module Information
 Handle 0x000B, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM2
-	Bank Connections: 2 2
+	Bank Connections: 9 10
 	Current Speed: Unknown
 	Type: Unknown ECC
 	Installed Size: 1024 MB (Double-bank Connection)
@@ -240,7 +240,7 @@ Memory Module Information
 Handle 0x000C, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM3
-	Bank Connections: 2 2
+	Bank Connections: 9 10
 	Current Speed: Unknown
 	Type: Unknown ECC
 	Installed Size: 1024 MB (Double-bank Connection)
@@ -607,7 +607,7 @@ Handle 0x0037, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIEX1_2
 	Type: 32-bit PCI-X
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 1
 	Characteristics:
@@ -619,7 +619,7 @@ Handle 0x0038, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIEX1_1
 	Type: 32-bit PCI-X
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 3
 	Characteristics:

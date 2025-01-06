@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 70 structures occupying 2519 bytes.
@@ -11,7 +11,7 @@ BIOS Information
 	Release Date: 03/11/2010
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		ISA is supported
 		PCI is supported
@@ -161,8 +161,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 6144 kB
-	Maximum Size: 6144 kB
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -215,8 +215,8 @@ Memory Module Information
 	Bank Connections: 0 1
 	Current Speed: 25 ns
 	Type: DIMM
-	Installed Size: 1024 MB (Double-bank Connection)
-	Enabled Size: 1024 MB (Double-bank Connection)
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000A, DMI type 6, 12 bytes
@@ -235,8 +235,8 @@ Memory Module Information
 	Bank Connections: 4 5
 	Current Speed: 25 ns
 	Type: DIMM
-	Installed Size: 1024 MB (Double-bank Connection)
-	Enabled Size: 1024 MB (Double-bank Connection)
+	Installed Size: 2048 MB (Double-bank Connection)
+	Enabled Size: 2048 MB (Double-bank Connection)
 	Error Status: OK
 
 Handle 0x000C, DMI type 6, 12 bytes
@@ -537,7 +537,7 @@ Handle 0x0030, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCIEX1_1
 	Type: 32-bit PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 5
 	Characteristics:
@@ -585,7 +585,7 @@ Handle 0x0034, DMI type 9, 13 bytes
 System Slot Information
 	Designation: PCI_3
 	Type: 32-bit PCI
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Short
 	ID: 4
 	Characteristics:
@@ -659,8 +659,8 @@ Physical Memory Array
 Handle 0x003B, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Array Handle: 0x003A
 	Partition Width: 4
 
@@ -670,7 +670,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM0
@@ -686,8 +686,8 @@ Memory Device
 Handle 0x003D, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x003C
 	Memory Array Mapped Address Handle: 0x003B
 	Partition Row Position: 1
@@ -728,7 +728,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM2
@@ -743,9 +743,9 @@ Memory Device
 
 Handle 0x0041, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00044000000
-	Ending Address: 0x00083FFFFFF
-	Range Size: 1 GB
+	Starting Address: 0x00084000000
+	Ending Address: 0x00103FFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x0040
 	Memory Array Mapped Address Handle: 0x003B
 	Partition Row Position: 1
