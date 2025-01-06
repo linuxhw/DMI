@@ -1,8 +1,6 @@
-# dmidecode 3.1
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-# SMBIOS implementations newer than version 3.1.1 are not
-# fully supported by this version of dmidecode.
 Table at 0x79D6B000.
 
 Handle 0x0000, DMI type 0, 26 bytes
@@ -12,7 +10,7 @@ BIOS Information
 	Release Date: 10/01/2019
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 8192 kB
+	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -103,7 +101,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM0
@@ -116,10 +114,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: K4F8E304HB-MGCj   
 	Rank: 1
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.1 V
 	Maximum Voltage: 1.1 V
 	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 1 GB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x000C, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -138,7 +147,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: A1_DIMM1
@@ -151,10 +160,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: K4F8E304HB-MGCj   
 	Rank: 1
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.1 V
 	Maximum Voltage: 1.1 V
 	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 1 GB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x000E, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -173,7 +193,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: B1_DIMM0
@@ -186,10 +206,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: K4F8E304HB-MGCj   
 	Rank: 1
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.1 V
 	Maximum Voltage: 1.1 V
 	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 1 GB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0010, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -208,7 +239,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 16 bits
 	Data Width: 16 bits
-	Size: 1024 MB
+	Size: 1 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: B1_DIMM1
@@ -221,10 +252,21 @@ Memory Device
 	Asset Tag: --
 	Part Number: K4F8E304HB-MGCj   
 	Rank: 1
-	Configured Clock Speed: 2400 MT/s
+	Configured Memory Speed: 2400 MT/s
 	Minimum Voltage: 1.1 V
 	Maximum Voltage: 1.1 V
 	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 1 GB
+	Cache Size: None
+	Logical Size: None
 
 Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -244,8 +286,10 @@ System Boot Information
 Handle 0x0014, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: CTNI
-	Specification Version: 2.0	Firmware Revision: 402.1
-	Description: INTEL	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 402.0
+	Description: INTEL
+	Characteristics:
 		Family configurable via platform software support
 	OEM-specific Information: 0x00000000
 
@@ -255,8 +299,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1634628197 kB
-	Maximum Size: 1953384736 kB
+	Installed Size: 1558 GB
+	Maximum Size: 1862 GB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -271,8 +315,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1284329167 kB
-	Maximum Size: 9735528 MB
+	Installed Size: 1224 GB
+	Maximum Size: 9507 GB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -417,6 +461,8 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:00:13.0
+	Data Bus Width: 10
+	Peer Devices: 0
 
 Handle 0x0035, DMI type 9, 19 bytes
 System Slot Information
@@ -430,6 +476,8 @@ System Slot Information
 		Opening is shared
 		PME signal is supported
 	Bus Address: 0000:00:14.0
+	Data Bus Width: 9
+	Peer Devices: 0
 
 Handle 0x0036, DMI type 41, 11 bytes
 Onboard Device

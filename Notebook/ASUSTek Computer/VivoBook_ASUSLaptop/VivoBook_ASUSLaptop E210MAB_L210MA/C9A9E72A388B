@@ -1,0 +1,406 @@
+# dmidecode 3.6
+Getting SMBIOS data from sysfs.
+SMBIOS 3.2.0 present.
+Table at 0x79D32000.
+
+Handle 0x0000, DMI type 0, 26 bytes
+BIOS Information
+	Vendor: American Megatrends Inc.
+	Version: E210MAB.304
+	Release Date: 05/20/2022
+	Address: 0xF0000
+	Runtime Size: 64 kB
+	ROM Size: 8 MB
+	Characteristics:
+		PCI is supported
+		BIOS is upgradeable
+		BIOS shadowing is allowed
+		Boot from CD is supported
+		Selectable boot is supported
+		BIOS ROM is socketed
+		EDD is supported
+		5.25"/1.2 MB floppy services are supported (int 13h)
+		3.5"/720 kB floppy services are supported (int 13h)
+		3.5"/2.88 MB floppy services are supported (int 13h)
+		Print screen service is supported (int 5h)
+		8042 keyboard services are supported (int 9h)
+		Serial services are supported (int 14h)
+		Printer services are supported (int 17h)
+		ACPI is supported
+		USB legacy is supported
+		Smart battery is supported
+		BIOS boot specification is supported
+		Targeted content distribution is supported
+		UEFI is supported
+	BIOS Revision: 5.13
+
+Handle 0x0001, DMI type 1, 27 bytes
+System Information
+	Manufacturer: ASUSTeK COMPUTER INC.
+	Product Name: VivoBook_ASUSLaptop E210MAB_L210MA
+	Version: 1.0       
+	Serial Number: --
+	UUID: --
+	Wake-up Type: Power Switch
+	SKU Number:  
+	Family: ASUSLaptop
+
+Handle 0x0002, DMI type 2, 15 bytes
+Base Board Information
+	Manufacturer: ASUSTeK COMPUTER INC.
+	Product Name: E210MAB
+	Version: 1.0       
+	Serial Number: --
+	Asset Tag: --
+	Features:
+		Board is a hosting board
+		Board is replaceable
+	Location In Chassis: MIDDLE              
+	Chassis Handle: 0x0003
+	Type: Motherboard
+	Contained Object Handles: 0
+
+Handle 0x0003, DMI type 3, 22 bytes
+Chassis Information
+	Manufacturer: ASUSTeK COMPUTER INC.
+	Type: Notebook
+	Lock: Not Present
+	Version: 1.0       
+	Serial Number: --
+	Asset Tag: --
+	Boot-up State: Safe
+	Power Supply State: Safe
+	Thermal State: Safe
+	Security Status: None
+	OEM Information: 0x00000000
+	Height: Unspecified
+	Number Of Power Cords: 1
+	Contained Elements: 0
+	SKU Number: NA
+
+Handle 0x000B, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 64 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 4
+
+Handle 0x000C, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Array Handle: 0x000B
+	Partition Width: 1
+
+Handle 0x000D, DMI type 17, 84 bytes
+Memory Device
+	Array Handle: 0x000B
+	Error Information Handle: Not Provided
+	Total Width: 16 bits
+	Data Width: 16 bits
+	Size: 4 GB
+	Form Factor: SODIMM
+	Set: None
+	Locator: A1_DIMM0
+	Bank Locator: BANK0   
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2400 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M471A5244CB0-CWE  
+	Rank: 1
+	Configured Memory Speed: 2400 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 4 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x000E, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
+	Physical Device Handle: 0x000D
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 4
+
+Handle 0x000F, DMI type 17, 84 bytes
+Memory Device
+	Array Handle: 0x000B
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: 64 bits
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: A1_DIMM1
+	Bank Locator: BANK1   
+	Type: Unknown
+	Type Detail: Synchronous
+
+Handle 0x0011, DMI type 17, 84 bytes
+Memory Device
+	Array Handle: 0x000B
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: 64 bits
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: B1_DIMM0
+	Bank Locator: BANK2   
+	Type: Unknown
+	Type Detail: Synchronous
+
+Handle 0x0013, DMI type 17, 84 bytes
+Memory Device
+	Array Handle: 0x000B
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: 64 bits
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: None
+	Locator: B1_DIMM1
+	Bank Locator: BANK3   
+	Type: Unknown
+	Type Detail: Synchronous
+
+Handle 0x0015, DMI type 32, 20 bytes
+System Boot Information
+	Status: No errors detected
+
+Handle 0x0016, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: CTNI
+	Specification Version: 2.0
+	Firmware Revision: 402.0
+	Description: INTEL
+	Characteristics:
+		Family configurable via platform software support
+	OEM-specific Information: 0x00000000
+
+Handle 0x001A, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: CPU Internal L1
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 50562 GB
+	Maximum Size: 18698 GB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Parity
+	System Type: Other
+	Associativity: Other
+
+Handle 0x001B, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: CPU Internal L2
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 1393 GB
+	Maximum Size: 33229 GB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: 16-way Set-associative
+
+Handle 0x001C, DMI type 4, 48 bytes
+Processor Information
+	Socket Designation: SOCKET 0
+	Type: Central Processor
+	Family: Celeron
+	Manufacturer: Intel
+	ID: A8 06 07 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 122, Stepping 8
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		DS (Debug store)
+		ACPI (ACPI supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		SS (Self-snoop)
+		HTT (Multi-threading)
+		TM (Thermal monitor supported)
+		PBE (Pending break enabled)
+	Version: Intel(R) Celeron(R) N4020 CPU @ 1.10GHz
+	Voltage: 1.2 V
+	External Clock: 100 MHz
+	Max Speed: 2700 MHz
+	Current Speed: 1100 MHz
+	Status: Populated, Enabled
+	Upgrade: Other
+	L1 Cache Handle: 0x001A
+	L2 Cache Handle: 0x001B
+	L3 Cache Handle: Not Provided
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Fill By OEM
+	Core Count: 2
+	Core Enabled: 2
+	Thread Count: 2
+	Characteristics:
+		64-bit capable
+
+Handle 0x002F, DMI type 10, 26 bytes
+On Board Device 1 Information
+	Type: Video
+	Status: Enabled
+	Description: VGA
+On Board Device 2 Information
+	Type: Ethernet
+	Status: Enabled
+	Description: GLAN
+On Board Device 3 Information
+	Type: Ethernet
+	Status: Enabled
+	Description: WLAN
+On Board Device 4 Information
+	Type: Sound
+	Status: Enabled
+	Description: Audio CODEC
+On Board Device 5 Information
+	Type: SATA Controller
+	Status: Enabled
+	Description: SATA Controller
+On Board Device 6 Information
+	Type: Other
+	Status: Enabled
+	Description: USB 2.0 Controller
+On Board Device 7 Information
+	Type: Other
+	Status: Enabled
+	Description: USB 3.0 Controller
+On Board Device 8 Information
+	Type: Other
+	Status: Enabled
+	Description: SMBus Controller
+On Board Device 9 Information
+	Type: Other
+	Status: Enabled
+	Description: Card Reader
+On Board Device 10 Information
+	Type: Other
+	Status: Enabled
+	Description: Cmos Camera
+On Board Device 11 Information
+	Type: Other
+	Status: Enabled
+	Description: Bluetooth
+
+Handle 0x0030, DMI type 11, 5 bytes
+OEM Strings
+	String 1: kPJ-+7X7+EfTa
+	String 2: jTyRUBSNi7Ydf
+	String 3: fCrOzJ6x1i-eh
+	String 4:  
+	String 5: 90NB0R44-M009B0
+
+Handle 0x0031, DMI type 12, 5 bytes
+System Configuration Options
+	Option 1: SMI:00B26C
+	Option 2: DSN:                                
+	Option 3: DSN:                                
+	Option 4: DSN:                                
+
+Handle 0x0032, DMI type 9, 19 bytes
+System Slot Information
+	Designation: J7H1
+	Type: PCI Express 2 x4
+	Data Bus Width: 4x or x4
+	Current Usage: In Use
+	Length: Short
+	ID: 0
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 0000:00:13.0
+	Data Bus Width (Base): 10
+	Peer Devices: 0
+
+Handle 0x0033, DMI type 9, 19 bytes
+System Slot Information
+	Designation: J8H1
+	Type: PCI Express 2 x2
+	Data Bus Width: 2x or x2
+	Current Usage: In Use
+	Length: Short
+	ID: 1
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 0000:00:14.0
+	Data Bus Width (Base): 9
+	Peer Devices: 0
+
+Handle 0x0034, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: VGA
+	Type: Video
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:00:02.0
+
+Handle 0x0035, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: WLAN
+	Type: Ethernet
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:02:00.0
+
+Handle 0x0036, DMI type 13, 22 bytes
+BIOS Language Information
+	Language Description Format: Long
+	Installable Languages: 1
+		en|US|iso8859-1
+	Currently Installed Language: en|US|iso8859-1
+
+Handle 0x0037, DMI type 127, 4 bytes
+End Of Table
+
