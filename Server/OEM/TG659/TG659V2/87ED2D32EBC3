@@ -1,0 +1,2060 @@
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
+SMBIOS 3.5.0 present.
+Table at 0xA5F96000.
+
+Handle 0x0000, DMI type 0, 26 bytes
+BIOS Information
+	Vendor: American Megatrends International, LLC.
+	Version: T1DMGEP04.00
+	Release Date: 03/22/2024
+	Address: 0xF0000
+	Runtime Size: 64 kB
+	ROM Size: 64 MB
+	Characteristics:
+		PCI is supported
+		BIOS is upgradeable
+		BIOS shadowing is allowed
+		Boot from CD is supported
+		Selectable boot is supported
+		EDD is supported
+		Japanese floppy for NEC 9800 1.2 MB is supported (int 13h)
+		Japanese floppy for Toshiba 1.2 MB is supported (int 13h)
+		5.25"/360 kB floppy services are supported (int 13h)
+		Print screen service is supported (int 5h)
+		Serial services are supported (int 14h)
+		Printer services are supported (int 17h)
+		CGA/mono video services are supported (int 10h)
+		ACPI is supported
+		USB legacy is supported
+		BIOS boot specification is supported
+		Targeted content distribution is supported
+		UEFI is supported
+	BIOS Revision: 5.27
+
+Handle 0x0001, DMI type 1, 27 bytes
+System Information
+	Manufacturer: OEM
+	Product Name: TG659V2
+	Version: SP5
+	Serial Number: --
+	UUID: --
+	Wake-up Type: Power Switch
+	SKU Number:                       
+	Family: OEM Server
+
+Handle 0x0002, DMI type 2, 15 bytes
+Base Board Information
+	Manufacturer: OEM
+	Product Name: T1DMGEP
+	Version: VER.B
+	Serial Number: --
+	Asset Tag: --
+	Features:
+		Board is a hosting board
+		Board is removable
+		Board is replaceable
+	Location In Chassis: Default string
+	Chassis Handle: 0x0003
+	Type: Motherboard
+	Contained Object Handles: 0
+
+Handle 0x0003, DMI type 3, 22 bytes
+Chassis Information
+	Manufacturer: OEM
+	Type: Rack Mount Chassis
+	Lock: Present
+	Version:                       
+	Serial Number: --
+	Asset Tag: --
+	Boot-up State: Safe
+	Power Supply State: Safe
+	Thermal State: Safe
+	Security Status: None
+	OEM Information: 0x00000000
+	Height: Unspecified
+	Number Of Power Cords: 1
+	Contained Elements: 0
+	SKU Number:                       
+
+Handle 0x0004, DMI type 32, 20 bytes
+System Boot Information
+	Status: No errors detected
+
+Handle 0x0005, DMI type 38, 18 bytes
+IPMI Device Information
+	Interface Type: KCS (Keyboard Control Style)
+	Specification Version: 2.0
+	I2C Slave Address: 0x10
+	NV Storage Device: Not Present
+	Base Address: 0x0000000000000CA2 (I/O)
+	Register Spacing: Successive Byte Boundaries
+
+Handle 0x0006, DMI type 45, 26 bytes
+Firmware Inventory Information
+	Firmware Component Name: BMC Firmware
+	Firmware Version: 2.00
+	Firmware ID: Not Specified
+	Release Date: Not Specified
+	Manufacturer: 0
+	Lowest Supported Firmware Version: Not Specified
+	Image Size: Unknown
+	Characteristics:
+		Updatable: Yes
+		Write-Protect: No
+	State: Enabled
+	Associated Components: 1
+		0x0005
+
+Handle 0x0007, DMI type 42, 17 bytes
+Management Controller Host Interface
+	Host Interface Type: KCS: Keyboard Controller Style
+
+Handle 0x0015, DMI type 15, 73 bytes
+System Event Log
+	Area Length: 65535 bytes
+	Header Start Offset: 0x0000
+	Header Length: 16 bytes
+	Data Start Offset: 0x0010
+	Access Method: Memory-mapped physical 32-bit address
+	Access Address: 0xFF7E1000
+	Status: Valid, Not Full
+	Change Token: 0x0000003D
+	Header Format: Type 1
+	Supported Log Type Descriptors: 25
+	Descriptor 1: Single-bit ECC memory error
+	Data Format 1: Multiple-event handle
+	Descriptor 2: Multi-bit ECC memory error
+	Data Format 2: Multiple-event handle
+	Descriptor 3: Parity memory error
+	Data Format 3: None
+	Descriptor 4: Bus timeout
+	Data Format 4: None
+	Descriptor 5: I/O channel block
+	Data Format 5: None
+	Descriptor 6: Software NMI
+	Data Format 6: None
+	Descriptor 7: POST memory resize
+	Data Format 7: None
+	Descriptor 8: POST error
+	Data Format 8: POST results bitmap
+	Descriptor 9: PCI parity error
+	Data Format 9: Multiple-event handle
+	Descriptor 10: PCI system error
+	Data Format 10: Multiple-event handle
+	Descriptor 11: CPU failure
+	Data Format 11: None
+	Descriptor 12: EISA failsafe timer timeout
+	Data Format 12: None
+	Descriptor 13: Correctable memory log disabled
+	Data Format 13: None
+	Descriptor 14: Logging disabled
+	Data Format 14: None
+	Descriptor 15: System limit exceeded
+	Data Format 15: None
+	Descriptor 16: Asynchronous hardware timer expired
+	Data Format 16: None
+	Descriptor 17: System configuration information
+	Data Format 17: None
+	Descriptor 18: Hard disk information
+	Data Format 18: None
+	Descriptor 19: System reconfigured
+	Data Format 19: None
+	Descriptor 20: Uncorrectable CPU-complex error
+	Data Format 20: None
+	Descriptor 21: Log area reset/cleared
+	Data Format 21: None
+	Descriptor 22: System boot
+	Data Format 22: None
+	Descriptor 23: End of log
+	Data Format 23: None
+	Descriptor 24: OEM-specific
+	Data Format 24: OEM-specific
+	Descriptor 25: OEM-specific
+	Data Format 25: OEM-specific
+
+Handle 0x0016, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L1 - Cache
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
+	Supported SRAM Types:
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x0017, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L2 - Cache
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 96 MB
+	Maximum Size: 96 MB
+	Supported SRAM Types:
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x0018, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L3 - Cache
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 384 MB
+	Maximum Size: 384 MB
+	Supported SRAM Types:
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 16-way Set-associative
+
+Handle 0x0019, DMI type 4, 48 bytes
+Processor Information
+	Socket Designation: CPU1
+	Type: Central Processor
+	Family: Zen
+	Manufacturer: Advanced Micro Devices, Inc.
+	ID: 11 0F A1 00 FF FB 8B 17
+	Signature: Family 25, Model 17, Stepping 1
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD EPYC 9654 96-Core Processor                
+	Voltage: 0.9 V
+	External Clock: 100 MHz
+	Max Speed: 3700 MHz
+	Current Speed: 2400 MHz
+	Status: Populated, Enabled
+	Upgrade: <OUT OF SPEC>
+	L1 Cache Handle: 0x0016
+	L2 Cache Handle: 0x0017
+	L3 Cache Handle: 0x0018
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Unknown
+	Core Count: 96
+	Core Enabled: 96
+	Thread Count: 192
+	Characteristics:
+		64-bit capable
+		Multi-Core
+		Hardware Thread
+		Execute Protection
+		Enhanced Virtualization
+		Power/Performance Control
+
+Handle 0x001A, DMI type 44, 9 bytes
+Unknown Type
+	Header and Data:
+		2C 09 1A 00 19 00 01 02 00
+
+Handle 0x001B, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L1 - Cache
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 6 MB
+	Maximum Size: 6 MB
+	Supported SRAM Types:
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x001C, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L2 - Cache
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 96 MB
+	Maximum Size: 96 MB
+	Supported SRAM Types:
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x001D, DMI type 7, 27 bytes
+Cache Information
+	Socket Designation: L3 - Cache
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 384 MB
+	Maximum Size: 384 MB
+	Supported SRAM Types:
+		Pipeline Burst
+	Installed SRAM Type: Pipeline Burst
+	Speed: 1 ns
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 16-way Set-associative
+
+Handle 0x001E, DMI type 4, 48 bytes
+Processor Information
+	Socket Designation: CPU2
+	Type: Central Processor
+	Family: Zen
+	Manufacturer: Advanced Micro Devices, Inc.
+	ID: 11 0F A1 00 FF FB 8B 17
+	Signature: Family 25, Model 17, Stepping 1
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD EPYC 9654 96-Core Processor                
+	Voltage: 0.9 V
+	External Clock: 100 MHz
+	Max Speed: 3700 MHz
+	Current Speed: 2400 MHz
+	Status: Populated, Enabled
+	Upgrade: <OUT OF SPEC>
+	L1 Cache Handle: 0x001B
+	L2 Cache Handle: 0x001C
+	L3 Cache Handle: 0x001D
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Unknown
+	Core Count: 96
+	Core Enabled: 96
+	Thread Count: 192
+	Characteristics:
+		64-bit capable
+		Multi-Core
+		Hardware Thread
+		Execute Protection
+		Enhanced Virtualization
+		Power/Performance Control
+
+Handle 0x001F, DMI type 44, 9 bytes
+Unknown Type
+	Header and Data:
+		2C 09 1F 00 1E 00 01 02 00
+
+Handle 0x0020, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0021, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: Multi-bit ECC
+	Maximum Capacity: 12 TB
+	Error Information Handle: 0x0020
+	Number Of Devices: 24
+
+Handle 0x0022, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x17FFFFFFFFF
+	Range Size: 1536 GB
+	Physical Array Handle: 0x0021
+	Partition Width: 24
+
+Handle 0x0023, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0024, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x0023
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU1 DIMM A1
+	Bank Locator: P0 CHANNEL A
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0025, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x03000000000
+	Ending Address: 0x03FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0024
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0026, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0027, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x0026
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU1 DIMM B1
+	Bank Locator: P0 CHANNEL B
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0028, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x04000000000
+	Ending Address: 0x04FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0027
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0029, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x002A, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x0029
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU1 DIMM C1
+	Bank Locator: P0 CHANNEL C
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x002B, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x002A
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x002C, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x002D, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x002C
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU1 DIMM D1
+	Bank Locator: P0 CHANNEL D
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x002E, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x05000000000
+	Ending Address: 0x05FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x002D
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x002F, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0030, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x002F
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU1 DIMM E1
+	Bank Locator: P0 CHANNEL E
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0031, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x01000000000
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0030
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0032, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0033, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x0032
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU1 DIMM F1
+	Bank Locator: P0 CHANNEL F
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0034, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x02000000000
+	Ending Address: 0x02FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0033
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0035, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0036, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x0035
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU1 DIMM G1
+	Bank Locator: P0 CHANNEL G
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0037, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x09000000000
+	Ending Address: 0x09FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0036
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0038, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0039, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x0038
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU1 DIMM H1
+	Bank Locator: P0 CHANNEL H
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x003A, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x0A000000000
+	Ending Address: 0x0AFFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0039
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x003B, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x003C, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x003B
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU1 DIMM I1
+	Bank Locator: P0 CHANNEL I
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x003D, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x06000000000
+	Ending Address: 0x06FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x003C
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x003E, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x003F, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x003E
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU1 DIMM J1
+	Bank Locator: P0 CHANNEL J
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0040, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x0B000000000
+	Ending Address: 0x0BFFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x003F
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0041, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0042, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x0041
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU1 DIMM K1
+	Bank Locator: P0 CHANNEL K
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0043, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x07000000000
+	Ending Address: 0x07FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0042
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0044, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0045, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x0044
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU1 DIMM L1
+	Bank Locator: P0 CHANNEL L
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0046, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x08000000000
+	Ending Address: 0x08FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0045
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0047, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0048, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x0047
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU2 DIMM A1
+	Bank Locator: P1 CHANNEL A
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0049, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x0F000000000
+	Ending Address: 0x0FFFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0048
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x004A, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x004B, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x004A
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU2 DIMM B1
+	Bank Locator: P1 CHANNEL B
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x004C, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x10000000000
+	Ending Address: 0x10FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x004B
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x004D, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x004E, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x004D
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU2 DIMM C1
+	Bank Locator: P1 CHANNEL C
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x004F, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x0C000000000
+	Ending Address: 0x0CFFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x004E
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0050, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0051, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x0050
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU2 DIMM D1
+	Bank Locator: P1 CHANNEL D
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0052, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x11000000000
+	Ending Address: 0x11FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0051
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0053, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0054, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x0053
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU2 DIMM E1
+	Bank Locator: P1 CHANNEL E
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0055, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x0D000000000
+	Ending Address: 0x0DFFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0054
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0056, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0057, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x0056
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU2 DIMM F1
+	Bank Locator: P1 CHANNEL F
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0058, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x0E000000000
+	Ending Address: 0x0EFFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0057
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0059, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x005A, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x0059
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU2 DIMM G1
+	Bank Locator: P1 CHANNEL G
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x005B, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x15000000000
+	Ending Address: 0x15FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x005A
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x005C, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x005D, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x005C
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU2 DIMM H1
+	Bank Locator: P1 CHANNEL H
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x005E, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x16000000000
+	Ending Address: 0x16FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x005D
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x005F, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0060, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x005F
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU2 DIMM I1
+	Bank Locator: P1 CHANNEL I
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0061, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x12000000000
+	Ending Address: 0x12FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0060
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0062, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0063, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x0062
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU2 DIMM J1
+	Bank Locator: P1 CHANNEL J
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0064, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x17000000000
+	Ending Address: 0x17FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0063
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0065, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0066, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x0065
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU2 DIMM K1
+	Bank Locator: P1 CHANNEL K
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0067, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x13000000000
+	Ending Address: 0x13FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0066
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0068, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x0069, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0021
+	Error Information Handle: 0x0068
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU2 DIMM L1
+	Bank Locator: P1 CHANNEL L
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 4800 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M321R8GA0BB0-CQKZJ            
+	Rank: 2
+	Configured Memory Speed: 4800 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.1 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Unknown
+	Module Manufacturer ID: Bank 1, Hex 0xCE
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 64 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x006A, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x14000000000
+	Ending Address: 0x14FFFFFFFFF
+	Range Size: 64 GB
+	Physical Device Handle: 0x0069
+	Memory Array Mapped Address Handle: 0x0022
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x006B, DMI type 40, 14 bytes
+Additional Information 1
+	Referenced Handle: 0x0000
+	Referenced Offset: 0x00
+	String: AGESA!V9 GenoaPI-SP5 1.0.0.B
+	Value: 0x00000000
+
+Handle 0x006C, DMI type 42, 131 bytes
+Management Controller Host Interface
+	Host Interface Type: Network
+	Device Type: USB
+	idVendor: 0x046b
+	idProduct: 0xffb0
+	Protocol ID: 04 (Redfish over IP)
+		Service UUID: --
+		Host IP Assignment Type: Static
+		Host IP Address Format: IPv4
+		IPv4 Address: 169.254.0.18
+		IPv4 Mask: 255.255.0.0
+		Redfish Service IP Discovery Type: Static
+		Redfish Service IP Address Format: IPv4
+		IPv4 Redfish Service Address: 169.254.0.17
+		IPv4 Redfish Service Mask: 255.255.0.0
+		Redfish Service Port: 443
+		Redfish Service Vlan: 0
+		Redfish Service Hostname: 
+
+Handle 0x006D, DMI type 39, 22 bytes
+System Power Supply
+	Power Unit Group: 1
+	Location: PSU1
+	Name: CRPS2400D2    
+	Manufacturer: Great Wall    
+	Serial Number: --
+	Asset Tag: --
+	Model Part Number: CRPS2400D2  
+	Revision: 1.000
+	Max Power Capacity: 2400 W
+	Status: Present, Unknown
+	Type: Unknown
+	Input Voltage Range Switching: Unknown
+	Plugged: Yes
+	Hot Replaceable: Yes
+
+Handle 0x006E, DMI type 39, 22 bytes
+System Power Supply
+	Power Unit Group: 1
+	Location: PSU2
+	Name: CRPS2400D2    
+	Manufacturer: Great Wall    
+	Serial Number: --
+	Asset Tag: --
+	Model Part Number: CRPS2400D2  
+	Revision: 1.000
+	Max Power Capacity: 2400 W
+	Status: Present, Unknown
+	Type: Unknown
+	Input Voltage Range Switching: Unknown
+	Plugged: Yes
+	Hot Replaceable: Yes
+
+Handle 0x006F, DMI type 39, 22 bytes
+System Power Supply
+	Power Unit Group: 1
+	Location: PSU3
+	Name: CRPS2400D2    
+	Manufacturer: Great Wall    
+	Serial Number: --
+	Asset Tag: --
+	Model Part Number: CRPS2400D2  
+	Revision: 1.000
+	Max Power Capacity: 2400 W
+	Status: Present, Unknown
+	Type: Unknown
+	Input Voltage Range Switching: Unknown
+	Plugged: Yes
+	Hot Replaceable: Yes
+
+Handle 0x0070, DMI type 39, 22 bytes
+System Power Supply
+	Power Unit Group: 1
+	Location: PSU4
+	Name: CRPS2400D2    
+	Manufacturer: Great Wall    
+	Serial Number: --
+	Asset Tag: --
+	Model Part Number: CRPS2400D2  
+	Revision: 1.000
+	Max Power Capacity: 2400 W
+	Status: Present, Unknown
+	Type: Unknown
+	Input Voltage Range Switching: Unknown
+	Plugged: Yes
+	Hot Replaceable: Yes
+
+Handle 0x0071, DMI type 9, 28 bytes
+System Slot Information
+	Designation: M.2 Slot
+	Type: x4 M.2 Socket 3
+	Current Usage: In Use
+	Length: Long
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		SMBus signal is supported
+	Bus Address: 0000:00:05.1
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x0072, DMI type 9, 28 bytes
+System Slot Information
+	Designation: PEIB Slot 0
+	Type: x8 PCI Express 5 x8
+	Current Usage: In Use
+	Length: Long
+	ID: 0
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		SMBus signal is supported
+	Bus Address: 0000:20:03.1
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x0073, DMI type 9, 28 bytes
+System Slot Information
+	Designation: PEIB Slot 1
+	Type: x8 PCI Express 5 x8
+	Current Usage: In Use
+	Length: Long
+	ID: 1
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		SMBus signal is supported
+	Bus Address: 0000:20:03.2
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x0074, DMI type 9, 28 bytes
+System Slot Information
+	Designation: PEIB Slot 2
+	Type: x16 PCI Express 5 x16
+	Current Usage: In Use
+	Length: Long
+	ID: 2
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		SMBus signal is supported
+	Bus Address: 0000:60:01.1
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x0075, DMI type 9, 28 bytes
+System Slot Information
+	Designation: PEIB Slot 3
+	Type: x16 PCI Express 5 x16
+	Current Usage: In Use
+	Length: Long
+	ID: 3
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		SMBus signal is supported
+	Bus Address: 0000:40:01.1
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x0076, DMI type 9, 28 bytes
+System Slot Information
+	Designation: PEIB Slot 4
+	Type: x16 PCI Express 5 x16
+	Current Usage: In Use
+	Length: Long
+	ID: 4
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		SMBus signal is supported
+	Bus Address: 0000:00:01.1
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x0077, DMI type 9, 28 bytes
+System Slot Information
+	Designation: PEIB Slot 5
+	Type: x16 PCI Express 5 x16
+	Current Usage: In Use
+	Length: Long
+	ID: 5
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		SMBus signal is supported
+	Bus Address: 0000:20:01.1
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x0078, DMI type 9, 28 bytes
+System Slot Information
+	Designation: PEIB Slot 6
+	Type: x16 PCI Express 5 x16
+	Current Usage: In Use
+	Length: Long
+	ID: 6
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		SMBus signal is supported
+	Bus Address: 0000:e0:01.1
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x0079, DMI type 9, 28 bytes
+System Slot Information
+	Designation: PEIB Slot 7
+	Type: x16 PCI Express 5 x16
+	Current Usage: In Use
+	Length: Long
+	ID: 7
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		SMBus signal is supported
+	Bus Address: 0000:c0:01.1
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x007A, DMI type 9, 28 bytes
+System Slot Information
+	Designation: PEIB Slot 8
+	Type: x16 PCI Express 5 x16
+	Current Usage: In Use
+	Length: Long
+	ID: 8
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		SMBus signal is supported
+	Bus Address: 0000:80:01.1
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x007B, DMI type 9, 28 bytes
+System Slot Information
+	Designation: PEIB Slot 9
+	Type: x16 PCI Express 5 x16
+	Current Usage: In Use
+	Length: Long
+	ID: 9
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		SMBus signal is supported
+	Bus Address: 0000:a0:01.1
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x007C, DMI type 9, 28 bytes
+System Slot Information
+	Designation: PEIB Slot 10
+	Type: x8 PCI Express 5 x8
+	Current Usage: In Use
+	Length: Long
+	ID: 10
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		SMBus signal is supported
+	Bus Address: 0000:c0:03.1
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x007D, DMI type 13, 22 bytes
+BIOS Language Information
+	Language Description Format: Long
+	Installable Languages: 1
+		en|US|iso8859-1
+	Currently Installed Language: en|US|iso8859-1
+
+Handle 0x007E, DMI type 127, 4 bytes
+End Of Table
+

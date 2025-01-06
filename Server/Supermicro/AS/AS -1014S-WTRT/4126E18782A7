@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
 Table at 0xA89FB000.
@@ -128,7 +128,8 @@ Port Connector Information
 Handle 0x000A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2-HC1
-	Type: x4 M.2 Socket 3
+	Type: M.2 Socket 3
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Short
 	Characteristics:
@@ -140,7 +141,8 @@ System Slot Information
 Handle 0x000B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2-HC2
-	Type: x2 M.2 Socket 3
+	Type: M.2 Socket 3
+	Data Bus Width: 2x or x2
 	Current Usage: In Use
 	Length: Short
 	Characteristics:
@@ -262,7 +264,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFF51B000
 	Status: Valid, Not Full
-	Change Token: 0x00000006
+	Change Token: 0x00000007
 	Header Format: Type 1
 	Supported Log Type Descriptors: 25
 	Descriptor 1: Single-bit ECC memory error
@@ -842,7 +844,8 @@ Memory Device Mapped Address
 Handle 0x0040, DMI type 9, 17 bytes
 System Slot Information
 	Designation: RSC-W-66G4 SLOT1 PCI-E 4.0 X16
-	Type: x16 PCI Express 4 x16
+	Type: PCI Express 4 x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 1
@@ -854,7 +857,8 @@ System Slot Information
 Handle 0x0041, DMI type 9, 17 bytes
 System Slot Information
 	Designation: RSC-W-66G4 SLOT2 PCI-E 4.0 X16
-	Type: x16 PCI Express 4 x16
+	Type: PCI Express 4 x16
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 2
@@ -877,7 +881,8 @@ OEM-specific Type
 Handle 0x0043, DMI type 9, 17 bytes
 System Slot Information
 	Designation: RSC-WR-6 SLOT1 PCI-E 4.0 X16
-	Type: x16 PCI Express 4 x16
+	Type: PCI Express 4 x16
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 1

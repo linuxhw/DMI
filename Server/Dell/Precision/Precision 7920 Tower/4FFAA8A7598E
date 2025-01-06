@@ -1,13 +1,13 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.1 present.
-Table at 0x000EB230.
+Table at 0x000E83D0.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 2.29.0
-	Release Date: 12/15/2022
+	Version: 2.9.0
+	Release Date: 08/21/2020
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -31,7 +31,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.29
+	BIOS Revision: 2.9
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -133,8 +133,8 @@ Group Associations
 Handle 0x000A, DMI type 203, 81 bytes
 OEM-specific Type
 	Header and Data:
-		CB 51 0A 00 01 03 01 45 02 00 94 06 81 11 89 30
-		00 00 00 00 40 A8 00 03 1F 00 00 C9 0B C0 47 02
+		CB 51 0A 00 01 03 01 45 00 00 90 06 80 00 60 30
+		00 00 00 00 40 A8 00 01 1F 00 00 C9 0B C0 47 02
 		00 00 00 80 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -156,10 +156,10 @@ Physical Memory Array
 Handle 0x000C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x013FFFFFFFF
-	Range Size: 80 GB
+	Ending Address: 0x02FFFFFFFFF
+	Range Size: 192 GB
 	Physical Array Handle: 0x000B
-	Partition Width: 3
+	Partition Width: 6
 
 Handle 0x000D, DMI type 17, 40 bytes
 Memory Device
@@ -194,33 +194,44 @@ Memory Device Mapped Address
 	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: 1
 	Interleave Position: 1
-	Interleaved Data Depth: 2
+	Interleaved Data Depth: 3
 
 Handle 0x000F, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x000B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM11_CPU0
 	Bank Locator: Not Specified
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2666 MT/s
+	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: HMA84GR7AFR4N-VK    
+	Rank: 2
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0010, DMI type 17, 40 bytes
+Handle 0x0010, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00800000000
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x000F
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 3
+
+Handle 0x0011, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x000B
 	Error Information Handle: Not Provided
@@ -244,40 +255,16 @@ Memory Device
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0011, DMI type 20, 35 bytes
+Handle 0x0012, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00800000000
-	Ending Address: 0x00FFFFFFFFF
+	Starting Address: 0x01000000000
+	Ending Address: 0x017FFFFFFFF
 	Range Size: 32 GB
-	Physical Device Handle: 0x0010
+	Physical Device Handle: 0x0011
 	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: 1
 	Interleave Position: 2
-	Interleaved Data Depth: 2
-
-Handle 0x0012, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x000B
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
-	Set: None
-	Locator: DIMM9_CPU0
-	Bank Locator: Not Specified
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
+	Interleaved Data Depth: 3
 
 Handle 0x0013, DMI type 17, 40 bytes
 Memory Device
@@ -285,10 +272,10 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: DIMM1_CPU0
+	Locator: DIMM9_CPU0
 	Bank Locator: Not Specified
 	Type: DDR4
 	Type Detail: Synchronous
@@ -296,7 +283,7 @@ Memory Device
 	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA82GR7AFR8N-VK    
+	Part Number: HMA84GR7AFR4N-VK    
 	Rank: 2
 	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
@@ -305,38 +292,86 @@ Memory Device
 
 Handle 0x0014, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x01000000000
-	Ending Address: 0x013FFFFFFFF
-	Range Size: 16 GB
+	Starting Address: 0x01800000000
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 32 GB
 	Physical Device Handle: 0x0013
 	Memory Array Mapped Address Handle: 0x000C
 	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 3
 
 Handle 0x0015, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x000B
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
 	Set: None
-	Locator: DIMM7_CPU0
+	Locator: DIMM1_CPU0
 	Bank Locator: Not Specified
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2666 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: M393A4K40BB2-CTD    
+	Rank: 2
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0016, DMI type 16, 23 bytes
+Handle 0x0016, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x02000000000
+	Ending Address: 0x027FFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x0015
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: 1
+	Interleave Position: 3
+	Interleaved Data Depth: 3
+
+Handle 0x0017, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x000B
+	Error Information Handle: Not Provided
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM7_CPU0
+	Bank Locator: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2666 MT/s
+	Manufacturer: Micron
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 36ASF4G72PZ-2G6E1   
+	Rank: 2
+	Configured Memory Speed: 2666 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+
+Handle 0x0018, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x02800000000
+	Ending Address: 0x02FFFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x0017
+	Memory Array Mapped Address Handle: 0x000C
+	Partition Row Position: 1
+	Interleave Position: 3
+	Interleaved Data Depth: 3
+
+Handle 0x0019, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -345,17 +380,17 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 6
 
-Handle 0x0017, DMI type 19, 31 bytes
+Handle 0x001A, DMI type 19, 31 bytes
 Memory Array Mapped Address
-	Starting Address: 0x01400000000
-	Ending Address: 0x027FFFFFFFF
-	Range Size: 80 GB
-	Physical Array Handle: 0x0016
-	Partition Width: 3
+	Starting Address: 0x03000000000
+	Ending Address: 0x05FFFFFFFFF
+	Range Size: 192 GB
+	Physical Array Handle: 0x0019
+	Partition Width: 6
 
-Handle 0x0018, DMI type 17, 40 bytes
+Handle 0x001B, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0016
+	Array Handle: 0x0019
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
@@ -377,44 +412,55 @@ Memory Device
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0019, DMI type 20, 35 bytes
+Handle 0x001C, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x01400000000
-	Ending Address: 0x01BFFFFFFFF
+	Starting Address: 0x03000000000
+	Ending Address: 0x037FFFFFFFF
 	Range Size: 32 GB
-	Physical Device Handle: 0x0018
-	Memory Array Mapped Address Handle: 0x0017
+	Physical Device Handle: 0x001B
+	Memory Array Mapped Address Handle: 0x001A
 	Partition Row Position: 1
 	Interleave Position: 1
-	Interleaved Data Depth: 2
+	Interleaved Data Depth: 3
 
-Handle 0x001A, DMI type 17, 40 bytes
+Handle 0x001D, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0016
+	Array Handle: 0x0019
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM12_CPU0
 	Bank Locator: Not Specified
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2666 MT/s
+	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: HMA84GR7AFR4N-VK    
+	Rank: 2
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x001B, DMI type 17, 40 bytes
+Handle 0x001E, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x03800000000
+	Ending Address: 0x03FFFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x001D
+	Memory Array Mapped Address Handle: 0x001A
+	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 3
+
+Handle 0x001F, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0016
+	Array Handle: 0x0019
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
@@ -436,51 +482,27 @@ Memory Device
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x001C, DMI type 20, 35 bytes
+Handle 0x0020, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x01C00000000
-	Ending Address: 0x023FFFFFFFF
+	Starting Address: 0x04000000000
+	Ending Address: 0x047FFFFFFFF
 	Range Size: 32 GB
-	Physical Device Handle: 0x001B
-	Memory Array Mapped Address Handle: 0x0017
+	Physical Device Handle: 0x001F
+	Memory Array Mapped Address Handle: 0x001A
 	Partition Row Position: 1
 	Interleave Position: 2
-	Interleaved Data Depth: 2
+	Interleaved Data Depth: 3
 
-Handle 0x001D, DMI type 17, 40 bytes
+Handle 0x0021, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0016
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
-	Set: None
-	Locator: DIMM10_CPU0
-	Bank Locator: Not Specified
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
-
-Handle 0x001E, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x0016
+	Array Handle: 0x0019
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: DIMM2_CPU0
+	Locator: DIMM10_CPU0
 	Bank Locator: Not Specified
 	Type: DDR4
 	Type Detail: Synchronous
@@ -488,47 +510,95 @@ Memory Device
 	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA82GR7AFR8N-VK    
+	Part Number: HMA84GR7AFR4N-VK    
 	Rank: 2
 	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x001F, DMI type 20, 35 bytes
+Handle 0x0022, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x02400000000
-	Ending Address: 0x027FFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x001E
-	Memory Array Mapped Address Handle: 0x0017
+	Starting Address: 0x04800000000
+	Ending Address: 0x04FFFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x0021
+	Memory Array Mapped Address Handle: 0x001A
 	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 3
 
-Handle 0x0020, DMI type 17, 40 bytes
+Handle 0x0023, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0016
+	Array Handle: 0x0019
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
 	Set: None
-	Locator: DIMM8_CPU0
+	Locator: DIMM2_CPU0
 	Bank Locator: Not Specified
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2666 MT/s
+	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: 36ASF4G72PZ-2G6E1   
+	Rank: 2
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0021, DMI type 16, 23 bytes
+Handle 0x0024, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x05000000000
+	Ending Address: 0x057FFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x0023
+	Memory Array Mapped Address Handle: 0x001A
+	Partition Row Position: 1
+	Interleave Position: 3
+	Interleaved Data Depth: 3
+
+Handle 0x0025, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0019
+	Error Information Handle: Not Provided
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM8_CPU0
+	Bank Locator: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2666 MT/s
+	Manufacturer: Micron
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 36ASF4G72PZ-2G6E1   
+	Rank: 2
+	Configured Memory Speed: 2666 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+
+Handle 0x0026, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x05800000000
+	Ending Address: 0x05FFFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x0025
+	Memory Array Mapped Address Handle: 0x001A
+	Partition Row Position: 1
+	Interleave Position: 3
+	Interleaved Data Depth: 3
+
+Handle 0x0027, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -537,17 +607,17 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 6
 
-Handle 0x0022, DMI type 19, 31 bytes
+Handle 0x0028, DMI type 19, 31 bytes
 Memory Array Mapped Address
-	Starting Address: 0x02800000000
-	Ending Address: 0x03BFFFFFFFF
-	Range Size: 80 GB
-	Physical Array Handle: 0x0021
-	Partition Width: 3
+	Starting Address: 0x06000000000
+	Ending Address: 0x08FFFFFFFFF
+	Range Size: 192 GB
+	Physical Array Handle: 0x0027
+	Partition Width: 6
 
-Handle 0x0023, DMI type 17, 40 bytes
+Handle 0x0029, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0021
+	Array Handle: 0x0027
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
@@ -569,44 +639,55 @@ Memory Device
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0024, DMI type 20, 35 bytes
+Handle 0x002A, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x02800000000
-	Ending Address: 0x02FFFFFFFFF
+	Starting Address: 0x06000000000
+	Ending Address: 0x067FFFFFFFF
 	Range Size: 32 GB
-	Physical Device Handle: 0x0023
-	Memory Array Mapped Address Handle: 0x0022
+	Physical Device Handle: 0x0029
+	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: 1
 	Interleave Position: 1
-	Interleaved Data Depth: 2
+	Interleaved Data Depth: 3
 
-Handle 0x0025, DMI type 17, 40 bytes
+Handle 0x002B, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0021
+	Array Handle: 0x0027
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM11_CPU1
 	Bank Locator: Not Specified
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2666 MT/s
+	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: HMA84GR7AFR4N-VK    
+	Rank: 2
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0026, DMI type 17, 40 bytes
+Handle 0x002C, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x06800000000
+	Ending Address: 0x06FFFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x002B
+	Memory Array Mapped Address Handle: 0x0028
+	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 3
+
+Handle 0x002D, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0021
+	Array Handle: 0x0027
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
@@ -628,51 +709,27 @@ Memory Device
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0027, DMI type 20, 35 bytes
+Handle 0x002E, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x03000000000
-	Ending Address: 0x037FFFFFFFF
+	Starting Address: 0x07000000000
+	Ending Address: 0x077FFFFFFFF
 	Range Size: 32 GB
-	Physical Device Handle: 0x0026
-	Memory Array Mapped Address Handle: 0x0022
+	Physical Device Handle: 0x002D
+	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: 1
 	Interleave Position: 2
-	Interleaved Data Depth: 2
+	Interleaved Data Depth: 3
 
-Handle 0x0028, DMI type 17, 40 bytes
+Handle 0x002F, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0021
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
-	Set: None
-	Locator: DIMM9_CPU1
-	Bank Locator: Not Specified
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
-
-Handle 0x0029, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x0021
+	Array Handle: 0x0027
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: DIMM1_CPU1
+	Locator: DIMM9_CPU1
 	Bank Locator: Not Specified
 	Type: DDR4
 	Type Detail: Synchronous
@@ -680,47 +737,95 @@ Memory Device
 	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA82GR7AFR8N-VK    
+	Part Number: HMA84GR7AFR4N-VK    
 	Rank: 2
 	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x002A, DMI type 20, 35 bytes
+Handle 0x0030, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x03800000000
-	Ending Address: 0x03BFFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x0029
-	Memory Array Mapped Address Handle: 0x0022
+	Starting Address: 0x07800000000
+	Ending Address: 0x07FFFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x002F
+	Memory Array Mapped Address Handle: 0x0028
 	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 3
 
-Handle 0x002B, DMI type 17, 40 bytes
+Handle 0x0031, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0021
+	Array Handle: 0x0027
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
 	Set: None
-	Locator: DIMM7_CPU1
+	Locator: DIMM1_CPU1
 	Bank Locator: Not Specified
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2666 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: M393A4K40BB2-CTD    
+	Rank: 2
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x002C, DMI type 16, 23 bytes
+Handle 0x0032, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x08000000000
+	Ending Address: 0x087FFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x0031
+	Memory Array Mapped Address Handle: 0x0028
+	Partition Row Position: 1
+	Interleave Position: 3
+	Interleaved Data Depth: 3
+
+Handle 0x0033, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0027
+	Error Information Handle: Not Provided
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM7_CPU1
+	Bank Locator: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2666 MT/s
+	Manufacturer: Hynix
+	Serial Number: --
+	Asset Tag: --
+	Part Number: HMA84GR7AFR4N-VK    
+	Rank: 2
+	Configured Memory Speed: 2666 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+
+Handle 0x0034, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x08800000000
+	Ending Address: 0x08FFFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x0033
+	Memory Array Mapped Address Handle: 0x0028
+	Partition Row Position: 1
+	Interleave Position: 3
+	Interleaved Data Depth: 3
+
+Handle 0x0035, DMI type 16, 23 bytes
 Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
@@ -729,17 +834,17 @@ Physical Memory Array
 	Error Information Handle: Not Provided
 	Number Of Devices: 6
 
-Handle 0x002D, DMI type 19, 31 bytes
+Handle 0x0036, DMI type 19, 31 bytes
 Memory Array Mapped Address
-	Starting Address: 0x03C00000000
-	Ending Address: 0x04FFFFFFFFF
-	Range Size: 80 GB
-	Physical Array Handle: 0x002C
-	Partition Width: 3
+	Starting Address: 0x09000000000
+	Ending Address: 0x0BFFFFFFFFF
+	Range Size: 192 GB
+	Physical Array Handle: 0x0035
+	Partition Width: 6
 
-Handle 0x002E, DMI type 17, 40 bytes
+Handle 0x0037, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x002C
+	Array Handle: 0x0035
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
@@ -761,44 +866,55 @@ Memory Device
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x002F, DMI type 20, 35 bytes
+Handle 0x0038, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x03C00000000
-	Ending Address: 0x043FFFFFFFF
+	Starting Address: 0x09000000000
+	Ending Address: 0x097FFFFFFFF
 	Range Size: 32 GB
-	Physical Device Handle: 0x002E
-	Memory Array Mapped Address Handle: 0x002D
+	Physical Device Handle: 0x0037
+	Memory Array Mapped Address Handle: 0x0036
 	Partition Row Position: 1
 	Interleave Position: 1
-	Interleaved Data Depth: 2
+	Interleaved Data Depth: 3
 
-Handle 0x0030, DMI type 17, 40 bytes
+Handle 0x0039, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x002C
+	Array Handle: 0x0035
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM12_CPU1
 	Bank Locator: Not Specified
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2666 MT/s
+	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: HMA84GR7AFR4N-VK    
+	Rank: 2
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0031, DMI type 17, 40 bytes
+Handle 0x003A, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x09800000000
+	Ending Address: 0x09FFFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x0039
+	Memory Array Mapped Address Handle: 0x0036
+	Partition Row Position: 1
+	Interleave Position: 1
+	Interleaved Data Depth: 3
+
+Handle 0x003B, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x002C
+	Array Handle: 0x0035
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
@@ -820,51 +936,27 @@ Memory Device
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0032, DMI type 20, 35 bytes
+Handle 0x003C, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x04400000000
-	Ending Address: 0x04BFFFFFFFF
+	Starting Address: 0x0A000000000
+	Ending Address: 0x0A7FFFFFFFF
 	Range Size: 32 GB
-	Physical Device Handle: 0x0031
-	Memory Array Mapped Address Handle: 0x002D
+	Physical Device Handle: 0x003B
+	Memory Array Mapped Address Handle: 0x0036
 	Partition Row Position: 1
 	Interleave Position: 2
-	Interleaved Data Depth: 2
+	Interleaved Data Depth: 3
 
-Handle 0x0033, DMI type 17, 40 bytes
+Handle 0x003D, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x002C
-	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
-	Set: None
-	Locator: DIMM10_CPU1
-	Bank Locator: Not Specified
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
-	Serial Number: --
-	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: 1.2 V
-	Maximum Voltage: 1.2 V
-	Configured Voltage: 1.2 V
-
-Handle 0x0034, DMI type 17, 40 bytes
-Memory Device
-	Array Handle: 0x002C
+	Array Handle: 0x0035
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 16 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
-	Locator: DIMM2_CPU1
+	Locator: DIMM10_CPU1
 	Bank Locator: Not Specified
 	Type: DDR4
 	Type Detail: Synchronous
@@ -872,52 +964,100 @@ Memory Device
 	Manufacturer: Hynix
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMA82GR7AFR8N-VK    
+	Part Number: HMA84GR7AFR4N-VK    
 	Rank: 2
 	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0035, DMI type 20, 35 bytes
+Handle 0x003E, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x04C00000000
-	Ending Address: 0x04FFFFFFFFF
-	Range Size: 16 GB
-	Physical Device Handle: 0x0034
-	Memory Array Mapped Address Handle: 0x002D
+	Starting Address: 0x0A800000000
+	Ending Address: 0x0AFFFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x003D
+	Memory Array Mapped Address Handle: 0x0036
 	Partition Row Position: 1
+	Interleave Position: 2
+	Interleaved Data Depth: 3
 
-Handle 0x0036, DMI type 17, 40 bytes
+Handle 0x003F, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x002C
+	Array Handle: 0x0035
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
 	Set: None
-	Locator: DIMM8_CPU1
+	Locator: DIMM2_CPU1
 	Bank Locator: Not Specified
-	Type: Unknown
-	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: NO DIMM
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2666 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: NO DIMM
-	Rank: Unknown
-	Configured Memory Speed: Unknown
+	Part Number: M393A4K40BB2-CTD    
+	Rank: 2
+	Configured Memory Speed: 2666 MT/s
 	Minimum Voltage: 1.2 V
 	Maximum Voltage: 1.2 V
 	Configured Voltage: 1.2 V
 
-Handle 0x0037, DMI type 133, 12 bytes
+Handle 0x0040, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x0B000000000
+	Ending Address: 0x0B7FFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x003F
+	Memory Array Mapped Address Handle: 0x0036
+	Partition Row Position: 1
+	Interleave Position: 3
+	Interleaved Data Depth: 3
+
+Handle 0x0041, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0035
+	Error Information Handle: Not Provided
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 32 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM8_CPU1
+	Bank Locator: Not Specified
+	Type: DDR4
+	Type Detail: Synchronous
+	Speed: 2666 MT/s
+	Manufacturer: Hynix
+	Serial Number: --
+	Asset Tag: --
+	Part Number: HMA84GR7AFR4N-VK    
+	Rank: 2
+	Configured Memory Speed: 2666 MT/s
+	Minimum Voltage: 1.2 V
+	Maximum Voltage: 1.2 V
+	Configured Voltage: 1.2 V
+
+Handle 0x0042, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x0B800000000
+	Ending Address: 0x0BFFFFFFFFF
+	Range Size: 32 GB
+	Physical Device Handle: 0x0041
+	Memory Array Mapped Address Handle: 0x0036
+	Partition Row Position: 1
+	Interleave Position: 3
+	Interleaved Data Depth: 3
+
+Handle 0x0043, DMI type 133, 12 bytes
 OEM-specific Type
 	Header and Data:
-		85 0C 37 00 00 70 57 6A 00 40 00 00
+		85 0C 43 00 00 C0 6F 6A 00 40 00 00
 
-Handle 0x0038, DMI type 8, 9 bytes
+Handle 0x0044, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Not Specified
 	Internal Connector Type: None
@@ -925,7 +1065,7 @@ Port Connector Information
 	External Connector Type: PS/2
 	Port Type: Mouse Port
 
-Handle 0x0039, DMI type 8, 9 bytes
+Handle 0x0045, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Not Specified
 	Internal Connector Type: None
@@ -933,7 +1073,7 @@ Port Connector Information
 	External Connector Type: PS/2
 	Port Type: Keyboard Port
 
-Handle 0x003A, DMI type 8, 9 bytes
+Handle 0x0046, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Not Specified
 	Internal Connector Type: None
@@ -941,7 +1081,7 @@ Port Connector Information
 	External Connector Type: RJ-45
 	Port Type: Network Port
 
-Handle 0x003B, DMI type 8, 9 bytes
+Handle 0x0047, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Not Specified
 	Internal Connector Type: None
@@ -949,7 +1089,7 @@ Port Connector Information
 	External Connector Type: RJ-45
 	Port Type: Network Port
 
-Handle 0x003C, DMI type 8, 9 bytes
+Handle 0x0048, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Not Specified
 	Internal Connector Type: None
@@ -957,7 +1097,7 @@ Port Connector Information
 	External Connector Type: DB-9 male
 	Port Type: Serial Port 16550A Compatible
 
-Handle 0x003D, DMI type 8, 9 bytes
+Handle 0x0049, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Not Specified
 	Internal Connector Type: None
@@ -965,7 +1105,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x003E, DMI type 8, 9 bytes
+Handle 0x004A, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Not Specified
 	Internal Connector Type: None
@@ -973,7 +1113,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x003F, DMI type 8, 9 bytes
+Handle 0x004B, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Not Specified
 	Internal Connector Type: None
@@ -981,7 +1121,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0040, DMI type 8, 9 bytes
+Handle 0x004C, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Not Specified
 	Internal Connector Type: None
@@ -989,7 +1129,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0041, DMI type 8, 9 bytes
+Handle 0x004D, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Not Specified
 	Internal Connector Type: None
@@ -997,7 +1137,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0042, DMI type 8, 9 bytes
+Handle 0x004E, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Not Specified
 	Internal Connector Type: None
@@ -1005,7 +1145,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0043, DMI type 8, 9 bytes
+Handle 0x004F, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Not Specified
 	Internal Connector Type: None
@@ -1013,7 +1153,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0044, DMI type 8, 9 bytes
+Handle 0x0050, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Not Specified
 	Internal Connector Type: None
@@ -1021,7 +1161,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0045, DMI type 8, 9 bytes
+Handle 0x0051, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Mini-SAS PCIe SSD-0
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -1029,7 +1169,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SAS
 
-Handle 0x0046, DMI type 8, 9 bytes
+Handle 0x0052, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Mini-SAS PCIe SSD-1
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -1037,7 +1177,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SAS
 
-Handle 0x0047, DMI type 8, 9 bytes
+Handle 0x0053, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Mini-SAS PCIe SSD-2
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -1045,7 +1185,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SAS
 
-Handle 0x0048, DMI type 8, 9 bytes
+Handle 0x0054, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: Mini-SAS PCIe SSD-3
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -1053,7 +1193,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SAS
 
-Handle 0x0049, DMI type 8, 9 bytes
+Handle 0x0055, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: SATA-0
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -1061,7 +1201,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x004A, DMI type 8, 9 bytes
+Handle 0x0056, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: SATA-1
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -1069,7 +1209,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x004B, DMI type 8, 9 bytes
+Handle 0x0057, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: SATA-2
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -1077,7 +1217,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x004C, DMI type 8, 9 bytes
+Handle 0x0058, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: SATA-3
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -1085,7 +1225,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x004D, DMI type 8, 9 bytes
+Handle 0x0059, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: SATA-4
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -1093,7 +1233,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x004E, DMI type 8, 9 bytes
+Handle 0x005A, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: SATA-5
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -1101,7 +1241,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x004F, DMI type 8, 9 bytes
+Handle 0x005B, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: SATA-6
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -1109,7 +1249,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x0050, DMI type 8, 9 bytes
+Handle 0x005C, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: SATA-7
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -1117,7 +1257,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x0051, DMI type 8, 9 bytes
+Handle 0x005D, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: ODD-0
 	Internal Connector Type: SAS/SATA Plug Receptacle
@@ -1125,7 +1265,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: SATA
 
-Handle 0x0052, DMI type 8, 9 bytes
+Handle 0x005E, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: FAN_CPU0
 	Internal Connector Type: Other
@@ -1133,7 +1273,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0053, DMI type 8, 9 bytes
+Handle 0x005F, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: FAN_CPU1
 	Internal Connector Type: Other
@@ -1141,7 +1281,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0054, DMI type 8, 9 bytes
+Handle 0x0060, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: FAN_SYS0
 	Internal Connector Type: Other
@@ -1149,7 +1289,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0055, DMI type 8, 9 bytes
+Handle 0x0061, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: FAN_SYS1
 	Internal Connector Type: Other
@@ -1157,7 +1297,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0056, DMI type 8, 9 bytes
+Handle 0x0062, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: FAN_SYS2
 	Internal Connector Type: Other
@@ -1165,7 +1305,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0057, DMI type 8, 9 bytes
+Handle 0x0063, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: FAN_SYS3
 	Internal Connector Type: Other
@@ -1173,7 +1313,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0058, DMI type 8, 9 bytes
+Handle 0x0064, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: FAN_REAR0
 	Internal Connector Type: Other
@@ -1181,7 +1321,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0059, DMI type 8, 9 bytes
+Handle 0x0065, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: FAN_REAR1
 	Internal Connector Type: Other
@@ -1189,7 +1329,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x005A, DMI type 8, 9 bytes
+Handle 0x0066, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: FAN_HDD0
 	Internal Connector Type: Other
@@ -1197,7 +1337,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x005B, DMI type 8, 9 bytes
+Handle 0x0067, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: FAN_HDD1
 	Internal Connector Type: Other
@@ -1205,7 +1345,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x005C, DMI type 8, 9 bytes
+Handle 0x0068, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: FAN_HDD2
 	Internal Connector Type: Other
@@ -1213,7 +1353,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x005D, DMI type 8, 9 bytes
+Handle 0x0069, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: FAN_HDD3
 	Internal Connector Type: Other
@@ -1221,7 +1361,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x005E, DMI type 8, 9 bytes
+Handle 0x006A, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: FAN_HDD4
 	Internal Connector Type: Other
@@ -1229,7 +1369,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x005F, DMI type 8, 9 bytes
+Handle 0x006B, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: INTRUDER
 	Internal Connector Type: Other
@@ -1237,7 +1377,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0060, DMI type 8, 9 bytes
+Handle 0x006C, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: INT_SPKR
 	Internal Connector Type: Other
@@ -1245,7 +1385,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0061, DMI type 8, 9 bytes
+Handle 0x006D, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: HDD_TEMP0
 	Internal Connector Type: Other
@@ -1253,7 +1393,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0062, DMI type 8, 9 bytes
+Handle 0x006E, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: HDD_TEMP1
 	Internal Connector Type: Other
@@ -1261,7 +1401,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0063, DMI type 8, 9 bytes
+Handle 0x006F, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: HDD_TEMP2
 	Internal Connector Type: Other
@@ -1269,7 +1409,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0064, DMI type 8, 9 bytes
+Handle 0x0070, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: HDD_TEMP3
 	Internal Connector Type: Other
@@ -1277,7 +1417,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0065, DMI type 8, 9 bytes
+Handle 0x0071, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: HDD_TEMP4
 	Internal Connector Type: Other
@@ -1285,7 +1425,7 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: Other
 
-Handle 0x0066, DMI type 8, 9 bytes
+Handle 0x0072, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: FRONTPANEL
 	Internal Connector Type: Other
@@ -1293,7 +1433,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x0067, DMI type 8, 9 bytes
+Handle 0x0073, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: FRONTPANEL
 	Internal Connector Type: Other
@@ -1301,7 +1441,7 @@ Port Connector Information
 	External Connector Type: Mini Jack (headphones)
 	Port Type: Audio Port
 
-Handle 0x0068, DMI type 8, 9 bytes
+Handle 0x0074, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: USB3_FRONT
 	Internal Connector Type: Access Bus (USB)
@@ -1309,7 +1449,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x0069, DMI type 8, 9 bytes
+Handle 0x0075, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: USB3_FRONT
 	Internal Connector Type: Access Bus (USB)
@@ -1317,7 +1457,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x006A, DMI type 8, 9 bytes
+Handle 0x0076, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: USB3_FRONT
 	Internal Connector Type: Access Bus (USB)
@@ -1325,7 +1465,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x006B, DMI type 8, 9 bytes
+Handle 0x0077, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: USB3_FRONT
 	Internal Connector Type: Access Bus (USB)
@@ -1333,7 +1473,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x006C, DMI type 8, 9 bytes
+Handle 0x0078, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: USB2_FLEX
 	Internal Connector Type: Access Bus (USB)
@@ -1341,7 +1481,7 @@ Port Connector Information
 	External Connector Type: Access Bus (USB)
 	Port Type: USB
 
-Handle 0x006D, DMI type 8, 9 bytes
+Handle 0x0079, DMI type 8, 9 bytes
 Port Connector Information
 	Internal Reference Designator: INT_USB2
 	Internal Connector Type: Access Bus (USB)
@@ -1349,25 +1489,25 @@ Port Connector Information
 	External Connector Type: None
 	Port Type: USB
 
-Handle 0x006E, DMI type 10, 6 bytes
+Handle 0x007A, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Ethernet
 	Status: Enabled
 	Description: "Intel LOM"
 
-Handle 0x006F, DMI type 10, 6 bytes
+Handle 0x007B, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Ethernet
 	Status: Enabled
 	Description: "Intel LOM"
 
-Handle 0x0070, DMI type 10, 6 bytes
+Handle 0x007C, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Sound
 	Status: Disabled
 	Description: "Intel HD Audio"
 
-Handle 0x0071, DMI type 41, 11 bytes
+Handle 0x007D, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Intel LOM
 	Type: Ethernet
@@ -1375,7 +1515,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:13.0
 
-Handle 0x0072, DMI type 41, 11 bytes
+Handle 0x007E, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Intel HD Audio
 	Type: Sound
@@ -1383,7 +1523,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:1b.0
 
-Handle 0x0073, DMI type 41, 11 bytes
+Handle 0x007F, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard SATA #1
 	Type: SATA Controller
@@ -1391,7 +1531,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:1f.2
 
-Handle 0x0074, DMI type 41, 11 bytes
+Handle 0x0080, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard SATA #2
 	Type: SATA Controller
@@ -1399,7 +1539,7 @@ Onboard Device
 	Type Instance: 2
 	Bus Address: 0000:00:1f.5
 
-Handle 0x0075, DMI type 9, 17 bytes
+Handle 0x0081, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT1
 	Type: x8 PCI Express 3 x8
@@ -1411,7 +1551,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:ff:1f.7
 
-Handle 0x0076, DMI type 9, 17 bytes
+Handle 0x0082, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT2
 	Type: x16 PCI Express 3 x16
@@ -1423,7 +1563,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:ff:1f.7
 
-Handle 0x0077, DMI type 9, 17 bytes
+Handle 0x0083, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT3
 	Type: x1 PCI Express 3 x16
@@ -1435,7 +1575,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:ff:1f.7
 
-Handle 0x0078, DMI type 9, 17 bytes
+Handle 0x0084, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT4
 	Type: x16 PCI Express 3 x16
@@ -1447,7 +1587,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:ff:1f.7
 
-Handle 0x0079, DMI type 9, 17 bytes
+Handle 0x0085, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT5
 	Type: x4 PCI Express 3 x16
@@ -1459,7 +1599,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:ff:1f.7
 
-Handle 0x007A, DMI type 9, 17 bytes
+Handle 0x0086, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT6
 	Type: x16 PCI Express 3 x16
@@ -1471,7 +1611,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:ff:1f.7
 
-Handle 0x007B, DMI type 9, 17 bytes
+Handle 0x0087, DMI type 9, 17 bytes
 System Slot Information
 	Designation: SLOT7
 	Type: x16 PCI Express 3 x16
@@ -1483,7 +1623,7 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:ff:1f.7
 
-Handle 0x007C, DMI type 7, 27 bytes
+Handle 0x0088, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1-Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -1499,7 +1639,7 @@ Cache Information
 	System Type: Instruction
 	Associativity: 8-way Set-associative
 
-Handle 0x007D, DMI type 7, 27 bytes
+Handle 0x0089, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L2-Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -1515,7 +1655,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x007E, DMI type 7, 27 bytes
+Handle 0x008A, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L3-Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -1531,7 +1671,7 @@ Cache Information
 	System Type: Unified
 	Associativity: Fully Associative
 
-Handle 0x007F, DMI type 4, 48 bytes
+Handle 0x008B, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: CPU0
 	Type: Central Processor
@@ -1575,9 +1715,9 @@ Processor Information
 	Current Speed: 2400 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
-	L1 Cache Handle: 0x007C
-	L2 Cache Handle: 0x007D
-	L3 Cache Handle: 0x007E
+	L1 Cache Handle: 0x0088
+	L2 Cache Handle: 0x0089
+	L3 Cache Handle: 0x008A
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
@@ -1592,7 +1732,7 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0080, DMI type 7, 27 bytes
+Handle 0x008C, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L1-Cache
 	Configuration: Enabled, Not Socketed, Level 1
@@ -1608,7 +1748,7 @@ Cache Information
 	System Type: Instruction
 	Associativity: 8-way Set-associative
 
-Handle 0x0081, DMI type 7, 27 bytes
+Handle 0x008D, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L2-Cache
 	Configuration: Enabled, Not Socketed, Level 2
@@ -1624,7 +1764,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 16-way Set-associative
 
-Handle 0x0082, DMI type 7, 27 bytes
+Handle 0x008E, DMI type 7, 27 bytes
 Cache Information
 	Socket Designation: L3-Cache
 	Configuration: Enabled, Not Socketed, Level 3
@@ -1640,7 +1780,7 @@ Cache Information
 	System Type: Unified
 	Associativity: Fully Associative
 
-Handle 0x0083, DMI type 4, 48 bytes
+Handle 0x008F, DMI type 4, 48 bytes
 Processor Information
 	Socket Designation: CPU1
 	Type: Central Processor
@@ -1684,9 +1824,9 @@ Processor Information
 	Current Speed: 2400 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
-	L1 Cache Handle: 0x0080
-	L2 Cache Handle: 0x0081
-	L3 Cache Handle: 0x0082
+	L1 Cache Handle: 0x008C
+	L2 Cache Handle: 0x008D
+	L3 Cache Handle: 0x008E
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
@@ -1701,7 +1841,7 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x0088, DMI type 43, 31 bytes
+Handle 0x0094, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: 
 	Specification Version: 2.0
@@ -1978,7 +2118,7 @@ OEM-specific Type
 Handle 0xD000, DMI type 208, 16 bytes
 OEM-specific Type
 	Header and Data:
-		D0 10 00 D0 03 11 FE 00 3A 07 01 02 00 00 00 00
+		D0 10 00 D0 03 0A FE 00 3A 07 01 02 00 00 00 00
 	Strings:
 		20190312
 		20190415
@@ -2087,85 +2227,85 @@ OEM-specific Type
 		03 01 00 1E 03 1E 03 00 00 1F 03 1F 03 01 00 20
 		03 20 03 00 00 21 03 21 03 0E 00 22 03 22 03 10
 		00 25 03 25 03 01 00 26 03 26 03 01 00 2D 03 2D
-		03 01 00 2E 03 2E 03 00 00 32 03 32 03 00 00 33
-		03 33 03 03 00 35 03 35 03 02 00 4F 03 4F 03 01
-		00 50 03 50 03 00 00 51 03 51 03 00 00 52 03 52
-		03 01 00 53 03 53 03 00 00 54 03 54 03 01 00 55
-		03 55 03 00 00 56 03 56 03 01 00 57 03 57 03 00
-		00 58 03 58 03 01 00 5D 03 5D 03 01 00 5E 03 5E
-		03 00 00 5F 03 5F 03 01 00 60 03 60 03 00 00 61
-		03 61 03 01 00 FF FF FF FF 00 00
+		03 01 00 2E 03 2E 03 00 00 32 03 32 03 00 00 35
+		03 35 03 02 00 4F 03 4F 03 01 00 50 03 50 03 00
+		00 51 03 51 03 00 00 52 03 52 03 01 00 53 03 53
+		03 00 00 54 03 54 03 01 00 55 03 55 03 00 00 56
+		03 56 03 01 00 57 03 57 03 00 00 58 03 58 03 01
+		00 5D 03 5D 03 01 00 5E 03 5E 03 00 00 5F 03 5F
+		03 01 00 60 03 60 03 00 00 61 03 61 03 01 00 62
+		03 62 03 00 00 FF FF FF FF 00 00
 
 Handle 0xDA05, DMI type 218, 251 bytes
 OEM-specific Type
 	Header and Data:
-		DA FB 05 DA B2 00 04 EF 1E B6 00 62 03 62 03 00
-		00 69 03 69 03 00 00 6A 03 6A 03 01 00 6B 03 6B
-		03 02 00 6F 03 6F 03 FF FF 81 03 81 03 00 00 82
-		03 82 03 01 00 83 03 83 03 07 00 A2 03 A2 03 01
-		00 A3 03 A3 03 00 00 BE 03 BE 03 FF FF C1 03 C1
-		03 02 00 C2 03 C2 03 03 00 C3 03 C3 03 04 00 C5
-		03 C5 03 01 00 C6 03 C6 03 00 00 C7 03 C7 03 01
-		00 C8 03 C8 03 02 00 C9 03 C9 03 01 00 CA 03 CA
-		03 00 00 D3 03 D3 03 FF FF E2 03 E2 03 00 00 E3
-		03 E3 03 01 00 E4 03 E4 03 00 00 E5 03 E5 03 01
-		00 E6 03 E6 03 00 00 E7 03 E7 03 01 00 F6 03 F6
-		03 01 00 F7 03 F7 03 00 00 FE 03 FE 03 01 00 FF
-		03 FF 03 00 00 1A 04 1A 04 01 00 1B 04 1B 04 00
-		00 28 04 28 04 04 00 29 04 29 04 00 00 2A 04 2A
-		04 02 00 2B 04 2B 04 FF FF 2D 04 2D 04 00 00 2E
-		04 2E 04 01 00 FF FF FF FF 00 00
+		DA FB 05 DA B2 00 04 EF 1E B6 00 69 03 69 03 00
+		00 6A 03 6A 03 01 00 6B 03 6B 03 02 00 6F 03 6F
+		03 FF FF 81 03 81 03 00 00 82 03 82 03 01 00 83
+		03 83 03 07 00 A2 03 A2 03 01 00 A3 03 A3 03 00
+		00 BE 03 BE 03 FF FF C1 03 C1 03 02 00 C2 03 C2
+		03 03 00 C3 03 C3 03 04 00 C5 03 C5 03 01 00 C6
+		03 C6 03 00 00 C7 03 C7 03 01 00 C8 03 C8 03 02
+		00 C9 03 C9 03 01 00 CA 03 CA 03 00 00 D3 03 D3
+		03 FF FF E2 03 E2 03 00 00 E3 03 E3 03 01 00 E4
+		03 E4 03 00 00 E5 03 E5 03 01 00 E6 03 E6 03 00
+		00 E7 03 E7 03 01 00 F6 03 F6 03 01 00 F7 03 F7
+		03 00 00 FE 03 FE 03 01 00 FF 03 FF 03 00 00 1A
+		04 1A 04 01 00 1B 04 1B 04 00 00 28 04 28 04 04
+		00 29 04 29 04 00 00 2A 04 2A 04 02 00 2B 04 2B
+		04 FF FF 2D 04 2D 04 00 00 2E 04 2E 04 01 00 2F
+		04 2F 04 00 00 FF FF FF FF 00 00
 
 Handle 0xDA06, DMI type 218, 251 bytes
 OEM-specific Type
 	Header and Data:
-		DA FB 06 DA B2 00 04 EF 1E B6 00 2F 04 2F 04 00
-		00 32 04 32 04 01 00 33 04 33 04 00 00 36 04 36
-		04 01 00 37 04 37 04 00 00 4B 04 4B 04 01 00 4C
-		04 4C 04 00 00 4D 04 4D 04 00 00 4E 04 4E 04 01
-		00 4F 04 4F 04 02 00 5D 04 5D 04 01 00 61 04 61
-		04 01 00 62 04 62 04 00 00 7D 04 7D 04 01 00 7E
-		04 7E 04 00 00 80 04 80 04 01 00 81 04 81 04 00
-		00 85 04 85 04 01 00 86 04 86 04 00 00 87 04 87
-		04 01 00 88 04 88 04 00 00 8C 04 8C 04 01 00 8D
-		04 8D 04 00 00 90 04 90 04 01 00 91 04 91 04 00
-		00 92 04 92 04 01 00 93 04 93 04 00 00 94 04 94
-		04 01 00 95 04 95 04 00 00 96 04 96 04 01 00 97
-		04 97 04 00 00 98 04 98 04 FF FF 9E 04 9E 04 01
-		00 9F 04 9F 04 00 00 A7 04 A7 04 03 00 A8 04 A8
-		04 01 00 A9 04 A9 04 02 00 B2 04 B2 04 00 00 B3
-		04 B3 04 01 00 FF FF FF FF 00 00
+		DA FB 06 DA B2 00 04 EF 1E B6 00 32 04 32 04 01
+		00 33 04 33 04 00 00 36 04 36 04 01 00 37 04 37
+		04 00 00 4B 04 4B 04 01 00 4C 04 4C 04 00 00 4D
+		04 4D 04 00 00 4E 04 4E 04 01 00 4F 04 4F 04 02
+		00 5D 04 5D 04 01 00 61 04 61 04 01 00 62 04 62
+		04 00 00 7D 04 7D 04 01 00 7E 04 7E 04 00 00 80
+		04 80 04 01 00 81 04 81 04 00 00 85 04 85 04 01
+		00 86 04 86 04 00 00 87 04 87 04 01 00 88 04 88
+		04 00 00 8C 04 8C 04 01 00 8D 04 8D 04 00 00 90
+		04 90 04 01 00 91 04 91 04 00 00 92 04 92 04 01
+		00 93 04 93 04 00 00 94 04 94 04 01 00 95 04 95
+		04 00 00 96 04 96 04 01 00 97 04 97 04 00 00 98
+		04 98 04 FF FF 9E 04 9E 04 01 00 9F 04 9F 04 00
+		00 A7 04 A7 04 03 00 A8 04 A8 04 01 00 A9 04 A9
+		04 02 00 B2 04 B2 04 00 00 B3 04 B3 04 01 00 B4
+		04 B4 04 00 00 FF FF FF FF 00 00
 
 Handle 0xDA07, DMI type 218, 251 bytes
 OEM-specific Type
 	Header and Data:
-		DA FB 07 DA B2 00 04 EF 1E B6 00 B4 04 B4 04 00
-		00 B5 04 B5 04 01 00 B6 04 B6 04 00 00 B7 04 B7
-		04 01 00 B8 04 B8 04 00 00 B9 04 B9 04 01 00 BA
-		04 BA 04 00 00 BB 04 BB 04 01 00 BC 04 BC 04 01
-		00 BD 04 BD 04 00 00 C1 04 C1 04 01 00 C2 04 C2
-		04 00 00 C3 04 C3 04 01 00 C4 04 C4 04 00 00 E6
-		04 E6 04 01 00 E7 04 E7 04 00 00 EA 04 EA 04 01
-		00 EB 04 EB 04 00 00 EC 04 EC 04 01 00 ED 04 ED
-		04 00 00 F6 04 F6 04 01 00 F7 04 F7 04 00 00 F8
-		04 F8 04 01 00 F9 04 F9 04 00 00 FA 04 FA 04 01
-		00 FB 04 FB 04 00 00 FC 04 FC 04 01 00 FD 04 FD
-		04 00 00 03 05 03 05 FF FF 04 05 04 05 FF FF 05
-		05 05 05 FF FF 06 05 06 05 FF FF 0B 05 0B 05 FF
-		FF 12 05 12 05 00 00 13 05 13 05 01 00 14 05 14
-		05 02 00 3C 05 3C 05 00 00 3D 05 3D 05 01 00 3E
-		05 3E 05 02 00 FF FF FF FF 00 00
+		DA FB 07 DA B2 00 04 EF 1E B6 00 B5 04 B5 04 01
+		00 B6 04 B6 04 00 00 B7 04 B7 04 01 00 B8 04 B8
+		04 00 00 B9 04 B9 04 01 00 BA 04 BA 04 00 00 BB
+		04 BB 04 01 00 BC 04 BC 04 01 00 BD 04 BD 04 00
+		00 C1 04 C1 04 01 00 C2 04 C2 04 00 00 C3 04 C3
+		04 01 00 C4 04 C4 04 00 00 E6 04 E6 04 01 00 E7
+		04 E7 04 00 00 EA 04 EA 04 01 00 EB 04 EB 04 00
+		00 EC 04 EC 04 01 00 ED 04 ED 04 00 00 F6 04 F6
+		04 01 00 F7 04 F7 04 00 00 F8 04 F8 04 01 00 F9
+		04 F9 04 00 00 FA 04 FA 04 01 00 FB 04 FB 04 00
+		00 FC 04 FC 04 01 00 FD 04 FD 04 00 00 03 05 03
+		05 FF FF 04 05 04 05 FF FF 05 05 05 05 FF FF 06
+		05 06 05 FF FF 0B 05 0B 05 FF FF 12 05 12 05 00
+		00 13 05 13 05 01 00 14 05 14 05 02 00 3C 05 3C
+		05 00 00 3D 05 3D 05 01 00 3E 05 3E 05 02 00 4C
+		40 4C 40 FF FF FF FF FF FF 00 00
 
-Handle 0xDA08, DMI type 218, 107 bytes
+Handle 0xDA08, DMI type 218, 101 bytes
 OEM-specific Type
 	Header and Data:
-		DA 6B 08 DA B2 00 04 EF 1E B6 00 4C 40 4C 40 FF
-		FF 00 80 00 80 00 00 02 80 02 80 02 00 03 80 03
-		80 03 00 0C 80 0C 80 00 00 0D 80 0D 80 00 00 0E
-		80 0E 80 01 00 0F 80 0F 80 FF FF 00 A0 00 A0 01
-		00 04 A0 04 A0 01 00 00 F0 00 F0 55 00 02 F0 02
-		F0 03 00 05 F0 05 F0 7F 00 06 F0 06 F0 00 00 06
-		F1 06 F1 00 00 FF FF FF FF 00 00
+		DA 65 08 DA B2 00 04 EF 1E B6 00 00 80 00 80 00
+		00 02 80 02 80 02 00 03 80 03 80 03 00 0C 80 0C
+		80 00 00 0D 80 0D 80 00 00 0E 80 0E 80 01 00 0F
+		80 0F 80 FF FF 00 A0 00 A0 01 00 04 A0 04 A0 01
+		00 00 F0 00 F0 55 00 02 F0 02 F0 03 00 05 F0 05
+		F0 7F 00 06 F0 06 F0 00 00 06 F1 06 F1 00 00 FF
+		FF FF FF 00 00
 
 Handle 0xDC00, DMI type 220, 22 bytes
 OEM-specific Type
@@ -2314,7 +2454,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 23 02 09 19 48 01 00 00
+		DE 10 00 DE 01 04 00 00 23 09 16 00 35 01 00 00
 
 Handle 0xF02F, DMI type 218, 251 bytes
 OEM-specific Type
@@ -2377,23 +2517,23 @@ OEM-specific Type
 Handle 0xF051, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 51 F0 35 00 00 00 0B 00 00 00 00 00 0C 00
+		83 40 51 F0 37 00 00 00 0B 00 00 00 00 00 0B 00
 		F8 00 C1 A1 00 00 00 00 09 80 00 00 16 00 0B 00
 		13 09 5D 00 00 00 00 00 FE 00 B9 15 00 00 00 00
-		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
+		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0xF052, DMI type 237, 26 bytes
 OEM-specific Type
 	Header and Data:
 		ED 1A 52 F0 03 01 00 01 07 00 00 00 02 00 0B 00
-		00 0C 00 03 04 0B 16 5D 13 09
+		00 0B 00 03 04 0B 16 5D 13 09
 	Strings:
 		Reference Code - ME 10.0
 		MEBx version
 		ME Firmware Version
 		Corporate SKU
 
-Handle 0xF05D, DMI type 13, 22 bytes
+Handle 0xF060, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 2
@@ -2401,6 +2541,6 @@ BIOS Language Information
 		<BAD INDEX>
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0xF08E, DMI type 127, 4 bytes
+Handle 0xF091, DMI type 127, 4 bytes
 End Of Table
 

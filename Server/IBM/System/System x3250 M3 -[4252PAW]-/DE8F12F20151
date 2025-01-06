@@ -1,7 +1,7 @@
 # dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
-63 structures occupying 2541 bytes.
+63 structures occupying 2589 bytes.
 Table at 0x7F6B9000.
 
 Handle 0x0000, DMI type 38, 16 bytes
@@ -131,8 +131,8 @@ Memory Module Information
 	Bank Connections: 0 0
 	Current Speed: 1 ns
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0007, DMI type 17, 27 bytes
@@ -141,7 +141,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM01
@@ -149,10 +149,10 @@ Memory Device
 	Type: Other
 	Type Detail: Unknown
 	Speed: 800 MT/s
-	Manufacturer: Micron
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 36JSZF51272DZ1G1F1
+	Part Number: M393B1K73CHD-YF8  
 
 Handle 0x0008, DMI type 6, 12 bytes
 Memory Module Information
@@ -178,10 +178,10 @@ Memory Device
 	Type: Other
 	Type Detail: Unknown
 	Speed: 800 MT/s
-	Manufacturer: Hynix
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT41GV7CMR8A-G7  
+	Part Number: M393B1K73CHD-YF8  
 
 Handle 0x000A, DMI type 6, 12 bytes
 Memory Module Information
@@ -218,8 +218,8 @@ Memory Module Information
 	Bank Connections: 0 0
 	Current Speed: 1 ns
 	Type: DIMM
-	Installed Size: 4096 MB (Single-bank Connection)
-	Enabled Size: 4096 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000D, DMI type 17, 27 bytes
@@ -228,7 +228,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM04
@@ -236,39 +236,39 @@ Memory Device
 	Type: Other
 	Type Detail: Unknown
 	Speed: 800 MT/s
-	Manufacturer: Micron
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 36JSZF51272DZ1G1F1
+	Part Number: M393B1K73CHD-YF8  
 
 Handle 0x000E, DMI type 6, 12 bytes
 Memory Module Information
 	Socket Designation: DIMM05
 	Bank Connections: 0 0
-	Current Speed: Unknown
-	Type: None
-	Installed Size: Not Installed
-	Enabled Size: Not Installed
+	Current Speed: 1 ns
+	Type: DIMM
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x000F, DMI type 17, 27 bytes
 Memory Device
 	Array Handle: 0x0005
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
-	Form Factor: Unknown
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 8 GB
+	Form Factor: DIMM
 	Set: None
 	Locator: DIMM05
 	Bank Locator: BANK05
-	Type: Unknown
+	Type: Other
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Not Specified
+	Speed: 800 MT/s
+	Manufacturer: Samsung
 	Serial Number: --
 	Asset Tag: --
-	Part Number: Not Specified
+	Part Number: M393B1K73CHD-YF8  
 
 Handle 0x0010, DMI type 6, 12 bytes
 Memory Module Information
@@ -302,8 +302,8 @@ Memory Device
 Handle 0x0012, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x0005
 	Partition Width: 6
 
@@ -488,7 +488,7 @@ Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: System Slot 2
 	Type: x8 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 2
 	Characteristics:

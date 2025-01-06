@@ -6,8 +6,8 @@ Table at 0x000E9690.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: S05KT63A
-	Release Date: 12/13/2022
+	Version: S05KT67A
+	Release Date: 07/24/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -31,7 +31,7 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.63
+	BIOS Revision: 1.67
 	Firmware Revision: 19.7
 
 Handle 0x0001, DMI type 1, 27 bytes
@@ -370,13 +370,13 @@ Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M.2 Slot1
 	Type: x4 PCI Express 3 x4
-	Current Usage: Unknown
+	Current Usage: In Use
 	Length: Long
 	ID: 9
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:ff:1f.7
+	Bus Address: 0000:5d:02.0
 
 Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
@@ -399,7 +399,7 @@ On Board Device Information
 Handle 0x0027, DMI type 11, 5 bytes
 OEM Strings
 	String 1: LENOVO ThinkStation Embedded Controller -[19.07]-
-	String 2: LENOVO ThinkStation BIOS Boot Block Revision 1.63
+	String 2: LENOVO ThinkStation BIOS Boot Block Revision 1.67
 	String 3: Lenovo Service Engine Not Supported
 	String 4: INVALID
 	String 5: INVALID
@@ -1132,7 +1132,7 @@ Memory Device Mapped Address
 Handle 0x0048, DMI type 133, 12 bytes
 OEM-specific Type
 	Header and Data:
-		85 0C 48 00 00 70 16 68 00 40 00 00
+		85 0C 48 00 00 C0 95 69 00 40 00 00
 
 Handle 0x004F, DMI type 133, 5 bytes
 OEM-specific Type
@@ -1371,7 +1371,7 @@ OEM-specific Type
 		83 40 67 00 35 00 00 00 0B 00 00 00 00 00 0C 00
 		F8 00 C1 A1 00 00 00 00 09 80 00 00 16 00 0B 00
 		19 06 3C 00 00 00 00 00 FE 00 B9 15 00 00 00 00
-		00 00 00 00 20 00 00 00 76 50 72 6F 00 00 00 00
+		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0068, DMI type 221, 26 bytes
 OEM-specific Type
@@ -1396,9 +1396,9 @@ System Event Log
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0x681AF018
+	Access Address: 0x699A4018
 	Status: Valid, Not Full
-	Change Token: 0x0000000A
+	Change Token: 0x00000012
 	Header Format: Type 1
 	Supported Log Type Descriptors: 25
 	Descriptor 1: Single-bit ECC memory error

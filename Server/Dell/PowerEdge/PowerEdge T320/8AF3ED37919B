@@ -2,7 +2,7 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 77 structures occupying 4858 bytes.
-Table at 0xCF42C000.
+Table at 0xBF42C000.
 
 Handle 0xDA00, DMI type 218, 11 bytes
 OEM-specific Type
@@ -337,23 +337,25 @@ Handle 0x0902, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI3
 	Type: x16 PCI Express 3
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 3
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
+	Bus Address: 0000:0a:00.0
 
 Handle 0x0903, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI4
 	Type: x4 PCI Express 3 x8
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Long
 	ID: 4
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
+	Bus Address: 0000:09:00.0
 
 Handle 0x0904, DMI type 126, 17 bytes
 Inactive
@@ -409,20 +411,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: DIMM_A1 
 	Bank Locator: Not Specified
 	Type: DDR3
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1600 MT/s
-	Manufacturer: 04CD000004CD
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 1333 MT/s
+	Manufacturer: 00CE00B300CE
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F3-1600C11-8GNT   
-	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Part Number: M393B4G70BM0-YH9  
+	Rank: 4
+	Configured Memory Speed: 1066 MT/s
 
 Handle 0x1101, DMI type 17, 34 bytes
 Memory Device
@@ -430,20 +432,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: 1
 	Locator: DIMM_A2 
 	Bank Locator: Not Specified
 	Type: DDR3
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1600 MT/s
-	Manufacturer: 04CD000004CD
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 1333 MT/s
+	Manufacturer: 00CE00B300CE
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F3-1600C11-8GNT   
-	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Part Number: M393B4G70BM0-YH9  
+	Rank: 4
+	Configured Memory Speed: 1066 MT/s
 
 Handle 0x1102, DMI type 17, 34 bytes
 Memory Device
@@ -451,20 +453,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: 2
 	Locator: DIMM_A3 
 	Bank Locator: Not Specified
 	Type: DDR3
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1600 MT/s
-	Manufacturer: 04CD000004CD
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 1333 MT/s
+	Manufacturer: 00CE00B300CE
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F3-1600C11-8GNT   
-	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Part Number: M393B4G70BM0-YH9  
+	Rank: 4
+	Configured Memory Speed: 1066 MT/s
 
 Handle 0x1103, DMI type 17, 34 bytes
 Memory Device
@@ -472,20 +474,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: 2
 	Locator: DIMM_A4 
 	Bank Locator: Not Specified
 	Type: DDR3
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1600 MT/s
-	Manufacturer: 04CD000004CD
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: Unknown
+	Manufacturer: 002C04B3002C
 	Serial Number: --
 	Asset Tag: --
-	Part Number: F3-1600C11-8GNT   
+	Part Number: 36JSF2G72PZ-1G9N1 
 	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1066 MT/s
 
 Handle 0x1104, DMI type 17, 34 bytes
 Memory Device
@@ -493,20 +495,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: 3
 	Locator: DIMM_A5 
 	Bank Locator: Not Specified
 	Type: DDR3
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1600 MT/s
-	Manufacturer: 04CD000004CD
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer:             
 	Serial Number: --
-	Asset Tag: --
-	Part Number: F3-1600C11-8GNT   
-	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	271882FD79060B21C43F805A2DE81148         
+	Part Number:                   
+	Rank: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x1105, DMI type 17, 34 bytes
 Memory Device
@@ -514,20 +516,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: 3
 	Locator: DIMM_A6 
 	Bank Locator: Not Specified
 	Type: DDR3
-	Type Detail: Synchronous Unbuffered (Unregistered)
-	Speed: 1600 MT/s
-	Manufacturer: 04CD000004CD
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer:             
 	Serial Number: --
-	Asset Tag: --
-	Part Number: F3-1600C11-8GNT   
-	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	271882FD79060B21C43F805A2DE81148         
+	Part Number:                   
+	Rank: Unknown
+	Configured Memory Speed: Unknown
 
 Handle 0x1106, DMI type 126, 34 bytes
 Inactive
@@ -550,16 +552,16 @@ Inactive
 Handle 0x1300, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000CFFFFFFF
-	Range Size: 3328 MB
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 3 GB
 	Physical Array Handle: 0x1000
 	Partition Width: 2
 
 Handle 0x1301, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00100000000
-	Ending Address: 0x00C2FFFFFFF
-	Range Size: 45824 MB
+	Ending Address: 0x01C3FFFFFFF
+	Range Size: 109 GB
 	Physical Array Handle: 0x1000
 	Partition Width: 2
 
@@ -701,7 +703,7 @@ OEM-specific Type
 		C2 FC 04 C2 72 00 73 00 00 40 5D 5E 39 01 4B FC
 		03 F7 02 4B 7F 80 F8 02 4B 7F 00 02 40 46 DF 00
 		01 40 46 DF 20 CF 01 40 FD 02 D0 01 40 FD 00 FC
-		01 45 BF 00 FD 01 45 BF 40 00 00 45 7F 80 00 00
+		01 45 BF 00 FD 01 45 BF 40 25 02 45 7F 80 24 02
 		45 7F 00 A1 02 45 FB 00 A2 02 45 FB 04 00 00 46
 		FE 00 00 00 46 FE 01 71 01 46 FB 04 72 01 46 FB
 		00 73 01 46 F7 08 74 01 46 F7 00 40 01 47 EF 10

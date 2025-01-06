@@ -948,7 +948,7 @@ Memory Device Mapped Address
 Handle 0x004F, DMI type 133, 12 bytes
 OEM-specific Type
 	Header and Data:
-		85 0C 4F 00 00 20 6B 6D 00 40 00 00
+		85 0C 4F 00 00 B0 64 6D 00 40 00 00
 
 Handle 0x0050, DMI type 7, 27 bytes
 Cache Information
@@ -1172,13 +1172,13 @@ Handle 0x005C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: RSC-R2UW-2E8E16+ SLOT1 PCI-E X16
 	Type: x16 PCI Express 3 x16
-	Current Usage: In Use
+	Current Usage: Available
 	Length: Long
 	ID: 1
 	Characteristics:
 		3.3 V is provided
 		PME signal is supported
-	Bus Address: 0000:af:00.0
+	Bus Address: 0000:ff:00.0
 
 Handle 0x005D, DMI type 9, 17 bytes
 System Slot Information
@@ -1356,8 +1356,8 @@ OEM-specific Type
 Handle 0x0072, DMI type 190, 58 bytes
 OEM-specific Type
 	Header and Data:
-		BE 3A 72 00 02 FF FF 86 80 D2 37 D9 15 D2 37 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		BE 3A 72 00 02 FF FF 86 80 D2 37 D9 15 D2 37 10
+		27 00 00 00 00 00 00 00 00 AC 1F 6B BD 43 6A 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00
 
@@ -1370,8 +1370,8 @@ OEM-specific Type
 Handle 0x0074, DMI type 190, 58 bytes
 OEM-specific Type
 	Header and Data:
-		BE 3A 74 00 02 FF FF 86 80 D2 37 D9 15 D2 37 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		BE 3A 74 00 02 FF FF 86 80 D2 37 D9 15 D2 37 10
+		27 00 00 00 00 00 00 00 00 AC 1F 6B BD 43 6B 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00
 
@@ -1426,51 +1426,37 @@ OEM-specific Type
 Handle 0x007D, DMI type 192, 23 bytes
 OEM-specific Type
 	Header and Data:
-		C0 17 7D 00 02 01 00 86 80 D3 10 86 80 1F A0 01
-		00 00 00 01 00 00 00
+		C0 17 7D 00 08 FF FF 86 80 36 20 86 80 36 20 00
+		00 00 00 00 00 00 00
 
-Handle 0x007E, DMI type 190, 58 bytes
+Handle 0x007E, DMI type 192, 23 bytes
 OEM-specific Type
 	Header and Data:
-		BE 3A 7E 00 02 01 00 86 80 D3 10 86 80 1F A0 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-		00 00 00 00 00 00 00 00 00 00
+		C0 17 7E 00 08 FF FF 86 80 36 20 86 80 36 20 00
+		00 00 00 00 00 00 00
 
 Handle 0x007F, DMI type 192, 23 bytes
 OEM-specific Type
 	Header and Data:
-		C0 17 7F 00 08 FF FF 86 80 36 20 86 80 36 20 00
+		C0 17 7F 00 11 FF FF 86 80 58 20 86 80 00 00 00
 		00 00 00 00 00 00 00
 
 Handle 0x0080, DMI type 192, 23 bytes
 OEM-specific Type
 	Header and Data:
-		C0 17 80 00 08 FF FF 86 80 36 20 86 80 36 20 00
+		C0 17 80 00 11 FF FF 86 80 58 20 86 80 00 00 00
 		00 00 00 00 00 00 00
 
 Handle 0x0081, DMI type 192, 23 bytes
 OEM-specific Type
 	Header and Data:
-		C0 17 81 00 11 FF FF 86 80 58 20 86 80 00 00 00
+		C0 17 81 00 11 FF FF 86 80 4C 20 86 80 00 00 00
 		00 00 00 00 00 00 00
 
-Handle 0x0082, DMI type 192, 23 bytes
+Handle 0x0082, DMI type 193, 230 bytes
 OEM-specific Type
 	Header and Data:
-		C0 17 82 00 11 FF FF 86 80 58 20 86 80 00 00 00
-		00 00 00 00 00 00 00
-
-Handle 0x0083, DMI type 192, 23 bytes
-OEM-specific Type
-	Header and Data:
-		C0 17 83 00 11 FF FF 86 80 4C 20 86 80 00 00 00
-		00 00 00 00 00 00 00
-
-Handle 0x0084, DMI type 193, 230 bytes
-OEM-specific Type
-	Header and Data:
-		C1 E6 84 00 01 01 16 00 00 00 47 65 6E 75 6E 74
+		C1 E6 82 00 01 01 16 00 00 00 47 65 6E 75 6E 74
 		65 6C 69 6E 65 49 57 06 05 00 00 08 20 00 FF FB
 		FE 77 FF FB EB BF 01 63 03 76 FF B5 F0 00 00 00
 		00 00 00 00 C3 00 00 00 00 00 00 00 00 00 00 00
@@ -1488,10 +1474,10 @@ OEM-specific Type
 	Strings:
 		CPU1
 
-Handle 0x0086, DMI type 193, 246 bytes
+Handle 0x0084, DMI type 193, 246 bytes
 OEM-specific Type
 	Header and Data:
-		C1 F6 86 00 01 02 01 00 00 00 0F 00 00 00 07 00
+		C1 F6 84 00 01 02 01 00 00 00 0F 00 00 00 07 00
 		00 00 00 00 00 00 02 00 00 00 C0 00 00 00 00 00
 		00 00 00 00 00 00 60 09 00 00 80 0C 00 00 64 00
 		00 00 00 00 00 00 60 09 00 00 80 0C 00 00 64 00
@@ -1510,10 +1496,10 @@ OEM-specific Type
 	Strings:
 		CPU1
 
-Handle 0x0088, DMI type 193, 230 bytes
+Handle 0x0086, DMI type 193, 230 bytes
 OEM-specific Type
 	Header and Data:
-		C1 E6 88 00 01 01 16 00 00 00 47 65 6E 75 6E 74
+		C1 E6 86 00 01 01 16 00 00 00 47 65 6E 75 6E 74
 		65 6C 69 6E 65 49 57 06 05 00 00 08 20 20 FF FB
 		FE 77 FF FB EB BF 01 63 03 76 FF B5 F0 00 00 00
 		00 00 00 00 C3 00 00 00 00 00 00 00 00 00 00 00
@@ -1531,10 +1517,10 @@ OEM-specific Type
 	Strings:
 		CPU2
 
-Handle 0x008A, DMI type 193, 246 bytes
+Handle 0x0088, DMI type 193, 246 bytes
 OEM-specific Type
 	Header and Data:
-		C1 F6 8A 00 01 02 01 00 00 00 0F 00 00 00 07 00
+		C1 F6 88 00 01 02 01 00 00 00 0F 00 00 00 07 00
 		00 00 00 00 00 00 02 00 00 00 C0 00 00 00 00 00
 		00 00 00 00 00 00 60 09 00 00 80 0C 00 00 64 00
 		00 00 00 00 00 00 60 09 00 00 80 0C 00 00 64 00
@@ -1553,10 +1539,32 @@ OEM-specific Type
 	Strings:
 		CPU2
 
+Handle 0x008A, DMI type 194, 27 bytes
+OEM-specific Type
+	Header and Data:
+		C2 1B 8A 00 01 11 01 02 01 E8 03 00 00 20 1C 02
+		03 00 00 00 00 00 00 00 00 00 04
+	Strings:
+		SATA Port 0
+		HGST HUS722T1TALA604
+		WCC6M1CALXXD
+		RAGNWA09
+
+Handle 0x008B, DMI type 194, 27 bytes
+OEM-specific Type
+	Header and Data:
+		C2 1B 8B 00 01 00 01 02 01 E8 03 00 00 20 1C 02
+		03 00 00 00 00 00 00 00 00 00 04
+	Strings:
+		SATA Port 1
+		HGST HUS722T1TALA604
+		WCC6M1CALFNX
+		RAGNWA09
+
 Handle 0x008C, DMI type 194, 27 bytes
 OEM-specific Type
 	Header and Data:
-		C2 1B 8C 00 01 00 01 02 01 E8 03 00 00 20 1C 02
+		C2 1B 8C 00 01 FF 01 02 01 E8 03 00 00 20 1C 02
 		03 00 00 00 00 00 00 00 00 00 04
 	Strings:
 		SATA Port 2
@@ -1567,18 +1575,40 @@ OEM-specific Type
 Handle 0x008D, DMI type 194, 27 bytes
 OEM-specific Type
 	Header and Data:
-		C2 1B 8D 00 01 11 01 02 01 E8 03 00 00 20 1C 02
+		C2 1B 8D 00 01 FF 01 02 01 E8 03 00 00 20 1C 02
 		03 00 00 00 00 00 00 00 00 00 04
 	Strings:
-		SATA Port 2
+		SATA Port 3
 		HGST HUS722T1TALA604
-		WCC6M1CAL8TC
+		WCC6M1VS6NR2
 		RAGNWA09
 
 Handle 0x008E, DMI type 194, 27 bytes
 OEM-specific Type
 	Header and Data:
-		C2 1B 8E 00 01 12 03 03 02 E0 01 00 00 00 00 02
+		C2 1B 8E 00 01 FF 01 02 01 E8 03 00 00 20 1C 02
+		03 00 00 00 00 00 00 00 00 00 04
+	Strings:
+		SATA Port 0
+		HGST HUS722T1TALA604
+		WCC6M1CAL50F
+		RAGNWA09
+
+Handle 0x008F, DMI type 194, 27 bytes
+OEM-specific Type
+	Header and Data:
+		C2 1B 8F 00 01 FF 01 02 01 E8 03 00 00 20 1C 02
+		03 00 00 00 00 00 00 00 00 00 04
+	Strings:
+		SATA Port 1
+		HGST HUS722T1TALA604
+		WCC6M5EN0SDC
+		RAGNWA09
+
+Handle 0x0090, DMI type 194, 27 bytes
+OEM-specific Type
+	Header and Data:
+		C2 1B 90 00 01 FF 03 03 02 E0 01 00 00 00 00 02
 		03 01 6F 12 63 22 6F 12 63 22 04
 	Strings:
 		NVMe NameSpace 1
@@ -1586,75 +1616,75 @@ OEM-specific Type
 		AA190102000000000047
 		R0802C0
 
-Handle 0x008F, DMI type 196, 5 bytes
+Handle 0x0091, DMI type 196, 5 bytes
 OEM-specific Type
 	Header and Data:
-		C4 05 8F 00 00
-
-Handle 0x0090, DMI type 197, 15 bytes
-OEM-specific Type
-	Header and Data:
-		C5 0F 90 00 21 00 00 00 00 00 15 00 00 00 A0
-
-Handle 0x0091, DMI type 197, 15 bytes
-OEM-specific Type
-	Header and Data:
-		C5 0F 91 00 25 00 00 00 00 00 15 00 00 00 A4
+		C4 05 91 00 00
 
 Handle 0x0092, DMI type 197, 15 bytes
 OEM-specific Type
 	Header and Data:
-		C5 0F 92 00 2B 00 00 00 00 00 15 00 00 00 A8
+		C5 0F 92 00 21 00 00 00 00 00 15 00 00 00 A0
 
 Handle 0x0093, DMI type 197, 15 bytes
 OEM-specific Type
 	Header and Data:
-		C5 0F 93 00 31 00 00 00 00 00 15 00 00 00 A0
+		C5 0F 93 00 25 00 00 00 00 00 15 00 00 00 A4
 
 Handle 0x0094, DMI type 197, 15 bytes
 OEM-specific Type
 	Header and Data:
-		C5 0F 94 00 35 00 00 00 00 00 15 00 00 00 A4
+		C5 0F 94 00 2B 00 00 00 00 00 15 00 00 00 A8
 
 Handle 0x0095, DMI type 197, 15 bytes
 OEM-specific Type
 	Header and Data:
-		C5 0F 95 00 3B 00 00 00 00 00 15 00 00 00 A8
+		C5 0F 95 00 31 00 00 00 00 00 15 00 00 00 A0
 
-Handle 0x0096, DMI type 200, 14 bytes
+Handle 0x0096, DMI type 197, 15 bytes
 OEM-specific Type
 	Header and Data:
-		C8 0E 96 00 01 00 53 00 00 00 57 00 01 00
+		C5 0F 96 00 35 00 00 00 00 00 15 00 00 00 A4
 
-Handle 0x0097, DMI type 200, 34 bytes
+Handle 0x0097, DMI type 197, 15 bytes
 OEM-specific Type
 	Header and Data:
-		C8 22 97 00 02 00 0A 00 FF 01 0B 00 FF 01 5C 00
+		C5 0F 97 00 3B 00 00 00 00 00 15 00 00 00 A8
+
+Handle 0x0098, DMI type 200, 14 bytes
+OEM-specific Type
+	Header and Data:
+		C8 0E 98 00 01 00 53 00 00 00 57 00 01 00
+
+Handle 0x0099, DMI type 200, 34 bytes
+OEM-specific Type
+	Header and Data:
+		C8 22 99 00 02 00 0A 00 FF 01 0B 00 FF 01 5C 00
 		FF 01 5D 00 FF 02 5E 00 FF 03 60 00 FF 01 61 00
 		FF 02
 
-Handle 0x0098, DMI type 200, 54 bytes
+Handle 0x009A, DMI type 200, 54 bytes
 OEM-specific Type
 	Header and Data:
-		C8 36 98 00 03 00 21 00 00 00 23 00 00 02 25 00
+		C8 36 9A 00 03 00 21 00 00 00 23 00 00 02 25 00
 		00 04 29 00 00 06 2B 00 00 08 2D 00 00 0A 31 00
 		01 00 33 00 01 02 35 00 01 04 39 00 01 06 3B 00
 		01 08 3D 00 01 0A
 
-Handle 0x0099, DMI type 210, 48 bytes
+Handle 0x009B, DMI type 210, 48 bytes
 OEM-specific Type
 	Header and Data:
-		D2 30 99 00 00 01 01 00 00 00 00 00 00 00 00 00
+		D2 30 9B 00 00 01 01 00 00 00 00 00 00 00 00 00
 		00 00 00 00 0A 18 00 00 0C 00 69 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 
-Handle 0x009A, DMI type 210, 48 bytes
+Handle 0x009C, DMI type 210, 48 bytes
 OEM-specific Type
 	Header and Data:
-		D2 30 9A 00 01 01 01 00 00 00 00 00 00 00 00 00
+		D2 30 9C 00 01 01 01 00 00 00 00 00 00 00 00 00
 		00 00 00 00 0A 18 00 00 0C 00 69 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 
-Handle 0x009B, DMI type 127, 4 bytes
+Handle 0x009D, DMI type 127, 4 bytes
 End Of Table
 

@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0x8F9AE000.
@@ -472,10 +472,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Xeon(R) CPU E3-1225 v5 @ 3.30GHz
-	Voltage: 1.2 V
+	Voltage: 1.1 V
 	External Clock: 100 MHz
 	Max Speed: 4500 MHz
-	Current Speed: 3400 MHz
+	Current Speed: 3300 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0027
@@ -616,7 +616,7 @@ System Event Log
 	Access Method: Memory-mapped physical 32-bit address
 	Access Address: 0xFFA50000
 	Status: Valid, Not Full
-	Change Token: 0x000000B3
+	Change Token: 0x000003A1
 	Header Format: Type 1
 	Supported Log Type Descriptors: 25
 	Descriptor 1: Single-bit ECC memory error
@@ -729,48 +729,90 @@ OEM-specific Type
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x003E, DMI type 221, 26 bytes
-HPE BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:04:01:00:08:00
-	NIC 2: PCI device 00:00.2, MAC address 00:00:00:D4:00:03
+OEM-specific Type
+	Header and Data:
+		DD 1A 3E 00 03 01 00 04 01 00 08 00 02 00 00 00
+		00 D4 00 03 00 00 05 00 00 00
+	Strings:
+		Reference Code - CPU
+		uCode Version
+		TXT ACM version
 
 Handle 0x003F, DMI type 221, 26 bytes
-HPE BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.3, MAC address 00:04:01:00:08:00
-	NIC 2: PCI device 00:00.2, MAC address 0B:00:00:08:00:03
+OEM-specific Type
+	Header and Data:
+		DD 1A 3F 00 03 01 00 04 01 00 08 00 02 00 0B 00
+		00 08 00 03 04 0B 06 1B C0 0C
+	Strings:
+		Reference Code - ME 11.0
+		MEBx version
+		ME Firmware Version
+		Corporate SKU
 
 Handle 0x0040, DMI type 221, 68 bytes
-HPE BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:01.1, MAC address 00:04:01:00:08:00
-	NIC 2: PCI device 03:00.2, MAC address FF:FF:FF:FF:FF:04
-	NIC 3: PCI device ff:00.0, MAC address FF:FF:31:00:05:00
-	NIC 4: Not Installed
-	NIC 5: Not Installed
-	NIC 6: Disabled
-	NIC 7: Disabled
-	NIC 8: PCI device 0a:00.0, MAC address 00:34:00:00:00:00
+OEM-specific Type
+	Header and Data:
+		DD 44 40 00 09 01 00 04 01 00 08 00 02 03 FF FF
+		FF FF FF 04 00 FF FF FF 31 00 05 00 FF FF FF 31
+		00 06 00 FF FF FF FF FF 07 00 3E 00 00 00 00 08
+		00 34 00 00 00 00 09 00 3E 00 00 00 00 0A 00 34
+		00 00 00 00
+	Strings:
+		Reference Code - SKL PCH
+		PCH-CRID Status
+		Disabled
+		PCH-CRID Original Value
+		PCH-CRID New Value
+		OPROM - RST - RAID
+		SKL PCH H Bx Hsio Version
+		SKL PCH H Dx Hsio Version
+		SKL PCH LP Bx Hsio Version
+		SKL PCH LP Cx Hsio Version
 
 Handle 0x0041, DMI type 221, 54 bytes
-HPE BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:00.7, MAC address 00:04:01:00:08:00
-	NIC 2: PCI device 00:00.2, MAC address 02:01:00:00:00:03
-	NIC 3: PCI device 04:00.0, MAC address 01:00:00:00:04:05
-	NIC 4: Not Installed
-	NIC 5: Not Installed
-	NIC 6: PCI device 07:1f.7, MAC address 00:08:00:FF:FF:FF
+OEM-specific Type
+	Header and Data:
+		DD 36 41 00 07 01 00 04 01 00 08 00 02 00 02 01
+		00 00 00 03 00 04 01 00 00 00 04 05 FF FF FF FF
+		FF 06 00 FF FF FF 07 00 07 00 FF FF FF 07 00 08
+		00 FF FF FF FF FF
+	Strings:
+		Reference Code - SA - System Agent
+		Reference Code - MRC
+		SA - PCIe Version
+		SA-CRID Status
+		Disabled
+		SA-CRID Original Value
+		SA-CRID New Value
+		OPROM - VBIOS
 
 Handle 0x0042, DMI type 221, 96 bytes
-HPE BIOS iSCSI NIC PCI and MAC Information
-	NIC 1: PCI device 01:01.5, MAC address 00:00:00:00:A6:00
-	NIC 2: PCI device 00:00.2, MAC address FF:FF:FF:FF:FF:03
-	NIC 3: PCI device ff:00.4, MAC address FF:FF:FF:FF:05:06
-	NIC 4: Not Installed
-	NIC 5: Not Installed
-	NIC 6: Disabled
-	NIC 7: Not Installed
-	NIC 8: PCI device 0c:00.0, MAC address 00:FF:FF:FF:FF:FF
-	NIC 9: PCI device 00:01.5, MAC address 02:00:00:00:00:0E
-	NIC 10: PCI device ff:00.0, MAC address FF:FF:FF:FF:0F:00
-	NIC 11: Not Installed
+OEM-specific Type
+	Header and Data:
+		DD 60 42 00 0D 01 00 00 00 00 A6 00 02 00 FF FF
+		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
+		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
+		00 FF FF FF FF FF 0B 00 FF FF 00 00 00 0C 00 FF
+		FF FF FF FF 0D 00 02 00 00 00 00 0E 00 FF FF FF
+		FF FF 0F 00 FF FF FF FF FF 10 11 01 02 02 01 01
+	Strings:
+		Lan Phy Version
+		Sensor Firmware Version
+		Debug Mode Status
+		Disabled
+		Performance Mode Status
+		Disabled
+		Debug Use USB(Disabled:Serial)
+		Disabled
+		ICC Overclocking Version
+		UNDI Version
+		EC FW Version
+		GOP Version
+		BIOS Guard Version
+		Base EC FW Version
+		EC-EC Protocol Version
+		Royal Park Version
+		BP1.2.2.1_RP01
 
 Handle 0x0043, DMI type 136, 6 bytes
 OEM-specific Type
@@ -801,12 +843,18 @@ Group Associations
 		0x0000 (OEM-specific)
 
 Handle 0x0047, DMI type 219, 81 bytes
-HPE ProLiant Information
-	Power Features: 0x45010301
-	Omega Features: 0x46900002
-	Misc. Features: 0x00000000
-		iCRU: No
-		UEFI: No
+OEM-specific Type
+	Header and Data:
+		DB 51 47 00 01 03 01 45 02 00 90 46 81 10 8A 30
+		00 00 00 00 40 08 00 00 00 00 00 00 00 00 40 02
+		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00
+	Strings:
+		MEI1
+		MEI2
+		MEI3
 
 Handle 0x0048, DMI type 127, 4 bytes
 End Of Table

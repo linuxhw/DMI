@@ -1,0 +1,677 @@
+# dmidecode 3.2
+Getting SMBIOS data from sysfs.
+SMBIOS 2.5 present.
+53 structures occupying 2928 bytes.
+Table at 0x000F0530.
+
+Handle 0x0000, DMI type 0, 24 bytes
+BIOS Information
+	Vendor: HP
+	Version: O09
+	Release Date: 07/19/2007
+	Address: 0xE61A0
+	Runtime Size: 106080 bytes
+	ROM Size: 1024 kB
+	Characteristics:
+		PCI is supported
+		PNP is supported
+		BIOS is upgradeable
+		BIOS shadowing is allowed
+		ESCD support is available
+		Boot from CD is supported
+		Selectable boot is supported
+		BIOS ROM is socketed
+		EDD is supported
+		5.25"/360 kB floppy services are supported (int 13h)
+		5.25"/1.2 MB floppy services are supported (int 13h)
+		3.5"/720 kB floppy services are supported (int 13h)
+		3.5"/2.88 MB floppy services are supported (int 13h)
+		Print screen service is supported (int 5h)
+		8042 keyboard services are supported (int 9h)
+		Serial services are supported (int 14h)
+		Printer services are supported (int 17h)
+		ACPI is supported
+		USB legacy is supported
+		BIOS boot specification is supported
+		Function key-initiated network boot is supported
+	BIOS Revision: 3.10
+	Firmware Revision: 1.40
+
+Handle 0x0001, DMI type 1, 27 bytes
+System Information
+	Manufacturer: HP
+	Product Name: ProLiant DL145 G3
+	Version:  
+	Serial Number: --
+	UUID: --
+	Wake-up Type: Power Switch
+	SKU Number:  
+	Family:  
+
+Handle 0x0002, DMI type 2, 14 bytes
+Base Board Information
+	Manufacturer: NEWISYS
+	Product Name:  
+	Version: rA3
+	Serial Number: --
+	Asset Tag: --
+	97946E993916094B22613E03B8339091
+		Board is a hosting board
+		Board is replaceable
+	Location In Chassis: Bottom
+	Chassis Handle: 0x0003
+	Type: Motherboard
+
+Handle 0x0003, DMI type 3, 19 bytes
+Chassis Information
+	Manufacturer: HP
+	Type: Rack Mount Chassis
+	Lock: Not Present
+	Version:  
+	Serial Number: --
+	Asset Tag: --
+	F6698203954ED9B7A20341549F7CA083
+	Power Supply State: Unknown
+	Thermal State: Unknown
+	Security Status: Unknown
+	OEM Information: 0x00000000
+	Height: 1 U
+	Number Of Power Cords: 1
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPU0
+	Type: Central Processor
+	Family: Dual-Core Opteron
+	Manufacturer: AMD
+	ID: 13 0F 04 00 FF FB 8B 17
+	Signature: Family 15, Model 65, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: Opteron Rev F
+	Voltage: 1.2 V
+	External Clock: 200 MHz
+	Max Speed: 2600 MHz
+	Current Speed: 2600 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 939
+	L1 Cache Handle: 0x0006
+	L2 Cache Handle: 0x0007
+	L3 Cache Handle: Not Provided
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Not Specified
+	Core Count: 2
+	Core Enabled: 2
+	Thread Count: 2
+	Characteristics:
+		64-bit capable
+
+Handle 0x0005, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPU1
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: AMD
+	ID: 00 00 00 00 00 00 00 00
+	Version: Opteron Rev F
+	Voltage: 1.2 V
+	External Clock: 200 MHz
+	Max Speed: 3000 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: Socket 939
+	L1 Cache Handle: 0x0008
+	L2 Cache Handle: 0x0009
+	L3 Cache Handle: Not Provided
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Not Specified
+	Core Count: 2
+	Core Enabled: 2
+	Thread Count: 2
+	Characteristics:
+		64-bit capable
+
+Handle 0x0006, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: Processor 0 Internal L1 Cache
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Varies With Memory Address
+	Location: Internal
+	Installed Size: 256 kB
+	Maximum Size: 256 kB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Unknown
+	System Type: Unknown
+	Associativity: 2-way Set-associative
+
+Handle 0x0007, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: Processor 0 Internal L2 Cache
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Varies With Memory Address
+	Location: Internal
+	Installed Size: 2048 kB
+	Maximum Size: 2048 kB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 16-way Set-associative
+
+Handle 0x0008, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: Processor 1 Internal L1 Cache
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Varies With Memory Address
+	Location: Internal
+	Installed Size: 256 kB
+	Maximum Size: 256 kB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Unknown
+	System Type: Unknown
+	Associativity: 2-way Set-associative
+
+Handle 0x0009, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: Processor 1 Internal L2 Cache
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Varies With Memory Address
+	Location: Internal
+	Installed Size: 2048 kB
+	Maximum Size: 2048 kB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 16-way Set-associative
+
+Handle 0x000A, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J4 Top
+	Internal Connector Type: PS/2
+	External Reference Designator: PS/2 Mouse
+	External Connector Type: PS/2
+	Port Type: Mouse Port
+
+Handle 0x000B, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J4 Bottom
+	Internal Connector Type: PS/2
+	External Reference Designator: PS/2 Keyboard
+	External Connector Type: PS/2
+	Port Type: Keyboard Port
+
+Handle 0x000C, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J3 Left
+	Internal Connector Type: RJ-45
+	External Reference Designator: LAN 1
+	External Connector Type: RJ-45
+	Port Type: Network Port
+
+Handle 0x000D, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J3 Right
+	Internal Connector Type: RJ-45
+	External Reference Designator: LAN 2
+	External Connector Type: RJ-45
+	Port Type: Network Port
+
+Handle 0x000E, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J5 Top
+	Internal Connector Type: RJ-45
+	External Reference Designator: BMC LAN
+	External Connector Type: RJ-45
+	Port Type: Network Port
+
+Handle 0x000F, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J5 Middle
+	Internal Connector Type: Access Bus (USB)
+	External Reference Designator: Rear USB 1
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0010, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J5 Bottom
+	Internal Connector Type: Access Bus (USB)
+	External Reference Designator: Rear USB 2
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0011, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J1
+	Internal Connector Type: DB-15 female
+	External Reference Designator: Video
+	External Connector Type: DB-15 female
+	Port Type: Video Port
+
+Handle 0x0012, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J2
+	Internal Connector Type: DB-9 male
+	External Reference Designator: COM A
+	External Connector Type: DB-9 male
+	Port Type: Serial Port 16550A Compatible
+
+Handle 0x0013, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J2 Top
+	Internal Connector Type: Access Bus (USB)
+	External Reference Designator: Front USB 1
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0014, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J2 Bottom
+	Internal Connector Type: Access Bus (USB)
+	External Reference Designator: Front USB 2
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0015, DMI type 9, 13 bytes
+System Slot Information
+	Designation: PCI-E x16 Slot
+	Type: x16 PCI Express
+	Current Usage: In Use
+	Length: Long
+	ID: 1
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+
+Handle 0x0016, DMI type 9, 13 bytes
+System Slot Information
+	Designation: HTX Slot
+	Type: x16 Other
+	Current Usage: Available
+	Length: Long
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		SMBus signal is supported
+
+Handle 0x0017, DMI type 9, 13 bytes
+System Slot Information
+	Designation: PCI-E x4 Slot
+	Type: x4 PCI Express
+	Current Usage: Available
+	Length: Short
+	ID: 2
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+
+Handle 0x0018, DMI type 9, 13 bytes
+System Slot Information
+	Designation: PCIX-133 Slot
+	Type: 64-bit PCI-X
+	Current Usage: Available
+	Length: Short
+	ID: 3
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+
+Handle 0x0019, DMI type 11, 5 bytes
+OEM Strings
+	String 1: *
+
+Handle 0x001A, DMI type 12, 5 bytes
+System Configuration Options
+	Option 1: <?xml version="1.0"?><BIOSXML ver="1.0"><SETUP><MENU title="Hidden" menutype="Hidden"><CFGNODE fieldtype="INFO" name="SetupDiagBootModeInf"><INFO name="infoDiagBootMode" value="0x00"/></CFGNODE><CFGNODE fieldtype="PICK" name="DiagBootReqCfg"><CMOS name="cmosDiagBootReq" bitlen="1" addr="0x033E" bootvalue="0x00"/></CFGNODE></MENU><MENU title="Hidden" menutype="Hidden"><CFGNODE fieldtype="PICK" name="FactoryBootReqCfg"><CMOS name="cmosFactoryBootReq" bitlen="1" addr="0x033D" bootvalue="0x00"/></CFGNODE></MENU><MENU title="Hidden" menutype="Hidden"><CFGNODE fieldtype="INFO" name="SetupConRedirInf"><INFO name="infoConRedir" value="0x00"/></CFGNODE><CFGNODE fieldtype="PICK" name="ConRedirCfg"><CMOS name="cmosConRedir" bitlen="1" addr="0x062B" bootvalue="0x00"/></CFGNODE></MENU><MENU title="Hidden" menutype="Hidden"><CFGNODE fieldtype="PICK" name="BADDIMMInfo"><CMOS name="cmosBadDIMMInfo" addr="0x0348"/></CFGNODE></MENU></SETUP></BIOSXML>
+
+Handle 0x001B, DMI type 15, 29 bytes
+System Event Log
+	Area Length: 32 bytes
+	Header Start Offset: 0x0000
+	Header Length: 16 bytes
+	Data Start Offset: 0x0010
+	Access Method: General-purpose non-volatile data functions
+	Access Address: 0x0000
+	Status: Valid, Not Full
+	Change Token: 0x00000090
+	Header Format: Type 1
+	Supported Log Type Descriptors: 3
+	Descriptor 1: POST error
+	Data Format 1: POST results bitmap
+	Descriptor 2: Single-bit ECC memory error
+	Data Format 2: Multiple-event
+	Descriptor 3: Multi-bit ECC memory error
+	Data Format 3: Multiple-event
+
+Handle 0x001C, DMI type 16, 15 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: Multi-bit ECC
+	Maximum Capacity: 16 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 4
+
+Handle 0x001D, DMI type 16, 15 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: Multi-bit ECC
+	Maximum Capacity: 16 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 4
+
+Handle 0x001E, DMI type 17, 27 bytes
+Memory Device
+	Array Handle: 0x001C
+	Error Information Handle: No Error
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 1024 MB
+	Form Factor: DIMM
+	Set: 1
+	Locator: DIMM1
+	Bank Locator: CPU0
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 333 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 4D33                                
+
+Handle 0x001F, DMI type 17, 27 bytes
+Memory Device
+	Array Handle: 0x001C
+	Error Information Handle: No Error
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 1024 MB
+	Form Factor: DIMM
+	Set: 1
+	Locator: DIMM2
+	Bank Locator: CPU0
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 333 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 4D33                                
+
+Handle 0x0020, DMI type 17, 27 bytes
+Memory Device
+	Array Handle: 0x001C
+	Error Information Handle: No Error
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 1024 MB
+	Form Factor: DIMM
+	Set: 2
+	Locator: DIMM3
+	Bank Locator: CPU0
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 333 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 4D33                                
+
+Handle 0x0021, DMI type 17, 27 bytes
+Memory Device
+	Array Handle: 0x001C
+	Error Information Handle: No Error
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 1024 MB
+	Form Factor: DIMM
+	Set: 2
+	Locator: DIMM4
+	Bank Locator: CPU0
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 333 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 4D33                                
+
+Handle 0x0022, DMI type 17, 27 bytes
+Memory Device
+	Array Handle: 0x001D
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: 1
+	Locator: DIMM5
+	Bank Locator: CPU1
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Not Specified
+
+Handle 0x0023, DMI type 17, 27 bytes
+Memory Device
+	Array Handle: 0x001D
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: 1
+	Locator: DIMM6
+	Bank Locator: CPU1
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Not Specified
+
+Handle 0x0024, DMI type 17, 27 bytes
+Memory Device
+	Array Handle: 0x001D
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: 2
+	Locator: DIMM7
+	Bank Locator: CPU1
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Not Specified
+
+Handle 0x0025, DMI type 17, 27 bytes
+Memory Device
+	Array Handle: 0x001D
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: Unknown
+	Set: 2
+	Locator: DIMM8
+	Bank Locator: CPU1
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: --
+	Asset Tag: --
+	Part Number: Not Specified
+
+Handle 0x0026, DMI type 19, 15 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x00121FFFFFF
+	Range Size: 4640 MB
+	Physical Array Handle: 0x001C
+	Partition Width: 2
+
+Handle 0x0027, DMI type 19, 15 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00003FFFC00
+	Ending Address: 0x00003FFFFFF
+	Range Size: 1 kB
+	Physical Array Handle: 0x001D
+	Partition Width: 2
+
+Handle 0x0028, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
+	Physical Device Handle: 0x001E
+	Memory Array Mapped Address Handle: 0x0026
+	Partition Row Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x0029, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00040000000
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 1 GB
+	Physical Device Handle: 0x001F
+	Memory Array Mapped Address Handle: 0x0026
+	Partition Row Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x002A, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00080000000
+	Ending Address: 0x000BFFFFFFF
+	Range Size: 1 GB
+	Physical Device Handle: 0x0020
+	Memory Array Mapped Address Handle: 0x0026
+	Partition Row Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x002B, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x000C0000000
+	Ending Address: 0x00121FFFFFF
+	Range Size: 1568 MB
+	Physical Device Handle: 0x0021
+	Memory Array Mapped Address Handle: 0x0026
+	Partition Row Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x002C, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x000FFFFFC00
+	Ending Address: 0x00121FFFFFF
+	Range Size: 557057 kB
+	Physical Device Handle: 0x0022
+	Memory Array Mapped Address Handle: 0x0027
+	Partition Row Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x002D, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x000FFFFFC00
+	Ending Address: 0x00121FFFFFF
+	Range Size: 557057 kB
+	Physical Device Handle: 0x0023
+	Memory Array Mapped Address Handle: 0x0027
+	Partition Row Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x002E, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x000FFFFFC00
+	Ending Address: 0x00121FFFFFF
+	Range Size: 557057 kB
+	Physical Device Handle: 0x0024
+	Memory Array Mapped Address Handle: 0x0027
+	Partition Row Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x002F, DMI type 20, 19 bytes
+Memory Device Mapped Address
+	Starting Address: 0x000FFFFFC00
+	Ending Address: 0x00121FFFFFF
+	Range Size: 557057 kB
+	Physical Device Handle: 0x0025
+	Memory Array Mapped Address Handle: 0x0027
+	Partition Row Position: 1
+	Interleaved Data Depth: 1
+
+Handle 0x0030, DMI type 32, 11 bytes
+System Boot Information
+	Status: No errors detected
+
+Handle 0x0031, DMI type 38, 18 bytes
+IPMI Device Information
+	Interface Type: KCS (Keyboard Control Style)
+	Specification Version: 2.0
+	I2C Slave Address: 0x10
+	NV Storage Device Address: 0
+	Base Address: 0x0000000000000CA2 (I/O)
+	Register Spacing: Successive Byte Boundaries
+
+Handle 0x0032, DMI type 195, 5 bytes
+OEM-specific Type
+	Header and Data:
+		C3 05 32 00 01
+	Strings:
+		CPQ082D
+
+Handle 0x0033, DMI type 209, 20 bytes
+HP BIOS PXE NIC PCI and MAC Information
+	NIC 1: PCI device 0a:04.0, MAC address 00:1E:0B:28:1A:24
+	NIC 2: PCI device 0a:04.1, MAC address 00:1E:0B:28:6F:2E
+
+Handle 0x0034, DMI type 127, 4 bytes
+End Of Table
+

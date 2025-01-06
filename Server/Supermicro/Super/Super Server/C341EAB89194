@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
-Table at 0x000EA000.
+Table at 0x000EC9B0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
@@ -272,7 +272,8 @@ Port Connector Information
 Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCH SLOT1 PCI-E 2.0 X4(IN X8)
-	Type: x4 PCI Express 2 x8
+	Type: PCI Express 2 x8
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -280,12 +281,13 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:06:00.0
+	Bus Address: 0000:08:00.0
 
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: CPU SLOT2 PCI-E 3.0 X4(IN X8)
-	Type: x4 PCI Express 3 x8
+	Type: PCI Express 3 x8
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -298,7 +300,8 @@ System Slot Information
 Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: CPU SLOT3 PCI-E 3.0 X8
-	Type: x8 PCI Express 3 x8
+	Type: PCI Express 3 x8
+	Data Bus Width: 8x or x8
 	Current Usage: Available
 	Length: Short
 	ID: 3
@@ -311,7 +314,8 @@ System Slot Information
 Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: CPU SLOT4 PCI-E 3.0 X8(IN X16)
-	Type: x8 PCI Express 3 x16
+	Type: PCI Express 3 x16
+	Data Bus Width: 8x or x8
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -324,7 +328,8 @@ System Slot Information
 Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: CPU SLOT5 PCI-E 3.0 X8
-	Type: x8 PCI Express 3 x8
+	Type: PCI Express 3 x8
+	Data Bus Width: 8x or x8
 	Current Usage: Available
 	Length: Short
 	ID: 5
@@ -337,28 +342,30 @@ System Slot Information
 Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: CPU SLOT6 PCI-E 3.0 X16
-	Type: x16 PCI Express 3 x16
-	Current Usage: In Use
+	Type: PCI Express 3 x16
+	Data Bus Width: 16x or x16
+	Current Usage: Available
 	Length: Long
 	ID: 6
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:04:00.0
+	Bus Address: 0000:06:00.0
 
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: CPU SLOT7 PCI-E 3.0 X8
-	Type: x8 PCI Express 3 x8
-	Current Usage: Available
+	Type: PCI Express 3 x8
+	Data Bus Width: 8x or x8
+	Current Usage: In Use
 	Length: Short
 	ID: 7
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:05:00.0
+	Bus Address: 0000:07:00.0
 
 Handle 0x0023, DMI type 11, 5 bytes
 OEM Strings
@@ -827,7 +834,7 @@ Onboard Device
 	Type: Video
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:0a:00.0
+	Bus Address: 0000:0c:00.0
 
 Handle 0x0056, DMI type 41, 11 bytes
 Onboard Device
@@ -835,7 +842,7 @@ Onboard Device
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 1
-	Bus Address: 0000:07:00.0
+	Bus Address: 0000:09:00.0
 
 Handle 0x0057, DMI type 41, 11 bytes
 Onboard Device
@@ -843,7 +850,7 @@ Onboard Device
 	Type: Ethernet
 	Status: Enabled
 	Type Instance: 2
-	Bus Address: 0000:08:00.0
+	Bus Address: 0000:0a:00.0
 
 Handle 0x0058, DMI type 38, 18 bytes
 IPMI Device Information
@@ -859,9 +866,9 @@ Physical Memory Array
 	Location: System Board Or Motherboard
 	Use: System Memory
 	Error Correction Type: Multi-bit ECC
-	Maximum Capacity: 512 GB
+	Maximum Capacity: 256 GB
 	Error Information Handle: Not Provided
-	Number Of Devices: 8
+	Number Of Devices: 4
 
 Handle 0x005A, DMI type 17, 40 bytes
 Memory Device
@@ -915,33 +922,62 @@ Handle 0x005C, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0059
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMMB1
 	Bank Locator: P0_Node0_Channel1_Dimm0
 	Type: DDR4
 	Type Detail: Synchronous
+	Speed: 2133 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M393A2G40DB0-CPB   
+	Rank: 2
+	Configured Memory Speed: 1866 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
 Handle 0x005D, DMI type 17, 40 bytes
 Memory Device
 	Array Handle: 0x0059
 	Error Information Handle: Not Provided
-	Total Width: Unknown
-	Data Width: Unknown
-	Size: No Module Installed
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 16 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMMB2
 	Bank Locator: P0_Node0_Channel1_Dimm1
 	Type: DDR4
 	Type Detail: Synchronous
+	Speed: 2133 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M393A2G40DB0-CPB   
+	Rank: 2
+	Configured Memory Speed: 1866 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
 
-Handle 0x005E, DMI type 17, 40 bytes
+Handle 0x005E, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: Multi-bit ECC
+	Maximum Capacity: 256 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 4
+
+Handle 0x005F, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0059
+	Array Handle: 0x005E
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -953,9 +989,9 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 
-Handle 0x005F, DMI type 17, 40 bytes
+Handle 0x0060, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0059
+	Array Handle: 0x005E
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -967,9 +1003,9 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 
-Handle 0x0060, DMI type 17, 40 bytes
+Handle 0x0061, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0059
+	Array Handle: 0x005E
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -981,9 +1017,9 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 
-Handle 0x0061, DMI type 17, 40 bytes
+Handle 0x0062, DMI type 17, 40 bytes
 Memory Device
-	Array Handle: 0x0059
+	Array Handle: 0x005E
 	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
@@ -995,33 +1031,51 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 
-Handle 0x0062, DMI type 19, 31 bytes
+Handle 0x0063, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 32 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Array Handle: 0x0059
-	Partition Width: 2
+	Partition Width: 4
 
-Handle 0x0063, DMI type 20, 35 bytes
+Handle 0x0064, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
 	Ending Address: 0x003FFFFFFFF
 	Range Size: 16 GB
 	Physical Device Handle: 0x005A
-	Memory Array Mapped Address Handle: 0x0062
+	Memory Array Mapped Address Handle: 0x0063
 	Partition Row Position: 1
 
-Handle 0x0064, DMI type 20, 35 bytes
+Handle 0x0065, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00400000000
 	Ending Address: 0x007FFFFFFFF
 	Range Size: 16 GB
 	Physical Device Handle: 0x005B
-	Memory Array Mapped Address Handle: 0x0062
+	Memory Array Mapped Address Handle: 0x0063
 	Partition Row Position: 1
 
-Handle 0x0065, DMI type 15, 73 bytes
+Handle 0x0066, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00800000000
+	Ending Address: 0x00BFFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x005C
+	Memory Array Mapped Address Handle: 0x0063
+	Partition Row Position: 1
+
+Handle 0x0067, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00C00000000
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x005D
+	Memory Array Mapped Address Handle: 0x0063
+	Partition Row Position: 1
+
+Handle 0x0068, DMI type 15, 73 bytes
 System Event Log
 	Area Length: 65535 bytes
 	Header Start Offset: 0x0000
@@ -1084,14 +1138,14 @@ System Event Log
 	Descriptor 25: OEM-specific
 	Data Format 25: OEM-specific
 
-Handle 0x0066, DMI type 7, 19 bytes
+Handle 0x0069, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L1
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 384 kB
-	Maximum Size: 384 kB
+	Installed Size: 768 kB
+	Maximum Size: 768 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -1100,14 +1154,14 @@ Cache Information
 	System Type: Other
 	Associativity: 8-way Set-associative
 
-Handle 0x0067, DMI type 7, 19 bytes
+Handle 0x006A, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L2
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1536 kB
-	Maximum Size: 1536 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -1116,14 +1170,14 @@ Cache Information
 	System Type: Unified
 	Associativity: 8-way Set-associative
 
-Handle 0x0068, DMI type 7, 19 bytes
+Handle 0x006B, DMI type 7, 19 bytes
 Cache Information
 	Socket Designation: CPU Internal L3
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 15 MB
-	Maximum Size: 15 MB
+	Installed Size: 30 MB
+	Maximum Size: 30 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -1132,7 +1186,7 @@ Cache Information
 	System Type: Unified
 	Associativity: 20-way Set-associative
 
-Handle 0x0069, DMI type 4, 42 bytes
+Handle 0x006C, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: CPU1
 	Type: Central Processor
@@ -1169,22 +1223,22 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz
+	Version: Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
 	Voltage: 1.8 V
 	External Clock: 100 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 2400 MHz
+	Current Speed: 2600 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA2011-3
-	L1 Cache Handle: 0x0066
-	L2 Cache Handle: 0x0067
-	L3 Cache Handle: 0x0068
+	L1 Cache Handle: 0x0069
+	L2 Cache Handle: 0x006A
+	L3 Cache Handle: 0x006B
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
-	Core Count: 6
-	Core Enabled: 6
-	Thread Count: 12
+	Core Count: 12
+	Core Enabled: 12
+	Thread Count: 24
 	Characteristics:
 		64-bit capable
 		Multi-Core
@@ -1193,13 +1247,13 @@ Processor Information
 		Enhanced Virtualization
 		Power/Performance Control
 
-Handle 0x006A, DMI type 13, 22 bytes
+Handle 0x006D, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x006B, DMI type 127, 4 bytes
+Handle 0x006E, DMI type 127, 4 bytes
 End Of Table
 

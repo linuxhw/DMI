@@ -1,14 +1,14 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-93 structures occupying 5134 bytes.
+93 structures occupying 5136 bytes.
 Table at 0x000EC0C0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: S2MS3C01
-	Release Date: 04/24/2014
+	Version: S2MS3B12
+	Release Date: 07/19/2018
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8 MB
@@ -84,8 +84,8 @@ Processor Information
 	Type: Central Processor
 	Family: Xeon
 	Manufacturer: Intel
-	ID: D7 06 02 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 45, Stepping 7
+	ID: E4 06 03 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 62, Stepping 4
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -115,11 +115,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+	Version: Intel(R) Xeon(R) CPU E5-2670 v2 @ 2.50GHz
 	Voltage: 0.8 V
 	External Clock: 100 MHz
-	Max Speed: 2000 MHz
-	Current Speed: 2000 MHz
+	Max Speed: 2500 MHz
+	Current Speed: 2500 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA2011
 	L1 Cache Handle: 0x0005
@@ -128,9 +128,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
-	Core Count: 6
-	Core Enabled: 6
-	Thread Count: 12
+	Core Count: 10
+	Core Enabled: 10
+	Thread Count: 20
 	Characteristics:
 		64-bit capable
 		Multi-Core
@@ -145,8 +145,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 384 kB
-	Maximum Size: 384 kB
+	Installed Size: 640 kB
+	Maximum Size: 640 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -161,8 +161,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1536 kB
-	Maximum Size: 1536 kB
+	Installed Size: 2560 kB
+	Maximum Size: 2560 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -177,8 +177,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 15 MB
-	Maximum Size: 15 MB
+	Installed Size: 25 MB
+	Maximum Size: 25 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -193,8 +193,8 @@ Processor Information
 	Type: Central Processor
 	Family: Xeon
 	Manufacturer: Intel
-	ID: D7 06 02 00 FF FB EB BF
-	Signature: Type 0, Family 6, Model 45, Stepping 7
+	ID: E4 06 03 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 62, Stepping 4
 	Flags:
 		FPU (Floating-point unit on-chip)
 		VME (Virtual mode extension)
@@ -224,11 +224,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+	Version: Intel(R) Xeon(R) CPU E5-2670 v2 @ 2.50GHz
 	Voltage: 0.8 V
 	External Clock: 100 MHz
-	Max Speed: 2000 MHz
-	Current Speed: 2000 MHz
+	Max Speed: 2500 MHz
+	Current Speed: 2500 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket LGA2011
 	L1 Cache Handle: 0x0009
@@ -237,9 +237,9 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: Not Specified
-	Core Count: 6
-	Core Enabled: 6
-	Thread Count: 12
+	Core Count: 10
+	Core Enabled: 10
+	Thread Count: 20
 	Characteristics:
 		64-bit capable
 		Multi-Core
@@ -254,8 +254,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 1
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 384 kB
-	Maximum Size: 384 kB
+	Installed Size: 640 kB
+	Maximum Size: 640 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -270,8 +270,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 1536 kB
-	Maximum Size: 1536 kB
+	Installed Size: 2560 kB
+	Maximum Size: 2560 kB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -286,8 +286,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 15 MB
-	Maximum Size: 15 MB
+	Installed Size: 25 MB
+	Maximum Size: 25 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -707,7 +707,8 @@ Port Connector Information
 Handle 0x003F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE Slot1 - Riser
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -754,8 +755,8 @@ Physical Memory Array
 Handle 0x0043, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x007FFEFFFFF
+	Range Size: 32767 MB
 	Physical Array Handle: 0x0042
 	Partition Width: 1
 
@@ -765,13 +766,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelA_Dimm1
 	Bank Locator: ChannelA
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
+	Speed: 1866 MT/s
+	Manufacturer: Micron                     
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 72JSZS4G72L1G9E2A7    
+	Rank: 4
+	Configured Memory Speed: 1866 MT/s
 
 Handle 0x0045, DMI type 17, 34 bytes
 Memory Device
@@ -793,20 +801,13 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelB_Dimm1
 	Bank Locator: ChannelB
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1333 MT/s
-	Manufacturer: Micron                     
-	Serial Number: --
-	Asset Tag: --
-	Part Number: 36KSZF1G72PZ-1G4D1    
-	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Type: Unknown
+	Type Detail: Synchronous
 
 Handle 0x0047, DMI type 17, 34 bytes
 Memory Device
@@ -889,9 +890,9 @@ Physical Memory Array
 
 Handle 0x004D, DMI type 19, 31 bytes
 Memory Array Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 8 GB
+	Starting Address: 0x007FFF00000
+	Ending Address: 0x00FFFDFFFFF
+	Range Size: 32767 MB
 	Physical Array Handle: 0x004C
 	Partition Width: 1
 
@@ -901,13 +902,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 32 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelE_Dimm1
 	Bank Locator: ChannelE
-	Type: Unknown
+	Type: DDR3
 	Type Detail: Synchronous
+	Speed: 1866 MT/s
+	Manufacturer: Micron                     
+	Serial Number: --
+	Asset Tag: --
+	Part Number: 72JSZS4G72L1G9E2A7    
+	Rank: 4
+	Configured Memory Speed: 1866 MT/s
 
 Handle 0x004F, DMI type 17, 34 bytes
 Memory Device
@@ -929,20 +937,13 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
 	Locator: ChannelF_Dimm1
 	Bank Locator: ChannelF
-	Type: DDR3
-	Type Detail: Registered (Buffered)
-	Speed: 1333 MT/s
-	Manufacturer: Micron                     
-	Serial Number: --
-	Asset Tag: --
-	Part Number: 36JSZS1G72PY-1G4A1    
-	Rank: 2
-	Configured Memory Speed: 1333 MT/s
+	Type: Unknown
+	Type Detail: Synchronous
 
 Handle 0x0051, DMI type 17, 34 bytes
 Memory Device

@@ -1,14 +1,14 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-136 structures occupying 6021 bytes.
-Table at 0x7F1D0018.
+135 structures occupying 5969 bytes.
+Table at 0x7DD12018.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: American Megatrends Inc.
-	Version: 0901
-	Release Date: 12/10/2012
+	Version: 5901
+	Release Date: 05/19/2016
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 8 MB
@@ -131,7 +131,7 @@ Processor Information
 	Part Number: To Be Filled By O.E.M.
 	Core Count: 8
 	Core Enabled: 8
-	Thread Count: 8
+	Thread Count: 16
 	Characteristics:
 		64-bit capable
 
@@ -235,7 +235,7 @@ Processor Information
 	Part Number: To Be Filled By O.E.M.
 	Core Count: 8
 	Core Enabled: 8
-	Thread Count: 8
+	Thread Count: 16
 	Characteristics:
 		64-bit capable
 
@@ -459,14 +459,14 @@ Handle 0x0021, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE1
 	Type: x8 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 1
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:00.2
+	Bus Address: 0000:03:00.2
 
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
@@ -498,14 +498,14 @@ Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE4
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 4
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:03:00.0
+	Bus Address: 0000:04:00.0
 
 Handle 0x0025, DMI type 9, 17 bytes
 System Slot Information
@@ -518,7 +518,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0080:84:00.0
+	Bus Address: 0080:87:00.0
 
 Handle 0x0026, DMI type 9, 17 bytes
 System Slot Information
@@ -537,7 +537,7 @@ Handle 0x0027, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCIE7
 	Type: x16 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 7
 	Characteristics:
@@ -589,6 +589,7 @@ On Board Device 3 Information
 Handle 0x002B, DMI type 11, 5 bytes
 OEM Strings
 	String 1: To Be Filled By O.E.M.
+	String 2: To Be Filled By O.E.M.
 
 Handle 0x002C, DMI type 12, 5 bytes
 System Configuration Options
@@ -606,8 +607,8 @@ Physical Memory Array
 Handle 0x002E, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
 	Physical Array Handle: 0x002D
 	Partition Width: 1
 
@@ -624,13 +625,13 @@ Memory Device
 	Bank Locator: DIMM_A1
 	Type: DDR3
 	Type Detail: Registered (Buffered)
-	Speed: 1333 MT/s
-	Manufacturer: Hynix Semiconductor 
+	Speed: 1600 MT/s
+	Manufacturer: Samsung             
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT31GR7CFR4A-H
+	Part Number: M393B1G70BH0-YK
 	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0030, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -639,9 +640,7 @@ Memory Device Mapped Address
 	Range Size: 8 GB
 	Physical Device Handle: 0x002F
 	Memory Array Mapped Address Handle: 0x002E
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+	Partition Row Position: 1
 
 Handle 0x0031, DMI type 17, 34 bytes
 Memory Device
@@ -649,16 +648,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_A2
 	Bank Locator: DIMM_A2
-	Type: Unknown
-	Type Detail: Synchronous
+	Type: DDR3
+	Type Detail: Registered (Buffered)
+	Speed: 1600 MT/s
+	Manufacturer: Samsung             
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M393B1G70BH0-YK
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0032, DMI type 126, 35 bytes
-Inactive
+Handle 0x0032, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0031
+	Memory Array Mapped Address Handle: 0x002E
+	Partition Row Position: 1
 
 Handle 0x0033, DMI type 17, 34 bytes
 Memory Device
@@ -666,16 +678,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B1
 	Bank Locator: DIMM_B1
-	Type: Unknown
-	Type Detail: Synchronous
+	Type: DDR3
+	Type Detail: Registered (Buffered)
+	Speed: 1600 MT/s
+	Manufacturer: Samsung             
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M393B1G70BH0-YK
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0034, DMI type 126, 35 bytes
-Inactive
+Handle 0x0034, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00400000000
+	Ending Address: 0x005FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0033
+	Memory Array Mapped Address Handle: 0x002E
+	Partition Row Position: 1
 
 Handle 0x0035, DMI type 17, 34 bytes
 Memory Device
@@ -683,16 +708,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_B2
 	Bank Locator: DIMM_B2
-	Type: Unknown
-	Type Detail: Synchronous
+	Type: DDR3
+	Type Detail: Registered (Buffered)
+	Speed: 1600 MT/s
+	Manufacturer: Samsung             
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M393B1G70BH0-YK
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0036, DMI type 126, 35 bytes
-Inactive
+Handle 0x0036, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00600000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0035
+	Memory Array Mapped Address Handle: 0x002E
+	Partition Row Position: 1
 
 Handle 0x0037, DMI type 17, 34 bytes
 Memory Device
@@ -707,24 +745,22 @@ Memory Device
 	Bank Locator: DIMM_C1
 	Type: DDR3
 	Type Detail: Registered (Buffered)
-	Speed: 1333 MT/s
-	Manufacturer: Hynix Semiconductor 
+	Speed: 1600 MT/s
+	Manufacturer: Samsung             
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT31GR7CFR4A-H
+	Part Number: M393B1G70BH0-YK
 	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0038, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00200000000
-	Ending Address: 0x003FFFFFFFF
+	Starting Address: 0x00800000000
+	Ending Address: 0x009FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x0037
 	Memory Array Mapped Address Handle: 0x002E
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+	Partition Row Position: 1
 
 Handle 0x0039, DMI type 17, 34 bytes
 Memory Device
@@ -732,16 +768,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_C2
 	Bank Locator: DIMM_C2
-	Type: Unknown
-	Type Detail: Synchronous
+	Type: DDR3
+	Type Detail: Registered (Buffered)
+	Speed: 1600 MT/s
+	Manufacturer: Samsung             
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M393B1G70BH0-YK
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x003A, DMI type 126, 35 bytes
-Inactive
+Handle 0x003A, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00A00000000
+	Ending Address: 0x00BFFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0039
+	Memory Array Mapped Address Handle: 0x002E
+	Partition Row Position: 1
 
 Handle 0x003B, DMI type 17, 34 bytes
 Memory Device
@@ -749,16 +798,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_D1
 	Bank Locator: DIMM_D1
-	Type: Unknown
-	Type Detail: Synchronous
+	Type: DDR3
+	Type Detail: Registered (Buffered)
+	Speed: 1600 MT/s
+	Manufacturer: Samsung             
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M393B1G70BH0-YK
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x003C, DMI type 126, 35 bytes
-Inactive
+Handle 0x003C, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00C00000000
+	Ending Address: 0x00DFFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x003B
+	Memory Array Mapped Address Handle: 0x002E
+	Partition Row Position: 1
 
 Handle 0x003D, DMI type 17, 34 bytes
 Memory Device
@@ -766,16 +828,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_D2
 	Bank Locator: DIMM_D2
-	Type: Unknown
-	Type Detail: Synchronous
+	Type: DDR3
+	Type Detail: Registered (Buffered)
+	Speed: 1600 MT/s
+	Manufacturer: Samsung             
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M393B1G70BH0-YK
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x003E, DMI type 126, 35 bytes
-Inactive
+Handle 0x003E, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00E00000000
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x003D
+	Memory Array Mapped Address Handle: 0x002E
+	Partition Row Position: 1
 
 Handle 0x003F, DMI type 16, 23 bytes
 Physical Memory Array
@@ -788,9 +863,9 @@ Physical Memory Array
 
 Handle 0x0040, DMI type 19, 31 bytes
 Memory Array Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x007FFFFFFFF
-	Range Size: 16 GB
+	Starting Address: 0x01000000000
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 64 GB
 	Physical Array Handle: 0x003F
 	Partition Width: 1
 
@@ -807,24 +882,22 @@ Memory Device
 	Bank Locator: DIMM_E1
 	Type: DDR3
 	Type Detail: Registered (Buffered)
-	Speed: 1333 MT/s
-	Manufacturer: Hynix Semiconductor 
+	Speed: 1600 MT/s
+	Manufacturer: Samsung             
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT31GR7CFR4A-H
+	Part Number: M393B1G70BH0-YK
 	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0042, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00400000000
-	Ending Address: 0x005FFFFFFFF
+	Starting Address: 0x01000000000
+	Ending Address: 0x011FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x0041
 	Memory Array Mapped Address Handle: 0x0040
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+	Partition Row Position: 1
 
 Handle 0x0043, DMI type 17, 34 bytes
 Memory Device
@@ -832,16 +905,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_E2
 	Bank Locator: DIMM_E2
-	Type: Unknown
-	Type Detail: Synchronous
+	Type: DDR3
+	Type Detail: Registered (Buffered)
+	Speed: 1600 MT/s
+	Manufacturer: Samsung             
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M393B1G70BH0-YK
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0044, DMI type 126, 35 bytes
-Inactive
+Handle 0x0044, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x01200000000
+	Ending Address: 0x013FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0043
+	Memory Array Mapped Address Handle: 0x0040
+	Partition Row Position: 1
 
 Handle 0x0045, DMI type 17, 34 bytes
 Memory Device
@@ -849,16 +935,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_F1
 	Bank Locator: DIMM_F1
-	Type: Unknown
-	Type Detail: Synchronous
+	Type: DDR3
+	Type Detail: Registered (Buffered)
+	Speed: 1600 MT/s
+	Manufacturer: Samsung             
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M393B1G70BH0-YK
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0046, DMI type 126, 35 bytes
-Inactive
+Handle 0x0046, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x01400000000
+	Ending Address: 0x015FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0045
+	Memory Array Mapped Address Handle: 0x0040
+	Partition Row Position: 1
 
 Handle 0x0047, DMI type 17, 34 bytes
 Memory Device
@@ -866,16 +965,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_F2
 	Bank Locator: DIMM_F2
-	Type: Unknown
-	Type Detail: Synchronous
+	Type: DDR3
+	Type Detail: Registered (Buffered)
+	Speed: 1600 MT/s
+	Manufacturer: Samsung             
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M393B1G70BH0-YK
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0048, DMI type 126, 35 bytes
-Inactive
+Handle 0x0048, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x01600000000
+	Ending Address: 0x017FFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x0047
+	Memory Array Mapped Address Handle: 0x0040
+	Partition Row Position: 1
 
 Handle 0x0049, DMI type 17, 34 bytes
 Memory Device
@@ -890,24 +1002,22 @@ Memory Device
 	Bank Locator: DIMM_G1
 	Type: DDR3
 	Type Detail: Registered (Buffered)
-	Speed: 1333 MT/s
-	Manufacturer: Hynix Semiconductor 
+	Speed: 1600 MT/s
+	Manufacturer: Samsung             
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT31GR7CFR4A-H
+	Part Number: M393B1G70BH0-YK
 	Rank: 1
-	Configured Memory Speed: 1333 MT/s
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x004A, DMI type 20, 35 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00600000000
-	Ending Address: 0x007FFFFFFFF
+	Starting Address: 0x01800000000
+	Ending Address: 0x019FFFFFFFF
 	Range Size: 8 GB
 	Physical Device Handle: 0x0049
 	Memory Array Mapped Address Handle: 0x0040
-	Partition Row Position: Unknown
-	Interleave Position: Unknown
-	Interleaved Data Depth: Unknown
+	Partition Row Position: 1
 
 Handle 0x004B, DMI type 17, 34 bytes
 Memory Device
@@ -915,16 +1025,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_G2
 	Bank Locator: DIMM_G2
-	Type: Unknown
-	Type Detail: Synchronous
+	Type: DDR3
+	Type Detail: Registered (Buffered)
+	Speed: 1600 MT/s
+	Manufacturer: Samsung             
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M393B1G70BH0-YK
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x004C, DMI type 126, 35 bytes
-Inactive
+Handle 0x004C, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x01A00000000
+	Ending Address: 0x01BFFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x004B
+	Memory Array Mapped Address Handle: 0x0040
+	Partition Row Position: 1
 
 Handle 0x004D, DMI type 17, 34 bytes
 Memory Device
@@ -932,16 +1055,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_H1
 	Bank Locator: DIMM_H1
-	Type: Unknown
-	Type Detail: Synchronous
+	Type: DDR3
+	Type Detail: Registered (Buffered)
+	Speed: 1600 MT/s
+	Manufacturer: Samsung             
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M393B1G70BH0-YK
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x004E, DMI type 126, 35 bytes
-Inactive
+Handle 0x004E, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x01C00000000
+	Ending Address: 0x01DFFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x004D
+	Memory Array Mapped Address Handle: 0x0040
+	Partition Row Position: 1
 
 Handle 0x004F, DMI type 17, 34 bytes
 Memory Device
@@ -949,16 +1085,29 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 72 bits
 	Data Width: 64 bits
-	Size: No Module Installed
+	Size: 8 GB
 	Form Factor: DIMM
 	Set: None
 	Locator: DIMM_H2
 	Bank Locator: DIMM_H2
-	Type: Unknown
-	Type Detail: Synchronous
+	Type: DDR3
+	Type Detail: Registered (Buffered)
+	Speed: 1600 MT/s
+	Manufacturer: Samsung             
+	Serial Number: --
+	Asset Tag: --
+	Part Number: M393B1G70BH0-YK
+	Rank: 1
+	Configured Memory Speed: 1600 MT/s
 
-Handle 0x0050, DMI type 126, 35 bytes
-Inactive
+Handle 0x0050, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x01E00000000
+	Ending Address: 0x01FFFFFFFFF
+	Range Size: 8 GB
+	Physical Device Handle: 0x004F
+	Memory Array Mapped Address Handle: 0x0040
+	Partition Row Position: 1
 
 Handle 0x0051, DMI type 32, 20 bytes
 System Boot Information
@@ -1440,76 +1589,13 @@ OEM-specific Type
 	Strings:
 		V1394GUID
 
-Handle 0x0085, DMI type 15, 73 bytes
-System Event Log
-	Area Length: 65535 bytes
-	Header Start Offset: 0x0000
-	Header Length: 16 bytes
-	Data Start Offset: 0x0010
-	Access Method: Memory-mapped physical 32-bit address
-	Access Address: 0xFFC20000
-	Status: Valid, Not Full
-	Change Token: 0x00000001
-	Header Format: Type 1
-	Supported Log Type Descriptors: 25
-	Descriptor 1: Single-bit ECC memory error
-	Data Format 1: None
-	Descriptor 2: Multi-bit ECC memory error
-	Data Format 2: None
-	Descriptor 3: Parity memory error
-	Data Format 3: None
-	Descriptor 4: Bus timeout
-	Data Format 4: None
-	Descriptor 5: I/O channel block
-	Data Format 5: None
-	Descriptor 6: Software NMI
-	Data Format 6: None
-	Descriptor 7: POST memory resize
-	Data Format 7: None
-	Descriptor 8: POST error
-	Data Format 8: POST results bitmap
-	Descriptor 9: PCI parity error
-	Data Format 9: None
-	Descriptor 10: PCI system error
-	Data Format 10: None
-	Descriptor 11: CPU failure
-	Data Format 11: None
-	Descriptor 12: EISA failsafe timer timeout
-	Data Format 12: None
-	Descriptor 13: Correctable memory log disabled
-	Data Format 13: None
-	Descriptor 14: Logging disabled
-	Data Format 14: None
-	Descriptor 15: System limit exceeded
-	Data Format 15: None
-	Descriptor 16: Asynchronous hardware timer expired
-	Data Format 16: None
-	Descriptor 17: System configuration information
-	Data Format 17: None
-	Descriptor 18: Hard disk information
-	Data Format 18: None
-	Descriptor 19: System reconfigured
-	Data Format 19: None
-	Descriptor 20: Uncorrectable CPU-complex error
-	Data Format 20: None
-	Descriptor 21: Log area reset/cleared
-	Data Format 21: None
-	Descriptor 22: System boot
-	Data Format 22: None
-	Descriptor 23: End of log
-	Data Format 23: None
-	Descriptor 24: OEM-specific
-	Data Format 24: OEM-specific
-	Descriptor 25: OEM-specific
-	Data Format 25: OEM-specific
-
-Handle 0x0086, DMI type 13, 22 bytes
+Handle 0x0085, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 1
 		en|US|iso8859-1
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0x0089, DMI type 127, 4 bytes
+Handle 0x0088, DMI type 127, 4 bytes
 End Of Table
 
