@@ -1,0 +1,827 @@
+# dmidecode 3.4
+Getting SMBIOS data from sysfs.
+SMBIOS 3.0.0 present.
+Table at 0xDB6C3000.
+
+Handle 0x0000, DMI type 222, 14 bytes
+OEM-specific Type
+	Header and Data:
+		DE 0E 00 00 01 99 00 03 10 01 20 02 30 03
+	Strings:
+		Memory Init Complete
+		End of DXE Phase
+		BIOS Boot Complete
+
+Handle 0x0001, DMI type 14, 8 bytes
+Group Associations
+	Name: Intel(R) Silicon View Technology
+	Items: 1
+		0x0000 (OEM-specific)
+
+Handle 0x0002, DMI type 134, 13 bytes
+OEM-specific Type
+	Header and Data:
+		86 0D 02 00 30 03 21 20 00 00 00 00 00
+
+Handle 0x0003, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 8 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 2
+
+Handle 0x0004, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0003
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: Row Of Chips
+	Set: None
+	Locator: ChannelA-DIMM0
+	Bank Locator: BANK 0
+	Type: LPDDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1867 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: K4E6E304ED-EGCG     
+	Rank: 2
+	Configured Memory Speed: 1867 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 1.2 V
+
+Handle 0x0005, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0003
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4 GB
+	Form Factor: Row Of Chips
+	Set: None
+	Locator: ChannelB-DIMM0
+	Bank Locator: BANK 2
+	Type: LPDDR3
+	Type Detail: Synchronous Unbuffered (Unregistered)
+	Speed: 1867 MT/s
+	Manufacturer: Samsung
+	Serial Number: --
+	Asset Tag: --
+	Part Number: K4E6E304ED-EGCG     
+	Rank: 2
+	Configured Memory Speed: 1867 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 1.2 V
+
+Handle 0x0006, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
+	Physical Array Handle: 0x0003
+	Partition Width: 2
+
+Handle 0x0007, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L1 Cache
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 128 kB
+	Maximum Size: 128 kB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Parity
+	System Type: Unified
+	Associativity: 8-way Set-associative
+
+Handle 0x0008, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L2 Cache
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 512 kB
+	Maximum Size: 512 kB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: 4-way Set-associative
+
+Handle 0x0009, DMI type 7, 19 bytes
+Cache Information
+	Socket Designation: L3 Cache
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 4 MB
+	Maximum Size: 4 MB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 16-way Set-associative
+
+Handle 0x000A, DMI type 4, 48 bytes
+Processor Information
+	Socket Designation: U3E1
+	Type: Central Processor
+	Family: Core m3
+	Manufacturer: Intel(R) Corporation
+	ID: E9 06 08 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 142, Stepping 9
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		DS (Debug store)
+		ACPI (ACPI supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		SS (Self-snoop)
+		HTT (Multi-threading)
+		TM (Thermal monitor supported)
+		PBE (Pending break enabled)
+	Version: Intel(R) Core(TM) m3-8100Y CPU @ 1.10GHz
+	Voltage: 0.9 V
+	External Clock: 100 MHz
+	Max Speed: 1600 MHz
+	Current Speed: 1100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket BGA1515
+	L1 Cache Handle: 0x0007
+	L2 Cache Handle: 0x0008
+	L3 Cache Handle: 0x0009
+	Serial Number: --
+	Asset Tag: --
+	Part Number: None
+	Core Count: 2
+	Core Enabled: 2
+	Thread Count: 4
+	Characteristics:
+		64-bit capable
+		Multi-Core
+		Hardware Thread
+		Execute Protection
+		Enhanced Virtualization
+		Power/Performance Control
+
+Handle 0x000B, DMI type 0, 26 bytes
+BIOS Information
+	Vendor: LENOVO
+	Version: R18ET27W (1.11 )
+	Release Date: 06/08/2021
+	Address: 0xE0000
+	Runtime Size: 128 kB
+	ROM Size: 16 MB
+	Characteristics:
+		PCI is supported
+		PNP is supported
+		BIOS is upgradeable
+		BIOS shadowing is allowed
+		Boot from CD is supported
+		Selectable boot is supported
+		EDD is supported
+		3.5"/720 kB floppy services are supported (int 13h)
+		Print screen service is supported (int 5h)
+		8042 keyboard services are supported (int 9h)
+		Serial services are supported (int 14h)
+		Printer services are supported (int 17h)
+		CGA/mono video services are supported (int 10h)
+		ACPI is supported
+		USB legacy is supported
+		BIOS boot specification is supported
+		Targeted content distribution is supported
+		UEFI is supported
+	BIOS Revision: 1.11
+	Firmware Revision: 1.10
+
+Handle 0x000C, DMI type 1, 27 bytes
+System Information
+	Manufacturer: LENOVO
+	Product Name: 20SES0GP00
+	Version: ThinkPad 11e Yoga Gen 6
+	Serial Number: --
+	UUID: --
+	Wake-up Type: Power Switch
+	SKU Number: LENOVO_MT_20SE_BU_Think_FM_ThinkPad 11e Yoga Gen 6
+	Family: ThinkPad 11e Yoga Gen 6
+
+Handle 0x000D, DMI type 2, 15 bytes
+Base Board Information
+	Manufacturer: LENOVO
+	Product Name: 20SES0GP00
+	Version: SDK0L22692 WIN
+	Serial Number: --
+	Asset Tag: --
+	Features:
+		Board is a hosting board
+		Board is replaceable
+	Location In Chassis: Not Available
+	Chassis Handle: 0x0000
+	Type: Motherboard
+	Contained Object Handles: 0
+
+Handle 0x000E, DMI type 3, 22 bytes
+Chassis Information
+	Manufacturer: LENOVO
+	Type: Convertible
+	Lock: Not Present
+	Version: None
+	Serial Number: --
+	Asset Tag: --
+	Boot-up State: Unknown
+	Power Supply State: Unknown
+	Thermal State: Unknown
+	Security Status: Unknown
+	OEM Information: 0x00000000
+	Height: Unspecified
+	Number Of Power Cords: Unspecified
+	Contained Elements: 0
+	SKU Number: Not Specified
+
+Handle 0x000F, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: Keyboard
+	External Connector Type: PS/2
+	Port Type: Keyboard Port
+
+Handle 0x0010, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: Mouse
+	External Connector Type: PS/2
+	Port Type: Mouse Port
+
+Handle 0x0011, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: Other
+	External Reference Designator: COM 1
+	External Connector Type: DB-9 male
+	Port Type: Serial Port 16550A Compatible
+
+Handle 0x0012, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: USB3.0 - 1#/USB2.0 - 1#
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0013, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: USB3.0 - 2#/USB2.0 - 2#
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0014, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: USB3.0 - 3#/USB2.0 - 3#
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0015, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: USB3.0 - 4#/USB2.0 - 4#
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0016, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: USB2.0 - 5#
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0017, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: USB2.0 - 6#
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0018, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: USB2.0 - 7#
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0019, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: USB2.0 - 8#
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x001A, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: Ethernet
+	External Connector Type: RJ-45
+	Port Type: Network Port
+
+Handle 0x001B, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: SATA Port 1 J6J1
+	Internal Connector Type: SAS/SATA Plug Receptacle
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: SATA
+
+Handle 0x001C, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: SATA Port 2 J5C4
+	Internal Connector Type: SAS/SATA Plug Receptacle
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: SATA
+
+Handle 0x001D, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: SATA Port 3(ODD) J5J4
+	Internal Connector Type: SAS/SATA Plug Receptacle
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: SATA
+
+Handle 0x001E, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: None
+	External Connector Type: SAS/SATA Plug Receptacle
+	Port Type: SATA
+
+Handle 0x001F, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PEG Gen1/Gen2/Gen3 X16
+	Type: x16 PCI Express
+	Current Usage: Available
+	Length: Long
+	ID: 0
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 0000:00:00.0
+
+Handle 0x0020, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI-Express 1 X1
+	Type: x1 PCI Express
+	Current Usage: In Use
+	Length: Short
+	ID: 1
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 0000:00:00.0
+
+Handle 0x0021, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI-Express 2 X1
+	Type: x1 PCI Express
+	Current Usage: Available
+	Length: Short
+	ID: 2
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 0000:00:00.0
+
+Handle 0x0022, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI-Express 3 X1
+	Type: x1 PCI Express
+	Current Usage: Available
+	Length: Short
+	ID: 3
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 0000:00:00.0
+
+Handle 0x0023, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI-Express 4 X1
+	Type: x1 PCI Express
+	Current Usage: In Use
+	Length: Short
+	ID: 4
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 0000:00:00.0
+
+Handle 0x0024, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI-Express 5 X4
+	Type: x4 PCI Express
+	Current Usage: In Use
+	Length: Short
+	ID: 5
+	Characteristics:
+		3.3 V is provided
+		Opening is shared
+		PME signal is supported
+	Bus Address: 0000:00:00.0
+
+Handle 0x0025, DMI type 12, 5 bytes
+System Configuration Options
+
+Handle 0x0026, DMI type 13, 22 bytes
+BIOS Language Information
+	Language Description Format: Abbreviated
+	Installable Languages: 1
+		en-US
+	Currently Installed Language: en-US
+
+Handle 0x0027, DMI type 22, 26 bytes
+Portable Battery
+	Location: Rear
+	Manufacturer: SMP
+	Name: LNV-5B10W13881
+	Design Capacity: 46000 mWh
+	Design Voltage: 15360 mV
+	SBDS Version: 03.01
+	Maximum Error: Unknown
+	SBDS Serial Number: --
+	SBDS Manufacture Date: 2021-02-25
+	SBDS Chemistry: LiP
+	OEM-specific Information: 0x00000000
+
+Handle 0x0028, DMI type 135, 34 bytes
+OEM-specific Type
+	Header and Data:
+		87 22 28 00 54 50 07 04 01 06 01 01 02 00 02 01
+		02 00 03 01 02 00 04 01 02 00 05 01 02 00 06 01
+		02 00
+
+Handle 0x0029, DMI type 200, 7 bytes
+OEM-specific Type
+	Header and Data:
+		C8 07 29 00 01 02 03
+	Strings:
+		152D
+		LIA 
+		BQ1A11  Q1A
+
+Handle 0x002A, DMI type 133, 5 bytes
+OEM-specific Type
+	Header and Data:
+		85 05 2A 00 01
+	Strings:
+		KHOIHGIUCCHHII
+
+Handle 0x002B, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI-Express 0
+	Type: x4 PCI Express
+	Current Usage: In Use
+	Length: Long
+	ID: 1
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		Hot-plug devices are supported
+		SMBus signal is supported
+	Bus Address: 0000:00:1c.0
+
+Handle 0x002C, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI-Express 5
+	Type: x1 PCI Express
+	Current Usage: Available
+	Length: Long
+	ID: 2
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		Hot-plug devices are supported
+		SMBus signal is supported
+	Bus Address: 0000:00:1c.5
+
+Handle 0x002D, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI-Express 8
+	Type: x1 PCI Express
+	Current Usage: Available
+	Length: Long
+	ID: 3
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		Hot-plug devices are supported
+		SMBus signal is supported
+	Bus Address: 0000:00:1d.0
+
+Handle 0x002E, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI-Express 9
+	Type: x1 PCI Express
+	Current Usage: Available
+	Length: Long
+	ID: 4
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		Hot-plug devices are supported
+		SMBus signal is supported
+	Bus Address: 0000:00:1d.1
+
+Handle 0x002F, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI-Express A
+	Type: x1 PCI Express
+	Current Usage: Available
+	Length: Long
+	ID: 5
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		Hot-plug devices are supported
+		SMBus signal is supported
+	Bus Address: 0000:00:1d.2
+
+Handle 0x0030, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI-Express B
+	Type: x1 PCI Express
+	Current Usage: Available
+	Length: Long
+	ID: 6
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		Hot-plug devices are supported
+		SMBus signal is supported
+	Bus Address: 0000:00:1d.3
+
+Handle 0x0031, DMI type 9, 17 bytes
+System Slot Information
+	Designation: M.2 SSD      
+	Type: x4 M.2 Socket 3
+	Current Usage: Available
+	Length: Long
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		Hot-plug devices are supported
+		SMBus signal is supported
+	Bus Address: 0000:ff:1f.7
+
+Handle 0x0032, DMI type 9, 17 bytes
+System Slot Information
+	Designation: M.2 PCIe WIFI
+	Type: x1 M.2 Socket 1-SD
+	Current Usage: Available
+	Length: Long
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		Hot-plug devices are supported
+		SMBus signal is supported
+	Bus Address: 0000:ff:1f.7
+
+Handle 0x0033, DMI type 9, 17 bytes
+System Slot Information
+	Designation: M.2 WIGIG    
+	Type: x1 M.2 Socket 1-DP
+	Current Usage: Available
+	Length: Long
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		Hot-plug devices are supported
+		SMBus signal is supported
+	Bus Address: 0000:ff:1f.7
+
+Handle 0x0034, DMI type 9, 17 bytes
+System Slot Information
+	Designation: M.2 WLAN     
+	Type: x1 M.2 Socket 2
+	Current Usage: Available
+	Length: Long
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		Hot-plug devices are supported
+		SMBus signal is supported
+	Bus Address: 0000:ff:1f.7
+
+Handle 0x0035, DMI type 135, 19 bytes
+OEM-specific Type
+	Header and Data:
+		87 13 35 00 54 50 07 02 42 41 59 20 49 2F 4F 20
+		04 00 00
+
+Handle 0x0036, DMI type 130, 20 bytes
+OEM-specific Type
+	Header and Data:
+		82 14 36 00 24 41 4D 54 00 00 00 00 00 A5 AF 02
+		C0 00 00 00
+
+Handle 0x0037, DMI type 131, 64 bytes
+OEM-specific Type
+	Header and Data:
+		83 40 37 00 31 00 00 00 0B 00 00 00 00 00 0A 00
+		F8 00 4B 9D 00 00 00 00 01 00 00 00 08 00 0B 00
+		2A 0E 46 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
+
+Handle 0x0038, DMI type 221, 33 bytes
+OEM-specific Type
+	Header and Data:
+		DD 21 38 00 04 01 00 03 07 06 00 00 02 00 00 00
+		00 E8 00 03 00 00 05 00 00 00 04 00 02 00 00 63
+		0E
+	Strings:
+		Reference Code - CPU
+		uCode Version
+		TXT ACM Version
+		BIOS Guard Version
+
+Handle 0x0039, DMI type 221, 26 bytes
+OEM-specific Type
+	Header and Data:
+		DD 1A 39 00 03 01 00 03 07 06 00 00 02 00 0B 00
+		00 0A 00 03 04 0B 08 46 2A 0E
+	Strings:
+		Reference Code - ME 11.0
+		MEBx version
+		ME Firmware Version
+		Consumer SKU
+
+Handle 0x003A, DMI type 221, 75 bytes
+OEM-specific Type
+	Header and Data:
+		DD 4B 3A 00 0A 01 00 03 07 06 00 00 02 03 FF FF
+		FF FF FF 04 00 FF FF FF 21 00 05 00 FF FF FF 21
+		00 06 00 02 0A 00 00 00 07 00 3E 00 00 00 00 08
+		00 34 00 00 00 00 09 00 0B 00 00 00 00 0A 00 3E
+		00 00 00 00 0B 00 34 00 00 00 00
+	Strings:
+		Reference Code - SKL PCH
+		PCH-CRID Status
+		Disabled
+		PCH-CRID Original Value
+		PCH-CRID New Value
+		OPROM - RST - RAID
+		SKL PCH H Bx Hsio Version
+		SKL PCH H Dx Hsio Version
+		KBL PCH H Ax Hsio Version
+		SKL PCH LP Bx Hsio Version
+		SKL PCH LP Cx Hsio Version
+
+Handle 0x003B, DMI type 221, 54 bytes
+OEM-specific Type
+	Header and Data:
+		DD 36 3B 00 07 01 00 03 07 06 00 00 02 00 03 07
+		06 01 00 03 00 03 07 06 00 00 04 05 FF FF FF FF
+		FF 06 00 FF FF FF 02 00 07 00 FF FF FF 02 00 08
+		00 FF FF FF 04 02
+	Strings:
+		Reference Code - SA - System Agent
+		Reference Code - MRC
+		SA - PCIe Version
+		SA-CRID Status
+		Disabled
+		SA-CRID Original Value
+		SA-CRID New Value
+		OPROM - VBIOS
+
+Handle 0x003C, DMI type 15, 31 bytes
+System Event Log
+	Area Length: 50 bytes
+	Header Start Offset: 0x0000
+	Header Length: 16 bytes
+	Data Start Offset: 0x0010
+	Access Method: General-purpose non-volatile data functions
+	Access Address: 0x00F0
+	Status: Valid, Not Full
+	Change Token: 0x00000002
+	Header Format: Type 1
+	Supported Log Type Descriptors: 4
+	Descriptor 1: POST error
+	Data Format 1: POST results bitmap
+	Descriptor 2: PCI system error
+	Data Format 2: None
+	Descriptor 3: System reconfigured
+	Data Format 3: None
+	Descriptor 4: Log area reset/cleared
+	Data Format 4: None
+
+Handle 0x003D, DMI type 24, 5 bytes
+Hardware Security
+	Power-On Password Status: Disabled
+	Keyboard Password Status: Not Implemented
+	Administrator Password Status: Disabled
+	Front Panel Reset Status: Not Implemented
+
+Handle 0x003E, DMI type 132, 7 bytes
+OEM-specific Type
+	Header and Data:
+		84 07 3E 00 01 D8 36
+
+Handle 0x003F, DMI type 131, 22 bytes
+ThinkVantage Technologies
+	Version: 1
+	Diagnostics: No
+
+Handle 0x0040, DMI type 136, 6 bytes
+OEM-specific Type
+	Header and Data:
+		88 06 40 00 5A 5A
+
+Handle 0x0041, DMI type 14, 8 bytes
+Group Associations
+	Name: $MEI
+	Items: 1
+		0x0000 (OEM-specific)
+
+Handle 0x0042, DMI type 219, 81 bytes
+OEM-specific Type
+	Header and Data:
+		DB 51 42 00 01 03 01 45 02 00 A0 06 03 00 61 20
+		00 00 00 00 40 08 00 01 1F 00 00 C9 0A 40 44 02
+		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
+		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		00
+	Strings:
+		MEI1
+		MEI2
+		MEI3
+
+Handle 0x0043, DMI type 140, 15 bytes
+ThinkPad Embedded Controller Program
+	Version ID: R18HT26W
+	Release Date: 01/18/2021
+
+Handle 0x0044, DMI type 140, 43 bytes
+OEM-specific Type
+	Header and Data:
+		8C 2B 44 00 4C 45 4E 4F 56 4F 0B 08 01 03 24 09
+		12 17 45 03 23 01 28 00 05 03 22 12 16 14 10 03
+		22 12 16 14 08 03 22 12 16 13 28
+
+Handle 0x0045, DMI type 135, 18 bytes
+OEM-specific Type
+	Header and Data:
+		87 12 45 00 54 50 07 01 01 00 00 00 00 00 00 00
+		00 00
+
+Handle 0xFEFF, DMI type 127, 4 bytes
+End Of Table
+

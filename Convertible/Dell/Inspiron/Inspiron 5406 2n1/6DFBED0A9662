@@ -1,8 +1,8 @@
-# dmidecode 3.2
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2 present.
 85 structures occupying 6536 bytes.
-Table at 0x5FD69000.
+Table at 0x5FD66000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -202,7 +202,7 @@ System Information
 	Version: Not Specified
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Power Switch
+	Wake-up Type: Other
 	SKU Number: 0A05
 	Family: Inspiron
 
@@ -280,7 +280,7 @@ Processor Information
 	Voltage: 0.7 V
 	External Clock: 100 MHz
 	Max Speed: 1700 MHz
-	Current Speed: 1700 MHz
+	Current Speed: 4100 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0701
@@ -338,8 +338,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 5120 kB
-	Maximum Size: 5120 kB
+	Installed Size: 5 MB
+	Maximum Size: 5 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -354,8 +354,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 12288 kB
-	Maximum Size: 12288 kB
+	Installed Size: 12 MB
+	Maximum Size: 12 MB
 	Supported SRAM Types:
 		Synchronous
 	Installed SRAM Type: Synchronous
@@ -457,6 +457,9 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.0
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0901, DMI type 9, 24 bytes
 System Slot Information
@@ -471,6 +474,9 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:14.3
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
 
 Handle 0x0B00, DMI type 11, 5 bytes
 OEM Strings
@@ -526,7 +532,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 1
@@ -568,27 +574,6 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x1102, DMI type 17, 84 bytes
 Memory Device
@@ -603,27 +588,6 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x1103, DMI type 17, 84 bytes
 Memory Device
@@ -638,27 +602,6 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x1104, DMI type 17, 84 bytes
 Memory Device
@@ -666,7 +609,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8192 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 2
@@ -708,27 +651,6 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x1106, DMI type 17, 84 bytes
 Memory Device
@@ -743,27 +665,6 @@ Memory Device
 	Bank Locator: BANK 2
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x1107, DMI type 17, 84 bytes
 Memory Device
@@ -778,27 +679,6 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: Volatile memory
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x1300, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -836,7 +716,7 @@ Hardware Security
 	Front Panel Reset Status: Not Implemented
 
 Handle 0x1900, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x1B00, DMI type 27, 15 bytes
@@ -967,8 +847,10 @@ Onboard Device
 Handle 0x2B00, DMI type 43, 31 bytes
 TPM Device
 	Vendor ID: INTC
-	Specification Version: 2.0	Firmware Revision: 600.7
-	Description: TPM 2.0, ManufacturerID: INTC, Firmware Version: 0x02580007.0x0	Characteristics:
+	Specification Version: 2.0
+	Firmware Revision: 600.7
+	Description: TPM 2.0, ManufacturerID: INTC, Firmware Version: 0x02580007.0x0
+	Characteristics:
 		TPM Device characteristics not supported
 	OEM-specific Information: 0x00000000
 
@@ -1011,7 +893,7 @@ OEM-specific Type
 Handle 0xCB00, DMI type 203, 106 bytes
 OEM-specific Type
 	Header and Data:
-		CB 6A 00 CB 01 04 01 45 02 00 90 06 01 85 30 20
+		CB 6A 00 CB 01 04 01 45 02 00 90 06 01 85 39 20
 		00 00 00 04 40 00 00 03 1F 04 00 C9 03 C0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

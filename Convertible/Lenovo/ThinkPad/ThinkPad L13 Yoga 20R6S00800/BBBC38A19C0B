@@ -1,7 +1,7 @@
 # dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0x54D85000.
+Table at 0x54D61000.
 
 Handle 0x0000, DMI type 222, 14 bytes
 OEM-specific Type
@@ -143,8 +143,8 @@ OEM-specific Type
 Handle 0x0009, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 09 00 03 01 00 09 00 2D 50 00 02 00 00 00
-		00 DE 00 03 00 01 07 00 00 00
+		DD 1A 09 00 03 01 00 09 00 A0 10 00 02 00 00 00
+		00 F8 00 03 00 01 07 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -153,7 +153,7 @@ OEM-specific Type
 Handle 0x000A, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 0A 00 03 01 00 09 00 2D 50 00 02 00 0D 00
+		DD 1A 0A 00 03 01 00 09 00 A0 10 00 02 00 0D 00
 		00 04 00 03 04 0E 01 35 71 06
 	Strings:
 		Reference Code - ME
@@ -164,7 +164,7 @@ OEM-specific Type
 Handle 0x000B, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 0B 00 07 01 00 09 00 2D 50 00 02 03 FF FF
+		DD 36 0B 00 07 01 00 09 00 A0 10 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
 		00 06 00 02 0A 00 00 00 07 00 15 FF FF FF FF 08
 		00 00 FF FF FF FF
@@ -181,8 +181,8 @@ OEM-specific Type
 Handle 0x000C, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 0C 00 07 01 00 09 00 2D 50 00 02 00 00 00
-		00 43 00 03 00 09 00 2D 50 00 04 05 FF FF FF FF
+		DD 36 0C 00 07 01 00 09 00 A0 10 00 02 00 00 00
+		00 55 00 03 00 09 00 A0 10 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 0C 00 07 00 00 00 00 0C 00 08
 		00 00 00 00 03 00
 	Strings:
@@ -288,7 +288,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
-	Voltage: 0.7 V
+	Voltage: 0.8 V
 	External Clock: 100 MHz
 	Max Speed: 2100 MHz
 	Current Speed: 1600 MHz
@@ -319,8 +319,8 @@ OEM-specific Type
 Handle 0x0013, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: LENOVO
-	Version: R15ET49W (1.30 )
-	Release Date: 04/21/2021
+	Version: R15ET59W (1.40 )
+	Release Date: 11/17/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 32 MB
@@ -343,8 +343,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.30
-	Firmware Revision: 1.11
+	BIOS Revision: 1.40
+	Firmware Revision: 1.12
 
 Handle 0x0014, DMI type 1, 27 bytes
 System Information
@@ -502,7 +502,7 @@ Portable Battery
 	Name: 5B10W13933
 	Design Capacity: 46000 mWh
 	Design Voltage: 15360 mV
-	SBDS Version: 01.08
+	SBDS Version: 01.00
 	Maximum Error: Unknown
 	SBDS Serial Number: --
 	SBDS Manufacture Date: 2020-07-02
@@ -534,7 +534,7 @@ OEM-specific Type
 		83 40 2F 00 31 00 00 00 0D 00 00 00 00 00 04 00
 		F8 00 84 02 00 00 00 00 01 00 00 00 01 00 0E 00
 		71 06 35 00 00 00 00 00 FE 00 4F 0D 00 00 00 00
-		00 00 00 00 E2 01 00 00 76 50 72 6F 00 00 00 00
+		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0030, DMI type 24, 5 bytes
 Hardware Security
@@ -557,7 +557,7 @@ Group Associations
 Handle 0x0033, DMI type 219, 106 bytes
 OEM-specific Type
 	Header and Data:
-		DB 6A 33 00 01 04 01 45 02 00 A0 06 01 10 86 20
+		DB 6A 33 00 01 04 01 45 02 00 90 06 01 10 86 20
 		00 00 00 00 40 00 00 01 1F 00 00 C9 0A 40 44 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -604,14 +604,14 @@ OEM-specific Type
 
 Handle 0x0039, DMI type 15, 31 bytes
 System Event Log
-	Area Length: 354 bytes
+	Area Length: 1538 bytes
 	Header Start Offset: 0x0000
 	Header Length: 16 bytes
 	Data Start Offset: 0x0010
 	Access Method: General-purpose non-volatile data functions
 	Access Address: 0x00F0
 	Status: Valid, Not Full
-	Change Token: 0x00000015
+	Change Token: 0x0000005F
 	Header Format: Type 1
 	Supported Log Type Descriptors: 4
 	Descriptor 1: POST error
@@ -625,8 +625,8 @@ System Event Log
 
 Handle 0x003A, DMI type 140, 15 bytes
 ThinkPad Embedded Controller Program
-	Version ID: R15HT31W
-	Release Date: 04/09/2021
+	Version ID: R15HT32W
+	Release Date: 06/17/2021
 
 Handle 0x003B, DMI type 140, 43 bytes
 OEM-specific Type

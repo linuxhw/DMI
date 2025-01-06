@@ -1,13 +1,13 @@
-# dmidecode 3.2
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.0 present.
-Table at 0xCB6EF000.
+Table at 0xCB66E000.
 
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Insyde
-	Version: F.07
-	Release Date: 06/02/2020
+	Version: F.24
+	Release Date: 09/07/2023
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 16 MB
@@ -31,8 +31,8 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 15.7
-	Firmware Revision: 12.31
+	BIOS Revision: 15.24
+	Firmware Revision: 12.54
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -49,7 +49,7 @@ Handle 0x0002, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 876E
-	Version: 12.31
+	Version: 12.54
 	Serial Number: --
 	Asset Tag: --
 	Features:
@@ -156,8 +156,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 2
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -172,8 +172,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 8192 kB
-	Maximum Size: 8192 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Pipeline Burst
 	Installed SRAM Type: Pipeline Burst
@@ -337,7 +337,8 @@ Port Connector Information
 Handle 0x001B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J10
-	Type: x8 PCI Express x8
+	Type: PCI Express x8
+	Data Bus Width: 8x or x8
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -350,7 +351,8 @@ System Slot Information
 Handle 0x001C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J79
-	Type: x4 PCI Express x4
+	Type: PCI Express x4
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Short
 	ID: 2
@@ -363,7 +365,8 @@ System Slot Information
 Handle 0x001D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J92
-	Type: x1 M.2 Socket 1-SD
+	Type: M.2 Socket 1-SD
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	Characteristics:
@@ -375,7 +378,8 @@ System Slot Information
 Handle 0x001E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J90
-	Type: x1 M.2 Socket 3
+	Type: M.2 Socket 3
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	Characteristics:
@@ -387,7 +391,8 @@ System Slot Information
 Handle 0x001F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J19
-	Type: x2 M.2 Socket 3
+	Type: M.2 Socket 3
+	Data Bus Width: 2x or x2
 	Current Usage: Available
 	Length: Short
 	Characteristics:
@@ -399,7 +404,8 @@ System Slot Information
 Handle 0x0020, DMI type 9, 17 bytes
 System Slot Information
 	Designation: CON1
-	Type: x4 PCI Express x8
+	Type: PCI Express x8
+	Data Bus Width: 4x or x4
 	Current Usage: Available
 	Length: Short
 	ID: 6
@@ -412,7 +418,7 @@ System Slot Information
 Handle 0x0021, DMI type 11, 5 bytes
 OEM Strings
 	String 1: $HP$
-	String 2: LOC#ABA
+	String 2: LOC#   
 	String 3: BCU_Y
 	String 4: ABS 70/71 78 79 7A 7B
 	String 5: OemString5
@@ -460,7 +466,7 @@ Memory Device
 	Error Information Handle: 0x0028
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Bottom - on board
@@ -495,7 +501,7 @@ Memory Device
 	Error Information Handle: 0x0029
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: Row Of Chips
 	Set: None
 	Locator: Bottom - on board
@@ -596,7 +602,7 @@ Portable Battery
 	Design Capacity: 51039 mWh
 	Design Voltage: 11550 mV
 	SBDS Version: 1
-	Maximum Error: 2%
+	Maximum Error: 1%
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x000A070C
 

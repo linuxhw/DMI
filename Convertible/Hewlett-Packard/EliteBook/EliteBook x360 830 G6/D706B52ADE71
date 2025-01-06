@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1 present.
-34 structures occupying 2406 bytes.
+34 structures occupying 2410 bytes.
 Table at 0x86E51000.
 
 Handle 0x0000, DMI type 43, 31 bytes
@@ -18,8 +18,8 @@ TPM Device
 Handle 0x0001, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: R78 Ver. 01.11.00
-	Release Date: 11/19/2021
+	Version: R78 Ver. 01.26.00
+	Release Date: 10/02/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -42,14 +42,14 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 11.0
-	Firmware Revision: 88.68
+	BIOS Revision: 26.0
+	Firmware Revision: 88.72
 
 Handle 0x0002, DMI type 1, 27 bytes
 System Information
 	Manufacturer: HP
 	Product Name: HP EliteBook x360 830 G6
-	Version:  
+	Version: SBKPF
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
@@ -60,7 +60,7 @@ Handle 0x0003, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 8548
-	Version: KBC Version 58.44.00
+	Version: KBC Version 58.48.00
 	Serial Number: --
 	Asset Tag: --
 	97946E993916094B22613E03B8339091
@@ -129,8 +129,8 @@ Memory Array Mapped Address
 Handle 0x000D, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 0D 00 03 01 00 07 00 76 30 00 02 00 00 00
-		00 EC 00 03 00 01 08 00 00 00
+		DD 1A 0D 00 03 01 00 07 00 77 00 00 02 00 00 00
+		00 F8 00 03 00 01 08 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -139,8 +139,8 @@ OEM-specific Type
 Handle 0x000E, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 0E 00 03 01 00 07 00 76 30 00 02 00 0C 00
-		00 0B 00 03 04 0C 00 55 4D 07
+		DD 1A 0E 00 03 01 00 07 00 77 00 00 02 00 0C 00
+		00 0B 00 03 04 0C 00 5D 1B 09
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -150,7 +150,7 @@ OEM-specific Type
 Handle 0x000F, DMI type 221, 82 bytes
 OEM-specific Type
 	Header and Data:
-		DD 52 0F 00 0B 01 00 07 00 76 30 00 02 03 FF FF
+		DD 52 0F 00 0B 01 00 07 00 77 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 30 00 05 00 FF FF FF 11
 		00 06 00 02 0A 00 00 00 07 00 02 00 00 00 00 08
 		00 09 00 00 00 00 09 00 0D 00 00 00 00 0A 00 07
@@ -173,8 +173,8 @@ OEM-specific Type
 Handle 0x0010, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 10 00 07 01 00 07 00 76 30 00 02 00 00 07
-		01 79 00 03 00 07 00 76 30 00 04 05 FF FF FF FF
+		DD 36 10 00 07 01 00 07 00 77 00 00 02 00 00 07
+		01 79 00 03 00 07 00 77 00 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 0C 00 07 00 00 00 00 0C 00 08
 		00 FF FF FF FF FF
 	Strings:
@@ -358,7 +358,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 1B 00 31 00 00 00 0C 00 00 00 00 00 0B 00
 		F8 00 84 9D 00 00 00 00 01 00 00 00 00 00 0C 00
-		4D 07 55 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		1B 09 5D 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x001C, DMI type 17, 40 bytes

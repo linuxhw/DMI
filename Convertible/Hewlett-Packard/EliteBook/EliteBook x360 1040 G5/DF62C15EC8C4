@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.0 present.
-Table at 0xA7762000.
+Table at 0x9F762000.
 
 Handle 0x0000, DMI type 43, 31 bytes
 TPM Device
@@ -17,8 +17,8 @@ TPM Device
 Handle 0x0001, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: HP
-	Version: Q74 Ver. 01.20.01
-	Release Date: 06/07/2022
+	Version: Q74 Ver. 01.25.00
+	Release Date: 06/15/2023
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -41,8 +41,8 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 20.1
-	Firmware Revision: 25.79
+	BIOS Revision: 25.0
+	Firmware Revision: 25.80
 
 Handle 0x0002, DMI type 1, 27 bytes
 System Information
@@ -59,7 +59,7 @@ Handle 0x0003, DMI type 2, 17 bytes
 Base Board Information
 	Manufacturer: HP
 	Product Name: 8470
-	Version: KBC Version 19.4F.00
+	Version: KBC Version 19.50.00
 	Serial Number: --
 	Asset Tag: --
 	97946E993916094B22613E03B8339091
@@ -281,7 +281,7 @@ OEM-specific Type
 	Header and Data:
 		83 40 15 00 31 00 00 00 0B 00 00 00 00 00 0C 00
 		F8 00 4E 9D 00 00 00 00 01 00 00 00 08 00 0B 00
-		7E 10 5C 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		8E 11 5E 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x0016, DMI type 17, 40 bytes
@@ -387,8 +387,8 @@ OEM Strings
 Handle 0x0005, DMI type 221, 33 bytes
 OEM-specific Type
 	Header and Data:
-		DD 21 05 00 04 01 00 03 08 04 00 00 02 00 00 00
-		00 F0 00 03 00 00 05 00 00 00 04 00 FF FF FF FF
+		DD 21 05 00 04 01 00 03 08 08 00 00 02 00 00 00
+		00 F4 00 03 00 00 05 00 00 00 04 00 FF FF FF FF
 		FF
 	Strings:
 		Reference Code - CPU
@@ -399,8 +399,8 @@ OEM-specific Type
 Handle 0x001A, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
-		DD 1A 1A 00 03 01 00 03 08 04 00 00 02 00 0B 00
-		00 0C 00 03 04 0B 08 5C 7E 10
+		DD 1A 1A 00 03 01 00 03 08 08 00 00 02 00 0B 00
+		00 0C 00 03 04 0B 08 5E 8E 11
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
@@ -410,7 +410,7 @@ OEM-specific Type
 Handle 0x001B, DMI type 221, 75 bytes
 OEM-specific Type
 	Header and Data:
-		DD 4B 1B 00 0A 01 00 03 08 04 00 00 02 03 FF FF
+		DD 4B 1B 00 0A 01 00 03 08 08 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 21 00 05 00 FF FF FF 21
 		00 06 00 FF FF FF FF FF 07 00 3E 00 00 00 00 08
 		00 34 00 00 00 00 09 00 0B 00 00 00 00 0A 00 3E
@@ -431,8 +431,8 @@ OEM-specific Type
 Handle 0x001C, DMI type 221, 54 bytes
 OEM-specific Type
 	Header and Data:
-		DD 36 1C 00 07 01 00 03 08 04 00 00 02 00 03 08
-		04 00 00 03 00 03 08 04 00 00 04 05 FF FF FF FF
+		DD 36 1C 00 07 01 00 03 08 08 00 00 02 00 03 08
+		08 00 00 03 00 03 08 08 00 00 04 05 FF FF FF FF
 		FF 06 00 FF FF FF 08 00 07 00 FF FF FF 08 00 08
 		00 FF FF FF 04 02
 	Strings:
@@ -449,7 +449,7 @@ Handle 0x001D, DMI type 10, 6 bytes
 On Board Device Information
 	Type: Video
 	Status: Enabled
-	Description: 32 MB
+	Description: 128 MB
 
 Handle 0x001E, DMI type 14, 8 bytes
 Group Associations
@@ -460,7 +460,7 @@ Group Associations
 Handle 0x001F, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 1F 00 01 03 01 45 02 00 A0 06 83 10 8A 30
+		DB 51 1F 00 01 03 01 45 02 00 90 06 83 10 89 30
 		00 00 00 04 40 A8 00 00 00 00 00 04 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

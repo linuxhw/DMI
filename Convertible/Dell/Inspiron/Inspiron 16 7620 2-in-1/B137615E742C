@@ -1,8 +1,8 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.4 present.
-88 structures occupying 5899 bytes.
-Table at 0x5D12C000.
+88 structures occupying 5900 bytes.
+Table at 0x5D12E000.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -149,8 +149,8 @@ OEM-specific Type
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.9.0
-	Release Date: 12/09/2022
+	Version: 1.21.0
+	Release Date: 06/04/2024
 	ROM Size: 32 MB
 	Characteristics:
 		PCI is supported
@@ -171,7 +171,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.9
+	BIOS Revision: 1.21
 
 Handle 0x0100, DMI type 1, 27 bytes
 System Information
@@ -180,7 +180,7 @@ System Information
 	Version: Not Specified
 	Serial Number: --
 	UUID: --
-	Wake-up Type: Other
+	Wake-up Type: Power Switch
 	SKU Number: 0B37
 	Family: Inspiron
 
@@ -255,10 +255,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: 12th Gen Intel(R) Core(TM) i7-1260P
-	Voltage: 1.1 V
+	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 4700 MHz
-	Current Speed: 3762 MHz
+	Current Speed: 2178 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0705
@@ -489,7 +489,8 @@ Port Connector Information
 Handle 0x0900, DMI type 9, 28 bytes
 System Slot Information
 	Designation: PCI-Express 0
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 0
@@ -499,14 +500,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.0
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x0901, DMI type 9, 28 bytes
 System Slot Information
 	Designation: PCI-Express 1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -516,14 +518,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.1
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x0902, DMI type 9, 28 bytes
 System Slot Information
 	Designation: PCI-Express 2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 2
@@ -533,14 +536,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.2
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x0903, DMI type 9, 28 bytes
 System Slot Information
 	Designation: PCI-Express 3
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 3
@@ -550,14 +554,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.3
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x0904, DMI type 9, 28 bytes
 System Slot Information
 	Designation: PCI-Express 4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 4
@@ -567,14 +572,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.4
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x0905, DMI type 9, 28 bytes
 System Slot Information
 	Designation: PCI-Express 5
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 5
@@ -584,14 +590,15 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.5
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
 Handle 0x0906, DMI type 9, 28 bytes
 System Slot Information
 	Designation: PCI-Express 6
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 6
@@ -601,7 +608,7 @@ System Slot Information
 		Hot-plug devices are supported
 		SMBus signal is supported
 	Bus Address: 0000:00:1c.6
-	Data Bus Width: 0
+	Data Bus Width (Base): 0
 	Peer Devices: 0
 	Height: Not applicable
 
@@ -659,7 +666,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 1
@@ -667,11 +674,11 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 3200 MT/s
-	Manufacturer: 01980000802C
+	Manufacturer: 859B0000802C
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KKRVFX-MIB          
-	Rank: 1
+	Part Number: CT16G4SFRA32A.M16FE 
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -679,12 +686,12 @@ Memory Device
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Not Specified
-	Module Manufacturer ID: Bank 2, Hex 0x98
+	Module Manufacturer ID: Bank 6, Hex 0x9B
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
 
@@ -694,7 +701,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 8 GB
+	Size: 16 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM 2
@@ -702,11 +709,11 @@ Memory Device
 	Type: DDR4
 	Type Detail: Synchronous
 	Speed: 3200 MT/s
-	Manufacturer: 01980000802C
+	Manufacturer: 859B0000802C
 	Serial Number: --
 	Asset Tag: --
-	Part Number: KKRVFX-MIB          
-	Rank: 1
+	Part Number: CT16G4SFRA32A.M16FE 
+	Rank: 2
 	Configured Memory Speed: 3200 MT/s
 	Minimum Voltage: Unknown
 	Maximum Voltage: Unknown
@@ -714,20 +721,20 @@ Memory Device
 	Memory Technology: DRAM
 	Memory Operating Mode Capability: Volatile memory
 	Firmware Version: Not Specified
-	Module Manufacturer ID: Bank 2, Hex 0x98
+	Module Manufacturer ID: Bank 6, Hex 0x9B
 	Module Product ID: Unknown
 	Memory Subsystem Controller Manufacturer ID: Unknown
 	Memory Subsystem Controller Product ID: Unknown
 	Non-Volatile Size: None
-	Volatile Size: 8 GB
+	Volatile Size: 16 GB
 	Cache Size: None
 	Logical Size: None
 
 Handle 0x1300, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x003FFFFFFFF
-	Range Size: 16 GB
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 32 GB
 	Physical Array Handle: 0x1000
 	Partition Width: 2
 
@@ -758,7 +765,7 @@ System Power Controls
 Handle 0x1B00, DMI type 27, 15 bytes
 Cooling Device
 	Type: Fan
-	Status: OK
+	Status: Critical
 	OEM-specific Information: 0x0000DD00
 	Nominal Speed: 7200 rpm
 	Description: Processor Fan
@@ -768,52 +775,52 @@ Temperature Probe
 	Description: CPU   
 	Location: Processor Module
 	Status: Critical
-	Maximum Value: 0.0 deg C
-	Minimum Value: 0.0 deg C
-	Resolution: 0.000 deg C
-	Tolerance: 0.0 deg C
-	Accuracy: 0.00%
+	Maximum Value: 127.0 deg C
+	Minimum Value: -127.0 deg C
+	Resolution: 1.000 deg C
+	Tolerance: Unknown
+	Accuracy: Unknown
 	OEM-specific Information: 0x0000DC00
-	Nominal Value: 0.0 deg C
+	Nominal Value: 10.0 deg C
 
 Handle 0x1C01, DMI type 28, 22 bytes
 Temperature Probe
 	Description: SKIN  
 	Location: Motherboard
 	Status: Critical
-	Maximum Value: 0.0 deg C
-	Minimum Value: 0.0 deg C
-	Resolution: 0.000 deg C
-	Tolerance: 0.0 deg C
-	Accuracy: 0.00%
+	Maximum Value: 127.0 deg C
+	Minimum Value: -127.0 deg C
+	Resolution: 1.000 deg C
+	Tolerance: Unknown
+	Accuracy: Unknown
 	OEM-specific Information: 0x0000DC01
-	Nominal Value: 0.0 deg C
+	Nominal Value: 10.0 deg C
 
 Handle 0x1C02, DMI type 28, 22 bytes
 Temperature Probe
 	Description: DIMM A
 	Location: Memory Module
 	Status: Critical
-	Maximum Value: 0.0 deg C
-	Minimum Value: 0.0 deg C
-	Resolution: 0.000 deg C
-	Tolerance: 0.0 deg C
-	Accuracy: 0.00%
+	Maximum Value: 127.0 deg C
+	Minimum Value: -127.0 deg C
+	Resolution: 1.000 deg C
+	Tolerance: Unknown
+	Accuracy: Unknown
 	OEM-specific Information: 0x0000DC02
-	Nominal Value: 0.0 deg C
+	Nominal Value: 10.0 deg C
 
 Handle 0x1C03, DMI type 28, 22 bytes
 Temperature Probe
 	Description: OTHER 
 	Location: Other
 	Status: Critical
-	Maximum Value: 0.0 deg C
-	Minimum Value: 0.0 deg C
-	Resolution: 0.000 deg C
-	Tolerance: 0.0 deg C
-	Accuracy: 0.00%
+	Maximum Value: 127.0 deg C
+	Minimum Value: -127.0 deg C
+	Resolution: 1.000 deg C
+	Tolerance: Unknown
+	Accuracy: Unknown
 	OEM-specific Information: 0x0000DC03
-	Nominal Value: 0.0 deg C
+	Nominal Value: 10.0 deg C
 
 Handle 0x2000, DMI type 32, 11 bytes
 System Boot Information
@@ -891,8 +898,8 @@ Handle 0x8300, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
 		83 40 00 83 35 00 00 00 00 00 00 00 00 00 00 00
-		F8 00 82 51 00 00 00 00 21 20 00 00 00 00 10 00
-		C7 06 0F 00 00 00 00 00 FE 00 FF FF 00 00 00 00
+		F8 00 82 51 00 00 00 00 21 20 00 00 01 00 10 00
+		80 08 1B 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0x8500, DMI type 133, 44 bytes
@@ -933,7 +940,7 @@ OEM-specific Type
 Handle 0xCB00, DMI type 203, 106 bytes
 OEM-specific Type
 	Header and Data:
-		CB 6A 00 CB 01 04 01 45 02 00 90 06 01 85 39 20
+		CB 6A 00 CB 01 04 01 45 02 00 90 06 01 10 80 20
 		00 00 00 00 40 00 00 03 1F 04 00 CB 03 E0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -949,7 +956,7 @@ OEM-specific Type
 Handle 0xCD00, DMI type 205, 12 bytes
 OEM-specific Type
 	Header and Data:
-		CD 0C 00 CD 01 01 00 02 00 00 9D 13
+		CD 0C 00 CD 01 01 00 02 00 00 5D 01
 	Strings:
 		BIOS Guard
 
@@ -963,8 +970,8 @@ OEM-specific Type
 Handle 0xCD02, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
-		CD 1A 02 CD 03 01 00 0C 00 65 70 00 02 00 00 00
-		04 23 00 03 00 01 12 0C 00 00
+		CD 1A 02 CD 03 01 00 0C 00 66 71 00 02 00 00 00
+		04 34 00 03 00 01 12 0C 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -973,8 +980,8 @@ OEM-specific Type
 Handle 0xCD03, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
-		CD 1A 03 CD 03 01 00 0C 00 65 70 00 02 00 10 00
-		00 02 00 03 04 10 00 0F C7 06
+		CD 1A 03 CD 03 01 00 0C 00 66 71 00 02 00 10 00
+		00 02 00 03 04 10 01 1B 80 08
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -984,7 +991,7 @@ OEM-specific Type
 Handle 0xCD04, DMI type 205, 47 bytes
 OEM-specific Type
 	Header and Data:
-		CD 2F 04 CD 06 01 00 0C 00 65 70 00 02 03 FF FF
+		CD 2F 04 CD 06 01 00 0C 00 66 71 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 01 00 05 00 FF FF FF 01
 		00 06 00 02 46 00 00 00 07 00 04 00 00 00 00
 	Strings:
@@ -999,8 +1006,8 @@ OEM-specific Type
 Handle 0xCD05, DMI type 205, 82 bytes
 OEM-specific Type
 	Header and Data:
-		CD 52 05 CD 0B 01 00 0C 00 65 70 00 02 00 00 00
-		03 80 00 03 00 0C 00 65 70 00 04 05 FF FF FF FF
+		CD 52 05 CD 0B 01 00 0C 00 66 71 00 02 00 00 00
+		03 BB 00 03 00 0C 00 66 71 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 02 00 07 00 00 00 00 02 00 08
 		00 FF FF FF FF FF 09 00 22 00 09 00 00 0A 00 00
 		00 00 10 20 0B 00 10 01 00 00 00 0C 00 FF FF FF
@@ -1101,7 +1108,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 23 02 17 09 42 01 00 00
+		DE 10 00 DE 01 04 00 00 24 07 18 07 29 01 00 00
 
 Handle 0xF800, DMI type 248, 9 bytes
 OEM-specific Type

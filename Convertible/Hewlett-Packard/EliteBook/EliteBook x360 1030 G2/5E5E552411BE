@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0xB1762000.
@@ -249,7 +249,8 @@ Port Connector Information
 Handle 0x0010, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M2 WLAN/BT
-	Type: x1 PCI Express 3 x1
+	Type: PCI Express 3 x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -262,7 +263,8 @@ System Slot Information
 Handle 0x0011, DMI type 9, 17 bytes
 System Slot Information
 	Designation: M2 SSD
-	Type: x4 PCI Express 3 x4
+	Type: PCI Express 3 x4
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Long
 	ID: 2
@@ -283,7 +285,7 @@ Onboard Device
 Handle 0x0013, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 13 00 10 00 00 00 0B 00 00 00 00 00 0C 00
+		83 40 13 00 31 00 00 00 0B 00 00 00 00 00 0C 00
 		F8 00 4E 9D 00 00 00 00 01 00 00 00 06 00 0B 00
 		82 0C 0C 00 00 00 00 00 FE 00 FF FF 00 00 00 00
 		00 00 00 00 22 00 00 00 76 50 72 6F 00 00 00 00
@@ -456,7 +458,7 @@ Group Associations
 Handle 0x001F, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 1F 00 01 03 01 45 00 00 A0 06 81 00 60 30
+		DB 51 1F 00 01 03 01 45 02 00 A0 06 81 10 80 30
 		00 00 00 00 40 08 00 00 00 00 00 04 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

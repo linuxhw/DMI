@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1 present.
 90 structures occupying 5925 bytes.
@@ -265,10 +265,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
-	Voltage: 0.7 V
+	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 1500 MHz
-	Current Speed: 1400 MHz
+	Current Speed: 3500 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0701
@@ -435,7 +435,8 @@ Port Connector Information
 Handle 0x0900, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 0
-	Type: x16 PCI Express x16
+	Type: PCI Express x16
+	Data Bus Width: 16x or x16
 	Current Usage: Available
 	Length: Long
 	ID: 0
@@ -449,7 +450,8 @@ System Slot Information
 Handle 0x0901, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 1
@@ -463,7 +465,8 @@ System Slot Information
 Handle 0x0902, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 2
@@ -477,7 +480,8 @@ System Slot Information
 Handle 0x0903, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 3
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 3
@@ -491,7 +495,8 @@ System Slot Information
 Handle 0x0904, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 4
@@ -505,7 +510,8 @@ System Slot Information
 Handle 0x0905, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 5
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 5
@@ -519,7 +525,8 @@ System Slot Information
 Handle 0x0906, DMI type 9, 17 bytes
 System Slot Information
 	Designation: PCI-Express 6
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Long
 	ID: 6
@@ -655,7 +662,7 @@ Portable Battery
 	Design Capacity: 49980 mWh
 	Design Voltage: 7600 mV
 	SBDS Version: 1.0
-	Maximum Error: 8%
+	Maximum Error: 2%
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000801
 
