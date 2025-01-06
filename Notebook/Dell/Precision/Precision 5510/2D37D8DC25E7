@@ -1,7 +1,7 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
-96 structures occupying 5747 bytes.
+96 structures occupying 5748 bytes.
 Table at 0x000E8C20.
 
 Handle 0x0000, DMI type 0, 24 bytes
@@ -235,7 +235,8 @@ Port Connector Information
 Handle 0x0017, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B2
-	Type: x16 PCI Express
+	Type: PCI Express
+	Data Bus Width: 16x or x16
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -248,7 +249,8 @@ System Slot Information
 Handle 0x0018, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 1
@@ -261,7 +263,8 @@ System Slot Information
 Handle 0x0019, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -274,7 +277,8 @@ System Slot Information
 Handle 0x001A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J7B1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 3
@@ -287,7 +291,8 @@ System Slot Information
 Handle 0x001B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J8B4
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 4
@@ -311,7 +316,7 @@ OEM Strings
 	String 4: 12[www.dell.com]
 	String 5: 14[1]
 	String 6: 15[0]
-	String 7: 27[2196002558]
+	String 7: 27[36215178302]
 
 Handle 0x001E, DMI type 12, 5 bytes
 System Configuration Options
@@ -650,15 +655,15 @@ Inactive
 Handle 0x1600, DMI type 22, 26 bytes
 Portable Battery
 	Location: Sys. Battery Bay
-	Manufacturer: SMP
-	Manufacture Date: 01/19/2017
+	Manufacturer: LG
+	Manufacture Date: 01/14/2022
 	Serial Number: --
-	Name: DELL 1P6KD54
-	Design Capacity: 83990 mWh
+	Name: DELL 62MJV
+	Design Capacity: 56000 mWh
 	Design Voltage: 11400 mV
 	SBDS Version: 1.0
-	Maximum Error: 2%
-	SBDS Chemistry: LiP
+	Maximum Error: 9%
+	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000801
 
 Handle 0x1B00, DMI type 27, 15 bytes
@@ -744,8 +749,8 @@ OEM-specific Type
 	Header and Data:
 		D0 10 00 D0 03 11 FE 00 E5 06 01 02 00 00 00 00
 	Strings:
-		20170308
-		20170515
+		20170307
+		20170307
 
 Handle 0xD800, DMI type 216, 9 bytes
 OEM-specific Type
@@ -943,7 +948,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 0D 00 22 09 02 18 29 01 00 00
+		DE 10 00 DE 01 04 0D 00 24 10 13 23 10 01 00 00
 
 Handle 0xF026, DMI type 130, 20 bytes
 OEM-specific Type

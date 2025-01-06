@@ -1,0 +1,51 @@
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
+SMBIOS 2.8 present.
+96 structures occupying 5746 bytes.
+Table at 0x000E0000.
+
+Handle 0x0000, DMI type 235, 46 bytes
+OEM-specific Type
+	Header and Data:
+		EB 2E 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+		0F 00 20 00 FE FF 8D A4 24 00 00 00 00 8D 49 00
+		00 00 00 00 00 00 00 00 FF FF 00 00 00 93
+	Strings:
+		.
+		...
+		f..... ...."..
+		..
+		........... .$.."..
+		3.....f3.f3.f..
+
+Handle 0x6630, DMI type 0, 15 bytes
+BIOS Information
+
+Handle 0x0B66, DMI type 15, 50 bytes
+System Event Log
+	Area Length: 30162 bytes
+	Header Start Offset: 0x662A
+	Header Length: 4294941582 byte
+	Data Start Offset: 0x01B8
+	Access Method: Indexed I/O, one 8-bit index port, one 8-bit data port
+	Access Address: Index 0x78B8, Data 0xD302
+	Status: Invalid, Not Full
+	Change Token: 0x66A20F00
+	Header Format: OEM-specific
+	Supported Log Type Descriptors: 103
+
+Handle 0xB866, DMI type 117, 63 bytes
+Unknown Type
+	Header and Data:
+		75 3F 66 B8 00 00 00 00 0F 37 66 0B DB 75 32 66
+		83 C8 40 75 2C 66 B8 06 00 00 00 0F 37 66 83 C8
+		40 74 1E B0 05 66 0F B6 D8 66 2B C0 66 2B D2 66
+		B9 01 04 00 00 0F 30 66 4B 74 06 66 83 C1 04
+	Strings:
+		... .f..B
+
+Handle 0x66E0, DMI type 15, 34 bytes
+	<TRUNCATED>
+
+Wrong DMI structures count: 96 announced, only 5 decoded.
+Wrong DMI structures length: 5746 bytes announced, structures occupy 5747 bytes.

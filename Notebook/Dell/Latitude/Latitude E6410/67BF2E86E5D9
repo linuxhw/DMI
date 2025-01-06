@@ -1,4 +1,4 @@
-# dmidecode 3.1
+# dmidecode 3.3
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 66 structures occupying 3565 bytes.
@@ -90,7 +90,7 @@ BIOS Information
 	Release Date: 07/08/2010
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1024 kB
+	ROM Size: 1 MB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -134,7 +134,7 @@ Base Board Information
 	Version: A00
 	Serial Number: --
 	Asset Tag: --
-	...
+	97946E993916094B22613E03B8339091
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Not Specified
@@ -253,8 +253,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -349,14 +349,14 @@ Handle 0x0011, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D2
 	Type: x1 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 2
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:00.0
+	Bus Address: 0000:02:00.0
 
 Handle 0x0012, DMI type 9, 17 bytes
 System Slot Information
@@ -369,7 +369,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:02:00.0
+	Bus Address: 0000:03:00.0
 
 Handle 0x0013, DMI type 9, 17 bytes
 System Slot Information
@@ -382,7 +382,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:04:00.0
+	Bus Address: 0000:05:00.0
 
 Handle 0x0014, DMI type 10, 6 bytes
 On Board Device Information
@@ -439,7 +439,7 @@ Memory Device
 	Error Information Handle: 0x001D
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM_A
@@ -450,14 +450,14 @@ Memory Device
 	Manufacturer: 80CE
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B2873FHS-CF8  
+	Part Number: M471B5273CH0-CH9  
 	Rank: Unknown
 
 Handle 0x001C, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x000FFFFFFFF
+	Range Size: 4 GB
 	Physical Device Handle: 0x001B
 	Memory Array Mapped Address Handle: 0x0021
 	Partition Row Position: 1
@@ -480,7 +480,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 1024 MB
+	Size: 2 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM_B
@@ -488,17 +488,17 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1067 MT/s
-	Manufacturer: 80CE
+	Manufacturer: 830B
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B2873FHS-CH9  
+	Part Number: NT2GC64B88B0NS-CG 
 	Rank: Unknown
 
 Handle 0x001F, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0003FFFFFFF
-	Range Size: 1 GB
+	Ending Address: 0x0007FFFFFFF
+	Range Size: 2 GB
 	Physical Device Handle: 0x001E
 	Memory Array Mapped Address Handle: 0x0021
 	Partition Row Position: 1
@@ -518,8 +518,8 @@ Handle 0x0020, DMI type 18, 23 bytes
 Handle 0x0021, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x0017FFFFFFF
+	Range Size: 6 GB
 	Physical Array Handle: 0x0019
 	Partition Width: 4
 

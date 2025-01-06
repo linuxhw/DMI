@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.1 present.
 Table at 0x000E0000.
@@ -6,8 +6,8 @@ Table at 0x000E0000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.15.1
-	Release Date: 10/06/2021
+	Version: 1.35.0
+	Release Date: 08/08/2024
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 32 MB
@@ -34,7 +34,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.15
+	BIOS Revision: 1.35
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -58,7 +58,7 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Not Specified
-	Chassis Handle: 0x0003
+	Chassis Handle: 0x0300
 	Type: Motherboard
 	Contained Object Handles: 0
 
@@ -197,15 +197,15 @@ Memory Array Mapped Address
 Handle 0x0022, DMI type 205, 12 bytes
 OEM-specific Type
 	Header and Data:
-		CD 0C 22 00 01 01 00 02 00 00 BD 10
+		CD 0C 22 00 01 01 00 02 00 00 BF 00
 	Strings:
 		BIOS Guard
 
 Handle 0x0023, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
-		CD 1A 23 00 03 01 00 07 00 58 40 00 02 00 00 00
-		00 EA 00 03 00 01 05 00 00 00
+		CD 1A 23 00 03 01 00 07 00 77 00 00 02 00 00 00
+		01 00 00 03 00 01 08 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -214,8 +214,8 @@ OEM-specific Type
 Handle 0x0024, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
-		CD 1A 24 00 03 01 00 07 00 58 40 00 02 00 0C 00
-		00 0A 00 03 04 0C 00 51 D9 06
+		CD 1A 24 00 03 01 00 07 00 77 00 00 02 00 0C 00
+		00 0B 00 03 04 0C 00 5E 4C 09
 	Strings:
 		Reference Code - ME
 		MEBx version
@@ -225,7 +225,7 @@ OEM-specific Type
 Handle 0x0025, DMI type 205, 82 bytes
 OEM-specific Type
 	Header and Data:
-		CD 52 25 00 0B 01 00 07 00 58 40 00 02 03 FF FF
+		CD 52 25 00 0B 01 00 07 00 77 00 00 02 03 FF FF
 		FF FF FF 04 00 FF FF FF 10 00 05 00 FF FF FF 10
 		00 06 00 FF FF FF FF FF 07 00 02 00 00 00 00 08
 		00 09 00 00 00 00 09 00 0A 00 00 00 00 0A 00 07
@@ -248,8 +248,8 @@ OEM-specific Type
 Handle 0x0026, DMI type 205, 54 bytes
 OEM-specific Type
 	Header and Data:
-		CD 36 26 00 07 01 00 07 00 58 40 00 02 00 00 07
-		01 64 00 03 00 07 00 58 40 00 04 05 FF FF FF FF
+		CD 36 26 00 07 01 00 07 00 77 00 00 02 00 00 07
+		01 64 00 03 00 07 00 77 00 00 04 05 FF FF FF FF
 		FF 06 00 00 00 00 0D 00 07 00 00 00 00 0D 00 08
 		00 FF FF FF FF FF
 	Strings:
@@ -348,7 +348,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i7-9850H CPU @ 2.60GHz
-	Voltage: 0.9 V
+	Voltage: 1.0 V
 	External Clock: 100 MHz
 	Max Speed: 4600 MHz
 	Current Speed: 4100 MHz
@@ -627,27 +627,6 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: None
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x0047, DMI type 17, 84 bytes
 Memory Device
@@ -697,27 +676,6 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: Not Specified
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Not Specified
-	Rank: Unknown
-	Configured Memory Speed: Unknown
-	Minimum Voltage: Unknown
-	Maximum Voltage: Unknown
-	Configured Voltage: Unknown
-	Memory Technology: <OUT OF SPEC>
-	Memory Operating Mode Capability: None
-	Firmware Version: Not Specified
-	Module Manufacturer ID: Unknown
-	Module Product ID: Unknown
-	Memory Subsystem Controller Manufacturer ID: Unknown
-	Memory Subsystem Controller Product ID: Unknown
-	Non-Volatile Size: None
-	Volatile Size: None
-	Cache Size: None
-	Logical Size: None
 
 Handle 0x0049, DMI type 20, 35 bytes
 Memory Device Mapped Address
@@ -893,125 +851,126 @@ OEM-specific Type
 		00 7B 01 7B 01 00 00 7C 01 7C 01 01 00 7F 01 7F
 		01 00 00 80 01 80 01 01 00 81 01 81 01 00 00 82
 		01 82 01 01 00 89 01 89 01 00 00 8A 01 8A 01 01
-		00 98 01 98 01 04 00 9B 01 9B 01 00 00 9C 01 9C
-		01 01 00 DE 01 DE 01 00 00 DF 01 DF 01 01 00 E1
-		01 E1 01 00 00 E8 01 E8 01 00 00 E9 01 E9 01 01
-		00 EA 01 EA 01 00 00 EB 01 EB 01 01 00 02 02 02
-		02 00 00 03 02 03 02 01 00 04 02 04 02 00 00 05
-		02 05 02 01 00 FF FF FF FF 00 00
+		00 93 01 93 01 00 00 94 01 94 01 01 00 98 01 98
+		01 04 00 9B 01 9B 01 00 00 9C 01 9C 01 01 00 DE
+		01 DE 01 00 00 DF 01 DF 01 01 00 E1 01 E1 01 00
+		00 E8 01 E8 01 00 00 E9 01 E9 01 01 00 EA 01 EA
+		01 00 00 EB 01 EB 01 01 00 02 02 02 02 00 00 03
+		02 03 02 01 00 FF FF FF FF 00 00
 
 Handle 0xDA02, DMI type 218, 251 bytes
 OEM-specific Type
 	Header and Data:
-		DA FB 02 DA B2 00 04 FF 1F B6 50 16 02 16 02 06
-		00 31 02 31 02 04 00 32 02 32 02 02 00 33 02 33
-		02 01 00 35 02 35 02 01 00 36 02 36 02 00 00 4A
-		02 4A 02 01 00 4B 02 4B 02 01 00 4C 02 4C 02 00
-		00 64 02 64 02 01 00 65 02 65 02 00 00 66 02 66
-		02 01 00 67 02 67 02 00 00 68 02 68 02 01 00 69
-		02 69 02 00 00 6C 02 6C 02 01 00 6D 02 6D 02 00
-		00 6E 02 6E 02 00 00 85 02 85 02 01 00 86 02 86
-		02 00 00 94 02 94 02 01 00 95 02 95 02 00 00 A5
-		02 A5 02 01 00 A6 02 A6 02 00 00 A7 02 A7 02 01
-		00 A8 02 A8 02 00 00 BD 02 BD 02 01 00 BE 02 BE
-		02 00 00 CD 02 CD 02 01 00 D8 02 D8 02 FF FF D9
-		02 D9 02 FF FF DA 02 DA 02 FF FF DB 02 DB 02 FF
-		FF DC 02 DC 02 FF FF DD 02 DD 02 FF FF DE 02 DE
-		02 FF FF DF 02 DF 02 FF FF E3 02 E3 02 01 00 E4
-		02 E4 02 00 00 FF FF FF FF 00 00
+		DA FB 02 DA B2 00 04 FF 1F B6 50 04 02 04 02 00
+		00 05 02 05 02 01 00 16 02 16 02 06 00 31 02 31
+		02 04 00 32 02 32 02 02 00 33 02 33 02 01 00 35
+		02 35 02 01 00 36 02 36 02 00 00 4A 02 4A 02 01
+		00 4B 02 4B 02 01 00 4C 02 4C 02 00 00 64 02 64
+		02 01 00 65 02 65 02 00 00 66 02 66 02 01 00 67
+		02 67 02 00 00 68 02 68 02 01 00 69 02 69 02 00
+		00 6C 02 6C 02 01 00 6D 02 6D 02 00 00 6E 02 6E
+		02 00 00 85 02 85 02 01 00 86 02 86 02 00 00 94
+		02 94 02 01 00 95 02 95 02 00 00 A5 02 A5 02 01
+		00 A6 02 A6 02 00 00 A7 02 A7 02 01 00 A8 02 A8
+		02 00 00 BD 02 BD 02 01 00 BE 02 BE 02 00 00 CD
+		02 CD 02 01 00 D8 02 D8 02 FF FF D9 02 D9 02 FF
+		FF DA 02 DA 02 FF FF DB 02 DB 02 FF FF DC 02 DC
+		02 FF FF DD 02 DD 02 FF FF DE 02 DE 02 FF FF DF
+		02 DF 02 FF FF FF FF FF FF 00 00
 
 Handle 0xDA03, DMI type 218, 251 bytes
 OEM-specific Type
 	Header and Data:
-		DA FB 03 DA B2 00 04 FF 1F B6 50 E5 02 E5 02 01
-		00 EB 02 EB 02 06 00 F6 02 F6 02 08 00 12 03 12
-		03 03 00 13 03 13 03 01 00 14 03 14 03 00 00 15
-		03 15 03 01 00 16 03 16 03 00 00 17 03 17 03 01
-		00 18 03 18 03 00 00 19 03 19 03 01 00 1A 03 1A
-		03 00 00 1B 03 1B 03 01 00 1C 03 1C 03 00 00 1D
-		03 1D 03 01 00 1E 03 1E 03 00 00 1F 03 1F 03 01
-		00 20 03 20 03 00 00 25 03 25 03 01 00 26 03 26
-		03 01 00 29 03 29 03 01 00 2A 03 2A 03 00 00 2B
-		03 2B 03 01 00 2C 03 2C 03 00 00 32 03 32 03 00
-		00 33 03 33 03 03 00 34 03 34 03 01 00 35 03 35
-		03 02 00 41 03 41 03 03 00 42 03 42 03 04 00 43
-		03 43 03 05 00 46 03 46 03 01 00 47 03 47 03 02
-		00 48 03 48 03 05 00 49 03 49 03 FF FF 4A 03 4A
-		03 FF FF 4D 03 4D 03 01 00 4E 03 4E 03 00 00 4F
-		03 4F 03 01 00 FF FF FF FF 00 00
+		DA FB 03 DA B2 00 04 FF 1F B6 50 E3 02 E3 02 01
+		00 E4 02 E4 02 00 00 E5 02 E5 02 01 00 EB 02 EB
+		02 06 00 F6 02 F6 02 08 00 12 03 12 03 03 00 13
+		03 13 03 01 00 14 03 14 03 00 00 15 03 15 03 01
+		00 16 03 16 03 00 00 17 03 17 03 01 00 18 03 18
+		03 00 00 19 03 19 03 01 00 1A 03 1A 03 00 00 1B
+		03 1B 03 01 00 1C 03 1C 03 00 00 1D 03 1D 03 01
+		00 1E 03 1E 03 00 00 1F 03 1F 03 01 00 20 03 20
+		03 00 00 25 03 25 03 01 00 26 03 26 03 01 00 29
+		03 29 03 01 00 2A 03 2A 03 00 00 2B 03 2B 03 01
+		00 2C 03 2C 03 00 00 32 03 32 03 00 00 33 03 33
+		03 03 00 34 03 34 03 01 00 35 03 35 03 02 00 41
+		03 41 03 03 00 42 03 42 03 04 00 43 03 43 03 05
+		00 46 03 46 03 01 00 47 03 47 03 02 00 48 03 48
+		03 05 00 49 03 49 03 FF FF 4A 03 4A 03 FF FF 4D
+		03 4D 03 01 00 FF FF FF FF 00 00
 
 Handle 0xDA04, DMI type 218, 251 bytes
 OEM-specific Type
 	Header and Data:
-		DA FB 04 DA B2 00 04 FF 1F B6 50 50 03 50 03 00
-		00 5D 03 5D 03 01 00 5E 03 5E 03 00 00 5F 03 5F
-		03 01 00 60 03 60 03 00 00 61 03 61 03 01 00 62
-		03 62 03 00 00 64 03 64 03 01 00 65 03 65 03 00
-		00 66 03 66 03 00 00 67 03 67 03 01 00 69 03 69
-		03 00 00 6A 03 6A 03 01 00 6B 03 6B 03 02 00 6C
-		03 6C 03 00 00 6D 03 6D 03 01 00 6E 03 6E 03 FF
-		FF 74 03 74 03 00 00 75 03 75 03 01 00 78 03 78
-		03 01 00 79 03 79 03 00 00 7A 03 7A 03 01 00 7B
-		03 7B 03 00 00 83 03 83 03 07 00 95 03 95 03 01
-		00 96 03 96 03 00 00 A2 03 A2 03 01 00 A3 03 A3
-		03 00 00 BE 03 BE 03 FF FF C1 03 C1 03 02 00 C2
-		03 C2 03 03 00 C3 03 C3 03 04 00 C5 03 C5 03 01
-		00 C6 03 C6 03 00 00 C7 03 C7 03 01 00 C8 03 C8
-		03 02 00 C9 03 C9 03 01 00 CA 03 CA 03 00 00 CB
-		03 CB 03 FF FF FF FF FF FF 00 00
+		DA FB 04 DA B2 00 04 FF 1F B6 50 4E 03 4E 03 00
+		00 4F 03 4F 03 01 00 50 03 50 03 00 00 5D 03 5D
+		03 01 00 5E 03 5E 03 00 00 5F 03 5F 03 01 00 60
+		03 60 03 00 00 61 03 61 03 01 00 62 03 62 03 00
+		00 64 03 64 03 01 00 65 03 65 03 00 00 66 03 66
+		03 00 00 67 03 67 03 01 00 69 03 69 03 00 00 6A
+		03 6A 03 01 00 6B 03 6B 03 02 00 6C 03 6C 03 00
+		00 6D 03 6D 03 01 00 6E 03 6E 03 FF FF 74 03 74
+		03 00 00 75 03 75 03 01 00 78 03 78 03 01 00 79
+		03 79 03 00 00 7A 03 7A 03 01 00 7B 03 7B 03 00
+		00 83 03 83 03 07 00 95 03 95 03 01 00 96 03 96
+		03 00 00 A2 03 A2 03 01 00 A3 03 A3 03 00 00 BE
+		03 BE 03 FF FF C1 03 C1 03 02 00 C2 03 C2 03 03
+		00 C3 03 C3 03 04 00 C5 03 C5 03 01 00 C6 03 C6
+		03 00 00 C7 03 C7 03 01 00 C8 03 C8 03 02 00 C9
+		03 C9 03 01 00 FF FF FF FF 00 00
 
 Handle 0xDA05, DMI type 218, 251 bytes
 OEM-specific Type
 	Header and Data:
-		DA FB 05 DA B2 00 04 FF 1F B6 50 D3 03 D3 03 FF
-		FF D4 03 D4 03 01 00 D5 03 D5 03 00 00 D6 03 D6
-		03 01 00 D7 03 D7 03 00 00 F6 03 F6 03 01 00 F7
-		03 F7 03 00 00 FE 03 FE 03 01 00 FF 03 FF 03 00
-		00 01 04 01 04 01 00 02 04 02 04 00 00 03 04 03
-		04 01 00 04 04 04 04 00 00 1E 04 1E 04 01 00 1F
-		04 1F 04 00 00 20 04 20 04 FF FF 2B 04 2B 04 FF
-		FF 31 04 31 04 FF FF 32 04 32 04 01 00 33 04 33
-		04 00 00 36 04 36 04 01 00 37 04 37 04 00 00 38
-		04 38 04 01 00 39 04 39 04 00 00 3A 04 3A 04 01
-		00 3B 04 3B 04 00 00 3C 04 3C 04 01 00 3D 04 3D
-		04 00 00 40 04 40 04 01 00 41 04 41 04 00 00 42
-		04 42 04 01 00 43 04 43 04 00 00 46 04 46 04 01
-		00 47 04 47 04 00 00 4B 04 4B 04 01 00 4C 04 4C
-		04 00 00 4D 04 4D 04 00 00 4E 04 4E 04 01 00 4F
-		04 4F 04 02 00 FF FF FF FF 00 00
+		DA FB 05 DA B2 00 04 FF 1F B6 50 CA 03 CA 03 00
+		00 CB 03 CB 03 FF FF D3 03 D3 03 FF FF D4 03 D4
+		03 01 00 D5 03 D5 03 00 00 D6 03 D6 03 01 00 D7
+		03 D7 03 00 00 F6 03 F6 03 01 00 F7 03 F7 03 00
+		00 FE 03 FE 03 01 00 FF 03 FF 03 00 00 01 04 01
+		04 01 00 02 04 02 04 00 00 03 04 03 04 01 00 04
+		04 04 04 00 00 1E 04 1E 04 01 00 1F 04 1F 04 00
+		00 20 04 20 04 FF FF 2B 04 2B 04 FF FF 31 04 31
+		04 FF FF 32 04 32 04 01 00 33 04 33 04 00 00 36
+		04 36 04 01 00 37 04 37 04 00 00 38 04 38 04 01
+		00 39 04 39 04 00 00 3A 04 3A 04 01 00 3B 04 3B
+		04 00 00 3C 04 3C 04 01 00 3D 04 3D 04 00 00 40
+		04 40 04 01 00 41 04 41 04 00 00 42 04 42 04 01
+		00 43 04 43 04 00 00 46 04 46 04 01 00 47 04 47
+		04 00 00 4B 04 4B 04 01 00 4C 04 4C 04 00 00 4D
+		04 4D 04 00 00 FF FF FF FF 00 00
 
 Handle 0xDA06, DMI type 218, 251 bytes
 OEM-specific Type
 	Header and Data:
-		DA FB 06 DA B2 00 04 FF 1F B6 50 51 04 51 04 FF
-		FF 52 04 52 04 FF FF 61 04 61 04 01 00 62 04 62
-		04 00 00 68 04 68 04 01 00 69 04 69 04 00 00 7B
-		04 7B 04 01 00 7C 04 7C 04 00 00 7D 04 7D 04 01
-		00 7E 04 7E 04 00 00 7F 04 7F 04 02 00 80 04 80
-		04 01 00 81 04 81 04 00 00 82 04 82 04 FF FF 87
-		04 87 04 01 00 88 04 88 04 00 00 8C 04 8C 04 01
-		00 8D 04 8D 04 00 00 98 04 98 04 FF FF 99 04 99
-		04 00 00 9A 04 9A 04 01 00 9B 04 9B 04 02 00 9C
-		04 9C 04 01 00 9D 04 9D 04 00 00 9E 04 9E 04 01
-		00 9F 04 9F 04 00 00 A0 04 A0 04 01 00 A1 04 A1
-		04 00 00 A2 04 A2 04 01 00 A3 04 A3 04 00 00 DC
-		04 DC 04 FF FF E6 04 E6 04 01 00 E7 04 E7 04 00
-		00 EC 04 EC 04 01 00 ED 04 ED 04 00 00 00 05 00
-		05 FF FF 07 05 07 05 FF FF 08 05 08 05 01 00 09
-		05 09 05 00 00 FF FF FF FF 00 00
+		DA FB 06 DA B2 00 04 FF 1F B6 50 4E 04 4E 04 01
+		00 4F 04 4F 04 02 00 51 04 51 04 FF FF 52 04 52
+		04 FF FF 61 04 61 04 01 00 62 04 62 04 00 00 68
+		04 68 04 01 00 69 04 69 04 00 00 7B 04 7B 04 01
+		00 7C 04 7C 04 00 00 7D 04 7D 04 01 00 7E 04 7E
+		04 00 00 7F 04 7F 04 02 00 80 04 80 04 01 00 81
+		04 81 04 00 00 82 04 82 04 FF FF 87 04 87 04 01
+		00 88 04 88 04 00 00 8C 04 8C 04 01 00 8D 04 8D
+		04 00 00 98 04 98 04 FF FF 99 04 99 04 00 00 9A
+		04 9A 04 01 00 9B 04 9B 04 02 00 9C 04 9C 04 01
+		00 9D 04 9D 04 00 00 9E 04 9E 04 01 00 9F 04 9F
+		04 00 00 A0 04 A0 04 01 00 A1 04 A1 04 00 00 A2
+		04 A2 04 01 00 A3 04 A3 04 00 00 DC 04 DC 04 FF
+		FF E6 04 E6 04 01 00 E7 04 E7 04 00 00 EC 04 EC
+		04 01 00 ED 04 ED 04 00 00 00 05 00 05 FF FF 07
+		05 07 05 FF FF FF FF FF FF 00 00
 
-Handle 0xDA07, DMI type 218, 137 bytes
+Handle 0xDA07, DMI type 218, 149 bytes
 OEM-specific Type
 	Header and Data:
-		DA 89 07 DA B2 00 04 FF 1F B6 50 12 05 12 05 00
-		00 13 05 13 05 01 00 14 05 14 05 02 00 15 05 15
-		05 01 00 16 05 16 05 01 00 17 05 17 05 00 00 2C
-		05 2C 05 FF FF 4A 40 4A 40 01 00 4B 40 4B 40 00
-		00 4C 40 4C 40 FF FF 4F 40 4F 40 01 00 50 40 50
-		40 00 00 0C 80 0C 80 00 00 0D 80 0D 80 00 00 0E
-		80 0E 80 01 00 0F 80 0F 80 FF FF 12 80 12 80 FF
-		FF 13 80 13 80 00 00 14 80 14 80 00 00 04 A0 04
-		A0 01 00 FF FF FF FF 00 00
+		DA 95 07 DA B2 00 04 FF 1F B6 50 08 05 08 05 01
+		00 09 05 09 05 00 00 12 05 12 05 00 00 13 05 13
+		05 01 00 14 05 14 05 02 00 15 05 15 05 01 00 16
+		05 16 05 01 00 17 05 17 05 00 00 2C 05 2C 05 FF
+		FF 4A 40 4A 40 01 00 4B 40 4B 40 00 00 4C 40 4C
+		40 FF FF 4F 40 4F 40 01 00 50 40 50 40 00 00 0C
+		80 0C 80 00 00 0D 80 0D 80 00 00 0E 80 0E 80 01
+		00 0F 80 0F 80 FF FF 12 80 12 80 FF FF 13 80 13
+		80 00 00 14 80 14 80 00 00 04 A0 04 A0 01 00 FF
+		FF FF FF 00 00
 
 Handle 0xDC00, DMI type 220, 22 bytes
 OEM-specific Type
@@ -1046,7 +1005,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 21 11 18 14 18 01 00 00
+		DE 10 00 DE 01 04 00 00 24 09 24 15 31 01 00 00
 
 Handle 0xF026, DMI type 218, 77 bytes
 OEM-specific Type
@@ -1066,9 +1025,9 @@ OEM-specific Type
 Handle 0xF028, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 28 F0 35 00 00 00 0C 00 00 00 00 00 0A 00
+		83 40 28 F0 35 00 00 00 0C 00 00 00 00 00 0B 00
 		F8 00 0E A3 00 00 00 00 09 C0 00 00 00 00 0C 00
-		D9 06 51 00 00 00 00 00 FE 00 BB 15 00 00 00 00
+		4C 09 5E 00 00 00 00 00 FE 00 BB 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0xF030, DMI type 9, 17 bytes
@@ -1172,21 +1131,13 @@ Onboard Device
 
 Handle 0xF038, DMI type 41, 11 bytes
 Onboard Device
-	Reference Designation: Onboard - Video
-	Type: Video
-	Status: Enabled
-	Type Instance: 1
-	Bus Address: 0000:00:02.0
-
-Handle 0xF039, DMI type 41, 11 bytes
-Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
 	Status: Enabled
 	Type Instance: 2
 	Bus Address: 0000:00:04.0
 
-Handle 0xF03A, DMI type 41, 11 bytes
+Handle 0xF039, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1194,7 +1145,7 @@ Onboard Device
 	Type Instance: 3
 	Bus Address: 0000:00:08.0
 
-Handle 0xF03B, DMI type 41, 11 bytes
+Handle 0xF03A, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1202,7 +1153,7 @@ Onboard Device
 	Type Instance: 4
 	Bus Address: 0000:00:12.0
 
-Handle 0xF03C, DMI type 41, 11 bytes
+Handle 0xF03B, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1210,7 +1161,7 @@ Onboard Device
 	Type Instance: 5
 	Bus Address: 0000:00:14.0
 
-Handle 0xF03D, DMI type 41, 11 bytes
+Handle 0xF03C, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1218,7 +1169,7 @@ Onboard Device
 	Type Instance: 6
 	Bus Address: 0000:00:14.2
 
-Handle 0xF03E, DMI type 41, 11 bytes
+Handle 0xF03D, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1226,7 +1177,7 @@ Onboard Device
 	Type Instance: 7
 	Bus Address: 0000:00:15.0
 
-Handle 0xF03F, DMI type 41, 11 bytes
+Handle 0xF03E, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1234,7 +1185,7 @@ Onboard Device
 	Type Instance: 8
 	Bus Address: 0000:00:15.1
 
-Handle 0xF040, DMI type 41, 11 bytes
+Handle 0xF03F, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1242,7 +1193,7 @@ Onboard Device
 	Type Instance: 9
 	Bus Address: 0000:00:16.0
 
-Handle 0xF041, DMI type 41, 11 bytes
+Handle 0xF040, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1250,7 +1201,7 @@ Onboard Device
 	Type Instance: 10
 	Bus Address: 0000:00:16.3
 
-Handle 0xF042, DMI type 41, 11 bytes
+Handle 0xF041, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - SATA
 	Type: SATA Controller
@@ -1258,7 +1209,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:17.0
 
-Handle 0xF043, DMI type 41, 11 bytes
+Handle 0xF042, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1266,7 +1217,7 @@ Onboard Device
 	Type Instance: 11
 	Bus Address: 0000:00:1f.0
 
-Handle 0xF044, DMI type 41, 11 bytes
+Handle 0xF043, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Sound
 	Type: Sound
@@ -1274,7 +1225,7 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:1f.3
 
-Handle 0xF045, DMI type 41, 11 bytes
+Handle 0xF044, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1282,7 +1233,7 @@ Onboard Device
 	Type Instance: 12
 	Bus Address: 0000:00:1f.4
 
-Handle 0xF046, DMI type 41, 11 bytes
+Handle 0xF045, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Other
 	Type: Other
@@ -1290,7 +1241,7 @@ Onboard Device
 	Type Instance: 13
 	Bus Address: 0000:00:1f.5
 
-Handle 0xF047, DMI type 41, 11 bytes
+Handle 0xF046, DMI type 41, 11 bytes
 Onboard Device
 	Reference Designation: Onboard - Ethernet
 	Type: Ethernet
@@ -1298,14 +1249,14 @@ Onboard Device
 	Type Instance: 1
 	Bus Address: 0000:00:1f.6
 
-Handle 0xF048, DMI type 205, 89 bytes
+Handle 0xF047, DMI type 205, 89 bytes
 OEM-specific Type
 	Header and Data:
-		CD 59 48 F0 0C 01 00 00 00 00 A6 00 02 00 FF FF
+		CD 59 47 F0 0C 01 00 00 00 00 A6 00 02 00 FF FF
 		FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
 		FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
-		00 FF FF FF FF 00 0B 00 FF FF 00 00 00 0C 00 00
-		09 00 92 10 0D 0E 01 04 03 00 00 0F 00 00 07 00
+		00 FF FF FF FF 00 0B 00 FF FF 00 00 00 0C 00 FF
+		FF FF FF FF 0D 0E 01 04 03 00 00 0F 00 00 07 00
 		00 00 10 00 00 02 00 0E 00
 	Strings:
 		Lan Phy Version
@@ -1325,12 +1276,12 @@ OEM-specific Type
 		Platform Version
 		Client Silicon Version
 
-Handle 0xF052, DMI type 136, 6 bytes
+Handle 0xF051, DMI type 136, 6 bytes
 OEM-specific Type
 	Header and Data:
-		88 06 52 F0 00 00
+		88 06 51 F0 00 00
 
-Handle 0xF053, DMI type 14, 23 bytes
+Handle 0xF052, DMI type 14, 23 bytes
 Group Associations
 	Name: Firmware Version Info
 	Items: 6
@@ -1339,9 +1290,9 @@ Group Associations
 		0x0024 (OEM-specific)
 		0x0025 (OEM-specific)
 		0x0026 (OEM-specific)
-		0xF048 (OEM-specific)
+		0xF047 (OEM-specific)
 
-Handle 0xF054, DMI type 13, 22 bytes
+Handle 0xF053, DMI type 13, 22 bytes
 BIOS Language Information
 	Language Description Format: Long
 	Installable Languages: 2
@@ -1349,16 +1300,16 @@ BIOS Language Information
 		<BAD INDEX>
 	Currently Installed Language: en|US|iso8859-1
 
-Handle 0xF055, DMI type 14, 8 bytes
+Handle 0xF054, DMI type 14, 8 bytes
 Group Associations
 	Name: $MEI
 	Items: 1
 		0x0000 (OEM-specific)
 
-Handle 0xF056, DMI type 203, 106 bytes
+Handle 0xF055, DMI type 203, 106 bytes
 OEM-specific Type
 	Header and Data:
-		CB 6A 56 F0 01 04 01 45 02 00 94 06 81 10 89 30
+		CB 6A 55 F0 01 04 01 45 02 00 94 06 81 10 89 30
 		00 00 00 04 40 00 00 01 1F 00 00 C9 0B C0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
@@ -1371,6 +1322,6 @@ OEM-specific Type
 		MEI3
 		MEI4
 
-Handle 0xF057, DMI type 127, 4 bytes
+Handle 0xF056, DMI type 127, 4 bytes
 End Of Table
 

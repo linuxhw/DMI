@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.2
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
 67 structures occupying 3618 bytes.
@@ -97,7 +97,7 @@ BIOS Information
 	Release Date: 12/05/2013
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 1 MB
+	ROM Size: 1024 kB
 	Characteristics:
 		PCI is supported
 		BIOS is upgradeable
@@ -260,8 +260,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Varies With Memory Address
 	Location: Internal
-	Installed Size: 3 MB
-	Maximum Size: 3 MB
+	Installed Size: 3072 kB
+	Maximum Size: 3072 kB
 	Supported SRAM Types:
 		Other
 	Installed SRAM Type: Other
@@ -356,14 +356,14 @@ Handle 0x0011, DMI type 9, 17 bytes
 System Slot Information
 	Designation: J6D2
 	Type: x1 PCI Express
-	Current Usage: Available
+	Current Usage: In Use
 	Length: Short
 	ID: 3
 	Characteristics:
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:ff:00.0
+	Bus Address: 0000:02:00.0
 
 Handle 0x0012, DMI type 9, 17 bytes
 System Slot Information
@@ -376,7 +376,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:02:00.0
+	Bus Address: 0000:03:00.0
 
 Handle 0x0013, DMI type 9, 17 bytes
 System Slot Information
@@ -389,7 +389,7 @@ System Slot Information
 		3.3 V is provided
 		Opening is shared
 		PME signal is supported
-	Bus Address: 0000:04:00.0
+	Bus Address: 0000:05:00.0
 
 Handle 0x0014, DMI type 10, 6 bytes
 On Board Device Information
@@ -446,7 +446,7 @@ Memory Device
 	Error Information Handle: 0x001D
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM_A
@@ -487,7 +487,7 @@ Memory Device
 	Error Information Handle: No Error
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2 GB
+	Size: 2048 MB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM_B

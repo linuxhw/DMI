@@ -1,7 +1,7 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.6 present.
-106 structures occupying 4645 bytes.
+106 structures occupying 4647 bytes.
 Table at 0x000F1D30.
 
 Handle 0xDA00, DMI type 218, 251 bytes
@@ -792,18 +792,18 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelA-DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Samsung
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5273DH0-CH9  
+	Part Number: KN2M64-MIN        
 	Rank: 2
 
 Handle 0x0044, DMI type 17, 28 bytes
@@ -812,33 +812,33 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: ChannelB-DIMM0
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Samsung
+	Speed: 1600 MT/s
+	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: M471B5273DH0-CH9  
+	Part Number: KN2M64-MIN        
 	Rank: 2
 
 Handle 0x0046, DMI type 19, 15 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0041
 	Partition Width: 2
 
 Handle 0x0043, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0042
 	Memory Array Mapped Address Handle: 0x0046
 	Partition Row Position: 1
@@ -847,9 +847,9 @@ Memory Device Mapped Address
 
 Handle 0x0045, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0044
 	Memory Array Mapped Address Handle: 0x0046
 	Partition Row Position: 1
@@ -866,13 +866,13 @@ Handle 0x1600, DMI type 22, 26 bytes
 Portable Battery
 	Location: Sys. Battery Bay
 	Manufacturer: Samsung SDI
-	Manufacture Date: 01/11/2012
+	Manufacture Date: 03/24/2021
 	Serial Number: --
-	Name: DELL 05VFW21
-	Design Capacity: 86580 mWh
+	Name: DELL P8TC727
+	Design Capacity: 48840 mWh
 	Design Voltage: 11100 mV
 	SBDS Version: 1.0
-	Maximum Error: 8%
+	Maximum Error: 2%
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000001
 

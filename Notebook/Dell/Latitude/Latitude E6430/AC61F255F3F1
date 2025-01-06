@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.4
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 100 structures occupying 4941 bytes.
@@ -631,7 +631,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM A
@@ -639,11 +639,11 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 0194
+	Manufacturer: 0000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: SH564128FJ8NWRNSQG
-	Rank: 1
+	Part Number: SHIVER            
+	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x004A, DMI type 17, 34 bytes
@@ -652,7 +652,7 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4 GB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM B
@@ -660,26 +660,26 @@ Memory Device
 	Type: DDR3
 	Type Detail: Synchronous
 	Speed: 1600 MT/s
-	Manufacturer: 0194
+	Manufacturer: 0000
 	Serial Number: --
 	Asset Tag: --
-	Part Number: SH564128FJ8NZRNSDG
+	Part Number: SHIVER            
 	Rank: 2
 	Configured Memory Speed: 1600 MT/s
 
 Handle 0x004C, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 8 GB
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
 	Physical Array Handle: 0x0047
 	Partition Width: 2
 
 Handle 0x0049, DMI type 20, 19 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x000FFFFFFFF
-	Range Size: 4 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x0048
 	Memory Array Mapped Address Handle: 0x004C
 	Partition Row Position: 1
@@ -688,9 +688,9 @@ Memory Device Mapped Address
 
 Handle 0x004B, DMI type 20, 19 bytes
 Memory Device Mapped Address
-	Starting Address: 0x00100000000
-	Ending Address: 0x001FFFFFFFF
-	Range Size: 4 GB
+	Starting Address: 0x00200000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x004A
 	Memory Array Mapped Address Handle: 0x004C
 	Partition Row Position: 1
@@ -707,13 +707,13 @@ Handle 0x1600, DMI type 22, 26 bytes
 Portable Battery
 	Location: Sys. Battery Bay
 	Manufacturer: Samsung SDI
-	Manufacture Date: 04/13/2019
+	Manufacture Date: 10/30/2021
 	Serial Number: --
 	Name: DELL P8TC727
 	Design Capacity: 48840 mWh
 	Design Voltage: 11100 mV
 	SBDS Version: 1.0
-	Maximum Error: 2%
+	Maximum Error: 1%
 	SBDS Chemistry: LION
 	OEM-specific Information: 0x00000001
 
