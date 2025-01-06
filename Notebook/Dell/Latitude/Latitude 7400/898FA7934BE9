@@ -1,4 +1,4 @@
-# dmidecode 3.4
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.2.1 present.
 Table at 0x000E0000.
@@ -377,7 +377,7 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-8365U CPU @ 1.60GHz
-	Voltage: 1.0 V
+	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 4100 MHz
 	Current Speed: 3800 MHz
@@ -422,7 +422,7 @@ Port Connector Information
 	Internal Connector Type: None
 	External Reference Designator: USBC1
 	External Connector Type: USB Type-C Receptacle
-	Port Type: <OUT OF SPEC>
+	Port Type: Thunderbolt
 
 Handle 0x0030, DMI type 8, 9 bytes
 Port Connector Information
@@ -1006,7 +1006,8 @@ OEM-specific Type
 Handle 0xF02D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot9
-	Type: x1 PCI Express 3 x1
+	Type: PCI Express 3 x1
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 15
@@ -1019,7 +1020,8 @@ System Slot Information
 Handle 0xF02E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot10
-	Type: x1 PCI Express 3 x1
+	Type: PCI Express 3 x1
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 14
@@ -1032,7 +1034,8 @@ System Slot Information
 Handle 0xF02F, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot11
-	Type: x2 PCI Express 3 x2
+	Type: PCI Express 3 x2
+	Data Bus Width: 2x or x2
 	Current Usage: Available
 	Length: Short
 	ID: 12
@@ -1045,7 +1048,8 @@ System Slot Information
 Handle 0xF030, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot13
-	Type: x4 PCI Express 3 x4
+	Type: PCI Express 3 x4
+	Data Bus Width: 4x or x4
 	Current Usage: In Use
 	Length: Short
 	ID: 16
@@ -1251,7 +1255,7 @@ Group Associations
 Handle 0xF050, DMI type 203, 106 bytes
 OEM-specific Type
 	Header and Data:
-		CB 6A 50 F0 01 04 01 45 02 00 90 06 81 10 8B 30
+		CB 6A 50 F0 01 04 01 45 02 00 90 06 81 10 80 30
 		00 00 00 00 40 00 00 01 1F 00 00 C9 0B C0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

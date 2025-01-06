@@ -1,4 +1,4 @@
-# dmidecode 3.2
+# dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 3.1.1 present.
 Table at 0x000E0000.
@@ -6,8 +6,8 @@ Table at 0x000E0000.
 Handle 0x0000, DMI type 0, 26 bytes
 BIOS Information
 	Vendor: Dell Inc.
-	Version: 1.13.1
-	Release Date: 03/13/2020
+	Version: 1.37.0
+	Release Date: 09/05/2024
 	Address: 0xF0000
 	Runtime Size: 64 kB
 	ROM Size: 16 MB
@@ -34,7 +34,7 @@ BIOS Information
 		Function key-initiated network boot is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 1.13
+	BIOS Revision: 1.37
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
@@ -58,7 +58,7 @@ Base Board Information
 		Board is a hosting board
 		Board is replaceable
 	Location In Chassis: Not Specified
-	Chassis Handle: 0x0003
+	Chassis Handle: 0x0300
 	Type: Motherboard
 	Contained Object Handles: 0
 
@@ -323,7 +323,8 @@ Port Connector Information
 Handle 0x0022, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot1
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Long
 	ID: 0
@@ -336,7 +337,8 @@ System Slot Information
 Handle 0x0023, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot2
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 1
@@ -349,7 +351,8 @@ System Slot Information
 Handle 0x0024, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot3
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: In Use
 	Length: Short
 	ID: 2
@@ -362,7 +365,8 @@ System Slot Information
 Handle 0x002B, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot10
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 9
@@ -375,7 +379,8 @@ System Slot Information
 Handle 0x002C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot11
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 10
@@ -388,7 +393,8 @@ System Slot Information
 Handle 0x002D, DMI type 9, 17 bytes
 System Slot Information
 	Designation: Slot12
-	Type: x1 PCI Express
+	Type: PCI Express
+	Data Bus Width: 1x or x1
 	Current Usage: Available
 	Length: Short
 	ID: 11
@@ -450,7 +456,7 @@ Built-in Pointing Device
 	Buttons: 2
 
 Handle 0x0037, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x0038, DMI type 32, 20 bytes
@@ -681,7 +687,7 @@ Processor Information
 	L3 Cache Handle: 0x004F
 	Serial Number: --
 	Asset Tag: --
-	Part Number: To Be Filled By O.E.M.
+	Part Number: Not Specified
 	Core Count: 4
 	Core Enabled: 4
 	Thread Count: 8
@@ -728,9 +734,19 @@ Portable Battery
 	Design Capacity: 67990 mWh
 	Design Voltage: 7600 mV
 	SBDS Version: 1.0
-	Maximum Error: 100%
+	Maximum Error: 8%
 	SBDS Chemistry: LiP
 	OEM-specific Information: 0x00000801
+
+Handle 0x1602, DMI type 43, 31 bytes
+TPM Device
+	Vendor ID: 
+	Specification Version: 2.0
+	Firmware Revision: 7.2
+	Description: NUVOTON
+	Characteristics:
+		Family configurable via platform software support
+	OEM-specific Information: 0x00000000
 
 Handle 0x1B00, DMI type 27, 15 bytes
 Cooling Device
@@ -813,7 +829,7 @@ OEM-specific Type
 Handle 0xD000, DMI type 208, 16 bytes
 OEM-specific Type
 	Header and Data:
-		D0 10 00 D0 03 0A FE 00 17 08 01 02 00 00 00 00
+		D0 10 00 D0 03 11 FE 00 17 08 01 02 00 00 00 00
 	Strings:
 		20190410
 		20190704
@@ -924,68 +940,69 @@ OEM-specific Type
 		00 49 03 49 03 FF FF 4A 03 4A 03 FF FF 4D 03 4D
 		03 01 00 4E 03 4E 03 00 00 4F 03 4F 03 01 00 50
 		03 50 03 00 00 57 03 57 03 00 00 58 03 58 03 01
-		00 61 03 61 03 01 00 62 03 62 03 00 00 64 03 64
-		03 01 00 65 03 65 03 00 00 66 03 66 03 00 00 67
-		03 67 03 01 00 69 03 69 03 00 00 6A 03 6A 03 01
-		00 6B 03 6B 03 02 00 6C 03 6C 03 00 00 6D 03 6D
-		03 01 00 6E 03 6E 03 FF FF 74 03 74 03 00 00 75
-		03 75 03 01 00 78 03 78 03 01 00 79 03 79 03 00
-		00 83 03 83 03 07 00 A0 03 A0 03 01 00 A1 03 A1
-		03 00 00 A2 03 A2 03 01 00 A3 03 A3 03 00 00 A6
-		03 A6 03 01 00 FF FF FF FF 00 00
+		00 5D 03 5D 03 01 00 5E 03 5E 03 00 00 5F 03 5F
+		03 01 00 60 03 60 03 00 00 61 03 61 03 01 00 62
+		03 62 03 00 00 64 03 64 03 01 00 65 03 65 03 00
+		00 66 03 66 03 00 00 67 03 67 03 01 00 69 03 69
+		03 00 00 6A 03 6A 03 01 00 6B 03 6B 03 02 00 6C
+		03 6C 03 00 00 6D 03 6D 03 01 00 6E 03 6E 03 FF
+		FF 74 03 74 03 00 00 75 03 75 03 01 00 78 03 78
+		03 01 00 79 03 79 03 00 00 83 03 83 03 07 00 A0
+		03 A0 03 01 00 FF FF FF FF 00 00
 
 Handle 0xDA05, DMI type 218, 251 bytes
 OEM-specific Type
 	Header and Data:
-		DA FB 05 DA B2 00 04 FF 1F B6 50 A7 03 A7 03 00
-		00 BE 03 BE 03 FF FF C1 03 C1 03 02 00 C2 03 C2
-		03 03 00 C3 03 C3 03 04 00 C5 03 C5 03 01 00 C6
-		03 C6 03 00 00 C7 03 C7 03 01 00 C8 03 C8 03 02
-		00 C9 03 C9 03 01 00 CA 03 CA 03 00 00 CB 03 CB
-		03 FF FF F6 03 F6 03 01 00 F7 03 F7 03 00 00 FE
-		03 FE 03 01 00 FF 03 FF 03 00 00 01 04 01 04 01
-		00 02 04 02 04 00 00 03 04 03 04 01 00 04 04 04
-		04 00 00 1E 04 1E 04 01 00 1F 04 1F 04 00 00 20
-		04 20 04 FF FF 2B 04 2B 04 FF FF 31 04 31 04 FF
-		FF 32 04 32 04 01 00 33 04 33 04 00 00 36 04 36
-		04 01 00 37 04 37 04 00 00 38 04 38 04 01 00 39
-		04 39 04 00 00 3A 04 3A 04 01 00 3B 04 3B 04 00
-		00 40 04 40 04 01 00 41 04 41 04 00 00 42 04 42
-		04 01 00 43 04 43 04 00 00 44 04 44 04 01 00 45
-		04 45 04 00 00 FF FF FF FF 00 00
+		DA FB 05 DA B2 00 04 FF 1F B6 50 A1 03 A1 03 00
+		00 A2 03 A2 03 01 00 A3 03 A3 03 00 00 A6 03 A6
+		03 01 00 A7 03 A7 03 00 00 BE 03 BE 03 FF FF C1
+		03 C1 03 02 00 C2 03 C2 03 03 00 C3 03 C3 03 04
+		00 C5 03 C5 03 01 00 C6 03 C6 03 00 00 C7 03 C7
+		03 01 00 C8 03 C8 03 02 00 C9 03 C9 03 01 00 CA
+		03 CA 03 00 00 CB 03 CB 03 FF FF F6 03 F6 03 01
+		00 F7 03 F7 03 00 00 FE 03 FE 03 01 00 FF 03 FF
+		03 00 00 01 04 01 04 01 00 02 04 02 04 00 00 03
+		04 03 04 01 00 04 04 04 04 00 00 1E 04 1E 04 01
+		00 1F 04 1F 04 00 00 20 04 20 04 FF FF 2B 04 2B
+		04 FF FF 31 04 31 04 FF FF 32 04 32 04 01 00 33
+		04 33 04 00 00 36 04 36 04 01 00 37 04 37 04 00
+		00 38 04 38 04 01 00 39 04 39 04 00 00 3A 04 3A
+		04 01 00 3B 04 3B 04 00 00 40 04 40 04 01 00 41
+		04 41 04 00 00 FF FF FF FF 00 00
 
 Handle 0xDA06, DMI type 218, 251 bytes
 OEM-specific Type
 	Header and Data:
-		DA FB 06 DA B2 00 04 FF 1F B6 50 46 04 46 04 01
-		00 47 04 47 04 00 00 4B 04 4B 04 01 00 4C 04 4C
-		04 00 00 4D 04 4D 04 00 00 4E 04 4E 04 01 00 4F
-		04 4F 04 02 00 51 04 51 04 FF FF 52 04 52 04 FF
-		FF 61 04 61 04 01 00 62 04 62 04 00 00 7D 04 7D
-		04 01 00 7E 04 7E 04 00 00 7F 04 7F 04 02 00 80
-		04 80 04 01 00 81 04 81 04 00 00 85 04 85 04 01
-		00 86 04 86 04 00 00 87 04 87 04 01 00 88 04 88
-		04 00 00 89 04 89 04 FF FF 8C 04 8C 04 01 00 8D
-		04 8D 04 00 00 98 04 98 04 FF FF 99 04 99 04 00
-		00 9A 04 9A 04 01 00 9B 04 9B 04 02 00 9C 04 9C
-		04 01 00 9D 04 9D 04 00 00 9E 04 9E 04 01 00 9F
-		04 9F 04 00 00 A0 04 A0 04 01 00 A1 04 A1 04 00
-		00 A2 04 A2 04 01 00 A3 04 A3 04 00 00 E6 04 E6
-		04 01 00 E7 04 E7 04 00 00 EC 04 EC 04 01 00 ED
-		04 ED 04 00 00 FF FF FF FF 00 00
+		DA FB 06 DA B2 00 04 FF 1F B6 50 42 04 42 04 01
+		00 43 04 43 04 00 00 44 04 44 04 01 00 45 04 45
+		04 00 00 46 04 46 04 01 00 47 04 47 04 00 00 4B
+		04 4B 04 01 00 4C 04 4C 04 00 00 4D 04 4D 04 00
+		00 4E 04 4E 04 01 00 4F 04 4F 04 02 00 51 04 51
+		04 FF FF 52 04 52 04 FF FF 61 04 61 04 01 00 62
+		04 62 04 00 00 7D 04 7D 04 01 00 7E 04 7E 04 00
+		00 7F 04 7F 04 02 00 80 04 80 04 01 00 81 04 81
+		04 00 00 85 04 85 04 01 00 86 04 86 04 00 00 87
+		04 87 04 01 00 88 04 88 04 00 00 89 04 89 04 FF
+		FF 8C 04 8C 04 01 00 8D 04 8D 04 00 00 98 04 98
+		04 FF FF 99 04 99 04 00 00 9A 04 9A 04 01 00 9B
+		04 9B 04 02 00 9C 04 9C 04 01 00 9D 04 9D 04 00
+		00 9E 04 9E 04 01 00 9F 04 9F 04 00 00 A0 04 A0
+		04 01 00 A1 04 A1 04 00 00 A2 04 A2 04 01 00 A3
+		04 A3 04 00 00 FF FF FF FF 00 00
 
-Handle 0xDA07, DMI type 218, 131 bytes
+Handle 0xDA07, DMI type 218, 155 bytes
 OEM-specific Type
 	Header and Data:
-		DA 83 07 DA B2 00 04 FF 1F B6 50 00 05 00 05 FF
-		FF 12 05 12 05 00 00 13 05 13 05 01 00 14 05 14
-		05 02 00 15 05 15 05 01 00 2C 05 2C 05 FF FF 3B
-		05 3B 05 00 00 4E 05 4E 05 01 00 4F 05 4F 05 00
-		00 4A 40 4A 40 01 00 4B 40 4B 40 00 00 4C 40 4C
-		40 FF FF 0C 80 0C 80 00 00 0D 80 0D 80 00 00 0E
-		80 0E 80 01 00 12 80 12 80 FF FF 13 80 13 80 00
-		00 14 80 14 80 00 00 04 A0 04 A0 01 00 FF FF FF
-		FF 00 00
+		DA 9B 07 DA B2 00 04 FF 1F B6 50 E6 04 E6 04 01
+		00 E7 04 E7 04 00 00 EC 04 EC 04 01 00 ED 04 ED
+		04 00 00 00 05 00 05 FF FF 12 05 12 05 00 00 13
+		05 13 05 01 00 14 05 14 05 02 00 15 05 15 05 01
+		00 2C 05 2C 05 FF FF 3B 05 3B 05 00 00 4E 05 4E
+		05 01 00 4F 05 4F 05 00 00 4A 40 4A 40 01 00 4B
+		40 4B 40 00 00 4C 40 4C 40 FF FF 0C 80 0C 80 00
+		00 0D 80 0D 80 00 00 0E 80 0E 80 01 00 12 80 12
+		80 FF FF 13 80 13 80 00 00 14 80 14 80 00 00 04
+		A0 04 A0 01 00 FF FF FF FF 00 00
 
 Handle 0xDC00, DMI type 220, 22 bytes
 OEM-specific Type
@@ -1020,7 +1037,7 @@ OEM-specific Type
 Handle 0xDE00, DMI type 222, 16 bytes
 OEM-specific Type
 	Header and Data:
-		DE 10 00 DE 01 04 00 00 20 08 08 21 18 01 00 00
+		DE 10 00 DE 01 04 00 00 24 11 13 20 59 01 00 00
 
 Handle 0xF026, DMI type 218, 77 bytes
 OEM-specific Type
@@ -1040,17 +1057,17 @@ OEM-specific Type
 Handle 0xF028, DMI type 131, 64 bytes
 OEM-specific Type
 	Header and Data:
-		83 40 28 F0 35 00 00 00 0B 00 00 00 00 00 0A 00
+		83 40 28 F0 3F 00 00 00 0B 00 00 00 00 00 0C 00
 		F8 00 4E 9D 00 00 00 00 09 C0 00 00 08 00 0B 00
-		2A 0E 46 00 00 00 00 00 FE 00 D7 15 00 00 00 00
+		31 12 60 00 00 00 00 00 FE 00 D7 15 00 00 00 00
 		00 00 00 00 26 00 00 00 76 50 72 6F 00 00 00 00
 
 Handle 0xF029, DMI type 205, 33 bytes
 OEM-specific Type
 	Header and Data:
 		CD 21 29 F0 04 01 00 03 00 00 00 00 02 00 00 00
-		00 CA 00 03 00 00 05 00 00 00 04 00 02 00 00 63
-		0E
+		00 F6 00 03 00 00 05 00 00 00 04 00 02 00 00 D8
+		00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -1061,7 +1078,7 @@ Handle 0xF02A, DMI type 205, 26 bytes
 OEM-specific Type
 	Header and Data:
 		CD 1A 2A F0 03 01 00 03 00 00 00 00 02 00 0B 00
-		00 0A 00 03 04 0B 08 46 2A 0E
+		00 0C 00 03 04 0B 08 60 31 12
 	Strings:
 		Reference Code - ME 11.0
 		MEBx version
@@ -1166,7 +1183,7 @@ Group Associations
 Handle 0xF042, DMI type 203, 81 bytes
 OEM-specific Type
 	Header and Data:
-		CB 51 42 F0 01 03 01 45 02 00 90 06 81 10 80 30
+		CB 51 42 F0 01 03 01 45 02 00 90 06 83 10 80 30
 		00 00 00 00 40 A8 00 01 1F 00 00 C9 0B C0 47 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00

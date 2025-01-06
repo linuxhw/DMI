@@ -1,7 +1,8 @@
-# dmidecode 2.12
+# dmidecode 3.5
+Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
 95 structures occupying 4659 bytes.
-Table at 0x000EBF70.
+Table at 0x000EBF50.
 
 Handle 0xDA00, DMI type 218, 251 bytes
 OEM-specific Type
@@ -123,7 +124,7 @@ BIOS Information
 	Release Date: 08/19/2015
 	Address: 0xF0000
 	Runtime Size: 64 kB
-	ROM Size: 14336 kB
+	ROM Size: 14 MB
 	Characteristics:
 		PCI is supported
 		PNP is supported
@@ -287,8 +288,8 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 3072 kB
-	Maximum Size: 3072 kB
+	Installed Size: 3 MB
+	Maximum Size: 3 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
@@ -628,13 +629,6 @@ Memory Device
 	Bank Locator: Not Specified
 	Type: Unknown
 	Type Detail: None
-	Speed: Unknown
-	Manufacturer: [Empty]
-	Serial Number: --
-	Asset Tag: --
-	Part Number: [Empty]
-	Rank: Unknown
-	Configured Clock Speed: Unknown
 
 Handle 0x0048, DMI type 17, 34 bytes
 Memory Device
@@ -642,20 +636,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM B
 	Bank Locator: Not Specified
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1333 MHz
+	Speed: 1333 MT/s
 	Manufacturer: Micron
 	Serial Number: --
 	Asset Tag: --
 	Part Number: 16JTF51264HZ-1G4M1
 	Rank: 2
-	Configured Clock Speed: 1333 MHz
+	Configured Memory Speed: 1333 MT/s
 
 Handle 0x004A, DMI type 19, 31 bytes
 Memory Array Mapped Address
@@ -683,7 +677,7 @@ Built-in Pointing Device
 	Buttons: 2
 
 Handle 0x002B, DMI type 25, 9 bytes
-	System Power Controls
+System Power Controls
 	Next Scheduled Power-on: *-* 00:00:00
 
 Handle 0x002E, DMI type 26, 22 bytes
