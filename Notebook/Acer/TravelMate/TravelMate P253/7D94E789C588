@@ -1,14 +1,14 @@
-# dmidecode 3.0
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 2.7 present.
-39 structures occupying 2026 bytes.
+39 structures occupying 2028 bytes.
 Table at 0x000E6DF0.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Insyde Corp.
-	Version: V2.18
-	Release Date: 10/07/2013
+	Version: V2.21
+	Release Date: 12/16/2013
 	Address: 0xE0000
 	Runtime Size: 128 kB
 	ROM Size: 3584 kB
@@ -32,18 +32,18 @@ BIOS Information
 		BIOS boot specification is supported
 		Targeted content distribution is supported
 		UEFI is supported
-	BIOS Revision: 2.18
+	BIOS Revision: 2.21
 	Firmware Revision: 0.0
 
 Handle 0x0001, DMI type 1, 27 bytes
 System Information
 	Manufacturer: Acer
 	Product Name: TravelMate P253
-	Version: V2.18
+	Version: V2.21
 	Serial Number: --
 	UUID: --
 	Wake-up Type: Power Switch
-	SKU Number: TravelMate P253_064C_V2.18
+	SKU Number: TravelMate P253_064C_V2.21
 	Family: Type1Family
 
 Handle 0x0002, DMI type 2, 16 bytes
@@ -66,10 +66,10 @@ Chassis Information
 	Manufacturer: Insyde Corp.
 	Type: Notebook
 	Lock: Not Present
-	Version: V2.18
+	Version: V2.21
 	Serial Number: --
 	Asset Tag: --
-	Boot-up State: Safe
+	380AD15AAB729CF25C4397C21C466ACE
 	Power Supply State: Safe
 	Thermal State: Safe
 	Security Status: None
@@ -83,7 +83,7 @@ Handle 0x0004, DMI type 4, 42 bytes
 Processor Information
 	Socket Designation: U3E1
 	Type: Central Processor
-	Family: Pentium
+	Family: Core i7
 	Manufacturer: Intel(R) Corporation
 	ID: A9 06 03 00 FF FB EB BF
 	Signature: Type 0, Family 6, Model 58, Stepping 9
@@ -116,11 +116,11 @@ Processor Information
 		HTT (Multi-threading)
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
-	Version: Intel(R) Pentium(R) CPU 2020M @ 2.40GHz
-	Voltage: 0.8 V
+	Version: Intel(R) Core(TM) i7-3840QM CPU @ 2.80GHz
+	Voltage: 0.9 V
 	External Clock: 100 MHz
 	Max Speed: 4000 MHz
-	Current Speed: 2400 MHz
+	Current Speed: 2800 MHz
 	Status: Populated, Enabled
 	Upgrade: Socket rPGA988B
 	L1 Cache Handle: 0x000B
@@ -129,12 +129,13 @@ Processor Information
 	Serial Number: --
 	Asset Tag: --
 	Part Number: To Be Filled By O.E.M.
-	Core Count: 2
-	Core Enabled: 2
-	Thread Count: 2
+	Core Count: 4
+	Core Enabled: 4
+	Thread Count: 8
 	Characteristics:
 		64-bit capable
 		Multi-Core
+		Hardware Thread
 		Execute Protection
 		Enhanced Virtualization
 		Power/Performance Control
@@ -187,8 +188,8 @@ Memory Module Information
 	Bank Connections: None
 	Current Speed: Unknown
 	Type: DIMM
-	Installed Size: 2048 MB (Single-bank Connection)
-	Enabled Size: 2048 MB (Single-bank Connection)
+	Installed Size: 8192 MB (Single-bank Connection)
+	Enabled Size: 8192 MB (Single-bank Connection)
 	Error Status: OK
 
 Handle 0x0009, DMI type 6, 12 bytes
@@ -255,15 +256,15 @@ Cache Information
 	Configuration: Enabled, Not Socketed, Level 3
 	Operational Mode: Write Back
 	Location: Internal
-	Installed Size: 2048 kB
-	Maximum Size: 2048 kB
+	Installed Size: 8 MB
+	Maximum Size: 8 MB
 	Supported SRAM Types:
 		Unknown
 	Installed SRAM Type: Unknown
 	Speed: Unknown
 	Error Correction Type: Multi-bit ECC
 	System Type: Unified
-	Associativity: 8-way Set-associative
+	Associativity: 16-way Set-associative
 
 Handle 0x000E, DMI type 9, 17 bytes
 System Slot Information
@@ -403,20 +404,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 4096 MB
+	Size: 4 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM0
 	Bank Locator: BANK 0
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Kingston
 	Serial Number: --
 	Asset Tag: --
-	Part Number: 9905428-096.A00G  
+	Part Number: ACR16D3LS1NGG/4G  
 	Rank: 2
-	Configured Clock Speed: 1600 MHz
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x001C, DMI type 17, 34 bytes
 Memory Device
@@ -431,13 +432,6 @@ Memory Device
 	Bank Locator: BANK 1
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Empty
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Empty
-	Rank: Unknown
-	Configured Clock Speed: Unknown
 
 Handle 0x001D, DMI type 17, 34 bytes
 Memory Device
@@ -445,20 +439,20 @@ Memory Device
 	Error Information Handle: Not Provided
 	Total Width: 64 bits
 	Data Width: 64 bits
-	Size: 2048 MB
+	Size: 8 GB
 	Form Factor: SODIMM
 	Set: None
 	Locator: DIMM1
 	Bank Locator: BANK 2
 	Type: DDR3
 	Type Detail: Synchronous
-	Speed: 1600 MHz
+	Speed: 1600 MT/s
 	Manufacturer: Unknown
 	Serial Number: --
 	Asset Tag: --
-	Part Number: HMT425S6CFR6A-PB  
-	Rank: 1
-	Configured Clock Speed: 1600 MHz
+	Part Number: CT102464BF160B.C16
+	Rank: 2
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x001E, DMI type 17, 34 bytes
 Memory Device
@@ -473,19 +467,12 @@ Memory Device
 	Bank Locator: BANK 3
 	Type: Unknown
 	Type Detail: Unknown
-	Speed: Unknown
-	Manufacturer: Empty
-	Serial Number: --
-	Asset Tag: --
-	Part Number: Empty
-	Rank: Unknown
-	Configured Clock Speed: Unknown
 
 Handle 0x001F, DMI type 19, 31 bytes
 Memory Array Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0017FFFFFFF
-	Range Size: 6 GB
+	Ending Address: 0x002FFFFFFFF
+	Range Size: 12 GB
 	Physical Array Handle: 0x001A
 	Partition Width: 4
 
@@ -503,8 +490,8 @@ Memory Device Mapped Address
 Handle 0x0021, DMI type 20, 35 bytes
 Memory Device Mapped Address
 	Starting Address: 0x00000000000
-	Ending Address: 0x0007FFFFFFF
-	Range Size: 2 GB
+	Ending Address: 0x001FFFFFFFF
+	Range Size: 8 GB
 	Physical Device Handle: 0x001D
 	Memory Array Mapped Address Handle: 0x001F
 	Partition Row Position: Unknown
@@ -527,14 +514,14 @@ Acer Hotkey Function
 Handle 0x0023, DMI type 171, 39 bytes
 OEM-specific Type
 	Header and Data:
-		AB 27 23 00 01 86 80 56 01 01 DE 10 40 11 02 E4
+		AB 27 23 00 01 86 80 66 01 01 DE 10 40 11 02 E4
 		14 B5 16 04 CF 1B 18 2C 05 86 80 20 1E 07 8C 16
 		36 00 08 CA 04 0B 30
 
 Handle 0x0024, DMI type 172, 21 bytes
 OEM-specific Type
 	Header and Data:
-		AC 15 24 00 02 13 01 FF 00 02 01 00 03 FF 00 04
+		AC 15 24 00 02 1A 01 FF 00 02 01 00 03 FF 00 04
 		01 00 05 0F 00
 
 Handle 0x0025, DMI type 173, 9 bytes

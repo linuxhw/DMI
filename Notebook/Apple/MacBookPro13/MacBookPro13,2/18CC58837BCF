@@ -1,4 +1,4 @@
-# dmidecode 3.3
+# dmidecode 3.5
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0.0 present.
 Table at 0x78F1C000.
@@ -105,10 +105,10 @@ Processor Information
 		TM (Thermal monitor supported)
 		PBE (Pending break enabled)
 	Version: Intel(R) Core(TM) i5-6267U CPU @ 2.90GHz
-	Voltage: 1.0 V
+	Voltage: 0.9 V
 	External Clock: 25 MHz
 	Max Speed: 2900 MHz
-	Current Speed: 3100 MHz
+	Current Speed: 2900 MHz
 	Status: Populated, Enabled
 	Upgrade: Other
 	L1 Cache Handle: 0x0001
@@ -151,10 +151,10 @@ Memory Device
 	Type: LPDDR3
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: 0x802C
+	Manufacturer: 0x80CE
 	Serial Number: --
 	Asset Tag: --
-	652333D94A2324E6AE9B6FDC969BC712
+	C2A04832B0104C692ACCA3F2DF44E2ED
 	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
@@ -165,15 +165,15 @@ Handle 0x0007, DMI type 130, 186 bytes
 OEM-specific Type
 	Header and Data:
 		82 BA 07 00 06 00 00 00 B0 00 91 20 F1 03 05 19
-		05 0B 03 11 01 08 08 00 00 15 78 78 90 50 90 11
-		50 E0 90 06 3C 3C 01 90 00 00 00 21 C2 08 00 00
+		05 0B 03 11 01 08 08 00 50 15 78 78 90 50 90 11
+		50 E0 90 06 3C 3C 01 90 00 00 00 00 C2 08 00 00
 		00 A8 00 88 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80
-		2C 00 00 00 00 00 00 00 82 3A 4D 54 35 32 4C 35
-		31 32 4D 33 32 44 32 50 46 2D 30 39 00 00 00 00
+		CE 01 00 00 55 00 00 00 00 00 4B 34 45 36 45 33
+		30 34 45 42 2D 45 47 43 47 20 20 20 00 00 80 CE
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00
 
@@ -191,10 +191,10 @@ Memory Device
 	Type: LPDDR3
 	Type Detail: Synchronous
 	Speed: 2133 MT/s
-	Manufacturer: 0x802C
+	Manufacturer: 0x80CE
 	Serial Number: --
 	Asset Tag: --
-	652333D94A2324E6AE9B6FDC969BC712
+	C2A04832B0104C692ACCA3F2DF44E2ED
 	Rank: 2
 	Configured Memory Speed: 2133 MT/s
 	Minimum Voltage: Unknown
@@ -205,15 +205,15 @@ Handle 0x0009, DMI type 130, 186 bytes
 OEM-specific Type
 	Header and Data:
 		82 BA 09 00 08 00 00 00 B0 00 91 20 F1 03 05 19
-		05 0B 03 11 01 08 08 00 00 15 78 78 90 50 90 11
-		50 E0 90 06 3C 3C 01 90 00 00 00 21 C2 08 00 00
+		05 0B 03 11 01 08 08 00 50 15 78 78 90 50 90 11
+		50 E0 90 06 3C 3C 01 90 00 00 00 00 C2 08 00 00
 		00 A8 00 88 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80
-		2C 00 00 00 00 00 00 00 82 3A 4D 54 35 32 4C 35
-		31 32 4D 33 32 44 32 50 46 2D 30 39 00 00 00 00
+		CE 01 00 00 55 00 00 00 00 00 4B 34 45 36 45 33
+		30 34 45 42 2D 45 47 43 47 20 20 20 00 00 80 CE
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 		00 00 00 00 00 00 00 00 00 00
 
@@ -228,8 +228,8 @@ Memory Array Mapped Address
 Handle 0x000B, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: Apple Inc.
-	Version: 447.80.3.0.0
-	Release Date: 12/12/2021
+	Version: 529.120.1.0.0
+	Release Date: 03/14/2024
 	ROM Size: 8 MB
 	Characteristics:
 		PCI is supported
@@ -337,7 +337,7 @@ Port Connector Information
 
 Handle 0x0015, DMI type 11, 5 bytes
 OEM Strings
-	String 1: Apple ROM Version.  BIOS ID:      MBP132.88Z.F000.B00.2112121745.  Model:        MBP132.  EFI Version:  447.80.3.0.0.  Built by:     root@bb-g8-pdb151.  Date:         Sun Dec 12 17:45:16 2021.  Revision:     447.80.3 (B&I).  ROM Version:  F000_B00.  Build Type:   Official Build, RELEASE.  Compiler:     clang-1300.0.29.10.
+	String 1: Apple ROM Version.  BIOS ID:      MBP132.88Z.F000.B00.2403141830.  Model:        MBP132.  EFI Version:  529.120.1.0.0.  Built by:     root@qzpcj.  Date:         Thu Mar 14 18:30:49 2024.  Revision:     529.120.1 (B&I).  ROM Version:  F000_B00.  Build Type:   Official Build, RELEASE.  Compiler:     clang-1500.3.9.1.
 
 Handle 0x0016, DMI type 41, 11 bytes
 Onboard Device
@@ -400,7 +400,7 @@ Handle 0x001F, DMI type 221, 26 bytes
 OEM-specific Type
 	Header and Data:
 		DD 1A 1F 00 03 01 00 01 09 00 00 00 02 00 00 00
-		00 EC 00 03 00 00 05 00 00 00
+		00 F0 00 03 00 00 05 00 00 00
 	Strings:
 		Reference Code - CPU
 		uCode Version
@@ -473,8 +473,8 @@ Group Associations
 Handle 0x0024, DMI type 219, 81 bytes
 OEM-specific Type
 	Header and Data:
-		DB 51 24 00 01 03 01 45 02 00 90 06 01 10 80 10
-		00 00 00 04 40 00 00 00 00 00 00 00 00 00 40 02
+		DB 51 24 00 01 03 01 45 02 00 90 06 01 10 86 10
+		00 00 00 00 40 00 00 00 00 00 00 00 00 00 40 02
 		FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 		FF FF FF FF FF FF FF FF 03 00 00 00 80 00 00 00
 		00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
